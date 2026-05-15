@@ -205,6 +205,7 @@ const getUserStats = cache(async (userId: string | null) => {
 export type RecentUnlock = {
   achievementId: number;
   apiName: string;
+  slug: string;
   name: string;
   iconUrl: string | null;
   unlockedAt: string;
@@ -245,9 +246,11 @@ export const getRecentUnlocks = cache(async (limit: number = 8): Promise<RecentU
     const gameSidecar = parseLocalizationSidecar((game as { img_logo_url?: string | null } | null)?.img_logo_url);
     const gameEn = game?.name || `Game ${ach?.app_id ?? ""}`;
     const gameDisplay = locale === "ko" ? (gameSidecar?.nameKo || gameEn) : gameEn;
+    const apiName = ach?.api_name ?? "";
     return {
       achievementId: ach?.id ?? row.achievement_id,
-      apiName: ach?.api_name ?? "",
+      apiName,
+      slug: slugify(apiName || enName || "") || `ach-${ach?.id ?? row.achievement_id}`,
       name: displayName,
       iconUrl: ach?.icon_url ?? null,
       unlockedAt: row.unlock_time as string,

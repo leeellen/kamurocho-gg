@@ -112,8 +112,16 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border-subtle)] px-8 py-3.5 text-center text-[11px] text-[var(--text-tertiary)]">
-          {m.landing.disclaimer}
+        <footer className="flex items-center justify-center gap-3 border-t border-[var(--border-subtle)] px-8 py-3.5 text-center text-[11px] text-[var(--text-tertiary)]">
+          <span>{m.landing.disclaimer}</span>
+          <a
+            href="https://store.steampowered.com/subscriber_agreement/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-[var(--text-tertiary)] underline decoration-[var(--text-tertiary)]/40 underline-offset-2 hover:text-[var(--text-secondary)]"
+          >
+            {locale === "ko" ? "Steam 가입자 동의서" : "Steam Subscriber Agreement"}
+          </a>
         </footer>
       </div>
 

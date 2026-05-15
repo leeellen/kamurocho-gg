@@ -240,7 +240,7 @@ export default async function Home() {
                 recentUnlocks.map((u, i) => (
                   <Link
                     key={u.achievementId}
-                    href={`/game/${u.appId}`}
+                    href={`/game/${u.appId}/achievement/${u.slug}`}
                     className={`flex items-center gap-3 px-4 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)] ${
                       i > 0 ? "border-t border-[var(--border-subtle)]" : ""
                     }`}

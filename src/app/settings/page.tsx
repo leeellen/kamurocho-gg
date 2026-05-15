@@ -155,9 +155,34 @@ export default async function SettingsPage() {
           <Row
             label={locale === "ko" ? "데이터 출처" : "Data sources"}
             sub={
-              locale === "ko"
-                ? "Steam Web API · Steam Store API · 커뮤니티 가이드"
-                : "Steam Web API · Steam Store API · community guides"
+              <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-[var(--text-tertiary)]">
+                <a
+                  href="https://steamcommunity.com/dev"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 hover:decoration-[var(--l2)]"
+                >
+                  Steam Web API
+                </a>
+                <span>·</span>
+                <a
+                  href="https://partner.steamgames.com/doc/store/getreviews"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 hover:decoration-[var(--l2)]"
+                >
+                  Steam Store API
+                </a>
+                <span>·</span>
+                <a
+                  href="https://steamcommunity.com/workshop/browse/?section=guides"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 hover:decoration-[var(--l2)]"
+                >
+                  {locale === "ko" ? "커뮤니티 가이드" : "Community guides"}
+                </a>
+              </span>
             }
           />
         </Group>
