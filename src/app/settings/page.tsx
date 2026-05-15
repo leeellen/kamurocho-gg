@@ -1,214 +1,166 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
+import { FiChevronRight, FiLogOut, FiUser } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { SyncButton } from "@/components/ui/sync-button";
 import { getLocale, getMessages } from "@/lib/i18n";
-import { getSettingsData } from "@/lib/unlokd-data";
+import { getUserSummary } from "@/lib/unlokd-data";
 
 export const dynamic = "force-dynamic";
 
-const SettingsGroup = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <div style={{ marginBottom: 24 }}>
-    <div style={{
-      fontSize: 11,
-      fontWeight: 700,
-      color: "var(--text-tertiary)",
-      textTransform: "uppercase",
-      letterSpacing: "0.08em",
-      marginBottom: 8,
-    }}>
-      {title}
-    </div>
-    <div style={{
-      background: "var(--bg-elevated)",
-      border: "1px solid var(--border-subtle)",
-      borderRadius: 12,
-      overflow: "hidden",
-    }}>
-      {children}
-    </div>
-  </div>
-);
+const APP_VERSION = "1.0.0";
 
-const SettingsRow = ({
+function Group({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="mb-6">
+      <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+        {title}
+      </div>
+      <Card className="overflow-hidden p-0">{children}</Card>
+    </section>
+  );
+}
+
+function Row({
   label,
   sub,
   right,
-  danger,
+  className = "",
 }: {
-  label: string;
-  sub?: string;
+  label: React.ReactNode;
+  sub?: React.ReactNode;
   right?: React.ReactNode;
-  danger?: boolean;
-}) => (
-  <div style={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "14px 16px",
-    borderBottom: "1px solid var(--border-subtle)",
-    minHeight: 56,
-  }}>
-    <div>
-      <div style={{ fontSize: 14, fontWeight: 500, color: danger ? "var(--danger)" : "var(--text-primary)" }}>
-        {label}
+  className?: string;
+}) {
+  return (
+    <div className={`flex min-h-[60px] items-center justify-between gap-4 border-b border-[var(--border-subtle)] px-4 py-3 last:border-b-0 ${className}`}>
+      <div className="min-w-0 flex-1">
+        <div className="truncate text-[14px] font-medium text-[var(--text-primary)]">{label}</div>
+        {sub && <div className="mt-1 text-[12px] text-[var(--text-tertiary)]">{sub}</div>}
       </div>
-      {sub && <div style={{ fontSize: 12, color: "var(--text-tertiary)", marginTop: 2 }}>{sub}</div>}
+      {right && <div className="shrink-0">{right}</div>}
     </div>
-    {right && <div>{right}</div>}
-  </div>
-);
+  );
+}
 
 export default async function SettingsPage() {
   const locale = await getLocale();
   const m = getMessages(locale);
-  const data = await getSettingsData();
+  const user = await getUserSummary();
 
-  if (!data.user.steamId) redirect("/login");
+  if (!user.steamId) redirect("/login");
+
+  const steamProfileUrl = `https://steamcommunity.com/profiles/${user.steamId}`;
 
   return (
-    <AppShell section="settings" locale={locale} user={data.user}>
-      <div style={{ padding: "28px 24px 100px", maxWidth: 760 }} className="md:px-[36px] md:pb-[40px]">
-
-        <h1 style={{ fontSize: 24, fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em", marginBottom: 24 }}>
+    <AppShell section="settings" locale={locale} user={user}>
+      <div className="mx-auto max-w-[820px] px-6 pt-8 pb-24 md:px-9 md:pb-10">
+        <h1 className="m-0 mb-7 text-[32px] font-extrabold tracking-tight text-[var(--text-primary)]">
           {m.settings.title}
         </h1>
 
         {/* Account */}
-        <SettingsGroup title={m.settings.account}>
-          <div style={{ padding: "16px", display: "flex", alignItems: "center", gap: 12, borderBottom: "1px solid var(--border-subtle)" }}>
-            {data.user.avatarUrl ? (
+        <Group title={m.settings.account}>
+          <div className="flex items-center gap-3 border-b border-[var(--border-subtle)] px-4 py-4">
+            {user.avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                alt="Avatar"
-                src={data.user.avatarUrl}
-                style={{ width: 44, height: 44, borderRadius: "50%", objectFit: "cover" }}
+                src={user.avatarUrl}
+                alt=""
+                className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--accent-border)]"
               />
             ) : (
-              <div style={{ width: 44, height: 44, borderRadius: "50%", background: "var(--bg-raised)" }} />
+              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#9D7AFF]" />
             )}
-            <div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: "var(--text-primary)" }}>{data.user.name}</div>
-              <div style={{ fontSize: 12, color: "var(--text-tertiary)" }}>{m.settings.signedAs}</div>
-            </div>
-          </div>
-          <SettingsRow label={m.settings.signOut} right={
-            <button style={{
-              padding: "6px 14px",
-              borderRadius: 8,
-              background: "var(--bg-raised)",
-              border: "1px solid var(--border-subtle)",
-              color: "var(--text-secondary)",
-              fontSize: 13,
-              cursor: "pointer",
-            }}>
-              {m.settings.signOut}
-            </button>
-          } />
-          <div style={{ borderBottom: "none" }}>
-            <SettingsRow label={m.settings.deleteAccount} danger />
-          </div>
-        </SettingsGroup>
-
-        {/* Sync */}
-        <SettingsGroup title={m.settings.sync}>
-          <SettingsRow
-            label={m.settings.syncFreq}
-            sub={m.settings.syncFreqV}
-            right={
-              <span style={{ fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-mono)" }}>
-                {data.user.lastSyncedLabel}
-              </span>
-            }
-          />
-          <div style={{ borderBottom: "none" }}>
-            <SettingsRow label={m.settings.syncNow} right={
-              <button style={{
-                padding: "6px 14px",
-                borderRadius: 8,
-                background: "var(--accent-subtle)",
-                border: "1px solid var(--accent-border)",
-                color: "var(--accent)",
-                fontSize: 13,
-                fontWeight: 600,
-                cursor: "pointer",
-              }}>
-                {m.settings.syncNow}
-              </button>
-            } />
-          </div>
-        </SettingsGroup>
-
-        {/* Notifications */}
-        <SettingsGroup title={m.settings.notifications}>
-          {[
-            { label: m.settings.notifPush, enabled: true },
-            { label: m.settings.notifFriend, enabled: false },
-            { label: m.settings.notifDLC, enabled: true },
-          ].map((item, i, arr) => (
-            <div key={item.label} style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              padding: "14px 16px",
-              borderBottom: i < arr.length - 1 ? "1px solid var(--border-subtle)" : "none",
-            }}>
-              <span style={{ fontSize: 14, fontWeight: 500, color: "var(--text-primary)" }}>{item.label}</span>
-              <div style={{
-                width: 44,
-                height: 24,
-                borderRadius: 999,
-                background: item.enabled ? "var(--accent)" : "var(--bg-raised)",
-                border: "1px solid var(--border-subtle)",
-                position: "relative",
-                cursor: "pointer",
-              }}>
-                <div style={{
-                  position: "absolute",
-                  top: 3,
-                  left: item.enabled ? "calc(100% - 19px)" : 3,
-                  width: 16,
-                  height: 16,
-                  borderRadius: "50%",
-                  background: item.enabled ? "var(--text-inverse)" : "var(--text-tertiary)",
-                  transition: "left var(--dur-fast) var(--ease-out)",
-                }} />
+            <div className="min-w-0 flex-1">
+              <div className="truncate text-[15px] font-semibold text-[var(--text-primary)]">{user.name}</div>
+              <div className="truncate font-mono text-[11px] text-[var(--text-tertiary)]">
+                Steam ID · {user.steamId}
               </div>
             </div>
-          ))}
-        </SettingsGroup>
+            <Button asChild variant="secondary" size="sm">
+              <Link href={steamProfileUrl} target="_blank" rel="noreferrer">
+                <FiUser size={13} />
+                {locale === "ko" ? "Steam 프로필" : "Steam profile"}
+              </Link>
+            </Button>
+          </div>
+          <Row
+            label={m.settings.signOut}
+            sub={locale === "ko" ? "이 기기에서 로그아웃합니다." : "Sign out of this device."}
+            right={
+              <form action="/api/auth/signout" method="post">
+                <Button type="submit" variant="danger" size="sm">
+                  <FiLogOut size={13} /> {m.settings.signOut}
+                </Button>
+              </form>
+            }
+          />
+        </Group>
+
+        {/* Sync */}
+        <Group title={m.settings.sync}>
+          <Row
+            label={locale === "ko" ? "마지막 동기화" : "Last synced"}
+            sub={
+              locale === "ko"
+                ? "Steam 라이브러리와 업적을 다시 가져옵니다."
+                : "Pulls your Steam library and achievements again."
+            }
+            right={
+              <SyncButton
+                label={m.settings.syncNow}
+                syncedLabel={locale === "ko" ? "최근" : "last"}
+                lastSynced={user.lastSyncedLabel}
+              />
+            }
+          />
+        </Group>
 
         {/* Language */}
-        <SettingsGroup title={m.settings.language}>
-          <div style={{ padding: "16px", borderBottom: "none" }}>
-            <LanguageSwitcher
-              locale={locale}
-              label={m.common.language}
-              englishLabel="EN"
-              koreanLabel="KO"
-            />
-          </div>
-        </SettingsGroup>
+        <Group title={m.settings.language}>
+          <Row
+            label={locale === "ko" ? "표시 언어" : "Display language"}
+            sub={locale === "ko" ? "게임명·업적·설명에 적용됩니다." : "Applies to game names, achievements, and descriptions."}
+            right={
+              <LanguageSwitcher
+                locale={locale}
+                label={m.common.language}
+                englishLabel="EN"
+                koreanLabel="KO"
+              />
+            }
+          />
+        </Group>
 
         {/* About */}
-        <SettingsGroup title={m.settings.about}>
-          <SettingsRow
+        <Group title={m.settings.about}>
+          <Row
             label={m.settings.version}
-            right={<span style={{ fontSize: 12, color: "var(--text-tertiary)", fontFamily: "var(--font-mono)" }}>1.0.0</span>}
+            right={
+              <Badge variant="neutral">
+                <span className="font-mono">{APP_VERSION}</span>
+              </Badge>
+            }
           />
-          <SettingsRow label={m.settings.privacy} right={
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="9 18 15 12 9 6"/>
-            </svg>
-          } />
-          <div style={{ borderBottom: "none" }}>
-            <SettingsRow label={m.settings.sources} right={
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="9 18 15 12 9 6"/>
-              </svg>
-            } />
-          </div>
-        </SettingsGroup>
+          <Row
+            label={m.settings.privacy}
+            right={<FiChevronRight size={14} className="text-[var(--text-tertiary)]" />}
+          />
+          <Row
+            label={locale === "ko" ? "데이터 출처" : "Data sources"}
+            sub={
+              locale === "ko"
+                ? "Steam Web API · Steam Store API · 커뮤니티 가이드"
+                : "Steam Web API · Steam Store API · community guides"
+            }
+          />
+        </Group>
       </div>
     </AppShell>
   );
