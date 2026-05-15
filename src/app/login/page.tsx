@@ -50,7 +50,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
       {/* Desktop */}
       <div className="hidden h-screen flex-col md:flex">
         <header className="flex items-center justify-between border-b border-[var(--border-subtle)] px-8 py-4">
-          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ height: "auto" }} />
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ width: 148, height: "auto" }} />
           <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
         </header>
 
@@ -123,7 +123,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
       {/* Mobile */}
       <div className="flex min-h-screen flex-col md:hidden">
         <div className="flex items-center justify-between px-5 pt-3.5">
-          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ height: "auto" }} />
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ width: 148, height: "auto" }} />
           <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
         </div>
 

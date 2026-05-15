@@ -35,7 +35,7 @@ export function AppShell({
       {/* Desktop sidebar */}
       <aside className="shell-sidebar">
         <div className="px-2 pt-1.5 pb-4 flex items-center gap-2">
-          <Image src="/logo-unlokd.svg" alt="Unlokd" width={132} height={32} priority style={{ height: "auto" }} />
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={132} height={32} priority style={{ width: 132, height: "auto" }} />
         </div>
 
         <nav className="flex flex-col gap-1">

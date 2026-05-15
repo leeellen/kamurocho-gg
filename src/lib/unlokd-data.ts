@@ -451,7 +451,7 @@ export async function getGameDetail(idOrSlug: string) {
         .in("achievement_id", achievementIds),
       admin
         .from("guides")
-        .select("achievement_id, content, confidence, source_url, license, upvotes")
+        .select("achievement_id, content, confidence, source_url, license, upvotes, locale")
         .in("achievement_id", achievementIds)
         .eq("is_active", true)
         .order("upvotes", { ascending: false }),
@@ -466,11 +466,20 @@ export async function getGameDetail(idOrSlug: string) {
   const userAchievementMap = new Map(
     (userAchievements ?? []).map((item) => [item.achievement_id, item]),
   );
+  // Pick guide matching current locale when available; fall back to any.
+  const desiredLocale = locale === "ko" ? "koreana" : "english";
   const guideMap = new Map<number, DbGuide>();
+  const guideFallback = new Map<number, DbGuide>();
   for (const guide of guides ?? []) {
-    if (!guideMap.has(guide.achievement_id)) {
-      guideMap.set(guide.achievement_id, guide as DbGuide);
+    const g = guide as DbGuide & { locale?: string | null };
+    if (g.locale === desiredLocale) {
+      if (!guideMap.has(g.achievement_id)) guideMap.set(g.achievement_id, g);
+    } else {
+      if (!guideFallback.has(g.achievement_id)) guideFallback.set(g.achievement_id, g);
     }
+  }
+  for (const [achId, g] of guideFallback) {
+    if (!guideMap.has(achId)) guideMap.set(achId, g);
   }
   const tipUserMap = new Map((tipUsers ?? []).map((item) => [item.id, item.persona_name || "Curator"]));
 
