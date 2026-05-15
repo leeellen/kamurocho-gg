@@ -1,109 +1,195 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Lock, MonitorUp, Sparkles, Zap } from "lucide-react";
+import { FaSteam } from "react-icons/fa";
 
-const featureItems = [
-  {
-    title: "Track achievements",
-    detail: "Real-time sync with your Steam library.",
-    icon: MonitorUp,
-    accent: "text-secondary bg-secondary/10",
-  },
-  {
-    title: "AI-verified guides",
-    detail: "Crowdsourced data met with machine intelligence.",
-    icon: Sparkles,
-    accent: "text-primary bg-primary/10",
-  },
-  {
-    title: "Smart difficulty tips",
-    detail: "Know the grind before you begin the journey.",
-    icon: Zap,
-    accent: "text-tertiary bg-tertiary/10",
-  },
-];
+import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { cn } from "@/lib/cn";
+import { getLocale, getMessages } from "@/lib/i18n";
 
-export default function LoginPage() {
+export const dynamic = "force-dynamic";
+
+type LoginPageProps = {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+};
+
+const STEAM_ERRORS: Record<string, { ko: string; en: string }> = {
+  invalid:                      { ko: "Steam 인증 검증에 실패했습니다. 다시 시도해 주세요.", en: "Steam authentication verification failed. Please try again." },
+  "missing-id":                 { ko: "Steam 계정 식별값을 가져오지 못했습니다.", en: "Steam account identifier was not returned." },
+  "missing-steam-api-key":      { ko: "서버에 STEAM_API_KEY가 설정되어 있지 않습니다.", en: "STEAM_API_KEY is missing on the server." },
+  "missing-supabase-service-key": { ko: "서버에 SUPABASE_SERVICE_ROLE_KEY가 설정되어 있지 않습니다.", en: "SUPABASE_SERVICE_ROLE_KEY is missing on the server." },
+  "missing-supabase-url":       { ko: "서버에 NEXT_PUBLIC_SUPABASE_URL이 설정되어 있지 않습니다.", en: "NEXT_PUBLIC_SUPABASE_URL is missing on the server." },
+  "missing-supabase-anon-key":  { ko: "서버에 NEXT_PUBLIC_SUPABASE_ANON_KEY가 설정되어 있지 않습니다.", en: "NEXT_PUBLIC_SUPABASE_ANON_KEY is missing on the server." },
+  "missing-supabase-env":       { ko: "Supabase URL 또는 anon key가 설정되어 있지 않습니다.", en: "Supabase URL or anon key is missing on the server." },
+  "auth-user-create-failed":    { ko: "Supabase Auth 사용자 생성에 실패했습니다.", en: "Failed to create the Supabase auth user." },
+  "auth-user-lookup-failed":    { ko: "Supabase Auth 기존 사용자 조회에 실패했습니다.", en: "Failed to look up the existing Supabase auth user." },
+  "auth-user-missing":          { ko: "Supabase Auth 사용자를 찾지 못했습니다.", en: "The Supabase auth user could not be found." },
+  "auth-user-update-failed":    { ko: "Supabase Auth 사용자 갱신에 실패했습니다.", en: "Failed to update the Supabase auth user." },
+  "magiclink-failed":           { ko: "Supabase 로그인 링크 생성에 실패했습니다.", en: "Failed to generate the Supabase login link." },
+  "user-upsert-failed":         { ko: "프로필 정보를 저장하지 못했습니다.", en: "Failed to store the profile record." },
+  "missing-auth-token":         { ko: "로그인 토큰이 없어 세션을 만들지 못했습니다.", en: "No auth token was returned for session creation." },
+  "session-failed":             { ko: "Supabase 세션 생성에 실패했습니다.", en: "Failed to create the Supabase session." },
+  "setup-required":             { ko: "로그인 설정이 아직 완전히 연결되지 않았습니다.", en: "The login setup is still incomplete." },
+};
+
+export default async function LoginPage({ searchParams }: LoginPageProps) {
+  const locale = await getLocale();
+  const m = getMessages(locale);
+  const resolved = (await searchParams) ?? {};
+  const steamState = Array.isArray(resolved.steam) ? resolved.steam[0] : resolved.steam;
+  const errorMsg = steamState ? STEAM_ERRORS[steamState]?.[locale] : undefined;
+
+  const layers = [
+    { num: 1, color: "var(--l1)", bg: "var(--l1-tint)", border: "var(--l1-border)", title: m.landing.l1Title, body: m.landing.l1Body },
+    { num: 2, color: "var(--l2)", bg: "var(--l2-tint)", border: "var(--l2-border)", title: m.landing.l2Title, body: m.landing.l2Body },
+    { num: 3, color: "var(--l3)", bg: "var(--l3-tint)", border: "var(--l3-border)", title: m.landing.l3Title, body: m.landing.l3Body },
+  ];
+
   return (
-    <main className="relative isolate min-h-screen overflow-hidden px-6 py-10 md:px-10 md:py-16">
-      <div className="ambient-orb right-[-12rem] top-[4rem] h-[32rem] w-[32rem] bg-primary/25" />
-      <div className="ambient-orb bottom-[-10rem] left-[-8rem] h-[28rem] w-[28rem] bg-secondary/15" />
+    <main className="min-h-screen bg-[var(--bg-base)] text-[var(--text-primary)]">
+      {/* Desktop */}
+      <div className="hidden h-screen flex-col md:flex">
+        <header className="flex items-center justify-between border-b border-[var(--border-subtle)] px-8 py-4">
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ height: "auto" }} />
+          <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
+        </header>
 
-      <div className="mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-7xl flex-col justify-between gap-12">
-        <section className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="space-y-8">
-            <p className="font-display text-sm uppercase tracking-[0.28em] text-primary">UNLOKD</p>
-            <div className="space-y-4">
-              <h1 className="max-w-3xl font-display text-6xl font-bold leading-none tracking-[-0.08em] text-foreground md:text-8xl">
-                Your achievements.
-                <span className="block text-gradient-primary">Your guides.</span>
-                <span className="block">All in one place.</span>
-              </h1>
-              <p className="max-w-xl text-xl leading-9 text-muted">
-                The premium editorial gallery for your Steam legacy. Track, curate, and master
-                your collection with AI-verified precision.
-              </p>
+        <section className="grid flex-1 grid-cols-[1.1fr_1fr] items-center gap-12 overflow-auto px-14 py-12">
+          <div className="flex max-w-[520px] flex-col">
+            <span className="mb-5 inline-flex w-fit items-center gap-1.5 rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-0.5 text-[11px] font-bold tracking-wider text-[var(--accent)]">
+              PWA · {locale === "ko" ? "모바일 우선" : "Mobile-first"}
+            </span>
+            <h1 className="mb-4 text-[54px] font-extrabold leading-[1.05] tracking-tight text-[var(--text-primary)]">
+              {m.landing.heroLine1}<br />
+              {m.landing.heroLine2}<br />
+              <span className="text-[var(--accent)]">{m.landing.heroLine3}</span>
+            </h1>
+            <p className="mb-7 max-w-[460px] whitespace-pre-line text-base leading-relaxed text-[var(--text-secondary)]">
+              {m.landing.sub}
+            </p>
+
+            {errorMsg && (
+              <div className="mb-5 rounded-xl border border-[var(--danger)]/30 bg-[var(--danger-subtle)] px-4 py-3 text-sm text-[var(--danger)]">
+                {errorMsg}
+                {steamState && <div className="mt-1 font-mono text-[11px] opacity-70">code: {steamState}</div>}
+              </div>
+            )}
+
+            <div className="mb-6 flex gap-2.5">
+              <Button asChild variant="steam" size="lg">
+                <Link href="/api/auth/steam" prefetch={false}>
+                  <FaSteam size={18} /> {m.landing.signin}
+                </Link>
+              </Button>
             </div>
 
-            <div className="grid gap-4">
-              {featureItems.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={item.title}
-                    className="panel-outline flex items-center gap-4 rounded-[1.75rem] bg-surface px-5 py-5"
-                  >
-                    <div className={`grid h-14 w-14 place-items-center rounded-2xl ${item.accent}`}>
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h2 className="font-display text-2xl font-semibold tracking-[-0.04em]">
-                        {item.title}
-                      </h2>
-                      <p className="mt-1 text-base text-muted">{item.detail}</p>
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="flex gap-6 border-t border-[var(--border-subtle)] pt-4 text-xs text-[var(--text-tertiary)]">
+              {[m.landing.proofA, m.landing.proofB, m.landing.proofC].map((p) => (
+                <span key={p}>{p}</span>
+              ))}
             </div>
           </div>
 
-          <div className="relative">
-            <div className="glass-card panel-outline relative rounded-[2.5rem] px-8 py-10 md:px-12 md:py-14">
-              <div className="mx-auto mb-8 grid h-24 w-24 place-items-center rounded-full border border-primary/20 bg-white/6 text-primary">
-                <Lock className="h-10 w-10" />
-              </div>
-              <div className="space-y-3 text-center">
-                <h2 className="font-display text-4xl font-semibold tracking-[-0.05em] text-foreground">
-                  Welcome to the Gallery
-                </h2>
-                <p className="mx-auto max-w-md text-lg leading-8 text-muted">
-                  Securely connect your account to begin your curation.
-                </p>
-              </div>
-
-              <Link
-                href="/api/auth/steam"
-                className="bg-gradient-cta mt-10 flex items-center justify-center rounded-[1.35rem] px-8 py-5 font-display text-2xl font-semibold tracking-[-0.03em] text-black shadow-[0_0_36px_rgba(126,81,255,0.28)] transition hover:scale-[1.01] active:scale-[0.98]"
-              >
-                Sign in with Steam
-              </Link>
-
-              <div className="mt-10 border-t border-white/7 pt-8 text-center">
-                <p className="font-display text-xs uppercase tracking-[0.3em] text-muted">
-                  Security First
-                </p>
-                <p className="mx-auto mt-5 max-w-sm text-sm italic leading-7 text-muted/80">
-                  We never see your password. Login is handled directly by Steam&apos;s official
-                  OpenID service.
-                </p>
-              </div>
+          <div className="flex flex-col gap-3.5 self-center">
+            <div className="mb-1 text-[11px] font-bold uppercase tracking-wider text-[var(--text-tertiary)]">
+              {m.landing.tag3layer}
             </div>
+            {layers.map((l) => (
+              <div
+                key={l.num}
+                className="rounded-r-[10px] border px-4 py-3.5"
+                style={{ background: l.bg, borderColor: l.border, borderLeft: `2px solid ${l.color}` }}
+              >
+                <div className="mb-1.5 flex items-center gap-2">
+                  <span
+                    className="inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold"
+                    style={{ background: l.bg, borderColor: l.border, color: l.color }}
+                  >
+                    L{l.num}
+                  </span>
+                  <span className="text-[13px] font-semibold text-[var(--text-primary)]">{l.title}</span>
+                </div>
+                <p className="text-[13px] leading-snug text-[var(--text-secondary)]">{l.body}</p>
+              </div>
+            ))}
           </div>
         </section>
 
-        <footer className="border-t border-white/5 pt-6 text-center font-display text-xs uppercase tracking-[0.28em] text-muted">
-          © 2026 Unlokd. Not affiliated with Valve Corp.
+        <footer className="border-t border-[var(--border-subtle)] px-8 py-3.5 text-center text-[11px] text-[var(--text-tertiary)]">
+          {m.landing.disclaimer}
         </footer>
+      </div>
+
+      {/* Mobile */}
+      <div className="flex min-h-screen flex-col md:hidden">
+        <div className="flex items-center justify-between px-5 pt-3.5">
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={148} height={36} priority style={{ height: "auto" }} />
+          <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
+        </div>
+
+        <section className="px-5 pb-6 pt-10">
+          <h1 className="mb-3.5 text-[32px] font-extrabold leading-tight tracking-tight text-[var(--text-primary)]">
+            {m.landing.heroLine1}<br />
+            {m.landing.heroLine2}{" "}
+            <span className="whitespace-nowrap text-[var(--accent)]">{m.landing.heroLine3}</span>
+          </h1>
+          <p className="mb-7 whitespace-pre-line text-sm leading-relaxed text-[var(--text-secondary)]">
+            {m.landing.sub}
+          </p>
+
+          {errorMsg && (
+            <div className="mb-4 rounded-xl border border-[var(--danger)]/30 bg-[var(--danger-subtle)] px-3.5 py-2.5 text-sm text-[var(--danger)]">
+              {errorMsg}
+            </div>
+          )}
+
+          <Button asChild variant="steam" size="lg" className="w-full">
+            <Link href="/api/auth/steam" prefetch={false}>
+              <FaSteam size={18} /> {m.landing.signin}
+            </Link>
+          </Button>
+
+          <div className="mt-6 flex justify-between rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-4 py-3.5">
+            {[m.landing.proofA, m.landing.proofB, m.landing.proofC].map((p, i) => (
+              <div
+                key={p}
+                className={cn(
+                  "flex-1 text-center text-[11px] leading-snug text-[var(--text-tertiary)]",
+                  i < 2 && "border-r border-[var(--border-subtle)]",
+                )}
+              >
+                {p}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="px-5 pb-5 pt-2">
+          <div className="mb-3 text-[11px] font-bold uppercase tracking-wider text-[var(--text-tertiary)]">
+            {m.landing.tag3layer}
+          </div>
+          <div className="flex flex-col gap-2">
+            {layers.map((l) => (
+              <div
+                key={l.num}
+                className="rounded-r-lg px-3.5 py-3"
+                style={{ background: l.bg, borderLeft: `2px solid ${l.color}` }}
+              >
+                <div className="mb-1 flex items-center gap-2">
+                  <span className="text-[10px] font-bold" style={{ color: l.color }}>
+                    L{l.num}
+                  </span>
+                  <span className="text-[13px] font-semibold text-[var(--text-primary)]">{l.title}</span>
+                </div>
+                <p className="text-[13px] text-[var(--text-secondary)]">{l.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="px-5 pb-7 pt-4 text-center text-[10px] leading-snug text-[var(--text-tertiary)]">
+          {m.landing.disclaimer}
+        </div>
       </div>
     </main>
   );

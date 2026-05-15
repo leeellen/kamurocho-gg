@@ -23,6 +23,8 @@ export type Achievement = {
   unlocked: boolean;
   unlockedAt?: string;
   playtimeHint?: string;
+  iconUrl?: string | null;
+  iconGrayUrl?: string | null;
   guide: {
     confidence: Confidence;
     content: string[];
@@ -48,6 +50,9 @@ export type Game = {
   heroClass: string;
   tagline: string;
   achievements: Achievement[];
+  imgIconUrl?: string | null;
+  headerUrl?: string | null;
+  capsuleUrl?: string | null;
 };
 
 export const libraryGames: Game[] = [

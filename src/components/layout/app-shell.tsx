@@ -1,91 +1,123 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Bell, Library, Medal, Search, Settings, Sparkles, UserRound } from "lucide-react";
+import { FiHome, FiSearch, FiGrid, FiUser, FiSettings, FiLock } from "react-icons/fi";
 
-import { Logo } from "@/components/ui/logo";
-import { cn } from "@/lib/utils";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { type Locale, getMessages } from "@/lib/i18n";
+import { cn } from "@/lib/cn";
+import { type UserSummary } from "@/lib/unlokd-data";
 
-const navigation = [
-  { key: "library", label: "Library", href: "/", icon: Library },
-  { key: "search", label: "Discover", href: "/search", icon: Search },
-  { key: "profile", label: "Elite", href: "/profile", icon: Medal },
-  { key: "settings", label: "Control", href: "/settings", icon: Settings },
+type Section = "home" | "search" | "library" | "me" | "settings";
+
+const NAV_ITEMS: { id: Section; href: string; Icon: React.ComponentType<{ className?: string; size?: number }> }[] = [
+  { id: "home",     href: "/",         Icon: FiHome },
+  { id: "search",   href: "/search",   Icon: FiSearch },
+  { id: "library",  href: "/library",  Icon: FiGrid },
+  { id: "me",       href: "/profile",  Icon: FiUser },
+  { id: "settings", href: "/settings", Icon: FiSettings },
 ];
 
 export function AppShell({
   children,
   section,
+  locale,
+  user,
 }: {
   children: React.ReactNode;
-  section: string;
+  section: Section;
+  locale: Locale;
+  user: UserSummary;
 }) {
+  const m = getMessages(locale);
+
   return (
-    <div className="relative min-h-screen overflow-hidden">
-      <div className="ambient-orb left-[-10rem] top-[18rem] h-80 w-80 bg-secondary/30" />
-      <div className="ambient-orb right-[-8rem] top-[2rem] h-96 w-96 bg-primary/25" />
-
-      <div className="grid min-h-screen lg:grid-cols-[18rem_1fr]">
-        <aside className="hidden border-r border-white/6 bg-black/18 px-7 py-8 lg:flex lg:flex-col">
-          <Logo />
-          <div className="mt-14">
-            <p className="font-display text-4xl font-semibold tracking-[-0.05em] text-primary">
-              Pro Gamer
-            </p>
-            <p className="mt-2 font-display text-sm uppercase tracking-[0.3em] text-muted">
-              Level 84 Curator
-            </p>
-          </div>
-
-          <nav className="mt-12 space-y-2">
-            {navigation.map((item) => {
-              const Icon = item.icon;
-              const active = section === item.key;
-
-              return (
-                <Link
-                  key={item.key}
-                  href={item.href}
-                  className={cn(
-                    "relative flex items-center gap-4 rounded-r-full px-6 py-4 font-display text-sm uppercase tracking-[0.24em] text-muted transition",
-                    active
-                      ? "bg-white/7 text-primary before:absolute before:left-0 before:h-12 before:w-[3px] before:rounded-full before:bg-primary"
-                      : "hover:bg-white/4 hover:text-foreground",
-                  )}
-                >
-                  <Icon className="h-4 w-4" />
-                  {item.label}
-                </Link>
-              );
-            })}
-          </nav>
-
-          <div className="mt-auto">
-            <button className="w-full rounded-2xl bg-gradient-to-r from-primary to-primary-dim px-6 py-4 font-display text-sm uppercase tracking-[0.24em] text-black shadow-[0_0_36px_rgba(182,160,255,0.25)] transition hover:brightness-110">
-              Upgrade To Pro
-            </button>
-          </div>
-        </aside>
-
-        <div className="flex min-h-screen flex-col">
-          <header className="sticky top-0 z-30 flex items-center justify-between border-b border-white/5 bg-black/30 px-5 py-4 backdrop-blur-xl md:px-8">
-            <div className="lg:hidden">
-              <Logo />
-            </div>
-            <div className="hidden w-full max-w-sm items-center gap-3 rounded-full bg-white/6 px-4 py-3 text-muted md:flex">
-              <Search className="h-4 w-4" />
-              <span>Search Steam Legacy...</span>
-            </div>
-            <div className="flex items-center gap-4 text-muted">
-              <Bell className="h-5 w-5" />
-              <Sparkles className="h-5 w-5" />
-              <div className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-black">
-                <UserRound className="h-5 w-5" />
-              </div>
-            </div>
-          </header>
-
-          <main className="flex-1 px-5 py-8 md:px-8 md:py-10">{children}</main>
+    <div className="shell bg-[var(--bg-base)] text-[var(--text-primary)]">
+      {/* Desktop sidebar */}
+      <aside className="shell-sidebar">
+        <div className="px-2 pt-1.5 pb-4 flex items-center gap-2">
+          <Image src="/logo-unlokd.svg" alt="Unlokd" width={132} height={32} priority style={{ height: "auto" }} />
         </div>
-      </div>
+
+        <nav className="flex flex-col gap-1">
+          {NAV_ITEMS.map(({ id, href, Icon }) => {
+            const active = id === section;
+            return (
+              <Link
+                key={id}
+                href={href}
+                className={cn(
+                  "relative flex items-center gap-3 rounded-lg px-2.5 py-2 text-sm transition-colors",
+                  active
+                    ? "bg-[var(--bg-elevated)] font-semibold text-[var(--text-primary)]"
+                    : "font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-hover)]",
+                )}
+              >
+                {active && (
+                  <span className="absolute -left-3.5 top-2 bottom-2 w-0.5 rounded-sm bg-[var(--accent)]" />
+                )}
+                <Icon
+                  size={16}
+                  className={active ? "text-[var(--accent)]" : ""}
+                />
+                <span>{m.nav[id]}</span>
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="flex-1" />
+
+        {/* PRO slot */}
+        <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5">
+          <div className="mb-1 flex items-center gap-1.5">
+            <FiLock className="text-[var(--accent)]" size={11} />
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">PRO</span>
+          </div>
+          <div className="text-[11px] leading-snug text-[var(--text-secondary)]">{m.misc.proHint}</div>
+          <div className="mt-1 text-[10px] text-[var(--text-tertiary)]">{m.misc.proCta}</div>
+        </div>
+
+        {/* User pill */}
+        <div className="flex items-center gap-2.5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-2.5 py-2">
+          {user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              alt="Avatar"
+              src={user.avatarUrl}
+              className="h-[26px] w-[26px] rounded-full object-cover"
+            />
+          ) : (
+            <div className="h-[26px] w-[26px] rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#9D7AFF]" />
+          )}
+          <div className="min-w-0 flex-1">
+            <div className="truncate text-xs font-semibold text-[var(--text-primary)]">{user.name}</div>
+            <div className="font-mono text-[10px] text-[var(--text-tertiary)]">{user.status}</div>
+          </div>
+          <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
+        </div>
+      </aside>
+
+      <main className="shell-main">{children}</main>
+
+      {/* Mobile bottom tab bar */}
+      <nav className="shell-tabbar">
+        {NAV_ITEMS.map(({ id, href, Icon }) => {
+          const active = id === section;
+          return (
+            <Link
+              key={id}
+              href={href}
+              className={cn(
+                "flex min-w-[44px] flex-col items-center gap-1 px-4 py-2 no-underline",
+                active ? "text-[var(--accent)]" : "text-[var(--text-tertiary)]",
+              )}
+            >
+              <Icon size={18} />
+              <span className={cn("text-[10px]", active && "font-semibold")}>{m.nav[id]}</span>
+            </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 }

@@ -1,110 +1,171 @@
+import { redirect } from "next/navigation";
+import { FiAward, FiShare2 } from "react-icons/fi";
+
 import { AppShell } from "@/components/layout/app-shell";
-import { ProgressBar } from "@/components/ui/progress-bar";
-import { hallOfFame } from "@/lib/mock-data";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { getLocale, getMessages } from "@/lib/i18n";
+import { getProfileData } from "@/lib/unlokd-data";
 
-export default function ProfilePage() {
+export const dynamic = "force-dynamic";
+
+export default async function ProfilePage() {
+  const locale = await getLocale();
+  const m = getMessages(locale);
+  const data = await getProfileData();
+
+  if (!data.user.steamId) redirect("/login");
+
+  const monthLabels = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const now = new Date();
+  const months = Array.from({ length: 12 }, (_, i) => {
+    const d = new Date(now.getFullYear(), now.getMonth() - (11 - i), 1);
+    return { label: monthLabels[d.getMonth()], idx: i };
+  });
+  const maxMonth = Math.max(1, ...data.monthlyUnlocks);
+  const totalMonthlyUnlocks = data.monthlyUnlocks.reduce((s, n) => s + n, 0);
+
+  const stats = [
+    { label: m.common.achievements, value: data.user.unlockedCount.toLocaleString(), sub: locale === "ko" ? "달성" : "unlocked" },
+    { label: m.profile.avgCompletion, value: `${data.avgCompletion}%`, sub: locale === "ko" ? "평균" : "avg" },
+    { label: m.profile.totalPlaytime, value: `${data.totalHours.toLocaleString()}h`, sub: locale === "ko" ? "총 시간" : "total" },
+    { label: m.dash.ultraRare, value: String(data.ultraRareCount), sub: locale === "ko" ? "1% 미만" : "<1% rarity" },
+  ];
+
   return (
-    <AppShell section="profile">
-      <div className="space-y-10">
-        <section className="grid gap-8 xl:grid-cols-[14rem_1fr] xl:items-start">
-          <div className="panel-outline grid aspect-square place-items-center rounded-[2rem] bg-gradient-to-br from-surface-strong via-black to-surface">
-            <div className="grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-4xl text-black">
-              C
+    <AppShell section="me" locale={locale} user={data.user}>
+      <div className="mx-auto max-w-[960px] px-6 pt-8 pb-24 md:px-9 md:pb-10">
+        {/* Identity card */}
+        <Card className="mb-6 flex items-center gap-5 px-7 py-6">
+          {data.user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              alt="Avatar"
+              src={data.user.avatarUrl}
+              className="h-20 w-20 shrink-0 rounded-full object-cover ring-2 ring-[var(--accent-border)]"
+            />
+          ) : (
+            <div className="h-20 w-20 shrink-0 rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#9D7AFF]" />
+          )}
+          <div className="min-w-0 flex-1">
+            <h1 className="m-0 text-[26px] font-extrabold tracking-tight text-[var(--text-primary)]">
+              {data.user.name}
+            </h1>
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+              {data.joinYear && (
+                <Badge variant="neutral">
+                  {m.profile.joined.replace("{y}", String(data.joinYear))}
+                </Badge>
+              )}
+              {typeof data.steamLevel === "number" && (
+                <Badge variant="accent">
+                  {locale === "ko" ? `Steam Lv. ${data.steamLevel}` : `Steam Level ${data.steamLevel}`}
+                </Badge>
+              )}
+              <Badge variant="l3">
+                {data.user.overallPct}% {locale === "ko" ? "달성률" : "complete"}
+              </Badge>
             </div>
           </div>
-          <div className="space-y-6">
-            <div className="flex flex-wrap items-center gap-4">
-              <h1 className="font-display text-6xl font-bold tracking-[-0.08em] md:text-8xl">
-                CURATOR_01
-              </h1>
-              <span className="rounded-full bg-secondary/12 px-4 py-2 font-display text-xs uppercase tracking-[0.2em] text-secondary">
-                Top 0.1% Global
-              </span>
-            </div>
-            <div className="flex flex-wrap gap-3 text-sm uppercase tracking-[0.2em] text-muted">
-              <span className="rounded-full bg-white/5 px-4 py-2">Achievement Hunter</span>
-              <span className="rounded-full bg-white/5 px-4 py-2">Steam Legacy: 12 yrs</span>
-            </div>
-            <p className="max-w-4xl text-2xl leading-10 text-muted">
-              Preserving digital milestones since 2012. Specializing in soul-like completions
-              and obscure indie gems. Every platinum is a story told.
-            </p>
-          </div>
-        </section>
+          <Button variant="secondary" size="sm" className="shrink-0">
+            <FiShare2 size={13} /> {m.profile.shareCard}
+          </Button>
+        </Card>
 
-        <section className="grid gap-6 xl:grid-cols-[1fr_1fr_1.6fr]">
-          <article className="panel-outline rounded-[1.75rem] p-7">
-            <p className="font-display text-xs uppercase tracking-[0.24em] text-muted">Total Playtime</p>
-            <p className="mt-4 font-display text-6xl font-semibold tracking-[-0.06em]">14,282</p>
-            <p className="mt-2 text-sm uppercase tracking-[0.22em] text-secondary">+12% this month</p>
-          </article>
-          <article className="panel-outline rounded-[1.75rem] p-7">
-            <p className="font-display text-xs uppercase tracking-[0.24em] text-muted">Avg Completion</p>
-            <p className="mt-4 font-display text-6xl font-semibold tracking-[-0.06em]">94.2%</p>
-            <ProgressBar value={94.2} accent="secondary" className="mt-5" />
-          </article>
-          <article className="panel-outline rounded-[1.75rem] p-7">
-            <p className="font-display text-xs uppercase tracking-[0.24em] text-muted">Rarest Unlocked</p>
-            <div className="mt-5 flex items-center gap-5">
-              <div className="grid h-20 w-20 place-items-center rounded-[1.25rem] bg-tertiary/14 text-3xl text-tertiary">
-                ★
+        {/* 4-stat row */}
+        <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-4">
+          {stats.map((s) => (
+            <Card key={s.label} className="px-5 py-4">
+              <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+                {s.label}
               </div>
-              <div>
-                <p className="font-display text-4xl font-semibold tracking-[-0.05em]">THE ONE FREE MAN</p>
-                <p className="mt-2 text-lg text-muted">Half-Life 2 • 0.04% unlocked</p>
-                <div className="mt-4 flex gap-3 text-xs uppercase tracking-[0.2em]">
-                  <span className="rounded-full bg-tertiary/12 px-3 py-1 text-tertiary">World Class</span>
-                  <span className="rounded-full bg-white/6 px-3 py-1 text-muted">Earned 2023</span>
-                </div>
+              <div className="font-mono text-[32px] font-extrabold leading-none tabular-nums text-[var(--text-primary)]">
+                {s.value}
               </div>
-            </div>
-          </article>
-        </section>
-
-        <section className="panel-outline rounded-[2rem] p-8">
-          <div className="flex items-center justify-between gap-4">
-            <h2 className="font-display text-4xl font-semibold tracking-[-0.05em]">Completion Trends</h2>
-            <div className="flex rounded-full bg-white/5 p-1 text-sm">
-              <button className="rounded-full px-4 py-2 text-muted">Yearly</button>
-              <button className="rounded-full bg-primary px-4 py-2 font-display uppercase tracking-[0.18em] text-black">
-                Monthly
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-10 h-[24rem] rounded-[1.75rem] bg-white/[0.02] p-8">
-            <p className="font-display text-xs uppercase tracking-[0.22em] text-muted">Current Velocity</p>
-            <p className="mt-4 font-display text-6xl font-semibold tracking-[-0.06em]">+4.2 pts/day</p>
-            <div className="mt-10 h-[14rem] rounded-[1.5rem] bg-gradient-to-t from-primary/20 via-primary/6 to-transparent" />
-            <div className="mt-4 grid grid-cols-12 text-center font-display text-xs uppercase tracking-[0.22em] text-muted">
-              {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].map((month) => (
-                <span key={month}>{month}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="space-y-5">
-          <h2 className="font-display text-4xl font-semibold tracking-[-0.05em]">Hall of Fame</h2>
-          {hallOfFame.map((entry) => (
-            <article
-              key={entry.rank}
-              className="panel-outline grid gap-5 rounded-[1.75rem] p-6 md:grid-cols-[3rem_1fr_auto] md:items-center"
-            >
-              <p className="font-display text-4xl font-semibold tracking-[-0.08em] text-white/18">{entry.rank}</p>
-              <div>
-                <p className="font-display text-3xl font-semibold tracking-[-0.04em]">{entry.title}</p>
-                <p className="mt-2 text-lg text-muted">{entry.game}</p>
-              </div>
-              <div className="text-left md:text-right">
-                <p className="font-display text-4xl font-semibold tracking-[-0.04em]">{entry.rarity}</p>
-                <p className="mt-2 font-display text-xs uppercase tracking-[0.2em] text-secondary">
-                  {entry.label}
-                </p>
-              </div>
-            </article>
+              <div className="mt-1.5 text-[11px] text-[var(--text-tertiary)]">{s.sub}</div>
+            </Card>
           ))}
-        </section>
+        </div>
+
+        {/* Monthly bar chart */}
+        <Card className="mb-6 px-6 py-5">
+          <div className="mb-4 flex items-end justify-between">
+            <div>
+              <div className="text-[15px] font-bold text-[var(--text-primary)]">{m.profile.monthly}</div>
+              <div className="mt-0.5 text-xs text-[var(--text-tertiary)]">
+                {locale === "ko"
+                  ? `최근 12개월 · 총 ${totalMonthlyUnlocks}개`
+                  : `Last 12 months · ${totalMonthlyUnlocks} total`}
+              </div>
+            </div>
+          </div>
+          <div className="flex h-24 items-end gap-1.5">
+            {data.monthlyUnlocks.map((val, i) => {
+              const isCurrent = i === 11;
+              const heightPct = (val / maxMonth) * 100;
+              return (
+                <div key={i} className="flex flex-1 flex-col items-center gap-1">
+                  <div className="flex w-full flex-1 items-end">
+                    <div
+                      className={`w-full rounded-t-sm transition-all ${
+                        isCurrent
+                          ? "bg-[var(--accent)]"
+                          : "border border-[var(--border-subtle)] bg-[var(--bg-raised)]"
+                      }`}
+                      style={{ height: `${Math.max(heightPct, val > 0 ? 6 : 0)}%` }}
+                      title={`${months[i].label}: ${val}`}
+                    />
+                  </div>
+                  <span
+                    className={`font-mono text-[10px] uppercase ${
+                      isCurrent ? "text-[var(--accent)]" : "text-[var(--text-tertiary)]"
+                    }`}
+                  >
+                    {months[i].label.slice(0, 1)}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </Card>
+
+        {/* Hall of fame */}
+        <div>
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="m-0 text-[18px] font-bold tracking-tight text-[var(--text-primary)]">
+              {m.profile.hallOfFame}
+            </h2>
+            <span className="text-xs text-[var(--text-tertiary)]">
+              {locale === "ko" ? "희귀도 기준" : "by rarity"}
+            </span>
+          </div>
+          <Card className="overflow-hidden p-0">
+            {data.hall.map((entry, i) => (
+              <div
+                key={entry.rank}
+                className={`flex items-center gap-3 px-4 py-3 ${
+                  i > 0 ? "border-t border-[var(--border-subtle)]" : ""
+                }`}
+              >
+                <span className="w-8 shrink-0 font-mono text-[18px] font-extrabold text-[var(--text-disabled)] tabular-nums">
+                  {entry.rank}
+                </span>
+                <FiAward className="shrink-0 text-[var(--accent)]" size={18} />
+                <div className="min-w-0 flex-1">
+                  <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
+                    {entry.title}
+                  </div>
+                  <div className="text-[11px] text-[var(--text-tertiary)]">{entry.game}</div>
+                </div>
+                <Badge variant="l3" className="shrink-0">{entry.label}</Badge>
+                <span className="shrink-0 font-mono text-[13px] font-bold tabular-nums text-[var(--text-secondary)]">
+                  {entry.rarity}
+                </span>
+              </div>
+            ))}
+          </Card>
+        </div>
       </div>
     </AppShell>
   );
