@@ -6,7 +6,6 @@ import { AppShell } from "@/components/layout/app-shell";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CollectGuidesButton } from "@/components/ui/collect-guides-button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { SyncButton } from "@/components/ui/sync-button";
 import { getLocale, getMessages } from "@/lib/i18n";
@@ -118,20 +117,6 @@ export default async function SettingsPage() {
                 label={m.settings.syncNow}
                 syncedLabel={locale === "ko" ? "최근" : "last"}
                 lastSynced={user.lastSyncedLabel}
-              />
-            }
-          />
-          <Row
-            label={locale === "ko" ? "공략 수집" : "Collect guides"}
-            sub={
-              locale === "ko"
-                ? "라이브러리 업적 중 공략이 없는 항목에 베이스라인 가이드를 채워 넣습니다."
-                : "Fill in baseline guides for any achievements that don't yet have one."
-            }
-            right={
-              <CollectGuidesButton
-                label={locale === "ko" ? "공략 수집" : "Collect"}
-                doneLabel={locale === "ko" ? "수집 완료" : "Added"}
               />
             }
           />
