@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { FiArrowLeft, FiBookOpen, FiExternalLink } from "react-icons/fi";
+import { FiArrowLeft, FiBookOpen, FiExternalLink, FiShoppingBag, FiUsers } from "react-icons/fi";
 
 import { AchievementListBrowser } from "@/components/game/achievement-list-browser";
 import { AppShell } from "@/components/layout/app-shell";
@@ -48,12 +48,34 @@ export default async function GameDetailPage({
                   <span className="font-mono text-[13px] font-bold text-[var(--accent)]">{game.completion}%</span>
                 </div>
               </div>
-              <Link
-                href="/library"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-black/50 px-3.5 py-2 text-[13px] text-[var(--text-secondary)] no-underline hover:bg-black/70"
-              >
-                <FiArrowLeft size={14} /> {m.nav.library}
-              </Link>
+              <div className="flex items-center gap-2">
+                <a
+                  href={`https://store.steampowered.com/app/${game.appId}/`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-black/50 px-3 py-2 text-[12px] text-[var(--text-secondary)] no-underline hover:bg-black/70"
+                  title={locale === "ko" ? "Steam 상점에서 보기" : "View on Steam Store"}
+                >
+                  <FiShoppingBag size={13} />
+                  <span className="hidden md:inline">{locale === "ko" ? "Store" : "Store"}</span>
+                </a>
+                <a
+                  href={`https://steamcommunity.com/app/${game.appId}/`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-black/50 px-3 py-2 text-[12px] text-[var(--text-secondary)] no-underline hover:bg-black/70"
+                  title={locale === "ko" ? "Steam 커뮤니티 허브" : "Steam Community hub"}
+                >
+                  <FiUsers size={13} />
+                  <span className="hidden md:inline">{locale === "ko" ? "Hub" : "Hub"}</span>
+                </a>
+                <Link
+                  href="/library"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-black/50 px-3 py-2 text-[12px] text-[var(--text-secondary)] no-underline hover:bg-black/70"
+                >
+                  <FiArrowLeft size={13} /> {m.nav.library}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

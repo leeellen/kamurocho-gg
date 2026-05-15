@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { FiAward, FiShare2 } from "react-icons/fi";
+import { FiAward, FiExternalLink, FiShare2 } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { Card } from "@/components/ui/card";
@@ -68,9 +68,20 @@ export default async function ProfilePage() {
               </Badge>
             </div>
           </div>
-          <Button variant="secondary" size="sm" className="shrink-0">
-            <FiShare2 size={13} /> {m.profile.shareCard}
-          </Button>
+          <div className="flex shrink-0 flex-col gap-2">
+            <Button asChild variant="secondary" size="sm">
+              <a
+                href={`https://steamcommunity.com/profiles/${data.user.steamId}`}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FiExternalLink size={13} /> {locale === "ko" ? "Steam 프로필" : "Steam profile"}
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm">
+              <FiShare2 size={13} /> {m.profile.shareCard}
+            </Button>
+          </div>
         </Card>
 
         {/* 4-stat row */}
