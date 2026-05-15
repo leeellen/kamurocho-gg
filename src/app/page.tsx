@@ -9,17 +9,18 @@ import { GameCover } from "@/components/ui/game-cover";
 import { Progress } from "@/components/ui/progress";
 import { SyncButton } from "@/components/ui/sync-button";
 import { getLocale, getMessages } from "@/lib/i18n";
-import { getLibraryGames, getRecentUnlocks, getUserSummary } from "@/lib/unlokd-data";
+import { getLibraryGames, getRarestLocked, getRecentUnlocks, getUserSummary } from "@/lib/unlokd-data";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const locale = await getLocale();
   const m = getMessages(locale);
-  const [user, games, recentUnlocks] = await Promise.all([
+  const [user, games, recentUnlocks, rarestLocked] = await Promise.all([
     getUserSummary(),
     getLibraryGames(60),
     getRecentUnlocks(8),
+    getRarestLocked(4),
   ]);
 
   if (!user.steamId) redirect("/login");
@@ -263,6 +264,48 @@ export default async function Home() {
             </Card>
           </section>
         </div>
+
+        {/* Rarest still locked */}
+        {rarestLocked.length > 0 && (
+          <section className="mb-10">
+            <SectionHeader
+              title={locale === "ko" ? "가장 도전적인 미달성 업적" : "Rarest still locked"}
+              subtitle={locale === "ko" ? "전 세계 달성률 최저순" : "Lowest global unlock rate"}
+            />
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+              {rarestLocked.map((a) => (
+                <Link
+                  key={a.achievementId}
+                  href={`/game/${a.appId}/achievement/${a.slug}`}
+                  className="group block no-underline"
+                >
+                  <Card className="flex items-center gap-3 p-3 transition-colors group-hover:border-[var(--rarity-ultra)]/40">
+                    <AchievementIcon src={a.iconGrayUrl || a.iconUrl} size={56} unlocked={false} />
+                    <div className="min-w-0 flex-1">
+                      <div className="truncate text-[15px] font-semibold text-[var(--text-primary)] group-hover:text-[var(--rarity-ultra)]">
+                        {a.name}
+                      </div>
+                      {a.description && (
+                        <div className="line-clamp-1 text-[12px] text-[var(--text-tertiary)]">{a.description}</div>
+                      )}
+                      <div className="mt-0.5 truncate font-mono text-[11px] text-[var(--text-tertiary)]">
+                        {a.gameName}
+                      </div>
+                    </div>
+                    <div className="flex shrink-0 flex-col items-end gap-1">
+                      <span className="font-mono text-[20px] font-extrabold leading-none tabular-nums text-[var(--rarity-ultra)]">
+                        {a.rarity.toFixed(1)}%
+                      </span>
+                      <span className="text-[10px] uppercase tracking-wider text-[var(--text-tertiary)]">
+                        {locale === "ko" ? "달성률" : "global"}
+                      </span>
+                    </div>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Most played */}
         {mostPlayed.length > 0 && (

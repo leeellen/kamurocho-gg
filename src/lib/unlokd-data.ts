@@ -265,6 +265,84 @@ export const getRecentUnlocks = cache(async (limit: number = 8): Promise<RecentU
   });
 });
 
+export type RarestLocked = {
+  achievementId: number;
+  slug: string;
+  name: string;
+  description: string;
+  iconUrl: string | null;
+  iconGrayUrl: string | null;
+  rarity: number;
+  appId: number;
+  gameName: string;
+  gameHeaderUrl: string | null;
+  gameCapsuleUrl: string | null;
+  gameImgIconUrl: string | null;
+};
+
+export const getRarestLocked = cache(async (limit: number = 4): Promise<RarestLocked[]> => {
+  const admin = getAdminOrNull();
+  const user = await getSelectedUser();
+  if (!admin || !user) return [];
+
+  const locale = await getLocale();
+  const { data } = await admin
+    .from("user_achievements")
+    .select(
+      "achievement_id, unlocked, achievements!inner(id, api_name, display_name, description, category, icon_url, icon_gray_url, global_percent, app_id, games!inner(app_id, name, img_logo_url, img_icon_url))",
+    )
+    .eq("user_id", user.id)
+    .eq("unlocked", false)
+    .order("achievement_id", { ascending: true })
+    .limit(500);
+
+  if (!data?.length) return [];
+
+  const mapped = data.map((row) => {
+    const ach = Array.isArray(row.achievements) ? row.achievements[0] : row.achievements;
+    const game = ach && (Array.isArray(ach.games) ? ach.games[0] : ach.games);
+    const enName = ach?.display_name || ach?.api_name || "Achievement";
+    const sidecar = parseAchievementSidecar((ach as { category?: string | null } | null)?.category);
+    const gameSidecar = parseLocalizationSidecar((game as { img_logo_url?: string | null } | null)?.img_logo_url);
+    const gameEn = game?.name || "Game";
+    return {
+      achievementId: ach?.id ?? row.achievement_id,
+      apiName: ach?.api_name ?? "",
+      name: locale === "ko" ? (sidecar?.nameKo || enName) : enName,
+      description: locale === "ko"
+        ? (sidecar?.descKo || ach?.description || "")
+        : (ach?.description || ""),
+      iconUrl: ach?.icon_url ?? null,
+      iconGrayUrl: ach?.icon_gray_url ?? null,
+      rarity: Number(ach?.global_percent ?? 100),
+      appId: Number(ach?.app_id ?? 0),
+      gameName: locale === "ko" ? (gameSidecar?.nameKo || gameEn) : gameEn,
+      gameHeaderUrl: gameSidecar?.headerUrl ?? null,
+      gameCapsuleUrl: gameSidecar?.capsuleUrl ?? null,
+      gameImgIconUrl: (game as { img_icon_url?: string | null } | null)?.img_icon_url ?? null,
+    };
+  });
+
+  return mapped
+    .filter((m) => m.rarity > 0 && m.rarity < 100)
+    .sort((a, b) => a.rarity - b.rarity)
+    .slice(0, limit)
+    .map((m) => ({
+      achievementId: m.achievementId,
+      slug: slugify(m.apiName || m.name) || `ach-${m.achievementId}`,
+      name: m.name,
+      description: m.description,
+      iconUrl: m.iconUrl,
+      iconGrayUrl: m.iconGrayUrl,
+      rarity: m.rarity,
+      appId: m.appId,
+      gameName: m.gameName,
+      gameHeaderUrl: m.gameHeaderUrl,
+      gameCapsuleUrl: m.gameCapsuleUrl,
+      gameImgIconUrl: m.gameImgIconUrl,
+    }));
+});
+
 export const getUserSummary = cache(async (): Promise<UserSummary> => {
   const user = await getSelectedUser();
   if (!user) {
