@@ -102,14 +102,24 @@ export default async function GameDetailPage({
                   {communityGuides.length}
                 </span>
               </h2>
-              <a
-                href={`https://steamcommunity.com/app/${game.appId}/guides/`}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center gap-1 text-[12px] font-semibold text-[var(--text-tertiary)] no-underline hover:text-[var(--text-secondary)]"
-              >
-                {locale === "ko" ? "Steam에서 더 보기" : "More on Steam"} <FiExternalLink size={11} />
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href={`https://steamcommunity.com/stats/${game.appId}/achievements/`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1 text-[12px] font-semibold text-[var(--text-tertiary)] no-underline hover:text-[var(--text-secondary)]"
+                >
+                  {locale === "ko" ? "글로벌 통계" : "Global stats"} <FiExternalLink size={11} />
+                </a>
+                <a
+                  href={`https://steamcommunity.com/app/${game.appId}/guides/`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1 text-[12px] font-semibold text-[var(--text-tertiary)] no-underline hover:text-[var(--text-secondary)]"
+                >
+                  {locale === "ko" ? "Steam에서 더 보기" : "More on Steam"} <FiExternalLink size={11} />
+                </a>
+              </div>
             </div>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {communityGuides.map((g) => (

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { FiCheck } from "react-icons/fi";
+import { FiCheck, FiChevronRight } from "react-icons/fi";
 
 import { AchievementIcon } from "@/components/ui/achievement-icon";
 import { cn } from "@/lib/cn";
@@ -88,7 +88,7 @@ export function AchievementListBrowser({
                 <Link
                   key={a.slug}
                   href={`/game/${gameSlug}/achievement/${a.slug}`}
-                  className="flex items-center gap-3 rounded-r-[10px] border border-[var(--l3-border)] border-l-2 border-l-[var(--l3)] bg-[var(--bg-elevated)] px-3.5 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)]"
+                  className="group flex items-center gap-3 rounded-r-[10px] border border-[var(--l3-border)] border-l-2 border-l-[var(--l3)] bg-[var(--bg-elevated)] px-3.5 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)]"
                 >
                   <AchievementIcon src={a.iconUrl} size={44} unlocked />
                   <div className="min-w-0 flex-1">
@@ -103,6 +103,7 @@ export function AchievementListBrowser({
                     </span>
                     <FiCheck size={12} className="text-[var(--l3)]" />
                   </div>
+                  <FiChevronRight size={14} className="shrink-0 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--text-primary)]" />
                 </Link>
               ))}
             </div>
@@ -119,7 +120,7 @@ export function AchievementListBrowser({
                 <Link
                   key={a.slug}
                   href={`/game/${gameSlug}/achievement/${a.slug}`}
-                  className="flex items-center gap-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3.5 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)]"
+                  className="group flex items-center gap-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3.5 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)]"
                 >
                   <AchievementIcon src={a.iconGrayUrl || a.iconUrl} size={44} unlocked={false} />
                   <div className="min-w-0 flex-1">
@@ -131,6 +132,7 @@ export function AchievementListBrowser({
                   <span className="shrink-0 font-mono text-[11px] font-bold" style={{ color: rarityColor(a.difficulty) }}>
                     {a.rarity}%
                   </span>
+                  <FiChevronRight size={14} className="shrink-0 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--text-primary)]" />
                 </Link>
               ))}
             </div>
