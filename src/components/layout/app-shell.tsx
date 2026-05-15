@@ -46,7 +46,7 @@ export function AppShell({
                 key={id}
                 href={href}
                 className={cn(
-                  "relative flex items-center gap-3 rounded-lg px-2.5 py-2 text-sm transition-colors",
+                  "relative flex items-center gap-3 rounded-lg px-3 py-2.5 text-[15px] transition-colors",
                   active
                     ? "bg-[var(--bg-elevated)] font-semibold text-[var(--text-primary)]"
                     : "font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-hover)]",
@@ -56,7 +56,7 @@ export function AppShell({
                   <span className="absolute -left-3.5 top-2 bottom-2 w-0.5 rounded-sm bg-[var(--accent)]" />
                 )}
                 <Icon
-                  size={16}
+                  size={18}
                   className={active ? "text-[var(--accent)]" : ""}
                 />
                 <span>{m.nav[id]}</span>
@@ -68,30 +68,30 @@ export function AppShell({
         <div className="flex-1" />
 
         {/* PRO slot */}
-        <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5">
-          <div className="mb-1 flex items-center gap-1.5">
-            <FiLock className="text-[var(--accent)]" size={11} />
-            <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">PRO</span>
+        <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3.5 py-3">
+          <div className="mb-1.5 flex items-center gap-1.5">
+            <FiLock className="text-[var(--accent)]" size={12} />
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--accent)]">PRO</span>
           </div>
-          <div className="text-[11px] leading-snug text-[var(--text-secondary)]">{m.misc.proHint}</div>
-          <div className="mt-1 text-[10px] text-[var(--text-tertiary)]">{m.misc.proCta}</div>
+          <div className="text-[12px] leading-snug text-[var(--text-secondary)]">{m.misc.proHint}</div>
+          <div className="mt-1 text-[11px] text-[var(--text-tertiary)]">{m.misc.proCta}</div>
         </div>
 
         {/* User pill */}
-        <div className="flex items-center gap-2.5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-2.5 py-2">
+        <div className="flex items-center gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5">
           {user.avatarUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               alt="Avatar"
               src={user.avatarUrl}
-              className="h-[26px] w-[26px] rounded-full object-cover"
+              className="h-8 w-8 rounded-full object-cover"
             />
           ) : (
-            <div className="h-[26px] w-[26px] rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#9D7AFF]" />
+            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#9D7AFF]" />
           )}
           <div className="min-w-0 flex-1">
-            <div className="truncate text-xs font-semibold text-[var(--text-primary)]">{user.name}</div>
-            <div className="font-mono text-[10px] text-[var(--text-tertiary)]">{user.status}</div>
+            <div className="truncate text-[13px] font-semibold text-[var(--text-primary)]">{user.name}</div>
+            <div className="font-mono text-[11px] text-[var(--text-tertiary)]">{user.status}</div>
           </div>
           <LanguageSwitcher locale={locale} label={m.common.language} englishLabel="EN" koreanLabel="KO" />
         </div>
@@ -112,8 +112,8 @@ export function AppShell({
                 active ? "text-[var(--accent)]" : "text-[var(--text-tertiary)]",
               )}
             >
-              <Icon size={18} />
-              <span className={cn("text-[10px]", active && "font-semibold")}>{m.nav[id]}</span>
+              <Icon size={22} />
+              <span className={cn("text-[11px]", active && "font-semibold")}>{m.nav[id]}</span>
             </Link>
           );
         })}
