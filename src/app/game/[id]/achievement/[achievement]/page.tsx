@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { FiArrowLeft, FiArrowUp } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
+import { GuideBody, renderInline } from "@/components/markdown/inline";
 import { AchievementIcon } from "@/components/ui/achievement-icon";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -133,8 +134,8 @@ export default async function AchievementGuidePage({
               }
             >
               {achievement.tips && achievement.tips.length > 0 ? (
-                <p className="m-0 text-[13px] leading-relaxed text-[var(--text-secondary)]">
-                  {achievement.tips[0].body}
+                <p className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]">
+                  {renderInline(achievement.tips[0].body, "tip-preview")}
                 </p>
               ) : null}
             </GuideLayer>
@@ -150,7 +151,9 @@ export default async function AchievementGuidePage({
             <div className="flex flex-col gap-2">
               {achievement.tips.map((tip, i) => (
                 <Card key={i} className="px-4 py-3">
-                  <p className="mb-2 text-[13px] leading-relaxed text-[var(--text-secondary)]">{tip.body}</p>
+                  <p className="mb-2 text-[14px] leading-relaxed text-[var(--text-secondary)]">
+                    {renderInline(tip.body, `tip-${i}`)}
+                  </p>
                   <div className="flex items-center gap-2 text-[11px] text-[var(--text-tertiary)]">
                     <Badge variant="l3">
                       <FiArrowUp size={10} /> {tip.votes}
@@ -225,89 +228,3 @@ function GuideLayer({
   );
 }
 
-// Render a single text run with inline **bold** + [text](url) link parsing.
-function renderInline(text: string, baseKey: string | number): React.ReactNode[] {
-  // First split on markdown links to preserve them as anchor nodes.
-  const out: React.ReactNode[] = [];
-  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
-  let segIdx = 0;
-  while ((match = linkRegex.exec(text)) !== null) {
-    if (match.index > lastIndex) {
-      out.push(...renderBold(text.slice(lastIndex, match.index), `${baseKey}-t${segIdx++}`));
-    }
-    out.push(
-      <a
-        key={`${baseKey}-a${segIdx++}`}
-        href={match[2]}
-        target="_blank"
-        rel="noreferrer noopener"
-        className="break-all text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 transition-colors hover:text-[var(--l2)] hover:decoration-[var(--l2)]"
-      >
-        {match[1]}
-      </a>,
-    );
-    lastIndex = linkRegex.lastIndex;
-  }
-  if (lastIndex < text.length) {
-    out.push(...renderBold(text.slice(lastIndex), `${baseKey}-t${segIdx++}`));
-  }
-  return out;
-}
-
-function renderBold(text: string, baseKey: string | number): React.ReactNode[] {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return parts.map((seg, i) => {
-    if (seg.startsWith("**") && seg.endsWith("**")) {
-      return (
-        <strong key={`${baseKey}-b${i}`} className="font-semibold text-[var(--text-primary)]">
-          {seg.slice(2, -2)}
-        </strong>
-      );
-    }
-    return <span key={`${baseKey}-s${i}`}>{seg}</span>;
-  });
-}
-
-// Render an array of guide paragraphs, grouping consecutive `- ` lines into <ul>.
-function GuideBody({ paragraphs }: { paragraphs: string[] }) {
-  const blocks: React.ReactNode[] = [];
-  let bulletGroup: string[] = [];
-  const flushBullets = (key: string) => {
-    if (bulletGroup.length === 0) return;
-    blocks.push(
-      <ul key={`ul-${key}`} className="m-0 list-none space-y-1 pl-0">
-        {bulletGroup.map((b, i) => (
-          <li
-            key={`li-${key}-${i}`}
-            className="flex gap-2 text-[14px] leading-relaxed text-[var(--text-secondary)]"
-          >
-            <span className="mt-[0.55em] inline-block h-1 w-1 shrink-0 rounded-full bg-[var(--text-tertiary)]" />
-            <span className="min-w-0 flex-1 break-words">
-              {renderInline(b, `b-${key}-${i}`)}
-            </span>
-          </li>
-        ))}
-      </ul>,
-    );
-    bulletGroup = [];
-  };
-  paragraphs.forEach((para, i) => {
-    if (para.startsWith("- ")) {
-      bulletGroup.push(para.slice(2));
-    } else {
-      flushBullets(String(i));
-      blocks.push(
-        <p
-          key={`p-${i}`}
-          className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]"
-        >
-          {renderInline(para, `p-${i}`)}
-        </p>,
-      );
-    }
-  });
-  flushBullets("end");
-  return <div className="flex flex-col gap-2">{blocks}</div>;
-}
