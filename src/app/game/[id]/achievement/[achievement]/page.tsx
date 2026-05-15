@@ -114,13 +114,9 @@ export default async function AchievementGuidePage({
               source={achievement.guide?.source}
             >
               {guideParagraphs.length > 0 ? (
-                <div className="flex flex-col gap-1.5">
-                  {guideParagraphs.map((p, i) => (
-                    <MarkdownLine key={i} text={p} />
-                  ))}
-                </div>
+                <GuideBody paragraphs={guideParagraphs} />
               ) : (
-                <p className="m-0 text-[13px] leading-relaxed text-[var(--text-secondary)]">
+                <p className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]">
                   {locale === "ko" ? "AI 가이드가 아직 생성되지 않았습니다." : "AI guide not generated yet."}
                 </p>
               )}
@@ -209,29 +205,109 @@ function GuideLayer({
       {body && <p className="m-0 text-[13px] leading-relaxed text-[var(--text-secondary)]">{body}</p>}
       {children}
       {source && (
-        <div className="mt-2 text-[11px] text-[var(--text-tertiary)]">
-          <span className="opacity-80">source:</span> {source}
+        <div className="mt-3 text-[11px] text-[var(--text-tertiary)]">
+          <span className="opacity-80">source:</span>{" "}
+          {/^https?:\/\//.test(source) ? (
+            <a
+              href={source}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="break-all text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 hover:decoration-[var(--l2)]"
+            >
+              {source}
+            </a>
+          ) : (
+            source
+          )}
         </div>
       )}
     </div>
   );
 }
 
-function MarkdownLine({ text }: { text: string }) {
-  // Lightweight inline render of **bold** to <strong>, leave the rest as plain text.
+// Render a single text run with inline **bold** + [text](url) link parsing.
+function renderInline(text: string, baseKey: string | number): React.ReactNode[] {
+  // First split on markdown links to preserve them as anchor nodes.
+  const out: React.ReactNode[] = [];
+  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let segIdx = 0;
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      out.push(...renderBold(text.slice(lastIndex, match.index), `${baseKey}-t${segIdx++}`));
+    }
+    out.push(
+      <a
+        key={`${baseKey}-a${segIdx++}`}
+        href={match[2]}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="break-all text-[var(--l2)] underline decoration-[var(--l2)]/40 underline-offset-2 transition-colors hover:text-[var(--l2)] hover:decoration-[var(--l2)]"
+      >
+        {match[1]}
+      </a>,
+    );
+    lastIndex = linkRegex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    out.push(...renderBold(text.slice(lastIndex), `${baseKey}-t${segIdx++}`));
+  }
+  return out;
+}
+
+function renderBold(text: string, baseKey: string | number): React.ReactNode[] {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return (
-    <p className="m-0 text-[13px] leading-relaxed text-[var(--text-secondary)]">
-      {parts.map((seg, i) => {
-        if (seg.startsWith("**") && seg.endsWith("**")) {
-          return (
-            <strong key={i} className="font-semibold text-[var(--text-primary)]">
-              {seg.slice(2, -2)}
-            </strong>
-          );
-        }
-        return <span key={i}>{seg}</span>;
-      })}
-    </p>
-  );
+  return parts.map((seg, i) => {
+    if (seg.startsWith("**") && seg.endsWith("**")) {
+      return (
+        <strong key={`${baseKey}-b${i}`} className="font-semibold text-[var(--text-primary)]">
+          {seg.slice(2, -2)}
+        </strong>
+      );
+    }
+    return <span key={`${baseKey}-s${i}`}>{seg}</span>;
+  });
+}
+
+// Render an array of guide paragraphs, grouping consecutive `- ` lines into <ul>.
+function GuideBody({ paragraphs }: { paragraphs: string[] }) {
+  const blocks: React.ReactNode[] = [];
+  let bulletGroup: string[] = [];
+  const flushBullets = (key: string) => {
+    if (bulletGroup.length === 0) return;
+    blocks.push(
+      <ul key={`ul-${key}`} className="m-0 list-none space-y-1 pl-0">
+        {bulletGroup.map((b, i) => (
+          <li
+            key={`li-${key}-${i}`}
+            className="flex gap-2 text-[14px] leading-relaxed text-[var(--text-secondary)]"
+          >
+            <span className="mt-[0.55em] inline-block h-1 w-1 shrink-0 rounded-full bg-[var(--text-tertiary)]" />
+            <span className="min-w-0 flex-1 break-words">
+              {renderInline(b, `b-${key}-${i}`)}
+            </span>
+          </li>
+        ))}
+      </ul>,
+    );
+    bulletGroup = [];
+  };
+  paragraphs.forEach((para, i) => {
+    if (para.startsWith("- ")) {
+      bulletGroup.push(para.slice(2));
+    } else {
+      flushBullets(String(i));
+      blocks.push(
+        <p
+          key={`p-${i}`}
+          className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]"
+        >
+          {renderInline(para, `p-${i}`)}
+        </p>,
+      );
+    }
+  });
+  flushBullets("end");
+  return <div className="flex flex-col gap-2">{blocks}</div>;
 }
