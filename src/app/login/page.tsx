@@ -56,9 +56,6 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
 
         <section className="grid flex-1 grid-cols-[1.1fr_1fr] items-center gap-12 overflow-auto px-14 py-12">
           <div className="flex max-w-[520px] flex-col">
-            <span className="mb-5 inline-flex w-fit items-center gap-1.5 rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-0.5 text-[11px] font-bold tracking-wider text-[var(--accent)]">
-              PWA · {locale === "ko" ? "모바일 우선" : "Mobile-first"}
-            </span>
             <h1 className="mb-4 text-[54px] font-extrabold leading-[1.05] tracking-tight text-[var(--text-primary)]">
               {m.landing.heroLine1}<br />
               {m.landing.heroLine2}<br />
