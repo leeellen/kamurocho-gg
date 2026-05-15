@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { FiArrowLeft, FiArrowUp } from "react-icons/fi";
+import { FaSteam } from "react-icons/fa";
+import { FiArrowLeft, FiArrowUp, FiExternalLink, FiSearch } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { GuideBody, renderInline } from "@/components/markdown/inline";
@@ -74,7 +75,7 @@ export default async function AchievementGuidePage({
         </Card>
 
         {/* Meta */}
-        <div className="mb-6 flex flex-wrap items-center gap-2.5 text-xs text-[var(--text-tertiary)]">
+        <div className="mb-4 flex flex-wrap items-center gap-2.5 text-xs text-[var(--text-tertiary)]">
           <span>{achievement.difficulty}</span>
           <span>·</span>
           <span>{achievement.estimatedTime}</span>
@@ -84,6 +85,40 @@ export default async function AchievementGuidePage({
               <span className="text-[var(--l3)]">{achievement.unlockedAt}</span>
             </>
           )}
+        </div>
+
+        {/* Quick external lookups for this specific achievement */}
+        <div className="mb-6 flex flex-wrap gap-2">
+          <a
+            href={`https://steamcommunity.com/app/${game.appId}/guides/?searchText=${encodeURIComponent(achievement.name)}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
+          >
+            <FaSteam size={13} className="text-[var(--accent)]" />
+            {locale === "ko" ? "Steam 커뮤니티에서 검색" : "Search on Steam"}
+            <FiExternalLink size={11} />
+          </a>
+          <a
+            href={`https://www.google.com/search?q=${encodeURIComponent(`${game.name} ${achievement.name} ${locale === "ko" ? "공략" : "achievement guide"}`)}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
+          >
+            <FiSearch size={13} className="text-[var(--l2)]" />
+            {locale === "ko" ? "Google 검색" : "Search on Google"}
+            <FiExternalLink size={11} />
+          </a>
+          <a
+            href={`https://www.youtube.com/results?search_query=${encodeURIComponent(`${game.name} ${achievement.name} achievement`)}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
+          >
+            <FiSearch size={13} className="text-[var(--danger)]" />
+            {locale === "ko" ? "YouTube 영상 공략" : "YouTube walkthrough"}
+            <FiExternalLink size={11} />
+          </a>
         </div>
 
         {/* 3-Layer Guide */}
