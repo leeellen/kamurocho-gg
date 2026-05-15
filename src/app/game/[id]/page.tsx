@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { FiArrowLeft, FiBookOpen, FiExternalLink, FiShoppingBag, FiUsers } from "react-icons/fi";
+import { FiArrowLeft, FiBookOpen, FiExternalLink, FiPlay, FiShoppingBag, FiUsers } from "react-icons/fi";
 
 import { AchievementListBrowser } from "@/components/game/achievement-list-browser";
 import { AppShell } from "@/components/layout/app-shell";
@@ -49,6 +49,14 @@ export default async function GameDetailPage({
                 </div>
               </div>
               <div className="flex items-center gap-2">
+                <a
+                  href={`steam://run/${game.appId}`}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent-border)] bg-[var(--accent)] px-3 py-2 text-[12px] font-semibold text-[var(--text-inverse)] no-underline hover:bg-[var(--accent-hover)]"
+                  title={locale === "ko" ? "Steam에서 실행" : "Launch in Steam"}
+                >
+                  <FiPlay size={13} />
+                  <span className="hidden md:inline">{locale === "ko" ? "실행" : "Play"}</span>
+                </a>
                 <a
                   href={`https://store.steampowered.com/app/${game.appId}/`}
                   target="_blank"

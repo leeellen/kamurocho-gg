@@ -136,6 +136,7 @@ export default async function AchievementGuidePage({
                   ? `이 업적을 가진 플레이어의 ${achievement.rarity}%가 이미 달성했습니다.`
                   : `${achievement.rarity}% of players have unlocked this achievement.`
               }
+              source={`https://steamcommunity.com/stats/${game.appId}/achievements/`}
             />
 
             {/* L2 — AI guide (full DB content) */}
