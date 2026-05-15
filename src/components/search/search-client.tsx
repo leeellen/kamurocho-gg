@@ -23,6 +23,7 @@ type AchHit = {
   id: number;
   appId: number;
   apiName: string;
+  slug: string;
   name: string;
   iconUrl: string | null;
   iconGrayUrl: string | null;
@@ -325,7 +326,7 @@ export function SearchClient({
                 {achievements.map((a) => (
                   <Link
                     key={a.id}
-                    href={`/game/${a.gameAppId}`}
+                    href={`/game/${a.gameAppId}/achievement/${a.slug}`}
                     onClick={onResultClick}
                     className={cn(
                       "flex items-center gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5 no-underline transition-colors",

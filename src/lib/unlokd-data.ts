@@ -641,7 +641,7 @@ export async function getProfileData() {
     const { data } = await admin
       .from("user_achievements")
       .select(
-        "unlocked, achievements!inner(display_name, category, global_percent, games!inner(name, img_logo_url))",
+        "unlocked, achievements!inner(api_name, app_id, display_name, category, global_percent, games!inner(name, img_logo_url))",
       )
       .eq("user_id", selectedUser.id)
       .eq("unlocked", true)
@@ -665,11 +665,15 @@ export async function getProfileData() {
           const gameKo = parseLocalizationSidecar(
             (game as { img_logo_url?: string | null } | null)?.img_logo_url,
           )?.nameKo;
+          const apiName = (achievement as { api_name?: string } | null)?.api_name || "";
+          const appId = Number((achievement as { app_id?: number } | null)?.app_id ?? 0);
           return {
             title: locale === "ko" ? (achKo || achEn) : achEn,
             game: locale === "ko" ? (gameKo || gameEn) : gameEn,
             rarity: `${Number(achievement?.global_percent ?? 0).toFixed(2)}%`,
             label: difficultyFromPercent(Number(achievement?.global_percent ?? 0)).toUpperCase(),
+            appId,
+            slug: slugify(apiName || achEn || `achievement`) || `ach-${appId}`,
           };
         })
         .sort((a, b) => Number(a.rarity.replace("%", "")) - Number(b.rarity.replace("%", "")));

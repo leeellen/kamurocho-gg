@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { FiAward, FiExternalLink, FiShare2 } from "react-icons/fi";
+import { FiAward, FiChevronRight, FiExternalLink, FiShare2 } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { Card } from "@/components/ui/card";
@@ -152,29 +153,44 @@ export default async function ProfilePage() {
             </span>
           </div>
           <Card className="overflow-hidden p-0">
-            {data.hall.map((entry, i) => (
-              <div
-                key={entry.rank}
-                className={`flex items-center gap-3 px-4 py-3 ${
-                  i > 0 ? "border-t border-[var(--border-subtle)]" : ""
-                }`}
-              >
-                <span className="w-8 shrink-0 font-mono text-[18px] font-extrabold text-[var(--text-disabled)] tabular-nums">
-                  {entry.rank}
-                </span>
-                <FiAward className="shrink-0 text-[var(--accent)]" size={18} />
-                <div className="min-w-0 flex-1">
-                  <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
-                    {entry.title}
+            {data.hall.map((entry, i) => {
+              const navAppId = (entry as { appId?: number }).appId;
+              const navSlug = (entry as { slug?: string }).slug;
+              const href = navAppId && navSlug ? `/game/${navAppId}/achievement/${navSlug}` : null;
+              const Body = (
+                <>
+                  <span className="w-8 shrink-0 font-mono text-[18px] font-extrabold text-[var(--text-disabled)] tabular-nums">
+                    {entry.rank}
+                  </span>
+                  <FiAward className="shrink-0 text-[var(--accent)]" size={18} />
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
+                      {entry.title}
+                    </div>
+                    <div className="text-[11px] text-[var(--text-tertiary)]">{entry.game}</div>
                   </div>
-                  <div className="text-[11px] text-[var(--text-tertiary)]">{entry.game}</div>
+                  <Badge variant="l3" className="shrink-0">{entry.label}</Badge>
+                  <span className="shrink-0 font-mono text-[13px] font-bold tabular-nums text-[var(--text-secondary)]">
+                    {entry.rarity}
+                  </span>
+                  {href && <FiChevronRight size={14} className="shrink-0 text-[var(--text-tertiary)]" />}
+                </>
+              );
+              const sep = i > 0 ? "border-t border-[var(--border-subtle)]" : "";
+              return href ? (
+                <Link
+                  key={entry.rank}
+                  href={href}
+                  className={`flex items-center gap-3 px-4 py-3 no-underline transition-colors hover:bg-[var(--bg-raised)] ${sep}`}
+                >
+                  {Body}
+                </Link>
+              ) : (
+                <div key={entry.rank} className={`flex items-center gap-3 px-4 py-3 ${sep}`}>
+                  {Body}
                 </div>
-                <Badge variant="l3" className="shrink-0">{entry.label}</Badge>
-                <span className="shrink-0 font-mono text-[13px] font-bold tabular-nums text-[var(--text-secondary)]">
-                  {entry.rarity}
-                </span>
-              </div>
-            ))}
+              );
+            })}
           </Card>
         </div>
       </div>

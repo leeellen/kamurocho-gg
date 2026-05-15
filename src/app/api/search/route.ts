@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { getLocale } from "@/lib/i18n";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient as createServerClient } from "@/lib/supabase/server";
+import { slugify } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
@@ -124,10 +125,12 @@ export async function GET(req: Request) {
     const g = gameByApp.get(r.app_id);
     const sidecar = parseJsonish<Sidecar>(g?.img_logo_url ?? null);
     const achSidecar = parseJsonish<AchSidecar>(r.category);
+    const slug = slugify(r.api_name || r.display_name || "") || `ach-${r.id}`;
     return {
       id: r.id,
       appId: r.app_id,
       apiName: r.api_name,
+      slug,
       name: locale === "ko" ? (achSidecar?.nameKo || r.display_name) : r.display_name,
       iconUrl: r.icon_url,
       iconGrayUrl: r.icon_gray_url,
