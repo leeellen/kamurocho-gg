@@ -32,6 +32,10 @@ export default async function LibraryPage() {
           games={games}
           labels={{
             achievements: m.common.achievements,
+            guides: locale === "ko" ? "가이드" : "Guides",
+            nextAction: locale === "ko" ? "바로 할 일" : "Next up",
+            ready: locale === "ko" ? "즉시 확인 가능" : "Ready in Unlokd",
+            noGuides: locale === "ko" ? "가이드 준비 중" : "Guide pending",
             sortBy: m.common.sortBy,
             filterAll: m.lib.filterAll,
             filter100: m.lib.filter100,

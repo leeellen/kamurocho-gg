@@ -1,4 +1,5 @@
 import { createAdminClient } from "@/lib/supabase/admin";
+import { collectGuidesForUser } from "@/lib/guides/generate";
 
 const STEAM_ROOT = "https://api.steampowered.com";
 
@@ -62,11 +63,10 @@ export async function syncSteamLibrary(steamId: string, userId: string) {
     return { steamId, synced: 0, total: 0, message: "No games found." };
   }
 
-  // Sort by playtime: process all for library display, top N for Korean/achievements
+  // Sort by playtime: process all for library display and achievements, top N for Korean titles
   const sorted = [...allGames].sort((a, b) => b.playtime_forever - a.playtime_forever);
-  const ACH_LIMIT = 80;        // games processed for achievements (Steam API budget)
   const KO_LIMIT  = 150;       // games queried for Korean title via Store API
-  const topForAch = sorted.slice(0, ACH_LIMIT);
+  const topForAch = sorted;
   const topForKo  = sorted.slice(0, KO_LIMIT);
 
   // Fetch English + Korean Store API data in parallel (per chunk).
@@ -295,6 +295,8 @@ export async function syncSteamLibrary(steamId: string, userId: string) {
     }
   }
 
+  const guides = await collectGuidesForUser(userId);
+
   // ── 4. Update last_synced ────────────────────────────────────────
   await admin
     .from("users")
@@ -306,5 +308,6 @@ export async function syncSteamLibrary(steamId: string, userId: string) {
     synced,
     total: topForAch.length,
     totalInLibrary: allGames.length,
+    guides,
   };
 }

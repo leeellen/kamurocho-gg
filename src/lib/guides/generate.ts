@@ -45,52 +45,68 @@ function rarityBucketKo(percent: number | null | undefined): string {
   return "최고 난이도";
 }
 
-function buildEnglishGuide(ach: AchievementRow, gameName: string): string {
+function buildEnglishGuide(ach: AchievementRow): string {
   const desc = ach.description?.trim();
   const rarity = rarityBucketEn(ach.global_percent);
   const rarityNum = Number(ach.global_percent ?? 0).toFixed(2);
+  const steps: string[] = [
+    "Check the exact trigger in the achievement description before advancing your current save.",
+    "Keep a manual save before major chapter transitions, route splits, or point-of-no-return sections.",
+  ];
   const tips: string[] = [];
   if (Number(ach.global_percent ?? 100) < 5) {
-    tips.push("A rare achievement — plan carefully and consider following a detailed walkthrough.");
+    steps.push("Handle missable side content before the final chapter whenever possible.");
+    tips.push("This is a rare achievement, so assume there may be missable conditions or route-specific requirements.");
   } else if (Number(ach.global_percent ?? 100) < 20) {
-    tips.push("Moderately uncommon — most players pick this up while completing the main story plus a bit of optional content.");
+    steps.push("Clear side objectives tied to this achievement during the main run instead of postponing them.");
+    tips.push("This is moderately uncommon, which usually means a small detour or an optional system is involved.");
   } else {
-    tips.push("Most players unlock this naturally during normal play.");
+    steps.push("If it does not unlock naturally, review chapter-specific interactions or optional conversations you may have skipped.");
+    tips.push("Most players unlock this naturally, so double-check for one missed interaction or requirement.");
   }
-  tips.push(`Search "${ach.display_name} ${gameName} guide" if you want a step-by-step walkthrough with screenshots.`);
 
   return [
     desc || ach.display_name,
     "",
     `**Difficulty:** ${rarity} | **Global unlock rate:** ${rarityNum}%`,
     "",
+    "**Do this next:**",
+    ...steps.map((t) => `- ${t}`),
+    "",
     "**Tips:**",
     ...tips.map((t) => `- ${t}`),
   ].join("\n");
 }
 
-function buildKoreanGuide(ach: AchievementRow, gameNameKo: string | null, gameNameEn: string): string {
+function buildKoreanGuide(ach: AchievementRow): string {
   const sidecar = parseSidecar(ach.category);
   const descKo = sidecar?.descKo?.trim();
   const descEn = ach.description?.trim();
   const rarity = rarityBucketKo(ach.global_percent);
   const rarityNum = Number(ach.global_percent ?? 0).toFixed(2);
+  const steps: string[] = [
+    "현재 세이브에서 업적 설명의 트리거 조건이 정확히 무엇인지 먼저 확인하세요.",
+    "챕터 전환, 분기 선택, 되돌릴 수 없는 구간 전에 수동 세이브를 남겨 두세요.",
+  ];
   const tips: string[] = [];
   if (Number(ach.global_percent ?? 100) < 5) {
-    tips.push("희귀한 도전과제입니다. 상세한 공략을 참고하면서 진행하세요.");
+    steps.push("최종장에 들어가기 전에 놓치기 쉬운 서브 콘텐츠나 분기 조건을 먼저 처리하세요.");
+    tips.push("희귀 업적이라면 놓치기 쉬운 조건이나 특정 루트 요구사항이 있을 가능성이 큽니다.");
   } else if (Number(ach.global_percent ?? 100) < 20) {
-    tips.push("적당히 드문 업적입니다. 메인 스토리에 약간의 부가 콘텐츠를 곁들이면 자연스럽게 달성됩니다.");
+    steps.push("관련된 서브 목표가 있다면 메인 진행 중 함께 처리하는 편이 안전합니다.");
+    tips.push("적당히 드문 업적은 보통 짧은 우회 진행이나 선택형 콘텐츠를 요구합니다.");
   } else {
-    tips.push("일반 플레이 중 자연스럽게 달성되는 업적입니다.");
+    steps.push("자연스럽게 달성되지 않았다면 특정 대화, 상호작용, 스테이지 조건을 놓친 경우가 많습니다.");
+    tips.push("자연 달성 업적에 가깝기 때문에 한두 개의 상호작용 누락만 다시 확인하면 되는 경우가 많습니다.");
   }
-  const targetGame = gameNameKo || gameNameEn;
-  const targetAch = sidecar?.nameKo || ach.display_name;
-  tips.push(`자세한 공략은 "${targetGame} ${targetAch} 공략" 으로 검색해 보세요.`);
 
   return [
     descKo || descEn || sidecar?.nameKo || ach.display_name,
     "",
     `**난이도:** ${rarity} | **글로벌 달성률:** ${rarityNum}%`,
+    "",
+    "**지금 해야 할 일:**",
+    ...steps.map((t) => `- ${t}`),
     "",
     "**팁:**",
     ...tips.map((t) => `- ${t}`),
@@ -113,26 +129,6 @@ export async function collectGuidesForUser(userId: string): Promise<{
   if (ugErr) throw new Error(`user_games fetch failed: ${ugErr.message}`);
   const ownedAppIds = (userGames ?? []).map((r) => Number(r.app_id));
   if (ownedAppIds.length === 0) return { scanned: 0, inserted: 0, skipped: 0, failed: 0 };
-
-  const gameNameByApp = new Map<number, { en: string; ko: string | null }>();
-  for (const row of userGames ?? []) {
-    const g = (Array.isArray(row.games) ? row.games[0] : row.games) as {
-      app_id: number;
-      name: string;
-      img_logo_url: string | null;
-    } | null;
-    if (!g) continue;
-    let ko: string | null = null;
-    if (g.img_logo_url?.startsWith("{")) {
-      try {
-        const sc = JSON.parse(g.img_logo_url) as { nameKo?: string | null };
-        ko = sc.nameKo ?? null;
-      } catch {
-        // ignore
-      }
-    }
-    gameNameByApp.set(g.app_id, { en: g.name, ko });
-  }
 
   // 2. Pull achievements for owned apps in chunks (REST has URL length limits)
   type AchPlus = AchievementRow;
@@ -173,9 +169,8 @@ export async function collectGuidesForUser(userId: string): Promise<{
       skipped++;
       continue;
     }
-    const game = gameNameByApp.get(ach.app_id);
-    const en = buildEnglishGuide(ach, game?.en ?? `App ${ach.app_id}`);
-    const ko = buildKoreanGuide(ach, game?.ko ?? null, game?.en ?? `App ${ach.app_id}`);
+    const en = buildEnglishGuide(ach);
+    const ko = buildKoreanGuide(ach);
     toInsert.push({
       achievement_id: ach.id,
       content: en,

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { FaSteam } from "react-icons/fa";
-import { FiArrowLeft, FiArrowUp, FiExternalLink, FiSearch } from "react-icons/fi";
+import { FiArrowLeft, FiArrowUp, FiExternalLink } from "react-icons/fi";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { GuideBody, renderInline } from "@/components/markdown/inline";
@@ -35,6 +34,7 @@ export default async function AchievementGuidePage({
 
   // Layer 2 = AI guide content; render every paragraph from DB.
   const guideParagraphs = (achievement.guide?.content ?? []).filter(Boolean);
+  const quickSteps = [...(achievement.guideSteps ?? []), ...(achievement.guideTips ?? [])].slice(0, 4);
 
   return (
     <AppShell section="library" locale={locale} user={user}>
@@ -87,39 +87,30 @@ export default async function AchievementGuidePage({
           )}
         </div>
 
-        {/* Quick external lookups for this specific achievement */}
-        <div className="mb-6 flex flex-wrap gap-2">
-          <a
-            href={`https://steamcommunity.com/app/${game.appId}/guides/?searchText=${encodeURIComponent(achievement.name)}`}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
-          >
-            <FaSteam size={13} className="text-[var(--accent)]" />
-            {locale === "ko" ? "Steam 커뮤니티에서 검색" : "Search on Steam"}
-            <FiExternalLink size={11} />
-          </a>
-          <a
-            href={`https://www.google.com/search?q=${encodeURIComponent(`${game.name} ${achievement.name} ${locale === "ko" ? "공략" : "achievement guide"}`)}`}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
-          >
-            <FiSearch size={13} className="text-[var(--l2)]" />
-            {locale === "ko" ? "Google 검색" : "Search on Google"}
-            <FiExternalLink size={11} />
-          </a>
-          <a
-            href={`https://www.youtube.com/results?search_query=${encodeURIComponent(`${game.name} ${achievement.name} achievement`)}`}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-1.5 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--text-primary)]"
-          >
-            <FiSearch size={13} className="text-[var(--danger)]" />
-            {locale === "ko" ? "YouTube 영상 공략" : "YouTube walkthrough"}
-            <FiExternalLink size={11} />
-          </a>
-        </div>
+        <Card className="mb-6 px-4 py-4">
+          <div className="mb-3 flex items-center justify-between gap-3">
+            <div>
+              <div className="text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--l2)]">
+                {locale === "ko" ? "지금 해야 할 일" : "Do this next"}
+              </div>
+              <div className="mt-1 text-[15px] font-semibold text-[var(--text-primary)]">
+                {achievement.guideSummary || (locale === "ko" ? "핵심 조건부터 확인하세요." : "Start from the core trigger condition.")}
+              </div>
+            </div>
+            {achievement.guideStatsLine && (
+              <div className="rounded-full border border-[var(--l2-border)] bg-[var(--l2-tint)] px-3 py-1 text-[11px] font-medium text-[var(--text-secondary)]">
+                {achievement.guideStatsLine}
+              </div>
+            )}
+          </div>
+          {quickSteps.length > 0 && (
+            <ul className="m-0 space-y-2 pl-5 text-[14px] leading-6 text-[var(--text-secondary)]">
+              {quickSteps.map((step, index) => (
+                <li key={`${achievement.slug}-quick-${index}`}>{step}</li>
+              ))}
+            </ul>
+          )}
+        </Card>
 
         {/* 3-Layer Guide */}
         <div className="mb-6">
@@ -142,7 +133,7 @@ export default async function AchievementGuidePage({
             {/* L2 — AI guide (full DB content) */}
             <GuideLayer
               num={2}
-              title={m.ach.layer2Title}
+              title={locale === "ko" ? "실행 가이드" : "Actionable guide"}
               meta={
                 achievement.guide?.confidence
                   ? `${locale === "ko" ? "신뢰도" : "Confidence"}: ${achievement.guide.confidence}`
@@ -151,7 +142,33 @@ export default async function AchievementGuidePage({
               source={achievement.guide?.source}
             >
               {guideParagraphs.length > 0 ? (
-                <GuideBody paragraphs={guideParagraphs} />
+                <div className="flex flex-col gap-3">
+                  {achievement.guideSummary && (
+                    <p className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]">
+                      {achievement.guideSummary}
+                    </p>
+                  )}
+                  {achievement.guideSteps && achievement.guideSteps.length > 0 && (
+                    <div>
+                      <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+                        {locale === "ko" ? "단계별 안내" : "Steps"}
+                      </div>
+                      <GuideBody paragraphs={achievement.guideSteps.map((step) => `- ${step}`)} />
+                    </div>
+                  )}
+                  {achievement.guideTips && achievement.guideTips.length > 0 && (
+                    <div>
+                      <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+                        {locale === "ko" ? "놓치기 쉬운 포인트" : "Watch for"}
+                      </div>
+                      <GuideBody paragraphs={achievement.guideTips.map((tip) => `- ${tip}`)} />
+                    </div>
+                  )}
+                  {(!achievement.guideSteps || achievement.guideSteps.length === 0) &&
+                    (!achievement.guideTips || achievement.guideTips.length === 0) && (
+                      <GuideBody paragraphs={guideParagraphs} />
+                    )}
+                </div>
               ) : (
                 <p className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]">
                   {locale === "ko" ? "AI 가이드가 아직 생성되지 않았습니다." : "AI guide not generated yet."}
@@ -196,6 +213,29 @@ export default async function AchievementGuidePage({
                     </Badge>
                     <span>{tip.author}</span>
                   </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {achievement.guideReferences && achievement.guideReferences.length > 0 && (
+          <div className="mt-8">
+            <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+              {locale === "ko" ? "참고 원문" : "Source references"}
+            </div>
+            <div className="flex flex-col gap-2">
+              {achievement.guideReferences.map((reference) => (
+                <Card key={reference.url} className="px-4 py-3">
+                  <a
+                    href={reference.url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex items-center justify-between gap-3 text-[13px] font-medium text-[var(--text-primary)] no-underline"
+                  >
+                    <span className="min-w-0 truncate">{reference.label}</span>
+                    <FiExternalLink size={13} className="shrink-0 text-[var(--text-tertiary)]" />
+                  </a>
                 </Card>
               ))}
             </div>
@@ -263,4 +303,3 @@ function GuideLayer({
     </div>
   );
 }
-

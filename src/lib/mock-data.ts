@@ -13,6 +13,11 @@ export type VideoGuide = {
   source: string;
 };
 
+export type GuideReference = {
+  label: string;
+  url: string;
+};
+
 export type Achievement = {
   slug: string;
   name: string;
@@ -31,6 +36,11 @@ export type Achievement = {
     source: string;
     license: string;
   };
+  guideSummary?: string;
+  guideStatsLine?: string;
+  guideSteps?: string[];
+  guideTips?: string[];
+  guideReferences?: GuideReference[];
   tips: Tip[];
   videos: VideoGuide[];
 };

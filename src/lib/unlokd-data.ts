@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { unstable_noStore as noStore } from "next/cache";
 
+import { getGuidePreview, structureGuide } from "@/lib/guides/structured";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient as createServerSupabaseClient } from "@/lib/supabase/server";
 import { getLocale } from "@/lib/i18n";
@@ -30,10 +31,11 @@ type AppUser = {
 type DbGuide = {
   achievement_id: number;
   content: string;
-  confidence: string | null;
+  confidence: string | number | null;
   source_url: string | null;
   license: string | null;
   upvotes: number | null;
+  source_type?: string | null;
 };
 
 type DbTip = {
@@ -58,6 +60,13 @@ export type LibraryGameView = {
   imgIconUrl: string | null;
   headerUrl: string | null;
   capsuleUrl: string | null;
+  guidedAchievements: number;
+  nextGuide: {
+    achievementSlug: string;
+    achievementName: string;
+    summary: string;
+    rarity: number;
+  } | null;
 };
 
 export type UserSummary = {
@@ -391,6 +400,18 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
       imgIconUrl: null,
       headerUrl: null,
       capsuleUrl: null,
+      guidedAchievements: game.achievements.filter((achievement) => achievement.guide?.content?.length).length,
+      nextGuide: game.achievements.find((achievement) => !achievement.unlocked)
+        ? {
+            achievementSlug: game.achievements.find((achievement) => !achievement.unlocked)?.slug ?? "",
+            achievementName: game.achievements.find((achievement) => !achievement.unlocked)?.name ?? "",
+            summary:
+              game.achievements.find((achievement) => !achievement.unlocked)?.guide.content[0] ??
+              game.achievements.find((achievement) => !achievement.unlocked)?.description ??
+              "",
+            rarity: game.achievements.find((achievement) => !achievement.unlocked)?.rarity ?? 0,
+          }
+        : null,
     }));
   }
 
@@ -404,6 +425,93 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
 
   if (!data?.length) {
     return [];
+  }
+
+  const appIds = data.map((row) => Number(row.app_id));
+  const desiredLocale = locale === "ko" ? "koreana" : "english";
+  type LibraryAchievementRow = {
+    id: number;
+    app_id: number;
+    api_name: string;
+    display_name: string | null;
+    description: string | null;
+    category: string | null;
+    global_percent: number | null;
+  };
+  type GuideRow = DbGuide & { locale?: string | null; is_active?: boolean | null };
+
+  let achievementRows: LibraryAchievementRow[] = [];
+  const APP_CHUNK = 30;
+  for (let i = 0; i < appIds.length; i += APP_CHUNK) {
+    const slice = appIds.slice(i, i + APP_CHUNK);
+    const { data: chunk } = await admin
+      .from("achievements")
+      .select("id, app_id, api_name, display_name, description, category, global_percent")
+      .in("app_id", slice);
+    achievementRows = achievementRows.concat((chunk ?? []) as LibraryAchievementRow[]);
+  }
+
+  const achievementIds = achievementRows.map((row) => row.id);
+  const unlockedIds = new Set<number>();
+  const guideMap = new Map<number, GuideRow[]>();
+
+  const ACH_CHUNK = 200;
+  for (let i = 0; i < achievementIds.length; i += ACH_CHUNK) {
+    const slice = achievementIds.slice(i, i + ACH_CHUNK);
+    const [{ data: userAchievements }, { data: guides }] = await Promise.all([
+      admin
+        .from("user_achievements")
+        .select("achievement_id, unlocked")
+        .eq("user_id", user.id)
+        .in("achievement_id", slice),
+      admin
+        .from("guides")
+        .select("achievement_id, content, confidence, source_url, license, upvotes, locale, is_active, source_type")
+        .eq("is_active", true)
+        .in("achievement_id", slice)
+        .order("upvotes", { ascending: false }),
+    ]);
+
+    for (const row of userAchievements ?? []) {
+      if (row.unlocked) unlockedIds.add(Number(row.achievement_id));
+    }
+
+    for (const guide of (guides ?? []) as GuideRow[]) {
+      const current = guideMap.get(guide.achievement_id) ?? [];
+      current.push(guide);
+      guideMap.set(guide.achievement_id, current);
+    }
+  }
+
+  const nextGuideByApp = new Map<number, LibraryGameView["nextGuide"]>();
+  const guidedCountByApp = new Map<number, number>();
+
+  for (const achievement of achievementRows) {
+    const guide = pickBestGuide(guideMap.get(achievement.id) ?? [], desiredLocale);
+    if (guide) {
+      guidedCountByApp.set(achievement.app_id, (guidedCountByApp.get(achievement.app_id) ?? 0) + 1);
+    }
+    if (!guide || unlockedIds.has(achievement.id)) continue;
+
+    const sidecar = parseAchievementSidecar(achievement.category);
+    const name = locale === "ko"
+      ? (sidecar?.nameKo || achievement.display_name || achievement.api_name)
+      : (achievement.display_name || achievement.api_name);
+    const structuredGuide = structureGuide(guide.content.split(/\n+/).filter(Boolean), guide.source_url);
+    const candidate = {
+      achievementSlug:
+        slugify(achievement.api_name || name || `achievement-${achievement.id}`) || `ach-${achievement.id}`,
+      achievementName: name,
+      summary: getGuidePreview(
+        structuredGuide,
+        locale === "ko" ? "다음 조건부터 확인하세요." : "Check the trigger requirements before your next session.",
+      ),
+      rarity: Number(achievement.global_percent ?? 100),
+    };
+    const current = nextGuideByApp.get(achievement.app_id);
+    if (!current || candidate.rarity < current.rarity) {
+      nextGuideByApp.set(achievement.app_id, candidate);
+    }
   }
 
   return data.map((row) => {
@@ -433,6 +541,8 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
       imgIconUrl: game?.img_icon_url ?? null,
       headerUrl: sidecar?.headerUrl ?? null,
       capsuleUrl: sidecar?.capsuleUrl ?? null,
+      guidedAchievements: guidedCountByApp.get(appId) ?? 0,
+      nextGuide: nextGuideByApp.get(appId) ?? null,
     };
   });
 });
@@ -472,6 +582,67 @@ function difficultyFromPercent(value: number | null | undefined): Difficulty {
   if (value >= 20) return "uncommon";
   if (value >= 5) return "rare";
   return "legendary";
+}
+
+function localizeGuideLinesForDisplay(
+  lines: string[],
+  locale: "en" | "ko",
+  opts: { koName?: string | null; enName?: string | null },
+) {
+  if (locale !== "ko") return lines;
+
+  return lines.map((line, index) => {
+    let next = line;
+
+    if (index === 0 && opts.koName) return opts.koName;
+    if (opts.enName && opts.koName && next.trim() === opts.enName.trim()) return opts.koName;
+
+    next = next
+      .replace(/^\*\*Do this next:\*\*$/i, "**지금 해야 할 일:**")
+      .replace(/^\*\*Watch for:\*\*$/i, "**주의할 점:**")
+      .replace(/^\*\*Tips:\*\*$/i, "**팁:**")
+      .replace(/^\*\*Steps:\*\*$/i, "**단계별 안내:**")
+      .replace(/\/\/\/MISSABLE ACHIEVEMENT ALERT\/\/\//g, "놓치기 쉬운 업적입니다.");
+
+    if (next.startsWith("- Use the route from ")) {
+      next = next.replace(
+        /^- Use the route from (.+)$/,
+        "- 다음 공략 흐름을 기준으로 진행하세요: $1",
+      );
+    }
+
+    return next;
+  });
+}
+
+function guideQualityScore(guide: DbGuide & { locale?: string | null }, desiredLocale: string) {
+  let score = 0;
+
+  if (guide.source_type === "steam_scrape") score += 1000;
+  else if (guide.source_type === "manual") score += 300;
+  else if (guide.source_type === "ai") score += 100;
+  else if (guide.source_type === "template") score += 10;
+
+  if (guide.locale === desiredLocale) score += 100;
+  if (guide.source_url?.includes("steamcommunity.com/sharedfiles/filedetails")) score += 20;
+  if (typeof guide.upvotes === "number") score += Math.min(guide.upvotes, 50);
+
+  const confidence =
+    typeof guide.confidence === "number"
+      ? guide.confidence
+      : typeof guide.confidence === "string"
+        ? Number(guide.confidence)
+        : 0;
+  if (Number.isFinite(confidence)) score += confidence * 100;
+
+  return score;
+}
+
+function pickBestGuide(
+  guides: Array<DbGuide & { locale?: string | null }>,
+  desiredLocale: string,
+) {
+  return [...guides].sort((a, b) => guideQualityScore(b, desiredLocale) - guideQualityScore(a, desiredLocale))[0];
 }
 
 export async function getGameDetail(idOrSlug: string) {
@@ -532,7 +703,7 @@ export async function getGameDetail(idOrSlug: string) {
         .in("achievement_id", achievementIds),
       admin
         .from("guides")
-        .select("achievement_id, content, confidence, source_url, license, upvotes, locale")
+        .select("achievement_id, content, confidence, source_url, license, upvotes, locale, source_type")
         .in("achievement_id", achievementIds)
         .eq("is_active", true)
         .order("upvotes", { ascending: false }),
@@ -547,26 +718,19 @@ export async function getGameDetail(idOrSlug: string) {
   const userAchievementMap = new Map(
     (userAchievements ?? []).map((item) => [item.achievement_id, item]),
   );
-  // Pick guide matching current locale when available; fall back to any.
   const desiredLocale = locale === "ko" ? "koreana" : "english";
-  const guideMap = new Map<number, DbGuide>();
-  const guideFallback = new Map<number, DbGuide>();
+  const guideMap = new Map<number, Array<DbGuide & { locale?: string | null }>>();
   for (const guide of guides ?? []) {
     const g = guide as DbGuide & { locale?: string | null };
-    if (g.locale === desiredLocale) {
-      if (!guideMap.has(g.achievement_id)) guideMap.set(g.achievement_id, g);
-    } else {
-      if (!guideFallback.has(g.achievement_id)) guideFallback.set(g.achievement_id, g);
-    }
-  }
-  for (const [achId, g] of guideFallback) {
-    if (!guideMap.has(achId)) guideMap.set(achId, g);
+    const current = guideMap.get(g.achievement_id) ?? [];
+    current.push(g);
+    guideMap.set(g.achievement_id, current);
   }
   const tipUserMap = new Map((tipUsers ?? []).map((item) => [item.id, item.persona_name || "Curator"]));
 
   const normalizedAchievements: Achievement[] = achievements.map((item) => {
     const userAchievement = userAchievementMap.get(item.id);
-    const guide = guideMap.get(item.id);
+    const guide = pickBestGuide(guideMap.get(item.id) ?? [], desiredLocale);
     const achievementTips = ((tips ?? []) as DbTip[])
       .filter((tip) => tip.achievement_id === item.id)
       .slice(0, 3)
@@ -587,6 +751,14 @@ export async function getGameDetail(idOrSlug: string) {
     const koDesc = achSidecar?.descKo;
     const displayName = locale === "ko" ? (koName || enName) : enName;
     const displayDesc = locale === "ko" ? (koDesc || enDesc) : enDesc;
+    const rawGuideContent = guide?.content
+      ? guide.content.split(/\n+/).filter(Boolean)
+      : mockGuide?.guide.content || ["Guide is being generated for this achievement."];
+    const guideContent = localizeGuideLinesForDisplay(rawGuideContent, locale, {
+      koName,
+      enName,
+    });
+    const structuredGuide = structureGuide(guideContent, guide?.source_url || mockGuide?.guide.source);
     return {
       slug: slugify(item.api_name || enName || `achievement-${item.id}`),
       name: displayName,
@@ -606,12 +778,15 @@ export async function getGameDetail(idOrSlug: string) {
         : undefined,
       guide: {
         confidence: ((guide?.confidence as Confidence) || "unverified") as Confidence,
-        content: guide?.content
-          ? guide.content.split(/\n+/).filter(Boolean)
-          : mockGuide?.guide.content || ["Guide is being generated for this achievement."],
+        content: guideContent,
         source: guide?.source_url || mockGuide?.guide.source || "Unlokd",
         license: guide?.license || mockGuide?.guide.license || "Original",
       },
+      guideSummary: structuredGuide.summary ?? undefined,
+      guideStatsLine: structuredGuide.statsLine ?? undefined,
+      guideSteps: structuredGuide.steps,
+      guideTips: structuredGuide.tips,
+      guideReferences: structuredGuide.references,
       tips: achievementTips.length ? achievementTips : mockGuide?.tips || [],
       videos: mockGuide?.videos || [],
     };

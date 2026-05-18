@@ -20,6 +20,10 @@ export function LibraryBrowser({
   games: LibraryGameView[];
   labels: {
     achievements: string;
+    guides: string;
+    nextAction: string;
+    ready: string;
+    noGuides: string;
     sortBy: string;
     filterAll: string;
     filter100: string;
@@ -142,6 +146,28 @@ export function LibraryBrowser({
                       <span className="text-[var(--text-tertiary)]">{labels.achievements}</span>
                     </span>
                     <span className="font-mono text-[var(--text-tertiary)]">{game.playtime}</span>
+                  </div>
+                  <div className="mt-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-base)]/80 px-3 py-2.5">
+                    <div className="mb-1.5 flex items-center justify-between gap-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+                      <span>{labels.nextAction}</span>
+                      <span className="font-mono normal-case text-[var(--accent)]">
+                        {game.guidedAchievements}/{game.totalAchievements} {labels.guides}
+                      </span>
+                    </div>
+                    {game.nextGuide ? (
+                      <>
+                        <div className="truncate text-[13px] font-semibold text-[var(--text-primary)]">
+                          {game.nextGuide.achievementName}
+                        </div>
+                        <div className="mt-1 line-clamp-2 text-[12px] leading-5 text-[var(--text-secondary)]">
+                          {game.nextGuide.summary}
+                        </div>
+                      </>
+                    ) : (
+                      <div className="text-[12px] leading-5 text-[var(--text-tertiary)]">
+                        {game.guidedAchievements > 0 ? labels.ready : labels.noGuides}
+                      </div>
+                    )}
                   </div>
                 </div>
               </Card>
