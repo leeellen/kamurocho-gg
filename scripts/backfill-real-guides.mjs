@@ -82,18 +82,26 @@ function pageSuitability(page, gameName) {
   const haystack = normalize(`${page.title} ${page.intro}`);
   const gameTokens = tokenize(gameName || "");
   let score = 0;
+  const positiveTitle =
+    /(100|achievement|complete guide|walkthrough|hidden achievement|story related|reference|guide)/i.test(page.title);
+  const positiveIntro =
+    /(achievement|completion list|100%|story related|side mission|hidden achievement|walkthrough|guide)/i.test(page.intro);
+  const negativeTitle =
+    /(steam profile|soundtrack|actual matters in japanese school now|bakamitai|русификатор|translation|localization|save file|ultimate saves|mod|trainer|cheat|reshade|fix)/i.test(page.title);
+  const negativeIntro =
+    /(steam profile|featured showcase|soundtrack|русификатор|translation|localization|save file|ultimate saves|mod|trainer|cheat|reshade|patch)/i.test(page.intro);
 
-  if (/(100|achievement|complete guide|walkthrough|hidden achievement|story related|reference)/i.test(page.title)) {
+  if (negativeTitle || negativeIntro) return -999;
+  if (!positiveTitle && !positiveIntro) return -999;
+
+  if (positiveTitle) {
     score += 80;
   }
-  if (/(achievement|completion list|100%|story related|side mission|hidden achievement)/i.test(page.intro)) {
+  if (positiveIntro) {
     score += 40;
   }
   for (const token of gameTokens) {
     if (haystack.includes(token)) score += 5;
-  }
-  if (/(steam profile|soundtrack for your profile|actual matters in japanese school now|bakamitai)/i.test(page.title)) {
-    score -= 120;
   }
 
   return score;
@@ -167,7 +175,7 @@ async function getTopGuideUrls(appId, limit = 6) {
     .map((id) => `https://steamcommunity.com/sharedfiles/filedetails/?id=${id}`);
 }
 
-async function collectCandidateGuides(appId, guideRows, gameName) {
+async function collectCandidateGuides(appId, guideRows, gameName, seedUrls = []) {
   const urls = new Set();
 
   for (const row of guideRows) {
@@ -176,6 +184,9 @@ async function collectCandidateGuides(appId, guideRows, gameName) {
   }
 
   for (const url of await getTopGuideUrls(appId, 6)) urls.add(url);
+  for (const url of seedUrls) {
+    if (url) urls.add(url);
+  }
 
   const pages = [];
   const seen = new Set();
@@ -315,6 +326,46 @@ function buildGuideContent(achievement, page, section) {
   return lines.join("\n");
 }
 
+function isMetaAchievement(achievement) {
+  const haystack = normalize(
+    [
+      achievement.api_name,
+      achievement.display_name,
+      achievement.description,
+      achievement.nameKo,
+      achievement.descKo,
+    ]
+      .filter(Boolean)
+      .join(" "),
+  );
+
+  return (
+    /platinum|unlock every other achievement|all other achievement|master detective|detective of legend|conquista final/.test(
+      haystack,
+    ) || (
+      haystack.includes("모든 다른 업적") ||
+      haystack.includes("모든 업적")
+    )
+  );
+}
+
+function buildMetaGuideContent(achievement, page) {
+  const lines = [
+    achievement.description || achievement.display_name,
+    "",
+    "**Do this next:**",
+    `- Use **${page.title}** as the full completion checklist for this game.`,
+    "- Clear every story achievement first so all missables and difficulty requirements are locked in.",
+    "- Finish side cases or substories, collection tracks, progression checklists, and all minigame-related trophies from the guide before cleanup.",
+    "- Re-check the guide's endgame or 100% section once every other achievement is done to confirm the last unlock conditions.",
+    "",
+    "**Watch for:**",
+    "- Meta achievements usually pop only after every other base-game achievement is registered on the same save/profile.",
+  ];
+
+  return lines.join("\n");
+}
+
 function parseSidecar(raw) {
   if (!raw || !raw.startsWith("{")) return {};
   try {
@@ -413,7 +464,15 @@ async function resolveTargetUser() {
 async function main() {
   const userId = await resolveTargetUser();
   const onlyAppId = argValue("--app-id");
+  const appIdsArg = argValue("--app-ids");
+  const seedUrlsArg = argValue("--seed-urls");
   const minScore = Number(argValue("--min-score") ?? 60);
+  const appIdSet = appIdsArg
+    ? new Set(appIdsArg.split(",").map((value) => value.trim()).filter(Boolean))
+    : null;
+  const seedUrls = seedUrlsArg
+    ? seedUrlsArg.split(",").map((value) => value.trim()).filter(Boolean)
+    : [];
 
   const { data: userGames, error: userGamesError } = await supabase
     .from("user_games")
@@ -422,7 +481,11 @@ async function main() {
     .order("playtime_mins", { ascending: false });
   if (userGamesError) throw new Error(userGamesError.message);
 
-  const scopedGames = (userGames ?? []).filter((row) => !onlyAppId || String(row.app_id) === onlyAppId);
+  const scopedGames = (userGames ?? []).filter((row) => {
+    if (onlyAppId && String(row.app_id) !== onlyAppId) return false;
+    if (appIdSet && !appIdSet.has(String(row.app_id))) return false;
+    return true;
+  });
   console.log(`[start] user=${userId} apps=${scopedGames.length}`);
 
   for (const gameRow of scopedGames) {
@@ -448,7 +511,7 @@ async function main() {
       .eq("is_active", true);
     if (guideRowsError) throw new Error(guideRowsError.message);
 
-    const candidatePages = await collectCandidateGuides(appId, guideRows ?? [], gameName ?? "");
+    const candidatePages = await collectCandidateGuides(appId, guideRows ?? [], gameName ?? "", seedUrls);
     console.log(`  candidate pages=${candidatePages.length}`);
     if (candidatePages.length === 0) continue;
 
@@ -470,10 +533,24 @@ async function main() {
         }
       }
 
-      if (!best || best.score < minScore) continue;
+      const fallbackPage = candidatePages[0];
+      const canUseMetaFallback =
+        fallbackPage &&
+        isMetaAchievement(enrichedAchievement) &&
+        pageSuitability(fallbackPage, gameName ?? "") >= 20;
 
-      const englishContent = buildGuideContent(enrichedAchievement, best.page, best.section);
-      const confidence = Number(Math.min(0.95, Math.max(0.65, best.score / 100)).toFixed(2));
+      if ((!best || best.score < minScore) && !canUseMetaFallback) continue;
+
+      const englishContent = canUseMetaFallback && (!best || best.score < minScore)
+        ? buildMetaGuideContent(enrichedAchievement, fallbackPage)
+        : buildGuideContent(enrichedAchievement, best.page, best.section);
+      const confidence = Number(
+        Math.min(
+          0.95,
+          Math.max(0.65, canUseMetaFallback && (!best || best.score < minScore) ? 0.72 : best.score / 100),
+        ).toFixed(2),
+      );
+      const sourcePage = canUseMetaFallback && (!best || best.score < minScore) ? fallbackPage : best.page;
       const targetGuides = (guideRows ?? []).filter((row) => row.achievement_id === achievement.id);
       if (targetGuides.length === 0) continue;
 
@@ -484,7 +561,7 @@ async function main() {
           .update({
             content,
             confidence,
-            source_url: best.page.url,
+            source_url: sourcePage.url,
             updated_at: new Date().toISOString(),
           })
           .eq("id", targetGuide.id);
@@ -494,7 +571,11 @@ async function main() {
       }
 
       updated += 1;
-      console.log(`  updated ${achievement.display_name} <- ${best.page.title} / ${best.section.title} (${best.score})`);
+      if (canUseMetaFallback && (!best || best.score < minScore)) {
+        console.log(`  updated ${achievement.display_name} <- ${sourcePage.title} / META FALLBACK`);
+      } else {
+        console.log(`  updated ${achievement.display_name} <- ${best.page.title} / ${best.section.title} (${best.score})`);
+      }
     }
 
     console.log(`  updated achievements=${updated}/${achievements.length}`);
