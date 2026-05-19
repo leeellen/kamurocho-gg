@@ -1,125 +1,93 @@
-/* Pretendard — must come before @import "tailwindcss" */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @import "tailwindcss";
 
 :root {
-  /* Backgrounds */
-  --bg-base:        #0B0D12;
-  --bg-elevated:    #141821;
-  --bg-raised:      #1B2030;
-  --bg-overlay:     rgba(7, 9, 14, 0.72);
-  --bg-hover:       rgba(255, 255, 255, 0.04);
-  --bg-pressed:     rgba(255, 255, 255, 0.08);
-
-  /* Borders */
-  --border-subtle:  rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.10);
-  --border-strong:  rgba(255, 255, 255, 0.18);
-
-  /* Text */
-  --text-primary:   #E8EAEF;
-  --text-secondary: #9CA3B1;
-  --text-tertiary:  #5F6678;
-  --text-disabled:  #3F4555;
-  --text-inverse:   #0B0D12;
-
-  /* Brand accent */
-  --accent:               #F5B544;
-  --accent-hover:         #FFC758;
-  --accent-press:         #E0A332;
-  --accent-subtle:        rgba(245, 181, 68, 0.12);
-  --accent-border:        rgba(245, 181, 68, 0.32);
-
-  /* 3-Layer Guide */
-  --l1:             #4F8EF7;
-  --l1-subtle:      rgba(79, 142, 247, 0.10);
-  --l1-border:      rgba(79, 142, 247, 0.28);
-  --l1-tint:        rgba(79, 142, 247, 0.05);
-
-  --l2:             #9D7AFF;
-  --l2-subtle:      rgba(157, 122, 255, 0.10);
-  --l2-border:      rgba(157, 122, 255, 0.28);
-  --l2-tint:        rgba(157, 122, 255, 0.05);
-
-  --l3:             #34C77B;
-  --l3-subtle:      rgba(52, 199, 123, 0.10);
-  --l3-border:      rgba(52, 199, 123, 0.28);
-  --l3-tint:        rgba(52, 199, 123, 0.04);
-
-  /* Semantic */
-  --success:        #34C77B;
-  --success-subtle: rgba(52, 199, 123, 0.12);
-  --warning:        #F0A53A;
-  --warning-subtle: rgba(240, 165, 58, 0.12);
-  --danger:         #EF5757;
-  --danger-subtle:  rgba(239, 87, 87, 0.12);
-
-  /* Rarity */
-  --rarity-common:    #6F7689;
-  --rarity-uncommon:  #8E8C82;
-  --rarity-rare:      #C99B5C;
-  --rarity-very-rare: #E0B14F;
-  --rarity-ultra:     #F5D26B;
-
-  /* Type */
-  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.32);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.36);
-  --shadow-lg: 0 12px 32px rgba(0,0,0,0.48);
-  --shadow-overlay: 0 24px 48px rgba(0,0,0,0.6);
-  --inner-hi: inset 0 1px 0 rgba(255,255,255,0.04);
-
-  /* Motion */
-  --ease-out:    cubic-bezier(0.2, 0.7, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --dur-fast:    160ms;
-  --dur-base:    240ms;
+  --bg-base: #f5f5f3;
+  --bg-surface: #ffffff;
+  --bg-elevated: #fafaf8;
+  --bg-soft: #eceae5;
+  --border: #e1dfd8;
+  --border-strong: #b8b5ad;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4d4a44;
+  --text-muted: #8e8b83;
+  --chrome-top: #0b1b33;
+  --chrome-line: #1f3457;
+  --chrome-text: #ffffff;
+  --chrome-muted: #a8b2c4;
+  --accent: #ffc629;
+  --danger: #dc2918;
+  --danger-hover: #b11a0b;
+  --danger-bg: #fce6e2;
+  --danger-text: #921608;
+  --gold: #b8761c;
+  --gold-tint: #f8eac8;
+  --safe-bg: #dfeee7;
+  --safe-text: #0e5e43;
+  --l2: #1f65b5;
+  --shadow-card: 0 0 0 1px rgba(10, 10, 10, 0.04), 0 1px 2px rgba(10, 10, 10, 0.05);
+  --shadow-pop: 0 10px 24px rgba(10, 10, 10, 0.14);
 }
 
 @theme inline {
-  --color-bg-base: var(--bg-base);
-  --color-bg-elevated: var(--bg-elevated);
-  --color-bg-raised: var(--bg-raised);
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-  --color-accent: var(--accent);
-  --color-l1: var(--l1);
-  --color-l2: var(--l2);
-  --color-l3: var(--l3);
-  --color-success: var(--success);
-  --color-danger: var(--danger);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --font-sans: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
   background: var(--bg-base);
   color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: 16px;
+  font-family: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-button, input, textarea, select { font: inherit; }
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
 
 ::selection {
-  background: rgba(245, 181, 68, 0.24);
+  background: var(--accent);
   color: var(--text-primary);
 }
 
-/* Game cover gradients — 20 numbered palettes for real library games */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 3px solid var(--bg-base);
+}
+
 .cover-0  { background: linear-gradient(135deg, #200706, #730e0e 45%, #0b0c11); }
 .cover-1  { background: linear-gradient(135deg, #082236, #268197 50%, #410d5b); }
 .cover-2  { background: linear-gradient(135deg, #081e2d, #18617c, #030c13); }
@@ -140,130 +108,3 @@ button, input, textarea, select { font: inherit; }
 .cover-17 { background: linear-gradient(135deg, #200010, #801040 50%, #100008); }
 .cover-18 { background: linear-gradient(135deg, #002010, #006840 50%, #001008); }
 .cover-19 { background: linear-gradient(135deg, #101010, #404040 50%, #080808); }
-
-/* Named covers for mock data */
-.cover-sdv      { background: linear-gradient(135deg, #2d4a1e, #4a7c2f 40%, #1e3d15); }
-.cover-eld      { background: linear-gradient(135deg, #200706 0%, #730e0e 45%, #0b0c11); }
-.cover-hades    { background: linear-gradient(135deg, #3b0a0a, #8b1a1a 50%, #1a0505); }
-.cover-cyber    { background: linear-gradient(135deg, #082236, #268197 50%, #410d5b); }
-.cover-hk       { background: linear-gradient(135deg, #081e2d, #18617c, #030c13); }
-.cover-deeprock { background: linear-gradient(135deg, #1a0e03, #7a4a12 50%, #0d0804); }
-.cover-factorio { background: linear-gradient(135deg, #1a1200, #4a3800 50%, #0d0a00); }
-.cover-rdr2     { background: linear-gradient(135deg, #1a0900, #5c2a08 50%, #0d0500); }
-.cover-portal   { background: linear-gradient(135deg, #001a1a, #004040 50%, #000d0d); }
-.cover-celeste  { background: linear-gradient(135deg, #0d0020, #3d0060 50%, #060010); }
-.cover-rl       { background: linear-gradient(135deg, #001833, #0055a0 50%, #000c1a); }
-.cover-witcher  { background: linear-gradient(135deg, #0d1a00, #2a4d00 50%, #060d00); }
-.cover-elden    { background: linear-gradient(135deg, #200706, #730e0e 45%, #0b0c11); }
-.cover-cyberpunk { background: linear-gradient(135deg, #082236, #268197 50%, #410d5b); }
-.cover-hollowknight { background: linear-gradient(135deg, #081e2d, #18617c, #030c13); }
-.cover-assetto  { background: linear-gradient(135deg, #1c1c1d, #7b7b7e 56%, #0a0a0c); }
-
-/* Layer guide cards */
-.layer-card-1 {
-  background: var(--l1-tint);
-  border-left: 2px solid var(--l1);
-}
-.layer-card-2 {
-  background: var(--l2-tint);
-  border-left: 2px solid var(--l2);
-}
-.layer-card-3 {
-  background: var(--l3-tint);
-  border-left: 2px solid var(--l3);
-}
-
-/* Progress bar */
-.progress-track {
-  background: var(--bg-raised);
-  border-radius: 999px;
-  overflow: hidden;
-}
-.progress-fill-accent {
-  background: var(--accent);
-  border-radius: 999px;
-  height: 100%;
-}
-
-/* Pill/badge */
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-.pill-accent  { background: var(--accent-subtle); color: var(--accent); border: 1px solid var(--accent-border); }
-.pill-l1      { background: var(--l1-subtle); color: var(--l1); border: 1px solid var(--l1-border); }
-.pill-l2      { background: var(--l2-subtle); color: var(--l2); border: 1px solid var(--l2-border); }
-.pill-l3      { background: var(--l3-subtle); color: var(--l3); border: 1px solid var(--l3-border); }
-.pill-neutral { background: var(--bg-raised); color: var(--text-secondary); border: 1px solid var(--border-subtle); }
-
-/* Number display */
-.t-num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
-
-/* App shell — mobile-first; switch to sidebar at >= 768px */
-.shell {
-  min-height: 100vh;
-}
-.shell-sidebar { display: none; }
-.shell-tabbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: var(--bg-elevated);
-  border-top: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 50;
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.shell-main {
-  min-height: 100vh;
-  padding-bottom: 60px;
-}
-
-@media (min-width: 768px) {
-  .shell {
-    display: flex;
-  }
-  .shell-sidebar {
-    width: 232px;
-    flex-shrink: 0;
-    background: var(--bg-base);
-    border-right: 1px solid var(--border-subtle);
-    padding: 18px 14px 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 50;
-  }
-  .shell-tabbar { display: none; }
-  .shell-main {
-    flex: 1;
-    margin-left: 232px;
-    padding-bottom: 0;
-  }
-}
-
-/* Sidebar active indicator */
-.nav-active-bar {
-  position: absolute;
-  left: -14px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: var(--accent);
-  border-radius: 2px;
-}

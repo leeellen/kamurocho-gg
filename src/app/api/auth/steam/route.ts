@@ -1,8 +1,5 @@
-import { NextResponse } from 'next/server'
-
-import { buildSteamOpenIdUrl } from '@/lib/steam/openid'
+import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
-  const origin = new URL(request.url).origin
-  return NextResponse.redirect(buildSteamOpenIdUrl(origin))
+  return NextResponse.redirect(new URL("/", request.url));
 }
