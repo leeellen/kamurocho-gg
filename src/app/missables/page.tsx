@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "놓치면 끝나는 구간 — 용과 같이 시리즈 놓침 주의",
+  description: "챕터 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·챕터별로 정리했습니다.",
+  alternates: { canonical: "/missables" },
+  openGraph: {
+    title: "용과 같이 시리즈 놓침 주의 인덱스",
+    description: "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음.",
+    url: "https://kamurocho.gg/missables",
+  },
+};
 import { FiArrowRight, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";

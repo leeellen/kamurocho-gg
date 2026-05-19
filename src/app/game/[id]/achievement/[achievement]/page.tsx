@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FiAlertTriangle, FiArrowLeft, FiCheck, FiCheckCircle, FiExternalLink, FiLock, FiTarget } from "react-icons/fi";
@@ -12,6 +13,50 @@ import { SignInButton } from "@/components/ui/user-menu";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; achievement: string }>;
+}): Promise<Metadata> {
+  const { id, achievement } = await params;
+  const locale = await getLocale();
+  const data = await getAchievementPageData(id, achievement, locale);
+  if (!data) return {};
+  const ach = data.achievement;
+  const title = locale === "ko"
+    ? `${ach.name} — ${data.game.name} 업적 공략`
+    : `${ach.name} — ${data.game.name} achievement guide`;
+  const description = ach.guideSummary || ach.description || (locale === "ko" ? `${data.game.name}의 ${ach.name} 업적 공략.` : `${data.game.name} ${ach.name} achievement guide.`);
+  const url = `https://kamurocho.gg/game/${data.game.slug}/achievement/${ach.slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url,
+      title,
+      description,
+      images: ach.iconUrl ? [{ url: ach.iconUrl, width: 64, height: 64 }] : undefined,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: ach.iconUrl ? [ach.iconUrl] : undefined,
+    },
+    keywords: [
+      ach.name,
+      `${ach.name} 공략`,
+      `${ach.name} 업적`,
+      data.game.name,
+      `${data.game.name} 업적`,
+      ach.missable ? "놓치기 쉬운 업적" : "업적 공략",
+      "Steam achievement guide",
+    ],
+  };
+}
 
 function sourceLabel(sourceUrl: string, locale: "ko" | "en") {
   try {

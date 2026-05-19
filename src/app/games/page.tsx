@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { FiArrowRight, FiClock, FiTarget, FiUser } from "react-icons/fi";
 
@@ -9,6 +10,17 @@ import { getLocale } from "@/lib/i18n";
 import { getSeriesGames, type SeriesGameCard } from "@/lib/kamurocho-data";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "작품 목록 — RGG 스튜디오 스팀 공략",
+  description: "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록. 각 작품의 분량, 놓치기 쉬운 항목, 희귀 업적을 한눈에 확인하세요.",
+  alternates: { canonical: "/games" },
+  openGraph: {
+    title: "작품 목록 — RGG 스튜디오 스팀 공략",
+    description: "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록.",
+    url: "https://kamurocho.gg/games",
+  },
+};
 
 const ARC_LABEL: Record<string, { ko: string; en: string }> = {
   kiryu: { ko: "키류 사가", en: "Kiryu saga" },

@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "내 라이브러리 — 미완료 업적 우선 공략",
+  description: "스팀 계정 연동으로 보유 작품과 미완료 업적을 한 화면에서 확인하고 희귀도 낮은 업적부터 처리하세요.",
+  alternates: { canonical: "/me" },
+  robots: { index: false, follow: true },
+};
 import { FiArrowRight, FiCheck, FiClock, FiExternalLink, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";

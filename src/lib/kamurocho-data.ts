@@ -78,6 +78,7 @@ export type GameAchievementCard = {
   guideSource: string | null;
   confidence: string | null;
   missable: boolean;
+  chapter: number | null;
 };
 
 export type GamePageData = {
@@ -136,6 +137,24 @@ function sanitizeGuideSummary(summary: string | null, achievementName: string, d
   return summary;
 }
 
+// Drop lines that are pure section markers, missable banners, or duplicate
+// titles. Missable status is already communicated by the chip + header copy,
+// so the literal "MISSABLE ACHIEVEMENT ALERT" / "놓치기 쉬운 업적입니다."
+// lines that the backfill scripts emit add noise to the guide steps.
+const NOISE_PATTERNS = [
+  /^\/{2,}\s*missable\s+achievement\s+alert\s*\/{2,}$/i,
+  /^missable\s+achievement\s+alert$/i,
+  /^놓치기\s*쉬운\s*업적입?니?다?\.?$/,
+  /^미스어블\s*업적입?니?다?\.?$/,
+  /^주의[:!.]?\s*놓치기\s*쉬움\.?$/,
+];
+
+function isNoiseLine(text: string): boolean {
+  const trimmed = text.trim().replace(/[*_]+/g, "");
+  if (!trimmed) return true;
+  return NOISE_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
 function sanitizeGuideLines(lines: string[], achievementName: string, description: string) {
   const seen = new Set<string>();
   const blocked = new Set([
@@ -153,11 +172,25 @@ function sanitizeGuideLines(lines: string[], achievementName: string, descriptio
   ]);
 
   return lines.filter((line) => {
+    if (isNoiseLine(line)) return false;
     const normalized = normalizeComparableText(line);
     if (!normalized || blocked.has(normalized) || seen.has(normalized)) return false;
     seen.add(normalized);
     return true;
   });
+}
+
+const CHAPTER_PATTERN_EN = /chapter\s*(\d{1,2})/i;
+const CHAPTER_PATTERN_KO = /(?:챕터|장)\s*(\d{1,2})/;
+
+/** Parse the chapter number a guide references, if any. */
+export function extractChapterFromGuide(content: string | null | undefined): number | null {
+  if (!content) return null;
+  const match = content.match(CHAPTER_PATTERN_EN) ?? content.match(CHAPTER_PATTERN_KO);
+  if (!match) return null;
+  const n = Number(match[1]);
+  if (!Number.isFinite(n) || n <= 0 || n > 30) return null;
+  return n;
 }
 
 function pickKoreanGameName({
@@ -329,6 +362,7 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
         guideSource: selectedGuide?.source_url ?? null,
         confidence: normalizeConfidence(selectedGuide?.confidence),
         missable: inferMissable(achievement, selectedGuide?.content ?? ""),
+        chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
       };
     })
     .sort((left, right) => left.rarity - right.rarity);

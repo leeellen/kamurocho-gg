@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "공략 검색",
+  description: "용과 같이·이치반·저지먼트 시리즈 게임, 업적, 공략 키워드 검색.",
+  alternates: { canonical: "/search" },
+  robots: { index: false, follow: true },
+};
 import { FiArrowRight, FiSearch, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";

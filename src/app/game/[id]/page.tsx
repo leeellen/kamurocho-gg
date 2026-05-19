@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FiArrowLeft, FiArrowRight, FiCheck, FiExternalLink, FiTarget } from "react-icons/fi";
@@ -14,6 +15,50 @@ import { SignInButton } from "@/components/ui/user-menu";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const locale = await getLocale();
+  const data = await getGamePageData(id, locale);
+  if (!data) return {};
+  const title = locale === "ko"
+    ? `${data.game.name} 스팀 업적 공략`
+    : `${data.game.name} Steam achievement guide`;
+  const description = data.game.summary;
+  const url = `https://kamurocho.gg/game/${data.game.slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url,
+      title,
+      description,
+      images: data.game.headerUrl ? [{ url: data.game.headerUrl }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: data.game.headerUrl ? [data.game.headerUrl] : undefined,
+    },
+    keywords: [
+      data.game.name,
+      `${data.game.name} 공략`,
+      `${data.game.name} 업적`,
+      `${data.game.name} 놓치기 쉬운 업적`,
+      `${data.game.name} 미서블`,
+      data.game.lead,
+      "Steam achievement",
+      "RGG Studio",
+    ],
+  };
+}
 
 export default async function GamePage({
   params,
@@ -38,6 +83,49 @@ export default async function GamePage({
   const coveragePct = data.game.achievements
     ? Math.round((data.game.guideCoverage / data.game.achievements) * 100)
     : 0;
+
+  // Build a unified chapter-aware "missable" sidebar that merges the curated
+  // chapter notes (sub-stories, magazines, route choices) with every missable
+  // achievement that references a chapter in its guide content. This is what
+  // the user expects to see — the list previously only showed curated rows.
+  type ChapterBucket = {
+    chapter: number;
+    curatedTitle: { ko: string; en: string } | null;
+    curatedItems: NonNullable<typeof data.missables>[number]["items"];
+    achievements: typeof data.achievements;
+  };
+  const chapterMap = new Map<number, ChapterBucket>();
+  for (const chapter of data.missables ?? []) {
+    chapterMap.set(chapter.chapter, {
+      chapter: chapter.chapter,
+      curatedTitle: chapter.title,
+      curatedItems: chapter.items,
+      achievements: [],
+    });
+  }
+  for (const achievement of data.achievements) {
+    if (!achievement.missable || !achievement.chapter) continue;
+    const bucket = chapterMap.get(achievement.chapter);
+    if (bucket) {
+      bucket.achievements.push(achievement);
+    } else {
+      chapterMap.set(achievement.chapter, {
+        chapter: achievement.chapter,
+        curatedTitle: null,
+        curatedItems: [],
+        achievements: [achievement],
+      });
+    }
+  }
+  // Stray missable achievements with no chapter info still surface in the sidebar
+  // under a dedicated "anytime" bucket so the list never silently drops items.
+  const unlocatedMissable = data.achievements.filter(
+    (a) => a.missable && !a.chapter,
+  );
+  const chapterBuckets = Array.from(chapterMap.values()).sort(
+    (a, b) => a.chapter - b.chapter,
+  );
+  const hasSidebar = chapterBuckets.length > 0 || unlocatedMissable.length > 0;
 
   return (
     <SiteShell locale={locale} section="games">
@@ -194,7 +282,7 @@ export default async function GamePage({
       <div className="mx-auto max-w-[1280px] px-5 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-8 xl:grid-cols-[320px_1fr]">
           {/* SIDEBAR: MISSABLES */}
-          {data.missables && data.missables.length > 0 && (
+          {hasSidebar && (
             <aside aria-label={locale === "ko" ? "챕터별 놓치기 쉬운 항목" : "Chapter missables"} className="space-y-4">
               <div className="sticky top-24">
                 <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
@@ -204,23 +292,25 @@ export default async function GamePage({
                   {locale === "ko" ? "챕터별 놓치기 쉬운 항목" : "Chapter missables"}
                 </h2>
                 <div className="mt-4 flex max-h-[70vh] flex-col gap-3 overflow-y-auto pr-1">
-                  {data.missables.map((chapter) => (
+                  {chapterBuckets.map((bucket) => (
                     <div
-                      key={chapter.chapter}
+                      key={bucket.chapter}
                       className="rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4"
                     >
                       <div className="flex items-center gap-2">
                         <Chip tone="gold" size="xs" className="font-mono">
-                          CH {chapter.chapter}
+                          CH {bucket.chapter}
                         </Chip>
-                        <span className="text-[13px] font-bold text-white">
-                          {locale === "ko" ? chapter.title.ko : chapter.title.en}
-                        </span>
+                        {bucket.curatedTitle && (
+                          <span className="text-[13px] font-bold text-white">
+                            {locale === "ko" ? bucket.curatedTitle.ko : bucket.curatedTitle.en}
+                          </span>
+                        )}
                       </div>
                       <div className="mt-3 flex flex-col gap-2">
-                        {chapter.items.map((item, index) => (
+                        {bucket.curatedItems.map((item, index) => (
                           <div
-                            key={index}
+                            key={`curated-${index}`}
                             className="rounded-lg border border-[var(--border-subtle)] bg-black/20 p-3"
                           >
                             <div className="flex flex-wrap items-center gap-2">
@@ -242,9 +332,58 @@ export default async function GamePage({
                             </p>
                           </div>
                         ))}
+                        {bucket.achievements.map((ach) => (
+                          <Link
+                            key={`ach-${ach.id}`}
+                            href={`/game/${data.game.slug}/achievement/${ach.slug}`}
+                            className="group block cursor-pointer rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)]/40 p-3 no-underline transition-colors hover:bg-[var(--danger-bg)]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                          >
+                            <div className="flex flex-wrap items-center gap-2">
+                              <Chip tone="danger" size="xs">
+                                <FiTarget size={10} aria-hidden="true" />
+                                {locale === "ko" ? "업적" : "Achievement"}
+                              </Chip>
+                              <span className="text-[12px] font-semibold text-white transition-colors group-hover:text-[var(--accent)]">
+                                {ach.name}
+                              </span>
+                            </div>
+                            <p className="m-0 mt-1.5 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+                              {ach.guideSummary || ach.guideSteps[0] || ach.description}
+                            </p>
+                          </Link>
+                        ))}
                       </div>
                     </div>
                   ))}
+                  {unlocatedMissable.length > 0 && (
+                    <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4">
+                      <div className="flex items-center gap-2">
+                        <Chip tone="info" size="xs">{locale === "ko" ? "챕터 미지정" : "Anytime / unspecified"}</Chip>
+                      </div>
+                      <div className="mt-3 flex flex-col gap-2">
+                        {unlocatedMissable.map((ach) => (
+                          <Link
+                            key={ach.id}
+                            href={`/game/${data.game.slug}/achievement/${ach.slug}`}
+                            className="group block cursor-pointer rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)]/40 p-3 no-underline transition-colors hover:bg-[var(--danger-bg)]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                          >
+                            <div className="flex flex-wrap items-center gap-2">
+                              <Chip tone="danger" size="xs">
+                                <FiTarget size={10} aria-hidden="true" />
+                                {locale === "ko" ? "업적" : "Achievement"}
+                              </Chip>
+                              <span className="text-[12px] font-semibold text-white transition-colors group-hover:text-[var(--accent)]">
+                                {ach.name}
+                              </span>
+                            </div>
+                            <p className="m-0 mt-1.5 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+                              {ach.guideSummary || ach.guideSteps[0] || ach.description}
+                            </p>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </aside>
