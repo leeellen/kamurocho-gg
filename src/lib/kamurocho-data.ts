@@ -373,7 +373,7 @@ async function fetchSeriesRows() {
 
   const { data: achievements, error: achievementError } = await client
     .from("achievements")
-    .select("id,app_id,api_name,display_name,description,global_percent,difficulty,icon_url,icon_gray_url,category,missable")
+    .select("id,app_id,api_name,display_name,description,global_percent,difficulty,icon_url,icon_gray_url,category")
     .in("app_id", RGG_APP_IDS)
     .order("app_id", { ascending: true });
   if (achievementError) throw achievementError;
