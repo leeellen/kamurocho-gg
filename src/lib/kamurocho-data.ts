@@ -567,24 +567,86 @@ export const getPlayOrderData = cache(async (locale: Locale) => {
   };
 });
 
-export const getMissablesIndex = cache(async (locale: Locale) => {
+export type MissableIndexItem = {
+  kind: "missable" | "recommended" | "anytime" | "achievement";
+  title: string;
+  when: string;
+  body: string;
+  slug?: string;
+};
+
+export type MissableIndexEntry = {
+  game: SeriesGameCard;
+  chapters: Array<{
+    chapter: number;
+    title: string | null;
+    items: MissableIndexItem[];
+  }>;
+  unlocated: MissableIndexItem[];
+};
+
+export const getMissablesIndex = cache(async (locale: Locale): Promise<MissableIndexEntry[]> => {
   const games = await getSeriesGames(locale);
-  const gameMap = new Map(games.map((game) => [game.appId, game]));
-  return Object.entries(MISSABLES)
-    .map(([appId, chapters]) => ({
-      game: gameMap.get(Number(appId)) ?? null,
-      chapters: (chapters ?? []).map((chapter) => ({
-        chapter: chapter.chapter,
-        title: locale === "ko" ? chapter.title.ko : chapter.title.en,
-        items: chapter.items.map((item) => ({
+  const result: MissableIndexEntry[] = [];
+
+  for (const game of games) {
+    // Pull the full game page to reuse all the chapter / pointer / sanitized
+    // step inference. Missing pages contribute zero rows.
+    const page = await getGamePageData(game.slug, locale).catch(() => null);
+    if (!page) continue;
+
+    type Bucket = {
+      chapter: number;
+      title: string | null;
+      items: MissableIndexItem[];
+    };
+    const map = new Map<number, Bucket>();
+
+    for (const curatedChapter of MISSABLES[game.appId] ?? []) {
+      map.set(curatedChapter.chapter, {
+        chapter: curatedChapter.chapter,
+        title: locale === "ko" ? curatedChapter.title.ko : curatedChapter.title.en,
+        items: curatedChapter.items.map((item) => ({
           kind: item.kind,
           title: locale === "ko" ? item.title.ko : item.title.en,
           when: locale === "ko" ? item.when.ko : item.when.en,
           body: locale === "ko" ? item.body.ko : item.body.en,
         })),
-      })),
-    }))
-    .filter((entry) => entry.game);
+      });
+    }
+
+    const unlocated: MissableIndexItem[] = [];
+    for (const ach of page.achievements) {
+      if (!ach.missable) continue;
+      const item: MissableIndexItem = {
+        kind: "achievement",
+        title: ach.name,
+        when: ach.guidePointer ?? (locale === "ko" ? "획득 가능 시점에 즉시" : "When the opportunity opens"),
+        body: ach.guideSummary || ach.guideSteps[0] || ach.description || "",
+        slug: ach.slug,
+      };
+      if (ach.chapter) {
+        const bucket = map.get(ach.chapter);
+        if (bucket) {
+          bucket.items.push(item);
+        } else {
+          map.set(ach.chapter, { chapter: ach.chapter, title: null, items: [item] });
+        }
+      } else {
+        unlocated.push(item);
+      }
+    }
+
+    if (map.size === 0 && unlocated.length === 0) continue;
+
+    result.push({
+      game,
+      chapters: Array.from(map.values()).sort((a, b) => a.chapter - b.chapter),
+      unlocated,
+    });
+  }
+
+  return result;
 });
 
 export const searchKamurocho = cache(async (query: string, locale: Locale) => {
