@@ -2,13 +2,13 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Unlokd",
-    short_name: "Unlokd",
-    description: "Steam achievement tracker and guide platform.",
+    name: "kamurocho.gg",
+    short_name: "kamurocho",
+    description: "Fan-curated RGG Steam achievement guides, missables, and play order.",
     start_url: "/",
     display: "standalone",
-    background_color: "#08080b",
-    theme_color: "#b6a0ff",
+    background_color: "#f5f5f3",
+    theme_color: "#0b1b33",
     icons: [
       {
         src: "/favicon.ico",

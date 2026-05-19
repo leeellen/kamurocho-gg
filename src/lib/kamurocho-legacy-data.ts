@@ -155,8 +155,8 @@ const getSelectedUser = cache(async () => {
     const metadataSteamId =
       typeof metadata.steam_id === "string" && metadata.steam_id.length > 0 ? metadata.steam_id : null;
     const emailSteamId =
-      typeof authUser.email === "string" && authUser.email.endsWith("@steam.unlokd.gg")
-        ? authUser.email.replace("@steam.unlokd.gg", "")
+      typeof authUser.email === "string" && authUser.email.endsWith("@steam.kamurocho.gg")
+        ? authUser.email.replace("@steam.kamurocho.gg", "")
         : null;
     const steamId = metadataSteamId ?? emailSteamId;
 
@@ -779,7 +779,7 @@ export async function getGameDetail(idOrSlug: string) {
       guide: {
         confidence: ((guide?.confidence as Confidence) || "unverified") as Confidence,
         content: guideContent,
-        source: guide?.source_url || mockGuide?.guide.source || "Unlokd",
+        source: guide?.source_url || mockGuide?.guide.source || "kamurocho.gg",
         license: guide?.license || mockGuide?.guide.license || "Original",
       },
       guideSummary: structuredGuide.summary ?? undefined,
@@ -961,7 +961,7 @@ export async function getSettingsData() {
   const user = await getUserSummary();
   return {
     user,
-    email: `${(user.name || "curator").toLowerCase().replace(/\s+/g, ".")}@unlokd.io`,
+    email: `${(user.name || "curator").toLowerCase().replace(/\s+/g, ".")}@kamurocho.gg`,
     bio: "Digital completionist specializing in CRPGs and retro-modern shooters. Currently hunting Platinums in the Neon Sector.",
   };
 }

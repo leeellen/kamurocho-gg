@@ -5,7 +5,7 @@ import { FiHome, FiSearch, FiGrid, FiUser, FiSettings, FiLock } from "react-icon
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { type Locale, getMessages } from "@/lib/i18n";
 import { cn } from "@/lib/cn";
-import { type UserSummary } from "@/lib/unlokd-data";
+import { type UserSummary } from "@/lib/kamurocho-legacy-data";
 
 type Section = "home" | "search" | "library" | "me" | "settings";
 
@@ -35,7 +35,7 @@ export function AppShell({
       {/* Desktop sidebar */}
       <aside className="shell-sidebar">
         <div className="px-2 pt-1.5 pb-4 flex items-center gap-2">
-          <Image src="/logo-unlokd.svg" alt="Unlokd" width={132} height={32} priority style={{ width: 132, height: "auto" }} />
+          <Image src="/logo-kamurocho.svg" alt="kamurocho.gg" width={132} height={32} priority style={{ width: 132, height: "auto" }} />
         </div>
 
         <nav className="flex flex-col gap-1">

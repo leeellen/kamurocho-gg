@@ -47,7 +47,7 @@ type Labels = {
   achievements: string;
 };
 
-const RECENT_KEY = "unlokd:recent-searches";
+const RECENT_KEY = "kamurocho:recent-searches";
 
 export function SearchClient({
   labels,
@@ -58,7 +58,15 @@ export function SearchClient({
 }) {
   const [q, setQ] = useState("");
   const [debouncedQ, setDebouncedQ] = useState("");
-  const [recent, setRecent] = useState<string[]>([]);
+  const [recent, setRecent] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+    try {
+      const raw = window.localStorage.getItem(RECENT_KEY);
+      return raw ? (JSON.parse(raw) as string[]) : [];
+    } catch {
+      return [];
+    }
+  });
   const [games, setGames] = useState<GameHit[]>([]);
   const [achievements, setAchievements] = useState<AchHit[]>([]);
   const [loading, setLoading] = useState(false);
@@ -77,16 +85,6 @@ export function SearchClient({
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // Load recent searches
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(RECENT_KEY);
-      if (raw) setRecent(JSON.parse(raw) as string[]);
-    } catch {
-      // ignore
-    }
-  }, []);
-
   // Debounce input
   useEffect(() => {
     const t = setTimeout(() => setDebouncedQ(q.trim()), 220);
@@ -96,15 +94,13 @@ export function SearchClient({
   // Fetch results
   useEffect(() => {
     if (!debouncedQ) {
-      setGames([]);
-      setAchievements([]);
-      setLoading(false);
+      abortRef.current?.abort();
       return;
     }
     abortRef.current?.abort();
     const ctrl = new AbortController();
     abortRef.current = ctrl;
-    setLoading(true);
+    const loadingTimer = window.setTimeout(() => setLoading(true), 0);
     fetch(`/api/search?q=${encodeURIComponent(debouncedQ)}`, { signal: ctrl.signal })
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
       .then((data: { games: GameHit[]; achievements: AchHit[] }) => {
@@ -118,7 +114,10 @@ export function SearchClient({
         }
       })
       .finally(() => setLoading(false));
-    return () => ctrl.abort();
+    return () => {
+      window.clearTimeout(loadingTimer);
+      ctrl.abort();
+    };
   }, [debouncedQ]);
 
   const persistRecent = (term: string) => {

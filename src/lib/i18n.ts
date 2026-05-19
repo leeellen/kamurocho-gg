@@ -6,7 +6,7 @@ export const defaultLocale: Locale = "en";
 
 export async function getLocale(): Promise<Locale> {
   const cookieStore = await cookies();
-  const locale = cookieStore.get("unlokd-locale")?.value;
+  const locale = cookieStore.get("kamurocho-locale")?.value;
   return locale === "ko" ? "ko" : "en";
 }
 
@@ -35,7 +35,7 @@ export const messages = {
       heroLine1: "The achievements",
       heroLine2: "you've been",
       heroLine3: "putting off.",
-      sub: "Connect your Steam library. Unlokd surfaces progress, rarity, and step-by-step guides so you can actually finish them.",
+      sub: "A focused guide companion for RGG Studio completions, missables, and rare achievement routing.",
       signin: "Sign in through Steam",
       browse: "Browse without signing in",
       tag3layer: "3-Layer Guide",
@@ -46,7 +46,7 @@ export const messages = {
       l3Title: "Community tips",
       l3Body: "Real-player workarounds and the small tricks that matter.",
       disclaimer:
-        "Steam and the Steam logo are trademarks of Valve. Unlokd is not affiliated with Valve.",
+        "Steam and the Steam logo are trademarks of Valve. kamurocho.gg is not affiliated with Valve.",
       proofA: "Auto-syncs your Steam library",
       proofB: "40k+ achievement guides",
       proofC: "Ad-free",
@@ -61,7 +61,7 @@ export const messages = {
       cancel: "Cancel",
       help: "Need help signing in?",
       steamGuard: "This is Steam's official OpenID sign-in",
-      permissions: "Unlokd will be able to access",
+      permissions: "kamurocho.gg will be able to access",
       perm1: "Your Steam ID and public profile",
       perm2: "Game library and playtime",
       perm3: "Achievement progress",
@@ -256,7 +256,7 @@ export const messages = {
       avgCompletion: "avg completion",
     },
     login: {
-      welcome: "Welcome to Unlokd",
+      welcome: "Welcome to kamurocho.gg",
       secure: "Securely connect your Steam account to begin.",
       signIn: "Sign in with Steam",
       securityFirst: "Security First",
@@ -317,7 +317,7 @@ export const messages = {
       l3Title: "커뮤니티 팁",
       l3Body: "실제 플레이어가 남긴 우회 방법과 핵심 팁.",
       disclaimer:
-        "Steam, Steam 로고는 Valve의 상표입니다. Unlokd는 Valve와 무관합니다.",
+        "Steam, Steam 로고는 Valve의 상표입니다. kamurocho.gg는 Valve와 무관합니다.",
       proofA: "Steam 라이브러리 자동 동기화",
       proofB: "업적 가이드 4만+",
       proofC: "광고 없음",
@@ -332,7 +332,7 @@ export const messages = {
       cancel: "취소",
       help: "도움이 필요하신가요?",
       steamGuard: "이 페이지는 Steam의 공식 OpenID 로그인입니다",
-      permissions: "Unlokd가 다음 항목에 접근합니다",
+      permissions: "kamurocho.gg가 다음 항목에 접근합니다",
       perm1: "Steam ID와 공개 프로필",
       perm2: "보유 게임과 플레이타임",
       perm3: "업적 달성 데이터",
@@ -526,7 +526,7 @@ export const messages = {
       avgCompletion: "평균 완료율",
     },
     login: {
-      welcome: "Unlokd에 오신 것을 환영합니다",
+      welcome: "kamurocho.gg에 오신 것을 환영합니다",
       secure: "Steam 계정을 안전하게 연결하세요.",
       signIn: "Steam으로 로그인",
       securityFirst: "보안 우선",

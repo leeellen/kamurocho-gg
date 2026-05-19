@@ -1,4 +1,4 @@
-# Unlokd
+# kamurocho.gg
 
 Steam achievement tracker and guide platform bootstrapped from the `stitch_game_detail` reference package.
 
