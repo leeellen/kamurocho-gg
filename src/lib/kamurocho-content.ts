@@ -150,6 +150,22 @@ export const CURATED_GAMES: CuratedGame[] = [
     missableCount: 5,
   },
   {
+    appId: 2375550,
+    slug: "like-a-dragon-gaiden",
+    arc: "kiryu",
+    year: 2023,
+    title: { ko: "용과 같이 7 외전: 이름을 지운 자", en: "Like a Dragon Gaiden: The Man Who Erased His Name" },
+    summary: {
+      ko: "키류의 공백기를 직접 메우며 6편 이후와 8편 직전까지 연결하는 외전.",
+      en: "Kiryu's missing-years side story that bridges Yakuza 6 to the lead-in for Infinite Wealth.",
+    },
+    lead: "Kiryu",
+    platforms: ["PC", "Steam"],
+    estimatedHours: "30h",
+    difficulty: 3,
+    missableCount: 5,
+  },
+  {
     appId: 1235140,
     slug: "yakuza-like-a-dragon",
     arc: "ichiban",
@@ -266,6 +282,14 @@ export const PLAY_ORDER: Record<"new" | "chronological", PlayOrderEntry[]> = {
       },
     },
     {
+      slug: "like-a-dragon-gaiden",
+      recommended: true,
+      reason: {
+        ko: "7편 이후에 보면 키류 쪽 공백기가 가장 자연스럽게 이어집니다.",
+        en: "It lands best after Like a Dragon, when Kiryu's side of the timeline can pay off cleanly.",
+      },
+    },
+    {
       slug: "judgment",
       recommended: true,
       reason: {
@@ -289,7 +313,7 @@ export const PLAY_ORDER: Record<"new" | "chronological", PlayOrderEntry[]> = {
       slug: game.slug,
       recommended: game.arc !== "kiryu" || game.slug !== "yakuza-3",
       reason: {
-        ko: `${game.year}년 서사 기준 순서입니다.`,
+        ko: `스토리 시점이 ${game.year}년인 순서입니다.`,
         en: `Ordered by the story era starting in ${game.year}.`,
       },
     })),
@@ -321,7 +345,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "부동산 로열 시작", en: "Start Real Estate Royale" },
           when: { ko: "구역이 열리자마자", en: "As soon as districts open" },
           body: {
-            ko: "5개 구역을 늦게 열면 나중에 completion cleanup가 길어집니다.",
+            ko: "5개 구역을 늦게 열면 나중에 완료 정리에 시간이 더 걸립니다.",
             en: "If you delay all five districts, the completion cleanup becomes much longer later.",
           },
         },
@@ -371,7 +395,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "서브스토리와 메스킹 정리", en: "Front-load substories and MesuKing" },
           when: { ko: "메스킹 해금 직후", en: "Right after MesuKing opens" },
           body: {
-            ko: "하비 루프를 너무 늦게 미루면 Dragon style 강화와 병행 정리가 꼬입니다.",
+            ko: "취미 루프를 너무 늦게 미루면 드래곤 스타일 강화와 병행 정리가 꼬입니다.",
             en: "If you leave the hobby loop too late, it clashes badly with Dragon style cleanup later.",
           },
         },

@@ -13,9 +13,19 @@ export type StructuredGuide = {
 
 const MARKDOWN_LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
 const BARE_URL_RE = /\b(https?:\/\/[^\s<>()]+[^\s<>().,;])/g;
+const ORDERED_PREFIX_RE = /^\d+[.)]\s*/;
 
 function cleanInlineMarkdown(value: string) {
   return value.replace(/\*\*/g, "").trim();
+}
+
+function normalizeHeaderToken(value: string) {
+  return cleanInlineMarkdown(value)
+    .replace(/^[-*]\s*/, "")
+    .replace(ORDERED_PREFIX_RE, "")
+    .replace(/:$/, "")
+    .trim()
+    .toLowerCase();
 }
 
 function isReferenceLine(value: string) {
@@ -23,11 +33,13 @@ function isReferenceLine(value: string) {
 }
 
 function isTipsHeader(value: string) {
-  return /^\*\*(tips|watch for|팁|주의할 점)\*\*:?$/i.test(value);
+  const token = normalizeHeaderToken(value);
+  return token === "tips" || token === "tip" || token === "watch for" || token === "팁" || token === "주의할 점";
 }
 
 function isStepsHeader(value: string) {
-  return /^\*\*(do this next|steps|next steps|지금 해야 할 일|단계별 안내)\*\*:?$/i.test(value);
+  const token = normalizeHeaderToken(value);
+  return token === "do this next" || token === "steps" || token === "next steps" || token === "지금 해야 할 일" || token === "단계별 안내";
 }
 
 function isBoilerplateLine(value: string) {
@@ -79,6 +91,20 @@ export function structureGuide(paragraphs: string[], fallbackSource?: string | n
       continue;
     }
 
+    const stepsHeaderMatch = line.match(/^(do this next|steps|next steps|지금 해야 할 일|단계별 안내)\s*:\s*(.+)$/i);
+    if (stepsHeaderMatch) {
+      section = "steps";
+      if (stepsHeaderMatch[2].trim()) steps.push(stepsHeaderMatch[2].trim());
+      continue;
+    }
+
+    const tipsHeaderMatch = line.match(/^(tips?|watch for|팁|주의할 점)\s*:\s*(.+)$/i);
+    if (tipsHeaderMatch) {
+      section = "tips";
+      if (tipsHeaderMatch[2].trim()) tips.push(tipsHeaderMatch[2].trim());
+      continue;
+    }
+
     if (
       isReferenceLine(line) ||
       /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/.test(line) ||
@@ -92,7 +118,13 @@ export function structureGuide(paragraphs: string[], fallbackSource?: string | n
       continue;
     }
 
-    const bullet = line.startsWith("- ") ? line.slice(2).trim() : null;
+    const bullet = line.startsWith("- ")
+      ? line.slice(2).trim()
+      : line.startsWith("* ")
+        ? line.slice(2).trim()
+        : line.match(ORDERED_PREFIX_RE)
+          ? line.replace(ORDERED_PREFIX_RE, "").trim()
+          : null;
     if (bullet) {
       if (section === "tips") {
         tips.push(bullet);

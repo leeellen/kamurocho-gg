@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     locale === "ko" || locale === "en" ? locale : defaultLocale;
 
   const response = NextResponse.redirect(new URL(redirect, url.origin));
-  response.cookies.set("unlokd-locale", safeLocale, {
+  response.cookies.set("kamurocho-locale", safeLocale, {
     path: "/",
     maxAge: 60 * 60 * 24 * 365,
   });

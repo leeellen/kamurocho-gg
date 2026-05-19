@@ -1,8 +1,11 @@
 import Link from "next/link";
-import { FiArrowRight, FiBookOpen, FiClock, FiLayers, FiTarget } from "react-icons/fi";
+import { FiArrowRight, FiBookOpen, FiClock, FiCompass, FiLayers, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
+import { Chip } from "@/components/ui/chip";
 import { GameCover } from "@/components/ui/game-cover";
+import { SectionTitle } from "@/components/ui/section-title";
+import { StatTile } from "@/components/ui/stat-tile";
 import { getLocale } from "@/lib/i18n";
 import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/kamurocho-data";
 
@@ -17,212 +20,366 @@ export default async function HomePage() {
   ]);
 
   const totalAchievements = games.reduce((sum, game) => sum + game.achievements, 0);
-  const totalGuides = games.reduce((sum, game) => sum + game.guideCoverage, 0);
+  const totalGuidedAchievements = games.reduce((sum, game) => sum + game.guideCoverage, 0);
   const totalMissables = games.reduce((sum, game) => sum + game.missableCount, 0);
+  const coveragePct = totalAchievements
+    ? Math.round((totalGuidedAchievements / totalAchievements) * 100)
+    : 0;
   const featured = games[0];
 
   return (
     <SiteShell locale={locale} section="home">
-      <section className="relative overflow-hidden bg-[var(--chrome-top)] text-[var(--chrome-text)]">
-        <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 px-5 pb-0 pt-12 md:grid-cols-[1fr_480px] md:px-8 md:pt-14">
-          <div className="pb-12">
-            <div className="mb-3 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--chrome-muted)]">
-              {locale === "ko" ? "시리즈 종합 가이드" : "Series compendium"}
-            </div>
-            <h1 className="max-w-[12ch] font-['Bebas_Neue'] text-[64px] leading-[0.9] tracking-[0.02em] md:text-[88px]">
-              {locale === "ko" ? "용과 같이 전 시리즈," : "Every game in the saga,"}
-              <br />
-              <span className="text-[var(--accent)]">
-                {locale === "ko" ? "하나도 놓치지 않는 가이드" : "nothing missable left behind."}
-              </span>
-            </h1>
-            <p className="mt-5 max-w-[56ch] text-[14px] leading-7 text-[var(--chrome-muted)]">
-              {locale === "ko"
-                ? "키류 아크, 이치반 아크, 저지먼트 라인의 Steam 업적과 실전 공략만 모았습니다. 챕터별 미서블, 희귀 업적, 바로 적용할 수 있는 가이드를 한 화면에서 정리합니다."
-                : "A single hub for the Kiryu arc, Ichiban arc, and Judgment line. It keeps Steam achievements, missables, and actionable guide steps in one place."}
-            </p>
-            <div className="mt-7 flex flex-wrap items-center gap-3">
-              <Link
-                href="/games"
-                className="inline-flex h-10 items-center gap-2 rounded-sm bg-[var(--danger)] px-4 text-[13px] font-bold uppercase tracking-[0.06em] text-white no-underline transition-colors hover:bg-[var(--danger-hover)]"
-              >
-                {locale === "ko" ? "게임 둘러보기" : "Browse games"} <FiArrowRight size={14} />
-              </Link>
-              <Link
-                href="/order"
-                className="inline-flex h-10 items-center gap-2 rounded-sm border border-white/20 px-4 text-[13px] font-medium text-white no-underline hover:border-white/50"
-              >
-                {locale === "ko" ? "추천 순서 보기" : "View play order"}
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative flex min-h-[280px] items-end overflow-hidden border-t border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.02)_0,rgba(255,255,255,0.02)_1px,transparent_1px,transparent_20px)]">
-            <div className="w-full p-6">
-              <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--chrome-muted)]">
-                {locale === "ko" ? "추천 출발점" : "Recommended starting point"}
-              </div>
-              <div className="mb-2 text-[28px] font-extrabold tracking-tight">{featured.name}</div>
-              <div className="text-[14px] leading-6 text-[var(--chrome-muted)]">{featured.summary}</div>
-            </div>
-          </div>
+      {/* HERO */}
+      <section className="relative isolate overflow-hidden">
+        <div aria-hidden="true" className="absolute inset-0 -z-10">
+          {featured && (
+            <>
+              <GameCover
+                appId={featured.appId}
+                ratio="header"
+                imgIconUrl={featured.imgIconUrl}
+                headerUrl={featured.headerUrl}
+                capsuleUrl={featured.capsuleUrl}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  aspectRatio: "auto",
+                  objectFit: "cover",
+                  filter: "saturate(1.1) brightness(0.5)",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)]/30 via-[var(--bg-base)]/70 to-[var(--bg-base)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_20%_30%,rgba(239,68,68,0.25),transparent_60%)]" />
+            </>
+          )}
         </div>
 
-        <div className="border-t border-white/10 bg-white/5">
-          <div className="mx-auto grid max-w-[1280px] grid-cols-2 md:grid-cols-4 px-5 md:px-8">
-            <Stat label={locale === "ko" ? "수록 게임" : "Games covered"} value={String(games.length)} />
-            <Stat label={locale === "ko" ? "업적 수" : "Achievements"} value={String(totalAchievements)} />
-            <Stat label={locale === "ko" ? "실가이드 row" : "Guide rows"} value={String(totalGuides)} />
-            <Stat label={locale === "ko" ? "미서블 체크" : "Missable checks"} value={String(totalMissables)} />
+        <div className="mx-auto max-w-[1280px] px-5 pb-16 pt-20 md:px-8 md:pb-24 md:pt-28">
+          <div className="flex items-center gap-2">
+            <span aria-hidden="true" className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--accent)]" />
+            <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+              {locale === "ko" ? "RGG 스튜디오 스팀 공략" : "RGG Studio · Steam guides"}
+            </span>
           </div>
+
+          <h1 className="font-display mt-5 max-w-[18ch] text-[44px] font-extrabold leading-[1.02] tracking-[-0.04em] text-white md:text-[72px]">
+            {locale === "ko" ? (
+              <>
+                시리즈 전체를
+                <br />
+                <span className="text-[var(--accent)]">한곳에서</span> 공략하세요.
+              </>
+            ) : (
+              <>
+                Clear the whole series
+                <br />
+                from <span className="text-[var(--accent)]">one place</span>.
+              </>
+            )}
+          </h1>
+
+          <p className="mt-6 max-w-[56ch] text-[15px] leading-7 text-[var(--text-secondary)] md:text-[16px]">
+            {locale === "ko"
+              ? "키류·이치반 사가와 저지먼트 시리즈의 스팀 업적 공략을 모았습니다. 게임별 진행도, 챕터별 놓침 주의, 희귀 업적, 단계별 실행법까지 흩어진 정보 없이 바로 확인하세요."
+              : "Every Steam achievement guide for the Kiryu saga, Ichiban saga, and Judgment line — coverage, missables, rare picks, and step-by-step routes in one place."}
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link
+              href="/games"
+              className="group inline-flex h-12 cursor-pointer items-center gap-2.5 rounded-full bg-[var(--accent)] px-6 text-[14px] font-bold text-white no-underline shadow-[var(--accent-glow)] transition-all hover:-translate-y-0.5 hover:bg-[var(--accent-hover)] hover:shadow-[0_0_0_1px_var(--accent-border),0_0_48px_rgba(239,68,68,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+            >
+              {locale === "ko" ? "게임 둘러보기" : "Browse games"}
+              <FiArrowRight size={16} aria-hidden="true" className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
+            <Link
+              href="/order"
+              className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 text-[14px] font-semibold text-white no-underline backdrop-blur transition-colors hover:border-white/35 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+            >
+              <FiCompass size={15} aria-hidden="true" />
+              {locale === "ko" ? "플레이 순서 보기" : "View play order"}
+            </Link>
+          </div>
+
+          {/* Featured pick — single clickable card with clean image/content split */}
+          {featured && (
+            <Link
+              href={`/game/${featured.slug}`}
+              aria-label={locale === "ko" ? `${featured.name} 공략 열기` : `Open ${featured.name} guide`}
+              className="group mt-12 grid w-full max-w-[640px] cursor-pointer grid-cols-[140px_1fr] gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 no-underline backdrop-blur-xl transition-all hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:grid-cols-[180px_1fr] sm:gap-5"
+            >
+              <div className="overflow-hidden rounded-xl border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
+                <GameCover
+                  appId={featured.appId}
+                  ratio="header"
+                  imgIconUrl={featured.imgIconUrl}
+                  headerUrl={featured.headerUrl}
+                  capsuleUrl={featured.capsuleUrl}
+                />
+              </div>
+              <div className="flex min-w-0 flex-col justify-center gap-2 py-1">
+                <Chip tone="accent" size="xs" className="self-start">
+                  {locale === "ko" ? "입문 추천작" : "Start here"}
+                </Chip>
+                <div className="font-display text-[18px] font-extrabold leading-tight tracking-tight text-white transition-colors group-hover:text-[var(--accent)] sm:text-[20px]">
+                  {featured.name}
+                </div>
+                <p className="m-0 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)] sm:text-[13px]">
+                  {featured.summary}
+                </p>
+                <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-[var(--text-tertiary)]">
+                  <span className="font-mono">{featured.estimatedHours}</span>
+                  <span aria-hidden="true" className="text-white/20">·</span>
+                  <span>{locale === "ko" ? `업적 ${featured.achievements}` : `${featured.achievements} ach.`}</span>
+                  <span aria-hidden="true" className="text-white/20">·</span>
+                  <span>{locale === "ko" ? `놓침 ${featured.missableCount}` : `${featured.missableCount} missable`}</span>
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1280px] px-5 py-10 md:px-8">
-        <SectionDivider
-          label={locale === "ko" ? "series index" : "series index"}
-          title={locale === "ko" ? "RGG Steam 가이드 허브" : "RGG Steam guide hub"}
-        />
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {games.map((game) => (
-            <Link
-              key={game.appId}
-              href={`/game/${game.slug}`}
-              className="overflow-hidden rounded-[4px] border border-[var(--border)] bg-[var(--bg-surface)] no-underline shadow-[var(--shadow-card)] transition-all hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-[var(--shadow-pop)]"
-            >
-              <GameCover
-                appId={game.appId}
-                ratio="header"
-                imgIconUrl={game.imgIconUrl}
-                headerUrl={game.headerUrl}
-                capsuleUrl={game.capsuleUrl}
-              />
-              <div className="p-4">
-                <div className="mb-1 line-clamp-1 text-[14px] font-bold text-[var(--text-primary)]">{game.name}</div>
-                <div className="mb-2 font-mono text-[11px] text-[var(--text-muted)]">
-                  {game.year} · {game.achievements} {locale === "ko" ? "업적" : "achievements"}
-                </div>
-                <p className="mb-3 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">{game.summary}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  <Chip tone="danger">{locale === "ko" ? `미서블 ${game.missableCount}` : `${game.missableCount} missables`}</Chip>
-                  <Chip>{locale === "ko" ? `${game.guideCoverage}개 공략 연결` : `${game.guideCoverage} guides linked`}</Chip>
-                  <Chip tone="safe">{locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}</Chip>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div className="mx-auto max-w-[1280px] px-5 md:px-8">
+        {/* STATS */}
+        <section aria-label={locale === "ko" ? "사이트 통계" : "Site stats"} className="-mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+          <StatTile
+            label={locale === "ko" ? "수록 작품" : "Games covered"}
+            value={games.length}
+            hint={locale === "ko" ? "RGG 스튜디오 시리즈" : "RGG Studio titles"}
+          />
+          <StatTile
+            label={locale === "ko" ? "전체 업적" : "Achievements"}
+            value={totalAchievements.toLocaleString()}
+          />
+          <StatTile
+            tone="accent"
+            label={locale === "ko" ? "공략 커버리지" : "Guide coverage"}
+            value={`${coveragePct}%`}
+            hint={locale === "ko" ? `${totalGuidedAchievements.toLocaleString()}개 공략 연결` : `${totalGuidedAchievements.toLocaleString()} guides linked`}
+          />
+          <StatTile
+            tone="gold"
+            label={locale === "ko" ? "놓치기 쉬운 항목" : "Missable checks"}
+            value={totalMissables}
+            hint={locale === "ko" ? "챕터별 정리" : "Chapter-aware"}
+          />
+        </section>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-[1.2fr_0.8fr]">
-          <section>
-            <SectionDivider
-              label={locale === "ko" ? "play order" : "play order"}
-              title={locale === "ko" ? "입문자 추천 순서" : "Newcomer order"}
+        {/* SERIES GRID */}
+        <section className="mt-20">
+          <SectionTitle
+            eyebrow={locale === "ko" ? "작품 목록" : "Series index"}
+            title={locale === "ko" ? "작품별 공략 모음" : "Every RGG title, one click in"}
+            description={locale === "ko" ? "스팀 커뮤니티 공략이 확보된 작품만 추렸습니다. 카드에서 분량·놓치기 쉬운 항목·희귀 업적을 한눈에 확인하세요." : "Only titles backed by real Steam Community guides. Each card shows scale, missables, and rare picks up front."}
+            action={
+              <Link
+                href="/games"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] px-4 py-2 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-white/30 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+              >
+                {locale === "ko" ? "전체 보기" : "See all"} <FiArrowRight size={13} aria-hidden="true" />
+              </Link>
+            }
+          />
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {games.map((game) => (
+              <Link
+                key={game.appId}
+                href={`/game/${game.slug}`}
+                aria-label={locale === "ko" ? `${game.name} 공략 열기` : `Open ${game.name} guide`}
+                className="group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] no-underline transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[var(--shadow-pop)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+              >
+                <div className="relative overflow-hidden">
+                  <GameCover
+                    appId={game.appId}
+                    ratio="header"
+                    imgIconUrl={game.imgIconUrl}
+                    headerUrl={game.headerUrl}
+                    capsuleUrl={game.capsuleUrl}
+                  />
+                  <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--bg-elevated)] to-transparent" />
+                  <div className="absolute left-3 top-3 flex gap-1.5">
+                    <Chip tone="solid" size="xs" className="font-mono">{game.year}</Chip>
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col p-4">
+                  <h3 className="font-display line-clamp-1 text-[15px] font-extrabold tracking-tight text-white">
+                    {game.name}
+                  </h3>
+                  <p className="mt-1.5 line-clamp-2 min-h-[3em] text-[12px] leading-6 text-[var(--text-secondary)]">
+                    {game.summary}
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    <Chip tone="danger" size="xs">
+                      <FiTarget size={10} aria-hidden="true" />
+                      {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
+                    </Chip>
+                    <Chip tone="gold" size="xs">{locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}</Chip>
+                  </div>
+                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[11px] text-[var(--text-tertiary)]">
+                    <span className="font-mono">{game.estimatedHours}</span>
+                    <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
+                      {locale === "ko" ? "공략" : "Guide"}
+                      <FiArrowRight size={12} aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* ORDER + MISSABLES */}
+        <section className="mt-20 grid grid-cols-1 gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6">
+            <SectionTitle
+              eyebrow={locale === "ko" ? "플레이 순서" : "Play order"}
+              title={locale === "ko" ? "처음 시작한다면" : "If you're new"}
+              description={locale === "ko" ? "감정·서사 흐름과 공략 동선을 동시에 잡는 추천 순서입니다." : "A recommended path that balances story payoff with cleanup flow."}
             />
-            <div className="relative flex flex-col gap-0">
-              <div className="absolute bottom-4 left-[27px] top-4 w-px bg-[var(--border)]" />
-              {playOrder.newcomer.slice(0, 6).map((entry) => (
-                <div key={entry.slug} className="relative flex gap-4 py-2">
-                  <div className={`mt-4 h-[18px] w-[18px] rounded-full border-2 ${entry.recommended ? "border-[var(--danger)] bg-[var(--danger)]" : "border-[var(--border)] bg-[var(--bg-base)]"}`} />
+            <ol className="relative mt-6 space-y-1">
+              <span aria-hidden="true" className="absolute bottom-3 left-[11px] top-3 w-px bg-gradient-to-b from-[var(--accent)] via-[var(--border-strong)] to-transparent" />
+              {playOrder.newcomer.slice(0, 6).map((entry, index) => (
+                <li key={entry.slug} className="relative pl-9">
+                  <span
+                    aria-hidden="true"
+                    className={`absolute left-0 top-3 flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold ${
+                      entry.recommended
+                        ? "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
+                        : "border border-[var(--border-strong)] bg-[var(--bg-elevated)] text-[var(--text-tertiary)]"
+                    }`}
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   <Link
                     href={`/game/${entry.slug}`}
-                    className={`flex-1 rounded-[4px] border p-4 no-underline shadow-[var(--shadow-card)] ${entry.recommended ? "border-[var(--danger-bg)] bg-[var(--bg-surface)]" : "border-[var(--border)] bg-[var(--bg-surface)]"}`}
+                    className="block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-3 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                   >
-                    <div className="mb-1 flex flex-wrap items-center gap-2">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                        {entry.game?.year}
-                      </span>
-                      <span className="text-[14px] font-bold">{entry.game?.name}</span>
-                      {entry.recommended && <Chip tone="danger">{locale === "ko" ? "추천" : "Recommended"}</Chip>}
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{entry.game?.year}</span>
+                      <span className="font-display text-[14px] font-bold text-white">{entry.game?.name}</span>
+                      {entry.recommended && (
+                        <Chip tone="accent" size="xs">{locale === "ko" ? "입문 추천" : "Recommended"}</Chip>
+                      )}
                     </div>
-                    <p className="text-[12px] leading-6 text-[var(--text-secondary)]">{entry.reason}</p>
+                    <p className="mt-1.5 m-0 text-[12px] leading-6 text-[var(--text-secondary)]">{entry.reason}</p>
                   </Link>
-                </div>
+                </li>
               ))}
-            </div>
-            <Link href="/order" className="mt-4 inline-flex items-center gap-2 text-[13px] font-semibold text-[var(--danger)] no-underline">
-              {locale === "ko" ? "전체 순서 보기" : "See the full order"} <FiArrowRight size={14} />
+            </ol>
+            <Link
+              href="/order"
+              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[13px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
+            >
+              {locale === "ko" ? "전체 순서 보기" : "See the full order"} <FiArrowRight size={13} aria-hidden="true" />
             </Link>
-          </section>
-
-          <section>
-            <SectionDivider
-              label={locale === "ko" ? "missables" : "missables"}
-              title={locale === "ko" ? "챕터별 주의 구간" : "Watchlist by chapter"}
-            />
-            <div className="flex flex-col gap-3">
-              {missables.slice(0, 3).map((entry) => (
-                <div key={entry.game?.appId} className="rounded-[4px] border border-[var(--border)] bg-[var(--bg-surface)] p-4 shadow-[var(--shadow-card)]">
-                  <div className="mb-2 text-[14px] font-bold">{entry.game?.name}</div>
-                  {entry.chapters.slice(0, 2).map((chapter) => (
-                    <div key={`${entry.game?.appId}-${chapter.chapter}`} className="mb-2 rounded-[3px] border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-2">
-                      <div className="flex items-center gap-2">
-                        <span className="font-mono text-[11px] font-bold text-[var(--gold)]">CH {chapter.chapter}</span>
-                        <span className="text-[12px] font-semibold">{chapter.title}</span>
-                      </div>
-                      <div className="mt-1 text-[12px] leading-6 text-[var(--text-secondary)]">
-                        {chapter.items[0]?.title}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-            <Link href="/missables" className="mt-4 inline-flex items-center gap-2 text-[13px] font-semibold text-[var(--danger)] no-underline">
-              {locale === "ko" ? "미서블 목록 보기" : "Open missables index"} <FiArrowRight size={14} />
-            </Link>
-          </section>
-        </div>
-
-        <div className="mt-12 rounded-[4px] border border-[var(--border)] bg-[var(--bg-surface)] p-5 shadow-[var(--shadow-card)]">
-          <div className="mb-4 flex flex-wrap items-center gap-3">
-            <Chip><FiBookOpen size={11} /> {locale === "ko" ? "실행형 공략" : "Actionable guides"}</Chip>
-            <Chip><FiTarget size={11} /> {locale === "ko" ? "희귀 업적 우선" : "Rare-first routing"}</Chip>
-            <Chip><FiLayers size={11} /> {locale === "ko" ? "챕터 미서블 정리" : "Chapter missable notes"}</Chip>
-            <Chip><FiClock size={11} /> {locale === "ko" ? "클린업 시간 예측" : "Cleanup time estimates"}</Chip>
           </div>
-          <p className="m-0 text-[13px] leading-7 text-[var(--text-secondary)]">
+
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6">
+            <SectionTitle
+              eyebrow={locale === "ko" ? "놓침 주의" : "Missables"}
+              title={locale === "ko" ? "놓치기 쉬운 구간" : "Watch the chapters"}
+              description={locale === "ko" ? "챕터 잠금·분기 때문에 다시 못 보는 구간 위주로 모았습니다." : "Chapter locks and route splits that erase progress if you miss them."}
+            />
+            <ul className="mt-5 flex flex-col gap-3">
+              {missables.slice(0, 3).map((entry) => (
+                <li key={entry.game?.appId}>
+                  <Link
+                    href={`/game/${entry.game?.slug}`}
+                    className="block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="font-display text-[14px] font-bold text-white">{entry.game?.name}</div>
+                      <FiArrowRight size={13} aria-hidden="true" className="text-[var(--text-tertiary)]" />
+                    </div>
+                    {entry.chapters.slice(0, 2).map((chapter) => (
+                      <div
+                        key={`${entry.game?.appId}-${chapter.chapter}`}
+                        className="mt-2 rounded-lg border border-[var(--border-subtle)] bg-black/20 px-3 py-2"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Chip tone="gold" size="xs" className="font-mono">CH {chapter.chapter}</Chip>
+                          <span className="text-[12px] font-semibold text-white">{chapter.title}</span>
+                        </div>
+                        {chapter.items[0] && (
+                          <div className="mt-1 line-clamp-1 text-[11px] text-[var(--text-tertiary)]">
+                            {chapter.items[0].title}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/missables"
+              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[13px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
+            >
+              {locale === "ko" ? "놓침 주의 전체 보기" : "Open missables index"} <FiArrowRight size={13} aria-hidden="true" />
+            </Link>
+          </div>
+        </section>
+
+        {/* FEATURES */}
+        <section className="mt-20">
+          <SectionTitle
+            eyebrow={locale === "ko" ? "왜 kamurocho.gg인가" : "What this site does"}
+            title={locale === "ko" ? "공략을 그냥 모으는 게 아닙니다" : "Built around the cleanup flow"}
+            align="left"
+          />
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                icon: <FiBookOpen size={18} aria-hidden="true" />,
+                title: locale === "ko" ? "단계별 실행 공략" : "Actionable steps",
+                desc: locale === "ko" ? "줄글이 아닌, 따라 하기 좋은 액션 단계로 정리합니다." : "Step-by-step actions, not wall-of-text.",
+              },
+              {
+                icon: <FiTarget size={18} aria-hidden="true" />,
+                title: locale === "ko" ? "희귀 업적 우선" : "Rare-first routing",
+                desc: locale === "ko" ? "달성률 낮은 업적부터 처리하도록 정렬합니다." : "Sorted to clear the rarest first.",
+              },
+              {
+                icon: <FiLayers size={18} aria-hidden="true" />,
+                title: locale === "ko" ? "챕터별 놓침 정리" : "Chapter-locked notes",
+                desc: locale === "ko" ? "잠기기 전에 무엇을 챙길지 챕터별로 표시합니다." : "What to grab before each chapter locks.",
+              },
+              {
+                icon: <FiClock size={18} aria-hidden="true" />,
+                title: locale === "ko" ? "완료 예상 시간" : "Completion estimates",
+                desc: locale === "ko" ? "어디까지가 무리인지 미리 가늠합니다." : "Plan your route before you commit.",
+              },
+            ].map((pillar) => (
+              <div
+                key={pillar.title}
+                className="group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-5 transition-colors hover:border-white/15"
+              >
+                <div
+                  aria-hidden="true"
+                  className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-[var(--accent-subtle)] opacity-0 blur-2xl transition-opacity group-hover:opacity-100"
+                />
+                <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
+                  {pillar.icon}
+                </div>
+                <h3 className="font-display relative mt-4 text-[15px] font-bold text-white">{pillar.title}</h3>
+                <p className="relative mt-1.5 text-[12px] leading-6 text-[var(--text-secondary)]">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* DISCLAIMER */}
+        <section className="mt-20 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)]/60 p-6 md:p-8">
+          <p className="m-0 max-w-[80ch] text-[13px] leading-7 text-[var(--text-secondary)]">
             {locale === "ko"
-              ? "kamurocho.gg는 팬이 직접 검증하고 Steam 커뮤니티 공략을 다시 실행형으로 정리한 비공식 가이드 허브입니다. SEGA 및 RGG Studio와는 무관합니다."
-              : "kamurocho.gg is an unofficial, fan-curated guide hub that restructures Steam Community guides into a practical completion flow. It is not affiliated with SEGA or RGG Studio."}
+              ? "kamurocho.gg는 스팀 커뮤니티 공략을 실제 플레이 흐름에 맞게 재구성한 비공식 팬 공략 모음입니다. SEGA 및 RGG Studio와는 무관한 비영리 프로젝트입니다."
+              : "kamurocho.gg is an unofficial, fan-curated guide companion that restructures Steam Community guides into a practical completion flow. It is not affiliated with SEGA or RGG Studio."}
           </p>
-        </div>
+        </section>
       </div>
     </SiteShell>
   );
-}
-
-function SectionDivider({ label, title }: { label: string; title: string }) {
-  return (
-    <div className="mb-4 flex items-center gap-4">
-      <div className="font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text-muted)]">{label}</div>
-      <div className="text-[15px] font-bold text-[var(--text-primary)]">{title}</div>
-      <div className="h-px flex-1 bg-[var(--border)]" />
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="border-r border-white/10 px-5 py-4 last:border-r-0">
-      <div className="font-mono text-[11px] uppercase tracking-[0.08em] text-[var(--chrome-muted)]">{label}</div>
-      <div className="mt-2 text-[28px] font-extrabold text-white">{value}</div>
-    </div>
-  );
-}
-
-function Chip({
-  children,
-  tone = "neutral",
-}: {
-  children: React.ReactNode;
-  tone?: "neutral" | "danger" | "safe";
-}) {
-  const style =
-    tone === "danger"
-      ? "bg-[var(--danger-bg)] text-[var(--danger-text)]"
-      : tone === "safe"
-        ? "bg-[var(--safe-bg)] text-[var(--safe-text)]"
-        : "bg-[var(--bg-soft)] text-[var(--text-secondary)]";
-  return <span className={`inline-flex items-center gap-1 rounded-[2px] px-2 py-1 text-[10px] font-medium ${style}`}>{children}</span>;
 }

@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { GameCover } from "@/components/ui/game-cover";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/cn";
-import type { LibraryGameView } from "@/lib/unlokd-data";
+import type { LibraryGameView } from "@/lib/kamurocho-legacy-data";
 
 type FilterKey = "all" | "progress" | "completed" | "unstarted";
 type SortKey = "recent" | "progress" | "name" | "playtime";

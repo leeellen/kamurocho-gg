@@ -1,13 +1,12 @@
 "use client";
 
+import { useTransition } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-
-import { cn } from "@/lib/cn";
 import { type Locale } from "@/lib/i18n";
 
 export function LanguageSwitcher({
   locale,
-  label: _label,
+  label,
   englishLabel,
   koreanLabel,
 }: {
@@ -18,33 +17,56 @@ export function LanguageSwitcher({
 }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [isPending, startTransition] = useTransition();
 
-  const changeLocale = async (nextLocale: Locale) => {
+  const changeLocale = (nextLocale: Locale) => {
+    if (nextLocale === locale) return;
     const query = searchParams.toString();
     const redirectTo = `${pathname}${query ? `?${query}` : ""}`;
-    window.location.href = `/api/locale?locale=${nextLocale}&redirect=${encodeURIComponent(redirectTo)}`;
+    startTransition(() => {
+      window.location.assign(`/api/locale?locale=${nextLocale}&redirect=${encodeURIComponent(redirectTo)}`);
+    });
   };
 
   return (
-    <div className="inline-flex items-center gap-0.5 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-elevated)] p-0.5">
-      {([["en", englishLabel], ["ko", koreanLabel]] as [Locale, string][]).map(([loc, label]) => {
-        const active = locale === loc;
-        return (
-          <button
-            key={loc}
-            type="button"
-            onClick={() => changeLocale(loc)}
-            className={cn(
-              "h-[26px] min-w-[34px] cursor-pointer rounded-full px-2.5 font-mono text-[10px] font-bold tracking-wider transition-colors",
-              active
-                ? "bg-[var(--bg-raised)] text-[var(--accent)]"
-                : "text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]",
-            )}
-          >
-            {label}
-          </button>
-        );
-      })}
+    <div className="inline-flex items-center gap-2">
+      <span className="sr-only">{label}</span>
+      <div
+        aria-label={label}
+        className="inline-flex items-center rounded-full border border-[var(--border-strong)] bg-white/5 p-0.5"
+        role="group"
+      >
+        <button
+          type="button"
+          onClick={() => changeLocale("en")}
+          aria-pressed={locale === "en"}
+          aria-label="Switch to English"
+          disabled={isPending || locale === "en"}
+          lang="en"
+          className={`min-w-[36px] cursor-pointer rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
+            locale === "en"
+              ? "bg-white text-[var(--text-inverse)]"
+              : "text-[var(--text-tertiary)] hover:text-white"
+          }`}
+        >
+          {englishLabel}
+        </button>
+        <button
+          type="button"
+          onClick={() => changeLocale("ko")}
+          aria-pressed={locale === "ko"}
+          aria-label="한국어로 전환"
+          disabled={isPending || locale === "ko"}
+          lang="ko"
+          className={`min-w-[36px] cursor-pointer rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
+            locale === "ko"
+              ? "bg-white text-[var(--text-inverse)]"
+              : "text-[var(--text-tertiary)] hover:text-white"
+          }`}
+        >
+          {koreanLabel}
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,18 @@
 import { NextResponse } from "next/server";
 
+import { SESSION_COOKIE } from "@/lib/auth/session";
+
 async function handle(request: Request) {
-  return NextResponse.redirect(new URL("/", request.url));
+  const url = new URL(request.url);
+  const response = NextResponse.redirect(new URL("/", url.origin), { status: 303 });
+  response.cookies.set(SESSION_COOKIE, "", {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: url.protocol === "https:",
+    path: "/",
+    maxAge: 0,
+  });
+  return response;
 }
 
 export async function GET(request: Request) {

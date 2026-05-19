@@ -15,10 +15,8 @@ import { createAdminClient } from "@/lib/supabase/admin";
 type GameRow = {
   app_id: number;
   name: string;
-  name_ko?: string | null;
   img_icon_url?: string | null;
-  header_url?: string | null;
-  capsule_url?: string | null;
+  img_logo_url?: string | null;
   total_achievements?: number | null;
 };
 
@@ -27,13 +25,12 @@ type AchievementRow = {
   app_id: number;
   api_name: string;
   display_name?: string | null;
-  display_name_ko?: string | null;
   description?: string | null;
-  description_ko?: string | null;
   global_percent?: number | string | null;
   difficulty?: string | null;
   icon_url?: string | null;
   icon_gray_url?: string | null;
+  category?: string | null;
 };
 
 type GuideRow = {
@@ -48,7 +45,7 @@ export type SeriesGameCard = {
   appId: number;
   slug: string;
   name: string;
-  altName: string;
+  altName: string | null;
   arc: string;
   year: number;
   summary: string;
@@ -93,6 +90,15 @@ function admin() {
   return createAdminClient();
 }
 
+function parseJsonish(raw: string | null | undefined) {
+  if (!raw || !raw.startsWith("{")) return null;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
 function coercePercent(value: number | string | null | undefined) {
   if (typeof value === "number") return value;
   if (typeof value === "string") {
@@ -117,8 +123,67 @@ function normalizeConfidence(value: string | number | null | undefined) {
   return null;
 }
 
+function normalizeComparableText(value: string | null | undefined) {
+  return (value ?? "").toLowerCase().replace(/[\s:!?.,'"()[\]-]+/g, "").trim();
+}
+
+function sanitizeGuideSummary(summary: string | null, achievementName: string, description: string) {
+  if (!summary) return null;
+  const normalized = normalizeComparableText(summary);
+  if (!normalized) return null;
+  if (normalized === normalizeComparableText(achievementName)) return null;
+  if (normalized === normalizeComparableText(description)) return null;
+  return summary;
+}
+
+function sanitizeGuideLines(lines: string[], achievementName: string, description: string) {
+  const seen = new Set<string>();
+  const blocked = new Set([
+    normalizeComparableText(achievementName),
+    normalizeComparableText(description),
+    normalizeComparableText("지금 해야 할 일"),
+    normalizeComparableText("단계별 안내"),
+    normalizeComparableText("주의할 점"),
+    normalizeComparableText("팁"),
+    normalizeComparableText("do this next"),
+    normalizeComparableText("next steps"),
+    normalizeComparableText("steps"),
+    normalizeComparableText("watch for"),
+    normalizeComparableText("tips"),
+  ]);
+
+  return lines.filter((line) => {
+    const normalized = normalizeComparableText(line);
+    if (!normalized || blocked.has(normalized) || seen.has(normalized)) return false;
+    seen.add(normalized);
+    return true;
+  });
+}
+
+function pickKoreanGameName({
+  curatedName,
+  sidecarName,
+  englishName,
+}: {
+  curatedName: string;
+  sidecarName?: string | null;
+  englishName?: string | null;
+}) {
+  if (curatedName.trim()) return curatedName;
+  if (sidecarName?.trim() && sidecarName !== englishName) return sidecarName;
+  return englishName ?? curatedName;
+}
+
+function shouldPreferEnglishAchievementName(koreanName: string | null | undefined, englishName: string | null | undefined) {
+  const ko = koreanName?.trim() ?? "";
+  const en = englishName?.trim() ?? "";
+  if (!ko || !en || !/[A-Za-z]/.test(en)) return false;
+  return /^(프롤로그|에필로그|최종장|제\s*\d+\s*장|챕터\s*\d+).*(클리어|완료)$/.test(ko);
+}
+
 function inferMissable(achievement: AchievementRow, guideText: string) {
-  const text = `${achievement.display_name ?? ""} ${achievement.description ?? ""} ${achievement.display_name_ko ?? ""} ${achievement.description_ko ?? ""} ${guideText}`.toLowerCase();
+  const sidecar = parseJsonish(achievement.category ?? null) as { nameKo?: string | null; descKo?: string | null } | null;
+  const text = `${achievement.display_name ?? ""} ${achievement.description ?? ""} ${sidecar?.nameKo ?? ""} ${sidecar?.descKo ?? ""} ${guideText}`.toLowerCase();
   return /(missable|chapter end|before chapter|놓치기 쉬운|영구|사라집니다|lock out)/.test(text);
 }
 
@@ -126,13 +191,13 @@ async function fetchSeriesRows() {
   const client = admin();
   const { data: games, error: gameError } = await client
     .from("games")
-    .select("app_id,name,name_ko,img_icon_url,header_url,capsule_url,total_achievements")
+    .select("app_id,name,img_icon_url,img_logo_url,total_achievements")
     .in("app_id", RGG_APP_IDS);
   if (gameError) throw gameError;
 
   const { data: achievements, error: achievementError } = await client
     .from("achievements")
-    .select("id,app_id,api_name,display_name,display_name_ko,description,description_ko,global_percent,difficulty,icon_url,icon_gray_url")
+    .select("id,app_id,api_name,display_name,description,global_percent,difficulty,icon_url,icon_gray_url,category")
     .in("app_id", RGG_APP_IDS)
     .order("app_id", { ascending: true });
   if (achievementError) throw achievementError;
@@ -172,6 +237,7 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
 
   return CURATED_GAMES.map((curated) => {
     const game = gameMap.get(curated.appId);
+    const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as { nameKo?: string | null; headerUrl?: string | null; capsuleUrl?: string | null } | null;
     const rows = achievements.filter((achievement) => achievement.app_id === curated.appId);
     const rareCount = rows.filter((achievement) => coercePercent(achievement.global_percent) > 0 && coercePercent(achievement.global_percent) <= 10).length;
     const guideCoverage = rows.filter((achievement) => {
@@ -182,8 +248,17 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
     return {
       appId: curated.appId,
       slug: curated.slug,
-      name: locale === "ko" ? (game?.name_ko || curated.title.ko || game?.name || curated.title.en) : (game?.name || curated.title.en),
-      altName: locale === "ko" ? (game?.name || curated.title.en) : (game?.name_ko || curated.title.ko),
+      name: locale === "ko"
+        ? pickKoreanGameName({
+            curatedName: curated.title.ko,
+            sidecarName: gameSidecar?.nameKo,
+            englishName: game?.name ?? curated.title.en,
+          })
+        : (game?.name || curated.title.en),
+      altName:
+        locale === "ko"
+          ? (game?.name && game?.name !== curated.title.en ? game.name : curated.title.en)
+          : null,
       arc: curated.arc,
       year: curated.year,
       summary: locale === "ko" ? curated.summary.ko : curated.summary.en,
@@ -196,8 +271,8 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
       guideCoverage,
       rareCount,
       imgIconUrl: game?.img_icon_url ?? null,
-      headerUrl: game?.header_url ?? null,
-      capsuleUrl: game?.capsule_url ?? null,
+      headerUrl: gameSidecar?.headerUrl ?? null,
+      capsuleUrl: gameSidecar?.capsuleUrl ?? null,
     };
   });
 });
@@ -220,17 +295,23 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
   const cards: GameAchievementCard[] = achievements
     .filter((achievement) => achievement.app_id === curated.appId)
     .map((achievement) => {
+      const achievementSidecar = parseJsonish(achievement.category ?? null) as { nameKo?: string | null; descKo?: string | null } | null;
       const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
       const structured = structureGuide(selectedGuide?.content.split("\n") ?? [], selectedGuide?.source_url ?? null);
+      const koreanName = achievementSidecar?.nameKo || achievement.display_name || achievement.api_name;
       const displayName =
         locale === "ko"
-          ? achievement.display_name_ko || achievement.display_name || achievement.api_name
-          : achievement.display_name || achievement.display_name_ko || achievement.api_name;
+          ? shouldPreferEnglishAchievementName(koreanName, achievement.display_name)
+            ? achievement.display_name || koreanName
+            : koreanName
+          : achievement.display_name || achievementSidecar?.nameKo || achievement.api_name;
       const description =
         locale === "ko"
-          ? achievement.description_ko || achievement.description || ""
-          : achievement.description || achievement.description_ko || "";
+          ? achievementSidecar?.descKo || achievement.description || ""
+          : achievement.description || achievementSidecar?.descKo || "";
       const rarity = coercePercent(achievement.global_percent);
+      const guideSteps = sanitizeGuideLines(structured.steps, displayName, description).slice(0, 5);
+      const guideTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
 
       return {
         id: achievement.id,
@@ -241,9 +322,9 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
         difficulty: achievement.difficulty || (rarity <= 5 ? "legendary" : rarity <= 10 ? "rare" : rarity <= 30 ? "uncommon" : "common"),
         iconUrl: achievement.icon_url ?? null,
         iconGrayUrl: achievement.icon_gray_url ?? null,
-        guideSummary: structured.summary,
-        guideSteps: structured.steps.slice(0, 5),
-        guideTips: structured.tips.slice(0, 4),
+        guideSummary: sanitizeGuideSummary(structured.summary, displayName, description),
+        guideSteps,
+        guideTips,
         guideStats: structured.statsLine,
         guideSource: selectedGuide?.source_url ?? null,
         confidence: normalizeConfidence(selectedGuide?.confidence),

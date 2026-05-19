@@ -44,3 +44,18 @@ next-env.d.ts
 .claude/
 .playwright-mcp/
 .serena/
+
+# audit artifacts (Playwright snapshots, local screenshots)
+/.playwright-mcp/
+/audit-*.png
+/home-*.png
+/games-*.png
+/game-detail.png
+/game-mobile*.png
+/achievement.png
+/ach-after.png
+/me-after.png
+/me-tracked.png
+/order-after.png
+/missables-after.png
+/search-after.png

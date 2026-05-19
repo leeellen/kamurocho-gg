@@ -1,60 +1,137 @@
 import Link from "next/link";
+import { FiArrowRight, FiClock, FiTarget, FiUser } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
+import { Chip } from "@/components/ui/chip";
 import { GameCover } from "@/components/ui/game-cover";
+import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
-import { getSeriesGames } from "@/lib/kamurocho-data";
+import { getSeriesGames, type SeriesGameCard } from "@/lib/kamurocho-data";
 
 export const dynamic = "force-dynamic";
+
+const ARC_LABEL: Record<string, { ko: string; en: string }> = {
+  kiryu: { ko: "키류 사가", en: "Kiryu saga" },
+  ichiban: { ko: "이치반 사가", en: "Ichiban saga" },
+  judgment: { ko: "저지먼트", en: "Judgment line" },
+};
 
 export default async function GamesPage() {
   const locale = await getLocale();
   const games = await getSeriesGames(locale);
+  const grouped = games.reduce<Record<string, SeriesGameCard[]>>((acc, game) => {
+    (acc[game.arc] ||= []).push(game);
+    return acc;
+  }, {});
+  const arcOrder = ["kiryu", "ichiban", "judgment"];
 
   return (
     <SiteShell locale={locale} section="games">
-      <div className="mx-auto max-w-[1280px] px-5 py-10 md:px-8">
-        <h1 className="m-0 text-[34px] font-extrabold tracking-tight">{locale === "ko" ? "게임" : "Games"}</h1>
-        <p className="mt-3 max-w-[70ch] text-[14px] leading-7 text-[var(--text-secondary)]">
-          {locale === "ko"
-            ? "현재 DB에 실공략 source가 연결된 RGG Studio Steam 타이틀만 노출합니다."
-            : "This index only surfaces RGG Studio Steam titles whose achievement rows are already connected to real guide sources."}
-        </p>
+      <div className="mx-auto max-w-[1280px] px-5 pb-16 pt-12 md:px-8 md:pt-16">
+        <SectionTitle
+          eyebrow={locale === "ko" ? "스팀 공략 모음" : "Steam guide index"}
+          title={locale === "ko" ? "작품 목록" : "Games"}
+          description={locale === "ko"
+            ? `스팀 커뮤니티 공략이 확보된 RGG 스튜디오 ${games.length}개 작품. 카드에서 예상 분량·놓치기 쉬운 항목·희귀 업적을 먼저 확인하세요.`
+            : `${games.length} RGG Studio titles backed by real Steam Community guides — scale, missables, and rare picks shown up front.`}
+        />
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {games.map((game) => (
-            <Link
-              key={game.appId}
-              href={`/game/${game.slug}`}
-              className="overflow-hidden rounded-[4px] border border-[var(--border)] bg-[var(--bg-surface)] no-underline shadow-[var(--shadow-card)] transition-all hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-[var(--shadow-pop)]"
-            >
-              <GameCover
-                appId={game.appId}
-                ratio="header"
-                imgIconUrl={game.imgIconUrl}
-                headerUrl={game.headerUrl}
-                capsuleUrl={game.capsuleUrl}
-              />
-              <div className="p-4">
-                <div className="mb-1 flex items-start justify-between gap-3">
-                  <div>
-                    <div className="text-[16px] font-bold">{game.name}</div>
-                    <div className="mt-1 text-[12px] text-[var(--text-muted)]">{game.altName}</div>
-                  </div>
-                  <span className="font-mono text-[11px] text-[var(--text-muted)]">{game.year}</span>
-                </div>
-                <p className="mb-3 text-[13px] leading-7 text-[var(--text-secondary)]">{game.summary}</p>
-                <div className="grid grid-cols-2 gap-2 text-[12px] text-[var(--text-secondary)]">
-                  <div>{locale === "ko" ? "업적" : "Achievements"}: <span className="font-semibold text-[var(--text-primary)]">{game.achievements}</span></div>
-                  <div>{locale === "ko" ? "공략 연결" : "Guide coverage"}: <span className="font-semibold text-[var(--text-primary)]">{game.guideCoverage}</span></div>
-                  <div>{locale === "ko" ? "미서블" : "Missables"}: <span className="font-semibold text-[var(--text-primary)]">{game.missableCount}</span></div>
-                  <div>{locale === "ko" ? "예상 시간" : "Est. hours"}: <span className="font-semibold text-[var(--text-primary)]">{game.estimatedHours}</span></div>
-                </div>
+        {arcOrder.map((arc) => {
+          const list = grouped[arc];
+          if (!list?.length) return null;
+          return (
+            <section key={arc} className="mt-14">
+              <div className="mb-6 flex items-baseline gap-3">
+                <h2 className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white">
+                  {ARC_LABEL[arc]?.[locale] ?? arc}
+                </h2>
+                <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+                  {list.length} {locale === "ko" ? "작품" : "titles"}
+                </span>
+                <span aria-hidden="true" className="ml-2 h-px flex-1 bg-[var(--border)]" />
               </div>
-            </Link>
-          ))}
-        </div>
+              <ul className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {list.map((game) => (
+                  <li key={game.appId}>
+                    <Link
+                      href={`/game/${game.slug}`}
+                      aria-label={locale === "ko" ? `${game.name} 공략 열기` : `Open ${game.name} guide`}
+                      className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] no-underline transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[var(--shadow-pop)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                    >
+                      <div className="relative overflow-hidden">
+                        <GameCover
+                          appId={game.appId}
+                          ratio="header"
+                          imgIconUrl={game.imgIconUrl}
+                          headerUrl={game.headerUrl}
+                          capsuleUrl={game.capsuleUrl}
+                        />
+                        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[var(--bg-elevated)]/70 to-transparent" />
+                        <div className="absolute left-3 top-3">
+                          <Chip tone="solid" size="xs" className="font-mono">{game.year}</Chip>
+                        </div>
+                        <div className="absolute right-3 top-3">
+                          <Chip tone="neutral" size="xs" className="border-0 bg-black/60 text-white backdrop-blur ring-0">
+                            <FiClock size={10} aria-hidden="true" />
+                            {game.estimatedHours}
+                          </Chip>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-1 flex-col p-5">
+                        <h3 className="font-display text-[18px] font-extrabold leading-tight tracking-tight text-white">
+                          {game.name}
+                        </h3>
+                        {locale !== "ko" && game.altName && (
+                          <div className="mt-1 text-[12px] text-[var(--text-tertiary)]">{game.altName}</div>
+                        )}
+                        <p className="mt-2 line-clamp-2 min-h-[3em] text-[13px] leading-6 text-[var(--text-secondary)]">
+                          {game.summary}
+                        </p>
+
+                        <dl className="mt-4 grid grid-cols-3 gap-2 rounded-xl border border-[var(--border-subtle)] bg-black/20 p-3">
+                          <Meta label={locale === "ko" ? "업적" : "Achievements"} value={game.achievements} />
+                          <Meta label={locale === "ko" ? "공략" : "Guides"} value={game.guideCoverage} tone="accent" />
+                          <Meta label={locale === "ko" ? "희귀" : "Rare"} value={game.rareCount} tone="gold" />
+                        </dl>
+
+                        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                          <Chip tone="danger" size="xs">
+                            <FiTarget size={10} aria-hidden="true" />
+                            {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
+                          </Chip>
+                          <Chip tone="neutral" size="xs">
+                            <FiUser size={10} aria-hidden="true" />
+                            {game.lead}
+                          </Chip>
+                        </div>
+
+                        <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[12px]">
+                          <span className="font-mono text-[var(--text-tertiary)]">app/{game.appId}</span>
+                          <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
+                            {locale === "ko" ? "공략 열기" : "Open guide"}
+                            <FiArrowRight size={13} aria-hidden="true" />
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
       </div>
     </SiteShell>
+  );
+}
+
+function Meta({ label, value, tone = "neutral" }: { label: string; value: number | string; tone?: "neutral" | "accent" | "gold" }) {
+  const color = tone === "accent" ? "text-[var(--accent)]" : tone === "gold" ? "text-[var(--gold)]" : "text-white";
+  return (
+    <div>
+      <dt className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
+      <dd className={`mt-1 font-display text-[18px] font-extrabold leading-none ${color}`}>{value}</dd>
+    </div>
   );
 }

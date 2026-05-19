@@ -188,7 +188,7 @@ export const libraryGames: Game[] = [
             "Advance Fia's questline through Deeproot Depths until the dream arena unlocks.",
             "Lightning resistance matters more than bleed, and staying under the dragon reduces the danger from aerial arcs.",
           ],
-          source: "Unlokd AI verification queue",
+          source: "kamurocho review queue",
           license: "Original",
         },
         tips: [
