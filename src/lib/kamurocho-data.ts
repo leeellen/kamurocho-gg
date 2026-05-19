@@ -270,6 +270,7 @@ function isStoryProgressAchievement(opts: {
   const text = [opts.displayName, opts.description, opts.englishName ?? "", opts.englishDesc ?? ""]
     .join(" ")
     .toLowerCase();
+  if (isMetaCompletionAchievement(opts)) return false;
   return (
     /complete\s+(?:the\s+)?(?:main\s+story|chapter\s*\d+|the\s+game)/.test(text) ||
     /finished?\s+the\s+main\s+story/.test(text) ||
@@ -277,6 +278,29 @@ function isStoryProgressAchievement(opts: {
     /스토리\s*(?:클리어|완료|진행)/.test(text) ||
     /제?\s*\d+\s*장\s*(?:클리어|완료)/.test(text) ||
     /챕터\s*\d+\s*(?:클리어|완료)/.test(text)
+  );
+}
+
+/**
+ * Detect meta/100% completion achievements ("Obtain all other achievements",
+ * "달성률 100%"). Their condition is the entire completion list, not the
+ * story, so we want a different canned summary.
+ */
+function isMetaCompletionAchievement(opts: {
+  displayName: string;
+  description: string;
+  englishName: string | null | undefined;
+  englishDesc: string | null | undefined;
+}): boolean {
+  const text = [opts.displayName, opts.description, opts.englishName ?? "", opts.englishDesc ?? ""]
+    .join(" ")
+    .toLowerCase();
+  return (
+    /obtain\s+all\s+(?:other\s+)?achievements?/.test(text) ||
+    /unlock\s+all\s+(?:other\s+)?achievements?/.test(text) ||
+    /100%\s*(?:completion|completed|on\s+your\s+completion\s+list)/.test(text) ||
+    /달성[\s률]?\s*100\s*%/.test(text) ||
+    /모든\s*(?:도전\s*과제|업적)을?\s*(?:달성|획득)/.test(text)
   );
 }
 
@@ -445,23 +469,32 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
       const rarity = coercePercent(achievement.global_percent);
       const { steps: pointerlessSteps, pointer } = extractPointer(structured.steps);
       let rawSteps = sanitizeGuideLines(pointerlessSteps, displayName, description).slice(0, 5);
-      const rawTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
+      let rawTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
 
-      // Story-progression achievements: the original guide rows list adjacent
-      // story milestones as their "steps", which surfaces as nonsense to the
-      // reader. Replace with a single accurate line.
-      const isStory = isStoryProgressAchievement({
+      // Special-case story-progression and 100%-completion achievements:
+      // the original guide rows list adjacent achievements as their "steps",
+      // which surfaces as nonsense. Replace with a single accurate line.
+      const detectorInput = {
         displayName,
         description,
         englishName: achievement.display_name,
         englishDesc: achievement.description,
-      });
+      };
+      const isMeta = isMetaCompletionAchievement(detectorInput);
+      const isStory = !isMeta && isStoryProgressAchievement(detectorInput);
       let synthesizedSummary: string | null = null;
-      if (isStory) {
+      if (isMeta) {
+        synthesizedSummary = locale === "ko"
+          ? "다른 모든 업적을 먼저 달성한 뒤 마지막에 잠금 해제됩니다."
+          : "Unlocks last, after every other achievement has been earned.";
+        rawSteps = [];
+        rawTips = [];
+      } else if (isStory) {
         synthesizedSummary = locale === "ko"
           ? "스토리를 진행하면 자동으로 잠금 해제됩니다."
           : "Unlocks automatically as you progress through the story.";
         rawSteps = [];
+        rawTips = [];
       }
 
       const guideSteps = locale === "ko" ? rawSteps.map(normalizeKoreanLine) : rawSteps;
