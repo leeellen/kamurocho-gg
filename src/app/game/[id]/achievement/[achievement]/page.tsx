@@ -182,11 +182,15 @@ export default async function AchievementPage({
                     {locale === "ko" ? "놓치기 쉬움" : "Missable"}
                   </Chip>
                 )}
-                {ach.confidence && (
-                  <Chip tone="info" size="xs">
-                    {locale === "ko" ? `신뢰도 ${ach.confidence}` : `Confidence: ${ach.confidence}`}
-                  </Chip>
-                )}
+                {ach.confidence && (() => {
+                  const score = Number(ach.confidence);
+                  const tier = Number.isFinite(score) && score >= 0.85
+                    ? (locale === "ko" ? "신뢰도 높음" : "High confidence")
+                    : Number.isFinite(score) && score >= 0.6
+                      ? (locale === "ko" ? "신뢰도 보통" : "Medium confidence")
+                      : (locale === "ko" ? "신뢰도 낮음" : "Low confidence");
+                  return <Chip tone="info" size="xs">{tier}</Chip>;
+                })()}
               </div>
               <h1 className="font-display m-0 mt-4 text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] text-white md:text-[36px]">
                 {ach.name}
@@ -309,6 +313,28 @@ export default async function AchievementPage({
             <p className="m-0 mt-3 text-[13px] text-[var(--text-tertiary)]">
               {locale === "ko" ? "연결된 출처가 아직 없습니다." : "No linked source."}
             </p>
+          )}
+          {ach.guideReferences.length > 0 && (
+            <div className="mt-4 border-t border-[var(--border-subtle)] pt-4">
+              <div className="font-mono text-[12px] uppercase tracking-wider text-[var(--text-tertiary)]">
+                {locale === "ko" ? "참고 링크" : "References"}
+              </div>
+              <ul className="mt-2 flex flex-col gap-1">
+                {ach.guideReferences.map((ref) => (
+                  <li key={ref.url}>
+                    <a
+                      href={ref.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="inline-flex cursor-pointer items-center gap-1.5 rounded-sm text-[13px] text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                    >
+                      {ref.label}
+                      <FiExternalLink size={11} aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </section>
       </article>

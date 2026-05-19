@@ -495,6 +495,11 @@ export default async function GamePage({
                                 {locale === "ko" ? "놓치기 쉬움" : "Missable"}
                               </Chip>
                             )}
+                            {achievement.chapter && (
+                              <Chip tone="gold" size="xs" className="font-mono">
+                                CH {achievement.chapter}
+                              </Chip>
+                            )}
                           </div>
                           <p className="m-0 mt-1.5 line-clamp-2 text-[13px] leading-6 text-[var(--text-secondary)]">
                             {achievement.description}

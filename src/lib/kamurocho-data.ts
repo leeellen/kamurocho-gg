@@ -62,6 +62,11 @@ export type SeriesGameCard = {
   capsuleUrl: string | null;
 };
 
+export type GuideReferenceCard = {
+  label: string;
+  url: string;
+};
+
 export type GameAchievementCard = {
   id: number;
   slug: string;
@@ -77,6 +82,7 @@ export type GameAchievementCard = {
   guideStats: string | null;
   guideSource: string | null;
   guidePointer: string | null;
+  guideReferences: GuideReferenceCard[];
   confidence: string | null;
   missable: boolean;
   chapter: number | null;
@@ -516,6 +522,9 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
         guideStats: structured.statsLine,
         guideSource: selectedGuide?.source_url ?? null,
         guidePointer: normalizedPointer,
+        guideReferences: structured.references.filter(
+          (ref) => ref.url !== selectedGuide?.source_url,
+        ).slice(0, 3),
         confidence: normalizeConfidence(selectedGuide?.confidence),
         missable: inferMissable(achievement, selectedGuide?.content ?? ""),
         chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
