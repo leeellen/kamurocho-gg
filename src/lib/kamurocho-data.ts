@@ -255,6 +255,31 @@ function normalizeKoreanLine(line: string): string {
     .trim();
 }
 
+/**
+ * Detect achievements whose actual gameplay condition is "play the story",
+ * so we can short-circuit a noisy steps list (the backfill often pulled in
+ * the linked story milestones as bogus steps) with a single accurate
+ * one-liner. Inspects display name + description in both languages.
+ */
+function isStoryProgressAchievement(opts: {
+  displayName: string;
+  description: string;
+  englishName: string | null | undefined;
+  englishDesc: string | null | undefined;
+}): boolean {
+  const text = [opts.displayName, opts.description, opts.englishName ?? "", opts.englishDesc ?? ""]
+    .join(" ")
+    .toLowerCase();
+  return (
+    /complete\s+(?:the\s+)?(?:main\s+story|chapter\s*\d+|the\s+game)/.test(text) ||
+    /finished?\s+the\s+main\s+story/.test(text) ||
+    /story\s+(?:clear|complete)/.test(text) ||
+    /스토리\s*(?:클리어|완료|진행)/.test(text) ||
+    /제?\s*\d+\s*장\s*(?:클리어|완료)/.test(text) ||
+    /챕터\s*\d+\s*(?:클리어|완료)/.test(text)
+  );
+}
+
 const CHAPTER_PATTERN_EN = /chapter\s*(\d{1,2})/i;
 const CHAPTER_PATTERN_KO = /(?:챕터|장)\s*(\d{1,2})/;
 
@@ -419,8 +444,26 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
           : achievement.description || achievementSidecar?.descKo || "";
       const rarity = coercePercent(achievement.global_percent);
       const { steps: pointerlessSteps, pointer } = extractPointer(structured.steps);
-      const rawSteps = sanitizeGuideLines(pointerlessSteps, displayName, description).slice(0, 5);
+      let rawSteps = sanitizeGuideLines(pointerlessSteps, displayName, description).slice(0, 5);
       const rawTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
+
+      // Story-progression achievements: the original guide rows list adjacent
+      // story milestones as their "steps", which surfaces as nonsense to the
+      // reader. Replace with a single accurate line.
+      const isStory = isStoryProgressAchievement({
+        displayName,
+        description,
+        englishName: achievement.display_name,
+        englishDesc: achievement.description,
+      });
+      let synthesizedSummary: string | null = null;
+      if (isStory) {
+        synthesizedSummary = locale === "ko"
+          ? "스토리를 진행하면 자동으로 잠금 해제됩니다."
+          : "Unlocks automatically as you progress through the story.";
+        rawSteps = [];
+      }
+
       const guideSteps = locale === "ko" ? rawSteps.map(normalizeKoreanLine) : rawSteps;
       const guideTips = locale === "ko" ? rawTips.map(normalizeKoreanLine) : rawTips;
       const normalizedPointer = locale === "ko" && pointer ? normalizeKoreanLine(pointer) : pointer;
@@ -434,7 +477,7 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
         difficulty: achievement.difficulty || (rarity <= 5 ? "legendary" : rarity <= 10 ? "rare" : rarity <= 30 ? "uncommon" : "common"),
         iconUrl: achievement.icon_url ?? null,
         iconGrayUrl: achievement.icon_gray_url ?? null,
-        guideSummary: sanitizeGuideSummary(structured.summary, displayName, description),
+        guideSummary: synthesizedSummary ?? sanitizeGuideSummary(structured.summary, displayName, description),
         guideSteps,
         guideTips,
         guideStats: structured.statsLine,
