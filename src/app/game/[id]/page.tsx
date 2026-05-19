@@ -44,23 +44,26 @@ export default async function GamePage({
       {/* CINEMATIC HERO */}
       <section className="relative isolate overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 -z-10">
-          <GameCover
-            appId={data.game.appId}
-            ratio="header"
-            imgIconUrl={data.game.imgIconUrl}
-            headerUrl={data.game.headerUrl}
-            capsuleUrl={data.game.capsuleUrl}
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              aspectRatio: "auto",
-              objectFit: "cover",
-              filter: "saturate(1.1) brightness(0.45)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)]/40 via-[var(--bg-base)]/75 to-[var(--bg-base)]" />
+          <div className="absolute inset-0 scale-110">
+            <GameCover
+              appId={data.game.appId}
+              ratio="header"
+              imgIconUrl={data.game.imgIconUrl}
+              headerUrl={data.game.headerUrl}
+              capsuleUrl={data.game.capsuleUrl}
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                aspectRatio: "auto",
+                objectFit: "cover",
+                filter: "saturate(1.2) brightness(0.4) blur(28px)",
+              }}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)]/30 via-[var(--bg-base)]/70 to-[var(--bg-base)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_15%_30%,rgba(239,68,68,0.15),transparent_60%)]" />
         </div>
 
         <div className="mx-auto max-w-[1280px] px-5 pb-12 pt-8 md:px-8 md:pt-12">
@@ -281,25 +284,48 @@ export default async function GamePage({
                       }`}
                     >
                       <div className="grid grid-cols-1 gap-4 md:grid-cols-[auto_1fr_180px_24px] md:items-center">
-                        {(isUnlocked || isIncomplete) && (
-                          <div className="flex shrink-0 items-center">
-                            {isUnlocked ? (
-                              <span
-                                aria-label={locale === "ko" ? "획득함" : "Unlocked"}
-                                className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--success-subtle)] text-[var(--safe-text)] ring-1 ring-inset ring-[var(--l3-border)]"
-                              >
-                                <FiCheck size={16} aria-hidden="true" />
-                              </span>
-                            ) : (
-                              <span
-                                aria-label={locale === "ko" ? "미획득" : "Locked"}
-                                className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-dashed border-[var(--accent-border)] text-[var(--accent)]"
-                              >
-                                <span className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-                              </span>
-                            )}
-                          </div>
-                        )}
+                        {(() => {
+                          // Official Steam achievement art (icon / icongray)
+                          // returned by GetSchemaForGame. Show the colored icon
+                          // when unlocked, the gray icon when locked. Fall back
+                          // to the gray asset if the unlock state is unknown.
+                          const showColor = isUnlocked || (!user) || userAchMap.size === 0;
+                          const src = showColor ? (achievement.iconUrl ?? achievement.iconGrayUrl) : (achievement.iconGrayUrl ?? achievement.iconUrl);
+                          if (!src) return null;
+                          return (
+                            <div className="relative flex shrink-0 items-center">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                src={src}
+                                alt=""
+                                aria-hidden="true"
+                                width={56}
+                                height={56}
+                                loading="lazy"
+                                decoding="async"
+                                className={`h-14 w-14 rounded-xl border border-[var(--border-subtle)] bg-black/40 object-cover ${
+                                  isUnlocked ? "" : isIncomplete ? "opacity-90" : "opacity-95"
+                                }`}
+                              />
+                              {isUnlocked && (
+                                <span
+                                  aria-label={locale === "ko" ? "획득함" : "Unlocked"}
+                                  className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--success)] text-white ring-2 ring-[var(--bg-elevated)]"
+                                >
+                                  <FiCheck size={11} aria-hidden="true" />
+                                </span>
+                              )}
+                              {isIncomplete && (
+                                <span
+                                  aria-label={locale === "ko" ? "미획득" : "Locked"}
+                                  className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--accent)] text-white ring-2 ring-[var(--bg-elevated)]"
+                                >
+                                  <span className="h-1.5 w-1.5 rounded-full bg-white" aria-hidden="true" />
+                                </span>
+                              )}
+                            </div>
+                          );
+                        })()}
                         <div>
                           <div className="flex flex-wrap items-center gap-2">
                             <h3 className={`font-display m-0 text-[15px] font-bold transition-colors md:text-[16px] ${

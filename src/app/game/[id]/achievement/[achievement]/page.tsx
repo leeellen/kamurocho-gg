@@ -92,7 +92,42 @@ export default async function AchievementPage({
               )}
             </div>
           )}
-          <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="flex flex-wrap items-start gap-4 md:flex-nowrap md:gap-6">
+            {(() => {
+              // Official Steam achievement art from GetSchemaForGame.
+              const src = isUnlocked ? (ach.iconUrl ?? ach.iconGrayUrl) : (ach.iconGrayUrl ?? ach.iconUrl);
+              if (!src) return null;
+              return (
+                <div className="relative shrink-0">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    alt=""
+                    aria-hidden="true"
+                    width={88}
+                    height={88}
+                    decoding="async"
+                    className="h-20 w-20 rounded-2xl border border-[var(--border-subtle)] bg-black/40 object-cover shadow-[var(--shadow-card)] md:h-24 md:w-24"
+                  />
+                  {isUnlocked && (
+                    <span
+                      aria-label={locale === "ko" ? "획득함" : "Unlocked"}
+                      className="absolute -bottom-1.5 -right-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-[var(--success)] text-white ring-2 ring-[var(--bg-surface)] shadow-md"
+                    >
+                      <FiCheck size={14} aria-hidden="true" />
+                    </span>
+                  )}
+                  {tracksProgress && !isUnlocked && (
+                    <span
+                      aria-label={locale === "ko" ? "미획득" : "Locked"}
+                      className="absolute -bottom-1.5 -right-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-[var(--accent)] text-white ring-2 ring-[var(--bg-surface)] shadow-md"
+                    >
+                      <FiLock size={12} aria-hidden="true" />
+                    </span>
+                  )}
+                </div>
+              );
+            })()}
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-2">
                 <Chip tone="accent" size="xs">{difficultyLabel(locale, ach.difficulty)}</Chip>
@@ -108,7 +143,7 @@ export default async function AchievementPage({
                   </Chip>
                 )}
               </div>
-              <h1 className="font-display m-0 mt-4 text-[30px] font-extrabold leading-[1.1] tracking-[-0.02em] text-white md:text-[40px]">
+              <h1 className="font-display m-0 mt-4 text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] text-white md:text-[36px]">
                 {ach.name}
               </h1>
               <p className="m-0 mt-3 text-[14px] leading-7 text-[var(--text-secondary)] md:text-[15px]">

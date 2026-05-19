@@ -34,22 +34,24 @@ export default async function HomePage() {
         <div aria-hidden="true" className="absolute inset-0 -z-10">
           {featured && (
             <>
-              <GameCover
-                appId={featured.appId}
-                ratio="header"
-                imgIconUrl={featured.imgIconUrl}
-                headerUrl={featured.headerUrl}
-                capsuleUrl={featured.capsuleUrl}
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  width: "100%",
-                  height: "100%",
-                  aspectRatio: "auto",
-                  objectFit: "cover",
-                  filter: "saturate(1.1) brightness(0.5)",
-                }}
-              />
+              <div className="absolute inset-0 scale-110">
+                <GameCover
+                  appId={featured.appId}
+                  ratio="header"
+                  imgIconUrl={featured.imgIconUrl}
+                  headerUrl={featured.headerUrl}
+                  capsuleUrl={featured.capsuleUrl}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    aspectRatio: "auto",
+                    objectFit: "cover",
+                    filter: "saturate(1.2) brightness(0.45) blur(32px)",
+                  }}
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)]/30 via-[var(--bg-base)]/70 to-[var(--bg-base)]" />
               <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_20%_30%,rgba(239,68,68,0.25),transparent_60%)]" />
             </>

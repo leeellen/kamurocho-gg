@@ -262,7 +262,7 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
       arc: curated.arc,
       year: curated.year,
       summary: locale === "ko" ? curated.summary.ko : curated.summary.en,
-      lead: curated.lead,
+      lead: locale === "ko" ? curated.lead.ko : curated.lead.en,
       platforms: curated.platforms,
       estimatedHours: curated.estimatedHours,
       difficulty: curated.difficulty,

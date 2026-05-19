@@ -44,7 +44,7 @@ export async function GET(request: Request) {
   try {
     const profile = await fetchSteamProfile(steamId);
     const admin = createAdminClient();
-    await admin.from("users").upsert(
+    const res = await admin.from("users").upsert(
       {
         steam_id: steamId,
         display_name: profile?.personaname ?? null,
@@ -53,8 +53,11 @@ export async function GET(request: Request) {
       },
       { onConflict: "steam_id" },
     );
-  } catch {
-    // Best-effort profile cache; session still proceeds even if DB write fails.
+    if (res.error) {
+      console.error("[auth/callback] users upsert failed:", res.error.message);
+    }
+  } catch (err) {
+    console.error("[auth/callback] profile cache error:", err);
   }
 
   const token = await encodeSession({ steamId, issuedAt: Date.now() });

@@ -46,9 +46,45 @@ type SteamGlobalPct = {
   percent: number;
 };
 
+type SteamPlayerSummary = {
+  steamid: string;
+  personaname?: string;
+  avatarfull?: string;
+  profileurl?: string;
+};
+
+async function fetchSteamProfile(steamId: string): Promise<SteamPlayerSummary | null> {
+  try {
+    const res = await steamFetch<{ response?: { players?: SteamPlayerSummary[] } }>(
+      "/ISteamUser/GetPlayerSummaries/v2/",
+      { steamids: steamId },
+    );
+    return res.response?.players?.[0] ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export async function syncSteamLibrary(steamId: string) {
   const admin = createAdminClient();
   const syncedAt = new Date().toISOString();
+
+  // 0. Always ensure the users row exists. Foreign keys on user_games /
+  // user_achievements depend on it, and the OpenID callback's profile cache is
+  // best-effort. Refresh profile fields opportunistically so /me stays in sync.
+  const profile = await fetchSteamProfile(steamId);
+  const upsertUser = await admin.from("users").upsert(
+    {
+      steam_id: steamId,
+      display_name: profile?.personaname ?? null,
+      avatar_url: profile?.avatarfull ?? null,
+      profile_url: profile?.profileurl ?? null,
+    },
+    { onConflict: "steam_id" },
+  );
+  if (upsertUser.error) {
+    throw new Error(`users upsert failed: ${upsertUser.error.message}`);
+  }
 
   // 1. Owned games — only the RGG titles we cover.
   const ownedRes = await steamFetch<{
@@ -77,7 +113,20 @@ export async function syncSteamLibrary(steamId: string) {
     };
   }
 
-  // 2. user_games rows.
+  // 2. Ensure parent games rows exist before writing user_games (FK).
+  const gameRows = owned.map((g) => ({
+    app_id: g.appid,
+    name: g.name,
+    img_icon_url: g.img_icon_url || null,
+  }));
+  const upsertGames = await admin
+    .from("games")
+    .upsert(gameRows, { onConflict: "app_id", ignoreDuplicates: false });
+  if (upsertGames.error) {
+    throw new Error(`games upsert failed: ${upsertGames.error.message}`);
+  }
+
+  // 3. user_games rows.
   const userGameRows = owned.map((g) => ({
     steam_id: steamId,
     app_id: g.appid,
@@ -89,13 +138,17 @@ export async function syncSteamLibrary(steamId: string) {
   }));
 
   for (let i = 0; i < userGameRows.length; i += 50) {
-    await admin
+    const res = await admin
       .from("user_games")
       .upsert(userGameRows.slice(i, i + 50), { onConflict: "steam_id,app_id" });
+    if (res.error) {
+      throw new Error(`user_games upsert failed: ${res.error.message}`);
+    }
   }
 
-  // 3. Per-game schema + player progress.
+  // 4. Per-game schema + player progress.
   let synced = 0;
+  const perGameErrors: string[] = [];
 
   for (const game of owned) {
     try {
@@ -186,11 +239,14 @@ export async function syncSteamLibrary(steamId: string) {
 
       if (userAchRows.length > 0) {
         for (let i = 0; i < userAchRows.length; i += 100) {
-          await admin
+          const res = await admin
             .from("user_achievements")
             .upsert(userAchRows.slice(i, i + 100), {
               onConflict: "steam_id,achievement_id",
             });
+          if (res.error) {
+            throw new Error(`user_achievements upsert failed: ${res.error.message}`);
+          }
         }
 
         const unlockedCount = userAchRows.filter((r) => r.unlocked).length;
@@ -204,8 +260,11 @@ export async function syncSteamLibrary(steamId: string) {
       }
 
       synced++;
-    } catch {
-      // Per-game failures should not abort the whole sync.
+    } catch (err) {
+      // Per-game failure: record but do not abort the whole sync.
+      perGameErrors.push(
+        `${game.appid}: ${err instanceof Error ? err.message : String(err)}`,
+      );
     }
   }
 
@@ -217,5 +276,6 @@ export async function syncSteamLibrary(steamId: string) {
     total: owned.length,
     totalInLibrary: allGames.length,
     ownedInHub: owned.length,
+    perGameErrors: perGameErrors.length ? perGameErrors : undefined,
   };
 }
