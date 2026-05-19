@@ -31,6 +31,7 @@ type AchievementRow = {
   icon_url?: string | null;
   icon_gray_url?: string | null;
   category?: string | null;
+  missable?: boolean | null;
 };
 
 type GuideRow = {
@@ -345,9 +346,21 @@ function shouldPreferEnglishAchievementName(koreanName: string | null | undefine
 }
 
 function inferMissable(achievement: AchievementRow, guideText: string) {
+  // Curated `missable` boolean wins when present — it's the authoritative
+  // signal set by the editorial backfill scripts and should never be
+  // overruled by accidental keyword matches.
+  if (typeof achievement.missable === "boolean") return achievement.missable;
   const sidecar = parseJsonish(achievement.category ?? null) as { nameKo?: string | null; descKo?: string | null } | null;
   const text = `${achievement.display_name ?? ""} ${achievement.description ?? ""} ${sidecar?.nameKo ?? ""} ${sidecar?.descKo ?? ""} ${guideText}`.toLowerCase();
-  return /(missable|chapter end|before chapter|놓치기 쉬운|영구|사라집니다|lock out)/.test(text);
+  // Require a stronger signal than a single keyword: e.g. an explicit
+  // "missable" tag, a chapter-end lock, or a permanent-loss phrase. Avoids
+  // flagging long-form guides that merely mention the word in passing.
+  if (/\bmissable\b/.test(text)) return true;
+  if (/(chapter\s*end|before\s+chapter|chapter[- ]locked)/.test(text)) return true;
+  if (/(영구\s*잠금|영구\s*구매\s*불가|영구\s*분실|영구적\s*으로)/.test(text)) return true;
+  if (/(놓치기\s*쉬움|놓치면\s*못)/.test(text)) return true;
+  if (/(lock\s+out|locks?\s+out)/.test(text)) return true;
+  return false;
 }
 
 async function fetchSeriesRows() {
@@ -360,7 +373,7 @@ async function fetchSeriesRows() {
 
   const { data: achievements, error: achievementError } = await client
     .from("achievements")
-    .select("id,app_id,api_name,display_name,description,global_percent,difficulty,icon_url,icon_gray_url,category")
+    .select("id,app_id,api_name,display_name,description,global_percent,difficulty,icon_url,icon_gray_url,category,missable")
     .in("app_id", RGG_APP_IDS)
     .order("app_id", { ascending: true });
   if (achievementError) throw achievementError;
@@ -656,19 +669,45 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
     return { games, achievements: [] as Array<{ game: SeriesGameCard; achievement: GameAchievementCard }> };
   }
 
+  // Tokenize the query so multi-word searches ("rare kiryu") still match
+  // achievements that contain both words in any order. Single-token queries
+  // behave exactly like before.
+  const tokens = trimmed.split(/\s+/).filter(Boolean);
+  const matchesAll = (haystack: string) => {
+    const lower = haystack.toLowerCase();
+    return tokens.every((t) => lower.includes(t));
+  };
+
   const matchedGames = games.filter((game) =>
-    [game.name, game.altName, game.summary, game.lead].join(" ").toLowerCase().includes(trimmed),
+    matchesAll([game.name, game.altName, game.summary, game.lead].join(" ")),
   );
 
   const achievements: Array<{ game: SeriesGameCard; achievement: GameAchievementCard }> = [];
   for (const game of games) {
     const page = await getGamePageData(game.slug, locale);
     for (const achievement of page?.achievements ?? []) {
-      if ([achievement.name, achievement.description, achievement.guideSummary ?? ""].join(" ").toLowerCase().includes(trimmed)) {
+      if (
+        matchesAll(
+          [
+            achievement.name,
+            achievement.description,
+            achievement.guideSummary ?? "",
+            achievement.guideSteps.join(" "),
+            achievement.guidePointer ?? "",
+          ].join(" "),
+        )
+      ) {
         achievements.push({ game, achievement });
       }
     }
   }
+
+  // Stable ordering: missable first, then rarest first so the most useful
+  // matches surface at the top of the results.
+  achievements.sort((a, b) => {
+    if (a.achievement.missable !== b.achievement.missable) return a.achievement.missable ? -1 : 1;
+    return a.achievement.rarity - b.achievement.rarity;
+  });
 
   return {
     games: matchedGames,
