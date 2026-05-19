@@ -127,8 +127,43 @@ export default async function GamePage({
   );
   const hasSidebar = chapterBuckets.length > 0 || unlocatedMissable.length > 0;
 
+  // Schema.org structured data: VideoGame for the game-level overview +
+  // BreadcrumbList for the trail. Adds rich-snippet eligibility on Google.
+  const baseUrl = "https://kamurocho.gg";
+  const pageUrl = `${baseUrl}/game/${data.game.slug}`;
+  const videoGameJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    name: data.game.name,
+    alternateName: data.game.altName ?? undefined,
+    url: pageUrl,
+    image: data.game.headerUrl ?? undefined,
+    description: data.game.summary,
+    gamePlatform: data.game.platforms,
+    inLanguage: locale === "ko" ? "ko-KR" : "en-US",
+    publisher: { "@type": "Organization", name: "SEGA" },
+    developer: { "@type": "Organization", name: "Ryu Ga Gotoku Studio" },
+  };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "ko" ? "홈" : "Home", item: baseUrl },
+      { "@type": "ListItem", position: 2, name: locale === "ko" ? "작품 목록" : "Games", item: `${baseUrl}/games` },
+      { "@type": "ListItem", position: 3, name: data.game.name, item: pageUrl },
+    ],
+  };
+
   return (
     <SiteShell locale={locale} section="games">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoGameJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* CINEMATIC HERO */}
       <section className="relative isolate overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 -z-10">

@@ -89,8 +89,49 @@ export default async function AchievementPage({
   const isUnlocked = userState?.unlocked === true;
   const tracksProgress = Boolean(user && achMap.size > 0);
 
+  // Schema.org HowTo + BreadcrumbList structured data. Guides this site
+  // surfaces are step-by-step "how to earn X" content, which is exactly the
+  // shape Google's HowTo rich result expects. Inline JSON keeps it crawlable
+  // in the first HTML payload.
+  const baseUrl = "https://kamurocho.gg";
+  const pageUrl = `${baseUrl}/game/${data.game.slug}/achievement/${ach.slug}`;
+  const howToJsonLd = ach.guideSteps.length > 0 || ach.guideSummary ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: ach.name,
+    description: ach.guideSummary || ach.description,
+    inLanguage: locale === "ko" ? "ko-KR" : "en-US",
+    image: ach.iconUrl ?? undefined,
+    step: (ach.guideSteps.length > 0 ? ach.guideSteps : [ach.guideSummary || ach.description]).map((text, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: locale === "ko" ? `${index + 1}단계` : `Step ${index + 1}`,
+      text,
+    })),
+  } : null;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "ko" ? "홈" : "Home", item: baseUrl },
+      { "@type": "ListItem", position: 2, name: locale === "ko" ? "작품 목록" : "Games", item: `${baseUrl}/games` },
+      { "@type": "ListItem", position: 3, name: data.game.name, item: `${baseUrl}/game/${data.game.slug}` },
+      { "@type": "ListItem", position: 4, name: ach.name, item: pageUrl },
+    ],
+  };
+
   return (
     <SiteShell locale={locale} section="games">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
       <article className="mx-auto max-w-[900px] px-5 pb-20 pt-12 md:px-8">
         <Link
           href={`/game/${data.game.slug}`}
