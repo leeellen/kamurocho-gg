@@ -239,7 +239,13 @@ export const getIncompleteAchievements = cache(
           missable: Boolean(ach.missable),
         };
       });
-      items.sort((a, b) => a.rarity - b.rarity);
+      // Two-tier sort: surface missable achievements first (they can become
+      // permanently unobtainable), then everything else. Within each tier,
+      // rarer = higher priority.
+      items.sort((a, b) => {
+        if (a.missable !== b.missable) return a.missable ? -1 : 1;
+        return a.rarity - b.rarity;
+      });
       const top = items.slice(0, limit);
 
       // For just the visible slice, fetch guide content so we can surface the

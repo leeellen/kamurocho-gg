@@ -399,6 +399,205 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
             en: "If you leave the hobby loop too late, it clashes badly with Dragon style cleanup later.",
           },
         },
+        {
+          kind: "missable",
+          title: { ko: "메스킹 카드 한정 보스", en: "Chapter-locked MesuKing cards" },
+          when: { ko: "챕터 6 진입 전", en: "Before entering Chapter 6" },
+          body: {
+            ko: "특정 메스킹 보스 카드는 챕터 6 이후 다시 만나기 어렵습니다. 가능하면 챕터 5에서 한 바퀴 돌리세요.",
+            en: "A subset of MesuKing boss cards become inconvenient to grind after Chapter 6. Try to clear a full loop while Chapter 5 is still active.",
+          },
+        },
+      ],
+    },
+    {
+      chapter: 8,
+      title: { ko: "최종장 진입 전", en: "Before the finale" },
+      items: [
+        {
+          kind: "recommended",
+          title: { ko: "100% 정리 시점", en: "Best cleanup window" },
+          when: { ko: "마지막 챕터 직전", en: "Right before the last chapter" },
+          body: {
+            ko: "마지막 챕터에 들어가면 일부 서브스토리와 미니게임이 영구 잠금됩니다. 100% 정리는 챕터 9 전에 끝내세요.",
+            en: "Several substories and minigames lock the moment the final chapter starts. Wrap completion before entering Chapter 9.",
+          },
+        },
+      ],
+    },
+  ],
+  3717340: [
+    {
+      chapter: 7,
+      title: { ko: "소텐보리 활약 구간", en: "Sotenbori spotlight" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "캬바쿠라 그랑프리", en: "Cabaret Club Grand Prix" },
+          when: { ko: "챕터 종료 전", en: "Before chapter end" },
+          body: {
+            ko: "캬바쿠라 그랑프리는 챕터 7~9 동안만 진행할 수 있는 구간입니다. 미루면 엔딩 후에 다시 시작해야 합니다.",
+            en: "The Cabaret Grand Prix arc is only fully playable from Chapter 7 through 9. Delay it and you'll be replaying the finale.",
+          },
+        },
+      ],
+    },
+  ],
+  1088710: [
+    {
+      chapter: 4,
+      title: { ko: "오키나와 구간", en: "Okinawa stretch" },
+      items: [
+        {
+          kind: "recommended",
+          title: { ko: "오키나와 한정 서브스토리 정리", en: "Wrap Okinawa-only substories" },
+          when: { ko: "도쿄 이동 전", en: "Before the move to Tokyo" },
+          body: {
+            ko: "오키나와에서 시작한 일부 서브스토리는 도쿄로 이동하면 진행 불가가 됩니다. 사다이마/엽서/소년원 관련 라인은 챕터 끝나기 전에 마무리하세요.",
+            en: "Several Okinawa-only substories lock the moment the story moves to Tokyo. Wrap up the orphanage, postcard, and side characters there before advancing.",
+          },
+        },
+      ],
+    },
+  ],
+  1105500: [
+    {
+      chapter: 2,
+      title: { ko: "아키야마 챕터 초반", en: "Akiyama opening" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "아키야마 한정 서브스토리", en: "Akiyama-only substories" },
+          when: { ko: "아키야마 파트 종료 전", en: "Before the Akiyama part ends" },
+          body: {
+            ko: "4편은 주인공 4인 구성으로, 각자 챕터 안에서만 진행 가능한 서브가 있습니다. 아키야마 챕터 안에 사이드를 마치세요.",
+            en: "Yakuza 4 splits into four protagonist arcs and most substories only run inside the active protagonist's chapter window. Clear Akiyama's list before swapping.",
+          },
+        },
+      ],
+    },
+    {
+      chapter: 5,
+      title: { ko: "사에지마 파트", en: "Saejima arc" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "사에지마 한정 서브", en: "Saejima-only side content" },
+          when: { ko: "탈옥 이후 챕터 종료 전", en: "Before Saejima's arc closes" },
+          body: {
+            ko: "사에지마 탈옥 이후 진행되는 서브와 호스티스 라인은 그의 챕터 종료와 함께 닫힙니다.",
+            en: "Post-prison substories and the hostess maker tied to Saejima's chapter close out with his arc.",
+          },
+        },
+      ],
+    },
+  ],
+  1105510: [
+    {
+      chapter: 2,
+      title: { ko: "키류 (나하)", en: "Kiryu — Naha" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "택시 미션 일부", en: "Taxi missions" },
+          when: { ko: "택시 운전 파트 종료 전", en: "Before the taxi arc ends" },
+          body: {
+            ko: "키류 택시 미션 중 일부는 그의 챕터를 떠나면 영구 잠금됩니다. 비싼 도색·터보 강화 전에 가능한 만큼 처리하세요.",
+            en: "Several taxi missions become unobtainable once Kiryu leaves his chapter. Finish what you can before the expensive paint/turbo upgrades.",
+          },
+        },
+      ],
+    },
+    {
+      chapter: 9,
+      title: { ko: "하루카 파트", en: "Haruka chapter" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "하루카 댄스 배틀", en: "Haruka dance battles" },
+          when: { ko: "댄스 파트 종료 전", en: "Before the dance arc closes" },
+          body: {
+            ko: "하루카의 댄스 배틀 일부는 그녀 챕터에서만 진행할 수 있습니다. 마지막 챕터 진입 전 모두 클리어하세요.",
+            en: "A subset of Haruka's dance battles only run inside her chapter. Clear them before the finale begins.",
+          },
+        },
+      ],
+    },
+  ],
+  1388590: [
+    {
+      chapter: 5,
+      title: { ko: "오노미치 구간", en: "Onomichi stretch" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "오노미치 한정 서브", en: "Onomichi-only substories" },
+          when: { ko: "카무로초 이동 전", en: "Before returning to Kamurocho" },
+          body: {
+            ko: "오노미치에서만 진행 가능한 서브와 미니게임은 카무로초로 이동하면 한동안 진행 불가. 챕터 종료 전 처리하세요.",
+            en: "Several Onomichi-only substories pause when you return to Kamurocho. Wrap them before the chapter swap.",
+          },
+        },
+      ],
+    },
+  ],
+  1235140: [
+    {
+      chapter: 4,
+      title: { ko: "요코하마 합류 구간", en: "Yokohama assembly" },
+      items: [
+        {
+          kind: "recommended",
+          title: { ko: "수지몬 배틀 조기 정리", en: "Front-load Sujimon battles" },
+          when: { ko: "파티 합류 직후", en: "Right after the party joins" },
+          body: {
+            ko: "특정 수지몬은 후반부에 만나기 까다롭습니다. 챕터 4~5에서 도시를 돌며 한 차례 채워두면 후반 부담이 줄어듭니다.",
+            en: "Some Sujimon become inconvenient to track later. Sweep the city during Chapters 4–5 to reduce the post-game grind.",
+          },
+        },
+        {
+          kind: "missable",
+          title: { ko: "홍콩 프롤로그 한정 라인", en: "Hong Kong prologue lines" },
+          when: { ko: "프롤로그 종료 전", en: "Before leaving the prologue" },
+          body: {
+            ko: "이치반의 18년 전 회상 구간에서만 진행 가능한 한정 컷씬과 대화가 있습니다. 다시 돌아갈 수 없으니 모두 확인하세요.",
+            en: "Ichiban's prologue flashback has dialogue and scenes that never replay. Sweep them before the story timeskip.",
+          },
+        },
+      ],
+    },
+  ],
+  2058180: [
+    {
+      chapter: 6,
+      title: { ko: "탐정 의뢰 구간", en: "Investigation arc" },
+      items: [
+        {
+          kind: "missable",
+          title: { ko: "탐정 의뢰 한정 분기", en: "Time-locked side cases" },
+          when: { ko: "챕터 7 진입 전", en: "Before Chapter 7" },
+          body: {
+            ko: "탐정 의뢰 중 일부는 챕터 6에서만 의뢰판에 노출됩니다. 챕터 종료 전 사이드 목록을 한 번 훑어보세요.",
+            en: "A subset of side cases only appear on the board in Chapter 6. Skim the side menu before advancing.",
+          },
+        },
+      ],
+    },
+  ],
+  2375550: [
+    {
+      chapter: 5,
+      title: { ko: "주식 정리 구간", en: "Stock arc cleanup" },
+      items: [
+        {
+          kind: "recommended",
+          title: { ko: "주식 시뮬레이션 100%", en: "Stock simulator 100%" },
+          when: { ko: "최종 챕터 전", en: "Before the final chapter" },
+          body: {
+            ko: "주식 마스터 관련 진행은 최종 챕터 진입 후에도 가능하지만, 시간 가속이 묶이는 구간이 있어 미리 정리해두는 게 안전합니다.",
+            en: "Stock-master progress is still possible after the final chapter, but several time skip windows lock — finishing early is safer.",
+          },
+        },
       ],
     },
   ],
