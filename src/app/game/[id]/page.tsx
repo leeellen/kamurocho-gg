@@ -432,23 +432,85 @@ export default async function GamePage({
                   {locale === "ko" ? "업적 가이드" : "Achievement guide"}
                 </span>
                 <h2 className="font-display m-0 mt-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
-                  {locale === "ko" ? "희귀도 높은 업적부터" : "Start with the rarest"}
+                  {locale === "ko" ? "놓치기 쉬운 업적부터" : "Missable first, then by rarity"}
                 </h2>
               </div>
               <span className="font-mono text-[12px] text-[var(--text-tertiary)]">
                 {locale === "ko" ? `전체 ${data.achievements.length}개` : `${data.achievements.length} total`}
               </span>
             </div>
+            {(() => {
+              const missable = data.achievements.filter((a) => a.missable);
+              const rare = data.achievements.filter((a) => !a.missable && a.rarity > 0 && a.rarity < 10);
+              const rest = data.achievements.filter((a) => !a.missable && (a.rarity === 0 || a.rarity >= 10));
+              return (
+                <div className="mt-4 flex flex-wrap items-center gap-2 text-[12px] text-[var(--text-tertiary)]">
+                  <a href="#group-missable" className="cursor-pointer rounded-full border border-[var(--accent-border)] bg-[var(--danger-bg)]/40 px-3 py-1 font-semibold text-[var(--danger-text)] no-underline transition-colors hover:bg-[var(--danger-bg)]/60">
+                    {locale === "ko" ? `놓치기 쉬움 ${missable.length}` : `${missable.length} missable`}
+                  </a>
+                  <a href="#group-rare" className="cursor-pointer rounded-full border border-[var(--gold-tint)] bg-[var(--gold-tint)] px-3 py-1 font-semibold text-[var(--gold)] no-underline transition-opacity hover:opacity-80">
+                    {locale === "ko" ? `희귀 ${rare.length}` : `${rare.length} rare`}
+                  </a>
+                  <a href="#group-rest" className="cursor-pointer rounded-full border border-[var(--border-strong)] bg-white/5 px-3 py-1 font-semibold text-white no-underline transition-colors hover:bg-white/10">
+                    {locale === "ko" ? `일반 ${rest.length}` : `${rest.length} general`}
+                  </a>
+                </div>
+              );
+            })()}
 
             <ul className="mt-6 flex flex-col gap-3">
-              {data.achievements.map((achievement) => {
+              {(() => {
+                type Group = "missable" | "rare" | "rest";
+                const classify = (a: typeof data.achievements[number]): Group =>
+                  a.missable ? "missable" : a.rarity > 0 && a.rarity < 10 ? "rare" : "rest";
+                const order: Record<Group, number> = { missable: 0, rare: 1, rest: 2 };
+                const sorted = [...data.achievements].sort((a, b) => {
+                  const ga = order[classify(a)];
+                  const gb = order[classify(b)];
+                  if (ga !== gb) return ga - gb;
+                  return a.rarity - b.rarity;
+                });
+                const labels: Record<Group, { ko: string; en: string }> = {
+                  missable: { ko: "놓치기 쉬운 업적", en: "Missable" },
+                  rare: { ko: "희귀 업적", en: "Rare" },
+                  rest: { ko: "일반 업적", en: "General" },
+                };
+                let lastGroup: Group | null = null;
+                const nodes: React.ReactNode[] = [];
+                for (const achievement of sorted) {
+                  const group = classify(achievement);
+                  if (group !== lastGroup) {
+                    nodes.push(
+                      <li key={`header-${group}`} id={`group-${group}`} className="-mb-1 mt-2 first:mt-0">
+                        <div className="flex items-center gap-3 px-1 pt-2">
+                          <h3 className="font-display m-0 text-[15px] font-extrabold tracking-tight text-white">
+                            {labels[group][locale]}
+                          </h3>
+                          <span aria-hidden="true" className="h-px flex-1 bg-[var(--border)]" />
+                        </div>
+                      </li>,
+                    );
+                    lastGroup = group;
+                  }
+                  nodes.push(renderAchievementRow(achievement));
+                }
+                return nodes;
+              })()}
+            </ul>
+          </section>
+        </div>
+      </div>
+    </SiteShell>
+  );
+  function renderAchievementRow(achievement: NonNullable<typeof data>["achievements"][number]) {
+    const gameSlug = data!.game.slug;
                 const userState = userAchMap.get(achievement.id);
                 const isUnlocked = userState?.unlocked === true;
                 const isIncomplete = user && userAchMap.size > 0 && !isUnlocked;
                 return (
                   <li key={achievement.id}>
                     <Link
-                      href={`/game/${data.game.slug}/achievement/${achievement.slug}`}
+                      href={`/game/${gameSlug}/achievement/${achievement.slug}`}
                       className={`group block cursor-pointer rounded-2xl border p-4 no-underline transition-all hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] md:p-5 ${
                         isUnlocked
                           ? "border-[var(--border-subtle)] bg-[var(--bg-surface)]/50 opacity-70 hover:opacity-100 hover:border-white/20"
@@ -563,11 +625,5 @@ export default async function GamePage({
                     </Link>
                   </li>
                 );
-              })}
-            </ul>
-          </section>
-        </div>
-      </div>
-    </SiteShell>
-  );
+  }
 }
