@@ -206,10 +206,22 @@ export default async function MePage() {
                           <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--accent)]">
                             {game.name}
                           </span>
-                          <Chip tone="danger" size="xs">
-                            <FiTarget size={10} aria-hidden="true" />
-                            {locale === "ko" ? "미완료" : "Incomplete"}
-                          </Chip>
+                          {item.missable && (
+                            <Chip tone="danger" size="xs">
+                              <FiTarget size={10} aria-hidden="true" />
+                              {locale === "ko" ? "놓치기 쉬움" : "Missable"}
+                            </Chip>
+                          )}
+                          {item.chapter && (
+                            <Chip tone="gold" size="xs" className="font-mono">
+                              CH {item.chapter}
+                            </Chip>
+                          )}
+                          {!item.missable && (
+                            <Chip tone="neutral" size="xs">
+                              {locale === "ko" ? "미완료" : "Incomplete"}
+                            </Chip>
+                          )}
                         </div>
                         <h3 className="font-display m-0 mt-1.5 text-[15px] font-bold text-white transition-colors group-hover:text-[var(--accent)] md:text-[16px]">
                           {item.displayName}

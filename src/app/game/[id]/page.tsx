@@ -163,8 +163,8 @@ export default async function GamePage({
             {locale === "ko" ? "작품 목록으로" : "Back to games"}
           </Link>
 
-          <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-[300px_1fr] lg:gap-10">
-            <div className="self-start overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-pop)] lg:max-w-[300px]">
+          <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-[360px_1fr] lg:gap-10">
+            <div className="self-start overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-pop)] lg:max-w-[360px]">
               <GameCover
                 appId={data.game.appId}
                 ratio="header"
@@ -231,7 +231,7 @@ export default async function GamePage({
             )}
             <StatTile
               label={locale === "ko" ? "주인공" : "Lead"}
-              value={<span className="text-[20px]">{data.game.lead}</span>}
+              value={data.game.lead}
               hint={data.game.platforms.join(" · ")}
             />
             <StatTile
@@ -243,7 +243,7 @@ export default async function GamePage({
             <StatTile
               tone="gold"
               label={locale === "ko" ? "예상 분량" : "Est. time"}
-              value={<span className="text-[20px]">{data.game.estimatedHours}</span>}
+              value={data.game.estimatedHours}
             />
           </dl>
 

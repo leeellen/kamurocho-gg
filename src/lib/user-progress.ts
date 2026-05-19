@@ -2,6 +2,7 @@ import { cache } from "react";
 
 import { getCurrentSession, type SteamSession } from "@/lib/auth/session";
 import { type Locale } from "@/lib/i18n";
+import { extractChapterFromGuide } from "@/lib/kamurocho-data";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 type AchievementSidecar = { nameKo?: string | null; descKo?: string | null };
@@ -180,6 +181,8 @@ export type IncompleteAchievement = {
   displayName: string;
   description: string | null;
   rarity: number;
+  chapter: number | null;
+  missable: boolean;
 };
 
 /** Achievements the player has not yet unlocked, sorted by rarity (rarest = highest priority). */
@@ -192,7 +195,7 @@ export const getIncompleteAchievements = cache(
       const { data: rows } = await admin
         .from("user_achievements")
         .select(
-          "achievement_id, unlocked, achievements!inner(id, app_id, api_name, display_name, description, category, global_percent)",
+          "achievement_id, unlocked, achievements!inner(id, app_id, api_name, display_name, description, category, global_percent, missable)",
         )
         .eq("steam_id", session.steamId)
         .eq("unlocked", false);
@@ -205,8 +208,10 @@ export const getIncompleteAchievements = cache(
           description: string | null;
           category: string | null;
           global_percent: number | string | null;
+          missable: boolean | null;
         };
       };
+
       const items = (rows ?? []).map((row) => {
         const ach = (row as unknown as Joined).achievements;
         const sidecar = parseAchievementSidecar(ach.category);
@@ -230,10 +235,38 @@ export const getIncompleteAchievements = cache(
           displayName,
           description,
           rarity,
+          chapter: null as number | null,
+          missable: Boolean(ach.missable),
         };
       });
       items.sort((a, b) => a.rarity - b.rarity);
-      return items.slice(0, limit);
+      const top = items.slice(0, limit);
+
+      // For just the visible slice, fetch guide content so we can surface the
+      // chapter the achievement lives in. Skipping this for the full result
+      // set keeps the priority query cheap.
+      if (top.length > 0) {
+        const ids = top.map((i) => i.achievementId);
+        const localePreferences = locale === "ko" ? ["koreana", "english"] : ["english", "koreana"];
+        const { data: guides } = await admin
+          .from("guides")
+          .select("achievement_id, content, locale")
+          .in("achievement_id", ids);
+        const byAchievement = new Map<number, { content: string; locale: string }[]>();
+        for (const g of guides ?? []) {
+          const list = byAchievement.get(g.achievement_id as number) ?? [];
+          list.push({ content: (g.content as string) ?? "", locale: (g.locale as string) ?? "" });
+          byAchievement.set(g.achievement_id as number, list);
+        }
+        for (const item of top) {
+          const list = byAchievement.get(item.achievementId) ?? [];
+          const picked = localePreferences
+            .map((l) => list.find((g) => g.locale === l))
+            .find(Boolean);
+          item.chapter = extractChapterFromGuide(picked?.content ?? null);
+        }
+      }
+      return top;
     } catch {
       return [];
     }
