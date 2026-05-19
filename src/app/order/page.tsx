@@ -66,7 +66,7 @@ function Track({
     <section className="rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 md:p-7">
       <div className="flex items-center justify-between gap-3">
         <Chip tone={tone === "accent" ? "accent" : "neutral"} size="sm">{badge}</Chip>
-        <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+        <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
           {entries.length} {locale === "ko" ? "작품" : "titles"}
         </span>
       </div>
@@ -81,7 +81,7 @@ function Track({
           <li key={`${entry.slug}-${index}`} className="relative pl-12">
             <span
               aria-hidden="true"
-              className={`absolute left-0 top-3.5 flex h-8 w-8 items-center justify-center rounded-full font-mono text-[11px] font-bold ${
+              className={`absolute left-0 top-3.5 flex h-8 w-8 items-center justify-center rounded-full font-mono text-[12px] font-bold ${
                 entry.recommended
                   ? "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
                   : "border border-[var(--border-strong)] bg-[var(--bg-elevated)] text-[var(--text-tertiary)]"
@@ -94,7 +94,7 @@ function Track({
               className="group block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
               <div className="flex flex-wrap items-center gap-2">
-                <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                   {entry.game?.year}
                 </span>
                 <span className="font-display text-[15px] font-bold text-white transition-colors group-hover:text-[var(--accent)]">
@@ -106,7 +106,7 @@ function Track({
                   </Chip>
                 )}
               </div>
-              <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[var(--text-tertiary)]">
+              <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-[var(--text-tertiary)]">
                 <span className="inline-flex items-center gap-1 font-mono">
                   <FiClock size={11} aria-hidden="true" />
                   {entry.game?.estimatedHours}

@@ -75,8 +75,8 @@ export default async function GamePage({
             {locale === "ko" ? "작품 목록으로" : "Back to games"}
           </Link>
 
-          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr] lg:gap-10">
-            <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-pop)] lg:max-w-[280px]">
+          <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-[300px_1fr] lg:gap-10">
+            <div className="self-start overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-pop)] lg:max-w-[300px]">
               <GameCover
                 appId={data.game.appId}
                 ratio="header"
@@ -86,7 +86,7 @@ export default async function GamePage({
               />
             </div>
             <div className="flex flex-col gap-4">
-              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--accent)]">{data.game.arc}</span>
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--accent)]">{data.game.arc}</span>
               <h1 className="font-display m-0 text-[40px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[56px]">
                 {data.game.name}
               </h1>
@@ -234,7 +234,7 @@ export default async function GamePage({
                                 {locale === "ko" ? item.title.ko : item.title.en}
                               </span>
                             </div>
-                            <div className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                               {locale === "ko" ? item.when.ko : item.when.en}
                             </div>
                             <p className="m-0 mt-2 text-[12px] leading-6 text-[var(--text-secondary)]">
@@ -254,7 +254,7 @@ export default async function GamePage({
           <section aria-label={locale === "ko" ? "업적 목록" : "Achievements"}>
             <div className="flex items-end justify-between gap-3">
               <div>
-                <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.16em]"}`}>
+                <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.16em]"}`}>
                   {locale === "ko" ? "업적 가이드" : "Achievement guide"}
                 </span>
                 <h2 className="font-display m-0 mt-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
@@ -362,7 +362,7 @@ export default async function GamePage({
                           </p>
                           {(achievement.guideSteps[0] || achievement.guideSummary) && (
                             <p className="m-0 mt-2 line-clamp-1 text-[12px] text-[var(--text-tertiary)]">
-                              <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--accent)]">
+                              <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--accent)]">
                                 {locale === "ko" ? "공략 " : "Guide "}
                               </span>
                               {achievement.guideSteps[0] || achievement.guideSummary}

@@ -45,7 +45,7 @@ export default async function GamesPage() {
                 <h2 className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white">
                   {ARC_LABEL[arc]?.[locale] ?? arc}
                 </h2>
-                <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+                <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
                   {list.length} {locale === "ko" ? "작품" : "titles"}
                 </span>
                 <span aria-hidden="true" className="ml-2 h-px flex-1 bg-[var(--border)]" />
@@ -130,7 +130,7 @@ function Meta({ label, value, tone = "neutral" }: { label: string; value: number
   const color = tone === "accent" ? "text-[var(--accent)]" : tone === "gold" ? "text-[var(--gold)]" : "text-white";
   return (
     <div>
-      <dt className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
+      <dt className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
       <dd className={`mt-1 font-display text-[18px] font-extrabold leading-none ${color}`}>{value}</dd>
     </div>
   );

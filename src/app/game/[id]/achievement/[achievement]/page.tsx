@@ -67,7 +67,7 @@ export default async function AchievementPage({
         >
           {tracksProgress && (
             <div
-              className={`-mt-2 mb-5 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[11px] font-bold ${
+              className={`-mt-2 mb-5 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[12px] font-bold ${
                 isUnlocked
                   ? "bg-[var(--success-subtle)] text-[var(--safe-text)] ring-1 ring-inset ring-[var(--l3-border)]"
                   : "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
@@ -152,7 +152,7 @@ export default async function AchievementPage({
             </div>
           </div>
           <div className="mt-5 flex items-center gap-3 border-t border-[var(--border-subtle)] pt-5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
               {locale === "ko" ? "전체 달성률" : "Global unlock"}
             </span>
             <RarityBar rarity={ach.rarity} className="flex-1" />
@@ -191,7 +191,7 @@ export default async function AchievementPage({
                 >
                   <span
                     aria-hidden="true"
-                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] font-mono text-[11px] font-bold text-white"
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] font-mono text-[12px] font-bold text-white"
                   >
                     {index + 1}
                   </span>
@@ -232,7 +232,7 @@ export default async function AchievementPage({
 
         {/* SOURCE */}
         <section className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6">
-          <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+          <div className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
             {locale === "ko" ? "출처" : "Source"}
           </div>
           {ach.guideSource ? (

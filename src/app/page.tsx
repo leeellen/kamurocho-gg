@@ -61,7 +61,7 @@ export default async function HomePage() {
         <div className="mx-auto max-w-[1280px] px-5 pb-16 pt-20 md:px-8 md:pb-24 md:pt-28">
           <div className="flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--accent)]" />
-            <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+            <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
               {locale === "ko" ? "RGG 스튜디오 스팀 공략" : "RGG Studio · Steam guides"}
             </span>
           </div>
@@ -131,7 +131,7 @@ export default async function HomePage() {
                 <p className="m-0 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)] sm:text-[13px]">
                   {featured.summary}
                 </p>
-                <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-[var(--text-tertiary)]">
+                <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-[var(--text-tertiary)]">
                   <span className="font-mono">{featured.estimatedHours}</span>
                   <span aria-hidden="true" className="text-white/20">·</span>
                   <span>{locale === "ko" ? `업적 ${featured.achievements}` : `${featured.achievements} ach.`}</span>
@@ -220,7 +220,7 @@ export default async function HomePage() {
                     </Chip>
                     <Chip tone="gold" size="xs">{locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}</Chip>
                   </div>
-                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[11px] text-[var(--text-tertiary)]">
+                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[12px] text-[var(--text-tertiary)]">
                     <span className="font-mono">{game.estimatedHours}</span>
                     <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
                       {locale === "ko" ? "공략" : "Guide"}
@@ -247,7 +247,7 @@ export default async function HomePage() {
                 <li key={entry.slug} className="relative pl-9">
                   <span
                     aria-hidden="true"
-                    className={`absolute left-0 top-3 flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold ${
+                    className={`absolute left-0 top-3 flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-bold ${
                       entry.recommended
                         ? "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
                         : "border border-[var(--border-strong)] bg-[var(--bg-elevated)] text-[var(--text-tertiary)]"
@@ -260,7 +260,7 @@ export default async function HomePage() {
                     className="block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-3 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                   >
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{entry.game?.year}</span>
+                      <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{entry.game?.year}</span>
                       <span className="font-display text-[14px] font-bold text-white">{entry.game?.name}</span>
                       {entry.recommended && (
                         <Chip tone="accent" size="xs">{locale === "ko" ? "입문 추천" : "Recommended"}</Chip>
@@ -306,7 +306,7 @@ export default async function HomePage() {
                           <span className="text-[12px] font-semibold text-white">{chapter.title}</span>
                         </div>
                         {chapter.items[0] && (
-                          <div className="mt-1 line-clamp-1 text-[11px] text-[var(--text-tertiary)]">
+                          <div className="mt-1 line-clamp-1 text-[12px] text-[var(--text-tertiary)]">
                             {chapter.items[0].title}
                           </div>
                         )}

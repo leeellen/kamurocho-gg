@@ -76,7 +76,7 @@ export default async function MissablesPage() {
                               <Chip tone={tone} size="xs">{item.kind}</Chip>
                               <span className="text-[13px] font-bold text-white">{item.title}</span>
                             </div>
-                            <div className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
+                            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
                               {item.when}
                             </div>
                             <p className="m-0 mt-2 text-[12px] leading-6 text-[var(--text-secondary)]">{item.body}</p>

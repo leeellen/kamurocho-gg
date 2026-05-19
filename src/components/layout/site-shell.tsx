@@ -50,7 +50,7 @@ export async function SiteShell({
               <span className="font-display text-[15px] font-extrabold tracking-tight text-white">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
+              <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
                 RGG Steam Guides
               </span>
             </span>
@@ -96,7 +96,7 @@ export async function SiteShell({
             >
               <FiSearch size={14} aria-hidden="true" />
               <span className="hidden sm:inline">{locale === "ko" ? "검색" : "Search"}</span>
-              <kbd className="hidden rounded border border-white/12 bg-black/40 px-1.5 py-0.5 font-mono text-[10px] text-[var(--text-tertiary)] sm:inline">⌘K</kbd>
+              <kbd className="hidden rounded border border-white/12 bg-black/40 px-1.5 py-0.5 font-mono text-[11px] text-[var(--text-tertiary)] sm:inline">⌘K</kbd>
             </Link>
             <LanguageSwitcher
               locale={locale}
@@ -155,7 +155,7 @@ export async function SiteShell({
               <div className="font-display text-[14px] font-extrabold tracking-tight">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
               </div>
-              <div className="text-[11px] text-[var(--text-tertiary)]">
+              <div className="text-[12px] text-[var(--text-tertiary)]">
                 {locale === "ko"
                   ? "비공식 팬 가이드 · SEGA / RGG Studio와 무관"
                   : "An unofficial fan project · not affiliated with SEGA / RGG Studio"}
@@ -177,7 +177,7 @@ export async function SiteShell({
                 {locale === "ko" ? "검색" : "Search"}
               </Link>
             </div>
-            <span lang="en" className="text-[10px] text-[var(--text-muted)]">
+            <span lang="en" className="text-[11px] text-[var(--text-muted)]">
               Steam and the Steam logo are trademarks of Valve Corporation. This site is not associated with Valve Corp.
             </span>
           </div>

@@ -24,7 +24,7 @@ export default async function SearchPage({
   return (
     <SiteShell locale={locale} section="search">
       <div className="mx-auto max-w-[980px] px-5 pb-20 pt-12 md:px-8 md:pt-16">
-        <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+        <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
           {locale === "ko" ? "검색" : "Search"}
         </span>
         <h1 className="font-display m-0 mt-2 text-[34px] font-extrabold tracking-tight text-white md:text-[44px]">
@@ -75,7 +75,7 @@ export default async function SearchPage({
 
         {!query && (
           <div className="mt-12 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-10 text-center">
-            <div className={`font-mono text-[10px] uppercase text-[var(--text-tertiary)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+            <div className={`font-mono text-[11px] uppercase text-[var(--text-tertiary)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
               {locale === "ko" ? "검색 팁" : "Tips"}
             </div>
             <p className="font-display m-0 mt-3 text-[20px] font-bold text-white">
@@ -104,7 +104,7 @@ export default async function SearchPage({
               <section>
                 <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
                   {locale === "ko" ? "게임" : "Games"}
-                  <span className="font-mono text-[11px] font-normal text-[var(--text-tertiary)]">
+                  <span className="font-mono text-[12px] font-normal text-[var(--text-tertiary)]">
                     {results.games.length}
                   </span>
                 </h2>
@@ -131,7 +131,7 @@ export default async function SearchPage({
                           <p className="m-0 mt-1 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
                             {game.summary}
                           </p>
-                          <div className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                          <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                             {game.year} · {game.estimatedHours}
                           </div>
                         </div>
@@ -146,7 +146,7 @@ export default async function SearchPage({
               <section>
                 <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
                   {locale === "ko" ? "업적" : "Achievements"}
-                  <span className="font-mono text-[11px] font-normal text-[var(--text-tertiary)]">
+                  <span className="font-mono text-[12px] font-normal text-[var(--text-tertiary)]">
                     {results.achievements.length}
                   </span>
                 </h2>
@@ -168,7 +168,7 @@ export default async function SearchPage({
                                 {locale === "ko" ? "놓치기 쉬움" : "Missable"}
                               </Chip>
                             )}
-                            <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                            <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                               {game.name}
                             </span>
                           </div>

@@ -27,7 +27,7 @@ export default async function MePage() {
     return (
       <SiteShell locale={locale} section="games">
         <div className="mx-auto flex max-w-[600px] flex-col items-center px-5 pb-20 pt-24 text-center md:px-8">
-          <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+          <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
             {locale === "ko" ? "내 라이브러리" : "Library"}
           </span>
           <h1 className="font-display m-0 mt-3 text-[36px] font-extrabold tracking-tight text-white md:text-[48px]">
@@ -41,7 +41,7 @@ export default async function MePage() {
           <div className="mt-8 flex justify-center">
             <SignInButton locale={locale} size="lg" />
           </div>
-          <p className="m-0 mt-5 text-[11px] text-[var(--text-tertiary)]">
+          <p className="m-0 mt-5 text-[12px] text-[var(--text-tertiary)]">
             {locale === "ko"
               ? "스팀 OpenID로만 인증합니다. 비밀번호는 입력하지 않으며, 공개 프로필 정보만 사용합니다."
               : "Authenticates via Steam OpenID. No passwords; only public profile data is used."}
@@ -97,7 +97,7 @@ export default async function MePage() {
                 </span>
               )}
               <div>
-                <span className={`font-mono text-[11px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+                <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
                   {locale === "ko" ? "내 라이브러리" : "Library"}
                 </span>
                 <h1 className="font-display m-0 mt-1.5 text-[28px] font-extrabold tracking-tight text-white md:text-[36px]">
@@ -195,7 +195,7 @@ export default async function MePage() {
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-[1fr_200px_24px] md:items-center">
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--accent)]">
+                          <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--accent)]">
                             {game.name}
                           </span>
                           <Chip tone="danger" size="xs">
@@ -268,7 +268,7 @@ export default async function MePage() {
                           {game.name}
                         </h3>
                         <div className="mt-4">
-                          <div className="flex items-end justify-between text-[11px]">
+                          <div className="flex items-end justify-between text-[12px]">
                             <span className="font-mono uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
                               {locale === "ko" ? "진행률" : "Completion"}
                             </span>
@@ -281,7 +281,7 @@ export default async function MePage() {
                               aria-hidden="true"
                             />
                           </div>
-                          <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-[var(--text-tertiary)]">
+                          <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[12px] text-[var(--text-tertiary)]">
                             <span className="font-mono">
                               {progress.unlocked} / {progress.total}
                             </span>

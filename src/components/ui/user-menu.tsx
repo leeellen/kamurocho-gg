@@ -23,7 +23,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
         ) : (
           <span
             aria-hidden="true"
-            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[10px] font-black text-white"
+            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[11px] font-black text-white"
           >
             {name.slice(0, 1).toUpperCase()}
           </span>
@@ -51,11 +51,11 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
             )}
             <div className="min-w-0">
               <div className="truncate text-[13px] font-bold text-white">{name}</div>
-              <div className="font-mono text-[10px] text-[var(--text-tertiary)]">{user.steamId}</div>
+              <div className="font-mono text-[11px] text-[var(--text-tertiary)]">{user.steamId}</div>
             </div>
           </div>
           {user.lastSynced && (
-            <div className="mt-2 font-mono text-[10px] text-[var(--text-tertiary)]">
+            <div className="mt-2 font-mono text-[11px] text-[var(--text-tertiary)]">
               {locale === "ko" ? "마지막 동기화" : "Last synced"}: {new Date(user.lastSynced).toLocaleString(locale === "ko" ? "ko-KR" : "en-US")}
             </div>
           )}
@@ -154,7 +154,7 @@ export function SignInButton({
         </span>
       </a>
       {showDisclaimer && (
-        <span lang="en" className="text-[10px] leading-tight text-[var(--text-tertiary)]">
+        <span lang="en" className="text-[11px] leading-tight text-[var(--text-tertiary)]">
           This site is not associated with Valve Corp.
         </span>
       )}

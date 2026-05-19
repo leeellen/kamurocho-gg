@@ -29,13 +29,13 @@ export function StatTile({
         className,
       )}
     >
-      <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-tertiary)]">
+      <div className="font-mono text-[12px] uppercase tracking-wider text-[var(--text-tertiary)]">
         {label}
       </div>
-      <div className={cn("mt-2 font-display text-[28px] font-extrabold leading-none md:text-[32px]", toneClasses)}>
+      <div className={cn("mt-2.5 font-display text-[30px] font-extrabold leading-none md:text-[36px]", toneClasses)}>
         {value}
       </div>
-      {hint && <div className="mt-2 text-[12px] text-[var(--text-tertiary)]">{hint}</div>}
+      {hint && <div className="mt-2 text-[13px] leading-snug text-[var(--text-tertiary)]">{hint}</div>}
     </div>
   );
 }
