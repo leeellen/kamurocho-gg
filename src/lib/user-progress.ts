@@ -1,7 +1,19 @@
 import { cache } from "react";
 
 import { getCurrentSession, type SteamSession } from "@/lib/auth/session";
+import { type Locale } from "@/lib/i18n";
 import { createAdminClient } from "@/lib/supabase/admin";
+
+type AchievementSidecar = { nameKo?: string | null; descKo?: string | null };
+
+function parseAchievementSidecar(raw: string | null | undefined): AchievementSidecar | null {
+  if (!raw || !raw.startsWith("{")) return null;
+  try {
+    return JSON.parse(raw) as AchievementSidecar;
+  } catch {
+    return null;
+  }
+}
 
 export type CurrentUser = {
   steamId: string;
@@ -171,45 +183,59 @@ export type IncompleteAchievement = {
 };
 
 /** Achievements the player has not yet unlocked, sorted by rarity (rarest = highest priority). */
-export const getIncompleteAchievements = cache(async (limit = 24): Promise<IncompleteAchievement[]> => {
-  const session = await getSession();
-  if (!session) return [];
-  try {
-    const admin = createAdminClient();
-    const { data: rows } = await admin
-      .from("user_achievements")
-      .select("achievement_id, unlocked, achievements!inner(id, app_id, api_name, display_name, description, global_percent)")
-      .eq("steam_id", session.steamId)
-      .eq("unlocked", false);
-    type Joined = {
-      achievements: {
-        id: number;
-        app_id: number;
-        api_name: string;
-        display_name: string | null;
-        description: string | null;
-        global_percent: number | string | null;
+export const getIncompleteAchievements = cache(
+  async (locale: Locale, limit = 24): Promise<IncompleteAchievement[]> => {
+    const session = await getSession();
+    if (!session) return [];
+    try {
+      const admin = createAdminClient();
+      const { data: rows } = await admin
+        .from("user_achievements")
+        .select(
+          "achievement_id, unlocked, achievements!inner(id, app_id, api_name, display_name, description, category, global_percent)",
+        )
+        .eq("steam_id", session.steamId)
+        .eq("unlocked", false);
+      type Joined = {
+        achievements: {
+          id: number;
+          app_id: number;
+          api_name: string;
+          display_name: string | null;
+          description: string | null;
+          category: string | null;
+          global_percent: number | string | null;
+        };
       };
-    };
-    const items = (rows ?? []).map((row) => {
-      const ach = (row as unknown as Joined).achievements;
-      const rarity = typeof ach.global_percent === "number"
-        ? ach.global_percent
-        : ach.global_percent
-          ? Number(ach.global_percent)
-          : 100;
-      return {
-        achievementId: ach.id,
-        appId: ach.app_id,
-        apiName: ach.api_name,
-        displayName: ach.display_name || ach.api_name,
-        description: ach.description,
-        rarity,
-      };
-    });
-    items.sort((a, b) => a.rarity - b.rarity);
-    return items.slice(0, limit);
-  } catch {
-    return [];
-  }
-});
+      const items = (rows ?? []).map((row) => {
+        const ach = (row as unknown as Joined).achievements;
+        const sidecar = parseAchievementSidecar(ach.category);
+        const koName = sidecar?.nameKo ?? null;
+        const koDesc = sidecar?.descKo ?? null;
+        const displayName = locale === "ko"
+          ? (koName || ach.display_name || ach.api_name)
+          : (ach.display_name || koName || ach.api_name);
+        const description = locale === "ko"
+          ? (koDesc || ach.description || null)
+          : (ach.description || koDesc || null);
+        const rarity = typeof ach.global_percent === "number"
+          ? ach.global_percent
+          : ach.global_percent
+            ? Number(ach.global_percent)
+            : 100;
+        return {
+          achievementId: ach.id,
+          appId: ach.app_id,
+          apiName: ach.api_name,
+          displayName,
+          description,
+          rarity,
+        };
+      });
+      items.sort((a, b) => a.rarity - b.rarity);
+      return items.slice(0, limit);
+    } catch {
+      return [];
+    }
+  },
+);

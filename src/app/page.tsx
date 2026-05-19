@@ -110,7 +110,7 @@ export default async function HomePage() {
             <Link
               href={`/game/${featured.slug}`}
               aria-label={locale === "ko" ? `${featured.name} 공략 열기` : `Open ${featured.name} guide`}
-              className="group mt-12 grid w-full max-w-[640px] cursor-pointer grid-cols-[140px_1fr] gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 no-underline backdrop-blur-xl transition-all hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:grid-cols-[180px_1fr] sm:gap-5"
+              className="group mt-12 grid w-full max-w-[640px] cursor-pointer items-center grid-cols-[140px_1fr] gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 no-underline backdrop-blur-xl transition-all hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:grid-cols-[180px_1fr] sm:gap-5"
             >
               <div className="overflow-hidden rounded-xl border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
                 <GameCover

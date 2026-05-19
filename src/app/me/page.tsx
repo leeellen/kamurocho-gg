@@ -54,7 +54,7 @@ export default async function MePage() {
   const [games, progressMap, incomplete] = await Promise.all([
     getSeriesGames(locale),
     getUserGameProgress(),
-    getIncompleteAchievements(24),
+    getIncompleteAchievements(locale, 24),
   ]);
 
   const owned = games

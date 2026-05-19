@@ -152,11 +152,27 @@ export async function syncSteamLibrary(steamId: string) {
 
   for (const game of owned) {
     try {
-      const schemaRes = await steamFetch<{
-        game?: { availableGameStats?: { achievements?: SteamAchievementSchema[] } };
-      }>("/ISteamUserStats/GetSchemaForGame/v2/", { appid: String(game.appid) });
+      // Fetch English (canonical) + Korean schemas in parallel. Korean strings
+      // are stashed in the achievements.category text column as a JSON sidecar
+      // ({nameKo, descKo}) so the curated data layer can pick the localized
+      // copy without a separate column.
+      const [schemaRes, schemaKoRes] = await Promise.all([
+        steamFetch<{
+          game?: { availableGameStats?: { achievements?: SteamAchievementSchema[] } };
+        }>("/ISteamUserStats/GetSchemaForGame/v2/", { appid: String(game.appid) }),
+        steamFetch<{
+          game?: { availableGameStats?: { achievements?: SteamAchievementSchema[] } };
+        }>("/ISteamUserStats/GetSchemaForGame/v2/", {
+          appid: String(game.appid),
+          l: "koreana",
+        }).catch(() => null),
+      ]);
 
       const achSchemas = schemaRes.game?.availableGameStats?.achievements ?? [];
+      const koMap = new Map<string, SteamAchievementSchema>();
+      for (const a of schemaKoRes?.game?.availableGameStats?.achievements ?? []) {
+        koMap.set(a.name, a);
+      }
       if (achSchemas.length === 0) {
         synced++;
         continue;
@@ -177,16 +193,23 @@ export async function syncSteamLibrary(steamId: string) {
         // Some titles have no global stats.
       }
 
-      const achRows = achSchemas.map((a) => ({
-        app_id: game.appid,
-        api_name: a.name,
-        display_name: a.displayName || a.name,
-        description: a.description || null,
-        icon_url: a.icon || null,
-        icon_gray_url: a.icongray || null,
-        global_percent: globalMap.has(a.name) ? globalMap.get(a.name) : null,
-        last_updated: syncedAt,
-      }));
+      const achRows = achSchemas.map((a) => {
+        const ko = koMap.get(a.name);
+        const sidecar = (ko?.displayName || ko?.description)
+          ? JSON.stringify({ v: 1, nameKo: ko?.displayName ?? null, descKo: ko?.description ?? null })
+          : null;
+        return {
+          app_id: game.appid,
+          api_name: a.name,
+          display_name: a.displayName || a.name,
+          description: a.description || null,
+          category: sidecar,
+          icon_url: a.icon || null,
+          icon_gray_url: a.icongray || null,
+          global_percent: globalMap.has(a.name) ? globalMap.get(a.name) : null,
+          last_updated: syncedAt,
+        };
+      });
 
       for (let i = 0; i < achRows.length; i += 100) {
         await admin
