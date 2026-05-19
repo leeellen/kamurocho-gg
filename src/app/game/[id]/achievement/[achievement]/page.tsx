@@ -216,14 +216,29 @@ export default async function AchievementPage({
 
         {/* GUIDE */}
         <section className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 md:p-8">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
-              <FiCheckCircle size={14} aria-hidden="true" />
-            </span>
-            <h2 className="font-display m-0 text-[16px] font-extrabold tracking-tight text-white">
-              {locale === "ko" ? "진행 순서" : "Do this next"}
-            </h2>
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
+                <FiCheckCircle size={14} aria-hidden="true" />
+              </span>
+              <h2 className="font-display m-0 text-[16px] font-extrabold tracking-tight text-white">
+                {locale === "ko" ? "진행 순서" : "Do this next"}
+              </h2>
+            </div>
+            {ach.chapter && (
+              <Chip tone="gold" size="xs" className="font-mono">
+                CH {ach.chapter}
+              </Chip>
+            )}
           </div>
+          {ach.guidePointer && (
+            <div className="mt-3 flex items-start gap-2 rounded-lg border border-[var(--border-subtle)] bg-black/20 px-3 py-2 text-[12px] text-[var(--text-tertiary)]">
+              <span className="font-mono uppercase tracking-wider text-[var(--text-tertiary)]">
+                {locale === "ko" ? "원문 섹션" : "Source section"}
+              </span>
+              <span className="text-white">{ach.guidePointer}</span>
+            </div>
+          )}
           {ach.guideSummary && (
             <p className="m-0 mt-4 text-[15px] font-semibold leading-7 text-white">{ach.guideSummary}</p>
           )}

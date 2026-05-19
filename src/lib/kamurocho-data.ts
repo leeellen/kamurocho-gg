@@ -76,6 +76,7 @@ export type GameAchievementCard = {
   guideTips: string[];
   guideStats: string | null;
   guideSource: string | null;
+  guidePointer: string | null;
   confidence: string | null;
   missable: boolean;
   chapter: number | null;
@@ -137,22 +138,70 @@ function sanitizeGuideSummary(summary: string | null, achievementName: string, d
   return summary;
 }
 
-// Drop lines that are pure section markers, missable banners, or duplicate
-// titles. Missable status is already communicated by the chip + header copy,
-// so the literal "MISSABLE ACHIEVEMENT ALERT" / "놓치기 쉬운 업적입니다."
-// lines that the backfill scripts emit add noise to the guide steps.
+// Drop lines that are pure section markers, missable banners, generic
+// "complete the story" filler, or table-of-contents pointers into the source
+// guide. Missable status is already on the chip; section-pointer lines
+// (`다음 공략 흐름을 기준으로 진행하세요: …`) belong in a separate
+// breadcrumb, not in the steps list.
 const NOISE_PATTERNS = [
   /^\/{2,}\s*missable\s+achievement\s+alert\s*\/{2,}$/i,
   /^missable\s+achievement\s+alert$/i,
   /^놓치기\s*쉬운\s*업적입?니?다?\.?$/,
   /^미스어블\s*업적입?니?다?\.?$/,
   /^주의[:!.]?\s*놓치기\s*쉬움\.?$/,
+  // Backfill emitted generic boilerplate when no concrete steps existed.
+  /^이러한\s*업적은\s*스토리를\s*진행하면서\s*잠금\s*해제됩니다\.?$/,
+  /^these\s*achievements?\s*(?:will\s*)?unlock\s*(?:as\s*you\s*)?progress\s*(?:through\s*)?the\s*story\.?$/i,
+  /^스토리를\s*깨면\s*legend\s*난이도가\s*잠금\s*해제됩니다\.?$/i,
+  // Pure chapter milestone lines like "챕터 4를 완료했습니다." that the
+  // backfill pulled in as steps from the section's prerequisite list.
+  /^챕터\s*\d{1,2}\s*을?를?\s*완료했습니다\.?$/,
+  /^complete[ds]?\s+chapter\s+\d{1,2}\.?$/i,
+];
+
+// Lines that follow the format `다음 공략 흐름을 기준으로 진행하세요: X → Y`
+// and the English equivalent. They describe where in the original Steam
+// Community guide the achievement lives, not how to execute it, so we surface
+// them through a separate field.
+const POINTER_PATTERNS = [
+  /^다음\s*공략\s*흐름을\s*기준으로\s*진행하세요\s*[:：]/,
+  /^use\s+the\s+route\s+from\b/i,
 ];
 
 function isNoiseLine(text: string): boolean {
   const trimmed = text.trim().replace(/[*_]+/g, "");
   if (!trimmed) return true;
   return NOISE_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+function isPointerLine(text: string): boolean {
+  const trimmed = text.trim().replace(/[*_]+/g, "");
+  if (!trimmed) return false;
+  return POINTER_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+/**
+ * Extract the routing pointer from a guide's steps and return both the
+ * cleaned, pointer-free steps and the localized pointer string (if any).
+ * The pointer line carries the section name from the original Steam Community
+ * guide; rendering it as a small breadcrumb separates structural metadata
+ * from actionable instructions.
+ */
+function extractPointer(lines: string[]): { steps: string[]; pointer: string | null } {
+  let pointer: string | null = null;
+  const steps: string[] = [];
+  for (const line of lines) {
+    if (!pointer && isPointerLine(line)) {
+      pointer = line
+        .replace(/^다음\s*공략\s*흐름을\s*기준으로\s*진행하세요\s*[:：]\s*/, "")
+        .replace(/^use\s+the\s+route\s+from\s+/i, "")
+        .replace(/[*_]+/g, "")
+        .trim() || null;
+      continue;
+    }
+    steps.push(line);
+  }
+  return { steps, pointer };
 }
 
 function sanitizeGuideLines(lines: string[], achievementName: string, description: string) {
@@ -178,6 +227,32 @@ function sanitizeGuideLines(lines: string[], achievementName: string, descriptio
     seen.add(normalized);
     return true;
   });
+}
+
+/**
+ * Light, rule-based clean-up for AI-translated Korean guide lines. Avoids
+ * heavy rewriting (no LLM), targets the noisy patterns that show up
+ * consistently across thousands of rows: stiff declarative endings, the
+ * literal phrase "도전 과제" (the JP-style two-word form most KO players
+ * read as "도전과제" or simply "업적"), and the colloquial "스토리를 깨면".
+ */
+function normalizeKoreanLine(line: string): string {
+  return line
+    .replace(/도전\s*과제/g, "업적")
+    .replace(/스토리를\s*깨면/g, "스토리를 끝내면")
+    .replace(/잠금\s*해제됩니다\.?$/u, "잠금 해제")
+    .replace(/잠금이\s*해제됩니다\.?$/u, "잠금 해제")
+    .replace(/완료했습니다\.?$/u, "완료")
+    .replace(/획득했습니다\.?$/u, "획득")
+    .replace(/달성했습니다\.?$/u, "달성")
+    .replace(/주었습니다\.?$/u, "지급")
+    // "X을/를 X해야 할 것이다" -> "X을/를 X해야 합니다"
+    .replace(/(\S+?)을\s*해야\s*할\s*것이다\.?$/u, "$1을 해야 합니다.")
+    .replace(/(\S+?)를\s*해야\s*할\s*것이다\.?$/u, "$1를 해야 합니다.")
+    .replace(/사야\s*할\s*것이다\.?$/u, "사야 합니다.")
+    // Collapse double spaces introduced above.
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 const CHAPTER_PATTERN_EN = /chapter\s*(\d{1,2})/i;
@@ -343,8 +418,12 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
           ? achievementSidecar?.descKo || achievement.description || ""
           : achievement.description || achievementSidecar?.descKo || "";
       const rarity = coercePercent(achievement.global_percent);
-      const guideSteps = sanitizeGuideLines(structured.steps, displayName, description).slice(0, 5);
-      const guideTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
+      const { steps: pointerlessSteps, pointer } = extractPointer(structured.steps);
+      const rawSteps = sanitizeGuideLines(pointerlessSteps, displayName, description).slice(0, 5);
+      const rawTips = sanitizeGuideLines(structured.tips, displayName, description).slice(0, 4);
+      const guideSteps = locale === "ko" ? rawSteps.map(normalizeKoreanLine) : rawSteps;
+      const guideTips = locale === "ko" ? rawTips.map(normalizeKoreanLine) : rawTips;
+      const normalizedPointer = locale === "ko" && pointer ? normalizeKoreanLine(pointer) : pointer;
 
       return {
         id: achievement.id,
@@ -360,6 +439,7 @@ export const getGamePageData = cache(async (slugOrId: string, locale: Locale): P
         guideTips,
         guideStats: structured.statsLine,
         guideSource: selectedGuide?.source_url ?? null,
+        guidePointer: normalizedPointer,
         confidence: normalizeConfidence(selectedGuide?.confidence),
         missable: inferMissable(achievement, selectedGuide?.content ?? ""),
         chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
