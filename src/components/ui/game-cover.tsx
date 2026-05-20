@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 type Ratio = "header" | "library" | "capsule" | "square";
 
@@ -81,7 +81,11 @@ export function GameCover({
     [appId, ratio, imgIconUrl, headerUrl, capsuleUrl],
   );
   const [idx, setIdx] = useState(0);
-  useEffect(() => { setIdx(0); }, [urls]);
+  const [prevUrls, setPrevUrls] = useState(urls);
+  if (prevUrls !== urls) {
+    setPrevUrls(urls);
+    setIdx(0);
+  }
   const { w, h } = RATIO_PX[ratio];
   const fallbackClass = `cover-${appId % 20}`;
 

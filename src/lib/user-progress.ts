@@ -1,19 +1,13 @@
 import { cache } from "react";
 
+import {
+  localizeAchievementDescription,
+  localizeAchievementName,
+  parseAchievementSidecar,
+} from "@/lib/achievement-text";
 import { getCurrentSession, type SteamSession } from "@/lib/auth/session";
 import { type Locale } from "@/lib/i18n";
 import { createAdminClient } from "@/lib/supabase/admin";
-
-type AchievementSidecar = { nameKo?: string | null; descKo?: string | null };
-
-function parseAchievementSidecar(raw: string | null | undefined): AchievementSidecar | null {
-  if (!raw || !raw.startsWith("{")) return null;
-  try {
-    return JSON.parse(raw) as AchievementSidecar;
-  } catch {
-    return null;
-  }
-}
 
 export type CurrentUser = {
   steamId: string;
@@ -210,14 +204,17 @@ export const getIncompleteAchievements = cache(
       const items = (rows ?? []).map((row) => {
         const ach = (row as unknown as Joined).achievements;
         const sidecar = parseAchievementSidecar(ach.category);
-        const koName = sidecar?.nameKo ?? null;
-        const koDesc = sidecar?.descKo ?? null;
-        const displayName = locale === "ko"
-          ? (koName || ach.display_name || ach.api_name)
-          : (ach.display_name || koName || ach.api_name);
-        const description = locale === "ko"
-          ? (koDesc || ach.description || null)
-          : (ach.description || koDesc || null);
+        const displayName = localizeAchievementName({
+          locale,
+          englishName: ach.display_name,
+          apiName: ach.api_name,
+          sidecar,
+        });
+        const description = localizeAchievementDescription({
+          locale,
+          englishDescription: ach.description,
+          sidecar,
+        }) || null;
         const rarity = typeof ach.global_percent === "number"
           ? ach.global_percent
           : ach.global_percent

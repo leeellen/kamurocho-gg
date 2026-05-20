@@ -72,7 +72,9 @@ export default async function MissablesPage() {
                     className={`border-t border-[var(--border-subtle)] p-5 md:p-6 ${ci % 2 === 1 ? "md:border-l" : ""}`}
                   >
                     <div className="flex items-center gap-2">
-                      <Chip tone="gold" size="xs" className="font-mono">CH {chapter.chapter}</Chip>
+                      <Chip tone="gold" size="xs" className="font-mono">
+                        {chapter.chapter > 0 ? `CH ${chapter.chapter}` : (locale === "ko" ? "NOTE" : "NOTE")}
+                      </Chip>
                       <h3 className="font-display m-0 text-[15px] font-bold text-white">{chapter.title}</h3>
                     </div>
                     <div className="mt-4 flex flex-col gap-3">

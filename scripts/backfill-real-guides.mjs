@@ -27,12 +27,135 @@ const CURATED_SEED_URLS = {
   1105500: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402"],
   1105510: ["https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"],
   1388590: ["https://steamcommunity.com/sharedfiles/filedetails/?id=3430885986"],
+  1805480: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399"],
+  2058180: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915"],
+  1235140: ["https://steamcommunity.com/sharedfiles/filedetails/?id=3673089977"],
   2375550: [
     "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
     "https://steamcommunity.com/sharedfiles/filedetails/?id=3549694940",
   ],
+  2072450: ["https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135"],
+  3061810: ["https://steamcommunity.com/sharedfiles/filedetails/?id=3433394597"],
 };
 const MANUAL_GUIDE_OVERRIDES = {
+  "2988580:24_Mr_Shakedown": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+    englishContent: [
+      "Defeat Mr. Shakedown for the first time.",
+      "",
+      "**Do this next:**",
+      "- You first encounter **Mr. Shakedown** during **Chapter 2**.",
+      "- Do not worry about beating him immediately if your damage is low. You can back off, stock healing items, and challenge him again once you are ready.",
+      "- Use Rush to bait his charges or Beast to punish long recovery windows, then finish the fight once his guard opens up.",
+      "- The achievement unlocks the first time you fully defeat him.",
+      "",
+      "**Watch for:**",
+      "- He hits extremely hard early on, so bring healing and avoid greedy combos.",
+    ].join("\n"),
+    koreanContent: [
+      "상대를 보고 덤벼라",
+      "",
+      "**지금 해야 할 일:**",
+      "- **삥쟁이(Mr. Shakedown)** 는 **챕터 2**부터 처음 조우합니다.",
+      "- 초반 화력이 부족하면 바로 잡으려고 무리하지 말고, 회복 아이템을 챙긴 뒤 다시 도전해도 됩니다.",
+      "- 러시 스타일로 돌진을 유도해 피하거나, 비스트 스타일로 큰 빈틈을 강하게 받아치면서 체력을 깎으세요.",
+      "- 처음으로 완전히 쓰러뜨리는 순간 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 초반에는 한 방 피해가 매우 크니 회복 아이템을 넉넉히 들고 가는 편이 안전합니다.",
+    ].join("\n"),
+  },
+  "2988580:35_Rich_Taste": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Rich Taste",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This only happens during **Chapter 2** when Kiryu is helping the homeless men near the river.",
+      "- When one of them asks for champagne, go to Don Quijote and buy **Gold Champagne** instead of the regular bottle.",
+      "- Return and hand over the Gold Champagne to trigger the achievement immediately.",
+      "",
+      "**Watch for:**",
+      "- If you give the wrong bottle or advance the story past this scene, the achievement is gone for that playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "이왕이면 화끈하게",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 2**에서만 가능합니다. 키류가 강가의 노숙자들에게 술을 구해주는 장면까지 진행하세요.",
+      "- 샴페인을 요구하는 인물이 나오면 돈키호테에서 일반 샴페인이 아니라 **골드 샴페인**을 사세요.",
+      "- 다시 돌아가 골드 샴페인을 건네면 업적이 바로 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 일반 샴페인을 주거나 이 장면을 넘겨버리면 그 회차에서는 다시 얻을 수 없습니다.",
+    ].join("\n"),
+  },
+  "2988580:37_Smooth_Criminal": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Smooth Criminal",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is a **Chapter 3** story-only achievement during Majima's scouting sequence before entering Odyssey.",
+      "- Speak to the three useful information sources outside first: the man on Bishamon Bridge, the woman southeast of Le Marche, and the businessmen south of Odyssey.",
+      "- Inside Odyssey, use first-person view and inspect all four correct tables on the far side of the room plus the nearby occupied table on the left.",
+      "- If you gathered the right intel, the achievement unlocks shortly after the floor manager speaks in the next chapter.",
+      "",
+      "**Watch for:**",
+      "- Miss any required clue or observation and the scene is over for the run.",
+    ].join("\n"),
+    koreanContent: [
+      "전격 트레이트 성립",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 3**에서 오디세이 입장 전 마지마의 사전 조사 파트에서만 가능합니다.",
+      "- 먼저 밖에서 단서가 되는 세 곳을 모두 확인하세요. 비샤몬 다리의 남자, 르 마르쉐 남동쪽의 여자, 오디세이 남쪽의 회사원들입니다.",
+      "- 오디세이에 들어간 뒤 1인칭 시점으로 방 반대편의 목표 테이블들을 확인하고, 왼쪽 가까운 쪽의 착석 테이블도 조사하세요.",
+      "- 필요한 단서를 모두 챙기면 다음 챕터 초반 진행 중 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 단서 하나라도 놓치거나 조사 구간이 끝나면 그 회차에서는 다시 볼 수 없습니다.",
+    ].join("\n"),
+  },
+  "2988580:39_Business_Etiquette": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Business Etiquette 101",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is a **Chapter 5** meeting sequence with Oda at Cafe Alps.",
+      "- When Oda tells you to choose a table, sit at the one **near the back**.",
+      "- Pick the **nearest chair** at that table, order **nothing** when the waiter comes over, and pass the quick-time event once the client arrives.",
+      "- Follow all of those choices in one go to impress Oda and secure the achievement.",
+      "",
+      "**Watch for:**",
+      "- A single wrong etiquette choice fails the requirement and the story keeps moving.",
+    ].join("\n"),
+    koreanContent: [
+      "엘리트 비즈니스맨",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 5**에서 오다와 함께 카페 알프스로 가는 접견 장면에서만 가능합니다.",
+      "- 자리를 고를 때는 **안쪽 테이블**을 선택하세요.",
+      "- 앉을 때는 그 테이블의 **가까운 의자**를 고르고, 웨이터가 오면 **아무것도 주문하지 마세요**.",
+      "- 이후 거래처가 왔을 때 QTE까지 성공하면 오다를 만족시켜 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 예절 선택지 하나라도 틀리면 실패하고 스토리는 그대로 진행됩니다.",
+    ].join("\n"),
+  },
   "1105500:ACHIEVEMENT_38": {
     sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293",
     englishContent: [
@@ -220,6 +343,392 @@ const MANUAL_GUIDE_OVERRIDES = {
       "",
       "**주의할 점:**",
       "- 효과가 켜진 뒤 전투가 시작되어야 합니다. 전투 도중 버프를 쓰는 건 판정이 불안정할 수 있습니다.",
+    ].join("\n"),
+  },
+  "1388590:OGFAC50": {
+    sourceUrl: "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements",
+    englishContent: [
+      "Experienced the trials of raising a baby.",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is tied to the Haruto care scenes that happen during the main story.",
+      "- Whenever Haruto becomes cranky, complete the required soothing minigames instead of failing through them.",
+      "- Keep clearing those baby-care prompts as they appear until the trophy unlocks.",
+      "",
+      "**Watch for:**",
+      "- GameFAQs notes this is technically missable if you fail every single Haruto calming sequence for the whole playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "육아의 시련을 겪었다.",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 스토리 진행 중 나오는 하루토 돌보기 장면과 연결되어 있습니다.",
+      "- 하루토가 보채는 구간이 나오면 관련 육아 미니게임을 계속 성공시키면서 진행하세요.",
+      "- 스토리 중 등장하는 돌보기 이벤트를 정상적으로 처리하면 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- GameFAQs 기준으로, 하루토를 달래는 이벤트를 회차 내내 전부 실패하면 놓칠 수 있는 업적입니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_01_HIDDEN": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "I'll Make it Double",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is the first missable in **Chapter 2**.",
+      "- When the story takes you into L'Amant and the hidden casino below it, double your chips from the opening amount before you leave.",
+      "- If the unlock seems inconsistent, make a manual save first and retry the sequence until the trophy pops.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx lists this as a Chapter 2 missable. Once you leave that story setup behind, you need another playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "I'll Make it Double",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 2**의 첫 missable입니다.",
+      "- 스토리 진행으로 L'Amant와 그 아래 숨겨진 카지노에 들어가면, 나가기 전에 시작 칩을 두 배로 만드세요.",
+      "- 판정이 불안정하면 수동 저장을 하나 남겨두고 같은 구간을 다시 시도하는 편이 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 챕터 2 한정 업적입니다. 이 스토리 구간을 넘기면 다음 회차가 필요합니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_02_HIDDEN": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "Way Too Thorough!",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This missable is in **Chapter 5**.",
+      "- During the Terasawa investigation scene, fully inspect the required clues before you finish the sequence.",
+      "- If you are unsure, follow a chapter walkthrough for the complete investigation route and do not rush the prompt chain.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx lists this as a Chapter 5 missable tied to the one-time Terasawa investigation.",
+    ].join("\n"),
+    koreanContent: [
+      "Way Too Thorough!",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 5**에 있습니다.",
+      "- 테라사와 조사 장면에서 필요한 단서를 빠짐없이 전부 확인한 뒤 진행을 마무리하세요.",
+      "- 확신이 없으면 해당 챕터 공략을 옆에 두고 조사 루트를 하나씩 따라가는 편이 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 챕터 5 일회성 조사 파트 업적입니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_03_HIDDEN": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "The Art of Conversation",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This hidden missable appears in **Chapter 7**.",
+      "- Follow the story conversation sequence carefully and choose the correct responses on the first try.",
+      "- If you do not know the answers, use a chapter-specific walkthrough before advancing the scene.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx lists this as a Chapter 7 missable. Wrong choices force you into another playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "The Art of Conversation",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 숨겨진 업적은 **챕터 7**에서 나옵니다.",
+      "- 해당 대화 이벤트에서 정답 선택지를 첫 시도에 맞춰야 합니다.",
+      "- 답이 헷갈리면 장면을 넘기기 전에 챕터별 공략을 같이 보는 편이 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 챕터 7 missable입니다. 틀리면 다음 회차가 필요합니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_04_HIDDEN": {
+    sourceUrl: "https://nightlygamingbinge.com/judgment-chapter-8s-correct-dialog-choices/",
+    englishContent: [
+      "Professional Password Presenter",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This missable is in **Chapter 8** during the hostess-related dialogue sequence.",
+      "- Pick the correct conversation choices all the way through the scene on your first attempt.",
+      "- If you want a safe route, use a Chapter 8 dialogue guide before locking in each answer.",
+      "",
+      "**Watch for:**",
+      "- This scene does not repeat on the same playthrough, so incorrect answers cost the trophy.",
+    ].join("\n"),
+    koreanContent: [
+      "Professional Password Presenter",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 8**의 호스티스 관련 대화 이벤트에서 얻습니다.",
+      "- 장면 전체에서 정답 선택지를 첫 시도에 맞춰야 합니다.",
+      "- 안전하게 가려면 챕터 8 정답 대화 공략을 같이 보고 하나씩 선택하세요.",
+      "",
+      "**주의할 점:**",
+      "- 같은 회차에서 다시 반복되지 않는 장면이라 오답이면 놓치게 됩니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_05_HIDDEN": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "Hung Jury",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This hidden missable is in **Chapter 12**.",
+      "- When the relevant courtroom choice sequence appears, follow the correct line of reasoning instead of guessing.",
+      "- Keep a walkthrough open for the Chapter 12 choices if you are aiming to clear missables in one run.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx places this in Chapter 12 as a one-time missable tied to story choices.",
+    ].join("\n"),
+    koreanContent: [
+      "Hung Jury",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 숨겨진 업적은 **챕터 12**에 있습니다.",
+      "- 법정 선택지가 나오면 추측으로 넘기지 말고 정답 루트를 따라가세요.",
+      "- 한 회차에 missable을 모두 챙기려면 챕터 12 선택지 공략을 같이 켜 두는 편이 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 챕터 12 일회성 스토리 선택 업적입니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_MAIN_STORY_06_HIDDEN": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "The Final Nail",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This missable is in **Chapter 13 / the Finale**.",
+      "- During the final court case, present every piece of evidence correctly on the first try.",
+      "- If you want to avoid replaying the ending, keep a finale choice guide open before each evidence selection.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx marks this as a finale missable. One wrong answer voids it for that run.",
+    ].join("\n"),
+    koreanContent: [
+      "The Final Nail",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 13 / 최종장(Finale)** 에서 얻습니다.",
+      "- 마지막 법정 파트에서 모든 증거 제시를 첫 시도에 정답으로 맞추세요.",
+      "- 엔딩을 다시 보지 않으려면 증거 제시 직전에 피날레 선택지 공략을 함께 보는 편이 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 최종장 missable입니다. 한 번이라도 틀리면 그 회차에서는 놓칩니다.",
+    ].join("\n"),
+  },
+  "2058180:JUDGE_ALL_CATS_FOUND_IN_SEARCH_MODE": {
+    sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+    englishContent: [
+      "Found all the stray cats while in search mode during the main story.",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- Track every stray cat that appears during story-only search / investigation scenes.",
+      "- Listen for the loud meowing cue, then inspect the cat before the scene ends.",
+      "- Keep a stray-cat checklist from the start of the playthrough because the trophy spans the entire story.",
+      "",
+      "**Watch for:**",
+      "- PowerPyx calls this highly missable. If you miss even one story cat, you are locked out for that playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "메인 스토리의 탐색 모드에서 길고양이를 전부 발견했다.",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 메인 스토리 전용 탐색 / 조사 장면에 나오는 길고양이를 처음부터 전부 체크하세요.",
+      "- 크게 들리는 울음소리를 단서로 삼아 장면이 끝나기 전에 고양이를 조사해야 합니다.",
+      "- 이 업적은 게임 전체에 걸쳐 누적되므로 처음부터 길고양이 체크리스트를 같이 보는 편이 가장 안전합니다.",
+      "",
+      "**주의할 점:**",
+      "- PowerPyx 기준 매우 놓치기 쉬운 업적입니다. 스토리 고양이 하나라도 놓치면 그 회차에서는 해금할 수 없습니다.",
+    ].join("\n"),
+  },
+  "2988580:41_Best_Served": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Best Served Cold?",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This can only be done during **Chapter 7** when Majima buys takoyaki for Makoto.",
+      "- Purchase the takoyaki from Magutako as usual, but do **not** head straight to the warehouse afterward.",
+      "- Wait around for at least **15 real minutes** until Majima comments that the takoyaki has gone cold.",
+      "- He will go buy another batch, and the achievement unlocks off that failure state.",
+      "",
+      "**Watch for:**",
+      "- If you deliver the fresh takoyaki immediately, the chapter sequence advances and you miss the achievement.",
+    ].join("\n"),
+    koreanContent: [
+      "식어도 맛있다",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 7**에서 마지마가 마코토에게 줄 타코야키를 사는 구간에서만 가능합니다.",
+      "- 평소대로 마구타코에서 타코야키를 산 뒤, 바로 창고로 가지 마세요.",
+      "- 주변에서 **실시간 15분 이상** 시간을 보내면 마지마가 타코야키가 식었다고 말합니다.",
+      "- 다시 사러 가는 흐름으로 넘어가면 그 실패 조건으로 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 바로 배달해버리면 이벤트가 진행되어 그 회차에서는 다시 얻을 수 없습니다.",
+    ].join("\n"),
+  },
+  "2988580:43_It_Takes": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "It Takes Two",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is tied to the **Chapter 10** fight through Tojo HQ with Oda and Tachibana.",
+      "- Watch for either ally to grab an enemy during the long battle sequence.",
+      "- Stand next to the grabbed enemy and trigger the partner Heat Action.",
+      "- Repeat that co-op Heat Action **three times** before the chapter battle segment ends.",
+      "",
+      "**Watch for:**",
+      "- The achievement is locked to that story section, so save Heat and restart the fight if the opportunities go badly.",
+    ].join("\n"),
+    koreanContent: [
+      "사원이 한마음 되어",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 10**에서 오다와 타치바나와 함께 도조 본부를 돌파하는 전투 구간 전용입니다.",
+      "- 긴 전투 중 동료가 적을 붙잡는 순간을 기다리세요.",
+      "- 붙잡힌 적 옆에서 협동 히트 액션을 발동하면 카운트됩니다.",
+      "- 이 협동 히트 액션을 전투 구간이 끝나기 전에 **총 3번** 성공시키세요.",
+      "",
+      "**주의할 점:**",
+      "- 해당 스토리 전투에서만 가능하므로 히트를 아껴두고, 꼬이면 죽어서 다시 하는 편이 안전합니다.",
+    ].join("\n"),
+  },
+  "2988580:45_They_Wont": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "They Won't Mind",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is a **Chapter 12** missable inside the Benten Inn fight section.",
+      "- On the second floor, look for the two safes hidden behind furniture before going upstairs to the boss encounter.",
+      "- Smash both safes and collect the dropped money before you advance.",
+      "- The achievement unlocks from looting those safes during that story invasion.",
+      "",
+      "**Watch for:**",
+      "- Once you go up the final stairs, you cannot return downstairs to open them.",
+    ].join("\n"),
+    koreanContent: [
+      "보물이 왕창!",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 12** 벤텐 여관 돌입 전투에서만 가능한 놓침 요소입니다.",
+      "- 2층에서 보스가 있는 위층으로 올라가기 전에, 가구 뒤에 숨은 금고 2개를 찾으세요.",
+      "- 두 금고를 모두 부수고 떨어지는 돈까지 회수하면 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 마지막 계단을 올라가면 아래층으로 돌아올 수 없어서 그 회차에서는 놓치게 됩니다.",
+    ].join("\n"),
+  },
+  "2988580:47_Big_Hair": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Big Hair in the Crosshairs",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This appears during the **Chapter 13** car chase as Kiryu.",
+      "- Partway through the shooting sequence, a yakuza with a large afro appears on the right side in a following vehicle.",
+      "- Use the slow-motion aim / Heat Eye immediately and take him out before his car drops away.",
+      "- If you get him during that chase, the achievement unlocks on the spot.",
+      "",
+      "**Watch for:**",
+      "- He is on screen briefly, so missing the target means replaying the chase section.",
+    ].join("\n"),
+    koreanContent: [
+      "히트 스나이프",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 13** 키류의 카체이스 슈팅 구간에서 나옵니다.",
+      "- 진행 도중 오른쪽 차량 쪽에 커다란 아프로를 한 야쿠자가 잠깐 등장합니다.",
+      "- 바로 슬로모션 조준이나 히트 아이를 써서 그 적을 먼저 처치하세요.",
+      "- 그 추격전 안에서 처리하면 업적이 즉시 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- 화면에 머무는 시간이 매우 짧아서 놓치면 해당 추격전을 다시 해야 합니다.",
+    ].join("\n"),
+  },
+  "2988580:49_Hitting_The": {
+    sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3624319538",
+    englishContent: [
+      "Hitting the Bottle",
+      "",
+      "///MISSABLE ACHIEVEMENT ALERT///",
+      "",
+      "**Do this next:**",
+      "- This is in **Chapter 15** during Majima's fight with Nishikiyama inside Serena.",
+      "- A quick-time event appears when Reina swings a wine bottle at Majima.",
+      "- Intentionally **fail** that QTE and let the bottle hit you.",
+      "- The achievement unlocks from taking the hit instead of dodging it.",
+      "",
+      "**Watch for:**",
+      "- If you clear the QTE normally, the fight continues and the story moves on without another chance in that playthrough.",
+    ].join("\n"),
+    koreanContent: [
+      "트러블 대처는 나의 특기",
+      "",
+      "놓치기 쉬운 업적입니다.",
+      "",
+      "**지금 해야 할 일:**",
+      "- 이 업적은 **챕터 15** 세레나에서 니시키야마와 싸우는 마지마 파트에서만 가능합니다.",
+      "- 레이나가 와인병을 휘두를 때 QTE가 발생합니다.",
+      "- 여기서는 일부러 **실패**해서 병에 맞아야 합니다.",
+      "- 회피하지 않고 그대로 맞으면 업적이 해금됩니다.",
+      "",
+      "**주의할 점:**",
+      "- QTE를 정상 성공하면 전투가 계속 진행되고 그 회차에서는 다시 기회가 없습니다.",
     ].join("\n"),
   },
 };
@@ -484,15 +993,26 @@ function scoreSection(section, achievement) {
 }
 
 function splitSentences(text) {
-  return text
+  const protectedText = text
+    .replace(/\bMr\./g, "Mr__DOT__")
+    .replace(/\bMrs\./g, "Mrs__DOT__")
+    .replace(/\bMs\./g, "Ms__DOT__")
+    .replace(/\bDr\./g, "Dr__DOT__");
+
+  return protectedText
     .replace(/\n+/g, "\n")
     .split(/\n|(?<=[.!?])\s+/)
     .map((line) => line.trim())
     .filter(Boolean);
 }
 
+function restoreProtectedDots(text) {
+  return text.replace(/__DOT__/g, ".");
+}
+
 function sentenceRelevance(line, achievement) {
-  const lineNorm = normalize(line);
+  const cleanLine = restoreProtectedDots(line);
+  const lineNorm = normalize(cleanLine);
   const titleNorm = normalize(achievement.display_name || achievement.api_name);
   const descNorm = normalize(achievement.description || "");
   const tokens = uniq([
@@ -509,25 +1029,87 @@ function sentenceRelevance(line, achievement) {
   for (const token of tokens) {
     if (lineNorm.includes(token)) score += 8;
   }
-  if (/choose |head to |complete |beat |talk to |observe |buy |visit |wait |play |unlock |go to /i.test(line)) {
+  if (/choose |head to |complete |beat |talk to |observe |buy |visit |wait |play |unlock |go to /i.test(cleanLine)) {
     score += 5;
   }
-  if (/rewarded with|achievement alert|missable/i.test(line)) score += 3;
+  if (/rewarded with|achievement alert|missable/i.test(cleanLine)) score += 3;
   return score;
+}
+
+function storyChapterNumber(achievement) {
+  const description = achievement.description || "";
+  const chapter = description.match(/complete chapter\s*(\d{1,2})/i);
+  if (chapter) return Number(chapter[1]);
+  return null;
+}
+
+function isStoryClearAchievement(achievement) {
+  return /스토리\s*클리어/.test(achievement.nameKo || "");
+}
+
+function chapterFromSectionTitle(title) {
+  const chapter = (title || "").match(/chapter\s*(\d{1,2})/i);
+  if (chapter) return Number(chapter[1]);
+  return null;
+}
+
+function isFinalChapterAchievement(achievement) {
+  return /complete the final chapter/i.test(achievement.description || "") || /finale/i.test(achievement.nameKo || "");
+}
+
+function isSubstoryCountAchievement(achievement) {
+  return /complete\s+\d+\s+substories|complete all substories/i.test(achievement.description || "");
+}
+
+function buildStoryChapterGuideContent(achievement, page, chapter) {
+  const route = chapter ? `**${page.title}** → **Chapter ${chapter}**` : `**${page.title}**`;
+  return [
+    achievement.description || achievement.display_name,
+    "",
+    "**Do this next:**",
+    `- Follow ${route} and keep advancing the main story.`,
+    "- This unlock is automatic once the chapter-end sequence finishes on the same save.",
+    "- If you are doing a full completion run, use this chapter to wrap up open side objectives before moving on.",
+  ].join("\n");
+}
+
+function buildFinalChapterGuideContent(achievement, page) {
+  return [
+    achievement.description || achievement.display_name,
+    "",
+    "**Do this next:**",
+    `- Use **${page.title}** as your main route and continue through the finale.`,
+    "- This achievement unlocks automatically when you clear the final chapter.",
+    "- Finish any remaining cleanup before committing to the endgame if you are combining this with 100% routing.",
+  ].join("\n");
+}
+
+function buildSubstoryGuideContent(achievement, page) {
+  const description = achievement.description || achievement.display_name;
+  const count = description.match(/complete\s+(\d+)\s+substories/i)?.[1] ?? null;
+  return [
+    description,
+    "",
+    "**Do this next:**",
+    `- Use **${page.title}** as your substory checklist and keep clearing side stories on the same save.`,
+    count
+      ? `- Track progress until your cleared substory count reaches **${count}**.`
+      : "- Keep going until every substory in the game is complete.",
+    "- Work through available substories as they open, then finish the rest during free exploration or cleanup.",
+  ].join("\n");
 }
 
 function buildGuideContent(achievement, page, section) {
   const sentences = splitSentences(section.text);
   const scoredLines = sentences
-    .map((line, index) => ({ line, index, score: sentenceRelevance(line, achievement) }))
-    .filter((entry) => entry.score > 0)
+    .map((line, index) => ({ line: restoreProtectedDots(line), index, score: sentenceRelevance(line, achievement) }))
+    .filter((entry) => entry.score >= 8)
     .sort((a, b) => (b.score - a.score) || (a.index - b.index))
     .slice(0, 6)
     .sort((a, b) => a.index - b.index)
     .map((entry) => entry.line);
 
   const steps = [];
-  steps.push(`Use the route from **${page.title}** → **${section.title}**.`);
 
   for (const line of scoredLines) {
     const cleaned = line.replace(/^- /, "").trim();
@@ -535,16 +1117,23 @@ function buildGuideContent(achievement, page, section) {
     if (steps.length >= 5) break;
   }
 
-  if (steps.length === 1) {
+  if (steps.length === 0) {
     for (const line of sentences) {
-      if (line.length >= 30) steps.push(line);
+      const cleaned = restoreProtectedDots(line).replace(/^- /, "").trim();
+      if (cleaned.length >= 30 && !steps.includes(cleaned)) steps.push(cleaned);
       if (steps.length >= 4) break;
     }
   }
 
-  const watchFor = sentences.filter((line) =>
-    /missable|legend difficulty|premium adventure|point of no return|rewarded with/i.test(line),
+  const isLikelyMissable = /\bmissable\b|miss-able|놓치기 쉬운|lock out|point of no return/i.test(
+    `${achievement.display_name || ""} ${achievement.description || ""} ${section.text}`,
   );
+  const watchFor = isLikelyMissable
+    ? sentences
+        .map((line) => restoreProtectedDots(line))
+        .filter((line) => sentenceRelevance(line, achievement) >= 12)
+        .filter((line) => /\bmissable\b|miss-able|legend difficulty|premium adventure|point of no return|rewarded with/i.test(line))
+    : [];
 
   const lines = [
     achievement.description || achievement.display_name,
@@ -589,7 +1178,7 @@ function buildMetaGuideContent(achievement, page) {
     "",
     "**Do this next:**",
     `- Use **${page.title}** as the full completion checklist for this game.`,
-    "- Clear every story achievement first so all missables and difficulty requirements are locked in.",
+    "- Clear the story, then finish side cases or substories, progression systems, and minigame tracks on the same save.",
     "- Finish side cases or substories, collection tracks, progression checklists, and all minigame-related trophies from the guide before cleanup.",
     "- Re-check the guide's endgame or 100% section once every other achievement is done to confirm the last unlock conditions.",
     "",
@@ -687,6 +1276,77 @@ async function localizeGuideContent(englishContent, achievement, locale) {
         "- 다음 공략 흐름을 기준으로 진행하세요: $1",
       );
       localized.push(nextLine);
+      continue;
+    }
+
+    if (nextLine.startsWith("- Follow **")) {
+      nextLine = nextLine.replace(
+        /^- Follow (.+) and keep advancing the main story\.$/,
+        "- $1를 따라 계속해서 메인 스토리를 진행하세요.",
+      );
+      localized.push(nextLine);
+      continue;
+    }
+
+    if (nextLine === "- This unlock is automatic once the chapter-end sequence finishes on the same save.") {
+      localized.push("- 같은 저장 파일에서 해당 챕터의 종료 이벤트를 보면 자동으로 해금됩니다.");
+      continue;
+    }
+
+    if (nextLine === "- If you are doing a full completion run, use this chapter to wrap up open side objectives before moving on.") {
+      localized.push("- 100% 진행 중이라면 다음으로 넘어가기 전에 이 챕터에서 열려 있는 사이드 요소를 먼저 정리하세요.");
+      continue;
+    }
+
+    if (nextLine.startsWith("- Use **") && nextLine.endsWith("** as your main route and continue through the finale.")) {
+      nextLine = nextLine.replace(
+        /^- Use (.+) as your main route and continue through the finale\.$/,
+        "- 메인 동선은 $1를 기준으로 따라가면서 그대로 엔딩까지 진행하세요.",
+      );
+      localized.push(nextLine);
+      continue;
+    }
+
+    if (nextLine === "- This achievement unlocks automatically when you clear the final chapter.") {
+      localized.push("- 최종장을 클리어하면 이 업적은 자동으로 해금됩니다.");
+      continue;
+    }
+
+    if (nextLine === "- Finish any remaining cleanup before committing to the endgame if you are combining this with 100% routing.") {
+      localized.push("- 100% 동선과 함께 진행 중이라면 엔드게임에 들어가기 전에 남은 정리 요소를 먼저 끝내세요.");
+      continue;
+    }
+
+    if (nextLine.startsWith("- Use **") && nextLine.endsWith("** as your substory checklist and keep clearing side stories on the same save.")) {
+      nextLine = nextLine.replace(
+        /^- Use (.+) as your substory checklist and keep clearing side stories on the same save\.$/,
+        "- $1를 서브스토리 체크리스트로 삼고 같은 저장 파일에서 계속 진행하세요.",
+      );
+      localized.push(nextLine);
+      continue;
+    }
+
+    if (/^- Track progress until your cleared substory count reaches \*\*(\d+)\*\*\.$/.test(nextLine)) {
+      nextLine = nextLine.replace(
+        /^- Track progress until your cleared substory count reaches \*\*(\d+)\*\*\.$/,
+        "- 클리어한 서브스토리 수가 **$1개**에 도달할 때까지 진행 상황을 체크하세요.",
+      );
+      localized.push(nextLine);
+      continue;
+    }
+
+    if (nextLine === "- Keep going until every substory in the game is complete.") {
+      localized.push("- 게임 내 모든 서브스토리를 끝낼 때까지 계속 진행하세요.");
+      continue;
+    }
+
+    if (nextLine === "- Work through available substories as they open, then finish the rest during free exploration or cleanup.") {
+      localized.push("- 열리는 서브스토리부터 차례대로 진행하고, 나머지는 자유 이동이나 후반 정리 구간에서 마무리하세요.");
+      continue;
+    }
+
+    if (nextLine === "- Clear the story, then finish side cases or substories, progression systems, and minigame tracks on the same save.") {
+      localized.push("- 먼저 스토리를 끝낸 뒤, 같은 저장 파일에서 서브스토리와 성장 요소, 미니게임 트랙을 차례대로 정리하세요.");
       continue;
     }
 
@@ -794,11 +1454,20 @@ async function main() {
         fallbackPage &&
         isMetaAchievement(enrichedAchievement) &&
         pageSuitability(fallbackPage, gameName ?? "") >= 20;
+      const chapterNo = storyChapterNumber(enrichedAchievement) ?? (isStoryClearAchievement(enrichedAchievement) ? chapterFromSectionTitle(best?.section?.title ?? "") : null);
+      const isFinalChapter = isFinalChapterAchievement(enrichedAchievement) || (isStoryClearAchievement(enrichedAchievement) && /finale/i.test(best?.section?.title ?? ""));
+      const isSubstoryCount = isSubstoryCountAchievement(enrichedAchievement);
 
-      if (!manualOverride && (!best || best.score < minScore) && !canUseMetaFallback) continue;
+      if (!manualOverride && !chapterNo && !isFinalChapter && !isSubstoryCount && (!best || best.score < minScore) && !canUseMetaFallback) continue;
 
       const englishContent = manualOverride
         ? manualOverride.englishContent
+        : chapterNo && fallbackPage
+          ? buildStoryChapterGuideContent(enrichedAchievement, fallbackPage, chapterNo)
+          : isFinalChapter && fallbackPage
+            ? buildFinalChapterGuideContent(enrichedAchievement, fallbackPage)
+            : isSubstoryCount && fallbackPage
+              ? buildSubstoryGuideContent(enrichedAchievement, fallbackPage)
         : canUseMetaFallback && (!best || best.score < minScore)
           ? buildMetaGuideContent(enrichedAchievement, fallbackPage)
           : buildGuideContent(enrichedAchievement, best.page, best.section);
@@ -809,6 +1478,8 @@ async function main() {
             0.65,
             manualOverride
               ? 0.84
+              : chapterNo || isFinalChapter || isSubstoryCount
+                ? 0.86
               : canUseMetaFallback && (!best || best.score < minScore)
                 ? 0.72
                 : best.score / 100,
@@ -817,6 +1488,8 @@ async function main() {
       );
       const sourcePage = manualOverride
         ? { url: manualOverride.sourceUrl, title: "Manual override" }
+        : chapterNo || isFinalChapter || isSubstoryCount
+          ? fallbackPage
         : canUseMetaFallback && (!best || best.score < minScore)
           ? fallbackPage
           : best.page;
@@ -868,6 +1541,8 @@ async function main() {
       updated += 1;
       if (manualOverride) {
         console.log(`  updated ${achievement.display_name} <- MANUAL OVERRIDE`);
+      } else if (chapterNo || isFinalChapter || isSubstoryCount) {
+        console.log(`  updated ${achievement.display_name} <- TEMPLATE`);
       } else if (canUseMetaFallback && (!best || best.score < minScore)) {
         console.log(`  updated ${achievement.display_name} <- ${sourcePage.title} / META FALLBACK`);
       } else {

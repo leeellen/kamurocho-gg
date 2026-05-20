@@ -1,13 +1,13 @@
 export type Difficulty = "common" | "uncommon" | "rare" | "legendary";
 export type Confidence = "verified" | "unverified";
 
-export type Tip = {
+type Tip = {
   author: string;
   body: string;
   votes: number;
 };
 
-export type VideoGuide = {
+type VideoGuide = {
   title: string;
   duration: string;
   source: string;

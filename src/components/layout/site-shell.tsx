@@ -38,14 +38,8 @@ export async function SiteShell({
           <Link
             href="/"
             aria-label={locale === "ko" ? "kamurocho.gg 홈으로" : "kamurocho.gg home"}
-            className="group flex items-center gap-2.5 rounded-md transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+            className="group flex items-center rounded-md transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
           >
-            <span
-              aria-hidden="true"
-              className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--accent)] text-[15px] font-black text-white shadow-[var(--accent-glow)]"
-            >
-              K
-            </span>
             <span className="hidden flex-col leading-tight sm:flex">
               <span className="font-display text-[15px] font-extrabold tracking-tight text-white">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
@@ -144,13 +138,7 @@ export async function SiteShell({
 
       <footer className="mt-24 border-t border-[var(--border)] bg-[var(--bg-surface)]/40">
         <div className="mx-auto flex max-w-[1280px] flex-col gap-6 px-5 py-10 md:flex-row md:items-center md:justify-between md:px-8">
-          <div className="flex items-center gap-3">
-            <span
-              aria-hidden="true"
-              className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--accent)] text-[14px] font-black text-white"
-            >
-              K
-            </span>
+          <div className="flex items-center">
             <div>
               <div className="font-display text-[14px] font-extrabold tracking-tight">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>

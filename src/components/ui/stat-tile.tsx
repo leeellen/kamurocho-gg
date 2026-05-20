@@ -6,12 +6,14 @@ export function StatTile({
   hint,
   tone = "neutral",
   className,
+  valueClassName,
 }: {
   label: string;
   value: React.ReactNode;
   hint?: string;
   tone?: "neutral" | "accent" | "gold" | "success";
   className?: string;
+  valueClassName?: string;
 }) {
   const toneClasses =
     tone === "accent"
@@ -32,7 +34,7 @@ export function StatTile({
       <div className="font-mono text-[12px] uppercase tracking-wider text-[var(--text-tertiary)]">
         {label}
       </div>
-      <div className={cn("mt-2.5 font-display text-[30px] font-extrabold leading-none md:text-[36px]", toneClasses)}>
+      <div className={cn("mt-2.5 font-display text-[30px] font-extrabold leading-none md:text-[36px]", toneClasses, valueClassName)}>
         {value}
       </div>
       {hint && <div className="mt-2 text-[13px] leading-snug text-[var(--text-tertiary)]">{hint}</div>}

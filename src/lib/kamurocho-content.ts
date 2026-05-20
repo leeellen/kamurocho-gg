@@ -6,7 +6,7 @@ export type LocalizedText = {
 export type CuratedGame = {
   appId: number;
   slug: string;
-  arc: "kiryu" | "ichiban" | "judgment";
+  arc: "kiryu" | "ichiban" | "judgment" | "spinoff";
   year: number;
   title: LocalizedText;
   summary: LocalizedText;
@@ -166,6 +166,22 @@ export const CURATED_GAMES: CuratedGame[] = [
     missableCount: 5,
   },
   {
+    appId: 1805480,
+    slug: "like-a-dragon-ishin",
+    arc: "spinoff",
+    year: 1867,
+    title: { ko: "용과 같이 유신! 극", en: "Like a Dragon: Ishin!" },
+    summary: {
+      ko: "막부 말기를 배경으로 한 역사 외전. 본편과 다른 분위기에서 완주 분량이 크게 나오는 장기전입니다.",
+      en: "A Bakumatsu-era historical spinoff with a very different tone and a large completion footprint.",
+    },
+    lead: { ko: "사카모토 료마", en: "Ryoma Sakamoto" },
+    platforms: ["PC", "Steam"],
+    estimatedHours: "60h",
+    difficulty: 4,
+    missableCount: 0,
+  },
+  {
     appId: 1235140,
     slug: "yakuza-like-a-dragon",
     arc: "ichiban",
@@ -180,6 +196,38 @@ export const CURATED_GAMES: CuratedGame[] = [
     estimatedHours: "55h",
     difficulty: 3,
     missableCount: 8,
+  },
+  {
+    appId: 2072450,
+    slug: "like-a-dragon-infinite-wealth",
+    arc: "ichiban",
+    year: 2024,
+    title: { ko: "용과 같이 8", en: "Like a Dragon: Infinite Wealth" },
+    summary: {
+      ko: "이치반과 키류가 함께 움직이는 대형 후속작. 하와이와 일본을 오가며 분량과 콘텐츠 규모가 크게 확장됩니다.",
+      en: "The large-scale follow-up where Ichiban and Kiryu share the spotlight across Hawaii and Japan.",
+    },
+    lead: { ko: "이치반 / 키류", en: "Ichiban / Kiryu" },
+    platforms: ["PC", "Steam"],
+    estimatedHours: "75h",
+    difficulty: 4,
+    missableCount: 0,
+  },
+  {
+    appId: 3061810,
+    slug: "like-a-dragon-pirate-yakuza-in-hawaii",
+    arc: "spinoff",
+    year: 2025,
+    title: { ko: "용과 같이 8 외전: Pirates in Hawaii", en: "Like a Dragon: Pirate Yakuza in Hawaii" },
+    summary: {
+      ko: "마지마 중심의 해적 외전. 하와이 이후의 분위기를 이어가면서 육상과 해상 액션 루프가 강조됩니다.",
+      en: "A Majima-led pirate spinoff that extends the Hawaii setting with land-and-sea action routing.",
+    },
+    lead: { ko: "마지마", en: "Majima" },
+    platforms: ["PC", "Steam"],
+    estimatedHours: "40h",
+    difficulty: 3,
+    missableCount: 0,
   },
   {
     appId: 2058180,
@@ -287,6 +335,30 @@ export const PLAY_ORDER: Record<"new" | "chronological", PlayOrderEntry[]> = {
       reason: {
         ko: "7편 이후에 보면 키류 쪽 공백기가 가장 자연스럽게 이어집니다.",
         en: "It lands best after Like a Dragon, when Kiryu's side of the timeline can pay off cleanly.",
+      },
+    },
+    {
+      slug: "like-a-dragon-infinite-wealth",
+      recommended: true,
+      reason: {
+        ko: "7편과 외전을 본 뒤 들어가면 이치반과 키류 양쪽 흐름이 가장 잘 맞물립니다.",
+        en: "It lands best once both Like a Dragon and Gaiden have set up Ichiban and Kiryu's sides.",
+      },
+    },
+    {
+      slug: "like-a-dragon-pirate-yakuza-in-hawaii",
+      recommended: false,
+      reason: {
+        ko: "8편 이후에 보는 편이 하와이와 마지마 쪽 후속 맥락을 읽기 쉽습니다.",
+        en: "Best played after Infinite Wealth, once the Hawaii setup and Majima follow-up context are in place.",
+      },
+    },
+    {
+      slug: "like-a-dragon-ishin",
+      recommended: false,
+      reason: {
+        ko: "본편과 독립된 역사 외전이라 메인 사가와 별개로 끼워 넣어도 됩니다.",
+        en: "A standalone historical spinoff, so it can be slotted in separately from the main saga.",
       },
     },
     {
