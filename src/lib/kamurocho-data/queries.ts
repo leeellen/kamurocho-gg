@@ -10,7 +10,7 @@ import { structureGuide } from "@/lib/guides/structured";
 import { type Locale } from "@/lib/i18n";
 import { CURATED_GAMES, MISSABLES, PLAY_ORDER, getCuratedGameBySlug } from "@/lib/kamurocho-content";
 
-import { fetchSeriesRows } from "./fetch";
+import { fetchGameRows, fetchSeriesRows } from "./fetch";
 import {
   buildDisplayMissables,
   countMissableChecks,
@@ -41,6 +41,79 @@ function pickKoreanGameName({
   return englishName ?? curatedName;
 }
 
+type CuratedGame = (typeof CURATED_GAMES)[number];
+
+function buildSeriesGameCard({
+  curated,
+  game,
+  rows,
+  guidesByAchievement,
+  locale,
+}: {
+  curated: CuratedGame;
+  game: import("./types").GameRow | null | undefined;
+  rows: import("./types").AchievementRow[];
+  guidesByAchievement: Map<number, GuideRow[]>;
+  locale: Locale;
+}): SeriesGameCard {
+  const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as
+    | { nameKo?: string | null; headerUrl?: string | null; capsuleUrl?: string | null }
+    | null;
+  const derivedAchievements = rows.map((achievement) => {
+    const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
+    return {
+      missable: inferMissable(achievement, selectedGuide?.content ?? ""),
+    };
+  });
+  const curatedChecks = (MISSABLES[curated.appId] ?? []).reduce(
+    (sum, chapter) => sum + chapter.items.filter((item) => item.kind === "missable").length,
+    0,
+  );
+  const derivedChecks = derivedAchievements.filter((achievement) => achievement.missable).length;
+  const rareCount = rows.filter(
+    (achievement) =>
+      coercePercent(achievement.global_percent) > 0 &&
+      coercePercent(achievement.global_percent) <= 10,
+  ).length;
+  const guideCoverage = rows.filter((achievement) => {
+    const guide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
+    return Boolean(guide?.source_url);
+  }).length;
+
+  return {
+    appId: curated.appId,
+    slug: curated.slug,
+    name:
+      locale === "ko"
+        ? pickKoreanGameName({
+            curatedName: curated.title.ko,
+            sidecarName: gameSidecar?.nameKo,
+            englishName: game?.name ?? curated.title.en,
+          })
+        : game?.name || curated.title.en,
+    altName:
+      locale === "ko"
+        ? game?.name && game?.name !== curated.title.en
+          ? game.name
+          : curated.title.en
+        : null,
+    arc: curated.arc,
+    year: curated.year,
+    summary: locale === "ko" ? curated.summary.ko : curated.summary.en,
+    lead: locale === "ko" ? curated.lead.ko : curated.lead.en,
+    platforms: curated.platforms,
+    estimatedHours: curated.estimatedHours,
+    difficulty: curated.difficulty,
+    missableCount: curatedChecks + derivedChecks,
+    achievements: rows.length || game?.total_achievements || 0,
+    guideCoverage,
+    rareCount,
+    imgIconUrl: game?.img_icon_url ?? null,
+    headerUrl: gameSidecar?.headerUrl ?? null,
+    capsuleUrl: gameSidecar?.capsuleUrl ?? null,
+  };
+}
+
 export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCard[]> => {
   const { games, achievements, guides } = await fetchSeriesRows();
   const gameMap = new Map(games.map((game) => [game.app_id, game]));
@@ -53,65 +126,14 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
   }
 
   return CURATED_GAMES.map((curated) => {
-    const game = gameMap.get(curated.appId);
-    const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as
-      | { nameKo?: string | null; headerUrl?: string | null; capsuleUrl?: string | null }
-      | null;
     const rows = achievements.filter((achievement) => achievement.app_id === curated.appId);
-    const derivedAchievements = rows.map((achievement) => {
-      const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
-      return {
-        missable: inferMissable(achievement, selectedGuide?.content ?? ""),
-        chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
-      };
+    return buildSeriesGameCard({
+      curated,
+      game: gameMap.get(curated.appId) ?? null,
+      rows,
+      guidesByAchievement,
+      locale,
     });
-    const curatedChecks = (MISSABLES[curated.appId] ?? []).reduce(
-      (sum, chapter) => sum + chapter.items.filter((item) => item.kind === "missable").length,
-      0,
-    );
-    const derivedChecks = derivedAchievements.filter((achievement) => achievement.missable).length;
-    const rareCount = rows.filter(
-      (achievement) =>
-        coercePercent(achievement.global_percent) > 0 &&
-        coercePercent(achievement.global_percent) <= 10,
-    ).length;
-    const guideCoverage = rows.filter((achievement) => {
-      const guide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
-      return Boolean(guide?.source_url);
-    }).length;
-
-    return {
-      appId: curated.appId,
-      slug: curated.slug,
-      name:
-        locale === "ko"
-          ? pickKoreanGameName({
-              curatedName: curated.title.ko,
-              sidecarName: gameSidecar?.nameKo,
-              englishName: game?.name ?? curated.title.en,
-            })
-          : game?.name || curated.title.en,
-      altName:
-        locale === "ko"
-          ? game?.name && game?.name !== curated.title.en
-            ? game.name
-            : curated.title.en
-          : null,
-      arc: curated.arc,
-      year: curated.year,
-      summary: locale === "ko" ? curated.summary.ko : curated.summary.en,
-      lead: locale === "ko" ? curated.lead.ko : curated.lead.en,
-      platforms: curated.platforms,
-      estimatedHours: curated.estimatedHours,
-      difficulty: curated.difficulty,
-      missableCount: curatedChecks + derivedChecks,
-      achievements: rows.length || game?.total_achievements || 0,
-      guideCoverage,
-      rareCount,
-      imgIconUrl: game?.img_icon_url ?? null,
-      headerUrl: gameSidecar?.headerUrl ?? null,
-      capsuleUrl: gameSidecar?.capsuleUrl ?? null,
-    };
   });
 });
 
@@ -120,8 +142,7 @@ export const getGamePageData = cache(
     const curated = getCuratedGameBySlug(slugOrId);
     if (!curated) return null;
 
-    const { games, achievements, guides } = await fetchSeriesRows();
-    const game = games.find((row) => row.app_id === curated.appId);
+    const { game, achievements: gameAchievements, guides } = await fetchGameRows(curated.appId);
     if (!game) return null;
 
     const guidesByAchievement = new Map<number, GuideRow[]>();
@@ -130,8 +151,6 @@ export const getGamePageData = cache(
       current.push(guide);
       guidesByAchievement.set(guide.achievement_id, current);
     }
-
-    const gameAchievements = achievements.filter((achievement) => achievement.app_id === curated.appId);
     const guideTextReplacements = gameAchievements
       .map((achievement) => {
         const sidecar = parseAchievementSidecar(achievement.category ?? null);
@@ -216,8 +235,13 @@ export const getGamePageData = cache(
       })
       .sort((left, right) => left.rarity - right.rarity);
 
-    const gameCard = (await getSeriesGames(locale)).find((item) => item.appId === curated.appId);
-    if (!gameCard) return null;
+    const gameCard = buildSeriesGameCard({
+      curated,
+      game,
+      rows: gameAchievements,
+      guidesByAchievement,
+      locale,
+    });
 
     const displayMissables = buildDisplayMissables({
       achievements: mappedCards,

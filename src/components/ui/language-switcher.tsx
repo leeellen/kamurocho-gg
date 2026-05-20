@@ -1,7 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
 import { type Locale } from "@/lib/i18n";
 
 export function LanguageSwitcher({
@@ -15,16 +15,27 @@ export function LanguageSwitcher({
   englishLabel: string;
   koreanLabel: string;
 }) {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
   const changeLocale = (nextLocale: Locale) => {
     if (nextLocale === locale) return;
-    const query = searchParams.toString();
-    const redirectTo = `${pathname}${query ? `?${query}` : ""}`;
-    startTransition(() => {
-      window.location.assign(`/api/locale?locale=${nextLocale}&redirect=${encodeURIComponent(redirectTo)}`);
+    startTransition(async () => {
+      try {
+        await fetch("/api/locale", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ locale: nextLocale }),
+        });
+        router.refresh();
+      } catch {
+        // Fall back to the legacy redirect path if the POST fails so the
+        // user still gets a working locale switch.
+        const currentPath = window.location.pathname + window.location.search;
+        window.location.assign(
+          `/api/locale?locale=${nextLocale}&redirect=${encodeURIComponent(currentPath)}`,
+        );
+      }
     });
   };
 

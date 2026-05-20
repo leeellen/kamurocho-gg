@@ -152,7 +152,7 @@ export const CURATED_GAMES: CuratedGame[] = [
   {
     appId: 2375550,
     slug: "like-a-dragon-gaiden",
-    arc: "kiryu",
+    arc: "spinoff",
     year: 2023,
     title: { ko: "용과 같이 7 외전: 이름을 지운 자", en: "Like a Dragon Gaiden: The Man Who Erased His Name" },
     summary: {

@@ -1,0 +1,983 @@
+import type { CollectiblesData } from "./types";
+
+export const lostJudgment: CollectiblesData = {
+  appId: 2058190,
+  categories: [
+    {
+      slug: "paint-search",
+      title: { ko: "페인트 서치 — 다람쥐 그림 56곳", en: "Paint Search — 56 Squirrel Tags" },
+      summary: {
+        ko: "다이도지 본거지에서 페인트 서치를 해금한 뒤 카무로초 26곳 + 요코하마 이세자키이진초 30곳의 다람쥐 그림을 모두 회수합니다. 가젯 4종(집음기·드론·전파 탐지기·탐정견)을 모두 해금한 뒤 진행하세요.",
+        en: "After unlocking Paint Search at the Daidoji Hideout, collect all 26 squirrel tags in Kamurocho and 30 in Isezaki Ijincho. All four gadgets (mic, drone, radio detector, detective dog) are required.",
+      },
+      tips: [
+        { ko: "보상은 도료·식기·이너·스킬 책·휘석 등 다양합니다. 의상·소품 컴플리트와 병행하면 효율적입니다.", en: "Rewards include paints, plates, inner wear, skill books, and gems. Combine with outfit/item cleanup." },
+        { ko: "각 지역 그룹 상단의 영상은 카무로초/이세자키이진초 전 다람쥐 순회 영상입니다.", en: "The video at the top of each region group walks every squirrel in order." },
+      ],
+      source: {
+        label: "gamewith.jp — Lost Judgment 페인트 서치",
+        url: "https://gamewith.jp/lostjudgment/article/show/295108",
+      },
+      groups: [
+    {
+      title: { ko: "카무로초 — 다람쥐 그림과 보상", en: "Kamurocho — Squirrel Tags and Rewards" },
+      video: "https://www.youtube.com/watch?v=IRd30rSA6SY",
+      items: [
+      {
+        number: 1,
+        location: { ko: "POPPO 시치후쿠 거리 서점", en: "POPPO Shichifuku St West" },
+        reward: { ko: "양성 이너", en: "Trainee Inner Wear" },
+        steps: [
+        { body: { ko: "집음기로 편의점 오른쪽 건물의 「하지메 회계사무소」 간판 아래 다람쥐를 조사", en: "Use the directional mic on the squirrel under the Hajime Accounting sign on the building right of the convenience store" } },
+        { body: { ko: "드론으로 「하지메 회계사무소」 간판 위 아이템을 획득", en: "Use the drone to grab the item above the Hajime Accounting sign" } },
+        ],
+      },
+      {
+        number: 2,
+        location: { ko: "요시다 배팅 센터", en: "Yoshida Batting Center" },
+        reward: { ko: "구리 접시", en: "Copper Plate" },
+        steps: [
+        { body: { ko: "전파 탐지기로 왼쪽 길을 따라가 쓰레기통 뒤의 다람쥐를 조사", en: "Use the radio detector on the squirrel behind the trash bin down the left-hand path" } },
+        { body: { ko: "집음기로 밖으로 나와 왼쪽 환기구를 조사해 아이템을 획득", en: "Step outside and use the directional mic on the left-side vent to get the item" } },
+        ],
+      },
+      {
+        number: 3,
+        location: { ko: "호텔가", en: "Hotel District" },
+        reward: { ko: "EX 상승 벨트", en: "EX Boost Belt" },
+        steps: [
+        { body: { ko: "집음기로 골목에 들어가 환기구를 조사해 아이템을 획득", en: "Enter the side alley and use the directional mic on the vent to get the item" } },
+        ],
+      },
+      {
+        number: 4,
+        location: { ko: "카무로초 힐즈 서쪽", en: "Kamurocho Hills West Side" },
+        reward: { ko: "큐티 도료", en: "Cutie Paint" },
+        steps: [
+        { body: { ko: "전파 탐지기로 HOTEL 「Velescia」 벽의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the wall of HOTEL Velescia" } },
+        { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
+        ],
+      },
+      {
+        number: 5,
+        location: { ko: "카무로초 힐즈 동쪽 (공원 앞 거리)", en: "Kamurocho Hills East Side (Park Blvd)" },
+        reward: { ko: "플래티넘 접시", en: "Platinum Plate" },
+        steps: [
+        { body: { ko: "집음기로 왼쪽 나무를 조사해 아이템을 획득", en: "Use the directional mic on the tree on the left to get the item" } },
+        ],
+      },
+      {
+        number: 6,
+        location: { ko: "샤를 입구", en: "Charles Entrance" },
+        reward: { ko: "우디 팝 신인류의 블록깨기", en: "Woody Pop: New Type Block Breaker" },
+        steps: [
+        { body: { ko: "전파 탐지기로 샤를 옆 이자카야 「타이슈」의 등롱을 조사해 아이템을 획득", en: "Use the radio detector on the lantern of the izakaya Taishu next to Charles" } },
+        ],
+      },
+      {
+        number: 7,
+        location: { ko: "시치후쿠 거리 주차장", en: "Shichifuku St Parking Lot" },
+        reward: { ko: "밀리터리 도료(녹색)", en: "Military Paint (Green)" },
+        steps: [
+        { body: { ko: "전파 탐지기로 입구 옆 간판 뒤의 다람쥐를 조사", en: "Use the radio detector on the squirrel behind the sign next to the entrance" } },
+        { body: { ko: "드론으로 펜스 위의 아이템을 획득", en: "Use the drone to grab the item on top of the fence" } },
+        ],
+      },
+      {
+        number: 8,
+        location: { ko: "라이크자카", en: "Kanrai" },
+        reward: { ko: "네이처 도료", en: "Nature Paint" },
+        steps: [
+        { body: { ko: "집음기로 안쪽 좌식 자리를 조사해 아이템을 획득", en: "Use the directional mic on the back tatami room to get the item" } },
+        ],
+      },
+      {
+        number: 9,
+        location: { ko: "센료 거리 북쪽의 오코노미야키 가게", en: "Okonomiyaki Shop North of Senryo Ave" },
+        reward: { ko: "푸른 휘석", en: "Blue Gem" },
+        steps: [
+        { body: { ko: "집음기로 골목에 들어가 아이템을 획득", en: "Enter the alley and use the directional mic to get the item" } },
+        ],
+      },
+      {
+        number: 10,
+        location: { ko: "챔피언 거리", en: "Champion District" },
+        reward: { ko: "배틀 이너 SS", en: "Battle Inner SS" },
+        steps: [
+        { body: { ko: "집음기로 스낵 「슷톤쿄」 문패 위의 다람쥐를 조사", en: "Use the directional mic on the squirrel above the Suttonkyo snack bar's nameplate" } },
+        { body: { ko: "전파 탐지기로 Pub 「아텐시」 맞은편 계단의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the stairs across from Pub Atenshi" } },
+        { body: { ko: "탐정견으로 남쪽 사거리에서 아이템을 획득", en: "Use the detective dog at the southern intersection to grab the item" } },
+        ],
+      },
+      {
+        number: 11,
+        location: { ko: "타이헤이 거리 동쪽의 에비텐고쿠", en: "Ebi Tengoku East of Taihei Blvd" },
+        reward: { ko: "배틀 서포트 SS", en: "Battle Support SS" },
+        steps: [
+        { body: { ko: "집음기로 골목에 들어서자마자 있는 사물함을 조사해 아이템을 획득", en: "Use the directional mic on the locker just inside the alley to get the item" } },
+        ],
+      },
+      {
+        number: 12,
+        location: { ko: "야가미 탐정 사무소 동쪽", en: "East of Yagami Detective Agency" },
+        reward: { ko: "체크 도료", en: "Check Paint" },
+        steps: [
+        { body: { ko: "집음기로 건물 2층의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the 2nd floor of the building" } },
+        { body: { ko: "드론으로 2층 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the 2nd-floor squirrel and grab the item" } },
+        ],
+      },
+      {
+        number: 13,
+        location: { ko: "에비스야 맞은편", en: "Across from Ebisuya" },
+        reward: { ko: "inharmonic", en: "inharmonic" },
+        steps: [
+        { body: { ko: "집음기로 나카미치 거리 앞 좁은 길에 있는 다람쥐를 조사", en: "Use the directional mic on the squirrel in the small lane just before Nakamichi St" } },
+        { body: { ko: "탐정견으로 좁은 길을 북쪽으로 따라가 아이템을 획득", en: "Use the detective dog to follow the lane north and grab the item" } },
+        ],
+      },
+      {
+        number: 14,
+        location: { ko: "쇼와 거리 서쪽 흡연 구역", en: "Showa St West Smoking Area" },
+        reward: { ko: "노란 휘석", en: "Yellow Gem" },
+        steps: [
+        { body: { ko: "집음기로 「스시긴」 오른쪽에 쌓인 박스 아래를 조사해 아이템을 획득", en: "Use the directional mic under the stacked cases on the right side of Sushi Gin to get the item" } },
+        ],
+      },
+      {
+        number: 15,
+        location: { ko: "텐카이치 거리 입구 맨홀", en: "Manhole at Tenkaichi St Entrance" },
+        reward: { ko: "가드 셔츠 S", en: "Guard Shirt S" },
+        steps: [
+        { body: { ko: "탐정견으로 북쪽으로 진행해 아이템을 획득", en: "Use the detective dog to head north and grab the item" } },
+        ],
+      },
+      {
+        number: 16,
+        location: { ko: "킷사 알프스", en: "Cafe Alps" },
+        reward: { ko: "프리패스 교환권(2)", en: "Free Pass Voucher (2)" },
+        steps: [
+        { body: { ko: "※휴업으로 들어갈 수 없는 경우 사이드 케이스 「강도는 카페에 있다」 클리어 필요", en: "*If closed, you must clear the side case \"The Robber Is in the Cafe\" to enter" } },
+        { body: { ko: "전파 탐지기로 가게 안쪽 비상구의 다람쥐를 조사", en: "Use the radio detector on the squirrel at the back emergency exit of the shop" } },
+        { body: { ko: "집음기로 가게 밖 실외기 근처를 조사해 아이템을 획득", en: "Use the directional mic near the outdoor AC unit outside the shop to get the item" } },
+        ],
+      },
+      {
+        number: 17,
+        location: { ko: "텐카이치 거리 뒤편 만화 카페", en: "Manga Cafe Behind Tenkaichi St" },
+        reward: { ko: "초물욕 콘택트", en: "Super Greed Contacts" },
+        steps: [
+        { body: { ko: "탐정견으로 다이산 공원의 음수대에서 아이템을 획득", en: "Use the detective dog at the drinking fountain in Daisan Park to grab the item" } },
+        ],
+      },
+      {
+        number: 18,
+        location: { ko: "타이헤이 거리 빌딩의 엘리베이터", en: "Elevator of a Taihei Blvd Building" },
+        reward: { ko: "드래곤 도료", en: "Dragon Paint" },
+        steps: [
+        { body: { ko: "집음기로 요시노야 방향으로 나아가 바로 있는 가로등을 조사해 아이템을 획득", en: "Use the directional mic on the street lamp just toward Yoshinoya to get the item" } },
+        ],
+      },
+      {
+        number: 19,
+        location: { ko: "타이헤이 거리 밀레니엄 타워 앞", en: "In Front of Millennium Tower on Taihei Blvd" },
+        reward: { ko: "모에 도료", en: "Moe Paint" },
+        steps: [
+        { body: { ko: "전파 탐지기로 근처의 안내판을 조사해 아이템을 획득", en: "Use the radio detector on the nearby info board to get the item" } },
+        ],
+      },
+      {
+        number: 20,
+        location: { ko: "스시잔마이 옆 주차장", en: "Parking Lot Next to Sushi Zanmai" },
+        reward: { ko: "스킬 「스고로쿠 왕」 잠금 해제, 환상 스고로쿠 지남서 2021【진】", en: "Unlocks skill \"Sugoroku King\"; Fantasy Sugoroku Manual 2021 [True]" },
+        steps: [
+        { body: { ko: "탐정견으로 근처 가로등에서 아이템을 획득", en: "Use the detective dog at the nearby street lamp to grab the item" } },
+        ],
+      },
+      {
+        number: 21,
+        location: { ko: "시치후쿠 거리 무료 안내소", en: "Shichifuku St Free Info Center" },
+        reward: { ko: "스킬 「EX·하마가에시」 잠금 해제, 쇼와 결투록·바람의 권", en: "Unlocks skill \"EX Hammer Return\"; Showa Dueling Records: Wind Volume" },
+        steps: [
+        { body: { ko: "전파 탐지기로 길 건너 식재의 오른쪽 끝을 조사해 아이템을 획득", en: "Use the radio detector on the right edge of the planter across the street to get the item" } },
+        ],
+      },
+      {
+        number: 22,
+        location: { ko: "극장 앞 거리의 노란 간판 라멘 가게", en: "Ramen Shop with Yellow Sign on Theater Ave" },
+        reward: { ko: "컬러풀 도료", en: "Colorful Paint" },
+        steps: [
+        { body: { ko: "탐정견으로 옆 햄버거 가게의 메뉴판에서 아이템을 획득", en: "Use the detective dog at the menu board of the burger shop next door to grab the item" } },
+        ],
+      },
+      {
+        number: 23,
+        location: { ko: "극장 앞 광장", en: "Theater Square" },
+        reward: { ko: "밀리터리 도료(파랑)", en: "Military Paint (Blue)" },
+        steps: [
+        { body: { ko: "집음기로 SEGA 로고 마크를 조사해 아이템을 획득", en: "Use the directional mic on the SEGA logo to get the item" } },
+        ],
+      },
+      {
+        number: 24,
+        location: { ko: "극장 북서쪽 윈도우 디스플레이", en: "Window Display Northwest of Theater" },
+        reward: { ko: "스킬 「선약 제작의 행운【배】」 잠금 해제, 선인은 이렇게 말했다", en: "Unlocks skill \"Elixir Crafting Luck [Double]\"; Thus Spoke the Sage" },
+        steps: [
+        { body: { ko: "전파 탐지기로 스마일 버거 옆에 매달린 등롱을 조사해 아이템을 획득", en: "Use the radio detector on the lantern hanging beside Smile Burger to get the item" } },
+        ],
+      },
+      {
+        number: 25,
+        location: { ko: "카무로 시어터 옥상 정원", en: "Kamuro Theater Rooftop Garden" },
+        reward: { ko: "【선약 레시피】 변전자재의 선약", en: "[Elixir Recipe] Elixir of Transformation" },
+        steps: [
+        { body: { ko: "전파 탐지기로 풀로 덮인 벽의 왼쪽 상단을 조사해 아이템을 획득", en: "Use the radio detector on the top-left of the grass-covered wall to get the item" } },
+        ],
+      },
+      {
+        number: 26,
+        location: { ko: "카무로 시어터 지하", en: "Kamuro Theater Basement" },
+        reward: { ko: "용의 눈동자", en: "Dragon's Eye" },
+        steps: [
+        { body: { ko: "전파 탐지기로 왼쪽으로 진행해 KOREL 광고 위에 나란히 있는 두 개의 ◯ 중 오른쪽을 조사해 아이템을 획득", en: "Head left and use the radio detector on the right of the two circles above the KOREL ad to get the item" } },
+        ],
+      },
+      ],
+    },
+    {
+      title: { ko: "이세자키이진초 — 다람쥐 그림과 보상", en: "Isezaki Ijincho — Squirrel Tags and Rewards" },
+      video: "https://www.youtube.com/watch?v=O7KIvHplpi4",
+      items: [
+      {
+        number: 1,
+        location: { ko: "세이료 고교 앞", en: "In Front of Seiryo High" },
+        reward: { ko: "35000엔, SP2000, 행운 부르는 식사의 권유", en: "35,000 yen, 2000 SP, Lucky Meal Guide" },
+        steps: [
+        { body: { ko: "다람쥐를 조사", en: "Examine the squirrel" } },
+        { body: { ko: "「귀를 기울이고 있다」를 선택", en: "Choose \"It seems to be listening\"" } },
+        { body: { ko: "집음기로 벽의 램프를 조사", en: "Use the directional mic on the wall lamp" } },
+        ],
+      },
+      {
+        number: 2,
+        location: { ko: "바샤미치 가도 서쪽", en: "Bashamichi Kaido West" },
+        reward: { ko: "버스트 부적", en: "Burst Charm" },
+        steps: [
+        { body: { ko: "탐정견으로 남쪽으로 진행해 아이템을 획득", en: "Use the detective dog to head south and grab the item" } },
+        ],
+      },
+      {
+        number: 3,
+        location: { ko: "세이료 고교 교외", en: "Seiryo High Outskirts" },
+        reward: { ko: "스킬 「엣지 오브 데스【필사의 학】」 잠금 해제, 필사의 서", en: "Unlocks skill \"Edge of Death [Desperate Crane]\"; Book of Desperation" },
+        steps: [
+        { body: { ko: "집음기로 다리 기둥(다리를 지지하는 기둥)의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the bridge pier" } },
+        { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
+        ],
+      },
+      {
+        number: 4,
+        location: { ko: "스낵 거리 공원", en: "Snack Alley Park" },
+        reward: { ko: "미라클 다트", en: "Miracle Darts" },
+        steps: [
+        { body: { ko: "집음기로 공원에 있는 나무 밑동을 조사해 아이템을 획득", en: "Use the directional mic at the base of the tree in the park to get the item" } },
+        ],
+      },
+      {
+        number: 5,
+        location: { ko: "스낵 거리 이자카야 옆", en: "Next to the Izakaya in Snack Alley" },
+        reward: { ko: "붉은 휘석", en: "Red Gem" },
+        steps: [
+        { body: { ko: "집음기로 골목을 따라가 벽의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the wall down the side alley" } },
+        { body: { ko: "전파 탐지기로 골목을 더 따라가 핫슬 용품점 앞의 빨간 옷을 조사해 아이템을 획득", en: "Continue down the alley and use the radio detector on the red clothes outside Hustle Goods to get the item" } },
+        ],
+      },
+      {
+        number: 6,
+        location: { ko: "스낵 거리 주차장", en: "Snack Alley Parking Lot" },
+        reward: { ko: "도그 푸드", en: "Dog Food" },
+        steps: [
+        { body: { ko: "전파 탐지기로 오른쪽 흰 건물 2층 벽의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the 2nd-floor wall of the white building on the right" } },
+        { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
+        ],
+      },
+      {
+        number: 7,
+        location: { ko: "아침놀 거리", en: "Dawn Street" },
+        reward: { ko: "스킬 「비기·오보로나게」 잠금 해제, 비전·뱀류 가전서·2", en: "Unlocks skill \"Secret Art: Oboro Throw\"; Secret Snake-Style Manual: Volume 2" },
+        steps: [
+        { body: { ko: "전파 탐지기로 계단을 내려가 벽의 다람쥐를 조사", en: "Go down the stairs and use the radio detector on the squirrel on the wall" } },
+        { body: { ko: "집음기로 다리의 돌출부에 있는 다람쥐를 조사", en: "Use the directional mic on the squirrel on the bridge's ledge" } },
+        { body: { ko: "드론으로 가로등 위의 아이템을 획득", en: "Use the drone to grab the item on top of the street lamp" } },
+        ],
+      },
+      {
+        number: 8,
+        location: { ko: "POPPO 츠루가메 가도점", en: "POPPO Tsurukame Kaido" },
+        reward: { ko: "꽃무늬 도료", en: "Floral Paint" },
+        steps: [
+        { body: { ko: "전파 탐지기로 음료 진열대를 조사해 아이템을 획득", en: "Use the radio detector on the drinks shelf to get the item" } },
+        ],
+      },
+      {
+        number: 9,
+        location: { ko: "오노데라 상점 앞 화장실", en: "Bathroom in Front of Onodera Store" },
+        reward: { ko: "무지개색 휘석", en: "Rainbow Gem" },
+        steps: [
+        { body: { ko: "집음기로 공원 중앙 부근 파란 시트의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the blue tarp near the center of the park" } },
+        { body: { ko: "전파 탐지기로 공원 아래쪽에 3개 쌓인 타이어를 조사해 아이템을 획득", en: "Use the radio detector on the stack of three tires at the lower side of the park to get the item" } },
+        ],
+      },
+      {
+        number: 10,
+        location: { ko: "중앙 거리 북쪽의 입체 주차장", en: "Multi-Story Lot North of Chuo St" },
+        reward: { ko: "스트라이프 도료", en: "Stripe Paint" },
+        steps: [
+        { body: { ko: "집음기로 전신주의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the utility pole" } },
+        { body: { ko: "전파 탐지기로 전신주의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the utility pole" } },
+        { body: { ko: "드론으로 전신주 위 가로등의 아이템을 획득", en: "Use the drone to grab the item on the street lamp above the utility pole" } },
+        ],
+      },
+      {
+        number: 11,
+        location: { ko: "중앙 거리 남쪽의 넓은 주차장", en: "Large Lot South of Chuo St" },
+        reward: { ko: "스킬 「EX·스에카라메」 잠금 해제, 쇼와 결투록·물의 권", en: "Unlocks skill \"EX Cane Lock\"; Showa Dueling Records: Water Volume" },
+        steps: [
+        { body: { ko: "탐정견으로 헬로워크 미사키(다람쥐 그림 바로 뒤) 한가운데 기둥까지 진행해 아이템을 획득", en: "Use the detective dog to advance to the middle pillar of Hello Work Misaki (directly behind the squirrel tag) and grab the item" } },
+        ],
+      },
+      {
+        number: 12,
+        location: { ko: "요코하마 99과", en: "Yokohama 99th Division" },
+        reward: { ko: "보등의 패", en: "Treasure Lantern Tile" },
+        steps: [
+        { body: { ko: "전파 탐지기로 근처 식재를 조사해 아이템을 획득", en: "Use the radio detector on the nearby planter to get the item" } },
+        ],
+      },
+      {
+        number: 13,
+        location: { ko: "웰컴 약국", en: "Welcome Pharmacy" },
+        reward: { ko: "스킬 「발경」 잠금 해제, 되살아나는 발경", en: "Unlocks skill \"Fa Jin\"; Fa Jin Revived" },
+        steps: [
+        { body: { ko: "집음기로 가게 오른쪽 안쪽 진열대 왼쪽 아래 부근을 조사해 아이템을 획득", en: "Use the directional mic near the lower left of the right-rear shelf to get the item" } },
+        ],
+      },
+      {
+        number: 14,
+        location: { ko: "이진 거리", en: "Ijin Street" },
+        reward: { ko: "플레이패스", en: "Play Pass" },
+        steps: [
+        { body: { ko: "탐정견으로 이진 좁은길(왼쪽 길)로 들어가 바로 있는 계단 아래에서 아이템을 획득", en: "Use the detective dog at the foot of the stairs just inside the Ijin Lane (left path) to grab the item" } },
+        ],
+      },
+      {
+        number: 15,
+        location: { ko: "햐쿠케이코지 주차장", en: "Hyakkei Lane Parking Lot" },
+        reward: { ko: "엘레강트 도료", en: "Elegant Paint" },
+        steps: [
+        { body: { ko: "전파 탐지기로 햐쿠케이 거리 방향으로 진행해 「UMIGAME TEI」 벽의 다람쥐를 조사", en: "Head toward Hyakkei St and use the radio detector on the squirrel on the wall of UMIGAME TEI" } },
+        { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
+        ],
+      },
+      {
+        number: 16,
+        location: { ko: "플라주", en: "Plage" },
+        reward: { ko: "밀리터리 도료(갈색)", en: "Military Paint (Brown)" },
+        steps: [
+        { body: { ko: "전파 탐지기로 창가 소파의 흰 쿠션을 조사해 아이템을 획득", en: "Use the radio detector on the white cushion on the sofa by the window to get the item" } },
+        ],
+      },
+      {
+        number: 17,
+        location: { ko: "벳테 키친의 공룡 입속", en: "Inside the Dinosaur's Mouth at Vette Kitchen" },
+        reward: { ko: "스킬 「백사의 심득」 잠금 해제, 백사재 어록", en: "Unlocks skill \"White Snake Style\"; White Snake Sage's Sayings" },
+        steps: [
+        { body: { ko: "공룡 입속의 다람쥐 그림을 조사", en: "Examine the squirrel tag inside the dinosaur's mouth" } },
+        { body: { ko: "집음기로 공룡의 꼬리를 조사해 아이템을 획득", en: "Use the directional mic on the dinosaur's tail to get the item" } },
+        ],
+      },
+      {
+        number: 18,
+        location: { ko: "진나이 역 동쪽 벽", en: "East Wall of Jinnai Station" },
+        reward: { ko: "공방 서포터 1", en: "Offense/Defense Supporter 1" },
+        steps: [
+        { body: { ko: "집음기로 북쪽 큰 건물의 계단 오른쪽에 있는 다람쥐를 조사", en: "Use the directional mic on the squirrel to the right of the stairs of the large building north" } },
+        { body: { ko: "전파 탐지기로 바로 오른쪽 게시판 왼쪽 상단의 다람쥐를 조사", en: "Use the radio detector on the squirrel at the upper left of the bulletin board just to the right" } },
+        { body: { ko: "탐정견으로 담을 따라 동쪽으로 진행해 아이템을 획득", en: "Use the detective dog along the wall heading east to grab the item" } },
+        ],
+      },
+      {
+        number: 19,
+        location: { ko: "차이나타운 공원 (하마키타 다이한텐 앞 광장)", en: "Chinatown Park (Plaza in Front of Hamakita Daihanten)" },
+        reward: { ko: "그립 서포터", en: "Grip Supporter" },
+        steps: [
+        { body: { ko: "전파 탐지기로 입구 왼쪽 석상의 얼굴을 조사해 아이템을 획득", en: "Use the radio detector on the face of the statue on the left of the entrance to get the item" } },
+        ],
+      },
+      {
+        number: 20,
+        location: { ko: "하마키타 공원 거리 오른쪽 아래의 건물", en: "Building at the Lower Right of Hamakita Park Ave" },
+        reward: { ko: "기합 셔츠 SSS", en: "Spirit Shirt SSS" },
+        steps: [
+        { body: { ko: "집음기로 입구 쪽에서, 분수에서 봤을 때 왼쪽 나무의 구멍을 조사해 아이템을 획득", en: "Use the directional mic on the hollow in the tree on the left side of the fountain from the entrance to get the item" } },
+        ],
+      },
+      {
+        number: 21,
+        location: { ko: "하마키타 공원 동쪽 스테이지 물속", en: "In the Water at the East Stage of Hamakita Park" },
+        reward: { ko: "【선약 레시피】 윤활진의 선약", en: "[Elixir Recipe] Lubricant Field Elixir" },
+        steps: [
+        { body: { ko: "전파 탐지기로 왼쪽의 꽃을 조사해 아이템을 획득", en: "Use the radio detector on the flower on the left to get the item" } },
+        ],
+      },
+      {
+        number: 22,
+        location: { ko: "하마키타 공원 중앙 부근의 나무", en: "Tree Near the Center of Hamakita Park" },
+        reward: { ko: "【선약 레시피】 괴멸 투격의 선약", en: "[Elixir Recipe] Annihilation Strike Elixir" },
+        steps: [
+        { body: { ko: "탐정견으로 왼쪽 옆의 나무까지 진행해 아이템을 획득", en: "Use the detective dog to advance to the tree on the immediate left and grab the item" } },
+        ],
+      },
+      {
+        number: 23,
+        location: { ko: "「킷사 와곤 하마」 앞 건물", en: "Building in Front of Cafe Wagon Hama" },
+        reward: { ko: "허그쿠움 베타", en: "Hugkoom Beta" },
+        steps: [
+        { body: { ko: "전파 탐지기로 건물 뒤편의 다람쥐를 조사", en: "Use the radio detector on the squirrel behind the building" } },
+        { body: { ko: "드론으로 건물 지붕을 조사해 아이템을 획득\n※저녁이나 밤이 아이템을 찾기 쉬움", en: "Use the drone on the building's roof to get the item\n*Easier to spot the item in the evening or at night" } },
+        ],
+      },
+      {
+        number: 24,
+        location: { ko: "「la chatte blanche」 앞", en: "In Front of la chatte blanche" },
+        reward: { ko: "My Own Style (레코드)", en: "My Own Style (Record)" },
+        steps: [
+        { body: { ko: "전파 탐지기로 근처 나무의 구멍을 조사해 아이템을 획득", en: "Use the radio detector on the hollow in the nearby tree to get the item" } },
+        ],
+      },
+      {
+        number: 25,
+        location: { ko: "다이코쿠텐 거리 신호 앞 바닥", en: "Ground in Front of Daikokuten St Traffic Light" },
+        reward: { ko: "【선약 레시피】 강악력의 선약", en: "[Elixir Recipe] Iron Grip Elixir" },
+        steps: [
+        { body: { ko: "탐정견으로 횡단보도를 건너자마자 흙 위에서 아이템을 획득", en: "Use the detective dog on the patch of dirt right after crossing the crosswalk to grab the item" } },
+        ],
+      },
+      {
+        number: 26,
+        location: { ko: "바샤미치 가도 동쪽 주차장", en: "Bashamichi Kaido East Parking Lot" },
+        reward: { ko: "은 접시", en: "Silver Plate" },
+        steps: [
+        { body: { ko: "탐정견으로 오른쪽 문 앞까지 진행해 아이템을 획득", en: "Use the detective dog to advance to the gate on the right and grab the item" } },
+        ],
+      },
+      {
+        number: 27,
+        location: { ko: "「Le Nouveau hama」 왼쪽 그림", en: "Painting Left of Le Nouveau hama" },
+        reward: { ko: "EX-4", en: "EX-4" },
+        steps: [
+        { body: { ko: "전파 탐지기로 카운터 오른쪽 꽃을 조사해 아이템을 획득", en: "Use the radio detector on the flower right of the counter to get the item" } },
+        ],
+      },
+      {
+        number: 28,
+        location: { ko: "베이사이드 거리 서쪽", en: "Bayside Street West" },
+        reward: { ko: "【선약 레시피】 건간각의 선약", en: "[Elixir Recipe] Strong Legs Elixir" },
+        steps: [
+        { body: { ko: "집음기로 다람쥐 1과 같은 건물 3층의 다람쥐를 조사", en: "Use the directional mic on the squirrel on the 3rd floor of the same building as squirrel 1" } },
+        { body: { ko: "드론으로 다람쥐 2의 한 칸 오른쪽 건물의 빨간 차양 위 아이템을 획득", en: "Use the drone to grab the item on the red awning of the building one over to the right of squirrel 2" } },
+        ],
+      },
+      {
+        number: 29,
+        location: { ko: "진나이 역 서쪽 매표소 앞 기둥", en: "Pillar in Front of the Ticket Counter at Jinnai Station West" },
+        reward: { ko: "금 접시", en: "Gold Plate" },
+        steps: [
+        { body: { ko: "전파 탐지기로 중앙 기둥의 윗부분을 조사해 아이템을 획득", en: "Use the radio detector on the upper part of the central pillar to get the item" } },
+        ],
+      },
+      {
+        number: 30,
+        location: { ko: "후쿠토쿠 공원 (라스트 픽처)", en: "Fukutoku Park (Last Picture)" },
+        reward: { ko: "도토리", en: "Acorn" },
+        steps: [
+        { body: { ko: "여자아이(후타바)와 대화", en: "Talk to the girl (Futaba)" } },
+        { body: { ko: "다람쥐 그림을 찾는다", en: "Find the squirrel tag" } },
+        { body: { ko: "집음기로 오브젝트의 정상을 조사", en: "Use the directional mic on the top of the object" } },
+        ],
+      },
+      ],
+    },
+      ],
+    },
+    {
+      slug: "side-cases",
+      title: { ko: "사이드 케이스 54건 — 전수 공략", en: "Side Cases — All 54" },
+      summary: {
+        ko: "챕터 진행과 함께 풀리는 사이드 케이스 54건의 발생 시점·장소·보상을 정리했습니다. 사무소 의뢰 게시판 + 거리 트리거 + 메인 스토리 강제 발생을 모두 포함합니다. No.43~ 항목은 디텍티브 라이프 강화 DLC 한정입니다.",
+        en: "Every side case (1-54) — chapter, location, and reward. Includes office board requests, world triggers, and forced story cases. Cases 43+ require the Detective Life Enhancement DLC.",
+      },
+      tips: [
+        { ko: "3장부터 자유롭게 진행 가능. 버즈 리서처로만 발생하는 사례가 있으니 SNS 검색 카테고리를 활성화해 두세요.", en: "Free-play side cases unlock from Chapter 3. Several only fire via Buzz Researcher, so keep its categories enabled." },
+        { ko: "43~46번은 디텍티브 라이프 강화 DLC 한정. 4명 중 3명의 그녀 이벤트도 DLC 미션입니다.", en: "Cases 43-46 are DLC-only. Three of the four girlfriend events come from the same DLC pack." },
+      ],
+      source: {
+        label: "gamewith.jp — Lost Judgment 사이드 케이스",
+        url: "https://gamewith.jp/lostjudgment/article/show/293437",
+      },
+      items: [
+      {
+        number: 1,
+        title: { ko: "스케이트보드 탐정 VS 되팔이꾼", en: "Skater Detective vs. the Scalpers" },
+        location: { ko: "이세자키이진초 — 요코하마 99과", en: "Isezaki Ijincho — Yokohama 99th Precinct" },
+        body: { ko: "1장 — 스토리 진행 중 강제 발생", en: "Chapter 1 — auto-triggered during the main story" },
+      },
+      {
+        number: 2,
+        title: { ko: "떨어질 것 같은 남자", en: "The Man About to Fall" },
+        location: { ko: "이세자키이진초 — 요코하마 대로의 맨션", en: "Isezaki Ijincho — Yokohama Avenue Apartment" },
+        body: { ko: "3장 — 스토리 진행 중 강제 발생", en: "Chapter 3 — auto-triggered during the main story" },
+      },
+      {
+        number: 3,
+        title: { ko: "강도는 카페에 있다", en: "The Robber Is in the Cafe" },
+        location: { ko: "카무로초 — 천하일 거리", en: "Kamurocho — Tenkaichi Street" },
+        body: { ko: "3장 — 천하일 거리의 로망스 카페에 접근하면 발생", en: "Chapter 3 — triggered by approaching the Romance Cafe on Tenkaichi Street" },
+        reward: { ko: "연막진의 선약 레시피", en: "Smoke Screen Tonic recipe" },
+      },
+      {
+        number: 4,
+        title: { ko: "에비스의 얼굴도 세 번까지", en: "Even Ebisu's Face Only Three Times" },
+        location: { ko: "세이료 고교 — 3층", en: "Seiryo High School — 3rd Floor" },
+        body: { ko: "4장 — 3학년 교실 복도 (세이료 고교 3층)", en: "Chapter 4 — hallway outside the 3rd-year classrooms (Seiryo High School, 3rd floor)" },
+      },
+      {
+        number: 5,
+        title: { ko: "타임캡슐의 행방", en: "Whereabouts of the Time Capsule" },
+        location: { ko: "세이료 고교 — 교외", en: "Seiryo High School — Outside the Grounds" },
+        body: { ko: "3장 — 세이료 고교 교외에 있는 남자 3인조에게 말을 걸면 발생", en: "Chapter 3 — speak to the trio of men outside Seiryo High School" },
+      },
+      {
+        number: 6,
+        title: { ko: "캇파의 행방", en: "Whereabouts of the Kappa" },
+        location: { ko: "이세자키이진초 — 사쿠라가와 거리 북쪽", en: "Isezaki Ijincho — North Sakuragawa Street" },
+        body: { ko: "4장 — 정장 차림 남자와 술 취한 남자의 대화에 끼어들면 발생", en: "Chapter 4 — join the conversation between the suited man and the drunkard" },
+        reward: { ko: "[레어 보상] 프리패스 교환권 ×4", en: "[Rare reward] Free Pass Voucher ×4" },
+      },
+      {
+        number: 7,
+        title: { ko: "전진하라, 세이료 고교 오컬트 연구회!", en: "Onward, Seiryo High Occult Research Club!" },
+        location: { ko: "세이료 고교 앞", en: "In front of Seiryo High School" },
+        body: { ko: "3장 — 세이료 고교 입구 앞의 남학생에게 말을 걸면 발생", en: "Chapter 3 — speak to the male student in front of the Seiryo High School entrance" },
+      },
+      {
+        number: 8,
+        title: { ko: "투명한 도둑", en: "The Invisible Thief" },
+        location: { ko: "카무로초 — 천량 거리", en: "Kamurocho — Senryo Avenue" },
+        body: { ko: "3장 — 버즈 리서처 「스토커」로 카무로초 천량 거리의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Senryo Avenue tweet in Kamurocho using Buzz Researcher \"Stalker\"" },
+        reward: { ko: "액재막이 선약 레시피", en: "Disaster Ward Tonic recipe" },
+      },
+      {
+        number: 9,
+        title: { ko: "배회하는 인체 모형", en: "The Wandering Anatomical Model" },
+        location: { ko: "세이료 고교 — 1층 (야간 한정)", en: "Seiryo High School — 1st Floor (night only)" },
+        body: { ko: "3장 — 버즈 리서처 「인체 모형」으로 세이료 고교의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Seiryo High School tweet using Buzz Researcher \"Anatomical Model\"" },
+      },
+      {
+        number: 10,
+        title: { ko: "라이언 닌술 교실 폭탄 탄생!", en: "Ryan's Ninjutsu Class Is Born!" },
+        location: { ko: "카무로초 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        body: { ko: "3장 — 야가미 탐정 사무소의 탐정 의뢰를 수주", en: "Chapter 3 — accept a detective request at the Yagami Detective Agency" },
+        reward: { ko: "훈련 하라마키", en: "Training Haramaki" },
+      },
+      {
+        number: 11,
+        title: { ko: "금단의 맛", en: "Forbidden Flavor" },
+        location: { ko: "이세자키이진초 — 몽무반점", en: "Isezaki Ijincho — Moubu Hanten" },
+        body: { ko: "3장 — 요코하마 99과의 탐정 의뢰를 수주", en: "Chapter 3 — accept a detective request at the Yokohama 99th Precinct" },
+        reward: { ko: "갈망의 서 (스킬북)", en: "Book of Craving (Skill Book)" },
+      },
+      {
+        number: 12,
+        title: { ko: "VR 살롱: 파라다이스!", en: "VR Salon: Paradise!" },
+        location: { ko: "이세자키이진초 — VR 살롱 파라다이스 앞", en: "Isezaki Ijincho — In front of VR Salon Paradise" },
+        body: { ko: "3장 — 「VR 살롱: 파라다이스!」 클리어 후 타시로에게 접근", en: "Chapter 3 — approach Tashiro after clearing \"VR Salon: Paradise!\"" },
+      },
+      {
+        number: 13,
+        title: { ko: "속・VR 살롱: 파라다이스!", en: "VR Salon: Paradise! — Part 2" },
+        location: { ko: "이세자키이진초 — VR 살롱 파라다이스 앞", en: "Isezaki Ijincho — In front of VR Salon Paradise" },
+        body: { ko: "3장 — VR 살롱 파라다이스 앞의 타시로에게 접근", en: "Chapter 3 — approach Tashiro in front of VR Salon Paradise" },
+      },
+      {
+        number: 14,
+        title: { ko: "이진초 드론 레이스 개막!", en: "Ijincho Drone Race Opens!" },
+        location: { ko: "이세자키이진초 — 드론 레이스", en: "Isezaki Ijincho — Drone Race" },
+        body: { ko: "3장 — 드론 레이스", en: "Chapter 3 — Drone Race" },
+      },
+      {
+        number: 15,
+        title: { ko: "선인 이야마의 재난", en: "The Misfortune of Hermit Iyama" },
+        location: { ko: "이세자키이진초 — 이세자키 로드", en: "Isezaki Ijincho — Isezaki Road" },
+        body: { ko: "3장 — 스토리 진행 중 강제 발생", en: "Chapter 3 — auto-triggered during the main story" },
+        reward: { ko: "초강력 선약 레시피", en: "Super Strength Tonic recipe" },
+      },
+      {
+        number: 16,
+        title: { ko: "선인 이야마: 기원의 탐구", en: "Hermit Iyama: Quest for the Origin" },
+        location: { ko: "이세자키이진초 — 차이나타운 이야마의 선약방", en: "Isezaki Ijincho — Chinatown, Iyama's Tonic Shop" },
+        body: { ko: "3장 — 「선인 이야마의 재난」 클리어 후 이야마의 선약방에서 이야마에게 말을 걸면 발생", en: "Chapter 3 — speak to Iyama at Iyama's Tonic Shop after clearing \"The Misfortune of Hermit Iyama\"" },
+        reward: { ko: "유류술 선약 / 연섬술 선약 / 전무술 선약", en: "Willow-Style Tonic / Chain-Flash Tonic / Spinning-Dance Tonic" },
+      },
+      {
+        number: 17,
+        title: { ko: "새로운 파트너?", en: "A New Partner?" },
+        location: { ko: "이세자키이진초 — 요코하마 99과", en: "Isezaki Ijincho — Yokohama 99th Precinct" },
+        body: { ko: "4장 — 스토리 진행 중 강제 발생", en: "Chapter 4 — auto-triggered during the main story" },
+      },
+      {
+        number: 18,
+        title: { ko: "복면 작가 주몬지 이치진의 혼란", en: "The Confusion of Masked Author Jumonji Ichijin" },
+        location: { ko: "카무로초 — 천하일 거리 제1빌딩 3층", en: "Kamurocho — Tenkaichi Street Building 1, 3rd Floor" },
+        body: { ko: "4장 — 요코하마 99과의 탐정 의뢰를 수주", en: "Chapter 4 — accept a detective request at the Yokohama 99th Precinct" },
+        reward: { ko: "쇼와 결투록・지의 권", en: "Showa Duel Chronicle: Earth Volume" },
+      },
+      {
+        number: 19,
+        title: { ko: "도망친 게임 크리에이터", en: "The Fugitive Game Creator" },
+        location: { ko: "이세자키이진초 — 베테 키친", en: "Isezaki Ijincho — Vette Kitchen" },
+        body: { ko: "4장 — 요코하마 99과의 탐정 의뢰를 수주", en: "Chapter 4 — accept a detective request at the Yokohama 99th Precinct" },
+        reward: { ko: "불사불퇴전의 선약 레시피", en: "Immortal Unyielding Tonic recipe" },
+      },
+      {
+        number: 20,
+        title: { ko: "폭풍을 부르는 로케 테스트", en: "The Storm-Summoning Location Test" },
+        location: { ko: "이세자키이진초 — 산업회관 빌딩 앞", en: "Isezaki Ijincho — In front of the Industry Hall Building" },
+        body: { ko: "4장 — 「도망친 게임 크리에이터」 클리어 후 요코하마 99과의 탐정 의뢰를 수주", en: "Chapter 4 — accept a detective request at the Yokohama 99th Precinct after clearing \"The Fugitive Game Creator\"" },
+        reward: { ko: "강화 콘택트 ×1", en: "Enhanced Contact ×1" },
+      },
+      {
+        number: 21,
+        title: { ko: "전파 탐정: 입문편", en: "Radio Wave Detective: Introduction" },
+        location: { ko: "이세자키이진초 — 베이사이드 거리", en: "Isezaki Ijincho — Bayside Street" },
+        body: { ko: "4장 — 스토리 진행 중 강제 발생", en: "Chapter 4 — auto-triggered during the main story" },
+      },
+      {
+        number: 22,
+        title: { ko: "전파 탐정: 떠도는 도청기", en: "Radio Wave Detective: The Wandering Bug" },
+        location: { ko: "이세자키이진초 — 이세자키 로드", en: "Isezaki Ijincho — Isezaki Road" },
+        body: { ko: "4장 — 「전파 탐정: 입문편」 클리어 후 이세자키 로드를 걷는 빨간 옷의 여자를 전파 탐지기로 조사", en: "Chapter 4 — after clearing \"Radio Wave Detective: Introduction,\" scan the woman in red walking along Isezaki Road with the Radio Wave Detector" },
+      },
+      {
+        number: 23,
+        title: { ko: "전파 탐정: 사랑, 붙잡아 주세요", en: "Radio Wave Detective: Grab Hold of Love" },
+        location: { ko: "이세자키이진초 — 게임센터 사사키", en: "Isezaki Ijincho — Game Center Sasaki" },
+        body: { ko: "4장 — 「전파 탐정: 떠도는 도청기」 클리어 후 UFO 캐처의 인형을 전파 탐지기로 조사", en: "Chapter 4 — after clearing \"Radio Wave Detective: The Wandering Bug,\" scan the UFO catcher plushie with the Radio Wave Detector" },
+      },
+      {
+        number: 24,
+        title: { ko: "전파 탐정: 등불이 다 타기 전에", en: "Radio Wave Detective: Before the Flame Burns Out" },
+        location: { ko: "이세자키이진초 — 중앙로 헬로워크 부근", en: "Isezaki Ijincho — Near Central Street Hello Work" },
+        body: { ko: "4장 — 「전파 탐정: 사랑, 붙잡아 주세요」 클리어 후 발생. 해당 장소 상공에 떠 있는 드론을 전파 탐지기로 조사", en: "Chapter 4 — triggered after clearing \"Radio Wave Detective: Grab Hold of Love\"; scan the drone hovering above the area with the Radio Wave Detector" },
+      },
+      {
+        number: 25,
+        title: { ko: "전파 탐정: 지갑은 듣고 있었다", en: "Radio Wave Detective: The Wallet Was Listening" },
+        location: { ko: "이세자키이진초 — Girl's Bite 앞", en: "Isezaki Ijincho — In front of Girl's Bite" },
+        body: { ko: "6장 — 「전파 탐정: 등불이 다 타기 전에」 클리어 후 발생. 해당 장소에 떨어진 지갑을 전파 탐지기로 조사", en: "Chapter 6 — triggered after clearing \"Radio Wave Detective: Before the Flame Burns Out\"; scan the wallet on the ground with the Radio Wave Detector" },
+      },
+      {
+        number: 26,
+        title: { ko: "전파 탐정: 노려진 세이료 고교", en: "Radio Wave Detective: Seiryo High Targeted" },
+        location: { ko: "이세자키이진초 — 세이료 고교", en: "Isezaki Ijincho — Seiryo High School" },
+        body: { ko: "6장 — 「전파 탐정: 지갑은 듣고 있었다」 클리어 후 세이료 고교 입구 문을 전파 탐지기로 조사", en: "Chapter 6 — after clearing \"Radio Wave Detective: The Wallet Was Listening,\" scan the Seiryo High School entrance door with the Radio Wave Detector" },
+      },
+      {
+        number: 27,
+        title: { ko: "전파 탐정: 어둠의 밑바닥에서", en: "Radio Wave Detective: From the Bottom of the Dark" },
+        location: { ko: "이세자키이진초 — 츠루카메바시 부근", en: "Isezaki Ijincho — Near Tsurukame Bridge" },
+        body: { ko: "6장 — 「전파 탐정: 노려진 세이료 고교」 클리어 후 츠루카메바시 옆 맨홀을 전파 탐지기로 조사", en: "Chapter 6 — after clearing \"Radio Wave Detective: Seiryo High Targeted,\" scan the manhole beside Tsurukame Bridge with the Radio Wave Detector" },
+      },
+      {
+        number: 28,
+        title: { ko: "전파 탐정: 비밀의 맛", en: "Radio Wave Detective: Secret Flavor" },
+        location: { ko: "이세자키이진초 — 베이사이드 거리", en: "Isezaki Ijincho — Bayside Street" },
+        body: { ko: "6장 — 「전파 탐정: 어둠의 밑바닥에서」 클리어 후 계단을 오른 끝의 라멘 그릇을 전파 탐지기로 조사", en: "Chapter 6 — after clearing \"Radio Wave Detective: From the Bottom of the Dark,\" scan the ramen bowl at the top of the stairs with the Radio Wave Detector" },
+      },
+      {
+        number: 29,
+        title: { ko: "전파 탐정: 마지막 야반도주", en: "Radio Wave Detective: The Last Midnight Flight" },
+        location: { ko: "이세자키이진초", en: "Isezaki Ijincho" },
+        body: { ko: "6장 — 「전파 탐정: 비밀의 맛」 클리어 후 발생", en: "Chapter 6 — triggered after clearing \"Radio Wave Detective: Secret Flavor\"" },
+      },
+      {
+        number: 30,
+        title: { ko: "전파 탐정: 해결편", en: "Radio Wave Detective: Resolution" },
+        location: { ko: "이세자키이진초 — 후쿠토쿠 공원", en: "Isezaki Ijincho — Fukutoku Park" },
+        body: { ko: "6장 — 「전파 탐정: 마지막 야반도주」 클리어 후 자동 발생", en: "Chapter 6 — auto-triggered after clearing \"Radio Wave Detective: The Last Midnight Flight\"" },
+      },
+      {
+        number: 31,
+        title: { ko: "신경 쓰이는 그 그림", en: "That Painting on My Mind" },
+        location: { ko: "이세자키이진초 — 세이료 고교 입구 옆", en: "Isezaki Ijincho — Beside the Seiryo High School entrance" },
+        body: { ko: "5장 — 세이료 학원의 다람쥐 그림 근처에 있는 여자아이와 대화", en: "Chapter 5 — talk to the girl near the squirrel painting at Seiryo Academy" },
+        reward: { ko: "행운의 밥 권장", en: "Lucky Meal Recommendation" },
+      },
+      {
+        number: 32,
+        title: { ko: "라스트 픽처", en: "Last Picture" },
+        location: { ko: "이세자키이진초 — 후쿠토쿠 공원", en: "Isezaki Ijincho — Fukutoku Park" },
+        body: { ko: "5장 — 다른 페인트 서치(총 55개소)를 진행하면 발생", en: "Chapter 5 — triggered after progressing the other Paint Searches (55 locations total)" },
+        reward: { ko: "도토리", en: "Acorn" },
+      },
+      {
+        number: 33,
+        title: { ko: "아마사와 가문의 저주", en: "The Amasawa Family Curse" },
+        location: { ko: "이세자키이진초 — 세이료 고교 미스연 부실", en: "Isezaki Ijincho — Seiryo High Mystery Club Room" },
+        body: { ko: "6장 — 미스연 부실에서 아마사와에게 말을 걸면 (저녁 한정)", en: "Chapter 6 — speak to Amasawa in the Mystery Club room (evening only)" },
+      },
+      {
+        number: 34,
+        title: { ko: "첫 심부름", en: "The First Errand" },
+        location: { ko: "이세자키이진초 — 요코하마 99과", en: "Isezaki Ijincho — Yokohama 99th Precinct" },
+        body: { ko: "최종장 — 요코하마 99과의 탐정 의뢰를 수주", en: "Final chapter — accept a detective request at the Yokohama 99th Precinct" },
+        reward: { ko: "독수리의 마음", en: "Eagle's Spirit" },
+      },
+      {
+        number: 35,
+        title: { ko: "하루코의 이야기", en: "Haruko's Story" },
+        location: { ko: "이세자키이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
+      },
+      {
+        number: 36,
+        title: { ko: "미우의 이야기", en: "Miu's Story" },
+        location: { ko: "이세자키이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
+      },
+      {
+        number: 37,
+        title: { ko: "아야하의 이야기", en: "Ayaha's Story" },
+        location: { ko: "이세자키이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
+      },
+      {
+        number: 38,
+        title: { ko: "스텝 바이 스텝 ~제1편~", en: "Step by Step — Part 1" },
+        location: { ko: "이세자키이진초 — 칸나이역 동쪽", en: "Isezaki Ijincho — East of Kannai Station" },
+        body: { ko: "유스 드라마 「걸스 바」 클리어 후 에미리와의 친밀도를 2로 올린다 (여자친구 이벤트 공략)", en: "After clearing the youth drama \"Girls' Bar,\" raise intimacy with Emily to 2 (Girlfriend Event)" },
+      },
+      {
+        number: 39,
+        title: { ko: "스텝 바이 스텝 ~제2편~", en: "Step by Step — Part 2" },
+        location: { ko: "이세자키이진초 — 칸나이역 동쪽", en: "Isezaki Ijincho — East of Kannai Station" },
+        body: { ko: "에미리와의 친밀도를 3으로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Emily to 3 (Girlfriend Event)" },
+      },
+      {
+        number: 40,
+        title: { ko: "스텝 바이 스텝 ~제3편~", en: "Step by Step — Part 3" },
+        location: { ko: "이세자키이진초 — 칸나이역 동쪽", en: "Isezaki Ijincho — East of Kannai Station" },
+        body: { ko: "에미리와의 친밀도를 4로 올린다 (야간 한정) (여자친구 이벤트 공략)", en: "Raise intimacy with Emily to 4 (night only) (Girlfriend Event)" },
+      },
+      {
+        number: 41,
+        title: { ko: "악덕 탐정 야가미 타카유키?", en: "The Corrupt Detective Takayuki Yagami?" },
+        location: { ko: "카무로초 — 야가미 탐정 사무소 앞", en: "Kamurocho — In front of the Yagami Detective Agency" },
+        body: { ko: "모든 유스 드라마를 클리어하면 발생", en: "Triggered upon clearing every youth drama" },
+      },
+      {
+        number: 42,
+        title: { ko: "마지막 의뢰 ~리턴즈~", en: "The Final Request — Returns" },
+        location: { ko: "이세자키이진초 — 하마키타 공원", en: "Isezaki Ijincho — Hamakita Park" },
+        body: { ko: "1~41번 사이드 케이스를 전부 클리어한다", en: "Clear all side cases No. 1–41" },
+      },
+      {
+        number: 43,
+        title: { ko: "내가 인형옷을 입는 이유", en: "Why I Wear the Mascot Suit" },
+        location: { ko: "카무로초 — 어린이 공원", en: "Kamurocho — Children's Park" },
+        body: { ko: "3장 — 버즈 리서처 「유루캬라」로 카무로초 어린이 공원의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Kamurocho Children's Park tweet using Buzz Researcher \"Mascot Character\"" },
+        reward: { ko: "용의 눈동자 — 토도 미나토 여자친구 이벤트 진행 가능", en: "Dragon's Eye — unlocks Minato Todo's Girlfriend Event" },
+      },
+      {
+        number: 44,
+        title: { ko: "스탠드 바이 미", en: "Stand By Me" },
+        location: { ko: "카무로초 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        body: { ko: "토도 미나토와의 친밀도를 2로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 2 (Girlfriend Event)" },
+      },
+      {
+        number: 45,
+        title: { ko: "개그 나이트 피버", en: "Comedy Night Fever" },
+        location: { ko: "카무로초 — 천하일 거리 입구", en: "Kamurocho — Tenkaichi Street Entrance" },
+        body: { ko: "토도 미나토와의 친밀도를 3으로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 3 (Girlfriend Event)" },
+      },
+      {
+        number: 46,
+        title: { ko: "인형옷 소녀로 있을 수만은 없어", en: "I Can't Stay a Mascot Girl Forever" },
+        location: { ko: "카무로초 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        body: { ko: "토도 미나토와의 친밀도를 4로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 4 (Girlfriend Event)" },
+      },
+      {
+        number: 47,
+        title: { ko: "Somebody's Watching You", en: "Somebody's Watching You" },
+        location: { ko: "이세자키이진초 — 백경 거리", en: "Isezaki Ijincho — Hyakkei Street" },
+        body: { ko: "3장 — DLC 「탐정 라이프 충실 팩」을 수령", en: "Chapter 3 — receive the DLC \"Detective Life Essentials Pack\"" },
+      },
+      {
+        number: 48,
+        title: { ko: "밤의 멜로디", en: "Melody of the Night" },
+        location: { ko: "세이료 고교 — 보건실", en: "Seiryo High School — Infirmary" },
+        body: { ko: "하카세 쿄코와의 친밀도를 2로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Kyoko Hakase to 2 (Girlfriend Event)" },
+      },
+      {
+        number: 49,
+        title: { ko: "다정한 마음", en: "A Gentle Heart" },
+        location: { ko: "세이료 고교 — 교외 테라스", en: "Seiryo High School — Outdoor Terrace" },
+        body: { ko: "하카세 쿄코와의 친밀도를 3으로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Kyoko Hakase to 3 (Girlfriend Event)" },
+      },
+      {
+        number: 50,
+        title: { ko: "꿈의 다음 이야기", en: "The Rest of the Dream" },
+        location: { ko: "세이료 고교 — 식당", en: "Seiryo High School — Cafeteria" },
+        body: { ko: "하카세 쿄코와의 친밀도를 4로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Kyoko Hakase to 4 (Girlfriend Event)" },
+      },
+      {
+        number: 51,
+        title: { ko: "변태 사중주", en: "Pervert Quartet" },
+        location: { ko: "카무로초 — 야가미 탐정 사무소의 의뢰", en: "Kamurocho — Request at the Yagami Detective Agency" },
+        body: { ko: "폭주족 유스 드라마를 진행 + 「내가 인형옷을 입는 이유」 클리어 + DLC 「탐정 라이프 충실 팩」 수령", en: "Progress the biker gang youth drama, clear \"Why I Wear the Mascot Suit,\" and receive the DLC \"Detective Life Essentials Pack\"" },
+        reward: { ko: "멀티 스패츠 ×3", en: "Multi Spats ×3" },
+      },
+      {
+        number: 52,
+        title: { ko: "달이 바뀌면 마음도 바뀐다 ~제1편~", en: "As the Months Change, So Do Feelings — Part 1" },
+        location: { ko: "이세자키이진초 — 킷사 포켓", en: "Isezaki Ijincho — Cafe Pocket" },
+        body: { ko: "사오토메 츠키노와의 친밀도를 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Tsukino Saotome (Girlfriend Event)" },
+      },
+      {
+        number: 53,
+        title: { ko: "달이 바뀌면 마음도 바뀐다 ~제2편~", en: "As the Months Change, So Do Feelings — Part 2" },
+        location: { ko: "이세자키이진초 — 킷사 포켓", en: "Isezaki Ijincho — Cafe Pocket" },
+        body: { ko: "사오토메 츠키노와의 친밀도를 2로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Tsukino Saotome to 2 (Girlfriend Event)" },
+      },
+      {
+        number: 54,
+        title: { ko: "달이 바뀌면 마음도 바뀐다 ~제3편~", en: "As the Months Change, So Do Feelings — Part 3" },
+        location: { ko: "이세자키이진초 — 킷사 포켓", en: "Isezaki Ijincho — Cafe Pocket" },
+        body: { ko: "사오토메 츠키노와의 친밀도를 3으로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Tsukino Saotome to 3 (Girlfriend Event)" },
+      },
+      ],
+    },
+    {
+      slug: "school-stories",
+      title: { ko: "청춘 드라마 — 10개 동아리/커뮤니티", en: "School Stories — 10 Clubs / Communities" },
+      summary: {
+        ko: "세이료 고교에 잠입해 4가지 지도력(어필력·팀워크·집중력·배짱)을 키우며 10개 동아리/커뮤니티를 모두 클리어합니다. 한 동아리만 파지 말고 균형 있게 진행해야 새 동아리가 해금됩니다.",
+        en: "Infiltrate Seiryo High and clear all 10 clubs/communities while raising the four 지도력 stats (Appeal, Teamwork, Focus, Guts). Balance progress — new clubs unlock based on combined stat thresholds.",
+      },
+      tips: [
+        { ko: "전 클리어 보상으로 다람쥐 그림 위치를 알려주는 「페인트 파인더」 액세서리를 입수합니다. 페인트 서치와 같이 진행하면 효율적입니다.", en: "Full clear rewards the Paint Finder accessory that pings nearby squirrel paintings — pair with Paint Search." },
+        { ko: "전 동아리 클리어로 사이드 케이스「악덕 탐정·야가미 다카유키?」가 해금됩니다.", en: "Clearing every club unlocks the side case 'Corrupt Detective: Takayuki Yagami?'" },
+        { ko: "DLC '청춘 드라마 충실 팩'은 댄스 의상 SCHOOL + 안무 SPECIAL, 로봇 MB5000, 폭주족 코스 어반·MAXINATOR, 복싱 추가 스파링 + 켄이 스타일을 포함합니다.", en: "The DLC 'School Stories Expansion' adds the SCHOOL dance outfit + SPECIAL choreography, the MB5000 robot, an Urban course + MAXINATOR bike, extra boxing sparring, plus the Ken-i style." },
+      ],
+      source: {
+        label: "gamewith.jp — Lost Judgment 청춘 드라마",
+        url: "https://gamewith.jp/lostjudgment/article/show/293342",
+      },
+      items: [
+      {
+        number: 1,
+        title: { ko: "미스터리 연구회", en: "Mystery Research Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후 메인 스토리에서 자동 해금. 진상 규명 편은 다른 동아리 전부 클리어 후 진행.", en: "Auto-unlocked in the main story from Chapter 2. The truth chapter only opens once all other clubs are cleared." },
+        reward: { ko: "지도력: -", en: "Stat: -" },
+      },
+      {
+        number: 2,
+        title: { ko: "댄스부", en: "Dance Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후 메인 스토리 진행 중 자동 해금.", en: "Auto-unlocked while progressing through the main story from Chapter 2." },
+        reward: { ko: "지도력: 팀워크, 어필력", en: "Stat: Teamwork, Appeal" },
+      },
+      {
+        number: 3,
+        title: { ko: "로봇부", en: "Robotics Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후, 팀워크 Lv2를 달성하고 댄스부 '이진초 댄스 대회' 결승을 마치면 해금.", en: "From Chapter 2, unlocked after reaching Teamwork Lv2 and clearing the Dance Club's Ijincho Dance Tournament finals." },
+        reward: { ko: "지도력: 팀워크, 집중력", en: "Stat: Teamwork, Focus" },
+      },
+      {
+        number: 4,
+        title: { ko: "e스포츠부", en: "Esports Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후, 어필력 Lv2를 달성하고 댄스부 '이진초 댄스 대회' 결승을 마치면 해금.", en: "From Chapter 2, unlocked after reaching Appeal Lv2 and clearing the Dance Club's Ijincho Dance Tournament finals." },
+        reward: { ko: "지도력: 집중력", en: "Stat: Focus" },
+      },
+      {
+        number: 5,
+        title: { ko: "스케이트보드 그룹", en: "Skateboarding Group" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후, 팀워크 Lv3을 달성하고 댄스부 '이진초 댄스 대회' 결승을 마치면 해금.", en: "From Chapter 2, unlocked after reaching Teamwork Lv3 and clearing the Dance Club's Ijincho Dance Tournament finals." },
+        reward: { ko: "지도력: 어필력", en: "Stat: Appeal" },
+      },
+      {
+        number: 6,
+        title: { ko: "복싱부", en: "Boxing Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후 집중력 Lv2를 달성하면 해금.", en: "From Chapter 2, unlocked after reaching Focus Lv2." },
+        reward: { ko: "지도력: 배짱, 집중력", en: "Stat: Guts, Focus" },
+      },
+      {
+        number: 7,
+        title: { ko: "사진부", en: "Photography Club" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후, 집중력 Lv4를 달성하고 로봇부 토너먼트 1회전을 클리어하면 해금.", en: "From Chapter 2, unlocked after reaching Focus Lv4 and clearing Round 1 of the Robotics Club tournament." },
+        reward: { ko: "지도력: 집중력", en: "Stat: Focus" },
+      },
+      {
+        number: 8,
+        title: { ko: "폭주족", en: "Biker Gang" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "2장 이후(야간에 진행 필요), 배짱 Lv2를 달성하면 해금.", en: "From Chapter 2 (must be done at night), unlocked after reaching Guts Lv2." },
+        reward: { ko: "지도력: 어필력, 배짱", en: "Stat: Appeal, Guts" },
+      },
+      {
+        number: 9,
+        title: { ko: "카지노", en: "Casino" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "3장 이후, 집중력 Lv3 이상을 달성하고 로봇부 토너먼트 1회전을 클리어하면 해금.", en: "From Chapter 3, unlocked after reaching Focus Lv3 or higher and clearing Round 1 of the Robotics Club tournament." },
+        reward: { ko: "지도력: 배짱", en: "Stat: Guts" },
+      },
+      {
+        number: 10,
+        title: { ko: "걸즈 바", en: "Girls Bar" },
+        location: { ko: "세이료 고교", en: "Seiryo High School" },
+        body: { ko: "4장 이후, 전파 탐지기 튜토리얼을 마치고 어필력 Lv4를 달성한 뒤 댄스부 '이진초 댄스 대회' 결승을 클리어하면 해금.", en: "From Chapter 4, unlocked after the signal detector tutorial, reaching Appeal Lv4, and clearing the Dance Club's Ijincho Dance Tournament finals." },
+        reward: { ko: "지도력: 어필력", en: "Stat: Appeal" },
+      },
+      ],
+    },
+    {
+      slug: "towngo",
+      title: { ko: "TownGo 미션·상점 컴플리트", en: "TownGo — Missions and Shops" },
+      summary: {
+        ko: "스케이트보드 TownGo 메뉴에서 컴플리트 미션과 상점 미션을 전부 클리어하세요. 챕터 진행에 따라 추가 미션이 풀리니 엔딩 직전에 마지막 정리를 권장합니다.",
+        en: "Complete every TownGo Completion Mission and Shop Mission via the skateboard menu.",
+      },
+    },
+    {
+      slug: "drone-races",
+      title: { ko: "드론 레이스 코스 일람", en: "Drone Races" },
+      summary: {
+        ko: "다이도지 본거지에서 드론 레이스를 진행해 모든 코스에 1위로 입상하면 컴플리트 리스트가 채워집니다.",
+        en: "Win every drone race available at the Daidoji Hideout.",
+      },
+    },
+    {
+      slug: "mole-park",
+      title: { ko: "두더지 잡기 챔피언", en: "Whac-A-Mole Champion" },
+      summary: {
+        ko: "두더지 잡기에서 최고 난이도까지 클리어하면 됩니다. 패턴이 정해져 있으므로 연습 모드에서 손에 익혀두세요.",
+        en: "Beat Whac-A-Mole on the highest difficulty.",
+      },
+    },
+  ],
+};

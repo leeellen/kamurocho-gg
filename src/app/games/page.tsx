@@ -22,21 +22,30 @@ export const metadata: Metadata = {
   },
 };
 
-const ARC_LABEL: Record<string, { ko: string; en: string }> = {
-  kiryu: { ko: "키류 사가", en: "Kiryu saga" },
-  ichiban: { ko: "이치반 사가", en: "Ichiban saga" },
-  judgment: { ko: "저지먼트", en: "Judgment line" },
-  spinoff: { ko: "외전 · 스핀오프", en: "Spin-offs" },
+const GROUP_LABEL: Record<string, { ko: string; en: string }> = {
+  yakuza: { ko: "용과 같이 시리즈", en: "Yakuza / Like a Dragon series" },
+  judgment: { ko: "저지먼트 시리즈", en: "Judgment series" },
+  ishin: { ko: "용과 같이 유신!", en: "Like a Dragon: Ishin!" },
 };
+
+function groupOf(game: SeriesGameCard): "yakuza" | "judgment" | "ishin" {
+  if (game.slug === "like-a-dragon-ishin") return "ishin";
+  if (game.arc === "judgment") return "judgment";
+  return "yakuza";
+}
 
 export default async function GamesPage() {
   const locale = await getLocale();
   const games = await getSeriesGames(locale);
-  const grouped = games.reduce<Record<string, SeriesGameCard[]>>((acc, game) => {
-    (acc[game.arc] ||= []).push(game);
-    return acc;
-  }, {});
-  const arcOrder = ["kiryu", "ichiban", "judgment", "spinoff"];
+  const grouped: Record<string, SeriesGameCard[]> = {};
+  for (const game of games) {
+    const g = groupOf(game);
+    (grouped[g] ||= []).push(game);
+  }
+  for (const list of Object.values(grouped)) {
+    list.sort((a, b) => a.year - b.year);
+  }
+  const groupOrder: Array<keyof typeof GROUP_LABEL> = ["yakuza", "judgment", "ishin"];
 
   return (
     <SiteShell locale={locale} section="games">
@@ -49,14 +58,14 @@ export default async function GamesPage() {
             : `${games.length} RGG Studio titles backed by real Steam Community guides — scale, missables, and rare picks shown up front.`}
         />
 
-        {arcOrder.map((arc) => {
-          const list = grouped[arc];
+        {groupOrder.map((group) => {
+          const list = grouped[group];
           if (!list?.length) return null;
           return (
-            <section key={arc} className="mt-14">
+            <section key={group} className="mt-14">
               <div className="mb-6 flex items-baseline gap-3">
                 <h2 className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white">
-                  {ARC_LABEL[arc]?.[locale] ?? arc}
+                  {GROUP_LABEL[group][locale] ?? group}
                 </h2>
                 <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
                   {list.length} {locale === "ko" ? "작품" : "titles"}

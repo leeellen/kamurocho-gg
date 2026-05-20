@@ -6,7 +6,10 @@ import { getLocale } from "@/lib/i18n";
 import { getGamePageData } from "@/lib/kamurocho-data";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
+import { getCollectibles } from "@/lib/collectibles";
+
 import { AchievementsList } from "./_components/achievements-list";
+import { CollectiblesSection } from "./_components/collectibles-section";
 import { GameHero } from "./_components/game-hero";
 import { MissablesSidebar, type ChapterBucket } from "./_components/missables-sidebar";
 
@@ -135,13 +138,26 @@ export default async function GamePage({
             />
           )}
 
-          <AchievementsList
-            locale={locale}
-            gameSlug={data.game.slug}
-            achievements={data.achievements}
-            userAchMap={userAchMap}
-            hasUser={Boolean(user)}
-          />
+          <div>
+            <AchievementsList
+              locale={locale}
+              gameSlug={data.game.slug}
+              achievements={data.achievements}
+              userAchMap={userAchMap}
+              hasUser={Boolean(user)}
+            />
+
+            {(() => {
+              const collectibles = getCollectibles(data.game.appId);
+              if (!collectibles || collectibles.categories.length === 0) return null;
+              return (
+                <CollectiblesSection
+                  locale={locale}
+                  categories={collectibles.categories}
+                />
+              );
+            })()}
+          </div>
         </div>
       </div>
     </SiteShell>
