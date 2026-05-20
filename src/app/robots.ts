@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://kamurocho.gg/sitemap.xml",
-    host: "https://kamurocho.gg",
+    sitemap: "https://kamurocho-gg.vercel.app/sitemap.xml",
+    host: "https://kamurocho-gg.vercel.app",
   };
 }

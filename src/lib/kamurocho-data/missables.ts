@@ -30,7 +30,9 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     return false;
   return [
     /missable achievement alert/i,
-    /놓치기 쉬운 업적입니다/u,
+    /놓치기 쉬운 업적/u,
+    /놓치기 쉬움/u,
+    /미스 가능 업적/u,
     /\bonly during chapter\b/i,
     /\bbefore chapter end\b/i,
     /\bchapter-limited\b/i,
@@ -43,6 +45,14 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     /사라집니다/u,
     /다시 얻을 수 없습니다/u,
     /그 회차에서는 다시 .*없/u,
+    /같은 회차에서[는 ]*.*없/u,
+    /오답이면 놓치/u,
+    /오답이면 회수 불가/u,
+    /한 회차에 한 번만/u,
+    /한 번만 나오는/u,
+    /놓치면 .*회수 (?:불가|할 수 없)/u,
+    /수동 세이브를 만들어 두면 재시도/u,
+    /미리 세이브를?\s*분리해/u,
   ].some((pattern) => pattern.test(text));
 }
 

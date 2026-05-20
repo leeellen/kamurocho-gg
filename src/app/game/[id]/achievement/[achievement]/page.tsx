@@ -28,7 +28,7 @@ export async function generateMetadata({
     ? `${ach.name} — ${data.game.name} 업적 공략`
     : `${ach.name} — ${data.game.name} achievement guide`;
   const description = ach.guideSummary || ach.description || (locale === "ko" ? `${data.game.name}의 ${ach.name} 업적 공략.` : `${data.game.name} ${ach.name} achievement guide.`);
-  const url = `https://kamurocho.gg/game/${data.game.slug}/achievement/${ach.slug}`;
+  const url = `https://kamurocho-gg.vercel.app/game/${data.game.slug}/achievement/${ach.slug}`;
   return {
     title,
     description,

@@ -8,7 +8,7 @@ import "./globals.css";
 const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-const SITE_URL = "https://kamurocho.gg";
+const SITE_URL = "https://kamurocho-gg.vercel.app";
 const SITE_NAME = "kamurocho.gg";
 const KEYWORDS = [
   // English
@@ -41,63 +41,74 @@ const KEYWORDS = [
   "RGG 스튜디오",
 ];
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: "kamurocho.gg — 용과 같이 · 저지먼트 스팀 공략",
-    template: "%s | kamurocho.gg",
-  },
-  description:
-    "RGG Studio 시리즈(용과 같이·이치반·저지먼트) 스팀 업적 공략을 한곳에 모았습니다. 게임별 진행도, 챕터별 놓치기 쉬운 항목, 희귀 업적, 단계별 실행법까지. 비공식 팬 가이드.",
-  applicationName: SITE_NAME,
-  keywords: KEYWORDS,
-  authors: [{ name: "kamurocho.gg" }],
-  creator: "kamurocho.gg",
-  publisher: "kamurocho.gg",
-  category: "games",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  alternates: {
-    canonical: "/",
-    languages: {
-      ko: "/",
-      en: "/",
-      "x-default": "/",
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  const defaultTitle = isKo
+    ? "kamurocho.gg — 용과 같이 · 저지먼트 스팀 공략"
+    : "kamurocho.gg — RGG Steam Guides";
+  const description = isKo
+    ? "RGG Studio 시리즈(용과 같이·이치반·저지먼트) 스팀 업적 공략을 한곳에 모았습니다. 게임별 진행도, 챕터별 놓치기 쉬운 항목, 희귀 업적, 단계별 실행법까지. 비공식 팬 가이드."
+    : "Achievement guides, missables, and play order for the RGG Studio Steam catalog — Yakuza, Like a Dragon, and Judgment. Unofficial fan project.";
+  const ogDescription = isKo
+    ? "RGG Studio 시리즈 스팀 업적 공략·놓치기 쉬운 항목·희귀 업적을 한곳에. 비공식 팬 가이드."
+    : "Yakuza · Like a Dragon · Judgment Steam achievement guides, missables, and play order.";
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: defaultTitle,
+      template: "%s | kamurocho.gg",
     },
-  },
-  openGraph: {
-    type: "website",
-    url: SITE_URL,
-    siteName: SITE_NAME,
-    title: "kamurocho.gg — 용과 같이 · 저지먼트 스팀 공략",
-    description:
-      "RGG Studio 시리즈 스팀 업적 공략·놓치기 쉬운 항목·희귀 업적을 한곳에. 비공식 팬 가이드.",
-    locale: "ko_KR",
-    alternateLocale: ["en_US"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "kamurocho.gg — RGG Steam Guides",
-    description:
-      "Yakuza · Like a Dragon · Judgment Steam achievement guides, missables, and play order.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    description,
+    applicationName: SITE_NAME,
+    keywords: KEYWORDS,
+    authors: [{ name: "kamurocho.gg" }],
+    creator: "kamurocho.gg",
+    publisher: "kamurocho.gg",
+    category: "games",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    alternates: {
+      canonical: "/",
+      languages: {
+        ko: "/",
+        en: "/",
+        "x-default": "/",
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: SITE_URL,
+      siteName: SITE_NAME,
+      title: defaultTitle,
+      description: ogDescription,
+      locale: isKo ? "ko_KR" : "en_US",
+      alternateLocale: [isKo ? "en_US" : "ko_KR"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: defaultTitle,
+      description: ogDescription,
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
-  },
-  icons: { icon: "/favicon.ico" },
-  verification: GSC_VERIFICATION ? { google: GSC_VERIFICATION } : undefined,
-};
+    icons: { icon: "/favicon.ico" },
+    verification: GSC_VERIFICATION ? { google: GSC_VERIFICATION } : undefined,
+  };
+}
 
 export const viewport: Viewport = {
   themeColor: "#07070a",

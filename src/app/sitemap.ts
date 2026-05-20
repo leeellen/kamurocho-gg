@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 import { CURATED_GAMES } from "@/lib/kamurocho-content";
 import { getGamePageData } from "@/lib/kamurocho-data";
 
-const SITE_URL = "https://kamurocho.gg";
+const SITE_URL = "https://kamurocho-gg.vercel.app";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();

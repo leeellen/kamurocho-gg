@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "작품 목록 — RGG 스튜디오 스팀 공략",
     description: "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록.",
-    url: "https://kamurocho.gg/games",
+    url: "https://kamurocho-gg.vercel.app/games",
   },
 };
 

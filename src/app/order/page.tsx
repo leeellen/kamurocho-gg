@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "플레이 순서 — 용과 같이 시리즈 추천 순서",
     description: "처음 시작하는 분을 위한 추천 순서와 스토리 시점 순서.",
-    url: "https://kamurocho.gg/order",
+    url: "https://kamurocho-gg.vercel.app/order",
   },
 };
 import { FiArrowRight, FiClock, FiTarget } from "react-icons/fi";

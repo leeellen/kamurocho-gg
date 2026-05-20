@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "용과 같이 시리즈 놓침 주의 인덱스",
     description: "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음.",
-    url: "https://kamurocho.gg/missables",
+    url: "https://kamurocho-gg.vercel.app/missables",
   },
 };
 import { FiArrowRight, FiTarget } from "react-icons/fi";

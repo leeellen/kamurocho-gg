@@ -25,7 +25,7 @@ export async function generateMetadata({
     ? `${data.game.name} 스팀 업적 공략`
     : `${data.game.name} Steam achievement guide`;
   const description = data.game.summary;
-  const url = `https://kamurocho.gg/game/${data.game.slug}`;
+  const url = `https://kamurocho-gg.vercel.app/game/${data.game.slug}`;
   return {
     title,
     description,
