@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 
 import { getLocale } from "@/lib/i18n";
 
 import "./globals.css";
+
+const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const SITE_URL = "https://kamurocho.gg";
 const SITE_NAME = "kamurocho.gg";
@@ -92,6 +96,7 @@ export const metadata: Metadata = {
     },
   },
   icons: { icon: "/favicon.ico" },
+  verification: GSC_VERIFICATION ? { google: GSC_VERIFICATION } : undefined,
 };
 
 export const viewport: Viewport = {
@@ -137,7 +142,23 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {children}
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+            </Script>
+          </>
+        ) : null}
+      </body>
     </html>
   );
 }

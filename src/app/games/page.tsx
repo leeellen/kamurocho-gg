@@ -26,6 +26,7 @@ const ARC_LABEL: Record<string, { ko: string; en: string }> = {
   kiryu: { ko: "키류 사가", en: "Kiryu saga" },
   ichiban: { ko: "이치반 사가", en: "Ichiban saga" },
   judgment: { ko: "저지먼트", en: "Judgment line" },
+  spinoff: { ko: "외전 · 스핀오프", en: "Spin-offs" },
 };
 
 export default async function GamesPage() {
@@ -35,7 +36,7 @@ export default async function GamesPage() {
     (acc[game.arc] ||= []).push(game);
     return acc;
   }, {});
-  const arcOrder = ["kiryu", "ichiban", "judgment"];
+  const arcOrder = ["kiryu", "ichiban", "judgment", "spinoff"];
 
   return (
     <SiteShell locale={locale} section="games">
