@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "내 라이브러리 — 미완료 업적 우선 공략",
-  description: "스팀 계정 연동으로 보유 작품과 미완료 업적을 한 화면에서 확인하고 희귀도 낮은 업적부터 처리하세요.",
-  alternates: { canonical: "/me" },
-  robots: { index: false, follow: true },
-};
 import { FiArrowRight, FiCheck, FiClock, FiExternalLink, FiTarget } from "react-icons/fi";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  return {
+    title: isKo
+      ? "내 라이브러리 — 미완료 업적 우선 공략"
+      : "My library — incomplete achievements first",
+    description: isKo
+      ? "스팀 계정 연동으로 보유 작품과 미완료 업적을 한 화면에서 확인하고 희귀도 낮은 업적부터 처리하세요."
+      : "Link Steam to see owned RGG titles, unfinished achievements, and a rarity-first cleanup route.",
+    alternates: { canonical: "/me" },
+    robots: { index: false, follow: true },
+  };
+}
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";

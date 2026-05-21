@@ -295,7 +295,7 @@ export default async function AchievementPage({
               rel="noreferrer noopener"
               className="mt-3 inline-flex cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
-              {sourceLabel(ach.guideSource, locale)}
+              {ach.guideSourceLabel ?? sourceLabel(ach.guideSource, locale)}
               <FiExternalLink size={12} aria-hidden="true" />
             </a>
           ) : (

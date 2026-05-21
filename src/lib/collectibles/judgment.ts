@@ -7,7 +7,7 @@ export const judgment: CollectiblesData = {
       slug: "friend-events",
       title: { ko: "친구 이벤트 — 50명 전원", en: "Friend Events — All 50 NPCs" },
       summary: {
-        ko: "카무로쵸의 친구 후보 NPC 50명과 친밀도를 최대치까지 올려 친구 이벤트를 모두 시청합니다. 친구를 만들면 평판이 올라 사이드 케이스가 추가로 풀리고, 전투 중 회복·지원도 받을 수 있습니다.",
+        ko: "카무로초의 친구 후보 NPC 50명과 친밀도를 최대치까지 올려 친구 이벤트를 모두 시청합니다. 친구를 만들면 평판이 올라 사이드 케이스가 추가로 풀리고, 전투 중 회복·지원도 받을 수 있습니다.",
         en: "Befriend all 50 NPCs across Kamurocho. Each new friend raises your reputation, unlocking extra side cases and giving you in-battle support and heals.",
       },
       tips: [
@@ -22,31 +22,31 @@ export const judgment: CollectiblesData = {
       {
         number: 1,
         title: { ko: "츠쿠모 세이이치", en: "Seiichi Tsukumo" },
-        location: { ko: "넷카페 mantai", en: "Internet Cafe Mantai" },
+        location: { ko: "넷카페 만타이", en: "Internet Cafe Mantai" },
         body: { ko: "스토리 진행 중 반드시 친구가 됨", en: "Becomes a friend automatically during the main story" },
       },
       {
         number: 2,
         title: { ko: "노노무라 소타", en: "Sota Nonomura" },
-        location: { ko: "POPPO 시치후쿠 거리 동쪽점", en: "POPPO Shichifuku Street East" },
+        location: { ko: "포포 시치후쿠 거리 동쪽점", en: "POPPO Shichifuku Street East" },
         body: { ko: "말을 걸면 이벤트 발생", en: "Talk to him to trigger the event" },
       },
       {
         number: 3,
         title: { ko: "아사무라 세이시로", en: "Seishiro Asamura" },
-        location: { ko: "POPPO 시치후쿠 거리 서쪽점", en: "POPPO Shichifuku Street West" },
+        location: { ko: "포포 시치후쿠 거리 서쪽점", en: "POPPO Shichifuku Street West" },
         body: { ko: "말을 걸면 이벤트 발생", en: "Talk to him to trigger the event" },
       },
       {
         number: 4,
         title: { ko: "이이노 아리스", en: "Alice Iino" },
-        location: { ko: "POPPO 쇼와 거리점", en: "POPPO Showa Street" },
+        location: { ko: "포포 쇼와 거리점", en: "POPPO Showa Street" },
         body: { ko: "말을 걸면 이벤트 발생", en: "Talk to her to trigger the event" },
       },
       {
         number: 5,
         title: { ko: "드웨인 크루즈", en: "Dwayne Cruz" },
-        location: { ko: "POPPO 천하일 거리점", en: "POPPO Tenkaichi Street" },
+        location: { ko: "포포 천하일 거리점", en: "POPPO Tenkaichi Street" },
         body: { ko: "말을 걸면 이벤트 발생", en: "Talk to him to trigger the event" },
       },
       {
@@ -106,7 +106,7 @@ export const judgment: CollectiblesData = {
       {
         number: 15,
         title: { ko: "사쿠마 마미", en: "Mami Sakuma" },
-        location: { ko: "M SIDE CAFE", en: "M Side Cafe" },
+        location: { ko: "M 사이드 카페", en: "M Side Cafe" },
         body: { ko: "케이크류 구입", en: "Purchase a cake" },
       },
       {
@@ -124,7 +124,7 @@ export const judgment: CollectiblesData = {
       {
         number: 18,
         title: { ko: "사나다 카에데", en: "Kaede Sanada" },
-        location: { ko: "QUADRA GARDEN", en: "Quadra Garden" },
+        location: { ko: "쿼드라 가든", en: "Quadra Garden" },
         body: { ko: "호텔 안으로 들어가기", en: "Enter the hotel" },
       },
       {
@@ -549,21 +549,21 @@ export const judgment: CollectiblesData = {
       },
       {
         number: 36,
-        title: { ko: "카무로쵸의 폭탄마", en: "The Kamurocho Bomber" },
+        title: { ko: "카무로초의 폭탄마", en: "The Kamurocho Bomber" },
         location: { ko: "거리 트리거", en: "Street trigger" },
         body: { ko: "2장 도중까지 클리어 / 맵 하단 뒷골목 (중앙거리와 핑크거리 사이)에서 발생", en: "Clear partway into Chapter 2; triggers in the back alley at the bottom of the map (between Nakamichi St. and Pink St.)" },
       },
       {
         number: 37,
-        title: { ko: "속・카무로쵸의 폭탄마", en: "The Kamurocho Bomber II" },
+        title: { ko: "속・카무로초의 폭탄마", en: "The Kamurocho Bomber II" },
         location: { ko: "거리 트리거", en: "Street trigger" },
-        body: { ko: "4장 이후 / ‘카무로쵸의 폭탄마’ 클리어", en: "Chapter 4 onward; clear 'The Kamurocho Bomber'" },
+        body: { ko: "4장 이후 / ‘카무로초의 폭탄마’ 클리어", en: "Chapter 4 onward; clear 'The Kamurocho Bomber'" },
       },
       {
         number: 38,
-        title: { ko: "속속・카무로쵸의 폭탄마", en: "The Kamurocho Bomber III" },
+        title: { ko: "속속・카무로초의 폭탄마", en: "The Kamurocho Bomber III" },
         location: { ko: "거리 트리거", en: "Street trigger" },
-        body: { ko: "6장 이후 / ‘속・카무로쵸의 폭탄마’ 클리어", en: "Chapter 6 onward; clear 'The Kamurocho Bomber II'" },
+        body: { ko: "6장 이후 / ‘속・카무로초의 폭탄마’ 클리어", en: "Chapter 6 onward; clear 'The Kamurocho Bomber II'" },
       },
       {
         number: 39,
@@ -659,7 +659,7 @@ export const judgment: CollectiblesData = {
       slug: "photo-rumors",
       title: { ko: "포토 의뢰 50건", en: "Photo Rumors (50)" },
       summary: {
-        ko: "카무로쵸 곳곳에서 발생하는 잠복·사진 의뢰를 50건 이상 완수합니다. 야가미 탐정 사무소 게시판에서 신규 의뢰를 확인하세요.",
+        ko: "카무로초 곳곳에서 발생하는 잠복·사진 의뢰를 50건 이상 완수합니다. 야가미 탐정 사무소 게시판에서 신규 의뢰를 확인하세요.",
         en: "Clear 50+ stakeout/photo rumor cases. New ones post on the agency board as the story advances.",
       },
     },

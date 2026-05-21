@@ -6,6 +6,7 @@ import {
   localizeGuideText,
   parseAchievementSidecar,
 } from "@/lib/achievement-text";
+import { getCuratedGuide, pickCuratedList, pickCuratedString } from "@/lib/guides/curated";
 import { structureGuide } from "@/lib/guides/structured";
 import { type Locale } from "@/lib/i18n";
 import { CURATED_GAMES, MISSABLES, PLAY_ORDER, getCuratedGameBySlug } from "@/lib/kamurocho-content";
@@ -19,6 +20,7 @@ import {
 } from "./missables";
 import {
   coercePercent,
+  normalizeComparableText,
   normalizeConfidence,
   parseJsonish,
   pickLocaleGuide,
@@ -59,17 +61,47 @@ function buildSeriesGameCard({
   const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as
     | { nameKo?: string | null; headerUrl?: string | null; capsuleUrl?: string | null }
     | null;
+  // Curated missable titles contain the trophy name plus a description, so
+  // instead of trying to extract just the name with bracket/quote regex
+  // (which fails on apostrophes like "They Won't Mind"), we keep the full
+  // curated title text and check whether each DB achievement name appears
+  // inside it. Use the shared comparable-text normalizer so brackets and
+  // em-dashes don't break substring matches — must stay in lock-step with
+  // buildDisplayMissables() in ./missables.ts so both surfaces agree.
+  const curatedTitleHay: string[] = [];
+  for (const chapter of MISSABLES[curated.appId] ?? []) {
+    for (const item of chapter.items) {
+      if (item.kind !== "missable") continue;
+      curatedTitleHay.push(normalizeComparableText(item.title.ko));
+      curatedTitleHay.push(normalizeComparableText(item.title.en));
+    }
+  }
+  const isNameCovered = (name: string) => {
+    const needle = normalizeComparableText(name);
+    if (needle.length < 3) return false;
+    return curatedTitleHay.some((hay) => hay.includes(needle));
+  };
   const derivedAchievements = rows.map((achievement) => {
     const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
+    const sidecar = parseAchievementSidecar(achievement.category ?? null);
+    const localizedName = localizeAchievementName({
+      locale,
+      englishName: achievement.display_name,
+      apiName: achievement.api_name,
+      sidecar,
+    });
     return {
       missable: inferMissable(achievement, selectedGuide?.content ?? ""),
+      name: localizedName,
     };
   });
   const curatedChecks = (MISSABLES[curated.appId] ?? []).reduce(
     (sum, chapter) => sum + chapter.items.filter((item) => item.kind === "missable").length,
     0,
   );
-  const derivedChecks = derivedAchievements.filter((achievement) => achievement.missable).length;
+  const derivedChecks = derivedAchievements.filter(
+    (achievement) => achievement.missable && !isNameCovered(achievement.name),
+  ).length;
   const rareCount = rows.filter(
     (achievement) =>
       coercePercent(achievement.global_percent) > 0 &&
@@ -181,7 +213,7 @@ export const getGamePageData = cache(
           sidecar: achievementSidecar,
         });
         const rarity = coercePercent(achievement.global_percent);
-        const guideSummary = sanitizeGuideSummary(
+        const dbSummary = sanitizeGuideSummary(
           localizeGuideText({
             locale,
             text: structured.summary,
@@ -191,7 +223,7 @@ export const getGamePageData = cache(
           description,
           locale,
         );
-        const guideSteps = sanitizeGuideLines(
+        const dbSteps = sanitizeGuideLines(
           structured.steps.map((line) =>
             localizeGuideText({ locale, text: line, replacements: guideTextReplacements }),
           ),
@@ -199,7 +231,7 @@ export const getGamePageData = cache(
           description,
           locale,
         ).slice(0, 5);
-        const guideTips = sanitizeGuideLines(
+        const dbTips = sanitizeGuideLines(
           structured.tips.map((line) =>
             localizeGuideText({ locale, text: line, replacements: guideTextReplacements }),
           ),
@@ -212,6 +244,17 @@ export const getGamePageData = cache(
           text: structured.statsLine,
           replacements: guideTextReplacements,
         });
+
+        // Curated overrides take precedence over the auto-generated DB
+        // summary/steps/tips. Curated entries can supply ALL of the data,
+        // some of it, or none — anything missing falls back to the DB
+        // version so partial editing is safe.
+        const curatedGuide = getCuratedGuide(curated.appId, achievement.api_name);
+        const guideSummary = pickCuratedString(curatedGuide?.summary, locale) ?? dbSummary;
+        const guideSteps = pickCuratedList(curatedGuide?.steps, locale) ?? dbSteps;
+        const guideTips = pickCuratedList(curatedGuide?.tips, locale) ?? dbTips;
+        const guideSource = curatedGuide?.sourceUrl ?? selectedGuide?.source_url ?? null;
+        const guideSourceLabel = pickCuratedString(curatedGuide?.sourceLabel, locale) ?? null;
 
         return {
           id: achievement.id,
@@ -228,7 +271,8 @@ export const getGamePageData = cache(
           guideSteps,
           guideTips,
           guideStats: sanitizeGuideSummary(guideStats, displayName, description, locale),
-          guideSource: selectedGuide?.source_url ?? null,
+          guideSource,
+          guideSourceLabel,
           confidence: normalizeConfidence(selectedGuide?.confidence),
           missable: inferMissable(achievement, selectedGuide?.content ?? ""),
           chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
@@ -326,7 +370,13 @@ export const getMissablesIndex = cache(async (locale: Locale) => {
 
 export const searchKamurocho = cache(async (query: string, locale: Locale) => {
   const trimmed = query.trim().toLowerCase();
-  const games = await getSeriesGames(locale);
+  // Fetch both locales' rows so a Korean user searching "kiryu" can still
+  // hit the English form, and vice versa — the search placeholder advertises
+  // 한국어·영어·로마자 표기 모두 인식 / Korean+English+romaji support.
+  const [games, gamesAlt] = await Promise.all([
+    getSeriesGames(locale),
+    getSeriesGames(locale === "ko" ? "en" : "ko"),
+  ]);
   if (!trimmed) {
     return {
       games,
@@ -334,20 +384,46 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
     };
   }
 
-  const matchedGames = games.filter((game) =>
-    [game.name, game.altName, game.summary, game.lead].join(" ").toLowerCase().includes(trimmed),
-  );
+  const altByAppId = new Map(gamesAlt.map((g) => [g.appId, g]));
+  const matchedGames = games.filter((game) => {
+    const alt = altByAppId.get(game.appId);
+    const hay = [
+      game.name,
+      game.altName,
+      game.summary,
+      game.lead,
+      alt?.name,
+      alt?.altName,
+      alt?.summary,
+      alt?.lead,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return hay.includes(trimmed);
+  });
 
   const achievements: Array<{ game: SeriesGameCard; achievement: GameAchievementCard }> = [];
   for (const game of games) {
-    const page = await getGamePageData(game.slug, locale);
+    const [page, altPage] = await Promise.all([
+      getGamePageData(game.slug, locale),
+      getGamePageData(game.slug, locale === "ko" ? "en" : "ko"),
+    ]);
+    const altById = new Map((altPage?.achievements ?? []).map((a) => [a.id, a]));
     for (const achievement of page?.achievements ?? []) {
-      if (
-        [achievement.name, achievement.description, achievement.guideSummary ?? ""]
-          .join(" ")
-          .toLowerCase()
-          .includes(trimmed)
-      ) {
+      const alt = altById.get(achievement.id);
+      const hay = [
+        achievement.name,
+        achievement.description,
+        achievement.guideSummary ?? "",
+        alt?.name,
+        alt?.description,
+        alt?.guideSummary ?? "",
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      if (hay.includes(trimmed)) {
         achievements.push({ game, achievement });
       }
     }

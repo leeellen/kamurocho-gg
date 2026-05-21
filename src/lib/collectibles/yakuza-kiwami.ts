@@ -234,7 +234,7 @@ export const yakuzaKiwami: CollectiblesData = {
       },
       {
         number: 60,
-        title: { ko: "이다텐 모터 Mark II", en: "Idaten Motor Mark II" },
+        title: { ko: "이다텐 모터 마크 II", en: "Idaten Motor Mark II" },
         location: { ko: "타쿠마군 이벤트 승리", en: "Win Takuma-kun Event" },
         reward: { ko: "코스트 6", en: "Cost 6" },
       },

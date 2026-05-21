@@ -22,7 +22,11 @@ export default async function HomePage() {
 
   const totalAchievements = games.reduce((sum, game) => sum + game.achievements, 0);
   const totalGuidedAchievements = games.reduce((sum, game) => sum + game.guideCoverage, 0);
-  const totalMissables = games.reduce((sum, game) => sum + game.missableCount, 0);
+  const totalMissables = missables.reduce(
+    (sum, entry) =>
+      sum + entry.chapters.reduce((s, chapter) => s + chapter.items.length, 0),
+    0,
+  );
   const coveragePct = totalAchievements
     ? Math.round((totalGuidedAchievements / totalAchievements) * 100)
     : 0;
@@ -63,7 +67,7 @@ export default async function HomePage() {
           <div className="flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--accent)]" />
             <Eyebrow locale={locale} tracking="0.2em">
-              {locale === "ko" ? "RGG 스튜디오 스팀 공략" : "RGG Studio · Steam guides"}
+              {locale === "ko" ? "RGG 시리즈 공략" : "RGG Studio · Steam guides"}
             </Eyebrow>
           </div>
 
@@ -204,7 +208,14 @@ export default async function HomePage() {
                   />
                   <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--bg-elevated)] to-transparent" />
                   <div className="absolute left-3 top-3 flex gap-1.5">
-                    <Chip tone="solid" size="xs" className="font-mono">{game.year}</Chip>
+                    <Chip
+                      tone="solid"
+                      size="xs"
+                      className="font-mono"
+                      title={locale === "ko" ? "스토리 시점" : "Story era"}
+                    >
+                      {game.year}
+                    </Chip>
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col p-4">
@@ -215,11 +226,17 @@ export default async function HomePage() {
                     {game.summary}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
-                    <Chip tone="danger" size="xs">
-                      <FiTarget size={10} aria-hidden="true" />
-                      {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
-                    </Chip>
-                    <Chip tone="gold" size="xs">{locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}</Chip>
+                    {game.missableCount > 0 && (
+                      <Chip tone="danger" size="xs">
+                        <FiTarget size={10} aria-hidden="true" />
+                        {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
+                      </Chip>
+                    )}
+                    {game.rareCount > 0 && (
+                      <Chip tone="gold" size="xs">
+                        {locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}
+                      </Chip>
+                    )}
                   </div>
                   <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[14px] text-[var(--text-tertiary)]">
                     <span className="font-mono">{game.estimatedHours}</span>

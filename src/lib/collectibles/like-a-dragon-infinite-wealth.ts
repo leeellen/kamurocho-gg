@@ -7,7 +7,7 @@ export const likeADragonInfiniteWealth: CollectiblesData = {
       slug: "sujimon",
       title: { ko: "야쿠몬 도감 — 「야쿠몬, 좋아하시죠?」 → 「당신이 바로 야쿠몬 박사」", en: "Sujimon Dex — Like 'Em Sujimon → Sujimon Doctor" },
       summary: {
-        ko: "야쿠몬 도감(Sujimon Dex)에 100마리 이상 등록 시 「야쿠몬, 좋아하시죠?」, 200마리 이상 시 「당신이 바로 야쿠몬 박사」 업적 발동. 야쿠몬 배틀 스토리 클리어 시 「야쿠신 챔피언」, 영입 10명 시 「야쿠몬 넌 내 거야」, 1명 LV+신뢰도 MAX 시 「이 녀석이 내 파트너다!」도 같이 풀립니다.",
+        ko: "야쿠몬 도감(수지덱스)에 100마리 이상 등록 시 「야쿠몬, 좋아하시죠?」, 200마리 이상 시 「당신이 바로 야쿠몬 박사」 업적 발동. 야쿠몬 배틀 스토리 클리어 시 「야쿠신 챔피언」, 영입 10명 시 「야쿠몬 넌 내 거야」, 1명 LV+신뢰도 MAX 시 「이 녀석이 내 파트너다!」도 같이 풀립니다.",
         en: "Register 100+ Sujimon for 'Like 'Em Sujimon', 200+ for 'Sujimon Doctor'. Clear the Sujimon Battle Story for 'Yakushin Champion', recruit 10 for 'You're Mine!', and max LV + trust on one for 'My Partner!'.",
       },
     },

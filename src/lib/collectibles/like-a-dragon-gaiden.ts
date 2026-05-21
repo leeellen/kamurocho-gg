@@ -126,7 +126,7 @@ export const yakuzaGaiden: CollectiblesData = {
       },
       {
         number: 6,
-        title: { ko: "JUSTICE (사천왕 3)", en: "JUSTICE (King 3)" },
+        title: { ko: "사천왕 3", en: "JUSTICE (King 3)" },
         location: { ko: "캐슬 콜로세움", en: "Castle Coliseum" },
         body: { ko: "사천왕 중 최난도로 알려진 매치. 헤비 갑옷 + 광역 공격. 가젯 풀파워 필수.", en: "Notoriously the hardest King — heavy armor + AoE attacks. Bring fully upgraded gadgets." },
       },

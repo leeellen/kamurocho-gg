@@ -13,9 +13,9 @@ export const yakuza4: CollectiblesData = {
     },
     {
       slug: "dress-up",
-      title: { ko: "Mr. 드레스업 — 호스티스 메이커 의상 풀 카테고리", en: "Mr. Dress-Up — All Outfit Categories" },
+      title: { ko: "미스터 드레스업 — 호스티스 메이커 의상 풀 카테고리", en: "Mr. Dress-Up — All Outfit Categories" },
       summary: {
-        ko: "「No.1 캬바걸을 만들자」 의상 카테고리를 모두 1개씩 수집해 「Mr. 드레스업」 업적 발동. 호스티스 메이커 신인 토너먼트 우승 진행과 병행하면 효율적입니다.",
+        ko: "「No.1 캬바걸을 만들자」 의상 카테고리를 모두 1개씩 수집해 「미스터 드레스업」 업적 발동. 호스티스 메이커 신인 토너먼트 우승 진행과 병행하면 효율적입니다.",
         en: "Collect at least one outfit from every category in 'Make a #1 Hostess' to unlock 'Mr. Dress-Up'. Run alongside the rookie tournament arc.",
       },
     },
@@ -31,7 +31,7 @@ export const yakuza4: CollectiblesData = {
       slug: "lockers",
       title: { ko: "열쇠 마스터의 길 — 물품 보관함 5군데", en: "Path of the Locker Master — 5 Lockers" },
       summary: {
-        ko: "카무로쵸 곳곳에 흩어진 열쇠를 회수해 물품 보관함 5군데를 열면 「열쇠 마스터의 길」 업적 발동. 5개 이상부터는 추가 보상만 누적되고 업적은 5개 시점에서 풀립니다.",
+        ko: "카무로초 곳곳에 흩어진 열쇠를 회수해 물품 보관함 5군데를 열면 「열쇠 마스터의 길」 업적 발동. 5개 이상부터는 추가 보상만 누적되고 업적은 5개 시점에서 풀립니다.",
         en: "Pick up scattered keys and open 5 lockers across Kamurocho to unlock 'Path of the Locker Master'. Past 5, only the rewards keep accumulating.",
       },
     },

@@ -11,26 +11,36 @@ import { getSeriesGames, type SeriesGameCard } from "@/lib/kamurocho-data";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
-  title: "작품 목록 — RGG 스튜디오 스팀 공략",
-  description: "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록. 각 작품의 분량, 놓치기 쉬운 항목, 희귀 업적을 한눈에 확인하세요.",
-  alternates: { canonical: "/games" },
-  openGraph: {
-    title: "작품 목록 — RGG 스튜디오 스팀 공략",
-    description: "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록.",
-    url: "https://kamurocho-gg.vercel.app/games",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  const title = isKo
+    ? "작품 목록 — RGG 시리즈 공략"
+    : "All games — RGG Studio Steam guides";
+  const description = isKo
+    ? "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록. 각 작품의 분량, 놓치기 쉬운 항목, 희귀 업적을 한눈에 확인하세요."
+    : "Every RGG Studio Steam title we cover — completion scale, missables, and rare achievements at a glance.";
+  return {
+    title,
+    description,
+    alternates: { canonical: "/games" },
+    openGraph: {
+      title,
+      description,
+      url: "https://kamurocho-gg.vercel.app/games",
+    },
+  };
+}
 
 const GROUP_LABEL: Record<string, { ko: string; en: string }> = {
   yakuza: { ko: "용과 같이 시리즈", en: "Yakuza / Like a Dragon series" },
   judgment: { ko: "저지먼트 시리즈", en: "Judgment series" },
-  ishin: { ko: "용과 같이 유신!", en: "Like a Dragon: Ishin!" },
+  ishin: { ko: "외전 · 스핀오프", en: "Spin-offs" },
 };
 
 function groupOf(game: SeriesGameCard): "yakuza" | "judgment" | "ishin" {
-  if (game.slug === "like-a-dragon-ishin") return "ishin";
   if (game.arc === "judgment") return "judgment";
+  if (game.arc === "spinoff") return "ishin";
   return "yakuza";
 }
 
@@ -90,7 +100,14 @@ export default async function GamesPage() {
                         />
                         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[var(--bg-elevated)]/70 to-transparent" />
                         <div className="absolute left-3 top-3">
-                          <Chip tone="solid" size="xs" className="font-mono">{game.year}</Chip>
+                          <Chip
+                            tone="solid"
+                            size="xs"
+                            className="font-mono"
+                            title={locale === "ko" ? "스토리 시점" : "Story era"}
+                          >
+                            {game.year}
+                          </Chip>
                         </div>
                         <div className="absolute right-3 top-3">
                           <Chip tone="neutral" size="xs" className="border-0 bg-black/60 text-white backdrop-blur ring-0">
@@ -118,10 +135,12 @@ export default async function GamesPage() {
                         </dl>
 
                         <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                          <Chip tone="danger" size="xs">
-                            <FiTarget size={10} aria-hidden="true" />
-                            {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
-                          </Chip>
+                          {game.missableCount > 0 && (
+                            <Chip tone="danger" size="xs">
+                              <FiTarget size={10} aria-hidden="true" />
+                              {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
+                            </Chip>
+                          )}
                           <Chip tone="neutral" size="xs">
                             <FiUser size={10} aria-hidden="true" />
                             {game.lead}
@@ -129,7 +148,7 @@ export default async function GamesPage() {
                         </div>
 
                         <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[14px]">
-                          <span className="font-mono text-[var(--text-tertiary)]">app/{game.appId}</span>
+                          <span className="font-mono text-[var(--text-tertiary)]">{locale === "ko" ? `스토리 시점 ${game.year}` : `Story era ${game.year}`}</span>
                           <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
                             {locale === "ko" ? "공략 열기" : "Open guide"}
                             <FiArrowRight size={13} aria-hidden="true" />

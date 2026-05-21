@@ -63,6 +63,7 @@ export type GameAchievementCard = {
   guideTips: string[];
   guideStats: string | null;
   guideSource: string | null;
+  guideSourceLabel: string | null;
   confidence: string | null;
   missable: boolean;
   chapter: number | null;

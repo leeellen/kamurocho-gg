@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
   appId: 2072450,
   summary: {
-    ko: "총 52개. 챕터 1~9 진행 중에 모두 해금되며, 미스 불가(놓치는 것 없음) — 단, 시간대(낮/밤)나 매니저 랭크, 인간력(친절/용기 등) 7 이상 같은 조건이 붙은 의뢰가 있어 메인 진행과 병행이 효율적입니다. 호놀룰루 거점 의뢰가 대다수이며, 챕터 9 후반에 키류의 「엔딩 노트」와 묶이는 의뢰가 추가됩니다. 10/20/40개 클리어 시 트로피 라인(Touching Lives / Saving Lives / Living Your Best Life)이 풀립니다.",
+    ko: "총 52개. 챕터 1~9 진행 중에 모두 해금되며, 미스 불가(놓치는 것 없음) — 단, 시간대(낮/밤)나 매니저 랭크, 인간력(친절/용기 등) 7 이상 같은 조건이 붙은 의뢰가 있어 메인 진행과 병행이 효율적입니다. 호놀룰루 거점 의뢰가 대다수이며, 챕터 9 후반에 키류의 「엔딩 노트」와 묶이는 의뢰가 추가됩니다. 10/20/40개 클리어 시 트로피 라인이 풀립니다.",
     en: "52 substories total. All unlock between Chapter 1 and 9 and none are strictly missable, but several gate on time of day, manager rank, or personality stats (Kindness/Courage/etc. 7+), so run them alongside the main story. The bulk happen in Honolulu City; Chapter 9 adds Kiryu's 'Ending Note' threads. Clearing 10/20/40 unlocks the Touching Lives / Saving Lives / Living Your Best Life trophy line.",
   },
   source: {
@@ -105,10 +105,10 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
           location: { ko: "호놀룰루 시티 — 시사이드 애비뉴", en: "Honolulu City — Seaside Ave." },
           trigger: { ko: "「알로하 링크」 해금 후 발생", en: "Available after unlocking Aloha Links." },
           body: {
-            ko: "매칭 앱 「Miss Match」가 풀립니다. 이후 49 「매칭 마치코 선생」 라인으로 연결됩니다.",
+            ko: "매칭 앱 「미스 매치」가 풀립니다. 이후 49 「매칭 마치코 선생」 라인으로 연결됩니다.",
             en: "Unlocks the Miss Match dating-app minigame, which feeds into Substory 49.",
           },
-          reward: { ko: "Miss Match 앱 해금", en: "Miss Match app unlocked" },
+          reward: { ko: "「미스 매치」 앱 해금", en: "Miss Match app unlocked" },
         },
         {
           number: 8,

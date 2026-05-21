@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const yakuza6Substories: SubstoriesData = {
   appId: 1388590,
   summary: {
-    ko: "카무로쵸 24건 + 오노미치 진가이초 26건 + 아몬 1건 = 총 51건(컴플리션 리스트 52번 슬롯은 「전체 클리어」). 챕터 진행에 따라 해금되며, 일부는 친구도(스낵 뉴 가우디)·야구·다이빙·캬바쿠라 등 미니게임 의존. 챕터 6 이후 카무로쵸 서브가 대량 해금되니 메인 스토리와 병행이 효율적.",
+    ko: "카무로초 24건 + 오노미치 진가이초 26건 + 아몬 1건 = 총 51건(컴플리션 리스트 52번 슬롯은 「전체 클리어」). 챕터 진행에 따라 해금되며, 일부는 친구도(스낵 뉴 가우디)·야구·다이빙·캬바쿠라 등 미니게임 의존. 챕터 6 이후 카무로초 서브가 대량 해금되니 메인 스토리와 병행이 효율적.",
     en: "24 Kamurocho + 26 Onomichi Jingaicho + 1 Amon = 51 substories (completion-list slot 52 is the 'all cleared' tally). Many gate on Snack New Gaudi friendship, baseball, diving, or hostess clubs; the bulk of Kamurocho unlocks from Chapter 6, so pair them with the main story.",
   },
   source: {
@@ -12,7 +12,7 @@ export const yakuza6Substories: SubstoriesData = {
   },
   groups: [
     {
-      title: { ko: "카무로쵸 (No.1~24)", en: "Kamurocho (No.1~24)" },
+      title: { ko: "카무로초", en: "Kamurocho (No.1~24)" },
       items: [
         {
           number: 1,
@@ -51,7 +51,7 @@ export const yakuza6Substories: SubstoriesData = {
           number: 4,
           title: { ko: "청소 로봇의 폭주", en: "Runaway Cleaner Bot" },
           chapter: { ko: "챕터 6 이후", en: "Chapter 6+" },
-          location: { ko: "카무로쵸 곳곳", en: "Various Kamurocho streets" },
+          location: { ko: "카무로초 곳곳", en: "Various Kamurocho streets" },
           trigger: { ko: "거리에서 폭주 중인 청소 로봇 발견 후 추적", en: "Chase the runaway robot vacuum spotted in the streets." },
           body: { ko: "폭주한 청소 로봇을 따라잡아 정지시키고 주인에게 돌려준다.", en: "Catch the rogue cleaning robot and return it to its owner." },
         },
@@ -109,7 +109,7 @@ export const yakuza6Substories: SubstoriesData = {
           title: { ko: "지금 바빠?", en: "Are You Busy?" },
           chapter: { ko: "챕터 6 이후", en: "Chapter 6+" },
           location: { ko: "시치후쿠 공원", en: "Shichifuku Park" },
-          trigger: { ko: "공원에서 곤란해하는 청년에게 말 걸기 → POPPO에서 5만엔 선불카드 구매", en: "Talk to the troubled young man at the park, then buy a 50,000 yen prepaid card at POPPO." },
+          trigger: { ko: "공원에서 곤란해하는 청년에게 말 걸기 → 포포에서 5만엔 선불카드 구매", en: "Talk to the troubled young man at the park, then buy a 50,000 yen prepaid card at POPPO." },
           body: { ko: "선불카드 사기 의심 상황. 즉시 보내지 말고 끝까지 우겨야 사기범 일당이 등장하여 전투, 완전 보상.", en: "A prepaid-card scam setup. Refuse to send the number — push back twice — to draw out the crew and clear properly." },
           choices: [
             { prompt: { ko: "카드 번호 알려달라", en: "Send the number?" }, correct: { ko: "용도를 묻는다", en: "Ask their purpose" } },
@@ -206,21 +206,21 @@ export const yakuza6Substories: SubstoriesData = {
           number: 23,
           title: { ko: "결과에 커밋하는 남자", en: "The Man Who Commits to Results" },
           chapter: { ko: "챕터 1 이후", en: "Chapter 1+" },
-          location: { ko: "RIZAP", en: "RIZAP" },
-          trigger: { ko: "RIZAP 입회 후 트레이닝 완료", en: "Join RIZAP and complete training." },
+          location: { ko: "라이잡", en: "RIZAP" },
+          trigger: { ko: "라이잡 입회 후 트레이닝 완료", en: "Join RIZAP and complete training." },
         },
         {
           number: 24,
           title: { ko: "다시 태어난 남자", en: "A Reborn Man" },
           chapter: { ko: "챕터 1 이후", en: "Chapter 1+" },
-          location: { ko: "RIZAP / 카무로쵸 거리", en: "RIZAP / Kamurocho streets" },
+          location: { ko: "라이잡 / 카무로초 거리", en: "RIZAP / Kamurocho streets" },
           trigger: { ko: "No.23 클리어 후 소다와 재대결", en: "After No.23, rematch Soda multiple times." },
           prereq: { ko: "No.23 클리어", en: "Complete No.23" },
         },
       ],
     },
     {
-      title: { ko: "오노미치 진가이초 (No.25~50)", en: "Onomichi Jingaicho (No.25~50)" },
+      title: { ko: "오노미치 진가이초", en: "Onomichi Jingaicho (No.25~50)" },
       items: [
         {
           number: 25,

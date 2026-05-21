@@ -7,12 +7,12 @@ export const lostJudgment: CollectiblesData = {
       slug: "paint-search",
       title: { ko: "페인트 서치 — 다람쥐 그림 56곳", en: "Paint Search — 56 Squirrel Tags" },
       summary: {
-        ko: "다이도지 본거지에서 페인트 서치를 해금한 뒤 카무로쵸 26곳 + 요코하마 이세자키 이진초 30곳의 다람쥐 그림을 모두 회수합니다. 가젯 4종(집음기·드론·전파 탐지기·탐정견)을 모두 해금한 뒤 진행하세요.",
+        ko: "다이도지 본거지에서 페인트 서치를 해금한 뒤 카무로초 26곳 + 요코하마 이세자키 이진초 30곳의 다람쥐 그림을 모두 회수합니다. 가젯 4종(집음기·드론·전파 탐지기·탐정견)을 모두 해금한 뒤 진행하세요.",
         en: "After unlocking Paint Search at the Daidoji Hideout, collect all 26 squirrel tags in Kamurocho and 30 in Isezaki Ijincho. All four gadgets (mic, drone, radio detector, detective dog) are required.",
       },
       tips: [
         { ko: "보상은 도료·식기·이너·스킬 책·휘석 등 다양합니다. 의상·소품 컴플리트와 병행하면 효율적입니다.", en: "Rewards include paints, plates, inner wear, skill books, and gems. Combine with outfit/item cleanup." },
-        { ko: "각 지역 그룹 상단의 영상은 카무로쵸/이세자키 이진초 전 다람쥐 순회 영상입니다.", en: "The video at the top of each region group walks every squirrel in order." },
+        { ko: "각 지역 그룹 상단의 영상은 카무로초/이세자키 이진초 전 다람쥐 순회 영상입니다.", en: "The video at the top of each region group walks every squirrel in order." },
       ],
       source: {
         label: "gamewith.jp — Lost Judgment 페인트 서치",
@@ -20,12 +20,12 @@ export const lostJudgment: CollectiblesData = {
       },
       groups: [
     {
-      title: { ko: "카무로쵸 — 다람쥐 그림과 보상", en: "Kamurocho — Squirrel Tags and Rewards" },
+      title: { ko: "카무로초 — 다람쥐 그림과 보상", en: "Kamurocho — Squirrel Tags and Rewards" },
       video: "https://www.youtube.com/watch?v=IRd30rSA6SY",
       items: [
       {
         number: 1,
-        location: { ko: "POPPO 시치후쿠 거리 서점", en: "POPPO Shichifuku St West" },
+        location: { ko: "포포 시치후쿠 거리 서점", en: "POPPO Shichifuku St West" },
         image: "https://img.gamewith.jp/img/d7ab5b5061dce6348648206bcfb17975.jpg",
         reward: { ko: "양성 이너", en: "Trainee Inner Wear" },
         steps: [
@@ -54,17 +54,17 @@ export const lostJudgment: CollectiblesData = {
       },
       {
         number: 4,
-        location: { ko: "카무로쵸 힐즈 서쪽", en: "Kamurocho Hills West Side" },
+        location: { ko: "카무로초 힐즈 서쪽", en: "Kamurocho Hills West Side" },
         image: "https://img.gamewith.jp/img/8a1a1773100f5bf02c92a15ee8369e4b.jpg",
         reward: { ko: "큐티 도료", en: "Cutie Paint" },
         steps: [
-        { body: { ko: "전파 탐지기로 HOTEL 「Velescia」 벽의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the wall of HOTEL Velescia" } },
+        { body: { ko: "전파 탐지기로 HOTEL 「벨레시아」 벽의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the wall of HOTEL Velescia" } },
         { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
         ],
       },
       {
         number: 5,
-        location: { ko: "카무로쵸 힐즈 동쪽 (공원 앞 거리)", en: "Kamurocho Hills East Side (Park Blvd)" },
+        location: { ko: "카무로초 힐즈 동쪽 (공원 앞 거리)", en: "Kamurocho Hills East Side (Park Blvd)" },
         image: "https://img.gamewith.jp/img/1196c7183bed5ef5de9cfb076d3e24f3.jpg",
         reward: { ko: "플래티넘 접시", en: "Platinum Plate" },
         steps: [
@@ -115,7 +115,7 @@ export const lostJudgment: CollectiblesData = {
         reward: { ko: "배틀 이너 SS", en: "Battle Inner SS" },
         steps: [
         { body: { ko: "집음기로 스낵 「슷톤쿄」 문패 위의 다람쥐를 조사", en: "Use the directional mic on the squirrel above the Suttonkyo snack bar's nameplate" } },
-        { body: { ko: "전파 탐지기로 Pub 「아텐시」 맞은편 계단의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the stairs across from Pub Atenshi" } },
+        { body: { ko: "전파 탐지기로 펍 「아텐시」 맞은편 계단의 다람쥐를 조사", en: "Use the radio detector on the squirrel on the stairs across from Pub Atenshi" } },
         { body: { ko: "탐정견으로 남쪽 사거리에서 아이템을 획득", en: "Use the detective dog at the southern intersection to grab the item" } },
         ],
       },
@@ -345,7 +345,7 @@ export const lostJudgment: CollectiblesData = {
       },
       {
         number: 8,
-        location: { ko: "POPPO 츠루가메 가도점", en: "POPPO Tsurukame Kaido" },
+        location: { ko: "포포 츠루가메 가도점", en: "POPPO Tsurukame Kaido" },
         image: "https://img.gamewith.jp/img/bc98ce10b9ffb5af9c5688d477d93592.jpg",
         reward: { ko: "꽃무늬 도료", en: "Floral Paint" },
         steps: [
@@ -415,7 +415,7 @@ export const lostJudgment: CollectiblesData = {
         image: "https://img.gamewith.jp/img/ae34bebe28b0e6e2e433403c0e1cc75c.jpg",
         reward: { ko: "엘레강트 도료", en: "Elegant Paint" },
         steps: [
-        { body: { ko: "전파 탐지기로 햐쿠케이 거리 방향으로 진행해 「UMIGAME TEI」 벽의 다람쥐를 조사", en: "Head toward Hyakkei St and use the radio detector on the squirrel on the wall of UMIGAME TEI" } },
+        { body: { ko: "전파 탐지기로 햐쿠케이 거리 방향으로 진행해 「우미가메테이」 벽의 다람쥐를 조사", en: "Head toward Hyakkei St and use the radio detector on the squirrel on the wall of UMIGAME TEI" } },
         { body: { ko: "드론으로 다람쥐 바로 아래로 내려가 아이템을 획득", en: "Use the drone to descend right below the squirrel and grab the item" } },
         ],
       },
@@ -497,9 +497,9 @@ export const lostJudgment: CollectiblesData = {
       },
       {
         number: 24,
-        location: { ko: "「la chatte blanche」 앞", en: "In Front of la chatte blanche" },
+        location: { ko: "「라 샤트 블랑슈」 앞", en: "In Front of la chatte blanche" },
         image: "https://img.gamewith.jp/img/c4e077b1a0fc8722a5a8e5949743e99b.jpg",
-        reward: { ko: "My Own Style (레코드)", en: "My Own Style (Record)" },
+        reward: { ko: "레코드", en: "My Own Style (Record)" },
         steps: [
         { body: { ko: "전파 탐지기로 근처 나무의 구멍을 조사해 아이템을 획득", en: "Use the radio detector on the hollow in the nearby tree to get the item" } },
         ],
@@ -524,7 +524,7 @@ export const lostJudgment: CollectiblesData = {
       },
       {
         number: 27,
-        location: { ko: "「Le Nouveau hama」 왼쪽 그림", en: "Painting Left of Le Nouveau hama" },
+        location: { ko: "「르 누보 하마」 왼쪽 그림", en: "Painting Left of Le Nouveau hama" },
         image: "https://img.gamewith.jp/img/27d83c3b0f90b7ea933087ef98284981.jpg",
         reward: { ko: "EX-4", en: "EX-4" },
         steps: [
@@ -596,7 +596,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 3,
         title: { ko: "강도는 카페에 있다", en: "The Robber Is in the Cafe" },
-        location: { ko: "카무로쵸 — 천하일 거리", en: "Kamurocho — Tenkaichi Street" },
+        location: { ko: "카무로초 — 천하일 거리", en: "Kamurocho — Tenkaichi Street" },
         body: { ko: "3장 — 천하일 거리의 로망스 카페에 접근하면 발생", en: "Chapter 3 — triggered by approaching the Romance Cafe on Tenkaichi Street" },
         reward: { ko: "연막진의 선약 레시피", en: "Smoke Screen Tonic recipe" },
       },
@@ -628,8 +628,8 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 8,
         title: { ko: "투명한 도둑", en: "The Invisible Thief" },
-        location: { ko: "카무로쵸 — 천량 거리", en: "Kamurocho — Senryo Avenue" },
-        body: { ko: "3장 — 버즈 리서처 「스토커」로 카무로쵸 천량 거리의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Senryo Avenue tweet in Kamurocho using Buzz Researcher \"Stalker\"" },
+        location: { ko: "카무로초 — 천량 거리", en: "Kamurocho — Senryo Avenue" },
+        body: { ko: "3장 — 버즈 리서처 「스토커」로 카무로초 천량 거리의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Senryo Avenue tweet in Kamurocho using Buzz Researcher \"Stalker\"" },
         reward: { ko: "액재막이 선약 레시피", en: "Disaster Ward Tonic recipe" },
       },
       {
@@ -641,7 +641,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 10,
         title: { ko: "라이언 닌술 교실 폭탄 탄생!", en: "Ryan's Ninjutsu Class Is Born!" },
-        location: { ko: "카무로쵸 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
         body: { ko: "3장 — 야가미 탐정 사무소의 탐정 의뢰를 수주", en: "Chapter 3 — accept a detective request at the Yagami Detective Agency" },
         reward: { ko: "훈련 하라마키", en: "Training Haramaki" },
       },
@@ -693,7 +693,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 18,
         title: { ko: "복면 작가 주몬지 이치진의 혼란", en: "The Confusion of Masked Author Jumonji Ichijin" },
-        location: { ko: "카무로쵸 — 천하일 거리 제1빌딩 3층", en: "Kamurocho — Tenkaichi Street Building 1, 3rd Floor" },
+        location: { ko: "카무로초 — 천하일 거리 제1빌딩 3층", en: "Kamurocho — Tenkaichi Street Building 1, 3rd Floor" },
         body: { ko: "4장 — 요코하마 99과의 탐정 의뢰를 수주", en: "Chapter 4 — accept a detective request at the Yokohama 99th Precinct" },
         reward: { ko: "쇼와 결투록・지의 권", en: "Showa Duel Chronicle: Earth Volume" },
       },
@@ -738,7 +738,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 25,
         title: { ko: "전파 탐정: 지갑은 듣고 있었다", en: "Radio Wave Detective: The Wallet Was Listening" },
-        location: { ko: "이세자키 이진초 — Girl's Bite 앞", en: "Isezaki Ijincho — In front of Girl's Bite" },
+        location: { ko: "이세자키 이진초 — 걸스 바이트 앞", en: "Isezaki Ijincho — In front of Girl's Bite" },
         body: { ko: "6장 — 「전파 탐정: 등불이 다 타기 전에」 클리어 후 발생. 해당 장소에 떨어진 지갑을 전파 탐지기로 조사", en: "Chapter 6 — triggered after clearing \"Radio Wave Detective: Before the Flame Burns Out\"; scan the wallet on the ground with the Radio Wave Detector" },
       },
       {
@@ -801,19 +801,19 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 35,
         title: { ko: "하루코의 이야기", en: "Haruko's Story" },
-        location: { ko: "이세자키 이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        location: { ko: "이세자키 이진초 — 걸스 바이트", en: "Isezaki Ijincho — Girl's Bite" },
         body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
       },
       {
         number: 36,
         title: { ko: "미우의 이야기", en: "Miu's Story" },
-        location: { ko: "이세자키 이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        location: { ko: "이세자키 이진초 — 걸스 바이트", en: "Isezaki Ijincho — Girl's Bite" },
         body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
       },
       {
         number: 37,
         title: { ko: "아야하의 이야기", en: "Ayaha's Story" },
-        location: { ko: "이세자키 이진초 — Girl's Bite", en: "Isezaki Ijincho — Girl's Bite" },
+        location: { ko: "이세자키 이진초 — 걸스 바이트", en: "Isezaki Ijincho — Girl's Bite" },
         body: { ko: "4장 이후 — 유스 드라마 「걸스 바 조사」 진행 중", en: "Chapter 4 onward — during the youth drama \"Girls' Bar Investigation\"" },
       },
       {
@@ -837,7 +837,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 41,
         title: { ko: "악덕 탐정 야가미 타카유키?", en: "The Corrupt Detective Takayuki Yagami?" },
-        location: { ko: "카무로쵸 — 야가미 탐정 사무소 앞", en: "Kamurocho — In front of the Yagami Detective Agency" },
+        location: { ko: "카무로초 — 야가미 탐정 사무소 앞", en: "Kamurocho — In front of the Yagami Detective Agency" },
         body: { ko: "모든 유스 드라마를 클리어하면 발생", en: "Triggered upon clearing every youth drama" },
       },
       {
@@ -849,26 +849,26 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 43,
         title: { ko: "내가 인형옷을 입는 이유", en: "Why I Wear the Mascot Suit" },
-        location: { ko: "카무로쵸 — 어린이 공원", en: "Kamurocho — Children's Park" },
-        body: { ko: "3장 — 버즈 리서처 「유루캬라」로 카무로쵸 어린이 공원의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Kamurocho Children's Park tweet using Buzz Researcher \"Mascot Character\"" },
+        location: { ko: "카무로초 — 어린이 공원", en: "Kamurocho — Children's Park" },
+        body: { ko: "3장 — 버즈 리서처 「유루캬라」로 카무로초 어린이 공원의 트윗을 조사하면 발생", en: "Chapter 3 — investigate the Kamurocho Children's Park tweet using Buzz Researcher \"Mascot Character\"" },
         reward: { ko: "용의 눈동자 — 토도 미나토 여자친구 이벤트 진행 가능", en: "Dragon's Eye — unlocks Minato Todo's Girlfriend Event" },
       },
       {
         number: 44,
         title: { ko: "스탠드 바이 미", en: "Stand By Me" },
-        location: { ko: "카무로쵸 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
         body: { ko: "토도 미나토와의 친밀도를 2로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 2 (Girlfriend Event)" },
       },
       {
         number: 45,
         title: { ko: "개그 나이트 피버", en: "Comedy Night Fever" },
-        location: { ko: "카무로쵸 — 천하일 거리 입구", en: "Kamurocho — Tenkaichi Street Entrance" },
+        location: { ko: "카무로초 — 천하일 거리 입구", en: "Kamurocho — Tenkaichi Street Entrance" },
         body: { ko: "토도 미나토와의 친밀도를 3으로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 3 (Girlfriend Event)" },
       },
       {
         number: 46,
         title: { ko: "인형옷 소녀로 있을 수만은 없어", en: "I Can't Stay a Mascot Girl Forever" },
-        location: { ko: "카무로쵸 — M SIDE CAFE", en: "Kamurocho — M SIDE CAFE" },
+        location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
         body: { ko: "토도 미나토와의 친밀도를 4로 올린다 (여자친구 이벤트 공략)", en: "Raise intimacy with Minato Todo to 4 (Girlfriend Event)" },
       },
       {
@@ -898,7 +898,7 @@ export const lostJudgment: CollectiblesData = {
       {
         number: 51,
         title: { ko: "변태 사중주", en: "Pervert Quartet" },
-        location: { ko: "카무로쵸 — 야가미 탐정 사무소의 의뢰", en: "Kamurocho — Request at the Yagami Detective Agency" },
+        location: { ko: "카무로초 — 야가미 탐정 사무소의 의뢰", en: "Kamurocho — Request at the Yagami Detective Agency" },
         body: { ko: "폭주족 유스 드라마를 진행 + 「내가 인형옷을 입는 이유」 클리어 + DLC 「탐정 라이프 충실 팩」 수령", en: "Progress the biker gang youth drama, clear \"Why I Wear the Mascot Suit,\" and receive the DLC \"Detective Life Essentials Pack\"" },
         reward: { ko: "멀티 스패츠 ×3", en: "Multi Spats ×3" },
       },
@@ -932,7 +932,7 @@ export const lostJudgment: CollectiblesData = {
       tips: [
         { ko: "전 클리어 보상으로 다람쥐 그림 위치를 알려주는 「페인트 파인더」 액세서리를 입수합니다. 페인트 서치와 같이 진행하면 효율적입니다.", en: "Full clear rewards the Paint Finder accessory that pings nearby squirrel paintings — pair with Paint Search." },
         { ko: "전 동아리 클리어로 사이드 케이스「악덕 탐정·야가미 다카유키?」가 해금됩니다.", en: "Clearing every club unlocks the side case 'Corrupt Detective: Takayuki Yagami?'" },
-        { ko: "DLC '청춘 드라마 충실 팩'은 댄스 의상 SCHOOL + 안무 SPECIAL, 로봇 MB5000, 폭주족 코스 어반·MAXINATOR, 복싱 추가 스파링 + 켄이 스타일을 포함합니다.", en: "The DLC 'School Stories Expansion' adds the SCHOOL dance outfit + SPECIAL choreography, the MB5000 robot, an Urban course + MAXINATOR bike, extra boxing sparring, plus the Ken-i style." },
+        { ko: "DLC '청춘 드라마 충실 팩'은 댄스 의상 SCHOOL + 안무 SPECIAL, 로봇 MB5000, 폭주족 코스 어반·맥시네이터, 복싱 추가 스파링 + 켄이 스타일을 포함합니다.", en: "The DLC 'School Stories Expansion' adds the SCHOOL dance outfit + SPECIAL choreography, the MB5000 robot, an Urban course + MAXINATOR bike, extra boxing sparring, plus the Ken-i style." },
       ],
       source: {
         label: "gamewith.jp — Lost Judgment 청춘 드라마",
@@ -1013,9 +1013,9 @@ export const lostJudgment: CollectiblesData = {
     },
     {
       slug: "towngo",
-      title: { ko: "TownGo 미션·상점 컴플리트", en: "TownGo — Missions and Shops" },
+      title: { ko: "타운고 미션·상점 컴플리트", en: "TownGo — Missions and Shops" },
       summary: {
-        ko: "스케이트보드 TownGo 메뉴에서 컴플리트 미션과 상점 미션을 전부 클리어하세요. 챕터 진행에 따라 추가 미션이 풀리니 엔딩 직전에 마지막 정리를 권장합니다.",
+        ko: "스케이트보드 타운고 메뉴에서 컴플리트 미션과 상점 미션을 전부 클리어하세요. 챕터 진행에 따라 추가 미션이 풀리니 엔딩 직전에 마지막 정리를 권장합니다.",
         en: "Complete every TownGo Completion Mission and Shop Mission via the skateboard menu.",
       },
     },

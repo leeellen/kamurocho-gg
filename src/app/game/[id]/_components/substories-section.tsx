@@ -3,7 +3,7 @@ import { FiBookOpen, FiExternalLink, FiPlayCircle } from "react-icons/fi";
 import { Chip } from "@/components/ui/chip";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ReportButton } from "@/components/ui/report-button";
-import type { Locale } from "@/lib/i18n";
+import { isFallbackText, pickLocalized, type Locale } from "@/lib/i18n";
 import {
   flattenSubstories,
   type SubstoriesData,
@@ -11,6 +11,18 @@ import {
   type SubstoryItem,
   type SubstoryStep,
 } from "@/lib/substories";
+
+// Many older substory entries left the `en` slot as a Korean placeholder.
+// `pickLocalized` falls back to the Korean source when that happens; this
+// helper inlines the right `lang` attribute so screen readers and browser
+// hyphenation still pick the correct language.
+function langOf(
+  pair: { ko?: string | null; en?: string | null } | null | undefined,
+  locale: Locale,
+): "ko" | "en" {
+  if (locale === "ko") return "ko";
+  return isFallbackText(pair, locale) ? "ko" : "en";
+}
 
 type Props = {
   locale: Locale;
@@ -30,9 +42,7 @@ function groupByProtagonist(
 ): { key: string; label: string | null; items: SubstoryItem[] }[] {
   const buckets = new Map<string, { label: string | null; items: SubstoryItem[] }>();
   for (const item of items) {
-    const label = item.protagonist
-      ? (locale === "ko" ? item.protagonist.ko : item.protagonist.en)
-      : null;
+    const label = item.protagonist ? pickLocalized(item.protagonist, locale) : null;
     const key = label ?? "__none__";
     if (!buckets.has(key)) buckets.set(key, { label, items: [] });
     buckets.get(key)!.items.push(item);
@@ -130,7 +140,9 @@ function ItemCard({
   item: SubstoryItem;
 }) {
   const embed = item.video ? videoEmbed(item.video) : null;
-  const title = locale === "ko" ? item.title.ko : item.title.en;
+  const title = pickLocalized(item.title, locale);
+  const location = pickLocalized(item.location, locale);
+  const trigger = pickLocalized(item.trigger, locale);
 
   return (
     <li>
@@ -142,7 +154,9 @@ function ItemCard({
                 <span className="shrink-0 font-mono text-[14px] font-extrabold text-[var(--accent)]">
                   #{String(item.number).padStart(2, "0")}
                 </span>
-                <span className="text-[14px] font-bold text-white">{title}</span>
+                <span className="text-[14px] font-bold text-white" lang={langOf(item.title, locale)}>
+                  {title}
+                </span>
               </div>
             </div>
             <span
@@ -160,20 +174,24 @@ function ItemCard({
               className={`text-[14px] font-mono text-[var(--text-tertiary)] ${
                 locale === "ko" ? "" : "uppercase tracking-[0.12em]"
               }`}
+              lang={langOf(item.location, locale)}
             >
-              {locale === "ko" ? item.location.ko : item.location.en}
+              {location}
             </div>
 
             <div className="text-[14px] leading-6 text-[var(--text-secondary)]">
               <span className="font-semibold text-white">
                 {locale === "ko" ? "발생 조건: " : "Trigger: "}
               </span>
-              {locale === "ko" ? item.trigger.ko : item.trigger.en}
+              <span lang={langOf(item.trigger, locale)}>{trigger}</span>
             </div>
 
             {item.prereq && (
-              <div className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]">
-                {locale === "ko" ? `사전 조건: ${item.prereq.ko}` : `Prereq: ${item.prereq.en}`}
+              <div
+                className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]"
+                lang={langOf(item.prereq, locale)}
+              >
+                {locale === "ko" ? `사전 조건: ${pickLocalized(item.prereq, "ko")}` : `Prereq: ${pickLocalized(item.prereq, locale)}`}
               </div>
             )}
 
@@ -181,8 +199,11 @@ function ItemCard({
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={item.image}
-                alt=""
-                aria-hidden="true"
+                alt={
+                  locale === "ko"
+                    ? `${title} 참고 이미지`
+                    : `${title} reference image`
+                }
                 loading="lazy"
                 className="w-full rounded-lg border border-[var(--border-subtle)]"
               />
@@ -195,8 +216,11 @@ function ItemCard({
                 ))}
               </ol>
             ) : item.body ? (
-              <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]">
-                {locale === "ko" ? item.body.ko : item.body.en}
+              <p
+                className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]"
+                lang={langOf(item.body, locale)}
+              >
+                {pickLocalized(item.body, locale)}
               </p>
             ) : null}
 
@@ -220,8 +244,11 @@ function ItemCard({
                 <Chip tone="gold" size="xs">
                   {locale === "ko" ? "보상" : "Reward"}
                 </Chip>
-                <span className="text-[14px] font-semibold text-white">
-                  {locale === "ko" ? item.reward.ko : item.reward.en}
+                <span
+                  className="text-[14px] font-semibold text-white"
+                  lang={langOf(item.reward, locale)}
+                >
+                  {pickLocalized(item.reward, locale)}
                 </span>
               </div>
             )}
@@ -257,8 +284,8 @@ function StepRow({ locale, step, index }: { locale: Locale; step: SubstoryStep; 
   return (
     <li className="flex gap-2 text-[14px] leading-6 text-[var(--text-secondary)]">
       <span className="shrink-0 font-mono text-[14px] font-bold text-[var(--accent)]">{index}.</span>
-      <span className="flex-1">
-        {locale === "ko" ? step.body.ko : step.body.en}
+      <span className="flex-1" lang={langOf(step.body, locale)}>
+        {pickLocalized(step.body, locale)}
         {step.image && (
           <>
             <br />
@@ -282,15 +309,15 @@ function ChoiceRow({ locale, choice }: { locale: Locale; choice: SubstoryChoice 
     <div className="flex flex-col gap-0.5 text-[14px] leading-6">
       <span className="text-[var(--text-secondary)]">
         <span className="font-mono text-[14px] text-[var(--text-tertiary)]">Q. </span>
-        {locale === "ko" ? choice.prompt.ko : choice.prompt.en}
+        <span lang={langOf(choice.prompt, locale)}>{pickLocalized(choice.prompt, locale)}</span>
       </span>
       <span className="text-white">
         <span className="font-mono text-[14px] font-bold text-[var(--accent)]">A. </span>
-        {locale === "ko" ? choice.correct.ko : choice.correct.en}
+        <span lang={langOf(choice.correct, locale)}>{pickLocalized(choice.correct, locale)}</span>
       </span>
       {choice.note && (
-        <span className="text-[14px] text-[var(--text-tertiary)]">
-          {locale === "ko" ? choice.note.ko : choice.note.en}
+        <span className="text-[14px] text-[var(--text-tertiary)]" lang={langOf(choice.note, locale)}>
+          {pickLocalized(choice.note, locale)}
         </span>
       )}
     </div>

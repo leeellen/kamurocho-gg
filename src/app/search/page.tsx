@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "공략 검색",
-  description: "용과 같이·이치반·저지먼트 시리즈 게임, 업적, 공략 키워드 검색.",
-  alternates: { canonical: "/search" },
-  robots: { index: false, follow: true },
-};
 import { FiArrowRight, FiSearch, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
@@ -15,6 +8,19 @@ import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { getLocale } from "@/lib/i18n";
 import { searchKamurocho } from "@/lib/kamurocho-data";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  return {
+    title: isKo ? "공략 검색" : "Search guides",
+    description: isKo
+      ? "용과 같이·이치반·저지먼트 시리즈 게임, 업적, 공략 키워드 검색."
+      : "Search across games, achievements, and guide keywords for the entire RGG Studio catalog.",
+    alternates: { canonical: "/search" },
+    robots: { index: false, follow: true },
+  };
+}
 
 export const dynamic = "force-dynamic";
 
@@ -59,7 +65,7 @@ export default async function SearchPage({
               name="q"
               defaultValue={query}
               autoComplete="off"
-              placeholder={locale === "ko" ? "예: 키류, 진영재단, 놓침, 시오리" : "e.g. Kiryu, Real Estate, missable, Shiori"}
+              placeholder={locale === "ko" ? "예: 키류, 부동산, 놓치기 쉬움, 시오리" : "e.g. Kiryu, Real Estate, missable, Shiori"}
               className="h-14 w-full rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] pl-11 pr-32 text-[15px] text-[var(--text-primary)] outline-none transition-all placeholder:text-[var(--text-tertiary)] hover:border-[var(--border-strong)] focus:border-[var(--accent)] focus:ring-4 focus:ring-[var(--accent-subtle)]"
             />
             <button

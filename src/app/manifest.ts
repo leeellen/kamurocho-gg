@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Fan-curated RGG Steam achievement guides, missables, and play order.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f5f5f3",
-    theme_color: "#0b1b33",
+    background_color: "#07070a",
+    theme_color: "#07070a",
     icons: [
       {
         src: "/favicon.ico",

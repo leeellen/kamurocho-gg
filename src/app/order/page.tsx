@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "플레이 순서 — 용과 같이 시리즈 추천 순서",
-  description: "처음 시작하는 분을 위한 추천 순서와 스토리 시점 순서. RGG 시리즈를 어떤 작품부터 시작할지 안내합니다.",
-  alternates: { canonical: "/order" },
-  openGraph: {
-    title: "플레이 순서 — 용과 같이 시리즈 추천 순서",
-    description: "처음 시작하는 분을 위한 추천 순서와 스토리 시점 순서.",
-    url: "https://kamurocho-gg.vercel.app/order",
-  },
-};
 import { FiArrowRight, FiClock, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
@@ -18,6 +7,27 @@ import { Chip } from "@/components/ui/chip";
 import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
 import { getPlayOrderData } from "@/lib/kamurocho-data";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  const title = isKo
+    ? "플레이 순서 — 용과 같이 시리즈 추천 순서"
+    : "Play order — RGG Studio recommended path";
+  const description = isKo
+    ? "처음 시작하는 분을 위한 추천 순서와 스토리 시점 순서. RGG 시리즈를 어떤 작품부터 시작할지 안내합니다."
+    : "Recommended newcomer order and in-universe chronology for the entire RGG Studio catalog.";
+  return {
+    title,
+    description,
+    alternates: { canonical: "/order" },
+    openGraph: {
+      title,
+      description,
+      url: "https://kamurocho-gg.vercel.app/order",
+    },
+  };
+}
 
 export const dynamic = "force-dynamic";
 

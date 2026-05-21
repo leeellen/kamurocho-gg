@@ -20,6 +20,18 @@ type GameHeroProps = {
   coveragePct: number;
 };
 
+function arcLabel(arc: string, locale: Locale) {
+  const map: Record<string, { ko: string; en: string }> = {
+    kiryu: { ko: "키류 사가", en: "Kiryu saga" },
+    ichiban: { ko: "이치반 사가", en: "Ichiban saga" },
+    judgment: { ko: "저지먼트", en: "Judgment line" },
+    spinoff: { ko: "외전", en: "Spin-off" },
+  };
+  const entry = map[arc];
+  if (!entry) return arc;
+  return locale === "ko" ? entry.ko : entry.en;
+}
+
 export function GameHero({
   game,
   locale,
@@ -108,7 +120,7 @@ export function GameHero({
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <span className="font-mono text-[14px] uppercase tracking-[0.2em] text-[var(--accent)]">{game.arc}</span>
+            <span className="font-mono text-[14px] uppercase tracking-[0.2em] text-[var(--accent)]">{arcLabel(game.arc, locale)}</span>
             <h1 className="font-display m-0 text-[40px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[56px]">
               {game.name}
             </h1>
@@ -117,12 +129,20 @@ export function GameHero({
             </p>
             <div className="mt-2 flex flex-wrap gap-2">
               <Chip tone="neutral">{locale === "ko" ? `업적 ${game.achievements}개` : `${game.achievements} achievements`}</Chip>
-              <Chip tone="accent">{locale === "ko" ? `공략 ${game.guideCoverage}개` : `${game.guideCoverage} guides linked`}</Chip>
-              <Chip tone="danger">
-                <FiTarget size={11} aria-hidden="true" />
-                {locale === "ko" ? `놓침 ${game.missableCount}개` : `${game.missableCount} missables`}
-              </Chip>
-              <Chip tone="gold">{locale === "ko" ? `희귀 ${game.rareCount}개` : `${game.rareCount} rare`}</Chip>
+              <Chip tone="accent">{locale === "ko" ? `공략 ${coveragePct}%` : `${coveragePct}% guided`}</Chip>
+              {game.missableCount > 0 ? (
+                <Chip tone="danger">
+                  <FiTarget size={11} aria-hidden="true" />
+                  {locale === "ko" ? `놓침 ${game.missableCount}개` : `${game.missableCount} missables`}
+                </Chip>
+              ) : (
+                <Chip tone="success">
+                  {locale === "ko" ? "영구 놓침 없음" : "No missables"}
+                </Chip>
+              )}
+              {game.rareCount > 0 && (
+                <Chip tone="gold">{locale === "ko" ? `희귀 ${game.rareCount}개` : `${game.rareCount} rare`}</Chip>
+              )}
               <Chip tone="neutral">{game.estimatedHours}</Chip>
               <Chip tone="info" size="xs">
                 {locale === "ko" ? `엔진: ${game.engine}` : `Engine: ${game.engine}`}

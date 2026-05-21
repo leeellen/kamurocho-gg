@@ -7,7 +7,7 @@ export const yakuzaKiwami2: CollectiblesData = {
       slug: "majima-construction",
       title: { ko: "마지마 건설 — 직원 50명 (마지마 건설 확대)", en: "Majima Construction — 50 Workers" },
       summary: {
-        ko: "마지마 편 사이드 모드. 카무로쵸 건설 부지 전투를 반복해 직원을 영입하고 누적 50명 이상을 모으면 「마지마 건설 확대」 업적이 트리거됩니다. 「마지마 건설에 취직」(첫 영입)도 같은 라인.",
+        ko: "마지마 편 사이드 모드. 카무로초 건설 부지 전투를 반복해 직원을 영입하고 누적 50명 이상을 모으면 「마지마 건설 확대」 업적이 트리거됩니다. 「마지마 건설에 취직」(첫 영입)도 같은 라인.",
         en: "Majima's construction-defense side mode. Recruit 50+ workers across the building sites to unlock 'Majima Construction Expansion'. The 'Joining Majima Construction' achievement triggers on the first recruit.",
       },
     },
@@ -31,7 +31,7 @@ export const yakuzaKiwami2: CollectiblesData = {
       slug: "coin-lockers",
       title: { ko: "물품 보관함 완전 제패! — 양 도시 전 로커 개방", en: "Coin Locker Master — Open Every Locker" },
       summary: {
-        ko: "카무로쵸 + 소텐보리의 모든 물품 보관함을 열어 보상을 회수하면 「물품 보관함 완전 제패!」 업적이 트리거됩니다. 도시 곳곳에 흩어진 열쇠를 회수해 사용하면 됩니다.",
+        ko: "카무로초 + 소텐보리의 모든 물품 보관함을 열어 보상을 회수하면 「물품 보관함 완전 제패!」 업적이 트리거됩니다. 도시 곳곳에 흩어진 열쇠를 회수해 사용하면 됩니다.",
         en: "Open every coin locker across Kamurocho + Sotenbori to unlock 'Coin Locker Conqueror'. Collect scattered keys and use them at the corresponding locker.",
       },
     },

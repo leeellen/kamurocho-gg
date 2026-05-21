@@ -92,12 +92,14 @@ export function buildDisplayMissables({
   locale: Locale;
 }): DisplayMissableChapter[] {
   const chapterMap = new Map<number, DisplayMissableChapter>();
-  // Names already covered by curated MISSABLES titles. Extract any 「...」
-  // bracketed name so DB achievements with the same KR localized name get
-  // deduped instead of rendered as a second card.
-  const covered = new Set<string>();
+  // Curated titles include the trophy name plus description, often with
+  // brackets and apostrophes. Instead of trying to extract just the name
+  // via regex (fragile across 「」/'…' formats and inner apostrophes), we
+  // store the full curated title text and treat any DB achievement whose
+  // localized name appears inside it as already covered.
+  const curatedHay: string[] = [];
   const addCovered = (raw: string) => {
-    for (const m of raw.matchAll(/[「『]([^」』]+)[」』]/g)) covered.add(normalizeComparableText(m[1]));
+    curatedHay.push(normalizeComparableText(raw));
   };
 
   for (const chapter of curatedMissables ?? []) {
@@ -121,9 +123,15 @@ export function buildDisplayMissables({
     });
   }
 
+  const isCovered = (name: string) => {
+    const needle = normalizeComparableText(name);
+    if (needle.length < 3) return false;
+    return curatedHay.some((hay) => hay.includes(needle));
+  };
+
   for (const achievement of achievements) {
     if (!achievement.missable) continue;
-    if (covered.has(normalizeComparableText(achievement.name))) continue;
+    if (isCovered(achievement.name)) continue;
     const bucketKey = achievement.chapter ?? 0;
     const bucket = chapterMap.get(bucketKey) ?? {
       chapter: bucketKey,

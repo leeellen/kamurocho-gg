@@ -3,8 +3,16 @@ import { FiExternalLink, FiPackage, FiPlayCircle } from "react-icons/fi";
 import { Chip } from "@/components/ui/chip";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ReportButton } from "@/components/ui/report-button";
-import type { Locale } from "@/lib/i18n";
+import { isFallbackText, pickLocalized, type Locale } from "@/lib/i18n";
 import type { CollectibleCategory, CollectibleGroup, CollectibleItem, CollectibleStep } from "@/lib/collectibles";
+
+function langOf(
+  pair: { ko?: string | null; en?: string | null } | null | undefined,
+  locale: Locale,
+): "ko" | "en" {
+  if (locale === "ko") return "ko";
+  return isFallbackText(pair, locale) ? "ko" : "en";
+}
 
 type Props = {
   locale: Locale;
@@ -72,11 +80,17 @@ function CategoryCard({
       <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5">
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
-            <h3 className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]">
-              {locale === "ko" ? category.title.ko : category.title.en}
+            <h3
+              className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]"
+              lang={langOf(category.title, locale)}
+            >
+              {pickLocalized(category.title, locale)}
             </h3>
-            <p className="m-0 mt-1.5 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]">
-              {locale === "ko" ? category.summary.ko : category.summary.en}
+            <p
+              className="m-0 mt-1.5 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]"
+              lang={langOf(category.summary, locale)}
+            >
+              {pickLocalized(category.summary, locale)}
             </p>
           </div>
           <ReportButton
@@ -95,11 +109,17 @@ function CategoryCard({
       <summary className="cursor-pointer list-none rounded-2xl p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]">
         <div className="flex items-center justify-between gap-3">
           <div className="flex flex-col gap-1.5">
-            <h3 className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]">
-              {locale === "ko" ? category.title.ko : category.title.en}
+            <h3
+              className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]"
+              lang={langOf(category.title, locale)}
+            >
+              {pickLocalized(category.title, locale)}
             </h3>
-            <p className="m-0 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]">
-              {locale === "ko" ? category.summary.ko : category.summary.en}
+            <p
+              className="m-0 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]"
+              lang={langOf(category.summary, locale)}
+            >
+              {pickLocalized(category.summary, locale)}
             </p>
           </div>
           <div className="flex shrink-0 items-center gap-2">
@@ -125,8 +145,9 @@ function CategoryCard({
               <li
                 key={i}
                 className="relative pl-4 text-[14px] leading-6 text-[var(--text-secondary)] before:absolute before:left-0 before:top-2.5 before:h-1 before:w-1 before:rounded-full before:bg-[var(--accent)]"
+                lang={langOf(tip, locale)}
               >
-                {locale === "ko" ? tip.ko : tip.en}
+                {pickLocalized(tip, locale)}
               </li>
             ))}
           </ul>
@@ -176,15 +197,21 @@ function GroupBlock({
   const embed = group.video ? videoEmbed(group.video) : null;
   return (
     <div className={dense ? "mt-8" : ""}>
-      <h4 className="font-display m-0 mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
-        {locale === "ko" ? group.title.ko : group.title.en}
+      <h4
+        className="font-display m-0 mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.16em] text-[var(--text-tertiary)]"
+        lang={langOf(group.title, locale)}
+      >
+        {pickLocalized(group.title, locale)}
       </h4>
       {group.mapImage && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={group.mapImage}
-          alt=""
-          aria-hidden="true"
+          alt={
+            locale === "ko"
+              ? `${pickLocalized(group.title, locale)} 위치 맵`
+              : `${pickLocalized(group.title, locale)} location map`
+          }
           loading="lazy"
           className="mb-4 w-full max-w-[640px] rounded-xl border border-[var(--border-subtle)]"
         />
@@ -193,7 +220,7 @@ function GroupBlock({
         <div className="relative mb-4 aspect-video w-full max-w-[640px] overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-black/40">
           <iframe
             src={embed}
-            title={locale === "ko" ? group.title.ko : group.title.en}
+            title={pickLocalized(group.title, locale)}
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -238,12 +265,15 @@ function parseBodyChoices(body: string): { intro?: string; choices?: string[]; r
 function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
   const embed = item.video ? videoEmbed(item.video) : null;
   const titleText = item.title
-    ? locale === "ko" ? item.title.ko : item.title.en
-    : locale === "ko" ? item.location.ko : item.location.en;
-  const locationText = locale === "ko" ? item.location.ko : item.location.en;
+    ? pickLocalized(item.title, locale)
+    : pickLocalized(item.location, locale);
+  const titleLang = item.title ? langOf(item.title, locale) : langOf(item.location, locale);
+  const locationText = pickLocalized(item.location, locale);
+  const locationLang = langOf(item.location, locale);
   const titleEndsWithLocation =
     Boolean(item.title) && titleText.replace(/\s+/g, "").endsWith(locationText.replace(/\s+/g, ""));
-  const bodyText = item.body ? (locale === "ko" ? item.body.ko : item.body.en) : null;
+  const bodyText = item.body ? pickLocalized(item.body, locale) : null;
+  const bodyLang = item.body ? langOf(item.body, locale) : "en";
   const parsed = bodyText ? parseBodyChoices(bodyText) : null;
   return (
     <li className="flex flex-col gap-2.5 rounded-xl border border-[var(--border-subtle)] bg-black/20 p-3.5">
@@ -251,10 +281,10 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
         <span className="font-mono text-[14px] font-extrabold text-[var(--accent)]">
           #{String(item.number).padStart(2, "0")}
         </span>
-        <span className="text-[14px] font-bold text-white">{titleText}</span>
+        <span className="text-[14px] font-bold text-white" lang={titleLang}>{titleText}</span>
       </div>
       {item.title && !titleEndsWithLocation && (
-        <div className="text-[14px] text-[var(--text-tertiary)]">{locationText}</div>
+        <div className="text-[14px] text-[var(--text-tertiary)]" lang={locationLang}>{locationText}</div>
       )}
 
       {item.image && (
@@ -269,8 +299,11 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
       )}
 
       {item.prereq && (
-        <div className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]">
-          {locale === "ko" ? `사전 조건: ${item.prereq.ko}` : `Prereq: ${item.prereq.en}`}
+        <div
+          className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]"
+          lang={langOf(item.prereq, locale)}
+        >
+          {locale === "ko" ? `사전 조건: ${pickLocalized(item.prereq, "ko")}` : `Prereq: ${pickLocalized(item.prereq, locale)}`}
         </div>
       )}
 
@@ -303,7 +336,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           ) : null}
         </div>
       ) : bodyText ? (
-        <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]">{bodyText}</p>
+        <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]" lang={bodyLang}>{bodyText}</p>
       ) : null}
 
       {item.reward && (
@@ -311,8 +344,8 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           <Chip tone="gold" size="xs">
             {locale === "ko" ? "보상" : "Reward"}
           </Chip>
-          <span className="text-[14px] font-semibold text-white">
-            {locale === "ko" ? item.reward.ko : item.reward.en}
+          <span className="text-[14px] font-semibold text-white" lang={langOf(item.reward, locale)}>
+            {pickLocalized(item.reward, locale)}
           </span>
         </div>
       )}
@@ -338,8 +371,8 @@ function StepRow({ locale, step, index }: { locale: Locale; step: CollectibleSte
       <span className="shrink-0 font-mono text-[14px] font-bold text-[var(--accent)]">
         {step.index ?? index}.
       </span>
-      <span className="flex-1">
-        {locale === "ko" ? step.body.ko : step.body.en}
+      <span className="flex-1" lang={langOf(step.body, locale)}>
+        {pickLocalized(step.body, locale)}
         {step.image && (
           <>
             <br />

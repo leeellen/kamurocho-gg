@@ -7,14 +7,14 @@ export const yakuza0: CollectiblesData = {
       slug: "mr-shakedown",
       title: { ko: "삥쟁이 격파", en: "Mr. Shakedown Encounters" },
       summary: {
-        ko: "양 도시에서 등장하는 삥쟁이(원문 Mr. Shakedown)들을 격파하면 거액의 일시금이 들어옵니다. 부동산·캬바레 시드 머니로 가장 효율적인 자금원입니다.",
+        ko: "양 도시에서 등장하는 삥쟁이(미스터 셰이크다운)들을 격파하면 거액의 일시금이 들어옵니다. 부동산·카바레 시드 머니로 가장 효율적인 자금원입니다.",
         en: "Defeat the roaming Mr. Shakedowns in both cities for big lump-sum payouts — the most efficient seed money for the Real Estate and Cabaret mini-games.",
       },
     },
   {
     slug: "telephone-cards",
     title: { ko: "텔레폰 카드 90종 — 30명 × A·B·C", en: "Telephone Cards (90 total — 30 actresses × A/B/C)" },
-    summary: { ko: "키류 편 카무로쵸 45장 + 마지마 편 소텐보리 45장. 한 명당 A·B·C 3종을 모두 수집해 컬렉터에게 보여주면 한 세트당 500만 엔을 받습니다. A→B→C 순서로 회수해야 표시되는 점에 주의하세요.", en: "Kiryu (Kamurocho) holds 45 cards, Majima (Sotenbori) holds 45. Each actress has A/B/C — bring all three to the collector for ¥5,000,000 per complete set. Cards must be collected in A→B→C order to appear." },
+    summary: { ko: "키류 편 카무로초 45장 + 마지마 편 소텐보리 45장. 한 명당 A·B·C 3종을 모두 수집해 컬렉터에게 보여주면 한 세트당 500만 엔을 받습니다. A→B→C 순서로 회수해야 표시되는 점에 주의하세요.", en: "Kiryu (Kamurocho) holds 45 cards, Majima (Sotenbori) holds 45. Each actress has A/B/C — bring all three to the collector for ¥5,000,000 per complete set. Cards must be collected in A→B→C order to appear." },
     tips: [
         { ko: "카드 워처를 장비하면 광나는 카드 위치가 미니맵에 떠 회수가 훨씬 수월합니다. 키류는 핑크 거리 뒤 컬렉터, 마지마는 소텐보리 동쪽 컬렉터에게 제출하세요.", en: "Equip the Card Watcher to mark shining cards on the minimap. Hand sets to Kiryu's collector behind Pink St. (Akimoto) or Majima's collector east of Sotenbori." },
         { ko: "세트 5장 보상 외에도 「절륜의 아키모토」 친구 호감도가 올라가며 추가 보상이 따라옵니다.", en: "Beyond the ¥5M payout, completing sets raises affinity with collector Akimoto for additional rewards." },
@@ -22,7 +22,7 @@ export const yakuza0: CollectiblesData = {
     source: { label: "龍が如く0 最速攻略wiki — テレホンカード", url: "https://spwiki.net/ryuzero/wikis/109.html" },
     groups: [
     {
-      title: { ko: "키류 / 카무로쵸 — 45장 (15명 × A·B·C)", en: "Kiryu / Kamurocho — 45 Cards (15 actresses × A/B/C)" },
+      title: { ko: "키류 / 카무로초 — 45장 (15명 × A·B·C)", en: "Kiryu / Kamurocho — 45 Cards (15 actresses × A/B/C)" },
       items: [
       {
         number: 1,
@@ -77,7 +77,7 @@ export const yakuza0: CollectiblesData = {
       {
         number: 11,
         title: { ko: "미나토 리쿠 · 타입 B", en: "Riku Minato · Type B" },
-        location: { ko: "호텔가, HOTEL 아모레 입구", en: "Hotel District, entrance of HOTEL Amore" },
+        location: { ko: "호텔가, 호텔 아모레 입구", en: "Hotel District, entrance of HOTEL Amore" },
       },
       {
         number: 12,
@@ -457,7 +457,7 @@ export const yakuza0: CollectiblesData = {
       {
         number: 41,
         title: { ko: "하세가와 시즈쿠 · 타입 B", en: "Shizuku Hasegawa · Type B" },
-        location: { ko: "분자에몬 거리 모퉁이, 큰 건물(SFT VILLAGE) 입구 왼쪽 화분 아래", en: "Bunzaemon St. corner, under the planter to the left of the big building's entrance (SFT VILLAGE)" },
+        location: { ko: "분자에몬 거리 모퉁이, 큰 건물(SFT 빌리지) 입구 왼쪽 화분 아래", en: "Bunzaemon St. corner, under the planter to the left of the big building's entrance (SFT VILLAGE)" },
       },
       {
         number: 42,
@@ -485,11 +485,11 @@ export const yakuza0: CollectiblesData = {
   },
   {
     slug: "real-estate-royale",
-    title: { ko: "카무로쵸 머니 아일랜드 — 5구역 + 5억만장자 격파", en: "Kamurocho Money Island — 5 Districts + 5 Billionaires" },
-    summary: { ko: "키류 편 부동산 모드. 카무로쵸 5구역(레저 킹·일렉트로닉스 킹·플레저 킹·갬블링 킹·미디어 킹) 부동산을 인수해 각 구역 매출 점유율 90% 이상을 달성하고 5억만장자를 차례로 격파하면 됩니다. 챕터 3 이후 본격 진행 가능합니다.", en: "Kiryu's Real Estate Royale. Acquire properties across the five Kamurocho districts (Leisure King, Electronics King, Pleasure King, Gambling King, Media King), hit 90%+ market share per district, and defeat all five Billionaire bosses. Free play from Chapter 3." },
+    title: { ko: "카무로초 머니 아일랜드 — 5구역 + 5억만장자 격파", en: "Kamurocho Money Island — 5 Districts + 5 Billionaires" },
+    summary: { ko: "키류 편 부동산 모드. 카무로초 5구역(레저 킹·일렉트로닉스 킹·플레저 킹·갬블링 킹·미디어 킹) 부동산을 인수해 각 구역 매출 점유율 90% 이상을 달성하고 5억만장자를 차례로 격파하면 됩니다. 챕터 3 이후 본격 진행 가능합니다.", en: "Kiryu's Real Estate Royale. Acquire properties across the five Kamurocho districts (Leisure King, Electronics King, Pleasure King, Gambling King, Media King), hit 90%+ market share per district, and defeat all five Billionaire bosses. Free play from Chapter 3." },
     tips: [
         { ko: "구역별 시장 점유율은 부동산을 한 곳씩 인수할 때마다 점진적으로 오릅니다. 시드 머니가 부족하면 삥쟁이를 격파해 거액을 확보하세요.", en: "Market share rises gradually as you buy properties. If short on seed money, defeat Mr. Shakedowns for lump-sum payouts." },
-        { ko: "친구 단계(Friendship) NPC 호감도를 끌어올리면 '매핑된' 점포가 추가 해금됩니다. 각 구역에 1~2곳씩 친구 전제 매물이 존재합니다.", en: "Raising Friendship affinity with key NPCs unlocks 'mapped' properties — 1-2 per district." },
+        { ko: "친구 단계 NPC 호감도를 끌어올리면 '매핑된' 점포가 추가 해금됩니다. 각 구역에 1~2곳씩 친구 전제 매물이 존재합니다.", en: "Raising Friendship affinity with key NPCs unlocks 'mapped' properties — 1-2 per district." },
         { ko: "최종 라이벌 파이낸스 킹은 5구역을 모두 장악하고 4억만장자를 격파한 뒤 메인 스토리 챕터 14 이후에 도전 가능합니다.", en: "Final rival Finance King unlocks only after dominating all five districts + defeating the first 4 Billionaires, gated by Chapter 14 main story." },
     ],
     source: { label: "龍が如く0 最速攻略wiki — 不動産", url: "https://spwiki.net/ryuzero/" },
@@ -500,32 +500,32 @@ export const yakuza0: CollectiblesData = {
       {
         number: 1,
         title: { ko: "레저 킹 구역", en: "Leisure King District" },
-        location: { ko: "카무로쵸 — 시치후쿠 거리 일대 (북부)", en: "Kamurocho — Shichifuku St. area (north)" },
+        location: { ko: "카무로초 — 시치후쿠 거리 일대 (북부)", en: "Kamurocho — Shichifuku St. area (north)" },
         body: { ko: "10곳 부동산을 인수해 점유율 90% 도달 후 레저 킹과 결전. 기본 부동산 외 친구 미호와 셰프의 호감도 조건으로 풀리는 매핑 매물 2곳 포함.", en: "Buy 10 properties to 90% share, then fight Leisure King. Includes 2 'mapped' properties gated on Friendship with Miho and Chef." },
         reward: { ko: "레저 킹 격파 보상: 시드 머니 + 다음 구역 해금", en: "Reward: seed money + next district unlock" },
       },
       {
         number: 2,
         title: { ko: "일렉트로닉스 킹 구역", en: "Electronics King District" },
-        location: { ko: "카무로쵸 — 천량 거리·후지소바 일대 (중부)", en: "Kamurocho — Senryo St. / Fuji Soba area (center)" },
+        location: { ko: "카무로초 — 천량 거리·후지소바 일대 (중부)", en: "Kamurocho — Senryo St. / Fuji Soba area (center)" },
         body: { ko: "친구 루카의 우정 조건 + 일반 매물 9곳. 시장 점유율 90% 후 일렉트로닉스 킹과 결전. JCC 디스코 미니게임이 미션 흐름에 포함.", en: "Friend Luka condition + 9 standard properties. Hit 90% share then face Electronics King — JCC Disco minigame is woven into the arc." },
       },
       {
         number: 3,
         title: { ko: "플레저 킹 구역", en: "Pleasure King District" },
-        location: { ko: "카무로쵸 — 핑크 거리·텔레폰 클럽 일대", en: "Kamurocho — Pink St. / Telephone Club area" },
+        location: { ko: "카무로초 — 핑크 거리·텔레폰 클럽 일대", en: "Kamurocho — Pink St. / Telephone Club area" },
         body: { ko: "텔레폰 클럽 콘텐츠 + 친구 9명 호감도와 연동. 점유율 90% 후 플레저 킹은 매장(아야카) 데이트 이벤트 클리어를 조건으로 합니다.", en: "Tied to Telephone Club + 9 friend affinities. Pleasure King fight gated by Ayaka date event after 90% share." },
       },
       {
         number: 4,
         title: { ko: "갬블링 킹 구역", en: "Gambling King District" },
-        location: { ko: "카무로쵸 — 극장 광장·테아토르 일대 (남부)", en: "Kamurocho — Theater Square / Theater area (south)" },
+        location: { ko: "카무로초 — 극장 광장·테아토르 일대 (남부)", en: "Kamurocho — Theater Square / Theater area (south)" },
         body: { ko: "친구 에미리(마하볼)와의 우정으로 매핑 매물 해금. 갬블링 킹은 JCC 일본 캣파이트 클럽 사이드 스토리 클리어 후 등장.", en: "Emiri (Mach Bowl) friendship unlocks mapped property. Gambling King appears after the JCC Japan Catfight Club side story clears." },
       },
       {
         number: 5,
         title: { ko: "미디어 킹 구역", en: "Media King District" },
-        location: { ko: "카무로쵸 — 호텔가·밀레니엄 타워 일대 (동부)", en: "Kamurocho — Hotel District / Millennium Tower area (east)" },
+        location: { ko: "카무로초 — 호텔가·밀레니엄 타워 일대 (동부)", en: "Kamurocho — Hotel District / Millennium Tower area (east)" },
         body: { ko: "친구 파이터(포켓 서킷)의 우정 + 일반 매물 9곳. 디스코 시티 보이 인수 시 「The Glamorous Life」 업적이 트리거됩니다.", en: "Fighter (Pocket Circuit) friendship + 9 properties. Buying Disco City Boy triggers the 'The Glamorous Life' achievement." },
       },
       {
@@ -538,7 +538,7 @@ export const yakuza0: CollectiblesData = {
       ],
     },
     {
-      title: { ko: "레저 킹 매물 — 카무로쵸 남서부 (시치후쿠 거리)", en: "Leisure King Properties — Kamurocho Southwest (Shichifuku St.)" },
+      title: { ko: "레저 킹 매물 — 카무로초 남서부 (시치후쿠 거리)", en: "Leisure King Properties — Kamurocho Southwest (Shichifuku St.)" },
       mapImage: "https://lh3.googleusercontent.com/VNssO3bppCsYtXQsK4EJqlRXveUTtk2_3_Cf2JW99QAzENWtoS-sA9F7wWTTYdxzEow6lniBUjs3oNhWPEHiYJ_ibI9EGFDmNKjk2tadfwPO",
       items: [
         {
@@ -606,13 +606,13 @@ export const yakuza0: CollectiblesData = {
       ],
     },
     {
-      title: { ko: "일렉트로닉스 킹 매물 — 카무로쵸 남중부 (천량 거리·후지소바)", en: "Electronics King Properties — Kamurocho South-Center (Senryo St. / Fuji Soba)" },
+      title: { ko: "일렉트로닉스 킹 매물 — 카무로초 남중부 (천량 거리·후지소바)", en: "Electronics King Properties — Kamurocho South-Center (Senryo St. / Fuji Soba)" },
       mapImage: "https://lh3.googleusercontent.com/9_J5UmgtGg49qdtVdE0hQ6SHsfYRG-yjm3S82Zy7vxLmM5skfpvYBGIVoRmOXjVyTwG1WDkGDi-6wFAfImNa68qmUpiBF9QlQG7w_eTMP-xD",
       items: [
         {
           number: 1,
           title: { ko: "도레미파 존 (시작 점포)", en: "DoReMiFa Zone (Starting Property)" },
-          location: { ko: "HL SEGA 남쪽", en: "South of HL SEGA" },
+          location: { ko: "HL 세가 남쪽", en: "South of HL SEGA" },
           body: { ko: "일렉트로닉스 킹 구역 진입 시 자동 보유.", en: "Owned automatically when this district unlocks." },
         },
         {
@@ -665,7 +665,7 @@ export const yakuza0: CollectiblesData = {
         },
         {
           number: 10,
-          title: { ko: "HL SEGA 나카미치 거리점 (친구 매핑)", en: "HL SEGA Nakamichi St. (Friendship Mapped)" },
+          title: { ko: "HL 세가 나카미치 거리점 (친구 매핑)", en: "HL SEGA Nakamichi St. (Friendship Mapped)" },
           location: { ko: "요로노타키 북쪽 — 나카미치 거리", en: "North of Yoronotaki — Nakamichi St." },
           body: { ko: "구매 불가 — 게임센터 점원 루카와의 친구 호감도를 풀까지 올리면 무상 양도.", en: "Not purchasable — gifted when arcade clerk Luka's friendship is maxed." },
           prereq: { ko: "게임센터 점원 루카 친구 호감도 MAX", en: "Friendship MAX with arcade clerk Luka" },
@@ -878,11 +878,11 @@ export const yakuza0: CollectiblesData = {
   {
     slug: "cabaret-club-czar",
     title: { ko: "소텐보리 물장사 아일랜드 — 5구역 + 플래티넘 호스티스 육성", en: "Sotenbori Cabaret Royale — 5 Districts + Platinum Hostess Training" },
-    summary: { ko: "마지마 편 캬바쿠라 그랑프리 모드. 플레이어 가게 「Club Sunshine」을 운영하며 소텐보리를 지배하는 「소텐보리 5스타」 라이벌 5점포(Club Mars·Club Jupiter·Club Mercury·Club Venus·Club Moon)를 차례로 격파합니다. 플래티넘 캐스트 6명(유키·사키·치카·아이·히비키·마나)을 영입해 능력치(섹시 / 뷰티 / 큐트 / 퍼니 4종 × X→△→○→◎ 4단계) MAX로 키웁니다. 캐스트별 특별 레슨의 정답 선택지 텍스트(예: 「분재…?」 / 「무조건 칭찬한다」)는 아래 레슨별 카드에서 전문으로 안내합니다.", en: "Majima's Cabaret Club Grand Prix. You run Club Sunshine and topple the Five Stars of Sotenbori — Club Mars, Club Jupiter, Club Mercury, Club Venus, and Club Moon. Recruit all 6 Platinum Cast (Yuki/Saki/Chika/Ai/Hibiki/Mana) and train them to MAX across the 4 stats (Sexy / Beauty / Cute / Funny — X→△→○→◎ tiers). Full Private Lesson dialog answers (e.g. \"Bonsai...?\" / \"Just praise her no matter what\") are listed verbatim in the per-cast lesson cards below." },
+    summary: { ko: "마지마 편 캬바쿠라 그랑프리 모드. 플레이어 가게 「클럽 선샤인」을 운영하며 소텐보리를 지배하는 「소텐보리 5스타」 라이벌 5점포(클럽 마즈·클럽 주피터·클럽 머큐리·클럽 비너스·클럽 문)를 차례로 격파합니다. 플래티넘 캐스트 6명(유키·사키·치카·아이·히비키·마나)을 영입해 능력치(섹시 / 뷰티 / 큐트 / 퍼니 4종 × X→△→○→◎ 4단계) MAX로 키웁니다. 캐스트별 특별 레슨의 정답 선택지 텍스트(예: 「분재…?」 / 「무조건 칭찬한다」)는 아래 레슨별 카드에서 전문으로 안내합니다.", en: "Majima's Cabaret Club Grand Prix. You run Club Sunshine and topple the Five Stars of Sotenbori — Club Mars, Club Jupiter, Club Mercury, Club Venus, and Club Moon. Recruit all 6 Platinum Cast (Yuki/Saki/Chika/Ai/Hibiki/Mana) and train them to MAX across the 4 stats (Sexy / Beauty / Cute / Funny — X→△→○→◎ tiers). Full Private Lesson dialog answers (e.g. \"Bonsai...?\" / \"Just praise her no matter what\") are listed verbatim in the per-cast lesson cards below." },
     tips: [
         { ko: "호스티스 능력치는 섹시 / 뷰티 / 큐트 / 퍼니 4종. 등급은 X / △ / ○ / ◎ 순으로 4단계입니다. 한 캐스트당 최대 3개 항목만 ◎까지 올릴 수 있으니, 캐스트별로 역할을 분담해 1개를 X로 두고 나머지 3개를 ◎로 특화하세요.", en: "Hostess stats split into Sexy / Beauty / Cute / Funny, ranked X → △ → ○ → ◎. Only 3 of 4 can hit ◎ per cast — specialize: lock one as X and push the other three to ◎ so roles don't overlap." },
         { ko: "특별 레슨(프라이빗 레슨)은 노래방·댄스·당구·다트 데이트로 진행됩니다. 호감도 + 데이트 승리로 레벨이 비약적으로 오릅니다. 데이트 선택지는 호스티스의 성격 유형에 맞춰 답하면 정답.", en: "Private Lessons use karaoke / dance / billiards / darts dates. Affinity + date wins drastically raise levels. Pick choices that match the hostess's personality type for the right answer." },
-        { ko: "5스타 풀 제패 시 「지지 않는 태양」 업적이 트리거됩니다. 최종 라이벌 Club Moon 결전 전에 캐스트 능력치를 풀로 올려 두세요.", en: "Conquering all Five Stars triggers 'Walking On Sunshine'. Max out cast stats before the final Club Moon showdown." },
+        { ko: "5스타 풀 제패 시 「지지 않는 태양」 업적이 트리거됩니다. 최종 라이벌 클럽 문 결전 전에 캐스트 능력치를 풀로 올려 두세요.", en: "Conquering all Five Stars triggers 'Walking On Sunshine'. Max out cast stats before the final Club Moon showdown." },
     ],
     source: { label: "용과 같이 시리즈/캬바쿠라 — 나무위키", url: "https://namu.wiki/w/%EC%9A%A9%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88/%EC%BA%AC%EB%B0%94%EC%BF%A0%EB%9D%BC" },
     groups: [
@@ -891,33 +891,33 @@ export const yakuza0: CollectiblesData = {
       items: [
       {
         number: 1,
-        title: { ko: "Club Mars 격파 (보스: 히노)", en: "Defeat Club Mars (Boss: Hino)" },
-        location: { ko: "소텐보리 — Mars 영역 (퍼플)", en: "Sotenbori — Mars Area (Purple)" },
+        title: { ko: "클럽 마즈 격파 (보스: 히노)", en: "Defeat Club Mars (Boss: Hino)" },
+        location: { ko: "소텐보리 — 마즈 영역 (퍼플)", en: "Sotenbori — Mars Area (Purple)" },
         body: { ko: "5스타 입문전. 튜토리얼 직후 도전 가능. 일반 호스티스 라인업 + 트레이닝 1단계만 마쳐도 1위 매출 가능.", en: "Entry battle. Available right after the tutorial. Standard hostesses + basic training are enough for #1 sales." },
       },
       {
         number: 2,
-        title: { ko: "Club Jupiter 격파 (보스: 키즈카)", en: "Defeat Club Jupiter (Boss: Kizuka)" },
-        location: { ko: "소텐보리 — Jupiter 영역 (그린)", en: "Sotenbori — Jupiter Area (Green)" },
+        title: { ko: "클럽 주피터 격파 (보스: 키즈카)", en: "Defeat Club Jupiter (Boss: Kizuka)" },
+        location: { ko: "소텐보리 — 주피터 영역 (그린)", en: "Sotenbori — Jupiter Area (Green)" },
         body: { ko: "Mars 클리어 후 도전. 첫 번째 플래티넘 캐스트 영입 가능 시점.", en: "After Mars. First Platinum Cast becomes recruitable here." },
       },
       {
         number: 3,
-        title: { ko: "Club Mercury 격파 (보스: 미즈무라)", en: "Defeat Club Mercury (Boss: Mizumura)" },
-        location: { ko: "소텐보리 — Mercury 영역 (블루)", en: "Sotenbori — Mercury Area (Blue)" },
+        title: { ko: "클럽 머큐리 격파 (보스: 미즈무라)", en: "Defeat Club Mercury (Boss: Mizumura)" },
+        location: { ko: "소텐보리 — 머큐리 영역 (블루)", en: "Sotenbori — Mercury Area (Blue)" },
         body: { ko: "능력치 ◎ 1개로는 불안정. 트레이닝 + 데이트 이벤트로 캐스트 1~2명을 핵심급으로 키워두세요.", en: "Single-◎ casts struggle here. Push 1-2 casts to core spec with training + date events." },
       },
       {
         number: 4,
-        title: { ko: "Club Venus 격파 (보스: 카네하라)", en: "Defeat Club Venus (Boss: Kanehara)" },
-        location: { ko: "소텐보리 — Venus 영역 (레드)", en: "Sotenbori — Venus Area (Red)" },
+        title: { ko: "클럽 비너스 격파 (보스: 카네하라)", en: "Defeat Club Venus (Boss: Kanehara)" },
+        location: { ko: "소텐보리 — 비너스 영역 (레드)", en: "Sotenbori — Venus Area (Red)" },
         body: { ko: "VIP 손님 비중이 커집니다. 플래티넘 캐스트 4명 풀 영입 + 의상·헤어 풀 강화 후 도전.", en: "VIP customers dominate. Recruit all 4 Platinum Casts + max outfits + hair before challenging." },
       },
       {
         number: 5,
-        title: { ko: "Club Moon 결승전 (보스: 츠키야마)", en: "Club Moon — Final (Boss: Tsukiyama)" },
-        location: { ko: "소텐보리 — Moon 영역 (골드) / 그랑프리 결승", en: "Sotenbori — Moon Area (Gold) / Grand Prix Final" },
-        body: { ko: "최종 라이벌. 츠키야마는 5스타의 리더. 플래티넘 캐스트 4명을 능력치 MAX로 만들고 데이트 이벤트 풀 클리어 후 도전. 격파 시 「지지 않는 태양」 업적 + Club Sunshine 통합.", en: "Final rival — Tsukiyama leads the Five Stars. Hit MAX on all 4 Platinum Casts + clear date events. Win for 'Walking On Sunshine' achievement + Club Sunshine takes the throne." },
+        title: { ko: "클럽 문 결승전 (보스: 츠키야마)", en: "Club Moon — Final (Boss: Tsukiyama)" },
+        location: { ko: "소텐보리 — 문 영역 (골드) / 그랑프리 결승", en: "Sotenbori — Moon Area (Gold) / Grand Prix Final" },
+        body: { ko: "최종 라이벌. 츠키야마는 5스타의 리더. 플래티넘 캐스트 4명을 능력치 MAX로 만들고 데이트 이벤트 풀 클리어 후 도전. 격파 시 「지지 않는 태양」 업적 + 클럽 선샤인 통합.", en: "Final rival — Tsukiyama leads the Five Stars. Hit MAX on all 4 Platinum Casts + clear date events. Win for 'Walking On Sunshine' achievement + Club Sunshine takes the throne." },
         reward: { ko: "「지지 않는 태양」 업적 + 마지마 부동산 외 시드 머니 확장", en: "'Walking On Sunshine' achievement + cabaret-side cash flow for Majima" },
       },
       ],
@@ -927,25 +927,25 @@ export const yakuza0: CollectiblesData = {
       items: [
       {
         number: 6,
-        title: { ko: "섹시 라인 (X→△→○→◎)", en: "Sexy line (X→△→○→◎)" },
+        title: { ko: "섹시 라인", en: "Sexy line (X→△→○→◎)" },
         location: { ko: "드레스업 — 의상·헤어 변경", en: "Dress-Up — outfit + hair" },
         body: { ko: "노출도 높은 의상 + 헤어로 상승. 데이트 미니게임 중 「당구」 승리 시 추가 보너스.", en: "Boosted by exposed outfits + hairstyles. Win billiards dates for extra Sexy gains." },
       },
       {
         number: 7,
-        title: { ko: "뷰티 라인 (X→△→○→◎)", en: "Beauty line" },
+        title: { ko: "뷰티 라인", en: "Beauty line" },
         location: { ko: "드레스업 — 액세서리·화장", en: "Dress-Up — accessories + makeup" },
         body: { ko: "고급 액세서리 + 메이크업으로 상승. 「댄스」 데이트 승리 시 추가 보너스.", en: "High-end accessories + makeup. Win dance dates for extra Beauty gains." },
       },
       {
         number: 8,
-        title: { ko: "큐트 라인 (X→△→○→◎)", en: "Cute line" },
+        title: { ko: "큐트 라인", en: "Cute line" },
         location: { ko: "드레스업 — 캐주얼 의상", en: "Dress-Up — casual outfits" },
         body: { ko: "파스텔 톤·캐주얼 의상으로 상승. 「노래방」 데이트 승리 시 추가 보너스.", en: "Pastel / casual outfits. Win karaoke dates for extra Cute gains." },
       },
       {
         number: 9,
-        title: { ko: "퍼니 라인 (X→△→○→◎)", en: "Funny line" },
+        title: { ko: "퍼니 라인", en: "Funny line" },
         location: { ko: "드레스업 — 개성적인 의상", en: "Dress-Up — quirky outfits" },
         body: { ko: "개성적인 의상 + 헤어. 「다트」 데이트 승리 시 추가 보너스.", en: "Quirky outfits + hair. Win darts dates for extra Funny gains." },
       },
@@ -1233,7 +1233,7 @@ export const yakuza0: CollectiblesData = {
   {
     slug: "video-clips",
     title: { ko: "비디오 — 간다라 비디오 가게 + 특별 클립 해금", en: "Video — Gandara Shop + Special Clip Unlocks" },
-    summary: { ko: "Y0의 비디오 콘텐츠는 「간다라(ガンダーラ)」 비디오 가게에서 진행됩니다. 일반 이미지 비디오를 반복 시청하면 점원과의 호감도가 오르고, 특정 조건을 만족시키면 서브스토리 + 특별 클립이 해금됩니다. 30종 일괄 수집 시스템은 없으며, 핵심은 호감도 + 사이드 트리거입니다.", en: "Y0's video content lives at the Gandara (ガンダーラ) video shop. Watching standard image videos repeatedly raises affinity with the clerk; specific triggers unlock substories + special clips. There is no flat 30-clip checklist — what matters is affinity + side triggers." },
+    summary: { ko: "용과 같이 0의 비디오 콘텐츠는 「간다라(ガンダーラ)」 비디오 가게에서 진행됩니다. 일반 이미지 비디오를 반복 시청하면 점원과의 호감도가 오르고, 특정 조건을 만족시키면 서브스토리 + 특별 클립이 해금됩니다. 30종 일괄 수집 시스템은 없으며, 핵심은 호감도 + 사이드 트리거입니다.", en: "Y0's video content lives at the Gandara (ガンダーラ) video shop. Watching standard image videos repeatedly raises affinity with the clerk; specific triggers unlock substories + special clips. There is no flat 30-clip checklist — what matters is affinity + side triggers." },
     tips: [
         { ko: "간다라 소텐보리점에서 처음 비디오를 보면 서브스토리가 자동 발생. 점원과의 절(絆) 게이지가 함께 오릅니다.", en: "First viewing at Sotenbori Gandara auto-triggers a substory + starts the clerk's bond gauge." },
         { ko: "천량 거리 북쪽 간다라에서 이미지 비디오 3회 시청 후 입장하면 서브스토리 「비디오 걸」 발생.", en: "Watch any image video 3 times at the Senryo St. North Gandara then re-enter to trigger substory 'Video Girl'." },
@@ -1250,7 +1250,7 @@ export const yakuza0: CollectiblesData = {
       {
         number: 2,
         title: { ko: "간다라 천량 거리 북점 — 「비디오 걸」 서브스토리", en: "Gandara Senryo North — 'Video Girl' substory" },
-        location: { ko: "카무로쵸 — 천량 거리 북쪽", en: "Kamurocho — Senryo St. North" },
+        location: { ko: "카무로초 — 천량 거리 북쪽", en: "Kamurocho — Senryo St. North" },
         body: { ko: "키류 편. 이미지 비디오를 3회 시청한 뒤 점내 재입장 시 서브스토리 시작.", en: "Kiryu side. Watch any image video 3 times, then re-enter the shop." },
       },
       {

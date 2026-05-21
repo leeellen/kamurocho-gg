@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "놓치면 끝나는 구간 — 용과 같이 시리즈 놓치기 쉬움",
-  description: "챕터 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·챕터별로 정리했습니다.",
-  alternates: { canonical: "/missables" },
-  openGraph: {
-    title: "용과 같이 시리즈 놓치기 쉬움 인덱스",
-    description: "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음.",
-    url: "https://kamurocho-gg.vercel.app/missables",
-  },
-};
 import { FiArrowRight, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
@@ -18,6 +7,33 @@ import { Chip } from "@/components/ui/chip";
 import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
 import { getMissablesIndex } from "@/lib/kamurocho-data";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const isKo = locale === "ko";
+  const title = isKo
+    ? "놓치면 끝나는 구간 — 용과 같이 시리즈 놓치기 쉬움"
+    : "Missable checks — RGG Studio chapter-locked content";
+  const description = isKo
+    ? "챕터 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·챕터별로 정리했습니다."
+    : "Chapter locks and route splits that permanently lock content, organized by game and chapter.";
+  const ogTitle = isKo
+    ? "용과 같이 시리즈 놓치기 쉬움 인덱스"
+    : "RGG Studio missables index";
+  const ogDescription = isKo
+    ? "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음."
+    : "Chapter locks and branching choices that erase progress if you miss them.";
+  return {
+    title,
+    description,
+    alternates: { canonical: "/missables" },
+    openGraph: {
+      title: ogTitle,
+      description: ogDescription,
+      url: "https://kamurocho-gg.vercel.app/missables",
+    },
+  };
+}
 
 export const dynamic = "force-dynamic";
 

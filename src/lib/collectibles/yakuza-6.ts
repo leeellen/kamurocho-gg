@@ -39,7 +39,7 @@ export const yakuza6: CollectiblesData = {
       slug: "minigames",
       title: { ko: "대단한 선수야 + 이렇게 좋은 사람이 되려면 + 도그마의 용", en: "Minigame Sweeps — Yakuza 6" },
       summary: {
-        ko: "「대단한 선수야」(모든 미니게임 플레이) + 「이렇게 좋은 사람이 되려면 오랜 시간이 걸립니다」(클럽 세가 모든 게임) + 「도그마의 용」(RIZAP 트레이닝 모두 체험) 세 업적이 미니게임 라인의 핵심.",
+        ko: "「대단한 선수야」(모든 미니게임 플레이) + 「이렇게 좋은 사람이 되려면 오랜 시간이 걸립니다」(클럽 세가 모든 게임) + 「도그마의 용」(라이잡 트레이닝 모두 체험) 세 업적이 미니게임 라인의 핵심.",
         en: "Three sweep achievements: 'What a Player' (every minigame), 'It Takes a Long Time to Be This Good' (every Club SEGA game), and 'Dragon of Dogma' (every RIZAP training).",
       },
     },
@@ -70,7 +70,7 @@ export const yakuza6: CollectiblesData = {
   {
     slug: "stray-cats",
     title: { ko: "길고양이 19마리 — 모든 위치와 좋아하는 캔", en: "Stray Cats — All 19 Locations & Favorite Cans" },
-    summary: { ko: "서브스토리 No.21 「네코카페에 어서 오세요」를 클리어한 뒤 카무로쵸 9마리 + 오노미치 10마리를 모두 포획해 네코카페에 영입합니다. 좋아하는 캔을 들고 가면 포획 성공률이 높아집니다.", en: "After clearing substory No.21 \"Welcome to the Cat Cafe\", capture all 9 Kamurocho cats and 10 Onomichi cats. Bring each cat's favorite can to boost capture success." },
+    summary: { ko: "서브스토리 No.21 「네코카페에 어서 오세요」를 클리어한 뒤 카무로초 9마리 + 오노미치 10마리를 모두 포획해 네코카페에 영입합니다. 좋아하는 캔을 들고 가면 포획 성공률이 높아집니다.", en: "After clearing substory No.21 \"Welcome to the Cat Cafe\", capture all 9 Kamurocho cats and 10 Onomichi cats. Bring each cat's favorite can to boost capture success." },
     tips: [
         { ko: "챕터 2 이후 SNS와 트러블 미션이 풀린 다음에야 일부 고양이가 출현합니다. 출현 포인트는 한 지역 안에서 2~3곳 랜덤이므로 한 자리에서 안 보이면 인근을 한 바퀴 돌아보세요.", en: "Some cats only appear after SNS / trouble missions open in Chapter 2. Each cat has 2-3 random spawn points within its region — sweep the area if not visible on first visit." },
         { ko: "캔은 편의점·돈키호테·네코카페에서 구입할 수 있습니다. 좋아하는 캔을 잘못 골라도 카운트는 오르지만 도망 확률이 커집니다.", en: "Cans sell at convenience stores, Don Quijote, and the Cat Cafe. Wrong cans still count but raise escape chance." },
@@ -78,60 +78,60 @@ export const yakuza6: CollectiblesData = {
     source: { label: "龍が如く6攻略 — 猫の場所", url: "http://ryugagotoku6.riroa.com/ryugagotoku6_neko.html" },
     groups: [
     {
-      title: { ko: "카무로쵸 — 9마리", en: "Kamurocho — 9 Cats" },
+      title: { ko: "카무로초 — 9마리", en: "Kamurocho — 9 Cats" },
       items: [
       {
         number: 1,
         title: { ko: "비올라", en: "Viola" },
-        location: { ko: "카무로쵸 — 천하일 거리 뉴 세레나 뒤편 근처", en: "Kamurocho — behind New Serena on Tenkaichi Street" },
+        location: { ko: "카무로초 — 천하일 거리 뉴 세레나 뒤편 근처", en: "Kamurocho — behind New Serena on Tenkaichi Street" },
         reward: { ko: "「가다랑어 포! 인생은 풍미」", en: "Bonito Flakes \"Life Is All About Umami\"" },
       },
       {
         number: 2,
         title: { ko: "무사시", en: "Musashi" },
-        location: { ko: "카무로쵸 — 천하일 거리 SPIDER's 근처", en: "Kamurocho — near SPIDER's on Tenkaichi Street" },
+        location: { ko: "카무로초 — 천하일 거리 SPIDER's 근처", en: "Kamurocho — near SPIDER's on Tenkaichi Street" },
         reward: { ko: "「가다랑어 포! 인생은 풍미」", en: "Bonito Flakes \"Life Is All About Umami\"" },
       },
       {
         number: 3,
         title: { ko: "코테츠", en: "Kotetsu" },
-        location: { ko: "카무로쵸 — 천하일 거리 뒷골목 근처", en: "Kamurocho — back alley off Tenkaichi Street" },
+        location: { ko: "카무로초 — 천하일 거리 뒷골목 근처", en: "Kamurocho — back alley off Tenkaichi Street" },
         reward: { ko: "「노릇하게 구운 비프 미소」", en: "Roasted Beef in Miso Sauce" },
       },
       {
         number: 4,
         title: { ko: "후쿠", en: "Fuku" },
-        location: { ko: "카무로쵸 — 에비스야 앞 거리 동쪽 방향", en: "Kamurocho — east along the street in front of Ebisuya" },
+        location: { ko: "카무로초 — 에비스야 앞 거리 동쪽 방향", en: "Kamurocho — east along the street in front of Ebisuya" },
         reward: { ko: "「치즈가 든 연어 파테」", en: "Salmon Pâté with Cheese" },
       },
       {
         number: 5,
         title: { ko: "밀크", en: "Milk" },
-        location: { ko: "카무로쵸 — 천량 거리에서 서쪽으로 꺾어 들어간 곳 근처", en: "Kamurocho — just west off Senryo Avenue" },
+        location: { ko: "카무로초 — 천량 거리에서 서쪽으로 꺾어 들어간 곳 근처", en: "Kamurocho — just west off Senryo Avenue" },
         reward: { ko: "「수제풍 치킨 거친 손질」", en: "Hand-Shredded Homestyle Chicken" },
       },
       {
         number: 6,
         title: { ko: "시즈쿠", en: "Shizuku" },
-        location: { ko: "카무로쵸 — 중도 거리 뒷골목 근처", en: "Kamurocho — back alley off Nakamichi Street" },
+        location: { ko: "카무로초 — 중도 거리 뒷골목 근처", en: "Kamurocho — back alley off Nakamichi Street" },
         reward: { ko: "「생식감 참치 플레이크 세트」", en: "Fresh-Textured Tuna Flake Feast" },
       },
       {
         number: 7,
         title: { ko: "레온", en: "Leon" },
-        location: { ko: "카무로쵸 — 미레니움 타워 앞 근처", en: "Kamurocho — in front of Millennium Tower" },
+        location: { ko: "카무로초 — 미레니움 타워 앞 근처", en: "Kamurocho — in front of Millennium Tower" },
         reward: { ko: "「치즈가 든 연어 파테」", en: "Salmon Pâté with Cheese" },
       },
       {
         number: 8,
         title: { ko: "마롱", en: "Marron" },
-        location: { ko: "카무로쵸 — 라이잡 앞 길, 살짝 서쪽 방향 근처", en: "Kamurocho — slightly west along the street in front of RIZAP" },
+        location: { ko: "카무로초 — 라이잡 앞 길, 살짝 서쪽 방향 근처", en: "Kamurocho — slightly west along the street in front of RIZAP" },
         reward: { ko: "「수제풍 치킨 거친 손질」", en: "Hand-Shredded Homestyle Chicken" },
       },
       {
         number: 9,
         title: { ko: "빅토리아", en: "Victoria" },
-        location: { ko: "카무로쵸 — 어린이 공원 근처", en: "Kamurocho — near the Children's Park" },
+        location: { ko: "카무로초 — 어린이 공원 근처", en: "Kamurocho — near the Children's Park" },
         reward: { ko: "「극상 참다랑어 볼살 골드」", en: "Premium Tuna Cheek Gold" },
       },
       ],

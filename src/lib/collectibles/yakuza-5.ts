@@ -7,7 +7,7 @@ export const yakuza5: CollectiblesData = {
       slug: "purikura-frames",
       title: { ko: "현지 프레이머 — 프리서클 지역 한정 프레임 (전 도시)", en: "Local Framer — Print Club Regional Frames" },
       summary: {
-        ko: "카무로쵸·소텐보리·나가스가이·츠키미노·킨에이초·사쿠라가와의 프리서클 부스를 모두 방문해 지역 한정 프레임으로 1회씩 촬영하면 「현지 프레이머」 업적 발동.",
+        ko: "카무로초·소텐보리·나가스가이·츠키미노·킨에이초·사쿠라가와의 프리서클 부스를 모두 방문해 지역 한정 프레임으로 1회씩 촬영하면 「현지 프레이머」 업적 발동.",
         en: "Visit every Print Club booth across the six cities and shoot one photo with the regional frame to unlock 'Local Framer'.",
       },
     },
@@ -53,9 +53,9 @@ export const yakuza5: CollectiblesData = {
     },
     {
       slug: "climax-heat",
-      title: { ko: "Mr.클라이맥스 — 4인 클라이맥스 히트 전 종류", en: "Mr. Climax — Every Climax Heat Across 4 Leads" },
+      title: { ko: "미스터 클라이맥스 — 4인 클라이맥스 히트 전 종류", en: "Mr. Climax — Every Climax Heat Across 4 Leads" },
       summary: {
-        ko: "키류·사에지마·아키야마·시나다 4인 모두로 클라이맥스 히트 종류를 빠짐없이 발동하면 「Mr.클라이맥스」 업적 발동. 무기·환경별 조건이 까다로우니 가이드 옆에 두고 정리하세요.",
+        ko: "키류·사에지마·아키야마·시나다 4인 모두로 클라이맥스 히트 종류를 빠짐없이 발동하면 「미스터 클라이맥스」 업적 발동. 무기·환경별 조건이 까다로우니 가이드 옆에 두고 정리하세요.",
         en: "Trigger every Climax Heat with all four leads to unlock 'Mr. Climax'. Weapon and environment conditions are strict — keep a checklist handy.",
       },
     },

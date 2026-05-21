@@ -45,7 +45,7 @@ export async function SiteShell({
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
               </span>
               <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
-                RGG Steam Guides
+                {locale === "ko" ? "RGG 시리즈 공략" : "RGG Steam Guides"}
               </span>
             </span>
           </Link>
@@ -130,6 +130,16 @@ export async function SiteShell({
                 </Link>
               );
             })}
+            {/* Persistent path to the Steam sign-in / library on phones, since
+                the header's "Sign in through Steam" button is hidden < sm. */}
+            <Link
+              href="/me"
+              className="ml-auto whitespace-nowrap rounded-full bg-[var(--accent-subtle)] px-3 py-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-colors hover:bg-[var(--accent-border)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+            >
+              {user
+                ? (locale === "ko" ? "내 라이브러리" : "Library")
+                : (locale === "ko" ? "Steam 로그인" : "Sign in")}
+            </Link>
           </div>
         </nav>
       </header>
