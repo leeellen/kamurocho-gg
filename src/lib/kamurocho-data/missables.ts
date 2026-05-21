@@ -79,16 +79,27 @@ export function buildDisplayMissables({
   locale: Locale;
 }): DisplayMissableChapter[] {
   const chapterMap = new Map<number, DisplayMissableChapter>();
+  // Names already covered by curated MISSABLES titles. Extract any 「...」
+  // bracketed name so DB achievements with the same KR localized name get
+  // deduped instead of rendered as a second card.
+  const covered = new Set<string>();
+  const addCovered = (raw: string) => {
+    for (const m of raw.matchAll(/[「『]([^」』]+)[」』]/g)) covered.add(normalizeComparableText(m[1]));
+  };
 
   for (const chapter of curatedMissables ?? []) {
     const curatedItems = chapter.items
       .filter((item) => item.kind === "missable")
-      .map((item) => ({
-        kind: item.kind,
-        title: locale === "ko" ? item.title.ko : item.title.en,
-        when: locale === "ko" ? item.when.ko : item.when.en,
-        body: locale === "ko" ? item.body.ko : item.body.en,
-      }));
+      .map((item) => {
+        addCovered(item.title.ko);
+        addCovered(item.title.en);
+        return {
+          kind: item.kind,
+          title: locale === "ko" ? item.title.ko : item.title.en,
+          when: locale === "ko" ? item.when.ko : item.when.en,
+          body: locale === "ko" ? item.body.ko : item.body.en,
+        };
+      });
     if (curatedItems.length === 0) continue;
     chapterMap.set(chapter.chapter, {
       chapter: chapter.chapter,
@@ -99,6 +110,7 @@ export function buildDisplayMissables({
 
   for (const achievement of achievements) {
     if (!achievement.missable) continue;
+    if (covered.has(normalizeComparableText(achievement.name))) continue;
     const bucketKey = achievement.chapter ?? 0;
     const bucket = chapterMap.get(bucketKey) ?? {
       chapter: bucketKey,

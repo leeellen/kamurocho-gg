@@ -417,7 +417,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이왕이면 화끈하게」(원어: Million-Dollar Tonight) — 골드 샴페인을 노숙자에게", en: "'Million-Dollar Tonight' — Gold Champagne to the homeless man" },
+          title: { ko: "「이왕이면 화끈하게」— 골드 샴페인을 노숙자에게", en: "'Rich Taste' — Gold Champagne to the homeless man" },
           when: { ko: "챕터 2 종료 전", en: "Before Chapter 2 ends" },
           body: {
             ko: "돈키호테에서 ¥20,000짜리 골드 샴페인을 구매해 카무로쵸 거리의 노숙자에게 건네면 트로피 발동. 챕터 3으로 넘어가면 영구 잠금. 자금이 부족하면 부동산 회수나 삥쟁이로 ¥20,000을 우선 확보하세요.",
@@ -432,7 +432,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「전격 트레이트 성립」(원어: Smooth Criminal) — Odyssey 정찰", en: "'Smooth Criminal' — Odyssey recon" },
+          title: { ko: "「전격 트레이트 성립」— Odyssey 정찰", en: "'Smooth Criminal' — Odyssey recon" },
           when: { ko: "마지마 챕터 3", en: "Majima — Chapter 3" },
           body: {
             ko: "비샤몬 다리 녹색 자켓 남성, 르 마르셰 남동쪽 녹색 자켓 여성, Odyssey 남쪽 회사원 무리에게 말을 건 뒤 가게 안 1인칭 시점에서 미스터 리비도 대신 맞은편 테이블 3개와 바로 좌측 테이블을 관찰. 챕터가 넘어가면 트로피 영구 잠금.",
@@ -447,7 +447,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「엘리트 비즈니스맨」(원어: Business Etiquette 101) — Café Alps 미팅", en: "'Business Etiquette 101' — Café Alps meeting" },
+          title: { ko: "「엘리트 비즈니스맨」— Café Alps 미팅", en: "'Business Etiquette 101' — Café Alps meeting" },
           when: { ko: "오다와의 클라이언트 미팅 시", en: "During the client meeting with Oda" },
           body: {
             ko: "Café Alps에서 「뒤쪽 테이블(Near the back)」 → 「가장 가까운 의자(Nearest chair)」 → 「주문 없음(Nothing)」 선택 후 야마노이 등장 시 QTE 성공. 한 단계라도 틀리면 챕터 종료와 동시에 영구 잠금.",
@@ -462,7 +462,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「식어도 맛있다」(원어: Best Served Cold?) — 타코야키 식히기", en: "'Best Served Cold?' — let the takoyaki go cold" },
+          title: { ko: "「식어도 맛있다」— 타코야키 식히기", en: "'Best Served Cold?' — let the takoyaki go cold" },
           when: { ko: "마지마 챕터 7 심부름", en: "Majima — Ch.7 errand" },
           body: {
             ko: "Magutako에서 타코야키 구매 후 마코토에게 곧장 돌아가지 말고 실시간 15분 이상 다른 활동(서브스토리, 미니게임 등)을 진행. 인벤토리 아이콘이 바뀌면 식은 것 — 챕터 진행 시 영구 잠금.",
@@ -477,7 +477,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「사원이 한마음 되어」(원어: It Takes Two) — 오다/타치바나와 협동 히트 액션 3회", en: "'It Takes Two' — three co-op heat actions with Oda/Tachibana" },
+          title: { ko: "「사원이 한마음 되어」— 오다/타치바나와 협동 히트 액션 3회", en: "'It Takes Two' — three co-op heat actions with Oda/Tachibana" },
           when: { ko: "토죠 본부 진입 전투", en: "Tojo HQ assault" },
           body: {
             ko: "오다 또는 타치바나가 적을 잡을 때 △로 협동 히트 액션 발동. 총 3회 필요. 동료가 잡는 빈도가 낮으므로 히트 회복 아이템을 미리 준비하세요. 챕터 종료 후 재진입 불가.",
@@ -492,7 +492,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「보물이 왕창!」(원어: They Won't Mind) — 벤텐 여관 2층 금고 2개", en: "'They Won't Mind' — two safes at Benten Inn 2F" },
+          title: { ko: "「보물이 왕창!」— 벤텐 여관 2층 금고 2개", en: "'They Won't Mind' — two safes at Benten Inn 2F" },
           when: { ko: "벤텐 여관 돌파 중", en: "Pushing through Benten Inn" },
           body: {
             ko: "쌍부채 적을 처치한 뒤 두 번째 계단 직전, 오른쪽 방 좌측 안쪽 구석에 흰 금고 2개가 있습니다. 둘 다 파괴 후 진행. 계단을 먼저 오르면 트로피 영구 잠금.",
@@ -507,7 +507,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「히트 스나이프」(원어: Big Hair in the Crosshairs) — 아프로 야쿠자 처치", en: "'Big Hair in the Crosshairs' — drop the afro yakuza" },
+          title: { ko: "「히트 스나이프」— 아프로 야쿠자 처치", en: "'Big Hair in the Crosshairs' — drop the afro yakuza" },
           when: { ko: "차량 추격전 중반", en: "Mid-way through the car chase" },
           body: {
             ko: "기관총 밴 직전, 흰 양복 + 아프로 적이 짧게 차창 밖으로 나옵니다. 히트 아이로 슬로우 처리한 뒤 사격해 격추. 놓치면 챕터 종료와 동시에 영구 잠금.",
@@ -522,7 +522,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「트러블 대처는 나의 특기」(원어: Hitting the Bottle) — 레이나 와인병 QTE 실패하기", en: "'Hitting the Bottle' — intentionally fail Reina's bottle QTE" },
+          title: { ko: "「트러블 대처는 나의 특기」— 레이나 와인병 QTE 실패하기", en: "'Hitting the Bottle' — intentionally fail Reina's bottle QTE" },
           when: { ko: "마지마 vs 니시키야마 (세레나)", en: "Majima vs Nishikiyama at Serena" },
           body: {
             ko: "니시키야마가 카운터 쪽으로 던졌을 때 레이나가 와인병으로 내려치는 QTE가 발생. 일부러 버튼을 누르지 않거나 잘못 누르면 트로피 발동. 정상적으로 막으면 영구 미획득.",
@@ -543,7 +543,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Searching for the Present」(원어) — 하루카 한정 서브스토리", en: "'Searching for the Present' — Haruka-only substory" },
+          title: { ko: "「Searching for the Present」— 하루카 한정 서브스토리", en: "'Searching for the Present' — Haruka-only substory" },
           when: { ko: "하루카 동행 챕터 7", en: "While Haruka tags along in Ch.7" },
           body: {
             ko: "하루카와 함께 칠드런즈 파크에 가서 소녀를 만난 뒤 Poppo(쇼와 거리)·텐카이치 골목·클럽 세가·포켓 서킷 스타디움 중 3곳 이상에서 선물 후보를 확보해 가져다 줘야 100% 카운트. 챕터 7과 11에서만 하루카가 동행하므로 둘 다 놓치면 영구 잠금.",
@@ -642,7 +642,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "recommended",
-          title: { ko: "「최강의 증표」(원어: Testament to Strength) — 시작 난이도 하드 이상 권장", en: "'Testament to Strength' — start on Hard or above" },
+          title: { ko: "「최강의 증표」— 시작 난이도 하드 이상 권장", en: "'Testament to Strength' — start on Hard or above" },
           when: { ko: "뉴 게임 난이도 선택 시", en: "At new game difficulty select" },
           body: {
             ko: "리마스터 일부 빌드에서는 도중 난이도 상향이 트로피에 반영되지 않을 수 있습니다. 안전하게 처음부터 Hard 이상으로 시작하거나, 별도의 하드 세이브를 보존하세요.",
@@ -657,7 +657,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Hometown Girl」(원어) — 리키야 동행 서브스토리", en: "'Hometown Girl' — Rikiya tagalong substory" },
+          title: { ko: "「Hometown Girl」— 리키야 동행 서브스토리", en: "'Hometown Girl' — Rikiya tagalong substory" },
           when: { ko: "리키야가 동행하는 챕터 6", en: "Ch.6 while Rikiya is walking with you" },
           body: {
             ko: "리키야가 동행하는 챕터 6에서 카무로쵸 곳곳을 안내하며 그가 원하는 모든 곳을 따라가야 진행. 챕터가 넘어가면 메인 플레이에선 영구 잠금되며 Premium Adventure에서만 회수 가능 — 100% 정리 시 Golden Pistol과 연결됩니다.",
@@ -666,7 +666,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「Zero Jewel」(원어) — 룰렛 치트 아이템", en: "'Zero Jewel' — roulette cheat item" },
+          title: { ko: "「Zero Jewel」— 룰렛 치트 아이템", en: "'Zero Jewel' — roulette cheat item" },
           when: { ko: "챕터 6 리키야 라인", en: "Ch.6 via the Rikiya line" },
           body: {
             ko: "리키야와 카무로쵸를 도는 라인에서 1회 한정 지급. Walking Bank·Minigame Master 트로피 진행에 사용되므로 받은 즉시 일반 인벤토리로 옮기지 말고 챕터 종료 전에 활용하세요.",
@@ -702,7 +702,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Mr. 드레스업」(원어: Fashionista) — Elise 호스티스 3명 #1 등극", en: "'Fashionista' — push all three Elise hostesses to #1" },
+          title: { ko: "「Mr. 드레스업」— Elise 호스티스 3명 #1 등극", en: "'Fashionista' — push all three Elise hostesses to #1" },
           when: { ko: "아키야마 편 종료 전", en: "Before Akiyama's part ends" },
           body: {
             ko: "Elise 매니저의 의뢰로 히요리·나나미·쿄코 세 명을 영입해 의상 구매와 동반 출근으로 #1까지 끌어올려야 합니다. 셋 다 #1에 도달하면 미니게임 자체가 닫혀 트로피 잠금. 아키야마 편 마지막 챕터 이전에 마무리하세요.",
@@ -717,7 +717,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「불굴의 사나이」(원어: Indomitable) — 이지 모드 권유 거절", en: "'Indomitable' — refuse the easy-mode prompt" },
+          title: { ko: "「불굴의 사나이」— 이지 모드 권유 거절", en: "'Indomitable' — refuse the easy-mode prompt" },
           when: { ko: "초중반 사망 누적 시", en: "After a few story losses" },
           body: {
             ko: "스토리 전투에서 여러 번 패배하면 「Easy로 변경하시겠습니까?」 팝업이 뜹니다. 「예」를 선택하면 트로피가 영구 잠금되니 반드시 「아니오」.",
@@ -753,7 +753,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Hunter and Killer」(원어) — 야마오로시 토벌 사이드 스토리", en: "'Hunter and Killer' — defeat Yama-oroshi" },
+          title: { ko: "「Hunter and Killer」— 야마오로시 토벌 사이드 스토리", en: "'Hunter and Killer' — defeat Yama-oroshi" },
           when: { ko: "사에지마 파트 종료 전", en: "Before Saejima's part wraps" },
           body: {
             ko: "사에지마 챕터 동안 사냥꾼 사이드 스토리를 끝까지 진행해 야마오로시를 잡아야 합니다. 챕터 진행으로 사에지마에서 다른 주인공으로 넘어가면 메인 플레이에선 잠김.",
@@ -768,7 +768,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「프린세스는 너」(원어: You're the Princess) — Princess League 우승", en: "'You're the Princess' — win the Princess League" },
+          title: { ko: "「프린세스는 너」— Princess League 우승", en: "'You're the Princess' — win the Princess League" },
           when: { ko: "하루카 파트 / 피날레 챕터 4 전", en: "Haruka's part — before Finale Ch.4" },
           body: {
             ko: "The Road to Fame를 끝까지 완주해 Princess League 결승을 우승. 피날레 챕터 4에서 하루카가 아이돌을 그만두면 트로피와 100% 카운트가 동시에 영구 잠금됩니다.",
@@ -777,7 +777,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「인기 아이돌」(원어: Trendy Idol) — 모든 잡 종류 체험", en: "'Trendy Idol' — sample every job type" },
+          title: { ko: "「인기 아이돌」— 모든 잡 종류 체험", en: "'Trendy Idol' — sample every job type" },
           when: { ko: "하루카 파트", en: "Haruka's part" },
           body: {
             ko: "The Road to Fame에서 등장하는 잡(촬영·라디오·인터뷰 등)을 전 종류 한 번씩 수락. 하루카 챕터를 닫고 나면 메인 라인에선 다시 받을 수 없습니다.",
@@ -792,7 +792,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「날려버린 남자」(원어: Big Hitter) — 시나다 야구 사이드 미션 10회", en: "'Big Hitter' — clear 10 of Shinada's baseball sub-missions" },
+          title: { ko: "「날려버린 남자」— 시나다 야구 사이드 미션 10회", en: "'Big Hitter' — clear 10 of Shinada's baseball sub-missions" },
           when: { ko: "시나다 파트 종료 전", en: "Before Shinada's part ends" },
           body: {
             ko: "시나다 챕터에서만 등장하는 야구장 사이드 미션을 10개 이상 클리어. 일부 미션은 재도전이 불가능한 1회성이므로 받자마자 처리하세요.",
@@ -807,7 +807,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「전당 입성 플레이어」(원어: Hall of Famer) — 100% 완료 (하루카 종속)", en: "'Hall of Famer' — full 100% (gated on Haruka)" },
+          title: { ko: "「전당 입성 플레이어」— 100% 완료 (하루카 종속)", en: "'Hall of Famer' — full 100% (gated on Haruka)" },
           when: { ko: "피날레 챕터 4 전", en: "Before Finale Ch.4" },
           body: {
             ko: "100% 카운트의 상당 부분이 하루카 트랙(아이돌·댄스·잡)에 묶여 있어 피날레 챕터 4 시점에 하루카 콘텐츠가 끝나 있어야 합니다. 또한 카미야마 워크스 제작용 일부 재료는 1회 한정이므로 함부로 판매·소비 금지.",
@@ -828,7 +828,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「댄들링 드래곤」(원어: Dandling Dragon) — 하루토 달래기 미니게임", en: "'Dandling Dragon' — soothe Haruto" },
+          title: { ko: "「댄들링 드래곤」— 하루토 달래기 미니게임", en: "'Dandling Dragon' — soothe Haruto" },
           when: { ko: "챕터 3 한정", en: "Chapter 3 only" },
           body: {
             ko: "챕터 3에서 키류가 하루토를 돌보는 동안 등장하는 달래기 미니게임을 모두 성공시켜 만족도 게이지를 채워야 합니다. 챕터 3이 지나면 미니게임 자체가 재등장하지 않으므로 영구 잠금 — 시작 전 별도 세이브 권장.",
@@ -873,7 +873,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "recommended",
-          title: { ko: "「주물주물 마스터」·「드래곤 카트 마스터」(원어: Honk-Honk Hero / Pop the Cork) — 챕터 15 이후 라이벌 레이스", en: "'Honk-Honk Hero' / 'Pop the Cork' — Chapter 15+ rival races" },
+          title: { ko: "「주물주물 마스터」·「드래곤 카트 마스터」— 챕터 15 이후 라이벌 레이스", en: "'Honk-Honk Hero' / 'Pop the Cork' — Chapter 15+ rival races" },
           when: { ko: "챕터 15 진입 후", en: "After Chapter 15 opens" },
           body: {
             ko: "마지막 두 라이벌 레이스는 챕터 15부터 해금되므로 그 전엔 어떤 카트 트로피도 완료 불가. 챕터 15에 도달하면 우선순위로 처리하세요.",
@@ -1002,7 +1002,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "recommended",
-          title: { ko: "「Legend」(원어) 난이도 — 챕터 14 직전 전환", en: "'Legend' difficulty — flip just before Ch.14" },
+          title: { ko: "「Legend」난이도 — 챕터 14 직전 전환", en: "'Legend' difficulty — flip just before Ch.14" },
           when: { ko: "피날레 전 신센구미 막사", en: "Shinsengumi barracks before the finale" },
           body: {
             ko: "전 챕터를 낮은 난이도로 진행한 뒤, 챕터 14(피날레)에서 토사로 향하기 전 신센구미 막사에서 오키타와 대화해 Legend로 전환하면 단일 회차로 Legend 트로피를 획득할 수 있습니다.",
@@ -1032,7 +1032,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 1 — 배로 늘려 줄게」(원어: I'll Make it Double) — 카지노 칩 두 배 만들기", en: "'I'll Make it Double' — double the casino chips" },
+          title: { ko: "「이면 보고서 1 — 배로 늘려 줄게」— 카지노 칩 두 배 만들기", en: "'I'll Make it Double' — double the casino chips" },
           when: { ko: "챕터 2 스토리 중 카지노 진입 시", en: "First story visit to the casino in Ch.2" },
           body: {
             ko: "스토리 진행 중 L'Amant에서 300칩이 지급됩니다. 그 자리에서 도박 미니게임으로 600칩 이상으로 만들어야 트로피 발동. 진입 시점에 별도 세이브를 만들어두고 재시도 권장.",
@@ -1047,7 +1047,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 2 — 꼼꼼하게 체크」(원어: Way Too Thorough!) — 환자 회상 수색", en: "'Way Too Thorough!' — flashback investigation" },
+          title: { ko: "「이면 보고서 2 — 꼼꼼하게 체크」— 환자 회상 수색", en: "'Way Too Thorough!' — flashback investigation" },
           when: { ko: "챕터 5 회상 시퀀스", en: "Ch.5 flashback sequence" },
           body: {
             ko: "병실 1인칭 수색에서 간호사의 얼굴·가슴·엉덩이 세 지점을 모두 관찰해야 트로피 발동. 한 번에 끝내지 않으면 회상 종료와 동시에 영구 잠금.",
@@ -1062,7 +1062,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 3 — 숨겨진 재능」(원어: The Art of Conversation) — 호스티스 대화 무실수", en: "'The Art of Conversation' — perfect hostess chat" },
+          title: { ko: "「이면 보고서 3 — 숨겨진 재능」— 호스티스 대화 무실수", en: "'The Art of Conversation' — perfect hostess chat" },
           when: { ko: "챕터 7 위장 시퀀스", en: "Ch.7 disguise sequence" },
           body: {
             ko: "여성 캐릭터로 위장해 손님 접대 미니게임 진행. 모든 선택지를 실수 없이 클리어해야 트로피 발동. 챕터 진행 시 영구 잠금.",
@@ -1077,7 +1077,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 4 — 암호는」(원어: Professional Password Presenter) — 비밀번호 1발 통과", en: "'Professional Password Presenter' — nail the password first try" },
+          title: { ko: "「이면 보고서 4 — 암호는」— 비밀번호 1발 통과", en: "'Professional Password Presenter' — nail the password first try" },
           when: { ko: "챕터 8 입구 검문", en: "Ch.8 hall entrance check" },
           body: {
             ko: "비밀 도박장 입구에서 비밀번호를 처음 시도에 정확히 입력. 진입 직전 세이브 후 도전 권장.",
@@ -1092,7 +1092,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 5 — 영웅은 늦게 나타난다」(원어: Hung Jury) — 3분 타이머 10초 남기고 처치", en: "'Hung Jury' — finish with under 10 seconds" },
+          title: { ko: "「이면 보고서 5 — 영웅은 늦게 나타난다」— 3분 타이머 10초 남기고 처치", en: "'Hung Jury' — finish with under 10 seconds" },
           when: { ko: "챕터 12 폐건물", en: "Ch.12 abandoned building" },
           body: {
             ko: "스기우라가 잡힌 방에 도착하면 3분 타이머가 시작됩니다. 10초가 남을 때까지 기다리다가 적 두 명을 처치해야 트로피 발동. 챕터 종료 시 영구 잠금.",
@@ -1107,7 +1107,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 6 — 이것이 증거다」(원어: The Final Nail) — 증거 제출 무실수", en: "'The Final Nail' — flawless evidence presentation" },
+          title: { ko: "「이면 보고서 6 — 이것이 증거다」— 증거 제출 무실수", en: "'The Final Nail' — flawless evidence presentation" },
           when: { ko: "피날레 법정 시퀀스", en: "Finale court sequence" },
           body: {
             ko: "최종 법정 시퀀스에서 모든 증거를 첫 시도에 정확히 제출해야 합니다. 1회 실수도 트로피 영구 잠금 — 시작 전 세이브 필수.",
@@ -1116,7 +1116,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「길고양이 서치」(원어: Oh Look, a Cat!) — 길고양이 14마리 (전 챕터)", en: "'Oh Look, a Cat!' — all 14 stray cats" },
+          title: { ko: "「길고양이 서치」— 길고양이 14마리 (전 챕터)", en: "'Oh Look, a Cat!' — all 14 stray cats" },
           when: { ko: "전 챕터의 Active Search 구간", en: "Every Active Search across the story" },
           body: {
             ko: "1인칭 Active Search 도중 「야옹」 소리가 들리면 화면을 돌려 길고양이를 발견해야 합니다. 챕터별 등장 위치가 고정되어 있고 모두 1회성 — 1회차에 누락하면 신규 회차 필요.",
