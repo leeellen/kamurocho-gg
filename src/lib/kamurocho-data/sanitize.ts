@@ -36,7 +36,10 @@ export function normalizeConfidence(value: string | number | null | undefined) {
 }
 
 export function normalizeComparableText(value: string | null | undefined) {
-  return (value ?? "").toLowerCase().replace(/[\s:!?.,'"()[\]-]+/g, "").trim();
+  return (value ?? "")
+    .toLowerCase()
+    .replace(/[\s:!?.,'"()[\]\-—–「」『』《》〈〉…]+/g, "")
+    .trim();
 }
 
 function isLowQualityKoreanGuideText(value: string) {

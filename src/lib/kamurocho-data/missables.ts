@@ -28,6 +28,19 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     )
   )
     return false;
+  // Completion / meta-trophies (100%, all achievements, all sub-stories, etc.)
+  // are never themselves "missable". Filter them out before the heuristic match
+  // so generic "영구" / "사라집니다" words inside their descriptions don't
+  // cascade into a false positive.
+  if (
+    /\b(obtain all (other )?achievements|all trophies|all achievements|complete the game|100% completion|platinum trophy|completed all .* (missions|substories|side cases|stories|courses|sub-stories|side missions|jobs|hostesses|trophies)|complete all .* (missions|substories|side cases|stories|courses|sub-stories|side missions|jobs|hostesses)|finish all .* (missions|substories|side cases)|on legend difficulty|on ex-?hard difficulty|on hard mode|on hardest difficulty|highest difficulty|max(?:imum)? rank|max(?:imum)? level|maxed out|reach(?:ed)? .* (?:max|maximum|highest))\b/i.test(
+      text,
+    ) ||
+    /(모든 업적|업적 전부|전 도전 과제|모든 (?:트로피|도전 과제|챌린지)|컴플리션 리스트 전부|100%\s*달성|컴플리트|클리어 리스트 (?:전부|모두)|전\s*미션\s*클리어|모든 (?:미션|서브스토리|사이드 케이스|시티 미션|코스|직업|잡|호스티스)\s*(?:클리어|완료|달성|랭크|마스터)|난이도\s*LEGEND|난이도\s*EX-?HARD|최고\s*난이도|난이도\s*HARD|최대\s*랭크|최대\s*레벨|MAX\s*랭크|풀\s*MAX|레벨\s*MAX|직업 최대|모두 (?:MAX|마스터))/iu.test(
+      text,
+    )
+  )
+    return false;
   return [
     /missable achievement alert/i,
     /놓치기 쉬운 업적/u,

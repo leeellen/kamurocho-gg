@@ -543,7 +543,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Searching for the Present」— 하루카 한정 서브스토리", en: "'Searching for the Present' — Haruka-only substory" },
+          title: { ko: "하루카의 선물 찾기 — 챕터 7/11 동행 서브스토리", en: "'Searching for the Present' — Haruka-only substory" },
           when: { ko: "하루카 동행 챕터 7", en: "While Haruka tags along in Ch.7" },
           body: {
             ko: "하루카와 함께 칠드런즈 파크에 가서 소녀를 만난 뒤 Poppo(쇼와 거리)·텐카이치 골목·클럽 세가·포켓 서킷 스타디움 중 3곳 이상에서 선물 후보를 확보해 가져다 줘야 100% 카운트. 챕터 7과 11에서만 하루카가 동행하므로 둘 다 놓치면 영구 잠금.",
@@ -657,7 +657,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Hometown Girl」— 리키야 동행 서브스토리", en: "'Hometown Girl' — Rikiya tagalong substory" },
+          title: { ko: "리키야의 고향 친구 — 챕터 6 동행 서브스토리", en: "'Hometown Girl' — Rikiya tagalong substory" },
           when: { ko: "리키야가 동행하는 챕터 6", en: "Ch.6 while Rikiya is walking with you" },
           body: {
             ko: "리키야가 동행하는 챕터 6에서 카무로쵸 곳곳을 안내하며 그가 원하는 모든 곳을 따라가야 진행. 챕터가 넘어가면 메인 플레이에선 영구 잠금되며 Premium Adventure에서만 회수 가능 — 100% 정리 시 Golden Pistol과 연결됩니다.",
@@ -666,7 +666,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「Zero Jewel」— 룰렛 치트 아이템", en: "'Zero Jewel' — roulette cheat item" },
+          title: { ko: "제로 보석 — 룰렛 1회 한정 치트 아이템", en: "'Zero Jewel' — roulette cheat item" },
           when: { ko: "챕터 6 리키야 라인", en: "Ch.6 via the Rikiya line" },
           body: {
             ko: "리키야와 카무로쵸를 도는 라인에서 1회 한정 지급. Walking Bank·Minigame Master 트로피 진행에 사용되므로 받은 즉시 일반 인벤토리로 옮기지 말고 챕터 종료 전에 활용하세요.",
@@ -753,7 +753,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「Hunter and Killer」— 야마오로시 토벌 사이드 스토리", en: "'Hunter and Killer' — defeat Yama-oroshi" },
+          title: { ko: "야마오로시 사냥 — 사에지마 한정 사이드 스토리", en: "'Hunter and Killer' — defeat Yama-oroshi" },
           when: { ko: "사에지마 파트 종료 전", en: "Before Saejima's part wraps" },
           body: {
             ko: "사에지마 챕터 동안 사냥꾼 사이드 스토리를 끝까지 진행해 야마오로시를 잡아야 합니다. 챕터 진행으로 사에지마에서 다른 주인공으로 넘어가면 메인 플레이에선 잠김.",

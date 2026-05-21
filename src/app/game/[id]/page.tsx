@@ -88,7 +88,8 @@ export default async function GamePage({
   // Each curated `item.title` (ko + en) may quote the trophy name inside 「」
   // or after `원어:` — extract both forms to dedupe against DB achievements.
   const covered = new Set<string>();
-  const norm = (s: string) => s.toLowerCase().replace(/[\s'’!?.,—\-:()]/g, "");
+  const norm = (s: string) =>
+    s.toLowerCase().replace(/[\s:!?.,'"()[\]\-—–「」『』《》〈〉…’]+/g, "");
   for (const chapter of data.missables ?? []) {
     for (const item of chapter.items) {
       for (const raw of [item.title.ko, item.title.en]) {
