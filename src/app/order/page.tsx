@@ -78,14 +78,14 @@ function Track({
     <section className="rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 md:p-7">
       <div className="flex items-center justify-between gap-3">
         <Chip tone={tone === "accent" ? "accent" : "neutral"} size="sm">{badge}</Chip>
-        <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+        <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
           {entries.length} {locale === "ko" ? "작품" : "titles"}
         </span>
       </div>
       <h2 className="font-display m-0 mt-4 text-[22px] font-extrabold tracking-tight text-white md:text-[26px]">
         {title}
       </h2>
-      <p className="m-0 mt-2 text-[13px] leading-6 text-[var(--text-secondary)]">{description}</p>
+      <p className="m-0 mt-2 text-[14px] leading-6 text-[var(--text-secondary)]">{description}</p>
 
       <ol className="relative mt-6 space-y-3">
         <span aria-hidden="true" className="absolute bottom-4 left-[15px] top-4 w-px bg-gradient-to-b from-[var(--accent)]/40 via-[var(--border-strong)] to-transparent" />
@@ -93,7 +93,7 @@ function Track({
           <li key={`${entry.slug}-${index}`} className="relative pl-12">
             <span
               aria-hidden="true"
-              className={`absolute left-0 top-3.5 flex h-8 w-8 items-center justify-center rounded-full font-mono text-[12px] font-bold ${
+              className={`absolute left-0 top-3.5 flex h-8 w-8 items-center justify-center rounded-full font-mono text-[14px] font-bold ${
                 entry.recommended
                   ? "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
                   : "border border-[var(--border-strong)] bg-[var(--bg-elevated)] text-[var(--text-tertiary)]"
@@ -106,7 +106,7 @@ function Track({
               className="group block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
               <div className="flex flex-wrap items-center gap-2">
-                <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                <span className="font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                   {entry.game?.year}
                 </span>
                 <span className="font-display text-[15px] font-bold text-white transition-colors group-hover:text-[var(--accent)]">
@@ -118,7 +118,7 @@ function Track({
                   </Chip>
                 )}
               </div>
-              <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-[var(--text-tertiary)]">
+              <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px] text-[var(--text-tertiary)]">
                 <span className="inline-flex items-center gap-1 font-mono">
                   <FiClock size={11} aria-hidden="true" />
                   {entry.game?.estimatedHours}
@@ -130,8 +130,8 @@ function Track({
                   </span>
                 )}
               </div>
-              <p className="m-0 mt-2.5 text-[13px] leading-7 text-[var(--text-secondary)]">{entry.reason}</p>
-              <div className="mt-3 inline-flex items-center gap-1 text-[12px] font-semibold text-[var(--accent)] opacity-0 transition-opacity group-hover:opacity-100">
+              <p className="m-0 mt-2.5 text-[14px] leading-7 text-[var(--text-secondary)]">{entry.reason}</p>
+              <div className="mt-3 inline-flex items-center gap-1 text-[14px] font-semibold text-[var(--accent)] opacity-0 transition-opacity group-hover:opacity-100">
                 {locale === "ko" ? "공략 열기" : "Open guide"}
                 <FiArrowRight size={12} aria-hidden="true" />
               </div>

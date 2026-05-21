@@ -125,7 +125,7 @@ export function buildDisplayMissables({
           ? "해당 챕터에서만 가능한 업적입니다."
           : "Achievement tied to this chapter."
         : locale === "ko"
-          ? "가이드에 놓침 주의로 표시된 업적입니다."
+          ? "가이드에 놓치기 쉬움으로 표시된 업적입니다."
           : "Achievement flagged by the guide as missable or lockout-prone.");
     const when =
       bucketKey > 0

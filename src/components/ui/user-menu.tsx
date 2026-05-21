@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { FiExternalLink, FiLogOut, FiUser } from "react-icons/fi";
 
 import { cn } from "@/lib/cn";
@@ -6,12 +9,34 @@ import type { CurrentUser } from "@/lib/user-progress";
 
 export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "en" }) {
   const name = user.displayName ?? `Steam ${user.steamId.slice(-6)}`;
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    function onPointer(e: MouseEvent) {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onPointer);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onPointer);
+    };
+  }, [open]);
 
   return (
-    <details className="group relative">
-      <summary
+    <div ref={rootRef} className="relative">
+      <button
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded={open}
         aria-label={locale === "ko" ? "내 계정 메뉴 열기" : "Open account menu"}
-        className="inline-flex h-9 cursor-pointer list-none items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-1.5 pr-3 text-[12px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] [&::-webkit-details-marker]:hidden"
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-1.5 pr-3 text-[14px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
       >
         {user.avatarUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -23,80 +48,90 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
         ) : (
           <span
             aria-hidden="true"
-            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[11px] font-black text-white"
+            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[14px] font-black text-white"
           >
             {name.slice(0, 1).toUpperCase()}
           </span>
         )}
         <span className="max-w-[120px] truncate">{name}</span>
-      </summary>
+      </button>
 
-      <div className="absolute right-0 z-50 mt-2 w-64 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] shadow-[var(--shadow-pop)]">
-        <div className="border-b border-[var(--border-subtle)] p-3">
-          <div className="flex items-center gap-2.5">
-            {user.avatarUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={user.avatarUrl}
-                alt=""
-                className="h-10 w-10 rounded-full border border-white/10 object-cover"
-              />
-            ) : (
-              <span
-                aria-hidden="true"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--accent)] text-[14px] font-black text-white"
-              >
-                {name.slice(0, 1).toUpperCase()}
-              </span>
+      {open && (
+        <div
+          role="menu"
+          className="absolute right-0 z-50 mt-2 w-64 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] shadow-[var(--shadow-pop)]"
+        >
+          <div className="border-b border-[var(--border-subtle)] p-3">
+            <div className="flex items-center gap-2.5">
+              {user.avatarUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={user.avatarUrl}
+                  alt=""
+                  className="h-10 w-10 rounded-full border border-white/10 object-cover"
+                />
+              ) : (
+                <span
+                  aria-hidden="true"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--accent)] text-[14px] font-black text-white"
+                >
+                  {name.slice(0, 1).toUpperCase()}
+                </span>
+              )}
+              <div className="min-w-0">
+                <div className="truncate text-[14px] font-bold text-white">{name}</div>
+                <div className="font-mono text-[14px] text-[var(--text-tertiary)]">{user.steamId}</div>
+              </div>
+            </div>
+            {user.lastSynced && (
+              <div className="mt-2 font-mono text-[14px] text-[var(--text-tertiary)]">
+                {locale === "ko" ? "마지막 동기화" : "Last synced"}: {new Date(user.lastSynced).toLocaleString(locale === "ko" ? "ko-KR" : "en-US")}
+              </div>
             )}
-            <div className="min-w-0">
-              <div className="truncate text-[13px] font-bold text-white">{name}</div>
-              <div className="font-mono text-[11px] text-[var(--text-tertiary)]">{user.steamId}</div>
-            </div>
           </div>
-          {user.lastSynced && (
-            <div className="mt-2 font-mono text-[11px] text-[var(--text-tertiary)]">
-              {locale === "ko" ? "마지막 동기화" : "Last synced"}: {new Date(user.lastSynced).toLocaleString(locale === "ko" ? "ko-KR" : "en-US")}
-            </div>
-          )}
-        </div>
-        <ul className="py-1.5">
-          <li>
-            <Link
-              href="/me"
-              className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[12px] font-medium text-white no-underline transition-colors hover:bg-white/5"
-            >
-              <FiUser size={13} aria-hidden="true" />
-              {locale === "ko" ? "내 라이브러리" : "My library"}
-            </Link>
-          </li>
-          {user.profileUrl && (
+          <ul className="py-1.5">
             <li>
-              <a
-                href={user.profileUrl}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[12px] font-medium text-[var(--text-secondary)] no-underline transition-colors hover:bg-white/5 hover:text-white"
+              <Link
+                href="/me"
+                role="menuitem"
+                onClick={() => setOpen(false)}
+                className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-white no-underline transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:bg-white/5"
               >
-                <FiExternalLink size={13} aria-hidden="true" />
-                {locale === "ko" ? "스팀 프로필" : "Steam profile"}
-              </a>
+                <FiUser size={13} aria-hidden="true" />
+                {locale === "ko" ? "내 라이브러리" : "My library"}
+              </Link>
             </li>
-          )}
-          <li className="border-t border-[var(--border-subtle)] mt-1.5 pt-1.5">
-            <form action="/api/auth/signout" method="post">
-              <button
-                type="submit"
-                className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-[12px] font-medium text-[var(--text-secondary)] transition-colors hover:bg-white/5 hover:text-white"
-              >
-                <FiLogOut size={13} aria-hidden="true" />
-                {locale === "ko" ? "로그아웃" : "Sign out"}
-              </button>
-            </form>
-          </li>
-        </ul>
-      </div>
-    </details>
+            {user.profileUrl && (
+              <li>
+                <a
+                  href={user.profileUrl}
+                  role="menuitem"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  onClick={() => setOpen(false)}
+                  className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-[var(--text-secondary)] no-underline transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
+                >
+                  <FiExternalLink size={13} aria-hidden="true" />
+                  {locale === "ko" ? "스팀 프로필" : "Steam profile"}
+                </a>
+              </li>
+            )}
+            <li className="mt-1.5 border-t border-[var(--border-subtle)] pt-1.5">
+              <form action="/api/auth/signout" method="post">
+                <button
+                  type="submit"
+                  role="menuitem"
+                  className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-[var(--text-secondary)] transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
+                >
+                  <FiLogOut size={13} aria-hidden="true" />
+                  {locale === "ko" ? "로그아웃" : "Sign out"}
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -122,10 +157,10 @@ export function SignInButton({
 }) {
   const sizeClass =
     size === "sm"
-      ? "h-9 px-3.5 text-[12px]"
+      ? "h-9 px-3.5 text-[14px]"
       : size === "lg"
         ? "h-12 px-6 text-[14px]"
-        : "h-10 px-4 text-[13px]";
+        : "h-10 px-4 text-[14px]";
   const iconSize = size === "lg" ? 20 : 16;
 
   return (
@@ -154,7 +189,7 @@ export function SignInButton({
         </span>
       </a>
       {showDisclaimer && (
-        <span lang="en" className="text-[11px] leading-tight text-[var(--text-tertiary)]">
+        <span lang="en" className="text-[14px] leading-tight text-[var(--text-tertiary)]">
           This site is not associated with Valve Corp.
         </span>
       )}

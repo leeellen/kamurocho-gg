@@ -15,7 +15,7 @@ export function RarityBar({
       <div className="h-1.5 w-20 overflow-hidden rounded-full bg-white/8" aria-hidden="true">
         <div className={cn("h-full rounded-full transition-all", tone)} style={{ width: `${pct}%` }} />
       </div>
-      <span className="font-mono text-[12px] tabular-nums text-[var(--text-tertiary)]">{rarity.toFixed(1)}%</span>
+      <span className="font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">{rarity.toFixed(1)}%</span>
     </div>
   );
 }

@@ -111,6 +111,7 @@ function buildSeriesGameCard({
     imgIconUrl: game?.img_icon_url ?? null,
     headerUrl: gameSidecar?.headerUrl ?? null,
     capsuleUrl: gameSidecar?.capsuleUrl ?? null,
+    engine: curated.engine,
   };
 }
 

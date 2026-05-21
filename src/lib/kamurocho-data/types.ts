@@ -46,6 +46,7 @@ export type SeriesGameCard = {
   imgIconUrl: string | null;
   headerUrl: string | null;
   capsuleUrl: string | null;
+  engine: string;
 };
 
 export type GameAchievementCard = {

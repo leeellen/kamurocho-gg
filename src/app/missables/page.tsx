@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "놓치면 끝나는 구간 — 용과 같이 시리즈 놓침 주의",
+  title: "놓치면 끝나는 구간 — 용과 같이 시리즈 놓치기 쉬움",
   description: "챕터 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·챕터별로 정리했습니다.",
   alternates: { canonical: "/missables" },
   openGraph: {
-    title: "용과 같이 시리즈 놓침 주의 인덱스",
+    title: "용과 같이 시리즈 놓치기 쉬움 인덱스",
     description: "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음.",
     url: "https://kamurocho-gg.vercel.app/missables",
   },
@@ -30,10 +30,10 @@ export default async function MissablesPage() {
     <SiteShell locale={locale} section="missables">
       <div className="mx-auto max-w-[1080px] px-5 pb-20 pt-12 md:px-8 md:pt-16">
         <SectionTitle
-          eyebrow={locale === "ko" ? "놓침 주의" : "Missables"}
+          eyebrow={locale === "ko" ? "놓치기 쉬움" : "Missables"}
           title={locale === "ko" ? "놓치면 끝나는 구간만" : "What disappears if you miss it"}
           description={locale === "ko"
-            ? `챕터 잠금이나 분기 선택 때문에 다시는 못 보는 항목을 모았습니다. 총 ${entries.length}개 작품 · ${totalChecks}개 주의 항목.`
+            ? `챕터 잠금이나 분기 선택 때문에 다시는 못 보는 항목을 모았습니다. 총 ${entries.length}개 작품 · ${totalChecks}개 항목.`
             : `Chapter locks and route splits that erase progress. ${entries.length} titles · ${totalChecks} checks total.`}
         />
 
@@ -53,12 +53,12 @@ export default async function MissablesPage() {
                   </Link>
                   <Chip tone="danger" size="xs">
                     <FiTarget size={10} aria-hidden="true" />
-                    {locale === "ko" ? `주의 항목 ${entry.game?.missableCount}개` : `${entry.game?.missableCount} checks`}
+                    {locale === "ko" ? `${entry.game?.missableCount}개 항목` : `${entry.game?.missableCount} checks`}
                   </Chip>
                 </div>
                 <Link
                   href={`/game/${entry.game?.slug}`}
-                  className="inline-flex cursor-pointer items-center gap-1.5 text-[12px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
+                  className="inline-flex cursor-pointer items-center gap-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
                 >
                   {locale === "ko" ? "전체 공략" : "Open guide"}
                   <FiArrowRight size={12} aria-hidden="true" />
@@ -73,27 +73,33 @@ export default async function MissablesPage() {
                   >
                     <div className="flex items-center gap-2">
                       <Chip tone="gold" size="xs" className="font-mono">
-                        {chapter.chapter > 0 ? `CH ${chapter.chapter}` : (locale === "ko" ? "NOTE" : "NOTE")}
+                        {chapter.chapter > 0
+                          ? locale === "ko" ? `${chapter.chapter}장` : `CH ${chapter.chapter}`
+                          : locale === "ko" ? "메모" : "NOTE"}
                       </Chip>
-                      <h3 className="font-display m-0 text-[15px] font-bold text-white">{chapter.title}</h3>
+                      <h3 className="font-display m-0 text-[15px] font-bold leading-tight text-white">{chapter.title}</h3>
                     </div>
                     <div className="mt-4 flex flex-col gap-3">
                       {chapter.items.map((item, index) => {
                         const tone =
                           item.kind === "missable" ? "danger" : item.kind === "recommended" ? "accent" : "info";
+                        const kindLabel =
+                          item.kind === "missable"
+                            ? locale === "ko" ? "놓치기 쉬움" : "MISSABLE"
+                            : item.kind === "recommended"
+                              ? locale === "ko" ? "권장" : "RECOMMENDED"
+                              : locale === "ko" ? "참고" : "ANYTIME";
                         return (
                           <div
                             key={index}
                             className="rounded-xl border border-[var(--border-subtle)] bg-black/20 p-4"
                           >
-                            <div className="flex flex-wrap items-center gap-2">
-                              <Chip tone={tone} size="xs">{item.kind}</Chip>
-                              <span className="text-[13px] font-bold text-white">{item.title}</span>
-                            </div>
-                            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
-                              {item.when}
-                            </div>
-                            <p className="m-0 mt-2 text-[12px] leading-6 text-[var(--text-secondary)]">{item.body}</p>
+                            <Chip tone={tone} size="xs" className="font-mono uppercase tracking-[0.08em]">
+                              {kindLabel}
+                            </Chip>
+                            <div className="mt-2 text-[15px] font-bold leading-snug text-white">{item.title}</div>
+                            <div className="mt-1 text-[13px] text-[var(--text-tertiary)]">{item.when}</div>
+                            <p className="m-0 mt-2.5 text-[14px] leading-7 text-[var(--text-secondary)]">{item.body}</p>
                           </div>
                         );
                       })}

@@ -1,11 +1,14 @@
 import { FiExternalLink, FiPackage, FiPlayCircle } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
+import { Eyebrow } from "@/components/ui/eyebrow";
+import { ReportButton } from "@/components/ui/report-button";
 import type { Locale } from "@/lib/i18n";
 import type { CollectibleCategory, CollectibleGroup, CollectibleItem, CollectibleStep } from "@/lib/collectibles";
 
 type Props = {
   locale: Locale;
+  appId: number;
   categories: CollectibleCategory[];
 };
 
@@ -15,7 +18,7 @@ function videoEmbed(url: string) {
   return `https://www.youtube.com/embed/${m[1]}`;
 }
 
-export function CollectiblesSection({ locale, categories }: Props) {
+export function CollectiblesSection({ locale, appId, categories }: Props) {
   if (categories.length === 0) return null;
 
   return (
@@ -25,44 +28,77 @@ export function CollectiblesSection({ locale, categories }: Props) {
     >
       <div className="flex items-end justify-between gap-3">
         <div>
-          <span
-            className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.16em]"}`}
-          >
+          <Eyebrow locale={locale}>
             {locale === "ko" ? "수집 요소" : "Collectibles"}
-          </span>
+          </Eyebrow>
           <h2 className="font-display m-0 mt-2 flex items-center gap-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
             <FiPackage className="text-[var(--accent)]" size={22} aria-hidden="true" />
             {locale === "ko" ? "수집 요소 공략" : "Collectible Guides"}
           </h2>
         </div>
-        <span className="font-mono text-[12px] text-[var(--text-tertiary)]">
-          {locale === "ko" ? `${categories.length}개 카테고리` : `${categories.length} categories`}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-[14px] text-[var(--text-tertiary)]">
+            {locale === "ko" ? `${categories.length}개 카테고리` : `${categories.length} categories`}
+          </span>
+        </div>
       </div>
 
       <div className="mt-6 flex flex-col gap-4">
         {categories.map((cat) => (
-          <CategoryCard key={cat.slug} locale={locale} category={cat} />
+          <CategoryCard key={cat.slug} locale={locale} appId={appId} category={cat} />
         ))}
       </div>
     </section>
   );
 }
 
-function CategoryCard({ locale, category }: { locale: Locale; category: CollectibleCategory }) {
+function CategoryCard({
+  locale,
+  appId,
+  category,
+}: {
+  locale: Locale;
+  appId: number;
+  category: CollectibleCategory;
+}) {
   const itemCount =
     (category.items?.length ?? 0) +
     (category.groups?.reduce((s, g) => s + g.items.length, 0) ?? 0);
+  const hasExpandable =
+    itemCount > 0 || (category.tips?.length ?? 0) > 0 || Boolean(category.source);
+
+  if (!hasExpandable) {
+    return (
+      <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex-1">
+            <h3 className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]">
+              {locale === "ko" ? category.title.ko : category.title.en}
+            </h3>
+            <p className="m-0 mt-1.5 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]">
+              {locale === "ko" ? category.summary.ko : category.summary.en}
+            </p>
+          </div>
+          <ReportButton
+            locale={locale}
+            appId={appId}
+            kind="collectible"
+            targetRef={category.slug}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <details className="group rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] open:border-[var(--accent-border)] open:bg-[var(--bg-raised)]">
-      <summary className="cursor-pointer list-none p-5">
+      <summary className="cursor-pointer list-none rounded-2xl p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]">
         <div className="flex items-center justify-between gap-3">
           <div className="flex flex-col gap-1.5">
             <h3 className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]">
               {locale === "ko" ? category.title.ko : category.title.en}
             </h3>
-            <p className="m-0 max-w-[80ch] text-[13px] leading-6 text-[var(--text-secondary)]">
+            <p className="m-0 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]">
               {locale === "ko" ? category.summary.ko : category.summary.en}
             </p>
           </div>
@@ -74,7 +110,7 @@ function CategoryCard({ locale, category }: { locale: Locale; category: Collecti
             )}
             <span
               aria-hidden="true"
-              className="font-mono text-[11px] text-[var(--text-tertiary)] transition-transform group-open:rotate-180"
+              className="font-mono text-[14px] text-[var(--text-tertiary)] transition-transform group-open:rotate-180"
             >
               ▼
             </span>
@@ -88,7 +124,7 @@ function CategoryCard({ locale, category }: { locale: Locale; category: Collecti
             {category.tips.map((tip, i) => (
               <li
                 key={i}
-                className="relative pl-4 text-[13px] leading-6 text-[var(--text-secondary)] before:absolute before:left-0 before:top-2.5 before:h-1 before:w-1 before:rounded-full before:bg-[var(--accent)]"
+                className="relative pl-4 text-[14px] leading-6 text-[var(--text-secondary)] before:absolute before:left-0 before:top-2.5 before:h-1 before:w-1 before:rounded-full before:bg-[var(--accent)]"
               >
                 {locale === "ko" ? tip.ko : tip.en}
               </li>
@@ -104,17 +140,25 @@ function CategoryCard({ locale, category }: { locale: Locale; category: Collecti
           <ItemGrid locale={locale} items={category.items} />
         )}
 
-        {category.source && (
-          <a
-            href={category.source.url}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[12px] font-semibold text-[var(--accent)] no-underline hover:underline"
-          >
-            {category.source.label}
-            <FiExternalLink size={11} aria-hidden="true" />
-          </a>
-        )}
+        <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+          {category.source ? (
+            <a
+              href={category.source.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex cursor-pointer items-center gap-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline hover:underline"
+            >
+              {category.source.label}
+              <FiExternalLink size={11} aria-hidden="true" />
+            </a>
+          ) : <span />}
+          <ReportButton
+            locale={locale}
+            appId={appId}
+            kind="collectible"
+            targetRef={category.slug}
+          />
+        </div>
       </div>
     </details>
   );
@@ -172,24 +216,45 @@ function ItemGrid({ locale, items }: { locale: Locale; items: CollectibleItem[] 
   );
 }
 
+function parseBodyChoices(body: string): { intro?: string; choices?: string[]; rest?: string } | null {
+  const patterns = [
+    /^(정답 선택지\(순서\):|정답 경로:|Correct choices \(in order\):|Correct path:)\s*/,
+  ];
+  for (const re of patterns) {
+    const m = body.match(re);
+    if (!m) continue;
+    const intro = m[0].trim();
+    const after = body.slice(m[0].length);
+    // Split on numbered arrows: "1) ... → 2) ... → 3) ..."
+    if (/(?:^|\s)1\)/.test(after) && /→/.test(after)) {
+      const parts = after.split(/\s*→\s*/).map((s) => s.replace(/^\d+\)\s*/, "").trim()).filter(Boolean);
+      return { intro, choices: parts };
+    }
+    return { intro, rest: after.trim() };
+  }
+  return null;
+}
+
 function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
   const embed = item.video ? videoEmbed(item.video) : null;
+  const titleText = item.title
+    ? locale === "ko" ? item.title.ko : item.title.en
+    : locale === "ko" ? item.location.ko : item.location.en;
+  const locationText = locale === "ko" ? item.location.ko : item.location.en;
+  const titleEndsWithLocation =
+    Boolean(item.title) && titleText.replace(/\s+/g, "").endsWith(locationText.replace(/\s+/g, ""));
+  const bodyText = item.body ? (locale === "ko" ? item.body.ko : item.body.en) : null;
+  const parsed = bodyText ? parseBodyChoices(bodyText) : null;
   return (
     <li className="flex flex-col gap-2.5 rounded-xl border border-[var(--border-subtle)] bg-black/20 p-3.5">
       <div className="flex items-baseline gap-2">
-        <span className="font-mono text-[12px] font-extrabold text-[var(--accent)]">
+        <span className="font-mono text-[14px] font-extrabold text-[var(--accent)]">
           #{String(item.number).padStart(2, "0")}
         </span>
-        <span className="text-[13px] font-bold text-white">
-          {item.title
-            ? locale === "ko" ? item.title.ko : item.title.en
-            : locale === "ko" ? item.location.ko : item.location.en}
-        </span>
+        <span className="text-[14px] font-bold text-white">{titleText}</span>
       </div>
-      {item.title && (
-        <div className="text-[11px] font-mono uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
-          {locale === "ko" ? item.location.ko : item.location.en}
-        </div>
+      {item.title && !titleEndsWithLocation && (
+        <div className="text-[14px] text-[var(--text-tertiary)]">{locationText}</div>
       )}
 
       {item.image && (
@@ -204,7 +269,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
       )}
 
       {item.prereq && (
-        <div className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[11px] leading-5 text-[var(--accent)]">
+        <div className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]">
           {locale === "ko" ? `사전 조건: ${item.prereq.ko}` : `Prereq: ${item.prereq.en}`}
         </div>
       )}
@@ -215,18 +280,38 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
             <StepRow key={i} locale={locale} step={step} index={i + 1} />
           ))}
         </ol>
-      ) : item.body ? (
-        <p className="m-0 text-[12px] leading-6 text-[var(--text-secondary)]">
-          {locale === "ko" ? item.body.ko : item.body.en}
-        </p>
+      ) : parsed ? (
+        <div className="flex flex-col gap-1.5">
+          {parsed.intro && (
+            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+              {parsed.intro}
+            </div>
+          )}
+          {parsed.choices ? (
+            <ol className="m-0 flex flex-col gap-1 pl-0">
+              {parsed.choices.map((c, i) => (
+                <li key={i} className="flex gap-2.5 text-[14px] leading-6 text-[var(--text-secondary)]">
+                  <span className="shrink-0 rounded-md bg-white/5 px-1.5 py-0.5 font-mono text-[12px] font-bold text-[var(--text-tertiary)] ring-1 ring-inset ring-white/10">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="flex-1 text-white">{c}</span>
+                </li>
+              ))}
+            </ol>
+          ) : parsed.rest ? (
+            <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]">{parsed.rest}</p>
+          ) : null}
+        </div>
+      ) : bodyText ? (
+        <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]">{bodyText}</p>
       ) : null}
 
       {item.reward && (
-        <div className="mt-1 flex items-center gap-1.5 text-[12px]">
+        <div className="mt-1 flex items-center gap-1.5 text-[14px]">
           <Chip tone="gold" size="xs">
             {locale === "ko" ? "보상" : "Reward"}
           </Chip>
-          <span className="text-[12px] font-semibold text-white">
+          <span className="text-[14px] font-semibold text-white">
             {locale === "ko" ? item.reward.ko : item.reward.en}
           </span>
         </div>
@@ -237,7 +322,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           href={item.video!}
           target="_blank"
           rel="noreferrer noopener"
-          className="inline-flex items-center gap-1 text-[11px] font-semibold text-[var(--accent)] no-underline hover:underline"
+          className="inline-flex items-center gap-1 text-[14px] font-semibold text-[var(--accent)] no-underline hover:underline"
         >
           <FiPlayCircle size={12} aria-hidden="true" />
           {locale === "ko" ? "위치 영상 보기" : "Watch location video"}
@@ -249,8 +334,8 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
 
 function StepRow({ locale, step, index }: { locale: Locale; step: CollectibleStep; index: number }) {
   return (
-    <li className="flex gap-2 text-[12px] leading-6 text-[var(--text-secondary)]">
-      <span className="shrink-0 font-mono text-[11px] font-bold text-[var(--accent)]">
+    <li className="flex gap-2 text-[14px] leading-6 text-[var(--text-secondary)]">
+      <span className="shrink-0 font-mono text-[14px] font-bold text-[var(--accent)]">
         {step.index ?? index}.
       </span>
       <span className="flex-1">

@@ -80,7 +80,7 @@ export function AchievementListBrowser({
       <div className="px-6 py-5 md:px-9">
         {showUnlocked && (
           <section className="mb-8">
-            <div className="mb-3 text-[11px] font-bold uppercase tracking-wider text-[var(--l3)]">
+            <div className="mb-3 text-[14px] font-bold uppercase tracking-wider text-[var(--l3)]">
               {labels.unlockedSection} · {unlocked.length}
             </div>
             <div className="flex flex-col gap-2">
@@ -98,7 +98,7 @@ export function AchievementListBrowser({
                     )}
                   </div>
                   <div className="flex shrink-0 flex-col items-end gap-1">
-                    <span className="font-mono text-[11px] font-bold" style={{ color: rarityColor(a.difficulty) }}>
+                    <span className="font-mono text-[14px] font-bold" style={{ color: rarityColor(a.difficulty) }}>
                       {a.rarity}%
                     </span>
                     <FiCheck size={12} className="text-[var(--l3)]" />
@@ -112,7 +112,7 @@ export function AchievementListBrowser({
 
         {showLocked && (
           <section>
-            <div className="mb-3 text-[11px] font-bold uppercase tracking-wider text-[var(--text-tertiary)]">
+            <div className="mb-3 text-[14px] font-bold uppercase tracking-wider text-[var(--text-tertiary)]">
               {labels.lockedSection} · {locked.length}
             </div>
             <div className="flex flex-col gap-2">
@@ -129,7 +129,7 @@ export function AchievementListBrowser({
                       <div className="truncate text-xs text-[var(--text-tertiary)]">{a.description}</div>
                     )}
                   </div>
-                  <span className="shrink-0 font-mono text-[11px] font-bold" style={{ color: rarityColor(a.difficulty) }}>
+                  <span className="shrink-0 font-mono text-[14px] font-bold" style={{ color: rarityColor(a.difficulty) }}>
                     {a.rarity}%
                   </span>
                   <FiChevronRight size={14} className="shrink-0 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--text-primary)]" />

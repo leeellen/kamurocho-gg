@@ -11,7 +11,7 @@ type Section = "home" | "games" | "order" | "missables" | "search";
 const NAV = [
   { id: "games", href: "/games", ko: "게임", en: "Games" },
   { id: "order", href: "/order", ko: "플레이 순서", en: "Play order" },
-  { id: "missables", href: "/missables", ko: "놓침 주의", en: "Missables" },
+  { id: "missables", href: "/missables", ko: "놓치기 쉬움", en: "Missables" },
 ] as const;
 
 export async function SiteShell({
@@ -44,7 +44,7 @@ export async function SiteShell({
               <span className="font-display text-[15px] font-extrabold tracking-tight text-white">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
               </span>
-              <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
+              <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
                 RGG Steam Guides
               </span>
             </span>
@@ -61,7 +61,7 @@ export async function SiteShell({
                   key={item.id}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`relative cursor-pointer rounded-md px-3 py-2 text-[13px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
+                  className={`relative cursor-pointer rounded-md px-3 py-2 text-[14px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
                     active
                       ? "text-white"
                       : "text-[var(--chrome-muted)] hover:text-white"
@@ -84,13 +84,13 @@ export async function SiteShell({
               href="/search"
               aria-label={locale === "ko" ? "검색 열기" : "Open search"}
               aria-current={section === "search" ? "page" : undefined}
-              className={`inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[12px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
+              className={`inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[14px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
                 section === "search" ? "border-white/30 bg-white/10 text-white" : ""
               }`}
             >
               <FiSearch size={14} aria-hidden="true" />
               <span className="hidden sm:inline">{locale === "ko" ? "검색" : "Search"}</span>
-              <kbd className="hidden rounded border border-white/12 bg-black/40 px-1.5 py-0.5 font-mono text-[11px] text-[var(--text-tertiary)] sm:inline">⌘K</kbd>
+              <kbd className="hidden rounded border border-white/12 bg-black/40 px-1.5 py-0.5 font-mono text-[14px] text-[var(--text-tertiary)] sm:inline">⌘K</kbd>
             </Link>
             <LanguageSwitcher
               locale={locale}
@@ -120,7 +120,7 @@ export async function SiteShell({
                   key={item.id}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`whitespace-nowrap rounded-full px-3 py-1.5 text-[12px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
+                  className={`whitespace-nowrap rounded-full px-3 py-1.5 text-[14px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
                     active
                       ? "bg-white text-[var(--text-inverse)]"
                       : "text-[var(--chrome-muted)] hover:bg-white/8 hover:text-white"
@@ -143,7 +143,7 @@ export async function SiteShell({
               <div className="font-display text-[14px] font-extrabold tracking-tight">
                 kamurocho<span className="text-[var(--accent)]">.gg</span>
               </div>
-              <div className="text-[12px] text-[var(--text-tertiary)]">
+              <div className="text-[14px] text-[var(--text-tertiary)]">
                 {locale === "ko"
                   ? "비공식 팬 가이드 · SEGA / RGG Studio와 무관"
                   : "An unofficial fan project · not affiliated with SEGA / RGG Studio"}
@@ -151,7 +151,7 @@ export async function SiteShell({
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 md:items-end">
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12px] text-[var(--text-tertiary)]">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[14px] text-[var(--text-tertiary)]">
               <Link href="/games" className="cursor-pointer transition-colors hover:text-white">
                 {locale === "ko" ? "게임 목록" : "Games"}
               </Link>
@@ -159,13 +159,13 @@ export async function SiteShell({
                 {locale === "ko" ? "플레이 순서" : "Play order"}
               </Link>
               <Link href="/missables" className="cursor-pointer transition-colors hover:text-white">
-                {locale === "ko" ? "놓침 주의" : "Missables"}
+                {locale === "ko" ? "놓치기 쉬움" : "Missables"}
               </Link>
               <Link href="/search" className="cursor-pointer transition-colors hover:text-white">
                 {locale === "ko" ? "검색" : "Search"}
               </Link>
             </div>
-            <span lang="en" className="text-[11px] text-[var(--text-muted)]">
+            <span lang="en" className="text-[14px] text-[var(--text-muted)]">
               Steam and the Steam logo are trademarks of Valve Corporation. This site is not associated with Valve Corp.
             </span>
           </div>

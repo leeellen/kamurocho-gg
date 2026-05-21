@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FiArrowLeft, FiExternalLink, FiTarget } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { StatTile } from "@/components/ui/stat-tile";
 import { SignInButton } from "@/components/ui/user-menu";
@@ -59,7 +60,7 @@ export function GameHero({
       <div className="mx-auto max-w-[1280px] px-5 pb-12 pt-8 md:px-8 md:pt-12">
         <Link
           href="/games"
-          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[12px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[14px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
         >
           <FiArrowLeft size={13} aria-hidden="true" />
           {locale === "ko" ? "작품 목록으로" : "Back to games"}
@@ -107,7 +108,7 @@ export function GameHero({
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--accent)]">{game.arc}</span>
+            <span className="font-mono text-[14px] uppercase tracking-[0.2em] text-[var(--accent)]">{game.arc}</span>
             <h1 className="font-display m-0 text-[40px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[56px]">
               {game.name}
             </h1>
@@ -123,13 +124,16 @@ export function GameHero({
               </Chip>
               <Chip tone="gold">{locale === "ko" ? `희귀 ${game.rareCount}개` : `${game.rareCount} rare`}</Chip>
               <Chip tone="neutral">{game.estimatedHours}</Chip>
+              <Chip tone="info" size="xs">
+                {locale === "ko" ? `엔진: ${game.engine}` : `Engine: ${game.engine}`}
+              </Chip>
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
               <a
                 href={`https://store.steampowered.com/app/${game.appId}/`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[12px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
               >
                 {locale === "ko" ? "스팀 상점" : "Steam store"}
                 <FiExternalLink size={12} aria-hidden="true" />
@@ -138,7 +142,7 @@ export function GameHero({
                 href={`https://steamcommunity.com/app/${game.appId}/guides/`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[12px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
               >
                 {locale === "ko" ? "커뮤니티 공략" : "Community guides"}
                 <FiExternalLink size={12} aria-hidden="true" />
@@ -183,10 +187,10 @@ export function GameHero({
 
         {showSteamProgress && (
           <div className="mt-6 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4">
-            <div className="flex flex-wrap items-center justify-between gap-3 text-[12px]">
-              <span className={`font-mono uppercase text-[var(--text-tertiary)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.16em]"}`}>
+            <div className="flex flex-wrap items-center justify-between gap-3 text-[14px]">
+              <Eyebrow locale={locale} tone="muted">
                 {locale === "ko" ? "스팀 진행 상황" : "Steam progress"}
-              </span>
+              </Eyebrow>
               <span className="font-mono text-white">
                 {userUnlocked} / {totalAchievements} · {userPct}%
               </span>
@@ -202,7 +206,7 @@ export function GameHero({
         )}
         {!hasUser && (
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-4">
-            <div className="text-[12px] text-[var(--text-secondary)]">
+            <div className="text-[14px] text-[var(--text-secondary)]">
               {locale === "ko"
                 ? "스팀 계정을 연동하면 본인의 미완료 업적이 강조됩니다."
                 : "Sign in through Steam to highlight your remaining achievements here."}

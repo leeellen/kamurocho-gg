@@ -11,6 +11,7 @@ import { FiArrowRight, FiSearch, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { getLocale } from "@/lib/i18n";
 import { searchKamurocho } from "@/lib/kamurocho-data";
@@ -32,9 +33,9 @@ export default async function SearchPage({
   return (
     <SiteShell locale={locale} section="search">
       <div className="mx-auto max-w-[980px] px-5 pb-20 pt-12 md:px-8 md:pt-16">
-        <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+        <Eyebrow locale={locale} tracking="0.2em">
           {locale === "ko" ? "검색" : "Search"}
-        </span>
+        </Eyebrow>
         <h1 className="font-display m-0 mt-2 text-[34px] font-extrabold tracking-tight text-white md:text-[44px]">
           {locale === "ko" ? "공략을 한 번에 찾기" : "Find a guide, fast"}
         </h1>
@@ -63,7 +64,7 @@ export default async function SearchPage({
             />
             <button
               type="submit"
-              className="absolute right-2 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl bg-[var(--accent)] px-4 text-[13px] font-bold text-white transition-colors hover:bg-[var(--accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+              className="absolute right-2 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl bg-[var(--accent)] px-4 text-[14px] font-bold text-white transition-colors hover:bg-[var(--accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
               {locale === "ko" ? "검색" : "Search"}
               <FiArrowRight size={13} aria-hidden="true" />
@@ -72,7 +73,7 @@ export default async function SearchPage({
         </form>
 
         {query && (
-          <div className="mt-5 flex flex-wrap items-center gap-3 text-[12px] text-[var(--text-tertiary)]">
+          <div className="mt-5 flex flex-wrap items-center gap-3 text-[14px] text-[var(--text-tertiary)]">
             <span>{locale === "ko" ? `"${query}" 검색 결과` : `Results for "${query}"`}</span>
             <span aria-hidden="true">·</span>
             <span className="font-mono">
@@ -83,13 +84,13 @@ export default async function SearchPage({
 
         {!query && (
           <div className="mt-12 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-10 text-center">
-            <div className={`font-mono text-[11px] uppercase text-[var(--text-tertiary)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+            <Eyebrow locale={locale} tone="muted" tracking="0.2em">
               {locale === "ko" ? "검색 팁" : "Tips"}
-            </div>
+            </Eyebrow>
             <p className="font-display m-0 mt-3 text-[20px] font-bold text-white">
               {locale === "ko" ? "검색어를 입력해 보세요" : "Type something to begin"}
             </p>
-            <p className="m-0 mt-2 text-[13px] text-[var(--text-secondary)]">
+            <p className="m-0 mt-2 text-[14px] text-[var(--text-secondary)]">
               {locale === "ko" ? "한국어·영어·로마자 표기 모두 인식합니다." : "Korean, English, and romanized spellings all work."}
             </p>
           </div>
@@ -100,7 +101,7 @@ export default async function SearchPage({
             <p className="font-display m-0 text-[20px] font-bold text-white">
               {locale === "ko" ? `"${query}"와 일치하는 결과가 없어요` : `No matches for "${query}"`}
             </p>
-            <p className="m-0 mt-2 text-[13px] text-[var(--text-secondary)]">
+            <p className="m-0 mt-2 text-[14px] text-[var(--text-secondary)]">
               {locale === "ko" ? "철자나 한·영 표기를 바꿔 다시 시도해 보세요." : "Try different spelling or a romanized name."}
             </p>
           </div>
@@ -112,7 +113,7 @@ export default async function SearchPage({
               <section>
                 <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
                   {locale === "ko" ? "게임" : "Games"}
-                  <span className="font-mono text-[12px] font-normal text-[var(--text-tertiary)]">
+                  <span className="font-mono text-[14px] font-normal text-[var(--text-tertiary)]">
                     {results.games.length}
                   </span>
                 </h2>
@@ -136,10 +137,10 @@ export default async function SearchPage({
                           <div className="font-display truncate text-[14px] font-bold text-white transition-colors group-hover:text-[var(--accent)]">
                             {game.name}
                           </div>
-                          <p className="m-0 mt-1 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+                          <p className="m-0 mt-1 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
                             {game.summary}
                           </p>
-                          <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                          <div className="mt-1.5 font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                             {game.year} · {game.estimatedHours}
                           </div>
                         </div>
@@ -154,7 +155,7 @@ export default async function SearchPage({
               <section>
                 <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
                   {locale === "ko" ? "업적" : "Achievements"}
-                  <span className="font-mono text-[12px] font-normal text-[var(--text-tertiary)]">
+                  <span className="font-mono text-[14px] font-normal text-[var(--text-tertiary)]">
                     {results.achievements.length}
                   </span>
                 </h2>
@@ -176,12 +177,12 @@ export default async function SearchPage({
                                 {locale === "ko" ? "놓치기 쉬움" : "Missable"}
                               </Chip>
                             )}
-                            <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                            <span className="font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                               {game.name}
                             </span>
                           </div>
                         </div>
-                        <p className="m-0 mt-1.5 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+                        <p className="m-0 mt-1.5 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
                           {achievement.guideSteps[0] || achievement.guideSummary || achievement.description}
                         </p>
                       </Link>

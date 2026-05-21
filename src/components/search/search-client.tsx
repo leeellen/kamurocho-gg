@@ -44,6 +44,7 @@ type Labels = {
   gamesHeader: string;
   achievementsHeader: string;
   clearRecent: string;
+  clearInput: string;
   achievements: string;
 };
 
@@ -167,6 +168,7 @@ export function SearchClient({
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder={labels.placeholder}
+            aria-label={labels.placeholder}
             className="flex-1 border-none bg-transparent text-[15px] text-[var(--text-primary)] outline-none placeholder:text-[var(--text-tertiary)]"
             autoComplete="off"
             spellCheck={false}
@@ -176,18 +178,18 @@ export function SearchClient({
             <button
               type="button"
               onClick={() => setQ("")}
-              className="rounded-md p-1 text-[var(--text-tertiary)] hover:bg-[var(--bg-raised)] hover:text-[var(--text-primary)]"
-              aria-label="clear"
+              className="cursor-pointer rounded-md p-1 text-[var(--text-tertiary)] hover:bg-[var(--bg-raised)] hover:text-[var(--text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+              aria-label={labels.clearInput}
             >
-              <FiX size={16} />
+              <FiX size={16} aria-hidden="true" />
             </button>
           )}
-          <kbd className="hidden rounded-md border border-[var(--border-subtle)] bg-[var(--bg-raised)] px-2 py-0.5 font-mono text-[11px] text-[var(--text-tertiary)] md:inline-block">
+          <kbd className="hidden rounded-md border border-[var(--border-subtle)] bg-[var(--bg-raised)] px-2 py-0.5 font-mono text-[14px] text-[var(--text-tertiary)] md:inline-block">
             ⌘K
           </kbd>
         </div>
         {loading && (
-          <div className="mt-2 font-mono text-[11px] text-[var(--text-tertiary)]">…</div>
+          <div className="mt-2 font-mono text-[14px] text-[var(--text-tertiary)]">…</div>
         )}
       </div>
 
@@ -196,13 +198,14 @@ export function SearchClient({
         <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr]">
           <section>
             <div className="mb-3 flex items-center justify-between">
-              <h2 className="m-0 text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="m-0 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.recent}
               </h2>
               {recent.length > 0 && (
                 <button
+                  type="button"
                   onClick={clearRecent}
-                  className="text-[11px] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]"
+                  className="cursor-pointer rounded text-[14px] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
                 >
                   {labels.clearRecent}
                 </button>
@@ -217,13 +220,14 @@ export function SearchClient({
                 {recent.map((term) => (
                   <button
                     key={term}
+                    type="button"
                     onClick={() => {
                       setQ(term);
                       inputRef.current?.focus();
                     }}
-                    className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-left text-sm text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)]"
+                    className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2.5 text-left text-sm text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
                   >
-                    <FiClock size={13} className="text-[var(--text-tertiary)]" />
+                    <FiClock size={13} aria-hidden="true" className="text-[var(--text-tertiary)]" />
                     {term}
                   </button>
                 ))}
@@ -232,7 +236,7 @@ export function SearchClient({
           </section>
 
           <section>
-            <h2 className="mb-3 text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+            <h2 className="mb-3 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
               {labels.quickJump}
             </h2>
             <div className="grid grid-cols-1 gap-1">
@@ -240,9 +244,9 @@ export function SearchClient({
                 <Link
                   key={g.appId}
                   href={`/game/${g.appId}`}
-                  className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm no-underline transition-colors hover:bg-[var(--bg-elevated)]"
+                  className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm no-underline transition-colors hover:bg-[var(--bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
                 >
-                  <span className="w-6 shrink-0 font-mono text-[11px] tabular-nums text-[var(--text-tertiary)]">
+                  <span className="w-6 shrink-0 font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="truncate text-[var(--text-primary)]">{g.name}</span>
@@ -269,9 +273,9 @@ export function SearchClient({
           {/* Games */}
           {games.length > 0 && (
             <section>
-              <h2 className="mb-3 flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.gamesHeader}
-                <span className="font-mono text-[11px] tabular-nums text-[var(--text-tertiary)]">
+                <span className="font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
                   {games.length}
                 </span>
               </h2>
@@ -281,7 +285,7 @@ export function SearchClient({
                     key={g.appId}
                     href={`/game/${g.appId}`}
                     onClick={onResultClick}
-                    className="group block no-underline"
+                    className="group block cursor-pointer rounded-xl no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                   >
                     <Card className="flex overflow-hidden p-0 transition-colors group-hover:border-[var(--accent-border)]">
                       <div className="h-[68px] w-[145px] shrink-0 overflow-hidden">
@@ -300,7 +304,7 @@ export function SearchClient({
                         </div>
                         <div className="flex items-center gap-2.5">
                           <Progress value={g.completion} className="h-[3px] flex-1" />
-                          <span className="font-mono text-[12px] font-bold tabular-nums text-[var(--accent)]">
+                          <span className="font-mono text-[14px] font-bold tabular-nums text-[var(--accent)]">
                             {g.completion}%
                           </span>
                         </div>
@@ -315,9 +319,9 @@ export function SearchClient({
           {/* Achievements */}
           {achievements.length > 0 && (
             <section>
-              <h2 className="mb-3 flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.achievementsHeader}
-                <span className="font-mono text-[11px] tabular-nums text-[var(--text-tertiary)]">
+                <span className="font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
                   {achievements.length}
                 </span>
               </h2>
@@ -328,20 +332,20 @@ export function SearchClient({
                     href={`/game/${a.gameAppId}/achievement/${a.slug}`}
                     onClick={onResultClick}
                     className={cn(
-                      "flex items-center gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5 no-underline transition-colors",
-                      "hover:border-[var(--accent-border)]",
+                      "flex cursor-pointer items-center gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5 no-underline transition-colors",
+                      "hover:border-[var(--accent-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]",
                     )}
                   >
                     <AchievementIcon src={a.iconUrl} size={36} />
                     <div className="min-w-0 flex-1">
-                      <div className="truncate text-[13px] font-semibold text-[var(--text-primary)]">
+                      <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
                         {a.name}
                       </div>
-                      <div className="truncate text-[11px] text-[var(--text-tertiary)]">
+                      <div className="truncate text-[14px] text-[var(--text-tertiary)]">
                         {a.gameName}
                       </div>
                     </div>
-                    <span className="shrink-0 font-mono text-[11px] font-bold tabular-nums text-[var(--accent)]">
+                    <span className="shrink-0 font-mono text-[14px] font-bold tabular-nums text-[var(--accent)]">
                       {a.rarity.toFixed(1)}%
                     </span>
                   </Link>

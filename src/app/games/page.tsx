@@ -67,7 +67,7 @@ export default async function GamesPage() {
                 <h2 className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white">
                   {GROUP_LABEL[group][locale] ?? group}
                 </h2>
-                <span className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+                <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
                   {list.length} {locale === "ko" ? "작품" : "titles"}
                 </span>
                 <span aria-hidden="true" className="ml-2 h-px flex-1 bg-[var(--border)]" />
@@ -105,9 +105,9 @@ export default async function GamesPage() {
                           {game.name}
                         </h3>
                         {locale !== "ko" && game.altName && (
-                          <div className="mt-1 text-[12px] text-[var(--text-tertiary)]">{game.altName}</div>
+                          <div className="mt-1 text-[14px] text-[var(--text-tertiary)]">{game.altName}</div>
                         )}
-                        <p className="mt-2 line-clamp-2 min-h-[3em] text-[13px] leading-6 text-[var(--text-secondary)]">
+                        <p className="mt-2 line-clamp-2 min-h-[3em] text-[14px] leading-6 text-[var(--text-secondary)]">
                           {game.summary}
                         </p>
 
@@ -128,7 +128,7 @@ export default async function GamesPage() {
                           </Chip>
                         </div>
 
-                        <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[12px]">
+                        <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[14px]">
                           <span className="font-mono text-[var(--text-tertiary)]">app/{game.appId}</span>
                           <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
                             {locale === "ko" ? "공략 열기" : "Open guide"}
@@ -152,7 +152,7 @@ function Meta({ label, value, tone = "neutral" }: { label: string; value: number
   const color = tone === "accent" ? "text-[var(--accent)]" : tone === "gold" ? "text-[var(--gold)]" : "text-white";
   return (
     <div>
-      <dt className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
+      <dt className="font-mono text-[14px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
       <dd className={`mt-1 font-display text-[18px] font-extrabold leading-none ${color}`}>{value}</dd>
     </div>
   );

@@ -29,7 +29,7 @@ export function SectionTitle({
         {eyebrow && (
           <span
             className={cn(
-              "font-mono text-[12px] font-semibold uppercase text-[var(--accent)]",
+              "font-mono text-[14px] font-semibold uppercase text-[var(--accent)]",
               /[ㄱ-힝]/u.test(eyebrow) ? "tracking-normal" : "tracking-[0.18em]",
             )}
           >

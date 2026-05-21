@@ -46,35 +46,40 @@ export function MissablesSidebar({
             >
               <div className="flex items-center gap-2">
                 <Chip tone="gold" size="xs" className="font-mono">
-                  {bucket.chapter > 0 ? `CH ${bucket.chapter}` : "NOTE"}
+                  {bucket.chapter > 0
+                    ? locale === "ko" ? `${bucket.chapter}장` : `CH ${bucket.chapter}`
+                    : locale === "ko" ? "메모" : "NOTE"}
                 </Chip>
                 {bucket.curatedTitle && (
-                  <span className="text-[13px] font-bold text-white">
+                  <span className="text-[15px] font-bold leading-tight text-white">
                     {locale === "ko" ? bucket.curatedTitle.ko : bucket.curatedTitle.en}
                   </span>
                 )}
               </div>
-              <div className="mt-3 flex flex-col gap-2">
+              <div className="mt-3.5 flex flex-col gap-2.5">
                 {bucket.curatedItems.map((item, index) => (
                   <div
                     key={`curated-${index}`}
-                    className="rounded-lg border border-[var(--border-subtle)] bg-black/20 p-3"
+                    className="rounded-lg border border-[var(--border-subtle)] bg-black/20 p-3.5"
                   >
-                    <div className="flex flex-wrap items-center gap-2">
-                      <Chip
-                        tone={item.kind === "missable" ? "danger" : item.kind === "recommended" ? "accent" : "info"}
-                        size="xs"
-                      >
-                        {item.kind}
-                      </Chip>
-                      <span className="text-[12px] font-semibold text-white">
-                        {locale === "ko" ? item.title.ko : item.title.en}
-                      </span>
+                    <Chip
+                      tone={item.kind === "missable" ? "danger" : item.kind === "recommended" ? "accent" : "info"}
+                      size="xs"
+                      className="font-mono uppercase tracking-[0.08em]"
+                    >
+                      {item.kind === "missable"
+                        ? locale === "ko" ? "놓치기 쉬움" : "MISSABLE"
+                        : item.kind === "recommended"
+                          ? locale === "ko" ? "권장" : "RECOMMENDED"
+                          : locale === "ko" ? "참고" : "ANYTIME"}
+                    </Chip>
+                    <div className="mt-2 text-[15px] font-bold leading-snug text-white">
+                      {locale === "ko" ? item.title.ko : item.title.en}
                     </div>
-                    <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                    <div className="mt-1 text-[13px] text-[var(--text-tertiary)]">
                       {locale === "ko" ? item.when.ko : item.when.en}
                     </div>
-                    <p className="m-0 mt-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+                    <p className="m-0 mt-2.5 text-[14px] leading-7 text-[var(--text-secondary)]">
                       {locale === "ko" ? item.body.ko : item.body.en}
                     </p>
                   </div>
@@ -127,18 +132,16 @@ function MissableAchievementCard({
   return (
     <Link
       href={`/game/${gameSlug}/achievement/${achievement.slug}`}
-      className="group block cursor-pointer rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)]/40 p-3 no-underline transition-colors hover:bg-[var(--danger-bg)]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+      className="group block cursor-pointer rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)]/40 p-3.5 no-underline transition-colors hover:bg-[var(--danger-bg)]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
     >
-      <div className="flex flex-wrap items-center gap-2">
-        <Chip tone="danger" size="xs">
-          <FiTarget size={10} aria-hidden="true" />
-          {locale === "ko" ? "업적" : "Achievement"}
-        </Chip>
-        <span className="text-[12px] font-semibold text-white transition-colors group-hover:text-[var(--accent)]">
-          {achievement.name}
-        </span>
+      <Chip tone="danger" size="xs" className="font-mono uppercase tracking-[0.08em]">
+        <FiTarget size={10} aria-hidden="true" />
+        {locale === "ko" ? "업적" : "Achievement"}
+      </Chip>
+      <div className="mt-2 text-[15px] font-bold leading-snug text-white transition-colors group-hover:text-[var(--accent)]">
+        {achievement.name}
       </div>
-      <p className="m-0 mt-1.5 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)]">
+      <p className="m-0 mt-1.5 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
         {achievement.guideSummary || achievement.guideSteps[0] || achievement.description}
       </p>
     </Link>

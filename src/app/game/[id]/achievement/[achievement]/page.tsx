@@ -94,7 +94,7 @@ export default async function AchievementPage({
       <article className="mx-auto max-w-[900px] px-5 pb-20 pt-12 md:px-8">
         <Link
           href={`/game/${data.game.slug}`}
-          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[12px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[14px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
         >
           <FiArrowLeft size={13} aria-hidden="true" />
           {data.game.name}
@@ -112,7 +112,7 @@ export default async function AchievementPage({
         >
           {tracksProgress && (
             <div
-              className={`-mt-2 mb-5 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[12px] font-bold ${
+              className={`-mt-2 mb-5 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[14px] font-bold ${
                 isUnlocked
                   ? "bg-[var(--success-subtle)] text-[var(--safe-text)] ring-1 ring-inset ring-[var(--l3-border)]"
                   : "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
@@ -197,13 +197,17 @@ export default async function AchievementPage({
             </div>
           </div>
           <div className="mt-5 flex items-center gap-3 border-t border-[var(--border-subtle)] pt-5">
-            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+            <span
+              className={`font-mono text-[14px] text-[var(--text-tertiary)] ${
+                locale === "ko" ? "" : "uppercase tracking-[0.16em]"
+              }`}
+            >
               {locale === "ko" ? "전체 달성률" : "Global unlock"}
             </span>
             <RarityBar rarity={ach.rarity} className="flex-1" />
           </div>
           {!user && (
-            <div className="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-dashed border-[var(--border)] bg-[var(--bg-elevated)]/60 p-3 text-[12px]">
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-dashed border-[var(--border)] bg-[var(--bg-elevated)]/60 p-3 text-[14px]">
               <span className="text-[var(--text-secondary)]">
                 {locale === "ko"
                   ? "스팀을 연동하면 본인의 획득 여부와 날짜가 표시됩니다."
@@ -236,7 +240,7 @@ export default async function AchievementPage({
                 >
                   <span
                     aria-hidden="true"
-                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] font-mono text-[12px] font-bold text-white"
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] font-mono text-[14px] font-bold text-white"
                   >
                     {index + 1}
                   </span>
@@ -277,7 +281,11 @@ export default async function AchievementPage({
 
         {/* SOURCE */}
         <section className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6">
-          <div className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+          <div
+            className={`font-mono text-[14px] text-[var(--text-tertiary)] ${
+              locale === "ko" ? "" : "uppercase tracking-[0.16em]"
+            }`}
+          >
             {locale === "ko" ? "출처" : "Source"}
           </div>
           {ach.guideSource ? (
@@ -285,13 +293,13 @@ export default async function AchievementPage({
               href={ach.guideSource}
               target="_blank"
               rel="noreferrer noopener"
-              className="mt-3 inline-flex cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[13px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+              className="mt-3 inline-flex cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
               {sourceLabel(ach.guideSource, locale)}
               <FiExternalLink size={12} aria-hidden="true" />
             </a>
           ) : (
-            <p className="m-0 mt-3 text-[13px] text-[var(--text-tertiary)]">
+            <p className="m-0 mt-3 text-[14px] text-[var(--text-tertiary)]">
               {locale === "ko" ? "연결된 출처가 아직 없습니다." : "No linked source."}
             </p>
           )}

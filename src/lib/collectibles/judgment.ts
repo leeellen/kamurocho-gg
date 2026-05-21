@@ -5,9 +5,9 @@ export const judgment: CollectiblesData = {
   categories: [
     {
       slug: "friend-events",
-      title: { ko: "친구 이벤트 — 50명 전수", en: "Friend Events — All 50 NPCs" },
+      title: { ko: "친구 이벤트 — 50명 전원", en: "Friend Events — All 50 NPCs" },
       summary: {
-        ko: "카무로초의 친구 후보 NPC 50명과 친밀도를 최대치까지 올려 친구 이벤트를 모두 시청합니다. 친구를 만들면 평판이 올라 사이드 케이스가 추가로 풀리고, 전투 중 회복·지원도 받을 수 있습니다.",
+        ko: "카무로쵸의 친구 후보 NPC 50명과 친밀도를 최대치까지 올려 친구 이벤트를 모두 시청합니다. 친구를 만들면 평판이 올라 사이드 케이스가 추가로 풀리고, 전투 중 회복·지원도 받을 수 있습니다.",
         en: "Befriend all 50 NPCs across Kamurocho. Each new friend raises your reputation, unlocking extra side cases and giving you in-battle support and heals.",
       },
       tips: [
@@ -323,7 +323,7 @@ export const judgment: CollectiblesData = {
     },
     {
       slug: "side-cases",
-      title: { ko: "사이드 케이스 50건 — 전수", en: "Side Cases — All 50" },
+      title: { ko: "사이드 케이스 50건", en: "Side Cases — All 50" },
       summary: {
         ko: "야가미 탐정 사무소·바 텐더·겐다 법률사무소에서 받거나 메인 스토리·거리에서 발생하는 사이드 케이스 50건의 발생 조건과 장소를 정리했습니다. 도시 평판 레벨이 핵심 게이트입니다.",
         en: "Side cases triggered from Yagami Detective Agency, Bar Tender, Genda Law Office, or out in the world. 50 entries with chapter + city-reputation conditions.",
@@ -549,21 +549,21 @@ export const judgment: CollectiblesData = {
       },
       {
         number: 36,
-        title: { ko: "카무로초의 폭탄마", en: "The Kamurocho Bomber" },
+        title: { ko: "카무로쵸의 폭탄마", en: "The Kamurocho Bomber" },
         location: { ko: "거리 트리거", en: "Street trigger" },
         body: { ko: "2장 도중까지 클리어 / 맵 하단 뒷골목 (중앙거리와 핑크거리 사이)에서 발생", en: "Clear partway into Chapter 2; triggers in the back alley at the bottom of the map (between Nakamichi St. and Pink St.)" },
       },
       {
         number: 37,
-        title: { ko: "속・카무로초의 폭탄마", en: "The Kamurocho Bomber II" },
+        title: { ko: "속・카무로쵸의 폭탄마", en: "The Kamurocho Bomber II" },
         location: { ko: "거리 트리거", en: "Street trigger" },
-        body: { ko: "4장 이후 / ‘카무로초의 폭탄마’ 클리어", en: "Chapter 4 onward; clear 'The Kamurocho Bomber'" },
+        body: { ko: "4장 이후 / ‘카무로쵸의 폭탄마’ 클리어", en: "Chapter 4 onward; clear 'The Kamurocho Bomber'" },
       },
       {
         number: 38,
-        title: { ko: "속속・카무로초의 폭탄마", en: "The Kamurocho Bomber III" },
+        title: { ko: "속속・카무로쵸의 폭탄마", en: "The Kamurocho Bomber III" },
         location: { ko: "거리 트리거", en: "Street trigger" },
-        body: { ko: "6장 이후 / ‘속・카무로초의 폭탄마’ 클리어", en: "Chapter 6 onward; clear 'The Kamurocho Bomber II'" },
+        body: { ko: "6장 이후 / ‘속・카무로쵸의 폭탄마’ 클리어", en: "Chapter 6 onward; clear 'The Kamurocho Bomber II'" },
       },
       {
         number: 39,
@@ -659,7 +659,7 @@ export const judgment: CollectiblesData = {
       slug: "photo-rumors",
       title: { ko: "포토 의뢰 50건", en: "Photo Rumors (50)" },
       summary: {
-        ko: "카무로초 곳곳에서 발생하는 잠복·사진 의뢰를 50건 이상 완수합니다. 야가미 탐정 사무소 게시판에서 신규 의뢰를 확인하세요.",
+        ko: "카무로쵸 곳곳에서 발생하는 잠복·사진 의뢰를 50건 이상 완수합니다. 야가미 탐정 사무소 게시판에서 신규 의뢰를 확인하세요.",
         en: "Clear 50+ stakeout/photo rumor cases. New ones post on the agency board as the story advances.",
       },
     },
@@ -667,7 +667,7 @@ export const judgment: CollectiblesData = {
       slug: "mole-investigations",
       title: { ko: "잠입 수사 — 모두 클리어", en: "Mole Investigations" },
       summary: {
-        ko: "스토리 잠입 수사 미션을 모두 진행합니다. 미스 가능 항목이 일부 있어 챕터별로 챙기는 편이 안전합니다.",
+        ko: "스토리 잠입 수사 미션을 모두 진행합니다. 놓치기 쉬운 항목이 일부 있어 챕터별로 챙기는 편이 안전합니다.",
         en: "Clear every Mole Investigation mission. Some are chapter-missable — handle them as they appear.",
       },
     },
@@ -675,7 +675,7 @@ export const judgment: CollectiblesData = {
       slug: "dialog-choices",
       title: { ko: "이면 보고서 — 챕터 8 대화 선택", en: "Investigation Reports — Chapter 8 Dialogs" },
       summary: {
-        ko: "챕터 8의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. 미스 가능 업적이라 사전에 수동 세이브를 분리해 두세요.",
+        ko: "챕터 8의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. 놓치기 쉬운 업적이라 사전에 수동 세이브를 분리해 두세요.",
         en: "Pick every correct dialog option in Chapter 8 on the first try. Missable — keep a separate manual save.",
       },
     },

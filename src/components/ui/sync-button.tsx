@@ -72,7 +72,7 @@ export function SyncButton({
       aria-busy={spinning}
       aria-label={label}
       className={cn(
-        "inline-flex h-11 cursor-pointer items-center gap-2 rounded-full px-5 text-[13px] font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] disabled:cursor-wait",
+        "inline-flex h-11 cursor-pointer items-center gap-2 rounded-full px-5 text-[14px] font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] disabled:cursor-wait",
         state === "idle" && "bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)]",
         state === "syncing" && "bg-[var(--bg-elevated)] text-[var(--text-secondary)] ring-1 ring-inset ring-[var(--border-strong)]",
         state === "done" && "bg-[var(--success-subtle)] text-[var(--safe-text)] ring-1 ring-inset ring-[var(--l3-border)]",

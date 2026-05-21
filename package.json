@@ -6,7 +6,8 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape:substories:y0": "node scripts/substories/scrape-yakuza0.mjs"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",

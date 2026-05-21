@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FiArrowRight, FiCheck, FiTarget } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { RarityBar } from "@/components/ui/rarity-bar";
 import { difficultyLabel } from "@/lib/difficulty";
 import type { Locale } from "@/lib/i18n";
@@ -29,14 +30,14 @@ export function AchievementsList({
     <section aria-label={locale === "ko" ? "업적 목록" : "Achievements"}>
       <div className="flex items-end justify-between gap-3">
         <div>
-          <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.16em]"}`}>
+          <Eyebrow locale={locale}>
             {locale === "ko" ? "업적 가이드" : "Achievement guide"}
-          </span>
+          </Eyebrow>
           <h2 className="font-display m-0 mt-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
             {locale === "ko" ? "희귀도 높은 업적부터" : "Start with the rarest"}
           </h2>
         </div>
-        <span className="font-mono text-[12px] text-[var(--text-tertiary)]">
+        <span className="font-mono text-[14px] text-[var(--text-tertiary)]">
           {locale === "ko" ? `전체 ${achievements.length}개` : `${achievements.length} total`}
         </span>
       </div>
@@ -161,12 +162,16 @@ function AchievementRow({
               </Chip>
             )}
           </div>
-          <p className="m-0 mt-1.5 line-clamp-2 text-[13px] leading-6 text-[var(--text-secondary)]">
+          <p className="m-0 mt-1.5 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
             {achievement.description}
           </p>
           {(achievement.guideSteps[0] || achievement.guideSummary) && (
-            <p className="m-0 mt-2 line-clamp-1 text-[12px] text-[var(--text-tertiary)]">
-              <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--accent)]">
+            <p className="m-0 mt-2 line-clamp-1 text-[14px] text-[var(--text-tertiary)]">
+              <span
+                className={`font-mono text-[14px] text-[var(--accent)] ${
+                  locale === "ko" ? "" : "uppercase tracking-[0.1em]"
+                }`}
+              >
                 {locale === "ko" ? "공략 " : "Guide "}
               </span>
               {achievement.guideSteps[0] || achievement.guideSummary}

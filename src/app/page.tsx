@@ -3,6 +3,7 @@ import { FiArrowRight, FiBookOpen, FiClock, FiCompass, FiLayers, FiTarget } from
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { SectionTitle } from "@/components/ui/section-title";
 import { StatTile } from "@/components/ui/stat-tile";
@@ -61,9 +62,9 @@ export default async function HomePage() {
         <div className="mx-auto max-w-[1280px] px-5 pb-16 pt-20 md:px-8 md:pb-24 md:pt-28">
           <div className="flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--accent)]" />
-            <span className={`font-mono text-[12px] uppercase text-[var(--accent)] ${locale === "ko" ? "tracking-wider" : "tracking-[0.2em]"}`}>
+            <Eyebrow locale={locale} tracking="0.2em">
               {locale === "ko" ? "RGG 스튜디오 스팀 공략" : "RGG Studio · Steam guides"}
-            </span>
+            </Eyebrow>
           </div>
 
           <h1 className="font-display mt-5 max-w-[18ch] text-[44px] font-extrabold leading-[1.02] tracking-[-0.04em] text-white md:text-[72px]">
@@ -84,7 +85,7 @@ export default async function HomePage() {
 
           <p className="mt-6 max-w-[56ch] text-[15px] leading-7 text-[var(--text-secondary)] md:text-[16px]">
             {locale === "ko"
-              ? "키류·이치반 사가와 저지먼트 시리즈의 스팀 업적 공략을 모았습니다. 게임별 진행도, 챕터별 놓침 주의, 희귀 업적, 단계별 실행법까지 흩어진 정보 없이 바로 확인하세요."
+              ? "키류·이치반 사가와 저지먼트 시리즈의 스팀 업적 공략을 모았습니다. 게임별 진행도, 챕터별 놓치기 쉬움, 희귀 업적, 단계별 실행법까지 흩어진 정보 없이 바로 확인하세요."
               : "Every Steam achievement guide for the Kiryu saga, Ichiban saga, and Judgment line — coverage, missables, rare picks, and step-by-step routes in one place."}
           </p>
 
@@ -128,10 +129,10 @@ export default async function HomePage() {
                 <div className="font-display text-[18px] font-extrabold leading-tight tracking-tight text-white transition-colors group-hover:text-[var(--accent)] sm:text-[20px]">
                   {featured.name}
                 </div>
-                <p className="m-0 line-clamp-2 text-[12px] leading-6 text-[var(--text-secondary)] sm:text-[13px]">
+                <p className="m-0 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)] sm:text-[14px]">
                   {featured.summary}
                 </p>
-                <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-[var(--text-tertiary)]">
+                <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[14px] text-[var(--text-tertiary)]">
                   <span className="font-mono">{featured.estimatedHours}</span>
                   <span aria-hidden="true" className="text-white/20">·</span>
                   <span>{locale === "ko" ? `업적 ${featured.achievements}` : `${featured.achievements} ach.`}</span>
@@ -179,7 +180,7 @@ export default async function HomePage() {
             action={
               <Link
                 href="/games"
-                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] px-4 py-2 text-[12px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-white/30 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] px-4 py-2 text-[14px] font-semibold text-[var(--text-secondary)] no-underline transition-colors hover:border-white/30 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
               >
                 {locale === "ko" ? "전체 보기" : "See all"} <FiArrowRight size={13} aria-hidden="true" />
               </Link>
@@ -210,7 +211,7 @@ export default async function HomePage() {
                   <h3 className="font-display line-clamp-1 text-[15px] font-extrabold tracking-tight text-white">
                     {game.name}
                   </h3>
-                  <p className="mt-1.5 line-clamp-2 min-h-[3em] text-[12px] leading-6 text-[var(--text-secondary)]">
+                  <p className="mt-1.5 line-clamp-2 min-h-[3em] text-[14px] leading-6 text-[var(--text-secondary)]">
                     {game.summary}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
@@ -220,7 +221,7 @@ export default async function HomePage() {
                     </Chip>
                     <Chip tone="gold" size="xs">{locale === "ko" ? `희귀 ${game.rareCount}` : `${game.rareCount} rare`}</Chip>
                   </div>
-                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[12px] text-[var(--text-tertiary)]">
+                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[14px] text-[var(--text-tertiary)]">
                     <span className="font-mono">{game.estimatedHours}</span>
                     <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
                       {locale === "ko" ? "공략" : "Guide"}
@@ -247,7 +248,7 @@ export default async function HomePage() {
                 <li key={entry.slug} className="relative pl-9">
                   <span
                     aria-hidden="true"
-                    className={`absolute left-0 top-3 flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-bold ${
+                    className={`absolute left-0 top-3 flex h-6 w-6 items-center justify-center rounded-full text-[14px] font-bold ${
                       entry.recommended
                         ? "bg-[var(--accent)] text-white shadow-[var(--accent-glow)]"
                         : "border border-[var(--border-strong)] bg-[var(--bg-elevated)] text-[var(--text-tertiary)]"
@@ -260,20 +261,20 @@ export default async function HomePage() {
                     className="block cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-3 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                   >
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{entry.game?.year}</span>
+                      <span className="font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{entry.game?.year}</span>
                       <span className="font-display text-[14px] font-bold text-white">{entry.game?.name}</span>
                       {entry.recommended && (
                         <Chip tone="accent" size="xs">{locale === "ko" ? "입문 추천" : "Recommended"}</Chip>
                       )}
                     </div>
-                    <p className="mt-1.5 m-0 text-[12px] leading-6 text-[var(--text-secondary)]">{entry.reason}</p>
+                    <p className="mt-1.5 m-0 text-[14px] leading-6 text-[var(--text-secondary)]">{entry.reason}</p>
                   </Link>
                 </li>
               ))}
             </ol>
             <Link
               href="/order"
-              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[13px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
+              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
             >
               {locale === "ko" ? "전체 순서 보기" : "See the full order"} <FiArrowRight size={13} aria-hidden="true" />
             </Link>
@@ -281,7 +282,7 @@ export default async function HomePage() {
 
           <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6">
             <SectionTitle
-              eyebrow={locale === "ko" ? "놓침 주의" : "Missables"}
+              eyebrow={locale === "ko" ? "놓치기 쉬움" : "Missables"}
               title={locale === "ko" ? "놓치기 쉬운 구간" : "Watch the chapters"}
               description={locale === "ko" ? "챕터 잠금·분기 때문에 다시 못 보는 구간 위주로 모았습니다." : "Chapter locks and route splits that erase progress if you miss them."}
             />
@@ -303,10 +304,10 @@ export default async function HomePage() {
                       >
                         <div className="flex items-center gap-2">
                           <Chip tone="gold" size="xs" className="font-mono">CH {chapter.chapter}</Chip>
-                          <span className="text-[12px] font-semibold text-white">{chapter.title}</span>
+                          <span className="text-[14px] font-semibold text-white">{chapter.title}</span>
                         </div>
                         {chapter.items[0] && (
-                          <div className="mt-1 line-clamp-1 text-[12px] text-[var(--text-tertiary)]">
+                          <div className="mt-1 line-clamp-1 text-[14px] text-[var(--text-tertiary)]">
                             {chapter.items[0].title}
                           </div>
                         )}
@@ -318,9 +319,9 @@ export default async function HomePage() {
             </ul>
             <Link
               href="/missables"
-              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[13px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
+              className="mt-5 inline-flex cursor-pointer items-center gap-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] focus-visible:rounded-sm"
             >
-              {locale === "ko" ? "놓침 주의 전체 보기" : "Open missables index"} <FiArrowRight size={13} aria-hidden="true" />
+              {locale === "ko" ? "놓치기 쉬움 전체 보기" : "Open missables index"} <FiArrowRight size={13} aria-hidden="true" />
             </Link>
           </div>
         </section>
@@ -367,7 +368,7 @@ export default async function HomePage() {
                   {pillar.icon}
                 </div>
                 <h3 className="font-display relative mt-4 text-[15px] font-bold text-white">{pillar.title}</h3>
-                <p className="relative mt-1.5 text-[12px] leading-6 text-[var(--text-secondary)]">{pillar.desc}</p>
+                <p className="relative mt-1.5 text-[14px] leading-6 text-[var(--text-secondary)]">{pillar.desc}</p>
               </div>
             ))}
           </div>
@@ -375,7 +376,7 @@ export default async function HomePage() {
 
         {/* DISCLAIMER */}
         <section className="mt-20 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)]/60 p-6 md:p-8">
-          <p className="m-0 max-w-[80ch] text-[13px] leading-7 text-[var(--text-secondary)]">
+          <p className="m-0 max-w-[80ch] text-[14px] leading-7 text-[var(--text-secondary)]">
             {locale === "ko"
               ? "kamurocho.gg는 스팀 커뮤니티 공략을 실제 플레이 흐름에 맞게 재구성한 비공식 팬 공략 모음입니다. SEGA 및 RGG Studio와는 무관한 비영리 프로젝트입니다."
               : "kamurocho.gg is an unofficial, fan-curated guide companion that restructures Steam Community guides into a practical completion flow. It is not affiliated with SEGA or RGG Studio."}

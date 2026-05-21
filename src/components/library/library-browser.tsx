@@ -86,7 +86,7 @@ export function LibraryBrowser({
               )}
             >
               {c.label}
-              <span className="font-mono text-[11px] opacity-70">{c.count}</span>
+              <span className="font-mono text-[14px] opacity-70">{c.count}</span>
             </button>
           );
         })}
@@ -114,7 +114,7 @@ export function LibraryBrowser({
             <Link
               key={game.appId}
               href={`/game/${game.appId}`}
-              className="group block no-underline"
+              className="group block cursor-pointer rounded-2xl no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
             >
               <Card className="overflow-hidden p-0 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-[var(--accent-border)] group-hover:shadow-lg">
                 <div className="relative">
@@ -129,7 +129,7 @@ export function LibraryBrowser({
                   <div className="absolute bottom-2.5 left-3 right-3 flex items-end justify-between gap-2">
                     <span className="truncate text-[15px] font-bold text-white drop-shadow-md">{game.name}</span>
                     <span className={cn(
-                      "shrink-0 rounded-md px-2 py-0.5 font-mono text-[12px] font-bold tabular-nums",
+                      "shrink-0 rounded-md px-2 py-0.5 font-mono text-[14px] font-bold tabular-nums",
                       game.completion === 100
                         ? "bg-[var(--success)] text-[var(--text-inverse)]"
                         : "bg-black/70 text-[var(--accent)]",
@@ -140,7 +140,7 @@ export function LibraryBrowser({
                 </div>
                 <div className="px-4 pb-3.5 pt-3">
                   <Progress value={game.completion} className="mb-2.5 h-[3px]" />
-                  <div className="flex items-center justify-between text-[12px]">
+                  <div className="flex items-center justify-between text-[14px]">
                     <span className="font-mono text-[var(--text-secondary)]">
                       {game.completedAchievements}/{game.totalAchievements}{" "}
                       <span className="text-[var(--text-tertiary)]">{labels.achievements}</span>
@@ -148,7 +148,7 @@ export function LibraryBrowser({
                     <span className="font-mono text-[var(--text-tertiary)]">{game.playtime}</span>
                   </div>
                   <div className="mt-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-base)]/80 px-3 py-2.5">
-                    <div className="mb-1.5 flex items-center justify-between gap-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+                    <div className="mb-1.5 flex items-center justify-between gap-2 text-[14px] font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
                       <span>{labels.nextAction}</span>
                       <span className="font-mono normal-case text-[var(--accent)]">
                         {game.guidedAchievements}/{game.totalAchievements} {labels.guides}
@@ -156,15 +156,15 @@ export function LibraryBrowser({
                     </div>
                     {game.nextGuide ? (
                       <>
-                        <div className="truncate text-[13px] font-semibold text-[var(--text-primary)]">
+                        <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
                           {game.nextGuide.achievementName}
                         </div>
-                        <div className="mt-1 line-clamp-2 text-[12px] leading-5 text-[var(--text-secondary)]">
+                        <div className="mt-1 line-clamp-2 text-[14px] leading-5 text-[var(--text-secondary)]">
                           {game.nextGuide.summary}
                         </div>
                       </>
                     ) : (
-                      <div className="text-[12px] leading-5 text-[var(--text-tertiary)]">
+                      <div className="text-[14px] leading-5 text-[var(--text-tertiary)]">
                         {game.guidedAchievements > 0 ? labels.ready : labels.noGuides}
                       </div>
                     )}

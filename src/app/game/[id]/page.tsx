@@ -7,9 +7,11 @@ import { getGamePageData } from "@/lib/kamurocho-data";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 import { getCollectibles } from "@/lib/collectibles";
+import { getSubstories } from "@/lib/substories";
 
 import { AchievementsList } from "./_components/achievements-list";
 import { CollectiblesSection } from "./_components/collectibles-section";
+import { SubstoriesSection } from "./_components/substories-section";
 import { GameHero } from "./_components/game-hero";
 import { MissablesSidebar, type ChapterBucket } from "./_components/missables-sidebar";
 
@@ -82,6 +84,20 @@ export default async function GamePage({
     ? Math.round((data.game.guideCoverage / data.game.achievements) * 100)
     : 0;
 
+  // Collect achievement names already covered by curated MISSABLES entries.
+  // Each curated `item.title` (ko + en) may quote the trophy name inside 「」
+  // or after `원어:` — extract both forms to dedupe against DB achievements.
+  const covered = new Set<string>();
+  const norm = (s: string) => s.toLowerCase().replace(/[\s'’!?.,—\-:()]/g, "");
+  for (const chapter of data.missables ?? []) {
+    for (const item of chapter.items) {
+      for (const raw of [item.title.ko, item.title.en]) {
+        for (const m of raw.matchAll(/[「『]([^」』]+)[」』]/g)) covered.add(norm(m[1]));
+        for (const m of raw.matchAll(/원어\s*[:：]\s*([^)）]+)[)）]/g)) covered.add(norm(m[1]));
+      }
+    }
+  }
+
   // Build a unified chapter-aware "missable" sidebar that merges curated
   // chapter notes (sub-stories, magazines, route choices) with every missable
   // achievement that references a chapter in its guide content.
@@ -96,6 +112,7 @@ export default async function GamePage({
   }
   for (const achievement of data.achievements) {
     if (!achievement.missable || !achievement.chapter) continue;
+    if (covered.has(norm(achievement.name))) continue;
     const bucket = chapterMap.get(achievement.chapter);
     if (bucket) {
       bucket.achievements.push(achievement);
@@ -110,7 +127,9 @@ export default async function GamePage({
   }
   // Stray missable achievements with no chapter info still surface in the sidebar
   // under a dedicated "anytime" bucket so the list never silently drops items.
-  const unlocatedMissable = data.achievements.filter((a) => a.missable && !a.chapter);
+  const unlocatedMissable = data.achievements.filter(
+    (a) => a.missable && !a.chapter && !covered.has(norm(a.name)),
+  );
   const chapterBuckets = Array.from(chapterMap.values()).sort((a, b) => a.chapter - b.chapter);
   const hasSidebar = chapterBuckets.length > 0 || unlocatedMissable.length > 0;
 
@@ -148,11 +167,24 @@ export default async function GamePage({
             />
 
             {(() => {
+              const substories = getSubstories(data.game.appId);
+              if (!substories) return null;
+              return (
+                <SubstoriesSection
+                  locale={locale}
+                  appId={data.game.appId}
+                  data={substories}
+                />
+              );
+            })()}
+
+            {(() => {
               const collectibles = getCollectibles(data.game.appId);
               if (!collectibles || collectibles.categories.length === 0) return null;
               return (
                 <CollectiblesSection
                   locale={locale}
+                  appId={data.game.appId}
                   categories={collectibles.categories}
                 />
               );
