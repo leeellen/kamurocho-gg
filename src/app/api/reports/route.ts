@@ -12,8 +12,14 @@ type ReportBody = {
 
 // Simple per-process IP rate limit. Not durable across instances but blocks
 // trivial spam from a single client. For stronger guarantees swap for Upstash.
+//
+// IP source assumes deployment behind a trusted edge (Vercel/Cloudflare) that
+// rewrites x-forwarded-for. In an untrusted setup an attacker can spoof the
+// header to bypass the per-IP limit — bound the bucket cardinality so even
+// spoofed traffic cannot blow up memory.
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_MS = 60_000;
+const MAX_TRACKED_IPS = 10_000;
 const rateBuckets = new Map<string, number[]>();
 
 function clientIp(request: Request): string {
@@ -22,8 +28,18 @@ function clientIp(request: Request): string {
   return request.headers.get("x-real-ip") ?? "unknown";
 }
 
+function pruneStale(now: number): void {
+  for (const [ip, bucket] of rateBuckets) {
+    const fresh = bucket.filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+    if (fresh.length === 0) rateBuckets.delete(ip);
+    else if (fresh.length !== bucket.length) rateBuckets.set(ip, fresh);
+  }
+}
+
 function rateLimited(ip: string): boolean {
   const now = Date.now();
+  // Sweep expired entries when the table grows large so memory stays bounded.
+  if (rateBuckets.size > MAX_TRACKED_IPS) pruneStale(now);
   const bucket = (rateBuckets.get(ip) ?? []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
   if (bucket.length >= RATE_LIMIT_MAX) {
     rateBuckets.set(ip, bucket);

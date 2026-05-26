@@ -15,16 +15,21 @@ export function UserMenuIsland({ locale, mobile = false }: { locale: Locale; mob
 
   useEffect(() => {
     let cancelled = false;
-    fetch("/api/auth/me", { cache: "no-store" })
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+    fetch("/api/auth/me", { cache: "no-store", signal: controller.signal })
       .then((r) => (r.ok ? r.json() : { user: null }))
       .then((data: { user: CurrentUser | null }) => {
         if (!cancelled) setState({ loaded: true, user: data.user });
       })
       .catch(() => {
         if (!cancelled) setState({ loaded: true, user: null });
-      });
+      })
+      .finally(() => clearTimeout(timeout));
     return () => {
       cancelled = true;
+      controller.abort();
+      clearTimeout(timeout);
     };
   }, []);
 

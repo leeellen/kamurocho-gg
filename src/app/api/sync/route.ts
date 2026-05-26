@@ -14,9 +14,6 @@ export async function POST() {
     return NextResponse.json(result);
   } catch (err) {
     console.error("[api/sync] failed:", err);
-    return NextResponse.json(
-      { error: "sync-failed", message: err instanceof Error ? err.message : "Unknown error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ error: "sync-failed" }, { status: 500 });
   }
 }

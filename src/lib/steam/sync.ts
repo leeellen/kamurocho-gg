@@ -212,15 +212,21 @@ export async function syncSteamLibrary(steamId: string) {
       });
 
       for (let i = 0; i < achRows.length; i += 100) {
-        await admin
+        const res = await admin
           .from("achievements")
           .upsert(achRows.slice(i, i + 100), { onConflict: "app_id,api_name" });
+        if (res.error) {
+          throw new Error(`achievements upsert failed: ${res.error.message}`);
+        }
       }
 
-      await admin
+      const gamesUpdate = await admin
         .from("games")
         .update({ total_achievements: achSchemas.length, last_schema_sync: syncedAt })
         .eq("app_id", game.appid);
+      if (gamesUpdate.error) {
+        throw new Error(`games update failed: ${gamesUpdate.error.message}`);
+      }
 
       // Player progress.
       const playerRes = await steamFetch<{
@@ -275,11 +281,14 @@ export async function syncSteamLibrary(steamId: string) {
         const unlockedCount = userAchRows.filter((r) => r.unlocked).length;
         const completionPct = userAchRows.length > 0 ? (unlockedCount / userAchRows.length) * 100 : 0;
 
-        await admin
+        const userGamesUpdate = await admin
           .from("user_games")
           .update({ completion_pct: completionPct })
           .eq("steam_id", steamId)
           .eq("app_id", game.appid);
+        if (userGamesUpdate.error) {
+          throw new Error(`user_games update failed: ${userGamesUpdate.error.message}`);
+        }
       }
 
       synced++;

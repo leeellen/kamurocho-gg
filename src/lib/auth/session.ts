@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 const COOKIE_NAME = "kamurocho_steam";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 const SESSION_TTL_MS = COOKIE_MAX_AGE * 1000;
+const CLOCK_SKEW_MS = 60_000;
 
 function getSecret(): string {
   const secret = process.env.STEAM_SESSION_SECRET || process.env.NEXTAUTH_SECRET;
@@ -89,7 +90,11 @@ export async function decodeSession(token: string | undefined | null): Promise<S
     const data = JSON.parse(new TextDecoder().decode(fromBase64Url(payload))) as SteamSession;
     if (!data.steamId) return null;
     if (typeof data.issuedAt !== "number" || Number.isNaN(data.issuedAt)) return null;
-    if (Date.now() - data.issuedAt > SESSION_TTL_MS) return null;
+    const now = Date.now();
+    // Reject tokens dated in the future (beyond clock-skew tolerance) so a
+    // backward-skewed clock or a forged future timestamp cannot extend the TTL.
+    if (data.issuedAt > now + CLOCK_SKEW_MS) return null;
+    if (now - data.issuedAt > SESSION_TTL_MS) return null;
     return data;
   } catch {
     return null;

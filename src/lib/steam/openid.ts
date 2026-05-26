@@ -81,5 +81,7 @@ export async function verifySteamAssertion(
   })
 
   const body = await response.text()
-  return body.includes('is_valid:true')
+  // Steam returns key-value lines: `ns:...\nis_valid:true\n`. Exact line match
+  // prevents bypass via `is_valid:true` appearing inside another field's value.
+  return body.split(/\r?\n/).some((line) => line.trim() === 'is_valid:true')
 }

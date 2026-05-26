@@ -6,11 +6,21 @@ function resolveLocale(value: string | null): Locale {
   return value === "ko" || value === "en" ? value : defaultLocale;
 }
 
+// Constrain `redirect` to a same-origin pathname. `new URL("//evil.com", origin)`
+// resolves to `https://evil.com` — bare scheme-relative URLs would otherwise let
+// any caller forward the user off-site.
+function safeRedirectPath(value: string | null): string {
+  if (!value || typeof value !== "string") return "/";
+  if (!value.startsWith("/")) return "/";
+  if (value.startsWith("//") || value.startsWith("/\\")) return "/";
+  return value;
+}
+
 // Legacy GET redirect kept for direct links / non-JS fallbacks.
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const locale = resolveLocale(url.searchParams.get("locale"));
-  const redirect = url.searchParams.get("redirect") || "/";
+  const redirect = safeRedirectPath(url.searchParams.get("redirect"));
 
   const response = NextResponse.redirect(new URL(redirect, url.origin));
   response.cookies.set("kamurocho-locale", locale, {
