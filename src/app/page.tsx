@@ -10,7 +10,7 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { getLocale } from "@/lib/i18n";
 import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/kamurocho-data";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function HomePage() {
   const locale = await getLocale();

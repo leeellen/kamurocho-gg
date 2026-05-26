@@ -15,7 +15,7 @@ import { SubstoriesSection } from "./_components/substories-section";
 import { GameHero } from "./_components/game-hero";
 import { MissablesSidebar, type ChapterBucket } from "./_components/missables-sidebar";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export async function generateMetadata({
   params,

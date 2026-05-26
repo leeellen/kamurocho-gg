@@ -9,7 +9,7 @@ import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
 import { getSeriesGames, type SeriesGameCard } from "@/lib/kamurocho-data";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

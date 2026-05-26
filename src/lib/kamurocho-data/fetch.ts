@@ -16,7 +16,7 @@ function admin() {
 export const fetchSeriesRows = unstable_cache(
   fetchSeriesRowsInner,
   ["fetch-series-rows-v1"],
-  { revalidate: 60 * 60, tags: ["series-rows"] },
+  { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
 async function fetchSeriesRowsInner() {
@@ -100,5 +100,5 @@ const cachedGameRows = unstable_cache(
     };
   },
   ["fetch-game-rows-v1"],
-  { revalidate: 60 * 60, tags: ["series-rows"] },
+  { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );

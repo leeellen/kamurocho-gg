@@ -2,9 +2,8 @@ import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
-import { SignInButton, UserMenu } from "@/components/ui/user-menu";
+import { UserMenuIsland } from "@/components/ui/user-menu-island";
 import { type Locale } from "@/lib/i18n";
-import { getCurrentUser } from "@/lib/user-progress";
 
 type Section = "home" | "games" | "order" | "missables" | "search";
 
@@ -14,7 +13,7 @@ const NAV = [
   { id: "missables", href: "/missables", ko: "놓치기 쉬움", en: "Missables" },
 ] as const;
 
-export async function SiteShell({
+export function SiteShell({
   children,
   locale,
   section,
@@ -23,7 +22,6 @@ export async function SiteShell({
   locale: Locale;
   section: Section;
 }) {
-  const user = await getCurrentUser();
   return (
     <div className="relative min-h-screen text-[var(--text-primary)]">
       <a
@@ -98,13 +96,7 @@ export async function SiteShell({
               englishLabel="EN"
               koreanLabel="KO"
             />
-            {user ? (
-              <UserMenu user={user} locale={locale} />
-            ) : (
-              <span className="hidden sm:inline-flex">
-                <SignInButton locale={locale} showDisclaimer={false} size="sm" />
-              </span>
-            )}
+            <UserMenuIsland locale={locale} />
           </div>
         </div>
 
@@ -132,14 +124,7 @@ export async function SiteShell({
             })}
             {/* Persistent path to the Steam sign-in / library on phones, since
                 the header's "Sign in through Steam" button is hidden < sm. */}
-            <Link
-              href="/me"
-              className="ml-auto whitespace-nowrap rounded-full bg-[var(--accent-subtle)] px-3 py-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-colors hover:bg-[var(--accent-border)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
-            >
-              {user
-                ? (locale === "ko" ? "내 라이브러리" : "Library")
-                : (locale === "ko" ? "Steam 로그인" : "Sign in")}
-            </Link>
+            <UserMenuIsland locale={locale} mobile />
           </div>
         </nav>
       </header>
