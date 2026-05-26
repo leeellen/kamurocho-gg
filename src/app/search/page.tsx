@@ -7,7 +7,7 @@ import { Chip } from "@/components/ui/chip";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { getLocale } from "@/lib/i18n";
-import { searchKamurocho } from "@/lib/kamurocho-data";
+import { searchKamurocho } from "@/lib/data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

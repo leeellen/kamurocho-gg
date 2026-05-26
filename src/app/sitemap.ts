@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import { CURATED_GAMES } from "@/lib/kamurocho-content";
-import { getGamePageData } from "@/lib/kamurocho-data";
+import { CURATED_GAMES } from "@/lib/content";
+import { getGamePageData } from "@/lib/data";
 
 const SITE_URL = "https://kamurocho-gg.vercel.app";
 

@@ -3,8 +3,8 @@ import { FiTarget } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
 import type { Locale } from "@/lib/i18n";
-import type { GameAchievementCard } from "@/lib/kamurocho-data";
-import type { ChapterMissable } from "@/lib/kamurocho-content";
+import type { GameAchievementCard } from "@/lib/data";
+import type { ChapterMissable } from "@/lib/content";
 
 export type ChapterBucket = {
   chapter: number;

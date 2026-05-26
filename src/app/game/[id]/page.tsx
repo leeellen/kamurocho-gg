@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { getLocale } from "@/lib/i18n";
-import { getGamePageData } from "@/lib/kamurocho-data";
+import { getGamePageData } from "@/lib/data";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 import { getCollectibles } from "@/lib/collectibles";

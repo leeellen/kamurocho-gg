@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 
-import { RGG_APP_IDS } from "@/lib/kamurocho-content";
+import { RGG_APP_IDS } from "@/lib/content";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 import type { AchievementRow, GameRow, GuideRow } from "./types";

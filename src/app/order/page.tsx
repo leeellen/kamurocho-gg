@@ -6,7 +6,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
 import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
-import { getPlayOrderData } from "@/lib/kamurocho-data";
+import { getPlayOrderData } from "@/lib/data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

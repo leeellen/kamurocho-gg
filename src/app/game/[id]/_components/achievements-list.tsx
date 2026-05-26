@@ -6,7 +6,7 @@ import { Eyebrow } from "@/components/ui/eyebrow";
 import { RarityBar } from "@/components/ui/rarity-bar";
 import { difficultyLabel } from "@/lib/difficulty";
 import type { Locale } from "@/lib/i18n";
-import type { GameAchievementCard } from "@/lib/kamurocho-data";
+import type { GameAchievementCard } from "@/lib/data";
 import type { UserAchievementState } from "@/lib/user-progress";
 
 type AchievementsListProps = {

@@ -1,5 +1,5 @@
 import { createAdminClient } from "@/lib/supabase/admin";
-import { RGG_APP_IDS } from "@/lib/kamurocho-content";
+import { RGG_APP_IDS } from "@/lib/content";
 
 const STEAM_ROOT = "https://api.steampowered.com";
 const RGG_SET = new Set(RGG_APP_IDS);

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { searchKamurocho } from "@/lib/kamurocho-data";
+import { searchKamurocho } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 

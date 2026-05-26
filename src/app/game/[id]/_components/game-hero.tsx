@@ -7,7 +7,7 @@ import { GameCover } from "@/components/ui/game-cover";
 import { StatTile } from "@/components/ui/stat-tile";
 import { SignInButton } from "@/components/ui/user-menu";
 import type { Locale } from "@/lib/i18n";
-import type { SeriesGameCard } from "@/lib/kamurocho-data";
+import type { SeriesGameCard } from "@/lib/data";
 
 type GameHeroProps = {
   game: SeriesGameCard;

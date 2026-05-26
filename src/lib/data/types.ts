@@ -69,7 +69,7 @@ export type GameAchievementCard = {
   chapter: number | null;
 };
 
-import type { ChapterMissable } from "@/lib/kamurocho-content";
+import type { ChapterMissable } from "@/lib/content";
 
 export type GamePageData = {
   game: SeriesGameCard;

@@ -1,4 +1,4 @@
-import type { LocalizedText } from "@/lib/kamurocho-content";
+import type { LocalizedText } from "@/lib/content";
 
 export type CollectibleStep = {
   // Optional ordinal — falls back to array index.

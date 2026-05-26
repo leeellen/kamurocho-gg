@@ -8,7 +8,7 @@ import { GameCover } from "@/components/ui/game-cover";
 import { SectionTitle } from "@/components/ui/section-title";
 import { StatTile } from "@/components/ui/stat-tile";
 import { getLocale } from "@/lib/i18n";
-import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/kamurocho-data";
+import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/data";
 
 export default async function HomePage() {
   const locale = await getLocale();

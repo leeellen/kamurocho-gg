@@ -27,7 +27,7 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { SyncButton } from "@/components/ui/sync-button";
 import { SignInButton } from "@/components/ui/user-menu";
 import { getLocale } from "@/lib/i18n";
-import { getSeriesGames } from "@/lib/kamurocho-data";
+import { getSeriesGames } from "@/lib/data";
 import {
   getCurrentUser,
   getIncompleteAchievements,

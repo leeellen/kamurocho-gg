@@ -8,7 +8,7 @@ import { Chip } from "@/components/ui/chip";
 import { RarityBar } from "@/components/ui/rarity-bar";
 import { difficultyLabel } from "@/lib/difficulty";
 import { getLocale } from "@/lib/i18n";
-import { getAchievementPageData } from "@/lib/kamurocho-data";
+import { getAchievementPageData } from "@/lib/data";
 import { SignInButton } from "@/components/ui/user-menu";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 

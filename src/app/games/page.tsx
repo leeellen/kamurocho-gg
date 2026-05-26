@@ -7,7 +7,7 @@ import { Chip } from "@/components/ui/chip";
 import { GameCover } from "@/components/ui/game-cover";
 import { SectionTitle } from "@/components/ui/section-title";
 import { getLocale } from "@/lib/i18n";
-import { getSeriesGames, type SeriesGameCard } from "@/lib/kamurocho-data";
+import { getSeriesGames, type SeriesGameCard } from "@/lib/data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

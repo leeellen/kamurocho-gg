@@ -1,6 +1,6 @@
 import { parseAchievementSidecar } from "@/lib/achievement-text";
 import type { Locale } from "@/lib/i18n";
-import type { ChapterMissable } from "@/lib/kamurocho-content";
+import type { ChapterMissable } from "@/lib/content";
 
 import { normalizeComparableText } from "./sanitize";
 import type { AchievementRow, GameAchievementCard } from "./types";
