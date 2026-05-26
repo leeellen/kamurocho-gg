@@ -30,8 +30,14 @@ export function pickLocaleGuide(guides: GuideRow[], locale: Locale) {
 }
 
 export function normalizeConfidence(value: string | number | null | undefined) {
-  if (typeof value === "number") return value.toFixed(2);
-  if (typeof value === "string" && value.trim()) return value.trim();
+  if (typeof value === "number") {
+    return Number.isFinite(value) ? value.toFixed(2) : null;
+  }
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+    return trimmed;
+  }
   return null;
 }
 

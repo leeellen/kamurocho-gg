@@ -47,7 +47,7 @@ const handInHand: CuratedGuide = {
     },
     {
       ko:
-        "프리미엄 어드벤처 한정이므로, 본편 챕터 진행 중에는 카운트가 쌓이지 않습니다. 엔딩을 본 뒤에 작업하세요.",
+        "프리미엄 어드벤처 한정이므로, 본편 장 진행 중에는 카운트가 쌓이지 않습니다. 엔딩을 본 뒤에 작업하세요.",
       en:
         "Only Premium Adventure counts — pre-ending walking does nothing toward this trophy.",
     },
@@ -71,7 +71,7 @@ const platinum: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 1회차 (Normal) — 메인 스토리 진행 중 「마지마 에브리웨어」 모든 스폿 발견 + 랭크 진행. 챕터 7·11 동행 한정 하루카 서브(「선물 찾기」·「숨바꼭질」)도 같은 회차에서 정리.",
+        "1) 1회차 (Normal) — 메인 스토리 진행 중 「마지마 에브리웨어」 모든 스폿 발견 + 랭크 진행. 7장·11 동행 한정 하루카 서브(「선물 찾기」·「숨바꼭질」)도 같은 회차에서 정리.",
       en:
         "1) Run 1 (Normal) — surface every Majima Everywhere spot and grind ranks alongside the story. Knock out Haruka-only subs (Searching for the Present, Hide-and-Seek) in Ch.7/11.",
     },
@@ -103,7 +103,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "마지마 에브리웨어는 메인 스토리 진행에 따라 자동으로 스폿이 풀리지만, 일부 SS 랭크 마지마는 챕터 11 이후에야 등장합니다. 마지막에 몰아서 정리하는 게 효율적.",
+        "마지마 에브리웨어는 메인 스토리 진행에 따라 자동으로 스폿이 풀리지만, 일부 SS 랭크 마지마는 11장 이후에야 등장합니다. 마지막에 몰아서 정리하는 게 효율적.",
       en:
         "Majima Everywhere spots unlock with story progress, but the SS-rank variants only appear after Ch.11. Batch them near the end.",
     },
@@ -142,7 +142,7 @@ const perfectionist: CuratedGuide = {
     },
     {
       ko:
-        "4) 서브스토리 78건 + 코마키류 수련 4종 (체술·기술·완력·종합) 클리어. 챕터 7/11 한정 하루카 동행 서브를 메인 진행 중에 챙겨야 100% 라인이 매끄럽게 차오릅니다.",
+        "4) 서브스토리 78건 + 코마키류 수련 4종 (체술·기술·완력·종합) 클리어. 7장/11 한정 하루카 동행 서브를 메인 진행 중에 챙겨야 100% 라인이 매끄럽게 차오릅니다.",
       en:
         "4) All 78 substories + four Komaki training drills. Knock out Haruka-tagalong subs during Ch.7/11 to keep the bar moving cleanly.",
     },
@@ -177,7 +177,7 @@ const dragonOfDojimaReturns: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 첫 마지마 인카운트(챕터 4) 직후부터 거리에서 마지마 마커가 보이면 무조건 격투. 그라운드·셰이크다운·골프·MajiCo·무에타이·터프 가이 등 모든 스타일 변형을 한 번씩 격파.",
+        "1) 첫 마지마 인카운트(4장) 직후부터 거리에서 마지마 마커가 보이면 무조건 격투. 그라운드·셰이크다운·골프·MajiCo·무에타이·터프 가이 등 모든 스타일 변형을 한 번씩 격파.",
       en:
         "1) From the first encounter (Ch.4), fight every Majima marker on sight — Street, Shakedown, Golf, MajiCo, Muay Thai, Tough Guy variants all need at least one win.",
     },
@@ -197,7 +197,7 @@ const dragonOfDojimaReturns: CuratedGuide = {
   tips: [
     {
       ko:
-        "마지마 에브리웨어 진행도는 챕터별 잠금이 있어 일부 변형(특히 SS 직전)은 챕터 11 이후에야 등장합니다. 마지막 챕터에 몰아서 정리하는 게 효율적.",
+        "마지마 에브리웨어 진행도는 장별 잠금이 있어 일부 변형(특히 SS 직전)은 11장 이후에야 등장합니다. 마지막 장에 몰아서 정리하는 게 효율적.",
       en:
         "Some Majima variants only spawn past Ch.11 — bulk them in the late game.",
     },
@@ -210,14 +210,14 @@ const dragonOfDojimaReturns: CuratedGuide = {
 const mesuKingThrone: CuratedGuide = {
   summary: {
     ko:
-      "메스킹(곤충 카드 배틀 미니게임)에서 모든 라이벌 NPC에게 우승하면 발동. 챕터 4에서 시오리 카페에서 시작되며, 강력한 곤충 카드 + 기술 카드 조합 + 정답 가위·바위·보 패턴 인식이 핵심.",
+      "메스킹(곤충 카드 배틀 미니게임)에서 모든 라이벌 NPC에게 우승하면 발동. 4장에서 시오리 카페에서 시작되며, 강력한 곤충 카드 + 기술 카드 조합 + 정답 가위·바위·보 패턴 인식이 핵심.",
     en:
       "Win against every MesuKing rival in the bug-card RPS minigame. Starts in Ch.4 at Shiori's cafe; relies on strong bug cards + technique cards + reading opponent RPS patterns.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 4에서 시오리 카페 진입 → 첫 메스킹 튜토리얼. 카드 팩 구매로 곤충·기술 카드 확보.",
+        "1) 4장에서 시오리 카페 진입 → 첫 메스킹 튜토리얼. 카드 팩 구매로 곤충·기술 카드 확보.",
       en:
         "1) Open Ch.4 to Shiori's cafe for the tutorial. Buy packs to expand your bug + technique deck.",
     },
@@ -242,14 +242,14 @@ const mesuKingThrone: CuratedGuide = {
 const pocketCircuitReborn: CuratedGuide = {
   summary: {
     ko:
-      "키류의 포켓 서킷 스타디움에서 모든 챔피언십(레이스 컵)을 우승하면 발동. 챕터 4 이후 「포켓 서킷 파이터」 카츠 카스 라인을 진행하며 부품을 차례로 강화해 컵 순서대로 클리어.",
+      "키류의 포켓 서킷 스타디움에서 모든 챔피언십(레이스 컵)을 우승하면 발동. 4장 이후 「포켓 서킷 파이터」 카츠 카스 라인을 진행하며 부품을 차례로 강화해 컵 순서대로 클리어.",
     en:
       "Win every Pocket Circuit Stadium championship cup. After Ch.4, progress the Pocket Circuit Fighter (Kazuya) substory line, upgrade parts, and clear cups in sequence.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 4에서 카츠 카스 라인 「포켓 서킷 파이터」 서브 진행 → 첫 컵 출전. 부품 상점 해금.",
+        "1) 4장에서 카츠 카스 라인 「포켓 서킷 파이터」 서브 진행 → 첫 컵 출전. 부품 상점 해금.",
       en:
         "1) Trigger the Pocket Circuit Fighter sub line in Ch.4; first cup unlocks the parts shop.",
     },
@@ -274,14 +274,14 @@ const pocketCircuitReborn: CuratedGuide = {
 const strongestFighter: CuratedGuide = {
   summary: {
     ko:
-      "카무로초 지하 투기장의 모든 대회(일반 토너먼트 + S랭크 토너먼트)를 우승하면 발동. 챕터 6 이후 해금되며, 후반 대회는 무기 봉인·맨손 조건 등이 붙어 스타일 트리 + 회복 아이템 풀 비축 필수.",
+      "카무로초 지하 투기장의 모든 대회(일반 토너먼트 + S랭크 토너먼트)를 우승하면 발동. 6장 이후 해금되며, 후반 대회는 무기 봉인·맨손 조건 등이 붙어 스타일 트리 + 회복 아이템 풀 비축 필수.",
     en:
       "Win every underground Coliseum tournament (standard + S-rank). Unlocks past Ch.6; later cups impose weapon bans or bare-fist rules — max styles + healing required.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 6 진행 후 카무로초 지하 「투기장」 입구에서 첫 토너먼트 출전. 입장 시 단계별 토너먼트 라인업 확인.",
+        "1) 6장 진행 후 카무로초 지하 「투기장」 입구에서 첫 토너먼트 출전. 입장 시 단계별 토너먼트 라인업 확인.",
       en:
         "1) After Ch.6, enter the underground Coliseum and start the first tier.",
     },
@@ -306,14 +306,14 @@ const strongestFighter: CuratedGuide = {
 const komakiMaster: CuratedGuide = {
   summary: {
     ko:
-      "코마키 마스터에게서 받는 4종 수련(체술 마스터·기술 마스터·완력 마스터·종합 마스터)을 모두 완료하면 발동. 챕터 진행과 별개로 서브스토리 「달인 코마키」 라인을 통해 단계별 수련 해금.",
+      "코마키 마스터에게서 받는 4종 수련(체술 마스터·기술 마스터·완력 마스터·종합 마스터)을 모두 완료하면 발동. 장 진행과 별개로 서브스토리 「달인 코마키」 라인을 통해 단계별 수련 해금.",
     en:
       "Complete all four Komaki training drills (Style / Tech / Power / Comprehensive). The drills unlock via the Komaki substory chain, independent of main-story chapters.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 5 이후 코마키 마스터 위치(카무로초 카메우라 약국 뒷골목 등)에서 서브스토리 시작 → 첫 수련 「체술 마스터」 완료.",
+        "1) 5장 이후 코마키 마스터 위치(카무로초 카메우라 약국 뒷골목 등)에서 서브스토리 시작 → 첫 수련 「체술 마스터」 완료.",
       en:
         "1) After Ch.5, find Komaki (alley behind Kameura Pharmacy) and clear the first drill, Style Master.",
     },

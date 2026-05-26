@@ -2,7 +2,7 @@ import type { SubstoriesData } from "./types";
 
 export const yakuza0Substories: SubstoriesData = {
   appId: 2988580,
-  summary: { ko: "키류 편 카무로초 + 마지마 편 소텐보리 합쳐 총 100건. 완료 시 「두 마리 용 트로피」 라인 + 각종 특수 능력(클럽 세가·포켓 서킷·캬바레)이 풀립니다. 챕터별로 풀리므로 메인 스토리와 병행 진행이 효율적입니다.", en: "100 substories total — Kiryu's Kamurocho + Majima's Sotenbori. Completion unlocks the 'Two Dragons' trophy line plus side ability boosts (Club SEGA, Pocket Circuit, Cabaret). Substories gate on chapters, so run them alongside the main story." },
+  summary: { ko: "키류 편 카무로초 + 마지마 편 소텐보리 합쳐 총 100건. 완료 시 「두 마리 용 트로피」 라인 + 각종 특수 능력(클럽 세가·포켓 서킷·캬바레)이 풀립니다. 장별로 풀리므로 메인 스토리와 병행 진행이 효율적입니다.", en: "100 substories total — Kiryu's Kamurocho + Majima's Sotenbori. Completion unlocks the 'Two Dragons' trophy line plus side ability boosts (Club SEGA, Pocket Circuit, Cabaret). Substories gate on chapters, so run them alongside the main story." },
   source: { label: "kamigame.jp + warukuma.tistory.com + dswiipspwikips3.jp — Yakuza 0 substories", url: "https://kamigame.jp/ryugagotoku0/page/273134300881279258.html" },
   groups: [
     {

@@ -8,7 +8,7 @@ const YAKUZA_4_APP_ID = 1105500;
 const mrDressUp: CuratedGuide = {
   summary: {
     ko:
-      "아키야마 편 호스티스 메이커 미니게임 「No.1 캬바걸을 만들자」의 카탈로그 서비스에서 의상을 카테고리별 1벌씩 모두 수집해야 트로피 발동. 카탈로그가 닫히는 시점(아키야마 편 종료)이 영구 잠금 기점이므로, 의상 구매·세트 강화·동반 출근을 아키야마 챕터 안에서 마무리해야 합니다.",
+      "아키야마 편 호스티스 메이커 미니게임 「No.1 캬바걸을 만들자」의 카탈로그 서비스에서 의상을 카테고리별 1벌씩 모두 수집해야 트로피 발동. 카탈로그가 닫히는 시점(아키야마 편 종료)이 영구 잠금 기점이므로, 의상 구매·세트 강화·동반 출근을 아키야마 장 안에서 마무리해야 합니다.",
     en:
       "Mr. Dress-Up is Akiyama's Hostess Maker side trophy: collect at least one outfit from every category in the Catalog Service. The catalog closes when Akiyama's part ends, so finish buying / upgrading / wearing inside his chapters.",
   },
@@ -128,7 +128,7 @@ const legendCleared: CuratedGuide = {
     },
     {
       ko:
-        "3) 챕터 18 라스트 보스 클리어 시 트로피 발동. 「궁극을 잇는 자」(다른 모든 트로피 + 클리어 후 모드)와 함께 진행 권장.",
+        "3) 18장 라스트 보스 클리어 시 트로피 발동. 「궁극을 잇는 자」(다른 모든 트로피 + 클리어 후 모드)와 함께 진행 권장.",
       en:
         "3) Trophy fires on the final boss kill. Pair the run with 'Ultimate Successor' trophy progress.",
     },
@@ -173,7 +173,7 @@ const businessCardHunter: CuratedGuide = {
 const welcomeToSega: CuratedGuide = {
   summary: {
     ko:
-      "Y4 카무로초 「클럽 세가」의 모든 미니 게임(아웃런·스페이스 해리어·판타지 존·UFO 캐처·메다루펀치·버추어 파이터 등)을 1회씩 플레이하면 발동.",
+      "Y4 카무로초 「클럽 세가」의 모든 미니게임(아웃런·스페이스 해리어·판타지 존·UFO 캐처·메다루펀치·버추어 파이터 등)을 1회씩 플레이하면 발동.",
     en:
       "Touch every Club Sega cabinet in Y4 Kamurocho at least once — OutRun, Space Harrier, Fantasy Zone, UFO Catcher, Boxcelios, Virtua Fighter, etc.",
   },

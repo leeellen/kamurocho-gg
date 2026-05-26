@@ -13,13 +13,13 @@ const platinum: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 챕터 3에서 버즈 리서처 + 사이드 케이스 시스템 해금 → 챕터별 사이드 케이스를 메인 진행과 병행. No.43 이후는 「탐정 라이프 충실 팩」 DLC가 필수.",
+        "1) 3장에서 버즈 리서처 + 사이드 케이스 시스템 해금 → 장별 사이드 케이스를 메인 진행과 병행. No.43 이후는 「탐정 라이프 충실 팩」 DLC가 필수.",
       en:
         "1) Open the Buzz Researcher + Side Case system in Ch.3, then chase cases chapter by chapter. Case No.43+ requires the Detective's Essentials Pack DLC.",
     },
     {
       ko:
-        "2) 청춘 드라마 9종 — 챕터 3~8 사이에 두 작품씩 병행해 후반에 몰리지 않게 정리. 댄스·복싱·로봇·BMX·미스터리·뱀파이어·등 각 드라마마다 별도 진행도.",
+        "2) 청춘 드라마 9종 — 3~8장 사이에 두 작품씩 병행해 후반에 몰리지 않게 정리. 댄스·복싱·로봇·BMX·미스터리·뱀파이어·등 각 드라마마다 별도 진행도.",
       en:
         "2) Push 2 School Stories at a time from Ch.3~8 so they don't dump at the end — Dance / Boxing / Robotics / BMX / Mystery / Vampire each track separately.",
     },
@@ -58,20 +58,20 @@ const platinum: CuratedGuide = {
 const townGoMaster: CuratedGuide = {
   summary: {
     ko:
-      "TownGo 시스템의 컴플리트 토털 100% 도달 시 발동. 시티 미션·상점 미션·청춘 드라마 미션·기타 컬렉션이 모두 카테고리별 100%여야 합니다. 일부 상점은 메인 스토리 진행으로만 해금되므로 챕터 9 이상 진행 필수.",
+      "TownGo 시스템의 컴플리트 토털 100% 도달 시 발동. 시티 미션·상점 미션·청춘 드라마 미션·기타 컬렉션이 모두 카테고리별 100%여야 합니다. 일부 상점은 메인 스토리 진행으로만 해금되므로 9장 이상 진행 필수.",
     en:
       "TownGo total completion at 100 %. City missions + Shop missions + School Story missions + extra collections must each hit 100 %. Some shops only unlock past Ch.9, so push the story first.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 3 이후 타운고 앱이 풀리면 카무로초 + 이세자키 이진초 양쪽에서 시티 미션을 받아 동시 진행.",
+        "1) 3장 이후 타운고 앱이 풀리면 카무로초 + 이세자키 이진초 양쪽에서 시티 미션을 받아 동시 진행.",
       en:
         "1) After Ch.3 opens TownGo, run city missions in both Kamurocho and Ijincho in parallel.",
     },
     {
       ko:
-        "2) 상점 미션 — 일부 상점은 챕터 진행으로만 해금되므로, 컴플리트 리스트의 상점 카테고리 100% 도달이 보이지 않으면 메인 스토리 추가 진행이 필요한 경우가 많습니다.",
+        "2) 상점 미션 — 일부 상점은 장 진행으로만 해금되므로, 컴플리트 리스트의 상점 카테고리 100% 도달이 보이지 않으면 메인 스토리 추가 진행이 필요한 경우가 많습니다.",
       en:
         "2) Shop missions — many shops gate on story progress; if the Shop category isn't moving, push the main story.",
     },
@@ -131,7 +131,7 @@ const allArcadeLJ: CuratedGuide = {
 const droneRaceMaster: CuratedGuide = {
   summary: { ko: "Lost Judgment 드론 레이스의 모든 그랑프리에서 우승하면 발동. 드론 부품 강화로 SPD/HANDLING/ACCEL 최적화가 핵심.", en: "Win every Drone Race Grand Prix. Tune SPD/HANDLING/ACCEL via parts upgrades." },
   steps: [
-    { ko: "1) 챕터 진행 중 드론 레이스 해금 → 첫 그랑프리 출전.", en: "1) Unlock Drone Race and enter the first GP." },
+    { ko: "1) 장 진행 중 드론 레이스 해금 → 첫 그랑프리 출전.", en: "1) Unlock Drone Race and enter the first GP." },
     { ko: "2) 부품 강화로 최고 등급에 가까운 사양 셋업. 코스별 권장 빌드 다름.", en: "2) Tune to near-max specs; builds vary by course." },
     { ko: "3) 모든 그랑프리 우승 시 트로피 발동.", en: "3) Sweep every GP for the trophy." },
   ],
@@ -155,7 +155,7 @@ const allRecordsLJ: CuratedGuide = {
 const allVrBoard: CuratedGuide = {
   summary: { ko: "Lost Judgment의 VR 쌍륙(보드게임) 모든 스테이지에서 승리하면 발동. VR 살롱에서 해금되며, 스테이지별 룰이 달라 전략 다양화가 핵심.", en: "Win every VR Sugoroku (board) stage at the VR Salon. Rules vary per stage." },
   steps: [
-    { ko: "1) 챕터 3 이후 VR 살롱 해금 → VR 쌍륙 첫 스테이지부터 차례로 클리어.", en: "1) Unlock VR Salon in Ch.3 and clear stages in sequence." },
+    { ko: "1) 3장 이후 VR 살롱 해금 → VR 쌍륙 첫 스테이지부터 차례로 클리어.", en: "1) Unlock VR Salon in Ch.3 and clear stages in sequence." },
     { ko: "2) 스테이지별 룰(특수 칸·아이템·페널티 등) 적응. RNG가 강한 스테이지는 재시도 권장.", en: "2) Adapt to per-stage rules; restart RNG-heavy stages as needed." },
     { ko: "3) 모든 스테이지 승리 시 트로피 발동.", en: "3) Full clear fires the trophy." },
   ],

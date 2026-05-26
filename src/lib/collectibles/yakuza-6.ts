@@ -72,7 +72,7 @@ export const yakuza6: CollectiblesData = {
     title: { ko: "길고양이 19마리 — 모든 위치와 좋아하는 캔", en: "Stray Cats — All 19 Locations & Favorite Cans" },
     summary: { ko: "서브스토리 No.21 「네코카페에 어서 오세요」를 클리어한 뒤 카무로초 9마리 + 오노미치 10마리를 모두 포획해 네코카페에 영입합니다. 좋아하는 캔을 들고 가면 포획 성공률이 높아집니다.", en: "After clearing substory No.21 \"Welcome to the Cat Cafe\", capture all 9 Kamurocho cats and 10 Onomichi cats. Bring each cat's favorite can to boost capture success." },
     tips: [
-        { ko: "챕터 2 이후 SNS와 트러블 미션이 풀린 다음에야 일부 고양이가 출현합니다. 출현 포인트는 한 지역 안에서 2~3곳 랜덤이므로 한 자리에서 안 보이면 인근을 한 바퀴 돌아보세요.", en: "Some cats only appear after SNS / trouble missions open in Chapter 2. Each cat has 2-3 random spawn points within its region — sweep the area if not visible on first visit." },
+        { ko: "2장 이후 SNS와 트러블 미션이 풀린 다음에야 일부 고양이가 출현합니다. 출현 포인트는 한 지역 안에서 2~3곳 랜덤이므로 한 자리에서 안 보이면 인근을 한 바퀴 돌아보세요.", en: "Some cats only appear after SNS / trouble missions open in Chapter 2. Each cat has 2-3 random spawn points within its region — sweep the area if not visible on first visit." },
         { ko: "캔은 편의점·돈키호테·네코카페에서 구입할 수 있습니다. 좋아하는 캔을 잘못 골라도 카운트는 오르지만 도망 확률이 커집니다.", en: "Cans sell at convenience stores, Don Quijote, and the Cat Cafe. Wrong cans still count but raise escape chance." },
     ],
     source: { label: "龍が如く6攻略 — 猫の場所", url: "http://ryugagotoku6.riroa.com/ryugagotoku6_neko.html" },

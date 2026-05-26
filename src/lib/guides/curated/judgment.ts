@@ -18,35 +18,35 @@ const cats: CuratedGuide = {
   steps: [
     {
       ko:
-        "#01 · 챕터 1 — 2번째 액티브 서치 (드론을 추적): 에어컨 실외기 위, 벽쪽을 바라보고 있는 고양이를 확대 조사.",
+        "#01 · 1장 — 2번째 액티브 서치 (드론을 추적): 에어컨 실외기 위, 벽쪽을 바라보고 있는 고양이를 확대 조사.",
       en:
         "#01 · Chapter 1 — 2nd Active Search (\"Locate your drone\"): on top of the air-con unit, facing the wall.",
     },
     {
-      ko: "#02 · 챕터 1 — 3번째 액티브 서치: 왼쪽 출입문 안쪽 그늘에 앉아 있음.",
+      ko: "#02 · 1장 — 3번째 액티브 서치: 왼쪽 출입문 안쪽 그늘에 앉아 있음.",
       en: "#02 · Chapter 1 — 3rd Active Search (outside Club Amour): in the doorway to the left.",
     },
     {
-      ko: "#03 · 챕터 1 — 4번째 액티브 서치: 길가 자판기 위에 올라가 있음.",
+      ko: "#03 · 1장 — 4번째 액티브 서치: 길가 자판기 위에 올라가 있음.",
       en: "#03 · Chapter 1 — 4th Active Search (outside KJ Art): perched on top of a vending machine.",
     },
     {
       ko:
-        "#04 · 챕터 1 — 1번째 드론 서치: 건물 모서리 위쪽 난간에 앉아 있어 드론을 위로 들어 올려야 조사 가능.",
+        "#04 · 1장 — 1번째 드론 서치: 건물 모서리 위쪽 난간에 앉아 있어 드론을 위로 들어 올려야 조사 가능.",
       en:
         "#04 · Chapter 1 — 1st Drone Search (KJ Art building): on the ledge at the upper corner — fly the drone up to inspect.",
     },
     {
-      ko: "#05 · 챕터 1 — 5번째 액티브 서치: 좌측 창문 너머 출입문 바로 옆에 보임.",
+      ko: "#05 · 1장 — 5번째 액티브 서치: 좌측 창문 너머 출입문 바로 옆에 보임.",
       en: "#05 · Chapter 1 — 5th Active Search (KJ Art security room): just outside the door, visible through the left window.",
     },
     {
-      ko: "#06 · 챕터 1 — 6번째 액티브 서치 (큐슈 No.1 별 라멘 바깥): 골목 남쪽 끝에 웅크리고 있음.",
+      ko: "#06 · 1장 — 6번째 액티브 서치 (큐슈 No.1 별 라멘 바깥): 골목 남쪽 끝에 웅크리고 있음.",
       en: "#06 · Chapter 1 — 6th Active Search (outside Kyushu No.1 Star Ramen): at the south end of the alley.",
     },
     {
       ko:
-        "#07 · 챕터 2 — 1번째 액티브 서치 (연쇄살인 현장): 왼쪽 노란 박스 위 선반 부분에 올라가 있음.",
+        "#07 · 2장 — 1번째 액티브 서치 (연쇄살인 현장): 왼쪽 노란 박스 위 선반 부분에 올라가 있음.",
       en:
         "#07 · Chapter 2 — 1st Active Search (serial-murder scene): on the ledge above the yellow crates on the left.",
     },
@@ -62,7 +62,7 @@ const cats: CuratedGuide = {
     },
     {
       ko:
-        "#10 · 챕터 4 — 1번째 액티브 서치 (겐다 법률사무소 앞): 길 건너 파란 셔터 앞 전기 배전함 위에 앉아 있음.",
+        "#10 · 4장 — 1번째 액티브 서치 (겐다 법률사무소 앞): 길 건너 파란 셔터 앞 전기 배전함 위에 앉아 있음.",
       en:
         "#10 · Chapter 4 — 1st Active Search (Genda Law Office): on the power box in front of the blue garage door across the street.",
     },
@@ -72,13 +72,13 @@ const cats: CuratedGuide = {
     },
     {
       ko:
-        "#12 · 챕터 5 — 1번째 액티브 서치 (야가미 탐정 사무소 바깥): 길 건너 건물 입구 안쪽에 보임.",
+        "#12 · 5장 — 1번째 액티브 서치 (야가미 탐정 사무소 바깥): 길 건너 건물 입구 안쪽에 보임.",
       en:
         "#12 · Chapter 5 — 1st Active Search (Yagami Detective Agency): in the entryway across the road.",
     },
     {
       ko:
-        "#13 · 챕터 5 — 2번째 액티브 서치: 보행자 다리 아래 기둥의 정사각형 받침 가장 아래쪽.",
+        "#13 · 5장 — 2번째 액티브 서치: 보행자 다리 아래 기둥의 정사각형 받침 가장 아래쪽.",
       en:
         "#13 · Chapter 5 — 2nd Active Search (ADDC flashback): at the very bottom on the square base of the pillar under the sky bridge.",
     },
@@ -104,7 +104,7 @@ const cats: CuratedGuide = {
     },
     {
       ko:
-        "각 챕터 액티브 서치 직전에 수동 세이브를 만들어 두면 놓쳤을 때 그 챕터만 재시도하면 됩니다. 모든 14마리 발견 직후에 트로피가 떠야 정상이며, 마지막 1마리가 어디인지 모르겠으면 서치 모드에서 음향을 다시 한 번 확인하세요.",
+        "각 장 액티브 서치 직전에 수동 세이브를 만들어 두면 놓쳤을 때 그 장만 재시도하면 됩니다. 모든 14마리 발견 직후에 트로피가 떠야 정상이며, 마지막 1마리가 어디인지 모르겠으면 서치 모드에서 음향을 다시 한 번 확인하세요.",
       en:
         "Save before every flagged Active Search so a missed cat only costs that chapter, not a full re-run. The trophy pops the moment cat #14 is inspected.",
     },
@@ -124,7 +124,7 @@ const cats: CuratedGuide = {
 const artOfConversation: CuratedGuide = {
   summary: {
     ko:
-      "챕터 7 호스티스 잠입 시퀀스에서 미카로 변장한 야가미가 손님 4명과 나누는 모든 대화를 정답으로 통과해야 합니다. 미용실 진입 직후부터 시작되며, 잠입이 끝날 때까지 세이브를 다시 만들 수 없으므로 진입 직전에 수동 세이브 1개를 반드시 확보하세요.",
+      "7장 호스티스 잠입 시퀀스에서 미카로 변장한 야가미가 손님 4명과 나누는 모든 대화를 정답으로 통과해야 합니다. 미용실 진입 직후부터 시작되며, 잠입이 끝날 때까지 세이브를 다시 만들 수 없으므로 진입 직전에 수동 세이브 1개를 반드시 확보하세요.",
     en:
       "Survive the hostess-disguise infiltration in Chapter 7 by picking the correct line at every dialogue prompt. The sequence starts the moment you enter the hair salon and you can't save again until it's done, so drop a manual save right before entering.",
   },
@@ -186,7 +186,7 @@ const artOfConversation: CuratedGuide = {
 const illMakeItDouble: CuratedGuide = {
   summary: {
     ko:
-      "챕터 2 스토리 진행 중 L'Amant 카지노에 들어가면 무료 칩 300개를 받습니다. 야가미가 자리를 뜨기 전에 칩을 정확히 600개 이상으로 만들면 트로피 발동. 자리에서 일어나는 순간 스토리가 진행되므로 안전한 게임을 선택하는 게 핵심입니다.",
+      "2장 스토리 진행 중 L'Amant 카지노에 들어가면 무료 칩 300개를 받습니다. 야가미가 자리를 뜨기 전에 칩을 정확히 600개 이상으로 만들면 트로피 발동. 자리에서 일어나는 순간 스토리가 진행되므로 안전한 게임을 선택하는 게 핵심입니다.",
     en:
       "Chapter 2's story stop at L'Amant hands you 300 free casino chips. Get your stack to at least 600 before you leave the table — once you stand up the story advances and the window closes.",
   },
@@ -225,7 +225,7 @@ const illMakeItDouble: CuratedGuide = {
     },
     {
       ko:
-        "이 시퀀스는 챕터 2의 1회성 스토리 이벤트이므로, 자리에서 일어나는 순간 영구 잠금. 세이브 로드만이 유일한 재시도 방법입니다.",
+        "이 시퀀스는 2장의 1회성 스토리 이벤트이므로, 자리에서 일어나는 순간 영구 잠금. 세이브 로드만이 유일한 재시도 방법입니다.",
       en:
         "It's a one-shot Chapter 2 sequence — leave without 600 and the trophy is gone for this run. Save/load is the only retry.",
     },
@@ -242,7 +242,7 @@ const illMakeItDouble: CuratedGuide = {
 const wayTooThorough: CuratedGuide = {
   summary: {
     ko:
-      "챕터 5의 ADDC 건물 회상 시퀀스에서 야가미가 1인칭 시점으로 시신 현장을 조사할 때, 옆에 서 있는 간호사 테라사와의 신체 세 부위(얼굴·가슴·엉덩이)를 모두 확대 관찰해야 합니다. 한 부위라도 누락되면 회상이 끝나는 순간 영구 잠금.",
+      "5장의 ADDC 건물 회상 시퀀스에서 야가미가 1인칭 시점으로 시신 현장을 조사할 때, 옆에 서 있는 간호사 테라사와의 신체 세 부위(얼굴·가슴·엉덩이)를 모두 확대 관찰해야 합니다. 한 부위라도 누락되면 회상이 끝나는 순간 영구 잠금.",
     en:
       "During Chapter 5's ADDC flashback, while Yagami investigates the victim's room in first-person, also zoom in on the nurse Terasawa's face, chest, and rear — all three. Miss one and the trophy locks the moment the scene ends.",
   },
@@ -298,7 +298,7 @@ const wayTooThorough: CuratedGuide = {
 const professionalPasswordPresenter: CuratedGuide = {
   summary: {
     ko:
-      "챕터 8에서 챔피언 거리의 비밀 도박장 입구를 통과할 때 야가미가 3단계 암호 대화를 거칩니다. 세 답을 모두 첫 시도에 정확히 맞춰야 트로피 발동 — 한 문항이라도 오답이면 같은 회차에서는 다시 도전할 수 없습니다.",
+      "8장에서 챔피언 거리의 비밀 도박장 입구를 통과할 때 야가미가 3단계 암호 대화를 거칩니다. 세 답을 모두 첫 시도에 정확히 맞춰야 트로피 발동 — 한 문항이라도 오답이면 같은 회차에서는 다시 도전할 수 없습니다.",
     en:
       "Chapter 8's hidden Champion District gambling hall has a three-step password challenge. Get every answer right on the first try — a single wrong pick locks the trophy for this run.",
   },
@@ -352,7 +352,7 @@ const professionalPasswordPresenter: CuratedGuide = {
 const hungJury: CuratedGuide = {
   summary: {
     ko:
-      "챕터 12에서 폐호텔에 매달린 스기우라를 구출할 때, 적 2명을 격파하기까지 3분 카운트다운이 시작됩니다. 타이머가 10초 이하로 떨어진 직후 마지막 적을 쓰러뜨려야 트로피 발동 — 너무 빨리 처치하거나 시간을 초과하면 모두 실패.",
+      "12장에서 폐호텔에 매달린 스기우라를 구출할 때, 적 2명을 격파하기까지 3분 카운트다운이 시작됩니다. 타이머가 10초 이하로 떨어진 직후 마지막 적을 쓰러뜨려야 트로피 발동 — 너무 빨리 처치하거나 시간을 초과하면 모두 실패.",
     en:
       "Chapter 12's hotel rescue puts a 3-minute timer on Sugiura's life as you fight two thugs. Finish the second knockout only after the clock has dropped under 10 seconds — too early and the trophy doesn't fire, too late and Sugiura dies.",
   },
@@ -469,14 +469,14 @@ const theFinalNail: CuratedGuide = {
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Judgment 플래티넘 — 다른 46개 업적 전부 해금 시 자동 발동. 핵심 게이트는 ①히든 스토리 트로피 6종(이면 보고서) + 길고양이 14마리(별도 큐레이션 참조) ②카무로초(KAMGO 친구 이벤트) 50인 친밀도 ③탐정 사이드 케이스 50건 풀 ④EX-HARD 메인 스토리 ⑤아몬 신 격투. 영구 미서블이 7종이라 챕터별 수동 세이브가 필수.",
+      "Judgment 플래티넘 — 다른 46개 업적 전부 해금 시 자동 발동. 핵심 게이트는 ①히든 스토리 트로피 6종(이면 보고서) + 길고양이 14마리(별도 큐레이션 참조) ②카무로초(KAMGO 친구 이벤트) 50인 친밀도 ③탐정 사이드 케이스 50건 풀 ④EX-HARD 메인 스토리 ⑤아몬 신 격투. 영구 미서블이 7종이라 장별 수동 세이브가 필수.",
     en:
       "Judgment platinum auto-pops at full unlock. Gates: ① 6 hidden Side Reports + 14 stray cats (see dedicated guides) ② 50-friend bonds across Kamurocho (KAMGO) ③ 50 detective Side Cases ④ EX-HARD main story ⑤ Amon. 7 missables make manual saves per chapter essential.",
   },
   steps: [
     {
       ko:
-        "1) 1회차 NORMAL — 챕터별 미서블 트로피(이면 보고서 1~6 + 길고양이)를 별도 큐레이션 참조해 수동 세이브 분리 보관하며 진행. 한 번이라도 놓치면 같은 회차에서 회수 불가.",
+        "1) 1회차 NORMAL — 장별 미서블 트로피(이면 보고서 1~6 + 길고양이)를 별도 큐레이션 참조해 수동 세이브 분리 보관하며 진행. 한 번이라도 놓치면 같은 회차에서 회수 불가.",
       en:
         "1) Run 1 (NORMAL) — chase the 6 Side Reports + 14 cats using the per-trophy curated guides. Keep two save slots; missed trophies don't re-trigger this run.",
     },
@@ -488,7 +488,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "3) 사이드 케이스 — 챕터 2 야가미 탐정 사무소 게시판 해금부터 50건 모두 클리어. 「최후의 의뢰」(아몬 신 격투)는 49건 클리어 + 거리 평판 Lv.50 도달 시 해금.",
+        "3) 사이드 케이스 — 2장 야가미 탐정 사무소 게시판 해금부터 50건 모두 클리어. 「최후의 의뢰」(아몬 신 격투)는 49건 클리어 + 거리 평판 Lv.50 도달 시 해금.",
       en:
         "3) Side Cases — 50 total starting from Ch.2's agency board. Case #50 (Amon fight) unlocks at 49 cleared + Street Rep Lv.50.",
     },
@@ -500,7 +500,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "5) 새 회차 EX-HARD 직주행 → 챕터 13 피날레 클리어 시 「용맹한 탐정」 + 플래티넘 동시 발동.",
+        "5) 새 회차 EX-HARD 직주행 → 13장 피날레 클리어 시 「용맹한 탐정」 + 플래티넘 동시 발동.",
       en:
         "5) Fresh save on EX-HARD, story-sprint — clearing the finale fires the difficulty trophy + platinum together.",
     },
@@ -508,7 +508,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "Judgment는 미서블 7종이 모두 챕터·시퀀스 한정이라 회차 분리 작업이 가장 까다롭습니다. 챕터 2·5·7·8·12·13·14 진입 직전 수동 세이브 분리 보관.",
+        "Judgment는 미서블 7종이 모두 장·시퀀스 한정이라 회차 분리 작업이 가장 까다롭습니다. 2장·5·7·8·12·13·14 진입 직전 수동 세이브 분리 보관.",
       en:
         "Judgment's 7 missables are all chapter-locked — save before Ch.2/5/7/8/12/13/14 entry and rotate two slots.",
     },
@@ -528,7 +528,7 @@ const kamuroMaster: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 챕터 3 이후 KAMGO 앱 해금 → 거리 평판을 5/15/25/35/45/50 단계로 올리며 새 NPC 친구 이벤트를 차례로 해금.",
+        "1) 3장 이후 KAMGO 앱 해금 → 거리 평판을 5/15/25/35/45/50 단계로 올리며 새 NPC 친구 이벤트를 차례로 해금.",
       en:
         "1) Open KAMGO after Ch.3 and climb Street Rep through 5/15/25/35/45/50 — each tier unlocks new NPC friend events.",
     },

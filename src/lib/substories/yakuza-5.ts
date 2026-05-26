@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const yakuza5Substories: SubstoriesData = {
   appId: 1105510,
   summary: {
-    ko: "5인 주인공(키류/사에지마/하루카/아키야마/시나다) × 5개 도시(나가스가이=후쿠오카·츠키미노=삿포로·소텐보리=오사카·카무로초=도쿄·킨에이초=나고야) 합산 약 79건. 키류·사에지마·아키야마·시나다는 거리 ?아이콘 → 격투 기반. 하루카 편은 댄스/아이돌 미니게임 기반으로 전투가 없음. 챕터 진행에 따라 해금되며 본편 도중 놓치면 일부는 회수 불가.",
+    ko: "5인 주인공(키류/사에지마/하루카/아키야마/시나다) × 5개 도시(나가스가이=후쿠오카·츠키미노=삿포로·소텐보리=오사카·카무로초=도쿄·킨에이초=나고야) 합산 약 79건. 키류·사에지마·아키야마·시나다는 거리 ?아이콘 → 격투 기반. 하루카 편은 댄스/아이돌 미니게임 기반으로 전투가 없음. 장 진행에 따라 해금되며 본편 도중 놓치면 일부는 회수 불가.",
     en: "~79 substories across 5 protagonists (Kiryu/Saejima/Haruka/Akiyama/Shinada) and 5 cities (Nagasugai=Fukuoka, Tsukimino=Sapporo, Sotenbori=Osaka, Kamurocho=Tokyo, Kineicho=Nagoya). Kiryu/Saejima/Akiyama/Shinada substories use standard combat; Haruka's chapter uses dance/idol minigame mechanics with no combat. Chapter-gated — some are missable.",
   },
   source: { label: "kamigame.jp — 龍が如く5 サブストーリー全イベントの一覧", url: "https://kamigame.jp/ryugagotoku5/page/53484799733530626.html" },
@@ -14,17 +14,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 1,
           title: { ko: "머나먼 땅에서", en: "From a Distant Land" },
-          chapter: { ko: "1부 챕터 2", en: "Part 1, Chapter 2" },
+          chapter: { ko: "1부 2장", en: "Part 1, Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 후쿠하쿠 거리 북쪽", en: "Nagasugai — Fukuhaku St. north" },
-          trigger: { ko: "챕터 2에서 아이자와/모리나가전 이후 거리에서 발생", en: "Chapter 2 — appears on the street after the Aizawa/Morinaga fight." },
+          trigger: { ko: "2장에서 아이자와/모리나가전 이후 거리에서 발생", en: "Chapter 2 — appears on the street after the Aizawa/Morinaga fight." },
           body: { ko: "오키나와에서 카무로초로 가던 청년이 길을 잃고 곤란해한다. 키류가 사정을 듣고 도와준다.", en: "A young man from Okinawa is lost on his way to Kamurocho. Kiryu hears him out and helps." },
           reward: { ko: "경험치", en: "EXP" },
         },
         {
           number: 2,
           title: { ko: "택시 S・O・S", en: "Taxi S.O.S." },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 기온 거리", en: "Nagasugai — Gion St." },
           trigger: { ko: "기온 거리에서 곤란한 운전사에게 말 걸기", en: "Talk to the troubled taxi driver on Gion St." },
@@ -34,7 +34,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 3,
           title: { ko: "합석의 제왕", en: "King of the Group Date" },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 오세바시 거리 동쪽", en: "Nagasugai — Oosebashi St. east" },
           trigger: { ko: "어나더 드라마(택시) 일정 진척 후 발생", en: "Progress the Taxi Another Drama first, then talk to the man." },
@@ -45,17 +45,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 4,
           title: { ko: "유괴범을 쫓아라", en: "Chase the Kidnappers" },
-          chapter: { ko: "1부 챕터 2", en: "Part 1, Chapter 2" },
+          chapter: { ko: "1부 2장", en: "Part 1, Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 치쿠젠 강가 거리", en: "Nagasugai — Chikuzen River St." },
-          trigger: { ko: "챕터 2 보스전 이후 거리에서 비명 듣기", en: "Chapter 2 — hear screams on Chikuzen River St. after the boss fight." },
+          trigger: { ko: "2장 보스전 이후 거리에서 비명 듣기", en: "Chapter 2 — hear screams on Chikuzen River St. after the boss fight." },
           body: { ko: "어린 아이가 유괴되는 현장. 키류가 추격해 범인 일당을 제압한다. 미씨블.", en: "Witness a kidnapping in progress. Chase down and beat the abductors. Missable." },
           reward: { ko: "경험치 + 회복 아이템", en: "EXP + recovery item" },
         },
         {
           number: 5,
           title: { ko: "하루카를 떠올리며", en: "Reminded of Haruka" },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 치쿠젠 강가 거리 남쪽", en: "Nagasugai — Chikuzen River St. south" },
           trigger: { ko: "거리에서 울고 있는 소녀에게 말 걸기", en: "Talk to the crying girl on Chikuzen River St. south." },
@@ -65,10 +65,10 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "사이버 테러", en: "Cyber Terror" },
-          chapter: { ko: "1부 챕터 2", en: "Part 1, Chapter 2" },
+          chapter: { ko: "1부 2장", en: "Part 1, Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 오세바시 거리 동쪽", en: "Nagasugai — Oosebashi St. east" },
-          trigger: { ko: "챕터 2 보스전 이후 발생. 노트북을 든 남자에게 말 걸기", en: "After the Chapter 2 boss fight, talk to the man with a laptop." },
+          trigger: { ko: "2장 보스전 이후 발생. 노트북을 든 남자에게 말 걸기", en: "After the Chapter 2 boss fight, talk to the man with a laptop." },
           body: { ko: "해커를 자칭하는 남자가 키류에게 협박. 단호히 거절하면 일당이 덤벼들지만 가볍게 제압한다. 미씨블.", en: "A self-proclaimed hacker tries to threaten Kiryu. Refuse and beat his crew. Missable." },
           choices: [
             { prompt: { ko: "「돈을 내놔라」", en: "'Hand over the money.'" }, correct: { ko: "거절한다", en: "Refuse" } },
@@ -78,7 +78,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "키류는 연기파", en: "Kiryu the Method Actor" },
-          chapter: { ko: "1부 챕터 4~", en: "Part 1, Chapter 4+" },
+          chapter: { ko: "1부 4장~", en: "Part 1, Chapter 4+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 하쿠치쿠젠 거리", en: "Nagasugai — Hakuchikuzen St." },
           trigger: { ko: "거리의 영화 감독에게 말 걸기", en: "Talk to the film director on the street." },
@@ -88,7 +88,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "키류 씨 아니에요?", en: "Aren't You Kiryu-san?" },
-          chapter: { ko: "1부 챕터 4~", en: "Part 1, Chapter 4+" },
+          chapter: { ko: "1부 4장~", en: "Part 1, Chapter 4+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 후쿠하쿠 거리 서쪽", en: "Nagasugai — Fukuhaku St. west" },
           trigger: { ko: "거리에서 키류를 알아본 청년에게 말 걸기", en: "A young man recognizes Kiryu on Fukuhaku St. west." },
@@ -101,17 +101,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "노크 소리가", en: "A Knock at the Door" },
-          chapter: { ko: "1부 챕터 3~", en: "Part 1, Chapter 3+" },
+          chapter: { ko: "1부 3장~", en: "Part 1, Chapter 3+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "키류 아파트 — 침실", en: "Kiryu's apartment — bedroom" },
-          trigger: { ko: "챕터 3 이후 자택에서 잠을 청할 때 발생", en: "Try to sleep in Kiryu's apartment after Chapter 3." },
+          trigger: { ko: "3장 이후 자택에서 잠을 청할 때 발생", en: "Try to sleep in Kiryu's apartment after Chapter 3." },
           body: { ko: "한밤중에 문을 두드리는 수상한 인물. 키류가 직접 응대한다.", en: "Someone knocks in the middle of the night. Kiryu answers in person." },
           reward: { ko: "경험치", en: "EXP" },
         },
         {
           number: 10,
           title: { ko: "용의 해선동", en: "The Dragon's Seafood Bowl" },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 치쿠젠 거리 북쪽", en: "Nagasugai — Chikuzen St. north" },
           trigger: { ko: "해선동 가게 앞 점주에게 말 걸기", en: "Talk to the seafood-bowl shopkeeper." },
@@ -121,17 +121,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 11,
           title: { ko: "은빛 유성", en: "Glittering Meteor" },
-          chapter: { ko: "1부 챕터 2", en: "Part 1, Chapter 2" },
+          chapter: { ko: "1부 2장", en: "Part 1, Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 후쿠하쿠 거리 동쪽", en: "Nagasugai — Fukuhaku St. east" },
-          trigger: { ko: "챕터 2 보스전 이후 거리에서 발생", en: "After the Chapter 2 boss fight." },
+          trigger: { ko: "2장 보스전 이후 거리에서 발생", en: "After the Chapter 2 boss fight." },
           body: { ko: "정체불명의 마스크맨이 출몰. 키류가 격투로 진위를 가린다. 미씨블.", en: "A masked figure appears. Kiryu sorts it out with fists. Missable." },
           reward: { ko: "경험치 + 마스크 장비", en: "EXP + mask accessory" },
         },
         {
           number: 12,
           title: { ko: "드래곤 마스크 다시", en: "Dragon Mask Returns" },
-          chapter: { ko: "1부 챕터 4~", en: "Part 1, Chapter 4+" },
+          chapter: { ko: "1부 4장~", en: "Part 1, Chapter 4+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 나가스가이 거리 남쪽", en: "Nagasugai — Nagasugai Ave. south" },
           trigger: { ko: "이전 마스크 관련 서브 이후 발생", en: "After the prior mask substory." },
@@ -141,7 +141,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 13,
           title: { ko: "텐진님, 부탁해요!", en: "Tenjin-sama, Please!" },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 나가스가이 거리 북쪽", en: "Nagasugai — Nagasugai St. north" },
           trigger: { ko: "거리의 수험생에게 말 걸기", en: "Talk to the exam-prep student on the street." },
@@ -151,17 +151,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "폭주 포장마차", en: "Runaway Food Stall" },
-          chapter: { ko: "1부 챕터 2", en: "Part 1, Chapter 2" },
+          chapter: { ko: "1부 2장", en: "Part 1, Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 묘에 거리 동쪽 포장마차", en: "Nagasugai — Myoe St. east food stall" },
-          trigger: { ko: "챕터 2 보스전 이후 포장마차 앞", en: "After the Chapter 2 boss fight, near the food stall." },
+          trigger: { ko: "2장 보스전 이후 포장마차 앞", en: "After the Chapter 2 boss fight, near the food stall." },
           body: { ko: "포장마차가 폭주(?)하며 손님을 휘말리게 한다. 미씨블 격투 이벤트.", en: "A runaway food cart drags everyone in — short missable brawl event." },
           reward: { ko: "경험치 + 회복 아이템", en: "EXP + recovery item" },
         },
         {
           number: 15,
           title: { ko: "중요한 건 면의 탄력", en: "Springiness Is Everything" },
-          chapter: { ko: "1부 챕터 2~", en: "Part 1, Chapter 2+" },
+          chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 라멘 포장마차 「타마사」", en: "Nagasugai — Ramen stall 'Tamasa'" },
           trigger: { ko: "타마사 포장마차에 입점하면 발생", en: "Enter the Tamasa ramen stall." },
@@ -171,17 +171,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "마크와의 재회", en: "Reunion with Mack" },
-          chapter: { ko: "1부 챕터 3~", en: "Part 1, Chapter 3+" },
+          chapter: { ko: "1부 3장~", en: "Part 1, Chapter 3+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 키류 아파트", en: "Nagasugai — Kiryu's apartment" },
-          trigger: { ko: "챕터 3 이후 아파트로 귀가", en: "Return to the apartment after Chapter 3." },
+          trigger: { ko: "3장 이후 아파트로 귀가", en: "Return to the apartment after Chapter 3." },
           body: { ko: "옛 친구 마크가 키류 앞에 다시 나타나 회포를 푼다.", en: "An old acquaintance, Mack, drops by Kiryu's place." },
           reward: { ko: "경험치", en: "EXP" },
         },
         {
           number: 17,
           title: { ko: "아몬", en: "Amon" },
-          chapter: { ko: "최종부 최종 챕터", en: "Final Part, Final Chapter" },
+          chapter: { ko: "최종부 최종 장", en: "Final Part, Final Chapter" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 뉴 세레나", en: "Kamurocho — New Serena" },
           trigger: { ko: "전 캐릭터 서브스토리 컴플리트 후 뉴 세레나에서 봉투 수령", en: "Clear all substories for every protagonist, then pick up the letter at New Serena." },
@@ -192,7 +192,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "최고의 조미료", en: "The Finest Seasoning" },
-          chapter: { ko: "최종부 챕터 1~", en: "Final Part, Chapter 1+" },
+          chapter: { ko: "최종부 1장~", en: "Final Part, Chapter 1+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 킷사텐 알프스", en: "Kamurocho — Kissaten Alps" },
           trigger: { ko: "타츠야 택시 미션 전부 클리어 후 킷사텐 알프스에서 발생", en: "Clear every Tatsuya taxi mission, then visit Kissaten Alps." },
@@ -208,7 +208,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "거짓과 진실", en: "Lies and Truth" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 나카츠 거리", en: "Tsukimino — Nakatsu St." },
           trigger: { ko: "카지노 결투 이후 거리에서 발생", en: "Trigger on the street after the casino fight." },
@@ -218,7 +218,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 20,
           title: { ko: "눈축제 거리예술가", en: "Snow Festival Street Performer" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 타이지 공원", en: "Tsukimino — Taiji Park" },
           trigger: { ko: "거점 합류 이후 공원에서 발생", en: "After joining the base, visit Taiji Park." },
@@ -228,7 +228,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 21,
           title: { ko: "쫓는 자, 쫓기는 자", en: "Hunter and Hunted" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 바 앰비셔스", en: "Tsukimino — Bar Ambitious" },
           trigger: { ko: "카지노 결투 이후 바에서 발생. 미씨블", en: "After the casino fight, drop by Bar Ambitious. Missable." },
@@ -238,17 +238,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 22,
           title: { ko: "추억의 도장", en: "The Dojo of Memories" },
-          chapter: { ko: "2부 챕터 1~", en: "Part 2, Chapter 1+" },
+          chapter: { ko: "2부 1장~", en: "Part 2, Chapter 1+" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "카무로초 — 소다 도장", en: "Kamurocho — Soda Dojo" },
-          trigger: { ko: "챕터 1 이후 카무로초 소다 도장 방문", en: "Visit the Soda Dojo in Kamurocho after Chapter 1." },
+          trigger: { ko: "1장 이후 카무로초 소다 도장 방문", en: "Visit the Soda Dojo in Kamurocho after Chapter 1." },
           body: { ko: "옛 스승의 도장을 다시 찾은 사에지마. 제자들과 가벼운 대련.", en: "Saejima revisits his old master's dojo — light sparring with the students." },
           reward: { ko: "경험치 + 격투 능력치", en: "EXP + combat stat boost" },
         },
         {
           number: 23,
           title: { ko: "둘도 없는 장소", en: "An Irreplaceable Place" },
-          chapter: { ko: "2부 챕터 1~", en: "Part 2, Chapter 1+" },
+          chapter: { ko: "2부 1장~", en: "Part 2, Chapter 1+" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "카무로초 — 소다 도장", en: "Kamurocho — Soda Dojo" },
           trigger: { ko: "「추억의 도장」 이후 재방문", en: "After 'The Dojo of Memories', revisit the dojo." },
@@ -259,7 +259,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "산타 사냥", en: "Santa Hunt" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 타이지 골목 서쪽", en: "Tsukimino — Taiji Alley west" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base, encounter on the street." },
@@ -269,7 +269,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "눈축제 MAP", en: "Snow Festival Map" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 니시4 거리 북쪽", en: "Tsukimino — West 4th St. north" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -279,7 +279,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 26,
           title: { ko: "도시에 대한 동경", en: "Yearning for the City" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 산촌", en: "Tsukimino — Settlement" },
           trigger: { ko: "거점 합류 이후 산촌 주민과 대화", en: "After joining the base, talk to the settlement resident." },
@@ -289,7 +289,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 27,
           title: { ko: "식도락 여행자", en: "The Food Traveler" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 키타코지 골목 서쪽", en: "Tsukimino — Kita-Koji Alley west" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -299,7 +299,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 28,
           title: { ko: "최강의 방한 굿즈", en: "Ultimate Winter Gear" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 츠카사 거리", en: "Tsukimino — Tsukasa St." },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -309,7 +309,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "풀려난 것", en: "The Released One" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 키타코지", en: "Tsukimino — Kita-Koji" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -319,7 +319,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 30,
           title: { ko: "성냥팔이 소녀", en: "The Little Match Girl" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 바 앰비셔스", en: "Tsukimino — Bar Ambitious" },
           trigger: { ko: "카지노 결투 이후 바 인근에서 발생. 미씨블", en: "After the casino fight, near Bar Ambitious. Missable." },
@@ -329,7 +329,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 31,
           title: { ko: "얼어붙은 거리에서", en: "In the Frozen Town" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 키타코지", en: "Tsukimino — Kita-Koji" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -339,7 +339,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 32,
           title: { ko: "미끌미끌", en: "Slip-and-Slide" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 중앙역 거리 남쪽", en: "Tsukimino — Central Station St. south" },
           trigger: { ko: "거점 합류 이후 거리에서 발생", en: "After joining the base." },
@@ -349,7 +349,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 33,
           title: { ko: "설상의 격투기", en: "Combat on Snow" },
-          chapter: { ko: "2부 챕터 4", en: "Part 2, Chapter 4" },
+          chapter: { ko: "2부 4장", en: "Part 2, Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "츠키미노 — 타이지 공원 남서쪽", en: "Tsukimino — Taiji Park southwest" },
           trigger: { ko: "눈축제 준비 진행 후 발생", en: "After the snow-festival prep progresses." },
@@ -364,7 +364,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 34,
           title: { ko: "편지", en: "The Letter" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 쇼후쿠초 서쪽", en: "Sotenbori — Shoufuku-cho west" },
           trigger: { ko: "거리의 팬에게 말 걸기. 전투 없음(아이돌 일상 이벤트)", en: "Talk to a fan on the street — no combat, idol-life event." },
@@ -374,7 +374,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 35,
           title: { ko: "힘이 되는 것", en: "Source of Strength" },
-          chapter: { ko: "3부 챕터 4~", en: "Part 3, Chapter 4+" },
+          chapter: { ko: "3부 4장~", en: "Part 3, Chapter 4+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 다이나 체어", en: "Sotenbori — Dyna Chair" },
           trigger: { ko: "다른 서브 진행 이후 발생. 전투 없음", en: "After another substory progresses. No combat." },
@@ -385,7 +385,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 36,
           title: { ko: "꿈이 꺾인 뒤에", en: "After the Dream Breaks" },
-          chapter: { ko: "최종부 챕터 4", en: "Final Part, Chapter 4" },
+          chapter: { ko: "최종부 4장", en: "Final Part, Chapter 4" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "카무로초 — 센트럴 거리", en: "Kamurocho — Central St." },
           trigger: { ko: "특정 대화 이후 발생. 전투 없음", en: "After a specific conversation. No combat." },
@@ -395,7 +395,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 37,
           title: { ko: "평범한 생활", en: "An Ordinary Life" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 비샤몬바시", en: "Sotenbori — Bishamon Bridge" },
           trigger: { ko: "어나더 드라마(아이돌) 진행 이후. 전투 없음", en: "After the Idol Another Drama progresses. No combat." },
@@ -406,7 +406,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 38,
           title: { ko: "일일 점장", en: "One-Day Manager" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 소텐보리 거리 동쪽", en: "Sotenbori — Sotenbori St. east" },
           trigger: { ko: "거리의 가게 점주와 대화. 전투 없음", en: "Talk to a shop owner. No combat." },
@@ -416,7 +416,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 39,
           title: { ko: "소텐보리 아나운스 학원", en: "Sotenbori Announce Academy" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 분타에몬 거리", en: "Sotenbori — Buntaemon St." },
           trigger: { ko: "거리의 강사와 대화. 전투 없음", en: "Talk to the instructor. No combat." },
@@ -426,7 +426,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 40,
           title: { ko: "그루메 리포터", en: "Gourmet Reporter" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 쇼후쿠초 서쪽", en: "Sotenbori — Shoufuku-cho west" },
           trigger: { ko: "타츠야 미션 진행 후 발생. 전투 없음", en: "After Tatsuya mission progress. No combat." },
@@ -437,7 +437,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 41,
           title: { ko: "STB99", en: "STB99" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 쇼후쿠초 서쪽", en: "Sotenbori — Shoufuku-cho west" },
           trigger: { ko: "거리의 라이벌 아이돌 멤버와 대화. 전투 없음", en: "Talk to a rival idol group on the street. No combat." },
@@ -447,7 +447,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 42,
           title: { ko: "바운드 스타", en: "Bound Star" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 이와이바시", en: "Sotenbori — Iwai Bridge" },
           trigger: { ko: "다리 근처 캐스팅 매니저와 대화. 전투 없음", en: "Talk to the casting agent near the bridge. No combat." },
@@ -457,7 +457,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 43,
           title: { ko: "빛과 그림자", en: "Light and Shadow" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 소텐보리 골목", en: "Sotenbori — Sotenbori Alley" },
           trigger: { ko: "골목에서 동료 아이돌과 대화. 전투 없음", en: "Talk to a fellow idol in the alley. No combat." },
@@ -467,7 +467,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 44,
           title: { ko: "마법소녀 하루카", en: "Magical Girl Haruka" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 클럽 세가", en: "Sotenbori — Club SEGA" },
           trigger: { ko: "클럽 세가 앞 팬과 대화. 전투 없음", en: "Talk to the fan in front of Club SEGA. No combat." },
@@ -477,7 +477,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 45,
           title: { ko: "사인회", en: "Autograph Session" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 소텐보리 거리 서쪽", en: "Sotenbori — Sotenbori St. west" },
           trigger: { ko: "거리 행사 담당자와 대화. 전투 없음", en: "Talk to the event coordinator. No combat." },
@@ -487,7 +487,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 46,
           title: { ko: "와타미 VS 와타민가", en: "Watami vs. Watamin-ka" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리/카무로초", en: "Sotenbori / Kamurocho" },
           trigger: { ko: "양 도시 음식점 점장과 차례로 대화. 전투 없음", en: "Talk to the managers of both restaurants in turn. No combat." },
@@ -497,7 +497,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 47,
           title: { ko: "파파라치", en: "Paparazzi" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 쇼후쿠초 동쪽", en: "Sotenbori — Shoufuku-cho east" },
           trigger: { ko: "거리에서 사진 기자에게 추적당한다. 전투 없음", en: "Photographers tail Haruka on the street. No combat." },
@@ -507,7 +507,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 48,
           title: { ko: "목표는 개그맨", en: "Aspiring Comedian" },
-          chapter: { ko: "3부 챕터 2~", en: "Part 3, Chapter 2+" },
+          chapter: { ko: "3부 2장~", en: "Part 3, Chapter 2+" },
           protagonist: { ko: "하루카", en: "Haruka" },
           location: { ko: "소텐보리 — 소텐보리 거리 동쪽", en: "Sotenbori — Sotenbori St. east" },
           trigger: { ko: "거리의 개그 지망생과 대화. 전투 없음", en: "Talk to the aspiring comedian. No combat." },
@@ -522,7 +522,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 49,
           title: { ko: "꿈을 버릴 각오", en: "Resolve to Abandon the Dream" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 쇼후쿠초", en: "Sotenbori — Shoufuku-cho" },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "Trigger on the street after the Saigo fight." },
@@ -535,7 +535,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 50,
           title: { ko: "돈과 자존심", en: "Money and Pride" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 정보꾼 메일", en: "Sotenbori — informant email" },
           trigger: { ko: "다른 서브 클리어 후 메일 수신", en: "Receive an email after other substories." },
@@ -546,7 +546,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 51,
           title: { ko: "사채업자의 방식", en: "The Lender's Way" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 이와이바시", en: "Sotenbori — Iwai Bridge" },
           trigger: { ko: "사이고전 이후 다리에서 발생", en: "After the Saigo fight, near the bridge." },
@@ -556,7 +556,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 52,
           title: { ko: "신천지에서", en: "In a New World" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 소텐보리 거리 동쪽", en: "Sotenbori — Sotenbori St. east" },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -566,7 +566,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 53,
           title: { ko: "천연 아이돌 만들기", en: "Making a Natural Idol" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 쇼후쿠초 남쪽", en: "Sotenbori — Shoufuku-cho south" },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -576,7 +576,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 54,
           title: { ko: "흥정의 도", en: "The Way of Haggling" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 분타에몬 거리(서점)", en: "Sotenbori — Buntaemon St. (bookstore)" },
           trigger: { ko: "서점 앞에서 발생", en: "Encounter at the bookstore." },
@@ -586,17 +586,17 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 55,
           title: { ko: "스토커", en: "Stalker" },
-          chapter: { ko: "3부 챕터 4~", en: "Part 3, Chapter 4+" },
+          chapter: { ko: "3부 4장~", en: "Part 3, Chapter 4+" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리/카무로초 — 다이나 체어 외", en: "Sotenbori / Kamurocho — Dyna Chair area" },
-          trigger: { ko: "챕터 4 이후 의뢰 수령", en: "Take the request from Chapter 4 onward." },
+          trigger: { ko: "4장 이후 의뢰 수령", en: "Take the request from Chapter 4 onward." },
           body: { ko: "스토커에게 시달리는 의뢰인을 보호하고 범인을 직접 제압.", en: "Protect a stalking victim and take down the perp." },
           reward: { ko: "경험치 + 장비", en: "EXP + accessory" },
         },
         {
           number: 56,
           title: { ko: "Dance With 노파", en: "Dance With Granny" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 쇼후쿠초 서쪽", en: "Sotenbori — Shoufuku-cho west" },
           trigger: { ko: "다른 서브 진행 후 발생", en: "After another substory." },
@@ -607,7 +607,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 57,
           title: { ko: "오코노미 퍼포머", en: "Okonomi Performer" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 분타에몬 거리", en: "Sotenbori — Buntaemon St." },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -617,7 +617,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 58,
           title: { ko: "Dancin' 아키야마", en: "Dancin' Akiyama" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 분타에몬 거리", en: "Sotenbori — Buntaemon St." },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -627,7 +627,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 59,
           title: { ko: "고집불통 아저씨의 한 마디", en: "The Stubborn Old Man Speaks" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 소텐보리 거리 동쪽", en: "Sotenbori — Sotenbori St. east" },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -637,7 +637,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 60,
           title: { ko: "전국 미식가", en: "Nationwide Foodie" },
-          chapter: { ko: "최종부 최종 챕터", en: "Final Part, Final Chapter" },
+          chapter: { ko: "최종부 최종 장", en: "Final Part, Final Chapter" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "카무로초 — 나카도리 거리", en: "Kamurocho — Naka-do St." },
           trigger: { ko: "다른 서브 클리어 후 발생", en: "After another substory clears." },
@@ -648,7 +648,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 61,
           title: { ko: "남자의 위태로움", en: "A Man's Folly" },
-          chapter: { ko: "최종부 챕터 2", en: "Final Part, Chapter 2" },
+          chapter: { ko: "최종부 2장", en: "Final Part, Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "카무로초 — 타이헤이 거리", en: "Kamurocho — Taihei St." },
           trigger: { ko: "카츠야와의 합류 이후 발생", en: "After meeting Katsuya." },
@@ -658,7 +658,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 62,
           title: { ko: "원조 교제", en: "Compensated Dating" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 비샤몬바시", en: "Sotenbori — Bishamon Bridge" },
           trigger: { ko: "사이고전 이후 다리 근처에서 발생", en: "After the Saigo fight, near the bridge." },
@@ -668,7 +668,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 63,
           title: { ko: "공포의 프리쿠라", en: "The Terrifying Purikura" },
-          chapter: { ko: "3부 챕터 3", en: "Part 3, Chapter 3" },
+          chapter: { ko: "3부 3장", en: "Part 3, Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "소텐보리 — 소텐보리 거리 서쪽", en: "Sotenbori — Sotenbori St. west" },
           trigger: { ko: "사이고전 이후 거리에서 발생", en: "After the Saigo fight." },
@@ -683,7 +683,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 64,
           title: { ko: "더러워진 마음", en: "Tainted Heart" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — M 스토어", en: "Kineicho — M Store" },
           trigger: { ko: "M 스토어 앞에서 점원과 대화", en: "Talk to the clerk in front of M Store." },
@@ -693,7 +693,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 65,
           title: { ko: "대디·파파", en: "Daddy / Papa" },
-          chapter: { ko: "4부 챕터 3", en: "Part 4, Chapter 3" },
+          chapter: { ko: "4부 3장", en: "Part 4, Chapter 3" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 쿠메 거리", en: "Kineicho — Kume Ave." },
           trigger: { ko: "다른 서브 진행 후 발생", en: "After another substory progresses." },
@@ -704,7 +704,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 66,
           title: { ko: "소중한 몸", en: "Precious Body" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 쿠마가야 거리", en: "Kineicho — Kumagaya Ave." },
           trigger: { ko: "거리에서 다친 사람을 발견", en: "Find an injured pedestrian on the street." },
@@ -714,7 +714,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 67,
           title: { ko: "사장님, 놀까요?", en: "Wanna Play, Boss?" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 이초초 거리", en: "Kineicho — Ichoucho St." },
           trigger: { ko: "거리의 호객꾼에게 말 걸기", en: "Talk to the street tout." },
@@ -727,7 +727,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 68,
           title: { ko: "심에 맞춰 쳐라", en: "Swing for the Core" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 배팅 센터", en: "Kineicho — Batting Center" },
           trigger: { ko: "배팅 센터에 입점", en: "Enter the batting center." },
@@ -737,7 +737,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 69,
           title: { ko: "시나다의 취업활동", en: "Shinada's Job Hunt" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 소데 거리", en: "Kineicho — Sode St." },
           trigger: { ko: "소데 거리 구인 게시판 앞", en: "Stand at the job board on Sode St." },
@@ -750,7 +750,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 70,
           title: { ko: "체인지", en: "Change" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 소데 거리", en: "Kineicho — Sode St." },
           trigger: { ko: "거리에서 손님 트러블 목격", en: "Witness customer trouble on Sode St." },
@@ -760,7 +760,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 71,
           title: { ko: "미짱의 일", en: "Mi-chan's Job" },
-          chapter: { ko: "4부 챕터 4~", en: "Part 4, Chapter 4+" },
+          chapter: { ko: "4부 4장~", en: "Part 4, Chapter 4+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 배팅 센터", en: "Kineicho — Batting Center" },
           trigger: { ko: "배팅 센터 점장 미짱과의 후속 의뢰", en: "Follow-up request from Mi-chan at the batting center." },
@@ -770,7 +770,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 72,
           title: { ko: "원고 셔플", en: "Manuscript Shuffle" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 고쇼쿠 거리 동쪽", en: "Kineicho — Goshoku St. east" },
           trigger: { ko: "거리의 작가 지망생과 대화", en: "Talk to the aspiring writer." },
@@ -780,7 +780,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 73,
           title: { ko: "특별한 한 끼", en: "A Special Meal" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 오벌 스테이지", en: "Kineicho — Oval Stage" },
           trigger: { ko: "오벌 스테이지 인근에서 발생", en: "Encounter near the Oval Stage." },
@@ -790,7 +790,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 74,
           title: { ko: "노련한 스카우터의 눈", en: "The Veteran Scout's Eye" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 이초초 거리 동쪽", en: "Kineicho — Ichoucho St. east" },
           trigger: { ko: "노년 스카우터와 대화", en: "Talk to the veteran scout." },
@@ -800,7 +800,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 75,
           title: { ko: "스쿠프 사진", en: "Scoop Photo" },
-          chapter: { ko: "4부 챕터 3", en: "Part 4, Chapter 3" },
+          chapter: { ko: "4부 3장", en: "Part 4, Chapter 3" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 혼진초 거리 동쪽", en: "Kineicho — Honjincho St. east" },
           trigger: { ko: "클리닉을 나온 직후 거리에서 발생", en: "Trigger on the street after leaving the clinic." },
@@ -810,7 +810,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 76,
           title: { ko: "깨끗한 한 표", en: "A Clean Vote" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 오벌 스테이지", en: "Kineicho — Oval Stage" },
           trigger: { ko: "선거 운동 중인 후보자와 대화", en: "Talk to the campaigning candidate." },
@@ -820,7 +820,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 77,
           title: { ko: "편의점 점원 시나다", en: "Shinada the Convenience Store Clerk" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 오비이타구미 거리", en: "Kineicho — Obiitagumi St." },
           trigger: { ko: "다른 서브 진행 후 점장과 대화", en: "After another substory, talk to the store manager." },
@@ -831,7 +831,7 @@ export const yakuza5Substories: SubstoriesData = {
         {
           number: 78,
           title: { ko: "일확천금을 노려라", en: "Aim for the Jackpot" },
-          chapter: { ko: "4부 챕터 2~", en: "Part 4, Chapter 2+" },
+          chapter: { ko: "4부 2장~", en: "Part 4, Chapter 2+" },
           protagonist: { ko: "시나다", en: "Shinada" },
           location: { ko: "킨에이초 — 고쇼쿠 거리", en: "Kineicho — Goshoku St." },
           trigger: { ko: "거리의 도박꾼과 대화", en: "Talk to the street gambler." },

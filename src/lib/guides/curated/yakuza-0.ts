@@ -11,14 +11,14 @@ const YAKUZA_0_APP_ID = 2988580;
 const richTaste: CuratedGuide = {
   summary: {
     ko:
-      "챕터 2 진행 중, 돈키호테에서 가장 비싼 「골드 샴페인」(¥20,000)을 구매해 카무로초 거리에서 떨고 있는 노숙자에게 건네면 트로피 발동. 챕터 3으로 넘어가는 순간 영구 잠금되니 반드시 챕터 2 안에 처리하세요.",
+      "2장 진행 중, 돈키호테에서 가장 비싼 「골드 샴페인」(¥20,000)을 구매해 카무로초 거리에서 떨고 있는 노숙자에게 건네면 트로피 발동. 3장으로 넘어가는 순간 영구 잠금되니 반드시 2장 안에 처리하세요.",
     en:
       "During Chapter 2 (Kiryu), buy the Gold Champagne (¥20,000) at Don Quijote and hand it to the homeless man shivering on a Kamurocho street. Roll into Chapter 3 and the trophy is gone for the rest of the run.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 2 메인 스토리에서 「술을 사 오라」 부탁이 떨어지면, 돈키호테(쇼와 거리·텐카이치 거리 입구 근처)로 향합니다. 자금이 부족하면 부동산 회수, 삥쟁이(미스터 셰이크다운) 격파, 거리 양아치 처리로 ¥20,000을 먼저 확보.",
+        "1) 2장 메인 스토리에서 「술을 사 오라」 부탁이 떨어지면, 돈키호테(쇼와 거리·텐카이치 거리 입구 근처)로 향합니다. 자금이 부족하면 부동산 회수, 삥쟁이(미스터 셰이크다운) 격파, 거리 양아치 처리로 ¥20,000을 먼저 확보.",
       en:
         "1) When Chapter 2 asks you to fetch booze, head to Don Quijote on Showa Street. Short on cash? Pull funds from Real Estate Royale, beat a Mr. Shakedown, or mop up street thugs first.",
     },
@@ -36,7 +36,7 @@ const richTaste: CuratedGuide = {
     },
     {
       ko:
-        "4) 전달이 끝나면 즉시 트로피 발동. 챕터 진행도와 무관하게 잠금되지만, 챕터 3 전환 시 영구 잠금이라 미리 처리하는 게 안전합니다.",
+        "4) 전달이 끝나면 즉시 트로피 발동. 장 진행도와 무관하게 잠금되지만, 3장 전환 시 영구 잠금이라 미리 처리하는 게 안전합니다.",
       en:
         "4) The trophy pops on the hand-off. It's gated on Chapter 2, so do it before any cutscene that pushes the story into Chapter 3.",
     },
@@ -44,7 +44,7 @@ const richTaste: CuratedGuide = {
   tips: [
     {
       ko:
-        "챕터 2 자금이 빠듯하면 「술 사 오라」 의뢰를 받기 전에 부동산 첫 매물 인수(시치후쿠 거리 쪽)부터 끝내 두면 ¥20,000을 어렵지 않게 모을 수 있습니다.",
+        "2장 자금이 빠듯하면 「술 사 오라」 의뢰를 받기 전에 부동산 첫 매물 인수(시치후쿠 거리 쪽)부터 끝내 두면 ¥20,000을 어렵지 않게 모을 수 있습니다.",
       en:
         "Cash tight? Close the first Real Estate purchase on Shichifuku Street before triggering the errand — ¥20,000 lands easily.",
     },
@@ -60,7 +60,7 @@ const richTaste: CuratedGuide = {
 const smoothCriminal: CuratedGuide = {
   summary: {
     ko:
-      "챕터 3 마지마 편, 「클럽 오디세이」 정찰 임무에서 사전 답사 3명을 모두 만나 정보 수집 → 매장 내부 진입 후 1인칭 시야에서 정해진 4개 테이블만 정확히 관찰해야 트로피 발동. 한 단계라도 빠지면 챕터 종료 시 영구 잠금.",
+      "3장 마지마 편, 「클럽 오디세이」 정찰 임무에서 사전 답사 3명을 모두 만나 정보 수집 → 매장 내부 진입 후 1인칭 시야에서 정해진 4개 테이블만 정확히 관찰해야 트로피 발동. 한 단계라도 빠지면 장 종료 시 영구 잠금.",
     en:
       "Chapter 3 (Majima) sends you to scout Club Odyssey. Talk to all three pre-scout contacts, then inside the club inspect the four specific tables in first-person view — miss any step and the trophy locks at chapter end.",
   },
@@ -114,7 +114,7 @@ const smoothCriminal: CuratedGuide = {
 const businessEtiquette: CuratedGuide = {
   summary: {
     ko:
-      "챕터 5에서 오다와 함께 카페 알프스에서 클라이언트(야마노이)를 접대하는 시퀀스. 3개의 좌석 안내 선택지에서 정해진 순서대로 정답을 골라 야마노이 등장 시점에 QTE까지 성공해야 트로피 발동. 한 단계라도 오답이면 챕터 5 종료와 동시에 영구 잠금.",
+      "5장에서 오다와 함께 카페 알프스에서 클라이언트(야마노이)를 접대하는 시퀀스. 3개의 좌석 안내 선택지에서 정해진 순서대로 정답을 골라 야마노이 등장 시점에 QTE까지 성공해야 트로피 발동. 한 단계라도 오답이면 5장 종료와 동시에 영구 잠금.",
     en:
       "Chapter 5's Café Alps client meeting: pick the right seating choice three times in order, then nail the QTE when Yamanoi walks in. Any wrong pick and the trophy locks at chapter end.",
   },
@@ -164,7 +164,7 @@ const businessEtiquette: CuratedGuide = {
 const bestServedCold: CuratedGuide = {
   summary: {
     ko:
-      "챕터 7 마지마 편, 마코토에게 줄 타코야키 심부름 도중에 음식이 식도록 일부러 시간을 끌어야 트로피 발동. 마구타코에서 타코야키를 받은 직후부터 실시간 약 15분이 지나면 인벤토리 아이콘이 바뀌며, 그 상태로 마코토에게 전달하면 발동.",
+      "7장 마지마 편, 마코토에게 줄 타코야키 심부름 도중에 음식이 식도록 일부러 시간을 끌어야 트로피 발동. 마구타코에서 타코야키를 받은 직후부터 실시간 약 15분이 지나면 인벤토리 아이콘이 바뀌며, 그 상태로 마코토에게 전달하면 발동.",
     en:
       "Chapter 7 (Majima) sends you to buy takoyaki for Makoto. Stall in real time so the food cools — about 15 minutes — and the inventory icon changes. Hand the cold takoyaki over for the trophy.",
   },
@@ -197,7 +197,7 @@ const bestServedCold: CuratedGuide = {
   tips: [
     {
       ko:
-        "실시간 15분이 너무 오래 느껴진다면, 챕터 7 시점에 풀리는 마지마의 다른 서브스토리·캐바쿠라 영업·드림 머신 등 미니게임 한 사이클을 돌리는 게 가장 자연스럽게 시간이 흐릅니다.",
+        "실시간 15분이 너무 오래 느껴진다면, 7장 시점에 풀리는 마지마의 다른 서브스토리·캐바쿠라 영업·드림 머신 등 미니게임 한 사이클을 돌리는 게 가장 자연스럽게 시간이 흐릅니다.",
       en:
         "If 15 real-time minutes feels long, run one full Cabaret Club Cabaret cycle or a couple of Majima substories — that naturally burns the clock.",
     },
@@ -213,7 +213,7 @@ const bestServedCold: CuratedGuide = {
 const itTakesTwo: CuratedGuide = {
   summary: {
     ko:
-      "챕터 10, 키류가 오다·타치바나와 함께 도조 본부를 돌파하는 전투 시퀀스에서, 동료가 적을 잡은 순간 △ 입력으로 협동 히트 액션을 총 3회 발동시켜야 트로피 발동. 챕터 종료 후 재진입 불가.",
+      "10장, 키류가 오다·타치바나와 함께 도조 본부를 돌파하는 전투 시퀀스에서, 동료가 적을 잡은 순간 △ 입력으로 협동 히트 액션을 총 3회 발동시켜야 트로피 발동. 장 종료 후 재진입 불가.",
     en:
       "Chapter 10's Tojo HQ assault: Kiryu fights alongside Oda and Tachibana. When either ally grabs an enemy, press Triangle to launch a co-op heat action — do this three times before the chapter ends.",
   },
@@ -252,7 +252,7 @@ const itTakesTwo: CuratedGuide = {
     },
     {
       ko:
-        "챕터 종료 후에는 같은 컷이 재현되지 않습니다. 3회를 못 채웠다면 즉시 세이브 로드.",
+        "장 종료 후에는 같은 컷이 재현되지 않습니다. 3회를 못 채웠다면 즉시 세이브 로드.",
       en:
         "The encounter doesn't reset after the chapter ends. If you didn't hit 3, reload the manual save before the fight.",
     },
@@ -268,7 +268,7 @@ const itTakesTwo: CuratedGuide = {
 const theyWontMind: CuratedGuide = {
   summary: {
     ko:
-      "챕터 12 벤텐 여관 돌파 시퀀스에서 2층 진입 직전, 우측 방 안쪽 좌측 구석에 흰 금고 2개가 숨겨져 있습니다. 두 번째 계단을 오르기 전에 두 금고를 모두 파괴해야 트로피 발동.",
+      "12장 벤텐 여관 돌파 시퀀스에서 2층 진입 직전, 우측 방 안쪽 좌측 구석에 흰 금고 2개가 숨겨져 있습니다. 두 번째 계단을 오르기 전에 두 금고를 모두 파괴해야 트로피 발동.",
     en:
       "Chapter 12, pushing through Benten Inn: before the second staircase, duck into the right-side room and smash both white safes hidden in the back-left corner. Climb the stairs first and the trophy is gone.",
   },
@@ -317,14 +317,14 @@ const theyWontMind: CuratedGuide = {
 const bigHairInTheCrosshairs: CuratedGuide = {
   summary: {
     ko:
-      "챕터 13, 차량 추격전 중반 — 기관총 밴이 등장하기 직전에 흰 양복 + 아프로 머리 야쿠자가 짧게 차창 밖으로 몸을 내밉니다. 히트 아이로 슬로우 처리한 뒤 사격해 격추시키면 트로피 발동. 그 한 컷이 유일한 기회입니다.",
+      "13장, 차량 추격전 중반 — 기관총 밴이 등장하기 직전에 흰 양복 + 아프로 머리 야쿠자가 짧게 차창 밖으로 몸을 내밉니다. 히트 아이로 슬로우 처리한 뒤 사격해 격추시키면 트로피 발동. 그 한 컷이 유일한 기회입니다.",
     en:
       "Chapter 13's car chase: just before the machine-gun van appears, a white-suited afro yakuza leans out for a couple of seconds. Pop Heat Eye to slow time and shoot him — that single window is the only one this run.",
   },
   steps: [
     {
       ko:
-        "1) 추격전이 시작되면 히트 게이지를 풀로 유지. 히트 아이 스킬이 해금되어 있어야 합니다(챕터 10대까지 1회 이상 슈팅 챌린지 등으로 자동 해금).",
+        "1) 추격전이 시작되면 히트 게이지를 풀로 유지. 히트 아이 스킬이 해금되어 있어야 합니다(10장대까지 1회 이상 슈팅 챌린지 등으로 자동 해금).",
       en:
         "1) Enter the chase with a full Heat gauge. Heat Eye must be unlocked (usually granted earlier via shooting tutorials).",
     },
@@ -366,7 +366,7 @@ const bigHairInTheCrosshairs: CuratedGuide = {
 const hittingTheBottle: CuratedGuide = {
   summary: {
     ko:
-      "챕터 15, 마지마와 니시키야마가 세레나에서 충돌하는 시퀀스. 니시키야마가 마지마를 카운터 쪽으로 던질 때 레이나가 와인병으로 마지마를 후려치는 QTE가 발생합니다. 트로피 조건이 특이하게도 「이 QTE를 일부러 실패해야」 발동.",
+      "15장, 마지마와 니시키야마가 세레나에서 충돌하는 시퀀스. 니시키야마가 마지마를 카운터 쪽으로 던질 때 레이나가 와인병으로 마지마를 후려치는 QTE가 발생합니다. 트로피 조건이 특이하게도 「이 QTE를 일부러 실패해야」 발동.",
     en:
       "Chapter 15: Majima clashes with Nishikiyama at Serena. When Nishikiyama hurls Majima toward the bar, Reina swings a wine bottle at him in a QTE. The trophy fires only when you intentionally FAIL the QTE and let the bottle land.",
   },
@@ -416,20 +416,20 @@ const hittingTheBottle: CuratedGuide = {
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Yakuza 0의 플래티넘 — 다른 54개 업적을 모두 달성하는 순간 자동 발동. 핵심 게이트는 ①챕터 한정 미서블 8종(별도 큐레이션 참조) ②전설 난이도 클리어 ③컴플리트 리스트 100%(부동산·캬바쿠라 그랑프리·미니게임·전투 챌린지) ④조 아몬·소 아몬 격파. 권장 회차 수는 1회+엔딩 후 전설 1회 = 총 2회.",
+      "Yakuza 0의 플래티넘 — 다른 54개 업적을 모두 달성하는 순간 자동 발동. 핵심 게이트는 ①장 한정 미서블 8종(별도 큐레이션 참조) ②전설 난이도 클리어 ③컴플리트 리스트 100%(부동산·캬바쿠라 그랑프리·미니게임·전투 챌린지) ④조 아몬·소 아몬 격파. 권장 회차 수는 1회+엔딩 후 전설 1회 = 총 2회.",
     en:
       "Earned automatically the moment Yakuza 0's other 54 trophies are unlocked. Key gates: ① 8 chapter-locked missables (see dedicated guides) ② Legend-difficulty clear ③ 100 % Completion List (Real Estate + Cabaret + minigames + combat) ④ defeat Jo and So Amon. Budget two playthroughs — normal + Legend.",
   },
   steps: [
     {
       ko:
-        "1) 1회차 (Normal) — 챕터 진행과 병행해 8개 미서블 트로피를 챕터별로 정리(별도 큐레이션 참조). 컷신 진입 전 수동 세이브를 항상 분산 보관.",
+        "1) 1회차 (Normal) — 장 진행과 병행해 8개 미서블 트로피를 장별로 정리(별도 큐레이션 참조). 컷신 진입 전 수동 세이브를 항상 분산 보관.",
       en:
         "1) Run 1 (Normal) — knock out the 8 chapter-locked missables as you go (each has its own curated guide). Keep two save slots in rotation before any cutscene.",
     },
     {
       ko:
-        "2) 메인 사이드 시스템을 챕터 진행과 병행 — 키류 「부동산 로얄」 5구역 100%, 마지마 「캐바쿠라 그랑프리」 No.1 등극, 포켓 서킷 모든 컵 우승, 메스킹 톱 랭크, 마지마 에브리웨어 풀 진행.",
+        "2) 메인 사이드 시스템을 장 진행과 병행 — 키류 「부동산 로얄」 5구역 100%, 마지마 「캐바쿠라 그랑프리」 No.1 등극, 포켓 서킷 모든 컵 우승, 메스킹 톱 랭크, 마지마 에브리웨어 풀 진행.",
       en:
         "2) Roll the side systems in parallel — Kiryu's Real Estate Royale 100 % across all 5 districts, Majima's Cabaret Grand Prix to #1, every Pocket Circuit cup, MesuKing top rank, all of Majima Everywhere.",
     },
@@ -539,14 +539,14 @@ const perfectionist: CuratedGuide = {
 const realEstateKing: CuratedGuide = {
   summary: {
     ko:
-      "키류의 부동산 로얄에서 가장 비싼 매물(디스코 시티 보이 — ¥9억대)을 구입하면 발동. 챕터 5에서 부동산 로얄이 해금되면 본격 진행 가능하며, 매물 인수에는 매장 매출 점유율 + 충분한 자금이 동시에 필요합니다.",
+      "키류의 부동산 로얄에서 가장 비싼 매물(디스코 시티 보이 — ¥9억대)을 구입하면 발동. 5장에서 부동산 로얄이 해금되면 본격 진행 가능하며, 매물 인수에는 매장 매출 점유율 + 충분한 자금이 동시에 필요합니다.",
     en:
       "Buy the priciest plot in Kiryu's Real Estate Royale (the Disco City Boy property, ~¥900M). The system opens in Ch.5 — closing the deal needs both district market share and a huge cash reserve.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 5에서 부동산 로얄 해금. 시치후쿠 거리(레저 킹) 매물부터 인수해 시드 매출 확보.",
+        "1) 5장에서 부동산 로얄 해금. 시치후쿠 거리(레저 킹) 매물부터 인수해 시드 매출 확보.",
       en:
         "1) Unlock Real Estate Royale in Ch.5 and start buying Shichifuku Street (Leisure King) properties for seed income.",
     },
@@ -620,14 +620,14 @@ const conqueredKamurocho: CuratedGuide = {
 const sunNeverSets: CuratedGuide = {
   summary: {
     ko:
-      "마지마의 캐바쿠라 그랑프리 시스템에서 「클럽 선샤인」을 인수해 본격 운영하면 발동. 챕터 7부터 시작 가능하며, 「소텐보리 5스타」 격파 전 단계 진행도로도 트로피가 풀립니다.",
+      "마지마의 캐바쿠라 그랑프리 시스템에서 「클럽 선샤인」을 인수해 본격 운영하면 발동. 7장부터 시작 가능하며, 「소텐보리 5스타」 격파 전 단계 진행도로도 트로피가 풀립니다.",
     en:
       "Take ownership of Club Sunshine and begin Majima's Cabaret Grand Prix. Available from Ch.7 — the trophy fires on first operational shift, before the 5-Star showdown.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 7 진행 후 소텐보리 「캐바쿠라 거리」에서 점장 도라와 만나 클럽 선샤인 인수 동의.",
+        "1) 7장 진행 후 소텐보리 「캐바쿠라 거리」에서 점장 도라와 만나 클럽 선샤인 인수 동의.",
       en:
         "1) After Ch.7, meet manager Yuki at Sotenbori's cabaret strip and accept the Club Sunshine offer.",
     },
@@ -680,14 +680,14 @@ const diamondCast: CuratedGuide = {
 const dragonOfPocketCircuit: CuratedGuide = {
   summary: {
     ko:
-      "키류의 포켓 서킷 스타디움에서 열리는 모든 레이스·컵에 출전해 우승하면 발동. 챕터 4 「달인과 연인은 종이 한 장 차이」 서브스토리 클리어로 포켓 서킷 시스템이 해금됩니다.",
+      "키류의 포켓 서킷 스타디움에서 열리는 모든 레이스·컵에 출전해 우승하면 발동. 4장 「달인과 연인은 종이 한 장 차이」 서브스토리 클리어로 포켓 서킷 시스템이 해금됩니다.",
     en:
       "Win every race and cup at Kiryu's Pocket Circuit Stadium. Unlocks after the Ch.4 substory 'A Hand-to-Hand Master's Path' opens the minigame.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 4에서 포켓 서킷 스타디움 해금 → 첫 레이스 출전 → 키트 강화 시작. 카무로초 카토와 대화로 신규 부품 구매.",
+        "1) 4장에서 포켓 서킷 스타디움 해금 → 첫 레이스 출전 → 키트 강화 시작. 카무로초 카토와 대화로 신규 부품 구매.",
       en:
         "1) After Ch.4 unlocks the stadium, run your first race and start parts upgrades via Kato.",
     },
@@ -725,13 +725,13 @@ const legendCleared: CuratedGuide = {
     },
     {
       ko:
-        "2) 무기 + 회복 아이템 비축 최우선. 챕터 진행 중 가능한 한 부동산 자금을 활용해 강화 장비를 빠르게 확보.",
+        "2) 무기 + 회복 아이템 비축 최우선. 장 진행 중 가능한 한 부동산 자금을 활용해 강화 장비를 빠르게 확보.",
       en:
         "2) Stockpile weapons + healing items immediately. Use Real Estate cashflow to buy upgrade gear early.",
     },
     {
       ko:
-        "3) 보스전은 패턴 학습이 핵심 — 러시 스타일 회피 또는 비스트 스타일 가드 후 카운터 콤보로 데미지 누적. 그랜드 마스터 보스 챕터 16 클리어 시 트로피 발동.",
+        "3) 보스전은 패턴 학습이 핵심 — 러시 스타일 회피 또는 비스트 스타일 가드 후 카운터 콤보로 데미지 누적. 그랜드 마스터 보스 16장 클리어 시 트로피 발동.",
       en:
         "3) Bosses demand pattern memorization — Rush dodges and Beast guard-counters carry. Trophy fires on the Ch.16 final boss kill.",
     },
@@ -783,7 +783,7 @@ const catFightWin10: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 챕터 7 이후 소텐보리 핑크 거리 「소텐보리 어쇼션 클럽」에서 캣 파이트 진입. 베팅창에서 한쪽 선수에 단승을 걸어 적중 시 카운트.",
+        "1) 7장 이후 소텐보리 핑크 거리 「소텐보리 어쇼션 클럽」에서 캣 파이트 진입. 베팅창에서 한쪽 선수에 단승을 걸어 적중 시 카운트.",
       en:
         "1) After Ch.7, enter the Cat Fight venue on Sotenbori's Pink St. and place single-fighter bets — wins tick the counter.",
     },
@@ -846,20 +846,20 @@ const masterOfMinigames: CuratedGuide = {
 const bestTreasureHunter: CuratedGuide = {
   summary: {
     ko:
-      "키류의 「드래곤 앤 타이거」 장비 검색을 반복해 모든 장비 부품을 수집하면 발동. 챕터 3에서 베이커리 사장 카가시와 만나 시스템 해금. 일부 부품은 1회당 약 30초~수 분의 실시간 대기가 필요하며, 운 요소가 강합니다.",
+      "키류의 「드래곤 앤 타이거」 장비 검색을 반복해 모든 장비 부품을 수집하면 발동. 3장에서 베이커리 사장 카가시와 만나 시스템 해금. 일부 부품은 1회당 약 30초~수 분의 실시간 대기가 필요하며, 운 요소가 강합니다.",
     en:
       "Run Kiryu's Dragon & Tiger gear search until every part is collected. Unlocks in Ch.3 via the bakery shopkeeper. Each search needs 30 s~few minutes of real-time wait + RNG.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 3 진행 후 드래곤 앤 타이거 시스템 해금 → 첫 「에이전트 파견」 의뢰. 부품 카탈로그를 보며 결손 부품 우선 탐색.",
+        "1) 3장 진행 후 드래곤 앤 타이거 시스템 해금 → 첫 「에이전트 파견」 의뢰. 부품 카탈로그를 보며 결손 부품 우선 탐색.",
       en:
         "1) Open Dragon & Tiger in Ch.3, then dispatch agents — sort the catalog by missing parts and target them.",
     },
     {
       ko:
-        "2) 자금 + 시간 투자가 필요한 라인 — 부동산 자금이 안정된 챕터 7 이후부터 본격 진행하면 자금 부담이 적습니다.",
+        "2) 자금 + 시간 투자가 필요한 라인 — 부동산 자금이 안정된 7장 이후부터 본격 진행하면 자금 부담이 적습니다.",
       en:
         "2) Push it post-Ch.7 when Real Estate cashflow can absorb the costs.",
     },
@@ -878,14 +878,14 @@ const bestTreasureHunter: CuratedGuide = {
 const prizefighter30: CuratedGuide = {
   summary: {
     ko:
-      "「무진투연」(소텐보리 지하 콜로세움 격투 챌린지)에서 사망하지 않고 30명을 연속 격파하면 발동. 챕터 후반부에 풀리며, 무기 + 회복 아이템 풀 비축이 사실상 전제.",
+      "「무진투연」(소텐보리 지하 콜로세움 격투 챌린지)에서 사망하지 않고 30명을 연속 격파하면 발동. 장 후반부에 풀리며, 무기 + 회복 아이템 풀 비축이 사실상 전제.",
     en:
       "Win 30 fights in a row without dying at the Sotenbori underground Coliseum. Unlocks late-game and effectively requires a stocked inventory + maxed styles.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 11 이후 소텐보리 지하 「무진투연」 입장. 첫 입장 시 일반 챌린지부터 클리어해 30연승 라인 해금.",
+        "1) 11장 이후 소텐보리 지하 「무진투연」 입장. 첫 입장 시 일반 챌린지부터 클리어해 30연승 라인 해금.",
       en:
         "1) Past Ch.11 enter the underground arena; clear standard challenges first to unlock the 30-streak mode.",
     },
@@ -957,7 +957,7 @@ const styleMaster: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 부동산 로얄(키류) + 캐바쿠라(마지마) 자금이 안정되는 챕터 7~8부터 본격 강화. 자금 부족이 가장 큰 게이트.",
+        "1) 부동산 로얄(키류) + 캐바쿠라(마지마) 자금이 안정되는 7~8장부터 본격 강화. 자금 부족이 가장 큰 게이트.",
       en:
         "1) Push it from Ch.7~8 once Real Estate (Kiryu) and Cabaret (Majima) revenue stabilizes — money is the biggest gate.",
     },
@@ -995,7 +995,7 @@ const meetAllMasters: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 챕터 진행과 병행해 거리에서 마스터 NPC 마커가 보이면 즉시 말 걸기. 베이커는 챕터 4, 코마키는 챕터 6, 미스터 모닝글로리는 챕터 5 등 챕터별로 등장.",
+        "1) 장 진행과 병행해 거리에서 마스터 NPC 마커가 보이면 즉시 말 걸기. 베이커는 4장, 코마키는 6장, 미스터 모닝글로리는 5장 등 장별로 등장.",
       en:
         "1) Talk to master NPCs as their markers appear — Baker (Ch.4), Komaki (Ch.6), Mr. Morning Glory (Ch.5), etc.",
     },
@@ -1014,14 +1014,14 @@ const meetAllMasters: CuratedGuide = {
 const everydayNightFever: CuratedGuide = {
   summary: {
     ko:
-      "마하라자 카무로초의 디스코 미니게임에서 모든 곡을 난이도 무관하게 한 번씩 클리어하면 발동. 챕터 7 이후 디스코 시스템 해금 시 진행 가능.",
+      "마하라자 카무로초의 디스코 미니게임에서 모든 곡을 난이도 무관하게 한 번씩 클리어하면 발동. 7장 이후 디스코 시스템 해금 시 진행 가능.",
     en:
       "Clear every song in the Maharaja Kamurocho disco minigame at least once on any difficulty. Available after Ch.7 unlocks the disco system.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 7 「불타는 토요일 밤」 서브스토리로 디스코 미니게임 해금.",
+        "1) 7장 「불타는 토요일 밤」 서브스토리로 디스코 미니게임 해금.",
       en:
         "1) Unlock the disco via Ch.7's 'Saturday Night Fever' substory.",
     },

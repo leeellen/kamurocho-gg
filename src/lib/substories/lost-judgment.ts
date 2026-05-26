@@ -3,18 +3,18 @@ import type { SubstoriesData } from "./types";
 export const lostJudgmentSubstories: SubstoriesData = {
   appId: 2058190,
   summary: {
-    ko: "총 54건의 사이드 케이스 — 요코하마 이진초와 카무로초를 오가며 진행. No.43 이후는 「탐정 라이프 충실 팩」 DLC가 필수. 챕터 3에서 버즈 리서처가 해금되면 본격적으로 의뢰 보드(카무로초 야가미 탐정 사무소 / 이진초 요코하마 99과)에서 받을 수 있습니다. 사이드 케이스 클리어는 SP 보상과 청춘 능력치 상승으로 직결되므로 메인 스토리와 병행하는 것이 효율적입니다.",
+    ko: "총 54건의 사이드 케이스 — 요코하마 이진초와 카무로초를 오가며 진행. No.43 이후는 「탐정 라이프 충실 팩」 DLC가 필수. 3장에서 버즈 리서처가 해금되면 본격적으로 의뢰 보드(카무로초 야가미 탐정 사무소 / 이진초 요코하마 99과)에서 받을 수 있습니다. 사이드 케이스 클리어는 SP 보상과 청춘 능력치 상승으로 직결되므로 메인 스토리와 병행하는 것이 효율적입니다.",
     en: "54 Side Cases split between Yokohama Ijincho and Kamurocho. Cases No.43+ require the Detective's Essentials Pack DLC. Once Chapter 3 unlocks the Buzz Researcher, you can pull jobs from the boards (Yagami Detective Agency in Kamurocho / Yokohama 99 in Ijincho). Side Case rewards feed directly into SP and School Story stats — run them alongside the main story.",
   },
   source: { label: "gamewith.jp — ロストジャッジメント サイドケース一覧", url: "https://gamewith.jp/lostjudgment/article/show/293437" },
   groups: [
     {
-      title: { ko: "챕터 1~2 — 도입부", en: "Chapter 1~2 — Opening" },
+      title: { ko: "1~2장 — 도입부", en: "Chapter 1~2 — Opening" },
       items: [
         {
           number: 1,
           title: { ko: "스케이트보드 탐정 VS 되팔이꾼", en: "Skateboard Detective vs. Resellers" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           location: { ko: "이진초 — 요코하마 99과", en: "Ijincho — Yokohama 99" },
           trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
           body: {
@@ -26,12 +26,12 @@ export const lostJudgmentSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "챕터 3 — 본격 해금", en: "Chapter 3 — Cases Open Up" },
+      title: { ko: "3장 — 본격 해금", en: "Chapter 3 — Cases Open Up" },
       items: [
         {
           number: 2,
           title: { ko: "떨어질 것 같은 남자", en: "The Man on the Ledge" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 요코하마 오도리 맨션", en: "Ijincho — Yokohama Odori apartment" },
           trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
           body: {
@@ -46,7 +46,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 3,
           title: { ko: "강도는 카페에 있다", en: "The Robber in the Café" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 텐카이치 거리", en: "Kamurocho — Tenkaichi St." },
           trigger: { ko: "텐카이치 거리 「로망스 카페」에 접근하면 발생", en: "Approach Romance Café on Tenkaichi St." },
           body: {
@@ -61,7 +61,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 5,
           title: { ko: "타임캡슐의 행방", en: "Whereabouts of the Time Capsule" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "세이료 고교 — 교외", en: "Seiryo High — Outside grounds" },
           trigger: { ko: "교외의 남자 3인조에게 말 걸기", en: "Talk to the trio of men outside the school." },
           body: {
@@ -73,7 +73,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "전진하라, 세이료 고교 오컬트 연구회!", en: "Onward, Seiryo High Occult Club!" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "세이료 고교 정문", en: "Seiryo High — front gate" },
           trigger: { ko: "정문 앞 남학생에게 말 걸기", en: "Talk to the male student at the school's front gate." },
           body: {
@@ -85,7 +85,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "투명한 도둑", en: "The Invisible Thief" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 센료 거리", en: "Kamurocho — Senryo Ave." },
           trigger: { ko: "버즈 리서처 워드 「스토커」로 조사 시 발생", en: "Tag the Buzz Researcher word 'Stalker' and investigate." },
           body: {
@@ -97,7 +97,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "배회하는 인체 모형", en: "The Wandering Anatomy Model" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "세이료 고교 1층", en: "Seiryo High — 1F" },
           trigger: { ko: "버즈 리서처 「인체 모형」을 야간에 조사", en: "Investigate the 'Anatomy Model' Buzz word at night." },
           body: {
@@ -109,7 +109,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 10,
           title: { ko: "라이언 닌자술 교실, 폭탄 탄생!", en: "Ryan's Ninjutsu Class is Born!" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
           trigger: { ko: "야가미 탐정 사무소 게시판에서 의뢰 수령", en: "Pick up the request from the Yagami Detective Agency board." },
           body: {
@@ -121,7 +121,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 11,
           title: { ko: "금단의 맛", en: "The Forbidden Flavor" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 몽무 반점", en: "Ijincho — Moubu Hanten" },
           trigger: { ko: "요코하마 99과 게시판에서 의뢰 수령", en: "Pick up the request from the Yokohama 99 board." },
           body: {
@@ -133,7 +133,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 12,
           title: { ko: "VR 살롱: 파라다이스!", en: "VR Salon: Paradise!" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — VR 살롱 파라다이스 앞", en: "Ijincho — outside VR Salon Paradise" },
           trigger: { ko: "스고우라가 VR 살롱 의뢰를 가져옴", en: "Sugiura brings the VR Salon job." },
           body: {
@@ -145,7 +145,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 13,
           title: { ko: "속·VR 살롱: 파라다이스!", en: "VR Salon: Paradise! 2" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — VR 살롱 파라다이스 앞", en: "Ijincho — outside VR Salon Paradise" },
           trigger: { ko: "「VR 살롱: 파라다이스!」 클리어 후 타시로에게 접근", en: "After clearing Case 12, approach Tashiro outside the salon." },
           body: { ko: "전편의 후폭풍 — 사기 의혹을 받은 점장을 변호. 법정 풍 추궁 파트가 포함됩니다.", en: "Fallout from Case 12 — defend the manager against fraud allegations in a courtroom-style grilling." },
@@ -154,7 +154,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "이진초 드론 레이스 개막!", en: "Ijincho Drone Race Opens!" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 드론 레이스장", en: "Ijincho — Drone Race arena" },
           trigger: { ko: "드론 레이스장에서 발생", en: "Triggered at the Drone Race arena." },
           body: { ko: "드론 레이스 미니게임 도입부. 첫 코스를 클리어하면 전 코스가 해금됩니다.", en: "Intro for the Drone Race minigame. Clear the first track to unlock the full circuit." },
@@ -163,7 +163,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 15,
           title: { ko: "선인 이야마의 재난", en: "Hermit Iyama's Calamity" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 이세자키 로드", en: "Ijincho — Isezaki Road" },
           trigger: { ko: "메인 스토리 중 강제 발생", en: "Auto-triggered during the main story." },
           body: { ko: "괴짜 「선인」 이야마가 곤란에 처해 야가미가 도움. 후속 No.16으로 이어집니다.", en: "Eccentric 'hermit' Iyama is in trouble. Help him out — leads into Case 16." },
@@ -172,7 +172,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "선인 이야마: 기원의 탐구", en: "Hermit Iyama: Origin Hunt" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 차이나타운 이야마의 선약상", en: "Ijincho — Chinatown, Iyama's Elixir Shop" },
           trigger: { ko: "「선인 이야마의 재난」 클리어 후 이야마와 대화", en: "After clearing Case 15, talk to Iyama." },
           reward: { ko: "SP + 선약 상점 할인", en: "SP + Elixir shop discount" },
@@ -180,7 +180,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 17,
           title: { ko: "새로운 파트너?", en: "A New Partner?" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 요코하마 99과", en: "Ijincho — Yokohama 99" },
           trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
           reward: { ko: "SP", en: "SP" },
@@ -188,7 +188,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "복면 작가 주몬지 카즈히토의 혼란", en: "Masked Novelist Jumonji's Crisis" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "카무로초 — 텐카이치 거리 제1빌딩 3층", en: "Kamurocho — Tenkaichi-dori Bldg 1, 3F" },
           trigger: { ko: "요코하마 99과 의뢰 수령", en: "Accept the job from the Yokohama 99 board." },
           reward: { ko: "SP + 사인본", en: "SP + signed novel" },
@@ -196,7 +196,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "도주한 게임 크리에이터", en: "The Runaway Game Creator" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 베테 키친", en: "Ijincho — Vette Kitchen" },
           trigger: { ko: "요코하마 99과 의뢰 수령", en: "Accept the job from the Yokohama 99 board." },
           reward: { ko: "SP", en: "SP" },
@@ -204,7 +204,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 20,
           title: { ko: "폭풍을 부르는 로케 테스트", en: "The Storm-Calling Location Test" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 산업회관 빌딩 앞", en: "Ijincho — outside Industry Hall" },
           trigger: { ko: "「도주한 게임 크리에이터」 클리어 후 의뢰", en: "After clearing Case 19, take the follow-up job." },
           reward: { ko: "SP + 신작 게임 시연 코인", en: "SP + arcade test coin" },
@@ -212,7 +212,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 21,
           title: { ko: "전파 탐정: 입문편", en: "Radio Wave Detective: Intro" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 베이사이드 거리", en: "Ijincho — Bayside St." },
           trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
           body: { ko: "전파 탐지기를 받는 도입 사건. 이후 No.22~30 「전파 탐정」 체인이 풀립니다.", en: "Hands you the radio detector. Unlocks the Radio Wave Detective chain (Cases 22–30)." },
@@ -221,7 +221,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 22,
           title: { ko: "전파 탐정: 방황하는 도청기", en: "Radio Wave Detective: The Wandering Bug" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 이세자키 로드", en: "Ijincho — Isezaki Road" },
           trigger: { ko: "「입문편」 클리어 후 빨간 옷의 여성을 조사", en: "After Case 21, scan the woman in red." },
           reward: { ko: "SP", en: "SP" },
@@ -229,7 +229,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 23,
           title: { ko: "전파 탐정: 사랑, 잡아주세요", en: "Radio Wave Detective: Catch My Love" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 게임 센터 사사키", en: "Ijincho — Game Center Sasaki" },
           trigger: { ko: "전편 클리어 후 인형 뽑기 인형을 조사", en: "After Case 22, scan the crane-game plush." },
           reward: { ko: "SP + 인형", en: "SP + plushie" },
@@ -237,7 +237,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "전파 탐정: 등불이 다 타기 전에", en: "Radio Wave Detective: Before the Light Fades" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 중앙 거리 헬로워크 부근", en: "Ijincho — near the Central St. Hello Work" },
           trigger: { ko: "전편 클리어 후 드론을 조사", en: "After Case 23, scan the drone." },
           reward: { ko: "SP", en: "SP" },
@@ -245,7 +245,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "전파 탐정: 지갑은 듣고 있었다", en: "Radio Wave Detective: The Wallet Was Listening" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 걸스 바이트 앞", en: "Ijincho — outside Girl's Bite" },
           trigger: { ko: "전편 클리어 후 지갑을 조사", en: "After Case 24, scan the wallet." },
           reward: { ko: "SP", en: "SP" },
@@ -253,7 +253,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 26,
           title: { ko: "전파 탐정: 노려진 세이료 고교", en: "Radio Wave Detective: Seiryo Targeted" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 세이료 고교", en: "Ijincho — Seiryo High" },
           trigger: { ko: "전편 클리어 후 문을 조사", en: "After Case 25, scan the door." },
           reward: { ko: "SP", en: "SP" },
@@ -261,7 +261,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 27,
           title: { ko: "전파 탐정: 어둠의 밑바닥에서", en: "Radio Wave Detective: From the Dark Below" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 츠루카메 다리 부근", en: "Ijincho — near Tsurukame Bridge" },
           trigger: { ko: "전편 클리어 후 맨홀을 조사", en: "After Case 26, scan the manhole." },
           reward: { ko: "SP", en: "SP" },
@@ -269,7 +269,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 28,
           title: { ko: "전파 탐정: 숨은 맛", en: "Radio Wave Detective: The Hidden Flavor" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 베이사이드 거리", en: "Ijincho — Bayside St." },
           trigger: { ko: "전편 클리어 후 라멘 그릇을 조사", en: "After Case 27, scan the ramen bowl." },
           reward: { ko: "SP", en: "SP" },
@@ -277,7 +277,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "전파 탐정: 마지막 야반도주", en: "Radio Wave Detective: The Final Vanishing" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
           trigger: { ko: "전편 클리어 후 버즈 워드 「야반도주」를 조사", en: "After Case 28, investigate Buzz word 'Night Flight'." },
           reward: { ko: "SP", en: "SP" },
@@ -285,7 +285,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 30,
           title: { ko: "전파 탐정: 해결편", en: "Radio Wave Detective: Resolution" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
           trigger: { ko: "「마지막 야반도주」 클리어 후 자동 발생", en: "Auto-triggers after Case 29." },
           reward: { ko: "SP + 전파 탐정 칭호", en: "SP + Radio Detective title" },
@@ -293,12 +293,12 @@ export const lostJudgmentSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "챕터 4 — 청춘 스토리 가지치기", en: "Chapter 4 — School Story Branches" },
+      title: { ko: "4장 — 청춘 스토리 가지치기", en: "Chapter 4 — School Story Branches" },
       items: [
         {
           number: 4,
           title: { ko: "에비스의 얼굴도 세 번까지", en: "Even Ebisu Won't Take a Fourth" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "세이료 고교 3층", en: "Seiryo High — 3F" },
           trigger: { ko: "3학년 교실 복도에서 발생", en: "Triggered in the 3rd-year corridor." },
           reward: { ko: "SP + 청춘 능력치", en: "SP + School stat" },
@@ -306,7 +306,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "캇파의 행방", en: "Whereabouts of the Kappa" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 — 사쿠라가와 거리 북쪽", en: "Ijincho — Sakuragawa St. North" },
           trigger: { ko: "정장 차림 남자와 술취한 남자 대화에 끼어들기", en: "Cut into the conversation between the suit and the drunk." },
           reward: { ko: "SP + 캇파 굿즈", en: "SP + Kappa goods" },
@@ -314,7 +314,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 31,
           title: { ko: "신경 쓰이는 그 그림", en: "That Painting on My Mind" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이진초 — 세이료 고교 입구 근처", en: "Ijincho — near Seiryo High entrance" },
           trigger: { ko: "다람쥐 벽화 옆 여학생과 대화", en: "Talk to the girl beside the squirrel mural." },
           reward: { ko: "SP", en: "SP" },
@@ -322,7 +322,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 32,
           title: { ko: "라스트 픽처", en: "The Last Picture" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
           trigger: { ko: "페인트 서치 55곳을 모두 클리어 시 발생", en: "Clear all 55 Paint Search spots." },
           reward: { ko: "SP + 사진 컬렉션 완성", en: "SP + photo album complete" },
@@ -330,7 +330,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 33,
           title: { ko: "아마자와 가문의 저주", en: "The Amazawa Family Curse" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이진초 — 세이료 고교 미스연 부실", en: "Ijincho — Seiryo High Mystery Club room" },
           trigger: { ko: "미스연 부실에서 저녁 시간에 아마자와에게 말 걸기", en: "Speak to Amazawa in the Mystery Club room in the evening." },
           reward: { ko: "SP + 미스연 청춘 보상", en: "SP + Mystery Club School reward" },
@@ -346,12 +346,12 @@ export const lostJudgmentSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "걸스 바이트 외전 (챕터 4 이후)", en: "Girl's Bite Side Stories (Chapter 4+)" },
+      title: { ko: "걸스 바이트 외전 (4장 이후)", en: "Girl's Bite Side Stories (Chapter 4+)" },
       items: [
         {
           number: 35,
           title: { ko: "하루코의 이야기", en: "Haruko's Story" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
           trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
           reward: { ko: "SP + 걸스 바이트 친밀도", en: "SP + Girl's Bite affinity" },
@@ -359,7 +359,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 36,
           title: { ko: "미우의 이야기", en: "Miu's Story" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
           trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
           reward: { ko: "SP + 걸스 바이트 친밀도", en: "SP + Girl's Bite affinity" },
@@ -367,7 +367,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 37,
           title: { ko: "아야하의 이야기", en: "Ayaha's Story" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
           trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
           reward: { ko: "SP + 걸스 바이트 친밀도", en: "SP + Girl's Bite affinity" },
@@ -375,7 +375,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 38,
           title: { ko: "스텝 바이 스텝 ~1~", en: "Step by Step — Part 1" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 카미우치역 동쪽", en: "Ijincho — Kamiuchi Sta. East" },
           trigger: { ko: "청춘 스토리 「걸즈 바」 클리어 후 에밀리와 친밀도 2", en: "After clearing the Girls Bar School Story, raise Emily's affinity to 2." },
           reward: { ko: "SP", en: "SP" },
@@ -383,7 +383,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 39,
           title: { ko: "스텝 바이 스텝 ~2~", en: "Step by Step — Part 2" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 카미우치역 동쪽", en: "Ijincho — Kamiuchi Sta. East" },
           trigger: { ko: "에밀리 친밀도 3", en: "Raise Emily's affinity to 3." },
           reward: { ko: "SP", en: "SP" },
@@ -391,7 +391,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 40,
           title: { ko: "스텝 바이 스텝 ~3~", en: "Step by Step — Part 3" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 카미우치역 동쪽", en: "Ijincho — Kamiuchi Sta. East" },
           trigger: { ko: "에밀리 친밀도 4 (야간 한정)", en: "Raise Emily's affinity to 4 (night only)." },
           reward: { ko: "SP + 에밀리 엔딩", en: "SP + Emily route ending" },
@@ -425,7 +425,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 43,
           title: { ko: "내가 인형 옷을 입는 이유", en: "Why I Wear the Mascot Suit" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 아동 공원", en: "Kamurocho — Children's Park" },
           trigger: { ko: "버즈 리서처 「유루캬라」로 조사 (DLC 필수)", en: "Investigate Buzz word 'Mascot' (DLC required)." },
           reward: { ko: "SP + 미나토 친밀도 해금", en: "SP + unlock Minato affinity" },
@@ -433,7 +433,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 44,
           title: { ko: "스탠드 바이 미", en: "Stand by Me" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
           trigger: { ko: "토도 미나토 친밀도 2 (DLC 필수)", en: "Raise Minato Todo affinity to 2 (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -441,7 +441,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 45,
           title: { ko: "코미디 나이트 피버", en: "Comedy Night Fever" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "카무로초 — 텐카이치 거리 입구", en: "Kamurocho — Tenkaichi-dori entrance" },
           trigger: { ko: "토도 미나토 친밀도 3 (DLC 필수)", en: "Raise Minato Todo affinity to 3 (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -449,7 +449,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 46,
           title: { ko: "인형 옷 소녀로는 있을 수 없다", en: "Can't Stay a Mascot Girl Forever" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
           trigger: { ko: "토도 미나토 친밀도 4 (DLC 필수)", en: "Raise Minato Todo affinity to 4 (DLC)." },
           reward: { ko: "SP + 미나토 엔딩", en: "SP + Minato route ending" },
@@ -457,7 +457,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 47,
           title: { ko: "Somebody's Watching You", en: "Somebody's Watching You" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "이진초 — 햐쿠케이 거리", en: "Ijincho — Hyakkei St." },
           trigger: { ko: "DLC 「탐정 라이프 충실 팩」 수령 필수", en: "DLC 'Detective's Essentials Pack' redemption required." },
           reward: { ko: "SP", en: "SP" },
@@ -465,7 +465,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 48,
           title: { ko: "밤의 멜로디", en: "Night Melody" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "세이료 고교 — 보건실", en: "Seiryo High — Nurse's office" },
           trigger: { ko: "하카세 쿄코 친밀도 2 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 2 (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -473,7 +473,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 49,
           title: { ko: "다정한 마음", en: "A Gentle Heart" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "세이료 고교 — 교외 테라스", en: "Seiryo High — outdoor terrace" },
           trigger: { ko: "하카세 쿄코 친밀도 3 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 3 (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -481,7 +481,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 50,
           title: { ko: "꿈의 연장", en: "The Dream Continues" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "세이료 고교 — 식당", en: "Seiryo High — cafeteria" },
           trigger: { ko: "하카세 쿄코 친밀도 4 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 4 (DLC)." },
           reward: { ko: "SP + 쿄코 엔딩", en: "SP + Kyoko route ending" },
@@ -489,7 +489,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 51,
           title: { ko: "변태 사중주", en: "Pervert Quartet" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "카무로초 — 야가미 탐정 사무소 의뢰", en: "Kamurocho — Yagami Detective Agency request" },
           trigger: { ko: "폭주족 청춘 스토리 진행 + 「내가 인형 옷을 입는 이유」 클리어 (DLC 필수)", en: "Progress the Biker School Story and clear Case 43 (DLC)." },
           reward: { ko: "SP + 변태 매니아 컴플리션", en: "SP + Pervert quartet completion" },
@@ -497,7 +497,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 52,
           title: { ko: "달이 바뀌면 마음도 바뀐다 ~1~", en: "As the Months Turn — Part 1" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
           trigger: { ko: "사오토메 츠키노 친밀도 상승 (DLC 필수)", en: "Raise Tsukino Saotome's affinity (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -505,7 +505,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 53,
           title: { ko: "달이 바뀌면 마음도 바뀐다 ~2~", en: "As the Months Turn — Part 2" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
           trigger: { ko: "사오토메 츠키노 친밀도 2 (DLC 필수)", en: "Raise Tsukino's affinity to 2 (DLC)." },
           reward: { ko: "SP", en: "SP" },
@@ -513,7 +513,7 @@ export const lostJudgmentSubstories: SubstoriesData = {
         {
           number: 54,
           title: { ko: "달이 바뀌면 마음도 바뀐다 ~3~", en: "As the Months Turn — Part 3" },
-          chapter: { ko: "챕터 4 이후", en: "Chapter 4+" },
+          chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
           trigger: { ko: "사오토메 츠키노 친밀도 3 (DLC 필수)", en: "Raise Tsukino's affinity to 3 (DLC)." },
           reward: { ko: "SP + 츠키노 엔딩", en: "SP + Tsukino route ending" },

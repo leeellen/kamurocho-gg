@@ -62,10 +62,10 @@ export const yakuza4: CollectiblesData = {
   {
     slug: "substories",
     title: { ko: "서브스토리 51편 — 4인 주인공 + 피날레", en: "Substories — 51 across 4 leads + finale" },
-    summary: { ko: "아키야마 16편 + 사이고 15편 + 타니무라 16편 + 피날레(키류·사이고) 4편 = 총 51편. 챕터·주인공별로 발생합니다. 아몬은 62편 클리어 후 해금되는 최종 서브스토리입니다.", en: "Akiyama 16 + Saejima 15 + Tanimura 16 + 4 finale substories (Kiryu/Saejima) = 51 total. Gated by chapter + protagonist. Amon unlocks after clearing 62 prerequisite substories." },
+    summary: { ko: "아키야마 16편 + 사이고 15편 + 타니무라 16편 + 피날레(키류·사이고) 4편 = 총 51편. 장·주인공별로 발생합니다. 아몬은 62편 클리어 후 해금되는 최종 서브스토리입니다.", en: "Akiyama 16 + Saejima 15 + Tanimura 16 + 4 finale substories (Kiryu/Saejima) = 51 total. Gated by chapter + protagonist. Amon unlocks after clearing 62 prerequisite substories." },
     tips: [
         { ko: "카바레 공략법 시리즈(아키야마/타니무라)는 호스티스 명함 컴플리트와 연동됩니다. 미리 카바레 활동을 진행해 두면 효율적입니다.", en: "The cabaret-strategy substories interlock with the hostess business card collection. Front-load cabaret runs." },
-        { ko: "사이고 「누나와 동생」 1-4부작은 챕터 3 후반부터 4 전반까지 연결되므로 미루지 말고 처리하세요.", en: "Saejima's Sister and Brother 1-4 bridge late Ch.3 to early Ch.4 — handle them in order." },
+        { ko: "사이고 「누나와 동생」 1-4부작은 3장 후반부터 4 전반까지 연결되므로 미루지 말고 처리하세요.", en: "Saejima's Sister and Brother 1-4 bridge late Ch.3 to early Ch.4 — handle them in order." },
     ],
     source: { label: "龍が如く4攻略通信 — サブストーリー一覧", url: "https://kouryakutsushin.com/ryu4/" },
     groups: [

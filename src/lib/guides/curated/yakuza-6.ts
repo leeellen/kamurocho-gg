@@ -7,14 +7,14 @@ const YAKUZA_6_APP_ID = 1388590;
 const dandlingDragon: CuratedGuide = {
   summary: {
     ko:
-      "챕터 3에서 키류가 하루토를 돌보는 시퀀스 중에만 등장하는 달래기 미니게임을 모두 성공시켜 만족도 게이지를 가득 채워야 트로피 발동. 챕터 3 종료와 함께 미니게임 자체가 재등장하지 않으므로 같은 회차에서는 영구 잠금 — 진입 직전 수동 세이브 필수.",
+      "3장에서 키류가 하루토를 돌보는 시퀀스 중에만 등장하는 달래기 미니게임을 모두 성공시켜 만족도 게이지를 가득 채워야 트로피 발동. 3장 종료와 함께 미니게임 자체가 재등장하지 않으므로 같은 회차에서는 영구 잠금 — 진입 직전 수동 세이브 필수.",
     en:
       "Chapter 3 only — Kiryu's babysitting stretch has a Haruto-soothing minigame; fill his satisfaction meter via consecutive successful prompts. The minigame never returns after Ch.3, so manual-save before the babysitting scene starts.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 3 진행 중 키류가 하루토를 안고 거리를 도는 시퀀스 직전에 수동 세이브.",
+        "1) 3장 진행 중 키류가 하루토를 안고 거리를 도는 시퀀스 직전에 수동 세이브.",
       en:
         "1) Manual save right before the cutscene that hands Haruto to Kiryu in Ch.3.",
     },
@@ -32,7 +32,7 @@ const dandlingDragon: CuratedGuide = {
     },
     {
       ko:
-        "4) 트로피가 안 떴으면 즉시 1단계 수동 세이브로 로드. 챕터 3을 넘어가면 영구 잠금이라 재시도 시점이 매우 좁습니다.",
+        "4) 트로피가 안 떴으면 즉시 1단계 수동 세이브로 로드. 3장을 넘어가면 영구 잠금이라 재시도 시점이 매우 좁습니다.",
       en:
         "4) No trophy? Reload the pre-Ch.3 manual save. Once Ch.3 ends the minigame never returns this run.",
     },
@@ -46,7 +46,7 @@ const dandlingDragon: CuratedGuide = {
     },
     {
       ko:
-        "용과 같이 6의 유일한 영구 미서블 트로피이므로, 챕터 3 진입 시점부터 가장 우선으로 챙겨야 합니다.",
+        "용과 같이 6의 유일한 영구 미서블 트로피이므로, 3장 진입 시점부터 가장 우선으로 챙겨야 합니다.",
       en:
         "This is Yakuza 6's only permanent missable — prioritize it the moment Ch.3 begins.",
     },
@@ -62,14 +62,14 @@ const dandlingDragon: CuratedGuide = {
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Yakuza 6 The Song of Life 플래티넘 — 다른 58개 업적 전부 해금 시 자동 발동. 영구 미서블은 「댄들링 드래곤(챕터 3 한정)」 1종뿐이라 나머지는 Premium Adventure에서 자유롭게 정리 가능. 핵심 게이트는 ①클럽 크리에이터(키류 클랜) 100승 ②야구단 매니저 ③RIZAP/라이잡 트레이닝 풀 + 클럽 세가 모든 게임 ④EX-HARD/LEGEND 클리어 ⑤아몬 격파.",
+      "Yakuza 6 The Song of Life 플래티넘 — 다른 58개 업적 전부 해금 시 자동 발동. 영구 미서블은 「댄들링 드래곤(3장 한정)」 1종뿐이라 나머지는 Premium Adventure에서 자유롭게 정리 가능. 핵심 게이트는 ①클럽 크리에이터(키류 클랜) 100승 ②야구단 매니저 ③RIZAP/라이잡 트레이닝 풀 + 클럽 세가 모든 게임 ④EX-HARD/LEGEND 클리어 ⑤아몬 격파.",
     en:
       "Y6 platinum auto-pops at full unlock. Only one permanent missable (Dandling Dragon, Ch.3) — everything else lands cleanly in Premium Adventure. Gates: ① Kiryu Clan 100 wins ② Baseball Team manager ③ RIZAP + every Club Sega game ④ EX-HARD/LEGEND ⑤ Amon.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 3 진입 직전 수동 세이브 → 하루토 돌보기 시퀀스에서 「댄들링 드래곤」 미니게임을 만족도 100%로 클리어. 유일한 영구 미서블이므로 최우선.",
+        "1) 3장 진입 직전 수동 세이브 → 하루토 돌보기 시퀀스에서 「댄들링 드래곤」 미니게임을 만족도 100%로 클리어. 유일한 영구 미서블이므로 최우선.",
       en:
         "1) Manual save before Ch.3, then nail the Haruto-soothing minigame at 100 % satisfaction for the Dandling Dragon trophy — the only permanent missable.",
     },
@@ -101,7 +101,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "용과 같이 6는 시리즈 중 100% 정리가 가장 자유롭습니다. 댄들링 드래곤만 챕터 3 안에 처리하면 나머지는 엔딩 후 자유 진행 가능.",
+        "용과 같이 6는 시리즈 중 100% 정리가 가장 자유롭습니다. 댄들링 드래곤만 3장 안에 처리하면 나머지는 엔딩 후 자유 진행 가능.",
       en:
         "Y6 is the most forgiving 100 % run in the series. Lock down Dandling Dragon in Ch.3 and the rest plays out at your pace post-credits.",
     },
@@ -133,7 +133,7 @@ const legendY6: CuratedGuide = {
     },
     {
       ko:
-        "3) 챕터 13 라스트 보스 클리어 시 트로피 발동.",
+        "3) 13장 라스트 보스 클리어 시 트로피 발동.",
       en:
         "3) Ch.13 final boss kill fires the trophy.",
     },
@@ -178,14 +178,14 @@ const allMinigamesY6: CuratedGuide = {
 const allSubsY6: CuratedGuide = {
   summary: {
     ko:
-      "Y6의 모든 서브스토리(약 51건)를 클리어하면 발동. 영구 미서블 0이라 Premium Adventure에서도 회수 가능. 카무로초 + 오노미치 양 도시를 오가며 챕터별로 새 서브가 추가되니 주기적으로 확인.",
+      "Y6의 모든 서브스토리(약 51건)를 클리어하면 발동. 영구 미서블 0이라 Premium Adventure에서도 회수 가능. 카무로초 + 오노미치 양 도시를 오가며 장별로 새 서브가 추가되니 주기적으로 확인.",
     en:
       "Clear every Y6 substory (~51). Zero permanent missables — recoverable in Premium Adventure. New subs drop each chapter in both cities, so audit regularly.",
   },
   steps: [
     {
       ko:
-        "1) 각 챕터 진행 직후 카무로초 + 오노미치 거리를 한 바퀴 돌며 새 서브 마커 확인.",
+        "1) 각 장 진행 직후 카무로초 + 오노미치 거리를 한 바퀴 돌며 새 서브 마커 확인.",
       en:
         "1) After each chapter, do a sweep of both cities for new sub markers.",
     },
@@ -210,14 +210,14 @@ const allSubsY6: CuratedGuide = {
 const liveChatStar: CuratedGuide = {
   summary: {
     ko:
-      "Y6의 라이브 챗(스마트폰 라이브 미니게임)에서 모든 호스티스를 1회 이상 지명하면 발동. 카무로초·오노미치 각각 5명씩 총 10명. 라이브 챗 자체는 챕터 5 이후 해금됩니다.",
+      "Y6의 라이브 챗(스마트폰 라이브 미니게임)에서 모든 호스티스를 1회 이상 지명하면 발동. 카무로초·오노미치 각각 5명씩 총 10명. 라이브 챗 자체는 5장 이후 해금됩니다.",
     en:
       "Tune into every Live Chat hostess at least once — 5 in Kamurocho + 5 in Onomichi (10 total). Live Chat unlocks past Ch.5.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 5 이후 스마트폰에서 「라이브 챗」 앱 해금. 매일 등장 시간이 다르므로 시간대 변경 시 한 번씩 확인.",
+        "1) 5장 이후 스마트폰에서 「라이브 챗」 앱 해금. 매일 등장 시간이 다르므로 시간대 변경 시 한 번씩 확인.",
       en:
         "1) Open the Live Chat app post-Ch.5. Different hostesses appear at different times — check across the in-game day.",
     },

@@ -3,21 +3,21 @@ import type { CuratedGuide } from "./index";
 const YAKUZA_3_APP_ID = 1088710;
 
 // "걸어다니는 은행" — Walking Bank. 누적 9,999,999엔 보유 트로피.
-// 챕터 6에서 받는 1회성 「제로 보석」 치트 아이템이 룰렛에서 큰 자금원이 되어
+// 6장에서 받는 1회성 「제로 보석」 치트 아이템이 룰렛에서 큰 자금원이 되어
 // 직접 연관. Premium Adventure에서도 자금 누적은 가능하므로 영구 미서블은
 // 아니지만, 제로 보석을 놓치면 자금 모으기 난이도가 크게 올라갑니다.
 // Steam api_name: achievement_47.
 const walkingBank: CuratedGuide = {
   summary: {
     ko:
-      "키류가 한 번에 9,999,999엔 이상의 자금을 보유해야 트로피 발동. 메인 진행만으로는 모이지 않으므로 미니게임/도박 + 챕터 6 리키야 라인에서 받는 1회성 「제로 보석」을 활용해 룰렛/카지노 자금을 폭주시키는 것이 가장 빠릅니다. 보유액 기준이라 사용 직전에 카운트되므로 큰 지출 전에 잔액을 확인하세요.",
+      "키류가 한 번에 9,999,999엔 이상의 자금을 보유해야 트로피 발동. 메인 진행만으로는 모이지 않으므로 미니게임/도박 + 6장 리키야 라인에서 받는 1회성 「제로 보석」을 활용해 룰렛/카지노 자금을 폭주시키는 것이 가장 빠릅니다. 보유액 기준이라 사용 직전에 카운트되므로 큰 지출 전에 잔액을 확인하세요.",
     en:
       "Stockpile ¥9,999,999 in Kiryu's wallet at once. The fastest route uses the one-time \"Zero Jewel\" cheat item from Chapter 6's Rikiya line — feed it into roulette/casino for explosive growth. The trophy checks current balance, so verify before any big purchase.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 6 진행 중 리키야 동행 라인을 정리해 「제로 보석」을 반드시 수령. 다른 보석류와 섞이지 않게 분리 보관.",
+        "1) 6장 진행 중 리키야 동행 라인을 정리해 「제로 보석」을 반드시 수령. 다른 보석류와 섞이지 않게 분리 보관.",
       en:
         "1) During Chapter 6 with Rikiya in tow, complete his Kamurocho line to receive the one-shot Zero Jewel. Keep it separate so it doesn't get sold by mistake.",
     },
@@ -43,7 +43,7 @@ const walkingBank: CuratedGuide = {
   tips: [
     {
       ko:
-        "「제로 보석」은 챕터 6에서만 1회 한정 지급되며, 사용 즉시 소모됩니다. 룰렛 외 다른 게임에서는 효과가 없으니 반드시 룰렛에서 사용하세요.",
+        "「제로 보석」은 6장에서만 1회 한정 지급되며, 사용 즉시 소모됩니다. 룰렛 외 다른 게임에서는 효과가 없으니 반드시 룰렛에서 사용하세요.",
       en:
         "The Zero Jewel is a one-shot Chapter 6 item and consumes on use — only roulette accepts it, so don't waste it elsewhere.",
     },
@@ -67,26 +67,26 @@ const walkingBank: CuratedGuide = {
 const perfectSubstory: CuratedGuide = {
   summary: {
     ko:
-      "야쿠자 3의 모든 서브스토리를 클리어하면 트로피 발동. 챕터 6 리키야 동행, 하루카 동행 시퀀스처럼 메인 진행 중 단발적으로만 풀리는 서브가 여럿 있어, 챕터별로 컴플리션 리스트를 점검하며 진행해야 안전합니다. 영구 미스 요소는 아니므로 Premium Adventure에서도 회수 가능합니다.",
+      "야쿠자 3의 모든 서브스토리를 클리어하면 트로피 발동. 6장 리키야 동행, 하루카 동행 시퀀스처럼 메인 진행 중 단발적으로만 풀리는 서브가 여럿 있어, 장별로 컴플리션 리스트를 점검하며 진행해야 안전합니다. 영구 미스 요소는 아니므로 Premium Adventure에서도 회수 가능합니다.",
     en:
       "Clear every substory in Yakuza 3. Several only spawn during tagalong windows (Rikiya in Ch.6, Haruka on the beach, etc.), so chapter-check the Completion List before pushing the story. Not permanently missable — Premium Adventure can mop up.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 1~2 (오키나와) — 모리닝글로리 고아원 주변과 류큐 거리의 서브스토리를 메인 진행 전에 정리. 「실력파 헌터」 같은 사냥 라인은 챕터를 넘기면 후반에 재방문해야 합니다.",
+        "1) 1~2장 (오키나와) — 모리닝글로리 고아원 주변과 류큐 거리의 서브스토리를 메인 진행 전에 정리. 「실력파 헌터」 같은 사냥 라인은 장를 넘기면 후반에 재방문해야 합니다.",
       en:
         "1) Chapters 1~2 (Okinawa) — clear Morning Glory orphanage and Ryukyu Street substories before advancing. Hunting-line subs (e.g. Ace Hunter) need a later revisit if skipped.",
     },
     {
       ko:
-        "2) 챕터 4~6 (카무로초) — 리키야가 동행하는 챕터 6에서 「리키야의 고향 친구」 라인 등 동행 한정 서브를 반드시 처리. 챕터를 넘기면 Premium Adventure에서만 회수.",
+        "2) 4~6장 (카무로초) — 리키야가 동행하는 6장에서 「리키야의 고향 친구」 라인 등 동행 한정 서브를 반드시 처리. 장를 넘기면 Premium Adventure에서만 회수.",
       en:
         "2) Chapters 4~6 (Kamurocho) — finish Rikiya-tagalong-only substories (e.g. Hometown Girl) during Ch.6. Past that, only Premium Adventure recovers them.",
     },
     {
       ko:
-        "3) 챕터 8~10 — 카무로초·오키나와 양쪽에 새 서브가 추가됩니다. 하루카가 해변에 등장하는 시점의 「숨바꼭질」 등 시점 한정 서브도 함께 정리.",
+        "3) 8~10장 — 카무로초·오키나와 양쪽에 새 서브가 추가됩니다. 하루카가 해변에 등장하는 시점의 「숨바꼭질」 등 시점 한정 서브도 함께 정리.",
       en:
         "3) Chapters 8~10 — new substories drop in both cities, including time-window subs (Haruka's beach hide-and-seek).",
     },
@@ -122,14 +122,14 @@ const perfectSubstory: CuratedGuide = {
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Yakuza 3 Remastered 플래티넘 — 다른 49개 업적을 모두 해금하면 자동 발동. 핵심 게이트는 ①「최강의 증표」 EX-HARD 클리어 ②서브스토리 80건 전부 클리어 ③모든 미니게임 마스터(미니 게임 마스터·맛집·캐바쿠라 등) ④9,999,999엔 보유(걸어다니는 은행) ⑤투기장 모든 챌린지. 영구 미서블은 적지만 챕터 6 동행 서브를 놓치면 Premium Adventure 추가 시간이 발생합니다.",
+      "Yakuza 3 Remastered 플래티넘 — 다른 49개 업적을 모두 해금하면 자동 발동. 핵심 게이트는 ①「최강의 증표」 EX-HARD 클리어 ②서브스토리 80건 전부 클리어 ③모든 미니게임 마스터(미니 게임 마스터·맛집·캐바쿠라 등) ④9,999,999엔 보유(걸어다니는 은행) ⑤투기장 모든 챌린지. 영구 미서블은 적지만 6장 동행 서브를 놓치면 Premium Adventure 추가 시간이 발생합니다.",
     en:
       "Y3R's platinum auto-pops when every other trophy is unlocked. Gates: ① EX-HARD clear ② 80 substories ③ minigame mastery (Master, Gourmet, cabaret) ④ ¥9,999,999 in wallet ⑤ Coliseum all challenges. Few permanent missables — but skipping Ch.6 tagalong subs costs Premium Adventure cleanup time.",
   },
   steps: [
     {
       ko:
-        "1) 1회차 (Normal/Hard) — 챕터별로 서브스토리 정리 + 「제로 보석」을 챕터 6에서 반드시 수령. 자금이 부족할 때 룰렛 0 적중으로 자금 확보.",
+        "1) 1회차 (Normal/Hard) — 장별로 서브스토리 정리 + 「제로 보석」을 6장에서 반드시 수령. 자금이 부족할 때 룰렛 0 적중으로 자금 확보.",
       en:
         "1) Run 1 — clear substories chapter by chapter; grab the Zero Jewel during Ch.6 and feed it into roulette when money gets tight.",
     },
@@ -213,7 +213,7 @@ const minigameMaster: CuratedGuide = {
   tips: [
     {
       ko:
-        "골프 토너먼트와 UFO 캐처 인형 운 요소가 가장 시간을 잡아먹습니다. 자금이 모이는 챕터 7 이후에 본격 진행하는 게 효율적입니다.",
+        "골프 토너먼트와 UFO 캐처 인형 운 요소가 가장 시간을 잡아먹습니다. 자금이 모이는 7장 이후에 본격 진행하는 게 효율적입니다.",
       en:
         "Golf tourney + UFO doll RNG are the biggest time sinks — push them post-Ch.7 once cash is comfortable.",
     },
@@ -245,7 +245,7 @@ const exHardClear: CuratedGuide = {
     },
     {
       ko:
-        "3) 챕터 12 라스트 보스 클리어 시 트로피 발동. 일부 빌드에서 누락 시 별도 세이브로 1회차 EX-HARD 새 회차를 다시 시작해 클리어해야 합니다.",
+        "3) 12장 라스트 보스 클리어 시 트로피 발동. 일부 빌드에서 누락 시 별도 세이브로 1회차 EX-HARD 새 회차를 다시 시작해 클리어해야 합니다.",
       en:
         "3) Beating Ch.12's final boss fires the trophy. If the trophy fails, restart EX-HARD from a clean save.",
     },
@@ -258,14 +258,14 @@ const exHardClear: CuratedGuide = {
 const coliseumChampion: CuratedGuide = {
   summary: {
     ko:
-      "카무로초 「산기슭 콜로세움(투기장)」의 모든 토너먼트를 우승하면 발동. 챕터 5 이후 해금되며, 후반 토너먼트는 무기 봉인·집단 전투 등 조건이 까다로워집니다.",
+      "카무로초 「산기슭 콜로세움(투기장)」의 모든 토너먼트를 우승하면 발동. 5장 이후 해금되며, 후반 토너먼트는 무기 봉인·집단 전투 등 조건이 까다로워집니다.",
     en:
       "Win every tournament at the Kamurocho Coliseum. Unlocks after Ch.5; later tiers add weapon bans and group-fight rules.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 5 이후 카무로초 산기슭 콜로세움 입구에서 첫 토너먼트 출전 → 일반 → 워리어 → 챔피언 → 갓 라인 차례로 클리어.",
+        "1) 5장 이후 카무로초 산기슭 콜로세움 입구에서 첫 토너먼트 출전 → 일반 → 워리어 → 챔피언 → 갓 라인 차례로 클리어.",
       en:
         "1) After Ch.5, enter the Coliseum and run Standard → Warrior → Champion → God tiers in order.",
     },
@@ -290,20 +290,20 @@ const coliseumChampion: CuratedGuide = {
 const hitmanHunter: CuratedGuide = {
   summary: {
     ko:
-      "Y3 「히트맨」(보스급 NPC) 11명을 모두 격파하면 발동. 챕터 6 이후 「히트맨 사냥꾼」 서브스토리를 통해 의뢰 시작. 각 히트맨은 카무로초·오키나와 곳곳에 등장하며 일부는 특정 시간대(낮/밤) 또는 특정 챕터 진행 후에만 출현합니다.",
+      "Y3 「히트맨」(보스급 NPC) 11명을 모두 격파하면 발동. 6장 이후 「히트맨 사냥꾼」 서브스토리를 통해 의뢰 시작. 각 히트맨은 카무로초·오키나와 곳곳에 등장하며 일부는 특정 시간대(낮/밤) 또는 특정 장 진행 후에만 출현합니다.",
     en:
       "Defeat all 11 Hitmen across Kamurocho and Okinawa. Triggered via the Ch.6 Hitman Hunter substory — some only appear at specific times of day or post-certain chapters.",
   },
   steps: [
     {
       ko:
-        "1) 챕터 6에서 카무로초 「히트맨 사냥꾼」 서브 진행 → 의뢰 목록 해금. 11명의 위치 + 출현 조건 확인.",
+        "1) 6장에서 카무로초 「히트맨 사냥꾼」 서브 진행 → 의뢰 목록 해금. 11명의 위치 + 출현 조건 확인.",
       en:
         "1) Trigger the Hitman Hunter sub in Ch.6 to unlock the list of 11 marks + their spawn conditions.",
     },
     {
       ko:
-        "2) 시간대(낮/밤) 한정 히트맨은 인게임 시계를 맞춰서 조우. 일부는 메인 스토리 일정 챕터 진행 후에만 등장하니 가이드 확인.",
+        "2) 시간대(낮/밤) 한정 히트맨은 인게임 시계를 맞춰서 조우. 일부는 메인 스토리 일정 장 진행 후에만 등장하니 가이드 확인.",
       en:
         "2) Some marks require day/night cycles — sync the in-game clock. Others gate on story chapters.",
     },
@@ -329,7 +329,7 @@ const gourmetMaster: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 자금이 안정되는 챕터 7 이후 음식점을 차례로 방문. 카무로초 라멘집·스시 긴·간다라·돈키호테 푸드코트 등 + 오키나와 와라바·우미가메테이 등.",
+        "1) 자금이 안정되는 7장 이후 음식점을 차례로 방문. 카무로초 라멘집·스시 긴·간다라·돈키호테 푸드코트 등 + 오키나와 와라바·우미가메테이 등.",
       en:
         "1) Past Ch.7, tour restaurants in both cities — Kamurocho ramen/sushi/Gandara, Okinawa Wara-ba/Umigame-tei.",
     },
@@ -361,7 +361,7 @@ const sub80: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 1~79번 서브를 차례로 클리어. 챕터 한정 동행 서브(리키야 ch.6, 하루카 등)를 메인 회차에서 정리해야 효율적.",
+        "1) 1~79번 서브를 차례로 클리어. 장 한정 동행 서브(리키야 ch.6, 하루카 등)를 메인 회차에서 정리해야 효율적.",
       en:
         "1) Knock out Subs 1~79, including the chapter-locked tagalong subs (Ch.6 Rikiya, Haruka).",
     },

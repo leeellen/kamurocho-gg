@@ -3,21 +3,21 @@ import type { SubstoriesData } from "./types";
 export const yakuza4Substories: SubstoriesData = {
   appId: 1105500,
   summary: {
-    ko: "총 63건 — 아키야마 16 / 사에지마 15 / 타니무라 16 / 키류 16(아몬 포함). 4명의 주인공이 챕터별로 교대 진행되며, 한 번 챕터를 넘기면 해당 캐릭터의 미완료 서브는 최종부의 「과거 회상」(스카이 파이낸스·은신처·고향·뉴 세레나)에서만 다시 열 수 있으므로 챕터 안에서 정리하는 것이 안전합니다. 캬바쿠라·용궁성 도박·낚시 등 미니게임 잠금 해제와 연결되는 서브가 많으니 우선순위가 높습니다.",
+    ko: "총 63건 — 아키야마 16 / 사에지마 15 / 타니무라 16 / 키류 16(아몬 포함). 4명의 주인공이 장별로 교대 진행되며, 한 번 장를 넘기면 해당 캐릭터의 미완료 서브는 최종부의 「과거 회상」(스카이 파이낸스·은신처·고향·뉴 세레나)에서만 다시 열 수 있으므로 장 안에서 정리하는 것이 안전합니다. 캬바쿠라·용궁성 도박·낚시 등 미니게임 잠금 해제와 연결되는 서브가 많으니 우선순위가 높습니다.",
     en: "63 substories — Akiyama 16 / Saejima 15 / Tanimura 16 / Kiryu 16 (incl. Amon). Each protagonist's substories are gated to their own part; once their chapter ends you can only revisit unfinished ones via the 'past' seat in Sky Finance / hideout / Furusato / New Serena during the final part, so clear them in-chapter when possible. Many gate minigame unlocks (Cabaret, Ryugu Castle gambling, fishing).",
   },
   source: { label: "kouryakutsushin.com — 龍が如く4 サブストーリー攻略", url: "https://kouryakutsushin.com/ryu4/" },
   groups: [
     {
-      title: { ko: "아키야마 편 — 챕터 2~4", en: "Akiyama — Chapter 2~4" },
+      title: { ko: "아키야마 편 — 2~4장", en: "Akiyama — Chapter 2~4" },
       items: [
         {
           number: 1,
           title: { ko: "구조조정의 대가", en: "The Price of an Education" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "스카이 파이낸스 → 시치후쿠 거리 서쪽 「우마모토」 앞 → 아동공원", en: "Sky Finance → Shichifuku St. west (Umamoto soba) → Children's Park" },
-          trigger: { ko: "챕터 2 시작 시 하나의 전화로 자동 발생(스토리 강제)", en: "Auto-triggers via Hana's call at the start of Chapter 2." },
+          trigger: { ko: "2장 시작 시 하나의 전화로 자동 발생(스토리 강제)", en: "Auto-triggers via Hana's call at the start of Chapter 2." },
           body: {
             ko: "파라다이스 광고판을 빌미로 삥쟁이 일당을 단속하는 의뢰. 스카이 파이낸스에서 세 가지 대답을 모두 골라야 다음 단계로 넘어갑니다.",
             en: "Track down the punks shaking down the Paradise billboard crew. Pick all three dialogue options back at Sky Finance to advance.",
@@ -27,7 +27,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 2,
           title: { ko: "제자 지원", en: "The Apprentice" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "나오미의 저택 앞", en: "Outside Naomi's mansion" },
           trigger: { ko: "「구조조정의 대가」 클리어 후 발생", en: "Clear 'The Price of an Education' first." },
@@ -37,7 +37,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 3,
           title: { ko: "맛집 리포터", en: "Gourmet Reporter" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "코토부키 약국(타이헤이 거리 동쪽) → 챔피언 거리 「아텐시」", en: "Kotobuki Pharmacy (Taihei E.) → Atenshi (Champion St.)" },
           trigger: { ko: "약국 앞에서 잡지 기자에게 말 걸기", en: "Talk to the magazine reporter near Kotobuki Pharmacy." },
@@ -51,7 +51,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 4,
           title: { ko: "삥쟁이 지도", en: "Catch Master" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "엘리제(타이헤이 거리)", en: "Elise (Taihei St.)" },
           trigger: { ko: "엘리제 앞 캐치 남자에게 말 걸기", en: "Talk to the catch tout in front of Elise." },
@@ -61,7 +61,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 5,
           title: { ko: "오타쿠 개조 계획", en: "Otaku Makeover" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "엘리제 앞 → 밀레니엄 타워", en: "Elise → Millennium Tower" },
           trigger: { ko: "엘리제 캐치 의뢰 후 오타쿠 청년에게 말 걸기", en: "Talk to the otaku after the catch substory." },
@@ -74,7 +74,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "돈의 사용처", en: "What Money Buys" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "마츠야(타이헤이 서) → 스시 긴(쇼와 서) → 르 마르셰 → ADAM", en: "Matsuya → Sushi Gin → Le Marche → ADAM" },
           trigger: { ko: "타이헤이 거리에서 융자 신청자에게 말 걸기", en: "Talk to the loan applicant on Taihei St." },
@@ -84,7 +84,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "캬바쿠라 공략법 · 아키야마 편", en: "Cabaret Strategy — Akiyama" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "MEB · 주얼 · 샤인 · 큐스 바", en: "MEB / Jewel / SHINE / Cue's Bar" },
           trigger: { ko: "큐즈 바에서 미나사와에게 말 걸기", en: "Talk to Minasawa at Cue's Bar." },
@@ -99,7 +99,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "3000만의 행방", en: "Where the 30 Million Went" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "스카이 파이낸스 → 타이헤이 코인로커 → 시치후쿠 서쪽 아동공원 → 쇼와·센료·극장 앞·호텔가", en: "Sky Finance → Taihei locker → Shichifuku park → Showa/Senryo/Theater/Hotel Dist." },
           trigger: { ko: "「돈의 사용처」 클리어 후 발생", en: "Clear 'What Money Buys' first." },
@@ -112,7 +112,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "하나의 우울", en: "Hana's Melancholy" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "MEB 부근 → 나카미치 거리 → 극장 앞 광장 → 엘리제 부근 → 핑크 거리", en: "MEB area → Nakamichi → Theater Plaza → Elise → Pink St." },
           trigger: { ko: "「3000만의 행방」 클리어", en: "Clear 'Where the 30 Million Went'." },
@@ -122,17 +122,17 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 10,
           title: { ko: "위조지폐", en: "Counterfeit Bills" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "스시 긴 → 폿포 나카미치 → 볼케이노 → 파크 앞 → 핑크 거리 → 부두(야간)", en: "Sushi Gin → Poppo Nakamichi → Volcano → Park-front → Pink St. → Wharf (night)" },
           trigger: { ko: "「하나의 우울」 클리어 후 발생", en: "Clear 'Hana's Melancholy'." },
-          body: { ko: "위조지폐 유통 경로 추적. 챕터 4 「가짜에 주의」 후속편으로 이어집니다.", en: "Trace counterfeits across town. Sets up the Chapter 4 sequel 'Beware of Counterfeits'." },
+          body: { ko: "위조지폐 유통 경로 추적. 4장 「가짜에 주의」 후속편으로 이어집니다.", en: "Trace counterfeits across town. Sets up the Chapter 4 sequel 'Beware of Counterfeits'." },
           reward: { ko: "경험치 5000", en: "5000 EXP" },
         },
         {
           number: 11,
           title: { ko: "제자의 반항", en: "Disciple's Rebellion" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "극장 앞 광장 · 스카이 파이낸스 · M 스토어 옆 흰 건물", en: "Theater Plaza / Sky Finance / white building by M-Store" },
           trigger: { ko: "「제자 지원」 클리어", en: "Clear 'The Apprentice'." },
@@ -142,17 +142,17 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 12,
           title: { ko: "아내의 마음", en: "A Wife's Wish" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "타이헤이 거리 엘리제 입구", en: "Taihei St. — Elise entrance" },
           trigger: { ko: "「제자의 반항」 클리어", en: "Clear 'Disciple's Rebellion'." },
-          body: { ko: "제자 부부의 사정을 듣고 마무리. 「리트라이」 챕터 4편으로 이어집니다.", en: "Resolve the apprentice's marriage trouble. Sets up the Chapter 4 finale 'Retry'." },
+          body: { ko: "제자 부부의 사정을 듣고 마무리. 「리트라이」 4장편으로 이어집니다.", en: "Resolve the apprentice's marriage trouble. Sets up the Chapter 4 finale 'Retry'." },
           reward: { ko: "경험치 5000", en: "5000 EXP" },
         },
         {
           number: 13,
           title: { ko: "FX로 돈 벌자", en: "Get Rich with FX" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "센료 거리", en: "Senryo Ave." },
           trigger: { ko: "스카이 파이낸스에 도착한 권유 메일에서 발생", en: "An email arrives at Sky Finance — no prior substory required." },
@@ -170,17 +170,17 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "리트라이", en: "Retry" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "텐카이치 거리 남쪽 일대", en: "Tenkaichi St. south district" },
           trigger: { ko: "「아내의 마음」 클리어", en: "Clear 'A Wife's Wish'." },
-          body: { ko: "제자 부부의 재도전을 돕는 챕터 4 마무리편.", en: "Help the apprentice couple try again — finishes the chain." },
+          body: { ko: "제자 부부의 재도전을 돕는 4장 마무리편.", en: "Help the apprentice couple try again — finishes the chain." },
           reward: { ko: "경험치 10000", en: "10000 EXP" },
         },
         {
           number: 15,
           title: { ko: "유사품에 주의", en: "Beware of Counterfeits" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "타이헤이 · 극장 앞 · 파크 앞 · 가짜 스카이 파이낸스", en: "Taihei / Theater-front / Park-front / fake Sky Finance" },
           trigger: { ko: "「위조지폐」 클리어", en: "Clear 'Counterfeit Bills'." },
@@ -190,7 +190,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "캬바쿠라 수행", en: "Cabaret Training" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "아키야마", en: "Akiyama" },
           location: { ko: "엘리제 앞", en: "Outside Elise" },
           trigger: { ko: "「오타쿠 개조 계획」 클리어", en: "Clear 'Otaku Makeover'." },
@@ -200,12 +200,12 @@ export const yakuza4Substories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "사에지마 편 — 챕터 3~4", en: "Saejima — Chapter 3~4" },
+      title: { ko: "사에지마 편 — 3~4장", en: "Saejima — Chapter 3~4" },
       items: [
         {
           number: 17,
           title: { ko: "누나와 동생 1", en: "Sister and Brother 1" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "카무로 지하상가", en: "Kamurocho Underground" },
           trigger: { ko: "소지금 3000엔 이상으로 지하상가 진입 시 소년과 충돌 이벤트", en: "Enter the underground with ¥3000+ to bump into the boy." },
@@ -221,7 +221,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "낚아 올린 것은", en: "What I Caught" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "부두", en: "Wharf" },
           trigger: { ko: "부두에서 낚시꾼에게 말 걸기", en: "Talk to the fisherman at the wharf." },
@@ -231,7 +231,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "고양이와 노숙자", en: "Cat and Homeless Man" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "극장 지하 B1", en: "Theater basement B1" },
           trigger: { ko: "극장 지하에서 고양이를 찾는 노숙자에게 말 걸기", en: "Talk to the homeless man searching for his cat." },
@@ -249,7 +249,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 20,
           title: { ko: "쫓기는 여자", en: "The Hunted Woman" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "카무로초 시내(다발 위치)", en: "Multiple Kamurocho spots" },
           trigger: { ko: "거리에서 쫓기는 여자와 충돌 이벤트", en: "Bump into the fleeing woman on the streets." },
@@ -259,7 +259,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 21,
           title: { ko: "잔협", en: "Lingering Chivalry" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "시치후쿠 거리 아동공원 앞", en: "Shichifuku St. — children's park" },
           trigger: { ko: "공원 앞에서 카타기리를 도울지 묻는 이벤트", en: "Help Katagiri when prompted at the park." },
@@ -269,7 +269,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 22,
           title: { ko: "용궁성 용심봉(보디가드)", en: "Ryugu Castle Bodyguard" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "공원 앞 거리 — 용궁성 입구", en: "Park-front St. — Ryugu Castle entrance" },
           trigger: { ko: "「누나와 동생 1」 클리어", en: "Clear 'Sister and Brother 1'." },
@@ -279,7 +279,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 23,
           title: { ko: "복수의 이유", en: "Reason for Revenge" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "극장 앞 거리", en: "Theater-front St." },
           trigger: { ko: "「고양이와 노숙자」에서 돈을 건네지 않고 클리어", en: "Clear 'Cat and Homeless Man' WITHOUT giving the ¥50,000." },
@@ -292,7 +292,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "보디가드", en: "Bodyguard" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "밀레니엄 타워 주차장", en: "Millennium Tower parking" },
           trigger: { ko: "「용궁성 용심봉」 클리어", en: "Clear 'Ryugu Castle Bodyguard'." },
@@ -302,7 +302,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "누나와 동생 2", en: "Sister and Brother 2" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "로쿠란소 앞 및 옥상", en: "Rokuransō entrance & rooftop" },
           trigger: { ko: "「보디가드」 클리어", en: "Clear 'Bodyguard'." },
@@ -312,7 +312,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 26,
           title: { ko: "부모와 자식", en: "Parent and Child" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "카무로 극장 → 시치후쿠 공원", en: "Kamuro Theater → Shichifuku Park" },
           trigger: { ko: "「쫓기는 여자」 클리어", en: "Clear 'The Hunted Woman'." },
@@ -325,7 +325,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 27,
           title: { ko: "연설 방해", en: "Disrupt the Speech" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "밀레니엄 타워 앞", en: "Millennium Tower plaza" },
           trigger: { ko: "「부모와 자식」 클리어", en: "Clear 'Parent and Child'." },
@@ -341,7 +341,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 28,
           title: { ko: "저마다의 25년", en: "Each One's 25 Years" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "극장 지하 ~ 시치후쿠 거리", en: "Theater B1 ~ Shichifuku St." },
           trigger: { ko: "「누나와 동생 2」 클리어", en: "Clear 'Sister and Brother 2'." },
@@ -351,7 +351,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "누나와 동생 3", en: "Sister and Brother 3" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "사이노카와라(지하 투기장)", en: "Sai no Kawara underground arena" },
           trigger: { ko: "「저마다의 25년」 클리어", en: "Clear 'Each One's 25 Years'." },
@@ -361,7 +361,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 30,
           title: { ko: "누나와 동생 4", en: "Sister and Brother 4" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "사에지마", en: "Saejima" },
           location: { ko: "극장 지하 ~ 극장 광장 뒷편", en: "Theater B1 ~ rear of Theater Plaza" },
           trigger: { ko: "「누나와 동생 3」 클리어", en: "Clear 'Sister and Brother 3'." },
@@ -381,12 +381,12 @@ export const yakuza4Substories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "타니무라 편 — 챕터 1~4", en: "Tanimura — Chapter 1~4" },
+      title: { ko: "타니무라 편 — 1~4장", en: "Tanimura — Chapter 1~4" },
       items: [
         {
           number: 32,
           title: { ko: "도박꾼의 블루스", en: "Gambling Junkie Blues" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "아시아 거리 서쪽 입구 외 다발", en: "Asia St. west entrance + various" },
           trigger: { ko: "기지(고향) 도착 후 자동 발생", en: "Auto after reaching the Furusato base." },
@@ -396,7 +396,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 33,
           title: { ko: "애인이 되어주실래요?", en: "Be My Lover?" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "아시아 거리 — 고향", en: "Asia St. — Furusato" },
           trigger: { ko: "「도박꾼의 블루스」 클리어", en: "Clear 'Gambling Junkie Blues'." },
@@ -412,7 +412,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 34,
           title: { ko: "캬바쿠라 공략법 · 타니무라 편", en: "Cabaret Strategy — Tanimura" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "MEB 앞 외 캬바쿠라", en: "Outside MEB + cabaret clubs" },
           trigger: { ko: "기지 도착 후 발생", en: "Auto after reaching base." },
@@ -422,7 +422,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 35,
           title: { ko: "미팅 가자", en: "Let's Go to a Mixer" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "나카미치 거리 와민 앞", en: "Nakamichi St. — Wamin entrance" },
           trigger: { ko: "야스코를 찾아낸 후 발생", en: "After finding Yasuko." },
@@ -432,17 +432,17 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 36,
           title: { ko: "또 하나의 사건", en: "Another Incident" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "아시아 거리 고향 앞 외 다발", en: "Asia St. Furusato + various" },
-          trigger: { ko: "챕터 2 진행 중 자동 발생", en: "Auto in Chapter 2." },
+          trigger: { ko: "2장 진행 중 자동 발생", en: "Auto in Chapter 2." },
           body: { ko: "「수사 라인」 체인의 출발점. 후속 「실마리」로 직결.", en: "Kicks off Tanimura's detective chain. Leads into 'Lead'." },
           reward: { ko: "경험치 5000", en: "5000 EXP" },
         },
         {
           number: 37,
           title: { ko: "실마리", en: "The Lead" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "마하 볼링 → 챔피언 거리 셸락 → 클럽 세가", en: "Mach Bowl → Shellac (Champion St.) → Club SEGA" },
           trigger: { ko: "「또 하나의 사건」 클리어", en: "Clear 'Another Incident'." },
@@ -452,7 +452,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 38,
           title: { ko: "목격자", en: "Witness" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "카무로 극장 출구", en: "Kamuro Theater exit" },
           trigger: { ko: "극장 앞에서 사건 목격", en: "Witness the incident outside the theater." },
@@ -465,7 +465,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 39,
           title: { ko: "위에서의 시선", en: "Gaze from Above" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "극장 앞 광장 · 신주쿠 서쪽 옥상", en: "Theater Plaza · west rooftop" },
           trigger: { ko: "「목격자」 클리어", en: "Clear 'Witness'." },
@@ -475,7 +475,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 40,
           title: { ko: "에트랑제", en: "Étranger" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "시치후쿠 거리 동쪽", en: "Shichifuku St. East" },
           trigger: { ko: "외국인에게 시비 거는 야쿠자 자동 이벤트", en: "Auto-triggers when yakuza hassle a tourist." },
@@ -492,7 +492,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 41,
           title: { ko: "차량 절도", en: "Car Burglar" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "극장 북서쪽 · 아동공원 앞", en: "Theater NW · children's park" },
           trigger: { ko: "거리에서 절도범 이벤트 자동 발생", en: "Auto event with a car burglar." },
@@ -508,7 +508,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 42,
           title: { ko: "도난당한 비자금", en: "Stolen Slush Fund" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "텐카이치 거리 뒷골목 · 제3공원 앞", en: "Tenkaichi back alley · 3rd Park" },
           trigger: { ko: "쵸에게 어태시 케이스를 맡긴 뒤 발생", en: "After leaving the attache case with Chou." },
@@ -518,7 +518,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 43,
           title: { ko: "소리 없는 목소리", en: "The Voiceless Voice" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "아시아 거리 고향 외 다발", en: "Asia St. Furusato + various interiors" },
           trigger: { ko: "「도난당한 비자금」 클리어", en: "Clear 'Stolen Slush Fund'." },
@@ -528,7 +528,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 44,
           title: { ko: "위험한 놀이", en: "Dangerous Game" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "용궁성", en: "Ryugu Castle" },
           trigger: { ko: "용궁성에서 부유한 노인 도발 이벤트", en: "Encounter the wealthy elder inside Ryugu Castle." },
@@ -546,7 +546,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 45,
           title: { ko: "메이파에게 보내는 편지", en: "Letter to Maifa" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "아시아 거리 · 서공원 · 호텔가 북쪽", en: "Asia St. · West Park · Hotel Dist. north" },
           trigger: { ko: "고향 앞 챠오와 대화", en: "Talk to Zhao at Furusato." },
@@ -556,7 +556,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 46,
           title: { ko: "브릿지의 정체", en: "Bridge's True Identity" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "폿포 나카미치 · 챔피언 거리 · 나오미의 저택 · 카무로초 서쪽 옥상 · 자라 거리", en: "Poppo Nakamichi · Champion St. · Naomi's mansion · West rooftop · Suppon St." },
           trigger: { ko: "「실마리」 클리어", en: "Clear 'The Lead'." },
@@ -566,7 +566,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 47,
           title: { ko: "이어받는 것", en: "What is Inherited" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "타니무라", en: "Tanimura" },
           location: { ko: "챔피언 거리 · 핑크 거리 뒤 · 나오미의 저택", en: "Champion St. · Pink St. back · Naomi's mansion" },
           trigger: { ko: "「브릿지의 정체」 클리어 후 나오미 전화", en: "Clear 'Bridge' then take Naomi's call." },
@@ -576,12 +576,12 @@ export const yakuza4Substories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "키류 편 — 챕터 2 · 4 · 최종부", en: "Kiryu — Chapter 2 / 4 / Final" },
+      title: { ko: "키류 편 — 2장 · 4 · 최종부", en: "Kiryu — Chapter 2 / 4 / Final" },
       items: [
         {
           number: 48,
           title: { ko: "캬바쿠라 공략법 · 키류 편", en: "Cabaret Strategy — Kiryu" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "큐즈 바 → 캬바쿠라 4곳", en: "Cue's Bar → cabaret clubs" },
           trigger: { ko: "큐즈 바에서 미나사와와 대화", en: "Talk to Minasawa at Cue's Bar." },
@@ -591,7 +591,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 49,
           title: { ko: "삐뚤어진 녀석 재림", en: "Twisted Guy Returns" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "요시다 배팅 센터", en: "Yoshida Batting Center" },
           trigger: { ko: "뉴 세레나에서 나온 직후 메일", en: "Email after leaving New Serena." },
@@ -601,7 +601,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 50,
           title: { ko: "코타로의 취업 활동", en: "Kohtaro's Job Hunt" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "밴덤 부근", en: "Around Bantam" },
           trigger: { ko: "밴덤 부근에서 코타로 이벤트", en: "Event near Bantam with Kohtaro." },
@@ -611,7 +611,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 51,
           title: { ko: "유우야의 방식", en: "Yuya's Way" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "스타더스트(텐카이치 거리)", en: "Stardust (Tenkaichi St.)" },
           trigger: { ko: "유우야와 대화", en: "Talk to Yuya." },
@@ -621,7 +621,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 52,
           title: { ko: "지치지 않는 녀석", en: "That Stubborn Guy" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "스타더스트 외", en: "Stardust + various" },
           trigger: { ko: "스타더스트 이벤트", en: "Event at Stardust." },
@@ -631,7 +631,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 53,
           title: { ko: "컬러 갱", en: "Color Gang" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 다발 위치", en: "Multiple locations" },
           trigger: { ko: "커피 마이스터에서 회화 이벤트", en: "Conversation event at Coffee Meister." },
@@ -641,7 +641,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 54,
           title: { ko: "사제 대결", en: "Master vs. Apprentice" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "큐슈 이치반보시(핑크 거리 뒷골목)", en: "Kyushu Ichibanboshi (Pink St. alley)" },
           trigger: { ko: "큐슈 이치반보시 입장 시 발생", en: "Enter Kyushu Ichibanboshi." },
@@ -651,7 +651,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 55,
           title: { ko: "다정한 거짓말", en: "A Gentle Lie" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "밴덤(밀레니엄 타워 동쪽 거리)", en: "Bantam (Millennium Tower East St.)" },
           trigger: { ko: "여성과의 회화에서 「사귄다」 선택", en: "Pick 'Date her' in the convo with the woman." },
@@ -667,7 +667,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 56,
           title: { ko: "카레를 둘러싼 모험", en: "A Curry Adventure" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "파크 앞 거리(용궁성 부근)", en: "Park-front St. (near Ryugu)" },
           trigger: { ko: "배달원의 의뢰", en: "Delivery man's request." },
@@ -677,7 +677,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 57,
           title: { ko: "거리의 히어로", en: "Street Hero" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 다발 위치", en: "Multiple locations" },
           trigger: { ko: "타이츠맨 이벤트", en: "Tights Man event." },
@@ -687,7 +687,7 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 58,
           title: { ko: "의사와 마음", en: "The Doctor's Heart" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "부두(택시) → 뉴 세레나", en: "Wharf (taxi) → New Serena" },
           trigger: { ko: "야간 이동 시 자동 발생", en: "Auto at night." },
@@ -697,10 +697,10 @@ export const yakuza4Substories: SubstoriesData = {
         {
           number: 59,
           title: { ko: "가족의 조건", en: "Family Conditions" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "뉴 세레나 · 밀레니엄 타워 · 극장 광장 · 시치후쿠 공원", en: "New Serena · Millennium Tower · Theater Plaza · Shichifuku Park" },
-          trigger: { ko: "챕터 4 진행 중 자동 발생", en: "Auto in Chapter 4." },
+          trigger: { ko: "4장 진행 중 자동 발생", en: "Auto in Chapter 4." },
           body: { ko: "최종부 「키류의 육아」 전편. 클리어 안 하면 후속이 잠깁니다.", en: "Sets up 'Kiryu's Babysitting' in the Final — required to keep the chain alive." },
           reward: { ko: "경험치 5000", en: "5000 EXP" },
         },

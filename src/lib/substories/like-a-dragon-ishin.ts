@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const likeADragonIshinSubstories: SubstoriesData = {
   appId: 1805480,
   summary: {
-    ko: "막말 교토를 무대로 한 「유신!극」의 서브스토리는 총 72건. 미스 불가 항목은 없으므로 본편 챕터 진행과 병행해도 무방하나, 챕터 종료 후에도 의뢰가 사라지지 않습니다. 구역(라쿠나이/라쿠가이/무쿠로가이/후시미/기온/미부)별로 분포하며, 일부는 흑표비각·야에·사토우 연쇄 의뢰로 묶여 순서대로 해금됩니다.",
+    ko: "막말 교토를 무대로 한 「유신!극」의 서브스토리는 총 72건. 미스 불가 항목은 없으므로 본편 장 진행과 병행해도 무방하나, 장 종료 후에도 의뢰가 사라지지 않습니다. 구역(라쿠나이/라쿠가이/무쿠로가이/후시미/기온/미부)별로 분포하며, 일부는 흑표비각·야에·사토우 연쇄 의뢰로 묶여 순서대로 해금됩니다.",
     en: "Like a Dragon: Ishin! has 72 substories across Bakumatsu Kyoto. None are missable — chapters gate them but they remain available afterward. They sprawl across Rakunai, Rakugai, Mukurogai, Fushimi, Gion, and Mibu, with the Black Panther couriers, Yae, and Satow strands forming locked chains.",
   },
   source: {
@@ -17,7 +17,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 1,
           title: { ko: "니치부좌의 새 단골", en: "Nichibuza's Newest Fan" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 극장 니치부좌 앞", en: "Rakunai — outside Nichibuza theater" },
           trigger: { ko: "니치부좌 앞에서 다투는 남녀 컷신을 본 뒤 개입", en: "Watch the arguing couple cutscene outside Nichibuza, then step in." },
           body: {
@@ -29,7 +29,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 2,
           title: { ko: "사기꾼 에비스님", en: "Deceitful Deity" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 카라스마 거리", en: "Rakunai — Karasuma St." },
           trigger: { ko: "카라스마 거리에서 에비스님 행세하는 자를 묻는 남자에게 말 걸기", en: "Talk to the man asking about Ebisu-sama near Karasuma St." },
           body: {
@@ -41,7 +41,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 3,
           title: { ko: "누가 누구를 접대하는가", en: "Who's Entertaining Who?" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 시코쿠야 앞", en: "Rakunai — outside Shikokuya" },
           trigger: { ko: "시코쿠야 앞 여인에게 말 걸기 (서브 1 클리어 + 가라오케 1회 필요)", en: "Talk to the woman outside Shikokuya (requires Substory 1 cleared and one karaoke session)." },
           body: {
@@ -57,7 +57,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 4,
           title: { ko: "잘 가, 미호", en: "I'll Miss You, Miho" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 니치부좌 뒤편", en: "Rakunai — behind Nichibuza" },
           trigger: { ko: "니치부좌 뒤편에서 료마와 부딪히는 아이의 이벤트", en: "A child runs into Ryoma behind Nichibuza." },
           body: {
@@ -73,7 +73,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 5,
           title: { ko: "수다쟁이 토사 사나이", en: "Talking Tosa" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 니치부좌 북동측 골목", en: "Rakunai — alley NE of Nichibuza" },
           trigger: { ko: "골목 구석에 서 있는 남자에게 말 걸기", en: "Talk to the man standing in the corner NE of Nichibuza." },
           body: {
@@ -96,7 +96,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "사라진 떡의 수수께끼", en: "The Mochi Mystery" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 대장간 북측", en: "Rakunai — north of the blacksmith" },
           trigger: { ko: "대장간 북측에 모여 있는 무리에게 말 걸기", en: "Approach the cluster of men north of the blacksmith." },
           body: {
@@ -112,7 +112,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "정의를 위한 에에쟈나이카", en: "Ea Ja Nai For Justice" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 신메이쵸 장기 도장 서측", en: "Rakunai — west of the Shogi Parlor in Shinmeicho" },
           trigger: { ko: "신메이쵸 서측의 「에에쟈나이카」 군중과 접촉 (서브 22 클리어 필요)", en: "Approach the Ee Ja Nai Ka dancers west of the Shogi Parlor (requires Substory 22)." },
           body: {
@@ -124,7 +124,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "내키지 않는 비각", en: "The Unwilling Courier" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠나이 — 기온으로 가는 다리", en: "Rakunai — bridge to Gion" },
           trigger: { ko: "기온으로 가는 다리를 처음 건널 때 자동 발생", en: "Auto-triggered when crossing the bridge to Gion." },
           body: {
@@ -136,7 +136,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "흑표비각 등장", en: "Enter the Black Panther Couriers" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠나이 — 기온행 다리", en: "Rakunai — bridge to Gion" },
           trigger: { ko: "서브 8 클리어 후 같은 다리에서 발생", en: "Same bridge as Substory 8, after clearing it." },
           body: {
@@ -148,7 +148,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 10,
           title: { ko: "흑표비각의 간판", en: "The Panthers' Leading Man" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠나이 — 테라마치 거리 북단", en: "Rakunai — north end of Teramachi St." },
           trigger: { ko: "테라마치 북단에서 흑표비각 단원과 접촉 (서브 9 클리어 필요)", en: "Speak to the courier at north Teramachi (requires Substory 9)." },
           body: {
@@ -160,7 +160,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 11,
           title: { ko: "지구본 사기", en: "Global Fraud" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 돈키호테 남측 도로", en: "Rakunai — road south of Don Quijote" },
           trigger: { ko: "지구본을 든 남자에게 말 걸기", en: "Talk to the man with the globe." },
           body: {
@@ -177,7 +177,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 12,
           title: { ko: "허기진 스모토리", en: "The Hungry Sumo Wrestler" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠나이 — 테라마치 거리 남측", en: "Rakunai — south Teramachi St." },
           trigger: { ko: "길을 막은 스모토리에게 말 걸기", en: "Talk to the sumo wrestler blocking the road." },
           body: { ko: "굶주린 스모토리에게 음식 아이템을 건네 길을 트게 합니다.", en: "Hand the hungry sumo a food item to clear the road." },
@@ -186,7 +186,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 13,
           title: { ko: "애정 결핍 남편", en: "The Love-Starved Husband" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 동측 강변", en: "Rakunai — east riverbank" },
           trigger: { ko: "강을 바라보는 남자에게 말 걸기", en: "Talk to the man staring at the river on the east side." },
           body: { ko: "아내의 손맛이 그리운 남편 앞에서 료마가 손수 만든 요리를 먹어 보여 줍니다.", en: "Eat a homemade dish in front of a husband who misses his wife's cooking." },
@@ -195,7 +195,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "정신 나간 여인", en: "The Oblivious Woman" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 북측 가마터", en: "Rakunai — palanquin stand, north of map" },
           trigger: { ko: "가마 근처 여인에게 말 걸기", en: "Talk to the woman by the northern palanquin." },
           body: { ko: "지갑을 잃어버려 멍해 있는 여인에게 채소를 건넵니다.", en: "Hand a vegetable to a woman who's lost her wallet." },
@@ -204,7 +204,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 15,
           title: { ko: "다친 할머니", en: "The Injured Grandma" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠나이 — 동측 강변", en: "Rakunai — east riverbank" },
           trigger: { ko: "강변에 앉아 있는 여인에게 말 걸기", en: "Talk to the woman sitting on the east riverbank." },
           body: { ko: "다친 노부인의 부탁을 받아들이고 도움을 약속합니다.", en: "Agree to help the injured old woman." },
@@ -213,7 +213,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "짖어대는 개", en: "The Barking Dog" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 에비스 전당포 부근 큰길 남측", en: "Rakunai — south of the main road near Ebisu Pawn" },
           trigger: { ko: "짖어대는 개에게 다가가기", en: "Approach the barking dog." },
           body: { ko: "개에게 뼈를 던져 주면 친해집니다.", en: "Toss a bone to the barking dog." },
@@ -222,7 +222,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 17,
           title: { ko: "운수 좋은 고양이", en: "The Lucky Cat" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 신사 동측", en: "Rakunai — east of the shrine" },
           trigger: { ko: "신사 동측의 고양이에게 말 걸기", en: "Approach the cat east of the shrine." },
           body: { ko: "복을 부르는 고양이에게 돈을 바칩니다.", en: "Offer coin to the lucky cat." },
@@ -231,7 +231,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 67,
           title: { ko: "성깔 있는 빚쟁이", en: "The Spitfire Debt Collector" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 쿠로가네 대장간 앞", en: "Rakunai — outside Kurogane Smithing" },
           trigger: { ko: "서브 69 클리어 후 쿠로가네 대장간 앞에서 야에에게 말 걸기", en: "Talk to Yae outside Kurogane Smithing (requires Substory 69)." },
           body: {
@@ -243,7 +243,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 68,
           title: { ko: "성깔 있는 거짓말 탐지기", en: "The Spitfire Lie Detector" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠나이 — 쿠로가네 대장간", en: "Rakunai — Kurogane Smithing" },
           trigger: { ko: "서브 67 클리어 후 야에와 재회", en: "Return to Yae after clearing Substory 67." },
           body: { ko: "야에와 함께 거짓말쟁이를 색출하고 두 그룹과 연이어 전투.", en: "Help Yae sniff out a liar and clear two consecutive fights." },
@@ -257,7 +257,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "은둔하는 아들", en: "The Reclusive Son" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠가이 — 동 우메코지쵸", en: "Rakugai — East Umekojicho" },
           trigger: { ko: "건물 밖에서 대화하는 두 사람에게 말 걸기", en: "Approach the two people talking outside the houses." },
           body: {
@@ -274,7 +274,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "가마 호위", en: "Palanquin Paladin" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "라쿠가이 — 남서측 가마터", en: "Rakugai — southwest palanquin stand" },
           trigger: { ko: "가마 근처에서 시작", en: "Approach the palanquin at the SW corner." },
           body: { ko: "라쿠가이를 가로지르는 가마를 여러 무리로부터 지키는 호위 의뢰.", en: "Defend a moving palanquin through several waves of attackers." },
@@ -283,7 +283,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 20,
           title: { ko: "한 마디 인용 좀 합시다", en: "Can I Quote You On That?" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "라쿠가이 — 동 우메코지쵸 신사 서측", en: "Rakugai — East Umekojicho, west of the shrine" },
           trigger: { ko: "기자를 두들기는 남자들을 발견하면 시작", en: "Intervene when a journalist is being roughed up." },
           body: {
@@ -302,7 +302,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 21,
           title: { ko: "존왕양이", en: "Sonno Joui" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠가이 — 수상한 술집 북측 골목", en: "Rakugai — alley north of the Shady Bar" },
           trigger: { ko: "골목에서 대화 중인 두 남자에게 말 걸기", en: "Approach the two men talking in the alley." },
           body: { ko: "외국인을 노리는 존왕양이 낭사들을 두 장소에서 격퇴.", en: "Defend a foreigner from sonno-joui zealots at two locations." },
@@ -311,7 +311,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 22,
           title: { ko: "에에쟈나이카(아니지)", en: "Ea Ja Not Ka" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠가이 — 무쿠로가이 인접 동 우메코지쵸", en: "Rakugai — East Umekojicho, near Mukurogai" },
           trigger: { ko: "서브 47 클리어 후 발생", en: "After clearing Substory 47." },
           body: { ko: "에에쟈나이카 무리를 미행해 진짜 정체를 확인. 추적 액션 중심.", en: "Tail a band of Ee Ja Nai Ka dancers to expose them — pure shadowing." },
@@ -320,7 +320,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 23,
           title: { ko: "엉뚱한 골목에서 큰소리치다", en: "Bluffin' Up the Wrong Alley" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "라쿠가이 — 도박장 앞", en: "Rakugai — outside the gambling den" },
           trigger: { ko: "도박장 앞 도박꾼 무리의 행패 장면", en: "Witness the gamblers harassing a passerby outside the den." },
           body: {
@@ -333,7 +333,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "흑표비각의 야전사령관", en: "The Panthers' Playmaker" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠가이 — 자택(편지 수령)", en: "Rakugai — your house (letter arrives)" },
           trigger: { ko: "서브 10 클리어 후 자택에 편지 도착", en: "Letter arrives at home after Substory 10." },
           body: { ko: "다리 위에서 비각 단원과 또 한 차례 배달 대결.", en: "Another bridge-side delivery race against a Panther." },
@@ -342,7 +342,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "검 매니아", en: "The Sword Nut" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "라쿠가이 — 부두로 내려가는 계단 옆", en: "Rakugai — beside the dock stairs" },
           trigger: { ko: "검 매니아 남자에게 말 걸기", en: "Speak to the sword enthusiast." },
           body: { ko: "료마의 검을 검 마니아에게 보여 줍니다.", en: "Show your sword to the enthusiast." },
@@ -351,7 +351,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 26,
           title: { ko: "지친 수호자", en: "The Battered Defender" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "라쿠가이 — 후시미 관문 북측", en: "Rakugai — north of the Fushimi gate" },
           trigger: { ko: "지친 무사에게 말 걸기", en: "Approach the worn-out defender." },
           body: { ko: "회복 아이템을 건네 부상자를 일으켜 세웁니다.", en: "Give a healing item to the wounded warrior." },
@@ -360,7 +360,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 27,
           title: { ko: "수상한 상인", en: "The Mysterious Merchant" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠가이 — 무기상 맞은편 헛간", en: "Rakugai — wooden shed across from the Arms Dealer" },
           trigger: { ko: "헛간 안 상인에게 말 걸기", en: "Speak to the merchant in the shed." },
           body: { ko: "토마토 10개를 모아 건네면 2냥을 받습니다.", en: "Bring 10 tomatoes for 2 ryo." },
@@ -369,7 +369,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 28,
           title: { ko: "굶주린 고양이", en: "The Hungry Cat" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠가이 — 동 우메코지쵸 건물 사이", en: "Rakugai — between buildings in East Umekojicho" },
           trigger: { ko: "고양이에게 다가가기", en: "Approach the hungry cat." },
           body: { ko: "생선을 던져 주어 친해집니다.", en: "Give the cat a fish." },
@@ -378,7 +378,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 69,
           title: { ko: "성깔 있는 마을 수호자", en: "The Spitfire Town Protector" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "라쿠가이 — 닭싸움장 동측", en: "Rakugai — east of the Chicken Racing building" },
           trigger: { ko: "다투는 부부 사이에 끼어들기", en: "Step in between the arguing couple." },
           body: { ko: "부부 싸움에 끼어든 패거리를 제압하다 야에와 처음 만나게 됩니다.", en: "Break up a brawl and first meet Yae, who later headlines the chain." },
@@ -392,7 +392,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "험한 동네", en: "The Bad Side of Town" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "무쿠로가이 — 무기상 북측", en: "Mukurogai — north of Arms Dealer" },
           trigger: { ko: "무기상 북측을 지나갈 때 자동 발생", en: "Walk past the Arms Dealer northward." },
           body: { ko: "무쿠로가이의 험한 분위기를 보여주는 매복 전투.", en: "An automatic ambush that introduces Mukurogai's hostility." },
@@ -401,7 +401,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 30,
           title: { ko: "삯싸움꾼", en: "Brawler for Hire" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "무쿠로가이 — 1층 흰 깃발 옆", en: "Mukurogai — 1F by the white flag" },
           trigger: { ko: "흰 깃발 옆에서 발생 (서브 7 클리어 필요)", en: "By the white flag (requires Substory 7)." },
           body: { ko: "삯싸움꾼 「스미보즈」와의 1차전.", en: "First duel with the brawler Sumi Bozu." },
@@ -410,7 +410,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 31,
           title: { ko: "각성한 싸움꾼", en: "Brawler Incarnate" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "무쿠로가이 — 1층 흰 깃발 옆", en: "Mukurogai — same spot" },
           trigger: { ko: "서브 30 클리어 후 같은 장소", en: "Return to the spot after Substory 30." },
           body: { ko: "스미보즈와 2차전.", en: "Rematch with Sumi Bozu." },
@@ -419,7 +419,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 32,
           title: { ko: "깨달음에 이른 싸움꾼", en: "Brawler Enlightened" },
-          chapter: { ko: "챕터 10", en: "Chapter 10" },
+          chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "무쿠로가이 — 1층 흰 깃발 옆", en: "Mukurogai — same spot" },
           trigger: { ko: "서브 31 클리어 후 같은 장소", en: "Return again after Substory 31." },
           body: { ko: "스미보즈와의 최종전.", en: "Final showdown with Sumi Bozu." },
@@ -428,7 +428,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 33,
           title: { ko: "패주 무사의 망령", en: "Night of the Living Rumor" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "무쿠로가이 — 동측 강변(야간)", en: "Mukurogai — eastern riverbank, nighttime" },
           trigger: { ko: "낮에 소문을 들은 뒤 밤에 강변 재방문", en: "Hear the rumor by day, return at night." },
           body: { ko: "유령 소문의 정체와 야간 전투.", en: "Confront the 'ghost' at night and beat the truth out of it." },
@@ -437,7 +437,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 34,
           title: { ko: "비굴한 거지", en: "The Servile Beggar" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "무쿠로가이 — 무기상 동측 처마 밑(1층)", en: "Mukurogai — covered area east of Arms Dealer, 1F" },
           trigger: { ko: "앉아 있는 거지에게 말 걸기", en: "Approach the seated beggar." },
           body: { ko: "음식 아이템을 건넵니다.", en: "Give a food item." },
@@ -446,7 +446,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 35,
           title: { ko: "고물상", en: "The Trash Dealer" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "무쿠로가이 — 북서측 큰 문 옆", en: "Mukurogai — NW corner near the big gate" },
           trigger: { ko: "고물상 남자에게 말 걸기", en: "Talk to the trash dealer." },
           body: { ko: "인벤토리의 아이템 아무거나 하나를 건네면 됩니다.", en: "Hand over any inventory item." },
@@ -455,7 +455,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 36,
           title: { ko: "다친 개", en: "The Injured Dog" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "무쿠로가이 — 중앙 1층", en: "Mukurogai — central 1F" },
           trigger: { ko: "다친 개에게 다가가기", en: "Approach the injured dog." },
           body: { ko: "회복 아이템을 건넵니다.", en: "Give a healing item." },
@@ -469,7 +469,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 37,
           title: { ko: "작가의 죽음", en: "Death of the Author" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 데라다야 2층 복도", en: "Fushimi — Teradaya 2F hallway" },
           trigger: { ko: "데라다야 2층 복도의 작가에게 말 걸기", en: "Speak to the writer in the Teradaya 2F hall." },
           body: {
@@ -486,7 +486,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 38,
           title: { ko: "소중한 꾸러미", en: "Precious Packages" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "후시미 — 데라다야 북측 건물 사이", en: "Fushimi — between buildings north of Teradaya" },
           trigger: { ko: "서브 71 클리어 후 발생", en: "Available after Substory 71." },
           body: {
@@ -501,7 +501,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 39,
           title: { ko: "발가벗긴 사나이", en: "A Clean Streak" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "후시미 — 목욕탕 입구", en: "Fushimi — bathhouse entrance" },
           trigger: { ko: "목욕탕 앞에서 발생", en: "At the bathhouse entrance." },
           body: { ko: "옷을 훔쳐 달아난 도둑을 쫓아 목욕탕으로 되돌아옵니다.", en: "Chase a clothing thief and return to the bathhouse." },
@@ -510,7 +510,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 40,
           title: { ko: "보자기 사나이", en: "A Man and His Sack" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "후시미 — 하나코 북측 줄선 자리", en: "Fushimi — line of men north of Hanako" },
           trigger: { ko: "줄에 서 있는 남자에게 말 걸기", en: "Join the queue and talk to the men." },
           body: { ko: "이나리(유부초밥) 줄을 세 번 서다가 도둑을 추적해 잡는 의뢰.", en: "Queue three times for inari, then chase down the thief who runs off with it." },
@@ -519,7 +519,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 41,
           title: { ko: "허리에서 우러나는 맛", en: "All in the Hips" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 우마이 우동", en: "Fushimi — Umai Udon" },
           trigger: { ko: "우마이 우동에서 주문 후 한 번 나갔다가 재방문", en: "Order at Umai Udon, leave, return." },
           body: { ko: "우동 반죽 미니게임 1라운드 클리어.", en: "Clear one round of the udon-kneading minigame." },
@@ -528,7 +528,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 42,
           title: { ko: "흑선 내습", en: "Invasion of the Black Ships" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "후시미 — 남측 수상지(주간)", en: "Fushimi — southern docks, daytime" },
           trigger: { ko: "낮 시간에 남측 수상지로 이동", en: "Visit the southern waterfront during daytime." },
           body: { ko: "뱃멀미하는 남자에게 매실 절임을 먹여 회복시킨 뒤 습격자를 격퇴.", en: "Cure a seasick man with umeboshi, then fend off attackers." },
@@ -537,7 +537,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 43,
           title: { ko: "긴 이야기", en: "It's a Long Story" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 하나코 서측 길", en: "Fushimi — path west of Hanako" },
           trigger: { ko: "수다스러운 여인에게 말 걸기", en: "Talk to the chatty woman west of Hanako." },
           body: { ko: "끝없이 이어지는 잡담의 1부. 매 단계 정답을 골라야 합니다.", en: "Endure part one of a meandering conversation — pick the right answer each step." },
@@ -551,7 +551,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 44,
           title: { ko: "긴 이야기: 최종장", en: "It's a Long Story: The Final Chapter" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 하나코 서측 길", en: "Fushimi — same spot" },
           trigger: { ko: "서브 43 클리어 후 재방문", en: "Return after Substory 43." },
           body: { ko: "사키코의 이야기 후속편.", en: "Round two with Sakiko." },
@@ -565,7 +565,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 45,
           title: { ko: "긴 이야기: 에필로그", en: "It's a Long Story: Epilogue" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 하나코 서측 길", en: "Fushimi — same spot" },
           trigger: { ko: "서브 44 클리어 후 재방문", en: "Return after Substory 44." },
           body: { ko: "수다 연쇄의 대단원.", en: "Finale of the long-talk chain." },
@@ -579,7 +579,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 46,
           title: { ko: "향수", en: "Scented Water" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "후시미 — 남동 구석 지장보살", en: "Fushimi — SE corner by the jizo statue" },
           trigger: { ko: "여인에게 말 걸기", en: "Talk to the woman by the jizo." },
           body: { ko: "무쿠로가이의 판매자에게서 향수를 구입해 미행을 따돌리고 의뢰인에게 전달.", en: "Buy perfume in Mukurogai, shake the seller's tail, deliver to the client." },
@@ -588,7 +588,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 47,
           title: { ko: "에에쟈나이카", en: "Ea Ja Nai Ka" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 에비스 전당포 앞", en: "Fushimi — outside Ebisu Pawn" },
           trigger: { ko: "전당포 앞 군중에 막혀 발생", en: "Crowd blocks Ebisu Pawn." },
           body: { ko: "에에쟈나이카로 길을 막은 두 남자와의 전투.", en: "Brawl two ringleaders to disperse the crowd." },
@@ -597,7 +597,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 48,
           title: { ko: "사무라이의 길", en: "The Way of the Samurai" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "후시미 — 센고쿠 저택 서측", en: "Fushimi — west side near Sengoku Residence" },
           trigger: { ko: "지망 사무라이에게 말 걸기", en: "Approach the aspiring samurai." },
           body: { ko: "사무라이 지망생을 세 차례 훈련시킨 뒤 후시미 남측에서 공동 전투.", en: "Train an aspiring samurai across three duels, then fight beside him in South Fushimi." },
@@ -606,7 +606,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 49,
           title: { ko: "흑표비각의 최후", en: "Last Stand of the Panthers" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "후시미 — 데라다야 앞", en: "Fushimi — outside Teradaya" },
           trigger: { ko: "서브 24 클리어 후 데라다야 앞", en: "Outside Teradaya after Substory 24." },
           body: { ko: "후시미 전역을 도는 흑표비각 시리즈의 최종 배달 레이스.", en: "Final delivery race around all of Fushimi to finish the Panther chain." },
@@ -615,7 +615,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 50,
           title: { ko: "절박한 어부", en: "The Desperate Fisherman" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 데라다야 남측 난간", en: "Fushimi — south of map near Teradaya railing" },
           trigger: { ko: "난간 옆 어부에게 말 걸기", en: "Speak to the fisherman by the railing." },
           body: { ko: "어부에게 생선을 건네 인연을 맺습니다.", en: "Give the fisherman a fish." },
@@ -624,7 +624,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 51,
           title: { ko: "고물 마니아 소년", en: "The Junk Boy" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 데라다야 북측 길", en: "Fushimi — road north of Teradaya" },
           trigger: { ko: "고물을 모으는 아이에게 말 걸기", en: "Approach the junk-collecting child." },
           body: { ko: "인벤토리의 아이템 아무거나 하나를 아이에게 건넵니다.", en: "Hand the boy any inventory item." },
@@ -633,7 +633,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 52,
           title: { ko: "장작 패는 남자", en: "The Woodcutter" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "후시미 — 남서 구석", en: "Fushimi — southwest corner" },
           trigger: { ko: "남서 구석의 장작꾼에게 말 걸기", en: "Speak to the woodcutter in the SW corner." },
           body: { ko: "장작 패기 미니게임으로 통나무 100개를 쪼개면 완료.", en: "Split 100 logs in the wood-cutting minigame." },
@@ -642,7 +642,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 53,
           title: { ko: "방향치 비각", en: "The Frequently Lost Courier" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "후시미 — 남동 구석 지장보살", en: "Fushimi — SE corner by jizo" },
           trigger: { ko: "길 잃은 비각에게 세 차례 말 걸기", en: "Speak to the lost courier three times." },
           body: { ko: "방향치 비각을 세 번 도와주면 인연 성립.", en: "Help the disoriented courier three times to seal the bond." },
@@ -651,7 +651,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 54,
           title: { ko: "기다리는 개", en: "The Patient Dog" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "후시미 — 에비스 전당포 뒤 계단", en: "Fushimi — stairs behind Ebisu Pawn" },
           trigger: { ko: "계단의 개에게 다가가기", en: "Approach the dog on the stairs." },
           body: { ko: "음식 아이템을 건넵니다.", en: "Give the dog a food item." },
@@ -660,7 +660,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 55,
           title: { ko: "꾀죄죄한 고양이", en: "The Filthy Cat" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "후시미 — 가옥선 옆 부두", en: "Fushimi — dock beside the houseboat" },
           trigger: { ko: "더러운 고양이에게 다가가기", en: "Approach the filthy cat." },
           body: { ko: "고양이를 씻겨 줍니다.", en: "Clean up the dirty cat." },
@@ -669,7 +669,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 70,
           title: { ko: "선장과 호기심", en: "The Captain and the Curious" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "후시미 — 우마이 우동 북측 식당", en: "Fushimi — restaurant north of Umai Udon" },
           trigger: { ko: "외국인 선장과 합석", en: "Sit with the foreign captain." },
           body: {
@@ -681,7 +681,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 71,
           title: { ko: "암흑 속의 외교", en: "Diplomacy in Darkness" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "후시미 (야간)", en: "Fushimi — evening" },
           trigger: { ko: "서브 70 클리어 + 회고록 20권 이상", en: "Requires Substory 70 + at least 20 memoirs." },
           body: {
@@ -693,7 +693,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 72,
           title: { ko: "지속되는 평화의 갈증", en: "A Lasting Thirst for Peace" },
-          chapter: { ko: "챕터 14 (피날레)", en: "Chapter 14 (Finale)" },
+          chapter: { ko: "14장 (피날레)", en: "Chapter 14 (Finale)" },
           location: { ko: "후시미 → 기온 결전", en: "Fushimi → Gion final fight" },
           trigger: { ko: "회고록 96권 이상 사토우에게 모두 전달 후 발생", en: "After delivering 96+ memoirs to Satow." },
           body: {
@@ -710,7 +710,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 56,
           title: { ko: "주운 자가 임자", en: "Finders Weepers" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "기온 — 도리이 동측", en: "Gion — east of the torii gate" },
           trigger: { ko: "라쿠나이 북측 신사에서 아카리와 만난 뒤 분홍 일기 발견", en: "After meeting Akari at the north Rakunai shrine, find the pink diary." },
           body: {
@@ -727,7 +727,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 57,
           title: { ko: "보드랍고 매끄럽게", en: "Soft and Supple" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "기온 — 가마터 남측", en: "Gion — south of the palanquin stand" },
           trigger: { ko: "가마터 남측에서 발생", en: "South of the palanquin." },
           body: { ko: "유곽 비용을 거부한 손님과 호객꾼 일당 세 명을 제압.", en: "Reject a brothel shake-down and beat three thugs." },
@@ -736,7 +736,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 58,
           title: { ko: "혁명의 요리사", en: "The Revolutionary Chef" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "기온 — 야마부키 맞은편", en: "Gion — across from Yamabuki" },
           trigger: { ko: "요리사 지망 남자에게 말 걸기", en: "Talk to the aspiring chef." },
           body: { ko: "료마가 직접 만든 요리를 시식시킵니다.", en: "Feed him a homemade dish." },
@@ -745,7 +745,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 59,
           title: { ko: "요염한 마담", en: "The Sexy Madam" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "기온 — 키친 아오바 북측 나무 옆", en: "Gion — north of Kitchen Aoba by the tree" },
           trigger: { ko: "여인에게 말 걸기", en: "Speak to the madam." },
           body: { ko: "오이를 건네 주면 인연 성립.", en: "Offer her a cucumber." },
@@ -759,7 +759,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 60,
           title: { ko: "중요한 건 내면", en: "It's What's on the Inside" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "미부 — 오타케 찻집", en: "Mibu — Otake Tea Parlor" },
           trigger: { ko: "오타케 찻집 부근에서 자동 발생", en: "Auto-cutscene at Otake Tea Parlor." },
           body: {
@@ -774,7 +774,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 61,
           title: { ko: "다시 피는 벚꽃", en: "Hope Blossoms Again" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "미부 — 신선조 둔소 좌측 길", en: "Mibu — path left of Shinsengumi Barracks" },
           trigger: { ko: "괴롭힘당하는 부부 발견", en: "Witness a couple being harassed." },
           body: { ko: "행패를 부리는 남자를 격퇴하고 인근 가옥에서 벚꽃나무를 확인.", en: "Beat the harasser, then find the cherry tree at the couple's home." },
@@ -783,7 +783,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 62,
           title: { ko: "야망 가득한 무장", en: "A Warlord's Ambition" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "미부 — 자택", en: "Mibu — your house" },
           trigger: { ko: "자택에서 요리 10회 이상 진행 후 발생", en: "After 10 cooking sessions at home." },
           body: { ko: "특정 생선 굽기 기법을 활용한 요리 한 접시를 완성.", en: "Cook a single dish using the fish-grilling technique." },
@@ -792,7 +792,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 63,
           title: { ko: "곰이 나타났다", en: "The Boy Who Cried Bear" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "미부 — 서측 신사", en: "Mibu — shrine, west side" },
           trigger: { ko: "서브 60 클리어 후 발생", en: "After Substory 60." },
           body: { ko: "사실이었던 곰 출몰. 보스급 곰 1마리와 전투.", en: "Turns out the bear is real — fight the boss-class beast." },
@@ -801,7 +801,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 64,
           title: { ko: "엄마 료마", en: "Mama Ryoma" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "미부 — 아이들 가마터 부근", en: "Mibu — near the children's palanquin" },
           trigger: { ko: "서브 61 클리어 후 발생", en: "After Substory 61." },
           body: { ko: "아이들과 소꿉놀이를 한 뒤 난입한 남자를 격퇴.", en: "Play house with the kids, then thrash the intruder." },
@@ -810,7 +810,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 65,
           title: { ko: "기억을 잃은 사나이", en: "The Amnesiac" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "기요미즈 사찰로 가는 길(라쿠가이 남교 동측)", en: "Path to Kiyomizu Temple — east of the south bridge from Rakugai" },
           trigger: { ko: "쓰러진 남자 옆에서 발생", en: "Find the unconscious man on the path." },
           body: { ko: "회복 아이템을 건네 의식을 되찾게 합니다.", en: "Give a healing item to wake him." },
@@ -819,7 +819,7 @@ export const likeADragonIshinSubstories: SubstoriesData = {
         {
           number: 66,
           title: { ko: "채소를 사랑하는 소년", en: "The Boy Who Loves Veggies" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "미부 — 신선조 본부 부근", en: "Mibu — Shinsengumi HQ area" },
           trigger: { ko: "본부 부근에서 자동 컷신", en: "Auto-scene by the Shinsengumi HQ." },
           body: { ko: "우는 소년에게 채소를 건네 줍니다.", en: "Hand the crying boy a vegetable." },

@@ -7,14 +7,14 @@ const YAKUZA_5_APP_ID = 1105510;
 const hallOfFamer: CuratedGuide = {
   summary: {
     ko:
-      "용과 같이 5의 100% 완료 트로피. 콘텐츠의 큰 비중이 하루카의 아이돌 트랙(아이돌·댄스·잡)에 잠겨 있어 피날레 챕터 4 전에 모두 끝내야 합니다. 하루카 챕터가 끝나면 100% 라인이 영구 잠금되며, 일부 카미야마 워크스 제작 재료는 1회 한정이라 사용·판매에도 주의가 필요합니다.",
+      "용과 같이 5의 100% 완료 트로피. 콘텐츠의 큰 비중이 하루카의 아이돌 트랙(아이돌·댄스·잡)에 잠겨 있어 피날레 4장 전에 모두 끝내야 합니다. 하루카 장가 끝나면 100% 라인이 영구 잠금되며, 일부 카미야마 워크스 제작 재료는 1회 한정이라 사용·판매에도 주의가 필요합니다.",
     en:
       "Yakuza 5's full 100% completion trophy. Huge chunks of the list run through Haruka's idol track (idol, dance, jobs) and must finish before Finale Ch.4 closes her arc. Some Kamiyama Works crafting materials are one-per-run, so don't sell or burn them casually.",
   },
   steps: [
     {
       ko:
-        "1) 메인 스토리 챕터 진입 시 마다 컴플리트 리스트(시작 메뉴 → 컴플리트)에서 미달성 항목 점검. 챕터 잠금 항목을 조기에 식별.",
+        "1) 메인 스토리 장 진입 시 마다 컴플리트 리스트(시작 메뉴 → 컴플리트)에서 미달성 항목 점검. 장 잠금 항목을 조기에 식별.",
       en:
         "1) Check the Completion List at each chapter boundary to flag anything still unchecked, especially chapter-locked items.",
     },
@@ -44,7 +44,7 @@ const hallOfFamer: CuratedGuide = {
     },
     {
       ko:
-        "6) 피날레 챕터 4 진입 직전 컴플리트 리스트 100%를 확인하고 챕터 진행. 100% 상태로 챕터 4를 클리어하면 트로피 발동 — 미체크 항목이 있으면 영구 잠금.",
+        "6) 피날레 4장 진입 직전 컴플리트 리스트 100%를 확인하고 장 진행. 100% 상태로 4장를 클리어하면 트로피 발동 — 미체크 항목이 있으면 영구 잠금.",
       en:
         "6) Right before Finale Ch.4, confirm 100% on the Completion List, then push through the chapter. The trophy fires on chapter clear — anything unchecked is gone for this run.",
     },
@@ -58,7 +58,7 @@ const hallOfFamer: CuratedGuide = {
     },
     {
       ko:
-        "하루카는 피날레 챕터 4에서 아이돌을 그만두는 컷이 자동 진행 — 그 컷 이후 100% 라인 전체가 잠기므로 사전 점검이 필수.",
+        "하루카는 피날레 4장에서 아이돌을 그만두는 컷이 자동 진행 — 그 컷 이후 100% 라인 전체가 잠기므로 사전 점검이 필수.",
       en:
         "Haruka quits the idol path automatically in Finale Ch.4. Once that cutscene plays, the entire 100% list locks — pre-check is non-negotiable.",
     },
@@ -149,7 +149,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "3) 파트 3 (하루카 — 소텐보리) — 「The Road to Fame」 전 잡 종류 수락 + 댄스 미션 풀 클리어 + 프린세스 리그 결승 우승. 피날레 챕터 4 진입 전에 100% 카운트 점검.",
+        "3) 파트 3 (하루카 — 소텐보리) — 「The Road to Fame」 전 잡 종류 수락 + 댄스 미션 풀 클리어 + 프린세스 리그 결승 우승. 피날레 4장 진입 전에 100% 카운트 점검.",
       en:
         "3) Part 3 (Haruka — Sotenbori) — accept every job type, finish all dance missions, win the Princess League final. Verify 100 % before Finale Ch.4.",
     },
@@ -169,7 +169,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "하루카는 피날레 챕터 4에서 아이돌을 그만두는 자동 컷이 있어, 그 컷 이후 모든 하루카 100% 라인이 영구 잠금. 사전에 100%인지 컴플리션 리스트로 반드시 확인.",
+        "하루카는 피날레 4장에서 아이돌을 그만두는 자동 컷이 있어, 그 컷 이후 모든 하루카 100% 라인이 영구 잠금. 사전에 100%인지 컴플리션 리스트로 반드시 확인.",
       en:
         "Haruka auto-quits idol life at Finale Ch.4. Anything unticked beforehand locks for the run — verify on the Completion List.",
     },
@@ -195,13 +195,13 @@ const legendY5: CuratedGuide = {
     },
     {
       ko:
-        "2) 사에지마 사냥 챕터의 야마오로시 + 시나다 야구 + 키류 택시 풀 운영 + 하루카 라이브 배틀 모두 LEGEND 보정으로 난이도 급상승. 회복 아이템 풀 비축.",
+        "2) 사에지마 사냥 장의 야마오로시 + 시나다 야구 + 키류 택시 풀 운영 + 하루카 라이브 배틀 모두 LEGEND 보정으로 난이도 급상승. 회복 아이템 풀 비축.",
       en:
         "2) Saejima hunting, Shinada baseball, Kiryu taxi, Haruka live battles all spike — stock healing.",
     },
     {
       ko:
-        "3) 챕터 「피날레 4」 라스트 보스 클리어 시 트로피 발동.",
+        "3) 장 「피날레 4」 라스트 보스 클리어 시 트로피 발동.",
       en:
         "3) Finale Ch.4 final boss kill fires the trophy.",
     },

@@ -10,8 +10,6 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { getLocale } from "@/lib/i18n";
 import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/kamurocho-data";
 
-export const revalidate = 300;
-
 export default async function HomePage() {
   const locale = await getLocale();
   const [games, playOrder, missables] = await Promise.all([
@@ -89,7 +87,7 @@ export default async function HomePage() {
 
           <p className="mt-6 max-w-[56ch] text-[15px] leading-7 text-[var(--text-secondary)] md:text-[16px]">
             {locale === "ko"
-              ? "키류·이치반 사가와 저지먼트 시리즈의 스팀 업적 공략을 모았습니다. 게임별 진행도, 챕터별 놓치기 쉬움, 희귀 업적, 단계별 실행법까지 흩어진 정보 없이 바로 확인하세요."
+              ? "키류·이치반 사가와 저지먼트 시리즈의 스팀 업적 공략을 모았습니다. 게임별 진행도, 장별 놓치기 쉬움, 희귀 업적, 단계별 실행법까지 흩어진 정보 없이 바로 확인하세요."
               : "Every Steam achievement guide for the Kiryu saga, Ichiban saga, and Judgment line — coverage, missables, rare picks, and step-by-step routes in one place."}
           </p>
 
@@ -171,7 +169,7 @@ export default async function HomePage() {
             tone="gold"
             label={locale === "ko" ? "놓치기 쉬운 항목" : "Missable checks"}
             value={totalMissables}
-            hint={locale === "ko" ? "챕터별 정리" : "Chapter-aware"}
+            hint={locale === "ko" ? "장별 정리" : "Chapter-aware"}
           />
         </section>
 
@@ -301,7 +299,7 @@ export default async function HomePage() {
             <SectionTitle
               eyebrow={locale === "ko" ? "놓치기 쉬움" : "Missables"}
               title={locale === "ko" ? "놓치기 쉬운 구간" : "Watch the chapters"}
-              description={locale === "ko" ? "챕터 잠금·분기 때문에 다시 못 보는 구간 위주로 모았습니다." : "Chapter locks and route splits that erase progress if you miss them."}
+              description={locale === "ko" ? "장 잠금·분기 때문에 다시 못 보는 구간 위주로 모았습니다." : "Chapter locks and route splits that erase progress if you miss them."}
             />
             <ul className="mt-5 flex flex-col gap-3">
               {missables.slice(0, 3).map((entry) => (
@@ -364,8 +362,8 @@ export default async function HomePage() {
               },
               {
                 icon: <FiLayers size={18} aria-hidden="true" />,
-                title: locale === "ko" ? "챕터별 놓침 정리" : "Chapter-locked notes",
-                desc: locale === "ko" ? "잠기기 전에 무엇을 챙길지 챕터별로 표시합니다." : "What to grab before each chapter locks.",
+                title: locale === "ko" ? "장별 놓침 정리" : "Chapter-locked notes",
+                desc: locale === "ko" ? "잠기기 전에 무엇을 챙길지 장별로 표시합니다." : "What to grab before each chapter locks.",
               },
               {
                 icon: <FiClock size={18} aria-hidden="true" />,

@@ -242,17 +242,16 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
       headerUrl: null,
       capsuleUrl: null,
       guidedAchievements: game.achievements.filter((achievement) => achievement.guide?.content?.length).length,
-      nextGuide: game.achievements.find((achievement) => !achievement.unlocked)
-        ? {
-            achievementSlug: game.achievements.find((achievement) => !achievement.unlocked)?.slug ?? "",
-            achievementName: game.achievements.find((achievement) => !achievement.unlocked)?.name ?? "",
-            summary:
-              game.achievements.find((achievement) => !achievement.unlocked)?.guide.content[0] ??
-              game.achievements.find((achievement) => !achievement.unlocked)?.description ??
-              "",
-            rarity: game.achievements.find((achievement) => !achievement.unlocked)?.rarity ?? 0,
-          }
-        : null,
+      nextGuide: (() => {
+        const next = game.achievements.find((achievement) => !achievement.unlocked);
+        if (!next) return null;
+        return {
+          achievementSlug: next.slug,
+          achievementName: next.name,
+          summary: next.guide.content[0] ?? next.description ?? "",
+          rarity: next.rarity ?? 0,
+        };
+      })(),
     }));
   }
 
@@ -299,7 +298,7 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
   const ACH_CHUNK = 200;
   for (let i = 0; i < achievementIds.length; i += ACH_CHUNK) {
     const slice = achievementIds.slice(i, i + ACH_CHUNK);
-    const [{ data: userAchievements }, { data: guides }] = await Promise.all([
+    const [userAchRes, guideRes] = await Promise.all([
       admin
         .from("user_achievements")
         .select("achievement_id, unlocked")
@@ -313,11 +312,18 @@ export const getLibraryGames = cache(async (limit: number = 500): Promise<Librar
         .order("upvotes", { ascending: false }),
     ]);
 
-    for (const row of userAchievements ?? []) {
+    if (userAchRes.error) {
+      console.error("[library] user_achievements query failed:", userAchRes.error.message);
+    }
+    if (guideRes.error) {
+      console.error("[library] guides query failed:", guideRes.error.message);
+    }
+
+    for (const row of userAchRes.data ?? []) {
       if (row.unlocked) unlockedIds.add(Number(row.achievement_id));
     }
 
-    for (const guide of (guides ?? []) as GuideRow[]) {
+    for (const guide of (guideRes.data ?? []) as GuideRow[]) {
       const current = guideMap.get(guide.achievement_id) ?? [];
       current.push(guide);
       guideMap.set(guide.achievement_id, current);

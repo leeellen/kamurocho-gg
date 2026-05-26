@@ -9,21 +9,21 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
   source: { label: "gamewith.jp — 龍が如く7 サブストーリー発生時期と報酬一覧", url: "https://gamewith.jp/ryu-ga-gotoku7/article/show/182838" },
   groups: [
     {
-      title: { ko: "챕터 3~4 — 이세자키 이진초 도입", en: "Chapter 3~4 — Isezaki Ijincho intro" },
+      title: { ko: "3~4장 — 이세자키 이진초 도입", en: "Chapter 3~4 — Isezaki Ijincho intro" },
       items: [
         {
           number: 1,
           title: { ko: "홈리스 입문", en: "Homeless Introduction" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "하마키타 공원", en: "Hamakita Park" },
-          trigger: { ko: "챕터 3 진행 중 하마키타 공원에서 난부 일행에게 말 걸기", en: "Chapter 3: talk to Nanba at Hamakita Park." },
+          trigger: { ko: "3장 진행 중 하마키타 공원에서 난부 일행에게 말 걸기", en: "Chapter 3: talk to Nanba at Hamakita Park." },
           body: { ko: "노숙 생활에 입문하면서 빈 캔 줍기 미니게임이 해금됩니다. 거리에서 빈 캔을 모아 환금하는 컨텐츠.", en: "Nanba teaches Ichiban the homeless life. Unlocks the Can Quest mini-game where you collect cans for cash." },
           reward: { ko: "빈 캔 줍기 미니게임 해금", en: "Can Quest mini-game unlocked" },
         },
         {
           number: 2,
           title: { ko: "그쪽 업계 사람", en: "A Man in That Line of Work" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이세자키 로드 — 후사진 만물상 부근", en: "Isezaki Road — near Fusajin General Store" },
           trigger: { ko: "수상한 남자에게 말 걸기", en: "Speak to the suspicious man on Isezaki Road." },
           body: { ko: "이상한 몬스터 같은 인간들의 정보를 등록하는 「스지몬」 도감 앱을 받는 도입 퀘스트. 이후 적을 쓰러뜨리면 자동 도감화됩니다.", en: "A weirdo hands Ichiban the Sujimon app — pokedex of street-tier enemies. Defeated foes auto-register." },
@@ -32,7 +32,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 3,
           title: { ko: "금지된 놀이", en: "Forbidden Games" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "차이나타운", en: "Chinatown" },
           trigger: { ko: "차이나타운에서 울고 있는 아이에게 말 걸기", en: "Talk to the crying child in Chinatown." },
           body: { ko: "아이의 사정을 듣고 부근의 불량배를 처리합니다.", en: "Hear out the kid and beat the bullies hassling him." },
@@ -41,7 +41,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 4,
           title: { ko: "쓰레기와 사는 남자", en: "The Man Who Lives with Garbage" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "스낵 거리 뒷골목", en: "Snack Alley — back lane" },
           trigger: { ko: "「하마코의 가게로 향한다」 이후 골목의 쓰레기 더미 옆 남자에게 말 걸기", en: "After 'head to Hamako's place', talk to the man by the trash pile in the alley." },
           body: { ko: "쓰레기에 둘러싸인 남자를 도와 쓰레기 처리·전투 후, 벤텐야 잡화상이 해금됩니다.", en: "Help the trash-hoarding man fight off scavengers; unlocks the Bentenya shop." },
@@ -50,7 +50,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 5,
           title: { ko: "행복 배달", en: "Delivery of Happiness" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "이세자키 로드에서 곤다에게 말 걸기", en: "Talk to Gonda on Isezaki Road." },
           body: { ko: "도시락 배달부 곤다를 도우며 딜리버리 헬프(원호 시스템)가 해금됩니다. 이후 전투 중 동료 캐릭터를 콜할 수 있게 됩니다.", en: "Help bento-delivery Gonda — unlocks the Delivery Help system, letting you call allies into battle." },
@@ -59,7 +59,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "당신에게 선물을", en: "A Present for You" },
-          chapter: { ko: "챕터 4 (낮)", en: "Chapter 4 (daytime)" },
+          chapter: { ko: "4장 (낮)", en: "Chapter 4 (daytime)" },
           location: { ko: "이세자키 로드 분수광장", en: "Isezaki Road — fountain plaza" },
           trigger: { ko: "낮 시간 분수광장의 노인에게 말 걸기", en: "Daytime: speak to the old man at the fountain plaza." },
           body: { ko: "손녀에게 선물할 인형을 찾아 달라는 부탁. 인형을 가져다 주면 완료.", en: "Find a doll for the old man to gift his granddaughter." },
@@ -68,7 +68,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "Baby Don't Cry", en: "Baby Don't Cry" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "곤다와 다시 만나 추가 배달 의뢰 수락", en: "Re-encounter Gonda for a follow-up delivery." },
           body: { ko: "곤다와의 두 번째 의뢰. 클리어 시 곤다가 딜리버리 헬프 보스 호출 멤버로 합류합니다.", en: "Second Gonda quest; bonds him as a Delivery Help boss-tier caller." },
@@ -77,7 +77,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "올드 시네마 파라다이스", en: "Old Cinema Paradise" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이진초 영화관", en: "Ijincho cinema" },
           trigger: { ko: "영화관 앞 점장에게 말 걸기", en: "Talk to the manager outside the cinema." },
           body: { ko: "영화관을 재건. 영화 감상 미니게임(졸음 버티기)이 해금됩니다.", en: "Help reopen the cinema; unlocks the movie-watching mini-game (stay awake for buffs)." },
@@ -86,7 +86,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "감 열매가 흔들릴 무렵에", en: "When the Persimmons Sway" },
-          chapter: { ko: "챕터 4 (낮)", en: "Chapter 4 (daytime)" },
+          chapter: { ko: "4장 (낮)", en: "Chapter 4 (daytime)" },
           location: { ko: "스낵 거리 — 서바이브 바 옆 공원", en: "Snack Alley — park next to Bar Survive" },
           trigger: { ko: "서브스토리 No.5·6 완료 후 낮 시간 서바이브 바 옆 공원 방문", en: "Daytime visit after clearing Subs 5 and 6." },
           body: { ko: "공원에서 차례로 4명의 「풍운아」와 조우·전투. 한 명을 쓰러뜨리고 미니맵 마커가 사라질 만큼 멀어진 뒤 돌아오면 다음 인물이 등장합니다. 마지막에 토사노야마가 딜리버리 헬프로 합류.", en: "Fight four oddballs in the park one at a time — clear marker, walk far enough that it vanishes from the minimap, then return for the next. Tosanoyama joins Delivery Help last." },
@@ -96,7 +96,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 10,
           title: { ko: "광활한 바다로 뛰어들어라!", en: "Dive into the Open Sea!" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "히다마리노 성 부근", en: "Near Hello Work / Hidamari Castle" },
           trigger: { ko: "「히다마리노 성으로 향하라」 이벤트 이후 발생", en: "Triggers after the 'head to Hidamari Castle' main event." },
           body: { ko: "자격증 학교가 해금되어 스탯 인상용 시험을 칠 수 있게 됩니다. 가장 일찍 풀어야 할 시스템 해금 서브.", en: "Unlocks the Qualifications School so Ichiban can study for stat-boosting licenses. Top-priority system unlock." },
@@ -105,12 +105,12 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "챕터 5~6 — 회사 경영·딜리버리 본격화", en: "Chapter 5~6 — Company & Delivery ramp" },
+      title: { ko: "5~6장 — 회사 경영·딜리버리 본격화", en: "Chapter 5~6 — Company & Delivery ramp" },
       items: [
         {
           number: 11,
           title: { ko: "쓰레기 사회의 패자", en: "Loser of a Trash Society" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "이세자키 로드의 살라리맨에게 말 걸기", en: "Talk to the salaryman on Isezaki Road." },
           body: { ko: "낙오된 살라리맨 이노카리를 도와 직장 갑질을 응징. 클리어 시 회사 직원으로 합류.", en: "Help downtrodden Inokari take revenge on his abusers; recruits him as company staff." },
@@ -119,7 +119,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 12,
           title: { ko: "알바 히어로닷컴", en: "Part-Time Hero .com" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "「파트타임 영웅」 알선 NPC에게 말 걸기", en: "Talk to the Part-Time Hero rep on Isezaki Road." },
           body: { ko: "이진초의 잡일(파트타임 히어로) 시스템이 해금됩니다. 컴플리션의 핵심 시스템.", en: "Unlocks the Part-Time Hero job board — the completion-list backbone for side activities." },
@@ -128,7 +128,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 13,
           title: { ko: "밑바닥에서 함께", en: "From Rock Bottom, Together" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드 — 이치반 컨피전스(전신)", en: "Isezaki Road — future Ichiban Confections office" },
           trigger: { ko: "회사 경영 도입 이벤트", en: "Triggered by the company-takeover main beat." },
           body: { ko: "이치반이 망해가는 과자 회사를 인수, 회사 경영 미니게임이 본격적으로 해금되는 도입 서브.", en: "Ichiban inherits the bankrupt Confections company; formally unlocks the Business Management mini-game." },
@@ -147,7 +147,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 15,
           title: { ko: "이진초의 받침대", en: "Ijincho's Catch-All" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "이세자키 로드의 거리 닭에게 접근", en: "Approach the loose chicken on Isezaki Road." },
           body: { ko: "달아난 닭 「코케콧코」를 잡아 회사 마스코트화. 회사 경영 추가 해금 + 코케콧코가 딜리버리 헬프로 합류.", en: "Catch the runaway chicken Kokekokko; further opens Business Mgmt and recruits the chicken to Delivery Help." },
@@ -156,7 +156,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "짝꿍을 찾아라", en: "Find My Partner" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드 북단", en: "Isezaki Road — north end" },
           trigger: { ko: "북단의 여성에게 말 걸기", en: "Speak to the woman at the north end of Isezaki Road." },
           body: { ko: "잃어버린 반려동물 「낸시」를 추적. 거리를 돌며 단서를 찾아 회수.", en: "Track down a lost pet, Nancy, across the streets." },
@@ -165,7 +165,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 17,
           title: { ko: "요코하마 제일 어려운 사랑", en: "Yokohama's Toughest Romance" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "거리에서 곤란해하는 여성에게 말 걸기", en: "Talk to the troubled woman on Isezaki Road." },
           body: { ko: "복잡한 연애사로 협박당하는 시라카와 키요에를 도와줍니다.", en: "Help Shirakawa Kiyoe out of a messy blackmail-tinged love triangle." },
@@ -174,7 +174,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "죄와 벌", en: "Crime and Punishment" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "삥쟁이 같은 양아치에게 시비 걸리는 직장인에게 접근", en: "Approach the salaryman being shaken down by a hood." },
           body: { ko: "갈취 현장을 끊고 회사원 하나야마를 구출. 회사 직원 영입.", en: "Stop a shakedown; recruits Hanayama to the company." },
@@ -183,7 +183,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "거품과 함께 사라지다", en: "Gone with the Bubbles" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "차이나타운", en: "Chinatown" },
           trigger: { ko: "차이나타운에서 옛 버블 회상에 잠긴 남성에게 말 걸기", en: "Talk to the man reminiscing about the bubble era in Chinatown." },
           body: { ko: "거품경제 시절을 그리워하는 노인의 마지막 호화 식사를 도와줍니다.", en: "Help a bubble-era nostalgic enjoy one last extravagant meal." },
@@ -192,12 +192,12 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "챕터 7~9 — 회사 본궤도·미디엄급 사이드", en: "Chapter 7~9 — mid-game sidelines" },
+      title: { ko: "7~9장 — 회사 본궤도·미디엄급 사이드", en: "Chapter 7~9 — mid-game sidelines" },
       items: [
         {
           number: 20,
           title: { ko: "외로운 식탁", en: "Lonely Table" },
-          chapter: { ko: "챕터 7 (밤)", en: "Chapter 7 (night)" },
+          chapter: { ko: "7장 (밤)", en: "Chapter 7 (night)" },
           location: { ko: "베테 키친 이세자키 로드점 2층", en: "Vette Kitchen Isezaki Road — 2F" },
           trigger: { ko: "밤 시간 베테 키친 2층에서 노보루에게 접근", en: "Night-time: approach Noboru on Vette Kitchen 2F." },
           body: { ko: "혼밥하는 노보루가 양키들에게 시비 걸리는 현장. 양키 격퇴 → 마커 사라질 만큼 멀어졌다가 복귀 → 스낵 거리 타니야마 스포츠 앞에서 「인격 나쁜 남자」와 다시 전투 → 베테 키친 복귀로 종료.", en: "Save Noboru from yankee thugs at Vette Kitchen, walk far enough to clear the marker, return for a second beat, then head to Taniyama Sports in Snack Alley to whip a 'bad-character' bully, then back to Vette Kitchen to close." },
@@ -206,7 +206,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 21,
           title: { ko: "야쿠자의 쓰레기장", en: "The Yakuza's Dumping Ground" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "스낵 거리", en: "Snack Alley" },
           trigger: { ko: "스낵 거리 뒷골목의 시게에게 접근", en: "Approach Shige in the Snack Alley back lane." },
           body: { ko: "낙오 야쿠자 시게의 자긍심을 되살려주는 이야기. 회사 직원으로 합류.", en: "Restore broken-down ex-yakuza Shige's pride; recruits him to the company." },
@@ -215,7 +215,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 22,
           title: { ko: "다정함의 값", en: "The Value of Kindness" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "이세자키 로드 북부", en: "Isezaki Road — north" },
           trigger: { ko: "북부 보도에서 메구미의 모친 격 인물에게 말 걸기", en: "Talk to the matronly figure on north Isezaki Road." },
           body: { ko: "곤경에 처한 모녀를 돕는 도입. 서브스토리 No.23으로 연결.", en: "Help a mother-daughter pair in distress; sets up Sub #23." },
@@ -234,7 +234,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "그 멋진 아픔을 다시 한번", en: "That Wonderful Pain, Once More" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "차이나타운", en: "Chinatown" },
           trigger: { ko: "차이나타운에서 SM 취향의 남자에게 말 걸기", en: "Talk to the masochism-curious man in Chinatown." },
           body: { ko: "마조 성향의 마키하라 소타를 「조교」해주는 서브. 클리어 시 딜리버리 헬프로 합류.", en: "Indulge Makihara Sota's masochistic streak; recruits him to Delivery Help." },
@@ -243,7 +243,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "빛바랜 별", en: "The Faded Star" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "왕년의 가수 이류존을 자칭하는 남자에게 말 걸기", en: "Talk to the man calling himself faded star I Ryujon." },
           body: { ko: "한물간 스타의 재기를 도와주는 이야기.", en: "Help a faded star reclaim a sliver of relevance." },
@@ -252,7 +252,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 26,
           title: { ko: "가면의 살인귀", en: "The Masked Killer" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "이진초 골목", en: "Ijincho back alleys" },
           trigger: { ko: "골목의 가면 남자 「J.A.」에게 말 걸기", en: "Talk to the masked man J.A. in the alley." },
           body: { ko: "가면 살인귀를 자칭하는 위험한 남자의 정체 추적.", en: "Investigate the masked man claiming to be a serial killer." },
@@ -261,7 +261,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 27,
           title: { ko: "그 김치, 매우 매움 주의", en: "That Kimchi Is Painfully Spicy" },
-          chapter: { ko: "챕터 7", en: "Chapter 7" },
+          chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "차이나타운", en: "Chinatown" },
           trigger: { ko: "히로나카가 운영하는 김치 노점", en: "At Hironaka's kimchi stall in Chinatown." },
           body: { ko: "초매운 김치로 손님을 잃은 히로나카를 돕는 이야기. 회사 직원 영입.", en: "Help Hironaka tone down his lethal kimchi; he joins the company." },
@@ -270,7 +270,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 28,
           title: { ko: "가이드의 일", en: "The Guide's Job" },
-          chapter: { ko: "챕터 8", en: "Chapter 8" },
+          chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "하마키타 공원 거리", en: "Hamakita Park St." },
           trigger: { ko: "관광 가이드 이시다 아야미에게 말 걸기", en: "Talk to tour guide Ishida Ayami." },
           body: { ko: "가이드 아야미의 관광 안내를 보조. 3개의 퀴즈에 정답을 맞추면 인간력 보너스. 도중 불량배 1명과 전투.", en: "Help Ayami guide tourists. Three trivia prompts; pick the right answer each time, then beat one thug." },
@@ -284,7 +284,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "위작에 주의하라", en: "Beware of Forgeries" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "이진초 — 노점가", en: "Ijincho — stall street" },
           trigger: { ko: "수상한 「오노 미치오」 피규어 노점", en: "Suspicious Ono Michio figurine stall." },
           body: { ko: "오노 미치오 위조 피규어 사건. 서브스토리 No.30으로 연결.", en: "Counterfeit Ono Michio figurine caper; sets up Sub #30." },
@@ -303,7 +303,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 31,
           title: { ko: "반쪽짜리", en: "The Half-Baked One" },
-          chapter: { ko: "챕터 8", en: "Chapter 8" },
+          chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "차이나타운", en: "Chinatown" },
           trigger: { ko: "차이나타운의 견습 요리사에게 말 걸기", en: "Talk to the apprentice chef in Chinatown." },
           body: { ko: "한 사람 몫의 요리사가 되려는 청년의 수행을 돕습니다.", en: "Help the apprentice chef earn his stripes." },
@@ -312,7 +312,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 32,
           title: { ko: "너를 잊지 않아", en: "I Won't Forget You" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "진나이 역 — 바샤미치 서쪽", en: "Jinnai Station — Bashamichi West" },
           trigger: { ko: "지정 장소의 남성에게 말 걸기", en: "Talk to the man at the location." },
           body: { ko: "데이트 약속 시뮬레이션. 데이트 장소 3개 중 선택 후 게임센터로 유도되며, 크레인 게임에서 인형 경품을 반드시 따야 진행. 1회 500엔 / 3트라이. 자금 여유 필수. 마무리로 양아치 3명 전투.", en: "Date-sim flow: pick a venue, end up at the arcade, and you must win a stuffed-animal prize from the crane game (500 yen / 3 tries) to advance. Bring spare cash. Closes with a 3-thug fight." },
@@ -321,12 +321,12 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "챕터 9~13 — 후반 미디엄·서커스 라인", en: "Chapter 9~13 — late-game & circus arc" },
+      title: { ko: "9~13장 — 후반 미디엄·서커스 라인", en: "Chapter 9~13 — late-game & circus arc" },
       items: [
         {
           number: 33,
           title: { ko: "교통량의 장인", en: "Traffic Count Artisan" },
-          chapter: { ko: "챕터 13", en: "Chapter 13" },
+          chapter: { ko: "13장", en: "Chapter 13" },
           location: { ko: "이세자키 로드", en: "Isezaki Road" },
           trigger: { ko: "교통량 카운터를 든 남자", en: "Man with a traffic counter." },
           body: { ko: "교통량 조사를 돕습니다.", en: "Help count traffic with a clicker." },
@@ -335,7 +335,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 34,
           title: { ko: "이진초 광소곡", en: "Ijincho Rhapsody" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "이진초 거리 곳곳", en: "Ijincho streets" },
           trigger: { ko: "거리의 광적인 사범에게 말 걸기", en: "Talk to the eccentric master on the street." },
           body: { ko: "지나치게 흥분한 검술 사범과 매를 추적합니다.", en: "Chase a rampaging swordsmanship master and his hawk through town." },
@@ -344,7 +344,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 35,
           title: { ko: "지금, 빨러 가요", en: "Now, I'm Off to Suck" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "이진초", en: "Ijincho" },
           trigger: { ko: "거리 청소 로봇을 둘러싼 소동", en: "Cleaning-bot commotion." },
           body: { ko: "거리를 누비는 청소 로봇을 회수하여 회사 직원으로 영입.", en: "Recover the wandering cleaning bot and add it to the company roster." },
@@ -353,7 +353,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 36,
           title: { ko: "전설의 뒷무기상", en: "The Legendary Black-Market Smith" },
-          chapter: { ko: "챕터 9", en: "Chapter 9" },
+          chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "차이나타운 뒷골목", en: "Chinatown back alleys" },
           trigger: { ko: "차이나타운 골목의 수상한 노인", en: "Suspicious old man in a Chinatown alley." },
           body: { ko: "뒷무기상 「쩌우 샤오롱」을 찾아 비밀 무기상점과 도박장을 동시에 해금. 핵심 해금 서브.", en: "Find black-market smith Zhou Xiaolong to unlock both the secret weapon shop and the gambling den. Major unlock." },
@@ -362,7 +362,7 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
         {
           number: 37,
           title: { ko: "애니멀 대서커스에 어서오세요 1", en: "Welcome to the Animal Circus 1" },
-          chapter: { ko: "챕터 10 (이시오다 전투 이후)", en: "Chapter 10 (after Ishioda fight)" },
+          chapter: { ko: "10장 (이시오다 전투 이후)", en: "Chapter 10 (after Ishioda fight)" },
           location: { ko: "이진초 — 서커스 천막 부근", en: "Ijincho — circus tent" },
           trigger: { ko: "서커스 단원에게 접근", en: "Speak to the circus performer." },
           body: { ko: "동물 서커스 단원들을 도와주는 3부작 1편.", en: "Part 1 of the three-part Animal Circus arc." },
@@ -391,12 +391,12 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "드래곤 카트 라인 (챕터 5~)", en: "Dragon Kart line (Chapter 5+)" },
+      title: { ko: "드래곤 카트 라인 (5장~)", en: "Dragon Kart line (Chapter 5+)" },
       items: [
         {
           number: 40,
           title: { ko: "오늘부터 너도 드래곤 레이서!", en: "From Today, You're a Dragon Racer Too!" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
           trigger: { ko: "카트장 앞 스태프에게 말 걸기", en: "Talk to the staff outside the kart course." },
           body: { ko: "드래곤 카트 미니게임 도입. 모든 카트·컵의 시작점.", en: "Unlocks the Dragon Kart mini-game; entry point for every cup." },

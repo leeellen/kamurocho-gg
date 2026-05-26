@@ -88,7 +88,7 @@ export const likeADragonIshin: CollectiblesData = {
       {
         number: 1,
         title: { ko: "C랭크 — 입문 카드", en: "C-Rank — Starter Cards" },
-        location: { ko: "초반 챕터", en: "Early chapters" },
+        location: { ko: "초반 장", en: "Early chapters" },
         body: { ko: "메인 진행 + 일반 전투 보상으로 풀리는 기본 카드입니다. 덱 초기 구성용.", en: "Default cards from main story + street fight rewards — fills the initial deck." },
       },
       {

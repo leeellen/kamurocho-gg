@@ -10,7 +10,34 @@ type ReportBody = {
   description?: string;
 };
 
+// Simple per-process IP rate limit. Not durable across instances but blocks
+// trivial spam from a single client. For stronger guarantees swap for Upstash.
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const rateBuckets = new Map<string, number[]>();
+
+function clientIp(request: Request): string {
+  const fwd = request.headers.get("x-forwarded-for");
+  if (fwd) return fwd.split(",")[0]!.trim();
+  return request.headers.get("x-real-ip") ?? "unknown";
+}
+
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const bucket = (rateBuckets.get(ip) ?? []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+  if (bucket.length >= RATE_LIMIT_MAX) {
+    rateBuckets.set(ip, bucket);
+    return true;
+  }
+  bucket.push(now);
+  rateBuckets.set(ip, bucket);
+  return false;
+}
+
 export async function POST(request: Request) {
+  if (rateLimited(clientIp(request))) {
+    return NextResponse.json({ error: "rate limit" }, { status: 429 });
+  }
   let payload: ReportBody;
   try {
     payload = (await request.json()) as ReportBody;

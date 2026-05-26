@@ -86,7 +86,7 @@ function buildKoreanGuide(ach: AchievementRow): string {
   const rarityNum = Number(ach.global_percent ?? 0).toFixed(2);
   const steps: string[] = [
     "현재 세이브에서 업적 설명의 트리거 조건이 정확히 무엇인지 먼저 확인하세요.",
-    "챕터 전환, 분기 선택, 되돌릴 수 없는 구간 전에 수동 세이브를 남겨 두세요.",
+    "장 전환, 분기 선택, 되돌릴 수 없는 구간 전에 수동 세이브를 남겨 두세요.",
   ];
   const tips: string[] = [];
   if (Number(ach.global_percent ?? 100) < 5) {

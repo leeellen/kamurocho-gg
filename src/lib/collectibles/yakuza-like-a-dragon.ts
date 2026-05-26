@@ -62,7 +62,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
   {
     slug: "sujimon-dex",
     title: { ko: "수지몬 도감 — 252종 컴플리트", en: "Sujimon Dex — Complete 252" },
-    summary: { ko: "챕터 4 서브스토리 「저런 사람」 클리어 후 수지몬 도감 앱이 풀립니다. 252마리 전부 한 번씩 격파해 등록을 채우세요. 도감은 약점·드롭·스킬 사전으로 활용 가치가 큽니다.", en: "After the Chapter 4 substory \"That Type of Person\", the Sujimon Dex app unlocks. Defeat each of the 252 sujimon at least once to register them — the Dex doubles as a weakness/drop reference." },
+    summary: { ko: "4장 서브스토리 「저런 사람」 클리어 후 수지몬 도감 앱이 풀립니다. 252마리 전부 한 번씩 격파해 등록을 채우세요. 도감은 약점·드롭·스킬 사전으로 활용 가치가 큽니다.", en: "After the Chapter 4 substory \"That Type of Person\", the Sujimon Dex app unlocks. Defeat each of the 252 sujimon at least once to register them — the Dex doubles as a weakness/drop reference." },
     tips: [
         { ko: "랭크 ★4 이상은 일반 거리에서 나오지 않습니다. 소텐보리 지하 던전·요코하마 지하 던전·아몬 라인을 거쳐야 등장합니다.", en: "Rank ★4+ rarely spawn in the streets. They appear in the Sotenbori Battle Arena, Kamurocho Underground, and Amon arcs." },
         { ko: "요코하마 이세자키 이진초 코리아타운 「THE 빌딩」 2층 수지몬 연구소에서 보상을 수령할 수 있습니다.", en: "Claim rewards from the Sujimon Research Institute on the 2nd floor of THE Building in Yokohama Isezaki Ijincho." },

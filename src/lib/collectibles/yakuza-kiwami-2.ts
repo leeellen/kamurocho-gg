@@ -37,7 +37,7 @@ export const yakuzaKiwami2: CollectiblesData = {
     },
     {
       slug: "cabaret-club-czar",
-      title: { ko: "캬바클럽 그랑프리 우승 — 「축 그랑프리 우승!」", en: "Cabaret Grand Prix Winner" },
+      title: { ko: "캬바쿠라 그랑프리 우승 — 「축 그랑프리 우승!」", en: "Cabaret Grand Prix Winner" },
       summary: {
         ko: "캬바쿠라 그랑프리에서 우승하면 「축 그랑프리 우승!」 업적 발동. 별도로 30명의 캬바걸을 영입하면 「인기 스카우트맨」, 모든 플래티넘 캐스트의 고민을 들으면 「키류의 고민 상담실」도 함께 트리거됩니다.",
         en: "Win the Cabaret Grand Prix for 'Cabaret Grand Prix Winner'. Recruit 30 hostesses for 'Top Scout' and finish every Platinum Cast's worry chat for 'Kiryu's Counseling Room'.",

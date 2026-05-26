@@ -28,7 +28,7 @@ export function MissablesSidebar({
 }: MissablesSidebarProps) {
   return (
     <aside
-      aria-label={locale === "ko" ? "챕터별 놓치기 쉬운 항목" : "Chapter missables"}
+      aria-label={locale === "ko" ? "장별 놓치기 쉬운 항목" : "Chapter missables"}
       className="space-y-4"
     >
       <div className="sticky top-24">
@@ -36,7 +36,7 @@ export function MissablesSidebar({
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
             <FiTarget size={13} aria-hidden="true" />
           </span>
-          {locale === "ko" ? "챕터별 놓치기 쉬운 항목" : "Chapter missables"}
+          {locale === "ko" ? "장별 놓치기 쉬운 항목" : "Chapter missables"}
         </h2>
         <div className="mt-4 flex max-h-[70vh] flex-col gap-3 overflow-y-auto pr-1">
           {chapterBuckets.map((bucket) => (
@@ -99,7 +99,7 @@ export function MissablesSidebar({
             <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4">
               <div className="flex items-center gap-2">
                 <Chip tone="info" size="xs">
-                  {locale === "ko" ? "챕터 미지정" : "Anytime / unspecified"}
+                  {locale === "ko" ? "장 미지정" : "Anytime / unspecified"}
                 </Chip>
               </div>
               <div className="mt-3 flex flex-col gap-2">

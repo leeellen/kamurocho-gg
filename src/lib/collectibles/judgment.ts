@@ -643,7 +643,7 @@ export const judgment: CollectiblesData = {
       slug: "drone-races",
       title: { ko: "드론 레이스 — 모든 코스 1위", en: "Drone Races — 1st in Every Course" },
       summary: {
-        ko: "드론 카페에서 모든 코스를 1위로 클리어합니다. 부품을 강화해야 후반 코스 가능. 추가 코스는 챕터 진행으로 풀립니다.",
+        ko: "드론 카페에서 모든 코스를 1위로 클리어합니다. 부품을 강화해야 후반 코스 가능. 추가 코스는 장 진행으로 풀립니다.",
         en: "Win every drone race course. Upgrade parts before late courses; new tracks unlock per chapter.",
       },
     },
@@ -667,15 +667,15 @@ export const judgment: CollectiblesData = {
       slug: "mole-investigations",
       title: { ko: "잠입 수사 — 모두 클리어", en: "Mole Investigations" },
       summary: {
-        ko: "스토리 잠입 수사 미션을 모두 진행합니다. 놓치기 쉬운 항목이 일부 있어 챕터별로 챙기는 편이 안전합니다.",
+        ko: "스토리 잠입 수사 미션을 모두 진행합니다. 놓치기 쉬운 항목이 일부 있어 장별로 챙기는 편이 안전합니다.",
         en: "Clear every Mole Investigation mission. Some are chapter-missable — handle them as they appear.",
       },
     },
     {
       slug: "dialog-choices",
-      title: { ko: "이면 보고서 — 챕터 8 대화 선택", en: "Investigation Reports — Chapter 8 Dialogs" },
+      title: { ko: "이면 보고서 — 8장 대화 선택", en: "Investigation Reports — Chapter 8 Dialogs" },
       summary: {
-        ko: "챕터 8의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. 놓치기 쉬운 업적이라 사전에 수동 세이브를 분리해 두세요.",
+        ko: "8장의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. 놓치기 쉬운 업적이라 사전에 수동 세이브를 분리해 두세요.",
         en: "Pick every correct dialog option in Chapter 8 on the first try. Missable — keep a separate manual save.",
       },
     },

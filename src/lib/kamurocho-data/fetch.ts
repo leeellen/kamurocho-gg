@@ -9,6 +9,46 @@ function admin() {
   return createAdminClient();
 }
 
+function isValidGameRow(row: unknown): row is GameRow {
+  if (!row || typeof row !== "object") return false;
+  const r = row as Record<string, unknown>;
+  return typeof r.app_id === "number" && typeof r.name === "string" && r.name.length > 0;
+}
+
+function isValidAchievementRow(row: unknown): row is AchievementRow {
+  if (!row || typeof row !== "object") return false;
+  const r = row as Record<string, unknown>;
+  return (
+    typeof r.id === "number" &&
+    typeof r.app_id === "number" &&
+    typeof r.api_name === "string" &&
+    r.api_name.length > 0
+  );
+}
+
+function isValidGuideRow(row: unknown): row is GuideRow {
+  if (!row || typeof row !== "object") return false;
+  const r = row as Record<string, unknown>;
+  return typeof r.achievement_id === "number" && typeof r.content === "string";
+}
+
+function filterValid<T>(
+  rows: unknown[] | null | undefined,
+  predicate: (row: unknown) => row is T,
+  label: string,
+): T[] {
+  const out: T[] = [];
+  let dropped = 0;
+  for (const row of rows ?? []) {
+    if (predicate(row)) out.push(row);
+    else dropped++;
+  }
+  if (dropped > 0) {
+    console.warn(`[fetch] ${label}: dropped ${dropped} invalid row(s)`);
+  }
+  return out;
+}
+
 // Achievement metadata + guides change rarely (manual backfill scripts).
 // Cache the full series rows behind Next's data cache so locale switches
 // and adjacent page loads do not trigger a fresh Supabase fan-out fetch
@@ -50,9 +90,9 @@ async function fetchSeriesRowsInner() {
   }
 
   return {
-    games: (games ?? []) as GameRow[],
-    achievements: (achievements ?? []) as AchievementRow[],
-    guides,
+    games: filterValid<GameRow>(games, isValidGameRow, "games"),
+    achievements: filterValid<AchievementRow>(achievements, isValidAchievementRow, "achievements"),
+    guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
   };
 }
 
@@ -94,9 +134,9 @@ const cachedGameRows = unstable_cache(
     }
 
     return {
-      game: gameRow as GameRow | null,
-      achievements: (achievements ?? []) as AchievementRow[],
-      guides,
+      game: isValidGameRow(gameRow) ? gameRow : null,
+      achievements: filterValid<AchievementRow>(achievements, isValidAchievementRow, "achievements"),
+      guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
   ["fetch-game-rows-v1"],

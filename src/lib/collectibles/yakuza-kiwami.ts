@@ -23,7 +23,7 @@ export const yakuzaKiwami: CollectiblesData = {
       slug: "mesuking",
       title: { ko: "메스킹 — 곤충 대왕 (모든 라이벌 우승)", en: "MesuKing — Throne of the Insect King" },
       summary: {
-        ko: "코트 어드벤처에서 시작하는 메스킹 카드 배틀. 모든 라이벌과의 대결에서 우승하면 「곤충 대왕 탄생!」 업적이 트리거됩니다. 카드는 챕터 진행 + 서브스토리 보상으로 풀립니다.",
+        ko: "코트 어드벤처에서 시작하는 메스킹 카드 배틀. 모든 라이벌과의 대결에서 우승하면 「곤충 대왕 탄생!」 업적이 트리거됩니다. 카드는 장 진행 + 서브스토리 보상으로 풀립니다.",
         en: "MesuKing card battler at the Children's Adventure. Beat every rival match to trigger 'Throne of the MesuKing!'. Cards unlock via story progress + substory rewards.",
       },
     },
@@ -38,7 +38,7 @@ export const yakuzaKiwami: CollectiblesData = {
   {
     slug: "pocket-circuit",
     title: { ko: "포켓 서킷 — 파츠 119종 + 우승 보상", en: "Pocket Circuit — All 119 Parts & Tournament Rewards" },
-    summary: { ko: "시치후쿠 거리 서쪽 포켓 서킷 스타디움에서 모든 파츠를 모으고 그랑프리에서 1위를 차지합니다. 챕터 4 이후 자유 진행 가능합니다. 일부 파츠는 에비스야 전당포, 볼링 스플릿, 코인로커, 타쿠마군 이벤트 등에서만 얻을 수 있습니다.", en: "Collect every Pocket Circuit part and win the Grand Prix at the Shichifuku St. West Pocket Circuit Stadium. Free play unlocks in Chapter 4. Some parts come only from Ebisuya pawn shop, Bowling splits, Coin Lockers, and Takuma-kun events." },
+    summary: { ko: "시치후쿠 거리 서쪽 포켓 서킷 스타디움에서 모든 파츠를 모으고 그랑프리에서 1위를 차지합니다. 4장 이후 자유 진행 가능합니다. 일부 파츠는 에비스야 전당포, 볼링 스플릿, 코인로커, 타쿠마군 이벤트 등에서만 얻을 수 있습니다.", en: "Collect every Pocket Circuit part and win the Grand Prix at the Shichifuku St. West Pocket Circuit Stadium. Free play unlocks in Chapter 4. Some parts come only from Ebisuya pawn shop, Bowling splits, Coin Lockers, and Takuma-kun events." },
     tips: [
         { ko: "대회 우승 보상은 파츠 상점 라인업을 늘립니다. 대회 1~13 순서대로 격파해 상위 모터·서스펜션을 해금하세요.", en: "Tournament wins unlock new parts shop stock. Beat tournaments 1-13 in order to access high-end motors and suspensions." },
         { ko: "마지마와의 1·2·3회차 레이스는 메인 스토리 외부에서도 트리거 가능. 특수 스티커/파츠 보상이 있습니다.", en: "The 3 Majima races trigger outside the main story too — they reward unique stickers and parts." },

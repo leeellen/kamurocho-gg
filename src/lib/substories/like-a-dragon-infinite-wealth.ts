@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
   appId: 2072450,
   summary: {
-    ko: "총 52개. 챕터 1~9 진행 중에 모두 해금되며, 미스 불가(놓치는 것 없음) — 단, 시간대(낮/밤)나 매니저 랭크, 인간력(친절/용기 등) 7 이상 같은 조건이 붙은 의뢰가 있어 메인 진행과 병행이 효율적입니다. 호놀룰루 거점 의뢰가 대다수이며, 챕터 9 후반에 키류의 「엔딩 노트」와 묶이는 의뢰가 추가됩니다. 10/20/40개 클리어 시 트로피 라인이 풀립니다.",
+    ko: "총 52개. 1~9장 진행 중에 모두 해금되며, 미스 불가(놓치는 것 없음) — 단, 시간대(낮/밤)나 매니저 랭크, 인간력(친절/용기 등) 7 이상 같은 조건이 붙은 의뢰가 있어 메인 진행과 병행이 효율적입니다. 호놀룰루 거점 의뢰가 대다수이며, 9장 후반에 키류의 「엔딩 노트」와 묶이는 의뢰가 추가됩니다. 10/20/40개 클리어 시 트로피 라인이 풀립니다.",
     en: "52 substories total. All unlock between Chapter 1 and 9 and none are strictly missable, but several gate on time of day, manager rank, or personality stats (Kindness/Courage/etc. 7+), so run them alongside the main story. The bulk happen in Honolulu City; Chapter 9 adds Kiryu's 'Ending Note' threads. Clearing 10/20/40 unlocks the Touching Lives / Saving Lives / Living Your Best Life trophy line.",
   },
   source: {
@@ -12,15 +12,15 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
   },
   groups: [
     {
-      title: { ko: "스토리 도입 — 챕터 1~2 (요코하마)", en: "Story Intro — Chapter 1~2 (Yokohama)" },
+      title: { ko: "스토리 도입 — 1~2장 (요코하마)", en: "Story Intro — Chapter 1~2 (Yokohama)" },
       items: [
         {
           number: 1,
           title: { ko: "라디오의 시간", en: "Radio Time" },
-          chapter: { ko: "챕터 1", en: "Chapter 1" },
+          chapter: { ko: "1장", en: "Chapter 1" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "이세자키 이진초 — 사쿠라가와도리 남쪽", en: "Isezaki Ijincho — Sakuragawa St. south" },
-          trigger: { ko: "챕터 1 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 1 main story." },
+          trigger: { ko: "1장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 1 main story." },
           body: {
             ko: "메인 진행 중 자동으로 풀리는 도입 의뢰. 클리어 시 스마트폰 앱 「플레이리스트」가 추가되어 BGM을 자유롭게 바꿀 수 있습니다.",
             en: "Auto-completes during the Chapter 1 story. Unlocks the 'Playlist' phone app for free BGM swapping.",
@@ -30,10 +30,10 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 2,
           title: { ko: "다시 한 번 노린다! 스지몬 마스터!", en: "Once More, Sujimon Master!" },
-          chapter: { ko: "챕터 2", en: "Chapter 2" },
+          chapter: { ko: "2장", en: "Chapter 2" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "이세자키 이진초 — 로만도리", en: "Isezaki Ijincho — Roman St." },
-          trigger: { ko: "챕터 2 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 2 main story." },
+          trigger: { ko: "2장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 2 main story." },
           body: {
             ko: "스지몬 도감 앱이 부활하는 도입 의뢰. 이후 호놀룰루에서 본격적인 스지몬 배틀 컨텐츠(36~42)가 풀립니다.",
             en: "Brings back the Sujimon dex app. Sets up the Sujimon battle chain (36~42) in Honolulu.",
@@ -43,15 +43,15 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "호놀룰루 도착 — 챕터 3 (도입 묶음)", en: "Arriving in Honolulu — Chapter 3 (Intro Wave)" },
+      title: { ko: "호놀룰루 도착 — 3장 (도입 묶음)", en: "Arriving in Honolulu — Chapter 3 (Intro Wave)" },
       items: [
         {
           number: 3,
           title: { ko: "크레이지 딜리버리", en: "Crazy Delivery" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 스트리트", en: "Honolulu City — Aloha St." },
-          trigger: { ko: "챕터 3 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
+          trigger: { ko: "3장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
           body: {
             ko: "딜리버리 헬프(원군 호출) 시스템이 해금되는 도입 의뢰. 첫 동료 「찰리」가 합류하며 전투 중 원군 호출이 가능해집니다.",
             en: "Unlocks the Delivery Help (assist call) system. Adds first helper Charlie and lets you summon assists mid-fight.",
@@ -61,10 +61,10 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 4,
           title: { ko: "치토세의 정체", en: "The Truth About Chitose" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 와이키키 스트리트", en: "Honolulu City — Waikiki St." },
-          trigger: { ko: "챕터 3 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
+          trigger: { ko: "3장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
           body: {
             ko: "치토세와의 인연을 본격 시작하는 의뢰. 이후 절(50)까지 이어지는 라인의 시작점.",
             en: "Kicks off Chitose's bond line that leads to Substory 50.",
@@ -74,12 +74,12 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 5,
           title: { ko: "잘 부탁해 마이 프렌드", en: "Nice to Meet You, My Friend" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 후지 스트리트", en: "Honolulu City — Fuji St." },
-          trigger: { ko: "챕터 3 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
+          trigger: { ko: "3장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 3." },
           body: {
-            ko: "스마트폰 앱 「알로하 링크」가 추가됩니다. 이후 챕터 3 후반의 사이드 의뢰 대부분이 이 앱을 통해 해금됩니다.",
+            ko: "스마트폰 앱 「알로하 링크」가 추가됩니다. 이후 3장 후반의 사이드 의뢰 대부분이 이 앱을 통해 해금됩니다.",
             en: "Adds the Aloha Links app, which gates most of the rest of the Chapter 3 sidequests.",
           },
           reward: { ko: "「알로하 링크」 앱", en: "Aloha Links app" },
@@ -87,7 +87,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 6,
           title: { ko: "도로에서 파도타는 OKA 서퍼", en: "OKA Surfer on the Road" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 시사이드 애비뉴", en: "Honolulu City — Seaside Ave." },
           trigger: { ko: "「알로하 링크」 해금 후 발생", en: "Available after unlocking Aloha Links." },
@@ -100,7 +100,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 7,
           title: { ko: "마치코 씨", en: "Ms. Machiko" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 시사이드 애비뉴", en: "Honolulu City — Seaside Ave." },
           trigger: { ko: "「알로하 링크」 해금 후 발생", en: "Available after unlocking Aloha Links." },
@@ -113,7 +113,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 8,
           title: { ko: "수상한 자 스냅", en: "Snap That Creep" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 스트리트", en: "Honolulu City — Aloha St." },
           trigger: { ko: "「알로하 링크」 해금 후 알로하 스트리트의 의뢰자에게 말 걸기", en: "Talk to the client on Aloha St. after Aloha Links is live." },
@@ -126,7 +126,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 9,
           title: { ko: "첫사랑은 레모네이드 맛", en: "First Love Tastes Like Lemonade" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아야메 스트리트", en: "Honolulu City — Ayame St." },
           trigger: { ko: "낮 시간대 아야메 스트리트의 소녀에게 말 걸기 (알로하 링크 해금 후)", en: "Daytime: talk to the girl on Ayame St. after Aloha Links unlocks." },
@@ -139,7 +139,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 10,
           title: { ko: "비치에 얽힌 이런저런", en: "Beach Etcetera" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "딜리버리 헬프 해금 후 낮 시간대 알로하 비치 방문", en: "Daytime on Aloha Beach after Delivery Help is live." },
@@ -152,7 +152,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 11,
           title: { ko: "트로피컬 레스토랑에 오신 걸 환영해요", en: "Welcome to the Tropical Restaurant" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 모모 스트리트", en: "Honolulu City — Momo St." },
           trigger: { ko: "낮 시간대 모모 스트리트의 점원에게 말 걸기", en: "Daytime: talk to the staffer on Momo St." },
@@ -176,7 +176,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 12,
           title: { ko: "다정하게 대해준 사람", en: "Saved by Kindness" },
-          chapter: { ko: "챕터 3", en: "Chapter 3" },
+          chapter: { ko: "3장", en: "Chapter 3" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 마카니 애비뉴 (택시 정류장 맞은편)", en: "Honolulu City — Makani Ave. (across from the taxi stop)" },
           trigger: { ko: "알로하 링크 해금 후 마카니 애비뉴에서 쓰러진 남자에게 말 걸기", en: "After Aloha Links unlocks, speak to the man on the ground on Makani Ave." },
@@ -195,7 +195,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 13,
           title: { ko: "폭풍을 부르고 싶은 남자", en: "Rock and Roil" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치 (주서리 남쪽)", en: "Honolulu City — Aloha Beach (south of the Juicery)" },
           trigger: { ko: "딜리버리 헬프 해금 후 낮 시간대 알로하 비치 방문", en: "Daytime on Aloha Beach after Delivery Help is live." },
@@ -214,7 +214,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "알로하 비치의 주문", en: "The Aloha Beach Charm" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "알로하 링크 해금 후 낮 시간대 알로하 비치 방문", en: "Daytime on Aloha Beach after Aloha Links is live." },
@@ -227,7 +227,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 15,
           title: { ko: "사무라이를 따라가도 될까요", en: "Samurai, May We Walk Together?" },
-          chapter: { ko: "챕터 3 (낮/저녁)", en: "Chapter 3 (Day / Evening)" },
+          chapter: { ko: "3장 (낮/저녁)", en: "Chapter 3 (Day / Evening)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치 (오션 보이즈 남쪽)", en: "Honolulu City — Aloha Beach (south of Ocean Boys)" },
           trigger: { ko: "11 「트로피컬 레스토랑」 클리어 후 발생", en: "Available after clearing Substory 11." },
@@ -250,7 +250,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 16,
           title: { ko: "라이프가드의 일", en: "A Lifeguard's Duty" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 스트리트", en: "Honolulu City — Aloha St." },
           trigger: { ko: "알로하 링크 해금 후 발생", en: "Available after unlocking Aloha Links." },
@@ -260,7 +260,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 17,
           title: { ko: "비치를 지킨다는 것", en: "Protecting the Beach" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "16 클리어 후 발생", en: "Available after clearing Substory 16." },
@@ -270,7 +270,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "비치의 수호신", en: "Guardian of the Beach" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "17 클리어 후 발생", en: "Available after clearing Substory 17." },
@@ -280,7 +280,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 19,
           title: { ko: "My Sweet Home", en: "My Sweet Home" },
-          chapter: { ko: "챕터 3 (낮)", en: "Chapter 3 (Daytime)" },
+          chapter: { ko: "3장 (낮)", en: "Chapter 3 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "딜리버리 헬프 해금 후 알로하 비치의 노숙자 「요제프」에게 말 걸기", en: "Speak to the homeless man Joseph on Aloha Beach after Delivery Help is live." },
@@ -290,35 +290,35 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "호놀룰루 — 챕터 4 묶음", en: "Honolulu — Chapter 4 Wave" },
+      title: { ko: "호놀룰루 — 4장 묶음", en: "Honolulu — Chapter 4 Wave" },
       items: [
         {
           number: 20,
           title: { ko: "비밀의 차고", en: "The Secret Garage" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 훌라 애비뉴", en: "Honolulu City — Hula Ave." },
-          trigger: { ko: "챕터 4 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 4." },
+          trigger: { ko: "4장 메인 진행 중 자동 발생", en: "Auto-triggers during Chapter 4." },
           body: { ko: "무기 제작/강화 시스템이 해금되는 도입 의뢰.", en: "Unlocks weapon crafting/upgrade." },
           reward: { ko: "무기 제작 해금", en: "Weapon crafting unlocked" },
         },
         {
           number: 21,
           title: { ko: "대해원으로 렛츠 다이브", en: "Let's Dive Into the Open Sea" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 하버 스트리트", en: "Honolulu City — Harbor St." },
-          trigger: { ko: "챕터 4 메인 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 메인 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "라이센스 시험(자격 인정) 컨텐츠가 해금됩니다. 이후 47 라인의 전제 조건이 됩니다.", en: "Unlocks the license certification exams (prereq for Substory 47)." },
           reward: { ko: "라이센스 시험 해금", en: "License exams unlocked" },
         },
         {
           number: 22,
           title: { ko: "카페 소라마메", en: "Cafe Soramame (Rise and Grind)" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아나콘다도리", en: "Honolulu City — Anaconda Blvd." },
-          trigger: { ko: "챕터 4 진행 중 카페 점주에게 말 걸기", en: "Talk to the cafe owner on Anaconda Blvd. in Chapter 4." },
+          trigger: { ko: "4장 진행 중 카페 점주에게 말 걸기", en: "Talk to the cafe owner on Anaconda Blvd. in Chapter 4." },
           body: { ko: "카페 소라마메의 점주를 돕는 의뢰. 대화 중 점주의 본명을 묻는 질문이 나오며, 「소라타」로 답해야 인간력 보너스가 들어옵니다.", en: "Help out at Cafe Soramame. When asked the owner's first name, answer 'Sorata' for the personality bonus." },
           choices: [
             { prompt: { ko: "「점주의 이름은?」", en: "'The owner's name?'" }, correct: { ko: "소라타", en: "Sorata" } },
@@ -328,7 +328,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 23,
           title: { ko: "프루메리아를 그대에게", en: "Plumeria for You" },
-          chapter: { ko: "챕터 4 (낮)", en: "Chapter 4 (Daytime)" },
+          chapter: { ko: "4장 (낮)", en: "Chapter 4 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 와이키키 스트리트", en: "Honolulu City — Waikiki St." },
           trigger: { ko: "지정 두 곳에서 꽃 이벤트 목격 후, 와이키키에서 청년들의 다툼 목격", en: "Witness flower scenes at two spots, then catch the youths' quarrel on Waikiki St." },
@@ -338,47 +338,47 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 24,
           title: { ko: "스노우 스마일", en: "Snow Smile" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 스트리트", en: "Honolulu City — Aloha St." },
-          trigger: { ko: "챕터 4 진행 중 알로하 스트리트의 의뢰자에게 말 걸기", en: "Talk to the client on Aloha St. in Chapter 4." },
+          trigger: { ko: "4장 진행 중 알로하 스트리트의 의뢰자에게 말 걸기", en: "Talk to the client on Aloha St. in Chapter 4." },
           body: { ko: "한겨울에 눈을 보고 싶다는 일본인 단원과 동행하는 의뢰.", en: "Help a Japanese visitor see 'snow' in midsummer Hawaii." },
           reward: { ko: "딜리버리 헬프 「곤다바라 조장」", en: "Delivery Helper Boss Gondabara" },
         },
         {
           number: 25,
           title: { ko: "You (don't) Listen to Rock", en: "You (don't) Listen to Rock" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아나콘다 쇼핑센터", en: "Honolulu City — Anaconda Shopping Center" },
-          trigger: { ko: "챕터 4 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "쇼핑센터의 락 매니아 청년과 음악 취향으로 부딪히는 의뢰.", en: "Spar with a rock-snob youth at the mall over taste in music." },
           reward: { ko: "사인 티셔츠", en: "Signed t-shirt" },
         },
         {
           number: 26,
           title: { ko: "아나콘다 이스케이프", en: "Anaconda Escape" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아나콘다 쇼핑센터", en: "Honolulu City — Anaconda Shopping Center" },
-          trigger: { ko: "챕터 4 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "쇼핑센터 내부에서 일어난 좀도둑·삥쟁이 사건을 해결하는 의뢰.", en: "Solve a petty-theft incident inside the Anaconda mall." },
           reward: { ko: "금고 열쇠", en: "Safe key" },
         },
         {
           number: 27,
           title: { ko: "리얼리즘의 추구", en: "An Authentic Production" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 리버사이드 워크", en: "Honolulu City — Riverside Walk" },
-          trigger: { ko: "챕터 4 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "리얼리즘에 집착하는 영화 감독의 액션 신 제작을 돕는 의뢰. 이후 28 라인의 전제.", en: "Help a realism-obsessed director shoot an action scene. Sets up Substory 28." },
           reward: { ko: "지갑 + 스피드 업퍼 + 딜리버리 헬프 「보니 카시와」", en: "Wallet + Speed Upper + Helper Bony Kashiwa" },
         },
         {
           number: 28,
           title: { ko: "폭풍 너머로", en: "An Authentic Blockbuster" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 선셋 파크 (마카니 커피 옆)", en: "Honolulu City — Sunset Park (next to Makani Coffee)" },
           trigger: { ko: "15 & 27 클리어 후 발생", en: "Available after clearing Substory 15 and 27." },
@@ -391,27 +391,27 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "오소우지마루 다시", en: "Mr. Cleanup Returns" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아나콘다 쇼핑센터", en: "Honolulu City — Anaconda Shopping Center" },
-          trigger: { ko: "챕터 4 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "전작의 청소로봇 「오소우지마루」가 재등장. 이후 30 「미확인 비행물체와 조우」로 이어집니다.", en: "Mr. Cleanup (Osoujimaru) returns; sets up Substory 30." },
           reward: { ko: "본 후크 부적 + 스지몬 정보", en: "Bone Hook charm + Sujimon intel" },
         },
         {
           number: 37,
           title: { ko: "스지가미님은 갑자기", en: "The Sujigami Cometh" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아나콘다 쇼핑센터", en: "Honolulu City — Anaconda Shopping Center" },
-          trigger: { ko: "챕터 4 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 4." },
+          trigger: { ko: "4장 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 4." },
           body: { ko: "스지몬 배틀 컨텐츠가 본격적으로 해금됩니다.", en: "Unlocks the full Sujimon Battle system." },
           reward: { ko: "스지몬 배틀 해금", en: "Sujimon Battle unlocked" },
         },
         {
           number: 38,
           title: { ko: "스지가미 사천왕 등장", en: "Enter the Sujigami Four Kings" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 호텔 짐", en: "Honolulu City — Hotel gym" },
           trigger: { ko: "스지몬 매니저 랭크 10 달성", en: "Reach Sujimon manager rank 10." },
@@ -421,7 +421,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 39,
           title: { ko: "매혹의 비치 퀸", en: "The Alluring Beach Queen" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "스지몬 매니저 랭크 20 달성", en: "Reach Sujimon manager rank 20." },
@@ -431,7 +431,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 40,
           title: { ko: "청춘을 되찾아라", en: "Reclaim Your Youth" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 에이스 도장", en: "Honolulu City — Ace Dojo" },
           trigger: { ko: "스지몬 매니저 랭크 30 달성", en: "Reach Sujimon manager rank 30." },
@@ -441,7 +441,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 41,
           title: { ko: "살의의 극도에 눈뜬 남자", en: "The Man Who Found Bloodlust" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 에이스 도장", en: "Honolulu City — Ace Dojo" },
           trigger: { ko: "스지몬 매니저 랭크 35 달성", en: "Reach Sujimon manager rank 35." },
@@ -451,7 +451,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 42,
           title: { ko: "정상결전", en: "Showdown at the Top" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — PC샵 스지가미", en: "Honolulu City — PC Shop Sujigami" },
           trigger: { ko: "41 클리어 후 발생", en: "Available after clearing Substory 41." },
@@ -461,17 +461,17 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 43,
           title: { ko: "아사쿠라라는 남자", en: "The Man Called Asakura" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 스트리트", en: "Honolulu City — Aloha St." },
-          trigger: { ko: "챕터 4 진행 중 발생", en: "Available in Chapter 4." },
+          trigger: { ko: "4장 진행 중 발생", en: "Available in Chapter 4." },
           body: { ko: "복서 출신 아사쿠라와의 첫 만남. 이치반이 「파운드」 기술을 습득합니다.", en: "First meeting with ex-boxer Asakura. Ichiban learns the 'Pound' skill." },
           reward: { ko: "이치반 「파운드」 습득", en: "Ichiban learns 'Pound'" },
         },
         {
           number: 44,
           title: { ko: "과거와 미래", en: "Past and Future" },
-          chapter: { ko: "챕터 4", en: "Chapter 4" },
+          chapter: { ko: "4장", en: "Chapter 4" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 하버 스트리트", en: "Honolulu City — Harbor St." },
           trigger: { ko: "43 클리어 후 발생", en: "Available after clearing Substory 43." },
@@ -481,12 +481,12 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "호놀룰루 — 챕터 5~6 묶음 (월드와이드 / 돈도코 섬)", en: "Honolulu — Chapter 5~6 Wave (Worldwide / Dondoko Island)" },
+      title: { ko: "호놀룰루 — 5~6장 묶음 (월드와이드 / 돈도코 섬)", en: "Honolulu — Chapter 5~6 Wave (Worldwide / Dondoko Island)" },
       items: [
         {
           number: 30,
           title: { ko: "미확인 비행물체와 조우", en: "Close Encounter of the UFO Kind" },
-          chapter: { ko: "챕터 6 (낮/저녁)", en: "Chapter 6 (Day / Evening)" },
+          chapter: { ko: "6장 (낮/저녁)", en: "Chapter 6 (Day / Evening)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 카크 애비뉴", en: "Honolulu City — Kirk Ave." },
           trigger: { ko: "29 클리어 후 발생", en: "Available after clearing Substory 29." },
@@ -496,17 +496,17 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 31,
           title: { ko: "마법의 말 알로해피", en: "Magic Word: Alohappy" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 월드와이드 마켓 빌리지", en: "Honolulu City — Worldwide Market Village" },
-          trigger: { ko: "챕터 5 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 5." },
+          trigger: { ko: "5장 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 5." },
           body: { ko: "직업 변경 시스템이 해금되고 마린 마스터가 추가됩니다.", en: "Unlocks job-change and adds the Marine Master job." },
           reward: { ko: "직업 변경 해금 + 마린 마스터", en: "Job change + Marine Master unlocked" },
         },
         {
           number: 32,
           title: { ko: "트로피컬 포토 랠리", en: "Tropical Photo Rally" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 월드와이드 마켓 빌리지", en: "Honolulu City — Worldwide Market Village" },
           trigger: { ko: "31 클리어 후 발생", en: "Available after clearing Substory 31." },
@@ -516,20 +516,20 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 33,
           title: { ko: "열려라! 밑바닥의 섬", en: "Open Up! Rock Bottom Island" },
-          chapter: { ko: "챕터 6", en: "Chapter 6" },
+          chapter: { ko: "6장", en: "Chapter 6" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "돈도코 섬", en: "Dondoko Island" },
-          trigger: { ko: "챕터 6 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 6." },
+          trigger: { ko: "6장 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 6." },
           body: { ko: "돈도코 섬 컨텐츠가 본격 해금됩니다.", en: "Unlocks Dondoko Island." },
           reward: { ko: "돈도코 섬 해금", en: "Dondoko Island unlocked" },
         },
         {
           number: 34,
           title: { ko: "하와이의 미궁", en: "The Hawaii Labyrinth" },
-          chapter: { ko: "챕터 5", en: "Chapter 5" },
+          chapter: { ko: "5장", en: "Chapter 5" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 리버사이드 워크 (아나콘다 지구)", en: "Honolulu City — Riverside Walk (Anaconda area)" },
-          trigger: { ko: "챕터 5 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 5." },
+          trigger: { ko: "5장 메인 진행 중 자동 발생", en: "Auto-triggers in Chapter 5." },
           body: {
             ko: "지하 던전 「하와이의 미궁」 입구의 노숙자에게 통행료를 지불하고 입장. B3까지 내려가 보스 「앨런」을 격파합니다. 통행료 선택지에서 「10달러」를 내야 정신력 +30 최대 보상이 들어옵니다.",
             en: "Pay the homeless gatekeeper, descend to B3, and beat the boss Allen. Tipping $10 nets the full +30 Mental personality bonus.",
@@ -542,7 +542,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
         {
           number: 35,
           title: { ko: "사랑과 벌", en: "Love and Punishment" },
-          chapter: { ko: "챕터 6 (밤)", en: "Chapter 6 (Night)" },
+          chapter: { ko: "6장 (밤)", en: "Chapter 6 (Night)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 아트 월즈", en: "Honolulu City — Art Walls" },
           trigger: { ko: "야마이 전 클리어 후 발생", en: "Available after the Yamai battle." },
@@ -552,12 +552,12 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "호놀룰루 — 챕터 9 후반 묶음 (인연·엔딩 노트)", en: "Honolulu — Chapter 9 Wave (Bonds & Ending Note)" },
+      title: { ko: "호놀룰루 — 9장 후반 묶음 (인연·엔딩 노트)", en: "Honolulu — Chapter 9 Wave (Bonds & Ending Note)" },
       items: [
         {
           number: 36,
           title: { ko: "SPARK", en: "SPARK" },
-          chapter: { ko: "챕터 9 (낮)", en: "Chapter 9 (Daytime)" },
+          chapter: { ko: "9장 (낮)", en: "Chapter 9 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 알로하 비치", en: "Honolulu City — Aloha Beach" },
           trigger: { ko: "울트라 본드 기술 해금 후 낮 시간대 알로하 비치 방문", en: "Daytime on Aloha Beach after unlocking the Ultra Bond ability." },

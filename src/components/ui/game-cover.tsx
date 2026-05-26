@@ -80,6 +80,9 @@ export function GameCover({
     () => candidateUrls(appId, ratio, imgIconUrl, headerUrl, capsuleUrl),
     [appId, ratio, imgIconUrl, headerUrl, capsuleUrl],
   );
+  // Canonical React "reset state on prop change" pattern — see
+  // https://react.dev/reference/react/useState#storing-information-from-previous-renders.
+  // Render-phase setState here is intentional; React reruns immediately without commit.
   const [idx, setIdx] = useState(0);
   const [prevUrls, setPrevUrls] = useState(urls);
   if (prevUrls !== urls) {

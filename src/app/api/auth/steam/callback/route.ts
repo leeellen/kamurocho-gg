@@ -29,7 +29,8 @@ async function fetchSteamProfile(steamId: string): Promise<SteamPlayer | null> {
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const valid = await verifySteamAssertion(url.searchParams);
+  const expectedOrigin = process.env.NEXTAUTH_URL ?? url.origin;
+  const valid = await verifySteamAssertion(url.searchParams, expectedOrigin);
   if (!valid) {
     return NextResponse.redirect(new URL("/?auth=failed", url.origin));
   }

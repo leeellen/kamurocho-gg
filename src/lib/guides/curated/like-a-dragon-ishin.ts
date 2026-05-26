@@ -34,13 +34,13 @@ const completion100: CuratedGuide = {
     },
     {
       ko:
-        "4) 사이드 미션 — 100여 건 전부 클리어. 일부는 시간대(낮/밤)·특정 챕터 도달이 조건이라 컴플리트 리스트 점검 필수.",
+        "4) 사이드 미션 — 100여 건 전부 클리어. 일부는 시간대(낮/밤)·특정 장 도달이 조건이라 컴플리트 리스트 점검 필수.",
       en:
         "4) Side missions — clear all ~100; some gate on time of day or chapter, so audit the Completion List.",
     },
     {
       ko:
-        "5) 새 회차에서 Legend 난이도 → 챕터 14(피날레) 직전 신센구미 막사에서 오키타와 대화해 Legend로 전환 가능. 단일 회차로 Legend 트로피 획득 가능.",
+        "5) 새 회차에서 Legend 난이도 → 14장(피날레) 직전 신센구미 막사에서 오키타와 대화해 Legend로 전환 가능. 단일 회차로 Legend 트로피 획득 가능.",
       en:
         "5) Legend run — at Ch.14 before heading back to Tosa, talk to Okita at the Shinsengumi barracks to flip difficulty. One-run Legend possible.",
     },
@@ -128,9 +128,9 @@ const allPlaySpotsIshin: CuratedGuide = {
 
 // 「서브 스토리 제패!」 — 모든 서브 클리어. Steam: clear_substory_all.
 const allSubsIshin: CuratedGuide = {
-  summary: { ko: "Ishin!의 모든 서브스토리(약 70건)를 클리어하면 발동. 일부 서브는 챕터 진행·시간대·NPC 친밀도 조건이 붙어 있어 컴플리트 리스트 점검 필수.", en: "Clear all ~70 Ishin substories. Some gate on chapter/time/NPC bonds — audit the Completion List." },
+  summary: { ko: "Ishin!의 모든 서브스토리(약 70건)를 클리어하면 발동. 일부 서브는 장 진행·시간대·NPC 친밀도 조건이 붙어 있어 컴플리트 리스트 점검 필수.", en: "Clear all ~70 Ishin substories. Some gate on chapter/time/NPC bonds — audit the Completion List." },
   steps: [
-    { ko: "1) 각 챕터 진입 시 교토·토사 거리를 한 바퀴 돌며 새 서브 마커 확인.", en: "1) Sweep Kyoto + Tosa for new sub markers each chapter." },
+    { ko: "1) 각 장 진입 시 교토·토사 거리를 한 바퀴 돌며 새 서브 마커 확인.", en: "1) Sweep Kyoto + Tosa for new sub markers each chapter." },
     { ko: "2) 시간대(낮/밤) 한정 서브는 별도 메모. 일부는 자격증·요리 스탯 조건도 있음.", en: "2) Time-locked subs need clock sync; some require qualifications/cooking stats." },
     { ko: "3) 모든 서브 클리어 시 트로피 발동.", en: "3) Full clear fires it." },
   ],

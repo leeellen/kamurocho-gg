@@ -170,21 +170,28 @@ export const getSeriesGames = cache(async (locale: Locale): Promise<SeriesGameCa
   });
 });
 
-export const getGamePageData = cache(
-  async (slugOrId: string, locale: Locale): Promise<GamePageData | null> => {
-    const curated = getCuratedGameBySlug(slugOrId);
-    if (!curated) return null;
+function buildGamePageData({
+  curated,
+  game,
+  gameAchievements,
+  guides,
+  locale,
+}: {
+  curated: CuratedGame;
+  game: import("./types").GameRow | null;
+  gameAchievements: import("./types").AchievementRow[];
+  guides: GuideRow[];
+  locale: Locale;
+}): GamePageData | null {
+  if (!game) return null;
 
-    const { game, achievements: gameAchievements, guides } = await fetchGameRows(curated.appId);
-    if (!game) return null;
-
-    const guidesByAchievement = new Map<number, GuideRow[]>();
-    for (const guide of guides) {
-      const current = guidesByAchievement.get(guide.achievement_id) ?? [];
-      current.push(guide);
-      guidesByAchievement.set(guide.achievement_id, current);
-    }
-    const guideTextReplacements = gameAchievements
+  const guidesByAchievement = new Map<number, GuideRow[]>();
+  for (const guide of guides) {
+    const current = guidesByAchievement.get(guide.achievement_id) ?? [];
+    current.push(guide);
+    guidesByAchievement.set(guide.achievement_id, current);
+  }
+  const guideTextReplacements = gameAchievements
       .map((achievement) => {
         const sidecar = parseAchievementSidecar(achievement.category ?? null);
         const en = achievement.display_name?.trim();
@@ -308,8 +315,51 @@ export const getGamePageData = cache(
       achievements: mappedCards,
       missables: curatedMissables,
     };
+}
+
+export const getGamePageData = cache(
+  async (slugOrId: string, locale: Locale): Promise<GamePageData | null> => {
+    const curated = getCuratedGameBySlug(slugOrId);
+    if (!curated) return null;
+    const { game, achievements: gameAchievements, guides } = await fetchGameRows(curated.appId);
+    return buildGamePageData({ curated, game, gameAchievements, guides, locale });
   },
 );
+
+// Single-fetch series-wide build. Used by /missables and /search to avoid
+// the N+1 pattern of calling fetchGameRows per game (14 -> 1 DB roundtrip).
+const getAllGamePagesData = cache(async (locale: Locale): Promise<GamePageData[]> => {
+  const { games, achievements, guides } = await fetchSeriesRows();
+  const gameMap = new Map(games.map((g) => [g.app_id, g]));
+  const achievementsByApp = new Map<number, import("./types").AchievementRow[]>();
+  for (const row of achievements) {
+    const list = achievementsByApp.get(row.app_id) ?? [];
+    list.push(row);
+    achievementsByApp.set(row.app_id, list);
+  }
+  const achievementIdToApp = new Map<number, number>();
+  for (const row of achievements) achievementIdToApp.set(row.id, row.app_id);
+  const guidesByApp = new Map<number, GuideRow[]>();
+  for (const guide of guides) {
+    const appId = achievementIdToApp.get(guide.achievement_id);
+    if (appId == null) continue;
+    const list = guidesByApp.get(appId) ?? [];
+    list.push(guide);
+    guidesByApp.set(appId, list);
+  }
+  const pages: GamePageData[] = [];
+  for (const curated of CURATED_GAMES) {
+    const page = buildGamePageData({
+      curated,
+      game: gameMap.get(curated.appId) ?? null,
+      gameAchievements: achievementsByApp.get(curated.appId) ?? [],
+      guides: guidesByApp.get(curated.appId) ?? [],
+      locale,
+    });
+    if (page) pages.push(page);
+  }
+  return pages;
+});
 
 export const getAchievementPageData = cache(
   async (slugOrId: string, achievementSlug: string, locale: Locale) => {
@@ -343,29 +393,22 @@ export const getPlayOrderData = cache(async (locale: Locale) => {
 });
 
 export const getMissablesIndex = cache(async (locale: Locale) => {
-  const games = await getSeriesGames(locale);
-  const entries = await Promise.all(
-    games.map(async (game) => {
-      const page = await getGamePageData(game.slug, locale);
-      if (!page) return null;
+  const pages = await getAllGamePagesData(locale);
+  const entries = pages
+    .map((page) => {
       const chapters = buildDisplayMissables({
         achievements: page.achievements,
         curatedMissables: page.missables,
         locale,
       });
-      return chapters.length > 0
-        ? {
-            game: {
-              ...game,
-              missableCount: countMissableChecks(chapters),
-            },
-            chapters,
-          }
-        : null;
-    }),
-  );
-
-  return entries.filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
+      if (chapters.length === 0) return null;
+      return {
+        game: { ...page.game, missableCount: countMissableChecks(chapters) },
+        chapters,
+      };
+    })
+    .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
+  return entries;
 });
 
 export const searchKamurocho = cache(async (query: string, locale: Locale) => {
@@ -373,9 +416,13 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
   // Fetch both locales' rows so a Korean user searching "kiryu" can still
   // hit the English form, and vice versa — the search placeholder advertises
   // 한국어·영어·로마자 표기 모두 인식 / Korean+English+romaji support.
-  const [games, gamesAlt] = await Promise.all([
+  // Both calls share the same underlying fetchSeriesRows cache.
+  const altLocale: Locale = locale === "ko" ? "en" : "ko";
+  const [pages, altPages, games, gamesAlt] = await Promise.all([
+    getAllGamePagesData(locale),
+    getAllGamePagesData(altLocale),
     getSeriesGames(locale),
-    getSeriesGames(locale === "ko" ? "en" : "ko"),
+    getSeriesGames(altLocale),
   ]);
   if (!trimmed) {
     return {
@@ -403,14 +450,15 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
     return hay.includes(trimmed);
   });
 
+  const altPagesByAppId = new Map(altPages.map((p) => [p.game.appId, p]));
+  const gamesByAppId = new Map(games.map((g) => [g.appId, g]));
   const achievements: Array<{ game: SeriesGameCard; achievement: GameAchievementCard }> = [];
-  for (const game of games) {
-    const [page, altPage] = await Promise.all([
-      getGamePageData(game.slug, locale),
-      getGamePageData(game.slug, locale === "ko" ? "en" : "ko"),
-    ]);
+  for (const page of pages) {
+    const altPage = altPagesByAppId.get(page.game.appId);
     const altById = new Map((altPage?.achievements ?? []).map((a) => [a.id, a]));
-    for (const achievement of page?.achievements ?? []) {
+    const seriesGame = gamesByAppId.get(page.game.appId);
+    if (!seriesGame) continue;
+    for (const achievement of page.achievements) {
       const alt = altById.get(achievement.id);
       const hay = [
         achievement.name,
@@ -424,7 +472,7 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
         .join(" ")
         .toLowerCase();
       if (hay.includes(trimmed)) {
-        achievements.push({ game, achievement });
+        achievements.push({ game: seriesGame, achievement });
       }
     }
   }

@@ -486,11 +486,11 @@ export const yakuza0: CollectiblesData = {
   {
     slug: "real-estate-royale",
     title: { ko: "카무로초 머니 아일랜드 — 5구역 + 5억만장자 격파", en: "Kamurocho Money Island — 5 Districts + 5 Billionaires" },
-    summary: { ko: "키류 편 부동산 모드. 카무로초 5구역(레저 킹·일렉트로닉스 킹·플레저 킹·갬블링 킹·미디어 킹) 부동산을 인수해 각 구역 매출 점유율 90% 이상을 달성하고 5억만장자를 차례로 격파하면 됩니다. 챕터 3 이후 본격 진행 가능합니다.", en: "Kiryu's Real Estate Royale. Acquire properties across the five Kamurocho districts (Leisure King, Electronics King, Pleasure King, Gambling King, Media King), hit 90%+ market share per district, and defeat all five Billionaire bosses. Free play from Chapter 3." },
+    summary: { ko: "키류 편 부동산 모드. 카무로초 5구역(레저 킹·일렉트로닉스 킹·플레저 킹·갬블링 킹·미디어 킹) 부동산을 인수해 각 구역 매출 점유율 90% 이상을 달성하고 5억만장자를 차례로 격파하면 됩니다. 3장 이후 본격 진행 가능합니다.", en: "Kiryu's Real Estate Royale. Acquire properties across the five Kamurocho districts (Leisure King, Electronics King, Pleasure King, Gambling King, Media King), hit 90%+ market share per district, and defeat all five Billionaire bosses. Free play from Chapter 3." },
     tips: [
         { ko: "구역별 시장 점유율은 부동산을 한 곳씩 인수할 때마다 점진적으로 오릅니다. 시드 머니가 부족하면 삥쟁이를 격파해 거액을 확보하세요.", en: "Market share rises gradually as you buy properties. If short on seed money, defeat Mr. Shakedowns for lump-sum payouts." },
         { ko: "친구 단계 NPC 호감도를 끌어올리면 '매핑된' 점포가 추가 해금됩니다. 각 구역에 1~2곳씩 친구 전제 매물이 존재합니다.", en: "Raising Friendship affinity with key NPCs unlocks 'mapped' properties — 1-2 per district." },
-        { ko: "최종 라이벌 파이낸스 킹은 5구역을 모두 장악하고 4억만장자를 격파한 뒤 메인 스토리 챕터 14 이후에 도전 가능합니다.", en: "Final rival Finance King unlocks only after dominating all five districts + defeating the first 4 Billionaires, gated by Chapter 14 main story." },
+        { ko: "최종 라이벌 파이낸스 킹은 5구역을 모두 장악하고 4억만장자를 격파한 뒤 메인 스토리 14장 이후에 도전 가능합니다.", en: "Final rival Finance King unlocks only after dominating all five districts + defeating the first 4 Billionaires, gated by Chapter 14 main story." },
     ],
     source: { label: "龍が如く0 最速攻略wiki — 不動産", url: "https://spwiki.net/ryuzero/" },
     groups: [
@@ -520,7 +520,7 @@ export const yakuza0: CollectiblesData = {
         number: 4,
         title: { ko: "갬블링 킹 구역", en: "Gambling King District" },
         location: { ko: "카무로초 — 극장 광장·테아토르 일대 (남부)", en: "Kamurocho — Theater Square / Theater area (south)" },
-        body: { ko: "친구 에미리(마하볼)와의 우정으로 매핑 매물 해금. 갬블링 킹은 JCC 일본 캣파이트 클럽 사이드 스토리 클리어 후 등장.", en: "Emiri (Mach Bowl) friendship unlocks mapped property. Gambling King appears after the JCC Japan Catfight Club side story clears." },
+        body: { ko: "친구 에미리(마하볼)와의 우정으로 매핑 매물 해금. 갬블링 킹은 JCC 일본 캣파이트 클럽 서브스토리 클리어 후 등장.", en: "Emiri (Mach Bowl) friendship unlocks mapped property. Gambling King appears after the JCC Japan Catfight Club side story clears." },
       },
       {
         number: 5,
@@ -531,8 +531,8 @@ export const yakuza0: CollectiblesData = {
       {
         number: 6,
         title: { ko: "파이낸스 킹 (최종)", en: "Finance King (Final)" },
-        location: { ko: "사이드 스토리 「We Built This City」 — 최종 라이벌", en: "Side story 'We Built This City' — final rival" },
-        body: { ko: "5구역 점유율 풀 + 4억만장자 격파 + 챕터 14 도달 후 결전. 격파 시 도지마의 용 스타일 해금 + 부동산 로열 컴플리트.", en: "After 5 districts dominated + 4 Billionaires beaten + Chapter 14, the final fight unlocks. Win to unlock Dragon of Dojima style + complete Real Estate Royale." },
+        location: { ko: "서브스토리 「We Built This City」 — 최종 라이벌", en: "Side story 'We Built This City' — final rival" },
+        body: { ko: "5구역 점유율 풀 + 4억만장자 격파 + 14장 도달 후 결전. 격파 시 도지마의 용 스타일 해금 + 부동산 로열 컴플리트.", en: "After 5 districts dominated + 4 Billionaires beaten + Chapter 14, the final fight unlocks. Win to unlock Dragon of Dojima style + complete Real Estate Royale." },
         reward: { ko: "도지마의 용 스타일 해금 + 「We Built This City」 업적", en: "Dragon of Dojima style unlock + 'We Built This City' achievement" },
       },
       ],
@@ -1245,7 +1245,7 @@ export const yakuza0: CollectiblesData = {
         number: 1,
         title: { ko: "간다라 소텐보리점 — 첫 비디오 + 서브스토리", en: "Gandara Sotenbori — First Video + Substory" },
         location: { ko: "소텐보리 — 동쪽 골목", en: "Sotenbori — east alley" },
-        body: { ko: "마지마 편 챕터 진행 후 입장 가능. 첫 비디오 시청 시 서브스토리 자동 발생.", en: "Accessible during Majima chapters. First viewing auto-triggers the venue substory." },
+        body: { ko: "마지마 편 장 진행 후 입장 가능. 첫 비디오 시청 시 서브스토리 자동 발생.", en: "Accessible during Majima chapters. First viewing auto-triggers the venue substory." },
       },
       {
         number: 2,

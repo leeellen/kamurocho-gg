@@ -6,26 +6,26 @@ const PIRATE_APP_ID = 3061810;
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Like a Dragon: Pirate Yakuza in Hawaii 플래티넘 — 다른 61개 업적 전부 해금 시 자동 발동. 시리즈 중 가장 너그러운 100% 라인 중 하나로 영구 미서블 0. 핵심 게이트는 ①해적단 명성 「전설의 해적단」 ②Devil Flags 사이드 스토리 풀 ③파이리츠 콜로세움 ④미나토 걸 5인 라인 + The One ⑤Legend 난이도 클리어.",
+      "Like a Dragon: Pirate Yakuza in Hawaii 플래티넘 — 다른 61개 업적 전부 해금 시 자동 발동. 시리즈 중 가장 너그러운 100% 라인 중 하나로 영구 미서블 0. 핵심 게이트는 ①해적단 명성 「전설의 해적단」 ②Devil Flags 서브스토리 풀 ③파이리츠 콜로세움 ④미나토 걸 5인 라인 + The One ⑤Legend 난이도 클리어.",
     en:
       "Pirate Yakuza's platinum auto-pops at full unlock. One of the most forgiving 100 % runs in the series — zero permanent missables. Gates: ① pirate-crew fame to 'Legendary Pirate' ② Devil Flags side story ③ Pirates Coliseum ④ Minato Girl 5-line + The One ⑤ Legend clear.",
   },
   steps: [
     {
       ko:
-        "1) 메인 스토리 챕터 2까지 진행해 해적단·해상 시스템을 모두 해금. 챕터 3에서 미나토 걸 라인 등 컴플리션 트로피 라인이 풀립니다.",
+        "1) 메인 스토리 2장까지 진행해 해적단·해상 시스템을 모두 해금. 3장에서 미나토 걸 라인 등 컴플리션 트로피 라인이 풀립니다.",
       en:
         "1) Push to Ch.2 to unlock pirate / naval systems, then Ch.3 opens the Minato Girl + completion lines.",
     },
     {
       ko:
-        "2) Devil Flags 사이드 스토리 완료 → 파이리츠 콜로세움 후반 매치가 해금됩니다. 두 시스템이 직렬로 묶여 있어 Devil Flags 우선.",
+        "2) Devil Flags 서브스토리 완료 → 파이리츠 콜로세움 후반 매치가 해금됩니다. 두 시스템이 직렬로 묶여 있어 Devil Flags 우선.",
       en:
         "2) Clear Devil Flags first — it unlocks the late Pirates Coliseum matches.",
     },
     {
       ko:
-        "3) 미나토 걸 라인 — 챕터 3에서 라인 추가, 26~30번 5인 미니 라인 + 31번 「The One」으로 마무리. 컴플리션 보상 + 해적단 명성 + 콜로세움 + 고로마루 라인까지 동시에 진행됩니다.",
+        "3) 미나토 걸 라인 — 3장에서 라인 추가, 26~30번 5인 미니 라인 + 31번 「The One」으로 마무리. 컴플리션 보상 + 해적단 명성 + 콜로세움 + 고로마루 라인까지 동시에 진행됩니다.",
       en:
         "3) Minato Girl line — Ch.3 adds it; finish Subs 26~30 + 31 'The One.' Pairs with the pirate fame line.",
     },
@@ -45,7 +45,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "Devil Flags → Pirates Coliseum 순서를 지키지 않으면 콜로세움 후반 매치 자체가 안 열립니다. 챕터 3 직후부터 Devil Flags 우선.",
+        "Devil Flags → Pirates Coliseum 순서를 지키지 않으면 콜로세움 후반 매치 자체가 안 열립니다. 3장 직후부터 Devil Flags 우선.",
       en:
         "Skip Devil Flags first and the late Coliseum matches never unlock — sequence matters.",
     },
@@ -68,9 +68,9 @@ const amonPirate: CuratedGuide = {
 
 // 「마스터 오브 콜로세움」 30종 대회 제패. Steam: arena_c.
 const masterOfColiseum: CuratedGuide = {
-  summary: { ko: "파이리츠 콜로세움에서 30종류의 대회를 모두 우승하면 발동. Devil Flags 사이드 스토리 완료가 일부 후반 매치 해금 조건.", en: "Win 30 Pirates Coliseum tournaments. Some late tournaments require Devil Flags side story completion." },
+  summary: { ko: "파이리츠 콜로세움에서 30종류의 대회를 모두 우승하면 발동. Devil Flags 서브스토리 완료가 일부 후반 매치 해금 조건.", en: "Win 30 Pirates Coliseum tournaments. Some late tournaments require Devil Flags side story completion." },
   steps: [
-    { ko: "1) Devil Flags 사이드 스토리 풀 완료 → 콜로세움 후반 매치 자동 해금.", en: "1) Finish Devil Flags first — it unlocks late tournament tiers." },
+    { ko: "1) Devil Flags 서브스토리 풀 완료 → 콜로세움 후반 매치 자동 해금.", en: "1) Finish Devil Flags first — it unlocks late tournament tiers." },
     { ko: "2) 일반 → 에이스 → 마스터 차례로 우승. 무기·회복 비축으로 안전하게.", en: "2) Win Standard → Ace → Master tiers in sequence." },
     { ko: "3) 30종 모두 우승 시 트로피 발동.", en: "3) 30 wins fires the trophy." },
   ],
@@ -93,7 +93,7 @@ const aceOfColiseum: CuratedGuide = {
 const dragonCartHawaii: CuratedGuide = {
   summary: { ko: "하와이 드래곤 카트의 3종류 컵에서 모두 우승하면 발동. Y7·Y8의 카트와 다른 신규 코스 + 무기 시스템이 추가됨.", en: "Win all 3 Hawaii Dragon Kart cups. New courses + weapon mechanics vs. Y7/Y8 Kart." },
   steps: [
-    { ko: "1) 챕터 진행 중 드래곤 카트 해금 → 첫 컵 출전.", en: "1) Unlock Dragon Kart and enter the first cup." },
+    { ko: "1) 장 진행 중 드래곤 카트 해금 → 첫 컵 출전.", en: "1) Unlock Dragon Kart and enter the first cup." },
     { ko: "2) 부품 강화 후 3개 컵 모두 우승. 무기 사용으로 라이벌 처리가 핵심.", en: "2) Upgrade parts, then win all 3 cups — weaponize against rivals." },
     { ko: "3) 3개 컵 우승 시 트로피 발동.", en: "3) Three-cup sweep fires the trophy." },
   ],
@@ -103,9 +103,9 @@ const dragonCartHawaii: CuratedGuide = {
 
 // 「크레이지 선장」 크레이지 딜리버리 모든 코스. Steam: delivery_clear.
 const crazyCaptain: CuratedGuide = {
-  summary: { ko: "하와이의 크레이지 딜리버리 모든 코스를 클리어하면 발동. 챕터 진행과 함께 새 코스가 추가되며, ★3 클리어가 100% 라인 조건은 아닙니다 — 단순 클리어로 충분.", en: "Clear every Crazy Delivery course. New courses unlock per chapter; only clears (not ★3) are required." },
+  summary: { ko: "하와이의 크레이지 딜리버리 모든 코스를 클리어하면 발동. 장 진행과 함께 새 코스가 추가되며, ★3 클리어가 100% 라인 조건은 아닙니다 — 단순 클리어로 충분.", en: "Clear every Crazy Delivery course. New courses unlock per chapter; only clears (not ★3) are required." },
   steps: [
-    { ko: "1) 챕터 진행 중 코스가 추가될 때마다 즉시 클리어.", en: "1) Knock out each new course as it appears." },
+    { ko: "1) 장 진행 중 코스가 추가될 때마다 즉시 클리어.", en: "1) Knock out each new course as it appears." },
     { ko: "2) 시간 제한 안에 코스 끝까지 도달하면 클리어 카운트. 점프대·지름길 활용.", en: "2) Finish within the timer; use jumps/shortcuts to bank time." },
     { ko: "3) 모든 코스 클리어 시 트로피 발동.", en: "3) Trophy fires on full clear." },
   ],
@@ -129,7 +129,7 @@ const fashionMaster: CuratedGuide = {
 const allCooking: CuratedGuide = {
   summary: { ko: "하와이 거점(고로마루 호) 또는 캠프에서 모든 요리 레시피를 제작하면 발동. 재료 수집 + 레시피 해금이 전제.", en: "Cook every recipe at the Goromaru / camp kitchen. Needs materials + unlocked recipes." },
   steps: [
-    { ko: "1) 챕터 진행과 함께 레시피 해금. 식료품 상점·서브스토리 보상으로 추가 레시피.", en: "1) Unlock recipes via story + shop + sub rewards." },
+    { ko: "1) 장 진행과 함께 레시피 해금. 식료품 상점·서브스토리 보상으로 추가 레시피.", en: "1) Unlock recipes via story + shop + sub rewards." },
     { ko: "2) 각 레시피를 1회씩 제작. 재료가 부족하면 채집·구매로 보충.", en: "2) Cook each recipe once; gather/buy missing materials." },
     { ko: "3) 모든 레시피 제작 시 트로피 발동.", en: "3) Trophy fires on full cookbook." },
   ],

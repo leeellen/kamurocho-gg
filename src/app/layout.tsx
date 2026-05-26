@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ? "kamurocho.gg — 용과 같이 · 저지먼트 스팀 공략"
     : "kamurocho.gg — RGG Steam Guides";
   const description = isKo
-    ? "RGG Studio 시리즈(용과 같이·이치반·저지먼트) 스팀 업적 공략을 한곳에 모았습니다. 게임별 진행도, 챕터별 놓치기 쉬운 항목, 희귀 업적, 단계별 실행법까지. 비공식 팬 가이드."
+    ? "RGG Studio 시리즈(용과 같이·이치반·저지먼트) 스팀 업적 공략을 한곳에 모았습니다. 게임별 진행도, 장별 놓치기 쉬운 항목, 희귀 업적, 단계별 실행법까지. 비공식 팬 가이드."
     : "Achievement guides, missables, and play order for the RGG Studio Steam catalog — Yakuza, Like a Dragon, and Judgment. Unofficial fan project.";
   const ogDescription = isKo
     ? "RGG Studio 시리즈 스팀 업적 공략·놓치기 쉬운 항목·희귀 업적을 한곳에. 비공식 팬 가이드."

@@ -138,7 +138,7 @@ export function buildDisplayMissables({
       title:
         bucketKey > 0
           ? locale === "ko"
-            ? `챕터 ${bucketKey}`
+            ? `${bucketKey}장`
             : `Chapter ${bucketKey}`
           : locale === "ko"
             ? "주의 메모"
@@ -155,7 +155,7 @@ export function buildDisplayMissables({
       achievement.description ||
       (bucketKey > 0
         ? locale === "ko"
-          ? "해당 챕터에서만 가능한 업적입니다."
+          ? "해당 장에서만 가능한 업적입니다."
           : "Achievement tied to this chapter."
         : locale === "ko"
           ? "가이드에 놓치기 쉬움으로 표시된 업적입니다."
@@ -163,7 +163,7 @@ export function buildDisplayMissables({
     const when =
       bucketKey > 0
         ? locale === "ko"
-          ? "해당 챕터 진행 중"
+          ? "해당 장 진행 중"
           : "During this chapter"
         : locale === "ko"
           ? "가이드 확인 필요"

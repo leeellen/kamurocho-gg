@@ -80,7 +80,7 @@ export const yakuzaGaiden: CollectiblesData = {
     title: { ko: "캐슬 콜로세움 — 4단계 + 사천왕 + 전체 매치 일람", en: "Castle Coliseum — Tiers + Four Kings + Full Match List" },
     summary: { ko: "캐슬에서 등급(실버→골드→플래티넘)을 승급하며 매치를 클리어합니다. 사천왕 4인 + 최종 보스(아몬급)가 메인 보상 라인입니다. 가젯 풀파워 + 회복 아이템 충분히 준비 후 도전하세요.", en: "Climb the Coliseum from Silver → Gold → Platinum tiers, then face the Four Kings + a hidden final boss. Bring fully upgraded gadgets and stocked healing items." },
     tips: [
-        { ko: "사천왕 진행은 1→2→3→4 순서이고 챕터·캐슬 등급 조건이 게이트입니다. 미리 캐슬 등급을 끌어올려 두세요.", en: "Four Kings unlock 1→2→3→4 with chapter + Castle rank gates. Push Castle rank early." },
+        { ko: "사천왕 진행은 1→2→3→4 순서이고 장·캐슬 등급 조건이 게이트입니다. 미리 캐슬 등급을 끌어올려 두세요.", en: "Four Kings unlock 1→2→3→4 with chapter + Castle rank gates. Push Castle rank early." },
         { ko: "플래티넘 매치는 캐슬 플래티넘 등급 승급 후에만 열립니다. 등급 업 미션을 우선 처리하세요.", en: "Platinum matches require Platinum Castle rank. Prioritize the promotion missions first." },
     ],
     source: { label: "gamewith.jp — Lost Judgment / Gaiden 캐슬 콜로세움", url: "https://gamewith.jp/lostjudgment/" },
@@ -116,7 +116,7 @@ export const yakuzaGaiden: CollectiblesData = {
         number: 4,
         title: { ko: "댄 브로디 (사천왕 1)", en: "Dan Brody (King 1)" },
         location: { ko: "캐슬 콜로세움", en: "Castle Coliseum" },
-        body: { ko: "사천왕 진행선 첫 매치. 캐슬 골드 승급 + 챕터 조건 이후 해금.", en: "First King fight. Unlocks after Castle Gold promotion + chapter gate." },
+        body: { ko: "사천왕 진행선 첫 매치. 캐슬 골드 승급 + 장 조건 이후 해금.", en: "First King fight. Unlocks after Castle Gold promotion + chapter gate." },
       },
       {
         number: 5,

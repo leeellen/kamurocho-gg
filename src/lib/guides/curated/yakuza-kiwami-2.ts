@@ -13,7 +13,7 @@ const platinum: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 메인 스토리 진행과 별개로 「마지마 사가」를 메인 메뉴에서 별도 선택해 진행. 본편 챕터 7 클리어 전후 어디서든 가능하지만 잊기 쉽습니다.",
+        "1) 메인 스토리 진행과 별개로 「마지마 사가」를 메인 메뉴에서 별도 선택해 진행. 본편 7장 클리어 전후 어디서든 가능하지만 잊기 쉽습니다.",
       en:
         "1) Start the Majima Saga from the main menu — it runs separately from Kiryu's story. Easy to forget; trigger it around Ch.7.",
     },
@@ -25,7 +25,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "3) 「신세이초 건설(토건업)」 — 토지·인부 관리 미니게임을 챕터 진행과 병행. 직원 영입(서브스토리)이 진행에 묶여 있어 메인 스토리와 동시에 정리해야 효율적.",
+        "3) 「신세이초 건설(토건업)」 — 토지·인부 관리 미니게임을 장 진행과 병행. 직원 영입(서브스토리)이 진행에 묶여 있어 메인 스토리와 동시에 정리해야 효율적.",
       en:
         "3) Shinseicho Construction — manage land/workers alongside the story. Staff recruitment is gated on subs, so run them together.",
     },
@@ -66,7 +66,7 @@ const legendK2: CuratedGuide = {
   steps: [
     { ko: "1) 엔딩 후 클리어 데이터 → LEGEND 새 회차 시작.", en: "1) Clear Data → LEGEND fresh save." },
     { ko: "2) 드래곤 엔진 액션 트리(맨손 카운터·가드 브레이크)를 풀로 강화 후 도전.", en: "2) Max the Dragon Engine action tree first." },
-    { ko: "3) 챕터 14 라스트 보스 클리어 시 트로피 발동.", en: "3) Ch.14 final boss kill fires it." },
+    { ko: "3) 14장 라스트 보스 클리어 시 트로피 발동.", en: "3) Ch.14 final boss kill fires it." },
   ],
   sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
@@ -88,7 +88,7 @@ const completionK2: CuratedGuide = {
 const cabaretGPK2: CuratedGuide = {
   summary: { ko: "캐바쿠라 그랑프리(소텐보리·카무로초)에서 매장 운영을 통해 최종 챔피언 라이벌 매장을 격파하고 그랑프리 우승 시 발동. 호스티스 영입 + 의상 강화 + 시프트 운영으로 매장 매출을 라이벌 이상으로 끌어올려야 진행.", en: "Win the Cabaret Grand Prix by topping the rival club's revenue. Recruit hostesses, buy outfits, run shifts." },
   steps: [
-    { ko: "1) 챕터 3 이후 캐바쿠라 그랑프리 시스템 해금 → 첫 호스티스 영입 + 첫 시프트.", en: "1) Unlock the Cabaret Grand Prix after Ch.3 and recruit the first hostess." },
+    { ko: "1) 3장 이후 캐바쿠라 그랑프리 시스템 해금 → 첫 호스티스 영입 + 첫 시프트.", en: "1) Unlock the Cabaret Grand Prix after Ch.3 and recruit the first hostess." },
     { ko: "2) 의상·헤어 강화 + 동반 출근으로 캐스트 평가 1위. 라이벌 매장과의 매출 대결 단계별 격파.", en: "2) Outfit + companion buffs to push to #1, then beat each rival shop's revenue in sequence." },
     { ko: "3) 그랑프리 결승 우승 시 트로피 발동. 「인기 스카우트맨」(30명) + 「키류의 고민 상담실」 라인도 동시 진행하면 효율적.", en: "3) Win the finale for the trophy. Pair with the 30-hostess + Platinum Cast trophies." },
   ],
@@ -100,7 +100,7 @@ const cabaretGPK2: CuratedGuide = {
 const clanCreatorK2: CuratedGuide = {
   summary: { ko: "마지마 건설(클랜 크리에이터) 스토리를 끝까지 진행하면 발동. 5개 적 클랜과의 클랜 배틀 시리즈 클리어 + 「전설의 클랜」 격파가 마지막. 직원 영입(서브스토리)과 스토리 진행이 동시에 묶여 있어 메인과 병행 진행이 효율적.", en: "Clear Clan Creator's full story — defeat 5 rival clans + the Legendary Clan. Staff recruitment via subs runs in parallel." },
   steps: [
-    { ko: "1) 챕터 3 이후 마지마 건설 본부 입장 → 첫 클랜 배틀 진행 + 서브스토리로 신규 직원 영입.", en: "1) Past Ch.3, run the first clan battle + recruit staff via subs." },
+    { ko: "1) 3장 이후 마지마 건설 본부 입장 → 첫 클랜 배틀 진행 + 서브스토리로 신규 직원 영입.", en: "1) Past Ch.3, run the first clan battle + recruit staff via subs." },
     { ko: "2) 5개 라이벌 클랜을 차례로 격파 — 각 격파 시 신규 직원 + 강력 무기 보상.", en: "2) Defeat 5 rival clans in sequence — each unlocks new staff + gear." },
     { ko: "3) 「전설의 클랜」 최종 보스 격파 시 트로피 발동.", en: "3) Beat the Legendary Clan for the trophy." },
   ],
@@ -124,8 +124,8 @@ const amonK2: CuratedGuide = {
 const majimaSaga: CuratedGuide = {
   summary: { ko: "마지마 사가(메인 메뉴에서 별도 선택 가능한 마지마 시점 외전)를 끝까지 클리어하면 발동. 본편과 분리된 시나리오라 본편 진행 전후 어느 시점이든 진행 가능하지만 잊고 지나가는 사례가 많음.", en: "Clear Majima Saga, the separate Majima-perspective spin-off accessed from the main menu. Easy to forget — it runs apart from Kiryu's story." },
   steps: [
-    { ko: "1) 메인 메뉴에서 「마지마 사가」 선택 → 첫 챕터 시작. 본편 챕터 7 클리어 전후 어디서든 시작 가능.", en: "1) Pick Majima Saga from the main menu; start any time around Kiryu's Ch.7." },
-    { ko: "2) 마지마 사가 챕터를 끝까지 진행. 1회차 분량이 짧아 5~8시간이면 완주.", en: "2) Push through Majima Saga's chapters — short, ~5~8 hr to clear." },
+    { ko: "1) 메인 메뉴에서 「마지마 사가」 선택 → 첫 장 시작. 본편 7장 클리어 전후 어디서든 시작 가능.", en: "1) Pick Majima Saga from the main menu; start any time around Kiryu's Ch.7." },
+    { ko: "2) 마지마 사가 장를 끝까지 진행. 1회차 분량이 짧아 5~8시간이면 완주.", en: "2) Push through Majima Saga's chapters — short, ~5~8 hr to clear." },
     { ko: "3) 엔딩 직후 트로피 발동 + 본편 키류의 액션 트리에 매드 도그 스타일 노드 추가.", en: "3) Trophy fires on credits + Kiryu gains Mad Dog style nodes." },
   ],
   sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",

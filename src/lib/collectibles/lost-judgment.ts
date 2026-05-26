@@ -569,7 +569,7 @@ export const lostJudgment: CollectiblesData = {
       slug: "side-cases",
       title: { ko: "사이드 케이스 54건", en: "Side Cases — All 54" },
       summary: {
-        ko: "챕터 진행과 함께 풀리는 사이드 케이스 54건의 발생 시점·장소·보상을 정리했습니다. 사무소 의뢰 게시판 + 거리 트리거 + 메인 스토리 강제 발생을 모두 포함합니다. No.43~ 항목은 디텍티브 라이프 강화 DLC 한정입니다.",
+        ko: "장 진행과 함께 풀리는 사이드 케이스 54건의 발생 시점·장소·보상을 정리했습니다. 사무소 의뢰 게시판 + 거리 트리거 + 메인 스토리 강제 발생을 모두 포함합니다. No.43~ 항목은 디텍티브 라이프 강화 DLC 한정입니다.",
         en: "Every side case (1-54) — chapter, location, and reward. Includes office board requests, world triggers, and forced story cases. Cases 43+ require the Detective Life Enhancement DLC.",
       },
       tips: [
@@ -1015,7 +1015,7 @@ export const lostJudgment: CollectiblesData = {
       slug: "towngo",
       title: { ko: "타운고 미션·상점 컴플리트", en: "TownGo — Missions and Shops" },
       summary: {
-        ko: "스케이트보드 타운고 메뉴에서 컴플리트 미션과 상점 미션을 전부 클리어하세요. 챕터 진행에 따라 추가 미션이 풀리니 엔딩 직전에 마지막 정리를 권장합니다.",
+        ko: "스케이트보드 타운고 메뉴에서 컴플리트 미션과 상점 미션을 전부 클리어하세요. 장 진행에 따라 추가 미션이 풀리니 엔딩 직전에 마지막 정리를 권장합니다.",
         en: "Complete every TownGo Completion Mission and Shop Mission via the skateboard menu.",
       },
     },

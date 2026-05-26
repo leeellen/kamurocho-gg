@@ -13,7 +13,7 @@ const platinum: CuratedGuide = {
   steps: [
     {
       ko:
-        "1) 메인 스토리와 병행해 자격증 학교(서브스토리 10) + 직업 시스템을 일찍 해금. 직업 마스터는 시간이 가장 많이 드는 그라인드라 챕터 5쯤부터 적극 진행.",
+        "1) 메인 스토리와 병행해 자격증 학교(서브스토리 10) + 직업 시스템을 일찍 해금. 직업 마스터는 시간이 가장 많이 드는 그라인드라 5장쯤부터 적극 진행.",
       en:
         "1) Open Qualifications School (Sub 10) and the job system early — Job Master is the biggest grind, so start by Ch.5.",
     },
@@ -25,7 +25,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "3) 카트 미니게임(드래곤 카트) — 챕터 15 이후 풀리는 마지막 두 라이벌 레이스를 우승해 「혼다이 마스터」 + 「용감한 카트 마스터」 완성.",
+        "3) 카트 미니게임(드래곤 카트) — 15장 이후 풀리는 마지막 두 라이벌 레이스를 우승해 「혼다이 마스터」 + 「용감한 카트 마스터」 완성.",
       en:
         "3) Dragon Kart — the final two rivals only unlock in Ch.15. Win them for both kart trophies.",
     },
@@ -62,10 +62,10 @@ const platinum: CuratedGuide = {
 
 // 「드래곤 카트 마스터」 — 모든 컵 + 라이벌 레이스. Steam: yazawa_dragon_cart_all_claer.
 const dragonCartMaster: CuratedGuide = {
-  summary: { ko: "용과 같이 7의 드래곤 카트 미니게임에서 모든 일반 컵 + 라이벌 레이스를 우승해야 발동. 챕터 15 이후 풀리는 마지막 두 라이벌 레이스가 최대 게이트.", en: "Win every Dragon Kart cup + rival race. The final two rival races only unlock in Ch.15, so the trophy can't close before then." },
+  summary: { ko: "용과 같이 7의 드래곤 카트 미니게임에서 모든 일반 컵 + 라이벌 레이스를 우승해야 발동. 15장 이후 풀리는 마지막 두 라이벌 레이스가 최대 게이트.", en: "Win every Dragon Kart cup + rival race. The final two rival races only unlock in Ch.15, so the trophy can't close before then." },
   steps: [
-    { ko: "1) 챕터 4~5쯤 드래곤 카트 해금 → 일반 컵 7~8개 차례로 우승. 부품 강화로 SPD/GRIP/HANDLING 밸런스 셋업.", en: "1) Unlock Dragon Kart in Ch.4~5; win 7~8 standard cups by tuning SPD/GRIP/HANDLING." },
-    { ko: "2) 챕터 15 진입 후 마지막 두 라이벌 레이스 해금. 풀 강화 부품으로 도전.", en: "2) After Ch.15, the final two rival races open — bring fully-upgraded parts." },
+    { ko: "1) 4~5장쯤 드래곤 카트 해금 → 일반 컵 7~8개 차례로 우승. 부품 강화로 SPD/GRIP/HANDLING 밸런스 셋업.", en: "1) Unlock Dragon Kart in Ch.4~5; win 7~8 standard cups by tuning SPD/GRIP/HANDLING." },
+    { ko: "2) 15장 진입 후 마지막 두 라이벌 레이스 해금. 풀 강화 부품으로 도전.", en: "2) After Ch.15, the final two rival races open — bring fully-upgraded parts." },
     { ko: "3) 모든 컵 + 라이벌 우승 시 트로피 발동.", en: "3) Trophy fires when every cup + rival is cleared." },
   ],
   sourceUrl: "https://www.powerpyx.com/yakuza-like-a-dragon-trophy-guide-roadmap/",
@@ -74,10 +74,10 @@ const dragonCartMaster: CuratedGuide = {
 
 // 「주물주물 마스터」 — 모든 「주물주물」 NPC 발견. Steam: yazawa_niginigi_complete.
 const honkHonkHero: CuratedGuide = {
-  summary: { ko: "이세자키 이진초에서 「주물주물(허벅지·머리 주물 요청)」 NPC를 모두 찾아 응답하면 발동. NPC는 도시 곳곳에 흩어져 있으며 시간대 조건도 있음. 챕터 진행도에 따라 새 NPC가 추가됩니다.", en: "Find and respond to every 'Honk-Honk' NPC across Ijincho. They're scattered, some are time-gated, and new ones unlock per chapter." },
+  summary: { ko: "이세자키 이진초에서 「주물주물(허벅지·머리 주물 요청)」 NPC를 모두 찾아 응답하면 발동. NPC는 도시 곳곳에 흩어져 있으며 시간대 조건도 있음. 장 진행도에 따라 새 NPC가 추가됩니다.", en: "Find and respond to every 'Honk-Honk' NPC across Ijincho. They're scattered, some are time-gated, and new ones unlock per chapter." },
   steps: [
     { ko: "1) 거리에서 「주물주물」 마커가 보이면 모두 말 걸기. 시간대(낮/밤) 조건이 있는 NPC도 있어 두 시간대 모두 둘러봐야 합니다.", en: "1) Talk to every Honk-Honk marker — some only spawn at day or night." },
-    { ko: "2) 챕터 5·8·12·15에서 새 NPC가 추가되므로 메인 진행마다 재방문.", en: "2) New NPCs unlock at Ch.5/8/12/15 — sweep after each beat." },
+    { ko: "2) 5장·8·12·15에서 새 NPC가 추가되므로 메인 진행마다 재방문.", en: "2) New NPCs unlock at Ch.5/8/12/15 — sweep after each beat." },
     { ko: "3) 모든 NPC 발견 시 컴플리트 리스트 카운트 + 트로피 발동.", en: "3) Full coverage fires the trophy." },
   ],
   sourceUrl: "https://www.powerpyx.com/yakuza-like-a-dragon-trophy-guide-roadmap/",
@@ -99,7 +99,7 @@ const lv70: CuratedGuide = {
 const stayAwakeAllMovies: CuratedGuide = {
   summary: { ko: "이진초 명화 극장(영화관) 미니게임에서 모든 영화를 졸지 않고 끝까지 시청하면 발동. 영화 도중 「졸음」 게이지가 차오를 때 정확히 R1/△ 등 표시되는 버튼을 눌러 깨우는 리듬 미니게임.", en: "Watch every Meiga-Za film without dozing off. A rhythm minigame: hit the prompt button each time the drowsiness gauge fills." },
   steps: [
-    { ko: "1) 챕터 6~7쯤 명화 극장 해금. 한 편씩 영화 선택 → 졸음 프롬프트가 뜰 때 정확히 입력.", en: "1) Unlock Meiga-Za in Ch.6~7. Pick a film and hit each prompt." },
+    { ko: "1) 6~7장쯤 명화 극장 해금. 한 편씩 영화 선택 → 졸음 프롬프트가 뜰 때 정확히 입력.", en: "1) Unlock Meiga-Za in Ch.6~7. Pick a film and hit each prompt." },
     { ko: "2) 영화 종류에 따라 프롬프트 빈도·난이도 차이. 어려운 영화는 마지막에 도전.", en: "2) Prompt density varies by film — save the hard ones for last." },
     { ko: "3) 모든 영화 「졸지 않음」 카운트 시 트로피 발동.", en: "3) Trophy fires when every film is cleared without dozing." },
   ],
@@ -109,10 +109,10 @@ const stayAwakeAllMovies: CuratedGuide = {
 
 // 「네가 바로! 야쿠몬 마스터」 — 스지몬 도감 완성. Steam: yazawa_sujimon_b.
 const sujimonMaster: CuratedGuide = {
-  summary: { ko: "스지몬(이진초 길거리 적 도감) 250종 등록 시 발동. 적을 격파하면 자동 등록되며, 일부 희귀 스지몬은 특정 챕터·시간대에만 출현. Premium Adventure에서도 추가 등록 가능.", en: "Register 250 Sujimon entries by defeating them. Some rare ones only spawn at specific chapters/times of day. Premium Adventure adds more." },
+  summary: { ko: "스지몬(이진초 길거리 적 도감) 250종 등록 시 발동. 적을 격파하면 자동 등록되며, 일부 희귀 스지몬은 특정 장·시간대에만 출현. Premium Adventure에서도 추가 등록 가능.", en: "Register 250 Sujimon entries by defeating them. Some rare ones only spawn at specific chapters/times of day. Premium Adventure adds more." },
   steps: [
-    { ko: "1) 챕터 4 이후 스지몬 도감 앱 해금. 거리에서 마주치는 모든 적을 격파해 자동 등록.", en: "1) Unlock Sujidex in Ch.4 and beat every street mob — auto-registers." },
-    { ko: "2) 후반 챕터에 강한 스지몬 출현. EXP·자금이 안정된 챕터 12 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
+    { ko: "1) 4장 이후 스지몬 도감 앱 해금. 거리에서 마주치는 모든 적을 격파해 자동 등록.", en: "1) Unlock Sujidex in Ch.4 and beat every street mob — auto-registers." },
+    { ko: "2) 후반 장에 강한 스지몬 출현. EXP·자금이 안정된 12장 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
     { ko: "3) 250종 등록 시 트로피 발동. Premium Adventure에서 마지막 변종 마무리.", en: "3) 250 entries fires the trophy; finish leftovers in Premium Adventure." },
   ],
   sourceUrl: "https://www.powerpyx.com/yakuza-like-a-dragon-trophy-guide-roadmap/",

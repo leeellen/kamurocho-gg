@@ -70,7 +70,7 @@ const castleVIP: CuratedGuide = {
 const heavenlyVIP: CuratedGuide = {
   summary: { ko: "캐바레 클럽 「클럽 헤븐리」에 재적 중인 모든 캬바걸과의 친밀도 라인을 풀로 클리어하면 발동. 진행은 클럽 캐슬과 동일.", en: "Max bonds with every Club Heavenly hostess. Same flow as Castle." },
   steps: [
-    { ko: "1) 챕터 진행 중 클럽 헤븐리 해금 → 모든 캬바걸 데이트.", en: "1) Unlock Club Heavenly and date each hostess." },
+    { ko: "1) 장 진행 중 클럽 헤븐리 해금 → 모든 캬바걸 데이트.", en: "1) Unlock Club Heavenly and date each hostess." },
     { ko: "2) 의상 선물 + 동반 출근 + 호감 키워드 사용으로 친밀도 풀.", en: "2) Gift outfits + run shifts + use preferred keywords." },
     { ko: "3) 모든 캬바걸 풀 친밀도 시 트로피 발동.", en: "3) Full bonds fires the trophy." },
   ],
@@ -92,9 +92,9 @@ const hellsChampion: CuratedGuide = {
 
 // 「레트로 게이머」 — 마스터 시스템 5종 플레이. Steam: retro_games.
 const retroGamer: CuratedGuide = {
-  summary: { ko: "다이도지 본거지의 SEGA 마스터 시스템 캐비넷에서 5종류 이상의 소프트를 1회 이상 플레이하면 발동. 챕터 3부터 접근 가능.", en: "Play 5+ SEGA Master System cartridges at the Daidoji base cabinet. Available from Ch.3." },
+  summary: { ko: "다이도지 본거지의 SEGA 마스터 시스템 캐비넷에서 5종류 이상의 소프트를 1회 이상 플레이하면 발동. 3장부터 접근 가능.", en: "Play 5+ SEGA Master System cartridges at the Daidoji base cabinet. Available from Ch.3." },
   steps: [
-    { ko: "1) 챕터 3 이후 다이도지 본거지로 이동 → 마스터 시스템 캐비넷 입장.", en: "1) After Ch.3, head to the Daidoji base and use the cabinet." },
+    { ko: "1) 3장 이후 다이도지 본거지로 이동 → 마스터 시스템 캐비넷 입장.", en: "1) After Ch.3, head to the Daidoji base and use the cabinet." },
     { ko: "2) 5개 이상 다른 소프트를 한 번씩 플레이. 클리어 점수 무관.", en: "2) Play 5+ different titles once each — score-agnostic." },
     { ko: "3) 트로피 발동.", en: "3) Trophy fires." },
   ],

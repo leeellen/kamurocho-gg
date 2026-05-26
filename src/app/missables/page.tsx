@@ -15,13 +15,13 @@ export async function generateMetadata(): Promise<Metadata> {
     ? "놓치면 끝나는 구간 — 용과 같이 시리즈 놓치기 쉬움"
     : "Missable checks — RGG Studio chapter-locked content";
   const description = isKo
-    ? "챕터 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·챕터별로 정리했습니다."
+    ? "장 잠금이나 분기 선택 때문에 영구적으로 놓치게 되는 항목을 게임별·장별로 정리했습니다."
     : "Chapter locks and route splits that permanently lock content, organized by game and chapter.";
   const ogTitle = isKo
     ? "용과 같이 시리즈 놓치기 쉬움 인덱스"
     : "RGG Studio missables index";
   const ogDescription = isKo
-    ? "챕터 잠금·분기 선택 때문에 다시는 못 보는 항목 모음."
+    ? "장 잠금·분기 선택 때문에 다시는 못 보는 항목 모음."
     : "Chapter locks and branching choices that erase progress if you miss them.";
   return {
     title,
@@ -35,8 +35,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export const revalidate = 300;
-
 export default async function MissablesPage() {
   const locale = await getLocale();
   const entries = await getMissablesIndex(locale);
@@ -49,7 +47,7 @@ export default async function MissablesPage() {
           eyebrow={locale === "ko" ? "놓치기 쉬움" : "Missables"}
           title={locale === "ko" ? "놓치면 끝나는 구간만" : "What disappears if you miss it"}
           description={locale === "ko"
-            ? `챕터 잠금이나 분기 선택 때문에 다시는 못 보는 항목을 모았습니다. 총 ${entries.length}개 작품 · ${totalChecks}개 항목.`
+            ? `장 잠금이나 분기 선택 때문에 다시는 못 보는 항목을 모았습니다. 총 ${entries.length}개 작품 · ${totalChecks}개 항목.`
             : `Chapter locks and route splits that erase progress. ${entries.length} titles · ${totalChecks} checks total.`}
         />
 
