@@ -1,9 +1,33 @@
 import type { Metadata, Viewport } from "next";
+import { Inter, JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
 import Script from "next/script";
 
 import { getLocale } from "@/lib/i18n";
 
 import "./globals.css";
+
+// Self-host via next/font: eliminates blocking <link> roundtrip, applies
+// size-adjust to cut CLS from font-swap, and preloads the LCP-critical Inter.
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const notoSansKr = Noto_Sans_KR({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto-kr",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
 
 const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -123,15 +147,11 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} className="h-full">
+    <html
+      lang={locale}
+      className={`h-full ${inter.variable} ${notoSansKr.variable} ${jetbrainsMono.variable}`}
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           // Site-wide WebSite + SearchAction so Google can offer the

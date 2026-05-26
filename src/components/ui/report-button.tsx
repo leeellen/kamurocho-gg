@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { FiAlertTriangle } from "react-icons/fi";
 
 import type { Locale } from "@/lib/i18n";
@@ -26,6 +26,15 @@ export function ReportButton({
   const [status, setStatus] = useState<Status>("idle");
   const [text, setText] = useState("");
   const [isPending, startTransition] = useTransition();
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   const labels = {
     ko: {
@@ -133,7 +142,7 @@ export function ReportButton({
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="cursor-pointer rounded-full border border-[var(--border-subtle)] bg-transparent px-3 py-1.5 text-[14px] font-semibold text-[var(--text-tertiary)] hover:text-white"
+                className="inline-flex h-10 cursor-pointer items-center rounded-full border border-[var(--border-subtle)] bg-transparent px-4 text-[14px] font-semibold text-[var(--text-secondary)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)]"
               >
                 {labels.cancel}
               </button>
@@ -141,7 +150,7 @@ export function ReportButton({
                 type="button"
                 disabled={!text.trim() || status === "submitting" || isPending || status === "submitted"}
                 onClick={() => startTransition(submit)}
-                className="cursor-pointer rounded-full bg-[var(--accent)] px-4 py-1.5 text-[14px] font-bold text-white shadow-[var(--accent-glow)] hover:bg-[var(--accent-hover)] disabled:cursor-default disabled:opacity-50"
+                className="inline-flex h-10 cursor-pointer items-center rounded-full bg-[var(--accent)] px-5 text-[14px] font-bold text-white shadow-[var(--accent-glow)] hover:bg-[var(--accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)] disabled:cursor-default disabled:opacity-50"
               >
                 {labels.submit}
               </button>
