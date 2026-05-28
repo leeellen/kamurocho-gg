@@ -3,7 +3,7 @@ import type { SubstoriesData } from "./types";
 export const yakuzaKiwami2Substories: SubstoriesData = {
   appId: 3717340,
   summary: {
-    ko: "총 75건 + 컴플리션 카운트 76번. 카무로초·소텐보리 양쪽에서 진행되며, 키류 본편 5장~13장 사이에 대부분 풀립니다. 71건 클리어 후 「아몬 일족」 라인이 해금되어 38·39·40·41번이 추가됩니다. 「진 미즈쇼바이 아일랜드」 캬바레 그랜드픽스 진행 중에만 풀리는 69~75번은 놓치기 쉬우니 캬바레 진행 타이밍에 맞춰 회수하세요. ※ 진실편 「마지마 고로의 진실」은 별도 시나리오로 추가 서브스토리는 없습니다.",
+    ko: "총 75건 + 컴플리션 카운트 76번. 카무로초·소텐보리 양쪽에서 진행되며, 키류 본편 5장~13장 사이에 대부분 풀립니다. 71건 클리어 후 「아몬 일족」 라인이 해금되어 38·39·40·41번이 추가됩니다. 「진 미즈쇼바이 아일랜드」 캬바레 그랜드픽스 진행 중에만 풀리는 69~75번은 Missable이니 캬바레 진행 타이밍에 맞춰 회수하세요. ※ 진실편 「마지마 고로의 진실」은 별도 시나리오로 추가 서브스토리는 없습니다.",
     en: "75 substories plus a 76th completion entry. Spans Kamurocho (Kiryu) and Sotenbori. Clear 71 to unlock the Amon clan line (38-41). Numbers 69-75 are gated behind the New Cabaret Club Grand Prix and are easy to miss — handle them while you're running the cabaret minigame. The 'Truth of Goro Majima' side scenario adds story chapters but no extra substories.",
   },
   source: {
@@ -676,7 +676,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "소텐보리 — 백련 / 캬바레 그랜드픽스 (놓치기 쉬움)", en: "Sotenbori — Bairen & Cabaret Grand Prix (Missable)" },
+      title: { ko: "소텐보리 — 백련 / 캬바레 그랜드픽스 (Missable)", en: "Sotenbori — Bairen & Cabaret Grand Prix (Missable)" },
       items: [
         {
           number: 69,

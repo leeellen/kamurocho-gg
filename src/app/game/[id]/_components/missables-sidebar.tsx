@@ -6,6 +6,8 @@ import type { Locale } from "@/lib/i18n";
 import type { GameAchievementCard } from "@/lib/data";
 import type { ChapterMissable } from "@/lib/content";
 
+import { PanelHeader } from "./panel-header";
+
 export type ChapterBucket = {
   chapter: number;
   curatedTitle: ChapterMissable["title"] | null;
@@ -27,18 +29,27 @@ export function MissablesSidebar({
   unlocatedMissable,
 }: MissablesSidebarProps) {
   return (
-    <aside
-      aria-label={locale === "ko" ? "장별 놓치기 쉬운 항목" : "Chapter missables"}
-      className="space-y-4"
+    <section
+      aria-label={locale === "ko" ? "장별 Missable" : "Chapter missables"}
     >
-      <div className="sticky top-24">
-        <h2 className="font-display flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-white">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
-            <FiTarget size={13} aria-hidden="true" />
-          </span>
-          {locale === "ko" ? "장별 놓치기 쉬운 항목" : "Chapter missables"}
-        </h2>
-        <div className="mt-4 flex max-h-[70vh] flex-col gap-3 overflow-y-auto pr-1">
+      <PanelHeader
+        icon={<FiTarget size={18} aria-hidden="true" />}
+        title={locale === "ko" ? "Missable" : "Missables"}
+        meta={
+          chapterBuckets.length > 0
+            ? locale === "ko"
+              ? `${chapterBuckets.length}개 장`
+              : `${chapterBuckets.length} chapters`
+            : null
+        }
+        description={
+          locale === "ko"
+            ? "장 진행과 병행해 챙겨야 하는 서브스토리·트로피·선택지를 장별로 모았습니다."
+            : "Chapter-aligned list of substories, trophies, and choices to pick up while progressing."
+        }
+      />
+      <div>
+        <div className="flex flex-col gap-3">
           {chapterBuckets.map((bucket) => (
             <div
               key={bucket.chapter}
@@ -51,7 +62,7 @@ export function MissablesSidebar({
                     : locale === "ko" ? "메모" : "NOTE"}
                 </Chip>
                 {bucket.curatedTitle && (
-                  <span className="text-[15px] font-bold leading-tight text-white">
+                  <span className="text-[17px] font-bold leading-tight text-white">
                     {locale === "ko" ? bucket.curatedTitle.ko : bucket.curatedTitle.en}
                   </span>
                 )}
@@ -68,18 +79,18 @@ export function MissablesSidebar({
                       className="font-mono uppercase tracking-[0.08em]"
                     >
                       {item.kind === "missable"
-                        ? locale === "ko" ? "놓치기 쉬움" : "MISSABLE"
+                        ? locale === "ko" ? "Missable" : "MISSABLE"
                         : item.kind === "recommended"
                           ? locale === "ko" ? "권장" : "RECOMMENDED"
                           : locale === "ko" ? "참고" : "ANYTIME"}
                     </Chip>
-                    <div className="mt-2 text-[15px] font-bold leading-snug text-white">
+                    <div className="mt-2 text-[17px] font-bold leading-snug text-white">
                       {locale === "ko" ? item.title.ko : item.title.en}
                     </div>
-                    <div className="mt-1 text-[13px] text-[var(--text-tertiary)]">
+                    <div className="mt-1 text-[15px] text-[var(--text-tertiary)]">
                       {locale === "ko" ? item.when.ko : item.when.en}
                     </div>
-                    <p className="m-0 mt-2.5 text-[14px] leading-7 text-[var(--text-secondary)]">
+                    <p className="m-0 mt-2.5 text-[16px] leading-7 text-[var(--text-secondary)]">
                       {locale === "ko" ? item.body.ko : item.body.en}
                     </p>
                   </div>
@@ -116,7 +127,7 @@ export function MissablesSidebar({
           )}
         </div>
       </div>
-    </aside>
+    </section>
   );
 }
 
@@ -138,10 +149,10 @@ function MissableAchievementCard({
         <FiTarget size={10} aria-hidden="true" />
         {locale === "ko" ? "업적" : "Achievement"}
       </Chip>
-      <div className="mt-2 text-[15px] font-bold leading-snug text-white transition-colors group-hover:text-[var(--accent)]">
+      <div className="mt-2 text-[17px] font-bold leading-snug text-white transition-colors group-hover:text-[var(--accent)]">
         {achievement.name}
       </div>
-      <p className="m-0 mt-1.5 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
+      <p className="m-0 mt-1.5 line-clamp-2 text-[16px] leading-6 text-[var(--text-secondary)]">
         {achievement.guideSummary || achievement.guideSteps[0] || achievement.description}
       </p>
     </Link>

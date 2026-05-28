@@ -18,9 +18,13 @@ const CHRONOLOGICAL_REASONS: Record<string, { ko: string; en: string }> = {
     ko: "2006년 도쿄·오사카. 키류가 토조회 4대 회장이 되는 직후 사건과 류지 고다와의 대결.",
     en: "2006 in Tokyo and Osaka — Kiryu just after stepping down as Tojo Clan chairman, facing Ryuji Goda.",
   },
+  "yakuza-kiwami-3": {
+    ko: "2009년 오키나와·카무로초. 용과 같이3의 드래곤 엔진 리메이크 + 외전 「Dark Ties」 동봉.",
+    en: "2009 in Okinawa and Kamurocho — the Dragon Engine remake of Yakuza 3, bundled with the Dark Ties side scenario.",
+  },
   "yakuza-3": {
-    ko: "2009년 오키나와 모리닝글로리 고아원과 카무로초의 토지 분쟁.",
-    en: "2009 — Kiryu running the Morning Glory orphanage in Okinawa alongside the Kamurocho land dispute.",
+    ko: "2009년 오키나와 모리닝글로리 고아원과 카무로초의 토지 분쟁 (리마스터판).",
+    en: "2009 — Kiryu running the Morning Glory orphanage in Okinawa alongside the Kamurocho land dispute (remaster).",
   },
   "yakuza-4": {
     ko: "2010년 카무로초. 아키야마·사에지마·타니무라·키류 4인 시점이 교차하는 한 주.",
@@ -87,11 +91,19 @@ export const PLAY_ORDER: Record<"new" | "chronological", PlayOrderEntry[]> = {
       },
     },
     {
+      slug: "yakuza-kiwami-3",
+      recommended: true,
+      reason: {
+        ko: "용과 같이3의 드래곤 엔진 리메이크. 신규 외전 Dark Ties도 같이 풀려 키류 라인 정주행을 가장 매끄럽게 잇습니다.",
+        en: "Dragon Engine remake of Yakuza 3 — bundles the new Dark Ties scenario, the smoothest way to keep the Kiryu line going after Kiwami 2.",
+      },
+    },
+    {
       slug: "yakuza-3",
       recommended: false,
       reason: {
-        ko: "전투 감각이 낡았지만 이후 서사 이해에 중요합니다.",
-        en: "A dated combat feel, but story context here matters later.",
+        ko: "구판 리마스터. 극3가 있다면 그쪽으로 진행하는 편이 자연스럽습니다.",
+        en: "Older remaster — Kiwami 3 supersedes it for first-time play.",
       },
     },
     {

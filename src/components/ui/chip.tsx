@@ -17,9 +17,9 @@ const chipVariants = cva(
         solid: "bg-white text-[var(--text-inverse)]",
       },
       size: {
-        xs: "px-2 py-0.5 text-[14px]",
-        sm: "px-2.5 py-1 text-[14px]",
-        md: "px-3 py-1.5 text-[14px]",
+        xs: "px-2 py-0.5 text-[16px]",
+        sm: "px-2.5 py-1 text-[16px]",
+        md: "px-3 py-1.5 text-[16px]",
       },
     },
     defaultVariants: { tone: "neutral", size: "sm" },

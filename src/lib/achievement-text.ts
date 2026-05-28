@@ -158,6 +158,11 @@ export function parseAchievementSidecar(raw: string | null | undefined): Achieve
   }
 }
 
+// Achievement names + descriptions must reflect Steam's own payload verbatim.
+// For titles without a Korean Steam schema (e.g., Yakuza 6), the KO sidecar is
+// absent and we deliberately fall back to Steam's English string instead of
+// running it through a glossary that would invent a partial translation.
+// Only first-party guide copy is translated; see `localizeGuideText`.
 export function localizeAchievementName({
   locale,
   englishName,
@@ -171,7 +176,7 @@ export function localizeAchievementName({
 }) {
   const koName = sidecar?.nameKo?.trim() || null;
   const enName = englishName?.trim() || apiName?.trim() || "Achievement";
-  if (locale === "ko") return normalizeKoreanText(koName || enName);
+  if (locale === "ko") return koName || enName;
   return enName || koName || "Achievement";
 }
 
@@ -186,7 +191,7 @@ export function localizeAchievementDescription({
 }) {
   const koDesc = sidecar?.descKo?.trim() || null;
   const enDesc = englishDescription?.trim() || null;
-  if (locale === "ko") return normalizeKoreanText(koDesc || enDesc || "");
+  if (locale === "ko") return koDesc || enDesc || "";
   return enDesc || koDesc || "";
 }
 

@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { FiArrowRight, FiCheck, FiTarget } from "react-icons/fi";
+import { FiArrowRight, FiAward, FiCheck, FiTarget } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { RarityBar } from "@/components/ui/rarity-bar";
+
+import { PanelHeader } from "./panel-header";
 import { difficultyLabel } from "@/lib/difficulty";
 import type { Locale } from "@/lib/i18n";
 import type { GameAchievementCard } from "@/lib/data";
@@ -28,21 +29,18 @@ export function AchievementsList({
 
   return (
     <section aria-label={locale === "ko" ? "업적 목록" : "Achievements"}>
-      <div className="flex items-end justify-between gap-3">
-        <div>
-          <Eyebrow locale={locale}>
-            {locale === "ko" ? "업적 가이드" : "Achievement guide"}
-          </Eyebrow>
-          <h2 className="font-display m-0 mt-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
-            {locale === "ko" ? "희귀도 높은 업적부터" : "Start with the rarest"}
-          </h2>
-        </div>
-        <span className="font-mono text-[14px] text-[var(--text-tertiary)]">
-          {locale === "ko" ? `전체 ${achievements.length}개` : `${achievements.length} total`}
-        </span>
-      </div>
+      <PanelHeader
+        icon={<FiAward size={18} aria-hidden="true" />}
+        title={locale === "ko" ? "업적 가이드" : "Achievement guide"}
+        meta={locale === "ko" ? `전체 ${achievements.length}개` : `${achievements.length} total`}
+        description={
+          locale === "ko"
+            ? "희귀도 낮은 업적부터 정렬됩니다. 카드를 눌러 단계별 공략을 확인하세요."
+            : "Sorted from rarest first. Tap a card for the step-by-step route."
+        }
+      />
 
-      <ul className="mt-6 flex flex-col gap-3">
+      <ul className="flex flex-col gap-3">
         {achievements.map((achievement) => {
           const userState = userAchMap.get(achievement.id);
           const isUnlocked = userState?.unlocked === true;
@@ -136,7 +134,7 @@ function AchievementRow({
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <h3
-              className={`font-display m-0 text-[15px] font-bold transition-colors md:text-[16px] ${
+              className={`font-display m-0 text-[17px] font-bold transition-colors md:text-[18px] ${
                 isUnlocked
                   ? "text-[var(--text-tertiary)] line-through decoration-1"
                   : "text-white group-hover:text-[var(--accent)]"
@@ -158,25 +156,13 @@ function AchievementRow({
             {achievement.missable && (
               <Chip tone="danger" size="xs">
                 <FiTarget size={10} aria-hidden="true" />
-                {locale === "ko" ? "놓치기 쉬움" : "Missable"}
+                {locale === "ko" ? "Missable" : "Missable"}
               </Chip>
             )}
           </div>
-          <p className="m-0 mt-1.5 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
+          <p className="m-0 mt-1.5 line-clamp-2 text-[16px] leading-6 text-[var(--text-secondary)]">
             {achievement.description}
           </p>
-          {(achievement.guideSteps[0] || achievement.guideSummary) && (
-            <p className="m-0 mt-2 line-clamp-1 text-[14px] text-[var(--text-tertiary)]">
-              <span
-                className={`font-mono text-[14px] text-[var(--accent)] ${
-                  locale === "ko" ? "" : "uppercase tracking-[0.1em]"
-                }`}
-              >
-                {locale === "ko" ? "공략 " : "Guide "}
-              </span>
-              {achievement.guideSteps[0] || achievement.guideSummary}
-            </p>
-          )}
         </div>
         <div className="flex items-center gap-3 md:flex-col md:items-end md:gap-2">
           <Chip tone="neutral" size="xs">

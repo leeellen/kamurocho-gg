@@ -47,7 +47,7 @@ export function UserMenuIsland({ locale, mobile = false }: { locale: Locale; mob
     return (
       <a
         href="/me"
-        className="ml-auto whitespace-nowrap rounded-full bg-[var(--accent-subtle)] px-3 py-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline transition-colors hover:bg-[var(--accent-border)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+        className="ml-auto whitespace-nowrap rounded-full bg-[var(--accent-subtle)] px-3 py-1.5 text-[16px] font-semibold text-[var(--accent)] no-underline transition-colors hover:bg-[var(--accent-border)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
       >
         {state.user
           ? locale === "ko" ? "내 라이브러리" : "Library"

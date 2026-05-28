@@ -157,7 +157,7 @@ export function SearchClient({
     <>
       {/* Header + Search bar */}
       <div className="mb-6">
-        <h1 className="m-0 mb-4 text-[32px] font-extrabold tracking-tight text-[var(--text-primary)] md:text-[36px]">
+        <h1 className="m-0 mb-4 text-[36px] font-extrabold tracking-tight text-[var(--text-primary)] md:text-[40px]">
           {labels.hero}
         </h1>
         <div className="flex h-14 items-center gap-3 rounded-2xl border border-[var(--border-default)] bg-[var(--bg-elevated)] px-4 focus-within:border-[var(--accent-border)]">
@@ -169,7 +169,7 @@ export function SearchClient({
             onChange={(e) => setQ(e.target.value)}
             placeholder={labels.placeholder}
             aria-label={labels.placeholder}
-            className="flex-1 border-none bg-transparent text-[15px] text-[var(--text-primary)] outline-none placeholder:text-[var(--text-tertiary)]"
+            className="flex-1 border-none bg-transparent text-[17px] text-[var(--text-primary)] outline-none placeholder:text-[var(--text-tertiary)]"
             autoComplete="off"
             spellCheck={false}
             autoFocus
@@ -184,12 +184,12 @@ export function SearchClient({
               <FiX size={16} aria-hidden="true" />
             </button>
           )}
-          <kbd className="hidden rounded-md border border-[var(--border-subtle)] bg-[var(--bg-raised)] px-2 py-0.5 font-mono text-[14px] text-[var(--text-tertiary)] md:inline-block">
+          <kbd className="hidden rounded-md border border-[var(--border-subtle)] bg-[var(--bg-raised)] px-2 py-0.5 font-mono text-[16px] text-[var(--text-tertiary)] md:inline-block">
             ⌘K
           </kbd>
         </div>
         {loading && (
-          <div className="mt-2 font-mono text-[14px] text-[var(--text-tertiary)]">…</div>
+          <div className="mt-2 font-mono text-[16px] text-[var(--text-tertiary)]">…</div>
         )}
       </div>
 
@@ -198,14 +198,14 @@ export function SearchClient({
         <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr]">
           <section>
             <div className="mb-3 flex items-center justify-between">
-              <h2 className="m-0 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="m-0 text-[16px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.recent}
               </h2>
               {recent.length > 0 && (
                 <button
                   type="button"
                   onClick={clearRecent}
-                  className="cursor-pointer rounded text-[14px] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+                  className="cursor-pointer rounded text-[16px] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
                 >
                   {labels.clearRecent}
                 </button>
@@ -236,7 +236,7 @@ export function SearchClient({
           </section>
 
           <section>
-            <h2 className="mb-3 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+            <h2 className="mb-3 text-[16px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
               {labels.quickJump}
             </h2>
             <div className="grid grid-cols-1 gap-1">
@@ -246,7 +246,7 @@ export function SearchClient({
                   href={`/game/${g.appId}`}
                   className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm no-underline transition-colors hover:bg-[var(--bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
                 >
-                  <span className="w-6 shrink-0 font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
+                  <span className="w-6 shrink-0 font-mono text-[16px] tabular-nums text-[var(--text-tertiary)]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="truncate text-[var(--text-primary)]">{g.name}</span>
@@ -273,9 +273,9 @@ export function SearchClient({
           {/* Games */}
           {games.length > 0 && (
             <section>
-              <h2 className="mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="mb-3 flex items-center gap-2 text-[16px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.gamesHeader}
-                <span className="font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
+                <span className="font-mono text-[16px] tabular-nums text-[var(--text-tertiary)]">
                   {games.length}
                 </span>
               </h2>
@@ -299,12 +299,12 @@ export function SearchClient({
                         />
                       </div>
                       <div className="flex flex-1 flex-col justify-center gap-1.5 px-4 py-2.5">
-                        <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
+                        <div className="truncate text-[16px] font-semibold text-[var(--text-primary)]">
                           {g.name}
                         </div>
                         <div className="flex items-center gap-2.5">
                           <Progress value={g.completion} className="h-[3px] flex-1" />
-                          <span className="font-mono text-[14px] font-bold tabular-nums text-[var(--accent)]">
+                          <span className="font-mono text-[16px] font-bold tabular-nums text-[var(--accent)]">
                             {g.completion}%
                           </span>
                         </div>
@@ -319,9 +319,9 @@ export function SearchClient({
           {/* Achievements */}
           {achievements.length > 0 && (
             <section>
-              <h2 className="mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+              <h2 className="mb-3 flex items-center gap-2 text-[16px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
                 {labels.achievementsHeader}
-                <span className="font-mono text-[14px] tabular-nums text-[var(--text-tertiary)]">
+                <span className="font-mono text-[16px] tabular-nums text-[var(--text-tertiary)]">
                   {achievements.length}
                 </span>
               </h2>
@@ -338,14 +338,14 @@ export function SearchClient({
                   >
                     <AchievementIcon src={a.iconUrl} size={36} />
                     <div className="min-w-0 flex-1">
-                      <div className="truncate text-[14px] font-semibold text-[var(--text-primary)]">
+                      <div className="truncate text-[16px] font-semibold text-[var(--text-primary)]">
                         {a.name}
                       </div>
-                      <div className="truncate text-[14px] text-[var(--text-tertiary)]">
+                      <div className="truncate text-[16px] text-[var(--text-tertiary)]">
                         {a.gameName}
                       </div>
                     </div>
-                    <span className="shrink-0 font-mono text-[14px] font-bold tabular-nums text-[var(--accent)]">
+                    <span className="shrink-0 font-mono text-[16px] font-bold tabular-nums text-[var(--accent)]">
                       {a.rarity.toFixed(1)}%
                     </span>
                   </Link>

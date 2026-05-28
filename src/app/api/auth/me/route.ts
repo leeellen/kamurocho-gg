@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/user-progress";
 
 // Tiny endpoint the header user-menu hits from the client. Lets public pages
-// stay static (ISR) while still showing the user's avatar + sign-in state.
+// stay static while still showing the user's avatar + sign-in state.
 export const dynamic = "force-dynamic";
 
 export async function GET() {

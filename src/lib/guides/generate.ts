@@ -90,8 +90,8 @@ function buildKoreanGuide(ach: AchievementRow): string {
   ];
   const tips: string[] = [];
   if (Number(ach.global_percent ?? 100) < 5) {
-    steps.push("최종장에 들어가기 전에 놓치기 쉬운 서브 콘텐츠나 분기 조건을 먼저 처리하세요.");
-    tips.push("희귀 업적이라면 놓치기 쉬운 조건이나 특정 루트 요구사항이 있을 가능성이 큽니다.");
+    steps.push("최종장에 들어가기 전에 Missable 서브 콘텐츠나 분기 조건을 먼저 처리하세요.");
+    tips.push("희귀 업적이라면 Missable 조건이나 특정 루트 요구사항이 있을 가능성이 큽니다.");
   } else if (Number(ach.global_percent ?? 100) < 20) {
     steps.push("관련된 서브 목표가 있다면 메인 진행 중 함께 처리하는 편이 안전합니다.");
     tips.push("적당히 드문 업적은 보통 짧은 우회 진행이나 선택형 콘텐츠를 요구합니다.");

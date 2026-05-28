@@ -667,7 +667,7 @@ export const judgment: CollectiblesData = {
       slug: "mole-investigations",
       title: { ko: "잠입 수사 — 모두 클리어", en: "Mole Investigations" },
       summary: {
-        ko: "스토리 잠입 수사 미션을 모두 진행합니다. 놓치기 쉬운 항목이 일부 있어 장별로 챙기는 편이 안전합니다.",
+        ko: "스토리 잠입 수사 미션을 모두 진행합니다. Missable이 일부 있어 장별로 챙기는 편이 안전합니다.",
         en: "Clear every Mole Investigation mission. Some are chapter-missable — handle them as they appear.",
       },
     },
@@ -675,7 +675,7 @@ export const judgment: CollectiblesData = {
       slug: "dialog-choices",
       title: { ko: "이면 보고서 — 8장 대화 선택", en: "Investigation Reports — Chapter 8 Dialogs" },
       summary: {
-        ko: "8장의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. 놓치기 쉬운 업적이라 사전에 수동 세이브를 분리해 두세요.",
+        ko: "8장의 핵심 대화 이벤트에서 정답 선택지를 첫 시도에 모두 맞춰야 합니다. Missable achievement이라 사전에 수동 세이브를 분리해 두세요.",
         en: "Pick every correct dialog option in Chapter 8 on the first try. Missable — keep a separate manual save.",
       },
     },

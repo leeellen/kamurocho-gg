@@ -3,3 +3,10 @@ export { getAchievementPageData, getAllGamePagesData, getGamePageData } from "./
 export { getPlayOrderData } from "./play-order";
 export { getMissablesIndex } from "./missables";
 export { searchKamurocho } from "./search";
+export {
+  getGuideSources,
+  type AchievementCitation,
+  type CollectibleCitation,
+  type GameSources,
+  type SubstoryCitation,
+} from "./sources";

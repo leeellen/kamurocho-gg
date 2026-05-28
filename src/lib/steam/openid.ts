@@ -1,11 +1,14 @@
 const STEAM_OPENID_ENDPOINT = 'https://steamcommunity.com/openid/login'
 
 function resolveOrigin(origin?: string): string {
+  // Always prefer the caller-provided origin (built from forwarded headers
+  // by the route). Falling back to NEXTAUTH_URL is a footgun in production
+  // because a stale value silently breaks OpenID realm verification.
   if (origin) return origin
   const env = process.env.NEXTAUTH_URL
   if (env) return env
   if (process.env.NODE_ENV === 'production') {
-    throw new Error('NEXTAUTH_URL must be set in production for Steam OpenID flow.')
+    throw new Error('Steam OpenID flow: caller must pass the browser-facing origin (no NEXTAUTH_URL fallback in production).')
   }
   return 'http://localhost:3001'
 }

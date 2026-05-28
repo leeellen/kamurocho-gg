@@ -34,18 +34,45 @@ import type {
   SeriesGameCard,
 } from "../types";
 
-function pickKoreanGameName({
-  curatedName,
+type GameSidecar = {
+  nameKo?: string | null;
+  shortDescriptionEn?: string | null;
+  shortDescriptionKo?: string | null;
+  releaseDate?: string | null;
+  releaseYear?: number | null;
+  headerUrl?: string | null;
+  capsuleUrl?: string | null;
+};
+
+// Game title + short description must come from Steam's own appdetails
+// response. Steam Korean storefront is requested with `l=koreana` in the
+// sync script and stored in the sidecar; titles like Yakuza 6 that lack a
+// Korean schema return null, and we deliberately fall back to the English
+// Steam strings rather than a curated translation.
+function pickSteamGameName({
   sidecarName,
   englishName,
 }: {
-  curatedName: string;
   sidecarName?: string | null;
   englishName?: string | null;
-}) {
-  if (curatedName.trim()) return curatedName;
-  if (sidecarName?.trim() && sidecarName !== englishName) return sidecarName;
-  return englishName ?? curatedName;
+}): string {
+  const ko = sidecarName?.trim();
+  const en = englishName?.trim();
+  if (ko && ko !== en) return ko;
+  return en || ko || "";
+}
+
+function pickSteamShortDescription({
+  locale,
+  sidecar,
+}: {
+  locale: Locale;
+  sidecar: GameSidecar | null;
+}): string {
+  const en = sidecar?.shortDescriptionEn?.trim() ?? "";
+  const ko = sidecar?.shortDescriptionKo?.trim() ?? "";
+  if (locale === "ko") return ko || en;
+  return en || ko;
 }
 
 export function buildSeriesGameCard({
@@ -61,9 +88,12 @@ export function buildSeriesGameCard({
   guidesByAchievement: Map<number, GuideRow[]>;
   locale: Locale;
 }): SeriesGameCard {
-  const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as
-    | { nameKo?: string | null; headerUrl?: string | null; capsuleUrl?: string | null }
-    | null;
+  const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as GameSidecar | null;
+  const steamName = pickSteamGameName({
+    sidecarName: locale === "ko" ? gameSidecar?.nameKo : null,
+    englishName: game?.name,
+  });
+  const steamShortDescription = pickSteamShortDescription({ locale, sidecar: gameSidecar });
   // Curated missable titles contain the trophy name plus a description, so
   // instead of trying to extract just the name with bracket/quote regex
   // (which fails on apostrophes like "They Won't Mind"), we keep the full
@@ -118,24 +148,18 @@ export function buildSeriesGameCard({
   return {
     appId: curated.appId,
     slug: curated.slug,
-    name:
-      locale === "ko"
-        ? pickKoreanGameName({
-            curatedName: curated.title.ko,
-            sidecarName: gameSidecar?.nameKo,
-            englishName: game?.name ?? curated.title.en,
-          })
-        : game?.name || curated.title.en,
+    name: steamName || curated.title.en,
     altName:
-      locale === "ko"
-        ? game?.name && game?.name !== curated.title.en
-          ? game.name
-          : curated.title.en
-        : null,
+      locale === "ko" && game?.name && game.name !== steamName ? game.name : null,
     arc: curated.arc,
     year: curated.year,
-    summary: locale === "ko" ? curated.summary.ko : curated.summary.en,
-    lead: locale === "ko" ? curated.lead.ko : curated.lead.en,
+    // Steam short_description is the source of truth. Falls back to the
+    // curated copy only when the sidecar predates the v3 sync (no
+    // shortDescription* fields yet). Re-run scripts/sync-steam-app.mjs to
+    // remove that fallback for any given title.
+    summary: steamShortDescription || (locale === "ko" ? curated.summary.ko : curated.summary.en),
+    releaseYear: gameSidecar?.releaseYear ?? null,
+    releaseDate: gameSidecar?.releaseDate ?? null,
     platforms: curated.platforms,
     estimatedHours: curated.estimatedHours,
     difficulty: curated.difficulty,

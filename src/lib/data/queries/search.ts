@@ -34,11 +34,9 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
       game.name,
       game.altName,
       game.summary,
-      game.lead,
       alt?.name,
       alt?.altName,
       alt?.summary,
-      alt?.lead,
     ]
       .filter(Boolean)
       .join(" ")

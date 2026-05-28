@@ -29,18 +29,18 @@ export function SectionTitle({
         {eyebrow && (
           <span
             className={cn(
-              "font-mono text-[14px] font-semibold uppercase text-[var(--accent)]",
+              "font-mono text-[16px] font-semibold uppercase text-[var(--accent)]",
               /[ㄱ-힝]/u.test(eyebrow) ? "tracking-normal" : "tracking-[0.18em]",
             )}
           >
             {eyebrow}
           </span>
         )}
-        <h2 className="font-display m-0 text-[28px] font-extrabold leading-tight text-[var(--text-primary)] md:text-[34px]">
+        <h2 className="font-display m-0 text-[32px] font-extrabold leading-tight text-[var(--text-primary)] md:text-[38px]">
           {title}
         </h2>
         {description && (
-          <p className="m-0 max-w-[64ch] text-[15px] leading-7 text-[var(--text-secondary)]">
+          <p className="m-0 max-w-[64ch] text-[17px] leading-7 text-[var(--text-secondary)]">
             {description}
           </p>
         )}

@@ -23,7 +23,7 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
   const text =
     `${achievement.display_name ?? ""}\n${achievement.description ?? ""}\n${sidecar?.nameKo ?? ""}\n${sidecar?.descKo ?? ""}\n${guideText ?? ""}`.toLowerCase();
   if (
-    /none of (them|these) are miss-?able|not miss-?able|no missables|nothing missable|does not have any missable achievements|none of the achievements are miss-?able|unmissable|미스어블 아님|놓치기 쉬운 업적 아님/.test(
+    /none of (them|these) are miss-?able|not miss-?able|no missables|nothing missable|does not have any missable achievements|none of the achievements are miss-?able|unmissable|미스어블 아님|Missable achievement 아님/.test(
       text,
     )
   )
@@ -43,8 +43,8 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     return false;
   return [
     /missable achievement alert/i,
-    /놓치기 쉬운 업적/u,
-    /놓치기 쉬움/u,
+    /Missable achievement/u,
+    /Missable/u,
     /미스 가능 업적/u,
     /\bonly during chapter\b/i,
     /\bbefore chapter end\b/i,
@@ -158,7 +158,7 @@ export function buildDisplayMissables({
           ? "해당 장에서만 가능한 업적입니다."
           : "Achievement tied to this chapter."
         : locale === "ko"
-          ? "가이드에 놓치기 쉬움으로 표시된 업적입니다."
+          ? "가이드에 Missable으로 표시된 업적입니다."
           : "Achievement flagged by the guide as missable or lockout-prone.");
     const when =
       bucketKey > 0

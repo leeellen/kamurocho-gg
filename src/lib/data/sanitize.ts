@@ -98,7 +98,7 @@ export function sanitizeGuideSummary(
 
 // Drop lines that are pure section markers, missable banners, or duplicate
 // titles. Missable status is already communicated by the chip + header copy,
-// so the literal "MISSABLE ACHIEVEMENT ALERT" / "놓치기 쉬운 업적입니다."
+// so the literal "MISSABLE ACHIEVEMENT ALERT" / "Missable achievement입니다."
 // lines that the backfill scripts emit add noise to the guide steps.
 const NOISE_PATTERNS = [
   /^\/{2,}\s*missable\s+achievement\s+alert\s*\/{2,}$/i,

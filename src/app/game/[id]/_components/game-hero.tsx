@@ -72,7 +72,7 @@ export function GameHero({
       <div className="mx-auto max-w-[1280px] px-5 pb-12 pt-8 md:px-8 md:pt-12">
         <Link
           href="/games"
-          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[14px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+          className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[16px] font-medium text-[var(--text-tertiary)] no-underline transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
         >
           <FiArrowLeft size={13} aria-hidden="true" />
           {locale === "ko" ? "작품 목록으로" : "Back to games"}
@@ -120,11 +120,11 @@ export function GameHero({
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <span className="font-mono text-[14px] uppercase tracking-[0.2em] text-[var(--accent)]">{arcLabel(game.arc, locale)}</span>
-            <h1 className="font-display m-0 text-[40px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[56px]">
+            <span className="font-mono text-[16px] uppercase tracking-[0.2em] text-[var(--accent)]">{arcLabel(game.arc, locale)}</span>
+            <h1 className="font-display m-0 text-[44px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[62px]">
               {game.name}
             </h1>
-            <p className="m-0 max-w-[64ch] text-[14px] leading-7 text-[var(--text-secondary)] md:text-[15px]">
+            <p className="m-0 max-w-[64ch] text-[16px] leading-7 text-[var(--text-secondary)] md:text-[17px]">
               {game.summary}
             </p>
             <div className="mt-2 flex flex-wrap gap-2">
@@ -133,11 +133,11 @@ export function GameHero({
               {game.missableCount > 0 ? (
                 <Chip tone="danger">
                   <FiTarget size={11} aria-hidden="true" />
-                  {locale === "ko" ? `놓침 ${game.missableCount}개` : `${game.missableCount} missables`}
+                  {locale === "ko" ? `Missable ${game.missableCount}개` : `${game.missableCount} missables`}
                 </Chip>
               ) : (
                 <Chip tone="success">
-                  {locale === "ko" ? "영구 놓침 없음" : "No missables"}
+                  {locale === "ko" ? "No missables" : "No missables"}
                 </Chip>
               )}
               {game.rareCount > 0 && (
@@ -153,7 +153,7 @@ export function GameHero({
                 href={`https://store.steampowered.com/app/${game.appId}/`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[16px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
               >
                 {locale === "ko" ? "스팀 상점" : "Steam store"}
                 <FiExternalLink size={12} aria-hidden="true" />
@@ -162,7 +162,7 @@ export function GameHero({
                 href={`https://steamcommunity.com/app/${game.appId}/guides/`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[16px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
               >
                 {locale === "ko" ? "커뮤니티 공략" : "Community guides"}
                 <FiExternalLink size={12} aria-hidden="true" />
@@ -172,24 +172,22 @@ export function GameHero({
         </div>
 
         <dl className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">
-          {showSteamProgress ? (
+          {showSteamProgress && (
             <StatTile
               tone="success"
               label={locale === "ko" ? "내 진행률" : "Your progress"}
               value={`${userPct}%`}
               hint={locale === "ko" ? `${userUnlocked} / ${totalAchievements}` : `${userUnlocked} of ${totalAchievements}`}
             />
-          ) : (
-            <StatTile
-              label={locale === "ko" ? "스토리 시점" : "Story era"}
-              value={game.year}
-            />
           )}
           <StatTile
-            label={locale === "ko" ? "주인공" : "Lead"}
-            value={game.lead}
-            valueClassName="text-[18px] leading-tight md:text-[22px]"
-            hint={game.platforms.join(" · ")}
+            label={locale === "ko" ? "발매년도" : "Released"}
+            value={game.releaseYear ?? "—"}
+            hint={game.releaseDate ?? undefined}
+          />
+          <StatTile
+            label={locale === "ko" ? "스토리 시점" : "Story era"}
+            value={game.year}
           />
           <StatTile
             tone="accent"
@@ -197,17 +195,19 @@ export function GameHero({
             value={`${coveragePct}%`}
             hint={locale === "ko" ? `업적 ${game.achievements} 중 ${game.guideCoverage}` : `${game.guideCoverage} of ${game.achievements}`}
           />
-          <StatTile
-            tone="gold"
-            label={locale === "ko" ? "예상 분량" : "Est. time"}
-            value={game.estimatedHours}
-            valueClassName="text-[30px] md:text-[36px]"
-          />
+          {!showSteamProgress && (
+            <StatTile
+              tone="gold"
+              label={locale === "ko" ? "예상 분량" : "Est. time"}
+              value={game.estimatedHours}
+              valueClassName="text-[34px] md:text-[40px]"
+            />
+          )}
         </dl>
 
         {showSteamProgress && (
           <div className="mt-6 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4">
-            <div className="flex flex-wrap items-center justify-between gap-3 text-[14px]">
+            <div className="flex flex-wrap items-center justify-between gap-3 text-[16px]">
               <Eyebrow locale={locale} tone="muted">
                 {locale === "ko" ? "스팀 진행 상황" : "Steam progress"}
               </Eyebrow>
@@ -226,7 +226,7 @@ export function GameHero({
         )}
         {!hasUser && (
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-4">
-            <div className="text-[14px] text-[var(--text-secondary)]">
+            <div className="text-[16px] text-[var(--text-secondary)]">
               {locale === "ko"
                 ? "스팀 계정을 연동하면 본인의 미완료 업적이 강조됩니다."
                 : "Sign in through Steam to highlight your remaining achievements here."}

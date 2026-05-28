@@ -53,6 +53,23 @@ export const CURATED_GAMES: CuratedGame[] = [
     engine: "Dragon Engine",
   },
   {
+    appId: 3937550,
+    slug: "yakuza-kiwami-3",
+    arc: "kiryu",
+    year: 2009,
+    title: { ko: "용과 같이 극3", en: "Yakuza Kiwami 3 & Dark Ties" },
+    summary: {
+      ko: "오키나와·도쿄를 무대로 한 키류 사가 3편을 드래곤 엔진으로 리메이크. 신규 외전 「Dark Ties」가 동봉되어 보너스 시나리오 트로피가 함께 풀립니다.",
+      en: "A Dragon Engine remake of Kiryu's Okinawa-and-Tokyo chapter, bundled with the new Dark Ties side scenario and its dedicated trophy line.",
+    },
+    lead: { ko: "키류", en: "Kiryu" },
+    platforms: ["PC", "Steam"],
+    estimatedHours: "45h",
+    difficulty: 3,
+    missableCount: 0,
+    engine: "Dragon Engine",
+  },
+  {
     appId: 1088710,
     slug: "yakuza-3",
     arc: "kiryu",

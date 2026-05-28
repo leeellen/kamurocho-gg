@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FiArrowRight, FiClock, FiTarget, FiUser } from "react-icons/fi";
+import { FiArrowRight, FiClock, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ? "작품 목록 — RGG 시리즈 공략"
     : "All games — RGG Studio Steam guides";
   const description = isKo
-    ? "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록. 각 작품의 분량, 놓치기 쉬운 항목, 희귀 업적을 한눈에 확인하세요."
+    ? "용과 같이·이치반·저지먼트 시리즈 스팀 공략 작품 목록. 각 작품의 분량, Missable, 희귀 업적을 한눈에 확인하세요."
     : "Every RGG Studio Steam title we cover — completion scale, missables, and rare achievements at a glance.";
   return {
     title,
@@ -62,7 +62,7 @@ export default async function GamesPage() {
           eyebrow={locale === "ko" ? "스팀 공략 모음" : "Steam guide index"}
           title={locale === "ko" ? "작품 목록" : "Games"}
           description={locale === "ko"
-            ? `스팀 커뮤니티 공략이 확보된 RGG 스튜디오 ${games.length}개 작품. 카드에서 예상 분량·놓치기 쉬운 항목·희귀 업적을 먼저 확인하세요.`
+            ? `스팀 커뮤니티 공략이 확보된 RGG 스튜디오 ${games.length}개 작품. 카드에서 예상 분량·Missable·희귀 업적을 먼저 확인하세요.`
             : `${games.length} RGG Studio titles backed by real Steam Community guides — scale, missables, and rare picks shown up front.`}
         />
 
@@ -72,10 +72,10 @@ export default async function GamesPage() {
           return (
             <section key={group} className="mt-14">
               <div className="mb-6 flex items-baseline gap-3">
-                <h2 className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white">
+                <h2 className="font-display m-0 text-[23px] font-extrabold tracking-tight text-white">
                   {GROUP_LABEL[group][locale] ?? group}
                 </h2>
-                <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
+                <span className="font-mono text-[16px] uppercase tracking-[0.16em] text-[var(--text-tertiary)]">
                   {list.length} {locale === "ko" ? "작품" : "titles"}
                 </span>
                 <span aria-hidden="true" className="ml-2 h-px flex-1 bg-[var(--border)]" />
@@ -116,13 +116,13 @@ export default async function GamesPage() {
                       </div>
 
                       <div className="flex flex-1 flex-col p-5">
-                        <h3 className="font-display text-[18px] font-extrabold leading-tight tracking-tight text-white">
+                        <h3 className="font-display text-[21px] font-extrabold leading-tight tracking-tight text-white">
                           {game.name}
                         </h3>
                         {locale !== "ko" && game.altName && (
-                          <div className="mt-1 text-[14px] text-[var(--text-tertiary)]">{game.altName}</div>
+                          <div className="mt-1 text-[16px] text-[var(--text-tertiary)]">{game.altName}</div>
                         )}
-                        <p className="mt-2 line-clamp-2 min-h-[3em] text-[14px] leading-6 text-[var(--text-secondary)]">
+                        <p className="mt-2 line-clamp-2 min-h-[3em] text-[16px] leading-6 text-[var(--text-secondary)]">
                           {game.summary}
                         </p>
 
@@ -136,16 +136,12 @@ export default async function GamesPage() {
                           {game.missableCount > 0 && (
                             <Chip tone="danger" size="xs">
                               <FiTarget size={10} aria-hidden="true" />
-                              {locale === "ko" ? `놓침 ${game.missableCount}` : `${game.missableCount} missable`}
+                              {locale === "ko" ? `Missable ${game.missableCount}` : `${game.missableCount} missable`}
                             </Chip>
                           )}
-                          <Chip tone="neutral" size="xs">
-                            <FiUser size={10} aria-hidden="true" />
-                            {game.lead}
-                          </Chip>
                         </div>
 
-                        <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[14px]">
+                        <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-4 text-[16px]">
                           <span className="font-mono text-[var(--text-tertiary)]">{locale === "ko" ? `스토리 시점 ${game.year}` : `Story era ${game.year}`}</span>
                           <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
                             {locale === "ko" ? "공략 열기" : "Open guide"}
@@ -169,8 +165,8 @@ function Meta({ label, value, tone = "neutral" }: { label: string; value: number
   const color = tone === "accent" ? "text-[var(--accent)]" : tone === "gold" ? "text-[var(--gold)]" : "text-white";
   return (
     <div>
-      <dt className="font-mono text-[14px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
-      <dd className={`mt-1 font-display text-[18px] font-extrabold leading-none ${color}`}>{value}</dd>
+      <dt className="font-mono text-[16px] uppercase tracking-[0.12em] text-[var(--text-tertiary)]">{label}</dt>
+      <dd className={`mt-1 font-display text-[21px] font-extrabold leading-none ${color}`}>{value}</dd>
     </div>
   );
 }

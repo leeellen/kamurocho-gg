@@ -31,7 +31,7 @@ export const yakuza6: CollectiblesData = {
       slug: "baby-haruto",
       title: { ko: "댄들링 드래곤 — 하루토 돌보기", en: "Dandling Dragon — Haruto Care" },
       summary: {
-        ko: "메인 스토리 중 하루토 돌보기 시퀀스에서 발생하는 QTE를 성공시키면 「댄들링 드래곤」 업적 발동. 놓치기 쉬운 항목과 직접 연동됩니다.",
+        ko: "메인 스토리 중 하루토 돌보기 시퀀스에서 발생하는 QTE를 성공시키면 「댄들링 드래곤」 업적 발동. Missable과 직접 연동됩니다.",
         en: "Pass the Haruto-care QTE during the main story to unlock 'Dandling Dragon'. Tied to the missable arc.",
       },
     },

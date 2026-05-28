@@ -36,7 +36,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
         aria-expanded={open}
         aria-label={locale === "ko" ? "내 계정 메뉴 열기" : "Open account menu"}
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-1.5 pr-3 text-[14px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+        className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-1.5 pr-3 text-[16px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
       >
         {user.avatarUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -48,7 +48,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
         ) : (
           <span
             aria-hidden="true"
-            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[14px] font-black text-white"
+            className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent)] text-[16px] font-black text-white"
           >
             {name.slice(0, 1).toUpperCase()}
           </span>
@@ -73,18 +73,18 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
               ) : (
                 <span
                   aria-hidden="true"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--accent)] text-[14px] font-black text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--accent)] text-[16px] font-black text-white"
                 >
                   {name.slice(0, 1).toUpperCase()}
                 </span>
               )}
               <div className="min-w-0">
-                <div className="truncate text-[14px] font-bold text-white">{name}</div>
-                <div className="font-mono text-[14px] text-[var(--text-tertiary)]">{user.steamId}</div>
+                <div className="truncate text-[16px] font-bold text-white">{name}</div>
+                <div className="font-mono text-[16px] text-[var(--text-tertiary)]">{user.steamId}</div>
               </div>
             </div>
             {user.lastSynced && (
-              <div className="mt-2 font-mono text-[14px] text-[var(--text-tertiary)]">
+              <div className="mt-2 font-mono text-[16px] text-[var(--text-tertiary)]">
                 {locale === "ko" ? "마지막 동기화" : "Last synced"}: {new Date(user.lastSynced).toLocaleString(locale === "ko" ? "ko-KR" : "en-US")}
               </div>
             )}
@@ -95,7 +95,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
                 href="/me"
                 role="menuitem"
                 onClick={() => setOpen(false)}
-                className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-white no-underline transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:bg-white/5"
+                className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[16px] font-medium text-white no-underline transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:bg-white/5"
               >
                 <FiUser size={13} aria-hidden="true" />
                 {locale === "ko" ? "내 라이브러리" : "My library"}
@@ -109,7 +109,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
                   target="_blank"
                   rel="noreferrer noopener"
                   onClick={() => setOpen(false)}
-                  className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-[var(--text-secondary)] no-underline transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
+                  className="flex cursor-pointer items-center gap-2 px-3 py-2 text-[16px] font-medium text-[var(--text-secondary)] no-underline transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
                 >
                   <FiExternalLink size={13} aria-hidden="true" />
                   {locale === "ko" ? "스팀 프로필" : "Steam profile"}
@@ -121,7 +121,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
                 <button
                   type="submit"
                   role="menuitem"
-                  className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-[14px] font-medium text-[var(--text-secondary)] transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
+                  className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-[16px] font-medium text-[var(--text-secondary)] transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:bg-white/5"
                 >
                   <FiLogOut size={13} aria-hidden="true" />
                   {locale === "ko" ? "로그아웃" : "Sign out"}
@@ -157,16 +157,28 @@ export function SignInButton({
 }) {
   const sizeClass =
     size === "sm"
-      ? "h-9 px-3.5 text-[14px]"
+      ? "h-9 px-3.5 text-[16px]"
       : size === "lg"
-        ? "h-12 px-6 text-[14px]"
-        : "h-10 px-4 text-[14px]";
+        ? "h-12 px-6 text-[16px]"
+        : "h-10 px-4 text-[16px]";
   const iconSize = size === "lg" ? 20 : 16;
+  // Capture the current path on the client so we can send the user back to
+  // where they were after the Steam round-trip. Falls back to the home page
+  // during SSR / when window.location is unavailable.
+  const [nextPath, setNextPath] = useState("/");
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const path = window.location.pathname + window.location.search;
+    // Strip our own auth-status flags so a previous failed attempt doesn't
+    // get sticky in the return-to URL.
+    setNextPath(path.replace(/[?&]auth=[^&]+(&reason=[^&]+)?/g, "").replace(/[?&]welcome=1/g, "") || "/");
+  }, []);
+  const signInHref = `/api/auth/steam?next=${encodeURIComponent(nextPath)}`;
 
   return (
     <span className="inline-flex flex-col items-start gap-1">
       <a
-        href="/api/auth/steam"
+        href={signInHref}
         aria-label={locale === "ko" ? "스팀 계정으로 로그인 (Sign in through Steam)" : "Sign in through Steam"}
         className={cn(
           "group/steam relative inline-flex cursor-pointer items-center gap-2 overflow-hidden rounded-full font-semibold text-white no-underline shadow-[0_4px_12px_rgba(0,0,0,0.4)] ring-1 ring-inset ring-white/10 transition-all hover:-translate-y-px hover:shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:ring-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]",
@@ -189,7 +201,7 @@ export function SignInButton({
         </span>
       </a>
       {showDisclaimer && (
-        <span lang="en" className="text-[14px] leading-tight text-[var(--text-tertiary)]">
+        <span lang="en" className="text-[16px] leading-tight text-[var(--text-tertiary)]">
           This site is not associated with Valve Corp.
         </span>
       )}

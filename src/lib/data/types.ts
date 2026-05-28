@@ -35,7 +35,8 @@ export type SeriesGameCard = {
   arc: string;
   year: number;
   summary: string;
-  lead: string;
+  releaseYear: number | null;
+  releaseDate: string | null;
   platforms: string[];
   estimatedHours: string;
   difficulty: number;

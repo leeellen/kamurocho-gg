@@ -32,8 +32,10 @@ async function fetchJson(url) {
 }
 
 async function fetchStore(appId, lang, country) {
+  // Drop `filters=basic` so Steam returns short_description per locale, which
+  // we surface on the site as the canonical Steam-provided game summary.
   const payload = await fetchJson(
-    `https://store.steampowered.com/api/appdetails?appids=${appId}&l=${lang}&cc=${country}&filters=basic`,
+    `https://store.steampowered.com/api/appdetails?appids=${appId}&l=${lang}&cc=${country}`,
   );
   return payload?.[String(appId)]?.data ?? null;
 }
@@ -77,10 +79,22 @@ async function syncApp(appId) {
     (pct?.achievementpercentages?.achievements ?? []).map((achievement) => [achievement.name, achievement.percent]),
   );
 
+  // Steam returns release date as a free-form string in the storefront
+  // locale (e.g. "Jan 26, 2017" / "2017年1月26日"). Extract a 4-digit year so
+  // the UI can display a clean release year without re-parsing per-render.
+  const releaseDateRaw = storeEn?.release_date?.date ?? null;
+  const yearMatch = releaseDateRaw ? /(\d{4})/.exec(releaseDateRaw) : null;
+  const releaseYear = yearMatch ? Number(yearMatch[1]) : null;
+
   const gameSidecar = JSON.stringify({
-    v: 2,
+    v: 4,
     nameKo: storeKo?.name ?? null,
     nameJa: storeJa?.name ?? null,
+    shortDescriptionEn: storeEn?.short_description ?? null,
+    shortDescriptionKo: storeKo?.short_description ?? null,
+    shortDescriptionJa: storeJa?.short_description ?? null,
+    releaseDate: releaseDateRaw,
+    releaseYear,
     headerUrl: cleanAssetUrl(storeEn?.header_image ?? storeKo?.header_image ?? storeJa?.header_image),
     capsuleUrl: cleanAssetUrl(storeEn?.capsule_imagev5 ?? storeEn?.capsule_image ?? storeKo?.capsule_imagev5 ?? storeJa?.capsule_imagev5),
   });

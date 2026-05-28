@@ -20,7 +20,7 @@ export function Eyebrow({ locale, children, tracking = "0.16em", tone = "accent"
   const localeTracking = locale === "ko" ? "tracking-wider" : latinTracking;
   return (
     <span
-      className={`font-mono text-[14px] uppercase ${TONE[tone]} ${localeTracking}${className ? ` ${className}` : ""}`}
+      className={`font-mono text-[16px] uppercase ${TONE[tone]} ${localeTracking}${className ? ` ${className}` : ""}`}
     >
       {children}
     </span>

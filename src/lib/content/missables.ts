@@ -200,7 +200,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "영구 잠금 트로피 없음", en: "No permanently missable trophies" },
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "세가가 키와미 2 리메이크 단계에서 영구적으로 놓치기 쉬운 요소를 제거했습니다. 모든 서브스토리·미니게임·100% 항목은 엔딩 후 프리미엄 어드벤처에서 회수 가능.",
+            ko: "세가가 키와미 2 리메이크 단계에서 영구적으로 Missable 요소를 제거했습니다. 모든 서브스토리·미니게임·100% 항목은 엔딩 후 프리미엄 어드벤처에서 회수 가능.",
             en: "Sega scrubbed permanent missables out of Kiwami 2 during the remake. Every substory, minigame, and 100% checkmark can still be picked up in Premium Adventure after the credits.",
           },
         },
@@ -734,7 +734,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "영구 잠금 트로피 없음", en: "No permanently missable trophies" },
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "전작 「Judgment」(저지먼트)의 놓치기 쉬운 요소(고양이·QTE·증거 등)는 「Lost Judgment」(로스트 저지먼트)에서 모두 제거되었습니다. 청춘 드라마·서브스토리·미니게임 전부 엔딩 이후에도 회수 가능.",
+            ko: "전작 「Judgment」(저지먼트)의 Missable 요소(고양이·QTE·증거 등)는 「Lost Judgment」(로스트 저지먼트)에서 모두 제거되었습니다. 청춘 드라마·서브스토리·미니게임 전부 엔딩 이후에도 회수 가능.",
             en: "Lost Judgment removes every missable hazard from the first game — cats, QTEs, evidence prompts. School Stories, side cases, and minigames all stay open after the credits.",
           },
         },

@@ -12,10 +12,10 @@ export default async function GlobalLoading() {
       <header className="sticky top-0 z-50 border-b border-[var(--chrome-line)] bg-[var(--chrome-top)] backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1280px] items-center gap-4 px-5 py-3 md:px-8">
           <div className="hidden flex-col leading-tight sm:flex">
-            <span className="font-display text-[15px] font-extrabold tracking-tight text-white">
+            <span className="font-display text-[17px] font-extrabold tracking-tight text-white">
               kamurocho<span className="text-[var(--accent)]">.gg</span>
             </span>
-            <span className="font-mono text-[14px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
+            <span className="font-mono text-[16px] uppercase tracking-[0.16em] text-[var(--chrome-muted)]">
               {isKo ? "RGG 시리즈 공략" : "RGG Steam Guides"}
             </span>
           </div>

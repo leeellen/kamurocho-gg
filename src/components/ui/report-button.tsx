@@ -96,7 +96,7 @@ export function ReportButton({
           setOpen(true);
           setStatus("idle");
         }}
-        className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-subtle)] bg-transparent px-3 py-1 text-[14px] font-semibold text-[var(--text-tertiary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+        className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-subtle)] bg-transparent px-3 py-1 text-[16px] font-semibold text-[var(--text-tertiary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
       >
         <FiAlertTriangle size={11} aria-hidden="true" />
         {labels.button}
@@ -113,10 +113,10 @@ export function ReportButton({
           }}
         >
           <div className="w-full max-w-[480px] rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5 shadow-[var(--shadow-pop)]">
-            <h3 className="font-display m-0 text-[16px] font-extrabold text-white">
+            <h3 className="font-display m-0 text-[18px] font-extrabold text-white">
               {labels.title}
             </h3>
-            <p className="mt-1.5 text-[14px] leading-6 text-[var(--text-secondary)]">
+            <p className="mt-1.5 text-[16px] leading-6 text-[var(--text-secondary)]">
               {labels.hint}
             </p>
             <textarea
@@ -127,22 +127,22 @@ export function ReportButton({
               placeholder={labels.placeholder}
               aria-label={labels.title}
               disabled={status === "submitting" || isPending}
-              className="mt-3 block w-full rounded-lg border border-[var(--border-subtle)] bg-black/30 px-3 py-2 text-[14px] leading-6 text-white placeholder:text-[var(--text-tertiary)] focus:border-[var(--accent-border)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+              className="mt-3 block w-full rounded-lg border border-[var(--border-subtle)] bg-black/30 px-3 py-2 text-[16px] leading-6 text-white placeholder:text-[var(--text-tertiary)] focus:border-[var(--accent-border)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
             />
             {status === "submitted" && (
-              <p className="mt-2 text-[14px] text-[var(--success)]">{labels.thanks}</p>
+              <p className="mt-2 text-[16px] text-[var(--success)]">{labels.thanks}</p>
             )}
             {status === "queued" && (
-              <p className="mt-2 text-[14px] text-[var(--gold)]">{labels.queued}</p>
+              <p className="mt-2 text-[16px] text-[var(--gold)]">{labels.queued}</p>
             )}
             {status === "error" && (
-              <p className="mt-2 text-[14px] text-[var(--accent)]">{labels.error}</p>
+              <p className="mt-2 text-[16px] text-[var(--accent)]">{labels.error}</p>
             )}
             <div className="mt-4 flex justify-end gap-2">
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="inline-flex h-10 cursor-pointer items-center rounded-full border border-[var(--border-subtle)] bg-transparent px-4 text-[14px] font-semibold text-[var(--text-secondary)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)]"
+                className="inline-flex h-10 cursor-pointer items-center rounded-full border border-[var(--border-subtle)] bg-transparent px-4 text-[16px] font-semibold text-[var(--text-secondary)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)]"
               >
                 {labels.cancel}
               </button>
@@ -150,7 +150,7 @@ export function ReportButton({
                 type="button"
                 disabled={!text.trim() || status === "submitting" || isPending || status === "submitted"}
                 onClick={() => startTransition(submit)}
-                className="inline-flex h-10 cursor-pointer items-center rounded-full bg-[var(--accent)] px-5 text-[14px] font-bold text-white shadow-[var(--accent-glow)] hover:bg-[var(--accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)] disabled:cursor-default disabled:opacity-50"
+                className="inline-flex h-10 cursor-pointer items-center rounded-full bg-[var(--accent)] px-5 text-[16px] font-bold text-white shadow-[var(--accent-glow)] hover:bg-[var(--accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-elevated)] disabled:cursor-default disabled:opacity-50"
               >
                 {labels.submit}
               </button>

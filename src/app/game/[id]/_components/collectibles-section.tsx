@@ -1,10 +1,11 @@
-import { FiExternalLink, FiPackage, FiPlayCircle } from "react-icons/fi";
+import { FiPackage, FiPlayCircle } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { ReportButton } from "@/components/ui/report-button";
 import { isFallbackText, pickLocalized, type Locale } from "@/lib/i18n";
 import type { CollectibleCategory, CollectibleGroup, CollectibleItem, CollectibleStep } from "@/lib/collectibles";
+
+import { PanelHeader } from "./panel-header";
 
 function langOf(
   pair: { ko?: string | null; en?: string | null } | null | undefined,
@@ -30,28 +31,23 @@ export function CollectiblesSection({ locale, appId, categories }: Props) {
   if (categories.length === 0) return null;
 
   return (
-    <section
-      aria-label={locale === "ko" ? "수집 요소 공략" : "Collectibles guide"}
-      className="mt-12 border-t border-[var(--border-subtle)] pt-10"
-    >
-      <div className="flex items-end justify-between gap-3">
-        <div>
-          <Eyebrow locale={locale}>
-            {locale === "ko" ? "수집 요소" : "Collectibles"}
-          </Eyebrow>
-          <h2 className="font-display m-0 mt-2 flex items-center gap-2 text-[24px] font-extrabold tracking-tight text-white md:text-[28px]">
-            <FiPackage className="text-[var(--accent)]" size={22} aria-hidden="true" />
-            {locale === "ko" ? "수집 요소 공략" : "Collectible Guides"}
-          </h2>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="font-mono text-[14px] text-[var(--text-tertiary)]">
-            {locale === "ko" ? `${categories.length}개 카테고리` : `${categories.length} categories`}
-          </span>
-        </div>
-      </div>
+    <section aria-label={locale === "ko" ? "수집 요소 공략" : "Collectibles guide"}>
+      <PanelHeader
+        icon={<FiPackage size={18} aria-hidden="true" />}
+        title={locale === "ko" ? "수집 요소" : "Collectibles"}
+        meta={
+          locale === "ko"
+            ? `${categories.length}개 카테고리`
+            : `${categories.length} categories`
+        }
+        description={
+          locale === "ko"
+            ? "지역별 수집품과 보스 보상 등을 카테고리별로 정리했습니다."
+            : "Region-by-region collectibles and side-mission rewards grouped by category."
+        }
+      />
 
-      <div className="mt-6 flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
         {categories.map((cat) => (
           <CategoryCard key={cat.slug} locale={locale} appId={appId} category={cat} />
         ))}
@@ -81,13 +77,13 @@ function CategoryCard({
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
             <h3
-              className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]"
+              className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white md:text-[21px]"
               lang={langOf(category.title, locale)}
             >
               {pickLocalized(category.title, locale)}
             </h3>
             <p
-              className="m-0 mt-1.5 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]"
+              className="m-0 mt-1.5 max-w-[80ch] text-[16px] leading-6 text-[var(--text-secondary)]"
               lang={langOf(category.summary, locale)}
             >
               {pickLocalized(category.summary, locale)}
@@ -110,13 +106,13 @@ function CategoryCard({
         <div className="flex items-center justify-between gap-3">
           <div className="flex flex-col gap-1.5">
             <h3
-              className="font-display m-0 text-[17px] font-extrabold tracking-tight text-white md:text-[18px]"
+              className="font-display m-0 text-[20px] font-extrabold tracking-tight text-white md:text-[21px]"
               lang={langOf(category.title, locale)}
             >
               {pickLocalized(category.title, locale)}
             </h3>
             <p
-              className="m-0 max-w-[80ch] text-[14px] leading-6 text-[var(--text-secondary)]"
+              className="m-0 max-w-[80ch] text-[16px] leading-6 text-[var(--text-secondary)]"
               lang={langOf(category.summary, locale)}
             >
               {pickLocalized(category.summary, locale)}
@@ -130,7 +126,7 @@ function CategoryCard({
             )}
             <span
               aria-hidden="true"
-              className="font-mono text-[14px] text-[var(--text-tertiary)] transition-transform group-open:rotate-180"
+              className="font-mono text-[16px] text-[var(--text-tertiary)] transition-transform group-open:rotate-180"
             >
               ▼
             </span>
@@ -144,7 +140,7 @@ function CategoryCard({
             {category.tips.map((tip, i) => (
               <li
                 key={i}
-                className="relative pl-4 text-[14px] leading-6 text-[var(--text-secondary)] before:absolute before:left-0 before:top-2.5 before:h-1 before:w-1 before:rounded-full before:bg-[var(--accent)]"
+                className="relative pl-4 text-[16px] leading-6 text-[var(--text-secondary)] before:absolute before:left-0 before:top-2.5 before:h-1 before:w-1 before:rounded-full before:bg-[var(--accent)]"
                 lang={langOf(tip, locale)}
               >
                 {pickLocalized(tip, locale)}
@@ -161,18 +157,7 @@ function CategoryCard({
           <ItemGrid locale={locale} items={category.items} />
         )}
 
-        <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-          {category.source ? (
-            <a
-              href={category.source.url}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex cursor-pointer items-center gap-1.5 text-[14px] font-semibold text-[var(--accent)] no-underline hover:underline"
-            >
-              {category.source.label}
-              <FiExternalLink size={11} aria-hidden="true" />
-            </a>
-          ) : <span />}
+        <div className="mt-5 flex flex-wrap items-center justify-end gap-3">
           <ReportButton
             locale={locale}
             appId={appId}
@@ -198,7 +183,7 @@ function GroupBlock({
   return (
     <div className={dense ? "mt-8" : ""}>
       <h4
-        className="font-display m-0 mb-3 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.16em] text-[var(--text-tertiary)]"
+        className="font-display m-0 mb-3 flex items-center gap-2 text-[16px] font-bold uppercase tracking-[0.16em] text-[var(--text-tertiary)]"
         lang={langOf(group.title, locale)}
       >
         {pickLocalized(group.title, locale)}
@@ -278,13 +263,13 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
   return (
     <li className="flex flex-col gap-2.5 rounded-xl border border-[var(--border-subtle)] bg-black/20 p-3.5">
       <div className="flex items-baseline gap-2">
-        <span className="font-mono text-[14px] font-extrabold text-[var(--accent)]">
+        <span className="font-mono text-[16px] font-extrabold text-[var(--accent)]">
           #{String(item.number).padStart(2, "0")}
         </span>
-        <span className="text-[14px] font-bold text-white" lang={titleLang}>{titleText}</span>
+        <span className="text-[16px] font-bold text-white" lang={titleLang}>{titleText}</span>
       </div>
       {item.title && !titleEndsWithLocation && (
-        <div className="text-[14px] text-[var(--text-tertiary)]" lang={locationLang}>{locationText}</div>
+        <div className="text-[16px] text-[var(--text-tertiary)]" lang={locationLang}>{locationText}</div>
       )}
 
       {item.image && (
@@ -300,7 +285,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
 
       {item.prereq && (
         <div
-          className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[14px] leading-5 text-[var(--accent)]"
+          className="rounded-md bg-[var(--accent-subtle)] px-2 py-1 text-[16px] leading-5 text-[var(--accent)]"
           lang={langOf(item.prereq, locale)}
         >
           {locale === "ko" ? `사전 조건: ${pickLocalized(item.prereq, "ko")}` : `Prereq: ${pickLocalized(item.prereq, locale)}`}
@@ -316,15 +301,15 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
       ) : parsed ? (
         <div className="flex flex-col gap-1.5">
           {parsed.intro && (
-            <div className="font-mono text-[14px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+            <div className="font-mono text-[16px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
               {parsed.intro}
             </div>
           )}
           {parsed.choices ? (
             <ol className="m-0 flex flex-col gap-1 pl-0">
               {parsed.choices.map((c, i) => (
-                <li key={i} className="flex gap-2.5 text-[14px] leading-6 text-[var(--text-secondary)]">
-                  <span className="shrink-0 rounded-md bg-white/5 px-1.5 py-0.5 font-mono text-[12px] font-bold text-[var(--text-tertiary)] ring-1 ring-inset ring-white/10">
+                <li key={i} className="flex gap-2.5 text-[16px] leading-6 text-[var(--text-secondary)]">
+                  <span className="shrink-0 rounded-md bg-white/5 px-1.5 py-0.5 font-mono text-[14px] font-bold text-[var(--text-tertiary)] ring-1 ring-inset ring-white/10">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="flex-1 text-white">{c}</span>
@@ -332,19 +317,19 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
               ))}
             </ol>
           ) : parsed.rest ? (
-            <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]">{parsed.rest}</p>
+            <p className="m-0 text-[16px] leading-6 text-[var(--text-secondary)]">{parsed.rest}</p>
           ) : null}
         </div>
       ) : bodyText ? (
-        <p className="m-0 text-[14px] leading-6 text-[var(--text-secondary)]" lang={bodyLang}>{bodyText}</p>
+        <p className="m-0 text-[16px] leading-6 text-[var(--text-secondary)]" lang={bodyLang}>{bodyText}</p>
       ) : null}
 
       {item.reward && (
-        <div className="mt-1 flex items-center gap-1.5 text-[14px]">
+        <div className="mt-1 flex items-center gap-1.5 text-[16px]">
           <Chip tone="gold" size="xs">
             {locale === "ko" ? "보상" : "Reward"}
           </Chip>
-          <span className="text-[14px] font-semibold text-white" lang={langOf(item.reward, locale)}>
+          <span className="text-[16px] font-semibold text-white" lang={langOf(item.reward, locale)}>
             {pickLocalized(item.reward, locale)}
           </span>
         </div>
@@ -355,7 +340,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           href={item.video!}
           target="_blank"
           rel="noreferrer noopener"
-          className="inline-flex items-center gap-1 text-[14px] font-semibold text-[var(--accent)] no-underline hover:underline"
+          className="inline-flex items-center gap-1 text-[16px] font-semibold text-[var(--accent)] no-underline hover:underline"
         >
           <FiPlayCircle size={12} aria-hidden="true" />
           {locale === "ko" ? "위치 영상 보기" : "Watch location video"}
@@ -367,8 +352,8 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
 
 function StepRow({ locale, step, index }: { locale: Locale; step: CollectibleStep; index: number }) {
   return (
-    <li className="flex gap-2 text-[14px] leading-6 text-[var(--text-secondary)]">
-      <span className="shrink-0 font-mono text-[14px] font-bold text-[var(--accent)]">
+    <li className="flex gap-2 text-[16px] leading-6 text-[var(--text-secondary)]">
+      <span className="shrink-0 font-mono text-[16px] font-bold text-[var(--accent)]">
         {step.index ?? index}.
       </span>
       <span className="flex-1" lang={langOf(step.body, locale)}>

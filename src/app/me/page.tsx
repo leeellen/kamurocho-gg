@@ -34,7 +34,6 @@ import {
   getUserGameProgress,
 } from "@/lib/user-progress";
 
-export const dynamic = "force-dynamic";
 
 export default async function MePage() {
   const locale = await getLocale();
@@ -47,10 +46,10 @@ export default async function MePage() {
           <Eyebrow locale={locale} tracking="0.2em">
             {locale === "ko" ? "내 라이브러리" : "Library"}
           </Eyebrow>
-          <h1 className="font-display m-0 mt-3 text-[36px] font-extrabold tracking-tight text-white md:text-[48px]">
+          <h1 className="font-display m-0 mt-3 text-[40px] font-extrabold tracking-tight text-white md:text-[52px]">
             {locale === "ko" ? "스팀으로 시작하세요" : "Sign in with Steam"}
           </h1>
-          <p className="m-0 mt-3 text-[14px] leading-7 text-[var(--text-secondary)]">
+          <p className="m-0 mt-3 text-[16px] leading-7 text-[var(--text-secondary)]">
             {locale === "ko"
               ? "스팀 계정을 연동하면 보유 작품과 미완료 업적을 한 화면에서 확인하고, 희귀도 낮은 업적부터 우선 공략을 안내해 드립니다."
               : "Link your Steam account to see your owned RGG titles, unfinished achievements, and a rarity-first cleanup route."}
@@ -58,7 +57,7 @@ export default async function MePage() {
           <div className="mt-8 flex justify-center">
             <SignInButton locale={locale} size="lg" />
           </div>
-          <p className="m-0 mt-5 text-[14px] text-[var(--text-tertiary)]">
+          <p className="m-0 mt-5 text-[16px] text-[var(--text-tertiary)]">
             {locale === "ko"
               ? "스팀 OpenID로만 인증합니다. 비밀번호는 입력하지 않으며, 공개 프로필 정보만 사용합니다."
               : "Authenticates via Steam OpenID. No passwords; only public profile data is used."}
@@ -108,7 +107,7 @@ export default async function MePage() {
               ) : (
                 <span
                   aria-hidden="true"
-                  className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--accent)] text-[24px] font-black text-white shadow-[var(--accent-glow)] md:h-20 md:w-20 md:text-[28px]"
+                  className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--accent)] text-[28px] font-black text-white shadow-[var(--accent-glow)] md:h-20 md:w-20 md:text-[32px]"
                 >
                   {name.slice(0, 1).toUpperCase()}
                 </span>
@@ -117,10 +116,10 @@ export default async function MePage() {
                 <Eyebrow locale={locale} tracking="0.2em">
                   {locale === "ko" ? "내 라이브러리" : "Library"}
                 </Eyebrow>
-                <h1 className="font-display m-0 mt-1.5 text-[28px] font-extrabold tracking-tight text-white md:text-[36px]">
+                <h1 className="font-display m-0 mt-1.5 text-[32px] font-extrabold tracking-tight text-white md:text-[40px]">
                   {name}
                 </h1>
-                <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-[14px] text-[var(--text-tertiary)]">
+                <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] text-[var(--text-tertiary)]">
                   <span className="font-mono">{user.steamId}</span>
                   {user.lastSynced && (
                     <>
@@ -146,7 +145,7 @@ export default async function MePage() {
                   href={user.profileUrl}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="inline-flex h-11 cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 text-[14px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                  className="inline-flex h-11 cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 text-[16px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                 >
                   {locale === "ko" ? "스팀 프로필" : "Steam profile"}
                   <FiExternalLink size={12} aria-hidden="true" />
@@ -183,10 +182,10 @@ export default async function MePage() {
         {/* NOT OWNED FALLBACK */}
         {owned.length === 0 && (
           <section className="mt-10 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-10 text-center">
-            <p className="font-display m-0 text-[20px] font-bold text-white">
+            <p className="font-display m-0 text-[23px] font-bold text-white">
               {locale === "ko" ? "여기서 다루는 작품이 라이브러리에 아직 없네요." : "No covered RGG titles in your library yet."}
             </p>
-            <p className="m-0 mt-2 text-[14px] text-[var(--text-secondary)]">
+            <p className="m-0 mt-2 text-[16px] text-[var(--text-secondary)]">
               {locale === "ko" ? `${games.length}개 작품 중 하나를 보유한 뒤 다시 동기화해 보세요.` : `Pick up any of the ${games.length} covered titles, then sync again.`}
             </p>
           </section>
@@ -212,7 +211,7 @@ export default async function MePage() {
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-[1fr_200px_24px] md:items-center">
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--accent)]">
+                          <span className="font-mono text-[16px] uppercase tracking-[0.1em] text-[var(--accent)]">
                             {game.name}
                           </span>
                           <Chip tone="danger" size="xs">
@@ -220,11 +219,11 @@ export default async function MePage() {
                             {locale === "ko" ? "미완료" : "Incomplete"}
                           </Chip>
                         </div>
-                        <h3 className="font-display m-0 mt-1.5 text-[15px] font-bold text-white transition-colors group-hover:text-[var(--accent)] md:text-[16px]">
+                        <h3 className="font-display m-0 mt-1.5 text-[17px] font-bold text-white transition-colors group-hover:text-[var(--accent)] md:text-[18px]">
                           {item.displayName}
                         </h3>
                         {item.description && (
-                          <p className="m-0 mt-1 line-clamp-2 text-[14px] leading-6 text-[var(--text-secondary)]">
+                          <p className="m-0 mt-1 line-clamp-2 text-[16px] leading-6 text-[var(--text-secondary)]">
                             {item.description}
                           </p>
                         )}
@@ -281,15 +280,15 @@ export default async function MePage() {
                         )}
                       </div>
                       <div className="relative -mt-10 p-5">
-                        <h3 className="font-display text-[18px] font-extrabold tracking-tight text-white">
+                        <h3 className="font-display text-[21px] font-extrabold tracking-tight text-white">
                           {game.name}
                         </h3>
                         <div className="mt-4">
-                          <div className="flex items-end justify-between text-[14px]">
+                          <div className="flex items-end justify-between text-[16px]">
                             <span className="font-mono uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
                               {locale === "ko" ? "진행률" : "Completion"}
                             </span>
-                            <span className="font-display text-[16px] font-extrabold text-white">{pct}%</span>
+                            <span className="font-display text-[18px] font-extrabold text-white">{pct}%</span>
                           </div>
                           <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-white/8">
                             <div
@@ -298,7 +297,7 @@ export default async function MePage() {
                               aria-hidden="true"
                             />
                           </div>
-                          <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[14px] text-[var(--text-tertiary)]">
+                          <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[16px] text-[var(--text-tertiary)]">
                             <span className="font-mono">
                               {progress.unlocked} / {progress.total}
                             </span>

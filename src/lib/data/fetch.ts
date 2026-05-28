@@ -55,7 +55,11 @@ function filterValid<T>(
 // every time. Bust via `revalidateTag("series-rows")` after content edits.
 export const fetchSeriesRows = unstable_cache(
   fetchSeriesRowsInner,
-  ["fetch-series-rows-v1"],
+  // Bumped to v4 to invalidate Vercel Data Cache after the Steam sidecar
+  // gained shortDescription* + releaseDate + releaseYear fields. Cached rows
+  // produced before the sidecar bump lack those columns, so the UI renders
+  // empty release-year tiles until the new key forces a fresh fetch.
+  ["fetch-series-rows-v5"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
@@ -139,6 +143,6 @@ const cachedGameRows = unstable_cache(
       guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
-  ["fetch-game-rows-v1"],
+  ["fetch-game-rows-v5"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );

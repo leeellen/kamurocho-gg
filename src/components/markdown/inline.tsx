@@ -97,7 +97,7 @@ export function GuideBody({
         {bulletGroup.map((b, i) => (
           <li
             key={`li-${key}-${i}`}
-            className="flex gap-2 text-[14px] leading-relaxed text-[var(--text-secondary)]"
+            className="flex gap-2 text-[16px] leading-relaxed text-[var(--text-secondary)]"
           >
             <span className="mt-[0.55em] inline-block h-1 w-1 shrink-0 rounded-full bg-[var(--text-tertiary)]" />
             <span className="min-w-0 flex-1 break-words">{renderInline(b, `b-${key}-${i}`)}</span>
@@ -115,7 +115,7 @@ export function GuideBody({
       blocks.push(
         <p
           key={`p-${i}`}
-          className="m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]"
+          className="m-0 text-[16px] leading-relaxed text-[var(--text-secondary)]"
         >
           {renderInline(para, `p-${i}`)}
         </p>,
@@ -134,7 +134,7 @@ export function InlineText({
   className?: string;
 }) {
   return (
-    <p className={cn("m-0 text-[14px] leading-relaxed text-[var(--text-secondary)]", className)}>
+    <p className={cn("m-0 text-[16px] leading-relaxed text-[var(--text-secondary)]", className)}>
       {renderInline(text, "inline")}
     </p>
   );
