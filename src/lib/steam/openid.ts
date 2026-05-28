@@ -61,16 +61,18 @@ export async function verifySteamAssertion(
   searchParams: URLSearchParams,
   expectedOrigin: string,
 ): Promise<boolean> {
-  // Validate return_to / realm match our origin BEFORE asking Steam to verify.
-  // Steam echoes back the same return_to/realm the client originally sent, so an
-  // attacker can craft a response targeting a different origin if we skip this.
+  // Validate return_to (and realm when present) match our origin BEFORE
+  // asking Steam to verify. Steam echoes back the return_to but does NOT
+  // include realm in the id_res response (realm is only sent on the way out
+  // — it's not in `openid.signed`), so realm absence is normal and only
+  // checked when present.
   const returnTo = searchParams.get('openid.return_to')
   const realm = searchParams.get('openid.realm')
-  if (!returnTo || !realm) return false
+  if (!returnTo) return false
 
   const expectedReturn = expectedCallback(expectedOrigin)
   if (normalizeUrl(returnTo) !== normalizeUrl(expectedReturn)) return false
-  if (normalizeOrigin(realm) !== normalizeOrigin(expectedOrigin)) return false
+  if (realm && normalizeOrigin(realm) !== normalizeOrigin(expectedOrigin)) return false
 
   const payload = new URLSearchParams(searchParams)
   payload.set('openid.mode', 'check_authentication')
