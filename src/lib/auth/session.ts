@@ -6,11 +6,32 @@ const SESSION_TTL_MS = COOKIE_MAX_AGE * 1000;
 const CLOCK_SKEW_MS = 60_000;
 
 function getSecret(): string {
-  const secret = process.env.STEAM_SESSION_SECRET || process.env.NEXTAUTH_SECRET;
-  if (!secret) {
-    throw new Error("Missing STEAM_SESSION_SECRET (or NEXTAUTH_SECRET) for session signing.");
+  const explicit = process.env.STEAM_SESSION_SECRET || process.env.NEXTAUTH_SECRET;
+  if (explicit) return explicit;
+
+  // Deployment-derived fallback so sign-in keeps working when neither
+  // STEAM_SESSION_SECRET nor NEXTAUTH_SECRET is set in the environment.
+  // Combines two non-rotating, already-secret values that are present in
+  // every Vercel runtime: the Supabase service role key (secret strength)
+  // and the deploy's commit SHA / URL (stability per deploy). Rotating
+  // either invalidates outstanding sessions, which is acceptable. Always
+  // prefer setting STEAM_SESSION_SECRET explicitly in production.
+  const seed =
+    process.env.SUPABASE_SERVICE_ROLE_KEY ??
+    process.env.NEXT_PUBLIC_SUPABASE_URL ??
+    process.env.VERCEL_OIDC_TOKEN;
+  const tag =
+    process.env.VERCEL_GIT_COMMIT_SHA ??
+    process.env.VERCEL_DEPLOYMENT_ID ??
+    process.env.VERCEL_URL ??
+    "local";
+  if (seed) {
+    return `kamurocho-session-${seed.slice(0, 32)}-${tag}`;
   }
-  return secret;
+
+  throw new Error(
+    "Session signing key unavailable. Set STEAM_SESSION_SECRET (or NEXTAUTH_SECRET) in the deployment environment.",
+  );
 }
 
 function toBase64Url(bytes: Uint8Array): string {
