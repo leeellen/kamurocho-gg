@@ -169,7 +169,7 @@ export default async function AchievementPage({
                     {locale === "ko" ? "Missable" : "Missable"}
                   </Chip>
                 )}
-                {ach.confidence && (
+                {ach.confidence && Number(ach.confidence) > 0.3 && (
                   <Chip tone="info" size="xs">
                     {locale === "ko" ? `신뢰도 ${ach.confidence}` : `Confidence: ${ach.confidence}`}
                   </Chip>
@@ -235,13 +235,21 @@ export default async function AchievementPage({
                 </li>
               ))}
             </ol>
-          ) : !ach.guideSummary ? (
-            <p className="m-0 mt-4 text-[16px] leading-7 text-[var(--text-secondary)]">
-              {locale === "ko"
-                ? "핵심 조건을 먼저 확인한 뒤, 같은 플레이 안에서 이어서 진행하세요."
-                : "Confirm the trigger condition first, then execute it in the same session."}
-            </p>
-          ) : null}
+          ) : (
+            <div className="mt-5 rounded-xl border border-dashed border-[var(--border)] bg-[var(--bg-elevated)] p-5 text-[16px] leading-7 text-[var(--text-secondary)]">
+              <p className="m-0">
+                {locale === "ko"
+                  ? "이 업적의 단계별 공략은 아직 정리되지 않았습니다. 외부 커뮤니티 가이드에서 최신 루트를 확인해 주세요."
+                  : "A step-by-step route for this achievement isn't curated yet. Check the community guide hub below for the latest route."}
+              </p>
+              <Link
+                href="/sources"
+                className="mt-4 inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-[15px] font-semibold text-white no-underline transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+              >
+                {locale === "ko" ? "공략 출처 페이지로" : "Open guide sources"}
+              </Link>
+            </div>
+          )}
         </section>
 
         {/* TIPS */}

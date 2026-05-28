@@ -31,49 +31,19 @@ function guideHub(appId) {
   return `https://steamcommunity.com/app/${appId}/guides/?browsefilter=trend&requiredtags%5B0%5D=Achievements`;
 }
 
-function parseSidecar(raw) {
-  if (!raw || !raw.startsWith("{")) return null;
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return null;
-  }
-}
-
-function buildContent({ displayName, description, sidecar, locale }) {
-  const ko = locale === "koreana";
-  const koName = sidecar?.nameKo?.trim();
-  const koDesc = sidecar?.descKo?.trim();
-  const enName = displayName?.trim() || "";
-  const enDesc = description?.trim() || "";
-
-  const name = ko ? koName || enName : enName || koName;
-  const desc = ko ? koDesc || enDesc : enDesc || koDesc;
-
-  const summaryKo = `「${name}」 — ${desc || "Steam 업적 조건을 채우면 자동 발동합니다."}`;
-  const summaryEn = `"${name}" — ${desc || "Triggers automatically once the Steam requirement is met."}`;
-
-  const stepsKo = [
-    "프리미엄 어드벤처 진입 후 회수 가능한 항목인지 먼저 확인하세요. 가능하면 메인 스토리 클리어 후 정리합니다.",
-    "조건 발동 직전에 별도 수동 세이브를 남겨 실수 시 즉시 복구할 수 있도록 합니다.",
-    "Steam 커뮤니티 가이드 페이지에서 동일 업적의 최신 루트와 패치 변경점을 함께 점검하세요.",
-  ];
-  const stepsEn = [
-    "Check whether the trigger is reachable in Premium Adventure first; if so, mop it up after the main story.",
-    "Make a manual save right before the trigger so a misstep can be rolled back instantly.",
-    "Cross-check the latest community route on the Steam Community guide hub for any patch-era changes.",
-  ];
-
-  const lines = ko
-    ? [`요약: ${summaryKo}`, "", "단계:", ...stepsKo.map((s, i) => `${i + 1}. ${s}`)]
-    : [`Summary: ${summaryEn}`, "", "Steps:", ...stepsEn.map((s, i) => `${i + 1}. ${s}`)];
-  return lines.join("\n");
+// Leave the body empty on purpose. Achievement detail page already shows
+// the Steam-provided name + description above the guide section, so a
+// row with no content + only source_url surfaces the external link CTA
+// without inventing a fake walkthrough. A real per-achievement
+// walkthrough can land later by editing this stub.
+function buildContent() {
+  return "";
 }
 
 async function backfillApp(appId) {
   const { data: achievements, error: achErr } = await supabase
     .from("achievements")
-    .select("id,api_name,display_name,description,category")
+    .select("id,api_name")
     .eq("app_id", appId);
   if (achErr) throw new Error(achErr.message);
   if (!achievements?.length) {
@@ -92,19 +62,15 @@ async function backfillApp(appId) {
 
   const rowsToUpsert = [];
   for (const ach of achievements) {
-    const sidecar = parseSidecar(ach.category);
     for (const locale of ["english", "koreana"]) {
-      const content = buildContent({
-        displayName: ach.display_name,
-        description: ach.description,
-        sidecar,
-        locale,
-      });
+      const content = buildContent();
       rowsToUpsert.push({
         achievement_id: ach.id,
         locale,
         content,
-        confidence: 0.9,
+        // Placeholder row: source_url only, no curated body yet.
+        // Confidence kept low so the UI can hide the badge later if needed.
+        confidence: 0,
         source_type: "manual",
         source_url: hub,
         is_active: true,
