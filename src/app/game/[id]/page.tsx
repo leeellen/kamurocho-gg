@@ -153,19 +153,31 @@ export default async function GamePage({
     ? Math.round((data.game.guideCoverage / data.game.achievements) * 100)
     : 0;
 
-  // Collect achievement names already covered by curated MISSABLES entries.
-  // Each curated `item.title` (ko + en) may quote the trophy name inside 「」
-  // or after `원어:` — extract both forms to dedupe against DB achievements.
-  const covered = new Set<string>();
+  // Dedupe DB achievements against curated MISSABLES so the same trophy
+  // doesn't appear twice (once in the curated bucket, once in 장 미지정).
+  // The curated title may quote the trophy name in 「」, follow `원어:`, OR
+  // just embed the achievement name in the wider sentence (the Y6 entries
+  // do this with English trophy names like "Dandling Dragon"). We therefore
+  // keep both exact-name and substring-haystack lookups.
   const norm = (s: string) =>
     s.toLowerCase().replace(/[\s:!?.,'"()[\]\-—–「」『』《》〈〉…’]+/g, "");
+  const coveredExact = new Set<string>();
+  const coveredHaystacks: string[] = [];
   for (const chapter of data.missables ?? []) {
     for (const item of chapter.items) {
       for (const raw of [item.title.ko, item.title.en]) {
-        for (const m of raw.matchAll(/[「『]([^」』]+)[」』]/g)) covered.add(norm(m[1]));
-        for (const m of raw.matchAll(/원어\s*[:：]\s*([^)）]+)[)）]/g)) covered.add(norm(m[1]));
+        for (const m of raw.matchAll(/[「『]([^」』]+)[」』]/g)) coveredExact.add(norm(m[1]));
+        for (const m of raw.matchAll(/원어\s*[:：]\s*([^)）]+)[)）]/g)) coveredExact.add(norm(m[1]));
+        const hay = norm(raw);
+        if (hay.length > 0) coveredHaystacks.push(hay);
       }
     }
+  }
+  function isCovered(name: string): boolean {
+    const needle = norm(name);
+    if (needle.length < 3) return false;
+    if (coveredExact.has(needle)) return true;
+    return coveredHaystacks.some((hay) => hay.includes(needle));
   }
 
   // Build a unified chapter-aware "missable" sidebar that merges curated
@@ -182,7 +194,7 @@ export default async function GamePage({
   }
   for (const achievement of data.achievements) {
     if (!achievement.missable || !achievement.chapter) continue;
-    if (covered.has(norm(achievement.name))) continue;
+    if (isCovered(achievement.name)) continue;
     const bucket = chapterMap.get(achievement.chapter);
     if (bucket) {
       bucket.achievements.push(achievement);
@@ -198,7 +210,7 @@ export default async function GamePage({
   // Stray missable achievements with no chapter info still surface in the sidebar
   // under a dedicated "anytime" bucket so the list never silently drops items.
   const unlocatedMissable = data.achievements.filter(
-    (a) => a.missable && !a.chapter && !covered.has(norm(a.name)),
+    (a) => a.missable && !a.chapter && !isCovered(a.name),
   );
   const chapterBuckets = Array.from(chapterMap.values()).sort((a, b) => a.chapter - b.chapter);
   const hasMissables = chapterBuckets.length > 0 || unlocatedMissable.length > 0;
