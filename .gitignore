@@ -67,3 +67,5 @@ next-env.d.ts
 /games-fixed.png
 /ach-final.png
 /home-featured-fix.png
+login-verified.png
+.playwright-mcp/
