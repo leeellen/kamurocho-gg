@@ -59,7 +59,7 @@ export const fetchSeriesRows = unstable_cache(
   // gained shortDescription* + releaseDate + releaseYear fields. Cached rows
   // produced before the sidecar bump lack those columns, so the UI renders
   // empty release-year tiles until the new key forces a fresh fetch.
-  ["fetch-series-rows-v5"],
+  ["fetch-series-rows-v6"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
@@ -143,6 +143,6 @@ const cachedGameRows = unstable_cache(
       guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
-  ["fetch-game-rows-v5"],
+  ["fetch-game-rows-v6"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
