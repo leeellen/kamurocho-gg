@@ -4,8 +4,18 @@ import { Chip } from "@/components/ui/chip";
 import { ReportButton } from "@/components/ui/report-button";
 import { isFallbackText, pickLocalized, type Locale } from "@/lib/i18n";
 import type { CollectibleCategory, CollectibleGroup, CollectibleItem, CollectibleStep } from "@/lib/collectibles";
+import { telephoneCardMaps } from "@/lib/telephone-cards";
 
 import { PanelHeader } from "./panel-header";
+import { TelephoneCardsChecklist } from "./telephone-cards-checklist";
+
+const INTERACTIVE_CATEGORIES: Record<number, Record<string, true>> = {
+  2988580: { "telephone-cards": true },
+};
+
+function hasInteractive(appId: number, slug: string): boolean {
+  return Boolean(INTERACTIVE_CATEGORIES[appId]?.[slug]);
+}
 
 function langOf(
   pair: { ko?: string | null; en?: string | null } | null | undefined,
@@ -65,11 +75,20 @@ function CategoryCard({
   appId: number;
   category: CollectibleCategory;
 }) {
+  const interactive = hasInteractive(appId, category.slug);
+  const interactiveMaps = interactive
+    ? Object.values(telephoneCardMaps).filter((m) => m.appId === appId)
+    : [];
+  const interactiveCount = interactiveMaps.reduce((s, m) => s + m.totalCount, 0);
   const itemCount =
+    interactiveCount +
     (category.items?.length ?? 0) +
     (category.groups?.reduce((s, g) => s + g.items.length, 0) ?? 0);
   const hasExpandable =
-    itemCount > 0 || (category.tips?.length ?? 0) > 0 || Boolean(category.source);
+    interactive ||
+    itemCount > 0 ||
+    (category.tips?.length ?? 0) > 0 ||
+    Boolean(category.source);
 
   if (!hasExpandable) {
     return (
@@ -147,6 +166,10 @@ function CategoryCard({
               </li>
             ))}
           </ul>
+        )}
+
+        {interactive && interactiveMaps.length > 0 && (
+          <TelephoneCardsChecklist maps={interactiveMaps} locale={locale} />
         )}
 
         {category.groups?.map((group, gi) => (
