@@ -9,12 +9,92 @@ import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 import { getCollectibles } from "@/lib/collectibles";
 import { getSubstories } from "@/lib/substories";
+import { getCuratedGameBySlug } from "@/lib/content";
 
 import { AchievementsList } from "./_components/achievements-list";
 import { CollectiblesSection } from "./_components/collectibles-section";
 import { SubstoriesSection } from "./_components/substories-section";
 import { GameHero } from "./_components/game-hero";
 import { MissablesSidebar, type ChapterBucket } from "./_components/missables-sidebar";
+
+const SLUG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  "yakuza-0": [
+    "용과 같이 제로", "용과 같이 0", "용과 같이 0 공략", "용과 같이 제로 공략",
+    "용과 같이 0 업적", "용과 같이 0 트로피", "용과 같이 0 서브스토리",
+    "용과 같이 0 수집 요소", "용과 같이 0 Missable", "야쿠자 제로",
+    "Yakuza 0", "Yakuza Zero", "Yakuza 0 guide", "Yakuza 0 achievements",
+    "Yakuza 0 Director's Cut", "키류 공략", "마지마 공략",
+  ],
+  "yakuza-kiwami": [
+    "용과 같이 극", "용극", "용과 같이 극 공략", "용과 같이 극 업적",
+    "용과 같이 1 극", "야쿠자 키와미", "Yakuza Kiwami", "Yakuza Kiwami guide",
+    "Yakuza Kiwami achievements",
+  ],
+  "yakuza-kiwami-2": [
+    "용과 같이 극2", "용극2", "용과 같이 극2 공략", "용과 같이 극2 업적",
+    "야쿠자 키와미 2", "Yakuza Kiwami 2", "Yakuza Kiwami 2 guide",
+    "Yakuza Kiwami 2 achievements",
+  ],
+  "yakuza-kiwami-3": [
+    "용과 같이 극3", "용극3", "용과 같이 극3 공략", "용과 같이 극3 업적",
+    "야쿠자 키와미 3", "Yakuza Kiwami 3", "Dark Ties", "Yakuza Kiwami 3 guide",
+  ],
+  "yakuza-3": [
+    "용과 같이 3", "용과 같이 3 공략", "용과 같이 3 업적", "용과 같이 3 리마스터",
+    "Yakuza 3", "Yakuza 3 Remastered", "Yakuza 3 guide", "Yakuza 3 achievements",
+  ],
+  "yakuza-4": [
+    "용과 같이 4", "용과 같이 4 공략", "용과 같이 4 업적", "용과 같이 4 리마스터",
+    "Yakuza 4", "Yakuza 4 Remastered", "Yakuza 4 guide", "Yakuza 4 achievements",
+  ],
+  "yakuza-5": [
+    "용과 같이 5", "용과 같이 5 공략", "용과 같이 5 업적", "용과 같이 5 리마스터",
+    "Yakuza 5", "Yakuza 5 Remastered", "Yakuza 5 guide", "Yakuza 5 achievements",
+  ],
+  "yakuza-6": [
+    "용과 같이 6", "용과 같이 6 공략", "용과 같이 6 업적", "용과 같이 6 생명의 시",
+    "Yakuza 6", "Yakuza 6 The Song of Life", "Yakuza 6 guide", "Yakuza 6 achievements",
+  ],
+  "like-a-dragon-gaiden": [
+    "용과 같이 7 외전", "용과 같이 외전", "이름을 지운 자", "가이든",
+    "용과 같이 가이든 공략", "용과 같이 가이든 업적",
+    "Like a Dragon Gaiden", "Gaiden guide", "Gaiden achievements",
+    "Like a Dragon Gaiden The Man Who Erased His Name",
+  ],
+  "like-a-dragon-ishin": [
+    "용과 같이 유신", "용과 같이 이신", "유신 극", "이신 극",
+    "용과 같이 유신 공략", "용과 같이 유신 업적",
+    "Like a Dragon Ishin", "Ishin guide", "Ishin achievements",
+    "Like a Dragon Ishin guide",
+  ],
+  "yakuza-like-a-dragon": [
+    "용과 같이 7", "용7", "라이크 어 드래곤", "야쿠자 라이크 어 드래곤",
+    "용과 같이 7 공략", "용과 같이 7 업적", "이치반 공략",
+    "Yakuza Like a Dragon", "Yakuza 7", "Like a Dragon guide",
+    "Yakuza Like a Dragon guide", "Yakuza Like a Dragon achievements",
+  ],
+  "like-a-dragon-infinite-wealth": [
+    "용과 같이 8", "용8", "인피니트 웰스", "라이크 어 드래곤 인피니트 웰스",
+    "용과 같이 8 공략", "용과 같이 8 업적",
+    "Like a Dragon Infinite Wealth", "Infinite Wealth guide",
+    "Infinite Wealth achievements", "Like a Dragon 8",
+  ],
+  "like-a-dragon-pirate-yakuza-in-hawaii": [
+    "용과 같이 8 외전", "파이리트 야쿠자", "마지마 공략",
+    "용과 같이 8 외전 공략", "용과 같이 8 외전 업적",
+    "Pirate Yakuza in Hawaii", "Like a Dragon Pirate Yakuza",
+    "Pirate Yakuza guide", "Pirate Yakuza achievements",
+  ],
+  "judgment": [
+    "저지먼트", "저지먼트 공략", "저지먼트 업적", "야가미 공략",
+    "Judgment", "Judgment guide", "Judgment achievements",
+    "Judge Eyes",
+  ],
+  "lost-judgment": [
+    "로스트 저지먼트", "로스트 저지먼트 공략", "로스트 저지먼트 업적",
+    "Lost Judgment", "Lost Judgment guide", "Lost Judgment achievements",
+  ],
+};
 
 const VALID_TABS = ["achievements", "missables", "substories", "collectibles"] as const;
 type GameTab = (typeof VALID_TABS)[number];
@@ -35,8 +115,12 @@ export async function generateMetadata({
   const locale = await getLocale();
   const data = await getGamePageData(id, locale);
   if (!data) return {};
+  const curated = getCuratedGameBySlug(data.game.slug);
+  const localizedName = locale === "ko" && curated?.title.ko
+    ? curated.title.ko
+    : data.game.name;
   const title = locale === "ko"
-    ? `${data.game.name} 스팀 업적 공략`
+    ? `${localizedName} 스팀 업적 공략`
     : `${data.game.name} Steam achievement guide`;
   const description = data.game.summary;
   const url = `https://kamurocho-gg.vercel.app/game/${data.game.slug}`;
@@ -50,6 +134,7 @@ export async function generateMetadata({
       title,
       description,
       images: data.game.headerUrl ? [{ url: data.game.headerUrl }] : undefined,
+      locale: locale === "ko" ? "ko_KR" : "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -59,6 +144,10 @@ export async function generateMetadata({
     },
     keywords: [
       data.game.name,
+      localizedName,
+      `${localizedName} 공략`,
+      `${localizedName} 업적`,
+      `${localizedName} 업적 공략`,
       `${data.game.name} 공략`,
       `${data.game.name} 업적`,
       `${data.game.name} 업적 공략`,
@@ -76,6 +165,7 @@ export async function generateMetadata({
       "용과 같이",
       "Like a Dragon",
       "Yakuza",
+      ...(SLUG_EXTRA_KEYWORDS[data.game.slug] ?? []),
     ],
   };
 }
