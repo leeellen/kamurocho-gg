@@ -52,10 +52,10 @@ const mrDressUp: CuratedGuide = {
         "The Catalog Service is permanently locked once Saejima's part begins — missing categories can't be picked up later in this run.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 4 Trophy Guide",
-    en: "PowerPyx — Yakuza 4 Trophy Guide",
+    ko: "Steam Community — Yakuza 4 Achievement Guide",
+    en: "Steam Community — Yakuza 4 Achievement Guide",
   },
 };
 

@@ -54,10 +54,10 @@ const walkingBank: CuratedGuide = {
         "The trophy reads current balance — buying gear or investing in property drops it instantly. Knock out other money-dependent trophies at the same balance peak.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 3 Trophy Guide",
-    en: "PowerPyx — Yakuza 3 Trophy Guide",
+    ko: "Steam Community — Yakuza 3 Achievement Guide",
+    en: "Steam Community — Yakuza 3 Achievement Guide",
   },
 };
 
@@ -111,10 +111,10 @@ const perfectSubstory: CuratedGuide = {
         "Substory No. 80 gates on 100 % of the rest, so save it for last by design.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 3 Trophy Guide",
-    en: "PowerPyx — Yakuza 3 Trophy Guide",
+    ko: "Steam Community — Yakuza 3 Achievement Guide",
+    en: "Steam Community — Yakuza 3 Achievement Guide",
   },
 };
 

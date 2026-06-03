@@ -63,10 +63,10 @@ const hallOfFamer: CuratedGuide = {
         "Haruka quits the idol path automatically in Finale Ch.4. Once that cutscene plays, the entire 100% list locks — pre-check is non-negotiable.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 5 Trophy Guide",
-    en: "PowerPyx — Yakuza 5 Trophy Guide",
+    ko: "Steam Community — Yakuza 5 Achievement Guide",
+    en: "Steam Community — Yakuza 5 Achievement Guide",
   },
 };
 
@@ -119,10 +119,10 @@ const bigHitter: CuratedGuide = {
         "This counts toward the 100% 'Hall of Famer' chain — knock them out in the same run.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 5 Trophy Guide",
-    en: "PowerPyx — Yakuza 5 Trophy Guide",
+    ko: "Steam Community — Yakuza 5 Achievement Guide",
+    en: "Steam Community — Yakuza 5 Achievement Guide",
   },
 };
 
