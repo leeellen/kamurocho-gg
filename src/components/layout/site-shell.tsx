@@ -41,7 +41,7 @@ export function SiteShell({
       </a>
 
       <header className="sticky top-0 z-50 border-b border-[var(--chrome-line)] bg-[var(--chrome-top)] backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1280px] items-center gap-4 px-5 py-3 md:px-8">
+        <div className="mx-auto flex max-w-[1280px] items-center gap-4 px-5 py-4 md:px-8">
           <Link
             href="/"
             aria-label={locale === "ko" ? "kamurocho.gg 홈으로" : "kamurocho.gg home"}
@@ -68,7 +68,7 @@ export function SiteShell({
                   key={item.id}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`relative cursor-pointer rounded-md px-3 py-2 text-[16px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
+                  className={`relative cursor-pointer rounded-md px-3 py-3 text-[16px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] ${
                     active
                       ? "text-white"
                       : "text-[var(--chrome-muted)] hover:text-white"
@@ -91,7 +91,7 @@ export function SiteShell({
               href="/search"
               aria-label={locale === "ko" ? "검색 열기" : "Open search"}
               aria-current={section === "search" ? "page" : undefined}
-              className={`inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[16px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
+              className={`inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[16px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
                 section === "search" ? "border-white/30 bg-white/10 text-white" : ""
               }`}
             >

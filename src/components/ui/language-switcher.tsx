@@ -54,7 +54,7 @@ export function LanguageSwitcher({
           aria-label="Switch to English"
           disabled={isPending || locale === "en"}
           lang="en"
-          className={`inline-flex h-9 min-w-[44px] cursor-pointer items-center justify-center rounded-full px-3 text-[16px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
+          className={`inline-flex h-11 min-w-[44px] cursor-pointer items-center justify-center rounded-full px-3 text-[16px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
             locale === "en"
               ? "bg-white text-[var(--text-inverse)]"
               : "text-[var(--text-tertiary)] hover:text-white"
@@ -69,7 +69,7 @@ export function LanguageSwitcher({
           aria-label="한국어로 전환"
           disabled={isPending || locale === "ko"}
           lang="ko"
-          className={`inline-flex h-9 min-w-[44px] cursor-pointer items-center justify-center rounded-full px-3 text-[16px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
+          className={`inline-flex h-11 min-w-[44px] cursor-pointer items-center justify-center rounded-full px-3 text-[16px] font-bold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-1 disabled:cursor-default ${
             locale === "ko"
               ? "bg-white text-[var(--text-inverse)]"
               : "text-[var(--text-tertiary)] hover:text-white"
