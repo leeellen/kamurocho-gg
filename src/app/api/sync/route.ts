@@ -13,7 +13,15 @@ export async function POST() {
     const result = await syncSteamLibrary(session.steamId);
     return NextResponse.json(result);
   } catch (err) {
-    console.error("[api/sync] failed:", err);
-    return NextResponse.json({ error: "sync-failed" }, { status: 500 });
+    const errorMessage = err instanceof Error ? err.message : String(err);
+    console.error("[api/sync] failed:", errorMessage);
+    return NextResponse.json(
+      {
+        error: "sync-failed",
+        message: errorMessage,
+        steamId: session.steamId
+      },
+      { status: 500 }
+    );
   }
 }

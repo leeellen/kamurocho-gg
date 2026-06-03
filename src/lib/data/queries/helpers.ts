@@ -18,6 +18,7 @@ import {
 } from "../missables";
 import {
   coercePercent,
+  decodeHtmlEntities,
   normalizeComparableText,
   normalizeConfidence,
   parseJsonish,
@@ -56,8 +57,8 @@ function pickSteamGameName({
   sidecarName?: string | null;
   englishName?: string | null;
 }): string {
-  const ko = sidecarName?.trim();
-  const en = englishName?.trim();
+  const ko = decodeHtmlEntities(sidecarName?.trim() ?? "");
+  const en = decodeHtmlEntities(englishName?.trim() ?? "");
   if (ko && ko !== en) return ko;
   return en || ko || "";
 }
@@ -69,8 +70,8 @@ function pickSteamShortDescription({
   locale: Locale;
   sidecar: GameSidecar | null;
 }): string {
-  const en = sidecar?.shortDescriptionEn?.trim() ?? "";
-  const ko = sidecar?.shortDescriptionKo?.trim() ?? "";
+  const en = decodeHtmlEntities(sidecar?.shortDescriptionEn?.trim() ?? "");
+  const ko = decodeHtmlEntities(sidecar?.shortDescriptionKo?.trim() ?? "");
   if (locale === "ko") return ko || en;
   return en || ko;
 }

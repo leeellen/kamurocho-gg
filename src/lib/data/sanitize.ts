@@ -2,6 +2,25 @@ import type { Locale } from "@/lib/i18n";
 
 import type { GuideRow } from "./types";
 
+export function decodeHtmlEntities(text: string | null | undefined): string {
+  if (!text) return "";
+  const textarea = typeof document !== "undefined" ? document.createElement("textarea") : null;
+  if (textarea) {
+    textarea.innerHTML = text;
+    return textarea.value;
+  }
+  // Server-side fallback
+  const entities: Record<string, string> = {
+    "&quot;": '"',
+    "&amp;": "&",
+    "&lt;": "<",
+    "&gt;": ">",
+    "&apos;": "'",
+    "&#39;": "'",
+  };
+  return text.replace(/&(?:quot|amp|lt|gt|apos|#39);/g, (m) => entities[m] || m);
+}
+
 export function parseJsonish(raw: string | null | undefined) {
   if (!raw || !raw.startsWith("{")) return null;
   try {
