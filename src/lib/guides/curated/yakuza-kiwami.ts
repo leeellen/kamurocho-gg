@@ -52,10 +52,10 @@ const handInHand: CuratedGuide = {
         "Only Premium Adventure counts — pre-ending walking does nothing toward this trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza Kiwami Trophy Guide",
-    en: "PowerPyx — Yakuza Kiwami Trophy Guide",
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
   },
 };
 

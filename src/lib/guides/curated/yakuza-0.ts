@@ -49,10 +49,10 @@ const richTaste: CuratedGuide = {
         "Cash tight? Close the first Real Estate purchase on Shichifuku Street before triggering the errand — ¥20,000 lands easily.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -472,10 +472,10 @@ const platinum: CuratedGuide = {
         "Legend difficulty only affects the main story. Front-load 100 % and missables in Run 1; Run 2 can be a story-only sprint.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 0 Trophy Guide",
-    en: "PowerPyx — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -528,10 +528,10 @@ const perfectionist: CuratedGuide = {
         "Biggest gate to the platinum. Start chasing Top-Grade Dream Machine prizes early once Real Estate cashflow is healthy — RNG eats the most time.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 0 Trophy Guide",
-    en: "PowerPyx — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
