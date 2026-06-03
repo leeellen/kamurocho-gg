@@ -106,6 +106,7 @@ export function GameCover({
     <img
       src={urls[idx]}
       alt=""
+      loading="lazy"
       onError={() => setIdx((i) => i + 1)}
       className={className}
       style={{
