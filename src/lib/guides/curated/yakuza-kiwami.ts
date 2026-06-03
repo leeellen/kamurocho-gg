@@ -108,8 +108,11 @@ const platinum: CuratedGuide = {
         "Majima Everywhere spots unlock with story progress, but the SS-rank variants only appear after Ch.11. Batch them near the end.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // "카무로초를 제패한 남자" — Completion List 100%.
@@ -161,8 +164,11 @@ const perfectionist: CuratedGuide = {
         "Sub 78 (Jo Amon fight) requires every other substory done first — save it for last by design.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「도지마의 용이 부활한기라!」 — 마지마 에브리웨어 풀 완료 (도지마의 용 스타일 해금).
@@ -202,8 +208,11 @@ const dragonOfDojimaReturns: CuratedGuide = {
         "Some Majima variants only spawn past Ch.11 — bulk them in the late game.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「곤충 대왕 탄생!」 — 메스킹 모든 라이벌 격파. Steam api_name: 22_throne_of_the_mesuking.
@@ -234,8 +243,11 @@ const mesuKingThrone: CuratedGuide = {
         "3) Beating every rival including the seasonal champion fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「서킷의 용이 다시 탄생하다!」 — 포켓 서킷 모든 대회 우승. Steam api_name: 21_the_dragon_of_pocket_circuit_reborn.
@@ -266,8 +278,11 @@ const pocketCircuitReborn: CuratedGuide = {
         "3) Win every championship to unlock the Dragon Kart final cup — that cup's win fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「싸움 최강을 제패한 남자」 — 지하 투기장 모든 대회 우승. Steam api_name: 18_the_strongest_fighter.
@@ -298,8 +313,11 @@ const strongestFighter: CuratedGuide = {
         "3) Winning the God-tier final fires the trophy and unlocks Komaki training nodes.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「코마키류 전수 완료!」 — 코마키류 수련 4종 풀. Steam api_name: 15_komaki_style_master.
@@ -330,8 +348,11 @@ const komakiMaster: CuratedGuide = {
         "3) All four drills cleared fires the trophy and unlocks the full Komaki skill rewards.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「아몬 격파」 — 조 아몬 격투 (서브스토리 78). Steam api_name: 51_amon_defeated.
@@ -362,8 +383,11 @@ const amonDefeated: CuratedGuide = {
         "3) Beat Jo Amon. Bring full healing and a strong weapon.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 // 「놀이를 제패한 남자」 — 모든 미니게임 1회. Steam api_name: 23_what_a_player.
@@ -400,8 +424,11 @@ const allMinigamesPlayed: CuratedGuide = {
         "4) Trophy fires when the Minigames category lists every entry as touched.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami Trophy Guide", en: "PowerPyx — Yakuza Kiwami Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
+    en: "Steam Community — Yakuza Kiwami Achievement Guide",
+  },
 };
 
 export const YAKUZA_KIWAMI_CURATED: Record<string, CuratedGuide> = {

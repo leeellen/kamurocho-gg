@@ -106,8 +106,11 @@ const platinum: CuratedGuide = {
         "Y6 is the most forgiving 100 % run in the series. Lock down Dandling Dragon in Ch.3 and the rest plays out at your pace post-credits.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 // 「전설의 드래곤」 — LEGEND 클리어. Steam api_name: ogfac10.
@@ -138,8 +141,11 @@ const legendY6: CuratedGuide = {
         "3) Ch.13 final boss kill fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 // 「대단한 선수야」 — 모든 미니게임 플레이. Steam api_name: ogfac41.
@@ -170,8 +176,11 @@ const allMinigamesY6: CuratedGuide = {
         "3) Full Minigame category coverage fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 // 「내 인생의 이야기」 — 모든 서브스토리 완료. Steam api_name: ogfac13.
@@ -202,8 +211,11 @@ const allSubsY6: CuratedGuide = {
         "3) Trophy fires when all 51 are cleared.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 // 「클럽샤인스타」 — 모든 호스티스 지명. Steam api_name: ogfac45.
@@ -234,8 +246,11 @@ const liveChatStar: CuratedGuide = {
         "3) Trophy fires on the tenth.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 // 「아몬 패배」 — 아몬 격파. Steam api_name: ogfac28.
@@ -266,8 +281,11 @@ const amonY6: CuratedGuide = {
         "3) Beat him for the trophy and the bonus outfit.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 6 Trophy Guide", en: "PowerPyx — Yakuza 6 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+    en: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",
+  },
 };
 
 export const YAKUZA_6_CURATED: Record<string, CuratedGuide> = {

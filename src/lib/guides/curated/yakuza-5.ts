@@ -174,8 +174,11 @@ const platinum: CuratedGuide = {
         "Haruka auto-quits idol life at Finale Ch.4. Anything unticked beforehand locks for the run — verify on the Completion List.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 5 Trophy Guide", en: "PowerPyx — Yakuza 5 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+  },
 };
 
 // 「전설을 잇는 자」 — LEGEND 클리어. Steam api_name: achievement_8.
@@ -206,8 +209,11 @@ const legendY5: CuratedGuide = {
         "3) Finale Ch.4 final boss kill fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 5 Trophy Guide", en: "PowerPyx — Yakuza 5 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+  },
 };
 
 // 「서브 스토리 완전 제패」 — Y5의 아몬 격파. Steam api_name: achievement_24.
@@ -232,8 +238,11 @@ const subAmonY5: CuratedGuide = {
         "2) Complete subs trigger Amon fights per lead. Beat all 5 for the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 5 Trophy Guide", en: "PowerPyx — Yakuza 5 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+  },
 };
 
 // 「미스터 클라이맥스」 — 4인 클라이맥스 히트 전 종류. Steam api_name: achievement_37.
@@ -264,8 +273,11 @@ const mrClimaxY5: CuratedGuide = {
         "3) Full coverage fires the trophy. Save before chasing rare conditions for retries.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 5 Trophy Guide", en: "PowerPyx — Yakuza 5 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+  },
 };
 
 // 「인생은 엔터테인먼트」 — 모든 미니게임 1회. Steam api_name: achievement_42.
@@ -302,8 +314,11 @@ const allMinigamesY5: CuratedGuide = {
         "4) Full Minigame category coverage fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-5-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 5 Trophy Guide", en: "PowerPyx — Yakuza 5 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 5 Remastered Achievement Guide",
+  },
 };
 
 export const YAKUZA_5_CURATED: Record<string, CuratedGuide> = {

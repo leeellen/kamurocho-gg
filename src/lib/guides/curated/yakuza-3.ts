@@ -166,8 +166,11 @@ const platinum: CuratedGuide = {
         "Some remaster builds drop the EX-HARD trophy if you raise difficulty mid-run. Either start on EX-HARD or keep a clean save as backup.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // "미니 게임 마스터" — Master every minigame. Steam api_name: achievement_40.
@@ -218,8 +221,11 @@ const minigameMaster: CuratedGuide = {
         "Golf tourney + UFO doll RNG are the biggest time sinks — push them post-Ch.7 once cash is comfortable.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // 「최강의 증표」 — EX-HARD 클리어. Steam api_name: achievement_42.
@@ -250,8 +256,11 @@ const exHardClear: CuratedGuide = {
         "3) Beating Ch.12's final boss fires the trophy. If the trophy fails, restart EX-HARD from a clean save.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // 「전설의 챔피언」 — 투기장 모든 토너먼트 우승. Steam api_name: achievement_23.
@@ -282,8 +291,11 @@ const coliseumChampion: CuratedGuide = {
         "3) Winning God-tier fires the trophy and grants the Coliseum Champion reward.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // 「실력파 헌터」 — 모든 히트맨 격파. Steam api_name: achievement_17.
@@ -314,8 +326,11 @@ const hitmanHunter: CuratedGuide = {
         "3) Beating all 11 fires the trophy and feeds the Golden Pistol weapon line.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // 「맛집 마스터」 — 모든 음식점 가장 비싼 메뉴 주문. Steam api_name: achievement_21.
@@ -346,8 +361,11 @@ const gourmetMaster: CuratedGuide = {
         "3) Every restaurant covered fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 // 「서브 스토리 80」 — 80번 서브 클리어. Steam api_name: achievement_15.
@@ -372,8 +390,11 @@ const sub80: CuratedGuide = {
         "2) On Sub 79 the final NPC auto-spawns for Sub 80 — clear it for the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-3-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 3 Trophy Guide", en: "PowerPyx — Yakuza 3 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 3 Remastered Achievement Guide",
+  },
 };
 
 export const YAKUZA_3_CURATED: Record<string, CuratedGuide> = {

@@ -101,8 +101,11 @@ const platinum: CuratedGuide = {
         "'Indomitable' locks the moment you accept the EASY downgrade. Death streaks raise the prompt frequency — keep healing items high.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 4 Trophy Guide", en: "PowerPyx — Yakuza 4 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  },
 };
 
 // 「전설을 잇는 자」 — LEGEND 클리어. Steam api_name: achievement_6.
@@ -133,8 +136,11 @@ const legendCleared: CuratedGuide = {
         "3) Trophy fires on the final boss kill. Pair the run with 'Ultimate Successor' trophy progress.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 4 Trophy Guide", en: "PowerPyx — Yakuza 4 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  },
 };
 
 // 「명함 헌터」 — 캬바걸 모든 명함. Steam api_name: achievement_19.
@@ -165,8 +171,11 @@ const businessCardHunter: CuratedGuide = {
         "3) Full card collection ticks the Business Cards category at 100 % and fires the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 4 Trophy Guide", en: "PowerPyx — Yakuza 4 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  },
 };
 
 // 「어서 오세요 세가입니다」 — 클럽 세가 모든 미니게임 1회. Steam api_name: achievement_33.
@@ -197,8 +206,11 @@ const welcomeToSega: CuratedGuide = {
         "3) Trophy fires when the Club Sega category is fully ticked.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 4 Trophy Guide", en: "PowerPyx — Yakuza 4 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  },
 };
 
 // 「아몬 격파」 — Y4. Steam api_name: achievement_13.
@@ -223,8 +235,11 @@ const amonY4: CuratedGuide = {
         "2) Defeat all four (Daigoro / Sango / Jin / Jo Amon). Stock heals and a strong weapon.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-4-remastered-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 4 Trophy Guide", en: "PowerPyx — Yakuza 4 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
+  sourceLabel: {
+    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  },
 };
 
 export const YAKUZA_4_CURATED: Record<string, CuratedGuide> = {
