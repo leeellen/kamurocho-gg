@@ -80,14 +80,13 @@ export function GameCover({
     () => candidateUrls(appId, ratio, imgIconUrl, headerUrl, capsuleUrl),
     [appId, ratio, imgIconUrl, headerUrl, capsuleUrl],
   );
-  // Canonical React "reset state on prop change" pattern — see
-  // https://react.dev/reference/react/useState#storing-information-from-previous-renders.
-  // Render-phase setState here is intentional; React reruns immediately without commit.
   const [idx, setIdx] = useState(0);
   const [prevUrls, setPrevUrls] = useState(urls);
+  const [isLoading, setIsLoading] = useState(true);
   if (prevUrls !== urls) {
     setPrevUrls(urls);
     setIdx(0);
+    setIsLoading(true);
   }
   const { w, h } = RATIO_PX[ratio];
   const fallbackClass = `cover-${appId % 20}`;
@@ -102,20 +101,50 @@ export function GameCover({
   }
 
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={urls[idx]}
-      alt=""
-      loading="lazy"
-      onError={() => setIdx((i) => i + 1)}
-      className={className}
+    <div
       style={{
         width: "100%",
         aspectRatio: `${w} / ${h}`,
-        objectFit: "cover",
-        display: "block",
+        position: "relative",
+        overflow: "hidden",
         ...style,
       }}
-    />
+    >
+      {isLoading && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: `linear-gradient(90deg, var(--bg-elevated) 0%, var(--bg-base) 50%, var(--bg-elevated) 100%)`,
+            backgroundSize: "200% 100%",
+            animation: "shimmer 2s infinite",
+          }}
+          aria-hidden="true"
+        />
+      )}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={urls[idx]}
+        alt=""
+        loading="lazy"
+        onError={() => setIdx((i) => i + 1)}
+        onLoad={() => setIsLoading(false)}
+        className={className}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          display: "block",
+          opacity: isLoading ? 0 : 1,
+          transition: "opacity 0.3s ease-in-out",
+        }}
+      />
+      <style>{`
+        @keyframes shimmer {
+          0% { background-position: 200% 0; }
+          100% { background-position: -200% 0; }
+        }
+      `}</style>
+    </div>
   );
 }
