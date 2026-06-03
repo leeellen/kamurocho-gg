@@ -56,7 +56,7 @@ const platinum: CuratedGuide = {
         "Job Master is ~1~2 hr per job — easily 50+ hr total. EXP-boost gear (Sujimon buffs) cuts this dramatically.",
     },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
@@ -68,7 +68,7 @@ const dragonCartMaster: CuratedGuide = {
     { ko: "2) 15장 진입 후 마지막 두 라이벌 레이스 해금. 풀 강화 부품으로 도전.", en: "2) After Ch.15, the final two rival races open — bring fully-upgraded parts." },
     { ko: "3) 모든 컵 + 라이벌 우승 시 트로피 발동.", en: "3) Trophy fires when every cup + rival is cleared." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
@@ -80,7 +80,7 @@ const honkHonkHero: CuratedGuide = {
     { ko: "2) 5장·8·12·15에서 새 NPC가 추가되므로 메인 진행마다 재방문.", en: "2) New NPCs unlock at Ch.5/8/12/15 — sweep after each beat." },
     { ko: "3) 모든 NPC 발견 시 컴플리트 리스트 카운트 + 트로피 발동.", en: "3) Full coverage fires the trophy." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
@@ -91,7 +91,7 @@ const lv70: CuratedGuide = {
     { ko: "1) 메인 스토리 엔딩 후 「쓰루기시마 던전」(진정한 최종 던전) 해금 → 적 레벨 50~70 구간에서 그라인드.", en: "1) Post-credits, push into the True Final Dungeon — enemies sit at Lv.50~70." },
     { ko: "2) EXP 부스트 장비(스지몬·로맨스 공방) 활용 → Lv.70 도달 시 트로피 발동.", en: "2) Stack EXP buffs (Sujimon, Romance Workshop). Hitting Lv.70 fires it." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
@@ -103,7 +103,7 @@ const stayAwakeAllMovies: CuratedGuide = {
     { ko: "2) 영화 종류에 따라 프롬프트 빈도·난이도 차이. 어려운 영화는 마지막에 도전.", en: "2) Prompt density varies by film — save the hard ones for last." },
     { ko: "3) 모든 영화 「졸지 않음」 카운트 시 트로피 발동.", en: "3) Trophy fires when every film is cleared without dozing." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
@@ -115,7 +115,7 @@ const sujimonMaster: CuratedGuide = {
     { ko: "2) 후반 장에 강한 스지몬 출현. EXP·자금이 안정된 12장 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
     { ko: "3) 250종 등록 시 트로피 발동. Premium Adventure에서 마지막 변종 마무리.", en: "3) 250 entries fires the trophy; finish leftovers in Premium Adventure." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3085063886",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 

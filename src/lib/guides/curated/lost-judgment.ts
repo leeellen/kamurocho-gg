@@ -50,8 +50,8 @@ const platinum: CuratedGuide = {
         "Without the 'Detective's Essentials Pack' DLC, Side Cases 43~54 and several School Story rewards are locked — platinum impossible.",
     },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「타운고 마스터」 — TownGo 100%. Steam api_name: coyote_town_act_all_complete.
@@ -88,8 +88,8 @@ const townGoMaster: CuratedGuide = {
         "4) Full 100 % fires Master + Tour Guide + Senior + Whale (TownGo line) all at once.",
     },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「용맹한 탐정」 EX-HARD 클리어. Steam: coyote_most_difficult_clear.
@@ -100,8 +100,8 @@ const mostDifficultLJ: CuratedGuide = {
     { ko: "2) 야가미·카이토의 전투 스타일 트리 + 청춘 드라마 보상 스킬 풀 강화 후 도전.", en: "2) Max Yagami/Kaito's style trees + School Story rewards." },
     { ko: "3) 최종 보스 클리어 시 트로피 발동.", en: "3) Final boss kill fires it." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「유비무환」 모든 장비. Steam: coyote_get_all_equip.
@@ -112,8 +112,8 @@ const allEquipLJ: CuratedGuide = {
     { ko: "2) 미니게임 보상 라인 — 드론 레이스 그랑프리·헤븐스 골프 컴플리트·다람쥐 수색 컴플리트 등으로 상점 미공급 아이템 확보.", en: "2) Earn shop-exclusive gear via Drone Race, Heaven's Golf, Squirrel Search rewards." },
     { ko: "3) 컴플리트 리스트 「장비」 카테고리 100% 도달 시 트로피 발동.", en: "3) Full Equipment category fires it." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「게이머」 모든 아케이드. Steam: coyote_all_arcade_game_played.
@@ -123,8 +123,8 @@ const allArcadeLJ: CuratedGuide = {
     { ko: "1) 카무로초 + 이진초 클럽 세가 모두 입장 → 캐비넷별 시작 + 짧게 플레이.", en: "1) Hit both cities' Club Sega and start every cabinet." },
     { ko: "2) 컴플리트 리스트 「아케이드」 카테고리가 100% 카운트되면 트로피 발동.", en: "2) Trophy fires on full Arcade category." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「가장 빠른 드론 파일럿」 드론 리그 모든 그랑프리. Steam: coyote_drone_league_all_clear.
@@ -135,8 +135,8 @@ const droneRaceMaster: CuratedGuide = {
     { ko: "2) 부품 강화로 최고 등급에 가까운 사양 셋업. 코스별 권장 빌드 다름.", en: "2) Tune to near-max specs; builds vary by course." },
     { ko: "3) 모든 그랑프리 우승 시 트로피 발동.", en: "3) Sweep every GP for the trophy." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「음악 애호가」 모든 레코드. Steam: coyote_get_all_record.
@@ -147,8 +147,8 @@ const allRecordsLJ: CuratedGuide = {
     { ko: "2) 사이드 케이스 + DLC 보상에서 한정 레코드 추가 수집.", en: "2) Pull rare records from Side Cases + DLC rewards." },
     { ko: "3) 모든 레코드 수집 시 트로피 발동.", en: "3) Full collection fires the trophy." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 // 「주사위의 패자」 VR 쌍륙 모든 스테이지. Steam: coyote_all_daiq_stage_win.
@@ -159,8 +159,8 @@ const allVrBoard: CuratedGuide = {
     { ko: "2) 스테이지별 룰(특수 칸·아이템·페널티 등) 적응. RNG가 강한 스테이지는 재시도 권장.", en: "2) Adapt to per-stage rules; restart RNG-heavy stages as needed." },
     { ko: "3) 모든 스테이지 승리 시 트로피 발동.", en: "3) Full clear fires the trophy." },
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389",
-  sourceLabel: { ko: "Steam Community — Lost Judgment Achievement Guide", en: "Steam Community — Lost Judgment Achievement Guide" },
+  sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
+  sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
 
 export const LOST_JUDGMENT_CURATED: Record<string, CuratedGuide> = {
