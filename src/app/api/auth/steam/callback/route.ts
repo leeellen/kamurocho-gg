@@ -25,18 +25,51 @@ type SteamPlayer = {
 
 async function fetchSteamProfile(steamId: string): Promise<SteamPlayer | null> {
   const key = process.env.STEAM_API_KEY;
-  if (!key) return null;
+
+  // Try Web API first
+  if (key) {
+    try {
+      const res = await fetch(
+        `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${key}&steamids=${steamId}`,
+        { cache: "no-store", signal: AbortSignal.timeout(5000) },
+      );
+      if (res.ok) {
+        const data = (await res.json()) as { response?: { players?: SteamPlayer[] } };
+        if (data.response?.players?.[0]) {
+          return data.response.players[0];
+        }
+      }
+    } catch {
+      // Fall through to fallback
+    }
+  }
+
+  // Fallback: try scraping the Steam profile page directly
   try {
     const res = await fetch(
-      `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${key}&steamids=${steamId}`,
+      `https://steamcommunity.com/profiles/${steamId}`,
       { cache: "no-store", signal: AbortSignal.timeout(5000) },
     );
-    if (!res.ok) return null;
-    const data = (await res.json()) as { response?: { players?: SteamPlayer[] } };
-    return data.response?.players?.[0] ?? null;
+    if (res.ok) {
+      const html = await res.text();
+      // Extract persona name from the page
+      const personaMatch = html.match(/<span class="actual_persona_name">(.+?)<\/span>/);
+      const avatarMatch = html.match(/<img[^>]+class="[^"]*playeravatar[^"]*"[^>]+src="([^"]+)"/);
+      if (personaMatch) {
+        return {
+          steamid: steamId,
+          personaname: personaMatch[1].trim(),
+          avatarfull: avatarMatch?.[1],
+          profileurl: `https://steamcommunity.com/profiles/${steamId}/`,
+        };
+      }
+    }
   } catch {
-    return null;
+    // Fall through to null
   }
+
+  console.warn(`[auth/callback] Could not fetch Steam profile for ${steamId}. Consider setting STEAM_API_KEY for better reliability.`);
+  return null;
 }
 
 // Vercel sits behind a proxy: `request.url` can report the internal
@@ -85,6 +118,13 @@ export async function GET(request: Request) {
   // Cache profile basics (display name, avatar) for the header badge.
   try {
     const profile = await fetchSteamProfile(steamId);
+    console.log("[auth/callback] fetchSteamProfile result:", {
+      steamId,
+      profileReceived: !!profile,
+      personaname: profile?.personaname,
+      avatarfull: profile?.avatarfull,
+      profileurl: profile?.profileurl,
+    });
     const admin = createAdminClient();
     const res = await admin.from("users").upsert(
       {
@@ -97,6 +137,8 @@ export async function GET(request: Request) {
     );
     if (res.error) {
       console.error("[auth/callback] users upsert failed:", res.error.message);
+    } else {
+      console.log("[auth/callback] users upsert success for", steamId);
     }
   } catch (err) {
     console.error("[auth/callback] profile cache error:", err);

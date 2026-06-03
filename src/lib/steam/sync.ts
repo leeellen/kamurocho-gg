@@ -54,15 +54,43 @@ type SteamPlayerSummary = {
 };
 
 async function fetchSteamProfile(steamId: string): Promise<SteamPlayerSummary | null> {
+  // Try Web API first
   try {
     const res = await steamFetch<{ response?: { players?: SteamPlayerSummary[] } }>(
       "/ISteamUser/GetPlayerSummaries/v2/",
       { steamids: steamId },
     );
-    return res.response?.players?.[0] ?? null;
+    if (res.response?.players?.[0]) {
+      return res.response.players[0];
+    }
   } catch {
-    return null;
+    // Fall through to fallback
   }
+
+  // Fallback: scrape the profile page directly
+  try {
+    const res = await fetch(`https://steamcommunity.com/profiles/${steamId}`, {
+      cache: "no-store",
+      signal: AbortSignal.timeout(5000),
+    });
+    if (res.ok) {
+      const html = await res.text();
+      const personaMatch = html.match(/<span class="actual_persona_name">(.+?)<\/span>/);
+      const avatarMatch = html.match(/<img[^>]+class="[^"]*playeravatar[^"]*"[^>]+src="([^"]+)"/);
+      if (personaMatch) {
+        return {
+          steamid: steamId,
+          personaname: personaMatch[1].trim(),
+          avatarfull: avatarMatch?.[1],
+          profileurl: `https://steamcommunity.com/profiles/${steamId}/`,
+        };
+      }
+    }
+  } catch {
+    // Fall through to null
+  }
+
+  return null;
 }
 
 export async function syncSteamLibrary(steamId: string) {
