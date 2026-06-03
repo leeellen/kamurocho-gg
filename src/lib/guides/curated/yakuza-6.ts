@@ -51,10 +51,10 @@ const dandlingDragon: CuratedGuide = {
         "This is Yakuza 6's only permanent missable — prioritize it the moment Ch.3 begins.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-6-the-song-of-life-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
   sourceLabel: {
-    ko: "PowerPyx — Yakuza 6 Trophy Guide",
-    en: "PowerPyx — Yakuza 6 Trophy Guide",
+    ko: "Steam Community — Yakuza 6 Achievement Guide",
+    en: "Steam Community — Yakuza 6 Achievement Guide",
   },
 };
 
