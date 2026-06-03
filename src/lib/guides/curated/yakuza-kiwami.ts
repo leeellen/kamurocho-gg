@@ -64,9 +64,9 @@ const handInHand: CuratedGuide = {
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Yakuza Kiwami 플래티넘 — 다른 54개 업적을 모두 달성하면 자동 발동. 핵심 게이트는 ①「마지마 에브리웨어」 모든 스폿/랭크 완료(SS 등급) ②컴플리션 리스트 100% ③EX-HARD/Legend 난이도 클리어 ④조 아몬 격파(서브스토리 78). Premium Adventure에서도 대부분 회수 가능해 영구 미서블 부담은 적습니다.",
+      "Yakuza Kiwami 플래티넘 — 다른 54개 업적을 모두 달성하면 자동 발동. 핵심 게이트는 ①「마지마 에브리웨어」 모든 스폿/랭크 완료(SS 등급) ②컴플리션 리스트 100% ③EX-HARD/Legend 난이도 클리어 ④조 아몬 격파(서브스토리 46). Premium Adventure에서도 대부분 회수 가능해 영구 미서블 부담은 적습니다.",
     en:
-      "All Kiwami's other trophies auto-platinum it. Big gates: ① Majima Everywhere to SS rank ② Completion List 100 % ③ EX-HARD/Legend clear ④ defeat Jo Amon via Sub 78. Premium Adventure recovers most missables, so the load is lighter than 0.",
+      "All Kiwami's other trophies auto-platinum it. Big gates: ① Majima Everywhere to SS rank ② Completion List 100 % ③ EX-HARD/Legend clear ④ defeat Jo Amon via Sub 46. Premium Adventure recovers most missables, so the load is lighter than 0.",
   },
   steps: [
     {
@@ -89,9 +89,9 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "4) 엔딩 후 Premium Adventure에서 누락 서브스토리·코마키류 수련 4종·하루카 손잡고 1km 등 잔여 컴플리션. 서브스토리 78 「대체 누가 죽인 것이냐!?」로 조 아몬과 격투.",
+        "4) 엔딩 후 Premium Adventure에서 누락 서브스토리·코마키류 수련 4종·하루카 손잡고 1km 등 잔여 컴플리션. 서브스토리 46 「The Last Assassin」로 조 아몬과 격투.",
       en:
-        "4) Premium Adventure mop-up: missed substories, all 4 Komaki training drills, Haruka 1 km hand-hold, and Sub 78 to fight Jo Amon.",
+        "4) Premium Adventure mop-up: missed substories, all 4 Komaki training drills, Haruka 1 km hand-hold, and Sub 46 to fight Jo Amon.",
     },
     {
       ko:
@@ -159,9 +159,9 @@ const perfectionist: CuratedGuide = {
   tips: [
     {
       ko:
-        "서브스토리 78 「대체 누가 죽인 것이냐!?」 (아몬 격투)는 다른 모든 서브스토리 완료가 전제 조건. 마지막에 정리하는 게 자연스러운 흐름입니다.",
+        "서브스토리 46 「The Last Assassin」 (아몬 격투)는 다른 모든 서브스토리 완료가 전제 조건. 마지막에 정리하는 게 자연스러운 흐름입니다.",
       en:
-        "Sub 78 (Jo Amon fight) requires every other substory done first — save it for last by design.",
+        "Sub 46 (Jo Amon fight) requires every other substory done first — save it for last by design.",
     },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
@@ -355,26 +355,26 @@ const komakiMaster: CuratedGuide = {
   },
 };
 
-// 「아몬 격파」 — 조 아몬 격투 (서브스토리 78). Steam api_name: 51_amon_defeated.
+// 「아몬 격파」 — 조 아몬 격투 (서브스토리 46). Steam api_name: 51_amon_defeated.
 const amonDefeated: CuratedGuide = {
   summary: {
     ko:
-      "Premium Adventure에서 다른 모든 서브스토리(77건)를 클리어한 뒤 서브스토리 78 「대체 누가 죽인 것이냐!?」를 진행하면 조 아몬과의 격투가 발생. 격파 시 트로피 + 「검은 양복의 아몬」 의상 보상.",
+      "Premium Adventure에서 다른 모든 서브스토리(77건)를 클리어한 뒤 서브스토리 46 「The Last Assassin」를 진행하면 조 아몬과의 격투가 발생. 격파 시 트로피 + 「검은 양복의 아몬」 의상 보상.",
     en:
-      "Clear every other substory (77) in Premium Adventure to unlock Sub 78 — Jo Amon's fight. Beating him fires the trophy and grants the Amon outfit.",
+      "Clear every other substory (77) in Premium Adventure to unlock Sub 46 — Jo Amon's fight. Beating him fires the trophy and grants the Amon outfit.",
   },
   steps: [
     {
       ko:
-        "1) 메인 스토리 엔딩 후 Premium Adventure에서 잔여 서브스토리 모두 클리어. 「퍼펙트 서브스토리(서브 78 직전)」 카운트가 컴플리트 리스트에서 확인 가능.",
+        "1) 메인 스토리 엔딩 후 Premium Adventure에서 잔여 서브스토리 모두 클리어. 서브스토리 46은 77건을 먼저 완료한 후에야 진행 가능.",
       en:
-        "1) After credits, clear every remaining substory in Premium Adventure — verify the count via the Completion List.",
+        "1) After credits, clear every remaining substory in Premium Adventure. Sub 46 becomes available once you've completed 77 others.",
     },
     {
       ko:
-        "2) 77건 완료 시 카무로초 칠드런즈 파크 또는 텐카이치 거리에서 「검은 양복의 남자」 자동 등장 → 서브 78 진행.",
+        "2) 77건 완료 시 카무로초 칠드런즈 파크 또는 텐카이치 거리에서 「검은 양복의 남자」 자동 등장 → 서브 46 진행.",
       en:
-        "2) With 77 done, the Man in Black auto-spawns (Children's Park / Tenkaichi St.) — start Sub 78.",
+        "2) With 77 done, the Man in Black auto-spawns (Children's Park / Tenkaichi St.) — start Sub 46.",
     },
     {
       ko:
