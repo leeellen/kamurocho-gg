@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { FiSearch } from "react-icons/fi";
 
 import { AuthFailureBanner } from "@/components/ui/auth-failure-banner";
@@ -9,6 +12,23 @@ import { UserMenuIsland } from "@/components/ui/user-menu-island";
 import { type Locale } from "@/lib/i18n";
 
 type Section = "home" | "games" | "order" | "missables" | "search" | "sources";
+
+function SearchShortcutListener() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        router.push("/search");
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [router]);
+
+  return null;
+}
 
 const NAV = [
   { id: "games", href: "/games", ko: "게임", en: "Games" },
@@ -27,6 +47,7 @@ export function SiteShell({
 }) {
   return (
     <div className="relative min-h-screen text-[var(--text-primary)]">
+      <SearchShortcutListener />
       <Suspense fallback={null}>
         <AutoSyncOnWelcome />
       </Suspense>
