@@ -152,6 +152,10 @@ export default async function RootLayout({
       className={`h-full ${inter.variable} ${notoSansKr.variable} ${jetbrainsMono.variable}`}
     >
       <head>
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.cloudflare.steamstatic.com" />
+        <link rel="dns-prefetch" href="https://shared.akamai.steamstatic.com" />
         <script
           type="application/ld+json"
           // Site-wide WebSite + SearchAction so Google can offer the
@@ -163,7 +167,7 @@ export default async function RootLayout({
               "@type": "WebSite",
               name: SITE_NAME,
               url: SITE_URL,
-              inLanguage: ["ko-KR", "en-US"],
+              inLanguage": ["ko-KR", "en-US"],
               potentialAction: {
                 "@type": "SearchAction",
                 target: `${SITE_URL}/search?q={search_term_string}`,
