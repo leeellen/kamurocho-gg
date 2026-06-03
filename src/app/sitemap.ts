@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 
 import { CURATED_GAMES } from "@/lib/content";
-import { getGamePageData } from "@/lib/data";
+
+export const dynamic = "force-static";
 
 const SITE_URL = "https://kamurocho-gg.vercel.app";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -24,27 +25,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.85,
   }));
 
-  // Pull achievement detail URLs in parallel so the sitemap surfaces every
-  // guide page to search engines, not just the top-level index.
-  const achievementRoutes: MetadataRoute.Sitemap = [];
-  await Promise.all(
-    CURATED_GAMES.map(async (game) => {
-      try {
-        const data = await getGamePageData(game.slug, "en");
-        if (!data) return;
-        for (const ach of data.achievements) {
-          achievementRoutes.push({
-            url: `${SITE_URL}/game/${game.slug}/achievement/${ach.slug}`,
-            lastModified: now,
-            changeFrequency: "monthly" as const,
-            priority: 0.6,
-          });
-        }
-      } catch {
-        // Skip games whose page data fails to load at build time.
-      }
-    }),
-  );
-
-  return [...staticRoutes, ...gameRoutes, ...achievementRoutes];
+  return [...staticRoutes, ...gameRoutes];
 }

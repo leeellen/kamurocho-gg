@@ -109,10 +109,12 @@ export const getGuideSources = cache(async (locale: Locale): Promise<GameSources
     const collectibleAgg = new Map<string, { label: string; categories: Set<string> }>();
     for (const category of collectiblesData?.categories ?? []) {
       if (!category.source) continue;
-      const key = category.source.url;
-      const entry = collectibleAgg.get(key) ?? { label: category.source.label, categories: new Set<string>() };
-      entry.categories.add(pickLocalized(category.title, locale));
-      collectibleAgg.set(key, entry);
+      const srcs = Array.isArray(category.source) ? category.source : [category.source];
+      for (const src of srcs) {
+        const entry = collectibleAgg.get(src.url) ?? { label: src.label, categories: new Set<string>() };
+        entry.categories.add(pickLocalized(category.title, locale));
+        collectibleAgg.set(src.url, entry);
+      }
     }
     const collectibleSources: CollectibleCitation[] = Array.from(collectibleAgg.entries())
       .map(([url, { label, categories }]) => ({

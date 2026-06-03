@@ -180,7 +180,23 @@ function CategoryCard({
           <ItemGrid locale={locale} items={category.items} />
         )}
 
-        <div className="mt-5 flex flex-wrap items-center justify-end gap-3">
+        <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+          {category.source && (
+            <div className="flex flex-wrap gap-x-4 gap-y-1">
+              {(Array.isArray(category.source) ? category.source : [category.source]).map((s) => (
+                <a
+                  key={s.url}
+                  href={s.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-[12px] text-[var(--text-tertiary)] no-underline hover:text-[var(--text-secondary)] hover:underline"
+                >
+                  {locale === "ko" ? "출처: " : "Source: "}
+                  {s.label}
+                </a>
+              ))}
+            </div>
+          )}
           <ReportButton
             locale={locale}
             appId={appId}

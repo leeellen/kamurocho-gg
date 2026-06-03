@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { FiSearch } from "react-icons/fi";
 
 import { AuthFailureBanner } from "@/components/ui/auth-failure-banner";
+import { AutoSyncInterval } from "@/components/ui/auto-sync-interval";
 import { AutoSyncOnWelcome } from "@/components/ui/auto-sync-on-welcome";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { UserMenuIsland } from "@/components/ui/user-menu-island";
@@ -48,6 +49,7 @@ export function SiteShell({
   return (
     <div className="relative min-h-screen text-[var(--text-primary)]">
       <SearchShortcutListener />
+      <AutoSyncInterval />
       <Suspense fallback={null}>
         <AutoSyncOnWelcome />
       </Suspense>

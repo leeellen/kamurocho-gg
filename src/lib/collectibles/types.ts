@@ -43,7 +43,7 @@ export type CollectibleCategory = {
   summary: LocalizedText;
   groups?: CollectibleGroup[];
   items?: CollectibleItem[];
-  source?: { label: string; url: string };
+  source?: { label: string; url: string } | { label: string; url: string }[];
   tips?: LocalizedText[];
   // Optional thumbnail for the category card header.
   hero?: string;

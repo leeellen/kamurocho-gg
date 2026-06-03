@@ -50,7 +50,7 @@ const KEYWORDS = [
   "Kiryu",
   "Ichiban",
   "Yagami",
-  // Korean
+  // Korean — series
   "용과 같이",
   "이치반",
   "키류",
@@ -63,6 +63,22 @@ const KEYWORDS = [
   "플레이 순서",
   "공략",
   "RGG 스튜디오",
+  // Korean — individual titles
+  "용과 같이 0",
+  "용과 같이 제로",
+  "용과 같이 극",
+  "용과 같이 극2",
+  "용과 같이 극3",
+  "용과 같이 3",
+  "용과 같이 4",
+  "용과 같이 5",
+  "용과 같이 6",
+  "용과 같이 7",
+  "용과 같이 7 외전",
+  "용과 같이 유신",
+  "용과 같이 8",
+  "용과 같이 8 외전",
+  "로스트 저지먼트",
 ];
 
 export async function generateMetadata(): Promise<Metadata> {
