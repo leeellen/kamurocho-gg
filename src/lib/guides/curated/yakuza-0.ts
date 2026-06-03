@@ -103,10 +103,10 @@ const smoothCriminal: CuratedGuide = {
         "All four tables must be inspected before the Yamanoi cutscene fires — once it triggers the camera locks. Save before entry is the only retry.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -153,10 +153,10 @@ const businessEtiquette: CuratedGuide = {
         "Korean release shows these prompts as 뒤쪽 테이블 / 가장 가까운 의자 / 주문 없음 — same wording. English players just pick Near the back / Nearest chair / Nothing.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -202,10 +202,10 @@ const bestServedCold: CuratedGuide = {
         "If 15 real-time minutes feels long, run one full Cabaret Club Cabaret cycle or a couple of Majima substories — that naturally burns the clock.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -257,10 +257,10 @@ const itTakesTwo: CuratedGuide = {
         "The encounter doesn't reset after the chapter ends. If you didn't hit 3, reload the manual save before the fight.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -306,10 +306,10 @@ const theyWontMind: CuratedGuide = {
         "The room can spawn extra mooks — clear them first, then bee-line the back-left corner so you don't get bumped past the safes.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -355,10 +355,10 @@ const bigHairInTheCrosshairs: CuratedGuide = {
         "Memorise the cue: the moment is right before the machine-gun van. Once the van is on-screen you've missed it.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -404,10 +404,10 @@ const hittingTheBottle: CuratedGuide = {
         "Block successfully and you lose the trophy with no in-run re-trigger. Every reputable guide spells out \"fail on purpose\" — this isn't a missed input, it's intentional.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: {
-    ko: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
-    en: "PowerPyx / PSN — Yakuza 0 Trophy Guide",
+    ko: "Steam Community — Yakuza 0 Achievement Guide",
+    en: "Steam Community — Yakuza 0 Achievement Guide",
   },
 };
 
@@ -571,8 +571,8 @@ const realEstateKing: CuratedGuide = {
         "No casino-rigging tricks in Y0 — funds must come honestly from property revenue + side missions.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「카무로초 제패」 — 키류 부동산 5구역 풀 정복. Steam api_name: 51_we_built.
@@ -611,8 +611,8 @@ const conqueredKamurocho: CuratedGuide = {
         "Defense battles dip revenue temporarily — knock out one district at a time when your reserves are healthy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「지지 않는 태양」 — 마지마 캐바쿠라 그랑프리, 클럽 선샤인 운영.
@@ -638,8 +638,8 @@ const sunNeverSets: CuratedGuide = {
         "2) Recruit your first hostess and run a single operational shift — even a zero-yen night counts.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「다이아몬드 캐스트」 — 플래티넘 호스티스 1명 LV MAX. Steam api_name: 07_you's_still_number_one.
@@ -672,8 +672,8 @@ const diamondCast: CuratedGuide = {
         "Yuki unlocks first and maxes fastest — concentrate resources on her if the trophy is the only goal.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「서킷의 용」 — 포켓 서킷 모든 레이스 우승. Steam api_name: 32_the_dragon.
@@ -704,8 +704,8 @@ const dragonOfPocketCircuit: CuratedGuide = {
         "3) Wins across every cup (regular + championship) fires the trophy. Some cups demand specific builds — keep a build guide handy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「전설이 된 자」 — Legend 난이도 클리어. Steam api_name: 01_stuff_of_legend.
@@ -736,40 +736,40 @@ const legendCleared: CuratedGuide = {
         "3) Bosses demand pattern memorization — Rush dodges and Beast guard-counters carry. Trophy fires on the Ch.16 final boss kill.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
-// 「궁극의 길」 — Ultimate Battle 보스 러시. Steam api_name: 54_just_beat.
+// 「궁극의 길」 — Climax Battles 4가지 세트 모두 클리어. Steam api_name: 54_just_beat.
 const ultimateBoss: CuratedGuide = {
   summary: {
     ko:
-      "얼티밋 배틀의 보스 러시(스토리 보스 연속 격파)를 끝까지 클리어해야 발동. 엔딩 후 해금되며, 모든 스토리 보스를 연속으로 격파해야 하므로 무기·회복 아이템·스킬 트리 완성이 사전 조건.",
+      "메인 스토리 진행 중에 해금되는 Climax Battles 4가지 세트(Sunrise, Daylight, Sundown, Midnight)를 모두 클리어하면 발동. 각 세트는 특정 챕터 이후에 해금되며, 사전 조건 없이 자유롭게 도전 가능합니다.",
     en:
-      "Clear the Ultimate Battle boss rush — every story boss back-to-back without resupply. Unlocked post-credits; needs maxed style trees + a stocked inventory.",
+      "Complete all four Climax Battle sets (Sunrise, Daylight, Sundown, Midnight) during story progression. Each unlocks after specific chapters. No prerequisites — just clear them all.",
   },
   steps: [
     {
       ko:
-        "1) 메인 스토리 엔딩 후 카무로초 + 소텐보리에서 「얼티밋 배틀」 매치 해금. 일반 챌린지를 먼저 클리어한 뒤 보스 러시가 풀립니다.",
+        "1) Sunrise 세트 — 3장 이후 해금. 여러 야쿠자 + 오다 & 구제 격파. 특별 조건 없이 개별 도전 가능.",
       en:
-        "1) After credits, clear standard Ultimate Battle matches to unlock the Boss Rush variant.",
+        "1) Sunrise set unlocks after Ch.3. Beat multiple yakuza bosses (Okabe, Oda, Kuze). Standard fight mechanics.",
     },
     {
       ko:
-        "2) 회복 아이템 최대치(스테미난 X·스타미난 R 등)을 100% 채우고 출전. 보스 간 회복이 없습니다.",
+        "2) Daylight 세트 — 7장 이후 해금. 마지마 전용 보스들과 대결. 유사하게 개별 도전.",
       en:
-        "2) Top up healing items (Staminan X, Staminan Royale) — no resupply between bosses.",
+        "2) Daylight unlocks after Ch.7. Fight Majima-exclusive boss encounters.",
     },
     {
       ko:
-        "3) 전 스타일 트리 완성 후 도전 권장. 키류는 드래곤 + 비스트 + 러시 + 브롤러 풀, 마지마는 슬러거 + 러시 + 브레이커 풀.",
+        "3) Sundown & Midnight 세트 — 후반부 지정 챕터 이후 해금. 4가지 세트 모두 클리어 시 트로피 발동.",
       en:
-        "3) Best attempted with all four style trees maxed for both leads. Trophy fires on the last boss KO.",
+        "3) Sundown and Midnight unlock late-game. Clear all four sets to earn the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「아케보노 냥냥」 — 캣 파이트 단승 예상 10회 적중. Steam api_name: 31_cat_scratch.
@@ -800,8 +800,8 @@ const catFightWin10: CuratedGuide = {
         "3) Trophy pops on win #10. Tournament victories don't have a separate trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「게임을 마스터한 남자」 — 모든 미니게임 1회씩. Steam api_name: 28_what_a.
@@ -838,8 +838,8 @@ const masterOfMinigames: CuratedGuide = {
         "4) Every row on the Minigames category needs at least 1 — trophy pops when the last untouched one fires.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「베스트 트레져 헌터」 — 드래곤 앤 타이거 모든 소재. Steam api_name: 26_eye_of.
@@ -870,8 +870,8 @@ const bestTreasureHunter: CuratedGuide = {
         "3) Full catalog completion fires this trophy + the 'Smooth Going' / 'Best Result' trophies together.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「파이트 머니는 육문전」 — 무진투연 30연승. Steam api_name: 27_prizefighter.
@@ -902,8 +902,8 @@ const prizefighter30: CuratedGuide = {
         "3) Late rounds spawn weapon-bearing mooks — disarm and turn it back on them. One death resets the counter.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「아몬 격파」 — 조 아몬 + 소 아몬 격파. Steam api_name: 55_amon_defeated.
@@ -942,8 +942,8 @@ const amonDefeated: CuratedGuide = {
         "Amon is series-tier hardest. Max style trees + full heal stack mandatory. Difficulty-agnostic — Normal works.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「초절정 기교」 — 키류 + 마지마 전 스타일 트리 풀. Steam api_name: 22_master_of.
@@ -980,8 +980,8 @@ const styleMaster: CuratedGuide = {
         "4) Full 100 % on all 8 basic trees fires this trophy. Legend styles tally toward separate trophies.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「달인과 연인은 종이 한 장 차이」 — 마스터 6명 모두 만남. Steam api_name: 20_training_in.
@@ -1006,8 +1006,8 @@ const meetAllMasters: CuratedGuide = {
         "2) Clear each master's first training once — that unlocks new style nodes. All 6 done = trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「에브리데이 나이트 피버」 — 마하라자 디스코 전곡 클리어. Steam api_name: 30_say_you.
@@ -1038,8 +1038,8 @@ const everydayNightFever: CuratedGuide = {
         "3) Trophy fires once every song has at least one clear. Perfect clears tally to another trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 // 「대면♪」 — 텔레폰 클럽 실제 만남. Steam api_name: 29_call_me.
@@ -1072,8 +1072,8 @@ const phoneMeetup: CuratedGuide = {
         "Early calls bait you with fakes — track progress via the Completion List entry.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-zero-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza 0 Trophy Guide", en: "PowerPyx — Yakuza 0 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
+  sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };
 
 export const YAKUZA_0_CURATED: Record<string, CuratedGuide> = {
