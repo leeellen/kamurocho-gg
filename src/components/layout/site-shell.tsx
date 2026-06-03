@@ -91,7 +91,7 @@ export function SiteShell({
               href="/search"
               aria-label={locale === "ko" ? "검색 열기" : "Open search"}
               aria-current={section === "search" ? "page" : undefined}
-              className={`inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[16px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
+              className={`inline-flex h-11 min-h-11 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 text-[16px] font-medium text-[var(--text-secondary)] transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] sm:pr-2 ${
                 section === "search" ? "border-white/30 bg-white/10 text-white" : ""
               }`}
             >
