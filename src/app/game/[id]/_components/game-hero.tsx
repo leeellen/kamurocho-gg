@@ -78,9 +78,11 @@ export function GameHero({
           {locale === "ko" ? "작품 목록으로" : "Back to games"}
         </Link>
 
-        <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-[340px_1fr] lg:gap-10">
-          <div className="self-start lg:max-w-[340px]">
-            <div className="relative aspect-square overflow-hidden rounded-[28px] border border-white/10 bg-[var(--bg-elevated)] shadow-[var(--shadow-pop)]">
+        <div className="mt-8 space-y-8">
+          {/* Hero section with image and title overlay */}
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-[var(--bg-elevated)]">
+            <div className="relative aspect-video overflow-hidden">
+              {/* Background blur */}
               <div aria-hidden="true" className="absolute inset-0">
                 <GameCover
                   appId={game.appId}
@@ -95,39 +97,53 @@ export function GameHero({
                     height: "100%",
                     aspectRatio: "auto",
                     objectFit: "cover",
-                    filter: "blur(24px) saturate(1.15) brightness(0.72)",
-                    transform: "scale(1.22)",
+                    filter: "blur(20px) saturate(1.15) brightness(0.65)",
+                    transform: "scale(1.2)",
                   }}
                 />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_45%),linear-gradient(180deg,rgba(7,7,10,0.12),rgba(7,7,10,0.42))]" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-base)]/70 via-[var(--bg-base)]/50 to-transparent" />
               </div>
-              <div className="relative flex h-full items-center justify-center p-4">
-                <div className="w-full overflow-hidden rounded-2xl border border-white/12 bg-black/20 shadow-[0_20px_44px_rgba(0,0,0,0.42)]">
-                  <GameCover
-                    appId={game.appId}
-                    ratio="header"
-                    imgIconUrl={game.imgIconUrl}
-                    headerUrl={game.headerUrl}
-                    capsuleUrl={game.capsuleUrl}
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
-                  />
+
+              {/* Content overlay */}
+              <div className="relative flex h-full items-center px-6 py-8 sm:px-8 md:px-12 md:py-12">
+                <div className="flex w-full items-center gap-6 sm:gap-8 md:gap-12">
+                  {/* Game cover image */}
+                  <div className="w-28 flex-shrink-0 overflow-hidden rounded-lg border border-white/12 bg-black/30 shadow-[0_20px_44px_rgba(0,0,0,0.42)] sm:w-32 md:w-40">
+                    <GameCover
+                      appId={game.appId}
+                      ratio="header"
+                      imgIconUrl={game.imgIconUrl}
+                      headerUrl={game.headerUrl}
+                      capsuleUrl={game.capsuleUrl}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+
+                  {/* Title section */}
+                  <div className="flex-1 min-w-0">
+                    <span className="block font-mono text-[12px] uppercase tracking-[0.2em] text-[var(--accent)] sm:text-[14px]">{arcLabel(game.arc, locale)}</span>
+                    <h1 className="font-display m-0 mt-2 text-[32px] font-extrabold leading-[1.1] tracking-[-0.03em] text-white sm:text-[42px] md:text-[54px]">
+                      {game.name}
+                    </h1>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <span className="font-mono text-[16px] uppercase tracking-[0.2em] text-[var(--accent)]">{arcLabel(game.arc, locale)}</span>
-            <h1 className="font-display m-0 text-[44px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white md:text-[62px]">
-              {game.name}
-            </h1>
-            <p className="m-0 max-w-[64ch] text-[16px] leading-7 text-[var(--text-secondary)] md:text-[17px]">
+
+          {/* Content section */}
+          <div className="space-y-6">
+            {/* Summary */}
+            <p className="m-0 text-[16px] leading-7 text-[var(--text-secondary)] md:text-[17px]">
               {game.summary}
             </p>
-            <div className="mt-2 flex flex-wrap gap-2">
+
+            {/* Chips */}
+            <div className="flex flex-wrap gap-2">
               <Chip tone="neutral">{locale === "ko" ? `업적 ${game.achievements}개` : `${game.achievements} achievements`}</Chip>
               <Chip tone="accent">{locale === "ko" ? `공략 ${coveragePct}%` : `${coveragePct}% guided`}</Chip>
               {game.missableCount > 0 ? (
@@ -148,7 +164,9 @@ export function GameHero({
                 {locale === "ko" ? `엔진: ${game.engine}` : `Engine: ${game.engine}`}
               </Chip>
             </div>
-            <div className="mt-3 flex flex-wrap gap-2">
+
+            {/* Action buttons */}
+            <div className="flex flex-wrap gap-2">
               <a
                 href={`https://store.steampowered.com/app/${game.appId}/`}
                 target="_blank"
