@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import { useRouter } from "next/navigation";
 import { FiArrowRight, FiAward, FiCheck, FiTarget } from "react-icons/fi";
 
 import { Chip } from "@/components/ui/chip";
@@ -81,14 +83,15 @@ function AchievementRow({
   isIncomplete: boolean;
   trackingProgress: boolean;
 }) {
+  const router = useRouter();
   const showColor = isUnlocked || !trackingProgress;
   const iconSrc = showColor
     ? achievement.iconUrl ?? achievement.iconGrayUrl
     : achievement.iconGrayUrl ?? achievement.iconUrl;
 
   return (
-    <Link
-      href={`/game/${gameSlug}/achievement/${achievement.slug}`}
+    <div
+      onClick={() => router.push(`/game/${gameSlug}/achievement/${achievement.slug}`)}
       className={`group block cursor-pointer rounded-2xl border p-4 no-underline transition-all hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] md:p-5 ${
         isUnlocked
           ? "border-[var(--border-subtle)] bg-[var(--bg-surface)]/50 opacity-70 hover:opacity-100 hover:border-white/20"
@@ -142,6 +145,18 @@ function AchievementRow({
             >
               {achievement.name}
             </h3>
+            {achievement.guideSource && (
+              <a
+                href={achievement.guideSource}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[12px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 hover:bg-blue-500/30 transition-colors"
+                title={locale === "ko" ? "공략 출처" : "Guide source"}
+                onClick={(e) => e.stopPropagation()}
+              >
+                {locale === "ko" ? "출처" : "Source"}
+              </a>
+            )}
             {isUnlocked && (
               <Chip tone="success" size="xs">
                 <FiCheck size={10} aria-hidden="true" />
@@ -176,7 +191,7 @@ function AchievementRow({
           className="hidden text-[var(--text-tertiary)] transition-transform group-hover:translate-x-0.5 group-hover:text-[var(--accent)] md:block"
         />
       </div>
-    </Link>
+    </div>
   );
 }
 

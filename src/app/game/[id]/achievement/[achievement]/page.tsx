@@ -214,6 +214,17 @@ export default async function AchievementPage({
             <h2 className="font-display m-0 text-[18px] font-extrabold tracking-tight text-white">
               {locale === "ko" ? "진행 순서" : "Do this next"}
             </h2>
+            {ach.guideSource && (
+              <a
+                href={ach.guideSource}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto text-[12px] px-2 py-1 rounded-full bg-blue-500/20 text-blue-300 hover:bg-blue-500/30 transition-colors"
+                title={locale === "ko" ? "공략 출처" : "Guide source"}
+              >
+                {locale === "ko" ? "출처" : "Source"}
+              </a>
+            )}
           </div>
           {ach.guideSummary && (
             <p className="m-0 mt-4 text-[17px] font-semibold leading-7 text-white">{ach.guideSummary}</p>
