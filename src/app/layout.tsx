@@ -167,7 +167,7 @@ export default async function RootLayout({
               "@type": "WebSite",
               name: SITE_NAME,
               url: SITE_URL,
-              inLanguage": ["ko-KR", "en-US"],
+              inLanguage: ["ko-KR", "en-US"],
               potentialAction: {
                 "@type": "SearchAction",
                 target: `${SITE_URL}/search?q={search_term_string}`,
