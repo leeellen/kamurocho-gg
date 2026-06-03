@@ -56,8 +56,8 @@ const platinum: CuratedGuide = {
         "Don't forget Majima Saga — it sits in the main menu, separate from Kiryu's story.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「전설의 사나이」 LEGEND 클리어. Steam: lexus2_legend_clear.
@@ -68,8 +68,8 @@ const legendK2: CuratedGuide = {
     { ko: "2) 드래곤 엔진 액션 트리(맨손 카운터·가드 브레이크)를 풀로 강화 후 도전.", en: "2) Max the Dragon Engine action tree first." },
     { ko: "3) 14장 라스트 보스 클리어 시 트로피 발동.", en: "3) Ch.14 final boss kill fires it." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「달성 목록 전부 제패!」 100% 컴플리트. Steam: lexus2_tasseimkokuroku_all_clear.
@@ -80,8 +80,8 @@ const completionK2: CuratedGuide = {
     { ko: "2) 마지마 건설 클랜 크리에이터 스토리 풀 클리어 + 적 클랜 모두 격파.", en: "2) Majima Construction Clan Creator story + all rival clans." },
     { ko: "3) 본편 음식점·플레이 스폿·웨펀 마스터·물품 보관함·드링크 마스터 등 잔여 카테고리를 컴플리트 리스트로 점검하며 마감.", en: "3) Sweep restaurants, play spots, weapons, lockers, drinks per the Completion List." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「축 그랑프리 우승!」 캐바쿠라 그랑프리. Steam: lexus2_cabaret_island_gp_all_clear.
@@ -92,8 +92,8 @@ const cabaretGPK2: CuratedGuide = {
     { ko: "2) 의상·헤어 강화 + 동반 출근으로 캐스트 평가 1위. 라이벌 매장과의 매출 대결 단계별 격파.", en: "2) Outfit + companion buffs to push to #1, then beat each rival shop's revenue in sequence." },
     { ko: "3) 그랑프리 결승 우승 시 트로피 발동. 「인기 스카우트맨」(30명) + 「키류의 고민 상담실」 라인도 동시 진행하면 효율적.", en: "3) Win the finale for the trophy. Pair with the 30-hostess + Platinum Cast trophies." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「전설의 건설회사」 클랜 크리에이터 스토리. Steam: lexus2_clan_creater_clear.
@@ -104,8 +104,8 @@ const clanCreatorK2: CuratedGuide = {
     { ko: "2) 5개 라이벌 클랜을 차례로 격파 — 각 격파 시 신규 직원 + 강력 무기 보상.", en: "2) Defeat 5 rival clans in sequence — each unlocks new staff + gear." },
     { ko: "3) 「전설의 클랜」 최종 보스 격파 시 트로피 발동.", en: "3) Beat the Legendary Clan for the trophy." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「아몬과 결판」 아몬 격파. Steam: lexus2_amon_gekiha.
@@ -116,8 +116,8 @@ const amonK2: CuratedGuide = {
     { ko: "2) 회복 아이템 풀 + 강력 무기(키류 다이아몬드 무기 등) + 액션 트리 풀. 카운터 콤보 + 가드 브레이크 사용.", en: "2) Stock heals + diamond-tier weapon + maxed action tree. Counter + guard-break combos work." },
     { ko: "3) 격파 시 트로피 + 보상 의상 「아몬 슈트」.", en: "3) Beat him for the trophy + Amon Suit outfit." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「마지마가 사는 방식」 마지마 사가 완주. Steam: lexus2_majima_story_all_clear.
@@ -128,8 +128,8 @@ const majimaSaga: CuratedGuide = {
     { ko: "2) 마지마 사가 장를 끝까지 진행. 1회차 분량이 짧아 5~8시간이면 완주.", en: "2) Push through Majima Saga's chapters — short, ~5~8 hr to clear." },
     { ko: "3) 엔딩 직후 트로피 발동 + 본편 키류의 액션 트리에 매드 도그 스타일 노드 추가.", en: "3) Trophy fires on credits + Kiryu gains Mad Dog style nodes." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 // 「인기 스카우트맨」 30명 캬바걸 영입. Steam: lexus2_cabaret_island_scout.
@@ -139,8 +139,8 @@ const popularScout: CuratedGuide = {
     { ko: "1) 캐바쿠라 그랑프리 메인 진행 → 스토리 보상으로 첫 ~10명 자동 영입.", en: "1) Main GP story drops the first ~10 recruits automatically." },
     { ko: "2) 거리에서 캬바걸 스카우트 마커 + 서브스토리 보상으로 추가 영입. 30명 도달 시 트로피 발동.", en: "2) Street scout markers + sub rewards fill out the roster. 30 fires the trophy." },
   ],
-  sourceUrl: "https://www.powerpyx.com/yakuza-kiwami-2-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Yakuza Kiwami 2 Trophy Guide", en: "PowerPyx — Yakuza Kiwami 2 Trophy Guide" },
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
 
 export const YAKUZA_KIWAMI_2_CURATED: Record<string, CuratedGuide> = {
