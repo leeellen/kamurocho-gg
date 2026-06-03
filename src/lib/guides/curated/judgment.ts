@@ -109,10 +109,10 @@ const cats: CuratedGuide = {
         "Save before every flagged Active Search so a missed cat only costs that chapter, not a full re-run. The trophy pops the moment cat #14 is inspected.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-stray-cat-locations/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Stray Cat Locations",
-    en: "PowerPyx — Judgment Stray Cat Locations",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -174,10 +174,10 @@ const artOfConversation: CuratedGuide = {
         "A single wrong line locks the trophy for this run — there's no second pass. Keep the save on two slots if you want to be conservative.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -230,10 +230,10 @@ const illMakeItDouble: CuratedGuide = {
         "It's a one-shot Chapter 2 sequence — leave without 600 and the trophy is gone for this run. Save/load is the only retry.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -286,10 +286,10 @@ const wayTooThorough: CuratedGuide = {
         "Order doesn't matter, but missing any one before completing the clue search ends the flashback and locks the trophy. Manual save before the flashback is the safety net.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -340,10 +340,10 @@ const professionalPasswordPresenter: CuratedGuide = {
         "You can save/load between prompts if unsure, but a confirmed wrong answer still lets you in — the trophy is just gone. Keep saves on two slots.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -396,10 +396,10 @@ const hungJury: CuratedGuide = {
         "Don't KO the second thug too early — finishing with more than 10s left does not pop the trophy.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
@@ -458,10 +458,10 @@ const theFinalNail: CuratedGuide = {
         "Wrong picks don't break the ending — they just kill the trophy. If you mis-click, reload immediately rather than push through.",
     },
   ],
-  sourceUrl: "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/",
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280073135",
   sourceLabel: {
-    ko: "PowerPyx — Judgment Trophy Guide",
-    en: "PowerPyx — Judgment Trophy Guide",
+    ko: "Steam Community — Judgment Achievement Guide",
+    en: "Steam Community — Judgment Achievement Guide",
   },
 };
 
