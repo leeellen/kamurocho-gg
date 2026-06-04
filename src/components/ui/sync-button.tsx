@@ -13,11 +13,13 @@ export function SyncButton({
   syncingLabel,
   doneLabel,
   errorLabel,
+  size = "md",
 }: {
   idleLabel: string;
   syncingLabel: string;
   doneLabel: string;
   errorLabel: string;
+  size?: "sm" | "md";
 }) {
   const router = useRouter();
   const [state, setState] = useState<SyncState>("idle");
@@ -72,7 +74,8 @@ export function SyncButton({
       aria-busy={spinning}
       aria-label={label}
       className={cn(
-        "inline-flex h-11 cursor-pointer items-center gap-2 rounded-full px-5 text-[16px] font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] disabled:cursor-wait",
+        "inline-flex cursor-pointer items-center gap-2 rounded-full font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] disabled:cursor-wait",
+        size === "md" ? "h-11 px-5 text-[16px]" : "h-9 px-4 text-[15px]",
         state === "idle" && "bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)]",
         state === "syncing" && "bg-[var(--bg-elevated)] text-[var(--text-secondary)] ring-1 ring-inset ring-[var(--border-strong)]",
         state === "done" && "bg-[var(--success-subtle)] text-[var(--safe-text)] ring-1 ring-inset ring-[var(--l3-border)]",

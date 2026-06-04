@@ -30,6 +30,25 @@ export function parseJsonish(raw: string | null | undefined) {
   }
 }
 
+// Steam's appdetails API returns name/short_description with HTML entities
+// (e.g. `&quot;`, `&amp;`, `&#39;`) baked into the strings. We render these as
+// plain text, so decode the common entities before display to avoid leaking
+// raw `&quot;` markup into the UI.
+export function decodeHtmlEntities(value: string | null | undefined) {
+  if (!value) return value ?? "";
+  return value
+    .replace(/&quot;/gi, '"')
+    .replace(/&#0*34;/g, '"')
+    .replace(/&apos;/gi, "'")
+    .replace(/&#0*39;/g, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#0*60;/g, "<")
+    .replace(/&#0*62;/g, ">")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&");
+}
+
 export function coercePercent(value: number | string | null | undefined) {
   if (typeof value === "number") return value;
   if (typeof value === "string") {

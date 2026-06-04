@@ -8,6 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import { AuthFailureBanner } from "@/components/ui/auth-failure-banner";
 import { AutoSyncInterval } from "@/components/ui/auto-sync-interval";
 import { AutoSyncOnWelcome } from "@/components/ui/auto-sync-on-welcome";
+import { HeaderSyncIsland } from "@/components/ui/header-sync-island";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { UserMenuIsland } from "@/components/ui/user-menu-island";
 import { type Locale } from "@/lib/i18n";
@@ -122,6 +123,7 @@ export function SiteShell({
               <span className="hidden sm:inline">{locale === "ko" ? "검색" : "Search"}</span>
               <kbd className="hidden rounded border border-white/12 bg-black/40 px-1.5 py-0.5 font-mono text-[16px] text-[var(--text-tertiary)] sm:inline">⌘K</kbd>
             </Link>
+            <HeaderSyncIsland locale={locale} />
             <LanguageSwitcher
               locale={locale}
               label={locale === "ko" ? "언어" : "Language"}

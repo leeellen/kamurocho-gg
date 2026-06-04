@@ -57,8 +57,8 @@ function pickSteamGameName({
   sidecarName?: string | null;
   englishName?: string | null;
 }): string {
-  const ko = decodeHtmlEntities(sidecarName?.trim() ?? "");
-  const en = decodeHtmlEntities(englishName?.trim() ?? "");
+  const ko = decodeHtmlEntities(sidecarName).trim();
+  const en = decodeHtmlEntities(englishName).trim();
   if (ko && ko !== en) return ko;
   return en || ko || "";
 }
@@ -70,8 +70,8 @@ function pickSteamShortDescription({
   locale: Locale;
   sidecar: GameSidecar | null;
 }): string {
-  const en = decodeHtmlEntities(sidecar?.shortDescriptionEn?.trim() ?? "");
-  const ko = decodeHtmlEntities(sidecar?.shortDescriptionKo?.trim() ?? "");
+  const en = decodeHtmlEntities(sidecar?.shortDescriptionEn).trim();
+  const ko = decodeHtmlEntities(sidecar?.shortDescriptionKo).trim();
   if (locale === "ko") return ko || en;
   return en || ko;
 }
