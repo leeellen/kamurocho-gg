@@ -3,70 +3,6 @@ import type { CollectiblesData } from "./types";
 export const yakuza6: CollectiblesData = {
   appId: 1388590,
   categories: [
-    {
-      slug: "baseball",
-      title: { ko: "플레이 볼! — 오노미치 클리프스 우승", en: "Play Ball! — Win the Baseball Championship" },
-      summary: {
-        ko: "오노미치 클리프스 야구 미니게임에서 첫 경기 승리로 「플레이 볼!」 업적 발동. 동네 선수 영입과 챔피언십 풀 클리어는 별도 컴플리트 항목.",
-        en: "Win a single baseball game with the Onomichi Cliffs to unlock 'Play Ball!'. Full championship clear is tracked separately.",
-      },
-    },
-    {
-      slug: "clan-creator",
-      title: { ko: "클랜 크리에이터 — 키류 클랜 라인 전부", en: "Clan Creator — Kiryu Clan Full Sweep" },
-      summary: {
-        ko: "「키류 클랜 창립자」(첫 결성) → 「키류 일족 대장」(레벨 3) → 「거리의 말」(영향력 10,000) → 「키류 일족 집행자」(리더 능력치 최대) → 「키류 일족 총대주교」(스토리 클리어) → 「승리한 팀에서」(100승) 6개 업적을 차례로 처리하면 클랜 라인이 정리됩니다.",
-        en: "Run the full Kiryu Clan ladder: 'Kiryu Clan Founder' → 'Captain' (Lv.3) → 'Word on the Street' (10,000 influence) → 'Enforcer' (max leader stats) → 'Patriarch' (story clear) → 'Winning Team' (100 wins).",
-      },
-    },
-    {
-      slug: "live-chat",
-      title: { ko: "인터넷의 실제 목적 — 라이브 챗 두 명 모두 대화", en: "Real Reason for the Internet — Both Live Chat Women" },
-      summary: {
-        ko: "라이브 챗 두 명 모두와 대화를 완료하면 「인터넷의 실제 목적」 업적 발동. 한 명만 반복하면 카운트되지 않습니다.",
-        en: "Talk to both Live Chat women to unlock 'The Real Reason for the Internet'. Repeating one doesn't count.",
-      },
-    },
-    {
-      slug: "baby-haruto",
-      title: { ko: "댄들링 드래곤 — 하루토 돌보기", en: "Dandling Dragon — Haruto Care" },
-      summary: {
-        ko: "메인 스토리 중 하루토 돌보기 시퀀스에서 발생하는 QTE를 성공시키면 「댄들링 드래곤」 업적 발동. Missable과 직접 연동됩니다.",
-        en: "Pass the Haruto-care QTE during the main story to unlock 'Dandling Dragon'. Tied to the missable arc.",
-      },
-    },
-    {
-      slug: "minigames",
-      title: { ko: "대단한 선수야 + 이렇게 좋은 사람이 되려면 + 도그마의 용", en: "Minigame Sweeps — Yakuza 6" },
-      summary: {
-        ko: "「대단한 선수야」(모든 미니게임 플레이) + 「이렇게 좋은 사람이 되려면 오랜 시간이 걸립니다」(클럽 세가 모든 게임) + 「도그마의 용」(라이잡 트레이닝 모두 체험) 세 업적이 미니게임 라인의 핵심.",
-        en: "Three sweep achievements: 'What a Player' (every minigame), 'It Takes a Long Time to Be This Good' (every Club SEGA game), and 'Dragon of Dogma' (every RIZAP training).",
-      },
-    },
-    {
-      slug: "city-discoveries",
-      title: { ko: "도시 탐색 트리거 4종", en: "City Exploration Triggers" },
-      summary: {
-        ko: "「구불구불한 길에서 벗어나」(비밀 통로 발견) + 「가장 기발한 아이디어는 아니다」(위험할 정도로 높은 곳에서 뛰어내림) + 「키류의 눈으로 본 삶」(1인칭 30초 보행) + 「사진이 없습니다!」(사진 찍으려다 포위) 4종을 도시 탐색 중 처리.",
-        en: "Four exploration triggers: 'Off the Beaten Path' (find a secret passage) + 'Not the Brightest Idea' (jump from dangerous height) + 'Through Kiryu's Eyes' (walk 30s in first person) + 'No Pictures!' (get surrounded while taking a photo).",
-      },
-    },
-    {
-      slug: "side-content",
-      title: { ko: "사이드 콘텐츠 — 길고양이 / 점원 / 신사 / 단골", en: "Side Triggers — Cats / Shop / Shrine / Regular" },
-      summary: {
-        ko: "「그거 퓨어셔스야」(길고양이 3마리 구조) + 「클럽샤인스타」(클럽 샤인의 모든 호스티스 지명) + 「얼마나 행운인가?」(신사에서 대길) + 「나가서 머무르세요!」(상점 점원 분노) + 「모두가 당신의 이름을 아는 곳」(스낵 뉴 가우디 단골) 5개 사이드 트리거가 사이드 컴플리트의 마무리 항목입니다.",
-        en: "Five side triggers: 'Purrcious' (rescue 3 stray cats) + 'Club Shine Star' (request every Shine hostess) + 'How Lucky Is That?' (Great Blessing fortune) + 'Get Out and Stay Out!' (anger a shop clerk) + 'Cheers' (regular at Snack New Gaudi).",
-      },
-    },
-    {
-      slug: "emperor-squid",
-      title: { ko: "난 칼라마리 먹을래 — 엠퍼러 스퀴드 격파", en: "I'll Have the Calamari — Defeat Emperor Squid" },
-      summary: {
-        ko: "오노미치 낚시 콘텐츠에서 거대 엠퍼러 스퀴드를 잡으면 「난 칼라마리 먹을래」 업적 발동. 낚시 장비 강화 후 도전 권장.",
-        en: "Hook and defeat the Emperor Squid via Onomichi fishing for 'I'll Have the Calamari'. Upgrade fishing gear first.",
-      },
-    },
   {
     slug: "stray-cats",
     title: { ko: "길고양이 19마리 — 모든 위치와 좋아하는 캔", en: "Stray Cats — All 19 Locations & Favorite Cans" },
@@ -74,11 +10,13 @@ export const yakuza6: CollectiblesData = {
     tips: [
         { ko: "2장 이후 SNS와 트러블 미션이 풀린 다음에야 일부 고양이가 출현합니다. 출현 포인트는 한 지역 안에서 2~3곳 랜덤이므로 한 자리에서 안 보이면 인근을 한 바퀴 돌아보세요.", en: "Some cats only appear after SNS / trouble missions open in Chapter 2. Each cat has 2-3 random spawn points within its region — sweep the area if not visible on first visit." },
         { ko: "캔은 편의점·돈키호테·네코카페에서 구입할 수 있습니다. 좋아하는 캔을 잘못 골라도 카운트는 오르지만 도망 확률이 커집니다.", en: "Cans sell at convenience stores, Don Quijote, and the Cat Cafe. Wrong cans still count but raise escape chance." },
+        { ko: "각 지역 지도에 고양이 출현 지점이 번호로 표시돼 있습니다. 지도 번호는 카드 번호와 일치하며, 한 번호당 2~3곳의 랜덤 출현 지점이 찍혀 있습니다.", en: "Each region map marks cat spawn points by number; map numbers match the card numbers, with 2-3 random spawn spots shown per cat." },
     ],
-    source: { label: "龍が如く6攻略 — 猫の場所", url: "http://ryugagotoku6.riroa.com/ryugagotoku6_neko.html" },
+    source: { label: "펑키게임 — 용과 같이 6 고양이 찾기", url: "https://funkygame.tistory.com/2273" },
     groups: [
     {
       title: { ko: "카무로초 — 9마리", en: "Kamurocho — 9 Cats" },
+      mapImage: "/yakuza-6-cats/kamurocho.jpg",
       items: [
       {
         number: 1,
@@ -138,6 +76,7 @@ export const yakuza6: CollectiblesData = {
     },
     {
       title: { ko: "오노미치 — 10마리", en: "Onomichi — 10 Cats" },
+      mapImage: "/yakuza-6-cats/onomichi.jpg",
       items: [
       {
         number: 10,

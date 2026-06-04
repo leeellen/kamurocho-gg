@@ -3,62 +3,6 @@ import type { CollectiblesData } from "./types";
 export const yakuzaLikeADragon: CollectiblesData = {
   appId: 1235140,
   categories: [
-    {
-      slug: "job-ranks",
-      title: { ko: "잡 랭크 — 「길을 터득한 자」 → 「천직은 여러 개」 → 「프로페셔널 집단」", en: "Job Ranks — 1 → 3 → 7 jobs at Rank 30" },
-      summary: {
-        ko: "헬로워크에서 잡을 골라 잡 랭크 30까지 올립니다. 1종류 「길을 터득한 자」, 3종류 「천직은 여러 개」, 7종류 「프로페셔널 집단」 업적이 단계별로 트리거됩니다.",
-        en: "Push job ranks to 30 via Hello Work. 1 job triggers 'Path Master', 3 trigger 'Multiple Callings', 7 trigger 'Pro Crew'.",
-      },
-    },
-    {
-      slug: "bonds",
-      title: { ko: "동료 유대 — 난바·아다치·사에코·한준기·쵸우·에리 6명", en: "Companion Bonds — All 6 Drink Links" },
-      summary: {
-        ko: "난바·아다치·사에코·한준기·쵸우·에리 6명 모두와 유대 레벨을 최대치까지 올리면 각자 「OO와의 유대」 업적이 트리거됩니다. 드링크 링크 + 호감도 의존.",
-        en: "Max bond level with Nanba, Adachi, Saeko, Han Joon-gi, Zhao, and Eri — each unlocks the matching 'Bond with X' achievement.",
-      },
-    },
-    {
-      slug: "ichiban-confections",
-      title: { ko: "이치반 컨펙션 — 「수완 있는 경영자」 + 「캐쉬가 정의다」", en: "Ichiban Confections — Top Yokohama + ¥10B" },
-      summary: {
-        ko: "카스가의 회사를 「요코하마 제일의 회사」로 키우면 「수완 있는 경영자」, 보유 자금이 100억 엔을 넘으면 「캐쉬가 정의다」 업적 발동. 「신사옥 최고!」(신사옥 이전)도 진행 중 트리거.",
-        en: "Grow Ichiban Confections to Yokohama's top firm for 'Capable Manager'. Pass ¥10 billion in cash for 'Cash Is Justice'. 'New HQ!' triggers en route.",
-      },
-    },
-    {
-      slug: "dungeons",
-      title: { ko: "전설을 잇는 자 + 꿈을 이루는 자 — 소텐보리 배틀 아레나 + 클리어 후 라스트 던전", en: "Heir of Legends + Dreamer — Sotenbori Arena & Post-Game Dungeon" },
-      summary: {
-        ko: "소텐보리 배틀 아레나를 공략하면 「전설을 잇는 자」, 클리어 후 모드의 라스트 던전(슈퍼 파이널 밀레니엄 타워)을 공략하면 「꿈을 이루는 자」 + 「당신이 즐겨줘서 정말 다행이에요」 업적이 차례로 발동합니다.",
-        en: "Clear the Sotenbori Battle Arena for 'Heir of Legends'. Clear the post-game Super Final Millennium Tower for 'Dreamer' + 'Glad You Enjoyed Yourself'.",
-      },
-    },
-    {
-      slug: "minigames-line",
-      title: { ko: "미니게임 라인 — 캔줍기 / 명화 극장 / 드래곤 카트 / 영화관", en: "Minigame Sweep" },
-      summary: {
-        ko: "「나도 이제 노숙자」(서바이벌 캔 줍기 전 코스) + 「영화관에서 자지 않는 남자」(명화 극장 전 영화 자지 않고 시청) + 「드래곤 카트 마스터」(모든 컵·라이벌 레이스 제패) 3종 미니게임 컴플리트.",
-        en: "Three minigame sweeps: 'Now I'm Homeless' (clear every Survival Can Pickup course) + 'Wide-Awake Cinema Goer' (watch every film without dozing) + 'Dragon Kart Master' (every cup + rival race).",
-      },
-    },
-    {
-      slug: "human-stat",
-      title: { ko: "인간력 — 「좋은 사람」 → 「인간을 초월한 존재」", en: "Personality — Good Person → Beyond Human" },
-      summary: {
-        ko: "카스가의 인간력 6종 중 1종 MAX 도달 시 「좋은 사람」, 전부 MAX 시 「인간을 초월한 존재」 업적 발동. 책·자격증 학교·서브스토리 보상으로 누적.",
-        en: "Cap one of Ichiban's six Personality stats for 'Good Person'. Cap all six for 'Beyond Human'. Built via books, license school, and substories.",
-      },
-    },
-    {
-      slug: "part-time-hero",
-      title: { ko: "알바 히어로 — 「전설이 모락모락」 → 「그리고 전설이 되다」", en: "Part-Time Hero — Senior to Executive" },
-      summary: {
-        ko: "알바 히어로 모드에서 알바 랭크 「시니어 히어로」 이상 도달 시 「전설이 모락모락」, 「이그제큐티브 히어로」 도달 시 「그리고 전설이 되다」 업적 발동.",
-        en: "Reach Senior Hero rank for 'Legendary Whispers', then Executive Hero for 'And So Becomes Legend' in the Part-Time Hero side mode.",
-      },
-    },
   {
     slug: "sujimon-dex",
     title: { ko: "수지몬 도감 — 252종 컴플리트", en: "Sujimon Dex — Complete 252" },

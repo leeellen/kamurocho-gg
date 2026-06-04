@@ -4,17 +4,98 @@ import { Chip } from "@/components/ui/chip";
 import { ReportButton } from "@/components/ui/report-button";
 import { isFallbackText, pickLocalized, type Locale } from "@/lib/i18n";
 import type { CollectibleCategory, CollectibleGroup, CollectibleItem, CollectibleStep } from "@/lib/collectibles";
-import { telephoneCardMaps } from "@/lib/telephone-cards";
+import { cardImageUrl, hqImageUrl, telephoneCardMaps } from "@/lib/telephone-cards";
 
 import { PanelHeader } from "./panel-header";
-import { TelephoneCardsChecklist } from "./telephone-cards-checklist";
+import { InteractiveChecklist, type ChecklistItem, type ChecklistRegion } from "./interactive-checklist";
 
-const INTERACTIVE_CATEGORIES: Record<number, Record<string, true>> = {
-  2988580: { "telephone-cards": true },
+// Map-based "go find and collect" categories that render as an interactive
+// progress checklist. "telephone" pulls authored hotspot maps from the
+// telephone-cards lib; "category" reuses the category's own groups/items.
+const INTERACTIVE_CATEGORIES: Record<number, Record<string, "telephone" | "category">> = {
+  2988580: { "telephone-cards": "telephone" }, // Yakuza 0
+  2058190: { "paint-search": "category" }, // Lost Judgment
+  1388590: { "stray-cats": "category" }, // Yakuza 6
+  1088710: { "coin-lockers": "category" }, // Yakuza 3 (Kiwami 3)
+  1105500: { lockers: "category" }, // Yakuza 4
+  3717340: { "coin-lockers": "category" }, // Yakuza Kiwami 2
+  3717330: { "coin-lockers": "category" }, // Yakuza Kiwami
+  1105510: { "coin-lockers": "category" }, // Yakuza 5
 };
 
-function hasInteractive(appId: number, slug: string): boolean {
-  return Boolean(INTERACTIVE_CATEGORIES[appId]?.[slug]);
+function interactiveModeOf(appId: number, slug: string): "telephone" | "category" | undefined {
+  return INTERACTIVE_CATEGORIES[appId]?.[slug];
+}
+
+function telephoneRegions(appId: number, locale: Locale): ChecklistRegion[] {
+  return Object.values(telephoneCardMaps)
+    .filter((m) => m.appId === appId)
+    .map((m) => ({
+      key: m.slug,
+      title: { ko: m.title, en: m.titleEn },
+      tabLabel: (locale === "ko" ? m.title : m.titleEn).split("·")[1]?.trim() ?? m.slug,
+      storageKey: m.storageKey,
+      totalCount: m.totalCount,
+      mapImage: m.mapImage,
+      hotspots: m.hotspots,
+      chapterColors: m.chapterColors,
+      hint: { ko: m.hintKo, en: m.hintEn },
+      reward: { ko: m.rewardKo, en: m.rewardEn },
+      items: m.cards.map((c) => ({
+        number: c.number,
+        image: cardImageUrl(m, c.number),
+        hqImage: hqImageUrl(m, c.number),
+        chapter: c.chapter,
+        code: c.code,
+        note: c.note ? { ko: c.note, en: c.note } : undefined,
+      })),
+    }));
+}
+
+function toChecklistItem(it: CollectibleItem): ChecklistItem {
+  return {
+    number: it.number,
+    image: it.image,
+    title: it.title,
+    location: it.location,
+    note: it.prereq,
+    reward: it.reward,
+    // Prefer explicit steps; otherwise surface the single-paragraph body so its
+    // info (trigger condition, etc.) stays reachable via the detail modal.
+    steps: it.steps?.map((s) => s.body) ?? (it.body ? [it.body] : undefined),
+  };
+}
+
+function categoryRegions(category: CollectibleCategory, appId: number): ChecklistRegion[] {
+  if (category.groups && category.groups.length > 0) {
+    return category.groups.map((g, gi) => ({
+      key: `${category.slug}-${gi}`,
+      title: g.title,
+      storageKey: `cm_${appId}_${category.slug}_${gi}`,
+      totalCount: g.items.length,
+      mapImage: g.mapImage,
+      hotspots: g.hotspots,
+      video: g.video,
+      items: g.items.map(toChecklistItem),
+    }));
+  }
+  const items = category.items ?? [];
+  return [
+    {
+      key: category.slug,
+      title: category.title,
+      storageKey: `cm_${appId}_${category.slug}`,
+      totalCount: items.length,
+      items: items.map(toChecklistItem),
+    },
+  ];
+}
+
+function regionsFor(appId: number, category: CollectibleCategory, locale: Locale): ChecklistRegion[] {
+  const mode = interactiveModeOf(appId, category.slug);
+  if (mode === "telephone") return telephoneRegions(appId, locale);
+  if (mode === "category") return categoryRegions(category, appId);
+  return [];
 }
 
 function langOf(
@@ -75,15 +156,13 @@ function CategoryCard({
   appId: number;
   category: CollectibleCategory;
 }) {
-  const interactive = hasInteractive(appId, category.slug);
-  const interactiveMaps = interactive
-    ? Object.values(telephoneCardMaps).filter((m) => m.appId === appId)
-    : [];
-  const interactiveCount = interactiveMaps.reduce((s, m) => s + m.totalCount, 0);
-  const itemCount =
-    interactiveCount +
-    (category.items?.length ?? 0) +
-    (category.groups?.reduce((s, g) => s + g.items.length, 0) ?? 0);
+  const regions = regionsFor(appId, category, locale);
+  const interactive = regions.length > 0;
+  const interactiveCount = regions.reduce((s, r) => s + r.totalCount, 0);
+  const itemCount = interactive
+    ? interactiveCount
+    : (category.items?.length ?? 0) +
+      (category.groups?.reduce((s, g) => s + g.items.length, 0) ?? 0);
   const hasExpandable =
     interactive ||
     itemCount > 0 ||
@@ -168,16 +247,18 @@ function CategoryCard({
           </ul>
         )}
 
-        {interactive && interactiveMaps.length > 0 && (
-          <TelephoneCardsChecklist maps={interactiveMaps} locale={locale} />
-        )}
+        {interactive ? (
+          <InteractiveChecklist regions={regions} locale={locale} />
+        ) : (
+          <>
+            {category.groups?.map((group, gi) => (
+              <GroupBlock key={gi} locale={locale} group={group} dense={gi > 0} />
+            ))}
 
-        {category.groups?.map((group, gi) => (
-          <GroupBlock key={gi} locale={locale} group={group} dense={gi > 0} />
-        ))}
-
-        {category.items && category.items.length > 0 && (
-          <ItemGrid locale={locale} items={category.items} />
+            {category.items && category.items.length > 0 && (
+              <ItemGrid locale={locale} items={category.items} />
+            )}
+          </>
         )}
 
         <div className="mt-5 flex flex-wrap items-center justify-between gap-3">

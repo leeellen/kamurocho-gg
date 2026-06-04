@@ -33,6 +33,9 @@ export type CollectibleGroup = {
   items: CollectibleItem[];
   // Optional region map image.
   mapImage?: string;
+  // Optional clickable hotspots over `mapImage` — item number → [x%, y%].
+  // When present the map renders interactive pins (telephone-card style).
+  hotspots?: Record<string, [number, number]>;
   // Optional region overview video.
   video?: string;
 };

@@ -145,18 +145,6 @@ function AchievementRow({
             >
               {achievement.name}
             </h3>
-            {achievement.guideSource && (
-              <a
-                href={achievement.guideSource}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[12px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 hover:bg-blue-500/30 transition-colors"
-                title={locale === "ko" ? "공략 출처" : "Guide source"}
-                onClick={(e) => e.stopPropagation()}
-              >
-                {locale === "ko" ? "출처" : "Source"}
-              </a>
-            )}
             {isUnlocked && (
               <Chip tone="success" size="xs">
                 <FiCheck size={10} aria-hidden="true" />
