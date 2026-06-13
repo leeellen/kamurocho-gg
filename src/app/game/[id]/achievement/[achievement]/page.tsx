@@ -212,7 +212,7 @@ export default async function AchievementPage({
               <FiCheckCircle size={14} aria-hidden="true" />
             </span>
             <h2 className="font-display m-0 text-[18px] font-extrabold tracking-tight text-white">
-              {locale === "ko" ? "진행 순서" : "Do this next"}
+              {locale === "ko" ? "진행 순서" : "What to do next"}
             </h2>
             {ach.guideSource && (
               <a

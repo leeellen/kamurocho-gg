@@ -84,24 +84,32 @@ export default async function OrderPage() {
           </p>
           <ul className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
             {order.references.map((entry) => (
-              <li
-                key={`${entry.title}-${entry.year}`}
-                className="rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4"
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-mono text-[16px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
-                    {entry.year}
-                  </span>
-                  <span className="font-display text-[17px] font-bold text-white">
-                    {entry.title}
-                  </span>
-                </div>
-                <div className="mt-1 text-[16px] font-semibold text-[var(--accent)]">
-                  {entry.placement}
-                </div>
-                <p className="m-0 mt-2 text-[16px] leading-6 text-[var(--text-secondary)]">
-                  {entry.note}
-                </p>
+              <li key={entry.slug}>
+                <Link
+                  href={`/archive/${entry.slug}`}
+                  className="group block h-full cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] p-4 no-underline transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-[var(--bg-raised)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-mono text-[16px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                      {entry.year}
+                    </span>
+                    <span className="font-display text-[17px] font-bold text-white transition-colors group-hover:text-[var(--accent)]">
+                      {entry.title}
+                    </span>
+                  </div>
+                  <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[16px] font-semibold text-[var(--accent)]">
+                    {entry.placement}
+                    <span aria-hidden="true" className="text-white/20">·</span>
+                    <span className="font-mono font-normal text-[var(--text-tertiary)]">{entry.releaseInfo}</span>
+                  </div>
+                  <p className="m-0 mt-2 text-[16px] leading-6 text-[var(--text-secondary)]">
+                    {entry.note}
+                  </p>
+                  <div className="mt-3 inline-flex items-center gap-1 text-[16px] font-semibold text-[var(--accent)] opacity-0 transition-opacity group-hover:opacity-100">
+                    {locale === "ko" ? "자세히 보기" : "Read more"}
+                    <FiArrowRight size={12} aria-hidden="true" />
+                  </div>
+                </Link>
               </li>
             ))}
           </ul>

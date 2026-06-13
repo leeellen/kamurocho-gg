@@ -13,7 +13,7 @@ import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { UserMenuIsland } from "@/components/ui/user-menu-island";
 import { type Locale } from "@/lib/i18n";
 
-type Section = "home" | "games" | "order" | "missables" | "search" | "sources";
+type Section = "home" | "games" | "order" | "missables" | "search" | "sources" | "empty-lot";
 
 function SearchShortcutListener() {
   const router = useRouter();
@@ -195,6 +195,16 @@ export function SiteShell({
               </Link>
               <Link href="/sources" className="cursor-pointer transition-colors hover:text-white">
                 {locale === "ko" ? "공략 출처" : "Sources"}
+              </Link>
+              {/* Easter egg: the contested Empty Lot from Yakuza 0 — a hidden
+                  hub of every external achievement guide. Deliberately subtle. */}
+              <Link
+                href="/empty-lot"
+                aria-label={locale === "ko" ? "공터 (시크릿)" : "The Empty Lot (secret)"}
+                title={locale === "ko" ? "한 평의 공터" : "The Empty Lot"}
+                className="cursor-pointer font-mono text-[var(--text-muted)]/60 transition-colors hover:text-[var(--accent)]"
+              >
+                空き地
               </Link>
             </div>
             <span lang="en" className="text-[16px] text-[var(--text-muted)]">

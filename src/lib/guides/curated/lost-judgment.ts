@@ -135,6 +135,9 @@ const droneRaceMaster: CuratedGuide = {
     { ko: "2) 부품 강화로 최고 등급에 가까운 사양 셋업. 코스별 권장 빌드 다름.", en: "2) Tune to near-max specs; builds vary by course." },
     { ko: "3) 모든 그랑프리 우승 시 트로피 발동.", en: "3) Sweep every GP for the trophy." },
   ],
+  tips: [
+    { ko: "[드론 레이스] 부품 강화로 코스에 맞게 SPD/ACCEL/HANDLING을 셋업하는 게 8할입니다. 직선 위주 코스는 SPD·ACCEL을, 좁은 커브 코스는 HANDLING을 올리세요. 부스트는 직선 구간에서만 쓰고, 게이트·체크포인트는 안쪽 라인으로 최단 거리를 노립니다. 막히면 한 등급 낮은 그랑프리로 자금을 모은 뒤 상위 부품을 사서 재도전하세요.", en: "[Drone Race] Tuning SPD/ACCEL/HANDLING to the course is 80% of it. Favor SPD + ACCEL on straight-heavy tracks and HANDLING on tight, curvy ones. Spend boost only on straights, and cut the inside line through gates and checkpoints. Stuck? Farm cash on a lower GP, then buy higher-tier parts and retry." },
+  ],
   sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },
 };
@@ -158,6 +161,9 @@ const allVrBoard: CuratedGuide = {
     { ko: "1) 3장 이후 VR 살롱 해금 → VR 쌍륙 첫 스테이지부터 차례로 클리어.", en: "1) Unlock VR Salon in Ch.3 and clear stages in sequence." },
     { ko: "2) 스테이지별 룰(특수 칸·아이템·페널티 등) 적응. RNG가 강한 스테이지는 재시도 권장.", en: "2) Adapt to per-stage rules; restart RNG-heavy stages as needed." },
     { ko: "3) 모든 스테이지 승리 시 트로피 발동.", en: "3) Full clear fires the trophy." },
+  ],
+  tips: [
+    { ko: "[VR 쌍륙] 스테이지별 룰(특수 칸·아이템·페널티)이 달라 전략을 바꿔야 합니다. 아이템 칸을 우선 밟아 이동·방해 아이템을 확보하고, 골인 직전에는 정확히 멈출 수 있는 주사위 눈을 노려 오버슛을 피하세요. 주사위 운이 크게 작용하므로 초반부터 불리하면 빠르게 재시작하는 편이 시간을 아낍니다.", en: "[VR Sugoroku] Each stage has its own rules (special tiles, items, penalties), so adapt your strategy. Land on item tiles early to grab movement/disruption items, and near the goal aim for a roll that stops you exactly on it to avoid overshooting. Dice luck matters a lot — if you fall behind early, a quick restart saves time." },
   ],
   sourceUrl: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Lost Judgment Trophy Guide", en: "PowerPyx — Lost Judgment Trophy Guide" },

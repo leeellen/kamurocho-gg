@@ -243,6 +243,14 @@ const mesuKingThrone: CuratedGuide = {
         "3) Beating every rival including the seasonal champion fires the trophy.",
     },
   ],
+  tips: [
+    {
+      ko:
+        "[메스킹 잘하는 법] 본질은 가위바위보(STR > TECH > SPD > STR) 삼각관계 + 스탯 싸움입니다. 라이벌마다 선호 타입이 고정이라, 한 번 지더라도 상대 패턴을 외운 뒤 카운터 타입 카드를 덱에 넣으면 안정적으로 이깁니다. 기술(필살기) 카드는 게이지가 찼을 때 큰 데미지를 주니 접전 라운드에 아껴 쓰세요.",
+      en:
+        "[How to win MesuKing] It's rock-paper-scissors (STR > TECH > SPD > STR) layered on a stat check. Each rival favors a fixed type, so even after a loss you can memorize their bias and stack counter-type cards. Save technique (special) cards for close rounds — they hit hardest once the gauge is full.",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
   sourceLabel: {
     ko: "Steam Community — Yakuza Kiwami Achievement Guide",
@@ -276,6 +284,14 @@ const pocketCircuitReborn: CuratedGuide = {
         "3) 챔피언십 7~8개 모두 우승 → 「드래곤 카트」 최종 컵 해금. 마지막 컵 우승 시 트로피 발동.",
       en:
         "3) Win every championship to unlock the Dragon Kart final cup — that cup's win fires the trophy.",
+    },
+  ],
+  tips: [
+    {
+      ko:
+        "[포켓 서킷 셋업이 8할] 운전 실력보다 차 세팅이 승부를 가릅니다. 직선이 긴 코스는 모터·기어비로 최고속을 올리고, 커브가 많은 코스는 그립 타이어+다운포스 부품으로 코스 이탈을 막으세요. 부품 무게가 무거우면 후반에 배터리(스태미나)가 떨어져 멈추니, 완주 가능한 무게로 균형을 맞추는 게 핵심입니다. 막히는 컵은 카츠가 추천하는 빌드를 그대로 따라가면 대부분 뚫립니다.",
+      en:
+        "[Pocket Circuit is 80% setup] Tuning matters more than driving. Gear for top speed (motor + gear ratio) on straight-heavy tracks, and add grip tires + downforce on curvy ones to stop flying off. Heavy parts drain the battery (stamina) and stall you late in the race, so balance for a weight that finishes. Stuck on a cup? Just copy the build Kazuya recommends.",
     },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
@@ -422,6 +438,20 @@ const allMinigamesPlayed: CuratedGuide = {
         "4) 컴플리트 리스트 「미니게임」 카테고리가 모두 카운트되면 트로피 발동.",
       en:
         "4) Trophy fires when the Minigames category lists every entry as touched.",
+    },
+  ],
+  tips: [
+    {
+      ko:
+        "[마작] 막막하면 「리치+탄야오」 한 패턴만 노리세요. 펑/치로 손패를 공개하지 말고(닫은 손) 2~8 숫자패만 모아 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료됩니다. Kiwami 마작은 표준 일본 리치 룰이라 Y0와 동일하게 통합니다.",
+      en:
+        "[Mahjong] If it feels impossible, aim for just one pattern: Riichi + Tanyao. Keep your hand closed (no Pon/Chi), collect only simples (2–8), and declare Riichi the moment you're tenpai — a yaku attaches automatically. Kiwami uses standard Japanese riichi rules, so the same trick from Y0 works.",
+    },
+    {
+      ko:
+        "[당구·캐롬] 「고스트 볼」 원리입니다. 목적구를 포켓에 넣으려면 포켓의 정반대편 목적구 표면 지점을 큐볼이 때리도록 조준선을 맞추세요. 처음엔 회전을 끄고 조준 정확도를 풀파워보다 우선합니다.",
+      en:
+        "[Billiards] Use the 'ghost ball' rule: aim so the cue ball strikes the point on the object ball directly opposite the pocket. Leave spin off at first and value aim over power.",
     },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",

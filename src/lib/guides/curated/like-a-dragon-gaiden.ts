@@ -110,6 +110,9 @@ const pocketCircuitMaster: CuratedGuide = {
     { ko: "2) 챔피언십 컵까지 우승 → 마스터즈 서킷 자동 해금.", en: "2) Win championship cups to auto-unlock Masters." },
     { ko: "3) 마스터즈 서킷 해금 즉시 트로피 발동.", en: "3) Trophy fires the moment Masters opens." },
   ],
+  tips: [
+    { ko: "[포켓 서킷 셋업] 운전 실력보다 차 세팅이 승부를 가릅니다. 직선이 긴 코스는 모터·기어비로 최고속을, 커브가 많은 코스는 그립 타이어+다운포스로 코스 이탈을 막으세요. 부품이 무거우면 후반에 배터리가 떨어져 멈추니 완주 가능한 무게로 균형을 맞추는 게 핵심입니다.", en: "[Pocket Circuit setup] Tuning beats driving here. Gear for top speed (motor + ratio) on straight-heavy tracks, and add grip tires + downforce on curvy ones to stop flying off. Heavy parts drain the battery and stall you late, so balance for a weight that finishes." },
+  ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };

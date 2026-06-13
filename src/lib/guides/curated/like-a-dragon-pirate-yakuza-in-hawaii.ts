@@ -97,6 +97,9 @@ const dragonCartHawaii: CuratedGuide = {
     { ko: "2) 부품 강화 후 3개 컵 모두 우승. 무기 사용으로 라이벌 처리가 핵심.", en: "2) Upgrade parts, then win all 3 cups — weaponize against rivals." },
     { ko: "3) 3개 컵 우승 시 트로피 발동.", en: "3) Three-cup sweep fires the trophy." },
   ],
+  tips: [
+    { ko: "[드래곤 카트] 마리오 카트형 레이스입니다. 코너 직전 드리프트로 미니 부스트를 쌓고, 무기 아이템(미사일·기관총·부스트)으로 선두 라이벌을 적극 견제하세요. 부품 강화로 코스에 맞게 SPD/GRIP/HANDLING을 셋업하면 3개 컵 모두 안정적으로 우승할 수 있습니다.", en: "[Dragon Kart] It's a Mario Kart-style racer. Drift just before corners to bank mini-boosts, and weaponize items (missiles, machine gun, boost) against the leading rival. Tune SPD/GRIP/HANDLING per track with upgraded parts and all three cups fall into place." },
+  ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },
 };
@@ -108,6 +111,9 @@ const crazyCaptain: CuratedGuide = {
     { ko: "1) 장 진행 중 코스가 추가될 때마다 즉시 클리어.", en: "1) Knock out each new course as it appears." },
     { ko: "2) 시간 제한 안에 코스 끝까지 도달하면 클리어 카운트. 점프대·지름길 활용.", en: "2) Finish within the timer; use jumps/shortcuts to bank time." },
     { ko: "3) 모든 코스 클리어 시 트로피 발동.", en: "3) Trophy fires on full clear." },
+  ],
+  tips: [
+    { ko: "[크레이지 딜리버리] 크레이지 택시식 배달입니다. ★3가 아니라 단순 클리어만 필요하니 부담은 적지만, 점프대·지름길·내리막으로 부스트를 유지하면 시간 제한이 훨씬 넉넉해집니다. 급커브에서만 살짝 감속해 충돌을 피하세요.", en: "[Crazy Delivery] A Crazy Taxi-style courier. Only a clear (not ★3) is required, so it's low-pressure — but keeping your boost up via jumps, shortcuts, and downhills gives you plenty of time. Just ease off on sharp corners to avoid crashes." },
   ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },

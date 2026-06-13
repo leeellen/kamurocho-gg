@@ -68,6 +68,9 @@ const dragonCartMaster: CuratedGuide = {
     { ko: "2) 15장 진입 후 마지막 두 라이벌 레이스 해금. 풀 강화 부품으로 도전.", en: "2) After Ch.15, the final two rival races open — bring fully-upgraded parts." },
     { ko: "3) 모든 컵 + 라이벌 우승 시 트로피 발동.", en: "3) Trophy fires when every cup + rival is cleared." },
   ],
+  tips: [
+    { ko: "[드래곤 카트 잘하는 법] 마리오 카트형 레이스입니다. 아이템(부스트·기관총·미사일)을 적극 쓰고, 코너 직전 드리프트로 미니 부스트를 쌓으세요. 사사키 상점에서 엔진·타이어·핸들 부품을 강화해 코스에 맞게 SPD/GRIP/HANDLING을 셋업하면 라이벌 레이스가 훨씬 쉬워집니다. 막히면 한 단계 낮은 컵을 다시 돌아 자금·부품을 모은 뒤 재도전하세요.", en: "[How to win Dragon Kart] It's a Mario Kart-style racer. Use items aggressively (boost, machine gun, missiles) and drift just before corners to bank mini-boosts. Upgrade the engine, tires, and handle at Sasaki's shop to tune SPD/GRIP/HANDLING per track and the rival races get far easier. Stuck? Re-run a lower cup to farm cash and parts, then come back." },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
@@ -103,6 +106,9 @@ const stayAwakeAllMovies: CuratedGuide = {
     { ko: "2) 영화 종류에 따라 프롬프트 빈도·난이도 차이. 어려운 영화는 마지막에 도전.", en: "2) Prompt density varies by film — save the hard ones for last." },
     { ko: "3) 모든 영화 「졸지 않음」 카운트 시 트로피 발동.", en: "3) Trophy fires when every film is cleared without dozing." },
   ],
+  tips: [
+    { ko: "[영화관 리듬 팁] 졸음 게이지가 끝까지 차기 전에 화면에 뜨는 버튼을 정확한 타이밍에 눌러 깨우는 리듬게임입니다. 게이지가 빠르게 차오르는 구간을 미리 예측해 손가락을 버튼 위에 올려두고, 프롬프트가 연속으로 쏟아지는 코미디·액션 영화는 감을 잡은 뒤 마지막에 도전하세요.", en: "[Cinema rhythm tip] You hit the on-screen button at the right moment to wake up before the drowsiness gauge fills. Anticipate the stretches where it fills fast and keep a finger over the button; save the comedy/action films that spam prompts for last, once you've got the timing down." },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
@@ -114,6 +120,9 @@ const sujimonMaster: CuratedGuide = {
     { ko: "1) 4장 이후 스지몬 도감 앱 해금. 거리에서 마주치는 모든 적을 격파해 자동 등록.", en: "1) Unlock Sujidex in Ch.4 and beat every street mob — auto-registers." },
     { ko: "2) 후반 장에 강한 스지몬 출현. EXP·자금이 안정된 12장 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
     { ko: "3) 250종 등록 시 트로피 발동. Premium Adventure에서 마지막 변종 마무리.", en: "3) 250 entries fires the trophy; finish leftovers in Premium Adventure." },
+  ],
+  tips: [
+    { ko: "[스지몬 효율 등록] 격파만 해도 자동 등록되지만, 일부 변종은 특정 장·시간대·날씨에만 출현합니다. 거리에서 처음 보는 색·외형의 적은 반드시 처치하고, 후반(12장+)과 Premium Adventure의 강한 변종까지 훑으면 250종이 채워집니다. 중복 적은 카운트되지 않으니 새 외형 위주로 사냥하세요.", en: "[Efficient Sujimon farming] Defeating one auto-registers it, but some variants only spawn at specific chapters, times of day, or weather. Always kill any enemy with a color/look you haven't seen, and sweep the tougher late-game (Ch.12+) and Premium Adventure variants to reach 250. Duplicates don't count, so prioritize new appearances." },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },

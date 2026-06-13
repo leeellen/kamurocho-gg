@@ -145,7 +145,13 @@ export async function generateMetadata(): Promise<Metadata> {
         "max-video-preview": -1,
       },
     },
-    icons: { icon: "/favicon.ico" },
+    icons: {
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "48x48" },
+      ],
+      apple: "/apple-icon.png",
+    },
     verification: GSC_VERIFICATION ? { google: GSC_VERIFICATION } : undefined,
   };
 }

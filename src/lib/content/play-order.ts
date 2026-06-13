@@ -3,75 +3,237 @@ import type { PlayOrderEntry, ReferenceTitle } from "./types";
 
 export const REFERENCE_TITLES: ReferenceTitle[] = [
   {
+    slug: "yakuza-1",
     title: { ko: "용과 같이", en: "Yakuza" },
+    originalTitle: "Ryu ga Gotoku",
     year: 2005,
+    releaseInfo: {
+      ko: "PS2 · 2005(일본) / 2006(서구)",
+      en: "PS2 · 2005 (Japan) / 2006 (West)",
+    },
+    lead: { ko: "키류 카즈마", en: "Kazuma Kiryu" },
     placement: {
       ko: "극 1과 같은 사건",
       en: "Same story slot as Kiwami",
     },
+    availability: {
+      ko: "PS2 전용. 현대 기기 이식이나 Steam 업적은 없습니다. 같은 이야기를 지금 즐기려면 「용과 같이 극」을 플레이하세요.",
+      en: "PS2 only — no modern port or Steam achievements. Play Yakuza Kiwami for the same story today.",
+    },
     note: {
-      ko: "PS2 원작 1편입니다. 업적 추적 대상은 아니지만, 원작 연출과 톤을 보고 싶다면 극 1 전후에 참고하기 좋습니다.",
-      en: "The PS2 original. Not tracked for achievements here, but useful around Kiwami if you want the original tone and staging.",
+      ko: "시리즈의 시작점인 PS2 원작 1편. 극 1로 리메이크됐습니다.",
+      en: "The PS2 original that started the series, later remade as Kiwami.",
+    },
+    overview: [
+      {
+        ko: "시리즈 전체의 출발점입니다. 도지마의 용 키류 카즈마가 형제 니시키야마의 죄를 대신 뒤집어쓰고 10년 복역한 뒤, 100억 엔과 소녀 하루카를 둘러싼 사건에 휘말리는 카무로초 누아르 드라마.",
+        en: "The starting point of the whole series. Kazuma Kiryu takes the fall for his sworn brother Nishikiyama, serves ten years, and walks back into a Kamurocho noir built around ten billion yen and a girl named Haruka.",
+      },
+      {
+        ko: "서구판은 할리우드 배우를 기용한 영어 더빙으로 출시됐는데, 이후 시리즈가 일본어 음성+자막 노선을 굳히면서 이 영어 더빙은 원작만의 독특한 유물로 남았습니다.",
+        en: "The Western release shipped with a Hollywood-cast English dub. The series later committed to Japanese audio with subtitles, leaving that dub as a quirk unique to the original.",
+      },
+    ],
+    whyItMatters: {
+      ko: "키류·니시키·유미의 삼각 관계와 토조회의 권력 구도 등 시리즈의 핵심 토대가 모두 여기서 세워집니다. 극 1은 이 골격을 0편 이후 연출로 다듬은 리메이크입니다.",
+      en: "Kiryu, Nishiki, and Yumi's triangle and the Tojo Clan power structure — the series' foundations — are all laid here. Kiwami is the remake that re-stages this skeleton with post-Yakuza 0 polish.",
+    },
+    modernRoute: {
+      ko: "지금 플레이한다면 → 용과 같이 극 (Steam 추적 대상)",
+      en: "To play it today → Yakuza Kiwami (tracked on Steam)",
     },
   },
   {
+    slug: "yakuza-2",
     title: { ko: "용과 같이 2", en: "Yakuza 2" },
+    originalTitle: "Ryu ga Gotoku 2",
     year: 2006,
+    releaseInfo: {
+      ko: "PS2 · 2006(일본) / 2008(서구)",
+      en: "PS2 · 2006 (Japan) / 2008 (West)",
+    },
+    lead: { ko: "키류 카즈마", en: "Kazuma Kiryu" },
     placement: {
       ko: "극 2와 같은 사건",
       en: "Same story slot as Kiwami 2",
     },
+    availability: {
+      ko: "PS2 전용. 현대 이식·Steam 업적 없음. 같은 이야기는 드래곤 엔진 리메이크 「용과 같이 극2」로 즐길 수 있습니다.",
+      en: "PS2 only — no modern port or Steam achievements. The Dragon Engine remake Yakuza Kiwami 2 covers the same story.",
+    },
     note: {
-      ko: "PS2 원작 2편입니다. 극 2와 같은 큰 줄기를 다루지만 오리지널 구성 차이가 있어 시리즈 아카이브용으로 남깁니다.",
-      en: "The PS2 original. It covers the same broad events as Kiwami 2, with enough structural differences to matter for an archive view.",
+      ko: "사야마·류지 고다·오사카가 등장하는 PS2 원작 2편. 극 2로 리메이크됐습니다.",
+      en: "The PS2 original that introduces Sayama, Ryuji Goda, and Osaka — later remade as Kiwami 2.",
+    },
+    overview: [
+      {
+        ko: "다수의 팬이 시리즈 최고작으로 꼽는 작품입니다. 카무로초와 소텐보리(오사카)를 오가며 토조회와 오미 연합의 전면 충돌, 그리고 「용과 용」으로 불리는 키류 vs 류지 고다의 대결을 그립니다.",
+        en: "Widely cited as a fan-favorite peak. It moves between Kamurocho and Sotenbori (Osaka) for an all-out Tojo–Omi war and the 'Dragon vs. Dragon' clash between Kiryu and Ryuji Goda.",
+      },
+      {
+        ko: "형사 사야마 카오루가 합류해 시리즈에서 드물게 비중 있는 동행 히로인 라인을 형성하고, 류지 고다는 이후 데드 소울즈 등에도 재등장하는 인기 캐릭터로 자리잡았습니다.",
+        en: "Detective Kaoru Sayama joins as a rare, substantial companion-heroine, and Ryuji Goda became popular enough to return in later titles like Dead Souls.",
+      },
+    ],
+    whyItMatters: {
+      ko: "오사카 무대, 라이벌 「용」 구도, 광역 항쟁 서사 등 이후 시리즈가 반복해 쓰는 공식이 정립된 작품입니다.",
+      en: "It established formulas the series reuses for years: the Osaka setting, a rival 'Dragon,' and sprawling clan-war storytelling.",
+    },
+    modernRoute: {
+      ko: "지금 플레이한다면 → 용과 같이 극2 (Steam 추적 대상)",
+      en: "To play it today → Yakuza Kiwami 2 (tracked on Steam)",
     },
   },
   {
+    slug: "kurohyou",
     title: { ko: "쿠로효: 용과 같이 신장", en: "Kurohyou: Ryu ga Gotoku Shinsho" },
+    originalTitle: "Kurohyo: Ryu ga Gotoku Shinsho",
     year: 2010,
+    releaseInfo: {
+      ko: "PSP · 2010 (일본 전용)",
+      en: "PSP · 2010 (Japan only)",
+    },
+    lead: { ko: "우쿄 타츠야", en: "Tatsuya Ukyo" },
     placement: {
       ko: "4편 전후의 PSP 외전",
       en: "PSP spin-off around the Yakuza 4 era",
     },
+    availability: {
+      ko: "PSP 전용·일본 미발매 지역 한정(서구 미발매). 공식 영문화·이식·Steam 업적 모두 없습니다.",
+      en: "PSP only and Japan-only (never localized). No official translation, port, or Steam achievements.",
+    },
     note: {
-      ko: "Steam 업적은 없지만 카무로초를 다른 주인공 시점으로 보는 휴대용 외전입니다. 플레이 순서/세계관 보관소 후보로 표시합니다.",
-      en: "No Steam achievement route, but it is a Kamurocho-set handheld spin-off with a different lead. Marked as a future archive candidate.",
+      ko: "카무로초를 신규 주인공 시점으로 그린 일본 한정 휴대용 외전.",
+      en: "A Japan-only handheld spin-off that views Kamurocho through a brand-new lead.",
+    },
+    overview: [
+      {
+        ko: "키류가 아닌 신규 주인공 우쿄 타츠야를 내세운 휴대용 외전입니다. 무대는 카무로초를 본뜬 「카무로」이며, 길거리 싸움꾼이 지하 격투의 세계로 빠져드는 청춘 누아르를 그립니다.",
+        en: "A handheld spin-off led by a new protagonist, Tatsuya Ukyo, rather than Kiryu. Set in a Kamurocho stand-in, it tells a coming-of-age noir about a street brawler pulled into the underground fighting world.",
+      },
+      {
+        ko: "전투는 실제 종합격투기를 모티프로 한 시스템이며, 컷신 일부에 실사 영상(라이브 액션)을 사용한 점이 특징입니다. 외전 성격상 본편 정사와는 느슨하게만 연결됩니다.",
+        en: "Combat is modeled on real mixed martial arts, and some cutscenes use live-action footage. As a spin-off, it only loosely ties into the mainline canon.",
+      },
+    ],
+    whyItMatters: {
+      ko: "RGG가 「키류 없이도 카무로초 드라마가 성립하는가」를 시험한 초기 사례로, 훗날 저지먼트·이치반 등 새 주인공 노선의 먼 선조 격입니다.",
+      en: "An early test of whether a Kamurocho drama could work without Kiryu — a distant ancestor of the later new-protagonist lines like Judgment and Ichiban's saga.",
     },
   },
   {
+    slug: "kurohyou-2",
     title: { ko: "쿠로효 2: 용과 같이 아수라편", en: "Kurohyou 2: Ryu ga Gotoku Ashura Hen" },
+    originalTitle: "Kurohyo 2: Ryu ga Gotoku Ashura-hen",
     year: 2012,
+    releaseInfo: {
+      ko: "PSP · 2012 (일본 전용)",
+      en: "PSP · 2012 (Japan only)",
+    },
+    lead: { ko: "우쿄 타츠야", en: "Tatsuya Ukyo" },
     placement: {
       ko: "5편 전후의 PSP 외전",
       en: "PSP spin-off around the Yakuza 5 era",
     },
+    availability: {
+      ko: "PSP 전용·일본 한정. 공식 영문화·이식·Steam 업적 없음.",
+      en: "PSP only and Japan-only. No official translation, port, or Steam achievements.",
+    },
     note: {
-      ko: "쿠로효 후속작입니다. 현재는 업적 체크리스트가 아닌 RGG 정보 보관소 확장 후보로 다룹니다.",
-      en: "The Kurohyou sequel. For now, it belongs in the RGG archive lane rather than the achievement checklist lane.",
+      ko: "쿠로효 후속작. 더 큰 항쟁 서사로 우쿄의 이야기를 잇습니다.",
+      en: "The Kurohyou sequel, continuing Ukyo's story with a larger clan-war arc.",
+    },
+    overview: [
+      {
+        ko: "전작의 우쿄 타츠야가 돌아오는 PSP 외전 2편입니다. 전작보다 규모가 커진 항쟁 서사와 강화된 격투 시스템을 선보이며, 시리즈 휴대용 라인의 정점이자 종착점이 되었습니다.",
+        en: "A PSP sequel that brings back Tatsuya Ukyo. It scales up the clan-war story and refines the fighting system, standing as both the peak and the end of the series' handheld line.",
+      },
+      {
+        ko: "이후 RGG의 휴대용 전용 신작은 사실상 끊겼기 때문에, 두 편의 쿠로효는 RGG가 본격적으로 콘솔·PC 중심으로 이동하기 전의 독특한 분기로 기억됩니다.",
+        en: "RGG effectively stopped making handheld-exclusive entries afterward, so the two Kurohyou games are remembered as a distinct branch before the studio went console- and PC-first.",
+      },
+    ],
+    whyItMatters: {
+      ko: "휴대용 스핀오프 실험의 마무리이자, 정사 본편 바깥에서 카무로초 세계관을 확장하던 시기를 대표하는 작품입니다.",
+      en: "The close of RGG's handheld-spin-off experiment and a marker of the era when the studio expanded the Kamurocho universe outside the mainline canon.",
     },
   },
   {
+    slug: "kenzan",
     title: { ko: "용과 같이 켄잔!", en: "Ryu ga Gotoku Kenzan!" },
+    originalTitle: "Ryu ga Gotoku Kenzan!",
     year: 1605,
+    releaseInfo: {
+      ko: "PS3 · 2008 (일본 전용)",
+      en: "PS3 · 2008 (Japan only)",
+    },
+    lead: { ko: "미야모토 무사시 (키류 외형)", en: "Miyamoto Musashi (Kiryu's likeness)" },
     placement: {
-      ko: "독립 역사 외전",
-      en: "Standalone historical spin-off",
+      ko: "독립 역사 외전 (에도 시대)",
+      en: "Standalone historical spin-off (Edo era)",
+    },
+    availability: {
+      ko: "PS3 전용·일본 한정. 공식 영문화·이식·Steam 업적 없음. 콘셉트의 정신적 후계작이 「용과 같이 유신!」입니다.",
+      en: "PS3 only and Japan-only. No official translation, port, or Steam achievements. Its spiritual successor is Like a Dragon: Ishin!.",
     },
     note: {
-      ko: "현대 본편과 분리된 PS3 역사 외전입니다. 유신과 함께 별도 역사 외전 묶음으로 확장할 수 있습니다.",
-      en: "A PS3 historical spin-off separate from the modern saga. It can sit beside Ishin in a future historical branch.",
+      ko: "시리즈 최초의 역사 외전. 검호 미야모토 무사시를 키류 외형으로 그립니다.",
+      en: "The series' first historical spin-off, casting swordsman Miyamoto Musashi in Kiryu's likeness.",
+    },
+    overview: [
+      {
+        ko: "RGG 최초의 역사 외전으로, 에도 시대 초기를 배경으로 전설의 검호 미야모토 무사시의 이야기를 키류 카즈마의 외형으로 재해석합니다. 시리즈 단골 배우들이 역사 인물로 분하는 구성도 이때 처음 등장했습니다.",
+        en: "RGG's first historical spin-off, reimagining the legend of swordsman Miyamoto Musashi — wearing Kazuma Kiryu's face — in the early Edo period. It introduced the recurring trick of casting series regulars as historical figures.",
+      },
+      {
+        ko: "검술 중심의 전투, 거리 산책과 미니게임이 어우러진 구조는 훗날 「용과 같이 유신!」으로 거의 그대로 계승됩니다. 유신을 즐겼다면 그 원형이 바로 켄잔입니다.",
+        en: "Its katana-focused combat blended with town-strolling and minigames carries over almost wholesale into Like a Dragon: Ishin!. If you enjoyed Ishin, Kenzan is its prototype.",
+      },
+    ],
+    whyItMatters: {
+      ko: "「현대 야쿠자 드라마」 공식을 시대극에 이식할 수 있음을 증명한 작품으로, 유신!이라는 정식 글로벌 출시작의 직접적 뿌리입니다.",
+      en: "It proved the modern-yakuza formula could transplant into a period setting — the direct root of Ishin!, which finally gave the concept a global release.",
+    },
+    modernRoute: {
+      ko: "비슷한 경험 → 용과 같이 유신! 극 (Steam 추적 대상)",
+      en: "For a similar experience → Like a Dragon: Ishin! (tracked on Steam)",
     },
   },
   {
+    slug: "dead-souls",
     title: { ko: "용과 같이 OF THE END", en: "Yakuza: Dead Souls" },
+    originalTitle: "Ryu ga Gotoku: Of the End",
     year: 2011,
+    releaseInfo: {
+      ko: "PS3 · 2011(일본) / 2012(서구)",
+      en: "PS3 · 2011 (Japan) / 2012 (West)",
+    },
+    lead: { ko: "아키야마 / 마지마 / 류지 고다 / 키류", en: "Akiyama / Majima / Ryuji Goda / Kiryu" },
     placement: {
       ko: "비정사 좀비 외전",
       en: "Non-canon zombie spin-off",
     },
+    availability: {
+      ko: "PS3 전용. 현대 이식·Steam 업적 없음. 정사 흐름과 분리된 실험작이라 본편 진행에는 필수가 아닙니다.",
+      en: "PS3 only — no modern port or Steam achievements. A non-canon experiment, so it's not required for the mainline story.",
+    },
     note: {
-      ko: "정사 흐름과는 분리된 PS3 외전입니다. 완료 추적보다는 시리즈 전체 색인에서 다루는 편이 자연스럽습니다.",
-      en: "A non-canon PS3 spin-off. Better suited to a full-series index than the main completion route.",
+      ko: "카무로초가 좀비로 뒤덮이는 비정사 3인칭 슈터 외전.",
+      en: "A non-canon third-person shooter where a zombie outbreak overruns Kamurocho.",
+    },
+    overview: [
+      {
+        ko: "카무로초에 좀비 사태가 터진다는 비정사 설정의 실험작으로, 시리즈 처음이자 (사실상) 마지막으로 총기 중심의 3인칭 슈터 전투를 전면에 내세웠습니다. 아키야마·마지마·류지 고다·키류 4인을 번갈아 조작합니다.",
+        en: "A non-canon experiment in which a zombie outbreak hits Kamurocho, putting gun-focused third-person shooting front and center for the first (and essentially only) time. You alternate among Akiyama, Majima, Ryuji Goda, and Kiryu.",
+      },
+      {
+        ko: "전투 완성도에 대한 평가는 갈렸지만, 시리즈가 한 번쯤 장르 실험을 감행했다는 점에서 팬들에게 호기심의 대상으로 남아 있습니다.",
+        en: "Reception to its combat was mixed, but it endures as a curiosity — proof that the series was willing to gamble on a genre experiment at least once.",
+      },
+    ],
+    whyItMatters: {
+      ko: "정사에 영향을 주지 않는 「만약」 외전이지만, RGG가 본편 캐릭터로 장르를 통째로 바꿔보는 실험을 했던 유일한 사례로 시리즈 색인에서 빠질 수 없는 항목입니다.",
+      en: "A 'what-if' spin-off with no canon impact, but the only time RGG swapped genres wholesale using mainline characters — too notable to leave out of a full-series index.",
     },
   },
 ];

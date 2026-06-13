@@ -174,7 +174,7 @@ export default async function MePage() {
               tone="gold"
               label={locale === "ko" ? "총 플레이타임" : "Playtime"}
               value={`${totalPlaytimeHours}h`}
-              hint={locale === "ko" ? "수록된 작품 합계" : "Across covered titles"}
+              hint={locale === "ko" ? "수록된 작품 합계" : "Across all covered titles"}
             />
           </dl>
         </section>
@@ -183,7 +183,7 @@ export default async function MePage() {
         {owned.length === 0 && (
           <section className="mt-10 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--bg-surface)]/40 p-10 text-center">
             <p className="font-display m-0 text-[23px] font-bold text-white">
-              {locale === "ko" ? "여기서 다루는 작품이 라이브러리에 아직 없네요." : "No covered RGG titles in your library yet."}
+              {locale === "ko" ? "여기서 다루는 작품이 라이브러리에 아직 없네요." : "None of the RGG titles we cover are in your library yet."}
             </p>
             <p className="m-0 mt-2 text-[16px] text-[var(--text-secondary)]">
               {locale === "ko" ? `${games.length}개 작품 중 하나를 보유한 뒤 다시 동기화해 보세요.` : `Pick up any of the ${games.length} covered titles, then sync again.`}

@@ -92,6 +92,9 @@ const cabaretGPK2: CuratedGuide = {
     { ko: "2) 의상·헤어 강화 + 동반 출근으로 캐스트 평가 1위. 라이벌 매장과의 매출 대결 단계별 격파.", en: "2) Outfit + companion buffs to push to #1, then beat each rival shop's revenue in sequence." },
     { ko: "3) 그랑프리 결승 우승 시 트로피 발동. 「인기 스카우트맨」(30명) + 「키류의 고민 상담실」 라인도 동시 진행하면 효율적.", en: "3) Win the finale for the trophy. Pair with the 30-hostess + Platinum Cast trophies." },
   ],
+  tips: [
+    { ko: "[캐바쿠라 운영법] 본질은 손님 타입과 캬바걸 타입을 맞추는 게임입니다. 손님 머리 위 아이콘과 같은 타입의 캬바걸을 그 테이블에 배치하면 만족도가 폭발(피버)합니다. 손님이 말풍선으로 도움을 요청하면 즉시 해당 테이블 캬바걸을 탭해 응대하고, 피버 타임엔 가장 인기 높은 플래티넘 캬바걸을 투입해 매출을 폭증시키세요. 의상·헤어 강화로 스탯을 올려두면 라이벌 매출을 넘기기 훨씬 쉽습니다.", en: "[How to run cabaret] At heart it's type-matching: seat a hostess whose type matches the icon above each customer's head to trigger a Fever. When a customer throws up a help bubble, tap that table's hostess immediately, and during Fever time send in your most popular Platinum hostess to spike revenue. Buying outfit/hair upgrades raises stats and makes beating the rival shop far easier." },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
   sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
 };
@@ -103,6 +106,9 @@ const clanCreatorK2: CuratedGuide = {
     { ko: "1) 3장 이후 마지마 건설 본부 입장 → 첫 클랜 배틀 진행 + 서브스토리로 신규 직원 영입.", en: "1) Past Ch.3, run the first clan battle + recruit staff via subs." },
     { ko: "2) 5개 라이벌 클랜을 차례로 격파 — 각 격파 시 신규 직원 + 강력 무기 보상.", en: "2) Defeat 5 rival clans in sequence — each unlocks new staff + gear." },
     { ko: "3) 「전설의 클랜」 최종 보스 격파 시 트로피 발동.", en: "3) Beat the Legendary Clan for the trophy." },
+  ],
+  tips: [
+    { ko: "[클랜 크리에이터 전법] 실시간 라인 전투(타워디펜스형)입니다. 근접 직원은 전방 라인에, 원거리·투척 직원은 후방에 배치하고, 리더 스킬(필살기) 게이지가 차면 적이 밀집한 구간에 즉시 발동하세요. 서브스토리로 영입하는 강력 직원(전 토조회 간부 등)을 핵심 라인에 넣고, 자금 업그레이드로 동시 투입 인원을 늘리면 후반 라이벌 클랜도 무난히 뚫립니다.", en: "[Clan Creator tactics] It's a real-time lane battle (tower-defense style). Put melee staff on the front lines and ranged/throwers behind them, and fire the leader skill (ultimate) the instant its gauge fills on a tight enemy cluster. Slot the strong staff you recruit through substories (ex-Tojo execs, etc.) into your core lanes, and upgrade funds to field more units at once — that carries you through the late rival clans." },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
   sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },

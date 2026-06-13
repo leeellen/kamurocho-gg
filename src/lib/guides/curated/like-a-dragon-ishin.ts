@@ -122,6 +122,9 @@ const allPlaySpotsIshin: CuratedGuide = {
     { ko: "2) 도박(친치로린·고이·하나후다·블랙잭 등) + 노래 주점 + 게임 캐비넷 모두 1회씩.", en: "2) Touch every gambling table, song-bar, and cabinet at least once." },
     { ko: "3) 모든 플레이 스팟 카운트 시 트로피 발동.", en: "3) Full coverage fires it." },
   ],
+  tips: [
+    { ko: "[Ishin 도박·놀이 팁] 친치로(주사위 홀짝)는 거의 50:50 운 게임이니 소액으로 빠르게 1회만 카운트하세요. 코이코이(화투)는 「약(야쿠)」 조합을 완성해 「코이!」로 판돈을 키우는 게임이고, 마작은 닫은 손 「리치+탄야오」 한 패턴이면 충분합니다. 노래 주점·춤은 프롬프트 타이밍을 맞추는 리듬게임입니다. 트로피는 각 1회 플레이면 카운트되니 어렵게 생각할 필요 없습니다.", en: "[Ishin gambling & play tips] Cho-Han (odd/even dice) is near 50/50 luck — bet small and just log one play. Koi-Koi (hanafuda) is about completing yaku combos and calling 'Koi!' to raise the stakes; for mahjong, a closed Riichi + Tanyao hand is plenty. Song-bars and dancing are timing-based rhythm games. The trophy only needs one play of each, so don't overthink it." },
+  ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Ishin Trophy Guide", en: "PowerPyx — Ishin Trophy Guide" },
 };

@@ -6,6 +6,10 @@ export type {
 
 export {
   getAchievementPageData,
+  getArchiveEntries,
+  getArchiveEntry,
+  ARCHIVE_SLUGS,
+  getEmptyLotGuides,
   getGamePageData,
   getGuideSources,
   getMissablesIndex,
@@ -16,7 +20,9 @@ export {
 
 export type {
   AchievementCitation,
+  ArchiveEntry,
   CollectibleCitation,
+  EmptyLotGuide,
   GameSources,
   SubstoryCitation,
 } from "./queries";

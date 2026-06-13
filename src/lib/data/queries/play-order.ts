@@ -24,8 +24,10 @@ export const getPlayOrderData = cache(async (locale: Locale) => {
       }))
       .filter((entry) => entry.game),
     references: REFERENCE_TITLES.map((entry) => ({
+      slug: entry.slug,
       title: locale === "ko" ? entry.title.ko : entry.title.en,
       year: entry.year,
+      releaseInfo: locale === "ko" ? entry.releaseInfo.ko : entry.releaseInfo.en,
       placement: locale === "ko" ? entry.placement.ko : entry.placement.en,
       note: locale === "ko" ? entry.note.ko : entry.note.en,
     })),

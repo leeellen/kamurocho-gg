@@ -38,7 +38,6 @@ export type SeriesGameCard = {
   releaseYear: number | null;
   releaseDate: string | null;
   platforms: string[];
-  estimatedHours: string;
   timeEstimate: {
     story: string;
     completion: string;

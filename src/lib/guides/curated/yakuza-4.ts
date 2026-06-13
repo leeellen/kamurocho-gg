@@ -206,6 +206,14 @@ const welcomeToSega: CuratedGuide = {
         "3) Trophy fires when the Club Sega category is fully ticked.",
     },
   ],
+  tips: [
+    {
+      ko:
+        "[Fantasy Zone·아웃런] 트로피 자체는 1회 플레이면 카운트되지만, 점수에 도전한다면: Fantasy Zone은 적을 부숴 모은 코인으로 풍선 상점에서 ① 엔진(스피드업) → ② 강화 무기(와이드 빔/레이저) → ③ 보스용 폭탄 순으로 투자하고, 스테이지의 기지 10개를 모두 부수면 보스가 등장합니다. 아웃런은 갈림길에서 난이도 낮은 쪽을 골라 체크포인트를 안정적으로 통과하는 게 완주의 핵심입니다.",
+      en:
+        "[Fantasy Zone & OutRun] The trophy only needs one play, but if you're chasing a score: in Fantasy Zone spend the coins enemies drop at the balloon shop in this order — ① engines (speed), ② a strong weapon (Wide Beam/Laser), ③ bombs for bosses — and destroy all 10 bases in a stage to summon its boss. In OutRun, take the easier fork at each split to reach checkpoints reliably.",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
   sourceLabel: {
     ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",

@@ -13,7 +13,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류 / 마지마", en: "Kiryu / Majima" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "35h",
     timeEstimate: {
       story: "60h+",
       completion: "140-180h",
@@ -38,7 +37,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "30h",
     timeEstimate: {
       story: "20-30h",
       completion: "80-100h",
@@ -63,7 +61,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "40h",
     timeEstimate: {
       story: "25-35h",
       completion: "80-110h",
@@ -88,7 +85,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "45h",
     timeEstimate: {
       story: "35-45h",
       completion: "90-120h",
@@ -113,7 +109,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "45h",
     timeEstimate: {
       story: "20-30h",
       completion: "90-120h",
@@ -138,7 +133,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류 외 3명", en: "Kiryu + 3" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "40h",
     timeEstimate: {
       story: "25-35h",
       completion: "80-110h",
@@ -163,7 +157,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류 외 4명", en: "Kiryu + 4" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "70h",
     timeEstimate: {
       story: "45-60h",
       completion: "150-200h",
@@ -188,7 +181,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "35h",
     timeEstimate: {
       story: "18-25h",
       completion: "50-70h",
@@ -213,7 +205,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "30h",
     timeEstimate: {
       story: "12-18h",
       completion: "30-45h",
@@ -238,7 +229,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "사카모토 료마", en: "Ryoma Sakamoto" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "60h",
     timeEstimate: {
       story: "30-40h",
       completion: "120-160h",
@@ -263,7 +253,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "이치반", en: "Ichiban" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "55h",
     timeEstimate: {
       story: "45-60h",
       completion: "90-120h",
@@ -288,7 +277,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "이치반 / 키류", en: "Ichiban / Kiryu" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "75h",
     timeEstimate: {
       story: "60-80h",
       completion: "120-160h",
@@ -313,7 +301,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "마지마", en: "Majima" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "40h",
     timeEstimate: {
       story: "25-35h",
       completion: "60-80h",
@@ -338,7 +325,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "야가미", en: "Yagami" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "40h",
     timeEstimate: {
       story: "25-35h",
       completion: "90-120h",
@@ -363,7 +349,6 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     lead: { ko: "야가미", en: "Yagami" },
     platforms: ["PC", "Steam"],
-    estimatedHours: "55h",
     timeEstimate: {
       story: "35-50h",
       completion: "100-140h",

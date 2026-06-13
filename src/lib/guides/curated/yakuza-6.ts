@@ -176,6 +176,20 @@ const allMinigamesY6: CuratedGuide = {
         "3) Full Minigame category coverage fires the trophy.",
     },
   ],
+  tips: [
+    {
+      ko:
+        "[Y6 주요 미니게임] 야구단은 타순·작전 지시형(강타자 위주로 타순을 짜고 상황에 맞는 작전을 지시), 클랜 크리에이터(스나이퍼 더 캣)는 라인 전투, 라이브 챗은 상대 반응을 보고 호감 선택지를 고르는 게임입니다. 모두 1회 플레이만으로 카운트되니 가볍게 훑으면 되고, RIZAP은 정해진 운동·식단 루틴만 따라가면 자동 진행됩니다.",
+      en:
+        "[Y6 key minigames] Baseball is lineup + tactics (stack power hitters and call situational plays), Clan Creator (Sniper the Cat) is a lane battle, and Live Chat is picking the favorable response based on her reactions. Each only needs one play to count, and RIZAP just follows its set workout/diet routine.",
+    },
+    {
+      ko:
+        "[작살 낚시] 오노미치 작살 낚시는 조준 슈팅입니다. 큰 물고기는 체력이 많으니 약점(머리 쪽)을 노려 연사하고, 폭발 작살을 모아두면 거대 어종·상어 보스를 빠르게 처리할 수 있습니다.",
+      en:
+        "[Spearfishing] Onomichi's spearfishing is an aim-shooter. Bigger fish have more HP, so target the weak point (head) and rapid-fire; saving explosive spears clears giant fish and shark bosses fast.",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685",
   sourceLabel: {
     ko: "Steam Community — Yakuza 6: The Song of Life Achievement Guide",

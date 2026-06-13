@@ -838,6 +838,44 @@ const masterOfMinigames: CuratedGuide = {
         "4) Every row on the Minigames category needs at least 1 — trophy pops when the last untouched one fires.",
     },
   ],
+  tips: [
+    {
+      ko:
+        "[마작] 막막하면 「리치+탄야오」 한 패턴만 노리세요. 펑/치로 손패를 절대 공개하지 말고(닫은 손) 2~8 숫자패만 모아 4면자+1쌍 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료됩니다. 컴플리션은 큰 점수가 아니라 화료 자체가 목적이라 이 한 가지만 알아도 충분합니다.",
+      en:
+        "[Mahjong] If it feels impossible, aim for just one pattern: Riichi + Tanyao. Keep your hand fully closed (never call Pon/Chi), collect only simples (2–8), and the moment you're one tile from a full hand (4 sets + a pair) declare Riichi — a yaku attaches automatically and you win. Completion only cares that you win hands, not the score, so this one trick is enough.",
+    },
+    {
+      ko:
+        "[당구·캐롬] 당구는 「고스트 볼」 원리입니다. 목적구를 포켓에 넣으려면 포켓의 정반대편 목적구 표면 지점을 큐볼이 때리도록 조준선을 맞추세요. 처음엔 회전(잉글리시)을 끄고 풀파워보다 조준 정확도를 우선합니다. 트릭샷/캐롬은 화면의 가이드라인을 그대로 따라 약하게 치면 대부분 들어갑니다.",
+      en:
+        "[Billiards / carom] Pool runs on the 'ghost ball' rule: to sink an object ball, aim so the cue ball hits the point on it directly opposite the pocket. Leave spin (English) off at first and value aim over power. For carom and trick shots, just follow the on-screen guide line with a soft hit — that clears most of them.",
+    },
+    {
+      ko:
+        "[Fantasy Zone] 클럽 세가 아케이드의 Fantasy Zone은 사실상 돈 관리 게임입니다. 적을 부수면 떨어지는 코인을 모아 풍선 상점이 뜨면 ① 엔진(스피드업)부터 사서 회피력 확보 → ② 와이드 빔/레이저 같은 강화 무기 → ③ 보스용 폭탄(트윈/헤비 봄) 순으로 투자하세요. 각 스테이지의 기지 10개를 전부 부수면 보스가 등장합니다.",
+      en:
+        "[Fantasy Zone] The Club Sega Fantasy Zone cab is really a money-management shmup. Grab the coins enemies drop, and when the balloon shop appears buy in this order: ① engines (speed-ups) for survivability, ② a strong main weapon like the Wide Beam or Laser, ③ bombs (Twin/Heavy Bomb) for bosses. Destroy all 10 bases in a stage to summon its boss.",
+    },
+    {
+      ko:
+        "[다트] 301 모드는 레티클이 좌우로 흔들립니다. 스윙을 보다가 조준점이 중앙(불스아이/트리플20)을 지나는 순간 릴리스하세요. 무리하게 트리플을 노리지 말고 안정적인 20점·불스아이로 점수를 정확히 0까지 깎는 게 핵심입니다.",
+      en:
+        "[Darts] In 301 the reticle sways left and right — watch the swing and release the instant it crosses your target (bullseye or triple-20). Don't force triples; steady 20s and bulls that take your score down to exactly zero are what win.",
+    },
+    {
+      ko:
+        "[포켓 서킷] 본질은 차 세팅 게임입니다. 초반엔 「Bullet」 바디를 쓰고, 직선이 많은 코스엔 최고속 기어를, 커브가 많은 코스엔 가속/그립 위주로 부품을 교체하세요. 코너에서 이탈하면 그립(타이어)·다운포스 부품을, 직선에서 밀리면 모터·기어비를 손보면 됩니다.",
+      en:
+        "[Pocket Circuit] It's a tuning game at heart. Use the 'Bullet' chassis early on; gear for top speed on straight-heavy tracks and for grip/acceleration on curvy ones. Flying off corners? Add grip (tires) and downforce. Getting outrun on the straights? Adjust the motor and gear ratio.",
+    },
+    {
+      ko:
+        "[디스코] 마하라자 디스코는 리듬게임입니다. 프롬프트가 판정선에 「닿기 직전」 살짝 빨리 누르는 느낌으로 입력하면 Perfect가 잘 나옵니다. 「Friday Night」 곡이 가장 쉬워 감을 잡는 연습용으로 추천합니다.",
+      en:
+        "[Disco] The Maharaja disco is a rhythm game — input slightly early, just before each prompt reaches the line, to land Perfects. 'Friday Night' is the easiest track and the best one to practice the timing on.",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };

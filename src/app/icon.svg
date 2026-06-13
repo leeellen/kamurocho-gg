@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="kamurocho.gg">
+  <defs>
+    <linearGradient id="kg" x1="0" y1="0" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0b0b10" stroke="url(#kg)" stroke-width="2"/>
+  <!-- Bold "K" mark -->
+  <path d="M9.5 7.5h4.2v7.1l6.2-7.1h5l-7.4 8.2 7.7 9h-5.1l-6.4-7.7v7.7H9.5z" fill="#fff"/>
+  <!-- ".gg" accent dot -->
+  <circle cx="24.5" cy="24.5" r="2.4" fill="url(#kg)"/>
+</svg>

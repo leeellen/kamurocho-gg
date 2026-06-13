@@ -220,6 +220,18 @@ const minigameMaster: CuratedGuide = {
       en:
         "Golf tourney + UFO doll RNG are the biggest time sinks — push them post-Ch.7 once cash is comfortable.",
     },
+    {
+      ko:
+        "[골프] 토너먼트는 바람과 임팩트 정확도 싸움입니다. 풍향·풍속 표시를 보고 조준을 바람 반대쪽으로 살짝 틀고, 파워 게이지는 풀파워보다 임팩트 지점(게이지 중앙)에서 정확히 멈추는 것을 우선하세요. 클럽을 미리 강화하면 비거리·정확도가 올라 토너먼트가 훨씬 안정적입니다.",
+      en:
+        "[Golf] The tournament is a wind + impact-timing game. Read the wind arrow and aim slightly into it, and prioritize stopping the power gauge exactly on the impact point over going full power. Upgrading clubs first raises distance and accuracy and steadies the whole tournament.",
+    },
+    {
+      ko:
+        "[당구·마작] 당구는 「고스트 볼」 원리로 포켓 정반대편 목적구 표면을 큐볼이 때리게 조준합니다. 마작은 막히면 닫은 손으로 2~8 숫자패만 모아 「리치+탄야오」 한 패턴만 노리면 역이 자동으로 붙어 화료됩니다(표준 일본 리치 룰).",
+      en:
+        "[Billiards & mahjong] For pool, use the 'ghost ball' rule — aim so the cue ball hits the point opposite the pocket. For mahjong, keep your hand closed, collect only simples (2–8), and chase one pattern, Riichi + Tanyao; the yaku attaches itself (standard Japanese riichi rules).",
+    },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399",
   sourceLabel: {

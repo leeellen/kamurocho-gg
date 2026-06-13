@@ -314,6 +314,20 @@ const allMinigamesY5: CuratedGuide = {
         "4) Full Minigame category coverage fires the trophy.",
     },
   ],
+  tips: [
+    {
+      ko:
+        "[캐릭터 한정 미니게임] Y5는 시리즈에서 미니게임 밀도가 가장 높습니다. 사에지마 사냥은 발자국을 따라가 짐승의 약점에 사격하고, 아키야마 댄스 배틀은 프롬프트 타이밍을 맞추는 리듬게임, 하루카 「프린세스 리그」는 댄스·토크 응답을 패턴대로 맞추는 게임입니다. 시나다 야구는 타격 타이밍, 키류 택시는 코스 준수·승객 요청 충족이 핵심. 트로피는 각 1회 플레이면 충분하니 가볍게 훑으세요.",
+      en:
+        "[Lead-specific minigames] Y5 has the densest minigame spread in the series. Saejima's hunting is track-the-prints then shoot the weak point; Akiyama's dance battles are timing-based rhythm; Haruka's Princess League is matching dance and talk-response patterns; Shinada's baseball is swing timing; Kiryu's taxi is route-following + passenger requests. The trophy only needs one play of each, so don't sweat the scores.",
+    },
+    {
+      ko:
+        "[마작·당구] 마작은 닫은 손으로 2~8 숫자패만 모아 「리치+탄야오」 한 패턴을 노리면 역이 자동으로 붙습니다. 당구는 「고스트 볼」 원리로 포켓 정반대편 목적구 표면을 큐볼이 때리도록 조준하세요.",
+      en:
+        "[Mahjong & billiards] For mahjong keep your hand closed and chase Riichi + Tanyao with simples (2–8) only. For pool, use the 'ghost ball' rule — aim at the point on the object ball opposite the pocket.",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402",
   sourceLabel: {
     ko: "Steam Community — Yakuza 5 Remastered Achievement Guide",

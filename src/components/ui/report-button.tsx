@@ -55,7 +55,7 @@ export function ReportButton({
       submit: "Send",
       cancel: "Cancel",
       thanks: "Thanks — we'll review and fix.",
-      queued: "Queued for review (DB provisioning).",
+      queued: "Queued for review (database still being set up).",
       error: "Send failed. Try again shortly.",
       placeholder: "e.g. Paint Search #14 location is wrong — should be …",
     },

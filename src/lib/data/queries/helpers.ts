@@ -162,7 +162,6 @@ export function buildSeriesGameCard({
     releaseYear: gameSidecar?.releaseYear ?? null,
     releaseDate: gameSidecar?.releaseDate ?? null,
     platforms: curated.platforms,
-    estimatedHours: curated.estimatedHours,
     timeEstimate: {
       story: curated.timeEstimate.story,
       completion: curated.timeEstimate.completion,

@@ -126,6 +126,9 @@ const crazyDeliveryAll: CuratedGuide = {
     { ko: "2) 각 코스를 시간 안에 통과. 점프대·지름길을 적극 활용하면 코스별 ★3 달성 안정적.", en: "2) Use jumps + shortcuts to hit ★3 ratings on each course." },
     { ko: "3) 모든 코스 클리어 시 트로피 발동.", en: "3) Full clear fires the trophy." },
   ],
+  tips: [
+    { ko: "[크레이지 딜리버리] 크레이지 택시식 자전거 배달입니다. 점프대·지름길·내리막을 적극 활용해 부스트를 유지하고, 연속 트릭으로 부스트 게이지를 채우는 게 ★3의 핵심입니다. 급커브에서는 살짝 속도를 줄여 배달물 손상과 충돌을 피하세요.", en: "[Crazy Delivery] It's a Crazy Taxi-style bike courier. Chain jumps, shortcuts, and downhills to keep your boost up, and string tricks together to refill the boost gauge — that's the key to ★3. Ease off slightly on sharp corners to avoid crashes and damaging the delivery." },
+  ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Infinite Wealth Trophy Guide", en: "PowerPyx — Infinite Wealth Trophy Guide" },
 };
@@ -137,6 +140,9 @@ const diyMaster: CuratedGuide = {
     { ko: "1) 돈도코 섬 진행 중 자원(목재·금속·천 등) 수집 + 도면 해금.", en: "1) Gather resources + blueprints across Dondoko." },
     { ko: "2) DIY 메뉴에서 100종류 누적 제작 — 중복 제작은 카운트 안 됨에 주의.", en: "2) Craft 100 unique items (duplicates don't count)." },
     { ko: "3) 100종 도달 시 트로피 발동.", en: "3) Trophy fires at 100." },
+  ],
+  tips: [
+    { ko: "[돈도코 DIY 효율] 중복 제작은 카운트되지 않으니 같은 가구를 반복하지 말고 새 도면을 우선 해금하세요. 섬을 돌며 자원(목재·금속·천)을 꾸준히 모으고, 방문객 평가(섬 등급)를 올리면 새 도면과 자원이 빠르게 풀려 100종 달성이 훨씬 수월합니다.", en: "[Dondoko DIY efficiency] Duplicates don't count, so don't re-craft the same piece — prioritize unlocking new blueprints. Keep gathering resources (wood, metal, cloth) as you roam the island, and raising your visitor rating (island rank) unlocks new blueprints and materials faster, making 100 much easier." },
   ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Infinite Wealth Trophy Guide", en: "PowerPyx — Infinite Wealth Trophy Guide" },

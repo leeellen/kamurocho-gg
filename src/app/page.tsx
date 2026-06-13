@@ -184,7 +184,7 @@ export default async function HomePage() {
         <section className="mt-20">
           <SectionTitle
             eyebrow={locale === "ko" ? "작품 목록" : "Series index"}
-            title={locale === "ko" ? "작품별 공략 모음" : "Every RGG title, one click in"}
+            title={locale === "ko" ? "작품별 공략 모음" : "Every RGG title, one click away"}
             description={locale === "ko" ? "스팀 커뮤니티 공략이 확보된 작품만 추렸습니다. 카드에서 분량·Missable·희귀 업적을 한눈에 확인하세요." : "Only titles backed by real Steam Community guides. Each card shows scale, missables, and rare picks up front."}
             action={
               <Link
@@ -383,7 +383,7 @@ export default async function HomePage() {
               {
                 icon: <FiClock size={18} aria-hidden="true" />,
                 title: locale === "ko" ? "스토리 / 100% 시간" : "Story / 100% ranges",
-                desc: locale === "ko" ? "Steam 평균처럼 보이지 않도록 메인과 완주 범위를 분리합니다." : "Main-story and full-completion ranges stay separate instead of pretending to be one average.",
+                desc: locale === "ko" ? "Steam 평균처럼 보이지 않도록 메인과 완주 범위를 분리합니다." : "Main-story and full-completion times stay separate, instead of being blended into a single average.",
               },
             ].map((pillar) => (
               <div
