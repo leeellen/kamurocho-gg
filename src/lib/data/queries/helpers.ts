@@ -163,6 +163,11 @@ export function buildSeriesGameCard({
     releaseDate: gameSidecar?.releaseDate ?? null,
     platforms: curated.platforms,
     estimatedHours: curated.estimatedHours,
+    timeEstimate: {
+      story: curated.timeEstimate.story,
+      completion: curated.timeEstimate.completion,
+      note: locale === "ko" ? curated.timeEstimate.note.ko : curated.timeEstimate.note.en,
+    },
     difficulty: curated.difficulty,
     missableCount: curatedChecks + derivedChecks,
     achievements: rows.length || game?.total_achievements || 0,

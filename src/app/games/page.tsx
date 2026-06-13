@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FiArrowRight, FiClock, FiTarget } from "react-icons/fi";
+import { FiArrowRight, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
 import { GameCover } from "@/components/ui/game-cover";
 import { SectionTitle } from "@/components/ui/section-title";
+import { TimeEstimate } from "@/components/ui/time-estimate";
 import { getLocale } from "@/lib/i18n";
 import { getSeriesGames, type SeriesGameCard } from "@/lib/data";
 
@@ -109,8 +110,13 @@ export default async function GamesPage() {
                         </div>
                         <div className="absolute right-3 top-3">
                           <Chip tone="neutral" size="xs" className="border-0 bg-black/60 text-white backdrop-blur ring-0">
-                            <FiClock size={10} aria-hidden="true" />
-                            {game.estimatedHours}
+                            <TimeEstimate
+                              locale={locale}
+                              story={game.timeEstimate.story}
+                              completion={game.timeEstimate.completion}
+                              note={game.timeEstimate.note}
+                              compact
+                            />
                           </Chip>
                         </div>
                       </div>

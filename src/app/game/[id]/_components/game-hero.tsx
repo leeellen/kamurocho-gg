@@ -5,6 +5,7 @@ import { Chip } from "@/components/ui/chip";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { StatTile } from "@/components/ui/stat-tile";
+import { TimeEstimate } from "@/components/ui/time-estimate";
 import { SignInButton } from "@/components/ui/user-menu";
 import type { Locale } from "@/lib/i18n";
 import type { SeriesGameCard } from "@/lib/data";
@@ -143,7 +144,15 @@ export function GameHero({
               {game.rareCount > 0 && (
                 <Chip tone="gold">{locale === "ko" ? `희귀 ${game.rareCount}개` : `${game.rareCount} rare`}</Chip>
               )}
-              <Chip tone="neutral">{game.estimatedHours}</Chip>
+              <Chip tone="neutral">
+                <TimeEstimate
+                  locale={locale}
+                  story={game.timeEstimate.story}
+                  completion={game.timeEstimate.completion}
+                  note={game.timeEstimate.note}
+                  compact
+                />
+              </Chip>
               <Chip tone="info" size="xs">
                 {locale === "ko" ? `엔진: ${game.engine}` : `Engine: ${game.engine}`}
               </Chip>
@@ -198,8 +207,9 @@ export function GameHero({
           {!showSteamProgress && (
             <StatTile
               tone="gold"
-              label={locale === "ko" ? "예상 분량" : "Est. time"}
-              value={game.estimatedHours}
+              label={locale === "ko" ? "스토리 / 100%" : "Story / 100%"}
+              value={`${game.timeEstimate.story} / ${game.timeEstimate.completion}`}
+              hint={game.timeEstimate.note}
               valueClassName="text-[34px] md:text-[40px]"
             />
           )}

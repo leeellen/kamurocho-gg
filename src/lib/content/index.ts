@@ -4,7 +4,8 @@ export type {
   MissableItem,
   ChapterMissable,
   PlayOrderEntry,
+  ReferenceTitle,
 } from "./types";
 export { CURATED_GAMES, RGG_APP_IDS, getCuratedGameBySlug } from "./games";
-export { PLAY_ORDER } from "./play-order";
+export { PLAY_ORDER, REFERENCE_TITLES } from "./play-order";
 export { MISSABLES } from "./missables";

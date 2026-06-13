@@ -7,6 +7,7 @@ import { Eyebrow } from "@/components/ui/eyebrow";
 import { GameCover } from "@/components/ui/game-cover";
 import { SectionTitle } from "@/components/ui/section-title";
 import { StatTile } from "@/components/ui/stat-tile";
+import { TimeEstimate } from "@/components/ui/time-estimate";
 import { getLocale } from "@/lib/i18n";
 import { getMissablesIndex, getPlayOrderData, getSeriesGames } from "@/lib/data";
 
@@ -135,7 +136,13 @@ export default async function HomePage() {
                   {featured.summary}
                 </p>
                 <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[16px] text-[var(--text-tertiary)]">
-                  <span className="font-mono">{featured.estimatedHours}</span>
+                  <TimeEstimate
+                    locale={locale}
+                    story={featured.timeEstimate.story}
+                    completion={featured.timeEstimate.completion}
+                    note={featured.timeEstimate.note}
+                    compact
+                  />
                   <span aria-hidden="true" className="text-white/20">·</span>
                   <span>{locale === "ko" ? `업적 ${featured.achievements}` : `${featured.achievements} ach.`}</span>
                   <span aria-hidden="true" className="text-white/20">·</span>
@@ -217,13 +224,13 @@ export default async function HomePage() {
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col p-4">
-                  <h3 className="font-display line-clamp-1 text-[17px] font-extrabold tracking-tight text-white">
+                  <h3 className="font-display line-clamp-2 min-h-[2.5rem] text-[17px] font-extrabold leading-5 tracking-tight text-white">
                     {game.name}
                   </h3>
                   <p className="mt-1.5 line-clamp-2 min-h-[3em] text-[16px] leading-6 text-[var(--text-secondary)]">
                     {game.summary}
                   </p>
-                  <div className="mt-3 flex flex-wrap gap-1.5">
+                  <div className="mt-3 flex flex-wrap gap-1.5 pb-2">
                     {game.missableCount > 0 && (
                       <Chip tone="danger" size="xs">
                         <FiTarget size={10} aria-hidden="true" />
@@ -236,12 +243,20 @@ export default async function HomePage() {
                       </Chip>
                     )}
                   </div>
-                  <div className="mt-auto flex items-center justify-between border-t border-[var(--border-subtle)] pt-3 mt-3 text-[16px] text-[var(--text-tertiary)]">
-                    <span className="font-mono">{game.estimatedHours}</span>
-                    <span className="inline-flex items-center gap-1 font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
-                      {locale === "ko" ? "공략" : "Guide"}
-                      <FiArrowRight size={12} aria-hidden="true" />
-                    </span>
+                  <div className="mt-auto border-t border-[var(--border-subtle)] pt-3 text-[14px] text-[var(--text-tertiary)]">
+                    <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-end gap-3">
+                      <TimeEstimate
+                        locale={locale}
+                        story={game.timeEstimate.story}
+                        completion={game.timeEstimate.completion}
+                        note={game.timeEstimate.note}
+                        stacked
+                      />
+                      <span className="inline-flex shrink-0 items-center gap-1 pb-0.5 text-[16px] font-semibold text-[var(--accent)] transition-transform group-hover:translate-x-0.5">
+                        {locale === "ko" ? "공략" : "Guide"}
+                        <FiArrowRight size={12} aria-hidden="true" />
+                      </span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -367,8 +382,8 @@ export default async function HomePage() {
               },
               {
                 icon: <FiClock size={18} aria-hidden="true" />,
-                title: locale === "ko" ? "완료 예상 시간" : "Completion estimates",
-                desc: locale === "ko" ? "어디까지가 무리인지 미리 가늠합니다." : "Plan your route before you commit.",
+                title: locale === "ko" ? "스토리 / 100% 시간" : "Story / 100% ranges",
+                desc: locale === "ko" ? "Steam 평균처럼 보이지 않도록 메인과 완주 범위를 분리합니다." : "Main-story and full-completion ranges stay separate instead of pretending to be one average.",
               },
             ].map((pillar) => (
               <div

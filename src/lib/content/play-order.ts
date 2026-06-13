@@ -1,5 +1,80 @@
 import { CURATED_GAMES } from "./games";
-import type { PlayOrderEntry } from "./types";
+import type { PlayOrderEntry, ReferenceTitle } from "./types";
+
+export const REFERENCE_TITLES: ReferenceTitle[] = [
+  {
+    title: { ko: "용과 같이", en: "Yakuza" },
+    year: 2005,
+    placement: {
+      ko: "극 1과 같은 사건",
+      en: "Same story slot as Kiwami",
+    },
+    note: {
+      ko: "PS2 원작 1편입니다. 업적 추적 대상은 아니지만, 원작 연출과 톤을 보고 싶다면 극 1 전후에 참고하기 좋습니다.",
+      en: "The PS2 original. Not tracked for achievements here, but useful around Kiwami if you want the original tone and staging.",
+    },
+  },
+  {
+    title: { ko: "용과 같이 2", en: "Yakuza 2" },
+    year: 2006,
+    placement: {
+      ko: "극 2와 같은 사건",
+      en: "Same story slot as Kiwami 2",
+    },
+    note: {
+      ko: "PS2 원작 2편입니다. 극 2와 같은 큰 줄기를 다루지만 오리지널 구성 차이가 있어 시리즈 아카이브용으로 남깁니다.",
+      en: "The PS2 original. It covers the same broad events as Kiwami 2, with enough structural differences to matter for an archive view.",
+    },
+  },
+  {
+    title: { ko: "쿠로효: 용과 같이 신장", en: "Kurohyou: Ryu ga Gotoku Shinsho" },
+    year: 2010,
+    placement: {
+      ko: "4편 전후의 PSP 외전",
+      en: "PSP spin-off around the Yakuza 4 era",
+    },
+    note: {
+      ko: "Steam 업적은 없지만 카무로초를 다른 주인공 시점으로 보는 휴대용 외전입니다. 플레이 순서/세계관 보관소 후보로 표시합니다.",
+      en: "No Steam achievement route, but it is a Kamurocho-set handheld spin-off with a different lead. Marked as a future archive candidate.",
+    },
+  },
+  {
+    title: { ko: "쿠로효 2: 용과 같이 아수라편", en: "Kurohyou 2: Ryu ga Gotoku Ashura Hen" },
+    year: 2012,
+    placement: {
+      ko: "5편 전후의 PSP 외전",
+      en: "PSP spin-off around the Yakuza 5 era",
+    },
+    note: {
+      ko: "쿠로효 후속작입니다. 현재는 업적 체크리스트가 아닌 RGG 정보 보관소 확장 후보로 다룹니다.",
+      en: "The Kurohyou sequel. For now, it belongs in the RGG archive lane rather than the achievement checklist lane.",
+    },
+  },
+  {
+    title: { ko: "용과 같이 켄잔!", en: "Ryu ga Gotoku Kenzan!" },
+    year: 1605,
+    placement: {
+      ko: "독립 역사 외전",
+      en: "Standalone historical spin-off",
+    },
+    note: {
+      ko: "현대 본편과 분리된 PS3 역사 외전입니다. 유신과 함께 별도 역사 외전 묶음으로 확장할 수 있습니다.",
+      en: "A PS3 historical spin-off separate from the modern saga. It can sit beside Ishin in a future historical branch.",
+    },
+  },
+  {
+    title: { ko: "용과 같이 OF THE END", en: "Yakuza: Dead Souls" },
+    year: 2011,
+    placement: {
+      ko: "비정사 좀비 외전",
+      en: "Non-canon zombie spin-off",
+    },
+    note: {
+      ko: "정사 흐름과는 분리된 PS3 외전입니다. 완료 추적보다는 시리즈 전체 색인에서 다루는 편이 자연스럽습니다.",
+      en: "A non-canon PS3 spin-off. Better suited to a full-series index than the main completion route.",
+    },
+  },
+];
 
 const CHRONOLOGICAL_REASONS: Record<string, { ko: string; en: string }> = {
   "like-a-dragon-ishin": {

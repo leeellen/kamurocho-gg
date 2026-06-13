@@ -1,6 +1,6 @@
 import { cache } from "react";
 
-import { PLAY_ORDER } from "@/lib/content";
+import { PLAY_ORDER, REFERENCE_TITLES } from "@/lib/content";
 import { type Locale } from "@/lib/i18n";
 
 import { getSeriesGames } from "./series";
@@ -23,5 +23,11 @@ export const getPlayOrderData = cache(async (locale: Locale) => {
         game: gameMap.get(entry.slug),
       }))
       .filter((entry) => entry.game),
+    references: REFERENCE_TITLES.map((entry) => ({
+      title: locale === "ko" ? entry.title.ko : entry.title.en,
+      year: entry.year,
+      placement: locale === "ko" ? entry.placement.ko : entry.placement.en,
+      note: locale === "ko" ? entry.note.ko : entry.note.en,
+    })),
   };
 });

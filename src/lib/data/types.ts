@@ -39,6 +39,11 @@ export type SeriesGameCard = {
   releaseDate: string | null;
   platforms: string[];
   estimatedHours: string;
+  timeEstimate: {
+    story: string;
+    completion: string;
+    note: string;
+  };
   difficulty: number;
   missableCount: number;
   achievements: number;

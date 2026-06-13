@@ -14,6 +14,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류 / 마지마", en: "Kiryu / Majima" },
     platforms: ["PC", "Steam"],
     estimatedHours: "35h",
+    timeEstimate: {
+      story: "60h+",
+      completion: "140-180h",
+      note: {
+        ko: "기존 단일 추정치가 너무 낮아 보였던 대표 작품입니다. 메인만 천천히 밀어도 60시간 이상을 잡는 편이 안전합니다.",
+        en: "The old single estimate was especially misleading here. Even a relaxed main-story run can easily pass 60 hours.",
+      },
+    },
     difficulty: 3,
     missableCount: 7,
     engine: "Magical V Engine (PS3 carryover)",
@@ -31,6 +39,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "30h",
+    timeEstimate: {
+      story: "20-30h",
+      completion: "80-100h",
+      note: {
+        ko: "Majima Everywhere와 컴플리션 리스트 때문에 100%는 메인보다 훨씬 깁니다.",
+        en: "Majima Everywhere and the Completion List make 100% much longer than the main route.",
+      },
+    },
     difficulty: 3,
     missableCount: 4,
     engine: "Magical V Engine (PS3 carryover)",
@@ -48,6 +64,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "40h",
+    timeEstimate: {
+      story: "25-35h",
+      completion: "80-110h",
+      note: {
+        ko: "영구 Missable은 적지만 서브 콘텐츠와 클랜/캬바쿠라 정리가 시간을 크게 늘립니다.",
+        en: "Few permanent traps, but substories, Clan Creator, and cabaret cleanup stretch the run.",
+      },
+    },
     difficulty: 3,
     missableCount: 6,
     engine: "Dragon Engine",
@@ -65,6 +89,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "45h",
+    timeEstimate: {
+      story: "35-45h",
+      completion: "90-120h",
+      note: {
+        ko: "신규 리메이크/외전 구성이라 추정치는 보수적으로 표시합니다.",
+        en: "Shown conservatively because the remake and Dark Ties package changes the route.",
+      },
+    },
     difficulty: 3,
     missableCount: 0,
     engine: "Dragon Engine",
@@ -82,6 +114,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "45h",
+    timeEstimate: {
+      story: "20-30h",
+      completion: "90-120h",
+      note: {
+        ko: "구작 미니게임과 장별 체크가 100% 시간을 크게 끌어올립니다.",
+        en: "Older minigames and chapter checks make the 100% route much heavier than the story.",
+      },
+    },
     difficulty: 4,
     missableCount: 9,
     engine: "Magical V Engine (PS3 remaster)",
@@ -99,6 +139,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류 외 3명", en: "Kiryu + 3" },
     platforms: ["PC", "Steam"],
     estimatedHours: "40h",
+    timeEstimate: {
+      story: "25-35h",
+      completion: "80-110h",
+      note: {
+        ko: "4인 주인공 구조라 장 전환 전에 사이드 진행을 점검하는 시간이 필요합니다.",
+        en: "The four-lead structure rewards extra checking before each protagonist handoff.",
+      },
+    },
     difficulty: 4,
     missableCount: 12,
     engine: "Magical V Engine (PS3 remaster)",
@@ -116,6 +164,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류 외 4명", en: "Kiryu + 4" },
     platforms: ["PC", "Steam"],
     estimatedHours: "70h",
+    timeEstimate: {
+      story: "45-60h",
+      completion: "150-200h",
+      note: {
+        ko: "시리즈에서 가장 긴 축입니다. 하루카/어나더 드라마/컴플리션을 따로 예산 잡는 편이 좋습니다.",
+        en: "One of the biggest runs in the series. Budget separately for Haruka, Another Drama, and full completion.",
+      },
+    },
     difficulty: 5,
     missableCount: 14,
     engine: "Magical V Engine (PS3 remaster)",
@@ -133,6 +189,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "35h",
+    timeEstimate: {
+      story: "18-25h",
+      completion: "50-70h",
+      note: {
+        ko: "메인은 짧은 편이지만 클랜, 야구, 스낵, 서브스토리 정리가 남습니다.",
+        en: "The story is compact, but clan, baseball, snack, and substory cleanup still add up.",
+      },
+    },
     difficulty: 3,
     missableCount: 5,
     engine: "Dragon Engine",
@@ -150,6 +214,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "키류", en: "Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "30h",
+    timeEstimate: {
+      story: "12-18h",
+      completion: "30-45h",
+      note: {
+        ko: "현대 작품 중 가장 짧은 축이지만 아카메/콜로세움/호스티스 정리는 별도 루프입니다.",
+        en: "One of the shortest modern entries, with Akame, Coliseum, and hostess cleanup as the main extra loop.",
+      },
+    },
     difficulty: 3,
     missableCount: 5,
     engine: "Dragon Engine (Enhanced)",
@@ -167,6 +239,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "사카모토 료마", en: "Ryoma Sakamoto" },
     platforms: ["PC", "Steam"],
     estimatedHours: "60h",
+    timeEstimate: {
+      story: "30-40h",
+      completion: "120-160h",
+      note: {
+        ko: "어나더 라이프, 대원 카드, 제작/파밍 때문에 플래티넘은 장기전입니다.",
+        en: "Another Life, Trooper Cards, crafting, and farming turn the platinum route into a long haul.",
+      },
+    },
     difficulty: 4,
     missableCount: 0,
     engine: "Unreal Engine 4",
@@ -184,6 +264,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "이치반", en: "Ichiban" },
     platforms: ["PC", "Steam"],
     estimatedHours: "55h",
+    timeEstimate: {
+      story: "45-60h",
+      completion: "90-120h",
+      note: {
+        ko: "RPG 육성, 회사 경영, True Final Millennium Tower 준비 시간을 따로 봐야 합니다.",
+        en: "Account for RPG leveling, business management, and True Final Millennium Tower prep.",
+      },
+    },
     difficulty: 3,
     missableCount: 8,
     engine: "Dragon Engine",
@@ -201,6 +289,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "이치반 / 키류", en: "Ichiban / Kiryu" },
     platforms: ["PC", "Steam"],
     estimatedHours: "75h",
+    timeEstimate: {
+      story: "60-80h",
+      completion: "120-160h",
+      note: {
+        ko: "하와이/일본 양쪽의 링크, 던전, 도감형 콘텐츠가 100% 시간을 늘립니다.",
+        en: "Links, dungeons, and checklist-heavy systems across Hawaii and Japan stretch the 100% route.",
+      },
+    },
     difficulty: 4,
     missableCount: 0,
     engine: "Dragon Engine",
@@ -218,6 +314,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "마지마", en: "Majima" },
     platforms: ["PC", "Steam"],
     estimatedHours: "40h",
+    timeEstimate: {
+      story: "25-35h",
+      completion: "60-80h",
+      note: {
+        ko: "해상/콜로세움/미나토 걸 라인이 메인 이후 정리 분량을 만듭니다.",
+        en: "Naval, Coliseum, and Minato Girl lines make up most of the post-story cleanup.",
+      },
+    },
     difficulty: 3,
     missableCount: 0,
     engine: "Dragon Engine",
@@ -235,6 +339,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "야가미", en: "Yagami" },
     platforms: ["PC", "Steam"],
     estimatedHours: "40h",
+    timeEstimate: {
+      story: "25-35h",
+      completion: "90-120h",
+      note: {
+        ko: "탐정 사이드케이스, 친구 이벤트, 미니게임이 플래티넘 시간을 크게 늘립니다.",
+        en: "Side cases, friends, and minigames push the platinum route far beyond the story.",
+      },
+    },
     difficulty: 3,
     missableCount: 4,
     engine: "Dragon Engine",
@@ -252,6 +364,14 @@ export const CURATED_GAMES: CuratedGame[] = [
     lead: { ko: "야가미", en: "Yagami" },
     platforms: ["PC", "Steam"],
     estimatedHours: "55h",
+    timeEstimate: {
+      story: "35-50h",
+      completion: "100-140h",
+      note: {
+        ko: "청춘 드라마와 TownGo 정리가 핵심 병목입니다.",
+        en: "School Stories and TownGo cleanup are the major bottlenecks.",
+      },
+    },
     difficulty: 4,
     missableCount: 7,
     engine: "Dragon Engine",
