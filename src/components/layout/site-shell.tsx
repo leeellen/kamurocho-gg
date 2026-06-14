@@ -200,11 +200,11 @@ export function SiteShell({
                   hub of every external achievement guide. Deliberately subtle. */}
               <Link
                 href="/empty-lot"
-                aria-label={locale === "ko" ? "공터 (시크릿)" : "The Empty Lot (secret)"}
+                aria-label={locale === "ko" ? "한 평의 공터 (시크릿)" : "The Empty Lot (secret)"}
                 title={locale === "ko" ? "한 평의 공터" : "The Empty Lot"}
-                className="cursor-pointer text-[var(--text-muted)]/60 transition-colors hover:text-[var(--accent)]"
+                className="cursor-pointer whitespace-nowrap text-[var(--text-muted)]/60 transition-colors hover:text-[var(--accent)]"
               >
-                {locale === "ko" ? "공터" : "Empty Lot"}
+                {locale === "ko" ? "한 평의 공터" : "The Empty Lot"}
               </Link>
             </div>
             <span lang="en" className="text-[16px] text-[var(--text-muted)]">

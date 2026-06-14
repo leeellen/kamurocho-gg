@@ -64,7 +64,7 @@ export default async function EmptyLotPage() {
               {isKo ? "시크릿 구역" : "Restricted area"}
             </Chip>
             <span className="font-mono text-[16px] uppercase tracking-[0.18em] text-[var(--text-tertiary)]">
-              {isKo ? "공터 · 카무로초" : "EMPTY LOT · KAMUROCHO"}
+              {isKo ? "한 평의 공터 · 카무로초" : "EMPTY LOT · KAMUROCHO"}
             </span>
           </div>
           <h1 className="font-display m-0 mt-4 text-[34px] font-extrabold leading-tight tracking-tight text-white md:text-[44px]">
