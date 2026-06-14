@@ -6,6 +6,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
 import { getLocale } from "@/lib/i18n";
 import { getEmptyLotGuides } from "@/lib/data";
+import { SAVE_FILE_CREDIT } from "@/lib/content";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -123,20 +124,14 @@ export default async function EmptyLotPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={
-                      game.save.source === "steam"
-                        ? isKo
-                          ? "Steam 커뮤니티 100% 세이브 파일 가이드"
-                          : "Steam Community 100% save-file guide"
-                        : isKo
-                          ? "Nexus Mods 100% 세이브 파일"
-                          : "Nexus Mods 100% save file"
+                      isKo
+                        ? "Steam 커뮤니티 세이브 파일 가이드 (게임 클리어·Amon·업적·100%)"
+                        : "Steam Community save-file guide (game-clear, Amon, achievements, 100%)"
                     }
                     className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)] px-3 py-2 text-[15px] font-semibold text-[var(--danger-text)] no-underline transition-colors hover:bg-[var(--accent-subtle)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
                   >
                     <FiDownload size={13} aria-hidden="true" />
-                    {isKo
-                      ? `100% 세이브 파일 (${game.save.source === "steam" ? "Steam" : "Nexus"})`
-                      : `100% save file (${game.save.source === "steam" ? "Steam" : "Nexus"})`}
+                    {isKo ? "세이브 파일" : "Save files"}
                   </a>
                 )}
               </div>
@@ -145,9 +140,18 @@ export default async function EmptyLotPage() {
         </ul>
 
         <p className="mt-8 text-[15px] leading-6 text-[var(--text-muted)]">
+          {isKo ? "세이브 파일 가이드는 모두 Steam 크리에이터 " : "All save-file guides are by the Steam creator "}
+          <a
+            href={SAVE_FILE_CREDIT.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[var(--text-secondary)] underline decoration-dotted underline-offset-2 transition-colors hover:text-[var(--accent)]"
+          >
+            {SAVE_FILE_CREDIT.author}
+          </a>
           {isKo
-            ? "외부 링크는 각 커뮤니티/제작자의 자료로 연결됩니다. kamurocho.gg는 이 자료들과 무관하며, 사이트 내 가이드는 이들을 교차 참조해 작성했습니다."
-            : "External links point to each community's or author's own work. kamurocho.gg isn't affiliated with them; the on-site guides cross-reference these sources."}
+            ? "의 자료이며, 게임 클리어·Amon·업적·100% 세이브가 묶여 있습니다. 게임 버전에 따라 호환이 다를 수 있으니 각 가이드의 설치 안내를 확인하세요. kamurocho.gg는 이 자료들과 무관합니다."
+            : ". Each guide bundles game-clear, Amon, achievement, and 100% saves. Compatibility can vary by game version — check each guide's install notes. kamurocho.gg isn't affiliated with them."}
         </p>
       </div>
     </SiteShell>

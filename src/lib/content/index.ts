@@ -12,6 +12,7 @@ export { MISSABLES } from "./missables";
 export {
   EXTERNAL_GUIDES,
   SAVE_FILES,
+  SAVE_FILE_CREDIT,
   type ExternalGuideKind,
   type ExternalGuideLink,
   type SaveFile,
