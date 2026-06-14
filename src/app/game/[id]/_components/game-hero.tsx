@@ -207,10 +207,24 @@ export function GameHero({
           {!showSteamProgress && (
             <StatTile
               tone="gold"
-              label={locale === "ko" ? "스토리 / 100%" : "Story / 100%"}
-              value={`${game.timeEstimate.story} / ${game.timeEstimate.completion}`}
+              label={locale === "ko" ? "플레이 타임" : "Playtime"}
+              value={
+                <span className="flex flex-col gap-1.5">
+                  <span className="flex items-baseline gap-2 whitespace-nowrap">
+                    <span className="font-mono text-[13px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)]">
+                      {locale === "ko" ? "스토리" : "Story"}
+                    </span>
+                    <span className="text-[26px] md:text-[30px]">{game.timeEstimate.story}</span>
+                  </span>
+                  <span className="flex items-baseline gap-2 whitespace-nowrap">
+                    <span className="font-mono text-[13px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)]">
+                      100%
+                    </span>
+                    <span className="text-[26px] md:text-[30px]">{game.timeEstimate.completion}</span>
+                  </span>
+                </span>
+              }
               hint={game.timeEstimate.note}
-              valueClassName="text-[34px] md:text-[40px]"
             />
           )}
         </dl>
