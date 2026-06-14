@@ -45,27 +45,10 @@ next-env.d.ts
 .playwright-mcp/
 .serena/
 
-# audit artifacts (Playwright snapshots, local screenshots)
-/.playwright-mcp/
-/audit-*.png
-/home-*.png
-/games-*.png
-/game-detail.png
-/game-mobile*.png
-/achievement.png
-/ach-after.png
-/me-after.png
-/me-tracked.png
-/order-after.png
-/missables-after.png
-/search-after.png
----
-/ach-fixed.png
-/game-lost*.png
-/game-fixed.png
-/home-fixed.png
-/games-fixed.png
-/ach-final.png
-/home-featured-fix.png
-login-verified.png
-.playwright-mcp/
+# work artifacts (Playwright snapshots, local screenshots, audit dumps, planning)
+/*.png
+/*-snap*.md
+/y0-final.md
+/m[0-9].md
+/AUDIT-REPORT.md
+/.planning/
