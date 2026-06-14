@@ -63,7 +63,7 @@ export default async function EmptyLotPage() {
               {isKo ? "시크릿 구역" : "Restricted area"}
             </Chip>
             <span className="font-mono text-[16px] uppercase tracking-[0.18em] text-[var(--text-tertiary)]">
-              空き地 · KAMUROCHO
+              {isKo ? "공터 · 카무로초" : "EMPTY LOT · KAMUROCHO"}
             </span>
           </div>
           <h1 className="font-display m-0 mt-4 text-[34px] font-extrabold leading-tight tracking-tight text-white md:text-[44px]">
@@ -117,16 +117,28 @@ export default async function EmptyLotPage() {
                     {linkLabel(link.kind)}
                   </a>
                 ))}
-                <a
-                  href={game.saveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={isKo ? "Steam 커뮤니티의 100% 세이브 파일 가이드" : "Steam Community 100% save-file guides"}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)] px-3 py-2 text-[15px] font-semibold text-[var(--danger-text)] no-underline transition-colors hover:bg-[var(--accent-subtle)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
-                >
-                  <FiDownload size={13} aria-hidden="true" />
-                  {isKo ? "100% 세이브 파일" : "100% save file"}
-                </a>
+                {game.save && (
+                  <a
+                    href={game.save.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={
+                      game.save.source === "steam"
+                        ? isKo
+                          ? "Steam 커뮤니티 100% 세이브 파일 가이드"
+                          : "Steam Community 100% save-file guide"
+                        : isKo
+                          ? "Nexus Mods 100% 세이브 파일"
+                          : "Nexus Mods 100% save file"
+                    }
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)] px-3 py-2 text-[15px] font-semibold text-[var(--danger-text)] no-underline transition-colors hover:bg-[var(--accent-subtle)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                  >
+                    <FiDownload size={13} aria-hidden="true" />
+                    {isKo
+                      ? `100% 세이브 파일 (${game.save.source === "steam" ? "Steam" : "Nexus"})`
+                      : `100% save file (${game.save.source === "steam" ? "Steam" : "Nexus"})`}
+                  </a>
+                )}
               </div>
             </li>
           ))}

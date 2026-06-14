@@ -55,3 +55,32 @@ export const EXTERNAL_GUIDES: Record<string, ExternalGuideLink[]> = {
     { kind: "powerpyx", url: "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/" },
   ],
 };
+
+export type SaveFileSource = "steam" | "nexus";
+
+export type SaveFile = {
+  source: SaveFileSource;
+  url: string;
+};
+
+// Curated direct links to community 100% / game-clear save files per game.
+// Steam Community guides are preferred (same ecosystem as the achievement
+// links); Nexus Mods is used where the cleanest full-100% save lives there.
+// These are community-hosted, single-player save files — kamurocho.gg hosts
+// nothing itself, it only points to the existing public pages.
+export const SAVE_FILES: Record<string, SaveFile> = {
+  "yakuza-0": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3458411706" },
+  "yakuza-kiwami": { source: "nexus", url: "https://www.nexusmods.com/yakuzakiwami/mods/72" },
+  "yakuza-kiwami-2": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3176844084" },
+  "yakuza-3": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2379715518" },
+  "yakuza-4": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2389968624" },
+  "yakuza-5": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2408950501" },
+  "yakuza-6": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3486501762" },
+  "yakuza-like-a-dragon": { source: "nexus", url: "https://www.nexusmods.com/yakuzalikeadragon/mods/300" },
+  "like-a-dragon-infinite-wealth": { source: "nexus", url: "https://www.nexusmods.com/likeadragoninfinitewealth/mods/452" },
+  "like-a-dragon-gaiden": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3076926005" },
+  "like-a-dragon-ishin": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2934909648" },
+  "like-a-dragon-pirate-yakuza-in-hawaii": { source: "nexus", url: "https://www.nexusmods.com/likeadragonpirateyakuzainhawaii/mods/180" },
+  "judgment": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2864943075" },
+  "lost-judgment": { source: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2872921349" },
+};
