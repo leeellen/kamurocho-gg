@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FiAlertTriangle, FiArrowLeft, FiExternalLink } from "react-icons/fi";
+import { FiAlertTriangle, FiArrowLeft, FiDownload, FiExternalLink } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
@@ -10,10 +10,10 @@ import { getEmptyLotGuides } from "@/lib/data";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const isKo = locale === "ko";
-  const title = isKo ? "한 평의 공터 — 외부 공략 총집합" : "The Empty Lot — every external guide";
+  const title = isKo ? "한 평의 공터 — 지친 컴플리셔니스트의 지름길" : "The Empty Lot — the burned-out completionist's shortcut";
   const description = isKo
-    ? "카무로초에서 가장 많이 다투던 빈 땅. 작품별 외부 업적 공략(Steam·PowerPyx)을 한자리에 모았습니다."
-    : "Kamurocho's most fought-over patch of dirt — every game's external achievement guide (Steam & PowerPyx), gathered in one place.";
+    ? "노가다에 지쳤는데 100% 업적은 갖고 싶다면. 작품별 외부 공략과 Steam 커뮤니티 100% 세이브 파일을 한자리에 모았습니다."
+    : "Burned out on the grind but still want the 100%? Every game's external guide and the community 100% save files, gathered in one place.";
   return {
     title,
     description,
@@ -69,15 +69,20 @@ export default async function EmptyLotPage() {
           <h1 className="font-display m-0 mt-4 text-[34px] font-extrabold leading-tight tracking-tight text-white md:text-[44px]">
             {isKo ? "한 평의 공터" : "The Empty Lot"}
           </h1>
+          <p className="m-0 mt-3 max-w-[68ch] text-[18px] font-semibold leading-7 text-white">
+            {isKo
+              ? "노가다는 너무 스트레스인데, 그래도 100% 업적은 갖고 싶다면."
+              : "Too burned out to grind — but you still want that 100%?"}
+          </p>
           <p className="m-0 mt-3 max-w-[68ch] text-[17px] leading-7 text-[var(--text-secondary)]">
             {isKo
-              ? "용과 같이 0에서 카무로초 전체가 가장 많이 다투던 빈 땅. 여긴 아직 아무것도 세워지지 않았지만, 도시의 모든 외부 공략이 여기 묻혀 있습니다. 작품별 Steam 커뮤니티 공략과 PowerPyx 트로피 로드맵을 한자리에 모았어요."
-              : "The patch of dirt all of Kamurocho fought over in Yakuza 0. Nothing's built here yet — but every external guide in the city is buried in this lot. Steam Community walkthroughs and PowerPyx trophy roadmaps for each title, gathered in one place."}
+              ? "용과 같이 0에서 카무로초 전체가 가장 많이 다투던 빈 땅. 여긴 지름길입니다. 작품별 외부 공략은 물론, Steam 커뮤니티에 올라온 100% 세이브 파일까지 바로 안내합니다. 마작 4000점도, 당구 캐롬도 건너뛰고 싶은 날을 위해서요."
+              : "The patch of dirt all of Kamurocho fought over in Yakuza 0 — and the shortcut. Alongside each title's external walkthrough, this lot points you straight to the community 100% save files. For the days you just can't face mahjong yaku or carom shots one more time."}
           </p>
           <p className="m-0 mt-3 max-w-[68ch] text-[15px] leading-6 text-[var(--text-muted)]">
             {isKo
-              ? "세이브 파일이나 자동 해제 같은 건 없습니다 — 100%는 직접 일궈야 의미가 있으니까요. 여긴 길을 알려주는 지도일 뿐입니다."
-              : "No save files, no auto-unlocks — 100% only means something when you earn it. This lot just hands you the map."}
+              ? "세이브 파일은 모두 싱글플레이어용이고 본인 계정·본인 게임에만 적용됩니다. 다운로드 전 기존 세이브는 꼭 백업하세요. 직접 깨는 재미가 그리우면 언제든 위 공략으로 돌아오면 됩니다."
+              : "These saves are single-player only and apply to your own account and copy. Back up your existing save before swapping. And if you miss earning it yourself, the guides above are always here."}
           </p>
         </section>
 
@@ -112,6 +117,16 @@ export default async function EmptyLotPage() {
                     {linkLabel(link.kind)}
                   </a>
                 ))}
+                <a
+                  href={game.saveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={isKo ? "Steam 커뮤니티의 100% 세이브 파일 가이드" : "Steam Community 100% save-file guides"}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent-border)] bg-[var(--danger-bg)] px-3 py-2 text-[15px] font-semibold text-[var(--danger-text)] no-underline transition-colors hover:bg-[var(--accent-subtle)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                >
+                  <FiDownload size={13} aria-hidden="true" />
+                  {isKo ? "100% 세이브 파일" : "100% save file"}
+                </a>
               </div>
             </li>
           ))}

@@ -8,7 +8,17 @@ export type EmptyLotGuide = {
   name: string;
   year: number;
   links: { kind: ExternalGuideKind; url: string }[];
+  /**
+   * Steam Community guides for this title filtered to save-file uploads.
+   * We link to the live search rather than hard-coding fragile guide IDs, so
+   * it always lands on whatever 100% saves the community currently hosts.
+   */
+  saveUrl: string;
 };
+
+function steamSaveSearchUrl(appId: number): string {
+  return `https://steamcommunity.com/app/${appId}/guides/?searchText=save&browsefilter=trend`;
+}
 
 /**
  * Game-by-game external achievement guides for the hidden "Empty Lot" hub.
@@ -24,5 +34,6 @@ export const getEmptyLotGuides = cache((locale: Locale): EmptyLotGuide[] =>
       name: locale === "ko" ? game.title.ko : game.title.en,
       year: game.year,
       links: EXTERNAL_GUIDES[game.slug],
+      saveUrl: steamSaveSearchUrl(game.appId),
     })),
 );
