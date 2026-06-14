@@ -28,6 +28,10 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "신사에서 미덕(Virtue)을 소비해 밭 크기·재배 속도·수확량을 키우면 후반 효율이 급상승합니다.", en: "Spend Virtue at the shrine to expand the plot and improve growth speed/yield — late-game efficiency snowballs." },
         { ko: "요리는 손질·불 조절·국물 붓기·생선 굽기 리듬 게임의 묶음입니다. 퍼펙트를 노리면 음식 품질과 하루카 호감도가 올라갑니다.", en: "Cooking is a bundle of rhythm games (chopping, fire-stoking, pouring stock, grilling). Perfect timing raises meal quality and Haruka's affection." },
         { ko: "집 안 책장에서 교역 주문을 받아 작물·요리·생선을 비싸게 팔아 빚을 갚으며 진행하세요.", en: "Use the bookcase indoors to take trading orders — sell produce, meals, and fish at a premium to pay down the debt." },
+        { ko: "최고 수익 작물은 인삼(고려인삼)입니다. 미덕 1만을 들여 해금하면 고급 주문 1건당 약 4만 5천 몬을 받으니, 밭이 커진 뒤 인삼 칸을 2칸 정도 상시 확보하세요. (고급 주문은 보통 인삼 1개만 요구)", en: "Ginseng is the single most profitable crop: it costs 10,000 Virtue to unlock, but high-end orders pay ~45,000 mon each, and those orders usually need only one ginseng — once your plot is large, keep about two squares dedicated to it." },
+        { ko: "그냥 파는 것보다 「교역 주문」을 채우는 쪽이 훨씬 비쌉니다. 같은 재료라도 주문으로 넘기면 수익과 미덕을 함께 얻으니 항상 주문 우선으로 처리하세요.", en: "Filling a trade order pays far more than selling the same item directly — orders also grant Virtue, so always route surplus into orders first." },
+        { ko: "요리 리듬 게임은 랜덤이 아니라 패턴이 고정되어 있습니다. 한 번 외워두면 매번 퍼펙트가 가능하고, 전 과정 퍼펙트 시 효과가 2배인 「프리미엄」 요리가 나옵니다.", en: "The cooking rhythm games are not randomized — the timing is fixed, so once you memorize a recipe you can nail it every time; a flawless run yields a 'Premium' dish with doubled effects." },
+        { ko: "업그레이드 우선순위는 초반 밭 확장 1~2단계를 최우선으로, 빠른 작물(다이콘 등)로 미덕을 모으세요. 비료는 빠른 작물에 낭비하지 말고 성장이 느린 작물에만 쓰는 게 효율적입니다.", en: "Upgrade priority: rush the first two Farm Expansion levels while grinding Virtue with fast crops (daikon, etc.). Don't waste fertilizer on fast crops — save it for slow-growing ones." },
       ],
       videos: [
         { title: { ko: "어나더 라이프 농사 가이드", en: "Another Life farming guide" }, url: YT("5BCSwtPpgHQ") },
@@ -47,10 +51,14 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "3장 이후 라쿠나이 북동쪽 큰 보라색 건물 남쪽으로 가면 「니치부자의 새 팬」 서브스토리로 해금됩니다.", en: "From Chapter 3, approach the south side of the large purple building in NE Rakunai to trigger the 'Nichibuza's Newest Fan' substory that unlocks it." },
         { ko: "흰 막대가 원 끝에 닿는 순간 해당 방향/버튼을 누르세요. 「Beautiful」 판정이 최고 등급입니다.", en: "Press the matching direction/button the instant the white bar reaches the end of the circle — 'Beautiful' is the top grade." },
         { ko: "비기너는 4버튼이지만 상위 난이도는 8버튼으로 늘어나니, 컴플리션만 노린다면 쉬운 곡부터 클리어하세요.", en: "Beginner uses 4 buttons; higher difficulties double to 8. For completion only, clear the easy songs first." },
+        { ko: "곡의 기본 리듬은 「탄-탄-타타탄」입니다. 버튼 입력도 대부분 이 박자를 따라가니, 멜로디를 흥얼거리며 박자를 몸에 익히면 「Beautiful」 판정이 훨씬 쉬워집니다.", en: "The songs follow a 'tan-tan ta-ta-tan' rhythm and the prompts mostly track that beat — hum the melody to internalize the timing and 'Beautiful' grades come far more easily." },
+        { ko: "히트 게이지를 가득 채우면 「공(gong)」 소리와 함께 「쇼스토퍼」 버튼이 떠 큰 점수를 얻습니다.", en: "Filling the Heat gauge triggers a 'gong' and a Showstopper prompt for a big point burst." },
+        { ko: "스틱으로 부채를 끝까지 옮기는 EX 부채춤은 4000점을 주지만, 콤보가 끊겼거나 콤보가 15 미만일 때만 쓰세요. 콤보가 길면 그냥 노트를 치는 편이 점수가 더 높습니다.", en: "The EX fan dance (move the fan to the end with the stick) is worth 4,000 points, but only use it when your combo is broken or under 15 — with a long combo, just hitting notes normally scores more." },
       ],
       videos: [
         { title: { ko: "부채춤 플레이 가이드", en: "Buyo Dancing gameplay guide" }, url: YT("EBlH8xF75oE") },
         { title: { ko: "부채춤 미니게임 영상", en: "Buyo Dancing mini-game" }, url: YT("piJMr8shFoU") },
+        { title: { ko: "전 곡 100% 퍼펙트 (게이샤 난이도)", en: "100% Perfect on every song (Geisha difficulty)" }, url: YT("Fl0bmzOTUvU") },
       ],
     },
     {
@@ -142,6 +150,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "손패를 닫은 채(펑/치 없이) 유지해야 리치를 선언할 수 있습니다.", en: "Keep your hand fully closed (no Pon/Chi) so you can declare Riichi." },
         { ko: "2~8 숫자패만 모으는 「탄야오」를 노리세요. 텐파이가 되면 리치 선언으로 역이 붙습니다.", en: "Chase Tanyao (simples 2–8). When you're one tile from a complete hand, declare Riichi to attach a yaku." },
         { ko: "컴플리션은 큰 점수가 아니라 화료(승리) 자체가 목적입니다. 빠른 화료 위주로 진행하세요.", en: "Completion only needs a win, not a big score — prioritize fast hands." },
+        { ko: "규칙 설정에서 「쿠이탄(먹은 탄야오 인정)」과 「적 도라」를 켜고 「2판 縛り(2판 묶음)」는 끄세요. 펑·치로 탄야오를 빠르게 완성할 수 있어 화료가 훨씬 쉬워집니다.", en: "In the rules, turn on Kuitan (open Tanyao allowed) and Red Dora, and disable the 2-han minimum — this lets you Pon/Chi your way to a fast open Tanyao, making a win much easier." },
+        { ko: "시간 단축을 위해 「반장(半荘)」 대신 「동풍전(東風戦, Half Game/East-only)」으로 짧게 돌리는 것을 추천합니다.", en: "Play the shorter East-only (Half Game) format rather than a full hanchan to keep matches from dragging." },
       ],
     },
     {
@@ -173,6 +183,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
       howTo: [
         { ko: "3장 이후 라쿠가이에서 이용할 수 있습니다. 각 닭의 능력치와 배당을 보고 베팅하세요.", en: "Available in Rakugai from Chapter 3. Check each chicken's stats and odds before wagering." },
         { ko: "배당이 낮은(인기) 닭이 안정적이며, 자금벌이를 노린다면 능력치 높은 닭에 꾸준히 거세요.", en: "Low-odds (favorite) chickens are safer; for grinding money, bet consistently on the high-stat birds." },
+        { ko: "닭 선택 시 ①컨디션(화살표가 위면 최상), ②최근 성적(세 자리 숫자 = 직전 순위들), ③거리 적성(L/M/S)이 이번 레이스 거리와 맞는지를 보세요. 컨디션이 회복된 강한 닭이 가장 안전합니다.", en: "When picking a bird, check (1) Condition (an up arrow = peak), (2) Past Results (the three-digit number = its recent finishing places), and (3) distance aptitude (L/M/S) matching this race's length — a strong bird that has recovered to good condition is the safest pick." },
+        { ko: "확실한 자금벌이: 건물 밖에서 세이브 → 강한 닭 하나를 1착으로 고정해 그 닭이 1등인 모든 엑잭타(연승식) 조합에 300으로 베팅 → 성공하면 세이브, 실패하면 리로드. 1500표를 도박장에서 플래티넘 접시로 교환해 에비스 전당포에 팔면 약 3료 7500몬이 됩니다.", en: "Reliable money farm: save outside the arena, lock one strong bird as 1st place, bet 300 on every Exacta combination with that bird winning, then save on a win and reload on a loss. Exchange 1,500 tags at the Gambling Den for a Platinum Plate and sell it to the Ebisu pawnbroker for ~3 ryo 7,500 mon." },
       ],
       videos: [
         { title: { ko: "치킨 레이싱 가이드", en: "Chicken Racing guide" }, url: YT("04DO5If8D-w") },

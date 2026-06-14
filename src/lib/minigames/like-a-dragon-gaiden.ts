@@ -28,6 +28,8 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "콜로세움 매치 중에는 회복 아이템을 쓸 수 없습니다. 능력치(체력·공격)를 먼저 강화하고 입장하세요.", en: "You can't use healing items inside Coliseum matches — upgrade your Health and Attack abilities before entering." },
         { ko: "에이전트 스타일의 거미줄·전기 디바이스로 적을 묶어두고, 팀 배틀에서는 광역기로 다수를 한 번에 정리하세요.", en: "Use the Agent style's wire/electric devices to lock enemies down, and lean on AoE moves to thin out crowds in team battles." },
         { ko: "4대 천왕은 아이템 금지 보스전입니다. 야쿠자 스타일의 강력한 콤보와 가드·회피 타이밍을 숙지하고 도전하세요.", en: "The Four Kings are item-banned boss fights — go in with the Yakuza style's heavy combos and clean guard/dodge timing." },
+        { ko: "팀 배틀·서바이벌은 \"공격이 곧 답\"입니다. 방어보다 공격 보너스 기어를 우선 착용하고, 동료 슬롯은 공격형 위주로 채우되 자체 회복기를 가진 멤버를 1~2명 섞으세요. 미조로기 상점·캐슬 부티크에서 최고 기어를 구입하고 동료는 레벨/유대 등급을 최대(Lv.20·유대 Lv.3)까지 키우는 것이 정석입니다.", en: "Team battles and survival are \"damage is king\" — equip attack-boosting gear over defense and pack your ally slots with attackers, mixing in one or two who have self-heal abilities. Buy top gear from Mizorogi's Shop / the Castle Boutique and raise allies to max Level/Bond (Lv.20, Bond Lv.3)." },
+        { ko: "아레나 속성에 맞춰 내성 기어를 바꾸고, 매치 시작 전 미리 히트 게이지를 채워 두세요(매치 중에는 아이템 사용 불가). 군집 정리는 에이전트 스타일의 익스트림 히트 모드 약공격(적을 띄움)과 거미(서펀트) 디바이스가 가장 빠릅니다. 무기전은 무한 내구도 무기로 강공격을 반복해 스턴 락을 거는 것이 정답입니다.", en: "Swap in resistance gear to match the arena hazard (fire/electric) and fill your Heat gauge before the match starts (no items mid-match). The fastest crowd-clear is Agent style's Extreme Heat Mode light attacks (they launch enemies) plus the Serpent/wire gadget; for weapon matches, spam heavy attacks with the infinite-durability weapon to stun-lock the opponent." },
       ],
       videos: [
         { title: { ko: "콜로세움 플래티넘 랭크 + 4대 천왕 가이드", en: "Coliseum: reaching Platinum Rank & the Four Kings" }, url: YT("fPj_pyIz5Zg") },
@@ -48,6 +50,8 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "방문마다 10,000엔 + 드링크·선물 비용이 듭니다. 돈을 넉넉히 챙겨 가세요.", en: "Each visit costs ¥10,000 plus drinks and gifts — bring plenty of cash." },
         { ko: "대화 선택지는 가장 다정하고 공감하는 답을 고르면 대부분 호감도가 오릅니다. 막히면 호스티스별 정답 치트시트를 참고하세요.", en: "Pick the most affectionate, empathetic answer and Affection usually rises — use a per-hostess answer cheat sheet if you get stuck." },
         { ko: "「mini-more 향수」 계열 기어를 장착하면 호감도 상승에 보너스가 붙습니다.", en: "Equip 'mini-more Perfume' type gear for a bonus to Affection gains." },
+        { ko: "케이는 빙빙 돌리지 않는 직설적이고 솔직한 답을 좋아합니다. 정답 예: \"someone who does live broadcasts online\", \"to become a legendary Streamer\", 마지막은 \"I believe in you\". 아유는 정답 외에 비싼 드링크·선물로도 호감도를 크게 올릴 수 있고, 정답 예는 \"the ability to resist temptation\", \"they should be a role model\", 마지막 \"Congratulations. Let's raise a glass to you\".", en: "Kei rewards blunt, honest answers over polite hedging. Sample best picks: 'someone who does live broadcasts online,' 'to become a legendary Streamer,' and finally 'I believe in you.' For Ayu, expensive drinks/gifts raise Affection on top of answers; sample best picks are 'the ability to resist temptation,' 'they should be a role model,' and finally 'Congratulations. Let's raise a glass to you.'" },
+        { ko: "세션 안에서 하트가 안 차면 비싼 선물(귀걸이류 추천)로 마무리하고, 호스티스당 하트 3단계를 모두 채워야 전용 컷신이 열립니다.", en: "If the bar won't max within a session, finish with an expensive gift (earrings work well); you must fill all three heart levels per hostess to unlock her special cutscene." },
       ],
       videos: [
         { title: { ko: "클럽 헤븐리 호스티스 아유 공략 (해피엔딩)", en: "Club Heavenly hostess Ayu guide (happy ending)" }, url: YT("7iHrZVEWqCA") },
@@ -69,6 +73,7 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "캐슬은 게임 후반에 자유롭게 드나들 수 있으니, 캐슬 호스티스 공략은 헤븐리 이후로 미뤄도 됩니다.", en: "You get free run of the Castle later on, so it's fine to tackle the Castle hostesses after Heavenly." },
         { ko: "호스티스마다 좋아하는 선물과 정답 선택지가 다르니, 대화 전에 호감도 임계 마커를 확인하고 응답하세요.", en: "Each hostess has different preferred gifts and right answers — check the Affection threshold marker before you respond." },
         { ko: "정답률을 높이려면 호스티스별 정답 가이드를 참고하는 것이 가장 확실합니다.", en: "For the highest hit rate, follow a per-hostess best-answers guide." },
+        { ko: "캐슬 호스티스 정답 예 — 카나메: \"no need to be so polite\", \"you have my support\", 마지막 \"just be your usual self, and you'll be fine\" / 코코로: \"kids are great!\", \"yeah! Let's have a blast tonight\", 마지막 \"don't give up\" / 아이: \"overcoming stress together creates passion\", \"I'd like to\", 마지막 \"you're everything to me\".", en: "Castle hostess best picks — Kaname: 'no need to be so polite,' 'you have my support,' finally 'just be your usual self, and you'll be fine.' Kokoro: 'kids are great!,' 'yeah! Let's have a blast tonight,' finally 'don't give up.' Ai: 'overcoming stress together creates passion,' 'I'd like to,' finally 'you're everything to me.'" },
       ],
       videos: [
         { title: { ko: "캐슬 캐바레 호스티스 카나메 공략 (해피엔딩)", en: "Castle Cabaret hostess Kaname guide (happy ending)" }, url: YT("w6Ek9DDELKk") },
@@ -90,6 +95,8 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "코스마다 최적 세팅이 다릅니다. 직선이 긴 트랙은 속도형, 급커브가 많은 트랙은 안정형(느려도 코너에서 안 튕기는) 빌드를 쓰세요.", en: "Each track wants a different setup — speed builds for long straights, slow/stable builds for tracks full of sharp corners so you don't fly off." },
         { ko: "부스트는 코너 직전이나 트랙 이탈 위험 구간에서 아껴 쓰세요. 남발하면 차가 코스 밖으로 튕겨 나갑니다.", en: "Spend Boost sparingly — before corners or when you risk falling off — overusing it throws the car off the track." },
         { ko: "부품은 거리·상점에서 모읍니다. 검증된 추천 빌드(예: 골렘 재규어 + 슬림 타이어 계열)를 그대로 따라 하면 후반 컵도 안정적으로 우승할 수 있습니다.", en: "Collect parts around town and shops; copying a proven recommended build (e.g. Golem Jaguar + slim tires) reliably wins even the late cups." },
+        { ko: "후반(마스터스 컵) 추천 빌드: 울트라 갓스피드 모터 + 울트라 부스트 기어 + 울트라 스파이크 타이어 + 울트라 밸런스 프레임 + 하이스피드 배터리 + 헤비 서스펜션 + 레인보우 윙. 초반은 하이토크 모터 Mk.2 + 밸런스 기어 + 슬림 타이어 + 로켓 프레임 + 레귤러 배터리로 충분합니다.", en: "Late-game (Masters Cup) build: Ultra Godspeed Motor + Ultra Boost Gears + Ultra Spiked Tires + Ultra Balanced Frame + High-Speed Battery + Heavy Suspension + Rainbow Wing. Early on, High Torque Motor Mk.2 + Balanced Gears + Slim Tires + Rocket Frame + Regular Battery is enough." },
+        { ko: "부스트는 결승선 직전에 한 번 터뜨려 끝내고, 루프 코스는 루프 진입 직전에, 점프 구간은 착지 직후에 부스트를 써 컨트롤을 유지하세요.", en: "Fire a boost right before the finish line to close out a race; on loop tracks boost just before entering the loop, and on jumps boost right after you land to keep control." },
       ],
       videos: [
         { title: { ko: "포켓 서킷 완전 공략 (전 레이스)", en: "Pocket Circuit complete guide (all races)" }, url: YT("Sk3iPRprsiE") },

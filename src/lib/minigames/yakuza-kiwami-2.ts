@@ -27,6 +27,10 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
         { ko: "호스티스는 브론즈<실버<골드<플래티넘 등급입니다. 리그가 올라갈수록 골드·플래티넘 위주로 라인업을 짜되, 손님 타입(취향)에 맞는 호스티스를 매칭하세요.", en: "Hostesses rank Bronze < Silver < Gold < Platinum — lean on Golds/Platinums in higher leagues and match each hostess to the customer's preferred type." },
         { ko: "소텐보리를 돌아다니며 「파트너 숍」을 사두면 손님 유입이 늘어 랭킹전이 훨씬 쉬워집니다.", en: "Buy Partner Shops around Sotenbori to pull in more patrons and make ranking matches far easier." },
         { ko: "랭킹전은 단 하루의 최고 매출(경비 제외)로 순위가 정해집니다. 한 번의 완벽한 셔터에 집중하세요.", en: "Ranking is decided by your single best night's net earnings — focus on one flawless shift." },
+        { ko: "호스티스가 보내는 「도움 요청 손동작」을 외워두세요. 두 손 원=재떨이, 한 손 원=레이디스 글라스, L자=손님 글라스, 비트는 동작=물수건, 샤카 사인=얼음통, 양손 펴기=메뉴. 정답을 내면 추가 주문이 들어오고 호스티스 HP·손님 기분이 동시에 회복됩니다.", en: "Memorize the hostess request gestures: both-hands circle = ashtray, one-hand circle = ladies' glass, L-shape = guest glass, twisting = towel, shaka = ice bucket, open flat hands = menu. A correct answer adds an order and restores both hostess HP and customer mood." },
+        { ko: "피버 게이지는 1단계가 차는 순간 바로 R1로 발동하지 말고, 시간이 빠듯할 때 전략적으로 터뜨리세요. 3단계까지 채워 발동하면 컷신과 함께 모든 테이블의 매출·만족도가 폭발합니다.", en: "Don't auto-pop the Fever gauge at level 1 — save it for when time is tight, or charge to level 3 so the cutscene boosts sales and mood across every table at once." },
+        { ko: "부유한 손님(리치·타이쿤)일수록 취향이 까다로워 외모·성격이 정확히 맞아야 합니다. 플래티넘 호스티스는 헤어+드레스만 맞춰도 2개 스탯이 S랭크가 되니, 외형보다 스탯을 우선해 메이크오버하고 큐트/펀/엘레강스/섹시를 골고루 갖춘 라인업을 만드세요. 레벨 10·20·30에 열리는 디너 데이트로 추가 경험치를 벌 수 있습니다.", en: "Rich/Tycoon customers demand an exact look-and-personality match. Platinum hostesses hit two S-rank stats from hairstyle + dress alone, so prioritize stats over looks in makeovers and build a roster that covers Cute/Funny/Elegant/Sexy. Dinner dates unlock at levels 10/20/30 for bonus XP." },
+        { ko: "스카우트 비용은 시도할수록 비싸집니다. 스카우트 전 세이브 후, 브론즈가 나오면 리로드하는 세이브 스컴이 정석입니다. 고유 호스티스(코유키=올라운더, 에츠코·여교장=펀 S, 유리코·유카 등)는 서브스토리로 더 싸게 확보하세요.", en: "Scouting costs climb each attempt — save before scouting and reload on Bronze pulls (the standard save-scum). Grab unique hostesses (Koyuki = all-rounder, Etsuko / the Headmistress = S Funny, Yuriko, Yuka, etc.) cheaply via substories instead." },
       ],
       videos: [
         { title: { ko: "캐바레 클럽 공략 팁", en: "Cabaret Club guide: tips & tricks" }, url: YT("-dBV_78Pw2Y") },
@@ -47,6 +51,10 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
         { ko: "직원은 밸런스·공격·방어·원거리(프로텍션) 4타입입니다. 좁은 길목엔 방어형으로 막고, 원거리형으로 뒤에서 화력을 보태는 조합이 기본입니다.", en: "Employees come in Balanced, Attack, Defense, and ranged Protection types — wall chokepoints with Defense units and add fire from Protection units behind them." },
         { ko: "체력이 절반 이하로 떨어진 직원에겐 즉시 「스피릿(기력)」을 써서 회복시키세요. 초반에 유닛을 잃으면 전선이 무너집니다.", en: "Spend Spirits to heal any employee that drops below half HP — losing a unit early collapses your line." },
         { ko: "콜로세움·서브스토리·길거리 보스에서 강한 직원을 적극 영입해 로스터를 두껍게 만드세요.", en: "Recruit strong employees from the Coliseum, substories, and street bosses to deepen your roster." },
+        { ko: "원거리(프로텍션) 유닛을 최소 2명 데려가세요. 특히 「닥터」는 유탄 발사기로 광역 딜을 넣으면서 힐 스킬까지 있어 1순위 추천입니다.", en: "Bring at least two ranged (Protection) units — the Doctor is the top pick, dealing AoE with a grenade launcher while also having a heal skill." },
+        { ko: "유닛을 넓게 펼치지 말고 길목(초크 포인트)에 뭉쳐 막으세요. 적은 어차피 그 길로 와야 하므로 방어선을 뚫고 새는 일이 줄어듭니다.", en: "Don't over-stretch — cluster on chokepoints. Enemies are funneled through them anyway, so far fewer slip past your line." },
+        { ko: "전체 파티에 적용되는 버프 스킬을 우선하세요. 리키 초슈의 「피끓는 힘(Surging Power)」은 45초간 전군 공격 1.5배·방어 3배를 겁니다. 힘든 후반 웨이브에선 팀을 2~3개 그룹으로 나눠 L1·R1 핫스위치로 특정 지점에 빠르게 몰아넣으세요.", en: "Prioritize party-wide buff skills — Riki Choshu's Surging Power gives all allies 1.5x attack and 3x defense for 45s. On tough late waves, split your team into 2-3 groups and use L1/R1 hot-swap to rush units to one spot fast." },
+        { ko: "고득점은 남은 시설 내구도·격파 속도·절약한 자금·키와미 기술 사용 빈도로 계산됩니다. 스피릿(기력)은 5회 제한이니 초반엔 아끼고, 미션 후반엔 1/3만 닳아도 과감히 회복·버프에 쓰세요.", en: "High scores reward leftover facility durability, kill speed, cash saved, and Kiwami-move usage. Spirits are capped at five per battle — hoard them early, but spend freely on heals/buffs late even at a third HP lost." },
       ],
       videos: [
         { title: { ko: "클랜 크리에이터 100% 트로피 가이드", en: "Clan Creator 100% trophy guide" }, url: YT("eOFW4VIh1bU") },
@@ -68,6 +76,8 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
         { ko: "왼쪽 스틱으로 방향을, 파워 미터를 두 번 눌러(시작→정지) 비거리를 정합니다. 패널까지의 야드(거리) 표시를 보고 파워를 정확히 맞추세요.", en: "Aim with the left stick, then press twice (start → stop) on the power meter to set distance — match the yardage shown to the panel." },
         { ko: "빙고는 가로·세로·대각선 한 줄을 완성할 때마다 카운트됩니다. 공 10개로 9패널을 노리되, 한 줄을 완성하는 순서로 패널을 공략하세요.", en: "A bingo counts per completed row/column/diagonal — with 10 balls for 9 panels, sink panels in an order that completes lines." },
         { ko: "바람이 없으니 같은 파워는 항상 같은 거리입니다. 한 번 거리감을 잡으면 그대로 반복하세요.", en: "There's no wind, so identical power always flies the same distance — lock in a feel and repeat it." },
+        { ko: "야드 표시는 좌측 파워 미터로 조절합니다. 버튼으로 미터를 시작시키면 게이지가 올라가고, 원하는 파워에서 한 번 더 눌러 멈추세요. 패널 야드와 미터를 1:1로 맞추는 게 핵심입니다.", en: "Set distance on the left-side power meter: press once to start it climbing, press again at the desired power. The trick is matching the panel yardage to the meter 1:1." },
+        { ko: "2025년 리마스터판은 야드 마커가 25야드에서 20야드 간격으로 바뀌었으니, 구 가이드의 거리값을 그대로 쓰지 말고 환산해서 적용하세요.", en: "The 2025 re-release changed yardage markers from every 25 yds to every 20 yds — don't copy old guides' distances verbatim, convert them first." },
       ],
       achievementSlug: "lexus2_tasseimkokuroku_all_clear",
     },
@@ -84,6 +94,11 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
       howTo: [
         { ko: "공이 홈플레이트에 도달하기 직전, 스윙 모션을 고려해 살짝 빨리 휘두르세요.", en: "Swing slightly early to account for the animation, just before the ball reaches the plate." },
         { ko: "홈런 챌린지는 화면의 타깃 방향(좌·중·우)에 맞춰 타이밍을 미세 조정해야 합니다. 직구 코스에서 연습 후 도전하세요.", en: "For the home-run challenge, nudge your timing toward the on-screen target zone — practice on the straight-pitch course first." },
+        { ko: "홈런 경연은 3x3 격자에서 노란 커서를 좌스틱으로 움직여 빨간 착지 예측 커서에 맞추는 방식입니다. 세트 1~8은 투구 패턴이 고정이고 10세트 이후 패턴이 반복되니 외워두면 무한정 점수를 벌 수 있습니다(컴플리션 3,150점).", en: "In the home-run contest you steer a yellow cursor on a 3x3 grid onto the red landing-prediction cursor with the left stick. Pitch sets 1-8 are fixed and the pattern repeats after set 10, so memorizing them farms points indefinitely (3,150 pts for completion)." },
+        { ko: "아이템 교환소의 「세레네 배트」를 쓰면 점수가 0.7배(1000→750)로 줄지만 홈런 판정 윈도가 훨씬 넓어져 가장 빠른 파밍 수단입니다. PC라면 마우스를 낮은 DPI(400~800)로 조준하면 패드보다 정확합니다.", en: "The Serene Bat from the Item Exchange cuts points to 0.7x (1000→750) but vastly widens the home-run hit window, making it the fastest farm. On PC, aiming with a mouse at low DPI (400-800) beats a controller." },
+      ],
+      videos: [
+        { title: { ko: "전 야구 챌린지 클리어 (홈런·챌린지 코스)", en: "All baseball challenges (home run / challenge courses)" }, url: YT("tzPHyCBmfE8") },
       ],
       achievementSlug: "lexus2_tasseimkokuroku_all_clear",
     },
@@ -101,6 +116,7 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
         { ko: "손패를 절대 공개(펑/치)하지 말고 닫은 채로 유지하세요. 그래야 리치를 선언할 수 있습니다.", en: "Keep your hand fully closed (never call Pon/Chi) so you can declare Riichi." },
         { ko: "2~8 숫자패만 모으는 「탄야오」를 노립니다. 4면자+1쌍으로 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료.", en: "Chase Tanyao (only simples 2–8). When you're one tile from 4 sets + a pair, declare Riichi — a yaku attaches automatically." },
         { ko: "컴플리션은 큰 점수가 아니라 화료(승리) 자체가 목적입니다. 점수 욕심 내지 말고 빠른 화료 위주로.", en: "Completion only needs wins, not big scores — prioritize fast hands over value." },
+        { ko: "규칙 설정에서 「반장(Half Game)」으로 게임을 짧게 잡고, 쿠이탄(먹은 탄야오 인정)·아카도라(적도라)를 켜고, 2판 묶음(2-han 최소)은 끄세요. 펑/치로도 탄야오가 인정돼 화료가 훨씬 빨라집니다.", en: "In the rules, set Half Game to keep it short, turn ON Kuitan (open Tanyao) and Red Dora, and turn OFF the 2-han minimum — open Tanyao becomes legal, so you win much faster." },
       ],
       videos: [
         { title: { ko: "마작 입문 가이드 (Yakuza 시리즈)", en: "Mahjong for beginners (Yakuza)" }, url: YT("VwnEujAKE3A") },

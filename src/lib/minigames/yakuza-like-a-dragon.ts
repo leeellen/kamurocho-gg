@@ -28,6 +28,10 @@ export const yakuzaLikeADragonMinigames: MinigamesData = {
         { ko: "드래곤 링(코스의 링)을 최대한 주워 모으세요. 최고 속도가 오르고 카트 내구도도 회복됩니다.", en: "Grab every Dragon Ring on the track — they raise top speed and repair your kart's durability." },
         { ko: "충돌과 피격으로 내구도가 깎이면 크래시해 시간을 잃습니다. 실드 아이템과 코너 라인을 안정적으로 가져가세요.", en: "Collisions and hits drain durability and cause a time-losing crash, so play corners cleanly and save Shield items." },
         { ko: "라이벌 진(Jin) 등은 풀강화 크림슨 파이어 같은 상위 카트로, 무기로 상대를 묶고 실수를 최소화하는 운영이 안정적입니다.", en: "For rivals like Jin, run a top kart such as a fully upgraded Crimson Fire, use weapons to disable them, and minimize mistakes." },
+        { ko: "스타트 대시: 카운트다운 「2」가 사라지기 직전(애니메이션 중간 무렵)에 가속을 눌러 두면 출발과 동시에 부스트가 터져 선두로 치고 나갑니다.", en: "Boost start: hold accel right before the '2' in the countdown dissolves (about midway through its animation) to launch ahead of the pack." },
+        { ko: "코너는 X 버튼 드리프트로 돌되, 바깥쪽에서 진입해 안쪽으로 파고드는 아웃-인 라인을 잡아야 속도 손실이 적습니다.", en: "Drift corners with the X button and take an outside-in line — enter wide and cut in to bleed the least speed." },
+        { ko: "라이벌전은 가볍고 빠른 카트가, 다른 카트가 많은 컵(그랑프리)에서는 무겁고 강한 카트가 유리합니다. 종목에 맞춰 차종을 바꾸세요.", en: "Light, fast karts suit one-on-one rival races; heavier, sturdier karts fare better in cups crowded with other karts — swap accordingly." },
+        { ko: "진의 와인딩 크로스는 좁고 급커브가 많아 그립·핸들링이 높은 (풀강화) 크림슨 파이어가 적합하며, 코스를 미리 한두 번 외워 두면 벽 충돌을 크게 줄일 수 있습니다.", en: "Jin's Winding Cross is narrow with sharp turns, so a high-grip, fully upgraded Crimson Fire fits best — run the course once or twice first to cut down wall hits." },
       ],
       videos: [
         { title: { ko: "드래곤 카트 전 라이벌 레이스", en: "Dragon Kart - All Rival Races" }, url: YT("HtdWqioCrko") },
@@ -50,6 +54,11 @@ export const yakuzaLikeADragonMinigames: MinigamesData = {
         { ko: "영업 페이즈에서 상승 화살표 아이콘을 눌러 손님 흐름을 관리하고 트러블 아이콘은 빠르게 처리하세요.", en: "During the sales phase, tap the boost/up arrows to manage customer flow and clear trouble icons quickly." },
         { ko: "주주총회는 야유꾼 5명을 상대로 직원 카드를 내 논파하는 가위바위보형 배틀입니다. 속성 상성을 맞춰 게이지를 채우세요.", en: "Shareholder meetings are a rock-paper-scissors-style battle against five hecklers — match employee card affinities to fill the gauge and rebut them." },
         { ko: "랭킹 1위 달성 후 주주총회는 반복해 약 300만 엔을 벌 수 있는 안정적 수입원이 됩니다.", en: "After reaching Rank 1, shareholder meetings repeat for about 3 million yen a run, becoming a steady income source." },
+        { ko: "리더는 상품·서비스·지명도 능력치가 모두 반영되지만 일반 멤버는 특정 능력치만 반영됩니다. 능력이 좋은 직원을 리더로 두고 나머지는 매장 특성에 맞춰 배치하세요.", en: "A store's leader applies all three stats (product, service, recognition) while members apply only specific ones — make your best employee the leader and slot the rest by store affinity." },
+        { ko: "직급 승진은 인건비가 크게 뛰므로 초반(약 100위 전)에는 저비용 기본 사원으로 적자만 피하고, 투자금이 들어온 뒤 본점에 집중 투자·고급 직원을 고용하세요.", en: "Promotions spike labor costs, so until roughly Rank 100 run cheap basic staff to avoid losses, then pour investment into your flagship store and hire premium employees once funding arrives." },
+        { ko: "영업 페이즈의 「광고 의뢰」는 무조건 받으세요. 매출이 몇 배로 뜁니다. 반면 투자 의뢰는 무시해도 무방합니다.", en: "Always accept 'advertising' requests during the sales phase — they multiply revenue several times over; investment requests can be safely ignored." },
+        { ko: "경영 시작 직후 이치반 과자점 옆 서브스토리(야구 스타 관련 의뢰 포함)를 먼저 깨면 주주총회에서 초반 주주를 두 방에 제압하는 강력한 리더급 직원을 일찍 얻습니다.", en: "Clear the substory next to Ichiban Confections early (including the baseball-star quest) to recruit a strong leader-tier employee who can two-shot early investors in shareholder meetings." },
+        { ko: "주주총회 상성: 빨간 말풍선엔 파란 직원, 파란 말풍선엔 초록 직원, 초록 말풍선엔 빨간 직원을 내면 WEAK이 떠 방패 3개를 한 번에 부숩니다. 시작 전 빨·파·초 직원을 1명씩 고르게 세팅하고, 발언 게이지가 가장 빨리 차는 주주부터 처리하세요.", en: "Shareholder affinity: counter a red bubble with a blue employee, blue with green, green with red — this triggers WEAK and shatters all three shields at once. Set up one red, one blue and one green employee before starting, and silence whichever heckler's gauge fills fastest first." },
       ],
       videos: [
         { title: { ko: "비즈니스 매니지먼트 랭킹 1위 공략", en: "Business Management Rank 1 guide" }, url: YT("FjyNRDHqsOA") },

@@ -26,6 +26,8 @@ export const yakuza6Minigames: MinigamesData = {
         { ko: "선수는 오노미치 거리·바에서 영입합니다. 술·음식·근육 보충제 등 요구 아이템을 미리 사 두면 바로 합류시킬 수 있습니다.", en: "Recruit players around Onomichi's streets and bars — stock the item each one demands (booze, food, supplements) to sign them on the spot." },
         { ko: "경기는 자동 진행되지만 타석 기회가 옵니다. 안타(출루)만 쳐도 팀 사기 버프가 붙으니 무리한 홈런보다 정확한 타이밍을 우선하세요.", en: "Matches auto-play but you get at-bats — even a single buffs team morale, so prioritize timing over swinging for the fences." },
         { ko: "에이스급 영입 선수(요시다 등)를 라인업에 넣고, 상금으로 선수 능력치를 강화해 후반 강팀에 대비하세요.", en: "Slot ace recruits (e.g. Yoshida) into the lineup and reinvest winnings into stat upgrades for the tougher late opponents." },
+        { ko: "추천 스카우트 치트시트: 마에타니(류난 신사, 100만엔), 쿠라모토(요네타쿠 앞, 큰 사케 1병), 겐상(스낵 뉴 가우디 바 챗 → 「테크 서포트」 서브스토리)이 가성비 좋은 골드급입니다. 단, 선수 영입은 서브스토리 #35 「We Need a Ringer」 완료 후부터 가능합니다.", en: "Recruit cheat sheet: Maetani (Ryunan Shrine, pay 1,000,000 yen), Kuramoto (outside Yonetaku, give one big bottle of sake), and Gen-san (Snack New Gaudi bar chat -> 'Tech Support' substory) are the most cost-effective gold-tier signings. Note that recruiting only opens after Substory #35 'We Need a Ringer.'" },
+        { ko: "추천 포지션 배치: 투수는 고르초프(작살낚시 레벨 2 클리어로 영입), 포수는 요시다, 유격수는 겐상이 안정적입니다. 골드급은 영입 후에도 반드시 트레이닝으로 능력치를 올려야 제값을 합니다.", en: "Suggested positions: Gorchov as pitcher (recruited by clearing Spearfishing level 2), Yoshida at catcher, Gen-san at shortstop. Gold-tier players still need post-recruit training to reach their potential." },
       ],
       videos: [
         { title: { ko: "야구 서브스토리 19 가이드 (영입 치트시트)", en: "Baseball Substory 19 guide (recruit cheat sheet)" }, url: YT("N3RYb3XbF3w") },
@@ -47,6 +49,8 @@ export const yakuza6Minigames: MinigamesData = {
         { ko: "유닛은 라인을 따라 전진합니다. 적 구성에 맞춰 카운터 유닛(탱크로 막고 원거리로 딜)을 적시에 투입하세요.", en: "Units advance down lanes — feed in counter types on cue (tanks to soak, ranged to chip) against the enemy makeup." },
         { ko: "클랜 코드를 입력하면 특수 캐릭터(리더)를 영입할 수 있으니, 강한 리더를 빠르게 확보해 라인업을 강화하세요.", en: "Enter clan codes to recruit special leaders — grab strong ones early to power up your roster." },
         { ko: "보스급 미션은 게이지를 모아 발동하는 키류 본인의 필살기로 타이밍을 잡으면 안정적입니다.", en: "On boss missions, time Kiryu's own gauge-fueled special to swing tough fights." },
+        { ko: "무적 스킬 보유 리더를 우선 확보하세요. 사츠키와 데이트의 「머슬 파티」는 클랜 전체를 10초간 무적으로 만들고, 둘을 번갈아 쓰면 20초 무적이 됩니다. 다이고의 「6대 회장의 위엄」은 배치 게이지를 150이나 채워 줍니다.", en: "Prioritize leaders with invincibility skills. Satsuki and Date both have 'Muscle Party' (whole clan invincible for 10s) — alternate them for 20 seconds of cover. Daigo's 'Sixth Chairman's Dignity' refills 150 of the deployment gauge." },
+        { ko: "배치 그리드에서 키류를 다이고 위에 두면 악수(핸드셰이크) 아이콘이 뜨고 위 칸 캐릭터의 스탯 보너스가 2배가 됩니다. 타나하시(부활/회복 스킬)는 아몬 같은 강적의 공격을 피하도록 화면 맨 아래에 배치하세요.", en: "On the placement grid, stacking Kiryu above Daigo triggers a handshake icon that doubles the upper unit's stat bonus. Park Tanahashi (revive/heal skill) at the very bottom so heavy hitters like Amon can't take him out." },
       ],
       videos: [
         { title: { ko: "클랜 크리에이터 입문 + 코드", en: "Clan Creator beginner's guide + codes" }, url: YT("scO7zV5BObE") },
@@ -68,6 +72,8 @@ export const yakuza6Minigames: MinigamesData = {
         { ko: "마지막 작살이 나가기 전에 수동 재장전하세요. 탄을 완전히 비우면 자동 재장전이 훨씬 느립니다.", en: "Reload manually before the last spear fires — letting it empty triggers a much slower auto-reload." },
         { ko: "보물상자는 드물지만 점수(=돈)가 막대하니 발견 즉시 우선 사격하세요.", en: "Treasure chests are rare but worth huge points (and money) — shoot them the instant you spot them." },
         { ko: "엠퍼러 스퀴드·상어 같은 보스는 더 좋은 작살총을 갖춘 뒤 도전하면 클리어가 쉬워집니다.", en: "Bosses like the Emperor Squid and the final shark get far easier once you've unlocked a better speargun." },
+        { ko: "보스 출현 위치: 엠퍼러 스퀴드와 상어는 「Sunken Labyrinth(선큰 래버린스)」 코스(서브스토리 #35로 해금)에 나오고, 최종 보스 「블러디 샤크」는 「Dragon\\'s Den(드래곤스 덴)」 코스(서브스토리 #48로 해금)의 마지막입니다. 엠퍼러 스퀴드는 던지는 오징어를, 블러디 샤크는 던지는 참치를 먼저 쏴 떨어뜨리고 빈틈에 보스를 노리세요.", en: "Boss locations: the Emperor Squid and the Shark appear in the Sunken Labyrinth course (unlocked via Substory #35); the final boss Bloody Shark caps the Dragon\\'s Den course (Substory #48). Shoot down the squids the Emperor Squid throws (and the tuna the Bloody Shark hurls) first, then tag the boss in the openings." },
+        { ko: "최종 보스용 작살총은 「Ahab\\'s Revenge(에이햅스 리벤지)」가 최고입니다. 오노미치 암시장 상인에게서 30만엔에 구매할 수 있고, 작살 12발에 높은 데미지로 보스전이 크게 수월해집니다. 붉은 오라가 도는 공격적인 생물은 폐활량을 깎으니 우선 처치하세요.", en: "The best speargun for the bosses is Ahab\\'s Revenge — buy it from the Onomichi black-market merchant for 300,000 yen for 12 spears and high damage, which makes boss fights much easier. Red-aura aggressive creatures drain your lung capacity, so take them out first." },
       ],
       videos: [
         { title: { ko: "작살 낚시 전 스테이지 (노 대미지)", en: "Spearfishing all stages (no damage)" }, url: YT("1c5EuQ2O8WY") },
@@ -88,6 +94,8 @@ export const yakuza6Minigames: MinigamesData = {
         { ko: "프롬프트가 판정 구간에 들어오는 순간 정확히 입력하면 S랭크가 나옵니다. 음악 박자보다 화면 표시를 믿으세요.", en: "Hit each prompt exactly inside the timing window for an S rank — trust the on-screen cue over rhythm." },
         { ko: "트레이닝 직후 지정된 가게에서 추천 메뉴를 먹어 경험치 보너스를 챙기세요.", en: "Right after training, eat the prescribed dish at the named restaurant to claim the EXP bonus." },
         { ko: "모든 종목을 한 번씩 체험하는 것이 트로피/컴플리션 조건이니 빠짐없이 돌아 보세요.", en: "Completion/trophy wants every exercise tried at least once — cycle through them all." },
+        { ko: "운동은 힘·민첩·기력 3계열 경험치만 주고, 기교·매력은 식사로만 올립니다. 트레이너 마쿠타의 식단 힌트는 「바로 다음 한 끼」에만 적용되니, 트레이닝 직후 첫 식사로 정답 메뉴를 먹은 뒤엔 자유롭게 드세요.", en: "Workouts only grant Strength, Agility, and Spirit EXP — Technique and Charm come from meals. Trainer Makuta's diet hint applies only to your very next meal, so eat the correct dish first right after training, then eat whatever you like." },
+        { ko: "힌트는 약 26종이며 모호하게 나옵니다. 예: 「얇게 썬 돼지고기를 듬뿍 얹은 덮밥」 → 큐슈 넘버원의 차슈동, 「일본인이 사랑하는 생선」 → 스시잔마이의 마구로잔마이. 막히면 식단 가이드를 참고하세요.", en: "Hints come from a pool of about 26 and can be vague. Examples: 'rice bowl topped with lots of thin pork slices' -> Kyushu No.1 Star Chashu Rice Bowl; 'fish Japanese people love' -> Sushi Zanmai Tuna Zanmai. Consult a meal-plan guide if a clue stumps you." },
       ],
       videos: [
         { title: { ko: "RIZAP 짐 전 종목 S랭크", en: "RIZAP gym all exercises, all S ranks" }, url: YT("7UxJkmrj_ps") },
@@ -125,6 +133,7 @@ export const yakuza6Minigames: MinigamesData = {
       howTo: [
         { ko: "프롬프트로 뜨는 버튼 조합을 제한 시간 안에 정확히 입력해야 메시지가 전송됩니다. 입력 실패가 쌓이면 세션이 조기 종료됩니다.", en: "Enter each prompted button combo within the timer or the message fails — too many misses ends the session early." },
         { ko: "세션당 DMM 3000 포인트가 들고, 호감도를 끝까지 채우면 다음 진행에 필요한 세션 수가 줄어듭니다.", en: "Each session costs 3,000 DMM points; maxing affection reduces how many sessions you need to progress." },
+        { ko: "최소 호감도 목표에 못 미치면 채팅이 도중에 끊기고 세션을 다시 시작해야 합니다. 호감도를 끝까지 채우면 「시크릿 쇼」가 해금되며, 대부분의 어워드는 몇 세션이면 끝납니다. 마이판타이 넷카페(여러 구역)에서 플레이합니다.", en: "Fall short of the minimum affection target and the chat ends early, forcing a fresh session. Maxing affection unlocks the 'secret show,' and most awards wrap up in just a couple of sessions. Played at the Mantai (Manpai) net cafe found across several districts." },
       ],
     },
     {

@@ -26,6 +26,9 @@ export const yakuzaKiwamiMinigames: MinigamesData = {
         { ko: "손패를 펑/치로 공개하지 말고 닫은 채 유지해야 리치를 선언할 수 있고, 리치 일발·만관 조건도 닫은 손에서 나옵니다.", en: "Keep your hand fully closed (never call Pon/Chi) — you need that to declare Riichi, and Riichi Ippatsu / Mangan come from closed hands." },
         { ko: "기본은 2~8 숫자패만 모으는 「탄야오」, 일기통관 조건은 한 종류 1~9 연속을 노리면 됩니다.", en: "Default to Tanyao (only simples 2–8); for the Full Straight target, chase a 1–9 run in a single suit." },
         { ko: "리치 일발은 리치 선언 직후 한 바퀴 안에 화료하는 운 요소라, 텐파이를 빨리 만드는 게 확률을 올리는 유일한 방법입니다.", en: "Riichi Ippatsu means winning within one go-around of declaring — reaching tenpai fast is the only way to farm the luck for it." },
+        { ko: "게임 시작 전 규칙 설정에서 「2판 이상 제한」을 끄고 「붉은 도라」를 켜세요. 2판 제한을 끄면 싸구려 1판 손으로도 화료해 10회 화료를 빨리 채우고, 붉은 5(붉은 도라)는 무료 1판이라 만관·하네만 조건에 보탬이 됩니다.", en: "Before a game, in the rules menu turn OFF the 2-han minimum and turn ON Red Dora: dropping the 2-han rule lets cheap one-han hands win (fast for the 10-win count), and each red 5 is a free extra han toward Mangan/Haneman." },
+        { ko: "일기통관은 닫은 채 다 뽑길 기다리지 말고 펑/치로 열어서 모으세요. 123·456·789가 각각 별개 멘쯔라 상대 버림패를 치로 가져올 수 있어 훨씬 빠릅니다. 첫 배패에 한 종류 숫자가 5개 이상일 때만 노리세요.", en: "Farm the Full Straight (Ittsu) with an OPEN hand — the 123/456/789 are three separate melds, so you can Chi opponents' discards to complete them rather than drawing all nine yourself. Only commit when your opening deal already holds 5+ of one suit." },
+        { ko: "코인 로커 I2의 「Lucky Tile」 아이템은 시작 시 국사무쌍(역만)을 만들어 하네만급 대형 점수를 거저 줍니다. 단, 역만이 일발 등 일반 점수 판정을 덮어써서 「리치 일발」 조건에는 카운트되지 않으니, 일발은 따로 정공법으로 따세요.", en: "The Lucky Tile item in Coin Locker I2 hands you Thirteen Orphans (a yakuman) for a free big-score win, but the yakuman overrides normal scoring so it does NOT count for the Riichi Ippatsu requirement — get Ippatsu the normal way." },
       ],
       videos: [
         { title: { ko: "마작 입문 가이드 (Yakuza)", en: "An amateur's guide to mahjong (Yakuza)" }, url: YT("UrYyaBMiIcw") },
@@ -80,6 +83,8 @@ export const yakuzaKiwamiMinigames: MinigamesData = {
         { ko: "「고스트 볼」 원리: 포켓 정반대편 목적구 표면을 큐볼이 때리도록 조준선을 맞추세요.", en: "Ghost-ball rule: aim so the cue ball strikes the point on the object ball directly opposite the pocket." },
         { ko: "콤비네이션 샷(한 공으로 다른 공을 밀어 넣기)은 혼자 플레이에서 두 공을 포켓 일직선에 두고 연습하면 쉽게 나옵니다.", en: "Farm combination shots (one ball pushing another in) in solo play by lining two balls up toward a pocket." },
         { ko: "처음엔 회전을 끄고 풀파워보다 조준 정확도를 우선하세요.", en: "Leave spin off at first and value aim over power." },
+        { ko: "캐롬 샷(첫 공을 맞고 튕겨 둘째 공을 넣기)은 큐볼을 첫 목표구 바로 앞에 붙인 뒤, 왼쪽 스틱을 아래로 눌러 백스핀을 주고 풀파워(오른쪽 스틱 최대)로 치세요. 큐볼이 첫 공을 맞고 뒤로 돌며 둘째 공을 때립니다.", en: "For the carom shot (cue hits one ball, deflects into a second), set the cue right up against your first target, hold the LEFT stick DOWN for backspin, and fire at full power (right stick max) — the cue strikes the first ball, spins back, and catches the second." },
+        { ko: "혼자 플레이에서 큐볼을 일부러 포켓에 빠뜨려(스크래치) 다음 샷의 큐볼 위치를 원하는 곳에 자유롭게 놓을 수 있습니다. 이걸로 캐롬·콤비네이션 각도를 직접 세팅하세요. 트릭 샷은 번호 순서 규칙도 무시합니다.", en: "In solo play, deliberately scratch the cue ball into a pocket — the game then lets you place it anywhere, so you can engineer the exact angle for a carom/combination on demand. Trick shots also ignore the numerical-order rule." },
       ],
       achievementSlug: "23_what_a_player",
     },
@@ -145,6 +150,9 @@ export const yakuzaKiwamiMinigames: MinigamesData = {
         { ko: "직선이 긴 코스는 모터·기어비로 최고속을, 커브 많은 코스는 그립 타이어와 다운포스로 코스 이탈을 막으세요.", en: "Gear for top speed on straight tracks; add grip tires + downforce on curvy ones to stop flying off." },
         { ko: "부품이 무거우면 후반에 배터리가 떨어져 멈춥니다. 완주 가능한 무게로 균형을 맞추세요.", en: "Heavy parts drain the battery and stall you late — balance for a weight that finishes." },
         { ko: "막히는 컵은 영상의 추천 빌드를 그대로 따라가면 대부분 뚫립니다.", en: "Stuck on a cup? Copy a recommended build from the video and it usually clears." },
+        { ko: "핵심 원칙: 모터는 무조건 최강(갓스피드/위타천)을 최대 출력으로 달고, 코너에서 날아가면 모터를 약하게 하지 말고 「파워 기어 + 가벼운(터프니스) 배터리」로 최고속만 낮춰 안정시키세요. 모터가 약하면 초반에 격차가 너무 벌어집니다. 무게 효율은 서스펜션·범퍼가 좋고 사이드 스테이는 비효율입니다.", en: "Core rule: always run the strongest motor (Godspeed/Idaten) at max power; if you fly off curves, do NOT weaken the motor — instead cap top speed with Power Gears + a light (Toughness) battery to tame it. A weak motor loses the race in the opening seconds. Suspension and bumper are the most weight-efficient stability parts; side stays are inefficient." },
+        { ko: "최고급 모터는 상점이 아니라 컵 보상입니다. 갓스피드는 어드밴스드 컵, 울트라 갓스피드는 챔피언 컵 우승 시 해금되므로, 컵을 이길수록 다음 단계 부품이 풀리는 구조입니다.", en: "The top motors are cup rewards, not shop buys: Godspeed unlocks after winning the Advanced Cup and Ultra Godspeed after the Champion Cup — so each win bootstraps the part for the next tier." },
+        { ko: "잘 충돌하는 레이스는 안정 부품을 더하지 말고 배터리 무게를 빼는 게 정답인 경우가 많습니다. 마지마 2차 듀얼은 하이캐퍼시티 → 레귤러 배터리로 바꾸면 안정되고, 엘리트 컵은 미디엄 서스펜션만으로 클리어됩니다. 챔피언 컵은 스탯 싸움이 아니라 부스트를 시계상 특정 타이밍(약 36초)에 수동으로 터뜨려야 이깁니다.", en: "Races that keep crashing are usually fixed by REMOVING battery weight, not adding stability parts: Majima's 2nd duel stabilizes by swapping High Capacity → Regular battery, and the Elite Cup clears with just Medium Suspension. The Champion Cup isn't a stat race — you must manually fire boost at a specific clock moment (around the 36-second mark) to win." },
       ],
       videos: [
         { title: { ko: "포켓 서킷 비기너·아마추어 컵 가이드", en: "Pocket Circuit: Beginner & Amateur Cup guide" }, url: YT("UaVsn4YPCwI") },
@@ -166,6 +174,9 @@ export const yakuzaKiwamiMinigames: MinigamesData = {
         { ko: "STR > TECH > SPD > STR 삼각관계입니다. 라이벌마다 선호 타입이 고정이라 패턴을 외워 카운터 타입을 내세요.", en: "STR > TECH > SPD > STR. Each rival favors a fixed type — learn it, then counter-pick." },
         { ko: "기술 카드는 게이지가 찼을 때 큰 데미지를 주니 접전 라운드에 아껴 쓰세요.", en: "Skill cards hit hardest with a full gauge — save them for close rounds." },
         { ko: "최종 보스(교수)전 전에 좋은 곤충·스킬 카드를 모아두면 「Last Resort」 같은 강력한 카드로 압도할 수 있습니다.", en: "Stock strong insect/skill cards before the final Professor fight — cards like 'Last Resort' help you dominate." },
+        { ko: "정확한 삼각관계는 가위>보>주먹>가위입니다. 중요한 건 무승부도 양쪽 모두 데미지를 입는다는 점이라, HP가 앞설 때 일부러 비기는 건 손해입니다. 깔끔한 승리를 노리고, 비김 데미지를 버틸 HP·STR 높은 곤충을 쓰세요.", en: "The exact triangle is Scissors > Paper > Rock > Scissors, and crucially a TIE damages both fighters (not a no-op) — so deliberately drawing when ahead is a bad trade. Aim for clean wins and use a high-HP/STR insect that survives the tie chip." },
+        { ko: "라이벌별 고정 패턴을 외우세요: 토모히로는 주먹만 내니 보만 연타하면 됩니다. 마사루·마사시는 주먹에 약하고, 히메는 보 특화라 가위 곤충을 쓰세요. 사치는 주먹 공격에 흰 느낌표가 뜨면 즉시 선택하니 그 순간 보를 내세요.", en: "Learn each rival's fixed tell: Tomohiro throws nothing but Rock (spam Paper), Masaru/Masashi are weak to Rock, and Hime specializes in Paper (bring a Scissors insect). Sachi instantly picks her Rock attack when it shows a white exclamation mark — play Paper that frame." },
+        { ko: "45장+ 수집과 좋은 곤충을 동시에 해결하는 최단 루트는 보 덱으로 토모히로(주먹만 냄)를 반복 격파하는 것입니다. 서브스토리 제외 통산 20승을 쌓으면 HP·STR이 비정상적으로 높은 「잿빛 무당벌레(Ashy Gray Ladybug)」가 해금되어 교수전 주력이 됩니다.", en: "The fastest route to both 45+ cards and a top insect is farming Tomohiro (all-Rock) with a Paper deck: hitting 20 total wins (excluding substories) unlocks the Ashy Gray Ladybug, an abnormally high HP/STR insect that becomes your Professor-fight carry." },
       ],
       videos: [
         { title: { ko: "메스킹 100% 트로피 공략", en: "Throne of the MesuKing 100% guide" }, url: YT("L49pavvEl4g") },

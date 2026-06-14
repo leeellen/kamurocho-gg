@@ -28,6 +28,8 @@ export const likeADragonPirateMinigames: MinigamesData = {
         { ko: "캐논은 해당 측면이 적선을 향한 상태에서만 발사됩니다. 적선에 조준 마커가 점등되는 순간 쏘면 거의 명중합니다.", en: "Cannons only fire when that broadside faces the target — wait for the lock-on marker to light up on the enemy ship for a near-guaranteed hit." },
         { ko: "부스트로 가속한 뒤 브레이크로 드리프트하면 적 공격을 흘리면서 반대편 측면을 노출시켜 연속 포격할 수 있습니다.", en: "Boost to build speed, then brake to drift — it dodges incoming fire and swings your other broadside into firing position." },
         { ko: "파도를 거스르지 말고 흐름을 타면 선회가 훨씬 부드럽습니다. 잡몹 배는 무시하고 보스 함선에 화력을 집중하세요.", en: "Ride with the waves rather than fighting them for sharper turns, and ignore small ships to concentrate fire on the boss vessel." },
+        { ko: "측면 무기는 줄리의 GearWorks에서 사는 (슈퍼) 레이저 캐논을 양 측면에 다는 것이 최강 빌드입니다. 사거리가 길고 집속 빔이라 데빌 플래그스·콜로세움 상위전까지 안정적입니다. 기관총은 코코넛(지속 딜) 또는 프로스트(빙결 묶기)를 풀강하세요.", en: "For broadsides, the top build is a (Super) Laser Cannon on both sides — bought and upgraded at Julie's GearWorks. Their long range and concentrated beams carry you through the Devil Flags and the higher Coliseum fights; max either the Coconut machine gun (sustained DPS) or the Frost one (freeze-lock) for the forward slot." },
+        { ko: "소용돌이는 중심으로 빨아들이며 피해를 주니 부스트로 빠져나오세요. 부선장에게 「선미 파괴 증가」를 달면 박치기(램) 한 방에 500 안팎이 들어가 레벨링·격침에 효율적입니다.", en: "Whirlpools drag you to their center and deal damage — boost straight out. Equipping a first mate's stern-destruction (ramming) skill pushes ram hits to around 500 damage, an efficient way to sink ships and grind crew levels." },
       ],
       videos: [
         { title: { ko: "노티컬 컴뱃 공식 개요 (PlayStation)", en: "Naval Combat Overview (official PlayStation)" }, url: YT("rGhbqRwvni0") },
@@ -47,6 +49,8 @@ export const likeADragonPirateMinigames: MinigamesData = {
         { ko: "마들랜티스 매니아는 적선에 올라타 크루와 난투하는 모드입니다. 마지마와 크루 장비를 먼저 끌어올린 뒤 도전하세요.", en: "Madlantis Mania is deck-to-deck brawling — gear up Majima and his crew before attempting the higher tiers." },
         { ko: "캡틴 토너먼트는 함선 전투와 갑판 전투가 섞여 나옵니다. 기관총으로 적을 묶고 캐논 사정거리로 끌어들여 큰 피해를 주며 틈틈이 수리하세요.", en: "The Tournament of Captains mixes ship and deck combat — pin enemies with machine guns, drag them into cannon range for big hits, and repair between exchanges." },
         { ko: "입장 가능한 전투는 평판으로 풀립니다. 매니아로 평판을 모아 상위 전투와 아몬 해적단까지 차근차근 해금하세요.", en: "Higher fights unlock with reputation — grind Mania to bank rep and work up to the top brackets and the Amon Pirates." },
+        { ko: "갑판 전투에선 적 선장·일등항해사부터 끊으세요. 이들이 크루 강화 스킬을 쓰기 때문입니다. 마지마는 시 도그 스타일(컷틀러스 부메랑·체인 훅)로 광역 정리하고, 「퍼펙트 가드」를 일찍 찍어 패링 후 반격 흐름을 잡으세요.", en: "In deck battles, cut down the enemy Captain and First Mates first — they buff their crew with skills. Clear groups with Majima's Sea Dog Style (cutlass boomerang and chain hook), and take Perfect Guard early to open parry-into-counter windows." },
+        { ko: "돈·레벨·평판을 동시에 벌려면 3장 해방 후 「해적 결투 쇼다운」 2번대를 반복하세요. 로딩 포함 약 2분에 판당 5천 달러 수준이라 함선·크루 강화 자금을 빠르게 모읍니다.", en: "To farm money, levels, and rep at once, replay the second Pirate Duel Showdown bracket after it opens in Chapter 3 — roughly $5,000 per run in about two minutes including loading, which quickly bankrolls ship and crew upgrades." },
       ],
     },
     {
@@ -63,6 +67,8 @@ export const likeADragonPirateMinigames: MinigamesData = {
         { ko: "드리프트로 코너를 돌며 부스트 게이지를 채우고, 직선 구간에서 부스트를 터뜨려 시간을 단축하세요.", en: "Drift through corners to charge boost, then unload it on straights to make up time." },
         { ko: "듀얼·그랑프리에서는 아이템이 승패를 가릅니다. 공격 아이템은 선두를 따라잡을 때, 방어 아이템은 1위 유지에 아껴 쓰세요.", en: "Items decide Duel and GP races — save offensive items for catching the leader and defensive ones for holding first." },
         { ko: "카트 성능을 강화하면 후반 컵과 란과의 최종전이 훨씬 수월합니다. 컵 상금으로 우선 투자하세요.", en: "Upgrading the kart makes the late cups and the final duel with Ran much easier — reinvest cup winnings first." },
+        { ko: "란과의 최종 듀얼은 충돌하면 즉시 패배입니다. 란을 잡으려 들지 말고 회피와 속도에 집중해 선두를 잡은 뒤 거리를 벌려 그의 사격과 박치기를 피하세요.", en: "In the final duel with Ran, any crash is an instant loss — don't try to brawl her; focus on speed and evasion, take the lead, then keep distance to dodge her shots and ramming." },
+        { ko: "트랙의 드래곤 링은 HP를 회복시키고 레이스 후 상품 교환에 쓰입니다. HP가 0이 되면 크래시로 시간을 크게 잃으니 링을 챙기며 달리세요. 듀얼에선 적 십자포화에 돌진하지 말고 미니맵으로 위치를 계속 확인하세요.", en: "Dragon Rings on the track restore HP and double as currency for post-race prizes; let HP hit zero and you crash and lose big time, so grab rings as you go. In Duels, never drive into enemy crossfire and watch the minimap constantly." },
       ],
       videos: [
         { title: { ko: "전 드래곤 카트 레이스 & 듀얼", en: "All Dragon Kart races & battles" }, url: YT("p2YFoBP7Fgs") },
@@ -84,6 +90,8 @@ export const likeADragonPirateMinigames: MinigamesData = {
         { ko: "트릭은 스틱+점프 버튼으로 발동합니다. 연속 트릭(최대 3회)을 이어가면 배달 팁이 크게 늘어납니다.", en: "Trigger tricks with the stick + jump button — chaining tricks (up to three) sharply boosts your delivery tips." },
         { ko: "미니맵 아이콘 색으로 주문을 구분하세요: 노랑=버거, 주황=피자, 파랑=초밥. 초밥이 가장 보상이 큽니다.", en: "Read order icons by color on the minimap: yellow = burger, orange = pizza, blue = sushi — sushi pays the most." },
         { ko: "제한 시간이 빡빡하니 동선을 짧게 잡고, 트릭으로 속도를 유지하면서 한 번에 여러 건을 처리하세요.", en: "The timer is tight — plan short routes, keep speed up with tricks, and batch several deliveries per run." },
+        { ko: "배달하려면 해당 손님이 원하는 음식을 10개 모아야 합니다. 트릭으로 크레이지 게이지를 채워 크레이지 모드를 켜면 가속·장애물 무시에 더해 멀리 있는 음식까지 끌어와 10개를 빠르게 채울 수 있습니다.", en: "A delivery requires ten of the food the customer wants — chain tricks to fill the Crazy Gauge, then trigger Crazy Mode to ride faster, shrug off obstacles, and magnet-pull distant food so you hit ten quickly." },
+        { ko: "포인트를 최대로 벌려면 최고 난이도에서 S등급을 노리고 딜리버리스트 랭크(그린→골드→플래티넘→다이아)를 끝까지 올리세요. 랭크가 높을수록 한 판당 수익이 커집니다.", en: "For maximum points, aim for an S grade on the hardest difficulty and push your Deliverist Rank to the top (Green > Gold > Platinum > Diamond) — higher rank means more payout per run." },
       ],
       videos: [
         { title: { ko: "슈퍼 크레이지 딜리버리 전 레벨 S랭크", en: "Super Crazy Delivery, all levels S Rank" }, url: YT("86mu5lmXQws") },
@@ -187,6 +195,7 @@ export const likeADragonPirateMinigames: MinigamesData = {
       howTo: [
         { ko: "동물은 하와이 곳곳과 해상 탐험에서 발견됩니다. 특정 동물은 진행/장비 조건이 있으니 단서를 보고 차근차근 모으세요.", en: "Animals turn up across Hawaii and on sea expeditions — some have progress or gear requirements, so collect them as clues unlock." },
         { ko: "모은 동물은 고로고로 키친 요리 재료가 되므로, 요리 컴플리션과 병행하면 효율적입니다.", en: "Collected animals feed Goro Goro Kitchen recipes, so progressing cooking and the kingdom together is efficient." },
+        { ko: "바다에서는 물고기 근처에서 다이브 버튼을 눌러 잠수해 어종을 컬렉션에 추가할 수 있고, 해상 상인도 만납니다. 섬은 보물상자(트레저 아일랜드) 또는 닻(평화로운 섬) 아이콘으로 구분되니 보물상자 섬과 잠수 포인트를 함께 도는 동선이 효율적입니다.", en: "At sea, press the dive button near fish to submerge and add species to your collection, and you'll also meet seafaring merchants. Islands show a chest icon (Treasure Islands) or an anchor (Peaceful Islands) — route chest islands and dive spots together for an efficient sweep." },
       ],
       videos: [
         { title: { ko: "고로 킹덤 소개", en: "The Goro Kingdom" }, url: YT("P7Z2AVKY2xc") },

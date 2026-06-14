@@ -54,6 +54,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "노트가 판정선에 닿는 순간 정확히 입력하세요. 스토리 클리어 자체는 쉬운 난이도로도 가능하니, 풀콤보는 곡을 외운 뒤 도전하세요.", en: "Input exactly as each note reaches the judgment line — clearing the story is fine on Easy, so save Full Combo attempts until you've memorized the chart." },
         { ko: "동시 입력(여러 버튼)과 슬라이드 노트가 까다로우니, 손가락 배치를 미리 정해두고 화면 전체를 보는 시야를 유지하세요.", en: "Simultaneous (multi-button) and slide notes are the tricky parts — pre-plan your finger placement and keep your eyes on the whole lane." },
         { ko: "풀콤보 트로피는 남녀 캐릭터(예: 코토코) 모두 도전 대상이 될 수 있으니, 가장 쉬운 곡으로 먼저 풀콤보 감각을 익히세요.", en: "The Full Combo trophy can target both the boys' and girls' charts, so grind your Full Combo feel on the easiest song first." },
+        { ko: "단순 클리어만 노린다면 「Freestyle A」 EX 솔로를 장착하세요. 노트를 놓쳐도 그루브(QUALITY) 게이지가 더 빨리 차서 곡을 끝까지 버티기 쉽습니다.", en: "If you only need to clear a song, equip the 'Freestyle A' EX Solo — the Groove (QUALITY) gauge fills faster even when you miss notes, making songs much easier to survive." },
+        { ko: "반대로 고득점·퍼펙트를 노릴 때는 「Freestyle C」 EX 솔로를 쓰세요. Good 판정을 Perfect로 변환하고 게이지 길이도 늘려줍니다.", en: "When chasing high scores or perfects, use the 'Freestyle C' EX Solo instead — it converts Good hits to Perfect and lengthens the gauge." },
+        { ko: "곡 도중 발동하는 EX 안무 구간은 판정이 느슨하고 게이지를 많이 채워주니, 이 구간에서 게이지를 확보해 두면 어려운 노트 밀집 구간을 넘기기 쉽습니다.", en: "The EX choreography sections that trigger mid-song have looser timing and grant lots of gauge — bank gauge there to ride through the dense, hard sections." },
       ],
       videos: [
         { title: { ko: "댄스 풀콤보 (Girls) - 100% 트로피 가이드", en: "Dance Full Combo (Girls) - 100% Trophy Guide" }, url: YT("Xn2heH19LMo") },
@@ -77,6 +80,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "스태미나 게이지가 있어 펀치를 난사할 수 없습니다. 가드로 상대 공격을 흘린 뒤 빈틈에 콤비네이션을 넣는 카운터 위주로 싸우세요.", en: "A stamina gauge stops you from spamming punches — block to ride out the opponent's attacks, then counter into combinations in the openings." },
         { ko: "상대의 가드 높이를 보고 보디(로우)와 헤드(하이)를 섞어 가드를 무너뜨리세요.", en: "Watch the opponent's guard height and mix body (low) and head (high) shots to break it down." },
         { ko: "후반 상대(예: 와키타)는 패턴이 강해지니, 한 번에 다 이기려 말고 회피와 스태미나 관리를 우선하세요.", en: "Later opponents (e.g. Wakita) hit harder — don't rush; prioritize dodging and stamina management over trading blows." },
+        { ko: "상대 몸이 붉게 빛나면 어퍼컷 신호입니다. 가드로 막지 말고 반드시 회피한 뒤 빈틈에 반격하세요.", en: "When the opponent's body glows red it's the tell for an uppercut — don't try to block it, dodge and then counter into the opening." },
+        { ko: "기본기는 「가드 후 카운터」와 「회피 후 카운터」 두 가지입니다. 미키모토처럼 패턴이 불규칙한 상대는 가드보다 회피를 기본으로 두세요.", en: "The two core tactics are guard-then-counter and dodge-then-counter; against erratic boxers like Mikimoto, default to dodging rather than blocking." },
+        { ko: "상대 콤보가 끝나는 순간이 최대 반격 타이밍입니다. 스태미나를 완전히 소진시키면 EX Piercing Straight 같은 강타로 마무리하기 좋습니다.", en: "The moment an opponent's combo ends is your best counter window — fully drain their stamina, then finish with a heavy like the EX Piercing Straight." },
       ],
       videos: [
         { title: { ko: "복싱 짐 - 3열 상대 전원 (vs 와키타)", en: "Boxing Gym - all 3rd-row opponents (vs Wakita)" }, url: YT("mq4PxEdNTYs") },
@@ -99,6 +105,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "배틀 보상으로 얻은 부품으로 로봇을 꾸준히 강화하세요. 무기·장갑·이동의 균형을 맞추면 안정적으로 이깁니다.", en: "Keep upgrading your robot with parts won from battles — balancing weapons, armor and mobility gives consistent wins." },
         { ko: "상대 로봇의 약점(원거리/근접)에 맞춰 빌드를 바꾸세요. 초반엔 무리하지 말고 능력치를 먼저 키우는 것이 안전합니다.", en: "Adjust your build to each opponent's weakness (ranged vs melee); early on, grow your stats before pushing hard." },
         { ko: "조작은 실시간이니, 거리 유지와 공격 타이밍이 핵심입니다. 강해진 후반 빌드로 초반 상대를 재대전하면 부품 파밍이 쉽습니다.", en: "Control is real-time, so spacing and attack timing matter — refighting early opponents with a late-game build makes part farming easy." },
+        { ko: "시간 종료 후 영역 비교로도 이기지만, 가장 빠른 승리는 적 거점 점령입니다. 블록을 깔아 최단 경로로 적 베이스까지 길을 내고 점령하세요.", en: "You can win on territory when time runs out, but the fastest win is capturing the enemy base — lay blocks to carve the shortest path to their base and seize it." },
+        { ko: "주력기 Deus에 XF 섀시+최고 배터리+Balanced Motor H, 무기는 추가 탄약 모듈을 단 Eagle Sniper, 그리고 피격률을 낮추는 Stealth Chip을 추천합니다. 좋은 배터리는 코스트 상한을 올려 더 좋은 부품을 달 수 있게 합니다.", en: "For your main Deus, run an XF chassis + top battery + Balanced Motor H, an Eagle Sniper with an extra-ammo module, and a Stealth Chip to reduce how often you're targeted — a better battery raises the cost limit so you can fit stronger parts." },
+        { ko: "AI 헬퍼 중 하나를 MB 섀시+Speed Motor 빌드의 블록 수집 전담으로 돌리고(이동속도 강화 칩), 본체는 저격으로 적을 제거하면 거점 싸움이 안정됩니다.", en: "Dedicate one AI helper to block-collecting on an MB chassis + Speed Motor build (move-speed chip) while you snipe enemies down with the main unit — this stabilizes the base fight." },
       ],
     },
     {
@@ -118,6 +127,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "코너 직전에 감속하고 인코스를 파고들어 라인을 짧게 가져가세요. 무리한 풀스로틀 코너링은 충돌로 이어집니다.", en: "Brake just before corners and cut the inside line to keep your path short — full-throttle cornering leads to crashes." },
         { ko: "부스트는 직선 구간에서 몰아 쓰고, 다른 라이더와의 접촉/공방으로 순위를 빼앗으세요.", en: "Save boost for straights, and use contact/clashes with rival riders to steal positions." },
         { ko: "후반 레이스는 코스를 외우는 것이 필수입니다. 어려운 레이스는 먼저 완주로 코스를 익힌 뒤 기록을 노리세요.", en: "Later races require memorizing the course — run the hard ones once just to learn the track, then chase the result." },
+        { ko: "부스트 게이지는 자동으로 천천히 차지만, 직선에서 윌리(앞바퀴 들기)를 하거나 커브에서 드리프트(좌/우 기울인 채 입력)하면 훨씬 빨리 찹니다. 윌리는 반드시 직선에서만 하세요.", en: "The boost meter fills slowly on its own, but pops up much faster if you wheelie on straights or drift through curves (lean left/right while inputting) — only ever wheelie on straightaways." },
+        { ko: "초반은 부스트나 들이받기(램)로 상대 졸개들을 먼저 처리하세요. 부스트 타이밍과 각도를 잘 맞추면 두세 명을 한꺼번에 날릴 수 있습니다.", en: "Early on, clear the rival crew first with boosts or rams — time and angle a boost well and you can wipe out two or three riders at once." },
+        { ko: "최종전 요령: 마지막 상대 뒤에 붙어 윌리·드리프트로 부스트를 최대치(개조 시 최대 3개)까지 채운 뒤, 결승선 수백 미터 전부터 부스트를 연타해 추월하세요. 바이크 개조는 부스트 보유량을 늘려주니 돈을 투자할 가치가 있습니다.", en: "Final-race trick: tuck in behind the last opponent, build boost to max (up to 3 stocks once upgraded) with wheelies/drifts, then spam boost in the last few hundred meters to blow past — bike upgrades raise your boost stock, so they're worth the money." },
       ],
     },
     {
@@ -137,6 +149,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "램프에 진입할 때 타이밍에 맞춰 점프하고, 공중에서 버튼을 연타해 트릭을 성사·착지하세요. 높은 콤보일수록 점수가 큽니다.", en: "Hit jump in time as you reach the ramp, then mash the button in the air to land the trick — higher combos score far more." },
         { ko: "TownGo 2차 목표는 짧은 시간에 트릭을 빠르고 연달아 성공해야 하므로, 램프가 몰린 구역에서 콤보를 끊지 말고 이어가세요.", en: "The TownGo secondary goal needs fast, back-to-back tricks in a short window, so chain combos through ramp-dense areas without dropping them." },
         { ko: "착지 타이밍을 놓치면 콤보가 끊깁니다. 무리한 고난도 트릭보다 확실히 착지 가능한 트릭을 반복하는 편이 점수 안정적입니다.", en: "Missing the landing timing breaks the combo — repeating tricks you can reliably land scores more steadily than overreaching." },
+        { ko: "트릭 사이사이 코인을 모두 주워 콤보를 10배까지 올리면 은코인 대신 점수가 큰 금코인이 생성됩니다. 점수가 안 나올 땐 두 램프(파이프)를 왕복하며 콤보를 끊지 않는 것이 가장 빠릅니다.", en: "Grab every coin between tricks to push the combo to 10x — the game then spawns gold coins worth far more than silver ones; if you're stuck, just ride back and forth between two ramps/pipes to keep the combo alive." },
+        { ko: "레일이 있는 파크에서는 지나갈 때 레일에 올라타면 배수가 더 오릅니다. 보드는 가속이 높은 것을 골라 램프까지 빠르게 속도를 붙이세요.", en: "In parks with rails, grinding them as you pass bumps the multiplier higher — pick a high-acceleration board so you reach ramp speed fast." },
+        { ko: "스케이트 레이스는 초반에 앞서 나가 모든 점프대를 밟아 부스트를 유지하고, 레일 그라인드와 픽업으로 가속을 계속 채우세요.", en: "In skate races, get ahead early and hit every jump to keep boosting, topping up speed with rail grinds and pickups along the way." },
       ],
       videos: [
         { title: { ko: "TownGo 스케이트보딩 미션 클리어", en: "TownGo skateboarding school mission completed" }, url: YT("Y3QmWwxZMeQ") },
@@ -159,6 +174,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "부품으로 드론의 속도·가속·내구를 강화하세요. 상위 리그는 강화 없이 정면 돌파가 어렵습니다.", en: "Upgrade your drone's speed, acceleration and durability with parts — higher leagues are very hard without investment." },
         { ko: "링/게이트를 정확히 통과하면 부스트가 차오릅니다. 코너에서 미리 감속해 라인을 유지하고 직선에서 부스트를 터뜨리세요.", en: "Passing through rings/gates cleanly builds boost — ease off before corners to hold your line, then dump boost on the straights." },
         { ko: "타임트라이얼은 충돌이 곧 기록 손실이니, 안전한 라인을 먼저 완성한 뒤 점차 라인을 공격적으로 다듬으세요.", en: "In time trials every collision costs your record, so nail a safe line first, then sharpen it aggressively." },
+        { ko: "추천 빌드: 250 코스트 한도에 맞춰 S-ONE Adamant 프레임(색상 무관)에 MTG 모터, Low-Cost Turbo, 속도 25로 최고치인 S-ONE: S3 프로펠러 조합. 코스 대부분이 내구를 거의 요구하지 않으니 속도에 몰아주세요.", en: "Recommended build: within the 250-cost limit, run an S-ONE Adamant Frame (any color) with the MTG Motor, the Low-Cost Turbo, and the S-ONE: S3 Propeller (best speed stat at 25) — almost no course needs durability, so dump everything into speed." },
+        { ko: "Detective Essentials Pack(DLC)을 보유하면 코스트 부담 없이 최상위 부품을 다 달 수 있는 Sky Spider 프레임을 자동 지급받습니다.", en: "If you own the Detective Essentials Pack DLC you automatically get the Sky Spider frame, which has the capacity to fit all top-tier parts without worrying about the cost limit." },
+        { ko: "그랑프리는 여러 코스를 2랩씩 도는 장기전이니, 각 레이스가 끝날 때마다 빠져나와 세이브하세요. 다음 레이스에서 실패해도 갓 통과한 레이스를 다시 뛸 필요가 없습니다.", en: "Grand Prix runs several courses at two laps each, so quit out and save after every race — if you fail a later race you won't have to re-run the ones you already cleared." },
       ],
       videos: [
         { title: { ko: "드론 레이싱 - 100% 트로피 가이드", en: "Drone Racing - 100% Trophy Guide" }, url: YT("j8Foq6Eri8c") },
@@ -183,6 +201,9 @@ export const lostJudgmentMinigames: MinigamesData = {
         { ko: "이동은 방향을 고를 수 있으니, 빨강(스타 감소/배틀) 칸을 피하고 파랑(선물/스타 증가) 칸을 밟도록 경로를 계산하세요.", en: "You choose your direction, so plan your path to step on blue (gift/star-plus) spaces and avoid red (star-minus/battle) ones." },
         { ko: "노란 칸의 미니게임(드론·파쿠르·자물쇠따기)은 짧은 액션이니 침착하게 처리하면 스타와 아이템을 얻습니다.", en: "Yellow-space minigames (drone, parkour, lockpicking) are short action bits — handle them calmly for stars and items." },
         { ko: "낮은 코스에서도 회당 수십만 엔, 고난도 코스는 수백만 엔을 벌 수 있어 돈벌이로도 우수합니다. 라이벌 격파로 스킬을 모으면 이후 진행이 쉬워집니다.", en: "Even low courses net hundreds of thousands of yen per run (millions on hard courses), so it's great for money — collecting rival skills makes later runs easier." },
+        { ko: "낮은 코스 1회당 대략 25만~45만 엔, 긴 고난도 코스는 운이 좋으면 한 판에 수백만 엔까지 들어옵니다. 코스는 숏→미들→롱(스탠다드/챌린지) 순으로 순차 해금됩니다.", en: "Expect roughly 250,000–450,000 yen per run on low courses, and up to millions on a lucky long/hard run — courses unlock in order: Short → Middle → Long (Standard/Challenge rules)." },
+        { ko: "입장에 필요한 Play Pass는 식당에서 Lucky Bonus 아이템을 사면 얻을 수 있습니다. Lucky Gourmand·Bottomless Stomach 스킬을 미리 찍어두면 확률이 올라가고, 분실물 반환 보상으로도 받을 수 있습니다.", en: "The Play Passes you need to enter come from buying Lucky Bonus items at restaurants — take the Lucky Gourmand and Bottomless Stomach skills first to improve the odds, and returning Lost Items can also reward Passes." },
+        { ko: "VR 애슬레틱 칸은 제한 시간 안에 높이 오를수록 보상이 커집니다. 골인을 먼저 못 하면 라이벌이 들어오는 순간 게임 오버이니, 라이벌과의 거리 우선으로 경로를 짜세요.", en: "On VR Athletic spaces, climbing higher within the time limit pays more; and since rivals reaching the goal first ends the run, plan your route to stay ahead of them above all." },
       ],
       videos: [
         { title: { ko: "Paradise VR (Dice & Cube) 가이드", en: "Paradise VR (Dice & Cube) guide" }, url: YT("FLkZUrHF-KU") },

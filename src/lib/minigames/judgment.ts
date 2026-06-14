@@ -27,6 +27,9 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "드론 랩에서 돈과 소재로 부품을 강화하세요. 특히 '퀵스타터(스타트 대시)'와 가속·최고속 파츠에 우선 투자하면 순위가 크게 오릅니다.", en: "Upgrade parts at the Drone Lab with cash and materials — prioritize the Quickstarter (boost start) plus acceleration and top-speed parts to climb the standings fast." },
         { ko: "코스를 외워 코너 직전에 감속하고 아이템 링·부스터 게이트를 빠짐없이 통과하세요. 라인이 곧 기록입니다.", en: "Learn each course, brake just before corners, and never miss boost gates or item rings — your racing line is your time." },
         { ko: "후반 리그는 부품 풀강이 사실상 전제 조건입니다. 사이드 케이스·일감으로 소재를 모은 뒤 챔피언 리그에 도전하세요.", en: "Late leagues effectively require maxed parts — farm materials via side cases and gigs before tackling the Champion League." },
+        { ko: "그랑프리는 레이스 사이에 중단·저장이 됩니다. 한 코스라도 지면 곧바로 세이브를 로드해 그 코스만 다시 달리세요. 챔피언 리그를 확실히 뚫는 가장 현실적인 방법입니다.", en: "The Grand Prix lets you suspend and save between races — if you lose even one course, reload and redo just that course. It's the most reliable way to clear the Champion League." },
+        { ko: "최강 프레임 SMZ:神輿(미코시)는 속도는 빠르지만 내구도가 50뿐이라 충돌 많은 좁은 코스에선 드론이 파괴됩니다. 챔피언 리그의 협소·장애물 코스에서는 내구도 200짜리 S-ONE:金剛(금강) 프레임으로 바꿔 다세요.", en: "The top-speed SMZ Mikoshi/Chariot frame has only 50 durability and gets wrecked on narrow, collision-heavy tracks. Swap to the S-ONE Adamant/Kongo frame (200 durability) for the tight Champion League courses." },
+        { ko: "재료를 길에서 줍지 말고 돈으로 사세요. 파라다이스 VR의 주사위&큐브로 돈을 벌어 에비스 전당포·드래곤스 팰리스·라망에서 재료를 한꺼번에 구매하면 부품 100%가 훨씬 빠릅니다.", en: "Don't scavenge material pickups — buy them. Grind cash with Dice & Cube at Paradise VR and bulk-buy materials from Ebisu Pawn, Dragon Palace, and L'Amant to finish the parts collection far faster." },
       ],
       videos: [
         { title: { ko: "챔피언 리그 전 코스 1위 (드론 챔피언 트로피)", en: "Champion League all courses 1st (Drone Champion trophy)" }, url: YT("riIxpwAFNWo") },
@@ -47,10 +50,14 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "도착 시 남은 주사위와 모은 아이템으로 점수가 매겨집니다. 무작정 골로 직진하기보다 이벤트 칸을 들러 아이템을 챙기되 주사위 소진을 경계하세요.", en: "Your score is based on leftover dice and items collected on arrival — detour to event spaces for items, but watch you don't run out of dice." },
         { ko: "스탠더드 룰은 주사위가 떨어져도 모은 아이템을 유지하지만, 챌린지 룰은 골인하지 못하면 전부 잃습니다. 욕심은 룰에 맞춰 조절하세요.", en: "Standard rules let you keep items even if you run out of dice; Challenge rules give you nothing unless you reach the goal — gauge your greed to the ruleset." },
         { ko: "이동 방향을 자유롭게 정할 수 있으니, 라이벌을 견제하는 칸이나 보너스 칸으로 동선을 설계하세요.", en: "You choose your movement direction freely, so route toward bonus spaces or tiles that hamper your rival." },
+        { ko: "돈벌이가 목적이라면 SP 12,000짜리 '주사위 속도 느리게' 스킬을 최우선으로 사세요. 주사위가 느려져 원하는 눈(특히 5→6→2)을 골라 멈추기가 훨씬 쉬워집니다.", en: "If you're farming money, buy the SP 12,000 'slow the dice' skill first — slower dice make it far easier to stop on the number you want (especially the 5 → 6 → 2 sequence)." },
+        { ko: "주사위를 5→6→2 순으로 멈추면 황금 고양이(킹 코로냥) 찬스가 발동해 보너스 턴으로 약 40만 엔을 벌고, 전투에서 황금 오라 적을 잡으면 추가 발동돼 한 판 160만 엔까지 갑니다. 초반엔 전투·주사위 칸만 밟아 주사위를 불린 뒤 이 찬스를 노리세요.", en: "Stopping the dice on 5 → 6 → 2 triggers the King Kor-nyan (golden cat) bonus — ~400,000 yen in bonus turns, and beating gold-aura enemies in battle re-triggers it, up to ~1.6 million per run. Open by hitting only battle/dice tiles to grow your dice pool, then chase the golden cat." },
+        { ko: "한 판 수익 편차가 크니(같은 코스에서 90만~200만 엔) 코스 진입 전 세이브하고, 황금 고양이를 못 뽑거나 결과가 나쁘면 로드해서 다시 도세요. 잘 돌리면 1시간에 1,000만 엔 이상도 가능합니다.", en: "Payout variance is huge (the same course can give 900k or 2M), so save before entering and reload on a bad run or a missed golden cat — optimized, you can clear 10M+ yen per hour." },
       ],
       videos: [
         { title: { ko: "파라다이스 VR 100% 트로피 가이드", en: "Paradise VR 100% trophy guide" }, url: YT("pzMDaDmGxWI") },
         { title: { ko: "주사위와 큐브 미들 코스 해금 방법", en: "How to unlock the Dice & Cube Middle Course" }, url: YT("ZtkOX2rQoMY") },
+        { title: { ko: "VR 쌍륙 플레이 (저지 아이즈: 사신의 유언)", en: "VR sugoroku gameplay (Judge Eyes)" }, url: YT("kJ9JGoctyVQ") },
       ],
     },
     {
@@ -106,6 +113,8 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "쿠이탄(따짐 가능)과 적도라 룰을 켜면 손쉬운 멘젠/오픈 핸드로도 점수를 쌓기 쉬워집니다. 빠른 화료 위주로 운영하세요.", en: "Turning on Kuitan (open tanyao) and Red Dora makes it easier to score off simple or open hands — play for fast, frequent wins." },
         { ko: "치트 아이템 '구련보등 패(Nine Gates Tile)'를 오노데라 상점에서 10,000 SP에 사면 패산을 조작해 안정적으로 이길 수 있습니다.", en: "Buy the Nine Gates Tile cheat item from Onodera's Wares for 10,000 SP to rig the wall and win reliably." },
         { ko: "와레메는 분할 자리에 걸린 플레이어의 점수 증감이 2배가 됩니다. 자신이 와레메일 땐 방총을 피하고, 상대가 와레메일 땐 적극적으로 노리세요.", en: "In Wareme the split-tile player's wins and losses double — play safe when you're on the split, and press hard when an opponent is." },
+        { ko: "'리치 잇파츠로 화료' 과제가 막힐 땐, 구련보등 패로 리치를 선언한 뒤 일부러 숫자패 하나를 버리세요. 순정 구련보등(역만)이 깨지면서 잇파츠로 화료해 조건이 충족됩니다.", en: "Stuck on the 'win by Riichi Ippatsu' objective? Declare Riichi with the Nine Gates tile, then deliberately discard a numbered tile — this breaks the pure Nine Gates yakuman so you instead win by Ippatsu, satisfying the requirement." },
+        { ko: "여러 마작장을 한 번에 정리하려면 나인 게이츠 치트 패를 2개(총 20,000 SP) 사두세요. 테이블마다 SP를 다시 모을 필요 없이 즉시 화료로 끝낼 수 있습니다.", en: "To sweep multiple mahjong parlors in one sitting, buy two Nine Gates tiles (20,000 SP total) so you have an instant win ready per table without re-grinding SP." },
       ],
     },
     {
@@ -122,6 +131,8 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "친구 오노데라(챕터 5)를 해금하면 적은 SP로 '쇼기의 기본(다음 한 수 가이드)' 치트 아이템을 살 수 있습니다. 대국이 훨씬 쉬워집니다.", en: "Once you befriend Onodera (Chapter 5) you can buy 'The Basics of Shogi' cheat for a little SP — it suggests your next best move and makes matches far easier." },
         { ko: "잡은 말의 재투입이 승부를 가릅니다. 적 옥장 주변에 말을 떨궈 외통을 노리세요.", en: "Re-dropping captured pieces decides games — drop pieces near the enemy king to force checkmate." },
         { ko: "츠메 쇼기는 정답 수가 정해져 있어 막히면 공략을 참고하는 편이 빠릅니다. 외통 패턴을 외워 두면 응용이 쉽습니다.", en: "Tsume puzzles have fixed solution lengths — consult a guide when stuck, and memorizing mate patterns makes later puzzles easy." },
+        { ko: "치트책 '쇼기의 기본'은 오노데라(30,000 SP)보다 에비스 전당포에서 사는 편이 훨씬 쌉니다. 사용해도 소모되지 않으니 매 수마다 트라이앵글로 최선수를 무한히 받아 쓰세요.", en: "Buy 'The Basics of Shogi' cheat from Ebisu Pawn rather than Onodera (30,000 SP) — far cheaper, and it's never consumed, so press Triangle every turn for an endless stream of best-move hints." },
+        { ko: "이 힌트 치트는 츠메 쇼기 퍼즐 안에서도 작동합니다. 퍼즐은 정해진 해답 수순이 있으므로 파란색으로 표시되는 추천수를 그대로 따라가면 풀립니다.", en: "The hint cheat also works inside the Tsume Shogi puzzles — since each puzzle has a fixed solution, just follow the blue-highlighted recommended moves to solve it." },
       ],
     },
     {
@@ -138,6 +149,8 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "오이초카부는 9에 가까운 수를 노리는 단순 게임이라 칩 불리기에 가장 효율적입니다. 자신 있을 때 크게 베팅하세요.", en: "Oicho-Kabu (get close to 9) is the simplest, most efficient way to farm chips — bet big when confident." },
         { ko: "포커는 강한 핸드 확신이 설 때만 레이즈하고, 블랙잭은 카드 합 17 이상에서 멈추는 기본 전략을 지키세요.", en: "In Poker only raise on a strong made hand; in Blackjack follow basic strategy and stand on hard 17+." },
         { ko: "도박용 치트 아이템(예: 마킹 카드류)을 미리 사 두면 컴플리션 칩 그라인드가 훨씬 빨라집니다.", en: "Pick up the gambling cheat items beforehand to speed the chip grind to completion." },
+        { ko: "블랙잭이 칩 모으기 최고속입니다. 풀배팅으로 세이브-로드를 반복하다가, 첫 카드가 10 이상이면 더블다운(2배)으로 한 판에 두 배를 노리세요.", en: "Blackjack is the fastest chip farm — full-bet and save/load until you win, then double-down whenever your first card is 10+ to net double a round." },
+        { ko: "포커가 어렵다면 '로열 조커 카드' 치트를 베팅 단계에서 트라이앵글로 사용하세요. 다음에 깔리는 턴/리버 카드가 내 패에 유리하게 바뀝니다. 플롭 전엔 쓰지 말고 스트레이트·플러시가 한 장 모자랄 때 아끼세요.", en: "If poker is hard, use the 'Royal Joker Card' cheat with Triangle during the betting phase to force the next turn/river card to favor your hand — don't waste it pre-flop; save it for when you're one card short of a straight or flush." },
       ],
     },
     {
@@ -154,10 +167,13 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "VF2 엔진 기반이라 펀치·킥·잡기 3버튼 구성입니다. 펀치+잡기로 던지기를 쓰며, 벽으로 둘러싸인 링을 활용해 압박하세요.", en: "Built on the VF2 engine — Punch, Kick, Grab; Punch+Grab throws. Use the walled-in arenas to pressure opponents." },
         { ko: "강타로 적의 아머를 부수면 데미지가 크게 늘어납니다. 상·하단 아머를 모두 깨면 마무리가 쉬워집니다.", en: "Heavy hits shatter enemy armor and ramp up damage — break both upper and lower armor to close out rounds." },
         { ko: "라젤 전까지만 이기면 되니, 한 캐릭터로 콤보·던지기 한두 개만 익혀 CPU를 빠르게 압살하세요.", en: "You only need to reach Raxel, so learn one or two combos and a throw on a single character and rush the CPU down." },
+        { ko: "CPU 잡기 판정이 워낙 좋아 가까이 가면 이쪽 잡기는 씹히고 먼저 잡힙니다. 시작하자마자 백대시·백점프로 구석까지 간 뒤 앉아 약손(짠손)만 반복하면 거리를 유지하며 높은 확률로 이깁니다.", en: "The CPU's grab hitbox is brutal — get close and it eats your throw and grabs you first. Back-dash or back-jump into the corner at the start and just spam crouching light punch to keep distance and win at a high rate." },
+        { ko: "'Insert Coin' 화면에서 D패드 위 + 옵션을 동시에 눌러 코인을 넣으면 매 라운드 상대가 랜덤으로 나옵니다. 쉬운 1~2라운드만 반복하며 필요한 캐릭터(반·토키오·라젤·산맨·픽키·그레이스·허니)가 나올 때까지 돌리세요.", en: "At the 'Insert Coin' screen, press D-pad Up + Options together to insert the coin and randomize each round's opponent — then farm the easy rounds 1-2 until the characters you need (Bahn, Tokio, Raxel, Sanman, Picky, Grace, Honey) show up." },
       ],
       videos: [
         { title: { ko: "클럽 세가: 파이팅 바이퍼스 등 아케이드 플레이 (2019)", en: "Club SEGA: Fighting Vipers and other arcade games (2019)" }, url: YT("IoikCU-EWVs") },
         { title: { ko: "파이팅 바이퍼스 (허니) 플레이", en: "Fighting Vipers (Honey) gameplay" }, url: YT("cNe9ZxKTOHw") },
+        { title: { ko: "클럽 세가: 파이팅 바이퍼스 플레이", en: "Club SEGA: Fighting Vipers playthrough" }, url: YT("8aj9iK9x06Y") },
       ],
     },
     {
@@ -174,6 +190,9 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "스페이스 해리어·판타지 존은 패턴 슈팅이라 적 등장 위치를 외우면 안정적으로 진행됩니다.", en: "Space Harrier and Fantasy Zone are pattern shooters — memorize enemy spawns to progress reliably." },
         { ko: "뿌요뿌요는 같은 색 4개 연결로 연쇄를 노리고, 모터 레이드는 코너 인코스를 파고들며 부스트를 아껴 두세요.", en: "In Puyo Puyo chain by linking four same-color blobs; in Motor Raid hug inside lines on corners and bank your boost." },
         { ko: "VF5 FS는 본격 격투지만 컴플리션엔 가볍게 즐기는 수준이면 충분합니다. 한 캐릭터의 기본 콤보만 익히세요.", en: "VF5 FS is a deep fighter, but casual play is enough for completion — just learn one character's bread-and-butter combo." },
+        { ko: "스페이스 해리어는 점수가 스테이지 끝 보스에서 가장 크게 들어옵니다. 죽지 않고 장애물만 피하며 두 번째 보스까지만 잡으면 요구 점수가 사실상 확정됩니다.", en: "In Space Harrier the biggest points come from each stage's end boss — just survive and dodge, and clearing the second boss basically locks in the required score." },
+        { ko: "모터 레이드는 위험 구간만 빼고 부스트를 상시 쓰고 급커브에서만 감속하면 점수가 잘 나옵니다. 3개 레이스를 타임아웃 없이 완주하는 게 목표입니다.", en: "In Motor Raid hold boost constantly except in danger zones and only ease off for sharp curves — the goal is finishing all three races without timing out." },
+        { ko: "뿌요뿌요가 가장 까다롭습니다(긴 연승 필요). 오른쪽 세 열을 끝까지 채워 둔 뒤 네 번째 열 바닥부터 지워나가며 연쇄를 만드세요.", en: "Puyo Puyo is the toughest cabinet (needs a long win streak) — fill the rightmost three columns to the top, then clear from the bottom of the fourth column to build chains." },
       ],
       videos: [
         { title: { ko: "클럽 세가: 판타지 존·뿌요뿌요·VF5 등 아케이드 (2019)", en: "Club SEGA: Fantasy Zone, Puyo Puyo, VF5 and more (2019)" }, url: YT("IoikCU-EWVs") },

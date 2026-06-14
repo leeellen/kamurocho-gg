@@ -46,6 +46,8 @@ export const yakuza4Minigames: MinigamesData = {
         { ko: "함선은 피격되지 않으니 죽음 걱정 없이 적 밀집 구역으로 파고들어 레이저로 쓸어담으세요.", en: "The ship can't be hit, so dive straight into enemy clusters and sweep them with the laser fearlessly." },
         { ko: "점수보다 클리어 속도가 핵심입니다. 적이 화면에 나타나는 즉시 조준해 격파 시간을 줄이세요.", en: "Clear speed matters more than score — lock onto enemies the instant they appear to cut your kill time." },
         { ko: "박셀리오스 2를 먼저 3회 플레이해야 매니저가 원작 박셀리오스를 설치해 줍니다. 트로피에는 둘 다 필요합니다.", en: "Play Boxcelios 2 three times first so the manager installs the original — the trophy needs both cabinets." },
+        { ko: "적이 등장할 때마다 시간이 약 2초간 멈춥니다. 그 사이에 적의 빛나는 코어(약점) 바로 옆을 미리 조준해 두면 격파 효율이 극대화됩니다.", en: "Time freezes for about 2 seconds each time an enemy appears — use that window to pre-aim right next to the enemy's glowing core (its weak point) for maximum kill efficiency." },
+        { ko: "박셀리오스 2에서는 빠르게 격파할수록 제한 시간이 일부 환원되므로, 코어를 한 방에 노려 콤보를 이어가면 더 깊은 레벨까지 진행할 수 있습니다.", en: "In Boxcelios 2, fast kills refund some of the timer, so one-shotting cores to chain kills lets you push to deeper levels." },
       ],
       videos: [
         { title: { ko: "Yakuza 4 박셀리오스 2 아케이드 플레이", en: "Yakuza 4 Boxcelios 2 arcade playthrough" }, url: YT("lNYJbYKFtc4") },
@@ -84,6 +86,10 @@ export const yakuza4Minigames: MinigamesData = {
         { ko: "한 시프트 안에서도 손님마다 선호 의상이 달라 3종 의상을 번갈아 입혀야 No.1에 도달할 수 있습니다.", en: "Different guests prefer different outfits even within one shift; rotate three outfits to hit No.1." },
         { ko: "「Fashionista」 트로피를 위해 No.1 달성 전에 드레스업 메뉴에서 23종 의상을 각 1벌씩 반드시 구매하세요. 마지막 호스티스를 No.1로 만들면 메뉴가 닫힙니다.", en: "For Fashionista, buy one of each of the 23 outfit types from the Dress-Up menu BEFORE finishing — the menu closes once the last hostess hits No.1." },
         { ko: "첫 호스티스가 가장 어렵습니다. 한 명을 끝내면 나머지는 훨씬 수월하니 의상 수집을 먼저 끝내두세요.", en: "The first hostess is hardest; later ones are far easier, so finish outfit collecting early." },
+        { ko: "훈련 커맨드는 같은 시프트 안에서 절대 같은 것을 반복하지 마세요(거의 100% 실패). 모든 옵션이 풀린 뒤에는 「설교(Lecture) → 자유 시간(Free Time) → 휴식(Relax)」 순서가 가장 효율적입니다.", en: "Never repeat the same training command within one shift (it almost always fails). Once all options unlock, the most efficient order is Lecture > Free Time > Relax." },
+        { ko: "스트레스 관리가 핵심입니다. 「격려(Encourage)」는 의욕을 올리지만 스트레스를 크게 늘리고, 「휴식(Relax)」은 스트레스를 크게 낮추는 대신 의욕이 조금 줍니다. 스트레스가 쌓이면 호스티스가 결근하니 균형을 맞추세요.", en: "Stress management is critical: Encourage raises motivation but spikes stress, while Relax slashes stress at a small motivation cost. Let stress pile up and the hostess takes days off, so balance the two." },
+        { ko: "손님 취향에 맞춰 세 계열로 의상을 미리 세팅하세요 — 큐트(미니스커트 드레스+숏헤어+하트 귀걸이), 세련(차밍 베어탑+미디엄컷+우아한 목걸이, 매니큐어 없음), 화려/플래시(머메이드 드레스+컬 업두+화려한 반지·네일). 코스프레 타임에는 청순계엔 교복, 갸루계엔 차이나드레스가 무난합니다.", en: "Pre-set three outfit themes for guest tastes — Cute (Miniskirt Dress + short hair + Hearts earrings), Refined (Charming Bare Top + medium cut + Elegant Necklace, no nail polish), and Gorgeous/Flashy (Mermaid Dress + curly updo + showy rings/nails). For cosplay shifts, a school uniform suits the innocent type and a China dress suits the gyaru type." },
+        { ko: "의욕이 떨어진 호스티스에게는 에비스야에서 산 선물이 효과적이며 「프랑스제 머플러」가 가성비 최고입니다. 또한 면담에서 캬바걸별 선호 의상(스트랩리스 또는 미니스커트 드레스)을 입히면 「선물의 기쁨」 트로피도 챙길 수 있습니다.", en: "For a slumping hostess, gifts from Ebisuya restore motivation best — the French Muffler is the most cost-effective. Wearing each girl's preferred dress (Strapless or Mini Skirt Dress, per the boutique hints) during meetings also nets the 'Joy of Gifting' trophy." },
       ],
       achievementSlug: "achievement_18",
     },
@@ -101,6 +107,11 @@ export const yakuza4Minigames: MinigamesData = {
         { ko: "손패를 절대 공개(펑/치)하지 말고 닫은 채로 유지해 리치를 선언할 수 있게 하세요.", en: "Keep your hand fully closed (never call Pon/Chi) so you can declare Riichi." },
         { ko: "2~8 숫자패만 모으는 「탄야오」를 노립니다. 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료합니다.", en: "Chase Tanyao (only simples 2–8); once you're one tile away, declare Riichi and a yaku attaches automatically." },
         { ko: "칠대자 트로피를 노린다면 서로 다른 7쌍을 닫은 채로 완성하세요.", en: "For the Seven Pairs trophy, complete seven distinct closed pairs." },
+        { ko: "칠대자 전용 팁: 처음에는 3장 이상 들고 있는 패를 먼저 버려 모두 쌍 단위로 정리하고, 펑·치·깡(스틸) 제안은 절대 받지 마세요(받으면 그 손패로는 칠대자가 불가능). 폰/치/깡으로 손패가 공개되면 안 됩니다.", en: "Seven Pairs specifics: first discard any tile you hold 3+ of to break everything down into pairs, and never accept a Pon/Chi/Kan (steal) prompt — doing so makes Seven Pairs impossible for that hand since it must stay concealed." },
+        { ko: "각 패는 덱에 4장뿐이니, 다른 플레이어들의 버림패 더미를 보고 이미 버려진 패와 같은 종류를 우선 버려 받을 확률이 낮은 패를 빨리 정리하세요. 마지막 한 쌍만 남으면 리치를 선언해 진행을 빠르게 끝낼 수 있습니다.", en: "There are only four of each tile, so watch every player's discard pile and prioritise ditching tiles already discarded (lower draw odds). When only the last pair remains you can declare Riichi to speed the hand to a finish." },
+      ],
+      videos: [
+        { title: { ko: "Yakuza 4 Remastered 칠대자(Seven Pairs) 트로피 가이드", en: "Yakuza 4 Remastered Seven Pairs trophy guide" }, url: YT("k2xeGI90xG8") },
       ],
     },
     {
@@ -133,6 +144,8 @@ export const yakuza4Minigames: MinigamesData = {
         { ko: "조준선을 충분히 보여주는 카메라로 맞춘 뒤, 목적구가 포켓 방향으로 굴러갈 각도를 계산하세요.", en: "Line up with the camera that shows the full aim line, then calculate the angle that sends the object ball toward the pocket." },
         { ko: "파워는 거리에 맞춰 조절하고, 흰 공의 다음 위치(포지셔닝)까지 염두에 두면 연속 득점이 쉽습니다.", en: "Match power to distance and plan the cue ball's next position for easier runs." },
         { ko: "잉글리시(회전)를 살짝 주면 흰 공의 진행 방향을 미세 조정할 수 있습니다.", en: "A touch of English (spin) fine-tunes where the cue ball travels." },
+        { ko: "Y4의 당구는 9볼이라 흰 공으로 항상 「테이블에 남은 가장 낮은 번호의 공」을 먼저 맞혀야 하는 룰입니다(1번부터 순서대로). 공을 넣어야만 계속 칠 수 있습니다.", en: "Y4 pool is 9-ball: the cue ball must always strike the lowest-numbered ball left on the table first (1, then 2, and so on), and you only keep shooting if you pot a ball." },
+        { ko: "9번을 마지막에 넣을 필요는 없습니다. 예컨대 1번을 맞힌 공이 콤보로 9번을 포켓에 떨어뜨리면 그 즉시 승리이니, 9번이 포켓 근처에 있으면 콤보 한 방을 노려보세요.", en: "You don't have to sink the 9 last — if a legal hit on the lowest ball caroms the 9-ball into a pocket, you win instantly, so play for that combo whenever the 9 sits near a pocket." },
       ],
     },
     {
@@ -197,6 +210,8 @@ export const yakuza4Minigames: MinigamesData = {
         { ko: "공이 넘어올 때 좌우로 방향을 틀어 상대가 닿기 어려운 코너로 보내세요.", en: "Angle returns into the corners the opponent can't reach easily." },
         { ko: "강한 스매시는 타이밍이 맞으면 한 방에 득점하지만, 빗나가면 실점하니 찬스에만 쓰세요.", en: "A well-timed smash can win the point outright, but only use it on clear chances or you'll fault." },
         { ko: "무리하게 공격하기보다 랠리를 길게 끌어 상대 실수를 유도하는 편이 안전합니다.", en: "Dragging out rallies to force opponent errors is safer than over-attacking." },
+        { ko: "Y4 상대는 일반 랠리에서 거의 실수하지 않으므로 스매시로 점수를 따야 합니다. 공을 받을 때 버튼을 누른 채로 라켓이 빛나는 순간 떼면 히트 게이지가 빠르게 차고, 타이밍이 정확할수록 더 많이 찹니다.", en: "The Y4 opponent rarely misses in normal rallies, so you score with smashes: hold the swing button as the ball comes and release the instant the racket glows to build the Heat meter fast — better timing fills it more." },
+        { ko: "공이 상대 쪽으로 갈 때 스매시(L2 등)를 쓰면 대부분 득점합니다. 다만 11점에 가까워지면 상대가 스매시 한두 번을 받아치므로, 하드 난이도에서는 한 랠리에 2~3번 연속 스매시할 각오를 하세요.", en: "Smash (hold L2) whenever the ball heads to the opponent and you'll usually score; near match point (11) the opponent starts returning smashes, so on Hard expect to land two or three smashes in a single rally to take the point." },
       ],
     },
     {

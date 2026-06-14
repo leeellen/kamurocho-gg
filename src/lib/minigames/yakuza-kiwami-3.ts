@@ -33,10 +33,13 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
         { ko: "「핀에 가깝게」는 한 샷으로 홀에 최대한 붙이는 방식으로, 10라운드 누적 점수가 최종 기록입니다. 바람 표시를 반드시 확인하고 파워와 방향을 보정하세요.", en: "Closest to the Pin scores each one-shot by proximity to the hole over 10 rounds — always read the wind indicator and adjust power and aim accordingly." },
         { ko: "빙고 챌린지는 거대한 빙고판에 공을 쳐서 숫자를 지우고 한 줄(대각선 포함)을 완성하면 빙고. 같은 거리의 칸을 노려 파워를 일정하게 유지하면 줄을 만들기 쉽습니다.", en: "In the Bingo Challenge you hit the ball into a giant bingo board to clear numbers; completing a line (diagonals count) scores a bingo — keep your power consistent and target a single row of squares." },
         { ko: "임팩트 게이지는 천천히 멈추는 연습이 핵심입니다. 풀파워보다 정확도가 점수에 더 크게 작용합니다.", en: "Practice stopping the impact gauge cleanly — accuracy matters more for your score than raw power." },
+        { ko: "빙고 챌린지의 바람은 매번 같은 순서로 바뀌고 후반으로 갈수록 강해집니다. 순서를 외워두고, 멀리 있는 칸을 바람이 약한 초반에 먼저 처리한 뒤 가까운 칸을 마지막에 남기세요.", en: "In the Bingo Challenge the wind shifts in the exact same order every run and gets stronger over time, so memorize the sequence — clear the far squares early while it's calm and save the nearest squares for last." },
+        { ko: "「핀에 가깝게」는 바람이 등 뒤로 불 때 임팩트 지점을 아래로 내려 풀파워로 치면 굴러감을 줄이며 멀리 보낼 수 있고, 맞바람이 셀 때만 파워를 줄이세요.", en: "In Closest to the Pin, when the wind is at your back you can swing full power with the impact point lowered to limit roll, and only dial power back when a strong headwind is against you. (Tips drawn from Yakuza 3, which shares this golf engine.)" },
       ],
       videos: [
         { title: { ko: "극3 골프 플레이 (Chapter 3)", en: "Kiwami 3 golf gameplay (Chapter 3)" }, url: YT("d9LDJdjim8A") },
         { title: { ko: "Yakuza 3 리마스터 골프 미니게임 (참고용)", en: "Yakuza 3 Remaster golf minigame (reference)" }, url: YT("ht91uresg3k") },
+        { title: { ko: "극3 골프 8 빙고 챌린지 공략 (1400점)", en: "Kiwami 3 Golf 8 Bingo Challenge guide (1400 pts)" }, url: YT("Fy0EXcZwAXo") },
       ],
     },
     {
@@ -56,6 +59,8 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
         { ko: "찌가 흔들리고 입질이 오는 순간을 기다렸다가 타이밍에 맞춰 당기세요. 너무 일찍 당기면 놓칩니다.", en: "Wait for the bite — the moment the line tugs — then reel at the right time; jerking too early loses the fish." },
         { ko: "큰 물고기는 저항이 강하므로 릴 게이지/스태미나를 관리하며 끌어당기는 타이밍을 조절하세요.", en: "Bigger fish fight harder — manage the reel/tension so you don't snap the line, pulling only when the fish tires." },
         { ko: "도감·컴플리션 목적이라면 어종을 다양하게 낚는 것이 목표이니 여러 번 반복해 종류를 채우세요.", en: "For the catalog/completion goal you want variety, so fish repeatedly to fill out the species list." },
+        { ko: "막판에 등장하는 보스급 큰 물고기는 빛나는 빨간 눈을 노리면 추가 데미지가 들어가고, 양쪽 눈을 모두 맞히면 확정 포획됩니다.", en: "The boss-class fish that appears at the climax takes extra damage when you hit its glowing red eyes — landing hits on both eyes guarantees the catch." },
+        { ko: "모리닝글로리 동네 상점의 랭크를 올리면 상위 작살을 구입할 수 있는데, 장전이 빨라 연사가 쉬워지고 보스 데미지가 높아져 Normal·Hard가 크게 수월해집니다. 의뢰로 돈을 모아 최고급 작살부터 확보하세요.", en: "Raising the Morning Glory neighborhood store's rank unlocks better harpoons that charge faster (easier spamming) and deal more boss damage, making the Normal and Hard stages far easier — fund requests first to grab the top harpoon." },
       ],
     },
     {
@@ -113,6 +118,8 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
         { ko: "조준 가이드 라인을 목표 공-포켓 직선에 맞춘 뒤, 큐볼이 어느 방향으로 굴러갈지(다음 공 위치)까지 고려해 파워를 조절하세요.", en: "Line the guide up so the target ball heads for the pocket, then control power with the cue ball's resulting position (your next shot) in mind." },
         { ko: "스핀(잉글리시)을 살짝 주면 큐볼 제어가 쉬워집니다. 초보 단계에서는 무리한 콤비네이션보다 확실한 한 개씩 처리가 안전합니다.", en: "A little spin (english) makes cue-ball control easier; early on, pot one clean ball at a time rather than risking combinations." },
         { ko: "1-Shot Challenge는 한 샷으로 최대한 많이 넣는 모드이니 공이 몰린 배치를 노려 연쇄로 떨어지게 조준하세요.", en: "The 1-Shot Challenge rewards sinking as many balls as possible in one shot — target clustered layouts so balls cascade in." },
+        { ko: "정밀 조준의 핵심은 「큐볼 가장자리 — 목표 공 가장자리 — 포켓」이 일직선이 되도록 맞추는 것입니다. 삼각(△)/Y 버튼으로 위에서 내려다보는 시점으로 전환하면 이 직선을 훨씬 정확히 잡을 수 있습니다.", en: "The trick to precise aim is lining up the edge of the cue ball, the edge of the target ball, and the pocket into one straight line — switch to the top-down view (Triangle/Y) to read that line far more accurately." },
+        { ko: "이 시리즈의 당구 물리는 까다롭기로 유명하니 콤비네이션은 피하고, 위 직선 정렬로 한 번에 한 개씩 확실히 넣는 편이 점수에 안전합니다.", en: "Pool physics in this series are notoriously fiddly, so avoid combinations — pot one ball at a time using the edge-alignment line for safer, more reliable scoring." },
       ],
     },
     {
@@ -131,6 +138,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       howTo: [
         { ko: "손패를 절대 공개(펑/치)하지 말고 닫은 채 유지하세요. 그래야 리치를 선언할 수 있습니다.", en: "Keep your hand fully closed (never call Pon/Chi) so you can declare Riichi." },
         { ko: "2~8 숫자패만 모으는 「탄야오」를 노립니다. 4면자+1쌍 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료됩니다.", en: "Chase Tanyao (only simples 2–8); when you're one tile from 4 sets + a pair, declare Riichi and a yaku attaches automatically." },
+        { ko: "텐파이의 마지막 한 장은 「이미 버려진 수가 적은 패」로 기다리도록 미리 정리하세요. 자기가 버린 패로 기다리면 「후리텐」이 되어 론 화료가 막히니, 자신의 버림패와 겹치는 대기는 피하세요.", en: "Shape your tenpai to wait on a tile that few copies have been discarded, and never wait on a tile you have already discarded yourself — that triggers Furiten, which blocks a Ron win." },
         { ko: "컴플리션은 큰 점수가 아니라 화료(승리) 자체가 목적이니 점수 욕심 없이 빠른 화료 위주로 진행하세요.", en: "Completion only needs wins, not big hands — prioritize fast wins over value." },
       ],
     },
@@ -150,6 +158,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       howTo: [
         { ko: "패에서 같은 달(月)의 카드를 짝지어 「역(야쿠)」을 완성하면 점수입니다. 손패와 바닥패의 짝을 잘 살피세요.", en: "Match cards of the same month from your hand to field cards to build yaku (scoring combos) — watch both your hand and the field for pairs." },
         { ko: "역이 완성되면 「코이코이」를 외쳐 점수를 키울지, 그만두고 확정할지 선택합니다. 안정적으로 가려면 작은 역도 바로 확정하세요.", en: "When you complete a yaku, choose to call 'Koi-Koi' to keep building or stop to bank it — bank small yaku immediately for safety." },
+        { ko: "고급 역의 핵심 카드는 수가 적습니다(광 5장, 청단 3장, 홍단 3장). 내가 못 쓰더라도 바닥에 깔린 이런 카드를 먼저 가져오면 상대의 큰 역을 원천 차단할 수 있습니다.", en: "Key high-value cards are scarce (5 Light cards, 3 Blue Ribbons, 3 Red Poetry Ribbons), so grabbing one off the field even when you can't use it denies the opponent their big yaku entirely." },
         { ko: "상대가 큰 역을 노리는 듯하면 무리하게 코이코이를 외치지 말고 확정해 점수를 지키세요.", en: "If the opponent looks close to a big yaku, don't push Koi-Koi — lock in your points." },
       ],
     },
@@ -188,7 +197,8 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       howTo: [
         { ko: "공이 날아오는 타이밍에 맞춰 스윙하되, 타깃 존(빛나는 지점)에 배트를 맞추면 홈런 확률이 올라갑니다.", en: "Swing in time with the pitch — lining the bat up with the glowing target zone greatly increases home-run chances." },
         { ko: "초반 느린 공으로 타이밍 감을 잡은 뒤 빠른 코스에 도전하세요.", en: "Get your timing down on the slow pitches first, then move up to the faster courses." },
-        { ko: "홈런 콤퍼티션은 연속 홈런이 목표이니 무리한 풀스윙보다 정확한 미트 타이밍에 집중하세요.", en: "The Home Run Competition rewards consecutive homers — focus on clean contact timing rather than over-swinging." },
+        { ko: "투구는 코스마다 매번 같은 순서·같은 궤적으로 고정되어 있으니(100km 직구는 항상 똑같이 날아옴) 순서를 외우면 타이밍이 훨씬 쉬워집니다. 키류가 몸에 힘을 주며 멈칫하는 순간이 스윙 신호입니다.", en: "Pitches are fixed — each course throws the same pitches in the same order with identical trajectories every time (a 100kph fastball always flies the same), so memorize the sequence; Kiryu tensing up and going still is your cue to swing." },
+        { ko: "홈런 콤퍼티션은 10구 중 8개를 홈런으로 넘겨야 한 세트가 클리어됩니다. 타이밍 판정이 매우 관대한 「Serenity Bat(평온의 배트)」를 장착하면 컴플리션이 크게 수월해집니다.", en: "The Home Run Competition needs 8 home runs out of 10 to clear a set — equipping the Serenity Bat, whose timing window is extremely forgiving, makes completion far easier." },
       ],
     },
     {
