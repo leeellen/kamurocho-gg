@@ -296,30 +296,54 @@ export default async function AchievementPage({
                 {locale === "ko" ? "영상 가이드" : "Video guides"}
               </h2>
             </div>
-            <ul className="mt-4 flex flex-col gap-2" role="list">
-              {ach.guideVideos.map((video) => (
-                <li key={video.url}>
-                  <a
-                    href={video.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors hover:border-[var(--accent-border)] hover:bg-[var(--accent-subtle)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
-                  >
-                    <FiPlayCircle size={18} aria-hidden="true" className="shrink-0 text-[var(--accent)]" />
-                    <span className="text-[16px] font-semibold leading-6 text-white transition-colors group-hover:text-[var(--accent)]">
+            <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
+              {ach.guideVideos.map((video) => {
+                const embed = toYouTubeEmbed(video.url);
+                return (
+                  <figure key={video.url} className="m-0">
+                    <div className="relative aspect-video overflow-hidden rounded-xl border border-[var(--border)] bg-black">
+                      {embed ? (
+                        <iframe
+                          src={embed}
+                          title={video.title}
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
+                          className="absolute inset-0 h-full w-full"
+                        />
+                      ) : (
+                        <a
+                          href={video.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="absolute inset-0 flex items-center justify-center gap-2 text-[15px] font-semibold text-white no-underline"
+                        >
+                          <FiPlayCircle size={20} aria-hidden="true" className="text-[var(--accent)]" />
+                          {locale === "ko" ? "YouTube에서 열기" : "Open on YouTube"}
+                        </a>
+                      )}
+                    </div>
+                    <figcaption className="mt-2 flex items-center gap-2 text-[15px] font-semibold leading-6 text-[var(--text-secondary)]">
+                      <FiPlayCircle size={14} aria-hidden="true" className="shrink-0 text-[var(--accent)]" />
                       {video.title}
-                    </span>
-                    <span className="ml-auto shrink-0 font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
-                      YouTube
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    </figcaption>
+                  </figure>
+                );
+              })}
+            </div>
           </section>
         )}
 
       </article>
     </SiteShell>
   );
+}
+
+/** Convert a YouTube watch/share/shorts URL to a privacy-enhanced embed URL. */
+function toYouTubeEmbed(url: string): string | null {
+  const match = url.match(
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/|youtube\.com\/embed\/)([\w-]{11})/,
+  );
+  return match ? `https://www.youtube-nocookie.com/embed/${match[1]}` : null;
 }
