@@ -9,10 +9,12 @@ import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
 
 import { getCollectibles } from "@/lib/collectibles";
 import { getSubstories } from "@/lib/substories";
+import { getMinigames } from "@/lib/minigames";
 import { getCuratedGameBySlug } from "@/lib/content";
 
 import { AchievementsList } from "./_components/achievements-list";
 import { CollectiblesSection } from "./_components/collectibles-section";
+import { MinigamesSection } from "./_components/minigames-section";
 import { SubstoriesSection } from "./_components/substories-section";
 import { GameHero } from "./_components/game-hero";
 import { MissablesSidebar, type ChapterBucket } from "./_components/missables-sidebar";
@@ -96,7 +98,7 @@ const SLUG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
 };
 
-const VALID_TABS = ["achievements", "missables", "substories", "collectibles"] as const;
+const VALID_TABS = ["achievements", "missables", "substories", "collectibles", "minigames"] as const;
 type GameTab = (typeof VALID_TABS)[number];
 function pickTab(raw: string | string[] | undefined, available: Set<GameTab>): GameTab {
   const value = Array.isArray(raw) ? raw[0] : raw;
@@ -307,13 +309,16 @@ export default async function GamePage({
 
   const substories = getSubstories(data.game.appId);
   const collectibles = getCollectibles(data.game.appId);
+  const minigames = getMinigames(data.game.appId);
   const hasSubstories = Boolean(substories);
   const hasCollectibles = Boolean(collectibles && collectibles.categories.length > 0);
+  const hasMinigames = Boolean(minigames && minigames.minigames.length > 0);
 
   const availableTabs = new Set<GameTab>(["achievements"]);
   if (hasMissables) availableTabs.add("missables");
   if (hasSubstories) availableTabs.add("substories");
   if (hasCollectibles) availableTabs.add("collectibles");
+  if (hasMinigames) availableTabs.add("minigames");
   const activeTab = pickTab(search.tab, availableTabs);
 
   const tabLabels: Record<GameTab, { ko: string; en: string }> = {
@@ -321,11 +326,13 @@ export default async function GamePage({
     missables: { ko: "Missable", en: "Missables" },
     substories: { ko: "서브스토리", en: "Substories" },
     collectibles: { ko: "수집 요소", en: "Collectibles" },
+    minigames: { ko: "미니게임", en: "Minigames" },
   };
   const tabList: GameTab[] = ["achievements"];
   if (hasMissables) tabList.push("missables");
   if (hasSubstories) tabList.push("substories");
   if (hasCollectibles) tabList.push("collectibles");
+  if (hasMinigames) tabList.push("minigames");
 
   const jsonLd = gameStructuredData(
     {
@@ -407,6 +414,16 @@ export default async function GamePage({
                 locale={locale}
                 appId={data.game.appId}
                 categories={collectibles.categories}
+              />
+            </TabsContent>
+          )}
+
+          {hasMinigames && minigames && (
+            <TabsContent value="minigames" forceMount className="mt-8 data-[state=inactive]:hidden">
+              <MinigamesSection
+                locale={locale}
+                gameSlug={data.game.slug}
+                data={minigames}
               />
             </TabsContent>
           )}

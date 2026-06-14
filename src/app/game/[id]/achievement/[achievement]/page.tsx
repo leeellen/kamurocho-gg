@@ -307,7 +307,7 @@ export default async function AchievementPage({
                           src={embed}
                           title={video.title}
                           loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; compute-pressure"
                           referrerPolicy="strict-origin-when-cross-origin"
                           allowFullScreen
                           className="absolute inset-0 h-full w-full"
