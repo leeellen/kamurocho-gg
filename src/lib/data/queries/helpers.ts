@@ -4,7 +4,7 @@ import {
   localizeGuideText,
   parseAchievementSidecar,
 } from "@/lib/achievement-text";
-import { getCuratedGuide, pickCuratedList, pickCuratedString } from "@/lib/guides/curated";
+import { getCuratedGuide, pickCuratedList, pickCuratedString, pickCuratedVideos } from "@/lib/guides/curated";
 import { structureGuide } from "@/lib/guides/structured";
 import { type Locale } from "@/lib/i18n";
 import type { CuratedGame } from "@/lib/content";
@@ -269,6 +269,7 @@ export function buildGamePageData({
       const guideSummary = pickCuratedString(curatedGuide?.summary, locale) ?? dbSummary;
       const guideSteps = pickCuratedList(curatedGuide?.steps, locale) ?? dbSteps;
       const guideTips = pickCuratedList(curatedGuide?.tips, locale) ?? dbTips;
+      const guideVideos = pickCuratedVideos(curatedGuide?.videos, locale);
       const guideSource = curatedGuide?.sourceUrl ?? selectedGuide?.source_url ?? null;
       const guideSourceLabel = pickCuratedString(curatedGuide?.sourceLabel, locale) ?? null;
 
@@ -286,6 +287,7 @@ export function buildGamePageData({
         guideSummary,
         guideSteps,
         guideTips,
+        guideVideos,
         guideStats: sanitizeGuideSummary(guideStats, displayName, description, locale),
         guideSource,
         guideSourceLabel,

@@ -26,10 +26,21 @@ export type LocalizedText = { ko: string; en: string };
  * Every field is optional: only the parts present override the DB output, so
  * a curated entry can extend just the summary or just the steps.
  */
+export type CuratedVideo = {
+  title: LocalizedText;
+  url: string;
+};
+
 export type CuratedGuide = {
   summary?: LocalizedText;
   steps?: LocalizedText[];
   tips?: LocalizedText[];
+  /**
+   * Optional video walkthroughs (e.g. YouTube) for steps that read better as
+   * a demonstration than as text — mahjong, billiards carom shots, arcade
+   * minigames, and the like.
+   */
+  videos?: CuratedVideo[];
   sourceUrl?: string;
   sourceLabel?: LocalizedText;
 };
@@ -67,4 +78,15 @@ export function pickCuratedString(value: LocalizedText | undefined, locale: Loca
 export function pickCuratedList(values: LocalizedText[] | undefined, locale: Locale): string[] | undefined {
   if (!values || values.length === 0) return undefined;
   return values.map((entry) => (locale === "ko" ? entry.ko : entry.en));
+}
+
+export function pickCuratedVideos(
+  videos: CuratedVideo[] | undefined,
+  locale: Locale,
+): { title: string; url: string }[] {
+  if (!videos || videos.length === 0) return [];
+  return videos.map((video) => ({
+    title: locale === "ko" ? video.title.ko : video.title.en,
+    url: video.url,
+  }));
 }

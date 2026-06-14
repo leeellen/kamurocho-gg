@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FiAlertTriangle, FiArrowLeft, FiCheck, FiCheckCircle, FiLock, FiTarget } from "react-icons/fi";
+import { FiAlertTriangle, FiArrowLeft, FiCheck, FiCheckCircle, FiLock, FiPlayCircle, FiTarget } from "react-icons/fi";
 
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
@@ -279,6 +279,40 @@ export default async function AchievementPage({
                 <li key={index} className="flex gap-3 text-[16px] leading-7 text-[var(--text-secondary)]">
                   <span aria-hidden="true" className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
                   <span>{tip}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* VIDEO GUIDES */}
+        {ach.guideVideos.length > 0 && (
+          <section className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 md:p-8">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] ring-1 ring-inset ring-[var(--accent-border)]">
+                <FiPlayCircle size={14} aria-hidden="true" />
+              </span>
+              <h2 className="font-display m-0 text-[18px] font-extrabold tracking-tight text-white">
+                {locale === "ko" ? "영상 가이드" : "Video guides"}
+              </h2>
+            </div>
+            <ul className="mt-4 flex flex-col gap-2" role="list">
+              {ach.guideVideos.map((video) => (
+                <li key={video.url}>
+                  <a
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors hover:border-[var(--accent-border)] hover:bg-[var(--accent-subtle)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+                  >
+                    <FiPlayCircle size={18} aria-hidden="true" className="shrink-0 text-[var(--accent)]" />
+                    <span className="text-[16px] font-semibold leading-6 text-white transition-colors group-hover:text-[var(--accent)]">
+                      {video.title}
+                    </span>
+                    <span className="ml-auto shrink-0 font-mono text-[14px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                      YouTube
+                    </span>
+                  </a>
                 </li>
               ))}
             </ul>

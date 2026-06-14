@@ -876,6 +876,20 @@ const masterOfMinigames: CuratedGuide = {
         "[Disco] The Maharaja disco is a rhythm game — input slightly early, just before each prompt reaches the line, to land Perfects. 'Friday Night' is the easiest track and the best one to practice the timing on.",
     },
   ],
+  videos: [
+    {
+      title: { ko: "마작 입문 가이드 (Yakuza 0)", en: "Mahjong for beginners (Yakuza 0)" },
+      url: "https://www.youtube.com/watch?v=VwnEujAKE3A",
+    },
+    {
+      title: { ko: "당구 캐롬·콤비네이션 샷 공략", en: "Billiards: carom & combination shots" },
+      url: "https://www.youtube.com/watch?v=UOR-DbgucxQ",
+    },
+    {
+      title: { ko: "Fantasy Zone 공략 (Director's Cut)", en: "Fantasy Zone easy guide (Director's Cut)" },
+      url: "https://www.youtube.com/watch?v=FFkdY2YqRXY",
+    },
+  ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839",
   sourceLabel: { ko: "Steam Community — Yakuza 0 Achievement Guide", en: "Steam Community — Yakuza 0 Achievement Guide" },
 };

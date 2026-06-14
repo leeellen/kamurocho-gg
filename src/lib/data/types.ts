@@ -66,6 +66,7 @@ export type GameAchievementCard = {
   guideSummary: string | null;
   guideSteps: string[];
   guideTips: string[];
+  guideVideos: { title: string; url: string }[];
   guideStats: string | null;
   guideSource: string | null;
   guideSourceLabel: string | null;
