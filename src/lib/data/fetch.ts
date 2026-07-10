@@ -53,7 +53,7 @@ function filterValid<T>(
 // Cache the full series rows behind Next's data cache so locale switches
 // and adjacent page loads do not trigger a fresh Supabase fan-out fetch
 // every time. Bust via `revalidateTag("series-rows")` after content edits.
-export const fetchSeriesRows = unstable_cache(
+const cachedSeriesRows = unstable_cache(
   fetchSeriesRowsInner,
   // Bumped to v4 to invalidate Vercel Data Cache after the Steam sidecar
   // gained shortDescription* + releaseDate + releaseYear fields. Cached rows
@@ -62,6 +62,33 @@ export const fetchSeriesRows = unstable_cache(
   ["fetch-series-rows-v8"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
+
+// Static fallback served when Supabase is unreachable (paused free-tier
+// project, outage, bad migration) so read pages render instead of throwing
+// into error.tsx. Refresh via `node --env-file=.env.local scripts/generate-snapshot.mjs`.
+// Loaded lazily so the 1.3MB JSON is only parsed on the rare failure path.
+type Snapshot = { games: GameRow[]; achievements: AchievementRow[]; guides: GuideRow[] };
+async function loadSnapshot(): Promise<Snapshot> {
+  const mod = await import("./snapshot.json");
+  return mod.default as Snapshot;
+}
+
+// Public accessor: try the live/cached DB fetch, fall back to the snapshot on
+// any failure. The fallback sits OUTSIDE unstable_cache so a recovered DB is
+// picked up on the next revalidate instead of caching the stale snapshot.
+export async function fetchSeriesRows() {
+  try {
+    return await cachedSeriesRows();
+  } catch (err) {
+    console.error("[fetch] fetchSeriesRows failed, serving snapshot:", err);
+    const snap = await loadSnapshot();
+    return {
+      games: filterValid<GameRow>(snap.games, isValidGameRow, "games"),
+      achievements: filterValid<AchievementRow>(snap.achievements, isValidAchievementRow, "achievements"),
+      guides: filterValid<GuideRow>(snap.guides, isValidGuideRow, "guides"),
+    };
+  }
+}
 
 async function fetchSeriesRowsInner() {
   const client = admin();
@@ -102,8 +129,26 @@ async function fetchSeriesRowsInner() {
 
 // Single-game fetch — used by /game/[id] so it does not pull data for the
 // other 13 titles. Cached individually because each game page is a hot route.
-export function fetchGameRows(appId: number) {
-  return cachedGameRows(appId);
+export async function fetchGameRows(appId: number) {
+  try {
+    return await cachedGameRows(appId);
+  } catch (err) {
+    console.error(`[fetch] fetchGameRows(${appId}) failed, serving snapshot:`, err);
+    const snap = await loadSnapshot();
+    const gameRow = snap.games.find((g) => g.app_id === appId) ?? null;
+    const achievements = filterValid<AchievementRow>(
+      snap.achievements.filter((a) => a.app_id === appId),
+      isValidAchievementRow,
+      "achievements",
+    );
+    const ids = new Set(achievements.map((a) => a.id));
+    const guides = filterValid<GuideRow>(
+      snap.guides.filter((g) => ids.has(g.achievement_id)),
+      isValidGuideRow,
+      "guides",
+    );
+    return { game: isValidGameRow(gameRow) ? gameRow : null, achievements, guides };
+  }
 }
 
 const cachedGameRows = unstable_cache(

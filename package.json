@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "snapshot": "node --env-file=.env.local scripts/generate-snapshot.mjs",
     "scrape:substories:y0": "node scripts/substories/scrape-yakuza0.mjs"
   },
   "dependencies": {
