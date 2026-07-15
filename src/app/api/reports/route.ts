@@ -1,10 +1,14 @@
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
 
+import { sendReportNotification } from "@/lib/notify/report-email";
 import { createAdminClient } from "@/lib/supabase/admin";
+
+const REPORT_KINDS = ["achievement", "collectible", "substory", "guide", "general"] as const;
+type ReportKind = (typeof REPORT_KINDS)[number];
 
 type ReportBody = {
   app_id?: number;
-  kind?: "achievement" | "collectible" | "guide" | "general";
+  kind?: ReportKind;
   target_ref?: string;
   locale?: string;
   description?: string;
@@ -69,23 +73,27 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "description too long" }, { status: 400 });
   }
 
-  const kind = payload.kind && ["achievement", "collectible", "guide", "general"].includes(payload.kind)
-    ? payload.kind
-    : "general";
+  const kind: ReportKind =
+    payload.kind && REPORT_KINDS.includes(payload.kind) ? payload.kind : "general";
   const locale = payload.locale === "en" ? "en" : "ko";
   const appId = typeof payload.app_id === "number" ? payload.app_id : null;
   const targetRef = payload.target_ref?.slice(0, 200) ?? null;
   const userAgent = request.headers.get("user-agent")?.slice(0, 500) ?? null;
 
   const admin = createAdminClient();
-  const { error } = await admin.from("reports").insert({
-    app_id: appId,
-    kind,
-    target_ref: targetRef,
-    locale,
-    description: description.slice(0, 2000),
-    user_agent: userAgent,
-  });
+  const trimmedDescription = description.slice(0, 2000);
+  const { data: inserted, error } = await admin
+    .from("reports")
+    .insert({
+      app_id: appId,
+      kind,
+      target_ref: targetRef,
+      locale,
+      description: trimmedDescription,
+      user_agent: userAgent,
+    })
+    .select("id")
+    .single();
 
   if (error) {
     // Table missing → 503 with hint so admin knows to run migration 006_reports.sql.
@@ -99,6 +107,19 @@ export async function POST(request: Request) {
     console.error("[reports] insert failed", error);
     return NextResponse.json({ error: "insert failed" }, { status: 500 });
   }
+
+  // Notify after the response is sent so email latency never blocks the submitter.
+  after(() =>
+    sendReportNotification({
+      id: inserted?.id ?? null,
+      appId,
+      kind,
+      targetRef,
+      locale,
+      description: trimmedDescription,
+      userAgent,
+    }),
+  );
 
   return NextResponse.json({ ok: true });
 }
