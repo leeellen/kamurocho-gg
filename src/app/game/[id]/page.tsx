@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { SiteShell } from "@/components/layout/site-shell";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { GameTabsRoot } from "./_components/tabs-url-sync";
 import { getLocale } from "@/lib/i18n";
 import { getGamePageData } from "@/lib/data";
 import { getCurrentUser, getUserAchievementMap } from "@/lib/user-progress";
@@ -368,7 +369,7 @@ export default async function GamePage({
       />
 
       <div className="mx-auto max-w-[1280px] px-5 pb-20 md:px-8">
-        <Tabs defaultValue={activeTab} className="w-full">
+        <GameTabsRoot defaultValue={activeTab} className="w-full">
           <TabsList className="sticky top-16 z-30 -mx-5 mt-2 flex h-auto w-[calc(100%+2.5rem)] flex-wrap gap-2 border-b border-[var(--border-subtle)] bg-[var(--bg-base)]/85 px-5 py-3 backdrop-blur md:-mx-8 md:w-[calc(100%+4rem)] md:px-8">
             {tabList.map((tab) => (
               <TabsTrigger key={tab} value={tab} className="text-[17px] md:text-[18px]">
@@ -427,7 +428,7 @@ export default async function GamePage({
               />
             </TabsContent>
           )}
-        </Tabs>
+        </GameTabsRoot>
       </div>
     </SiteShell>
   );

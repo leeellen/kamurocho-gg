@@ -240,7 +240,7 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                     setOpenNo(n);
                   }}
                   aria-label={locale === "ko" ? `No.${no} 보기` : `View No.${no}`}
-                  className="absolute h-[26px] w-[26px] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-transparent transition hover:bg-[var(--accent-subtle)] hover:shadow-[0_0_0_3px_var(--accent-border)]"
+                  className="absolute h-[26px] w-[26px] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-transparent transition hover:bg-[rgba(251,191,36,0.35)] hover:shadow-[0_0_0_3px_rgba(251,191,36,0.85)]"
                   style={{ left: `${x}%`, top: `${y}%` }}
                 >
                   {done && (
