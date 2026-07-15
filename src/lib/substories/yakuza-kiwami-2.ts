@@ -16,7 +16,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       items: [
         {
           number: 20,
-          title: { ko: "아메리칸 야구", en: "American Baseball" },
+          title: { ko: "미국 야구", en: "American Baseball" },
           chapter: { ko: "1장", en: "Chapter 1" },
           location: { ko: "카무로초 — 요시다 배팅 센터", en: "Kamurocho — Yoshida Batting Center" },
           trigger: { ko: "초급 코스를 3회 클리어한 뒤 가게 안 거구의 외국인 「밥 우츠노미야」에게 말 걸기", en: "Clear the beginner course 3 times, then talk to Bob Utsunomiya inside the center." },
@@ -43,7 +43,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 32,
-          title: { ko: "센료 거리 호객꾼과 단골 되기", en: "Friends: Senryo St. Tout" },
+          title: { ko: "센료 거리의 호객꾼과 아는 사이", en: "Friends: Senryo St. Tout" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 센료 거리", en: "Kamurocho — Senryo Ave." },
           trigger: { ko: "센료 거리 호객꾼과 반복 대화", en: "Repeatedly talk to the tout on Senryo Ave." },
@@ -51,7 +51,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 33,
-          title: { ko: "아텐시의 마마와 단골 되기", en: "Friends: Earth Angel Mama" },
+          title: { ko: "아천사의 마담과 아는 사이", en: "Friends: Earth Angel Mama" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 바 아텐시", en: "Kamurocho — Bar Earth Angel" },
           trigger: { ko: "아텐시에 입장해 마마와 대화", en: "Enter Earth Angel and chat with the mama." },
@@ -59,28 +59,28 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 34,
-          title: { ko: "큐슈이치반보시 점장과 단골 되기", en: "Friends: Kyushu No. 1 Star Owner" },
+          title: { ko: "큐슈 일등성의 점장과 아는 사이", en: "Friends: Kyushu No. 1 Star Owner" },
           chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 큐슈이치반보시", en: "Kamurocho — Kyushu No. 1 Star" },
+          location: { ko: "카무로초 — 큐슈 일등성", en: "Kamurocho — Kyushu No. 1 Star" },
           trigger: { ko: "라멘 가게 점장과 반복 대화", en: "Repeatedly talk to the ramen shop owner." },
         },
         {
           number: 36,
-          title: { ko: "어린이공원 화장실에서 곤란한 남자와 단골 되기", en: "Friends: Park Restroom Man" },
+          title: { ko: "화장실에서 곤란해하는 남자와 아는 사이", en: "Friends: Park Restroom Man" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 어린이 공원", en: "Kamurocho — Children's Park" },
           trigger: { ko: "공원 화장실 앞 곤란한 남자에게 휴지를 건네주기", en: "Hand toilet paper to the desperate man at the park restroom." },
         },
         {
           number: 37,
-          title: { ko: "카무로초 포포 점원과 단골 되기", en: "Friends: Kamurocho POPPO Clerk" },
+          title: { ko: "카무로초 POPPO 점원과 아는 사이", en: "Friends: Kamurocho POPPO Clerk" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 포포 쇼와 거리점", en: "Kamurocho — POPPO Showa St." },
           trigger: { ko: "포포 점원과 반복 대화", en: "Repeatedly talk to the POPPO clerk." },
         },
         {
           number: 56,
-          title: { ko: "키류의 모델 데뷔!?", en: "Kiryu's Modeling Debut!?" },
+          title: { ko: "키류의 모델 데뷔?", en: "Kiryu's Modeling Debut!?" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 극장 앞 광장", en: "Kamurocho — Theater Square" },
           trigger: { ko: "극장 앞 광장에서 잡지 카메라맨에게 말 걸기", en: "Talk to the magazine photographer in front of the theater." },
@@ -89,7 +89,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 58,
-          title: { ko: "앨버트로스 아카기의 골프 클럽", en: "Albatross Akagi's Golf Club" },
+          title: { ko: "알바트로스 아카기의 클럽", en: "Albatross Akagi's Golf Club" },
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 골프 바", en: "Kamurocho — Golf Bar" },
           trigger: { ko: "골프 바에서 니어핀 상급을 클리어한 뒤 아카기에게 말 걸기", en: "Clear Nearpin Advanced at the golf bar, then talk to Akagi." },
@@ -117,7 +117,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 2,
-          title: { ko: "전설의 남자", en: "Legendary Man" },
+          title: { ko: "전설의 사나이", en: "Legendary Man" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 챔피언 거리 입구", en: "Kamurocho — Champion St. entrance" },
           trigger: { ko: "챔피언 거리 입구에서 「가짜 키류」 일행 목격", en: "Spot the 'fake Kiryu' duo at the Champion St. entrance." },
@@ -126,11 +126,11 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 5,
-          title: { ko: "히마와리 후원 1", en: "Sunflower Aid 1" },
+          title: { ko: "해바라기 후원 1", en: "Sunflower Aid 1" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 나카미치 거리 「돈키호테」 앞", en: "Kamurocho — In front of Don Quijote on Nakamichi St." },
           trigger: { ko: "돈키호테 앞에서 모금 중인 모리시마 칸지에게 말 걸기", en: "Speak to Kanji Morishima fundraising in front of Don Quijote." },
-          body: { ko: "히마와리 보육원 후원 시리즈의 1편. 기부 또는 격려 후 완료.", en: "First in the Sunflower Orphanage support series. Donate or encourage him." },
+          body: { ko: "해바라기 보육원 후원 시리즈의 1편. 기부 또는 격려 후 완료.", en: "First in the Sunflower Orphanage support series. Donate or encourage him." },
           choices: [
             { prompt: { ko: "「기부해주실 수 있나요?」", en: "'Would you donate?'" }, correct: { ko: "기부한다", en: "Donate" }, note: { ko: "기부해도 손해는 없고 후속 서브가 이어집니다", en: "Donating chains directly into No.6." } },
           ],
@@ -138,7 +138,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 6,
-          title: { ko: "히마와리 후원 2", en: "Sunflower Aid 2" },
+          title: { ko: "해바라기 후원 2", en: "Sunflower Aid 2" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 나카미치 거리", en: "Kamurocho — Nakamichi St." },
           trigger: { ko: "No.5 클리어 후 모리시마와 재대화", en: "After clearing No.5, return to Morishima." },
@@ -146,16 +146,16 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 7,
-          title: { ko: "히마와리 후원 3", en: "Sunflower Aid 3" },
+          title: { ko: "해바라기 후원 3", en: "Sunflower Aid 3" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 나카미치 거리", en: "Kamurocho — Nakamichi St." },
           trigger: { ko: "No.6 클리어 후 모리시마와 재대화", en: "After clearing No.6, talk to Morishima again." },
           body: { ko: "놀이터 정비를 위해 추가 모금. 모금 사기단을 격파.", en: "Fund the playground rebuild; smash the fake charity crew." },
-          reward: { ko: "경험치 + 「히마와리 시리즈」 완주", en: "EXP, completes the Sunflower line" },
+          reward: { ko: "경험치 + 「해바라기 시리즈」 완주", en: "EXP, completes the Sunflower line" },
         },
         {
           number: 8,
-          title: { ko: "때려보세요 가게", en: "Hit Me If You Can" },
+          title: { ko: "쓰러뜨려 보슈", en: "Hit Me If You Can" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 시치후쿠 주차장", en: "Kamurocho — Shichifuku Parking" },
           trigger: { ko: "시치후쿠 주차장의 「때려보세요」 간판 앞 남자에게 말 걸기", en: "Approach the 'Hit Me' sign guy at the Shichifuku parking lot." },
@@ -164,7 +164,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 9,
-          title: { ko: "메일로 일하기", en: "Job by Email" },
+          title: { ko: "메일로 받은 임무", en: "Job by Email" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 극장 북서쪽", en: "Kamurocho — Northwest of the theater" },
           trigger: { ko: "극장 북서쪽 골목의 남자에게 말 걸기", en: "Talk to the man in the alley northwest of the theater." },
@@ -179,7 +179,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 19,
-          title: { ko: "취준생 응원하기", en: "Job Hunting" },
+          title: { ko: "취직활동", en: "Job Hunting" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 스폰 거리", en: "Kamurocho — Suppon St." },
           trigger: { ko: "스폰 거리에서 면접을 앞둔 청년에게 말 걸기", en: "Talk to the nervous interviewee on Suppon St." },
@@ -204,7 +204,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 25,
-          title: { ko: "휴업 중인 레슬러", en: "Wrestler on Hiatus" },
+          title: { ko: "레슬러 휴업 중", en: "Wrestler on Hiatus" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 용궁성 (클럽 세가 4F)", en: "Kamurocho — Dragon Palace (Club SEGA 4F)" },
           trigger: { ko: "No.22 클리어 후 용궁성 안의 거구의 외국인에게 말 걸기", en: "After No.22, talk to the giant gaijin inside Dragon Palace." },
@@ -212,7 +212,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 26,
-          title: { ko: "세계를 먹는 레슬러", en: "Wrestler Devours the World" },
+          title: { ko: "레슬러 세계를 먹다", en: "Wrestler Devours the World" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 용궁성", en: "Kamurocho — Dragon Palace" },
           trigger: { ko: "No.25 클리어 후 재방문", en: "Revisit after clearing No.25." },
@@ -220,7 +220,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 27,
-          title: { ko: "세계를 마시는 레슬러", en: "Wrestler Drinks the World" },
+          title: { ko: "레슬러 세계를 마시다", en: "Wrestler Drinks the World" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 용궁성", en: "Kamurocho — Dragon Palace" },
           trigger: { ko: "No.26 클리어 후 재방문", en: "Revisit after No.26." },
@@ -229,7 +229,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 28,
-          title: { ko: "코마키 무술 수련 1", en: "Komaki Training 1" },
+          title: { ko: "코마키의 수행 1", en: "Komaki Training 1" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 챔피언 거리 공터 (사이노카와라)", en: "Kamurocho — Sai no Kawara, Champion St. vacant lot" },
           trigger: { ko: "5장 사이노카와라(공터)로 향할 때 코마키 사부에게 말 걸기", en: "Visit Sai no Kawara during Ch.5 and find Master Komaki." },
@@ -238,7 +238,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 29,
-          title: { ko: "코마키 무술 수련 2", en: "Komaki Training 2" },
+          title: { ko: "코마키의 수행 2", en: "Komaki Training 2" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
           trigger: { ko: "No.28 후 재방문", en: "Return after No.28." },
@@ -247,7 +247,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 30,
-          title: { ko: "코마키 무술 수련 3", en: "Komaki Training 3" },
+          title: { ko: "코마키의 수행 3", en: "Komaki Training 3" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
           trigger: { ko: "No.29 후 재방문", en: "Return after No.29." },
@@ -255,7 +255,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 31,
-          title: { ko: "코마키 무술 수련 4", en: "Komaki Training 4" },
+          title: { ko: "코마키의 수행 4", en: "Komaki Training 4" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
           trigger: { ko: "No.30 후 재방문", en: "Return after No.30." },
@@ -264,7 +264,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 35,
-          title: { ko: "카무로초 힐즈의 노동자와 단골 되기", en: "Friends: Kamurocho Hills Worker" },
+          title: { ko: "카무로초 힐즈의 노동자와 아는 사이", en: "Friends: Kamurocho Hills Worker" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 카무로초 힐즈 공사장", en: "Kamurocho — Kamurocho Hills construction site" },
           trigger: { ko: "투기장 토너먼트 진행 중 공사장 인부에게 말 걸기", en: "During the arena tournament arc, chat with the construction worker." },
@@ -285,7 +285,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       items: [
         {
           number: 13,
-          title: { ko: "왈라셰 전설", en: "Straw Millionaire" },
+          title: { ko: "병아리 한 마리로 부자되기", en: "Straw Millionaire" },
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초 — 타이헤이 거리 서쪽", en: "Kamurocho — Taihei Blvd. West" },
           trigger: { ko: "타이헤이 거리 서쪽에서 무명 래퍼 「마이클」에게 말 걸기", en: "Speak to the struggling rapper Michael on Taihei W." },
@@ -300,7 +300,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 15,
-          title: { ko: "비치는데스", en: "Caught on Film" },
+          title: { ko: "찍혀 있어요", en: "Caught on Film" },
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초 — 타이헤이 거리 동쪽 (야간)", en: "Kamurocho — Taihei Blvd. East (nighttime)" },
           trigger: { ko: "6장 야간에 타이헤이 거리 동쪽에서 떨고 있는 남자에게 말 걸기", en: "Chapter 6 at night: approach the shaken man on Taihei E." },
@@ -339,7 +339,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 18,
-          title: { ko: "공짜만큼 무서운 것은 없다", en: "Nothing's Scarier Than Free" },
+          title: { ko: "공짜보다 무서운 것은 없다", en: "Nothing's Scarier Than Free" },
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초 — 나카미치 거리 스마일 버거", en: "Kamurocho — Smile Burger on Nakamichi St." },
           trigger: { ko: "다테와 인터넷 설치를 돕는 이벤트 후 발생", en: "Triggers after helping Date set up his internet." },
@@ -347,26 +347,26 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 14,
-          title: { ko: "이 류전", en: "Lee Ryujon" },
+          title: { ko: "이루전", en: "Lee Ryujon" },
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초 — 한그라이 (시치후쿠 거리 동쪽)", en: "Kamurocho — Hangrai, Shichifuku St. East" },
           trigger: { ko: "다테 마코토와 함께 바 「밴텀」으로 향하는 길에 한그라이 앞에서 발생", en: "On the way to Bantam with Date, encounter Lee Ryujon at Hangrai." },
           body: {
-            ko: "팬에게 쫓기는 한류 스타 「이 류전」을 3곳 안전 장소까지 호위. 가는 도중 팬들을 격파.",
+            ko: "팬에게 쫓기는 한류 스타 「이루전」을 3곳 안전 장소까지 호위. 가는 도중 팬들을 격파.",
             en: "Escort Korean star Lee Ryujon through three checkpoints while fending off fan mobs.",
           },
           choices: [
             { prompt: { ko: "「길 안내 부탁드려요」", en: "'Please guide me'" }, correct: { ko: "안내한다", en: "Guide him" } },
           ],
-          reward: { ko: "이 류전이 캬바레 캐스트로 합류", en: "Lee Ryujon joins as cabaret cast" },
+          reward: { ko: "이루전이 캬바레 캐스트로 합류", en: "Lee Ryujon joins as cabaret cast" },
         },
         {
           number: 23,
-          title: { ko: "백련 스승과의 만남", en: "Meeting Master Bairen" },
+          title: { ko: "뱌쿠렌 노사와의 만남", en: "Meeting Master Bairen" },
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초 — 바 밴텀에서 셀레나로 향하는 길", en: "Kamurocho — Bantam to Serena" },
           trigger: { ko: "밴텀에서 셀레나로 이동 중 셀레나 앞에서 노인에게 말 걸기", en: "Heading from Bantam to Serena, meet the elderly master near Serena." },
-          body: { ko: "백련 스승이 카무로초에서 일자리를 찾는다는 의뢰. 백련 시리즈(62~64)의 도입.", en: "Master Bairen needs a job — opens the Bairen errand line (62-64)." },
+          body: { ko: "뱌쿠렌 노사가 카무로초에서 일자리를 찾는다는 의뢰. 뱌쿠렌 노사 시리즈(62~64)의 도입.", en: "Master Bairen needs a job — opens the Bairen errand line (62-64)." },
         },
       ],
     },
@@ -375,12 +375,12 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       items: [
         {
           number: 3,
-          title: { ko: "블랙썬더", en: "Black Thunder" },
+          title: { ko: "블랙 선더", en: "Black Thunder" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 스타라이트 (텐카이치 거리, 야간)", en: "Kamurocho — Starlight, Tenkaichi St. (night)" },
           trigger: { ko: "8장 야간에 클럽 스타라이트 앞에서 유야가 협박당하는 장면 목격", en: "Chapter 8 night: see Yuya being threatened outside Starlight." },
           body: {
-            ko: "유야 일행과 함께 「블랙썬더」 갱단을 2회 격파. 두 번째 전투는 동료 지원 포함 4 vs 다수.",
+            ko: "유야 일행과 함께 「블랙 선더」 갱단을 2회 격파. 두 번째 전투는 동료 지원 포함 4 vs 다수.",
             en: "Help Yuya beat Black Thunder twice; the rematch is a 4-man tag fight.",
           },
           choices: [
@@ -420,25 +420,25 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 62,
-          title: { ko: "백련 스승의 부탁 1", en: "Master Bairen's Request 1" },
+          title: { ko: "뱌쿠렌 노사의 부탁 1", en: "Master Bairen's Request 1" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
-          trigger: { ko: "No.23 클리어 후 백련 스승과 재대화", en: "Talk to Bairen after No.23." },
+          trigger: { ko: "No.23 클리어 후 뱌쿠렌 노사와 재대화", en: "Talk to Bairen after No.23." },
         },
         {
           number: 63,
-          title: { ko: "백련 스승의 부탁 2", en: "Master Bairen's Request 2" },
+          title: { ko: "뱌쿠렌 노사의 부탁 2", en: "Master Bairen's Request 2" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
           trigger: { ko: "No.62 클리어 후 재방문", en: "Return after No.62." },
         },
         {
           number: 64,
-          title: { ko: "백련 스승의 부탁 3", en: "Master Bairen's Request 3" },
+          title: { ko: "뱌쿠렌 노사의 부탁 3", en: "Master Bairen's Request 3" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
           trigger: { ko: "No.63 클리어 후 재방문", en: "Return after No.63." },
-          reward: { ko: "백련류 기술 마스터", en: "Bairen techniques mastered" },
+          reward: { ko: "뱌쿠렌류 기술 마스터", en: "Bairen techniques mastered" },
         },
       ],
     },
@@ -447,7 +447,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       items: [
         {
           number: 4,
-          title: { ko: "포기를 모르는 남자", en: "The Man Who Won't Quit" },
+          title: { ko: "끈질긴 남자", en: "The Man Who Won't Quit" },
           chapter: { ko: "13장", en: "Chapter 13" },
           location: { ko: "카무로초 — 시치후쿠 거리 동쪽 옥상", en: "Kamurocho — Shichifuku St. East rooftop" },
           trigger: { ko: "하루카 동행 야간에 시치후쿠 거리 동쪽 옥상의 커플에게 말 걸기", en: "Chapter 13 night with Haruka: approach the rooftop couple on Shichifuku E." },
@@ -462,7 +462,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 12,
-          title: { ko: "카무로초의 살인귀", en: "The Kamurocho Ripper" },
+          title: { ko: "카무로초의 빨간 마스크", en: "The Kamurocho Ripper" },
           chapter: { ko: "13장", en: "Chapter 13" },
           location: { ko: "카무로초 — 핑크 거리", en: "Kamurocho — Pink St." },
           trigger: { ko: "하루카 동행 중 핑크 거리에서 위험에 처한 호스티스 「우카」를 발견", en: "While Haruka tags along, find hostess Uka in danger on Pink St." },
@@ -508,7 +508,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       items: [
         {
           number: 43,
-          title: { ko: "그녀에게 줄 선물", en: "A Gift for Her" },
+          title: { ko: "그녀에게 주는 선물", en: "A Gift for Her" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 클럽 세가 소텐보리", en: "Sotenbori — Club SEGA Sotenbori" },
           trigger: { ko: "2장 진행 중 클럽 세가 앞에서 곤란해하는 남자에게 말 걸기", en: "Chapter 2: man outside Club SEGA needs help." },
@@ -517,49 +517,49 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 59,
-          title: { ko: "소텐보리의 기타리스트와 단골 되기", en: "Friends: Sotenbori Guitarist" },
+          title: { ko: "소텐보리의 기타리스트와 아는 사이", en: "Friends: Sotenbori Guitarist" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 도톤보리 강변", en: "Sotenbori — Riverwalk" },
           trigger: { ko: "강변의 길거리 기타리스트와 반복 대화", en: "Repeatedly chat with the busking guitarist." },
         },
         {
           number: 60,
-          title: { ko: "소텐보리의 호객꾼과 단골 되기", en: "Friends: Sotenbori Tout" },
+          title: { ko: "소텐보리 호객꾼과 아는 사이", en: "Friends: Sotenbori Tout" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 쇼토쿠초", en: "Sotenbori — Shotoku-cho" },
           trigger: { ko: "쿠로카와와 초회합 후 호객꾼에게 말 걸기", en: "After meeting Kurokawa, talk to the tout." },
         },
         {
           number: 65,
-          title: { ko: "삥쟁이 누나와 단골 되기", en: "Friends: Sotenbori Scout Lady" },
+          title: { ko: "호객하는 아가씨와 아는 사이", en: "Friends: Sotenbori Scout Lady" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 도톤보리 거리", en: "Sotenbori — Dotonbori St." },
           trigger: { ko: "스카우트 여성과 반복 대화", en: "Repeatedly chat with the scout lady." },
         },
         {
           number: 66,
-          title: { ko: "행인 아주머니와 단골 되기", en: "Friends: Sotenbori Passerby" },
+          title: { ko: "통행인 아주머니와 아는 사이", en: "Friends: Sotenbori Passerby" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 이즈미바시 부근", en: "Sotenbori — Near Izumi Bridge" },
           trigger: { ko: "행인 아주머니와 반복 대화", en: "Chat repeatedly with the older lady." },
         },
         {
           number: 67,
-          title: { ko: "카미아지안 점주와 단골 되기", en: "Friends: Kamiajian Owner" },
+          title: { ko: "신미암 점주와 아는 사이", en: "Friends: Kamiajian Owner" },
           chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 카미아지안", en: "Sotenbori — Kamiajian" },
+          location: { ko: "소텐보리 — 신미암", en: "Sotenbori — Kamiajian" },
           trigger: { ko: "음식점 점주와 반복 대화", en: "Chat repeatedly with the eatery owner." },
         },
         {
           number: 68,
-          title: { ko: "소텐보리 포포 점원과 단골 되기", en: "Friends: Sotenbori POPPO Clerk" },
+          title: { ko: "소텐보리 POPPO 점원과 아는 사이", en: "Friends: Sotenbori POPPO Clerk" },
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 포포", en: "Sotenbori — POPPO" },
           trigger: { ko: "포포 점원과 반복 대화", en: "Chat repeatedly with the POPPO clerk." },
         },
         {
           number: 44,
-          title: { ko: "카네마츠 시게", en: "Kanematsu Shige" },
+          title: { ko: "카네마츠 시게루", en: "Kanematsu Shige" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "소텐보리 — 돈키호테 앞", en: "Sotenbori — Don Quijote front" },
           trigger: { ko: "사야마 카오루를 스낵 아오이로 데려간 뒤 발생", en: "After taking Kaoru Sayama to Snack Aoi." },
@@ -567,7 +567,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 45,
-          title: { ko: "운빨 좋은 남자", en: "The Lucky Guy" },
+          title: { ko: "가지고 있는 남자", en: "The Lucky Guy" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "소텐보리 — 스틸 (도박장 부근)", en: "Sotenbori — Steele" },
           trigger: { ko: "사야마를 아오이로 데려간 뒤 스틸에서 발생", en: "After Aoi, head to Steele." },
@@ -575,7 +575,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 46,
-          title: { ko: "신인 개그 콤비의 고민", en: "Rookie Comedy Duo's Slump" },
+          title: { ko: "신인 예능 콤비의 고민", en: "Rookie Comedy Duo's Slump" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "소텐보리 — 주차장 부근", en: "Sotenbori — Parking lot" },
           trigger: { ko: "사야마를 아오이로 데려간 뒤 발생", en: "After Aoi." },
@@ -612,7 +612,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 50,
-          title: { ko: "네가 가진 것, 내가 가진 것 1", en: "What You Have, What I Have 1" },
+          title: { ko: "네게 있는 것, 내게 있는 것 1", en: "What You Have, What I Have 1" },
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "소텐보리 — 그랜드 부근", en: "Sotenbori — Near the Grand" },
           trigger: { ko: "10장 진행 중 그랜드 부근 청년에게 말 걸기", en: "Chapter 10: talk to the youth near the Grand." },
@@ -620,7 +620,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 51,
-          title: { ko: "네가 가진 것, 내가 가진 것 2", en: "What You Have, What I Have 2" },
+          title: { ko: "네게 있는 것, 내게 있는 것 2", en: "What You Have, What I Have 2" },
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "소텐보리 — 그랜드 부근", en: "Sotenbori — Near the Grand" },
           trigger: { ko: "No.50 클리어 후", en: "After No.50." },
@@ -635,7 +635,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 55,
-          title: { ko: "협객의 밤", en: "Chivalrous Night" },
+          title: { ko: "의협의 밤", en: "Chivalrous Night" },
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "소텐보리 — 쇼토쿠초", en: "Sotenbori — Shotoku-cho" },
           trigger: { ko: "10장 진행 중 쇼토쿠초 골목 사건 발생", en: "Chapter 10: incident in the Shotoku-cho alley." },
@@ -651,7 +651,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 49,
-          title: { ko: "아주머니의 비극", en: "The Old Lady's Tragedy" },
+          title: { ko: "아줌마의 비극", en: "The Old Lady's Tragedy" },
           chapter: { ko: "11장", en: "Chapter 11" },
           location: { ko: "소텐보리 — 그랜드 앞", en: "Sotenbori — In front of the Grand" },
           trigger: { ko: "11장 진행 중 그랜드 앞 아주머니에게 말 걸기", en: "Chapter 11: speak to the older lady by the Grand." },
@@ -676,7 +676,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
       ],
     },
     {
-      title: { ko: "소텐보리 — 백련 / 캬바레 그랜드픽스 (Missable)", en: "Sotenbori — Bairen & Cabaret Grand Prix (Missable)" },
+      title: { ko: "소텐보리 — 뱌쿠렌 / 캬바레 그랜드픽스 (Missable)", en: "Sotenbori — Bairen & Cabaret Grand Prix (Missable)" },
       items: [
         {
           number: 69,
@@ -689,7 +689,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 70,
-          title: { ko: "전해진 것", en: "What Was Passed Down" },
+          title: { ko: "전해져 있던 것", en: "What Was Passed Down" },
           chapter: { ko: "4장 이후", en: "After Chapter 4" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "그랜드픽스 진행 중 발생", en: "During the Grand Prix arc." },
@@ -697,7 +697,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 71,
-          title: { ko: "축제 퀸 · AIKA", en: "Festival Queen AIKA" },
+          title: { ko: "축제 여왕 AIKA", en: "Festival Queen AIKA" },
           chapter: { ko: "4장 이후", en: "After Chapter 4" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "그랜드픽스 진행 중", en: "During Grand Prix." },
@@ -737,7 +737,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
         },
         {
           number: 75,
-          title: { ko: "평생 소중히 해줘", en: "Cherish Me Forever" },
+          title: { ko: "평생 소중히 간직해 줘", en: "Cherish Me Forever" },
           chapter: { ko: "파이널 챔피언십 이후", en: "After Final Championship" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "캬바레 그랜드픽스 「파이널 챔피언십」 클리어 후", en: "After clearing the Cabaret Grand Prix Final Championship." },
