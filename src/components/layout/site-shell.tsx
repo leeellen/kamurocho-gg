@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Suspense, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FiSearch } from "react-icons/fi";
 
 import { AuthFailureBanner } from "@/components/ui/auth-failure-banner";
@@ -10,6 +10,7 @@ import { AutoSyncInterval } from "@/components/ui/auto-sync-interval";
 import { AutoSyncOnWelcome } from "@/components/ui/auto-sync-on-welcome";
 import { HeaderSyncIsland } from "@/components/ui/header-sync-island";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { ReportButton } from "@/components/ui/report-button";
 import { UserMenuIsland } from "@/components/ui/user-menu-island";
 import { type Locale } from "@/lib/i18n";
 
@@ -47,6 +48,8 @@ export function SiteShell({
   locale: Locale;
   section: Section;
 }) {
+  const pathname = usePathname();
+
   return (
     <div className="relative min-h-screen text-[var(--text-primary)]">
       <SearchShortcutListener />
@@ -108,6 +111,13 @@ export function SiteShell({
                 </Link>
               );
             })}
+            <ReportButton
+              locale={locale}
+              kind="general"
+              targetRef={pathname}
+              label={locale === "ko" ? "리포트" : "Report"}
+              className="border-transparent px-3 py-3 text-[16px] hover:border-transparent hover:bg-transparent hover:text-white"
+            />
           </nav>
 
           <div className="ml-auto flex items-center gap-2">
@@ -156,6 +166,13 @@ export function SiteShell({
                 </Link>
               );
             })}
+            <ReportButton
+              locale={locale}
+              kind="general"
+              targetRef={pathname}
+              label={locale === "ko" ? "리포트" : "Report"}
+              className="shrink-0 border-transparent px-3 py-1.5 text-[16px] hover:border-transparent hover:bg-white/8 hover:text-white"
+            />
             {/* Persistent path to the Steam sign-in / library on phones, since
                 the header's "Sign in through Steam" button is hidden < sm. */}
             <UserMenuIsland locale={locale} mobile />

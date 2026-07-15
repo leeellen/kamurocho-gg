@@ -1,18 +1,21 @@
 "use client";
 
 import { useEffect, useState, useTransition } from "react";
+import { createPortal } from "react-dom";
 import { FiAlertTriangle } from "react-icons/fi";
 
+import { cn } from "@/lib/cn";
 import type { Locale } from "@/lib/i18n";
 
 type Status = "idle" | "submitting" | "submitted" | "queued" | "error";
 
 type Props = {
   locale: Locale;
-  appId: number;
+  appId?: number;
   kind?: "achievement" | "collectible" | "substory" | "guide" | "general";
   targetRef?: string;
   label?: string;
+  className?: string;
 };
 
 export function ReportButton({
@@ -21,6 +24,7 @@ export function ReportButton({
   kind = "general",
   targetRef,
   label,
+  className,
 }: Props) {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
@@ -96,13 +100,16 @@ export function ReportButton({
           setOpen(true);
           setStatus("idle");
         }}
-        className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-subtle)] bg-transparent px-3 py-1 text-[16px] font-semibold text-[var(--text-tertiary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+        className={cn(
+          "inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--border-subtle)] bg-transparent px-3 py-1 text-[16px] font-semibold text-[var(--text-tertiary)] no-underline transition-colors hover:border-[var(--accent-border)] hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]",
+          className,
+        )}
       >
         <FiAlertTriangle size={11} aria-hidden="true" />
         {labels.button}
       </button>
 
-      {open && (
+      {open && createPortal(
         <div
           role="dialog"
           aria-modal="true"
@@ -112,7 +119,7 @@ export function ReportButton({
             if (e.target === e.currentTarget) setOpen(false);
           }}
         >
-          <div className="w-full max-w-[480px] rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5 shadow-[var(--shadow-pop)]">
+          <div className="max-h-[90vh] w-full max-w-[480px] overflow-y-auto rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5 shadow-[var(--shadow-pop)]">
             <h3 className="font-display m-0 text-[18px] font-extrabold text-white">
               {labels.title}
             </h3>
@@ -156,7 +163,8 @@ export function ReportButton({
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );

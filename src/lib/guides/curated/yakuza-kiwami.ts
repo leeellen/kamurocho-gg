@@ -461,6 +461,97 @@ const allMinigamesPlayed: CuratedGuide = {
   },
 };
 
+// 「아저씨를 제패한 자」 — 하루카 신뢰도 EX 랭크 달성. Steam api_name: 53_mister_master.
+const misterMaster: CuratedGuide = {
+  summary: {
+    ko:
+      "메인 스토리(엔딩) 클리어 후 풀리는 프리미엄 어드벤처 한정 트로피. 세레나에서 하루카를 데리고 다니며 「부탁」을 계속 들어주면 신뢰도가 F→E→D→C→B→A→S→SS→SSS→EX 순으로 9단계 상승하고, EX 랭크에 도달하는 순간 자동으로 발동합니다.",
+    en:
+      "Premium Adventure only — unlocks after finishing the main story on any difficulty. Bring Haruka along from Serena and keep fulfilling her requests; trust climbs through 9 tiers (F→E→D→C→B→A→S→SS→SSS→EX) and the trophy fires the instant she hits EX.",
+  },
+  steps: [
+    {
+      ko:
+        "0) 준비\n엔딩을 본 뒤 열리는 프리미엄 어드벤처에서 세레나로 가 하루카에게 말을 걸고 「함께 외출」을 선택하면 동행이 시작됩니다.\n거리를 걸으면 하루카가 무작위로 부탁을 겁니다 — 가게/식당에서 물건 사주기, 또는 특정 미니게임에서 목표치 달성 두 종류. 완료하면 즉시 다음 부탁이 걸립니다.",
+      en:
+        "0) Setup\nAfter the ending, head to Serena in Premium Adventure, talk to Haruka, and pick \"go out together\" to start the tagalong.\nWalking the streets triggers random requests — buy something at a shop/restaurant, or hit a target in a specific minigame. A new request appears the moment the previous one clears.",
+    },
+    {
+      ko:
+        "1) F→E 랭크\n• 돈키호테에서 「호신부적」 구매 (500엔)\n• 코토부키 약국에서 「스태미나 로열」 구매 (12,000엔)\n• 타이헤이 거리 아카우시마루에서 규동 주문 (400엔)\n• 천하일 거리 POPPO에서 낫짱 오렌지 구매 (140엔)\n→ 보상: 하루카의 사탕",
+      en:
+        "1) F→E\n• Buy the Protective Amulet at Don Quijote (500¥)\n• Buy Staminan Royale at Kotobuki Drugs (12,000¥)\n• Order a beef bowl at Akaushimaru, Taihei Blvd (400¥)\n• Buy a Natchan Orange at the Poppo on Tenkaichi St (140¥)\n→ Reward: Haruka's Candy",
+    },
+    {
+      ko:
+        "2) E→D 랭크\n• 나카미치 거리 POPPO에서 개껌 구매 (750엔)\n• 도박장에서 오이초카부 300점 이상\n• 큐슈 넘버원 스타에서 차슈 돈코츠 라멘 주문 (950엔)\n• 카지노 룰렛에서 칩 1,000개 이상 획득\n→ 보상: 하루카의 초콜릿",
+      en:
+        "2) E→D\n• Buy dog food at the Poppo on Nakamichi St (750¥)\n• Score 300+ in Oicho-Kabu at the gambling hall\n• Order chashu tonkotsu ramen at Kyushu No.1 Star (950¥)\n• Win 1,000+ chips at roulette in the casino\n→ Reward: Haruka's Chocolate",
+    },
+    {
+      ko:
+        "3) D→C 랭크\n• 르마르쉐에서 「프랑스제 지갑」 구매 (39,800엔)\n• 도박장에서 씨로(Cee-lo) 500점 이상\n• 카지노 포커에서 칩 2,000개 이상\n• 빈센트 바 다트 카운트업 3라운드 합계 200점 이상\n→ 보상: 하루카의 부적",
+      en:
+        "3) D→C\n• Buy the French Wallet at Le Marche (39,800¥)\n• Score 500+ in Cee-lo at the gambling hall\n• Win 2,000+ chips at poker in the casino\n• Score 200+ over 3 rounds of Count Up darts at Bar Vincent\n→ Reward: Haruka's Amulet",
+    },
+    {
+      ko:
+        "4) C→B 랭크\n• 칸라이에서 돌솥 비빔밥 주문 (1,500엔)\n• 스마일버거에서 스마일 쉐이크 주문 (220엔)\n• 도박장 조한에서 800점 이상\n• 카지노 블랙잭에서 칩 3,000개 이상\n• 배팅센터 노멀 코스에서 800~1,000점\n→ 보상: 붉은 보석",
+      en:
+        "4) C→B\n• Order stone-cooked bibimbap at Kanrai (1,500¥)\n• Order a Smile Shake at Smile Burger (220¥)\n• Score 800+ in Cho-Han at the gambling hall\n• Win 3,000+ chips at blackjack\n• Score 800–1,000 on the batting center's normal course\n→ Reward: Red Jewel",
+    },
+    {
+      ko:
+        "5) B→A 랭크\n• 프론토(주간)에서 삼종 치즈 카르보나라 주문 (790엔)\n• 극장 앞 광장 클럽 세가 포토부스에서 「완벽한 한 컷」 촬영\n• 쇼와 거리 POPPO에서 오징어 야키소바 구매 (180엔)\n• 가라오케 「오토메탈 마이 라이프」 800점 이상\n→ 보상: 하루카의 구급상자",
+      en:
+        "5) B→A\n• Order Three Cheese Carbonara at daytime Pronto (790¥)\n• Nail a perfect shot at the Theater Sq Club Sega photo booth\n• Buy squid yakisoba at the Poppo on Showa St (180¥)\n• Score 800+ on \"Otometal My Life\" at karaoke\n→ Reward: Haruka's First Aid Kit",
+    },
+    {
+      ko:
+        "6) A→S 랭크\n• 요로노타키에서 카시스 레몬 셔벗 주문 (194엔)\n• 긴다코 하이볼 주점에서 파 다코야키 주문 (370엔)\n• 시치후쿠 거리 M상점에서 야키소바빵 구매 (130엔)\n• 도박장 고이코이에서 1,000점 이상\n• 나카미치 거리 클럽 세가에서 메스킹으로 하루카와 대전 승리\n→ 보상: 하루카의 도시락",
+      en:
+        "6) A→S\n• Order a cassis-lemon sherbet at Yoronotaki (194¥)\n• Order green-onion takoyaki at the Gindaco highball stand (370¥)\n• Buy a yakisoba bun at the M-Store on Shichifuku St (130¥)\n• Score 1,000+ in Koi-Koi at the gambling hall\n• Beat Haruka in a MesuKing match at the Nakamichi St Club Sega\n→ Reward: Haruka's Lunch Box",
+    },
+    {
+      ko:
+        "7) S→SS 랭크\n• 스시 긴에서 전복(아와비) 주문 (3,000엔)\n• 극장 앞 광장 클럽 세가 UFO 캐처에서 베이비몽키 인형 뽑기 성공\n• 마하 볼에서 3프레임 이내 스트라이크 3회\n• 빈센트 바 당구 포볼에서 중급 AI 상대 승리\n→ 보상: 제로 보석",
+      en:
+        "7) S→SS\n• Order abalone (awabi) at Sushi Gin (3,000¥)\n• Win the Baby Monkey plush from the UFO catcher at Theater Sq Club Sega\n• Land 3 strikes within 3 frames at Mach Bowl\n• Beat the medium-difficulty AI at Four-Ball billiards, Bar Vincent\n→ Reward: Zero Jewel",
+    },
+    {
+      ko:
+        "8) SS→SSS 랭크\n• 카페 알프스에서 블렌드 커피 주문 (500엔)\n• 에비스 전당포에서 「금 접시」 구매 (100,000엔)\n• 카지노 바카라에서 칩 4,000개 이상\n→ 보상: 하루카의 목걸이",
+      en:
+        "8) SS→SSS\n• Order blended coffee at Cafe Alps (500¥)\n• Buy the Gold Plate at Ebisu Pawn Shop (100,000¥)\n• Win 4,000+ chips at baccarat in the casino\n→ Reward: Haruka's Necklace",
+    },
+    {
+      ko:
+        "9) SSS→EX 랭크 (마지막)\n• 빈센트 바 당구 로테이션에서 상급 AI 상대 승리\n• 가라오케 「오토메탈 마이 라이프」 950점 이상\n• 마하 볼에서 스플릿 처리 3회\n• 배팅센터 하드 코스 1,200점 이상\n→ 4개 모두 완료 시 EX 랭크 보상 「나팔꽃 스카프」와 함께 트로피 즉시 해금",
+      en:
+        "9) SSS→EX (final)\n• Beat the expert AI at Rotation billiards, Bar Vincent\n• Score 950+ on \"Otometal My Life\" at karaoke\n• Land 3 split conversions at Mach Bowl\n• Score 1,200+ on the batting center's hard course\n→ Finishing all four pops the EX-rank \"Morning Glory Scarf\" and the trophy together",
+    },
+  ],
+  tips: [
+    {
+      ko:
+        "미니게임 계열 부탁(도박 칩 누적, 다트·당구 점수 등)은 「놀이를 제패한 남자」(모든 미니게임 플레이) 트로피 작업과 겹치는 경우가 많으니 두 트로피를 동시에 진행하면 효율적입니다.",
+      en:
+        "Minigame-type requests (gambling chip totals, darts/billiards scores) often overlap with the \"What a Player\" (play every minigame) trophy — work both at once.",
+    },
+    {
+      ko:
+        "부탁은 하루카와 동행 중에만 발생합니다. 전투·서브스토리 진행 등으로 동행이 풀리면 세레나로 돌아가 다시 말을 걸어 동행 상태를 재개하세요.",
+      en:
+        "Requests only trigger while Haruka is actively tagging along. If combat or a substory breaks the pairing, head back to Serena and talk to her again to resume.",
+    },
+  ],
+  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2924279743",
+  sourceLabel: {
+    ko: "Steam Community — Haruka's Requests",
+    en: "Steam Community — Haruka's Requests",
+  },
+};
+
 export const YAKUZA_KIWAMI_CURATED: Record<string, CuratedGuide> = {
   [`${YAKUZA_KIWAMI_APP_ID}:00_kiwami`]: platinum,
   [`${YAKUZA_KIWAMI_APP_ID}:02_perfectionist`]: perfectionist,
@@ -472,4 +563,5 @@ export const YAKUZA_KIWAMI_CURATED: Record<string, CuratedGuide> = {
   [`${YAKUZA_KIWAMI_APP_ID}:23_what_a_player`]: allMinigamesPlayed,
   [`${YAKUZA_KIWAMI_APP_ID}:24_hand_in_hand`]: handInHand,
   [`${YAKUZA_KIWAMI_APP_ID}:51_amon_defeated`]: amonDefeated,
+  [`${YAKUZA_KIWAMI_APP_ID}:53_mister_master`]: misterMaster,
 };

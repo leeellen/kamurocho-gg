@@ -242,7 +242,7 @@ export default async function AchievementPage({
                   >
                     {index + 1}
                   </span>
-                  <p className="m-0 text-[16px] leading-7 text-[var(--text-secondary)]">{step}</p>
+                  <p className="m-0 whitespace-pre-line text-[16px] leading-7 text-[var(--text-secondary)]">{step}</p>
                 </li>
               ))}
             </ol>
