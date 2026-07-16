@@ -107,6 +107,9 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
   useEffect(() => {
     try {
       const raw = localStorage.getItem(region.storageKey);
+      // Hydration-safe read: localStorage is client-only, so load persisted
+      // state after mount rather than in a useState initializer (SSR mismatch).
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setState(raw ? JSON.parse(raw) : {});
     } catch {
       setState({});

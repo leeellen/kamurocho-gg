@@ -9,7 +9,7 @@ function renderChoice(c) {
   return lines.join("");
 }
 
-function renderStep(s, i) {
+function renderStep(s) {
   const parts = [`body: ${lit(s.body.ko, s.body.en)}`];
   if (s.image) parts.push(`image: ${escTs(s.image)}`);
   return `          { ${parts.join(", ")} },`;

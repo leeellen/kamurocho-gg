@@ -2,7 +2,6 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { hasJapanese, stripBlogGarbage } from "./ko-sanitize.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIR = join(__dirname, "../../src/lib/substories");

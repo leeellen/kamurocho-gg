@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const REASON_LABELS: Record<string, { ko: string; en: string }> = {
@@ -24,14 +24,9 @@ export function AuthFailureBanner({ locale }: { locale: "ko" | "en" }) {
   const router = useRouter();
   const params = useSearchParams();
   const reason = params.get("auth") === "failed" ? params.get("reason") ?? "unknown" : null;
-  const [open, setOpen] = useState(true);
+  const [dismissedReason, setDismissedReason] = useState<string | null>(null);
 
-  useEffect(() => {
-    if (!reason) return;
-    setOpen(true);
-  }, [reason]);
-
-  if (!reason || !open) return null;
+  if (!reason || reason === dismissedReason) return null;
 
   const label = REASON_LABELS[reason] ?? {
     ko: `로그인에 실패했습니다 (사유 코드: ${reason}).`,
@@ -39,7 +34,7 @@ export function AuthFailureBanner({ locale }: { locale: "ko" | "en" }) {
   };
 
   function dismiss() {
-    setOpen(false);
+    setDismissedReason(reason);
     const url = new URL(window.location.href);
     url.searchParams.delete("auth");
     url.searchParams.delete("reason");

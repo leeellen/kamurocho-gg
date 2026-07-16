@@ -185,12 +185,6 @@ for (const g of guides) {
     sourceNumbers.length === 0 ||
     sourceNumbers.some((n) => dbNumbers.includes(n)) ||
     sourceNumbers.every((n) => Number.isFinite(Number(n)));
-  // Extract English proper nouns (capitalized words) from source
-  const proper = Array.from(match.body.matchAll(/\b([A-Z][a-z]{2,}|[A-Z]{2,})\b/g))
-    .map((m) => m[1])
-    .filter((w) => !["Chapter", "Completed", "The", "And", "This", "That", "Achievement", "Like", "Dragon", "Yakuza"].includes(w));
-  const koHasProper = proper.length === 0 || proper.some((p) => g.content.includes(p));
-
   const score = jaccard(match.body, g.content); // low for KO/EN comparison, used as backup
 
   let status = "match";

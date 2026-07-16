@@ -170,7 +170,9 @@ export function SignInButton({
     if (typeof window === "undefined") return;
     const path = window.location.pathname + window.location.search;
     // Strip our own auth-status flags so a previous failed attempt doesn't
-    // get sticky in the return-to URL.
+    // get sticky in the return-to URL. Hydration-safe: window.location is
+    // client-only, so this runs post-mount rather than in the initializer.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setNextPath(path.replace(/[?&]auth=[^&]+(&reason=[^&]+)?/g, "").replace(/[?&]welcome=1/g, "") || "/");
   }, []);
   const signInHref = `/api/auth/steam?next=${encodeURIComponent(nextPath)}`;
