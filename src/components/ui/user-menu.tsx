@@ -36,7 +36,7 @@ export function UserMenu({ user, locale }: { user: CurrentUser; locale: "ko" | "
         aria-expanded={open}
         aria-label={locale === "ko" ? "내 계정 메뉴 열기" : "Open account menu"}
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-1.5 pr-3 text-[16px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
+        className="inline-flex h-10 cursor-pointer items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-2 pr-3 text-[16px] font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]"
       >
         {user.avatarUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
