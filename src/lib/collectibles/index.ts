@@ -3,6 +3,7 @@ import type { CollectiblesData } from "./types";
 import { yakuza0 } from "./yakuza-0";
 import { yakuzaKiwami } from "./yakuza-kiwami";
 import { yakuzaKiwami2 } from "./yakuza-kiwami-2";
+import { yakuzaKiwami3 } from "./yakuza-kiwami-3";
 import { yakuza3 } from "./yakuza-3";
 import { yakuza4 } from "./yakuza-4";
 import { yakuza5 } from "./yakuza-5";
@@ -19,6 +20,7 @@ const dataset: CollectiblesData[] = [
   yakuza0,
   yakuzaKiwami,
   yakuzaKiwami2,
+  yakuzaKiwami3,
   yakuza3,
   yakuza4,
   yakuza5,
