@@ -64,6 +64,7 @@ function toChecklistItem(it: CollectibleItem): ChecklistItem {
     image: it.image,
     title: it.title,
     location: it.location,
+    mail: it.mail,
     note: it.prereq,
     reward: it.reward,
     // Prefer explicit steps; otherwise surface the single-paragraph body so its
@@ -81,6 +82,7 @@ function categoryRegions(category: CollectibleCategory, appId: number): Checklis
       totalCount: g.items.length,
       mapImage: g.mapImage,
       hotspots: g.hotspots,
+      legend: g.legend,
       video: g.video,
       items: g.items.map(toChecklistItem),
     }));

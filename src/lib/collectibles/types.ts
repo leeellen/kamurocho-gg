@@ -15,6 +15,9 @@ export type CollectibleItem = {
   // shown as the card heading and `location` becomes a secondary line.
   title?: LocalizedText;
   location: LocalizedText;
+  // Optional trigger mail/message title (e.g. K2 encounter bosses spawn from a
+  // received email). Shown as a distinct badge on the card and in the modal.
+  mail?: LocalizedText;
   // Single-paragraph summary (used when no `steps` array is provided).
   body?: LocalizedText;
   // Multi-step instructions with optional per-step images.
@@ -36,6 +39,9 @@ export type CollectibleGroup = {
   // Optional clickable hotspots over `mapImage` — item number → [x%, y%].
   // When present the map renders interactive pins (telephone-card style).
   hotspots?: Record<string, [number, number]>;
+  // Optional map legend — translates markers baked into `mapImage`
+  // (e.g. Ⓐ/Ⓑ/Ⓒ Japanese labels) into readable rows below the map.
+  legend?: { marker: string; label: LocalizedText }[];
   // Optional region overview video.
   video?: string;
 };

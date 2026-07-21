@@ -33,6 +33,8 @@ export type ChecklistItem = {
   // Headline (substory-like) and/or map location line.
   title?: LocalizedText;
   location?: LocalizedText;
+  // Trigger mail/message title — surfaced as a badge on the card.
+  mail?: LocalizedText;
   // Compact badges — e.g. telephone card chapter + A/B/C set code.
   chapter?: string;
   code?: string;
@@ -55,6 +57,7 @@ export type ChecklistRegion = {
   // Optional region walkthrough video (YouTube URL).
   video?: string;
   hotspots?: Record<string, [number, number]>;
+  legend?: { marker: string; label: LocalizedText }[];
   chapterColors?: Record<string, string>;
   hint?: LocalizedText;
   reward?: LocalizedText;
@@ -261,6 +264,17 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
         </div>
       )}
 
+      {region.legend && region.legend.length > 0 && (
+        <div className="mb-5 -mt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[12px]">
+          {region.legend.map((l) => (
+            <span key={l.marker} className="text-[var(--text-secondary)]">
+              <span className="font-bold text-[var(--accent)]">{l.marker}</span>{" "}
+              {pick(l.label, locale)}
+            </span>
+          ))}
+        </div>
+      )}
+
       <div className="mb-5 flex flex-wrap items-center gap-3">
         <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-soft)] px-3.5 py-2">
           <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
@@ -359,6 +373,12 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   {pick(label, locale)}
                 </div>
               )}
+              {item.mail && (
+                <div className="mt-1 flex items-start gap-1 text-[11px] leading-tight text-[var(--accent)]">
+                  <span className="shrink-0">✉</span>
+                  <span className="font-semibold">{pick(item.mail, locale)}</span>
+                </div>
+              )}
               {item.note && (
                 <div className="mt-2 rounded-md bg-[var(--warning-subtle)] px-2 py-1 text-[10px] leading-tight text-[var(--warning)]">
                   ⚠ {pick(item.note, locale)}
@@ -415,6 +435,12 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
               {openItem.location && (
                 <div className="mt-1 text-[13px] leading-5 text-[var(--text-secondary)]">
                   📍 {pick(openItem.location, locale)}
+                </div>
+              )}
+              {openItem.mail && (
+                <div className="mt-1 text-[13px] leading-5 text-[var(--accent)]">
+                  ✉ {locale === "ko" ? "수신 메일: " : "Trigger email: "}
+                  <span className="font-semibold">「{pick(openItem.mail, locale)}」</span>
                 </div>
               )}
               {openItem.note && (
