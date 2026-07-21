@@ -653,11 +653,17 @@ export const yakuzaKiwami2: CollectiblesData = {
       tips: [
         { ko: "각 계열 첫 보스는 해당 잡몹(야쿠자/양아치/불량배)을 5회 격파하면 메일로 인카운트 위치 안내를 받습니다.", en: "Beat the linked mob type (Yakuza/Delinquent/Thug) 5 times to get an email pointing to the first boss in each chain." },
         { ko: "체인의 다음 보스는 이전 보스 격파 후 같은 잡몹을 5회 더 격파해야 등장합니다.", en: "The next boss in a chain appears after beating the previous boss plus 5 more fights against the same mob type." },
+        { ko: "야쿠자 타입은 등장 빈도가 낮으므로 지도의 Ⓑ 표시가 많은 구역에서 컨텐츠 초반부터 노리는 편이 좋습니다. 카무로초는 밀레니엄 타워 동·서 통과 루트, 소텐보리는 야쿠자·불량배는 동쪽, 양아치는 서쪽에서 잘 나옵니다.", en: "Yakuza-type mobs spawn rarely, so target areas marked Ⓑ on the map early. In Kamurocho, crossing east-west through Millennium Tower helps; in Sotenbori, Yakuza/Thugs favor the east side and Delinquents the west." },
       ],
       source: { label: "funkygame — 용과 같이 극 2 인카운트 보스", url: "https://funkygame.tistory.com/2026" },
       groups: [
         {
           title: { ko: "카무로초 — 9인", en: "Kamurocho — 9 Bosses" },
+          mapImage: "/yakuza-kiwami-2-encounter-bosses/kamurocho.jpg",
+          hotspots: {
+            1: [66, 35.9], 2: [65.1, 88.6], 3: [23.4, 75.8], 4: [12.8, 37.2], 5: [34.1, 22.6],
+            6: [77.2, 95.3], 7: [79.5, 61.7], 8: [23.7, 40.9], 9: [88.3, 74.4],
+          },
           items: [
             {
               number: 1,
@@ -717,6 +723,11 @@ export const yakuzaKiwami2: CollectiblesData = {
         },
         {
           title: { ko: "소텐보리 — 9인", en: "Sotenbori — 9 Bosses" },
+          mapImage: "/yakuza-kiwami-2-encounter-bosses/sotenbori.jpg",
+          hotspots: {
+            1: [24.4, 80.1], 2: [31.2, 87.9], 3: [5.1, 69.4], 4: [82.4, 17.5], 5: [26.1, 34.5],
+            6: [73.8, 35.3], 7: [41.9, 88.4], 8: [18.6, 67], 9: [34.2, 20.7],
+          },
           items: [
             {
               number: 1,

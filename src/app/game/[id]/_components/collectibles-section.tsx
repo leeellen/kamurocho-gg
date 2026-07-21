@@ -18,7 +18,7 @@ const INTERACTIVE_CATEGORIES: Record<number, Record<string, "telephone" | "categ
   1388590: { "stray-cats": "category" }, // Yakuza 6
   1088710: { "coin-lockers": "category" }, // Yakuza 3 (Kiwami 3)
   1105500: { lockers: "category" }, // Yakuza 4
-  3717340: { "coin-lockers": "category" }, // Yakuza Kiwami 2
+  3717340: { "coin-lockers": "category", "encounter-bosses": "category" }, // Yakuza Kiwami 2
   3717330: { "coin-lockers": "category" }, // Yakuza Kiwami
   1105510: { "coin-lockers": "category" }, // Yakuza 5
   3937550: { "coin-lockers": "category", "lalala-friends": "category" }, // Yakuza Kiwami 3
