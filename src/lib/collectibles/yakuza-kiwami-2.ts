@@ -644,6 +644,139 @@ export const yakuzaKiwami2: CollectiblesData = {
       ],
     },
     {
+      slug: "encounter-bosses",
+      title: { ko: "인카운트 보스 — 카무로초 & 소텐보리 18인", en: "Encounter Bosses — All 18 Street Bosses (Both Cities)" },
+      summary: {
+        ko: "제5장 사야마에게 물품 전달 후 해금되는 인카운트 보스. 각 도시마다 야쿠자·양아치·불량배 계열로 3명씩 이어지는 보스 체인이 3개(총 9명)씩 존재합니다. 전원 격파 시 오의 「트리플 스웨이」를 습득할 수 있습니다.",
+        en: "Street-encounter bosses, unlocked after delivering the item to Sayama in Chapter 5. Each city has three 3-boss chains (Yakuza / Delinquent / Thug lineage, 9 bosses total). Beating all of them unlocks the Triple Sway heat move.",
+      },
+      tips: [
+        { ko: "각 계열 첫 보스는 해당 잡몹(야쿠자/양아치/불량배)을 5회 격파하면 메일로 인카운트 위치 안내를 받습니다.", en: "Beat the linked mob type (Yakuza/Delinquent/Thug) 5 times to get an email pointing to the first boss in each chain." },
+        { ko: "체인의 다음 보스는 이전 보스 격파 후 같은 잡몹을 5회 더 격파해야 등장합니다.", en: "The next boss in a chain appears after beating the previous boss plus 5 more fights against the same mob type." },
+      ],
+      source: { label: "funkygame — 용과 같이 극 2 인카운트 보스", url: "https://funkygame.tistory.com/2026" },
+      groups: [
+        {
+          title: { ko: "카무로초 — 9인", en: "Kamurocho — 9 Bosses" },
+          items: [
+            {
+              number: 1,
+              title: { ko: "매드 나카기리", en: "Mad Nakagiri" },
+              location: { ko: "야쿠자 5회 격파 후 메일 수신", en: "Beat Yakuza mobs 5 times, then check email" },
+              reward: { ko: "중식칼", en: "Chinese Cleaver" },
+            },
+            {
+              number: 2,
+              title: { ko: "파이어 카라사와", en: "Fire Karasawa" },
+              location: { ko: "매드 나카기리 격파 + 야쿠자 5회 격파", en: "Beat Mad Nakagiri + 5 more Yakuza fights" },
+              reward: { ko: "개조 모델건", en: "Modified Model Gun" },
+            },
+            {
+              number: 3,
+              title: { ko: "갓 겐조", en: "God Genzo" },
+              location: { ko: "파이어 카라사와 격파 + 야쿠자 5회 격파", en: "Beat Fire Karasawa + 5 more Yakuza fights" },
+              reward: { ko: "쇠망치, 마지마 건설 스카우트", en: "Sledgehammer, Majima Construction scout" },
+            },
+            {
+              number: 4,
+              title: { ko: "복서 후지키", en: "Boxer Fujiki" },
+              location: { ko: "양아치 5회 격파 후 메일 수신", en: "Beat Delinquent mobs 5 times, then check email" },
+              reward: { ko: "너클 더스터, 마지마 건설 스카우트", en: "Knuckle Duster, Majima Construction scout" },
+            },
+            {
+              number: 5,
+              title: { ko: "머슬 후지키", en: "Muscle Fujiki" },
+              location: { ko: "복서 후지키 격파 + 양아치 5회 격파", en: "Beat Boxer Fujiki + 5 more Delinquent fights" },
+              reward: { ko: "스턴 그레네이드, 마지마 건설 스카우트", en: "Stun Grenade, Majima Construction scout" },
+            },
+            {
+              number: 6,
+              title: { ko: "앰부쉬 쿠로사와", en: "Ambush Kurosawa" },
+              location: { ko: "머슬 후지키 격파 + 양아치 5회 격파", en: "Beat Muscle Fujiki + 5 more Delinquent fights" },
+              reward: { ko: "조장의 배트", en: "Foreman's Bat" },
+            },
+            {
+              number: 7,
+              title: { ko: "데들리 후쿠시마", en: "Deadly Fukushima" },
+              location: { ko: "불량배 5회 격파 후 메일 수신", en: "Beat Thug mobs 5 times, then check email" },
+              reward: { ko: "톱, 마지마 건설 스카우트", en: "Saw, Majima Construction scout" },
+            },
+            {
+              number: 8,
+              title: { ko: "편의점 사냥꾼 사이토", en: "Convenience Store Hunter Saito" },
+              location: { ko: "데들리 후쿠시마 격파 + 불량배 5회 격파", en: "Beat Deadly Fukushima + 5 more Thug fights" },
+              reward: { ko: "고압 전기충격기", en: "High-Voltage Stun Gun" },
+            },
+            {
+              number: 9,
+              title: { ko: "사무라이 가면", en: "Samurai Mask" },
+              location: { ko: "편의점 사냥꾼 사이토 격파 + 불량배 5회 격파", en: "Beat Convenience Store Hunter Saito + 5 more Thug fights" },
+              reward: { ko: "신수의 목도", en: "Divine Beast Bokken" },
+            },
+          ],
+        },
+        {
+          title: { ko: "소텐보리 — 9인", en: "Sotenbori — 9 Bosses" },
+          items: [
+            {
+              number: 1,
+              title: { ko: "수수께끼의 암살자", en: "Mysterious Assassin" },
+              location: { ko: "야쿠자 5회 격파 후 메일 수신", en: "Beat Yakuza mobs 5 times, then check email" },
+              reward: { ko: "흑자수의 목도", en: "Black Embroidered Bokken" },
+            },
+            {
+              number: 2,
+              title: { ko: "피바람 츠치모토", en: "Blood-Rain Tsuchimoto" },
+              location: { ko: "수수께끼의 암살자 격파 + 야쿠자 5회 격파", en: "Beat Mysterious Assassin + 5 more Yakuza fights" },
+              reward: { ko: "섬광탄, 마지마 건설 스카우트", en: "Flashbang, Majima Construction scout" },
+            },
+            {
+              number: 3,
+              title: { ko: "금색의 가네모토", en: "Golden Kanemoto" },
+              location: { ko: "피바람 츠치모토 격파 + 야쿠자 5회 격파", en: "Beat Blood-Rain Tsuchimoto + 5 more Yakuza fights" },
+              reward: { ko: "닌자 단도", en: "Ninja Dagger" },
+            },
+            {
+              number: 4,
+              title: { ko: "위타천 나가부치", en: "Fleet-Footed Nagabuchi" },
+              location: { ko: "양아치 5회 격파 후 메일 수신", en: "Beat Delinquent mobs 5 times, then check email" },
+              reward: { ko: "긴 단도, 마지마 건설 스카우트", en: "Long Dagger, Majima Construction scout" },
+            },
+            {
+              number: 5,
+              title: { ko: "무기 사냥꾼 샤코", en: "Weapon Hunter Shako" },
+              location: { ko: "위타천 나가부치 격파 + 양아치 5회 격파", en: "Beat Fleet-Footed Nagabuchi + 5 more Delinquent fights" },
+              reward: { ko: "이름 없는 검", en: "Nameless Sword" },
+            },
+            {
+              number: 6,
+              title: { ko: "다리 파수꾼 우쿄", en: "Bridge Guardian Ukyo" },
+              location: { ko: "무기 사냥꾼 샤코 격파 + 양아치 5회 격파", en: "Beat Weapon Hunter Shako + 5 more Delinquent fights" },
+              reward: { ko: "쌍룡의 북채, 마지마 건설 스카우트", en: "Twin Dragon Drumsticks, Majima Construction scout" },
+            },
+            {
+              number: 7,
+              title: { ko: "강격의 나가사와", en: "Heavy-Strike Nagasawa" },
+              location: { ko: "불량배 5회 격파 후 메일 수신", en: "Beat Thug mobs 5 times, then check email" },
+              reward: { ko: "지렛대, 마지마 건설 스카우트", en: "Crowbar, Majima Construction scout" },
+            },
+            {
+              number: 8,
+              title: { ko: "파괴자 미네기시", en: "Destroyer Minegishi" },
+              location: { ko: "강격의 나가사와 격파 + 불량배 5회 격파", en: "Beat Heavy-Strike Nagasawa + 5 more Thug fights" },
+              reward: { ko: "더블 스타이커", en: "Double Stryker" },
+            },
+            {
+              number: 9,
+              title: { ko: "철권 사카이", en: "Iron Fist Sakai" },
+              location: { ko: "파괴자 미네기시 격파 + 불량배 5회 격파", en: "Beat Destroyer Minegishi + 5 more Thug fights" },
+              reward: { ko: "특제 특수 경찰봉", en: "Custom Special Baton" },
+            },
+          ],
+        },
+      ],
+    },
+    {
       slug: "videos",
       title: { ko: "비디오 마니아 — 본편 비디오 전부 시청", en: "Video Maniac — Watch Every Video" },
       summary: {
