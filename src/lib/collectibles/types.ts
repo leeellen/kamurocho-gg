@@ -39,6 +39,10 @@ export type CollectibleGroup = {
   // Optional clickable hotspots over `mapImage` — item number → [x%, y%].
   // When present the map renders interactive pins (telephone-card style).
   hotspots?: Record<string, [number, number]>;
+  // Set when `mapImage` has no printed pin markers of its own (plain map),
+  // so hotspots must render as always-visible dots instead of the default
+  // hover-only style (which assumes the image already shows numbered pins).
+  bareMap?: boolean;
   // Optional map legend — translates markers baked into `mapImage`
   // (e.g. Ⓐ/Ⓑ/Ⓒ Japanese labels) into readable rows below the map.
   legend?: { marker: string; label: LocalizedText }[];

@@ -82,6 +82,7 @@ function categoryRegions(category: CollectibleCategory, appId: number): Checklis
       totalCount: g.items.length,
       mapImage: g.mapImage,
       hotspots: g.hotspots,
+      bareMap: g.bareMap,
       legend: g.legend,
       video: g.video,
       items: g.items.map(toChecklistItem),

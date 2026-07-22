@@ -57,6 +57,9 @@ export type ChecklistRegion = {
   // Optional region walkthrough video (YouTube URL).
   video?: string;
   hotspots?: Record<string, [number, number]>;
+  // Set when `mapImage` is a plain map with no printed pin markers — renders
+  // hotspots as always-visible dots instead of the default hover-only style.
+  bareMap?: boolean;
   legend?: { marker: string; label: LocalizedText }[];
   chapterColors?: Record<string, string>;
   hint?: LocalizedText;
@@ -249,6 +252,14 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   className="absolute h-[26px] w-[26px] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-transparent transition hover:bg-[rgba(251,191,36,0.35)] hover:shadow-[0_0_0_3px_rgba(251,191,36,0.85)]"
                   style={{ left: `${x}%`, top: `${y}%` }}
                 >
+                  {region.bareMap && (
+                    <span
+                      aria-hidden="true"
+                      className={`absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/70 shadow-[0_0_4px_rgba(0,0,0,0.8)] ${
+                        done ? "bg-[var(--success)]" : "bg-[var(--accent)]"
+                      }`}
+                    />
+                  )}
                   {done && (
                     <span
                       aria-hidden="true"
