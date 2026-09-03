@@ -19,8 +19,8 @@ export function TimeEstimate({
   compact = false,
   stacked = false,
 }: TimeEstimateProps) {
-  const storyLabel = locale === "ko" ? "Story" : "Story";
-  const completionLabel = locale === "ko" ? "100%" : "100%";
+  const storyLabel = locale === "ko" ? "스토리" : "Story";
+  const completionLabel = "100%";
 
   if (stacked) {
     return (

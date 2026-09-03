@@ -12,6 +12,7 @@ import { getCollectibles } from "@/lib/collectibles";
 import { getSubstories } from "@/lib/substories";
 import { getMinigames } from "@/lib/minigames";
 import { getCuratedGameBySlug } from "@/lib/content";
+import { releaseDateIso } from "@/lib/release-date";
 
 import { AchievementsList } from "./_components/achievements-list";
 import { CollectiblesSection } from "./_components/collectibles-section";
@@ -187,7 +188,7 @@ function gameStructuredData(game: { name: string; slug: string; appId: number; r
       applicationCategory: "Game",
       operatingSystem: "Windows",
       inLanguage: locale === "ko" ? ["ko-KR", "en-US"] : ["en-US", "ko-KR"],
-      ...(game.releaseDate ? { datePublished: game.releaseDate } : {}),
+      ...(releaseDateIso(game.releaseDate) ? { datePublished: releaseDateIso(game.releaseDate) } : {}),
       ...(game.headerUrl ? { image: game.headerUrl } : {}),
       publisher: { "@type": "Organization", name: "SEGA" },
       developer: { "@type": "Organization", name: "RGG Studio" },

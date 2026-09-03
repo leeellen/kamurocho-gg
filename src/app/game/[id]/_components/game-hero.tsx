@@ -9,6 +9,7 @@ import { TimeEstimate } from "@/components/ui/time-estimate";
 import { SignInButton } from "@/components/ui/user-menu";
 import type { Locale } from "@/lib/i18n";
 import type { SeriesGameCard } from "@/lib/data";
+import { formatReleaseDate } from "@/lib/release-date";
 
 type GameHeroProps = {
   game: SeriesGameCard;
@@ -138,7 +139,7 @@ export function GameHero({
                 </Chip>
               ) : (
                 <Chip tone="success">
-                  {locale === "ko" ? "No missables" : "No missables"}
+                  {locale === "ko" ? "Missable 없음" : "No missables"}
                 </Chip>
               )}
               {game.rareCount > 0 && (
@@ -192,7 +193,7 @@ export function GameHero({
           <StatTile
             label={locale === "ko" ? "발매년도" : "Released"}
             value={game.releaseYear ?? "—"}
-            hint={game.releaseDate ?? undefined}
+            hint={formatReleaseDate(game.releaseDate, locale) ?? undefined}
           />
           <StatTile
             label={locale === "ko" ? "스토리 시점" : "Story era"}

@@ -159,7 +159,7 @@ function AchievementRow({
             {achievement.missable && (
               <Chip tone="danger" size="xs">
                 <FiTarget size={10} aria-hidden="true" />
-                {locale === "ko" ? "Missable" : "Missable"}
+                Missable
               </Chip>
             )}
           </div>

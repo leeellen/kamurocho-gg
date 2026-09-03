@@ -14,7 +14,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
     source: { label: "龍が如く7 最速攻略wiki — スジモン図鑑", url: "https://spwiki.net/ryu7/wikis/205.html" },
     groups: [
     {
-      title: { ko: "티어 ★1 (입문) — 62종", en: "Tier ★1 (입문) — 62 sujimon" },
+      title: { ko: "티어 ★1 (입문) — 62종", en: "Tier ★1 (Beginner) — 62 sujimon" },
       items: [
       {
         number: 1,
@@ -1705,7 +1705,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       ],
     },
     {
-      title: { ko: "티어 ★6 (최강급) — 14종", en: "Tier ★6 (최강급) — 14 sujimon" },
+      title: { ko: "티어 ★6 (최강급) — 14종", en: "Tier ★6 (Strongest) — 14 sujimon" },
       items: [
       {
         number: 210,

@@ -166,7 +166,7 @@ export default async function AchievementPage({
                 {ach.missable && (
                   <Chip tone="danger" size="xs">
                     <FiTarget size={10} aria-hidden="true" />
-                    {locale === "ko" ? "Missable" : "Missable"}
+                    Missable
                   </Chip>
                 )}
                 {ach.confidence && Number(ach.confidence) > 0.3 && (
