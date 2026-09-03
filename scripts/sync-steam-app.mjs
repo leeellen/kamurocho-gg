@@ -1,5 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
+import { KO_OVERRIDES, koTextOrNull } from "./ko-overrides/index.mjs";
+
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const STEAM_API_KEY = process.env.STEAM_API_KEY;
@@ -86,12 +88,18 @@ async function syncApp(appId) {
   const yearMatch = releaseDateRaw ? /(\d{4})/.exec(releaseDateRaw) : null;
   const releaseYear = yearMatch ? Number(yearMatch[1]) : null;
 
+  // Steam's Korean storefront/schema falls back to the English strings for
+  // titles it never localized (Yakuza 6). `koTextOrNull` drops those so we do
+  // not store English under a `*Ko` key, and `scripts/ko-overrides/` supplies
+  // the hand-authored Korean instead.
+  const override = KO_OVERRIDES.get(appId) ?? null;
+
   const gameSidecar = JSON.stringify({
     v: 4,
-    nameKo: storeKo?.name ?? null,
+    nameKo: override?.nameKo ?? koTextOrNull(storeKo?.name),
     nameJa: storeJa?.name ?? null,
     shortDescriptionEn: storeEn?.short_description ?? null,
-    shortDescriptionKo: storeKo?.short_description ?? null,
+    shortDescriptionKo: override?.shortDescriptionKo ?? koTextOrNull(storeKo?.short_description),
     shortDescriptionJa: storeJa?.short_description ?? null,
     releaseDate: releaseDateRaw,
     releaseYear,
@@ -119,8 +127,8 @@ async function syncApp(appId) {
       description: achievement.description || null,
       category: JSON.stringify({
         v: 2,
-        nameKo: ko?.displayName ?? null,
-        descKo: ko?.description ?? null,
+        nameKo: override?.achievements?.[achievement.name]?.nameKo ?? koTextOrNull(ko?.displayName),
+        descKo: override?.achievements?.[achievement.name]?.descKo ?? koTextOrNull(ko?.description),
         nameJa: ja?.displayName ?? null,
         descJa: ja?.description ?? null,
       }),
