@@ -1,8 +1,8 @@
 // Write rewritten English guide bodies back to the `guides` table.
 //
 // Input: `<IN_DIR>/en-rewrite-<appId>-out.json`, an array of
-// `{ achievement_id, en_content }`. `en_content` must use the same markdown
-// skeleton `src/lib/guides/structured.ts` parses:
+// `{ achievement_id, en_content, ko_content? }`. `en_content` must use the same
+// markdown skeleton `src/lib/guides/structured.ts` parses:
 //
 //   <one-line summary>
 //
@@ -16,6 +16,10 @@
 // Validated before anything is written: the steps header must be present, the
 // body must carry at least two steps, and it must contain no Hangul (that
 // would mean the Korean source was pasted through untranslated).
+//
+// `ko_content` is optional and only needed when the Korean row itself is wrong
+// (e.g. it described a different achievement). It takes the Korean headers
+// `**지금 해야 할 일:**` / `**주의할 점:**` and must contain Hangul.
 //
 //   DRY=1 node --env-file=.env.local scripts/apply-en-guide-rewrites.mjs
 //   node --env-file=.env.local scripts/apply-en-guide-rewrites.mjs
@@ -50,7 +54,17 @@ for (const file of files) {
     if (bullets.length < 2) throw new Error(`${file}: ${id} has ${bullets.length} step(s), need 2+`);
     if (HANGUL.test(content)) throw new Error(`${file}: ${id} still contains Hangul`);
     if (rewrites.has(id)) throw new Error(`${file}: ${id} appears twice`);
-    rewrites.set(id, content);
+
+    let koContent = null;
+    if (row.ko_content != null) {
+      koContent = String(row.ko_content).trim();
+      if (!koContent.includes("**지금 해야 할 일:**")) {
+        throw new Error(`${file}: ${id} ko_content missing steps header`);
+      }
+      if (!HANGUL.test(koContent)) throw new Error(`${file}: ${id} ko_content has no Hangul`);
+    }
+
+    rewrites.set(id, { en: content, ko: koContent });
   }
 }
 
@@ -62,22 +76,30 @@ if (DRY) {
 
 const now = new Date().toISOString();
 let updated = 0;
+let koUpdated = 0;
 let missing = 0;
-for (const [achievementId, content] of rewrites) {
+
+async function write(achievementId, locale, content) {
   const { data, error } = await sb
     .from("guides")
     .update({ content, source_type: "manual", confidence: 0.95, updated_at: now })
     .eq("achievement_id", achievementId)
-    .eq("locale", "english")
+    .eq("locale", locale)
     .select("achievement_id");
-  if (error) throw new Error(`${achievementId}: ${error.message}`);
+  if (error) throw new Error(`${achievementId} (${locale}): ${error.message}`);
   if (!data || data.length === 0) {
-    console.warn(`  no english guide row for achievement ${achievementId}`);
-    missing += 1;
-    continue;
+    console.warn(`  no ${locale} guide row for achievement ${achievementId}`);
+    return 0;
   }
-  updated += data.length;
+  return data.length;
+}
+
+for (const [achievementId, { en, ko }] of rewrites) {
+  const wrote = await write(achievementId, "english", en);
+  if (wrote === 0) missing += 1;
+  updated += wrote;
+  if (ko) koUpdated += await write(achievementId, "koreana", ko);
   if (updated % 25 === 0) console.log(`...updated ${updated}`);
 }
 
-console.log(`done updated=${updated} missing-row=${missing}`);
+console.log(`done english=${updated} korean=${koUpdated} missing-row=${missing}`);
