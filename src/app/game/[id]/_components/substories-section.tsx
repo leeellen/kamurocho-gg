@@ -118,6 +118,10 @@ function ItemCard({
   const title = pickLocalized(item.title, locale);
   const location = pickLocalized(item.location, locale);
   const trigger = pickLocalized(item.trigger, locale);
+  // A few entries carry a placeholder dash instead of a reward; rendering that
+  // gives a gold "Reward: -" chip that says nothing, so treat it as absent.
+  const rewardRaw = pickLocalized(item.reward, locale).trim();
+  const rewardText = rewardRaw === "-" || rewardRaw === "\u2014" ? "" : rewardRaw;
 
   return (
     <li>
@@ -214,7 +218,7 @@ function ItemCard({
               </div>
             )}
 
-            {item.reward && (
+            {rewardText && (
               <div className="mt-1 flex items-center gap-1.5 text-[16px]">
                 <Chip tone="gold" size="xs">
                   {locale === "ko" ? "보상" : "Reward"}
@@ -223,7 +227,7 @@ function ItemCard({
                   className="text-[16px] font-semibold text-white"
                   lang={langOf(item.reward, locale)}
                 >
-                  {pickLocalized(item.reward, locale)}
+                  {rewardText}
                 </span>
               </div>
             )}

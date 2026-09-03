@@ -128,7 +128,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 6장 개시 직후", en: "Right after Chapter 6 begins" },
           body: { ko: "텐카이치 거리 뒷골목에 있는 아이를 발견하면 서브 스토리가 시작된다 멋진 자판기에서 상품을 사고싶다며 부탁을 받게된다. 이벤트 후, 아무한테도 들키지 않고 자판기까지 가야만한다. 들키게 되면, 스타트 지점으로 되돌아가며, 자판기에 도착할 때까지 재시도하게 된다. 자판기까지 도착해서, 소년에게 「비닐에 싸인 책」을 건네주면 서브 퀘스트가 완료된다. 스타트하자 말자 왼쪽에 있는 양식점을 따라가듯 나아가 【맵 A】의 메뉴 간판이 있는 곳까지 도착한다 간판의 뒤에서 가만히 있다보면, 아줌마가 이쪽을 쳐다봐도 들키지 않게된다. 마리나는 적당히 공원을 산책하고 있으므로, 운이 나쁘면 들킬 수도 있다. 다음은 【맵 B】의 장소에 플라스틱 쓰레기통이 놓여져 있으므로, 거기까지 진행하도록 하자 요령은 움직이고 있는 사람이 등을 뒤로 돌렸을 때 움직이도록 할 것 벽 쪽이므로, 카메라 앵글이 고정되지만, 오른쪽 스틱으로 움직여서 자판기가 보이는 방향으로 조절하자 그 후에 멈춰져 있는 사람이 등을 돌릴 때 자판기까지 대시하면 도착할 수 있다.", en: "Find the child in the back alley of Tenkaichi Street to start the substory. The kid asks you to buy something from a vending machine. After the event, you must reach the vending machine without being spotted. Getting spotted sends you back to the start. Deliver the 「Shrink-Wrapped Book」 to the boy to complete the substory. Head left from the start, following the western restaurant, and reach the menu sign at [Map A]. Crouching behind the sign lets you avoid being spotted even when the woman looks your way. Marina wanders around the park, so bad luck can still get you caught. Next, a plastic trash can is positioned at [Map B] — advance to it. The key is to move only when moving people are turned away. The camera locks near the wall, but use the right stick to adjust your view toward the vending machine. Then dash to the vending machine when the stationary person turns away." },
-          reward: { ko: "텐카이치 거리 뒷골목에 있는 아이를 발견하면 서브 스토리가 시작된다 멋진 자판기에서 상품을 사고싶다며 부탁을 받게된다. 이벤트 후, 아무한테도 들키지 않고 자판기까지 가야만한다. 들키게 되면, 스타트 지점으로 되돌아가며, 자판기에 도착할 때까지 재시도하게 된다. 자판기까지 도착해서, 소년에게 「비닐에 싸인 책」을 건네주면 서브 퀘스트가 완료된다. 스타트하자 말자 왼쪽에 있는 양식점을 따라가듯 나아가 【맵 A】의 메뉴 간판이 있는 곳까지 도착한다 간판의 뒤에서 가만히 있다보면, 아줌마가 이쪽을 쳐다봐도 들키지 않게된다. 마리나는 적당히 공원을 산책하고 있으므로, 운이 나쁘면 들킬 수도 있다. 다음은 【맵 B】의 장소에 플라스틱 쓰레기통이 놓여져 있으므로, 거기까지 진행하도록 하자 요령은 움직이고 있는 사람이 등을 뒤로 돌렸을 때 움직이도록 할 것 벽 쪽이므로, 카메라 앵글이 고정되지만, 오른쪽 스틱으로 움직여서 자판기가 보이는 방향으로 조절하자 그 후에 멈춰져 있는 사람이 등을 돌릴 때 자판기까지 대시하면 도착할 수 있다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 12,
@@ -281,7 +281,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 6장 개시 직후 대상의 서브 스토리를 5개 이상 완료한 상태", en: "Right after Chapter 6 begins, with 5 or more eligible substories completed" },
           body: { ko: "스기타 빌딩의 사무실로 들어가면, 라디오 카세트에서 라디오가 흘러나오는 이벤트가 발생한다 키류가 라디오 카세트를 끄려고 하지만 「돌체 차미야 엽서 ~ 돌체」가 방송하면서 서브 스토리가 시작된다. 서브 스토리 25, 서브 스토리 26, 서브 스토리 27은 연번으로, 같은 내용의 서브 스토리다. 비서 「마리나」가 말한 대로, 입구 옆에 있는 책상 위를 조사하면, 라디오 방송에 사연을 투고 할 수 있게된다. 맨 처음 나오는 라디오 네임은 어느 것을 선택해도 「저지먼트 카즈」가 된다. 돌체 카즈야에게 응모 하는 사연을 쓰는 것으로 되는데 지금까지 완료 한 서브 스토리가 대상으로 쓰게 된다. 전부 18종류를 선택하게 되지만, 응모에 당첨 되는 것은 7 종류 뿐 사연을 쓴 뒤, 한번 밖으로 나갔다가, 다시 사무실로 들어와, 라디오 카세트를 조사하면 방송이 흘러나온다 응모한 사연을 투고해서 당첨이 되면, 서브 스토리가 완료된다 사연이 당첨 되지 않으면, 당첨될 때까지, 계속해서 사연을 쓰게된다. 마지막, 서브 스토리 27에서 보상을 받을 수 있게된다. ■ 당첨되는 서브 퀘스트 (사연) 서브 퀘스트 1 「미래를 보는 점술가」서브 퀘스트 2 「아라크레 퀘스트」서브 퀘스트 7 「SM 강좌」서브 퀘스트 11 「비닐에 싸인 꿈」서브 퀘스트 12 「카무로초 좀비 워커」서브 퀘스트 14 「전화 클럽 (?)」서브 퀘스트 23 「미라클 in 마하라자」", en: "Enter the Sugita Building office and a radio cassette starts playing. Kiryu tries to turn it off but the show 「Dolce Kamiya's Postcard — Dolce」 airs, starting the substory. Substories 25, 26, and 27 are a connected series with the same premise. As Marina suggests, examine the desk near the entrance to submit a story to the radio. No matter which radio name you pick first, it becomes 「Judgment Kazu」. You write stories based on substories you've already completed. There are 18 types to choose from but only 7 will be selected. After writing a story, step outside, come back in, and examine the radio cassette to hear the broadcast. If your submission is selected the substory completes. If not, keep submitting until one is chosen. The final reward comes in substory 27.\n\n■ Winning substories (stories):\nSubstory 1 「The Visionary Fortune-teller」\nSubstory 2 「Arakure Quest」\nSubstory 7 「How to Train Your Dominatrix」\nSubstory 11 「The Shrink-wrapped Dream」\nSubstory 12 「Miracle on Tenkaichi Street」\nSubstory 14 「Destiny Calls」\nSubstory 23 「Miracle in Maharaja」" },
-          reward: { ko: "스기타 빌딩의 사무실로 들어가면, 라디오 카세트에서 라디오가 흘러나오는 이벤트가 발생한다 키류가 라디오 카세트를 끄려고 하지만 「돌체 차미야 엽서 ~ 돌체」가 방송하면서 서브 스토리가 시작된다. 서브 스토리 25, 서브 스토리 26, 서브 스토리 27은 연번으로, 같은 내용의 서브 스토리다. 비서 「마리나」가 말한 대로, 입구 옆에 있는 책상 위를 조사하면, 라디오 방송에 사연을 투고 할 수 있게된다. 맨 처음 나오는 라디오 네임은 어느 것을 선택해도 「저지먼트 카즈」가 된다. 돌체 카즈야에게 응모 하는 사연을 쓰는 것으로 되는데 지금까지 완료 한 서브 스토리가 대상으로 쓰게 된다. 전부 18종류를 선택하게 되지만, 응모에 당첨 되는 것은 7 종류 뿐 사연을 쓴 뒤, 한번 밖으로 나갔다가, 다시 사무실로 들어와, 라디오 카세트를 조사하면 방송이 흘러나온다 응모한 사연을 투고해서 당첨이 되면, 서브 스토리가 완료된다 사연이 당첨 되지 않으면, 당첨될 때까지, 계속해서 사연을 쓰게된다. 마지막, 서브 스토리 27에서 보상을 받을 수 있게된다. ■ 당첨되는 서브 퀘스트 (사연) 서브 퀘스트 1 「미래를 보는 점술가」서브 퀘스트 2 「아라크레 퀘스트」서브 퀘스트 7 「SM 강좌」서브 퀘스트 11 「비닐에 싸인 꿈」서브 퀘스트 12 「카무로초 좀비 워커」서브 퀘스트 14 「전화 클럽 (?)」서브 퀘스트 23 「미라클 in 마하라자」", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 26,
@@ -290,7 +290,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 25 완료 후", en: "After completing substory 25" },
           body: { ko: "서브 스토리 25를 완료 한 뒤, 사무실의 책상을 조사해서 다시 사연을 투고할 수 있게 된다 같은 방법으로, 사연을 선택해서 투고하여, 라디오 카세트를 조사해서 당첨된 내용을 듣는다 ■ 당첨되는 서브 퀘스트 (사연) 서브 퀘스트 1 「미래를 보는 점술가」서브 퀘스트 2 「아라크레 퀘스트」서브 퀘스트 7 「SM 강좌」서브 퀘스트 11 「비닐에 싸인 꿈」서브 퀘스트 12 「카무로초 좀비 워커」서브 퀘스트 14 「전화 클럽 (?)」서브 퀘스트 23 「미라클 in 마하라자」", en: "After completing substory 25, examine the office desk to submit another story. Same method — pick a winning story, submit it, then examine the radio cassette to hear if it's selected. Winning substories are the same as listed in substory 25." },
-          reward: { ko: "서브 스토리 25를 완료 한 뒤, 사무실의 책상을 조사해서 다시 사연을 투고할 수 있게 된다 같은 방법으로, 사연을 선택해서 투고하여, 라디오 카세트를 조사해서 당첨된 내용을 듣는다 ■ 당첨되는 서브 퀘스트 (사연) 서브 퀘스트 1 「미래를 보는 점술가」서브 퀘스트 2 「아라크레 퀘스트」서브 퀘스트 7 「SM 강좌」서브 퀘스트 11 「비닐에 싸인 꿈」서브 퀘스트 12 「카무로초 좀비 워커」서브 퀘스트 14 「전화 클럽 (?)」서브 퀘스트 23 「미라클 in 마하라자」", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 27,
@@ -309,7 +309,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 2장에서 키류의 아파트로 돌아갈 때 마하라자에서 3회 이상 춤춘다", en: "While returning to Kiryu's apartment in Chapter 2; dance at Maharaja 3 or more times" },
           body: { ko: "① 마하라자 카무로초에서 댄스 달성 · 비달성에 상관없이, 3회 댄스의 미니게임을 한다 - 미니게임을 3회 하면, 서브 스토리가 발생한다. - 「가벼워 보이는 남자」 히사아키와 댄스 승부를 펼친다 - 난이도는 EASY라도 상관없으므로, 여유있게 히사아키를 이길 수 있다 - 졌을 경우에는 언제든지 재도전을 할 수 있다. - 댄스 전투에 승리하면, 서브 스토리가 완료된다.", en: "1) Play the dance minigame at Maharaja Kamurocho 3 times — win or lose doesn't matter. After 3 plays, the substory triggers. Face 「the lightweight-looking man」 Hisaaki in a dance battle. Easy difficulty is fine; Hisaaki is very beatable. You can retry if you lose. Win the dance battle to complete the substory." },
-          reward: { ko: "① 마하라자 카무로초에서 댄스 달성 · 비달성에 상관없이, 3회 댄스의 미니게임을 한다 - 미니게임을 3회 하면, 서브 스토리가 발생한다. - 「가벼워 보이는 남자」 히사아키와 댄스 승부를 펼친다 - 난이도는 EASY라도 상관없으므로, 여유있게 히사아키를 이길 수 있다 - 졌을 경우에는 언제든지 재도전을 할 수 있다. - 댄스 전투에 승리하면, 서브 스토리가 완료된다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 29,
@@ -318,7 +318,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 28을 완료 후", en: "After completing substory 28" },
           body: { ko: "① 서브 스토리 28을 완료 한 뒤, 한번 나갔다가 다시 들어오도록 하자 - 마하라자 카무로초 내부의 바 카운터가 있는 곳으로 다가가면 「이시도오리 마이코」가 말을 걸어오며 서브 스토리가 발생한다 - 마찬가지로 댄스 승부가 시작되므로, 이기면 서브 스토리가 완료된다 - 난이도는 EASY라도 상관없다. - 졌을 경우에는 다시 재도전이 가능하다", en: "1) After completing substory 28, step out of Maharaja and come back in. Head near the bar counter inside Maharaja Kamurocho and 「Ishidoori Maiko」 approaches you, triggering the substory. Another dance battle begins — win to complete the substory. Easy difficulty is fine. You can retry if you lose." },
-          reward: { ko: "① 서브 스토리 28을 완료 한 뒤, 한번 나갔다가 다시 들어오도록 하자 - 마하라자 카무로초 내부의 바 카운터가 있는 곳으로 다가가면 「이시도오리 마이코」가 말을 걸어오며 서브 스토리가 발생한다 - 마찬가지로 댄스 승부가 시작되므로, 이기면 서브 스토리가 완료된다 - 난이도는 EASY라도 상관없다. - 졌을 경우에는 다시 재도전이 가능하다", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 30,
@@ -371,7 +371,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입 한 후", en: "After buying the white suit in Chapter 5" },
           body: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 데이트 약속을 하는 서브 스토리가 발생한다 계속해서 기다려도, 상대방은 나타나지 않아, 그대로 데이트를 끝낸다는 이야기다 키류가 사기를 당했다는 느끼면서 서브 스토리가 완료된다.", en: "Make a date at the play spot 「Teruteru-boya」 in Kamurocho. No matter how long you wait, the other person never shows up. The date ends with Kiryu realizing he was stood up, and the substory is complete." },
-          reward: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 데이트 약속을 하는 서브 스토리가 발생한다 계속해서 기다려도, 상대방은 나타나지 않아, 그대로 데이트를 끝낸다는 이야기다 키류가 사기를 당했다는 느끼면서 서브 스토리가 완료된다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 35,
@@ -381,7 +381,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입 한 후", en: "After buying the white suit in Chapter 5" },
           body: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 미레이와 데이트 약속을 하는 서브 스토리가 발생한다 하늘색 수영복, 하늘색 옷, 숏 컷 안경을 쓴 못생긴 여성이 1명 기다리고 있다 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "Make a date with Mirei at the play spot 「Teruteru-boya」 in Kamurocho. One unattractive woman wearing glasses with a light blue swimsuit, light blue clothes, and a short cut is waiting. Kiryu gets dragged on a date against his will, his HP gauge drains, and the substory is complete." },
-          reward: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 미레이와 데이트 약속을 하는 서브 스토리가 발생한다 하늘색 수영복, 하늘색 옷, 숏 컷 안경을 쓴 못생긴 여성이 1명 기다리고 있다 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 36,
@@ -420,7 +420,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 38 완료 후", en: "After completing substory 38" },
           body: { ko: "① 서브 스토리 38을 완료 한 뒤, 포켓 스타디움으로 들어가면 의문의 남자 「사토루」의 서브 스토리가 발생 - 이벤트 후, 사토루와 레이스 승부를 하게 된다, - 레이스 승부에서 승리하면 서브 스토리가 완료된다 - 졌을 경우에는 이길 때 까지, 재도전을 할 수 있게된다. 머신 DRA-GON 타이어 슈퍼 스파이크 타이어 핀 슈퍼 메탈 핀 모터 슈퍼 스피드 모터 기어 대시 기어 배터리 고속 배터리 서스펜스 없음 범퍼 없음", en: "1) After completing substory 38, enter the Pocket Stadium for a substory with the mysterious man 「Satoru」. After the event, race against Satoru. Win to complete. Retry if you lose. Recommended parts: Machine: DRA-GON / Tires: Super Spike / Pins: Super Metal / Motor: Super Speed / Gear: Dash Gear / Battery: High-speed / Suspension: None / Bumper: None" },
-          reward: { ko: "① 서브 스토리 38을 완료 한 뒤, 포켓 스타디움으로 들어가면 의문의 남자 「사토루」의 서브 스토리가 발생 - 이벤트 후, 사토루와 레이스 승부를 하게 된다, - 레이스 승부에서 승리하면 서브 스토리가 완료된다 - 졌을 경우에는 이길 때 까지, 재도전을 할 수 있게된다. 머신 DRA-GON 타이어 슈퍼 스파이크 타이어 핀 슈퍼 메탈 핀 모터 슈퍼 스피드 모터 기어 대시 기어 배터리 고속 배터리 서스펜스 없음 범퍼 없음", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 40,
@@ -459,7 +459,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 42 완료 후 포켓 파이터와의 인연 100%", en: "After completing substory 42, bond with Pocket Circuit Fighter at 100%" },
           body: { ko: "상기의 조건을 만족시킨 상태에서 포켓 스타디움으로 들어가면, 포켓 파이터의 도전을 받게 되는 서브 스토리가 발생한다. 카운터로 승부를 받은 뒤 레이스를 시작하게 된다. 파이터 SP코스라고 불리는 특별한 코스에서 승부를 하게된다. 포켓 파이터에게 이기면 서브 스토리가 완료된다 졌을 경우에는 이길 때 까지 재도전을 할 수 있다. 승리 후에는, 지금까지 승부 해왔던 파이터들에게 말을 걸면 다시 레이스를 할 수 있게 된다. 머신 쿨 스트라이커 타이어 극 · 스파이크 타이어 핀 극 · 미들 핀 모터 위타천 모터 기어 극 · 노멀 기어 배터리 고속 배터리 서스펜스 헤비 서스펜션 범퍼 하이퍼 플레이트 포켓 파이터에게 이기기 위해서는 조금의 운이 필요하다 코스가 험한 곳에서 몇 번이고 머신이 코스 이탈할 가능성이 크므로, 기합 게이지가 금방 비게 된다. 2회 연속 코스 아웃을 당할 위험도 있으며, 플레이를 중단해서 재빠르게 재도전을 하는 것이 좋다", en: "With the required conditions met, enter the Pocket Stadium for a substory where Pocket Circuit Fighter challenges you. Accept at the counter and race on the special 「Fighter SP Course」. Win to complete the substory. Retry if you lose. After winning, you can talk to previous racers to race them again. Parts: Machine: Cool Striker / Tires: Extreme Spike / Pins: Extreme Middle / Motor: Bishamonten Motor / Gear: Extreme Normal / Battery: High-speed / Suspension: Heavy / Bumper: Hyper Plate. Winning requires some luck — the course is rough and your machine can go off-track frequently, draining the gauge quickly. Risk of 2 consecutive course-outs; quitting quickly to retry is recommended." },
-          reward: { ko: "상기의 조건을 만족시킨 상태에서 포켓 스타디움으로 들어가면, 포켓 파이터의 도전을 받게 되는 서브 스토리가 발생한다. 카운터로 승부를 받은 뒤 레이스를 시작하게 된다. 파이터 SP코스라고 불리는 특별한 코스에서 승부를 하게된다. 포켓 파이터에게 이기면 서브 스토리가 완료된다 졌을 경우에는 이길 때 까지 재도전을 할 수 있다. 승리 후에는, 지금까지 승부 해왔던 파이터들에게 말을 걸면 다시 레이스를 할 수 있게 된다. 머신 쿨 스트라이커 타이어 극 · 스파이크 타이어 핀 극 · 미들 핀 모터 위타천 모터 기어 극 · 노멀 기어 배터리 고속 배터리 서스펜스 헤비 서스펜션 범퍼 하이퍼 플레이트 포켓 파이터에게 이기기 위해서는 조금의 운이 필요하다 코스가 험한 곳에서 몇 번이고 머신이 코스 이탈할 가능성이 크므로, 기합 게이지가 금방 비게 된다. 2회 연속 코스 아웃을 당할 위험도 있으며, 플레이를 중단해서 재빠르게 재도전을 하는 것이 좋다", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 44,
@@ -469,7 +469,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입 한 후", en: "After buying the white suit in Chapter 5" },
           body: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 마리야라고 하는 여성과 데이트 약속을 하여, 데이트 장소로 가면, 체격이 조금 큰 여성이 있다는 내용 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "Make a date with a woman named Mariya at the play spot 「Teruteru-boya」 in Kamurocho. When you arrive at the meeting place, a rather large-framed woman is waiting. Kiryu gets dragged on a date against his will, his HP gauge drains, and the substory is complete." },
-          reward: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 마리야라고 하는 여성과 데이트 약속을 하여, 데이트 장소로 가면, 체격이 조금 큰 여성이 있다는 내용 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 45,
@@ -479,7 +479,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입 한 후", en: "After buying the white suit in Chapter 5" },
           body: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 사유리라고 하는 여성과 데이트 약속을 하여, 데이트 장소로 가면, 연배의 여성이 있다는 내용 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "Make a date with a woman named Sayuri at the play spot 「Teruteru-boya」 in Kamurocho. When you arrive at the meeting place, an older woman is waiting. Kiryu gets dragged on a date against his will, his HP gauge drains, and the substory is complete." },
-          reward: { ko: "카무로초에 있는 플레이 스팟 「테루테루보야」에서 사유리라고 하는 여성과 데이트 약속을 하여, 데이트 장소로 가면, 연배의 여성이 있다는 내용 억지로 데이트에 끌려가면서 키류의 체력 게이지가 줄어들며, 서브 스토리가 완료된다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 46,
@@ -576,10 +576,10 @@ export const yakuza0Substories: SubstoriesData = {
         },
         {
           number: 51,
-          title: { ko: "용이라 불릴 것 같은 남자", en: "Miho, Convenience Store Clerk" },
+          title: { ko: "용이라 불릴 것 같은 남자", en: "Rise of the Dragon" },
           chapter: { ko: "제 3장", en: "Chapter 3" },
-          protagonist: { ko: "키류", en: "Kiryu" },
-          location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
+          protagonist: { ko: "마지마", en: "Majima" },
+          location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
           body: { ko: "분자에몬길 (맵 1)에 있는 건물 기둥 뒤쪽으로 다가가면, 교복 바지를 빼앗긴 「숨어 있는 남자」가 말을 걸어오면서 서브 스토리가 발생한다. 이벤트 후, 질 나쁜 남자와 전투가 시작되므로 쓰러뜨리면 된다 【맵 2】로 가면, 의문의 남자 (아이 시절의 고다 류지)와 전투가 시작되므로 쓰러뜨리면 된다 교복 주인에게 교복 바지를 돌려주도록 하자 (맵 3) 타코야키 가게 옆 (맵 4)으로 가서, 이벤트를 보면 서브 스토리가 완료된다", en: "Head behind a building pillar on Bunzaemon Alley (Map 1) to be approached by a 「man in hiding」 whose school uniform trousers were stolen, triggering the substory. After the event, fight and defeat a thug. Go to [Map 2] and fight a mysterious boy (young Ryuji Goda) — defeat him. Return the uniform trousers to their owner (Map 3). Head to the spot next to the takoyaki shop (Map 4) and watch the event to complete the substory." },
           reward: { ko: "-", en: "-" },
@@ -596,10 +596,10 @@ export const yakuza0Substories: SubstoriesData = {
         },
         {
           number: 52,
-          title: { ko: "남자친구가 돼 주세요", en: "Emiri, Mach Bowl Receptionist" },
+          title: { ko: "남자친구가 돼 주세요", en: "Will You Be My Boyfriend?" },
           chapter: { ko: "제 3장", en: "Chapter 3" },
-          protagonist: { ko: "키류", en: "Kiryu" },
-          location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
+          protagonist: { ko: "마지마", en: "Majima" },
+          location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
           body: { ko: "소텐보리 거리를 걷다보면, 「허둥대는 여자」에게 남자친구가 되어달라는 부탁을 받으면서 서브 스토리가 시작된다. 선택한 선택지에 따라 보상 내용이 변한다 모든 선택지를 선택하면 서브 스토리가 완료된다. ■ 선택지 1. 처음 뵙겠습니다! 마지마 고로입니다! 2. 아버님, 만나서 반갑습니다 3. 날마다 제 아침밥 차려주십쇼 ※ 어느 것을 선택해도 관계없음 1. 치과 의사 2. 카바레 지배인 3. 건달 1. 헌팅당해서 알게 됐다 2. 영화관에서 옆자리에 앉았다 3. 빵을 물고 달리는 코코아와 부딪혔다 1. 거짓말이라니 그게 무슨? 2. 자백하겠습니다! ※ 선택지의 정답은 「상관없음」 → 「1」 → 「2」 → 「1」이다.", en: "Walking through Sotenbori, a 「flustered woman」 asks Majima to pretend to be her boyfriend, starting the substory. Rewards differ by choices made. Go through all choices to complete the substory.\n\n■ Choices:\n1) Nice to meet you! I'm Goro Majima!  2) Father, pleased to meet you.  3) Please make my breakfast every day.\n(Any is fine.)\n1) Dentist  2) Cabaret club manager  3) Yakuza\n1) We met when she tried to pick me up  2) We sat next to each other in a cinema  3) I crashed into Cocoa who was running with bread in her mouth\n1) What do you mean, a lie?  2) I confess!\nCorrect answers: any → 1) → 2) → 1)." },
           reward: { ko: "난쟁이의 벨트 (정답의 선택지를 선택했을 경우) · 형석 (오답의 선택지를 선택했을 경우) · 이미지 비디오 「12 아이스 코코아」가 입하", en: "Dwarf's Belt (correct choices)\n\nBulletproof Glass Amulet (wrong choices)\n\nImage Video '12 Aisu Kokoa' added to stock" },
@@ -618,9 +618,9 @@ export const yakuza0Substories: SubstoriesData = {
           number: 53,
           title: { ko: "얼굴을 바꾼 남자", en: "The Man Who Changed His Face" },
           chapter: { ko: "제3장", en: "Chapter 3" },
-          protagonist: { ko: "키류", en: "Kiryu" },
-          location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
-          trigger: { ko: "제3장에서 키류 아파트로 돌아갈 때", en: "While returning to Kiryu's apartment in Chapter 3" },
+          protagonist: { ko: "마지마", en: "Majima" },
+          location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
+          trigger: { ko: "제3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
           steps: [
           { body: { ko: "아지와바 공원에서 「졸린 남자」에게 말을 걸면 시작. 아이에게 공을 돌려준 뒤 다시 대화. 아카타니의 사정을 듣고 이동.", en: "Talk to the 「sleepy man」 at Aziwaba Park to start. Return a ball to a child then talk again. Hear Akatani's circumstances and move on." } },
           { body: { ko: "【맵 3】 유스케 근처 이벤트 후 거리 양아치 4명 전투. 총을 든 적을 먼저 처리하는 것이 안전.", en: "After an event near Yusuke at [Map 3], fight 4 street thugs. Taking out the gun-wielding enemy first is the safest approach." } },
@@ -639,10 +639,10 @@ export const yakuza0Substories: SubstoriesData = {
         },
         {
           number: 54,
-          title: { ko: "사이비 종교의 덫", en: "Luka at SEGA HI-TECH LAND" },
+          title: { ko: "사이비 종교의 덫", en: "Disciple of the New Order" },
           chapter: { ko: "제 3장", en: "Chapter 3" },
-          protagonist: { ko: "키류", en: "Kiryu" },
-          location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
+          protagonist: { ko: "마지마", en: "Majima" },
+          location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
           body: { ko: "쇼후쿠쵸 거리(맵 1)를 이동하다보면, 호소하는 여자와 수상한 복장을 한 단체들과, 다투고 있는 서브 스토리가 발생한다 이오리의 엄마에게 말을 걸어서 사정을 들은 뒤, 「무난쵸헤페토나스교」에 입단한다 【수제 부적】을 받은 뒤, 【맵 2】에 있는 신도들에게 다가가도록 하자 그 뒤, 몇가지 선택지와 테스트가 등장하게 된다. 테스트의 정답 수에 따라 무난쵸 스즈키에게서 받을 수 있는 재료 아이템이 변한다 테스트로 3개 이상의 오답을 선택하면 회원 4명과 전투가 시작하지만, 최종적으로 정답의 선택지를 선택했을 경우에도 같은 스토리가 전개된다. 그 뒤, 무난쵸 스즈키를 쓰러뜨리면 서브 스토리가 완료된다. ■ 선택지 1. 세렌쵸하바토라스교에 들어가고 싶다 2. 아반쵸데시토레스교에 들어가고 싶다 3. 무난쵸헤페토나스교에 들어가고 싶다 → 슈레삐삐 수련장에서, 이오리에게 말을 건다 1. 아몬드가 죽으면 다이아몬드가 된다 2. 니, 이오리 맞제? 3. 나는 무난쵸헤페토나스다 1. 포즈를 취하며 인사 2. 목소리로만 인사 3. 인사를 안 한다 → 테스트 문제 1. 땡큐 2. 무난쵸 3. 헤페토나스 1. 슈레삐삐 2. 슈레뿌뿌 3. 슈레뽀뽀 1. 두 팔을 올리고 소리 높여 외친다 2. 왼팔을 돌린 다음 양손을 합친다 3. 허리를 흔들며 흥분한다 1. 무난쵸 스즈키 2. 무난쵸 타나카 3. 무난쵸 사토 → 교주의 방으로 이동한 뒤 → 여기까지 정답의 선택지를 선택했을 경우 교주에게서 수정을 받게 된다. 1. 차라리 내하고 슈레삐삐하자! 2. 나는 무난쵸헤페토나스다 3. 느그 엄마가 슬퍼한데이! 선택지의 정답은 「3」 → 「2」 → 「1」 → 「3」 → 「1」 → 「2」 → 「1」 → 「3」이다. 목재를 보상으로 받는 법 「3」 → 「1」 (그 뒤나오는 선택지 중 3) → 「3」 → 「1」 → 「3」 → 「3」 → 「3」 → 전투 구슬 스틸을 보상으로 받는 법 「3」 → 「2」 → 「2」 → 「2」 → 「1」 → 「2」 → 「2」", en: "Walking through Shofukucho Street (Map 1), a substory triggers with a pleading woman arguing with a strangely-dressed group. Talk to Iori's mother to hear her story, then join the 「Munanchohepetona Religion」. Receive a 【Handmade Talisman】 then approach the cult members at [Map 2]. Several choices and a test follow. The material reward from Munanchosuzuki changes based on how many test answers are correct. Getting 3+ wrong answers starts a fight with 4 members, but even choosing correct answers ultimately leads to the same story. Then defeat Munanchosuzuki to complete the substory.\n\n■ Choices:\n1) I want to join the Serencho Habatorasukyou  2) I want to join the Avanchoh Deshitoresukyo  3) I want to join the Munanchohepetona Religion\n→ At the Shure-pipi training hall, talk to Iori:\n1) When almonds die they become diamonds  2) You're Iori, aren't ya?  3) I am Munanchohepetona\n1) Greet with a pose  2) Greet with voice only  3) Don't greet\n→ Test questions:\n1) Thank you  2) Munancho  3) Hepetona\n1) Shure-pipi  2) Shure-pupu  3) Shure-popo\n1) Raise both arms and cry out  2) Rotate left arm then clasp both hands  3) Shake your hips and get excited\n1) Munanchosuzuki  2) Munanchotanaka  3) Munanchosato\n→ Move to the leader's room. If all correct answers were chosen, receive crystal from the leader.\n1) Let's do Shure-pipi together instead!  2) I am Munanchohepetona  3) Your mom's crying about it!\nCorrect answers: 3)→2)→1)→3)→1)→2)→1)→3)\nFor Timber: 3)→1) (then 3 from next options)→3)→1)→3)→3)→3)→fight\nFor Tamahagane Steel: 3)→2)→2)→2)→1)→2)→2)" },
           reward: { ko: "수정 (정답의 선택지를 선택했을 경우) · 구슬 스틸 (미묘한 선택지를 선택했을 경우) · 목재 (오답의 선택지를 선택했을 경우) · 악세서리 「여행자의 부적」 · 이미지 비디오 「20 코가와 이오리」 입하", en: "Crystal (correct choices)\n\nTamahagane Steel (middling choices)\n\nTimber (wrong choices)\n\nAccessory: Traveler's Amulet\n\nImage Video '20 Kogawa Iori' added to stock" },
@@ -702,7 +702,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 8장 개시 직후 대상의 서브 스토리를 5개 이상 완료 한 상태", en: "Right after Chapter 8 begins, with 5 or more eligible substories completed" },
           body: { ko: "선샤인의 사무실로 들어가면, 라디오 카세트에서 라디오가 흘러나오는 이벤트가 발생한다 마지마가 라디오 카세트를 끄려고 하지만, 「돌체 카미야의 엽서 ~ 돌체」가 방송되면서 서브 스토리가 시작된다. 서브 스토리 59 ~ 61은 연번으로, 같은 내용의 서브 스토리다. 사무실의 책상을 조사하면, 라디오에 투고하기 위한 엽서가 놓여져 있다. 맨 처음의 라디오 네임의 선택은 어느 것을 선택해도 상관없지만, 결국은 「고로고로고로지롱」으로 선택하게 된다. 다른 선택지를 선택해도 그렇게 된다. 돌체 카미야에게 선택 받을 소재를 쓰게 되지만, 지금까지 완료 한 서브 스토리가 대상이다. 전부 13 종류의 서브 스토리를 선택할 수 있지만, 선택되는 것은 총 6가지 소재를 쓴 뒤, 한 번 밖으로 나갔다가 다시 선샤인의 사무실로 들어와 라디오를 조사하면 방송이 흘러나온다 선택될만한 소재를 투고 하면 서브 스토리가 완료된다. 선택되지 않은 소재를 투고 하면, 선택 받을 만한 소재를 투고 할 때까지, 계속해서 엽서를 쓰게 된다. 마지막은 서브 스토리 61에서 보상을 받을 수 있다. 소재 당첨 서브 스토리 49 - 하트 목걸이 ○ 서브 스토리 50 - 거리 예술가 X 서브 스토리 52 - 남자 친구가 돼 주세요 ○ 서브 스토리 53 - 얼굴이 바뀐 남자 X 서브 스토리 54 - 사이비 종교의 덫 X 서브 스토리 55 - 숄더 폰의 남자 X 서브 스토리 56 - 세금 착취 ○ 서브 스토리 57 - 크로스 워드 ○ 서브 스토리 58 꿈에 그리던 스타디움 점퍼 X 서브 스토리 62 1000만 앤 짜리 임상시험 ○ 서브 스토리 63 심부름꾼이라고 부르지 마 X 서브 스토리 64 - 낙서 러브레터 ○ 서브 스토리 65 - 공포의 호랭이 아지매 X", en: "Enter the Sunshine office and a radio cassette starts playing. Majima tries to turn it off but the show 「Dolce Kamiya's Postcard — Dolce」 airs, starting the substory. Substories 59, 60, and 61 are a connected series. Examine the office desk for a postcard to submit to the radio. Whatever radio name you pick, it ends up as 「Goro-Goro-Goro-Jiron」. You write stories based on completed substories. There are 13 types to choose from but only 6 will be selected. Submit a story, step outside, come back in, and check the radio cassette. If your story is selected the substory completes. Otherwise keep submitting winning stories. The final reward comes in substory 61.\n\n■ Winning substories:\nSubstory 49 - From the Heart ○\nSubstory 50 - The Entertainer's Throne ✕\nSubstory 52 - Boyfriend for Hire ○\nSubstory 53 - The Man Who Changed His Face ✕\nSubstory 54 - Cult Trap ✕\nSubstory 55 - Calling the Future ✕\nSubstory 56 - A Taxing Issue ○\nSubstory 57 - Crossed Words ○\nSubstory 58 - Stadium Jumper Strut ✕\nSubstory 62 - The 10 Million Drug Test ○\nSubstory 63 - Errands on the Run ✕\nSubstory 64 - Toilet Talk ○\nSubstory 65 - The Obatarian Strikes ✕" },
-          reward: { ko: "선샤인의 사무실로 들어가면, 라디오 카세트에서 라디오가 흘러나오는 이벤트가 발생한다 마지마가 라디오 카세트를 끄려고 하지만, 「돌체 카미야의 엽서 ~ 돌체」가 방송되면서 서브 스토리가 시작된다. 서브 스토리 59 ~ 61은 연번으로, 같은 내용의 서브 스토리다. 사무실의 책상을 조사하면, 라디오에 투고하기 위한 엽서가 놓여져 있다. 맨 처음의 라디오 네임의 선택은 어느 것을 선택해도 상관없지만, 결국은 「고로고로고로지롱」으로 선택하게 된다. 다른 선택지를 선택해도 그렇게 된다. 돌체 카미야에게 선택 받을 소재를 쓰게 되지만, 지금까지 완료 한 서브 스토리가 대상이다. 전부 13 종류의 서브 스토리를 선택할 수 있지만, 선택되는 것은 총 6가지 소재를 쓴 뒤, 한 번 밖으로 나갔다가 다시 선샤인의 사무실로 들어와 라디오를 조사하면 방송이 흘러나온다 선택될만한 소재를 투고 하면 서브 스토리가 완료된다. 선택되지 않은 소재를 투고 하면, 선택 받을 만한 소재를 투고 할 때까지, 계속해서 엽서를 쓰게 된다. 마지막은 서브 스토리 61에서 보상을 받을 수 있다. 소재 당첨 서브 스토리 49 - 하트 목걸이 ○ 서브 스토리 50 - 거리 예술가 X 서브 스토리 52 - 남자 친구가 돼 주세요 ○ 서브 스토리 53 - 얼굴이 바뀐 남자 X 서브 스토리 54 - 사이비 종교의 덫 X 서브 스토리 55 - 숄더 폰의 남자 X 서브 스토리 56 - 세금 착취 ○ 서브 스토리 57 - 크로스 워드 ○ 서브 스토리 58 꿈에 그리던 스타디움 점퍼 X 서브 스토리 62 1000만 앤 짜리 임상시험 ○ 서브 스토리 63 심부름꾼이라고 부르지 마 X 서브 스토리 64 - 낙서 러브레터 ○ 서브 스토리 65 - 공포의 호랭이 아지매 X", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 60,
@@ -711,7 +711,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "서브 스토리 59 완료 후", en: "After completing substory 59" },
           body: { ko: "서브 스토리 59를 완료 한 후, 다시 선샤인의 사무실로 들어가 책상을 조사해서 다시 소재를 투고 한다 같은 방식으로, 당첨되는 소재를 선택해서 투고한 뒤, 라디오를 조사하면 당첨되는 내용을 듣는다.", en: "After completing substory 59, enter the Sunshine office and examine the desk to submit another story. Same method — pick a winning story, submit it, then check the radio cassette to hear if it's selected." },
-          reward: { ko: "서브 스토리 59를 완료 한 후, 다시 선샤인의 사무실로 들어가 책상을 조사해서 다시 소재를 투고 한다 같은 방식으로, 당첨되는 소재를 선택해서 투고한 뒤, 라디오를 조사하면 당첨되는 내용을 듣는다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 61,
@@ -804,7 +804,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 7장에서 유키의 특별 연습 최종회 이후", en: "After Yuki's final special training session in Chapter 7" },
           body: { ko: "소텐보리 물장사 아일랜드에서 유키의 특별 연습 최종회 이후를 맞이 하면 서브 스토리가 발생한다 선택지는 2회 전부 「지켜본다」, 「나선다」를 선택하게 되지만, 어느 것을 선택해도 상관없다 2번 다 「지켜본다」를 선택하면, 서브 스토리가 완료된다. 「나선다」를 선택하면, 마지마와 요다가 남자를 사기꾼 취급하게 되지만 유키의 아버지라는 것을 알게 되면서, 마찬가지로 서브 스토리가 완료된다 어느 것을 선택해도, 완료 후의 유키의 경험치 획득에는 변화가 없다.", en: "After Yuki's final special training at Sotenbori Cabaret Island, this substory triggers. Two rounds of choices between 「Watch quietly」 and 「Step in」 — either is fine. Choosing 「Watch quietly」 both times completes the substory. Choosing 「Step in」 causes Majima and Yoda to treat the man as a fraud, but they learn he is Yuki's father and the substory still completes. Either choice doesn't affect Yuki's exp gain after completion." },
-          reward: { ko: "소텐보리 물장사 아일랜드에서 유키의 특별 연습 최종회 이후를 맞이 하면 서브 스토리가 발생한다 선택지는 2회 전부 「지켜본다」, 「나선다」를 선택하게 되지만, 어느 것을 선택해도 상관없다 2번 다 「지켜본다」를 선택하면, 서브 스토리가 완료된다. 「나선다」를 선택하면, 마지마와 요다가 남자를 사기꾼 취급하게 되지만 유키의 아버지라는 것을 알게 되면서, 마찬가지로 서브 스토리가 완료된다 어느 것을 선택해도, 완료 후의 유키의 경험치 획득에는 변화가 없다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 70,
@@ -976,7 +976,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "삥쟁이와 첫 전투 후", en: "After your first fight with a money-hungry thug" },
           body: { ko: "필드를 돌아다니다가 삥쟁이 「에가시라」를 쓰러트린다는 서브 스토리 삥쟁이 · 에가시라와 만나면 다가가 전투을 하면 서브 스토리를 받을 수 있다 쓰러뜨리면 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지가 회복시키는 드링크 계의 아이템을 사용해서 무기의 히트 액션을 발동 시키면서 공격하면 쉽게 이길 수 있다.", en: "Roaming the field, defeat the money-hungry thug 「Egashira」. Approach Egashira when you encounter him and fight to receive the substory. Defeat him to complete. Tip: use drink items that restore the heat gauge and activate weapon heat actions for an easy win." },
-          reward: { ko: "필드를 돌아다니다가 삥쟁이 「에가시라」를 쓰러트린다는 서브 스토리 삥쟁이 · 에가시라와 만나면 다가가 전투을 하면 서브 스토리를 받을 수 있다 쓰러뜨리면 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지가 회복시키는 드링크 계의 아이템을 사용해서 무기의 히트 액션을 발동 시키면서 공격하면 쉽게 이길 수 있다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 93,
@@ -985,7 +985,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 92 완료 후 삥쟁이와 조우 시", en: "After completing substory 92, when encountering a money-hungry thug" },
           body: { ko: "필드를 돌아다니다가 삥쟁이 「사토 유키」를 쓰러트린다는 서브 스토리 삥쟁이 · 사토 유키와 만나면 다가가 전투을 하면 서브 스토리를 받을 수 있다 쓰러뜨리면 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지가 회복시키는 드링크 계의 아이템을 사용해서 무기의 히트 액션을 발동 시키면서 공격하면 쉽게 이길 수 있다.", en: "Roaming the field, defeat the money-hungry thug 「Sato Yuki」. Approach Sato Yuki when you encounter him and fight to receive the substory. Defeat him to complete. Tip: use drink items that restore the heat gauge and activate weapon heat actions for an easy win." },
-          reward: { ko: "필드를 돌아다니다가 삥쟁이 「사토 유키」를 쓰러트린다는 서브 스토리 삥쟁이 · 사토 유키와 만나면 다가가 전투을 하면 서브 스토리를 받을 수 있다 쓰러뜨리면 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지가 회복시키는 드링크 계의 아이템을 사용해서 무기의 히트 액션을 발동 시키면서 공격하면 쉽게 이길 수 있다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 94,
@@ -1035,7 +1035,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 오디세이로 향할 때 소톤보리를 배회하는 삥쟁이와 만났을 때", en: "While heading to Odyssey in Chapter 3, when encountering a roaming thug in Sotenbori" },
           body: { ko: "필드를 이리저리 돌아다니다가, 삥쟁이 「카와하시 나오야」를 쓰러트린다는 서브 스토리 삥쟁이 · 나오야를 만나면 가까이 다가가 전투을 하면 서브 스토리를 받을 수 있다. 쓰러뜨리면, 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지를 회복 시키는 드링크 계의 아이템을 사용해서 무기를 이용한 히트 액션을 발동시키면서 공격하면 쉽게 이길 수 있다.", en: "Roaming the field, defeat the money-hungry thug 「Kawahashi Naoya」. Approach Naoya when you encounter him and fight to receive the substory. Defeat him to complete. Tip: use drink items that restore the heat gauge and activate weapon heat actions for an easy win." },
-          reward: { ko: "필드를 이리저리 돌아다니다가, 삥쟁이 「카와하시 나오야」를 쓰러트린다는 서브 스토리 삥쟁이 · 나오야를 만나면 가까이 다가가 전투을 하면 서브 스토리를 받을 수 있다. 쓰러뜨리면, 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지를 회복 시키는 드링크 계의 아이템을 사용해서 무기를 이용한 히트 액션을 발동시키면서 공격하면 쉽게 이길 수 있다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 99,
@@ -1044,7 +1044,7 @@ export const yakuza0Substories: SubstoriesData = {
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "서브 스토리 98을 완료 후 소톤보리를 배회하는 삥쟁이와 만났을 때", en: "After completing substory 98, when encountering a roaming thug in Sotenbori" },
           body: { ko: "필드를 이리저리 돌아다니다가, 삥쟁이 「오에 켄지」를 쓰러트린다는 서브 스토리 삥쟁이 · 켄지를 만나면 가까이 다가가 전투을 하면 서브 스토리를 받을 수 있다. 쓰러뜨리면, 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지를 회복 시키는 드링크 계의 아이템을 사용해서 무기를 이용한 히트 액션을 발동시키면서 공격하면 쉽게 이길 수 있다.", en: "Roaming the field, defeat the money-hungry thug 「Oe Kenji」. Approach Kenji when you encounter him and fight to receive the substory. Defeat him to complete. Tip: use drink items that restore the heat gauge and activate weapon heat actions for an easy win." },
-          reward: { ko: "필드를 이리저리 돌아다니다가, 삥쟁이 「오에 켄지」를 쓰러트린다는 서브 스토리 삥쟁이 · 켄지를 만나면 가까이 다가가 전투을 하면 서브 스토리를 받을 수 있다. 쓰러뜨리면, 서브 스토리가 완료된다 쓰러뜨리는 요령은 히트 게이지를 회복 시키는 드링크 계의 아이템을 사용해서 무기를 이용한 히트 액션을 발동시키면서 공격하면 쉽게 이길 수 있다.", en: "-" },
+          reward: { ko: "-", en: "-" },
         },
         {
           number: 100,

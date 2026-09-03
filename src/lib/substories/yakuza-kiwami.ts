@@ -672,7 +672,9 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
       items: [
         {
           number: 68,
-          title: { ko: "박사와의 연습 시합 (#69 원문)", en: "Practice Match With Professor" },
+          // Sources disagree on whether this is #68 or #69 (some lists put
+          // Komaki's Parry at #68 and this at #69).
+          title: { ko: "박사와의 연습 시합", en: "Practice Match With Professor" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
           trigger: { ko: "#53 클리어 후 박사에게 도전", en: "Challenge the Professor after #53." },
