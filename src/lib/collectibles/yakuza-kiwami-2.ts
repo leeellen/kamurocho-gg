@@ -655,7 +655,7 @@ export const yakuzaKiwami2: CollectiblesData = {
         { ko: "체인의 다음 보스는 이전 보스 격파 후 같은 잡몹을 5회 더 격파해야 등장합니다.", en: "The next boss in a chain appears after beating the previous boss plus 5 more fights against the same mob type." },
         { ko: "야쿠자 타입은 등장 빈도가 낮으므로 지도의 Ⓑ 표시가 많은 구역에서 컨텐츠 초반부터 노리는 편이 좋습니다. 카무로초는 밀레니엄 타워 동·서 통과 루트, 소텐보리는 야쿠자·불량배는 동쪽, 양아치는 서쪽에서 잘 나옵니다.", en: "Yakuza-type mobs spawn rarely, so target areas marked Ⓑ on the map early. In Kamurocho, crossing east-west through Millennium Tower helps; in Sotenbori, Yakuza/Thugs favor the east side and Delinquents the west." },
       ],
-      source: { label: "funkygame — 용과 같이 극 2 인카운트 보스", url: "https://funkygame.tistory.com/2026" },
+      source: { label: "funkygame — Yakuza Kiwami 2 encounter bosses", url: "https://funkygame.tistory.com/2026" },
       groups: [
         {
           title: { ko: "카무로초 — 9인", en: "Kamurocho — 9 Bosses" },

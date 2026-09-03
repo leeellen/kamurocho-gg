@@ -17,6 +17,16 @@ function pick(pair: LocalizedText | null | undefined, locale: Locale): string {
   return en;
 }
 
+// Chapter badges come from the source data as Korean strings ("제2장") that
+// double as the `chapterColors` key, so translate the label at render time
+// rather than duplicating the data.
+const CHAPTER_KO = /^제\s*(\d+)\s*장$/;
+function chapterLabel(chapter: string, locale: Locale): string {
+  if (locale === "ko") return chapter;
+  const m = CHAPTER_KO.exec(chapter);
+  return m ? `Ch.${m[1]}` : chapter;
+}
+
 function videoEmbed(url: string): string | null {
   const m = url.match(/(?:v=|embed\/)([A-Za-z0-9_-]{11})/);
   return m ? `https://www.youtube.com/embed/${m[1]}` : null;
@@ -331,7 +341,11 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
               ref={(el) => {
                 cardRefs.current[item.number] = el;
               }}
-              role="button"
+              // A checklist entry is a checkbox, not a button: role="button"
+              // alone gave assistive tech no way to read the done state.
+              role="checkbox"
+              aria-checked={done}
+              aria-label={`#${item.number} ${pick(label, locale)}`}
               tabIndex={0}
               onClick={() => toggle(item.number)}
               onKeyDown={(e) => {
@@ -372,7 +386,7 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                 </span>
                 {item.chapter && (
                   <span className="font-mono font-bold" style={{ color }}>
-                    {item.chapter}
+                    {chapterLabel(item.chapter, locale)}
                   </span>
                 )}
                 {item.code && (
@@ -438,7 +452,10 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
               </div>
               {(openItem.chapter || openItem.title) && (
                 <div className="mt-1 text-[13px] text-[var(--text-tertiary)]">
-                  {[openItem.chapter, openItem.title ? pick(openItem.title, locale) : null]
+                  {[
+                    openItem.chapter ? chapterLabel(openItem.chapter, locale) : null,
+                    openItem.title ? pick(openItem.title, locale) : null,
+                  ]
                     .filter(Boolean)
                     .join(" · ")}
                 </div>

@@ -25,7 +25,8 @@
       "number": 4,
       "chapter": "제2장",
       "code": "02-A",
-      "note": "지도 번호 미표기 · 용호반점 골목 우측 붉은 점(테이블 위)"
+      "note": "지도 번호 미표기 · 용호반점 골목 우측 붉은 점(테이블 위)",
+      "noteEn": "Not numbered on the map — the red dot right of the Yotaiheki alley (on the table)"
     },
     {
       "number": 5,
@@ -175,13 +176,15 @@
       "number": 29,
       "chapter": "제10장",
       "code": "10-B",
-      "note": "동성회 본부 전투 완료 후"
+      "note": "동성회 본부 전투 완료 후",
+      "noteEn": "After the fight at the Dojima Family HQ"
     },
     {
       "number": 30,
       "chapter": "제10장",
       "code": "10-C",
-      "note": "지도 미표기 · 아세아 거리 세이브 포인트 근처"
+      "note": "지도 미표기 · 아세아 거리 세이브 포인트 근처",
+      "noteEn": "Not on the map — near the save point on Ashitaba St."
     },
     {
       "number": 31,

@@ -12,8 +12,8 @@ export const yakuza0: CollectiblesData = {
         { ko: "세트 5장 보상 외에도 「절륜의 아키모토」 친구 호감도가 올라가며 추가 보상이 따라옵니다.", en: "Beyond the ¥5M payout, completing sets raises affinity with collector Akimoto for additional rewards." },
     ],
     source: [
-      { label: "펑키게임 — 전화카드 (카무로쵸)", url: "https://funkygame.tistory.com/1804" },
-      { label: "펑키게임 — 전화카드 (소텐보리)", url: "https://funkygame.tistory.com/1805" },
+      { label: "funkygame — Telephone Cards (Kamurocho)", url: "https://funkygame.tistory.com/1804" },
+      { label: "funkygame — Telephone Cards (Sotenbori)", url: "https://funkygame.tistory.com/1805" },
     ],
   },
   {

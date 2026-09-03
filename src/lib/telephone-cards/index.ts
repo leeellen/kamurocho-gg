@@ -6,6 +6,8 @@ export type TelephoneCard = {
   chapter: string;
   code: string;
   note: string;
+  /** English rendering of `note`; falls back to `note` when absent. */
+  noteEn?: string;
 };
 
 export type TelephoneCardMap = {

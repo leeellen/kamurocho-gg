@@ -12,7 +12,7 @@ export const yakuza6: CollectiblesData = {
         { ko: "캔은 편의점·돈키호테·네코카페에서 구입할 수 있습니다. 좋아하는 캔을 잘못 골라도 카운트는 오르지만 도망 확률이 커집니다.", en: "Cans sell at convenience stores, Don Quijote, and the Cat Cafe. Wrong cans still count but raise escape chance." },
         { ko: "각 지역 지도에 고양이 출현 지점이 번호로 표시돼 있습니다. 지도 번호는 카드 번호와 일치하며, 한 번호당 2~3곳의 랜덤 출현 지점이 찍혀 있습니다.", en: "Each region map marks cat spawn points by number; map numbers match the card numbers, with 2-3 random spawn spots shown per cat." },
     ],
-    source: { label: "펑키게임 — 용과 같이 6 고양이 찾기", url: "https://funkygame.tistory.com/2273" },
+    source: { label: "funkygame — Yakuza 6 stray cat hunt", url: "https://funkygame.tistory.com/2273" },
     groups: [
     {
       title: { ko: "카무로초 — 9마리", en: "Kamurocho — 9 Cats" },

@@ -53,7 +53,7 @@ function telephoneRegions(appId: number, locale: Locale): ChecklistRegion[] {
         hqImage: hqImageUrl(m, c.number),
         chapter: c.chapter,
         code: c.code,
-        note: c.note ? { ko: c.note, en: c.note } : undefined,
+        note: c.note ? { ko: c.note, en: c.noteEn ?? c.note } : undefined,
       })),
     }));
 }

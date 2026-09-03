@@ -15,7 +15,7 @@ export const lostJudgment: CollectiblesData = {
         { ko: "각 지역 지도에 다람쥐 그림 위치가 번호로 표시돼 있습니다. 카드 번호와 지도 번호가 일치합니다.", en: "Each region map marks squirrel-tag locations by number; map numbers match the card numbers." },
       ],
       source: {
-        label: "gamewith.jp — Lost Judgment 페인트 서치",
+        label: "gamewith.jp — Lost Judgment Paint Search",
         url: "https://gamewith.jp/lostjudgment/article/show/295108",
       },
       groups: [
