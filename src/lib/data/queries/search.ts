@@ -9,6 +9,11 @@ import { getSeriesGames } from "./series";
 
 export const searchKamurocho = cache(async (query: string, locale: Locale) => {
   const trimmed = query.trim().toLowerCase();
+  // Match on every whitespace-separated token rather than the raw string, so
+  // a natural two-word query ("타이거 드롭", "kiryu clan") still hits rows
+  // where the words are separated by other text.
+  const tokens = trimmed.split(/\s+/).filter(Boolean);
+  const matches = (hay: string) => tokens.every((t) => hay.includes(t));
   // Fetch both locales' rows so a Korean user searching "kiryu" can still
   // hit the English form, and vice versa — the search placeholder advertises
   // 한국어·영어·로마자 표기 모두 인식 / Korean+English+romaji support.
@@ -41,7 +46,7 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
-    return hay.includes(trimmed);
+    return matches(hay);
   });
 
   const altPagesByAppId = new Map(altPages.map((p) => [p.game.appId, p]));
@@ -65,7 +70,7 @@ export const searchKamurocho = cache(async (query: string, locale: Locale) => {
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
-      if (hay.includes(trimmed)) {
+      if (matches(hay)) {
         achievements.push({ game: seriesGame, achievement });
       }
     }
