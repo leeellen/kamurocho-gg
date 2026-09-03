@@ -345,7 +345,14 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
               // alone gave assistive tech no way to read the done state.
               role="checkbox"
               aria-checked={done}
-              aria-label={`#${item.number} ${pick(label, locale)}`}
+              aria-label={[
+                `#${item.number}`,
+                item.code,
+                item.chapter ? chapterLabel(item.chapter, locale) : null,
+                pick(label, locale) || null,
+              ]
+                .filter(Boolean)
+                .join(" ")}
               tabIndex={0}
               onClick={() => toggle(item.number)}
               onKeyDown={(e) => {
