@@ -133,8 +133,9 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
           location: { ko: "반탐", en: "Bantam" },
           trigger: { ko: "No.12 클리어 후 폴 림에게 도전", en: "After clearing No.12, challenge Paul Lim." },
+          body: { ko: "다트 연습을 하러 다가가면 폴 림이 승부를 걸어옵니다. 키류가 영어를 못해 아카이시자와 유야가 통역을 맡으며, 승패나 룰과 관계없이 폴 림이 레전드 다트를 건네줍니다.", en: "Approach the dartboard for a practice round and Paul Lim challenges you, with Yuya Akaishizawa translating since Kiryu does not speak English. Win or lose, whatever the ruleset, Paul gifts you his Legend's Darts." },
           prereq: { ko: "No.12 클리어", en: "Complete No.12" },
-          reward: { ko: "「폴 림의 화살」", en: "Paul Lim's Darts" },
+          reward: { ko: "레전드 다트", en: "Legend's Darts" },
         },
         {
           number: 14,
@@ -150,6 +151,8 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
           location: { ko: "다목적 빌딩 캬바쿠라", en: "Multipurpose Bldg. Cabaret" },
           trigger: { ko: "히카루를 No.1으로 만들기", en: "Make Hikaru No.1 at the cabaret." },
+          body: { ko: "히카루의 명함을 받고 플래티넘 등급까지 올린 뒤 극장 광장에서 데이트 약속을 잡습니다. 그녀가 나타나지 않아 찾아보면 연예 기획사 면접에 가 있고, 관계자들의 속셈을 알게 되는 전개로 이어집니다.", en: "Get Hikaru's business card and reach Platinum level with her, then set up the date in Theatre Square. When she does not show, search around and you find she is at a talent agency interview — and learn what the staff are really after." },
+          reward: { ko: "히카루 라인 진행", en: "Hikaru's line advances" },
         },
         {
           number: 16,
@@ -171,6 +174,8 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
           location: { ko: "핑크 거리 캬바쿠라", en: "Pink St. Cabaret" },
           trigger: { ko: "리오나를 No.1으로 만들기", en: "Make Riona No.1 at the cabaret." },
+          body: { ko: "핑크 거리 끝에서 기다리는 리오나와 나서려는 순간, 거액을 쓰고 출입을 거부당한 남자가 캬바걸을 탓하는 장면을 목격합니다. 그 캬바걸이 클럽 샤인 소속이라는 사실이 드러나며 이야기가 이어집니다.", en: "Riona is waiting near the end of Pink Avenue, but as you set off you witness a man blaming a hostess for barring him after he ran up a huge bill — and it turns out she is from Club Shine." },
+          reward: { ko: "리오나 라인 진행", en: "Riona's line advances" },
         },
         {
           number: 19,
@@ -253,6 +258,7 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "5장 이후", en: "Chapter 5+" },
           location: { ko: "후지사와 두부점", en: "Fujisawa Tofu Shop" },
           trigger: { ko: "후지사와 두부점에서 재회 이벤트", en: "Trigger the reunion event at Fujisawa Tofu." },
+          body: { ko: "결혼해 아들을 둔 포켓 서킷 파이터가 히로시마로 돌아와 있습니다. 오노미치의 두부 가게 앞에서 재회해 카무로초 시절 이야기를 나누고, 도중에 그의 아들이 합류합니다.", en: "Pocket Circuit Fighter, now married with a son, has moved back to Hiroshima. Reunite with him in front of his tofu shop in Onomichi and reminisce about his Kamurocho racing days — his son turns up partway through." },
         },
         {
           number: 28,
@@ -348,6 +354,7 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "야구장", en: "Baseball Field" },
           trigger: { ko: "No.37 클리어 후 레전드 격파", en: "After No.37, beat the Legends." },
+          body: { ko: "치바에게 말을 걸면 진행됩니다.", en: "Talk to Chiba." },
           prereq: { ko: "No.37 클리어", en: "Clear No.37" },
         },
         {
@@ -356,6 +363,7 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "야구장", en: "Baseball Field" },
           trigger: { ko: "No.38 클리어 후 고저스 격파", en: "After No.38, beat the Gorgeous team." },
+          body: { ko: "치바에게 말을 걸면 진행됩니다.", en: "Talk to Chiba." },
           prereq: { ko: "No.38 클리어", en: "Clear No.38" },
         },
         {
@@ -413,6 +421,8 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
           location: { ko: "페리 부두", en: "Ferry Dock" },
           trigger: { ko: "부두에서 참치 조사 후 낚시 미션 개시", en: "Investigate the tuna at the dock, then start the fishing mission." },
+          body: { ko: "진가이 페리 선착장에서 부상당한 이사오를 만납니다. 부상으로 조업을 못 하게 된 그가 스탠더드 작살총을 건네며 대신 어획을 부탁하고, 이를 수락하면 작살 낚시 튜토리얼로 이어집니다.", en: "At the Jingai Ferry Dock you meet an injured Isao. His injury stops him fishing, so he hands over the Standard Speargun and asks you to finish the catch for him — accepting doubles as the spearfishing tutorial." },
+          reward: { ko: "스탠더드 작살총", en: "Standard Speargun" },
         },
         {
           number: 48,
