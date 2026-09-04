@@ -40,6 +40,15 @@ export const yakuza5: CollectiblesData = {
       groups: [
       {
         title: { ko: "후쿠오카 — 나가스가이 (관광협회 직원: 나가스가와 거리 남쪽)", en: "Fukuoka — Nagasugai (Tourism rep: S Nagasugawa St.)" },
+        mapImage: "/yakuza-5-viewpoints/nagasugai.webp",
+        bareMap: true,
+        hotspots: {
+          "1": [59.09, 58.84],
+          "2": [28.18, 63.63],
+          "3": [76.18, 15.46],
+          "4": [71.09, 13.57],
+          "5": [23.64, 27.92],
+        },
         items: [
         {
           number: 1,
@@ -70,6 +79,15 @@ export const yakuza5: CollectiblesData = {
       },
       {
         title: { ko: "삿포로 — 츠키미노 (관광협회 직원: 키타코지 아케이드, 돈키호테 앞)", en: "Sapporo — Tsukimino (Tourism rep: Kitakoji arcade, outside Don Quijote)" },
+        mapImage: "/yakuza-5-viewpoints/tsukimino.webp",
+        bareMap: true,
+        hotspots: {
+          "6": [45.45, 11.28],
+          "7": [50.91, 39.53],
+          "8": [44.55, 62.21],
+          "9": [55.27, 67.67],
+          "10": [20.18, 82.09],
+        },
         items: [
         {
           number: 6,
@@ -100,6 +118,15 @@ export const yakuza5: CollectiblesData = {
       },
       {
         title: { ko: "오사카 — 소텐보리 (관광협회 직원: 비샤몬바시 다리)", en: "Osaka — Sotenbori (Tourism rep: Bishamon Bridge)" },
+        mapImage: "/yakuza-5-viewpoints/sotenbori.webp",
+        bareMap: true,
+        hotspots: {
+          "11": [75.47, 23.84],
+          "12": [76.25, 38.17],
+          "13": [21.09, 34.59],
+          "14": [75, 55.56],
+          "15": [64.84, 76.88],
+        },
         items: [
         {
           number: 11,
@@ -130,6 +157,15 @@ export const yakuza5: CollectiblesData = {
       },
       {
         title: { ko: "나고야 — 킨에이초 (관광협회 직원: 쿠메 대로 남쪽)", en: "Nagoya — Kineicho (Tourism rep: S Kume Blvd.)" },
+        mapImage: "/yakuza-5-viewpoints/kineicho.webp",
+        bareMap: true,
+        hotspots: {
+          "16": [65.71, 35.9],
+          "17": [36.77, 35.02],
+          "18": [67.01, 76.43],
+          "19": [38.59, 88.33],
+          "20": [38.72, 61.01],
+        },
         items: [
         {
           number: 16,
@@ -160,6 +196,15 @@ export const yakuza5: CollectiblesData = {
       },
       {
         title: { ko: "도쿄 — 카무로초 (관광협회 직원: 극장 앞 광장)", en: "Tokyo — Kamurocho (Tourism rep: Theater Square)" },
+        mapImage: "/yakuza-5-viewpoints/kamurocho.webp",
+        bareMap: true,
+        hotspots: {
+          "21": [32.65, 50.73],
+          "22": [51.51, 58.28],
+          "23": [89.7, 25.73],
+          "24": [27.73, 89.68],
+          "25": [44.53, 92.15],
+        },
         items: [
         {
           number: 21,

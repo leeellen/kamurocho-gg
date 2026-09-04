@@ -38,7 +38,8 @@ for (const [file, list] of byFile) {
   let src = readFileSync(path, "utf8");
 
   for (const row of list) {
-    const anchor = new RegExp(`\\n(\\s*)title: \\{ ko: "[^"]*", en: ${JSON.stringify(row.group)} \\},`, "g");
+    const literal = JSON.stringify(row.group).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const anchor = new RegExp(`\\n(\\s*)title: \\{ ko: "[^"]*", en: ${literal} \\},`, "g");
     const hit = [...src.matchAll(anchor)];
     if (hit.length !== 1) throw new Error(`${file}: ${hit.length} matches for group ${row.group}`);
     const [match] = hit;
