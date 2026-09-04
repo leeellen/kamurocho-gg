@@ -18,6 +18,14 @@ export function extractChapterFromGuide(content: string | null | undefined): num
   return n;
 }
 
+/**
+ * Decide whether an achievement is missable.
+ *
+ * `guideText` should carry **every** locale's guide body, not just the one
+ * being rendered: the flag describes the achievement, not the translation, and
+ * reading a single locale made the answer differ between the Korean and
+ * English pages for the same achievement.
+ */
 export function inferMissable(achievement: AchievementRow, guideText: string) {
   const sidecar = parseAchievementSidecar(achievement.category ?? null);
   const text =
@@ -43,8 +51,9 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     return false;
   return [
     /missable achievement alert/i,
-    /Missable achievement/u,
-    /Missable/u,
+    // `text` is lowercased above, so these must be lowercase to match at all.
+    /missable achievement/u,
+    /missable/u,
     /미스 가능 업적/u,
     /\bonly during chapter\b/i,
     /\bbefore chapter end\b/i,
@@ -53,17 +62,28 @@ export function inferMissable(achievement: AchievementRow, guideText: string) {
     /\bcannot return\b/i,
     /\bone chance\b/i,
     /\bgone for that playthrough\b/i,
+    // English phrasings used by the hand-written guides.
+    /on the same playthrough/i,
+    /for that (?:run|playthrough)/i,
+    /cannot be recovered/i,
+    /once per playthrough/i,
+    /\bdoes not repeat\b/i,
     /챕터 종료 전/u,
-    /영구(?:적으로)?/u,
+    // "영구" on its own also matches permanent *upgrades* ("강화가 영구적으로
+    // 남습니다"), which is the opposite of a warning, so require a loss word.
+    /영구(?:적으로)?\s*(?:미스|손실|사라|놓치|잃|불가|봉인|해금\s*불가)/u,
     /사라집니다/u,
-    /다시 얻을 수 없습니다/u,
-    /그 회차에서는 다시 .*없/u,
+    /다시 (?:얻|받|시도)을 수 없/u,
+    /그 회차에서는/u,
     /같은 회차에서[는 ]*.*없/u,
     /오답이면 놓치/u,
-    /오답이면 회수 불가/u,
-    /한 회차에 한 번만/u,
+    // "회수 불가" / "회수할 수 없" appear with several different lead-ins
+    // (놓치면 / 틀리면 / 오답이면 / 그 장면을 벗어나면), so match the phrase
+    // itself rather than one preceding verb.
+    /회수\s*(?:가\s*)?불가/u,
+    /회수할 수 없/u,
+    /한 회차에 한 번(?:만|뿐)/u,
     /한 번만 나오는/u,
-    /놓치면 .*회수 (?:불가|할 수 없)/u,
     /수동 세이브를 만들어 두면 재시도/u,
     /미리 세이브를?\s*분리해/u,
   ].some((pattern) => pattern.test(text));

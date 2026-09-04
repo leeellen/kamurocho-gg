@@ -76,6 +76,17 @@ function pickSteamShortDescription({
   return en || ko;
 }
 
+/**
+ * Every locale's guide body for one achievement, joined. `inferMissable` reads
+ * this so the missable flag is the same on the Korean and English pages.
+ */
+function makeAllGuideText(guidesByAchievement: Map<number, GuideRow[]>) {
+  return (achievementId: number) =>
+    (guidesByAchievement.get(achievementId) ?? [])
+      .map((guide) => guide.content ?? "")
+      .join("\n");
+}
+
 export function buildSeriesGameCard({
   curated,
   game,
@@ -102,6 +113,7 @@ export function buildSeriesGameCard({
   // inside it. Use the shared comparable-text normalizer so brackets and
   // em-dashes don't break substring matches — must stay in lock-step with
   // buildDisplayMissables() in ../missables.ts so both surfaces agree.
+  const allGuideText = makeAllGuideText(guidesByAchievement);
   const curatedTitleHay: string[] = [];
   for (const chapter of MISSABLES[curated.appId] ?? []) {
     for (const item of chapter.items) {
@@ -116,7 +128,6 @@ export function buildSeriesGameCard({
     return curatedTitleHay.some((hay) => hay.includes(needle));
   };
   const derivedAchievements = rows.map((achievement) => {
-    const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
     const sidecar = parseAchievementSidecar(achievement.category ?? null);
     const localizedName = localizeAchievementName({
       locale,
@@ -125,7 +136,7 @@ export function buildSeriesGameCard({
       sidecar,
     });
     return {
-      missable: inferMissable(achievement, selectedGuide?.content ?? ""),
+      missable: inferMissable(achievement, allGuideText(achievement.id)),
       name: localizedName,
     };
   });
@@ -200,6 +211,7 @@ export function buildGamePageData({
     current.push(guide);
     guidesByAchievement.set(guide.achievement_id, current);
   }
+  const allGuideText = makeAllGuideText(guidesByAchievement);
   const guideTextReplacements = gameAchievements
     .map((achievement) => {
       const sidecar = parseAchievementSidecar(achievement.category ?? null);
@@ -292,7 +304,7 @@ export function buildGamePageData({
         guideSource,
         guideSourceLabel,
         confidence: normalizeConfidence(selectedGuide?.confidence),
-        missable: inferMissable(achievement, selectedGuide?.content ?? ""),
+        missable: inferMissable(achievement, allGuideText(achievement.id)),
         chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
       };
     })
