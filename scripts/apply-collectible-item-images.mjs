@@ -26,7 +26,8 @@ for (const row of rows) {
   if (!row.file || !row.group || !row.images) throw new Error("file, group and images are required");
   for (const [key, url] of Object.entries(row.images)) {
     if (!/^\d+$/.test(key)) throw new Error(`${row.group}: ${key} is not an item number`);
-    if (typeof url !== "string" || !/^https?:\/\//.test(url)) throw new Error(`${row.group}: ${key} is not a url`);
+    // Either an external URL or a self-hosted path under public/.
+    if (typeof url !== "string" || !/^(https?:\/\/|\/)/.test(url)) throw new Error(`${row.group}: ${key} is not a url or path`);
   }
   if (!byFile.has(row.file)) byFile.set(row.file, []);
   byFile.get(row.file).push(row);
