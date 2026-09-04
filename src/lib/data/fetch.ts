@@ -55,13 +55,12 @@ function filterValid<T>(
 // every time. Bust via `revalidateTag("series-rows")` after content edits.
 const cachedSeriesRows = unstable_cache(
   fetchSeriesRowsInner,
-  // Bumped to v11 to invalidate the Vercel Data Cache after rewriting all 863
-  // English guide bodies from the Korean ones, correcting Yakuza Kiwami's
-  // chapter numbering, and adding the hand-authored Korean strings for
-  // Yakuza 6 (see `scripts/ko-overrides/`). The Data Cache outlives a
-  // deployment, so content edits are invisible in production until the key
-  // changes.
-  ["fetch-series-rows-v11"],
+  // Bumped to v12 after reworking `inferMissable` (the missable flag and the
+  // `missableCount` shown on every game card are computed inside this cache)
+  // and correcting Yakuza Kiwami's substory numbering. The Data Cache outlives
+  // a deployment, so content and inference changes stay invisible in
+  // production until the key changes.
+  ["fetch-series-rows-v12"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
@@ -190,6 +189,6 @@ const cachedGameRows = unstable_cache(
       guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
-  ["fetch-game-rows-v11"],
+  ["fetch-game-rows-v12"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );

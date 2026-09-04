@@ -212,7 +212,15 @@ export function localizeGuideText({
   );
 
   for (const entry of merged) {
-    next = next.replace(new RegExp(escapeRegExp(entry.en), "gi"), entry.ko);
+    // Guard the alphanumeric edges so short entries do not fire inside a
+    // longer word — without this, "Body" rewrote "Everybody" to "Every육체"
+    // and "Tech" would hit "technique".
+    const leading = /^[A-Za-z0-9]/.test(entry.en) ? "(?<![A-Za-z0-9])" : "";
+    const trailing = /[A-Za-z0-9]$/.test(entry.en) ? "(?![A-Za-z0-9])" : "";
+    next = next.replace(
+      new RegExp(`${leading}${escapeRegExp(entry.en)}${trailing}`, "gi"),
+      entry.ko,
+    );
   }
 
   return normalizeKoreanText(next);
