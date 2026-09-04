@@ -21,10 +21,12 @@ export type SubstoryItem = {
   chapter?: LocalizedText;
   // Who plays this substory — for dual/multi-protagonist titles.
   protagonist?: LocalizedText;
-  // Trigger location on the map.
-  location: LocalizedText;
-  // How to start the substory.
-  trigger: LocalizedText;
+  // Trigger location on the map. Optional: a few entries are only documented
+  // by name and number so far (see yakuza-kiwami-3.ts), and the card omits the
+  // row entirely rather than printing an empty label.
+  location?: LocalizedText;
+  // How to start the substory. Optional for the same reason.
+  trigger?: LocalizedText;
   // Single-paragraph overview when steps array is not provided.
   body?: LocalizedText;
   // Step-by-step walkthrough.

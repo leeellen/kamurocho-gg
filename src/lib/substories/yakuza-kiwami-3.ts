@@ -29,32 +29,22 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 2,
           title: { ko: "사랑의 큐피드", en: "Love's Cupid" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 3,
           title: { ko: "초고속 소바 배달!", en: "So Fast, Soba Delivery Run!" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 4,
           title: { ko: "카메 사범, 때려봐", en: "Master Kame Hit Me" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 5,
           title: { ko: "카메 사범, 때려봐 리턴즈", en: "Master Kame Hit Me Returns" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 6,
           title: { ko: "카메 사범, 때려봐 최종장", en: "Master Kame Hit Me: Endgame" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 7,
@@ -115,20 +105,14 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 14,
           title: { ko: "대도시의 꿈", en: "Big City Dreams" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 15,
           title: { ko: "아빠 노릇도 쉽지 않아", en: "It's Tough Being a Dad" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 16,
           title: { ko: "부모님, 힘내세요!", en: "Keep at It, Parents!" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 17,
@@ -141,8 +125,6 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 18,
           title: { ko: "악코 씨에게 맡겨라! 도쿄 편", en: "Leave It All to Akko-san! In Tokyo!" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 19,
@@ -155,26 +137,18 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 20,
           title: { ko: "정보화 시대에 오신 걸 환영합니다", en: "Welcome to the Information Age" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 21,
           title: { ko: "신참의 고민", en: "A Rookie's Dilemma" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 22,
           title: { ko: "빨간 풍선", en: "The Red Balloon" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 23,
           title: { ko: "베이비 비 곤", en: "Baby Be Gone" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 24,
@@ -186,20 +160,14 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "마즈 파이터즈, 다시 뭉치다", en: "Mars Fighters, Reunited!" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 26,
           title: { ko: "엄마의 사랑을 위해서라면", en: "Anything for Mama's Love" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 27,
           title: { ko: "K팝 아이돌 지망생", en: "Wannabe Kpop Idol" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 28,
@@ -212,14 +180,10 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 29,
           title: { ko: "다테 씨의 자존심", en: "Date-san's Pride" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 30,
           title: { ko: "스타더스트의 스타 데뷔", en: "A Star's Debut at Stardust" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 31,
@@ -236,87 +200,61 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 1,
           title: { ko: "콜로세움 조사", en: "Coliseum Investigation" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "타이헤이 대로에서 휴대폰을 커스터마이즈한 뒤 라라와 함께 라라라 모바일을 사용하면 클리어됩니다.", en: "Customize the phone on Taihei Boulevard, then use LaLaLa Mobile with Lala." },
         },
         {
           number: 2,
           title: { ko: "노숙자 지원 활동", en: "Homeless Outreach Effort" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 3,
           title: { ko: "취업 지원 사기", en: "Employment Assistance Scam" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 4,
           title: { ko: "낙서 근절 캠페인", en: "Graffiti Eradication Campaign" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 5,
           title: { ko: "작전명: 볼", en: "Operation: Balls" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 6,
           title: { ko: "성매매 종사자 안전 확보", en: "Maintain Safety for Sex Workers" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
         },
         {
           number: 7,
           title: { ko: "차량 도난 예방", en: "Vehicle Burglary Prevention" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "하츠마치에서 선택지를 고른 뒤 사기꾼들을 격파하면 클리어됩니다. 돈을 이미 지불했다면 돌려받습니다.", en: "Pick an option in Hatsumachi and defeat the scammers — if you already paid them, you get your money back." },
         },
         {
           number: 8,
           title: { ko: "공공장소 음주 계도 캠페인", en: "Public Intoxication Awareness Campaign" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "하츠마치에서 다시 나타난 사기꾼들을 격파하면 클리어됩니다.", en: "Defeat the scammers when they turn up again in Hatsumachi." },
         },
         {
           number: 9,
           title: { ko: "카무로초 유흥가의 변화", en: "A Shift in Kamurocho's Working Girls" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "하츠마치에서 마지막 사기꾼을 격파하면 테루요가 하이사이 걸즈에 합류합니다.", en: "Defeat the last scammer in Hatsumachi — Teruyo then joins the Haisai Girls." },
         },
         {
           number: 10,
           title: { ko: "팬티 도둑 탐정", en: "Panty Thief P.I" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "카리유시 상점가의 래플 부스로 이동한 뒤, 상점가 입구 간판을 촬영하면 래플과 포토 랠리가 열립니다.", en: "Walk to the raffle stall in Kariyushi Arcade and snap a pic of the arcade's entrance sign to unlock the Raffle and the Photo Rally." },
         },
         {
           number: 11,
           title: { ko: "연쇄 살인범을 잡아라", en: "To Catch a Serial Killer" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "류큐 대로에서 오카에게 말을 건 뒤 남자들을 격파하면 스트리트 서퍼 Mk 0을 받습니다.", en: "Talk to Oka on Ryukyu Boulevard and defeat the men to receive the Street Surfer Mk 0." },
         },
         {
           number: 12,
           title: { ko: "경찰 부패 파헤치기", en: "Uncovering Police Corruption" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "낮에 아쿠아 스카이 근처 다리에서 「무슨 일 있으셨어요?」 → 「사기를 당하셨나요?」 → 「무슨 일 있으셨어요?」를 차례로 고르고 사기꾼들을 격파하면 클리어됩니다.", en: "During the day at the bridge near Aqua Sky, choose \"Did something happen to you?\", then \"Were you the victim of a scam?\", then \"Did something happen to you?\" again, and defeat the scammers." },
         },
         {
           number: 13,
           title: { ko: "콜로세움 조사 결과", en: "Coliseum Investigation Results" },
-          location: { ko: "", en: "" },
-          trigger: { ko: "", en: "" },
           body: { ko: "히비스커스 아이스크림에서 도움을 수락한 뒤 90초 안에 아이들에게 도착하면 됩니다. 5번까지 재시도할 수 있고, 모두 실패해도 자동으로 결말로 넘어갑니다.", en: "Agree to help at Hibiscus Ice Cream and reach the children within 90 seconds. You get five tries, and even failing them all takes you to the ending automatically." },
         },
       ],
