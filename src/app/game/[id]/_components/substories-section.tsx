@@ -31,6 +31,15 @@ type Props = {
   data: SubstoriesData;
 };
 
+// Numbers repeat within a game whenever two protagonists share a list — Yakuza
+// 0's 49-54 run twice, and Kiwami 3's Good Deeds restart at 1 alongside the
+// substories. Fold the protagonist into the report target so a report points at
+// one entry; entries without a protagonist keep the plain ref they always had.
+function substoryRef(item: SubstoryItem) {
+  const who = item.protagonist?.en.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return who ? `substory-${item.number}-${who}` : `substory-${item.number}`;
+}
+
 function videoEmbed(url: string) {
   const m = url.match(/(?:v=|embed\/)([A-Za-z0-9_-]{11})/);
   if (!m) return null;
@@ -253,7 +262,7 @@ function ItemCard({
                 locale={locale}
                 appId={appId}
                 kind="substory"
-                targetRef={`substory-${item.number}`}
+                targetRef={substoryRef(item)}
               />
             </div>
           </div>
