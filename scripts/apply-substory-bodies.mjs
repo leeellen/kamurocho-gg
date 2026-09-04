@@ -7,6 +7,11 @@
 //
 //   IN=/path/to/bodies.json node scripts/apply-substory-bodies.mjs
 //   IN=... DRY=1 node scripts/apply-substory-bodies.mjs
+//
+// It edits the TypeScript source with regexes rather than a parser, which is
+// fine for these files because every entry is a flat one-line-per-field object
+// literal. A `body: {` broken across lines with a nested `},` inside would be
+// mis-matched — run with DRY=1 first and check the reported counts.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
