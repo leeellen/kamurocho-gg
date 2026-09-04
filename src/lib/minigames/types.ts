@@ -20,6 +20,8 @@ export type Minigame = {
   howTo: LocalizedText[];
   /** Optional video walkthroughs (YouTube). */
   videos?: MinigameVideo[];
+  /** Where the rules, thresholds and completion-list rows below came from. */
+  source?: { label: string; url: string } | { label: string; url: string }[];
   /** Optional related achievement api_name (lowercased) to deep-link to. */
   achievementSlug?: string;
 };

@@ -77,6 +77,23 @@ function MinigameCard({
         ))}
       </ul>
 
+      {game.source && (
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-[var(--text-tertiary)]">
+          <span>{locale === "ko" ? "출처" : "Source"}</span>
+          {(Array.isArray(game.source) ? game.source : [game.source]).map((s) => (
+            <a
+              key={s.url}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--text-secondary)] underline decoration-dotted underline-offset-2 hover:text-white"
+            >
+              {s.label}
+            </a>
+          ))}
+        </div>
+      )}
+
       {game.videos && game.videos.length > 0 && (
         <div className="mt-5 grid grid-cols-1 gap-4 lg:grid-cols-2">
           {game.videos.map((video) => {
