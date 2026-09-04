@@ -3,6 +3,7 @@ import type { SubstoriesData, SubstoryItem } from "./types";
 import { yakuza0Substories } from "./yakuza-0";
 import { yakuzaKiwamiSubstories } from "./yakuza-kiwami";
 import { yakuzaKiwami2Substories } from "./yakuza-kiwami-2";
+import { yakuzaKiwami3Substories } from "./yakuza-kiwami-3";
 import { yakuza3Substories } from "./yakuza-3";
 import { yakuza4Substories } from "./yakuza-4";
 import { yakuza5Substories } from "./yakuza-5";
@@ -19,6 +20,7 @@ const dataset: SubstoriesData[] = [
   yakuza0Substories,
   yakuzaKiwamiSubstories,
   yakuzaKiwami2Substories,
+  yakuzaKiwami3Substories,
   yakuza3Substories,
   yakuza4Substories,
   yakuza5Substories,

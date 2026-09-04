@@ -149,21 +149,25 @@ function ItemCard({
 
         <div className="border-t border-[var(--border-subtle)] px-4 py-4 md:px-5 md:py-5">
           <div className="flex flex-col gap-2.5">
-            <div
-              className={`text-[16px] font-mono text-[var(--text-tertiary)] ${
-                locale === "ko" ? "" : "uppercase tracking-[0.12em]"
-              }`}
-              lang={langOf(item.location, locale)}
-            >
-              {location}
-            </div>
+            {location && (
+              <div
+                className={`text-[16px] font-mono text-[var(--text-tertiary)] ${
+                  locale === "ko" ? "" : "uppercase tracking-[0.12em]"
+                }`}
+                lang={langOf(item.location, locale)}
+              >
+                {location}
+              </div>
+            )}
 
-            <div className="text-[16px] leading-6 text-[var(--text-secondary)]">
-              <span className="font-semibold text-white">
-                {locale === "ko" ? "발생 조건: " : "Trigger: "}
-              </span>
-              <span lang={langOf(item.trigger, locale)}>{trigger}</span>
-            </div>
+            {trigger && (
+              <div className="text-[16px] leading-6 text-[var(--text-secondary)]">
+                <span className="font-semibold text-white">
+                  {locale === "ko" ? "발생 조건: " : "Trigger: "}
+                </span>
+                <span lang={langOf(item.trigger, locale)}>{trigger}</span>
+              </div>
+            )}
 
             {item.prereq && (
               <div
