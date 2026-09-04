@@ -33,7 +33,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
       items: [
         {
           number: 1,
-          title: { ko: "F컵의 가격", en: "The Price of an F-Cup" },
+          title: { ko: "F컵의 가격", en: "The Price of an F-cup" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "핑크 거리 북쪽", en: "Pink St. North" },
           trigger: { ko: "핑크 거리 북쪽에서 거유 캐스팅을 외치는 남자에게 말 걸기", en: "Approach the man yelling about busty models on Pink St. North." },
@@ -73,7 +73,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 17,
-          title: { ko: "시비", en: "Bump & Scam" },
+          title: { ko: "시비", en: "Bump and Scam" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "나나후쿠 거리 — 극장 거리 북쪽", en: "Nanafuku St. north of Theater Ave." },
           trigger: { ko: "나나후쿠 거리에서 시비 거는 남자와 부딪치기", en: "Bump into the man picking a fight on Nanafuku St." },
@@ -85,7 +85,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 18,
-          title: { ko: "시비의 역습", en: "Bump & Scam: Revenge" },
+          title: { ko: "시비의 역습", en: "Bump and Scam: Revenge" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
           trigger: { ko: "#17 완료 후 같은 장소 재방문", en: "Return to the same Nanafuku St. corner after clearing #17." },
@@ -94,7 +94,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 19,
-          title: { ko: "시비의 대역습", en: "Bump & Scam: Three Strikes" },
+          title: { ko: "시비의 대역습", en: "Bump and Scam: Three Strikes" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
           trigger: { ko: "#18 완료 후 재방문", en: "Return after clearing #18." },
@@ -103,7 +103,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 20,
-          title: { ko: "시비의 그 후", en: "Bump & Scam: Epilogue" },
+          title: { ko: "시비의 그 후", en: "Bump and Scam: Epilogue" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
           trigger: { ko: "#19 완료 후 재방문", en: "Return after clearing #19." },
@@ -339,7 +339,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "경험치 + 지하 카지노 정식 출입", en: "EXP + permanent casino access" },
         },
         {
-          number: 46,
+          number: 47,
           title: { ko: "화장실에서 곤란한 남자", en: "Crisis on the Crapper" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "포켓 서킷 스타디움 옆 공원", en: "Park near Pocket Circuit Stadium" },
@@ -408,17 +408,17 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           title: { ko: "버블의 추억", en: "Memories of the Bubble" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "디스코 데보라", en: "Debolah dance club" },
-          trigger: { ko: "디스코 안 중년 남자에게 말 걸기", en: "Talk to the middle-aged dancer in Debolah." },
-          body: { ko: "디스코 미니게임 도전. 디스코 미니게임을 한 번 클리어해야 진행.", en: "Beat a disco minigame round to clear." },
+          trigger: { ko: "데보라 지하 댄스 플로어에서 한쪽에 서 있는 여성에게 말 걸기", en: "Speak to the lady standing at the side of Debolah's lower dance floor." },
+          body: { ko: "여성의 부탁을 수락하고 질문에 「1만 엔짜리를 흔들었다」, 「레그 래즈」, 「보디콘 드레스와 부채」로 답합니다. 돈키호테에서 보디콘 드레스와 부채를 각각 하나씩 구입해(가격이 비쌉니다) 데보라로 돌아가 건네면 클리어됩니다.", en: "Agree to help her and answer \"We waved 10,000 yen bills\", \"Leg Lads\", and \"A bodycon dress and a fan\". Buy one of each at Don Quijote (they are not cheap), return to Debolah and hand them over." },
           reward: { ko: "경험치 + 디스코 의상", en: "EXP + disco gear" },
         },
         {
           number: 52,
-          title: { ko: "2,000엔의 가치", en: "The Value of 2000 Yen" },
+          title: { ko: "2,000엔의 가치", en: "The Value of 2,000 Yen" },
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "빈센트 바", en: "Vincent bar" },
           trigger: { ko: "빈센트에서 신권 2,000엔 지폐 이야기를 듣기", en: "Hear about the rare 2,000-yen note at Vincent." },
-          body: { ko: "카무로초에서 신권 2,000엔을 가진 사람을 찾아 입수. 콘비니 구매로도 가능.", en: "Track down (or buy at a Poppo) a 2,000-yen note and deliver it." },
+          body: { ko: "빈센트 바 카운터의 안경 쓴 남자가 2,000엔 지폐 5장을 찾습니다. 카무로초를 돌며 모아야 하는데 한 번에 한 장씩만 들고 갈 수 있어, 찾을 때마다 빈센트로 돌아와 건네야 합니다. 타이헤이 거리와 핑크 거리 교차로의 취객에게 말을 걸면 한 장을 그냥 줍니다. 5장을 모두 전달하면 총 10만 엔을 받습니다.", en: "The man in glasses at Vincent's bar counter wants five 2,000 yen bills. You have to scour Kamurocho for them, and you can only carry one at a time \u2014 each has to be brought back to Vincent separately. The drunk at the Taihei/Pink crossroads simply hands one over. Delivering all five pays \u00a5100,000." },
           reward: { ko: "경험치 + 고액 보상", en: "EXP + cash reward" },
         },
         {
@@ -497,7 +497,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 3,
-          title: { ko: "복싱 도박", en: "Bet on the Champ" },
+          title: { ko: "복싱 도박", en: "Bet On a Champ" },
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "밴텀 바", en: "Bantam bar" },
           trigger: { ko: "밴텀에서 마스터의 부탁 듣기", en: "Hear the Bantam master out." },
@@ -532,7 +532,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "경험치", en: "EXP" },
         },
         {
-          number: 49,
+          number: 50,
           title: { ko: "선물 찾기", en: "Searching for the Present" },
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "포켓 서킷 스타디움 부근", en: "Pocket Circuit Stadium area" },
@@ -541,7 +541,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "경험치", en: "EXP" },
         },
         {
-          number: 50,
+          number: 51,
           title: { ko: "좀 나쁜 아저씨", en: "Bad Ass Dads" },
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
@@ -555,22 +555,16 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
       title: { ko: "8장 — 키류의 결단 / 코마키 무술 본격", en: "Chapter 8 — Komaki Training" },
       items: [
         {
-          number: 51,
-          title: { ko: "신권 수색", en: "Bad Ass Dads (continued)" },
+          number: 49,
+          title: { ko: "소문의 파티", en: "The Rumored Party" },
           chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#50 클리어 후 같은 위치 재방문", en: "Return to the fountain after #50." },
-          body: { ko: "후속편 — 진짜 깡패가 등장, 격파.", en: "Follow-up — real thugs show up; clear them out." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 47,
-          title: { ko: "버블 같은 추억", en: "Memories of the Bubble (rumor)" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "스타더스트", en: "Stardust" },
-          trigger: { ko: "스타더스트 앞에서 호스티스의 이야기를 듣기", en: "Hear the hostess outside Stardust." },
-          body: { ko: "버블기 명사의 흔적을 쫓는 짧은 에피소드.", en: "Track down a faded bubble-era celebrity." },
-          reward: { ko: "경험치", en: "EXP" },
+          location: { ko: "스타더스트 → 디스코 데보라", en: "Stardust \u2192 Debolah" },
+          trigger: { ko: "스타더스트 안에서 문 근처 호스트에게 말 걸기", en: "Speak to the host near the door inside Stardust." },
+          body: {
+            ko: "카즈키의 고민을 듣고 손님을 빼앗아 가는 「파티」를 조사합니다. 스타더스트 안에서 대화 아이콘이 뜬 여성 두 명에게 말을 걸면 데보라로 가라는 정보를 얻고, 나가려 할 때 세 번째 여성이 초대합니다. 데보라 앞에서 그녀와 만난 뒤 댄스 플로어에서 사람들과 대화해 배후의 「구루」를 파악하고, 야자와 무난을 격파하면 클리어됩니다.",
+            en: "Hear out Kazuki's problem about a \"party\" stealing his customers. Talk to the two women inside Stardust with talk prompts to learn you need Debolah; as you leave, a third woman invites you. Meet her in front of Debolah, then speak to everyone on the dance floor to uncover the guru behind it and defeat Munan Yazawa.",
+          },
+          reward: { ko: "투르말린 팔찌", en: "Tourmaline Bracelet" },
         },
         {
           number: 75,
@@ -601,7 +595,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 63,
-          title: { ko: "코마키류 · 명경의 마음가짐", en: "Komaki's Training: Clear-Minded Mystery" },
+          title: { ko: "코마키류 · 명경의 마음가짐", en: "Komaki Style: Clear-Minded Mastery" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "코마키 라인 진행 후 분수 방문", en: "Speak with Komaki at the fountain after prior training." },
@@ -610,7 +604,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 64,
-          title: { ko: "코마키류 · 사바키 격타", en: "Komaki's Training: Evade and Strike" },
+          title: { ko: "코마키류 · 사바키 격타", en: "Komaki Style: Evade and Strike" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#63 이후", en: "After #63." },
@@ -619,7 +613,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 65,
-          title: { ko: "코마키류 · 달마 피하기", en: "Komaki's Training: Dharma Tumbler" },
+          title: { ko: "코마키류 · 달마 피하기", en: "Komaki Style: Dharma Tumbler" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#64 이후", en: "After #64." },
@@ -628,7 +622,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 66,
-          title: { ko: "코마키류 · 무수반격", en: "Komaki's Training: Fist Reversal" },
+          title: { ko: "코마키류 · 무수반격", en: "Komaki Style: Fist Reversal" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#65 이후", en: "After #65." },
@@ -637,7 +631,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 67,
-          title: { ko: "코마키류 · 받아넘기기", en: "Komaki's Training: Knock Back" },
+          title: { ko: "코마키류 · 받아넘기기", en: "Komaki Style: Knock Back" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#66 이후", en: "After #66." },
@@ -646,7 +640,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 68,
-          title: { ko: "코마키류 · 호랑이 떨어뜨리기 (타이거 드롭)", en: "Komaki's Training: Tiger Drop" },
+          title: { ko: "코마키류 · 호랑이 떨어뜨리기 (타이거 드롭)", en: "Komaki Style: Tiger Drop" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#67 이후", en: "After #67." },
@@ -658,7 +652,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 69,
-          title: { ko: "코마키류 · 흘려보내기", en: "Komaki's Training: Parry" },
+          title: { ko: "코마키류 · 흘려보내기", en: "Komaki Style: Parry" },
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
           trigger: { ko: "#68 이후", en: "After #68." },
@@ -671,10 +665,8 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
       title: { ko: "메스킹 메인 라인 (4장~)", en: "MesuKing Main Line (Chapter 4+)" },
       items: [
         {
-          number: 68,
-          // Sources disagree on whether this is #68 or #69 (some lists put
-          // Komaki's Parry at #68 and this at #69).
-          title: { ko: "박사와의 연습 시합", en: "Practice Match With Professor" },
+          number: 70,
+          title: { ko: "박사와의 연습 시합", en: "Practice Match with Professor" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
           trigger: { ko: "#53 클리어 후 박사에게 도전", en: "Challenge the Professor after #53." },
@@ -682,7 +674,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "메스킹 카드", en: "MesuKing cards" },
         },
         {
-          number: 70,
+          number: 71,
           title: { ko: "첫 라이벌", en: "First Rival" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
@@ -691,7 +683,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "메스킹 카드", en: "MesuKing cards" },
         },
         {
-          number: 71,
+          number: 72,
           title: { ko: "개인 레슨", en: "Private Lesson" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
@@ -700,8 +692,8 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "메스킹 카드", en: "MesuKing cards" },
         },
         {
-          number: 72,
-          title: { ko: "사랑만 있으면", en: "As Long as There is Love" },
+          number: 73,
+          title: { ko: "사랑만 있으면", en: "As Long as There's Love" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
           trigger: { ko: "라이벌 라인 진행", en: "Continue the rival line." },
@@ -709,21 +701,12 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           reward: { ko: "메스킹 카드", en: "MesuKing cards" },
         },
         {
-          number: 73,
-          title: { ko: "쳐들어가자!", en: "Time for a Raid" },
+          number: 74,
+          title: { ko: "쳐들어가자!", en: "Time for a Raid!" },
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "클럽 세가 극장 광장점", en: "Club Sega — Theater Square" },
           trigger: { ko: "#72 이후 극장 광장 클럽 세가 방문", en: "Go to the Theater Square Club Sega after #72." },
           body: { ko: "다른 가게의 메스킹 챔피언에게 도전.", en: "Take down a rival arcade's MesuKing king." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 74,
-          title: { ko: "박사의 과거 (전편)", en: "MesuKing Story Bridge" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "이전 라인 완료 후 박사 재방문", en: "Return to the Professor after the raid." },
-          body: { ko: "박사의 사정을 듣고 향후 라인 예고.", en: "Hear the Professor's situation and the next plot beat." },
           reward: { ko: "메스킹 카드", en: "MesuKing cards" },
         },
       ],
@@ -783,7 +766,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
         },
         {
           number: 37,
-          title: { ko: "갱 버스터즈", en: "Gang Busters" },
+          title: { ko: "갱 버스터즈", en: "Gangbusters" },
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "호텔가", en: "Hotel District" },
           trigger: { ko: "호텔가에서 카무로초 비공식 자경단 일행과 마주치기", en: "Meet the vigilante crew in the Hotel District." },
