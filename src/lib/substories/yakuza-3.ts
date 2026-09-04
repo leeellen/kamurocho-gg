@@ -17,6 +17,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "아쿠아 스카이 풀에서 나인볼 3승 후 콧수염 신사가 도전", en: "Win three Nine-Ball games at Aqua Sky; the mustached gentleman challenges you." },
+          body: { ko: "나인볼에서 3승을 거둔 뒤 아쿠아 스카이에서 노인과 마주치고, 한 번 나갔다 다시 들어가 노인에게 말을 걸어 승부를 수락하면 됩니다.", en: "After winning three games of Nine-Ball, run into the old man at Aqua Sky, leave and re-enter, then talk to him and accept his challenge." },
+          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
         },
         {
           number: 55,
@@ -24,6 +26,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "에비스 전당포 북쪽 여성에게 말 걸기", en: "Talk to the woman north of Ebisu Pawn." },
+          body: { ko: "카리유시 상점가 중앙의 소녀에게 말을 걸어 도쿄 이야기를 들려주기로 하면 됩니다. 답변은 무엇을 골라도 클리어됩니다.", en: "Talk to the girl in the centre of Kariyushi Arcade and agree to tell her about Tokyo — any answer works." },
+          reward: { ko: "경험치 2,000 · 소키 버거 세트", en: "2,000 EXP · Soki Burger Set" },
         },
         {
           number: 66,
@@ -31,6 +35,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "서쪽 다리에서 자살하려는 뚱뚱한 남자 말리기", en: "Stop the chubby man jumping off the west bridge." },
+          body: { ko: "아쿠아 스카이 근처 다리의 남자에게 말을 걸어 그를 멈춰 세운 뒤, 어느 선택지를 골라도 클리어됩니다.", en: "Talk to the friendly debtor on the bridge near Aqua Sky and stop him — either choice completes it." },
+          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
         },
         {
           number: 82,
@@ -38,6 +44,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류큐 거리에서 열쇠를 잃어버린 여성 돕기", en: "Help the woman who lost her key on Ryukyu St." },
+          body: { ko: "이스트 류큐 대로 코인 로커 근처 여성에게 말을 건 뒤 1인칭 시점으로 열쇠를 찾고, 발코니에 있다고 알려 주면 클리어됩니다.", en: "Talk to the woman near the coin lockers on East Ryukyu Boulevard, search for the key in first-person mode, and tell her it is on the balcony." },
+          reward: { ko: "경험치 2,000 · 코인 로커 열쇠 33번", en: "2,000 EXP · Coin Locker Key No. 33" },
         },
         {
           number: 87,
@@ -45,6 +53,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류큐 거리에서 봉선화 꽃을 들고 있는 노부인에게 말 걸기", en: "Talk to the elderly woman with rose balsam flowers on Ryukyu St." },
+          body: { ko: "키타류 거리 모노레일역 근처에서 포크 가수의 공연을 들은 뒤 돕기로 하고, 불량배들을 격파하면 클리어됩니다.", en: "Listen to the folk singer's performance near the monorail station on Kitaryu Street, decide to help, and beat the thugs." },
+          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
         },
         {
           number: 93,
@@ -52,6 +62,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "와라바 오키나와 소바 노점에서 3번째 방문 시 발생 — 5분 내 3건 배달", en: "Visit Waraba soba stand a third time: deliver three orders within 5 minutes." },
+          body: { ko: "와라바에서 두 번 식사한 뒤 공설시장 입구 앞 직원에게 배달을 수락합니다. 5분 안에 카리유시 상점가 약국 → 이스트 하츠마치 마작장 → 하츠마치 안내소 순으로 배달하고 가게로 돌아가면 클리어됩니다.", en: "After eating at Waraba twice, agree to deliver for the workers in front of the Public Market entrance. Within five minutes, deliver to the drugstore in Kariyushi Arcade, the mahjong parlor on East Hatsumachi and the info center in Hatsumachi, then return to the stand." },
+          reward: { ko: "경험치 3,000 · 10,000엔", en: "3,000 EXP · ¥10,000" },
         },
         {
           number: 103,
@@ -94,6 +106,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "야간 류큐 거리 M 스토어 앞 여고생 3인조에게 말 걸기", en: "At night: talk to the three schoolgirls outside M Store on Ryukyu St." },
+          body: { ko: "밤에 이스트 류큐 대로로 가서 여고생들의 이야기를 들은 뒤 코인 로커로 이동해 남자들에게 소문을 캐묻고 격파합니다. 떨어뜨린 코인 로커 열쇠 44번으로 로커를 열고, 대로로 내려가는 계단에서 기다리는 무리를 마저 정리하면 클리어됩니다.", en: "At night, head to East Ryukyu Boulevard and listen to the high school girls, then go to the coin lockers, press the men about the rumor and beat them. Pick up coin locker key No. 44 they drop, open the locker, then take the stairs down to the boulevard and clear the gang waiting there." },
+          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
         },
         {
           number: 12,
@@ -101,6 +115,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "1편 클리어 후 블루씰 아이스크림 앞 여고생들에게 말 걸기", en: "After Pt.1: schoolgirls outside Blue Seal Ice Cream." },
+          body: { ko: "블루 씰 아이스크림 서쪽 골목에서 여고생 세 명의 대화를 엿듣고, 아쿠아 스카이에서 만난 검은 고양이를 다리 밑 기둥까지 따라가 고양이 주인과 싸웁니다. 이후 샘스 마우이 뒤 도로 차단막 근처의 고양이에게 개다래 막대를 주면 끝납니다.", en: "Eavesdrop on the three high school girls in the alley west of Blue Seal Ice Cream, then follow the black cat you meet at Aqua Sky to the pillar under the bridge and fight its owner. Afterwards give the catnip stick to the cat by the road block behind Sam's Maui." },
+          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
         },
         {
           number: 13,
@@ -108,6 +124,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "2편 클리어 후 키타류 다리 위 여고생들에게 말 걸기", en: "After Pt.2: schoolgirls on the Kitaryu bridge." },
+          body: { ko: "키타류 거리에서 톰에게 말을 걸고, 이어지는 남자들과의 전투에서 이기면 클리어됩니다.", en: "Speak to Tom on Kitaryu Street and win the fight against the men that follows." },
+          reward: { ko: "경험치 5,000 · 30,000엔", en: "5,000 EXP · ¥30,000" },
         },
         {
           number: 14,
@@ -127,6 +145,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "4편 클리어 후 마에다 약국 북쪽에서 만나기", en: "After Pt.4: north of Maeda Drugs." },
+          body: { ko: "카리유시 상점가에서 여고생들이 판매원과 이야기하는 장면을 본 뒤 목걸이를 구입합니다. 상점가를 한 바퀴 돌고 판매원에게 돌아간 다음, 류도 가문 사무소 남쪽 2층 제조사 사무실을 찾아가 목걸이 반품을 선택하고 직원들을 격파하세요.", en: "Watch the high school girls talk to the salesman at Kariyushi Arcade, then buy the necklace. Wander the arcade, return to the salesman, then head to the manufacturer's office on the second floor south of the Ryudo Family Office, choose to return the necklace and beat the employees." },
+          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
         },
         {
           number: 16,
@@ -134,6 +154,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "5편 클리어 후 공설시장 입구에서 만나기", en: "After Pt.5: in front of the Public Market entrance." },
+          body: { ko: "북부 공설시장 입구에서 여고생들의 대화를 엿들은 뒤 시장에 들어가 왼쪽 상인에게 말을 겁니다. 이후 플로리스 북동쪽으로 가서 입장을 선택하고 사장과 싸우면 클리어됩니다.", en: "Listen in on the schoolgirls near the North Public Market entrance, go inside and take the left path to talk to the vendor. Then head north-east of Flawless, choose to enter and fight the president." },
+          reward: { ko: "경험치 5,000 · 50,000엔", en: "5,000 EXP · ¥50,000" },
         },
         {
           number: 20,
@@ -150,6 +172,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "공설시장 근처에서 시사를 부수려는 양아치들 막기", en: "Stop the punks smashing a shisa near the Public Market." },
+          body: { ko: "카리유시 상점가 입구에서 관광객 부부에게 말을 건 뒤, 북부 하츠마치로 이동해 시사 석상을 살펴보면 클리어됩니다.", en: "Talk to the tourist couple at the arcade entrance, then head to North Hatsumachi and inspect the statue." },
+          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
         },
         {
           number: 31,
@@ -157,6 +181,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "스마일 버거 류큐점 앞 부끄러워하는 청년에게 말 걸기", en: "Talk to the bashful young man outside Smile Burger Ryukyu." },
+          body: { ko: "스마일 버거에서 소년에게 말을 걸어 도움을 수락하고, 적극적으로 나서라는 조언을 두 번 한 뒤 여학생에게 편지를 읽어 달라고 부탁하면 클리어됩니다.", en: "Talk to the teen at Smile Burger, agree to help, tell him to be proactive twice, then ask the girl to read the letter." },
+          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
         },
         {
           number: 32,
@@ -164,6 +190,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「마음의 패스트푸드」 후속 — 청년의 데이트 코칭", en: "Follow-up to 'Fast Food for the Heart': coach his date." },
+          body: { ko: "플로리스 앞의 소년에게 말을 건 뒤, 한 번 더 말을 걸면 클리어됩니다.", en: "Talk to the teen in front of Flawless, then talk to him once more." },
+          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
         },
         {
           number: 33,
@@ -171,6 +199,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「넘사벽」 클리어 후 모리닝글로리 고아원에서 사건 발생", en: "After 'Out of His League': incident at Morning Glory Orphanage." },
+          body: { ko: "모리닝글로리 앞의 소년에게 말을 걸고 조언해 주면 클리어됩니다.", en: "Talk to the teen in front of the orphanage and give him advice." },
+          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
         },
         {
           number: 38,
@@ -178,6 +208,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "모리닝글로리 고아원에서 아이들과 숨바꼭질", en: "Play hide-and-seek with the kids at Morning Glory." },
+          body: { ko: "모리닝글로리에서 숨바꼭질을 시작해 숨은 아이들을 모두 찾아내면 클리어됩니다. 도중에 포기할 수도 있습니다.", en: "Start hide-and-seek at Morning Glory and find all the hidden children — you can also quit partway." },
+          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
         },
         {
           number: 42,
@@ -185,6 +217,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류큐 거리의 작부에게 말 걸어 삥쟁이 함정 회피", en: "Talk to the streetwalker on Ryukyu St. and dodge the shakedown." },
+          body: { ko: "키타류 거리 우마치 식당 옆의 여성에게 말을 걸어 도움을 수락하고, 안으로 들어가기를 선택한 뒤 납치범을 격파하면 클리어됩니다.", en: "Talk to the woman next to Umachi Diner on Kitaryu Street, agree to help, choose to walk in and beat the kidnapper." },
+          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
         },
         {
           number: 43,
@@ -192,6 +226,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "공설시장 어물전에서 강탈범과 대치", en: "Confront the strongarm at the Public Market fish stall." },
+          body: { ko: "공설시장의 생선 장수에게 도움을 수락한 뒤 사우스 아일랜드 옆 식당의 고집 센 요리사를 찾아갑니다. 참치를 낚아다 주거나 30만 엔을 지불해 생선을 되찾은 뒤 장수에게 돌아가, 가격을 밝힐지 함구할지 선택하세요.", en: "Agree to help the fishmonger at the Public Market, then visit the stubborn chef at the restaurant next to South Island. Get the fish back either by catching him a tuna or by paying ¥300,000, then return to the fishmonger and choose whether to reveal the price or keep quiet." },
+          reward: { ko: "경험치 5,000 · 200,000엔(선택) · 은 접시(선택)", en: "5,000 EXP · ¥200,000 (optional) · Silver Plate (optional)" },
         },
         {
           number: 44,
@@ -199,6 +235,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류큐 거리에서 가방 날치기 추격", en: "Chase a purse snatcher on Ryukyu Blvd." },
+          body: { ko: "카리유시 상점가 남쪽에서 날치기 추격을 수락하고 상점가를 가로질러 쫓아간 뒤, 시장에 들어가 남동쪽 구석에서 범인을 붙잡으면 클리어됩니다.", en: "Agree to chase the bag snatcher south of Kariyushi Arcade, run after him through the arcade, then enter the market and corner him in the south-eastern corner." },
+          reward: { ko: "경험치 3,000 · 3,000엔", en: "3,000 EXP · ¥3,000" },
         },
         {
           number: 46,
@@ -206,6 +244,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류도 사무소 미키오에게 말 걸기 → 와라바 소바 폭식 시합", en: "Talk to Mikio at the Ryudo office for a Waraba soba eating contest." },
+          body: { ko: "미키오에게 말을 걸어 함께 순찰하기로 하고, 그를 따라간 뒤 불량배들을 격파하면 클리어됩니다.", en: "Talk to Mikio, agree to patrol together, follow him and beat the thugs." },
+          reward: { ko: "경험치 2,000 · 대형 파랑비늘돔", en: "2,000 EXP · Giant Blue Parrotfish" },
         },
         {
           number: 52,
@@ -213,6 +253,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "류큐 거리 뒷골목에서 수상한 거래 목격", en: "Witness a shady back-alley deal on Ryukyu." },
+          body: { ko: "아쿠아 스카이에서 화난 손님들과 취객에게 차례로 말을 걸고 내기를 수락합니다. 좌우 중 하나를 고르는 방식이며 3연승하면 5만 엔을 받고, 지면 2만 엔을 잃습니다.", en: "Talk to the upset customers and then the drunk at Aqua Sky and accept the game. You pick left or right — three wins pays ¥50,000, a loss costs ¥20,000." },
+          reward: { ko: "경험치 3,000 · 50,000엔 · 류큐의 전설적 술꾼", en: "3,000 EXP · ¥50,000 · Legendary Drinker of Ryukyu" },
         },
         {
           number: 60,
@@ -220,6 +262,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "에비스 전당포 인근에서 분실물 의뢰 받기", en: "Take a lost-and-found request near Ebisu Pawn." },
+          body: { ko: "카리유시 상점가 입구의 어머니에게 말을 걸어 딸 찾기를 수락한 뒤, 빨간 벤치 근처 밀짚모자 소녀 → 골목 모퉁이의 야구모자 소녀 → 시사 석상 앞에서 춤추는 리본 소녀 순으로 찾아가면 클리어됩니다.", en: "Agree to look for the daughter of the worried mother at the arcade entrance, then work through the girls in turn: the straw hat by the red bench, the baseball cap around the corner by the alley, and the ribbon dancing near the Shisa statue." },
+          reward: { ko: "경험치 3,000 · 3,000엔", en: "3,000 EXP · ¥3,000" },
         },
         {
           number: 61,
@@ -227,6 +271,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "공설시장 남쪽 노포에서 노인에게 말 걸기", en: "Talk to the old distiller south of the Public Market." },
+          body: { ko: "퀵클리 티 앤 보바 서쪽 주류점에서 사채업자를 쫓아 주고 보물 찾기를 돕기로 합니다. 모리닝글로리 해변 서쪽의 바위를 찾아 땅을 파면 클리어됩니다.", en: "Help the liquor store owner west of Quickly Tea and Boba shake off the loan shark and agree to find the treasure, then locate the rock on the western part of the Morning Glory beach and dig." },
+          reward: { ko: "경험치 2,000 · 시사 벨트", en: "2,000 EXP · Shisa Belt" },
         },
         {
           number: 67,
@@ -234,6 +280,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "공설시장 어부의 미끼 운반 의뢰", en: "Help the Public Market fisherman ferry chum." },
+          body: { ko: "어느 선택지를 골라도 클리어됩니다.", en: "Either option completes it." },
+          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
         },
         {
           number: 69,
@@ -241,6 +289,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "강가에서 「부딪치는 남자들」 사기꾼들과 부딪치기", en: "Bump into the 'bump-and-extort' con men by the river." },
+          body: { ko: "하츠마치의 가라오케관 근처에서 사기꾼들과 마주치면 지불을 거부하고 일당을 격파하세요.", en: "Run into the con men near Karaokekan in Hatsumachi, refuse to pay and beat the thugs." },
+          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
         },
         {
           number: 70,
@@ -248,6 +298,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「사기꾼의 위협」 후 다시 부딪치기", en: "After 'The Con Menace': bump them again." },
+          body: { ko: "키타류 거리에서 다시 나타난 사기꾼들에게 지불을 거부하고 격파하면 클리어됩니다.", en: "Refuse to pay the con men who reappear on Kitaryu Street and beat them." },
+          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
         },
         {
           number: 86,
@@ -255,6 +307,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "블루씰 아이스크림 가게에서 여성에게 말 걸기", en: "Talk to the woman at the Blue Seal ice cream shop." },
+          body: { ko: "류큐 대로 교차로 남쪽의 아버지에게 아이스크림 운반을 도와주기로 합니다. 이스트 류큐 대로까지 천천히 이동하며 차량과 행인을 피하세요(실패 시 1,200엔). M스토어 근처 가족에게 건네면 클리어됩니다.", en: "Agree to help the father south of the Ryukyu Boulevard intersection carry the ice cream. Move slowly toward East Ryukyu Boulevard avoiding traffic and pedestrians — a failure costs ¥1,200 — and hand it to the family near M Store." },
+          reward: { ko: "경험치 3,000 · 6단 아이스크림", en: "3,000 EXP · Six-Scoop Ice Cream" },
         },
         {
           number: 88,
@@ -262,6 +316,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "골프장 클럽하우스에서 사장과 시합", en: "Meet and play against the President at the golf clubhouse." },
+          body: { ko: "낮에 골프 토너먼트에서 파 이상을 기록한 뒤 사장과의 승부를 수락합니다. 패배 3만 엔, 무승부 5만 엔, 승리 시 10만 엔과 스태미난 스파크를 받습니다.", en: "Shoot at least par in a daytime Golf Tournament, then accept the match against the president — a loss pays ¥30,000, a tie ¥50,000, and a win ¥100,000 plus a Staminan Spark." },
+          reward: { ko: "경험치 3,000 · 30,000~100,000엔", en: "3,000 EXP · ¥30,000–100,000" },
         },
         {
           number: 101,
@@ -314,6 +370,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "배팅 센터 하드 코스 1100점 이상 → 입구의 정체 모를 노인", en: "Score 1100+ on Hard Course at the Batting Center; meet the Mysterious Old Man." },
+          body: { ko: "요시다 배팅 센터에서 하드 코스로 1,100점을 넘긴 뒤 수수께끼의 남자에게 말을 겁니다. 한 번 나갔다 다시 들어가 야구 선수와 대화하고 승부를 수락한 다음, 상대보다 높은 점수를 내면 클리어됩니다.", en: "Score over 1,100 points on the Hard course at the Yoshida Batting Center, then talk to the mysterious man. Step out and back in, speak to the baseball player, accept his challenge and out-score him." },
+          reward: { ko: "경험치 3,000 · 스파이크 배트", en: "3,000 EXP · Spiked Bat" },
         },
         {
           number: 26,
@@ -321,6 +379,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "극장 광장에서 빚쟁이를 쫓는 수금원에게 말 걸기 (※「삥쟁이」 의미 아님)", en: "Speak to the debt collector chasing his client in Theater Square." },
+          body: { ko: "극장 광장에서 시바야마와 마주쳐 도움을 수락하고 모토야마를 찾아 돌아다닙니다. 위치를 알려주는 전화를 받으면 지정된 장소로 가서 제한 시간 안에 모토야마를 격파하세요.", en: "Run into Shibayama at Theater Square, agree to help and search for Motoyama. When the call comes in with his location, head there and beat him before the timer runs out." },
+          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
         },
         {
           number: 28,
@@ -328,6 +388,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "Love in Heart 1회 방문 후, 밴텀에 혼자 앉은 여성에게 말 걸기", en: "Visit Love in Heart, then talk to the lone woman in Bantam." },
+          body: { ko: "러브 인 하트에서 마사지를 받은 뒤 밴텀으로 가서 아야카에게 말을 겁니다. 이야기를 들어 주기로 하고, 짝사랑 상대에 대해 더 알아보기 → 자리에 남기 → 「전혀」 순으로 선택하면 클리어됩니다.", en: "Get a massage at Love in Heart, then go to Bantam and talk to Ayaka. Agree to hear her out, choose to find out more about her crush, choose to stay, then answer \"not at all\"." },
+          reward: { ko: "경험치 5,000 · 스탠더드 마사지 50% 할인", en: "5,000 EXP · 50% off Standard Massage" },
         },
         {
           number: 29,
@@ -335,6 +397,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "포포 매장 입장 시 타이치의 전화 → 카페 알프스로 (10장에서 완결)", en: "Enter any Poppo for Taichi's call (finishes in Ch.10)." },
+          body: { ko: "5장에서 타이치의 전화를 받고 편의점에서 320엔짜리 「소년 파이브」를 산 뒤, 타이헤이 대로에 쓰러진 남자에게 말을 걸어 도와줍니다. 카페 알프스로 가서 히라노와 편집자의 대화를 들은 뒤 편집자에게 말을 걸고, 10장 오키나와의 류큐 대로 교차로에서 이어지는 후반부를 마무리하세요.", en: "In Chapter 5 take Taichi's call, buy Shonen Five at a convenience store for ¥320, then help the collapsed man on Taihei Boulevard. Head to Cafe Alps, listen to Hirano and the editor, talk to the editor, then finish the second half at the Ryukyu Boulevard intersection in Okinawa during Chapter 10." },
+          reward: { ko: "경험치 10,000 · 소년 파이브 50권 세트 · 금 접시", en: "10,000 EXP · Stack of 50 Shonen Five issues · Gold Plate" },
         },
         {
           number: 35,
@@ -342,6 +406,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "야간 시치후쿠 주차장 동쪽 도전자에게 말 걸기", en: "At night, talk to the challenger east of Shichifuku Parking." },
+          body: { ko: "밤에 시치후쿠 거리 주차장으로 가서 Mr. 때려봐에게 말을 걸고 3,000엔을 내 승부를 수락한 뒤, 제한 시간 안에 상대를 때리면 클리어됩니다.", en: "At night go to the Shichifuku Street parking lot, talk to Mr. Try and Hit Me, pay ¥3,000 to accept, and land a hit on him within the time limit." },
+          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
         },
         {
           number: 39,
@@ -349,6 +415,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "텐카이치 거리에서 멍하니 서 있는 노인에게 말 걸기", en: "Talk to the absent-minded old man on Tenkaichi St." },
+          body: { ko: "밀레니엄 타워 입구 벤치의 노인에게 말을 걸어 불량배를 쫓아 주고, 진세이를 찾아 주기로 합니다. 스폰 거리에서 식당 종업원에게 바에 대해 묻고, 챔피언 거리에서 빚쟁이에게 시달리는 남자를 도운 뒤 밀레니엄 타워의 노인에게 돌아가면 클리어됩니다.", en: "Talk to the old man on the bench outside Millennium Tower, agree to fend off the hooligans and to look for Jinsei. Ask a restaurant worker about the bar on Suppon Street, help the man being harassed by a debt collector in Champion District, then return to the old man at Millennium Tower." },
+          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
         },
         {
           number: 48,
@@ -356,6 +424,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리 라멘 가게 앞 무전취식범 추격", en: "Chase the dine-and-dasher from a Showa St. ramen stall." },
+          body: { ko: "먹튀범을 쫓기로 선택하고 끝까지 추격하면 클리어됩니다.", en: "Choose to chase the dine-and-dasher and run him down." },
+          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
         },
         {
           number: 53,
@@ -363,6 +433,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "Love in Heart에서 다트로 호감 얻기", en: "At Love in Heart: win her over at darts." },
+          body: { ko: "다트 '01을 5회 플레이한 뒤 밴텀의 마사키에게 말을 겁니다. 마사키의 제안을 받으면 져 주는 쪽, 카나에의 제안을 고려하면 이기는 쪽이며, 승리 시 5만 엔·패배 시 1만 엔을 받습니다.", en: "Play Darts '01 five times, then talk to Masaki in Bantam. Taking Masaki's proposition means throwing the match; considering Kanae's means winning it — ¥50,000 for a win, ¥10,000 for a loss." },
+          reward: { ko: "경험치 3,000 · 10,000~50,000엔", en: "3,000 EXP · ¥10,000–50,000" },
         },
         {
           number: 54,
@@ -370,6 +442,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리에서 폭주족과 시비 붙기", en: "Tangle with bikers on Showa St." },
+          body: { ko: "밤에 택시 기사에게 무슨 일인지 물어 도움을 수락하고, 취객들을 격파하면 클리어됩니다.", en: "At night, ask the taxi driver what is going on, agree to help and beat the drunks." },
+          reward: { ko: "경험치 2,000 · 20,000엔", en: "2,000 EXP · ¥20,000" },
         },
         {
           number: 56,
@@ -377,6 +451,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "1편 후 카무로초에서 그녀와 재회", en: "After Pt.1: meet her again in Kamurocho." },
+          body: { ko: "스마일 버거에서 카에데에게 말을 건 뒤 다시 방문하고, 이후 문자를 확인할 때마다 젤라테리아 → 마하볼 → 면접 안내 → 어스 엔젤 순으로 이동해 어스 엔젤에 들어가면 클리어됩니다.", en: "Talk to Kaede at Smile Burger and come back once more, then follow each text message in turn — Gelateria, Mach Bowl, the job interview, and finally Earth Angel — and go inside." },
+          reward: { ko: "경험치 3,000 · 스마일 프라이 · 50,000엔", en: "3,000 EXP · Smile Fries · ¥50,000" },
         },
         {
           number: 59,
@@ -384,6 +460,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「잘못 짖었다」 후 텐카이치 거리에서 폭탄 사건 관련자 등장", en: "After 'Barking up the Wrong Tree': the bombing-incident father appears on Tenkaichi." },
+          body: { ko: "편의점에서 노려보는 낯선 남자와 마주친 뒤 가게 밖의 타츠오에게 말을 겁니다. 셸락 → 웨스트 파크 순으로 이동해 히라타 부자와 대화하고, 마지막에 타츠오를 격파하면 클리어됩니다.", en: "Run into the staring stranger at a convenience store, then talk to Tatsuo outside. Head to Shellac and then West Park, speak to Hirata and his son, and finish by defeating Tatsuo." },
+          reward: { ko: "경험치 8,000", en: "8,000 EXP" },
         },
         {
           number: 62,
@@ -391,6 +469,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "텐카이치 거리에서 우라시마 같은 노인에게 말 걸기", en: "Talk to the Urashima-like old man on Tenkaichi St." },
+          body: { ko: "호텔 거리 오른쪽 끝의 인파를 찾아 사냥꾼들을 격파하고 용궁 쪽으로 이동해 나머지와 두목까지 처리합니다. 이후 돌아다니다 카지노 매니저의 전화를 받으면 용궁이 열립니다.", en: "Find the small crowd at the far right of the Hotel District and beat the hunters, move toward the Dragon Palace and clear the rest plus their leader. Then walk around until the casino manager calls to say the Palace is open." },
+          reward: { ko: "경험치 2,000 · 용궁 이용 가능", en: "2,000 EXP · Access to the Dragon Palace" },
         },
         {
           number: 63,
@@ -398,6 +478,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "공중전화 부스에서 울리는 전화 받기", en: "Pick up a ringing Kamurocho payphone." },
+          body: { ko: "텐카이치 거리에서 불량배에게 시달리는 남자를 지켜 준 뒤 허니 티슈로 전화를 겁니다. 칸라이에서 치카를 만나고, 스마일 버거 앞 여성에게 말을 건 다음 불량배들을 격파하면 클리어됩니다.", en: "Defend the man from the hooligans in Tenkaichi Alley, then use Honey's Tissues to make the call. Meet Chika at Kanrai, talk to the girl in front of Smile Burger and beat the thugs." },
+          reward: { ko: "경험치 2,000 · 100,000엔", en: "2,000 EXP · ¥100,000" },
         },
         {
           number: 74,
@@ -405,6 +487,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "M 스토어 앞 세일 호객꾼에게 말 걸기", en: "Talk to the bargain sale tout at an M Store." },
+          body: { ko: "가방을 5만 엔에 사되, 흥정하거나 한 번 나갔다 오면 3만 5천 엔으로 내려갑니다. 에비스 폰에 팔고 판매원에게 돌아가 되팔기 제안을 두 번 모두 거절하면 전투로 이어지고, 이후 건물을 드나든 뒤 창고로 가면 최대 보상까지 받습니다.", en: "Buy the bag for ¥50,000 — haggling, or leaving and returning, drops it to ¥35,000. Sell it at Ebisu Pawn, go back to the salesman and refuse to resell it both times (accepting either offer ends the substory early with less money), beat him, then enter and leave a building and head to the warehouse." },
+          reward: { ko: "경험치 3,000 · 70,000~300,000엔", en: "3,000 EXP · ¥70,000–300,000" },
         },
         {
           number: 79,
@@ -412,6 +496,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "이탈리아 레스토랑 앞 셰프에게 말 걸기 → 라자냐 배달", en: "Talk to the chef outside an Italian restaurant; deliver lasagna." },
+          body: { ko: "시치후쿠 거리 어린이 공원 근처의 여성에게 말을 건 뒤, 포포 텐카이치점에서 개다래 막대를 삽니다(나카미치점·M스토어에는 없습니다). 포포 텐카이치 맞은편 건물 근처의 라자냐에게 주면 클리어됩니다.", en: "Talk to the worried woman near Children's Park on Shichifuku Street, then buy a catnip stick — only Poppo Tenkaichi stocks it, not Poppo Nakamichi or M Store. Give it to Lasagna near the building across from Poppo Tenkaichi." },
+          reward: { ko: "경험치 2,000 · 30,000엔", en: "2,000 EXP · ¥30,000" },
         },
         {
           number: 83,
@@ -419,6 +505,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "마하 볼링장에서 도전자와 대결", en: "Take on the challenger at Mach Bowl." },
+          body: { ko: "볼링에서 200점을 낸 뒤 도전을 수락하고 승부에서 이기면 클리어됩니다.", en: "Score 200 in bowling, accept the challenge and win the match." },
+          reward: { ko: "경험치 3,000 · 도시락 세트(돈가스)", en: "3,000 EXP · Bento Lunch Set (Pork)" },
         },
         {
           number: 84,
@@ -426,6 +514,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "다트 가게에서 지난달 챔피언과 대결", en: "Face last month's darts champion." },
+          body: { ko: "나카미치 골목 포포 근처의 수상한 남자를 격파하고 수락을 선택합니다. 구역을 나갔다가 나카미치 거리 택시 승강장의 남자에게 말을 걸면 클리어됩니다.", en: "Beat the sketchy man near Poppo in Nakamichi Alley and agree, leave the area, then talk to the man at the taxi spot on Nakamichi Street." },
+          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
         },
         {
           number: 89,
@@ -433,6 +523,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "뉴 세레나 안에서 정수기 판매원과 대치", en: "Confront the water purifier salesmen in New Serena." },
+          body: { ko: "IH 정수기 주식회사의 메시지를 읽고 공원대로의 노란 옷 남자에게 말을 겁니다. 사무실에 들어가 두 제안을 모두 거절하고 남자들을 격파하면 클리어됩니다.", en: "Read the message from IH Water Purifier, Inc., find and talk to the man in yellow on Park Boulevard, go inside the office, decline both offers and beat the men." },
+          reward: { ko: "경험치 2,000 · 50,000엔", en: "2,000 EXP · ¥50,000" },
         },
         {
           number: 94,
@@ -586,6 +678,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「정수기」 클리어 후 극장 광장 동쪽 행복고트 부인들에게 말 걸기", en: "After 'Water Purifiers': happi-coat ladies east of Theater Square." },
+          body: { ko: "사인을 받아 주기로 하고 인파를 조심스럽게 헤쳐 나간 뒤, 그를 알아봤다고 답하고 뒤이어 나타나는 야쿠자를 격파하면 클리어됩니다.", en: "Agree to get the autograph, work your way carefully through the crowd, say you recognize him, then beat the yakuza who show up." },
+          reward: { ko: "경험치 5,000 · 5,000엔", en: "5,000 EXP · ¥5,000" },
         },
         {
           number: 25,
@@ -593,6 +687,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "주얼 앞 젊은 여성에게 말 걸기", en: "Talk to the young woman in front of Jewel." },
+          body: { ko: "쥬얼 앞의 에미에게 말을 걸어 일을 맡은 뒤, 키 큰 남자 → 안경 쓴 남자 → 대머리 남자 순으로 세 명을 차례로 미행하면 클리어됩니다.", en: "Take the job from Emi in front of JeweL, then tail three men in turn: the tall one, the one with glasses, and the bald one." },
+          reward: { ko: "경험치 5,000 · 50,000엔", en: "5,000 EXP · ¥50,000" },
         },
         {
           number: 30,
@@ -600,6 +696,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리 호스트 클럽 앞 호객 청년에게 말 걸기", en: "Talk to the rookie host scout on Showa St." },
+          body: { ko: "제3공원의 취객에게 말을 걸어 물을 건네고 조언합니다. 구역을 나갔다 다시 들어와 말을 걸고 조언하기를 한 번 더 반복한 뒤, 마지막에는 전투로 마무리됩니다.", en: "Talk to the drunk in Public Park 3, give him water and some advice. Leave and re-enter the area to talk and advise him twice more, and the last visit ends in a fight." },
+          reward: { ko: "경험치 2,000 · 스태미난 스파크", en: "2,000 EXP · Staminan Spark" },
         },
         {
           number: 36,
@@ -607,6 +705,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「Mr. 때려봐 다시」 후 시치후쿠 주차장 다음 도전자", en: "After 'Hit Me Again': next challenger at Shichifuku Parking." },
+          body: { ko: "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 도망에게 5,000엔을 내고 승부를 수락한 뒤, 제한 시간 동안 잡히지 않으면 클리어됩니다.", en: "At night at the Shichifuku Street parking lot, pay ¥5,000 to take on Mr. Try and Flee Me and avoid being caught for the full time limit." },
+          reward: { ko: "경험치 3,000 · 70,000엔", en: "3,000 EXP · ¥70,000" },
         },
         {
           number: 40,
@@ -614,6 +714,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리에서 부부 다툼에 휘말리기", en: "Step into a couple's quarrel on Showa St." },
+          body: { ko: "밴텀 카운터 구석에 앉은 여성에게 말을 걸어 의뢰를 수락한 뒤, 오키드 팰리스로 가서 빨간 트레이닝복 남자를 미행하고 격파하면 클리어됩니다.", en: "Talk to the woman at the corner of the bar in Bantam, agree to help, then head to the Orchid Palace, tail the man in the red tracksuit and beat him." },
+          reward: { ko: "경험치 2,000 · 70,000엔", en: "2,000 EXP · ¥70,000" },
         },
         {
           number: 41,
@@ -621,6 +723,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "포포 매장 앞에서 도둑 신고 받기", en: "Get flagged outside a Poppo about shoplifters." },
+          body: { ko: "포포 쇼와에 들어갔다 나오면 제안을 받습니다. 수락한 뒤 첫 번째 여성은 막지 말고, 다음 남자는 막고, 세 번째 남자는 막지 않으면 클리어됩니다.", en: "Enter and leave Poppo Showa to get the offer. Accept it, then let the lady pass, stop the first guy, and let the second guy go." },
+          reward: { ko: "경험치 3,000 · 4,000엔", en: "3,000 EXP · ¥4,000" },
         },
         {
           number: 49,
@@ -628,6 +732,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「전채」 후 또 다른 무전취식범 추격", en: "After 'Hor D'oeuvres': chase another dasher." },
+          body: { ko: "큐슈 넘버원 스타로 가서 도움을 수락하고 먹튀범을 붙잡으면 클리어됩니다.", en: "Go to Kyushu No. 1 Star, agree to help and catch the dine-and-dasher." },
+          reward: { ko: "경험치 3,000 · 스태미난 스파크", en: "3,000 EXP · Staminan Spark" },
         },
         {
           number: 75,
@@ -635,6 +741,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리에서 돌아온 옛 야쿠자에게 말 걸기", en: "Talk to the returning old yakuza on Showa St." },
+          body: { ko: "클리닉으로 데려가기를 선택해 이동한 뒤, 카무로초 안내를 수락합니다. 밀레니엄 타워와 샹그릴라에서 각각 야쿠자를 격파하고 웨스트 파크 입구로 가면 클리어됩니다.", en: "Choose to take him to the clinic and go there, then agree to show him around Kamurocho. Beat the yakuza at Millennium Tower and again at Shangri-La, then head to the West Park entrance." },
+          reward: { ko: "경험치 3,000 · 블러드 브로치", en: "3,000 EXP · Blood Brooch" },
         },
         {
           number: 78,
@@ -642,6 +750,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "공원 노점에서 어린 손녀를 돌보는 할머니에게 말 걸기", en: "Help the grandmother with her grandchild in a Kamurocho park." },
+          body: { ko: "스폰 거리의 당황한 남자에게 도움을 수락하고, 「에어컨은 잘 안 씁니다」 → 「사고 때문에 출입 금지입니다」를 고른 뒤 사채업자에게 10만 엔을 지불하면 클리어됩니다.", en: "Agree to help the panicked man on Suppon Street, choose \"We try not to use the A/C\" and then \"It's off-limits due to an accident\", and pay the loan shark ¥100,000." },
+          reward: { ko: "경험치 2,000 · 110,000엔 · 스시 세트", en: "2,000 EXP · ¥110,000 · Sushi Set" },
         },
         {
           number: 85,
@@ -649,6 +759,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "쇼와 거리에서 누명을 쓰고 진범 추격", en: "Get falsely accused on Showa St. and chase the real thief." },
+          body: { ko: "타이헤이 대로에서 화난 여성이 다가오면 인벤토리의 지갑을 사용하고, 지불을 거부한 뒤 불량배들을 격파하면 클리어됩니다.", en: "When the indignant woman approaches on Taihei Boulevard, use the wallet in your inventory, refuse to pay and beat the thugs." },
+          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
         },
         {
           number: 90,
@@ -656,6 +768,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "6장", en: "Chapter 6" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "큐슈 No.1 별 라멘에서 라멘 챌린지", en: "Take the challenge at Kyushu No. 1 Star ramen." },
+          body: { ko: "큐슈 넘버원 스타의 점주에게 도움을 수락한 뒤 주문을 정확히 받으면 됩니다. 순서는 차슈 돈코츠 → 멘타이코 돈코츠 → 큐슈 돈코츠 곱빼기 → 더블 스튜드 포크 돈코츠 → 큐슈 돈코츠입니다.", en: "Agree to help the owner of Kyushu No. 1 Star and take the orders correctly, in this order: Chashu Tonkotsu, Mentaiko Tonkotsu, Large Kyushu Tonkotsu, Double Stewed Pork Tonkotsu, then Kyushu Tonkotsu." },
+          reward: { ko: "경험치 5,000 · 20,000엔", en: "5,000 EXP · ¥20,000" },
         },
         {
           number: 96,
@@ -682,6 +796,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「도둑을 잡아라!」 클리어 후 나카미치·타이헤이 교차로 남쪽 우는 소년에게 말 걸기", en: "After 'Catch Those Shoplifters!': the crying boy south of Nakamichi/Taihei." },
+          body: { ko: "나카미치 거리에서 도움을 수락한 뒤 날아간 풍선을 따라가고, 어린이 공원에 들어가면 클리어됩니다.", en: "Agree to help on Nakamichi Street, follow the balloon, and enter Children's Park." },
+          reward: { ko: "경험치 8,000 · 캐비어 스킨 백", en: "8,000 EXP · Caviar Skin Bag" },
         },
         {
           number: 37,
@@ -689,6 +805,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「Mr. 때려봐 도망」 후 시치후쿠 주차장 도주자 추격", en: "After 'Flee Me': chase the runner around Shichifuku Parking." },
+          body: { ko: "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 잡아봐에게 10,000엔을 내고 승부를 수락한 뒤, 제한 시간 안에 붙잡으면 클리어됩니다.", en: "At night at the Shichifuku Street parking lot, pay ¥10,000 to take on Mr. Try and Catch Me and catch him within the time limit." },
+          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
         },
         {
           number: 50,
@@ -696,6 +814,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「오르되브르」 후 젤라테리아 카무로 앞 여성에게 말 걸기", en: "After 'Appetizer': talk to the woman outside Gelateria Kamuro." },
+          body: { ko: "젤라테리아 카무로초에서 도움을 수락해 먹튀범을 붙잡은 뒤, 값을 치르라고 압박하면 클리어됩니다.", en: "Go to Gelateria Kamurocho, agree to help, catch the dine-and-dasher and press him to pay." },
+          reward: { ko: "경험치 5,000 · 스태미난 스파크", en: "5,000 EXP · Staminan Spark" },
         },
         {
           number: 58,
@@ -703,6 +823,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「끝없는 스토커」 후 시치후쿠·센료 교차로 호객꾼에게 말 걸기", en: "After 'Nonstop Stalkers': the barker at Shichifuku/Senryo." },
+          body: { ko: "시치후쿠 주차장 근처의 호객꾼에게 여러 번 말을 걸면 무료 패스를 얻을 수 있고, 5,000엔을 내면 시간을 아낄 수 있습니다. 이후 불량배들을 격파하면 무료 패스 루트는 10만 엔, 유료 루트는 5만 엔을 받습니다.", en: "Talk to the barker near the Shichifuku car park several times for a free pass, or pay ¥5,000 to skip the wait. Beat the thugs afterwards — the free-pass route pays ¥100,000, the paid route ¥50,000." },
+          reward: { ko: "경험치 3,000 · 50,000~100,000엔", en: "3,000 EXP · ¥50,000–100,000" },
         },
         {
           number: 64,
@@ -723,6 +845,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "르 마르셰 앞에서 가방 날치기 소문 듣고, 가방 구매 후 추격", en: "Hear bag-snatching rumors at Le Marche, buy a bag, then chase." },
+          body: { ko: "르 마르셰에서 이탈리안 숄더백을 구입하고 가게를 나오면 날치기가 발생합니다. 사거리에서 왼쪽으로 꺾어 뒤쫓고, 은신처까지 따라가기를 선택해 일당을 격파하세요.", en: "Buy an Italian Shoulder Bag at Le Marche and leave the store to trigger the theft. Follow the thief — turn left at the four-way — choose to trail him to the hideout, and beat the thieves." },
+          reward: { ko: "경험치 3,000 · 캐비어 스킨 백", en: "3,000 EXP · Caviar Skin Bag" },
         },
         {
           number: 81,
@@ -730,6 +854,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「편의점 강도」 후 뉴 세레나 앞 노인에게 말 걸기 → 가게 보기", en: "After 'Convenient Robbery': old man outside New Serena, then mind the bar." },
+          body: { ko: "뉴 세레나 근처 노인과 마마에게 차례로 말을 걸어 도움을 수락합니다. 흰개미·배관·화재경보기 점검을 모두 거절하면 전투가 벌어지고, 이후 노인에게 돌아가면 클리어됩니다.", en: "Talk to the old man near New Serena and then the New Serena Mama, and agree to help. Refuse the termite, plumbing and smoke alarm checks in turn, beat the workers, then report back to the old man." },
+          reward: { ko: "경험치 1,000 · 50,000엔", en: "1,000 EXP · ¥50,000" },
         },
         {
           number: 91,
@@ -746,6 +872,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "7장", en: "Chapter 7" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「돌아온 사나이」 후 파크 거리 서쪽 검은 옷의 남자에게 말 걸기", en: "Clear 'The Returnee': talk to the man in black west of West Park." },
+          body: { ko: "강도를 격파한 뒤 뒤쫓기를 선택하고, 근처 행인에게 물어 「검은 재킷」을 고릅니다. 어린이 공원으로 가서 강도를 다시 제압하고 자수를 권하면 클리어됩니다.", en: "Beat the robber, choose to go after him, ask the nearby passerby and answer \"A black jacket\". Head to Children's Park, beat him again and urge him to turn himself in." },
+          reward: { ko: "경험치 3,000 · 30,000엔", en: "3,000 EXP · ¥30,000" },
         },
         {
           number: 98,
@@ -781,6 +909,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "밀레니엄 타워 앞 빨간 재킷의 키타가와에게 말 걸기", en: "Talk to Kitagawa (red jacket) outside Millennium Tower." },
+          body: { ko: "밀레니엄 타워 앞의 미나미자와에게 말을 건 뒤, 공원대로의 키타가와와 대화하고 전투에서 이깁니다. 마지막에 「그래서?」를 선택하면 클리어됩니다.", en: "Talk to Minamizawa in front of Millennium Tower, then talk to Kitagawa on Park Boulevard and beat him. Finish by choosing \"So?\"." },
+          reward: { ko: "경험치 5,000 · 10,000엔 · 미나미자와의 사인", en: "5,000 EXP · ¥10,000 · Minamizawa's Autograph" },
         },
         {
           number: 76,
@@ -788,6 +918,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「용의 보물 훔치기」 후 극장 광장 공중전화 받기 → 슬롯 하우스 앞 범인", en: "Clear 'Stealing from the Dragon's Hoard'; answer the Theater Square payphone — culprit is at Slot House." },
+          body: { ko: "극장 광장의 공중전화를 받고 곧바로 약속 장소로 이동한 뒤, 뉴 세레나 근처에서 전화를 건 상대와 싸우면 클리어됩니다.", en: "Answer the phone in the Theater Square phonebooth, head straight to the meeting place and fight the caller near New Serena." },
+          reward: { ko: "경험치 8,000 · 50,000엔", en: "8,000 EXP · ¥50,000" },
         },
         {
           number: 77,
@@ -795,6 +927,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「당신의 운명을 봐드립니다」 후 타이헤이 서쪽에서 날치기 추격", en: "After 'Your Fortunes Told Here': chase the pickpocket west on Taihei." },
+          body: { ko: "마하볼 근처 타이헤이 대로에서 소매치기를 붙잡고, 그가 떨어뜨린 돈을 주우면 클리어됩니다.", en: "Catch the pickpocket on Taihei Boulevard near Mach Bowl and pick up the money he drops." },
+          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
         },
         {
           number: 80,
@@ -802,6 +936,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "9장", en: "Chapter 9" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "핑크 거리 클럽 샤인 남쪽 점쟁이에게 말 걸기", en: "Talk to the fortune-teller south of Club Shine on Pink St." },
+          body: { ko: "핑크 거리 줄 끝의 여성에게 말을 건 뒤 줄을 건너뛰고 점술사와 대화해 특별 점괘를 12만 엔에 받습니다. 나카미치 골목 모퉁이의 의심 많은 여성 → 클럽 세가 근처 여성 무리 순으로 말을 걸고 점술사에게 돌아가면 클리어됩니다.", en: "Talk to the woman at the end of the line on Pink Street, skip the queue to reach the fortune teller and pay ¥120,000 for the special reading. Then talk to the skeptical woman at the corner of Nakamichi Alley, the group of women near Club Sega, and return to the fortune teller." },
+          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
         },
         {
           number: 100,
@@ -833,6 +969,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "10장 동쪽 다리에서 여고생들에게 말 걸기", en: "Chapter 10: schoolgirls on the east bridge." },
+          body: { ko: "여고생들의 대화를 엿들은 뒤 하츠마치로 이동해 교차로 근처 검은 차에 다가가 계약서에 서명합니다. 다리에서 차 주인과 마주쳐 일당을 격파하고, 다리로 돌아가 여고생들의 마지막 대화를 들으면 7가지 불가사의 라인이 마무리됩니다.", en: "Listen in on the schoolgirls, then go to Hatsumachi and approach the black car near the crossroad to sign the agreement. Meet the car's owner at the bridge, beat the thugs, then return to the bridge and listen to the girls one last time to close out the Seven Mysteries line." },
+          reward: { ko: "경험치 8,000 · 50,000엔 · 하늘빛 보석 · 행운의 동전", en: "8,000 EXP · ¥50,000 · Azure Gem · Lucky Coin" },
         },
         {
           number: 19,
@@ -840,6 +978,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「Let's Learn English 3」 후 에비스 전당포 앞 노인에게 말 걸기", en: "After 'Let's Learn English 3': old man outside Ebisu Pawn." },
+          body: { ko: "키타류 거리 에비스 폰 근처의 노인에게 말을 걸어 의뢰를 수락한 뒤, 다리를 건너 하츠마치의 가라오케관 옆 주차장으로 가서 노인에게 전화하면 클리어됩니다.", en: "Talk to the old man near Ebisu Pawn on Kitaryu Street and agree to help, then cross the bridge to the car park beside Karaokekan in Hatsumachi and call him." },
+          reward: { ko: "경험치 3,000 · 앤티크 체인메일", en: "3,000 EXP · Antique Chain Mail" },
         },
         {
           number: 34,
@@ -847,6 +987,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「고아원을 노린 강도」 후 스마일 버거 앞에서 청년에게 다시 말 걸기", en: "After 'Robbing the Orphanage': the young man outside Smile Burger again." },
+          body: { ko: "스마일 버거에서 소년에게 말을 걸고 가게에 들어가, 불량배 문제를 도와주기로 선택해 전투를 마칩니다. 마지막에 도울지 개입하지 않을지 선택하면 클리어됩니다.", en: "Talk to the teen at Smile Burger and enter the restaurant, decide to help him with the punks and win the fight, then make the final choice of whether to step in or stay out of it." },
+          reward: { ko: "경험치 5,000 · 이탈리안 숄더백", en: "5,000 EXP · Italian Shoulder Bag" },
         },
         {
           number: 45,
@@ -854,6 +996,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「물고기 떼 부르기」 후 공설시장 주인의 의뢰", en: "After 'Chumming the Waters': the market owner asks for help against wildcat smugglers." },
+          body: { ko: "공설시장에서 곤란해하는 남자의 부탁을 수락하고 2층으로 올라갑니다. 초록 모자를 쓴 사람이 밀매업자이니 지목하고 「증거는 필요 없다」를 선택한 뒤 일당을 격파하세요.", en: "Agree to help the troubled man at the Public Market and head to the second floor. The trafficker is the one in the green hat — identify him, choose \"I don't need proof\", then beat the traffickers." },
+          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
         },
         {
           number: 47,
@@ -861,6 +1005,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「Let's Learn English 3」 + 「도쿄에 가고 싶어 3」 후 교차로 두 남자 대화 엿듣고 검은 세단과 충돌", en: "After 'Let's Learn English 3' and 'I Want to Go to Tokyo 3': eavesdrop at the crosswalk, then bump the black sedan." },
+          body: { ko: "류큐 대로 교차로에서 행인들의 대화를 들은 뒤, 지나가는 검은 세단에 부딪히고 지불을 거부해 전투로 넘어갑니다. 여기서 「차 부수기의 진수」를 발동시키면 보상이 5만 엔으로 올라갑니다.", en: "Listen to the pedestrians at the Ryukyu Boulevard crossroad, then collide with the moving black sedan and refuse to pay to start the fight. Pulling off the Essence of Car Crushing raises the payout to ¥50,000." },
+          reward: { ko: "경험치 3,000 · 30,000~50,000엔", en: "3,000 EXP · ¥30,000–50,000" },
         },
         {
           number: 51,
@@ -868,6 +1014,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「메인 코스」 후 에비스 전당포 앞 가게 주인에게 말 걸기", en: "After 'Main Course': shop owner outside Ebisu Pawn." },
+          body: { ko: "키타류 거리 에비스 폰 근처 가게의 점장에게 말을 걸어 도움을 수락하고 먹튀범을 붙잡으면 먹튀 라인이 끝납니다.", en: "Talk to the manager of the store near Ebisu Pawn on Kitaryu Street, agree to help and catch the dine-and-dasher to close out the line." },
+          reward: { ko: "경험치 8,000 · 금 접시", en: "8,000 EXP · Gold Plate" },
         },
         {
           number: 57,
@@ -875,6 +1023,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "2편 후 에비스 전당포 북쪽에서 다시 말 걸기", en: "After Pt.2: speak to her again north of Ebisu Pawn." },
+          body: { ko: "에비스 폰 앞에 서 있는 카에데와 모미지에게 말을 걸면 클리어됩니다.", en: "Talk to Kaede and Momiji standing in front of Ebisu Pawn." },
+          reward: { ko: "경험치 5,000 · 캐비어 스킨 백", en: "5,000 EXP · Caviar Skin Bag" },
         },
         {
           number: 68,
@@ -882,6 +1032,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「이리오모테 사건」 후 서쪽 다리에서 그 남자 재등장", en: "After 'The Iriomote Incident': the same man is back on the west bridge." },
+          body: { ko: "아쿠아 스카이 근처 다리에서 키시모토에게 말을 걸어 도움을 수락하고, 사채업자들을 격파하면 클리어됩니다.", en: "Talk to Kishimoto on the bridge near Aqua Sky, agree to help and beat the loan sharks." },
+          reward: { ko: "경험치 5,000 · 스태미난 스파크", en: "5,000 EXP · Staminan Spark" },
         },
         {
           number: 71,
@@ -889,6 +1041,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
           trigger: { ko: "「비밀 거래」 + 「사기꾼 전쟁」 후 강가에 떼지어 나타난 사기꾼들", en: "After 'Under the Table' + 'The Con Wars': six punks at the riverside." },
+          body: { ko: "쿠보치 도로의 다리 근처에서 사기꾼들과 마주쳐 격파하면 클리어됩니다.", en: "Meet the con men near the bridge on Kubochi Road and beat them." },
+          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
         },
         {
           number: 72,
@@ -896,6 +1050,8 @@ export const yakuza3Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "카무로초", en: "Kamurocho" },
           trigger: { ko: "「사기꾼들의 역습」 후 도쿄 밴텀에서 사기꾼들 재회", en: "After 'Revenge of the Con Men': they show up at Bantam." },
+          body: { ko: "밴텀에서 나오면 사기꾼들과 마주칩니다. 돕기를 선택하고 일당을 격파하면 사기꾼 라인이 끝납니다.", en: "Leaving Bantam triggers the con men. Choose to help and beat the thugs to close out the line." },
+          reward: { ko: "경험치 8,000 · 150,000엔", en: "8,000 EXP · ¥150,000" },
         },
         {
           number: 106,
