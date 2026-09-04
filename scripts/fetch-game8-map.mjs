@@ -18,7 +18,9 @@
 // With --images, each area's base image is downloaded and converted to webp
 // (max 1600px wide, never upscaled) as `<area index>.webp`; ImageMagick's
 // `magick` must be on PATH. With --coords, `--out` instead receives
-// `{ "<area>": { "<marker title>": [x%, y%] } }` ready to become `hotspots`.
+// `{ "<area>": { "<marker title>": { pos: [x%, y%], image } } }` — `pos` is
+// ready to become `hotspots`, and `image` is the marker's popup screenshot
+// (an in-game capture with the item ringed), ready to become `item.image`.
 
 import { execFileSync } from "node:child_process";
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
@@ -36,6 +38,14 @@ const UA =
 function game8Percent(coordinate) {
   const [a, b] = coordinate.split(",").map(Number);
   return [Number((0.3903 * b + 1.77).toFixed(2)), Number((100 - 0.3906 * a).toFixed(2))];
+}
+
+// A few popupImage values in game8's data are the same URL written twice with
+// no separator ("…/originalhttps://…/original"). Keep the first one.
+function firstUrl(value) {
+  if (!value) return null;
+  const [first] = value.split(/(?=https:\/\/)/).filter(Boolean);
+  return first ?? null;
 }
 
 function arg(flag) {
@@ -74,7 +84,7 @@ if (out) {
   if (coordsOf) {
     payload = {};
     for (const m of markers.filter((m) => m.classification === coordsOf)) {
-      (payload[m.area] ??= {})[m.title] = game8Percent(m.coordinate);
+      (payload[m.area] ??= {})[m.title] = { pos: game8Percent(m.coordinate), image: firstUrl(m.popupImage) };
     }
   }
   writeFileSync(resolve(out), `${JSON.stringify(payload, null, 2)}\n`, "utf8");
