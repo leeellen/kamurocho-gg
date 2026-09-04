@@ -21,7 +21,7 @@ const INTERACTIVE_CATEGORIES: Record<number, Record<string, "telephone" | "categ
   3717340: { "coin-lockers": "category", "encounter-bosses": "category" }, // Yakuza Kiwami 2
   3717330: { "coin-lockers": "category" }, // Yakuza Kiwami
   1105510: { "coin-lockers": "category" }, // Yakuza 5
-  3937550: { "coin-lockers": "category", "lalala-friends": "category", "photo-rally": "category" }, // Yakuza Kiwami 3
+  3937550: { "coin-lockers": "category", "lalala-friends": "category", "photo-rally": "category", reapers: "category", "tuppari-scouts": "category" }, // Yakuza Kiwami 3
   2375550: { "coin-lockers": "category", "gold-balls": "category" }, // Like a Dragon Gaiden
   3061810: { treasures: "category", pets: "category" }, // Pirate Yakuza in Hawaii
   2058180: { "side-cases": "category", "stray-cats": "category", friends: "category" }, // Judgment
