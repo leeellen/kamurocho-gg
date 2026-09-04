@@ -335,6 +335,10 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
             ? region.chapterColors?.[item.chapter] || "#76767e"
             : undefined;
           const label = item.title ?? item.location;
+          // A few entries have no pin because they are not lying anywhere —
+          // a substory hands them over, or they roam. Say so instead of
+          // leaving the reader hunting the map for a marker that isn't there.
+          const unpinned = Boolean(region.hotspots) && !region.hotspots?.[String(item.number)];
           return (
             <div
               key={item.number}
@@ -391,6 +395,11 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                 <span className="font-mono text-[var(--text-tertiary)]">
                   No.{String(item.number).padStart(2, "0")}
                 </span>
+                {unpinned && (
+                  <span className="rounded border border-[var(--border-strong)] px-1 text-[10px] text-[var(--text-tertiary)]">
+                    {locale === "ko" ? "지도 표시 없음" : "not on map"}
+                  </span>
+                )}
                 {item.chapter && (
                   <span className="font-mono font-bold" style={{ color }}>
                     {chapterLabel(item.chapter, locale)}

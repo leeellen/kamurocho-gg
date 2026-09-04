@@ -58,7 +58,7 @@ const cachedSeriesRows = unstable_cache(
   // Bumped to v17 as collectible categories gain pin maps. The Data Cache outlives
   // a deployment, so content and inference changes stay invisible in
   // production until the key changes.
-  ["fetch-series-rows-v21"],
+  ["fetch-series-rows-v22"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
@@ -187,6 +187,6 @@ const cachedGameRows = unstable_cache(
       guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
-  ["fetch-game-rows-v21"],
+  ["fetch-game-rows-v22"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
