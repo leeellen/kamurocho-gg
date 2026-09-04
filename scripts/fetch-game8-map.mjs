@@ -36,7 +36,10 @@ const UA =
 // under 0.15% of image width — see `docs` in the commit that added this. Derive
 // it again for any new mapping id rather than assuming, but start here.
 function game8Percent(coordinate) {
-  const [a, b] = coordinate.split(",").map(Number);
+  // One marker in Kiwami 3's data reads "216.82,42,32", where the second
+  // comma is a typo for a decimal point. Repair rather than drop the pin.
+  const parts = coordinate.split(",");
+  const [a, b] = (parts.length === 3 ? [parts[0], `${parts[1]}.${parts[2]}`] : parts).map(Number);
   return [Number((0.3903 * b + 1.77).toFixed(2)), Number((100 - 0.3906 * a).toFixed(2))];
 }
 
