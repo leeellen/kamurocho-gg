@@ -1,20 +1,26 @@
 import type { SubstoriesData } from "./types";
 
 /**
- * Yakuza Kiwami 3 shipped in February 2026 and the Yakuza Wiki is still filling
- * it in: of the 44 entries here (31 substories plus Dark Ties' 13 Good Deeds)
- * only 13 have a documented location, trigger and task list. The full, verified
- * list of names and numbers is included so the index is complete, and a
- * walkthrough is present wherever the wiki has one rather than invented for the
- * rest.
+ * Yakuza Kiwami 3 shipped in February 2026. The Yakuza Wiki has the verified
+ * list of names and numbers (31 substories plus Dark Ties' 13 Good Deeds) but
+ * has only written up 13 of them, so the walkthroughs for the rest are
+ * distilled from the Japanese guide sites that covered the game at launch,
+ * cross-checked against an English list for the number-to-name mapping.
  */
 export const yakuzaKiwami3Substories: SubstoriesData = {
   appId: 3937550,
   summary: {
-    ko: "용과 같이 극3 본편 서브스토리 31개와 Dark Ties의 선행 13건, 총 44건입니다. 이 중 공식 위키에 공략이 올라온 13건만 발생 조건과 진행 방법을 담고 있으며, 나머지는 이름과 번호만 표시합니다.",
-    en: "All 44 entries — Yakuza Kiwami 3's 31 substories plus Dark Ties' 13 Good Deeds. Only the 13 the official wiki documents carry a trigger and walkthrough; the rest list name and number only until the wiki covers them.",
+    ko: "용과 같이 극3 본편 서브스토리 31개와 Dark Ties의 선행 13건, 총 44건 전부에 발생 조건과 공략을 담았습니다. 2026년 2월 발매작이라 영문 위키가 아직 13건만 정리한 상태여서, 나머지는 일본 공략 사이트를 대조해 작성했습니다.",
+    en: "All 44 entries — Yakuza Kiwami 3's 31 substories plus Dark Ties' 13 Good Deeds — with a trigger and walkthrough for every one. The game only launched in February 2026 and the English wiki has written up 13 of them, so the rest are drawn from the Japanese guide sites.",
   },
-  source: { label: "Yakuza Wiki — Yakuza Kiwami 3 and Dark Ties/Substories", url: "https://yakuza.fandom.com/wiki/Yakuza_Kiwami_3_and_Dark_Ties/Substories" },
+  source: [
+    { label: "Yakuza Wiki — Yakuza Kiwami 3 and Dark Ties/Substories", url: "https://yakuza.fandom.com/wiki/Yakuza_Kiwami_3_and_Dark_Ties/Substories" },
+    { label: "ボーメモ — 龍が如く極3 サブストーリー一覧", url: "https://bozumemo.jp/gotoku-kiwami3/gotoku-kiwami3-sub-story/" },
+    { label: "ボーメモ — 龍が如く3外伝 神田カリスマプロジェクト", url: "https://bozumemo.jp/gotoku3-dt/gotoku3-dt-charisma-project/" },
+    { label: "ゲームエイト — 龍が如く極3 サブストーリー攻略一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/751658" },
+    { label: "神ゲー攻略 — 龍が如く極3 サブストーリー一覧と発生タイミング", url: "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F3/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/index.html" },
+    { label: "TheGamer — Yakuza Kiwami 3 & Dark Ties: Complete Substory List", url: "https://www.thegamer.com/yakuza-kiwami-3-dark-ties-all-substories-good-deeds-rewards-locations-unlock-amon-guide/" },
+  ],
   groups: [
     {
       title: { ko: "서브스토리 (용과 같이 극3)", en: "Substories (Yakuza Kiwami 3)" },
@@ -25,27 +31,46 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "카무로초 — 타이헤이 대로", en: "Taihei Boulevard, Kamurocho" },
           trigger: { ko: "1장 진행 중", en: "Story Progress: Chapter 1" },
           body: { ko: "타이헤이 대로에서 휴대폰을 커스터마이즈한 뒤 라라와 함께 라라라 모바일을 사용하면 클리어됩니다.", en: "Customize the phone on Taihei Boulevard, then use LaLaLa Mobile with Lala." },
-          reward: { ko: "LaLaLa Mobile", en: "LaLaLa Mobile" },
+          reward: { ko: "휴대폰 커스터마이즈, 러브토모, 러브박스 해금", en: "Phone customization, LoveTomo and LoveBox unlocked" },
         },
         {
           number: 2,
           title: { ko: "사랑의 큐피드", en: "Love's Cupid" },
+          location: { ko: "류큐가 — 류큐 거리 동쪽, 스마일버거 류큐점 앞", en: "Smile Burger Ryukyu, E Ryukyu Blvd., Downtown Ryukyu" },
+          trigger: { ko: "2장, 스토리 진행 중 자동 발생", en: "Chapter 2, triggers as the story progresses" },
+          body: { ko: "스마일버거 류큐점 안으로 들어가면 이벤트가 시작되고, 가게에서 진상을 부리는 남자들과 전투로 이어진다. 챕터 2 초반에 지나가기만 해도 잡히는 짧은 서브스토리라 놓치기 어렵다.", en: "Step inside the Smile Burger Ryukyu and a scene starts, ending in a fight with the men causing trouble in the restaurant. It is a short one that fires just by passing through early in Chapter 2." },
         },
         {
           number: 3,
           title: { ko: "초고속 소바 배달!", en: "So Fast, Soba Delivery Run!" },
+          location: { ko: "류큐가 — 공설시장 앞 「와라바」", en: "Warabaa, in front of the Public Market, Downtown Ryukyu" },
+          trigger: { ko: "2장, 공설시장 앞에서 와라바 주인들과 대화", en: "Chapter 2, talk to the Warabaa owners by the Public Market" },
+          body: { ko: "와라바 주인 부부를 도와 오키나와 소바를 5분 안에 7명에게 배달하는 타임 어택. 배달처는 POPPO 류큐 거리 동점, 고잉 마이 웨이, 주얼리 & 스타일리, 마~산즈 주스, 쿠스리노 마에다, 하츠마치 북쪽의 히가 씨(큰 소리로 부를 것), 하츠마치 남쪽의 치넨 씨(조용히 다가갈 것) 7곳. 도중에 다른 사람에게 말을 걸면 30초를 잃으니, 손님 표시가 뜬 대상만 노리고 최단 경로로 돌 것.", en: "Help the Warabaa owners deliver Okinawa soba to seven customers inside five minutes. The stops are POPPO E Ryukyu Blvd., Going My Way, Jewelry & Stylee, Ma-sans Juice, Maeda Pharmacy, Higa in northern Hatsumachi (shout to get his attention) and Chinen in southern Hatsumachi (approach quietly). Talking to anyone else burns 30 seconds, so touch only the marked customers and plan the shortest loop." },
+          reward: { ko: "스타미난 X, 10,000엔", en: "Staminan X, 10,000 yen" },
         },
         {
           number: 4,
           title: { ko: "카메 사범, 때려봐", en: "Master Kame Hit Me" },
+          location: { ko: "아사가오 — 앞 해변", en: "The beach in front of Morning Glory" },
+          trigger: { ko: "2장, 밤에 아사가오 앞 해변의 「때려봐 아저씨」와 대화", en: "Chapter 2, talk to the Hit-Me Man on the beach outside Morning Glory at night" },
+          body: { ko: "5,000엔을 내고 도전하는 「때려봐 옥」의 1탄. 제한 시간 안에 공격을 한 번이라도 맞히면 성공이다. 이 단계에서는 상대의 회피가 느슨해 정면에서 콤보를 넣어도 대부분 들어간다.", en: "The first round of the Hit-Me stand: pay 5,000 yen and land a single hit before time runs out. His evasion is loose at this stage, so a straight combo from the front usually connects." },
+          reward: { ko: "30,000엔, No.5 해금", en: "30,000 yen; unlocks No.5" },
         },
         {
           number: 5,
           title: { ko: "카메 사범, 때려봐 리턴즈", en: "Master Kame Hit Me Returns" },
+          location: { ko: "아사가오 — 앞 해변", en: "The beach in front of Morning Glory" },
+          trigger: { ko: "No.4 클리어 후 다시 해변의 「때려봐 아저씨」와 대화", en: "After No.4, talk to the Hit-Me Man on the beach again" },
+          body: { ko: "참가비가 10,000엔으로 오르고 상대가 본격적으로 도망치기 시작한다. 다가가서 때리려 하면 엄청난 속도로 달아나지만, 한동안 계속 몰아붙이면 숨이 차서 멈추는 순간이 온다. 그 틈을 노려 한 대만 맞히면 된다.", en: "The fee rises to 10,000 yen and he now runs for it. He bolts the moment you close in, but keep chasing him long enough and he runs out of breath — that pause is your window to land the one hit you need." },
+          reward: { ko: "50,000엔, No.6 해금", en: "50,000 yen; unlocks No.6" },
         },
         {
           number: 6,
           title: { ko: "카메 사범, 때려봐 최종장", en: "Master Kame Hit Me: Endgame" },
+          location: { ko: "아사가오 — 앞 해변", en: "The beach in front of Morning Glory" },
+          trigger: { ko: "No.5 클리어 후 다시 해변의 「때려봐 아저씨」와 대화", en: "After No.5, talk to the Hit-Me Man on the beach once more" },
+          body: { ko: "참가비 30,000엔의 최종 라운드. 리턴즈와 요령은 같지만 숨이 찰 때까지 걸리는 시간이 훨씬 길어 난이도가 크게 올라간다. 도지마 스타일로 □를 몇 번 휘두른 뒤 스웨이(△)로 다시 붙는 식으로 쉬지 않고 압박해야 한다. 실패하면 참가비를 날리니 도전 전에 세이브해 둘 것.", en: "The final round costs 30,000 yen. Same trick as Returns, but he holds his breath far longer, which makes it much harder. Chain a few square swings in Dojima style, sway in with triangle and repeat so the pressure never lets up. Save first — a failed attempt still costs the entry fee." },
+          reward: { ko: "100,000엔", en: "100,000 yen" },
         },
         {
           number: 7,
@@ -53,7 +78,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 하츠마치", en: "Hatsumachi, Downtown Ryukyu" },
           trigger: { ko: "2장 진행 중", en: "Story Progress: Chapter 2" },
           body: { ko: "하츠마치에서 선택지를 고른 뒤 사기꾼들을 격파하면 클리어됩니다. 돈을 이미 지불했다면 돌려받습니다.", en: "Pick an option in Hatsumachi and defeat the scammers — if you already paid them, you get your money back." },
-          reward: { ko: "¥30,000 (and your money back if you paid them)", en: "¥30,000 (and your money back if you paid them)" },
+          reward: { ko: "30,000엔", en: "¥30,000 (and your money back if you paid them)" },
         },
         {
           number: 8,
@@ -61,7 +86,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 하츠마치", en: "Hatsumachi, Downtown Ryukyu" },
           trigger: { ko: "2장 진행 중 · 「실례합니다!」 클리어 후", en: "Story Progress: Chapter 2 / Complete Excuse Me!" },
           body: { ko: "하츠마치에서 다시 나타난 사기꾼들을 격파하면 클리어됩니다.", en: "Defeat the scammers when they turn up again in Hatsumachi." },
-          reward: { ko: "White Magatama Phone Strap", en: "White Magatama Phone Strap" },
+          reward: { ko: "스트랩: 곡옥(화이트)", en: "White Magatama Phone Strap" },
         },
         {
           number: 9,
@@ -69,7 +94,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 하츠마치", en: "Hatsumachi, Downtown Ryukyu" },
           trigger: { ko: "2장 진행 중 · 「또 실례합니다!」 클리어 후", en: "Story Progress: Chapter 2 / Complete Excuse Me Again!" },
           body: { ko: "하츠마치에서 마지막 사기꾼을 격파하면 테루요가 하이사이 걸즈에 합류합니다.", en: "Defeat the last scammer in Hatsumachi — Teruyo then joins the Haisai Girls." },
-          reward: { ko: "No-Entry Sign Phone Sticker · Teruyo joins the Haisai Girls", en: "No-Entry Sign Phone Sticker · Teruyo joins the Haisai Girls" },
+          reward: { ko: "시일: 표지판(차량 진입 금지), 테루요가 하이사이 걸즈 합류", en: "No-Entry Sign Phone Sticker; Teruyo joins the Haisai Girls" },
         },
         {
           number: 10,
@@ -77,7 +102,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 카리유시 상점가", en: "Kariyushi Arcade, Downtown Ryukyu" },
           trigger: { ko: "2장 진행 중", en: "Story Progress: Chapter 2" },
           body: { ko: "카리유시 상점가의 래플 부스로 이동한 뒤, 상점가 입구 간판을 촬영하면 래플과 포토 랠리가 열립니다.", en: "Walk to the raffle stall in Kariyushi Arcade and snap a pic of the arcade's entrance sign to unlock the Raffle and the Photo Rally." },
-          reward: { ko: "Raffle prizes · Raffle · Photo Rally · 3 Teruya Kokote Ame snacks", en: "Raffle prizes · Raffle · Photo Rally · 3 Teruya Kokote Ame snacks" },
+          reward: { ko: "복권권 10장, 테루야도 흑설탕 사탕 3개, 복권 및 포토 랠리 해금", en: "10 raffle tickets, 3 Teruyado brown-sugar candies; unlocks the raffle and Photo Rally" },
         },
         {
           number: 11,
@@ -85,7 +110,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 류큐 대로", en: "Ryukyu Boulevard, Downtown Ryukyu" },
           trigger: { ko: "2장 진행 중", en: "Story Progress: Chapter 2" },
           body: { ko: "류큐 대로에서 오카에게 말을 건 뒤 남자들을 격파하면 스트리트 서퍼 Mk 0을 받습니다.", en: "Talk to Oka on Ryukyu Boulevard and defeat the men to receive the Street Surfer Mk 0." },
-          reward: { ko: "Street Surfer Mk 0", en: "Street Surfer Mk 0" },
+          reward: { ko: "OKA 서퍼 영식", en: "Street Surfer Mk 0" },
         },
         {
           number: 12,
@@ -93,7 +118,7 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 아쿠아 스카이 근처 다리", en: "The bridge near Aqua Sky, Downtown Ryukyu" },
           trigger: { ko: "3장 진행 중 · 낮 시간대", en: "Story Progress: Chapter 3 / Daytime" },
           body: { ko: "낮에 아쿠아 스카이 근처 다리에서 「무슨 일 있으셨어요?」 → 「사기를 당하셨나요?」 → 「무슨 일 있으셨어요?」를 차례로 고르고 사기꾼들을 격파하면 클리어됩니다.", en: "During the day at the bridge near Aqua Sky, choose \"Did something happen to you?\", then \"Were you the victim of a scam?\", then \"Did something happen to you?\" again, and defeat the scammers." },
-          reward: { ko: "Mystical Moisturizer · Timid Woman joins the Haisai Girls", en: "Mystical Moisturizer · Timid Woman joins the Haisai Girls" },
+          reward: { ko: "신비한 화장수, 소심한 여성이 하이사이 걸즈 합류", en: "Mystical Moisturizer; Timid Woman joins the Haisai Girls" },
         },
         {
           number: 13,
@@ -101,19 +126,30 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 히비스커스 아이스크림", en: "Hibiscus Ice Cream, Downtown Ryukyu" },
           trigger: { ko: "3장 진행 중 · 낮 시간대", en: "Story Progress: Chapter 3 / Daytime" },
           body: { ko: "히비스커스 아이스크림에서 도움을 수락한 뒤 90초 안에 아이들에게 도착하면 됩니다. 5번까지 재시도할 수 있고, 모두 실패해도 자동으로 결말로 넘어갑니다.", en: "Agree to help at Hibiscus Ice Cream and reach the children within 90 seconds. You get five tries, and even failing them all takes you to the ending automatically." },
-          reward: { ko: "Reiko joins the Haisai Girls", en: "Reiko joins the Haisai Girls" },
+          reward: { ko: "레이코가 하이사이 걸즈 합류", en: "Reiko joins the Haisai Girls" },
         },
         {
           number: 14,
           title: { ko: "대도시의 꿈", en: "Big City Dreams" },
+          location: { ko: "류큐가 — 하츠마치 거리, POPPO 하츠마치점 앞", en: "Outside POPPO Hatsumachi, Hatsumachi St., Downtown Ryukyu" },
+          trigger: { ko: "3장, POPPO 하츠마치점 앞의 부녀를 발견", en: "Chapter 3, spot the father and daughter outside POPPO Hatsumachi" },
+          body: { ko: "도쿄로 상경하겠다는 딸 히나와 이를 말리는 아버지 마모루의 이야기. 마모루와 대화한 뒤 POPPO 류큐 거리 동점 앞의 히나를 찾아가 대화하고, 다시 마모루에게 돌아온다. 이후 Heaven's GOLF 앞에서 이벤트가 발생하며 잡졸들과 전투. 히나에게 해 줄 조언 선택지는 어느 쪽을 골라도 결과가 같다.", en: "Hina wants to move to Tokyo and her father Moru wants to stop her. Talk to Moru, find Hina outside POPPO E Ryukyu Blvd. and hear her out, then report back to him. A scene by Heaven's GOLF follows and ends in a fight with some thugs. The advice you give Hina has several options and any of them works." },
+          reward: { ko: "스트랩: 조개껍질(블루), 상경 소녀 히나 동료 합류", en: "Strap: Seashell (Blue); Hina joins your team" },
         },
         {
           number: 15,
           title: { ko: "아빠 노릇도 쉽지 않아", en: "It's Tough Being a Dad" },
+          location: { ko: "아사가오 — 앞 해변", en: "The beach in front of Morning Glory" },
+          trigger: { ko: "4장, 낮에 아사가오 앞 해변에 떨어진 책을 조사", en: "Chapter 4, examine the book lying on the beach outside Morning Glory during the day" },
+          body: { ko: "해변에 떨어져 있는 책을 조사하면 이벤트만으로 끝나는 짧은 서브스토리. 전투도 미니게임도 없고, 클리어하면 후속인 No.16이 열린다. 밤에는 발생하지 않으니 낮에 들를 것.", en: "Examining the book on the beach plays out as a scene and nothing more — no fight, no minigame. Clearing it opens the follow-up, No.16. It only appears in the daytime." },
+          reward: { ko: "No.16 해금", en: "Unlocks No.16" },
         },
         {
           number: 16,
           title: { ko: "부모님, 힘내세요!", en: "Keep at It, Parents!" },
+          location: { ko: "아사가오 — 정원", en: "The garden at Morning Glory" },
+          trigger: { ko: "No.15 클리어 후 아사가오 정원의 개 마메를 조사", en: "After No.15, examine Mame the dog in the Morning Glory garden" },
+          body: { ko: "마메를 쫓는 체이스 이벤트. 키류가 자동으로 달리는 동안 QTE가 표시되므로 화면에 뜨는 방향으로 L스틱을 넘겨주기만 하면 된다. 실패해도 즉시 재시도할 수 있다.", en: "A chase after Mame. Kiryu runs on his own and all you do is flick the left stick in whichever direction the QTE prompts show. A miss just lets you retry." },
         },
         {
           number: 17,
@@ -121,11 +157,15 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "류큐 시내 — 류큐 대로", en: "Ryukyu Boulevard, Downtown Ryukyu" },
           trigger: { ko: "4장 진행 중 · 추라 바 초급 시험을 마치라는 안내가 뜬 시점", en: "Story Progress: Chapter 4 / Chura Bar Beginner Exam completedSpecifically when you're prompted to complete it" },
           body: { ko: "추라 바 초급 시험을 마치라는 안내가 뜨는 시점에 류큐 대로에서 발생합니다. 선택지를 고르고 TV 출연에 동의한 뒤 「고아원을 운영합니다」 → 「공설시장」을 고르고 불량배들을 격파합니다. 계속하기를 선택하고 「바카 미타이」를 부르면 클리어됩니다.", en: "Triggers on Ryukyu Boulevard when you are prompted to finish the Chura Bar Beginner Exam. Pick either option, agree to be on TV, answer \"I run an orphanage\" then \"Public Market\", beat the punks, agree to continue and sing \"Baka Mitai\"." },
-          reward: { ko: "Leisure Trip Phone Sticker · Akko-san Phone Sticker · Akko-san Travel Phone Strap · Anokane Phone Strap · Akko-san Phone Lock Screen · Golden Akko-san StatueThis statue is placed in your room at Morning Glory", en: "Leisure Trip Phone Sticker · Akko-san Phone Sticker · Akko-san Travel Phone Strap · Anokane Phone Strap · Akko-san Phone Lock Screen · Golden Akko-san StatueThis statue is placed in your room at Morning Glory" },
+          reward: { ko: "스트랩: 악코 씨의 종, 스트랩: 악코 씨의 부탁! 훌쩍 여행, 시일: 악코 씨, 시일: 악코 씨의 부탁! 훌쩍 여행, 대기 화면: 악코 씨, 악코 씨 황금상(아사가오 방에 놓입니다)", en: "Akko-san Phone Strap, Leisure Trip Phone Strap, Akko-san Phone Sticker, Leisure Trip Phone Sticker, Akko-san Phone Lock Screen, Golden Akko-san Statue (placed in your room at Morning Glory)" },
         },
         {
           number: 18,
           title: { ko: "악코 씨에게 맡겨라! 도쿄 편", en: "Leave It All to Akko-san! In Tokyo!" },
+          location: { ko: "카무로초 — 텐카이치 거리 입구", en: "Tenkaichi St. entrance, Kamurocho" },
+          trigger: { ko: "6장, 밤에 텐카이치 거리 입구 게이트 부근", en: "Chapter 6, at the Tenkaichi St. gate at night" },
+          body: { ko: "전제로 No.17과 「최강열전 츳파리의 용」의 오키나와 최종 방위전 클리어가 필요하다. 스시긴에 들어가면 이벤트가 시작되고, 노래방에서 「바보 같지(악코 씨 버전)」을 부른 뒤 아무 곡이나 한 곡 더 부른다. 마지막에 잡졸들과 전투.", en: "Requires No.17 plus clearing Okinawa's final defence battle in Tuppari no Ryu. Enter Sushi Gin for the scene, sing \"Baka Mitai\" in Akko-san's version at karaoke and then any second song. It closes with a fight against some thugs." },
+          reward: { ko: "안테나: 악코 씨의 종, 악코 씨 동료 합류", en: "Antenna: Akko-san's Bell; Akko-san joins your team" },
         },
         {
           number: 19,
@@ -133,23 +173,37 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "카무로초 — 공원대로", en: "Park Boulevard, Kamurocho" },
           trigger: { ko: "4장 진행 중", en: "Story Progress: Chapter 4" },
           body: { ko: "공원대로에서 시작해 용궁으로 이동한 뒤 불량배들을 격파하면 용궁을 이용할 수 있게 됩니다.", en: "Start on Park Boulevard, head to the Dragon Palace and beat the hoodlums to gain access to it." },
-          reward: { ko: "Green Star Phone Antenna · Access to the Dragon Palace", en: "Green Star Phone Antenna · Access to the Dragon Palace" },
+          reward: { ko: "안테나: 스타(그린), 도박장 해금", en: "Green Star Phone Antenna; access to the Dragon Palace" },
         },
         {
           number: 20,
           title: { ko: "정보화 시대에 오신 걸 환영합니다", en: "Welcome to the Information Age" },
+          location: { ko: "카무로초 — 밀레니엄 타워 동쪽 거리", en: "The street east of Millennium Tower, Kamurocho" },
+          trigger: { ko: "4장, 밤에 밀레니엄 타워 동쪽 거리의 판매원 차림 남자들과 대화", en: "Chapter 4, talk to the men dressed as salesmen east of Millennium Tower at night" },
+          body: { ko: "판매원 행세를 하는 남자들에게 말을 걸면 정체가 드러나며 그대로 전투로 이어진다. 밤에만 발생하고 별도의 전제 조건은 없다.", en: "Talk to the men posing as salesmen, watch the pitch fall apart and the substory goes straight into a fight. Night only, no prerequisites." },
         },
         {
           number: 21,
           title: { ko: "신참의 고민", en: "A Rookie's Dilemma" },
+          location: { ko: "카무로초 — 서공원", en: "West Park, Kamurocho" },
+          trigger: { ko: "4장, 밤에 서공원 벤치에 앉아 있는 남자와 대화", en: "Chapter 4, talk to the man on the West Park bench at night" },
+          body: { ko: "벤치에 앉아 신세를 한탄하는 신입 사원에게 마실 것을 건네주는 이야기. 자판기 등에서 음료를 구해 전달하면 이야기가 이어지고, 마지막에 악질적인 남자들과 전투가 벌어진다.", en: "A new hire is slumped on the bench feeling sorry for himself; buy a drink and hand it over. The conversation continues from there and ends with a fight against a group of unpleasant men." },
         },
         {
           number: 22,
           title: { ko: "빨간 풍선", en: "The Red Balloon" },
+          location: { ko: "카무로초 — 아동공원", en: "Children's Park, Kamurocho" },
+          trigger: { ko: "낮에 아동공원의 소년과 대화(자료에 따라 6장 또는 9장 이후로 표기)", en: "Talk to the boy in Children's Park during the day (sources list it as Chapter 6 or Chapter 9 onward)" },
+          body: { ko: "날아가 버린 빨간 풍선을 쫓는 체이스 이벤트. No.16과 마찬가지로 자동으로 달리는 동안 QTE가 뜨므로 표시된 방향으로 L스틱을 입력하면 된다. 낮에만 발생한다.", en: "A chase after a red balloon that has drifted away. Like No.16 it runs itself, with QTE prompts you answer by flicking the left stick in the direction shown. Daytime only." },
+          reward: { ko: "안테나: 플라워(스카이블루)", en: "Antenna: Flower (Sky Blue)" },
         },
         {
           number: 23,
           title: { ko: "베이비 비 곤", en: "Baby Be Gone" },
+          location: { ko: "카무로초 — 타이헤이 대로와 나카미치 거리가 만나는 T자로", en: "The T-junction of Taihei Blvd. and Nakamichi St., Kamurocho" },
+          trigger: { ko: "4장, 밤에 전단지를 나눠 주는 여성과 대화", en: "Chapter 4, talk to the woman handing out flyers at night" },
+          body: { ko: "행방불명된 아이를 찾는 여성의 부탁. 제3공원으로 향하면 이벤트가 발생하고, 이어 뒷골목에 있는 수상한 남자와 대화한 뒤 그를 쓰러뜨리면 마무리된다.", en: "A woman is looking for a missing child. Head to Public Park 3 for the scene, then confront the suspicious man in the back alley and beat him to close the case." },
+          reward: { ko: "타프니스 ZZ, 스트랩: 금운 향상 부적", en: "Toughness ZZ, Strap: Lucky Money Charm" },
         },
         {
           number: 24,
@@ -161,14 +215,25 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 25,
           title: { ko: "마즈 파이터즈, 다시 뭉치다", en: "Mars Fighters, Reunited!" },
+          location: { ko: "카무로초 — 극장 앞 광장", en: "Theater Square, Kamurocho" },
+          trigger: { ko: "4장, 밤에 극장 앞 광장에 있는 남자와 대화", en: "Chapter 4, talk to the man in Theater Square at night" },
+          body: { ko: "특촬 히어로 「화성 파이터」의 팬을 자처하는 남자의 부탁으로 제3공원까지 동행하게 된다. 그곳에서 이벤트가 발생하고 미나미사와와 1대1 전투로 이어진다.", en: "A man claiming to be a Mars Fighter superfan asks you along to Public Park 3, where a scene plays out and turns into a one-on-one fight with Minamisawa." },
         },
         {
           number: 26,
           title: { ko: "엄마의 사랑을 위해서라면", en: "Anything for Mama's Love" },
+          location: { ko: "카무로초 — 센료 거리 동쪽 끝의 라멘 포장마차", en: "The ramen stall at the eastern edge of Senryo Ave., Kamurocho" },
+          trigger: { ko: "4장, 밤에 라멘 포장마차의 남자와 대화", en: "Chapter 4, talk to the man at the ramen stall at night" },
+          body: { ko: "포장마차에서 라멘을 먹던 남자의 사연을 듣고 야쿠자와 맞붙게 된다. 전투에서 이기면 마사히코가 츳파리의 용 동료로 합류한다.", en: "Hear out the man eating at the ramen stall and it lands you in a fight with yakuza. Win and Masahiko signs on as a Baddie Squad member." },
+          reward: { ko: "스트랩: 아뮬렛(블루), 마사히코 동료 합류", en: "Strap: Amulet (Blue); Masahiko joins your team" },
         },
         {
           number: 27,
           title: { ko: "K팝 아이돌 지망생", en: "Wannabe Kpop Idol" },
+          location: { ko: "카무로초 — 극장 앞 광장", en: "Theater Square, Kamurocho" },
+          trigger: { ko: "4장, 밤에 극장 앞 광장에서 발생", en: "Chapter 4, fires in Theater Square at night" },
+          body: { ko: "키류가 한류 스타 「이 류종」이 되어 연기하게 되는 서브스토리. 요구받는 대로 연기를 이어 가다 보면 고로츠키들과 전투가 벌어지고, 이를 정리하면 토요미와 키요미가 동료로 합류한다.", en: "Kiryu is roped into playing the Korean star \"Lee Ryujong\". Go along with the act, clear the brawl with the punks that follows, and Toyomi and Kiyomi join your team." },
+          reward: { ko: "토요미·키요미 동료 합류", en: "Toyomi and Kiyomi join your team" },
         },
         {
           number: 28,
@@ -176,15 +241,23 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
           location: { ko: "카무로초 — 핑크 거리", en: "Pink Street, Kamurocho" },
           trigger: { ko: "4장 진행 중", en: "Story Progress: Chapter 4" },
           body: { ko: "핑크 거리에서 남자를 격파하고 점을 봐 주기로 합니다. 선택지는 아무거나 골라도 되며, 마지막에 「10년 뒤 나는 어디에 있을까?」를 고르면 난바라가 하이사이 걸즈에 합류합니다.", en: "Beat the man on Pink Street and agree to the reading. Any option works until the last one — choose \"Where am I in 10 years?\" and Nanbara joins the Haisai Girls." },
-          reward: { ko: "Nanbara joins the Haisai Girls", en: "Nanbara joins the Haisai Girls" },
+          reward: { ko: "점술사 난바라 합류", en: "Nanbara the fortune teller joins your team" },
         },
         {
           number: 29,
           title: { ko: "다테 씨의 자존심", en: "Date-san's Pride" },
+          location: { ko: "카무로초 — 텐카이치 거리, 뉴 세레나", en: "New Serena, Tenkaichi St., Kamurocho" },
+          trigger: { ko: "6장, 뉴 세레나가 거점으로 해금된 직후 밖으로 나오면 발생(밤)", en: "Chapter 6, on stepping outside right after New Serena opens up as a base (night)" },
+          body: { ko: "뉴 세레나에 들어가면 이벤트가 시작된다. 메인 스토리를 조금 진행한 뒤 가게 앞에 쓰러져 있는 남자에게 말을 걸면 다시 이벤트가 발생하고, 츠키시마의 부하들과 전투. 정리하면 세레나의 마마가 동료로 합류한다.", en: "Entering New Serena starts the scene. Push the main story a little further, then talk to the man collapsed outside the bar for the follow-up, which ends in a fight with Tsukishima's men. Afterwards the Mama of Serena joins your squad." },
+          reward: { ko: "세레나의 마마 동료 합류", en: "The Mama of New Serena joins your team" },
         },
         {
           number: 30,
           title: { ko: "스타더스트의 스타 데뷔", en: "A Star's Debut at Stardust" },
+          location: { ko: "카무로초 — 텐카이치 거리, 스타더스트", en: "Stardust, Tenkaichi St., Kamurocho" },
+          trigger: { ko: "6장, 밤에 스타더스트의 유우야 일행과 대화", en: "Chapter 6, talk to Yuya and the others inside Stardust at night" },
+          body: { ko: "호스트 클럽 스타더스트에서 각 테이블의 헬프로 들어가 접객을 돕는다. 모든 헬프를 마치면 이벤트가 발생하고 잡졸들과 전투로 이어진다. 승리하면 카즈키와 유우야가 동료로 합류한다.", en: "Fill in as help at each table in the host club Stardust. Once every table is done a scene fires and turns into a fight with some thugs; win it and Kazuki and Yuya join your squad." },
+          reward: { ko: "10,000엔, 안테나: 라이트업(레인보우), 카즈키·유우야 동료 합류", en: "10,000 yen, Antenna: Illumination (Rainbow); Kazuki and Yuya join your team" },
         },
         {
           number: 31,
@@ -206,22 +279,42 @@ export const yakuzaKiwami3Substories: SubstoriesData = {
         {
           number: 2,
           title: { ko: "노숙자 지원 활동", en: "Homeless Outreach Effort" },
+          location: { ko: "호텔가 동쪽 울타리 옆 부스", en: "The booth against the fence east of the Hotel District" },
+          trigger: { ko: "「콜로세움 조사」 클리어 후 니시키야마조 사무소의 젠바에게 수주", en: "After Coliseum Investigation, take the job from Zenba at the Nishikiyama Family office" },
+          body: { ko: "수주한 뒤 호텔가에서 노숙자를 지원하는 사람들을 발견하면 이벤트가 시작된다. 먼저 노숙자들과, 이어서 뒤에 있던 야쿠자들과 연달아 싸우게 되므로 회복 아이템을 챙기고 갈 것.", en: "Once the job is accepted, spot the people running the homeless outreach in the Hotel District to start the scene. You fight the homeless men first and the yakuza behind them straight after, so bring healing items." },
+          reward: { ko: "카리스마 500pts, 300,000엔", en: "500 Karma points, 300,000 yen" },
         },
         {
           number: 3,
           title: { ko: "취업 지원 사기", en: "Employment Assistance Scam" },
+          location: { ko: "POPPO 시치후쿠 거리 동점", en: "POPPO on E Shichifuku St." },
+          trigger: { ko: "「콜로세움 조사」 클리어 후 젠바에게 수주", en: "After Coliseum Investigation, take the job from Zenba" },
+          body: { ko: "수주 후 POPPO 시치후쿠 거리 동점에 들어가면 이벤트가 발생하고 진상 남자와 전투. 이어 가게 앞에서 이벤트가 이어지며, 한 번 자리를 뜬 뒤 다시 POPPO에 들어가면 다음 이벤트가 발생한다. 마지막으로 센료 거리의 사무소에 들어가 수상한 남자들을 정리하면 완료된다.", en: "With the job accepted, enter the POPPO on E Shichifuku St. for a scene and a fight with a troublemaker, followed by another scene outside. Leave the area, come back into the same POPPO for the next scene, then finish by walking into the office on Senryo Ave. and clearing out the men running the scam." },
+          reward: { ko: "카리스마 600pts, 600,000엔", en: "600 Karma points, 600,000 yen" },
         },
         {
           number: 4,
           title: { ko: "낙서 근절 캠페인", en: "Graffiti Eradication Campaign" },
+          location: { ko: "시치후쿠 거리 서쪽, 아동공원 서편 건물 앞", en: "The building west of Children's Park on W Shichifuku St." },
+          trigger: { ko: "「콜로세움 조사」 클리어 후 젠바에게 수주", en: "After Coliseum Investigation, take the job from Zenba" },
+          body: { ko: "수주 후 시치후쿠 거리 서쪽 아동공원 서편 건물 앞에 모인 사람들을 조사하면 이벤트가 시작된다. 한 번 자리를 뜬 뒤 같은 장소를 다시 찾아가면 다음 이벤트가 발생하고, 나카미치 거리 뒤편에서 성가신 남자들과 전투를 벌이면 완료.", en: "Examine the crowd gathered outside the building west of Children's Park to start it. Leave and return to the same spot for the follow-up scene, then settle it in a fight behind Nakamichi St." },
+          reward: { ko: "카리스마 600pts, 600,000엔", en: "600 Karma points, 600,000 yen" },
         },
         {
           number: 5,
           title: { ko: "작전명: 볼", en: "Operation: Balls" },
+          location: { ko: "카무로초 전역", en: "All of Kamurocho" },
+          trigger: { ko: "「콜로세움 조사」 클리어 후 젠바에게 수주", en: "After Coliseum Investigation, take the job from Zenba" },
+          body: { ko: "카무로초에 숨겨진 「금옥」 7개를 모으는 수집 퀘스트. 위치는 마하볼 입구 엘리베이터 부근의 벽, 요시다 배팅 센터 내부의 벽, Kiss Shot Billiards & Bar의 당구대 위, 류구성(도박장) 안 교환 담당 옆, 나카미치 거리 북쪽 끝 건물의 엘리베이터 앞 벽, 코토부키 약국 안의 기린 간판, 스마일버거 극장 북서점에서 조금 남쪽에 있는 뉴 텐포 시네마의 포스터 7곳. 다 모은 뒤 젠바에게 보고하고 밀레니엄 타워 앞의 셴과 대화하면 선택지에 따라 보상이 갈린다. 「영원한 부」는 1,000만 엔, 「불로불사」는 스타미난 X 100개, 「섹시한 팬티」는 에비스야 카무로초에 1,500만 엔에 팔리는 셴의 팬티를 준다. 「마음으로부터의 인연」을 고르면 선택을 다시 할 수 있다.", en: "A collectathon for the seven hidden golden balls around Kamurocho: on the wall by the lift at the Mach Bowl entrance, on a wall inside the Yoshida Batting Center, on the pool table in Kiss Shot Billiards & Bar, beside the exchange clerk inside the Dragon Palace gambling hall, on the wall in front of the lift in the building at the north end of Nakamichi St., on the giraffe sign inside Kotobuki Drugs, and on a poster at New Tenpo Cinema just south of Smile Burger NW Theater Ave. Report to Zenba with all seven, then talk to Shen outside Millennium Tower: the choice you make sets the payout. Eternal Wealth gives 10,000,000 yen, Immortality gives 100 Staminan X, and Sexy Panties gives Shen's panties, which Ebisu Pawn Kamurocho buys for 15,000,000 yen. Picking A Bond From The Heart lets you choose again." },
+          reward: { ko: "카리스마 777pts, 1,000,000엔 (+ 셴의 선택 보상)", en: "777 Karma points, 1,000,000 yen, plus whichever reward you pick from Shen" },
         },
         {
           number: 6,
           title: { ko: "성매매 종사자 안전 확보", en: "Maintain Safety for Sex Workers" },
+          location: { ko: "핑크 거리 — 크레용 오토메 앞(밤 한정)", en: "Outside Crayon Otome on Pink St. (night only)" },
+          trigger: { ko: "「콜로세움 조사」 클리어 후 젠바에게 수주", en: "After Coliseum Investigation, take the job from Zenba" },
+          body: { ko: "밤에 핑크 거리의 크레용 오토메 앞에 있는 남자와 대화하면 이벤트가 시작된다. 이어지는 선택지에서 「말리지 않는다」 → 「말리지 않는다」 → 「말린다」 순으로 고른 뒤 골칫거리와 전투를 벌이면 완료된다. 밤에만 진행할 수 있으므로, 외전 최종장에서 해금되는 니시키야마조 사무소의 소파로 시간대를 밤으로 바꾸고 가면 확실하다.", en: "At night, talk to the man outside Crayon Otome on Pink St. to start it. Work through the prompts as don't stop him, don't stop him, then stop him, and finish the fight that follows. It is night-only, so use the sofa in the Nishikiyama Family office — unlocked in Dark Ties' final chapter — to switch the time of day if you need to." },
+          reward: { ko: "카리스마 600pts, 600,000엔", en: "600 Karma points, 600,000 yen" },
         },
         {
           number: 7,

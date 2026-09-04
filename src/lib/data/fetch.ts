@@ -55,12 +55,12 @@ function filterValid<T>(
 // every time. Bust via `revalidateTag("series-rows")` after content edits.
 const cachedSeriesRows = unstable_cache(
   fetchSeriesRowsInner,
-  // Bumped to v13 after writing 190 substory walkthroughs from the Yakuza Wiki
-  // and adding the Yakuza Kiwami 3 substory section, both of which feed the
-  // cached page data. The Data Cache outlives
+  // Bumped to v14 after filling the last 50 substory walkthroughs — Yakuza 6
+  // and Yakuza Kiwami 3, which the Yakuza Wiki has not written up — from the
+  // Japanese guide sites. The Data Cache outlives
   // a deployment, so content and inference changes stay invisible in
   // production until the key changes.
-  ["fetch-series-rows-v13"],
+  ["fetch-series-rows-v14"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );
 
@@ -189,6 +189,6 @@ const cachedGameRows = unstable_cache(
       guides: filterValid<GuideRow>(guides, isValidGuideRow, "guides"),
     };
   },
-  ["fetch-game-rows-v13"],
+  ["fetch-game-rows-v14"],
   { revalidate: 60 * 60 * 24, tags: ["series-rows"] },
 );

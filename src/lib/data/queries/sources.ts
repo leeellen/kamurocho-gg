@@ -95,15 +95,16 @@ export const getGuideSources = cache(async (locale: Locale): Promise<GameSources
       .sort((a, b) => b.achievements.length - a.achievements.length);
 
     const substoriesData = getSubstories(curated.appId);
-    const substorySources: SubstoryCitation[] = substoriesData?.source
-      ? [
-          {
-            url: substoriesData.source.url,
-            host: safeHost(substoriesData.source.url),
-            label: substoriesData.source.label,
-          },
-        ]
+    const substoryRefs = substoriesData?.source
+      ? Array.isArray(substoriesData.source)
+        ? substoriesData.source
+        : [substoriesData.source]
       : [];
+    const substorySources: SubstoryCitation[] = substoryRefs.map((src) => ({
+      url: src.url,
+      host: safeHost(src.url),
+      label: src.label,
+    }));
 
     const collectiblesData = getCollectibles(curated.appId);
     const collectibleAgg = new Map<string, { label: string; categories: Set<string> }>();

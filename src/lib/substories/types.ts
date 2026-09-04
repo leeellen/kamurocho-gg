@@ -50,5 +50,6 @@ export type SubstoriesData = {
   // Optional top-level overview (counts, completion tips).
   summary?: LocalizedText;
   groups: SubstoryGroup[];
-  source?: { label: string; url: string };
+  // One or more references the walkthroughs were written from.
+  source?: { label: string; url: string } | { label: string; url: string }[];
 };

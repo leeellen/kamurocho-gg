@@ -375,7 +375,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           number: 55,
           title: { ko: "자유연애", en: "Freedom to Romance" },
           chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "Shine", en: "Shine" },
+          location: { ko: "캬바쿠라 샤인", en: "Club Shine" },
           trigger: { ko: "SHINE 앞에서 손님과 다투는 호스티스에게 말 걸기", en: "Talk to the hostess arguing with a customer outside Shine." },
           body: { ko: "집착 손님에게 본인의 자유연애권을 인정시키는 일.", en: "Force the stalker customer to back off." },
           reward: { ko: "경험치", en: "EXP" },

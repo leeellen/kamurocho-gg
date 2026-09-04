@@ -1,7 +1,8 @@
 // Write hand-authored substory walkthrough bodies into src/lib/substories/*.ts.
 //
 // Input: a JSON array of
-//   { appId, number, koTitle, body: { ko, en }, reward?: { ko, en } }
+//   { appId, number, koTitle, body: { ko, en },
+//     reward?: { ko, en }, location?: { ko, en }, trigger?: { ko, en } }
 // `koTitle` disambiguates the entries that legitimately share a number
 // (Yakuza 0 numbers 49-54 twice, once per protagonist).
 //
@@ -27,6 +28,7 @@ const FILES = {
   2988580: "yakuza-0.ts",
   3717340: "yakuza-kiwami-2.ts",
   3717330: "yakuza-kiwami.ts",
+  3937550: "yakuza-kiwami-3.ts",
 };
 const ROOT = resolve("src/lib/substories");
 
@@ -68,7 +70,17 @@ for (const [appId, list] of byApp) {
     }
     const indent = hit[1];
     const blockEnd = src.indexOf(`\n${indent.slice(0, -2)}},`, hit.index + 1);
-    const block = src.slice(hit.index, blockEnd);
+    let block = src.slice(hit.index, blockEnd);
+
+    // `location` and `trigger` first: entries that were only documented by
+    // name and number carry neither, and `body` is inserted after `trigger`.
+    for (const field of ["location", "trigger"]) {
+      const value = row[field];
+      if (!value?.ko || !value?.en) continue;
+      const line = `${indent}${field}: { ko: ${q(value.ko)}, en: ${q(value.en)} },`;
+      const re = new RegExp(`\\n\\s*${field}: \\{.*?\\},`, "s");
+      block = re.test(block) ? block.replace(re, `\n${line}`) : `${block}\n${line}`;
+    }
 
     const bodyLine = `${indent}body: { ko: ${q(row.body.ko)}, en: ${q(row.body.en)} },`;
     let next;
