@@ -81,12 +81,15 @@ export const likeADragonIshin: CollectiblesData = {
     slug: "diligence-records",
     title: { ko: "정진기록 — 5/20/50/전체", en: "Diligence Records — 5/20/50/All" },
     summary: {
-      ko: "정진기록은 마을 곳곳의 소소한 심부름·선행 과제 목록입니다. 5건 시 「신의 미소」, 20건 시 「신의 기쁨」, 50건 시 「신의 찬가」, 전체 완료 시 「신도 겸손해지다」 업적이 발동합니다.",
-      en: "Diligence Records are small errands/good-deed tasks scattered around town. 5 unlocks 'The Gods Smile Upon Thee', 20 unlocks 'The Gods Rejoice at Thee', 50 unlocks 'The Gods Sing Thy Praises', and clearing all of them unlocks 'The Gods Hath Been Humbled'.",
+      ko: "정진기록(精進目録)은 심부름 목록이 아니라 「사람이나 동물에게 100회 말 걸기」, 「음식점에서 20회 식사」, 「항아리에서 아이템 20개 입수」처럼 플레이 누계를 세는 항목의 모음입니다. 어드벤처·배틀 등 카테고리로 나뉘어 있고 달성하면 덕(徳)을 받습니다. 5건 시 「신의 미소」, 20건 시 「신의 기쁨」, 50건 시 「신의 찬가」, 전체 완료 시 「신도 겸손해지다」 업적이 발동합니다.",
+      en: "Diligence Records are not errands but a list of cumulative play milestones — talk to 100 people or animals, eat 20 meals at restaurants, pull 20 items out of pots — split into Adventure, Battle and other categories, each paying out Virtue. 5 unlocks 'The Gods Smile Upon Thee', 20 unlocks 'The Gods Rejoice at Thee', 50 unlocks 'The Gods Sing Thy Praises', and clearing all of them unlocks 'The Gods Hath Been Humbled'.",
     },
     tips: [
-      { ko: "각 마을(교토·사츠마·쵸슈 등)의 정진기록 목록은 완료 목록(Completion List) 메뉴에서 지역별로 확인할 수 있습니다.", en: "Check the Completion List menu, sorted by town (Kyo, Satsuma, Choshu, etc.), to see each region's remaining records." },
+      { ko: "대부분은 메인·서브 스토리를 평범하게 진행하며 달리고, 우물과 항아리를 조사하는 것만으로 자연히 쌓입니다. 목록을 미리 훑어 두고 평소 플레이에 끼워 넣는 편이 가장 빠릅니다.", en: "Most of these fill themselves while you play normally — dashing around, checking wells and pots as you pass them. Skim the list early and fold the remaining ones into ordinary play." },
+      { ko: "우물 물 긷기처럼 횟수만 세는 항목은 둔소의 우물에서 긷기 → 둔소 밖으로 나가기 → 다시 들어와 긷기를 반복하면 빠르게 채워집니다. 플레이 스폿 횟수도 시작 직후 중단하면 카운트됩니다.", en: "Pure repetition entries go fast with a reset loop: draw from the well at the barracks, step outside, come back and draw again. Play-spot counts also tick if you start a game and quit immediately." },
+      { ko: "진행도는 회차를 넘겨 계승되지 않습니다. 2회차를 돌 생각이면 최종장 전에, 아니면 클리어 후 「막말 로망」에서 남은 항목을 정리하세요.", en: "Progress does not carry into a new playthrough. If you plan to replay, finish them before the final chapter; if not, mop up in Bakumatsu Roman after the credits." },
     ],
+    source: { label: "神ゲー攻略 — 龍が如く維新極 精進目録の効率的な達成方法と目録の一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/249947039415200889.html" },
   },
   {
     slug: "restaurants",

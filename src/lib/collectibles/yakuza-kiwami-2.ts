@@ -817,11 +817,97 @@ export const yakuzaKiwami2: CollectiblesData = {
     },
     {
       slug: "videos",
-      title: { ko: "비디오 마니아 — 본편 비디오 전부 시청", en: "Video Maniac — Watch Every Video" },
+      title: { ko: "비디오 마니아 — 본편 비디오 15편 전부 시청", en: "Video Maniac — Watch All 15 Videos" },
       summary: {
-        ko: "비디오 가게에서 본편의 모든 비디오를 한 번씩 시청하면 「비디오 마니아」 업적 발동.",
-        en: "Watch every video at the video store to unlock 'Video Maniac'.",
+        ko: "개인실 비디오 가게(카무로초 「퓨전」, 소텐보리 「간다라」)에서 15편을 한 번씩 시청하면 「비디오 마니아」 업적이 발동합니다. 입장료는 2편에 1,000엔이며, 3편은 처음부터 보유하고 나머지 12편은 빔과 웍스 카미야마에서 각 2,800엔에 구입합니다. 카미야마의 비디오는 서브스토리 No.24 「무기 비디오 상인」을 클리어해야 팔기 시작하니 이것부터 처리할 것.",
+        en: "Watch all 15 at a private video booth — Fusion in Kamurocho or Gandhara in Sotenbori — to unlock 'Video Maniac'. A booth costs ¥1,000 for two videos. Three are in your stock from the start; the other twelve are ¥2,800 each from Beam and from Kamiyama, who only starts selling once substory No.24 'Weapon Video Merchant' is cleared, so do that first.",
       },
+      tips: [
+        { ko: "두 편은 시청만으로 능력이 해금될 뿐, 실제 습득에는 별도의 경험치가 필요합니다.", en: "The two videos that teach abilities only unlock them — you still have to buy each with EXP." },
+      ],
+      source: [
+        { label: "GameFAQs — Yakuza Kiwami 2 Video Shops (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/218734-yakuza-kiwami-2/faqs/76366/video-shops" },
+        { label: "ゲーム攻略マン — 龍が如く極2 個室ビデオ屋", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/play-spot/private-videos.html" },
+      ],
+      items: [
+        {
+          number: 1,
+          title: { ko: "내 여자친구는 소악마", en: "My Girlfriend is a Demon" },
+          location: { ko: "기본 보유", en: "Available by default" },
+        },
+        {
+          number: 2,
+          title: { ko: "매혹의 핑크 스테이지", en: "A Splash of Pink" },
+          location: { ko: "기본 보유", en: "Available by default" },
+        },
+        {
+          number: 3,
+          title: { ko: "미망인 — 남편이 큰개미핥기에게 죽고", en: "An Anteater Killed My Husband!" },
+          location: { ko: "기본 보유", en: "Available by default" },
+        },
+        {
+          number: 4,
+          title: { ko: "신혼 러브러브 이야기", en: "Newlywed Paradise" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 5,
+          title: { ko: "버니짱을 잡아라", en: "The Hunt for Bunny-Chan" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 6,
+          title: { ko: "극도 이야기", en: "Yakuza Heartbreak" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 7,
+          title: { ko: "침몰선", en: "Sinking Ship" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 8,
+          title: { ko: "마스크 & 리퍼", en: "The Masked Ripper" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 9,
+          title: { ko: "더 스토커", en: "No Escape" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 10,
+          title: { ko: "크레이지 배트", en: "Batshit Crazy" },
+          location: { ko: "빔에서 구입 (2,800엔)", en: "Buy at Beam (¥2,800)" },
+        },
+        {
+          number: 11,
+          title: { ko: "슈퍼 쿵푸맨", en: "Super Kung Fu Man" },
+          location: { ko: "웍스 카미야마에서 구입 (2,800엔)", en: "Buy from Kamiyama (¥2,800)" },
+          reward: { ko: "배틀 스킬 「톤파의 마음가짐」, 히트 액션 「톤파의 극」", en: "Tonfa Mastery and Essence of Tonfa" },
+        },
+        {
+          number: 12,
+          title: { ko: "가라테 사범! 세가타 욘시로", en: "Yonshiro Segata, Karate Master" },
+          location: { ko: "웍스 카미야마에서 구입 (2,800엔)", en: "Buy from Kamiyama (¥2,800)" },
+        },
+        {
+          number: 13,
+          title: { ko: "취권 전설! 샴페인의 극!", en: "Legend of the Drunken Fist: Essence of Champagne" },
+          location: { ko: "웍스 카미야마에서 구입 (2,800엔)", en: "Buy from Kamiyama (¥2,800)" },
+        },
+        {
+          number: 14,
+          title: { ko: "싸움 지남! 오늘부터 이걸로 무적!", en: "Enemies Begone: The Brawler's Path" },
+          location: { ko: "웍스 카미야마에서 구입 (2,800엔)", en: "Buy from Kamiyama (¥2,800)" },
+        },
+        {
+          number: 15,
+          title: { ko: "경악! 필리핀의 비법", en: "The Filipino Ace" },
+          location: { ko: "웍스 카미야마에서 구입 (2,800엔). 8장 하야시 전투 이후에만 입고됩니다.", en: "Buy from Kamiyama (¥2,800); only stocked from Chapter 8, after the Hayashi fight" },
+          reward: { ko: "배틀 스킬 「칼리 스틱의 마음가짐」, 히트 액션 「칼리 스틱의 극」", en: "Kali Stick Mastery and Essence of Kali Sticks" },
+        },
+      ],
     }
   ],
 };

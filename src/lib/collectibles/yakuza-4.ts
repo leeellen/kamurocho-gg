@@ -5,11 +5,45 @@ export const yakuza4: CollectiblesData = {
   categories: [
     {
       slug: "hostess-cards",
-      title: { ko: "명함 헌터 — 캬바걸 명함 풀 컴플리트", en: "Card Hunter — Every Hostess Card" },
+      title: { ko: "명함 헌터 — 캬바걸 명함 10장", en: "Card Hunter — All 10 Hostess Cards" },
       summary: {
-        ko: "캬바레 클럽 + 「No.1 캬바걸을 만들자」 호스티스 메이커 트레이닝 호스티스까지 포함해 자유 입장으로 모든 명함을 입수하면 「명함 헌터」 업적 발동.",
-        en: "Collect a business card from every hostess via free-entry visits — main cabarets + 'Make a #1 Hostess' trainees included. Unlocks 'Card Hunter'.",
+        ko: "명함은 총 10장이며, 어느 캬바걸의 명함을 받을 수 있는지는 주인공별로 정해져 있습니다. 아키야마 3명, 타니무라 3명, 키류 4명이며 한 회차 안에서 세 주인공 모두로 각 가게를 자유 입장해야 「명함 헌터」 업적이 발동합니다. 자유 입장으로 접객을 받고 퇴점할 때 명함을 받으며, 명함을 받으면 다음부터 지명할 수 있게 됩니다. 에리제의 3명은 「No.1 캬바걸을 만들자」에서 그 아이를 No.1으로 만들어야 대상이 됩니다.",
+        en: "There are 10 cards, and which hostess gives you hers is fixed per protagonist — three for Akiyama, three for Tanimura, four for Kiryu — so a single playthrough has to visit each club as all three. Enter on a free-entry visit and you get the card on the way out, after which you can request her by name. The three at Elise only become available once you have made that girl No.1 in Hostess Maker.",
       },
+      tips: [
+        { ko: "서브스토리를 끝내고 받는 「호화 명함」은 업적과 무관합니다. 처음 받는 일반 명함만 세어집니다.", en: "The deluxe card you get for finishing a hostess's substory does not count — only the ordinary card from that first visit." },
+      ],
+      source: [
+        { label: "攻略通信 — 龍が如く4 キャバ嬢攻略", url: "https://kouryakutsushin.com/ryu4/caba.htm" },
+        { label: "PlayStationTrophies — Business Card Hunter", url: "https://www.playstationtrophies.org/game/yakuza-4-remastered-ps4/trophy/284339-business-card-hunter-.html" },
+      ],
+      groups: [
+        {
+          title: { ko: "아키야마 — 3장", en: "Akiyama — 3 cards" },
+          items: [
+            { number: 1, title: { ko: "리오", en: "Rio" }, location: { ko: "샤인", en: "Shine" } },
+            { number: 2, title: { ko: "노아 (미즈타니 노아)", en: "Noa Mizutani" }, location: { ko: "쥬얼", en: "Jewel" } },
+            { number: 3, title: { ko: "에레나 (아이하라 에레나)", en: "Erena Aihara" }, location: { ko: "쥬얼", en: "Jewel" } },
+          ],
+        },
+        {
+          title: { ko: "타니무라 — 3장", en: "Tanimura — 3 cards" },
+          items: [
+            { number: 4, title: { ko: "히메카 (카와사키 히메카)", en: "Himeka Kawasaki" }, location: { ko: "샤인", en: "Shine" } },
+            { number: 5, title: { ko: "치히로 (이치키 치히로)", en: "Chihiro Ikki" }, location: { ko: "쥬얼", en: "Jewel" } },
+            { number: 6, title: { ko: "나나미", en: "Nanami" }, location: { ko: "에리제 — 「No.1 캬바걸을 만들자」로 No.1 달성 후", en: "Elise — after making her No.1 in Hostess Maker" } },
+          ],
+        },
+        {
+          title: { ko: "키류 — 4장", en: "Kiryu — 4 cards" },
+          items: [
+            { number: 7, title: { ko: "시즈카 (사이토 시즈카)", en: "Shizuka Saito" }, location: { ko: "샤인", en: "Shine" } },
+            { number: 8, title: { ko: "마야 (모리 마야)", en: "Maya Mori" }, location: { ko: "쥬얼", en: "Jewel" } },
+            { number: 9, title: { ko: "히요리", en: "Hiyori" }, location: { ko: "에리제 — 「No.1 캬바걸을 만들자」로 No.1 달성 후", en: "Elise — after making her No.1 in Hostess Maker" } },
+            { number: 10, title: { ko: "쿄코", en: "Kyoko" }, location: { ko: "에리제 — 「No.1 캬바걸을 만들자」로 No.1 달성 후", en: "Elise — after making her No.1 in Hostess Maker" } },
+          ],
+        },
+      ],
     },
     {
       slug: "lockers",

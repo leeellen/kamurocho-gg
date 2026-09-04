@@ -5,27 +5,203 @@ export const yakuza5: CollectiblesData = {
   categories: [
     {
       slug: "purikura-frames",
-      title: { ko: "현지 프레이머 — 프리서클 지역 한정 프레임 (전 도시)", en: "Local Framer — Print Club Regional Frames" },
+      title: { ko: "현지 프레이머 — 프리서클 지역 한정 프레임 6종", en: "Local Framer — All 6 Regional Print Club Frames" },
       summary: {
-        ko: "카무로초·소텐보리·나가스가이·츠키미노·킨에이초·사쿠라가와의 프리서클 부스를 모두 방문해 지역 한정 프레임으로 1회씩 촬영하면 「현지 프레이머」 업적 발동.",
-        en: "Visit every Print Club booth across the six cities and shoot one photo with the regional frame to unlock 'Local Framer'.",
+        ko: "프리서클은 1회 400엔이며, 촬영할 프레임 3개를 고르는데 그중 1개가 그 도시의 지역 한정 프레임입니다. 6종을 모두 찍으면 「현지 프레이머」 업적이 발동합니다. 도시는 5곳이지만 카무로초만 클럽 세가가 극장 앞과 나카미치 거리 두 곳이고 각각 다른 지역 프레임을 쓰므로, 카무로초에서 두 번 찍어야 합니다.",
+        en: "Print Club costs ¥400 a go and you pick three frames, one of which is that city's regional frame. Shooting all six unlocks 'Local Framer'. There are only five cities, but Kamurocho has two Club SEGA branches — Theater Ave. and Nakamichi St. — each with its own regional frame, so shoot there twice.",
       },
+      tips: [
+        { ko: "촬영 중 ○×□△ 중 하나를 눌러 포즈를 잡는데, 성공 여부는 업적과 무관합니다. 프레임만 다르면 되니 실패해도 다시 찍을 필요는 없습니다.", en: "You strike a pose by pressing circle, cross, square or triangle mid-shot, but nailing the timing does not matter for the achievement — only that each regional frame gets used once." },
+      ],
+      source: { label: "攻略通信Wiki — 龍が如く5 プリサークル(プリクル)", url: "https://kouryakutsushin.com/ryu5-wiki/%%E3%%83%%97%%E3%%83%%AA%%E3%%82%%B5%%E3%%83%%BC%%E3%%82%%AF%%E3%%83%%AB(%%E3%%83%%97%%E3%%83%%AA%%E3%%82%%AF%%E3%%83%%AB)" },
+      items: [
+        { number: 1, title: { ko: "나가스가이 프레임", en: "Nagasugai frame" }, location: { ko: "후쿠오카 나가스가이 — 클럽 세가", en: "Club SEGA, Nagasugai (Fukuoka)" } },
+        { number: 2, title: { ko: "츠키미노 프레임", en: "Tsukimino frame" }, location: { ko: "삿포로 츠키미노 — 볼링장(클럽 세가가 없습니다)", en: "The bowling alley, Tsukimino (Sapporo) — there is no Club SEGA here" } },
+        { number: 3, title: { ko: "소텐보리 프레임", en: "Sotenbori frame" }, location: { ko: "오사카 소텐보리 — 클럽 세가", en: "Club SEGA, Sotenbori (Osaka)" } },
+        { number: 4, title: { ko: "킨에이초 프레임", en: "Kineicho frame" }, location: { ko: "나고야 킨에이초 — 클럽 세가", en: "Club SEGA, Kineicho (Nagoya)" } },
+        { number: 5, title: { ko: "카무로초 프레임 (극장 앞)", en: "Kamurocho frame (Theater Ave.)" }, location: { ko: "도쿄 카무로초 — 클럽 세가 극장 앞점", en: "Club SEGA Theater Ave., Kamurocho (Tokyo)" } },
+        { number: 6, title: { ko: "카무로초 프레임 (나카미치 거리)", en: "Kamurocho frame (Nakamichi St.)" }, location: { ko: "도쿄 카무로초 — 클럽 세가 나카미치 거리점", en: "Club SEGA Nakamichi St., Kamurocho (Tokyo)" } },
+      ],
     },
     {
       slug: "viewpoints",
-      title: { ko: "관광의 용 — 뷰 포인트 각 도시 1개 이상 촬영", en: "Sightseeing Dragon — Viewpoints in Every City" },
+      title: { ko: "관광의 용 — 5개 도시 뷰 포인트 25곳", en: "Sightseeing Dragon — All 25 Viewpoints" },
       summary: {
-        ko: "각 도시의 지정된 뷰 포인트를 카메라로 찍으면 「관광의 용」 업적 발동. 디지털 카메라 해금 후 도시 탐색 중 병행 진행이 효율적입니다.",
-        en: "Photograph the marked viewpoint in every city to unlock 'Sightseeing Dragon'. Easiest done alongside city exploration after the camera unlocks.",
+        ko: "도시마다 관광협회 직원에게 말을 걸면 「빌린 일안 리플렉스」를 받고, 화면 우측 상단에 「찍다」 아이콘이 뜨는 관광 스폿 5곳을 촬영할 수 있게 됩니다. 5개 도시 25곳을 모두 찍으면 「관광의 용」 업적이 발동합니다. 도시별로 5장을 찍고 직원에게 돌아가면 각각 2만 엔을 받고, 전 도시를 끝내면 편의점에서 무기 「펭귄 스피어」를 수령할 수 있습니다.",
+        en: "Talk to the tourism rep in each city to get the Borrowed SLR, then photograph the five sightseeing spots that show a \"Shoot\" prompt in the top-right corner. All 25 across the five cities unlocks 'Sightseeing Dragon'. Returning to the rep with a city's five pays ¥20,000 each time, and finishing every city lets you pick up the Penguin Spear weapon at a convenience store.",
       },
+      tips: [
+        { ko: "직원에게 보고하지 않아도 촬영한 시점에 컴플리트 판정 메일이 도착합니다. 보상만 안 받을 뿐이니 급하면 넘어가도 됩니다.", en: "The completion mail arrives the moment you take the shot, whether or not you report to the rep — you only miss the cash reward." },
+      ],
+      source: [
+        { label: "ダラゲ！ — 龍が如く5 ビューポイント（MAP付き）", url: "https://darage.com/ryu5/comp38.html" },
+        { label: "ゲーム攻略マン — 龍が如く5 ビューポイント", url: "https://dswiipspwikips3.jp/ryu5/scene.html" },
+      ],
+      groups: [
+      {
+        title: { ko: "후쿠오카 — 나가스가이 (관광협회 직원: 나가스가와 거리 남쪽)", en: "Fukuoka — Nagasugai (Tourism rep: S Nagasugawa St.)" },
+        items: [
+        {
+          number: 1,
+          title: { ko: "나가스가이 중앙", en: "Nagasugai Center" },
+          location: { ko: "나가스 대로 남쪽", en: "S Nagasu Blvd." },
+        },
+        {
+          number: 2,
+          title: { ko: "나가스 포장마차 거리", en: "Nagasu Food Stall Street" },
+          location: { ko: "나가스가와 거리 남쪽", en: "S Nagasugawa St." },
+        },
+        {
+          number: 3,
+          title: { ko: "치쿠젠가와 경관", en: "Chikuzen River View" },
+          location: { ko: "치쿠젠가와 거리 북쪽", en: "N Chikuzengawa St." },
+        },
+        {
+          number: 4,
+          title: { ko: "돈키호테", en: "Don Quijote" },
+          location: { ko: "메이쇼 거리 동쪽", en: "E Meisho St." },
+        },
+        {
+          number: 5,
+          title: { ko: "나가스가와 경관", en: "Nagasu River View" },
+          location: { ko: "오우세바시 다리", en: "Ouse Bridge" },
+        },
+        ],
+      },
+      {
+        title: { ko: "삿포로 — 츠키미노 (관광협회 직원: 키타코지 아케이드, 돈키호테 앞)", en: "Sapporo — Tsukimino (Tourism rep: Kitakoji arcade, outside Don Quijote)" },
+        items: [
+        {
+          number: 6,
+          title: { ko: "츠키미노 TV 타워", en: "Tsukimino TV Tower" },
+          location: { ko: "중앙역 거리 북쪽", en: "N Chuoeki St." },
+        },
+        {
+          number: 7,
+          title: { ko: "키타코지", en: "Kitakoji" },
+          location: { ko: "중앙역 거리", en: "Chuoeki St." },
+        },
+        {
+          number: 8,
+          title: { ko: "츠키미노 노면전차", en: "Tsukimino Streetcar" },
+          location: { ko: "츠카사 거리", en: "Tsukasa St." },
+        },
+        {
+          number: 9,
+          title: { ko: "닛카 간판", en: "Nikka Sign" },
+          location: { ko: "중앙역 거리", en: "Chuoeki St." },
+        },
+        {
+          number: 10,
+          title: { ko: "라벤더 거리", en: "Lavender St." },
+          location: { ko: "라벤더 거리", en: "Lavender St." },
+        },
+        ],
+      },
+      {
+        title: { ko: "오사카 — 소텐보리 (관광협회 직원: 비샤몬바시 다리)", en: "Osaka — Sotenbori (Tourism rep: Bishamon Bridge)" },
+        items: [
+        {
+          number: 11,
+          title: { ko: "소텐보리 거리", en: "Sotenbori St." },
+          location: { ko: "소텐보리 거리 동쪽, 카니도라쿠 부근", en: "E Sotenbori St., near Kani Douraku" },
+        },
+        {
+          number: 12,
+          title: { ko: "이와바시 다리", en: "Iwa Bridge" },
+          location: { ko: "이와바시 다리", en: "Iwa Bridge" },
+        },
+        {
+          number: 13,
+          title: { ko: "소텐보리 수로", en: "Sotenbori Canal" },
+          location: { ko: "비샤몬바시 다리", en: "Bishamon Bridge" },
+        },
+        {
+          number: 14,
+          title: { ko: "쇼후쿠초", en: "Shofukucho" },
+          location: { ko: "분자에몬스지, 르 마르셰 부근", en: "Bunzaemon St., near Le Marche" },
+        },
+        {
+          number: 15,
+          title: { ko: "아시타바 공원", en: "Ashitaba Park" },
+          location: { ko: "아시타바 공원, 세이브 포인트 부근", en: "Ashitaba Park, by the save point" },
+        },
+        ],
+      },
+      {
+        title: { ko: "나고야 — 킨에이초 (관광협회 직원: 쿠메 대로 남쪽)", en: "Nagoya — Kineicho (Tourism rep: S Kume Blvd.)" },
+        items: [
+        {
+          number: 16,
+          title: { ko: "킨에이 TV 타워", en: "Kinei TV Tower" },
+          location: { ko: "미드 스퀘어", en: "Mid Square" },
+        },
+        {
+          number: 17,
+          title: { ko: "가두 대형 비전", en: "Street Vision Screen" },
+          location: { ko: "쿠마노 대로", en: "Kumano Blvd." },
+        },
+        {
+          number: 18,
+          title: { ko: "미드 스퀘어", en: "Mid Square" },
+          location: { ko: "미드 스퀘어", en: "Mid Square" },
+        },
+        {
+          number: 19,
+          title: { ko: "대관람차", en: "Ferris Wheel" },
+          location: { ko: "고시키 거리 동쪽", en: "E Goshiki St." },
+        },
+        {
+          number: 20,
+          title: { ko: "오와리 에비스", en: "Owari Ebisu" },
+          location: { ko: "혼진초 거리 동쪽", en: "E Honjincho St." },
+        },
+        ],
+      },
+      {
+        title: { ko: "도쿄 — 카무로초 (관광협회 직원: 극장 앞 광장)", en: "Tokyo — Kamurocho (Tourism rep: Theater Square)" },
+        items: [
+        {
+          number: 21,
+          title: { ko: "카무로 극장", en: "Kamuro Theater" },
+          location: { ko: "극장 앞 거리", en: "Theater Ave." },
+        },
+        {
+          number: 22,
+          title: { ko: "밀레니엄 타워", en: "Millennium Tower" },
+          location: { ko: "밀레니엄 타워 앞뜰", en: "Millennium Tower forecourt" },
+        },
+        {
+          number: 23,
+          title: { ko: "카무로초 힐즈", en: "Kamurocho Hills" },
+          location: { ko: "공원 앞 거리, 카무로초 힐즈", en: "Park Blvd., Kamurocho Hills" },
+        },
+        {
+          number: 24,
+          title: { ko: "텐카이치 거리", en: "Tenkaichi St." },
+          location: { ko: "텐카이치 거리", en: "Tenkaichi St." },
+        },
+        {
+          number: 25,
+          title: { ko: "나카미치 거리", en: "Nakamichi St." },
+          location: { ko: "나카미치 거리", en: "Nakamichi St." },
+        },
+        ],
+      },
+      ],
     },
     {
       slug: "scavenger",
       title: { ko: "바닥을 보며 걷자 — 쓰레기·지도·추첨권·열쇠 누적 100개", en: "Eyes on the Ground — 100 Pickups" },
       summary: {
-        ko: "쓰레기·지도 조각·경품 추첨권·보관함 열쇠를 누적 100개 이상 입수하면 「바닥을 보며 걷자」 업적 발동. 모든 도시를 도보로 돌며 자연스럽게 모이는 컴플리트 라인.",
-        en: "Pick up 100+ ground items (trash / map fragments / lottery tickets / locker keys) to unlock 'Eyes on the Ground'. Builds passively while walking the cities.",
+        ko: "쓰레기·지도 조각·경품 추첨권·보관함 열쇠를 누적 100개 이상 입수하면 「바닥을 보며 걷자」 업적이 발동합니다. 바닥에 떨어진 물건은 지면이 빛나 있어 눈에 띄고, 어느 도시에서 주웠든 합산되므로 개별 위치 목록은 없습니다 — 배치와 개수 자체가 랜덤입니다.",
+        en: "Pick up 100 ground items — trash, map fragments, raffle tickets, locker keys — to unlock 'Eyes on the Ground'. They glow on the pavement, and pickups from any city all count toward the same total, so there is no per-item location list: both the placement and the amount are randomised.",
       },
+      tips: [
+        { ko: "떨어진 물건은 건물에 들어갔다 나오면 되살아납니다. 나가스가이라면 M스토어에 들어가 리스폰시키고, 가게 주변 한 바퀴를 돈 뒤 다시 M스토어에 들어가는 왕복이 가장 빠릅니다.", en: "Ground items respawn whenever you enter a building and come back out. In Nagasugai the fastest loop is: duck into the M Store to respawn them, run one circuit of the surrounding blocks, then step back into the M Store." },
+        { ko: "쓰레기 줍기는 1부 2장의 모리나가·아이자와 전투를 끝낸 뒤부터 가능하며, 누적량은 안내소 게시판에서 확인할 수 있습니다.", en: "Trash pickup opens after the Morinaga/Aizawa fight in Part 1, Chapter 2, and the running total is shown on the information-center noticeboard." },
+      ],
+      source: { label: "ダラゲ！ — 龍が如く5 ゴミ拾い（MAP付き）", url: "https://darage.com/ryu5/comp39.html" },
     },
     {
       slug: "coin-lockers",
