@@ -35,6 +35,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입한 후", en: "After buying the white suit in Chapter 5" },
+          body: { ko: "쓰러진 여성에게 약을 건넨 뒤 스마일 버거에서 3,000엔을 지불하고, 90초 안에 사만사에게 피자를 배달합니다. 마지막에 나타나는 남자를 격파하면 클리어됩니다.", en: "Give the lady medicine, pay ¥3,000 at Smile Burger, then get the pizza to Samantha within 90 seconds and beat the man who shows up." },
           steps: [
           { body: { ko: "챔피언 거리로 가면, 외국인 여성 (사만다)가 배를 붙잡으며, 괴로워 하고 있으므로 말을 걸도록 하자 코토부키 약국 등에서 회복 아이템 「스테미난 X」를 구입해서 사만다를 치료하면 서브 스토리가 시작된다. 사만다에게서 악세서리 「비밀 지갑」을 받으며", en: "Head to Champion District and approach the foreign woman (Samantha) who is doubled over in pain. Buy a recovery item 「Staminan X」 from Kotobuki Drugs or similar and give it to her to trigger the substory. Samantha gives you the Accessory 「Hidden Wallet」." } },
           { body: { ko: "【맵 3】에 있는 스마일 버거로 가서 피자를 부탁한다 스페셜 믹스 피자, L사이즈를 3000엔에 구입한다 피자를 한 손에 들고, 사만다가 있는 곳으로 배달하는 미니게임이 시작된다. 1분 30초의 제한 시간 내에 사만다가 있는 곳으로 피자를 배달해야 한다 지나가는 행인들과 부딪히면, 시간이 줄어드므로, 피하면서 진행하도록 하자 파란색 선의 루트로 진행하면, 행인과의 충돌 없이, 남은 시간 13 ~ 20초 정도로 도착이 가능하다 실패한 경우에는 스마일 버거에서, 다시 피자를 3000엔으로 구매해서 배달을 해야 한다. 피자를 사만다에게 건네 준 뒤, 질 나쁜 남자와 전투가 시작된다 전투 후, 사만다에게서 악세서리 「보안 지갑」을 받으며, 서브 스토리가 완료된다.", en: "Go to Smile Burger at [Map 3] and order a pizza. Buy a Special Mix Pizza (L size) for ¥3,000. A delivery minigame begins — deliver the pizza to Samantha within 1 minute 30 seconds. Bumping into pedestrians costs time, so dodge them. Following the blue route lets you arrive with 13–20 seconds to spare. If you fail, buy another pizza from Smile Burger for ¥3,000 and try again. After handing over the pizza, a fight breaks out with some thugs. Defeat them, and Samantha gives you the Accessory 「Security Wallet」. Substory complete." } },
@@ -48,6 +49,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 2장에서 키류의 아파트로 돌아갈 때", en: "While returning to Kiryu's apartment in Chapter 2" },
+          body: { ko: "셸락을 나갔다 다시 들어가 카스가와 딜러를 지켜본 뒤, 마피아 남자를 격파하면 클리어됩니다.", en: "Leave and return to Shellac, watch Kasuga and the dealer, then defeat the mafia man." },
           steps: [
           { body: { ko: "① 셰라크에 들어가면 컷신이 등장하며, 제일 안쪽의 자리에 앉으려고 하면 서브 스토리가 시작된다.", en: "1) Enter Shellac and a cutscene plays. Try to sit at the innermost seat to trigger the substory." } },
           { body: { ko: "② 냉정한 남자와의 대화 후에 1번 가게에서 나가지게 된다. - 셰라크에서 조금 떨어졌다가, 다시 셰라크에 들어가면 이벤트가 발생한다. - 밖에서 권총을 장비한 마피아와 전투가 시작된다. - 전투 후, 서브 스토리가 완료된다.", en: "2) After talking to the cold-looking man you'll be asked to leave. Move away from Shellac a bit, then go back inside to trigger a new event. Outside, a fight with mafia armed with pistols begins. Defeat them. Substory complete." } },
@@ -61,6 +63,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입한 후 서브 스토리 4 완료 후", en: "After buying the white suit in Chapter 5, after completing substory 4" },
+          body: { ko: "선택지를 고른 뒤 핑크 골목 → 셸락 → 다시 핑크 골목 순으로 이동해 인신매매범을 격파하면 클리어됩니다.", en: "Select a response, then go to Pink Alley, Shellac and back to Pink Alley, and defeat the trafficker." },
           steps: [
           { body: { ko: "챔피언 거리에 있는 셰라크로 들어가면, 카스가와 이야기를 나누는 이벤트가 발생하며 서브 스토리가 시작된다 처음 등장하는 선택지는 어느 것을 선택해도 상관없다 「동행한다」를 선택했다고 하더라도, 카스가가 혼자서 현장으로 향하게 되어 있다 핑크 거리 뒷골목의", en: "Enter Shellac on Champion District to trigger a conversation event with Kasuga, starting the substory. The first choice doesn't matter — even if you choose to accompany him, Kasuga will head to the scene alone. Head toward the alley behind Pink Street," } },
           { body: { ko: "【맵 2】쪽으로 향하도록 하자 카스가가 남자와 뭔가 이야기를 주고 나누는 광경을 목격한다 챔피언 거리에 있는 셰라크에 들어가면, 카스가가 가게에 오지 않았다는 것을 확인한다 카스가가 이야기를 나누고 있던 장소로 가면, 불량한 남자와 전투가 시작된다 전투에서 승리하면, 셰라크에서 이벤트가 진행되면서, 서브 스토리가 완료된다", en: "toward [Map 2]. You witness Kasuga talking to a suspicious man. Go back into Shellac on Champion District to confirm Kasuga never showed up. Return to where Kasuga was talking and a fight with thugs begins. Win the fight, then an event plays in Shellac to complete the substory." } },
@@ -93,6 +96,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제2장에서 키류 아파트로 돌아갈 때", en: "While returning to Kiryu's apartment in Chapter 2" },
+          body: { ko: "카무로 상점가 북쪽 출구를 거쳐 타이헤이 대로 동쪽으로 이동해 「오늘 일정과 내일 날씨」를 고르고 남자들을 격파합니다. 리 렁에게 돌아가 「영화 데이트」 → 「정오에 비」를 고른 뒤 상인에게 가면 클리어됩니다.", en: "Head to the north exit of the Kamuro Shopping Area and on to Taihei Boulevard East, answer \"Plans for today and tomorrow's weather.\" and beat the men. Return to Li Leung, answer \"A movie date.\" then \"Rain at noon.\", and go to the merchant." },
           steps: [
           { body: { ko: "【맵 1】 상점가 안쪽 남자 2명에게 접근 → 수상한 점주와 대화.", en: "Approach the two men inside the shopping arcade at [Map 1], then talk to the suspicious shopkeeper. Get the password from the man with a story at [Map 2]. Talk to Mon-mon at [Map 3] then choose either option (either way, fight 4 mafia). Pass the password to Lee Long for the weapon BROKEN M1985; give the wrong one and you fight Lee Long instead. Enter the password 「Subotenuhigeukiro」 on the shop owner's text input to complete." } },
           { body: { ko: "【맵 2】 사연이 있는 남자에게 합의어를 듣고,", en: "Get the password from the man with a story at [Map 2]," } },
@@ -156,6 +160,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제10장 후반, 아시아 거리 진 마을에 갈 때", en: "Late Chapter 10, while heading to Asia Street / Jinnai Town" },
+          body: { ko: "10장에서 발생하는 협박 전화 사건을 끝까지 진행하면 클리어됩니다.", en: "Play the blackmail phone call case that opens in Chapter 10 through to the end." },
           steps: [
           { body: { ko: "【맵 1】 핑크 거리 북쪽 젊은 텔클럽 점원에게 말을 건다. 「이상한 전화 상대」를 선택해 통화 진행(선택지는 보상 무관). 이후 서공원", en: "Talk to the young telephone club clerk north of Pink Street at [Map 1]. Select 「Strange caller」 and proceed with the call (choices don't affect the reward). Then head to West Park," } },
           { body: { ko: "【맵 2】에서 수상한 남자를 쓰러뜨린다.", en: "and defeat the suspicious man at [Map 2]." } },
@@ -178,6 +183,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 15 완료 후", en: "After completing substory 15" },
+          body: { ko: "「모집합니다!」에 이어지는 2차 모집 의뢰를 끝까지 진행하면 클리어됩니다.", en: "Play the follow-up recruitment request that continues from \"Help Wanted!\" through to the end." },
           steps: [
           { body: { ko: "서브 스토리 15 완료 후, 한번 사무실에서 나갔다가 다시 들어와, 비서 「마리나」에게 말을 걸면 인재 모집에 응한 사람이 있다는 이야기를 하면서 서브 스토리가 시작된다. 이번에도 좋고 나쁨에 관계없이, 면접이 끝나면 서브 스토리가 완료된다 ■ 선택지", en: "After completing substory 15, step out of the office and back in, then talk to secretary Marina to hear there's a new applicant, starting the substory. Just like before, the interview completing is all that's needed to finish the substory, regardless of your answers. ■ Choices:" } },
           { body: { ko: "1. 가업을 잇지 않는 건가?", en: "1) Aren't you going to take over the family business?" } },
@@ -256,6 +262,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 2장에서 서브 스토리 12를 완료 한 후 제 5장에서 카무로초 머니 아일랜드 개방 후", en: "After completing substory 12 in Chapter 2, then after Kamurocho Money Island opens in Chapter 5" },
+          body: { ko: "극장 광장 아카우시마루 옆에서 미라클 존슨 실종 소문을 들은 뒤 마하라자로 향합니다. 문을 지키는 거구의 경호원이 친구라는 말을 믿지 않으므로 실력으로 통과한 뒤 미라클과 만나면 클리어됩니다.", en: "Overhear the gossip about popstar Miracle Johnson going missing next to Akaushimaru on Theater Square, then head to Maharaja. The big bodyguard on the door will not believe you are a friend of Miracle, so get past him and meet Miracle." },
           steps: [
           { body: { ko: "서브 스토리 12를 완료 후", en: "After completing substory 12, approach the two men at [Map 1] to hear rumors that Miracle is at Maharaja, triggering the substory. After Kamurocho Money Island opens in Chapter 5, an event triggers at [Map 2]. A large foreign man is at the entrance to Maharaja; talk to him and a fight starts. After the fight, a dance battle with Miracle begins inside Maharaja. Miracle does all combos and racks up a huge step count — it's tough to beat. Even if you lose the dance battle, you still get to choose between a black box and a white box. The black box has Accessory 「Encounter Finder」; the white box has Armor 「Tour T-Shirt」. The Encounter Finder is recommended — it makes thugs easier to spot, making money-grinding much easier. Miracle joins as an advisor for Kamurocho Money Island, completing the substory." } },
           { body: { ko: "【맵 1】의 장소에 있는 두명의 남자들에게 다가가면 미라클이 마하라자에 있다는 소문을 들으면서 서브 스토리가 시작된다 제 5장에서 카무로초 머니 아일랜드가 개방 된 뒤,", en: "Approach the two men at [Map 1] and hear that Miracle is at Maharaja to start the substory. After Kamurocho Money Island opens in Chapter 5," } },
@@ -326,6 +333,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 29를 완료 후", en: "After completing substory 29" },
+          body: { ko: "마하라자에 들어가면 오기타 칸이 마이코와 히사아키를 압도한 뒤입니다. 두 사람에게 오기타에 대한 이야기를 듣고 도전을 받아들여, 댄스 배틀에서 오기타를 꺾으면 클리어됩니다.", en: "Enter Maharaja to find Kan Ogita has just beaten Maiko and Hisaaki. Hear them out about Ogita, currently the best dancer in Kamurocho, accept their plea and beat him in a dance battle." },
           steps: [
           { body: { ko: "① 서브 스토리 29을 완료 한 뒤, 한번 나갔다가 다시 들어오도록 하자 - 히사아키와 마이코의 이야기를 듣는다 - 참고로 오기타는, 용과 같이 5에서 다이나체어 예능 사무소에서 사와무라 하루카에게 댄스를 가르쳤던 「오키타 칸」 - 의자에 앉아있는 오기타에게 말을 걸어 댄스 승부를 한다", en: "1) After completing substory 29, step out and come back in. Listen to Hisaaki and Maiko's conversation. Note: OGITA is the same 「Okita Kan」 who taught Haruka Sawamura to dance at the Dyna Chair talent agency in Yakuza 5. Talk to OGITA sitting in a chair and start the dance battle." } },
           { body: { ko: "② 오기타는 스탭 수를 늘리면서 댄스를 추므로, 난이도 EASY에서도 조금 어렵다 - 이기는 방법은, 스탭수를 최대한 많이 늘리면서 지정된 버튼을 입력하도록 하자 - 그렇게 함으로써, 획득 할 수 있는 스코어가 늘어난다 - 피버 히트를 2회 이상 성공 시키면 어떻게든 오기타를 이길 수 있는 스코어가 된다.", en: "2) OGITA keeps building step count while dancing, making him somewhat difficult even on Easy. To win: rack up as many steps as possible and input the on-screen buttons accurately. This raises your score. Hitting Fever Hits 2 or more times should be enough to beat OGITA." } },
@@ -398,6 +406,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 36 완료 후", en: "After completing substory 36" },
+          body: { ko: "포켓 서킷 스타디움으로 가서 히데키의 도전을 수락하고 레이스에서 이기면 클리어됩니다.", en: "Go to the Pocket Circuit Stadium, accept Hideki's challenge and win the race." },
           steps: [
           { body: { ko: "① 서브 스토리 36을 완료 한 뒤, 아동 공원의 앞을 지나가려고 하면 타쿠마와 히데키가 있는 컷신이 발생 - 다가가면 2명의 이야기를 들으면, 서브 스토리가 발생한다", en: "1) After completing substory 36, pass in front of the children's park for a cutscene with Takuma and Hideki. Approach them and listen to their story to trigger the substory." } },
           { body: { ko: "② 포켓 스타디움으로 들어가, 아이들에게 말을 걸면 레이스 승부를 하게된다. - 승부에 이기면 서브 스토리가 완료된다. - 졌을 경우에는 이길 때까지 재도전을 할 수 있다. - 초반에는 선두를 달릴 수 있지만 점점 추월해온다. - 부스트를 사용하면 선두를 유지할 수 있다 머신 골렘 타이거 타이어 슈퍼 슬릭 타이어 핀 슈퍼 미들 핀 모터 슈퍼 스피드 모터 기어 슈퍼 중속 기어 배터리 고속 배터리 범버 없음", en: "2) Enter the Pocket Stadium and talk to the kids to start a race. Win to complete the substory. You can retry if you lose. You can lead at first but get overtaken — use boosts to hold the lead. Recommended parts: Machine: Golem Tiger / Tires: Super Slick / Pins: Super Middle / Motor: Super Speed / Gear: Super Mid / Battery: High-speed / Bumper: None" } },
@@ -437,6 +446,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "서브 스토리 40 완료 후", en: "After completing substory 40" },
+          body: { ko: "「천재 레이서」를 끝낸 뒤 이어지는 박사와의 라인을 진행해 승부를 마무리하면 클리어됩니다.", en: "After The Prodigious Racer, play the follow-up line with the Professor through to its final race." },
           steps: [
           { body: { ko: "① 서브 스토리 40을 완료 한 뒤,", en: "1) After completing substory 40, enter Achansa at [Map 1] to trigger the substory. Listen to Harumi's story then go to the Pocket Stadium and beat Harumi in a race. Retry if you lose. After winning receive Machine 「Cool Striker」 and Part 「Heavy Suspension」 to complete the substory. Parts: Machine: DRA-GON / Tires: Ultra Spike / Pins: Ultra Quick / Motor: Ultra Speed / Gear: Super Mid / Battery: High-speed / Suspension: None / Bumper: None" } },
           { body: { ko: "【맵 1】에 있는 아천사에 들어가면 서브 스토리가 발생 하루미의 이야기를 들은 뒤 포켓 스타디움으로 가서, 하루미와 레이스 승부에서 이긴다 졌을 경우에는 이길 때까지 재도전을 할 수 있다 승리 후, 머신 「쿨 스트라이커」, 파츠 「헤비 서스펜션」을 받으면서, 서브 스토리가 완료된다. 머신 DRA-GON 타이어 울트라 스파이크 타이어 핀 울트라 퀵 핀 모터 울트라 스피드 모터 기어 슈퍼 중속 기어 배터리 고속 배터리 서스펜스 없음 범퍼 없음", en: "Enter Achansa at [Map 1] to trigger the substory. Listen to Harumi's story, go to the Pocket Stadium and beat Harumi. Retry if you lose. After winning receive Machine 「Cool Striker」 and Part 「Heavy Suspension」. Parts: Machine: DRA-GON / Tires: Ultra Spike / Pins: Ultra Quick / Motor: Ultra Speed / Gear: Super Mid / Battery: High-speed / Suspension: None / Bumper: None" } },
@@ -498,6 +508,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 2장에서 키류의 아파트로 돌아갈 때", en: "While returning to Kiryu's apartment in Chapter 2" },
+          body: { ko: "버섯장수와의 라인을 진행해 가게가 문을 열게 하면 클리어됩니다. 인연 게이지를 100%까지 채우면 마피아를 고용할 수 있게 됩니다.", en: "Work the mushroom merchant's line until his shop opens. Filling his bond gauge to 100% also lets you hire the Mafia." },
           steps: [
           { body: { ko: "드림 머신 자판기가 있는 장소에 「수상한 남자」에게 말을 걸면 서브 스토리가 시작된다. 거리의 양아치와 전투가 시작되므로, 쓰러뜨리면 된다 그 뒤, 버섯 장수에게 「팽이 버섯」을 받으며, 서브 스토리가 완료된다 인연 게이지를 100%로 만든다 서브 스토리 완료 후, 「버섯장수」와 인연이 발생한다 버섯을 구입하면 인연 게이지가 오르게 된다. 가격이 싼 버섯을 1개씩 구입하는 것이 좋다 인연 게이지가 30% 정도가 되면, 버섯 장수가 어디론가 가버리게 된다. 한번 어딘가의 가게 등에 들어갔다가 나와 에어리어를 바꾸면, 다시", en: "Talk to the 「suspicious man」 near the Dream Machine vending machine to start the substory. Fight and defeat the street thugs. Receive 「Enoki Mushrooms」 from the mushroom merchant to complete the substory. ■ To reach 100% bond: After the substory, a bond event starts with 「Mushroom Merchant」. Buy mushrooms to raise the bond gauge — buy cheap ones one at a time. When the gauge reaches ~30%, the merchant disappears. Step into any shop to change areas, then return to [Map 1]" } },
           { body: { ko: "【맵 1】의 장소를 방문하면 버섯장수가 곤란해 하고 있다. 거리의 무뢰한 ×2명과 전투가 시작되므로, 쓰러뜨리면 된다 그 뒤, 선택지는 어느 것을 선택해도 상관없다 버섯을 구입하면서 인연 게이지가 60%가 되면, 다시 어디론가 가버리므로, 같은 방식으로 에어리어를 바꾼 뒤 돌아오도록 하자 버섯 장수가 야쿠자 × 3명에게 곤란을 겪고 있으므로, 쓰러뜨리면 된다 이후에 나오는 선택지 역시 어느 것을 선택해도 상관없다 버섯을 구입하면서 인연 게이지가 80%가 되면, 다시 어딘가로 가버린다 마찬가지 방법으로, 에어리어를 바꾼 뒤 돌아오도록 하자 이번에는 버섯 장수가 마피아 × 5명에게 둘러 쌓여있으므로, 구해주게 되면 인연 게이지가 100%가 된다 인연 게이지가 100%가 되면, 버섯 장수는 마을에서 없어지게 된다.", en: "to find the mushroom merchant in trouble at [Map 1]. Fight 2 street ruffians. Any choice after is fine. When the gauge reaches 60%, he disappears again — change areas and return to find him being accosted by 3 yakuza; defeat them. Again, any choice is fine. At 80%, he disappears again — return to find him surrounded by 5 mafia; rescue him to reach 100%. At 100% bond the mushroom merchant permanently leaves town." } },
@@ -511,6 +522,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 5장에서 흰 슈트를 구입 후", en: "After buying the white suit in Chapter 5" },
+          body: { ko: "카무로초의 미스터 리비도와 마주쳐 그의 의뢰를 끝까지 진행하면 클리어됩니다.", en: "Run into Kamurocho's Mr. Libido and see his request through to the end." },
           steps: [
           { body: { ko: "포포 쇼와거리 점의 가게 옆 골목을 지나가면, 묘하게 반질반질 거리는 남자 (윤락왕)이 말을 걸어오면서 서브 스토리가 시작된다. 없을 경우에는, 가게에 출입해서 에어리어를 바꾸도록 하자 이야기의 내용으로부터 유추해보면, 서브 스토리를 개시하기 위해서는 전화 카드를 입수 해야 할 필요가 있을지도 모른다 윤락왕의 이야기를 듣는 것만으로 서브 스토리가 완료된다. 인연 게이지 100% 서브 스토리 완료 후, 「윤락왕 · 카무로초」와의 인연이 발생한다", en: "Walk down the alley next to POPPO Showa Street and an oddly shiny man (Mr. Libido) approaches you, starting the substory. If he's not there, enter a shop to change areas and try again. Based on the story, you may need to have phone cards to trigger the substory. Just listening to Mr. Libido's story completes the substory. ■ To reach 100% bond: Find Mr. Libido at [Map 1] and show him your collected phone cards to raise the bond gauge." } },
           { body: { ko: "【맵 1】의 장소에서 윤락왕이 있으므로, 수집한 전화카드를 보여주면 인연 게이지가 상승한다 전화카드를 보여준 뒤는 그 자리에서 윤락왕이 어디론가 가버리게 되므로 한번 가게에 출입한 뒤 에어리어를 바꾸면, 다시 그 자리에 돌아와있다 자세하게 몆 장이 필요한지는 모르겠으나, 인연 게이지를 달성하기 위해서는 약 30장 정도의 전화카드가 필요하다 인연 게이지가 80%가 되면, 윤락왕이 괴로워하는 상태로", en: "After showing him cards, he immediately leaves. Enter a shop to change areas and he'll be back. Exact count unknown but ~30 phone cards seems needed to max the bond. When the gauge reaches 80%, Mr. Libido stands distressed at" } },
@@ -535,6 +547,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "여자친구에게 하트 목걸이를 주고 싶어 하는 청년을 돕는 의뢰입니다. 재고가 없으므로 위조품 소굴까지 안내한 뒤, 청년을 덮치는 불량배들을 격파하면 클리어됩니다.", en: "A young man wants a heart necklace for his girlfriend but none are in stock, so lead him to the forgery den and fight off the thugs who attack him." },
           steps: [
           { body: { ko: "르 마르셰의 앞으로 가면, 점원과 남자 손님이 다투고 있는 이벤트가 발생하면서 서브 스토리가 시작된다. 남자 손님에게 말을 걸면, 구입하고 싶었던 하트 목걸이가 전부 매진 되어서, 짝퉁이라도 입수 하고 싶다며 마지마에게 부탁한다.", en: "Head to Le Marché and an event starts with a clerk and a male customer arguing, triggering the substory. Talk to the male customer — the heart necklace he wanted is sold out and he asks Majima to find even a knockoff." } },
           { body: { ko: "【맵 2】로 가면, 「수상한 외국인」과 대화하는 컷씬이 발생한다. 「팬씨의 명함」을 받으면, 다시 남자 손님이 있는 곳으로 돌아가 건네주도록 하자 그 자리에서 조금 떨어져서, 위조업자의 사무실로 향하도록 하자 사무실 내에서 중국인 × 3명과 전투가 시작되므로, 쓰러뜨리면 된다 이벤트 후, 남자에게 「비밀 지갑」을 받으면서 서브 스토리가 완료된다.", en: "Go to [Map 2] for a cutscene with a 「suspicious foreigner」. Receive 「Fancy's Business Card」 and return to the male customer to hand it over. Move away from that spot a bit, then head to the forger's office. Fight 3 Chinese men inside. After the event, receive 「Hidden Wallet」 from the man. Substory complete." } },
@@ -558,6 +571,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제3장에서 마지마 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "거리 예인의 공연을 보고 이어지는 질문에 답하면 됩니다. 정답을 고르면 스태미난 로열, 오답이면 스태미난 X를 받습니다.", en: "Watch the street entertainer's act and answer the question that follows — a correct answer earns a Staminan Royale, a wrong one a Staminan X." },
           steps: [
           { body: { ko: "이와오바시 동상을 본따는 예술가를 조사하면 시작. 동상에서 멀어졌다가 다시 접근하면 이벤트 진행. 화장실 못 가는 토코키치 돕기. 선택지 3→3→3이 정답. 거리 양아치 전투 후", en: "Examine the artist copying the Iwaobashi statue to start. Move away from the statue and approach again to advance the event. Help Tokokichi who can't use the bathroom. Correct choices: 3→3→3. After a fight with street punks," } },
           { body: { ko: "【맵 2】 피자 가게 앞 토코키치에게 말 걸면 완료.", en: "talk to Tokokichi in front of the pizza shop at [Map 2] to complete." } },
@@ -621,6 +635,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "스시 긴에서 식사하면 점주가 맛이 어땠는지 묻습니다. 아버지에게 가게를 물려받고 자신 없어 하는 그에게 맛있다고 답해 주면 인연이 시작됩니다.", en: "Eat at Sushi Gin and the owner asks how the sushi was — he inherited the restaurant from his late father and is unsure of his cooking, so tell him it is good to start the bond." },
           steps: [
           { body: { ko: "아지와바 공원에서 「졸린 남자」에게 말을 걸면 시작. 아이에게 공을 돌려준 뒤 다시 대화. 아카타니의 사정을 듣고 이동.", en: "Talk to the 「sleepy man」 at Aziwaba Park to start. Return a ball to a child then talk again. Hear Akatani's circumstances and move on." } },
           { body: { ko: "【맵 3】 유스케 근처 이벤트 후 거리 양아치 4명 전투. 총을 든 적을 먼저 처리하는 것이 안전.", en: "After an event near Yusuke at [Map 3], fight 4 street thugs. Taking out the gun-wielding enemy first is the safest approach." } },
@@ -654,6 +669,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "이도즈카와의 라인을 끝내면 그가 쇼후쿠초 서쪽 M스토어 앞에 서게 되며, 말을 걸어 세이브할 수 있게 됩니다.", en: "Finish Idozuka's line and he takes up position in front of M Store Shofukucho on Shofukucho West, where you can talk to him to save the game." },
           steps: [
           { body: { ko: "소텐보리 거리 서쪽을 지나가려고 하면, 숄더폰의 남자가 휴대전화로 이야기를 하고 있는 이벤트가 발생하면서 서브 스토리가 시작된다. 숄더 폰을 사용하게 해주겠다고 하는 내용", en: "Try to pass through the west end of Sotenbori and an event triggers with a man talking on a shoulder bag phone, starting the substory. He offers to let you use the shoulder phone." } },
           { body: { ko: "【맵 2】에 있는 돈키호테에서 「건전지」를 구입해서 남자에게 건내준다 남자의 어깨가 아프다고 하므로,", en: "Buy 「Batteries」 at Don Quijote at [Map 2] and hand them over. He says his shoulder hurts," } },
@@ -688,6 +704,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "이와오 다리 근처에 쓰러진 남자에게 약을 주면 스타디움 점퍼를 입고 다리를 건너는 꿈을 이야기합니다. 시도할 때마다 나타나는 불량배들을 대신 처리해 주면 클리어됩니다.", en: "Give medicine to the man lying near Iwao Bridge and he tells you about his dream of walking across it in his \"Stajun\". Deal with the goons who turn up each time he tries." },
           steps: [
           { body: { ko: "이와오 다리 근처에서 「쓰러져 있는 남자」가 있으므로, 말을 걸면 서브 스토리가 시작된다. 남자에게 회복 아이템을 건내주는 것으로 되므로,", en: "Find a 「collapsed man」 near Iwao Bridge and talk to him to start the substory. You need to give him a recovery item," } },
           { body: { ko: "【맵 2】에 있는 M 스토어에서 「터프네스 Z」를 구입한 뒤 건내주도록 하자 스다가 다리를 걸어서 건널 때까지, 습격해오는 양아치들을 쓰러뜨리면 된다 슬러거 스타일로 한꺼번에 공격해 쓰러트려주는 것이 좋다 스다가 다리를 다 건너면, 서브 스토리가 완료된다.", en: "so buy 「Toughness Z」 at M Store at [Map 2] and hand it over. Defeat the thugs that attack as Suda walks across the bridge. Slugger Style to sweep them all at once is effective. Once Suda crosses the bridge, the substory is complete." } },
@@ -729,6 +746,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "쇼후쿠초 서쪽 아레시의 수련장 근처 모집 포스터를 본 뒤 아시타바 공원으로 갑니다. 수수께끼의 남자와 계약서에 서명하고 세 종류의 약을 차례로 투여받으면 1,000만 엔을 받습니다.", en: "Read the drug testing poster near Areshi's training place on Shofukucho West and head to Ashitaba Park. Sign the contract with the mystery man and take the three drugs in turn to collect ¥10,000,000." },
           steps: [
           { body: { ko: "쇼후쿠쵸 서쪽 [맵 1]에 있는 벽에서 벽보를 보면 서브 스토리가 발생한다", en: "Examine a notice on the wall in the west end of Shofukucho [Map 1] to trigger the substory." } },
           { body: { ko: "【맵 2】의 아시타바 공원으로 가서, 「수상한 남자」에게 말을 걸어 임상시험을 하도록 하자 사무실로 가게 되면, 계약서에 사인을 하는 이벤트가 발생하게 된다. 이벤트 후, 수상한 남자들 × 6명과 3회 전투을 하게 된다. 한 번 전투을 끝내면, 체력은 전부 회복된다 ■ 약의 부작용 · 1회전 : 시간 경과로 체력과 히트 게이지가 감소한다 · 2회전 : 전투 스타일이 마음대로 바뀌게 된다. · 3회전 : 시계가 나쁘게 된다 1회전에는 시간 경과로 체력이 감소하기 시작하면 회복 아이템을 사용하도록 하자 슬러거 스타일로 한꺼번에 공격하는 것이 쓰러뜨리기 쉽다 2회전에는 어째서 인지 습득하지 않았을 터인 댄서 스타일로 바뀌는 경우도 있다. 수 초 ~ 몇 십초 정도로 전투 스타일이 이것 저것으로 자동으로 바뀌게 된다 3회전에서는 시계가 나빠진다고 해도, 그 정도로 안보일 정도는 아니므로 걱정은 필요없다.", en: "Go to Ashitaba Park at [Map 2] and talk to a 「suspicious man」 to sign up for a drug trial. Head to the office for a contract-signing event. Then fight 6 suspicious men across 3 rounds. HP fully recovers between rounds.\n■ Drug side effects:\n· Round 1: HP and heat gauge drain over time\n· Round 2: Fighting style changes randomly\n· Round 3: Vision gets worse\nFor Round 1, use recovery items when HP starts draining. Slugger Style for sweeping attacks works well. In Round 2, you may switch to Dancer Style even if you never learned it — styles change automatically every few seconds. In Round 3 the vision degradation is mild, so don't worry too much." } },
@@ -742,6 +760,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "마지마", en: "Majima" },
           location: { ko: "소텐보리 — 거리 ? 아이콘", en: "Sotenbori — street ? icon" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
+          body: { ko: "호간지 요코초와 쇼후쿠초 서쪽 교차로에서 에란쿤과 부딪친 뒤, M스토어 쇼후쿠초 앞에서 다시 만나면 발이 아프다고 합니다. 회복 음료를 건네고 구역을 나갔다 돌아오기를 반복하며 그를 도우면 심부름을 시킬 수 있게 됩니다.", en: "Bump into Erran-kun at the Hoganji Yokocho and Shofukucho West junction, then meet him again outside M Store Shofukucho with his feet hurting. Give him any healing drink, then leave and return to keep helping him until he can run errands for you." },
           steps: [
           { body: { ko: "쇼후쿠쵸 서쪽에서 법인사 골목 [맵 1]로 가려고 하면 「달리는 남자」의 서브 스토리가 발생한다 M스토어 쇼후쿠쵸 점의 앞으로 가면, 달리는 남자가 다리를 아파하고 있다 눈 앞에 있는 M 스토어로 들어가 「터프네스 Z」를 구입해서 달리는 남자에게 건내주도록 하자 심부름남의 다리가 회복되면, 물러나므로, 일단 M 스토어에 쇼후쿠쵸 점에서 조금 떨어졌다가, 다시 M 스토어 쇼후쿠쵸로 돌아가면 심부름남이 있다. 심부름남의 운동화가 찢어져 있으므로", en: "Try to head from Shofukucho West toward Houjinsha Alley [Map 1] and a substory starts with a 「running man」. Head to M Store Shofukucho and the running man is clutching his leg in pain. Enter the M Store and buy 「Toughness Z」 to give him. Once he recovers he leaves — move away from M Store Shofukucho a bit, then return to find the errand boy again. His sneakers are torn," } },
           { body: { ko: "【맵 3】에 있는 돈키호테로 가서 「스니커」를 구입해서 건네주도록 하자 다시 M 스토어 쇼후쿠쵸 점에서 조금 떨어졌다가 돌아오면, 심부름남이 다리를 감싸고 있으므로, 말을 걸도록 하자 「땀 제거 시트」를 대신해서 건네주기 위해서 [맵 4]의 소텐보리 거리 쪽의 강으로 향하도록 하자 에미와 토모의 이벤트 후, 질 나쁜 남자와의 전투가 시작되므로, 쓰러뜨리면 된다 전투 후, 심부름남에게 진실을 전해 줄 것인지 선택지가 나오지만, 어느 것을 선택해도 상관없다. 서브 스토리가 완료 되면, 【맵 a】에 있는 심부름남에게 말을 걸면 심부름을 시킬 수 있게 된다. 한번 심부름을 시킨 뒤에는, 가게에 들어가거나, 에어리어를 바꾸면, 다시 심부름을 시킬 수 있게된다.", en: "so go to Don Quijote at [Map 3] and buy 「Sneakers」. Move away from M Store Shofukucho again and return — the errand boy is clutching his leg again. Talk to him. Head to the river on the Sotenbori Street side at [Map 4] to deliver 「Deodorant Sheets」 in his place. After an event with Emi and Tomo, fight and defeat the thugs. Afterward, a choice appears about whether to tell the errand boy the truth — either is fine. After completing the substory, talk to the errand boy at [Map a] to be able to send him on errands. After sending him once, enter a shop or change areas to send him again." } },
@@ -943,6 +962,7 @@ export const yakuza0Substories: SubstoriesData = {
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "카무로초 — 거리 ? 아이콘", en: "Kamurocho — street ? icon" },
           trigger: { ko: "제 2장에서 노숙자에게 술을 건넨 뒤", en: "After giving liquor to the homeless man in Chapter 2" },
+          body: { ko: "텐카이치 거리에서 바커스가 부르면 제3공원 건너편 골목으로 갑니다. 빚쟁이들을 막아 달라는 부탁을 받고 나타나는 상대를 처리하면 바커스의 수련을 받을 수 있게 됩니다.", en: "When Bacchus calls out on Tenkaichi Alley, go to the alley across from Public Park 3. He asks you to keep his debt collectors at bay — deal with the man who turns up and his training opens up." },
           steps: [
           { body: { ko: "메인 스토리 진행 할 때, 반드시 받게 되는 서브 스토리다 노숙자 들에게 술을 건넨 뒤, 챔피온 거리로 향할 때 이벤트가 발생한다.", en: "This substory is unavoidable during the main story. After giving liquor to the homeless men and heading toward Champion District, an event occurs." } },
           { body: { ko: "【맵 2】의 장소에 있는 바커스의 이야기를 들으면, 권총을 장비한 「의문의 남자」와 전투가 시작된다 의문의 남자를 쓰러뜨리면 서브 스토리가 완료된다. 이 이후, 바커스의 수행을 받을 수 있게 된다.", en: "Listen to Bacchus's story at [Map 2] and a fight with a 「mysterious man」 armed with a pistol begins. Defeat him to complete the substory. Bacchus's training becomes available afterward." } },

@@ -63,6 +63,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 큐슈 일등성", en: "Kamurocho — Kyushu No. 1 Star" },
           trigger: { ko: "라멘 가게 점장과 반복 대화", en: "Repeatedly talk to the ramen shop owner." },
+          body: { ko: "큐슈 일등성의 메뉴를 전부 먹으면 점장이 동료가 됩니다.", en: "Complete the menu at Kyushu No. 1 Star and the chef becomes an ally." },
         },
         {
           number: 36,
@@ -70,6 +71,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 어린이 공원", en: "Kamurocho — Children's Park" },
           trigger: { ko: "공원 화장실 앞 곤란한 남자에게 휴지를 건네주기", en: "Hand toilet paper to the desperate man at the park restroom." },
+          body: { ko: "공원 화장실에서 곤란해하는 바바에게 속옷을 건네면 동료가 됩니다.", en: "Give Baba, stuck in the park restroom, a pair of underwear and he becomes an ally." },
         },
         {
           number: 37,
@@ -77,6 +79,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 포포 쇼와 거리점", en: "Kamurocho — POPPO Showa St." },
           trigger: { ko: "포포 점원과 반복 대화", en: "Repeatedly talk to the POPPO clerk." },
+          body: { ko: "서쪽 시치후쿠 거리 포포의 열정적인 점원과 만난 뒤, 이 매장의 단골이 되면 동료가 됩니다.", en: "Meet the very enthusiastic employee at the Poppo on West Shichifuku Street and become a regular there." },
         },
         {
           number: 56,
@@ -93,6 +96,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "3장", en: "Chapter 3" },
           location: { ko: "카무로초 — 골프 바", en: "Kamurocho — Golf Bar" },
           trigger: { ko: "골프 바에서 니어핀 상급을 클리어한 뒤 아카기에게 말 걸기", en: "Clear Nearpin Advanced at the golf bar, then talk to Akagi." },
+          body: { ko: "요코보리 골프 센터에서 아카기의 도전을 받아 상급 코스에서 300점을 넘기면 클리어됩니다.", en: "Take Akagi's challenge at the Yokobori Golf Center and score over 300 points on the advanced course." },
           reward: { ko: "골프 클럽 「알바트로스」", en: "Albatross golf club" },
         },
       ],
@@ -268,6 +272,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "5장", en: "Chapter 5" },
           location: { ko: "카무로초 — 카무로초 힐즈 공사장", en: "Kamurocho — Kamurocho Hills construction site" },
           trigger: { ko: "투기장 토너먼트 진행 중 공사장 인부에게 말 걸기", en: "During the arena tournament arc, chat with the construction worker." },
+          body: { ko: "카무로초 힐즈의 노동자에게 약을 건네면 동료가 됩니다.", en: "Give the worker at Kamurocho Hills medicine and he becomes an ally." },
         },
         {
           number: 42,
@@ -424,6 +429,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
           trigger: { ko: "No.23 클리어 후 뱌쿠렌 노사와 재대화", en: "Talk to Bairen after No.23." },
+          body: { ko: "「위기의 할머니」를 끝내면 소텐보리행 택시가 열립니다. 비샤몬 다리 아래에서 기다리는 노사와 대화한 뒤, 카무로초 서쪽 시치후쿠 포포에서만 파는 수제 쿠키를 사다 주면 클리어됩니다.", en: "Completing Granny In Peril opens taxi travel to Sotenbori. Talk to her waiting under Bishamon Bridge, then buy the bag of Handmade Cookies — sold only at the Poppo on West Shichifuku in Kamurocho — and bring it back." },
         },
         {
           number: 63,
@@ -431,6 +437,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
           trigger: { ko: "No.62 클리어 후 재방문", en: "Return after No.62." },
+          body: { ko: "부탁 1에 이어 노사가 요청하는 두 번째 심부름을 완수하면 클리어됩니다.", en: "Carry out the second errand the master asks for after her first request." },
         },
         {
           number: 64,
@@ -438,6 +445,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "8장", en: "Chapter 8" },
           location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
           trigger: { ko: "No.63 클리어 후 재방문", en: "Return after No.63." },
+          body: { ko: "노사의 마지막 부탁까지 완수하면 뱌쿠렌류 기술을 전수받습니다.", en: "Complete the master's final request to be taught the Bairen style techniques." },
           reward: { ko: "뱌쿠렌류 기술 마스터", en: "Bairen techniques mastered" },
         },
       ],
@@ -484,6 +492,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "13장", en: "Chapter 13" },
           location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
           trigger: { ko: "No.38 클리어 후", en: "After No.38." },
+          body: { ko: "카즈야 아몬을 격파한 뒤 링거헛 근처의 지로를 찾아 말을 걸고 승부에서 이기면, 지로가 마지마 건설에 합류합니다.", en: "After beating Kazuya Amon, find and talk to Jiro near Ringer Hut and defeat him — he then joins Majima Construction." },
         },
         {
           number: 40,
@@ -491,6 +500,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "13장", en: "Chapter 13" },
           location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
           trigger: { ko: "No.39 클리어 후", en: "After No.39." },
+          body: { ko: "지로 아몬을 격파한 뒤 공원 북쪽에서 산고를 찾아 말을 걸고 격파하면, 산고가 마지마 건설에 합류합니다.", en: "After beating Jiro Amon, find and talk to Sango north of the park and defeat him — he then joins Majima Construction." },
         },
         {
           number: 41,
@@ -521,6 +531,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 도톤보리 강변", en: "Sotenbori — Riverwalk" },
           trigger: { ko: "강변의 길거리 기타리스트와 반복 대화", en: "Repeatedly chat with the busking guitarist." },
+          body: { ko: "비샤몬 다리에서 코맹맹이 소리로 노래하는 가수를 만나 포켓 티슈를 건네면 동료가 됩니다.", en: "Meet the nasally singer on Bishamon Bridge and hand him some Pocket Tissues to make him an ally." },
         },
         {
           number: 60,
@@ -528,6 +539,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 쇼토쿠초", en: "Sotenbori — Shotoku-cho" },
           trigger: { ko: "쿠로카와와 초회합 후 호객꾼에게 말 걸기", en: "After meeting Kurokawa, talk to the tout." },
+          body: { ko: "소텐보리 거리 카니도라쿠 근처에서 불량배에게 협박당하는 호객꾼을 대신해 상대를 격파하면 동료가 됩니다.", en: "Near Kani Douraku on Sotenbori Street, beat the thug threatening the barker and he becomes an ally." },
         },
         {
           number: 65,
@@ -535,6 +547,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 도톤보리 거리", en: "Sotenbori — Dotonbori St." },
           trigger: { ko: "스카우트 여성과 반복 대화", en: "Repeatedly chat with the scout lady." },
+          body: { ko: "동쪽 쇼후쿠초 거리 스마일 버거 소텐보리점 근처에서 가면 쓴 호객꾼의 권유를 거절하면, 남자 둘이 그녀를 압박합니다. 이들을 물리쳐 주면 동료가 됩니다.", en: "Near Smile Burger Sotenbori on East Shofukucho Street, decline the masked barker's offer and two men move in on her — see them off and she becomes an ally." },
         },
         {
           number: 66,
@@ -542,6 +555,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 이즈미바시 부근", en: "Sotenbori — Near Izumi Bridge" },
           trigger: { ko: "행인 아주머니와 반복 대화", en: "Chat repeatedly with the older lady." },
+          body: { ko: "동쪽 쇼후쿠초 거리에서 복통을 호소하는 여성을 돕겠다고 하면, 사실은 강가에서 잃어버린 부적을 찾아 달라는 부탁입니다. 부적을 찾아 요리코에게 돌려주면 동료가 됩니다.", en: "Agree to help the woman clutching her stomach on East Shofukucho Street and she admits she really wants her lost amulet found by the river — return it to Yoriko and she becomes an ally." },
         },
         {
           number: 67,
@@ -549,6 +563,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 신미암", en: "Sotenbori — Kamiajian" },
           trigger: { ko: "음식점 점주와 반복 대화", en: "Chat repeatedly with the eatery owner." },
+          body: { ko: "코미안에서 처음 식사한 뒤 점주가 붙잡습니다. 새 요리를 위해 손에 맞는 칼이 필요하다고 하니, 칼을 구해 건네면 동료가 됩니다.", en: "After eating at Komian for the first time, the owner stops you on the way out — he needs a new knife with the right feel for a new dish. Find one and give it to him." },
         },
         {
           number: 68,
@@ -556,6 +571,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "2장", en: "Chapter 2" },
           location: { ko: "소텐보리 — 포포", en: "Sotenbori — POPPO" },
           trigger: { ko: "포포 점원과 반복 대화", en: "Chat repeatedly with the POPPO clerk." },
+          body: { ko: "소텐보리 거리 포포의 신입 점원 타나카가 첫 출근에 긴장해 있습니다. 여러 번 말을 걸어 진정시켜 주면 동료가 됩니다.", en: "Tanaka, a nervous first-day employee at the Poppo on Sotenbori St., needs calming down — talk to him repeatedly and he becomes an ally." },
         },
         {
           number: 44,
@@ -624,6 +640,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "10장", en: "Chapter 10" },
           location: { ko: "소텐보리 — 그랜드 부근", en: "Sotenbori — Near the Grand" },
           trigger: { ko: "No.50 클리어 후", en: "After No.50." },
+          body: { ko: "쇼후쿠초에서 길을 물었다가 계속 시달리는 여성을 발견하면 개입해 불량배들을 격파합니다. 미키가 감사를 전하며 라인이 마무리됩니다.", en: "On Shofukucho, step in for the woman being harassed by the men she asked for directions and beat them — Miki thanks you afterwards." },
         },
         {
           number: 54,
@@ -693,6 +710,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "4장 이후", en: "After Chapter 4" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "그랜드픽스 진행 중 발생", en: "During the Grand Prix arc." },
+          body: { ko: "해당 남자를 격파하면 클리어됩니다.", en: "Defeat the man to clear it." },
           prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
         },
         {
@@ -701,6 +719,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "4장 이후", en: "After Chapter 4" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "그랜드픽스 진행 중", en: "During Grand Prix." },
+          body: { ko: "호스트들을 격파하면 클리어됩니다.", en: "Defeat the hosts to clear it." },
           prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
         },
         {
@@ -709,6 +728,7 @@ export const yakuzaKiwami2Substories: SubstoriesData = {
           chapter: { ko: "6장 이후", en: "After Chapter 6" },
           location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
           trigger: { ko: "그랜드픽스 진행 중 발생", en: "During the Grand Prix." },
+          body: { ko: "쇼코를 포 샤인으로 데려간 뒤, 가게를 나갔다 다시 들어가면 클리어됩니다.", en: "Take Shoko to Four Shine, then leave the club and re-enter." },
           prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
         },
         {
