@@ -32,6 +32,15 @@ type AchHit = {
   gameAppId: number;
 };
 
+type GuideHit = {
+  kind: "substory" | "collectible" | "minigame";
+  gameSlug: string;
+  gameName: string;
+  tab: string;
+  title: string;
+  subtitle: string;
+};
+
 type Suggestion = { appId: number; name: string };
 
 type Labels = {
@@ -43,6 +52,7 @@ type Labels = {
   emptyHint: string;
   gamesHeader: string;
   achievementsHeader: string;
+  guidesHeader: string;
   clearRecent: string;
   clearInput: string;
   achievements: string;
@@ -53,9 +63,11 @@ const RECENT_KEY = "kamurocho:recent-searches";
 export function SearchClient({
   labels,
   quickGames,
+  locale,
 }: {
   labels: Labels;
   quickGames: Suggestion[];
+  locale: "ko" | "en";
 }) {
   const [q, setQ] = useState("");
   const [debouncedQ, setDebouncedQ] = useState("");
@@ -70,6 +82,7 @@ export function SearchClient({
   });
   const [games, setGames] = useState<GameHit[]>([]);
   const [achievements, setAchievements] = useState<AchHit[]>([]);
+  const [guides, setGuides] = useState<GuideHit[]>([]);
   const [loading, setLoading] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -102,16 +115,18 @@ export function SearchClient({
     const ctrl = new AbortController();
     abortRef.current = ctrl;
     const loadingTimer = window.setTimeout(() => setLoading(true), 0);
-    fetch(`/api/search?q=${encodeURIComponent(debouncedQ)}`, { signal: ctrl.signal })
+    fetch(`/api/search?q=${encodeURIComponent(debouncedQ)}&locale=${locale}`, { signal: ctrl.signal })
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
-      .then((data: { games: GameHit[]; achievements: AchHit[] }) => {
+      .then((data: { games: GameHit[]; achievements: AchHit[]; guides?: GuideHit[] }) => {
         setGames(data.games ?? []);
         setAchievements(data.achievements ?? []);
+        setGuides(data.guides ?? []);
       })
       .catch((err) => {
         if (err.name !== "AbortError") {
           setGames([]);
           setAchievements([]);
+          setGuides([]);
         }
       })
       .finally(() => setLoading(false));
@@ -119,7 +134,7 @@ export function SearchClient({
       window.clearTimeout(loadingTimer);
       ctrl.abort();
     };
-  }, [debouncedQ]);
+  }, [debouncedQ, locale]);
 
   const persistRecent = (term: string) => {
     const next = [term, ...recent.filter((r) => r !== term)].slice(0, 8);
@@ -141,7 +156,8 @@ export function SearchClient({
   };
 
   const hasQuery = debouncedQ.length > 0;
-  const showEmpty = hasQuery && !loading && games.length === 0 && achievements.length === 0;
+  const showEmpty =
+    hasQuery && !loading && games.length === 0 && achievements.length === 0 && guides.length === 0;
   const showInitial = !hasQuery;
 
   const onResultClick = () => {
@@ -348,6 +364,40 @@ export function SearchClient({
                     <span className="shrink-0 font-mono text-[16px] font-bold tabular-nums text-[var(--accent)]">
                       {a.rarity.toFixed(1)}%
                     </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Substories, collectibles, minigames */}
+          {guides.length > 0 && (
+            <section className="md:col-span-2">
+              <h2 className="mb-3 flex items-center gap-2 text-[16px] font-bold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">
+                {labels.guidesHeader}
+                <span className="font-mono text-[16px] tabular-nums text-[var(--text-tertiary)]">
+                  {guides.length}
+                </span>
+              </h2>
+              <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+                {guides.map((g, i) => (
+                  <Link
+                    key={`${g.gameSlug}-${g.kind}-${i}`}
+                    href={`/game/${g.gameSlug}?tab=${g.tab}`}
+                    onClick={onResultClick}
+                    className={cn(
+                      "flex cursor-pointer items-center gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 py-2.5 no-underline transition-colors",
+                      "hover:border-[var(--accent-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)]",
+                    )}
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="truncate text-[16px] font-semibold text-[var(--text-primary)]">
+                        {g.title}
+                      </div>
+                      <div className="truncate text-[16px] text-[var(--text-tertiary)]">
+                        {[g.gameName, g.subtitle].filter(Boolean).join(" · ")}
+                      </div>
+                    </div>
                   </Link>
                 ))}
               </div>

@@ -24,10 +24,11 @@ export function SearchPageClient({
       : "Try different spelling or a romanized name.",
     gamesHeader: isKo ? "게임" : "Games",
     achievementsHeader: isKo ? "업적" : "Achievements",
+    guidesHeader: isKo ? "서브스토리 · 수집 · 미니게임" : "Substories, collectibles & minigames",
     clearRecent: isKo ? "지우기" : "Clear",
     clearInput: isKo ? "검색어 지우기" : "Clear search",
     achievements: isKo ? "업적" : "Achievements",
   };
 
-  return <SearchClient labels={labels} quickGames={quickGames} />;
+  return <SearchClient labels={labels} quickGames={quickGames} locale={isKo ? "ko" : "en"} />;
 }

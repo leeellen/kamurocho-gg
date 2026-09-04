@@ -32,5 +32,6 @@ export async function GET(request: Request) {
       gameName: game.name,
       gameAppId: game.appId,
     })),
+    guides: results.guides,
   });
 }
