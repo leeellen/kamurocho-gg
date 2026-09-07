@@ -2,245 +2,297 @@ import type { MinigamesData } from "./types";
 
 const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 
-// Detailed minigame guides for Yakuza Kiwami 3 (용과 같이 극3, 2025/2026 Dragon
-// Engine remake of Yakuza 3 + the Dark Ties side story). The map spans Kamurocho
-// and Downtown Ryukyu (Okinawa, home of the Morning Glory orphanage), so the
-// minigame spread mirrors Yakuza 3's: golf, fishing, bowling, darts, pool,
-// mahjong, koi-koi, shogi, batting, karaoke and the Club SEGA arcade. Difficulty
-// is rated for the completion grind, not casual play. Only entries confirmed via
-// release coverage and community location guides are listed here.
+// Minigame guides for Yakuza Kiwami 3. Locations, prize thresholds and the
+// per-minigame technique come from ゲームエイト's Kiwami 3 pages, cited on each
+// entry.
 export const yakuzaKiwami3Minigames: MinigamesData = {
   appId: 3937550,
   intro: {
-    ko: "극3는 Yakuza 3 기반이라 오키나와(류큐)의 모리닝글로리 고아원과 카무로초 두 지역에 미니게임이 흩어져 있습니다. 골프·낚시·볼링·다트·당구 같은 정통 종목은 거의 그대로 돌아왔고, 도박장과 클럽세가 아케이드도 건재합니다. 컴플리션을 노린다면 류큐와 카무로초 양쪽을 모두 돌아야 하니, 지역별 위치를 먼저 익혀두면 시간이 크게 절약됩니다.",
-    en: "Kiwami 3 is built on Yakuza 3, so its minigames are split across two areas: the Morning Glory orphanage in Okinawa (Downtown Ryukyu) and Kamurocho. The classics — golf, fishing, bowling, darts, pool — are back largely intact, and the gambling hall and Club SEGA arcade are present too. For completion you'll need to travel between Ryukyu and Kamurocho, so learning where each game lives in each district saves a lot of time.",
+    ko: "극3의 미니게임은 카무로초 11곳, 류큐가 8곳에 흩어져 있고, 여기에 아사가오 라이프의 여섯 종목과 게임 기어 12종이 더해집니다. 카지노·賭場·마작에는 이카사마 아이템이 있어 운 요소를 통째로 지울 수 있으니, 조건이 빡빡한 항목에 아껴 쓰세요. 각 항목의 위치와 수치는 출처 페이지에서 확인한 것입니다.",
+    en: "Kiwami 3 spreads its minigames over eleven spots in Kamurocho and eight in Downtown Ryukyu, plus the six Asagao Life games and twelve Game Gear titles. The casino, gambling hall and mahjong all have cheat items that remove the luck entirely — save them for the demanding rows. Locations and numbers below come from the linked pages.",
   },
   minigames: [
     {
       slug: "golf",
-      name: { ko: "골프 (Heaven's Golf)", en: "Golf (Heaven's Golf)" },
+      name: { ko: "골프 (헤븐즈 골프)", en: "Golf (Heaven's Golf)" },
       category: { ko: "스포츠", en: "Sports" },
-      difficulty: 2,
-      location: {
-        ko: "류큐 E Ryukyu Blvd 남쪽, 코인 락커 근처의 Heaven's Golf",
-        en: "Heaven's Golf on the south side of E Ryukyu Blvd, near the coin lockers",
-      },
+      difficulty: 3,
+      location: { ko: "류큐가 — 헤븐즈 골프 (POPPO 류큐 거리 동점 오른편)", en: "Heaven's Golf, Downtown Ryukyu — the building right of POPPO E Ryukyu Blvd." },
       summary: {
-        ko: "원작 Y3의 골프장 대신 류큐의 Heaven's Golf 센터에서 즐기는 현대식 골프. 「핀에 가깝게(Closest to the Pin)」와 「빙고 챌린지」 두 모드가 있으며 각 1,000엔입니다.",
-        en: "Instead of Yakuza 3's original course, you play a modernized version at Ryukyu's Heaven's Golf center. There are two modes — Closest to the Pin and the Bingo Challenge — each costing 1,000 yen.",
+        ko: "니어핀 챌린지와 빙고 챌린지가 있습니다. 샷은 파워와 임팩트 두 게이지를 정확한 지점에서 눌러야 똑바로 날아갑니다.",
+        en: "Nearest-the-Pin and Bingo. A straight shot needs both the power and impact gauges stopped in the right place.",
       },
       howTo: [
-        { ko: "「핀에 가깝게」는 한 샷으로 홀에 최대한 붙이는 방식으로, 10라운드 누적 점수가 최종 기록입니다. 바람 표시를 반드시 확인하고 파워와 방향을 보정하세요.", en: "Closest to the Pin scores each one-shot by proximity to the hole over 10 rounds — always read the wind indicator and adjust power and aim accordingly." },
-        { ko: "빙고 챌린지는 거대한 빙고판에 공을 쳐서 숫자를 지우고 한 줄(대각선 포함)을 완성하면 빙고. 같은 거리의 칸을 노려 파워를 일정하게 유지하면 줄을 만들기 쉽습니다.", en: "In the Bingo Challenge you hit the ball into a giant bingo board to clear numbers; completing a line (diagonals count) scores a bingo — keep your power consistent and target a single row of squares." },
-        { ko: "임팩트 게이지는 천천히 멈추는 연습이 핵심입니다. 풀파워보다 정확도가 점수에 더 크게 작용합니다.", en: "Practice stopping the impact gauge cleanly — accuracy matters more for your score than raw power." },
-        { ko: "빙고 챌린지의 바람은 매번 같은 순서로 바뀌고 후반으로 갈수록 강해집니다. 순서를 외워두고, 멀리 있는 칸을 바람이 약한 초반에 먼저 처리한 뒤 가까운 칸을 마지막에 남기세요.", en: "In the Bingo Challenge the wind shifts in the exact same order every run and gets stronger over time, so memorize the sequence — clear the far squares early while it's calm and save the nearest squares for last." },
-        { ko: "「핀에 가깝게」는 바람이 등 뒤로 불 때 임팩트 지점을 아래로 내려 풀파워로 치면 굴러감을 줄이며 멀리 보낼 수 있고, 맞바람이 셀 때만 파워를 줄이세요.", en: "In Closest to the Pin, when the wind is at your back you can swing full power with the impact point lowered to limit roll, and only dial power back when a strong headwind is against you. (Tips drawn from Yakuza 3, which shares this golf engine.)" },
+        { ko: "치기 전에 R1을 눌러 낙하 예측 지점을 위에서 확인하세요. 중급 이후에는 장애물에 맞으면 그 자리에서 떨어지므로, 예측선이 장애물과 겹치지 않는지 먼저 봐야 합니다.", en: "Press R1 before each shot to see the predicted landing point from above — from Intermediate on, hitting an obstacle drops the ball right there, so check the line does not cross one." },
+        { ko: "임팩트 게이지의 주황 구간은 공을 휘게 만듭니다. 실수 구간이 아니라 장애물을 피하는 용도이므로 중급 이후에 의도적으로 쓰세요.", en: "The orange band on the impact gauge curves the ball. It is not a miss — it is how you bend around obstacles from Intermediate on." },
+        { ko: "니어핀은 1구 성공마다 +10점의 연속 성공 보너스가 붙어 최대 100점까지 추가됩니다. 컵보다 앞쪽(노란 원)에서 떨어뜨려 굴려 넣는 편이 붉은 원 안에 안정적으로 들어갑니다.", en: "Nearest-the-Pin adds a +10 streak bonus per successful ball, up to 100 extra. Landing short — in the yellow ring — and letting it roll gets you inside the red ring more reliably than aiming at the cup." },
+        { ko: "빙고 챌린지는 ①한가운데 → ②모서리 → ③나머지 순으로 여는 것이 최적입니다. 가운데 칸은 4개 라인, 모서리는 3개, 나머지는 2개 라인에 걸리기 때문입니다.", en: "For Bingo, open the centre first, then the corners, then the rest — the centre square sits on four lines, a corner on three, the others on two." },
+        { ko: "칸을 열수록 표적이 움직이기 시작합니다. 1차 레벨업에서는 표적이 움직이기 시작한 타이밍에 쳐서 맞추고, 2·3차 레벨업에서는 그보다 조금 더 이르게 쳐야 맞습니다.", en: "The targets start moving as you clear squares: at the first speed-up, fire as the target begins to move; at the second and third, fire slightly earlier than that." },
       ],
       videos: [
-        { title: { ko: "극3 골프 플레이 (Chapter 3)", en: "Kiwami 3 golf gameplay (Chapter 3)" }, url: YT("d9LDJdjim8A") },
-        { title: { ko: "Yakuza 3 리마스터 골프 미니게임 (참고용)", en: "Yakuza 3 Remaster golf minigame (reference)" }, url: YT("ht91uresg3k") },
-        { title: { ko: "극3 골프 8 빙고 챌린지 공략 (1400점)", en: "Kiwami 3 Golf 8 Bingo Challenge guide (1400 pts)" }, url: YT("Fy0EXcZwAXo") },
+        { title: { ko: "극3 골프 플레이 (3장)", en: "Kiwami 3 golf gameplay (Chapter 3)" }, url: YT("d9LDJdjim8A") },
+        { title: { ko: "극3 골프 빙고 챌린지 공략 (1400점)", en: "Kiwami 3 Bingo Challenge guide (1,400 pts)" }, url: YT("Fy0EXcZwAXo") },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 ゴルフ攻略", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/760024" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
-      slug: "fishing",
-      name: { ko: "낚시", en: "Fishing" },
-      category: { ko: "스포츠", en: "Sports" },
-      difficulty: 2,
-      location: {
-        ko: "모리닝글로리 고아원 앞 해변 동쪽 끝의 낚싯대·양동이",
-        en: "The harpoon and bucket on the far east side of the beach in front of Morning Glory",
-      },
-      summary: {
-        ko: "고아원 앞 해변에서 즐기는 낚시. 낚싯대로 다양한 물고기와 쓰레기를 낚을 수 있으며, 모리닝글로리 미니게임들과 함께 손쉽게 접근됩니다.",
-        en: "Fishing off the beach in front of the orphanage. You can reel in every type of fish (and trash) with the rod, and it sits right alongside the other Morning Glory minigames for easy access.",
-      },
-      howTo: [
-        { ko: "찌가 흔들리고 입질이 오는 순간을 기다렸다가 타이밍에 맞춰 당기세요. 너무 일찍 당기면 놓칩니다.", en: "Wait for the bite — the moment the line tugs — then reel at the right time; jerking too early loses the fish." },
-        { ko: "큰 물고기는 저항이 강하므로 릴 게이지/스태미나를 관리하며 끌어당기는 타이밍을 조절하세요.", en: "Bigger fish fight harder — manage the reel/tension so you don't snap the line, pulling only when the fish tires." },
-        { ko: "도감·컴플리션 목적이라면 어종을 다양하게 낚는 것이 목표이니 여러 번 반복해 종류를 채우세요.", en: "For the catalog/completion goal you want variety, so fish repeatedly to fill out the species list." },
-        { ko: "막판에 등장하는 보스급 큰 물고기는 빛나는 빨간 눈을 노리면 추가 데미지가 들어가고, 양쪽 눈을 모두 맞히면 확정 포획됩니다.", en: "The boss-class fish that appears at the climax takes extra damage when you hit its glowing red eyes — landing hits on both eyes guarantees the catch." },
-        { ko: "모리닝글로리 동네 상점의 랭크를 올리면 상위 작살을 구입할 수 있는데, 장전이 빨라 연사가 쉬워지고 보스 데미지가 높아져 Normal·Hard가 크게 수월해집니다. 의뢰로 돈을 모아 최고급 작살부터 확보하세요.", en: "Raising the Morning Glory neighborhood store's rank unlocks better harpoons that charge faster (easier spamming) and deal more boss damage, making the Normal and Hard stages far easier — fund requests first to grab the top harpoon." },
-      ],
-    },
-    {
-      slug: "bowling",
-      name: { ko: "볼링 (Mach Bowl)", en: "Bowling (Mach Bowl)" },
+      slug: "batting",
+      name: { ko: "배팅 센터 (요시다 배팅 센터)", en: "Batting Center" },
       category: { ko: "스포츠", en: "Sports" },
       difficulty: 3,
-      location: {
-        ko: "카무로초 시어터 광장 남서쪽, Theater Alley 서쪽의 Mach Bowl",
-        en: "Mach Bowl, west of Theater Alley and southwest of Theater Square in Kamurocho",
-      },
+      location: { ko: "카무로초 — 요시다 배팅 센터", en: "Yoshida Batting Center, Kamurocho" },
       summary: {
-        ko: "정통 볼링. 일반 게임(3·5·10프레임)과 스플릿 게임을 혼자 또는 동행 캐릭터와 즐길 수 있습니다. 컴플리션은 한 게임에서 200점 이상이 목표라 다소 까다롭습니다.",
-        en: "Standard bowling — play a normal game (3, 5 or 10 frames) or a split game, solo or with a companion. Completion asks for a 200+ score in a single game, which makes it a bit demanding.",
+        ko: "홈런 코스와 챌린지 코스가 있고, 벌어들인 포인트로 경품을 교환합니다. 코스별 구질은 고정입니다.",
+        en: "Home Run and Challenge courses, with points traded for prizes. Each course runs a fixed pitch script.",
       },
       howTo: [
-        { ko: "200점을 노린다면 스트라이크 연속이 핵심입니다. 시작 위치를 살짝 오른쪽에 두고 약간 왼쪽으로 스핀을 주는 표준 포켓 샷을 익히세요.", en: "Hitting 200 needs strings of strikes — set up slightly right and put a touch of left spin on a standard pocket shot." },
-        { ko: "방향 조준선을 1~2번 핀 사이(포켓)에 맞추고 파워 게이지를 일정하게 멈추는 연습을 반복하세요.", en: "Aim the line into the pocket between the 1 and 2 pins, and practice stopping the power gauge at a consistent spot." },
-        { ko: "스플릿이 남으면 무리하지 말고 가장자리 핀을 확실히 쳐 점수 손실을 최소화하세요.", en: "If you leave a split, don't gamble — clear the makeable edge pin to limit the score loss." },
+        { ko: "가장 먼저 교환할 것은 60포인트짜리 「안심 배트」입니다. 홈런이 훨씬 쉬워지므로, 이후 홈런 경쟁 모드로 나머지 경품 포인트를 버는 속도가 크게 달라집니다.", en: "Trade for the Anshin Bat at 60 points first — it makes home runs far easier, which is how you then farm the points for everything else." },
+        { ko: "그 다음은 여기서만 나오는 것들입니다. 츳파리의 용 동료 「포케사 파이터」와 휴대 장비 「스트랩: 간판(킷사 알프스)」, 「대기 화면: SAKURARUNA」가 해당합니다.", en: "After that go for the exclusives: the Tuppari no Ryu ally Pokesa Fighter and the phone parts Strap: Cafe Alps Sign and Lock Screen: SAKURARUNA." },
+        { ko: "츳파리의 용을 파고들 생각이라면 「특공복 뒷단추·극」도 교환하세요. 동료의 레벨 상한을 풀어 주는 아이템입니다.", en: "If you are pushing Tuppari no Ryu, also take the Tokkofuku Back Button (Kiwami) — it raises your allies' level cap." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 バッティングセンター", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762058" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
-      slug: "darts",
-      name: { ko: "다트", en: "Darts" },
-      category: { ko: "술집·바", en: "Bar games" },
+      slug: "pricircle",
+      name: { ko: "프리서클 (스티커 사진)", en: "PriCircle" },
+      category: { ko: "기타", en: "Misc" },
       difficulty: 2,
-      location: {
-        ko: "카무로초 E Millennium Tower St.의 Bantam Traditional Irish Pub (입구 좌측 다트판). 류큐에도 존재",
-        en: "Bantam Traditional Irish Pub on E Millennium Tower St. in Kamurocho (dartboard to the left of the entrance); also available in Ryukyu",
-      },
+      location: { ko: "카무로초 — 클럽 세가 나카미치 거리점·극장 앞점 / 류큐가 — 하이사이관 앞", en: "Club SEGA Nakamichi St. and Theater Square (Kamurocho); outside Haisai-kan (Downtown Ryukyu)" },
       summary: {
-        ko: "01·크리켓·카운트업 룰을 초·중·상급 상대와 겨룹니다. 카무로초와 류큐 양쪽에서 플레이할 수 있습니다.",
-        en: "Play 01, Cricket and Count Up against beginner, intermediate and advanced opponents, in both Kamurocho and Ryukyu.",
+        ko: "카운트다운에 맞춰 포즈를 잡는 촬영 미니게임입니다. 「극성」 보정을 1플레이에 한 번 쓸 수 있습니다.",
+        en: "Strike a pose against the countdown. One \"max glam\" boost is available per play.",
       },
       howTo: [
-        { ko: "조준 레티클의 작은 중앙 원(고득점)에 맞추되, 흔들리는 레티클을 멈춘 뒤 옆의 정확도 게이지를 노란 구간에서 멈추는 것이 핵심입니다.", en: "Aim for the tiny central circle, but the real skill is stopping the wobbling reticle, then stopping the side accuracy gauge in the yellow zone for max precision." },
-        { ko: "크리켓은 15~20과 불을 각 3마크로 「점령」해야 점수가 들어오니, 한 숫자에 집중해 빠르게 닫고 점수를 누적하세요.", en: "In Cricket you must 'capture' each of 15–20 and the Bull with 3 marks before scoring, so focus on closing one number at a time, then pile on points." },
-        { ko: "컴플리션은 서로 다른 3개 룰을 플레이하고 총 5승(상대 중복 가능)이 목표이니, 약한 상대로 승수를 채우세요.", en: "Completion wants you to play all three rulesets and win 5 matches total (repeats allowed) — farm the easy opponent for the wins." },
+        { ko: "3초 카운트다운 중 「2」 표시가 끝나기 직전에 버튼을 누르면 베스트 샷이 나오기 쉽습니다. 반대로 「2」가 뜬 순간에 누르면 너무 일러 실패 판정이 잦습니다.", en: "Press just as the \"2\" is about to disappear from the three-second countdown — pressing the instant it appears is too early and usually fails." },
+        { ko: "「극성(極盛り)」은 프레임 전환 후 촬영 직전에 R2를 누르면 발동합니다. 1플레이에 한 번뿐이므로 승부할 프레임을 미리 정해 두세요.", en: "Max glam triggers by pressing R2 after the frame switches, just before the shot. One use per play, so decide in advance which frame it goes on." },
+        { ko: "극성은 소안 효과와 보정이 최대로 들어가 평소의 험상궂은 인상과 전혀 다른 결과가 나옵니다. 본명 프레임에 쓰는 것이 정석입니다.", en: "It applies the full slimming and beautifying filter, which looks nothing like Kiryu's usual face — save it for the frame you actually care about." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 プリサークル攻略", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/758745" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
-      slug: "pool",
-      name: { ko: "당구 (포켓)", en: "Pool / Billiards" },
-      category: { ko: "술집·바", en: "Bar games" },
+      slug: "asagao-life",
+      name: { ko: "아사가오 라이프 (재봉·요리·숙제·곤충 채집·물고기 잡기·리버시)", en: "Asagao Life (sewing, kitchen, homework, bug catching, fishing, reversi)" },
+      category: { ko: "기타", en: "Misc" },
       difficulty: 3,
-      location: {
-        ko: "카무로초 북동부 Park Blvd, Purgatory 바로 남쪽의 당구 바",
-        en: "The pool bar on Park Blvd in northeast Kamurocho, just south of Purgatory",
-      },
+      location: { ko: "오키나와 — 아사가오", en: "Morning Glory orphanage, Okinawa" },
       summary: {
-        ko: "일반 포켓 당구와 「1-Shot Challenge」를 혼자 또는 동행 캐릭터와 즐깁니다. 정확한 조준과 파워 조절이 관건입니다.",
-        en: "Play normal pool or the 1-Shot Challenge, solo or with a companion. Precise aim and power control are everything.",
+        ko: "아사가오 고아원에서 아이들과 지내며 여섯 가지 미니게임을 즐기는 콘텐츠입니다. 단련 목록(達成目録) 컴플리트를 노린다면 필수입니다.",
+        en: "Life at the Morning Glory orphanage, wrapped around six minigames. It is mandatory if you want to complete the training list.",
       },
       howTo: [
-        { ko: "조준 가이드 라인을 목표 공-포켓 직선에 맞춘 뒤, 큐볼이 어느 방향으로 굴러갈지(다음 공 위치)까지 고려해 파워를 조절하세요.", en: "Line the guide up so the target ball heads for the pocket, then control power with the cue ball's resulting position (your next shot) in mind." },
-        { ko: "스핀(잉글리시)을 살짝 주면 큐볼 제어가 쉬워집니다. 초보 단계에서는 무리한 콤비네이션보다 확실한 한 개씩 처리가 안전합니다.", en: "A little spin (english) makes cue-ball control easier; early on, pot one clean ball at a time rather than risking combinations." },
-        { ko: "1-Shot Challenge는 한 샷으로 최대한 많이 넣는 모드이니 공이 몰린 배치를 노려 연쇄로 떨어지게 조준하세요.", en: "The 1-Shot Challenge rewards sinking as many balls as possible in one shot — target clustered layouts so balls cascade in." },
-        { ko: "정밀 조준의 핵심은 「큐볼 가장자리 — 목표 공 가장자리 — 포켓」이 일직선이 되도록 맞추는 것입니다. 삼각(△)/Y 버튼으로 위에서 내려다보는 시점으로 전환하면 이 직선을 훨씬 정확히 잡을 수 있습니다.", en: "The trick to precise aim is lining up the edge of the cue ball, the edge of the target ball, and the pocket into one straight line — switch to the top-down view (Triangle/Y) to read that line far more accurately." },
-        { ko: "이 시리즈의 당구 물리는 까다롭기로 유명하니 콤비네이션은 피하고, 위 직선 정렬로 한 번에 한 개씩 확실히 넣는 편이 점수에 안전합니다.", en: "Pool physics in this series are notoriously fiddly, so avoid combinations — pot one ball at a time using the edge-alignment line for safer, more reliable scoring." },
+        { ko: "재봉(미싱)은 천의 중심선을 벗어나지 않고 제한 시간 안에 골인하는 레이스입니다. 선을 크게 벗어나면 키류가 다치며 시간을 잃고 「아름다움」 평가도 깎입니다. 급커브에서는 과감히 감속하세요.", en: "Sewing is a race along the chalk line: stray too far and Kiryu hurts himself, losing time and beauty score. Slow down hard into sharp curves." },
+        { ko: "재봉은 제한 시간 안에 골인하지 못하면 보상이 일률적으로 「낡은 천」 1장이 됩니다. 아름다움보다 남은 거리와 남은 시간을 먼저 보세요.", en: "Failing to reach the goal in time drops the reward to a single Rag regardless of how pretty the stitching was — watch distance and clock before beauty." },
+        { ko: "곤충 채집 승부는 영양 드링크처럼 생긴 아이템이 승부를 가릅니다. 먹으면 일정 시간 고속 이동하며 채집할 수 있어 한 번에 대량 확보가 가능하니, 아이템이 뜨면 무조건 먼저 잡으러 가세요.", en: "In the bug-catching contest the energy-drink-looking item decides the match: it lets you sprint while netting, so grab it the moment it spawns, ahead of any bug." },
+        { ko: "곤충은 □를 연타하지 말고 길게 눌러 충전한 뒤 놓는 「차지 휘두르기」로 잡습니다. 몸으로 부딪히기만 해도 획득 판정이 나므로, 이동 중에도 □를 계속 누르고 있는 것이 요령입니다. 금색 곤충은 3배 점수입니다.", en: "Do not mash square — hold to charge and release for the charged swing, which counts a catch on contact. Keep square held while moving, and prioritise the gold bugs, which are worth triple." },
+        { ko: "숙제는 산수·영어·영단어·과학·사회·종합 여섯 과목의 문제입니다. 정답이 정해져 있으므로 답을 모르면 출처의 답안표를 보고 넘기세요.", en: "Homework covers maths, English, vocabulary, science, social studies and general knowledge, with fixed answers — check the answer table in the source if a question stumps you." },
+        { ko: "아사가오 상점에서 산 펫의 「친밀도 올리기」도 단련 목록 항목입니다. 자금이 모이는 대로 펫을 일찍 사 두는 편이 좋습니다.", en: "Raising a pet's affection is itself a training-list row, so buy a pet from the Asagao shop as early as your funds allow." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 アサガオライフの遊び方", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/751256" },
+        { label: "ゲームエイト — 龍が如く極3 さいほう(ミシン)", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762305" },
+        { label: "ゲームエイト — 龍が如く極3 むしとり勝負", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762341" },
+        { label: "ゲームエイト — 龍が如く極3 しゅくだいの答え一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/761596" },
+        { label: "ゲームエイト — 龍が如く極3 鍛錬目録の一覧と達成条件", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/761436" },
       ],
     },
     {
       slug: "mahjong",
       name: { ko: "마작", en: "Mahjong" },
-      category: { ko: "도박", en: "Gambling" },
-      difficulty: 5,
-      location: {
-        ko: "카무로초 Tenkaichi St. 동쪽 건물의 「Sexy Club Love Bunny」 내 Lullaby Mahjong (판돈 최대 50,000엔). 류큐에도 존재",
-        en: "Lullaby Mahjong inside 'Sexy Club Love Bunny' on the east side of Tenkaichi St. in Kamurocho (stakes up to 50,000 yen); also in Ryukyu",
-      },
+      category: { ko: "도박·보드", en: "Gambling / board" },
+      difficulty: 4,
+      location: { ko: "카무로초·류큐가 — 마작장", en: "Mahjong parlours in Kamurocho and Downtown Ryukyu" },
       summary: {
-        ko: "표준 일본 리치 마작. 규칙을 모르면 시리즈 최대 난관이지만, 한 가지 화료 패턴만 익히면 컴플리션은 충분히 넘깁니다.",
-        en: "Standard Japanese riichi mahjong — the series' biggest wall if you don't know the rules, but learning one winning pattern is enough for completion.",
+        ko: "운 요소가 큰 종목이지만 이카사마 아이템이 게임 밸런스를 통째로 무너뜨립니다.",
+        en: "Luck-heavy, but the cheat items break it wide open.",
       },
       howTo: [
-        { ko: "손패를 절대 공개(펑/치)하지 말고 닫은 채 유지하세요. 그래야 리치를 선언할 수 있습니다.", en: "Keep your hand fully closed (never call Pon/Chi) so you can declare Riichi." },
-        { ko: "2~8 숫자패만 모으는 「탄야오」를 노립니다. 4면자+1쌍 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료됩니다.", en: "Chase Tanyao (only simples 2–8); when you're one tile from 4 sets + a pair, declare Riichi and a yaku attaches automatically." },
-        { ko: "텐파이의 마지막 한 장은 「이미 버려진 수가 적은 패」로 기다리도록 미리 정리하세요. 자기가 버린 패로 기다리면 「후리텐」이 되어 론 화료가 막히니, 자신의 버림패와 겹치는 대기는 피하세요.", en: "Shape your tenpai to wait on a tile that few copies have been discarded, and never wait on a tile you have already discarded yourself — that triggers Furiten, which blocks a Ron win." },
-        { ko: "컴플리션은 큰 점수가 아니라 화료(승리) 자체가 목적이니 점수 욕심 없이 빠른 화료 위주로 진행하세요.", en: "Completion only needs wins, not big hands — prioritize fast wins over value." },
+        { ko: "「보등의 패(宝燈の牌)」를 쓰면 배패가 순정구련보등 — 더블 역만 텐파이로 시작합니다. 거의 확실하게 한 명을 날리고 1위를 잡을 수 있습니다.", en: "The Hoto Tile deals you a Pure Nine Gates ready hand — a double yakuman — which reliably busts one opponent and takes first place." },
+        { ko: "이카사마는 1회용입니다. 조건이 빡빡한 판(대회 1위 등)에 아껴 두고, 평범한 누적 조건은 맨손으로 도세요.", en: "Cheat items are single use, so save them for the demanding rows such as taking first in a tournament and grind the cumulative ones honestly." },
+        { ko: "역을 모르면 화료 자체가 안 됩니다. 리치·핑후·탕야오 세 가지만 익혀도 대부분의 조건은 소화됩니다.", en: "Without a yaku you cannot go out at all — riichi, pinfu and tanyao cover most of what is asked." },
       ],
-    },
-    {
-      slug: "koi-koi",
-      name: { ko: "코이코이 (화투)", en: "Koi-Koi (Hanafuda)" },
-      category: { ko: "도박", en: "Gambling" },
-      difficulty: 2,
-      location: {
-        ko: "Arcade Alley(남쪽을 바라보면 보이는) 도박장. 접수처 환전소에서 엔→나무 패로 환전 후 플레이",
-        en: "The Gambling Hall in Arcade Alley (facing south); exchange yen for Wooden Tags at the Exchanger by reception, then play",
-      },
-      summary: {
-        ko: "화투 카드 게임. 도박장에서 코이코이·오이초카부·시로·초한과 함께 초·중·상급으로 즐길 수 있습니다.",
-        en: "A hanafuda card game. The Gambling Hall offers koi-koi alongside oicho-kabu, cee-lo and cho-han at Beginner, Intermediate and Expert levels.",
-      },
-      howTo: [
-        { ko: "패에서 같은 달(月)의 카드를 짝지어 「역(야쿠)」을 완성하면 점수입니다. 손패와 바닥패의 짝을 잘 살피세요.", en: "Match cards of the same month from your hand to field cards to build yaku (scoring combos) — watch both your hand and the field for pairs." },
-        { ko: "역이 완성되면 「코이코이」를 외쳐 점수를 키울지, 그만두고 확정할지 선택합니다. 안정적으로 가려면 작은 역도 바로 확정하세요.", en: "When you complete a yaku, choose to call 'Koi-Koi' to keep building or stop to bank it — bank small yaku immediately for safety." },
-        { ko: "고급 역의 핵심 카드는 수가 적습니다(광 5장, 청단 3장, 홍단 3장). 내가 못 쓰더라도 바닥에 깔린 이런 카드를 먼저 가져오면 상대의 큰 역을 원천 차단할 수 있습니다.", en: "Key high-value cards are scarce (5 Light cards, 3 Blue Ribbons, 3 Red Poetry Ribbons), so grabbing one off the field even when you can't use it denies the opponent their big yaku entirely." },
-        { ko: "상대가 큰 역을 노리는 듯하면 무리하게 코이코이를 외치지 말고 확정해 점수를 지키세요.", en: "If the opponent looks close to a big yaku, don't push Koi-Koi — lock in your points." },
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 麻雀", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/761967" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
       slug: "shogi",
       name: { ko: "쇼기 (장기)", en: "Shogi" },
-      category: { ko: "보드", en: "Board" },
-      difficulty: 4,
-      location: {
-        ko: "Champion District 남쪽, E Taihei Blvd 북쪽의 작은 광장에 있는 쇼기 상대",
-        en: "The shogi player in a small square south of the Champion District, just north of E Taihei Blvd",
-      },
+      category: { ko: "도박·보드", en: "Gambling / board" },
+      difficulty: 3,
+      location: { ko: "카무로초 북쪽 — 노상 장기", en: "Street shogi, northern Kamurocho" },
       summary: {
-        ko: "일본 장기. 랭크 매치·챌린지 매치·퍼즐 쇼기를 즐길 수 있습니다. 잡은 말을 다시 놓는 「持ち駒」 규칙이 체스와 다른 핵심입니다.",
-        en: "Japanese chess with Ranked Match, Challenge Match and Puzzle Shogi modes. The key twist vs. Western chess is that captured pieces can be dropped back onto the board.",
+        ko: "단련 목록 조건은 승리 관련이며, 규칙을 모르면 진입 장벽이 큽니다.",
+        en: "The training rows are about winning, and the rules are the barrier.",
       },
       howTo: [
-        { ko: "왕을 지키는 「囲い(가코이)」 진형을 먼저 갖추고 공격하세요. 미노가코이가 입문용으로 무난합니다.", en: "Build a castle (gakoi) around your king before attacking — Mino castle is the easiest starter." },
-        { ko: "잡은 말은 즉시 재투입할 수 있으니, 적진 깊숙이 말을 떨어뜨려 압박하세요.", en: "Captured pieces can be dropped anywhere — parachute them deep into enemy territory to apply pressure." },
-        { ko: "퍼즐 쇼기는 정해진 외통수를 찾는 모드라 패턴 학습에 좋습니다. 대국이 부담되면 퍼즐부터 익히세요.", en: "Puzzle Shogi tasks you with finding a forced mate — great for learning patterns, so start there if live games feel intimidating." },
+        { ko: "가장 약한 상대부터 붙고, 무르기를 쓰지 않는 조건이 걸린 항목이 있으므로 무르기 사용에 주의하세요.", en: "Start with the weakest opponent, and watch the take-back — some rows require winning without one." },
+        { ko: "규칙을 모르면 정해진 국면에서 최선수를 찾는 문제 형식으로 감을 잡는 편이 실전보다 빠릅니다.", en: "If shogi is new, the set-position problems teach it faster than full games." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 将棋", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/761965" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
-      slug: "batting",
-      name: { ko: "배팅 센터 (Yoshida Batting Center)", en: "Batting Cage (Yoshida Batting Center)" },
-      category: { ko: "스포츠", en: "Sports" },
+      slug: "bowling",
+      name: { ko: "볼링 (마하볼)", en: "Bowling (Mach Bowl)" },
+      category: { ko: "아케이드", en: "Arcade" },
       difficulty: 2,
-      location: {
-        ko: "카무로초 북부 호텔 디스트릭트의 Yoshida Batting Center",
-        en: "Yoshida Batting Center in the Hotel District on the north side of Kamurocho",
-      },
+      location: { ko: "카무로초 북쪽 — 마하볼", en: "Mach Bowl, northern Kamurocho" },
       summary: {
-        ko: "타격 미니게임. 챌린지 코스·홈런 코스·홈런 콤퍼티션을 즐길 수 있습니다.",
-        en: "A batting minigame offering the Challenge Course, Home Run Course and Home Run Competition.",
+        ko: "일반 게임과 스플릿 게임이 있습니다. 포인트로 경품을 교환합니다.",
+        en: "A normal game and a Split Game, with points traded for prizes.",
       },
       howTo: [
-        { ko: "공이 날아오는 타이밍에 맞춰 스윙하되, 타깃 존(빛나는 지점)에 배트를 맞추면 홈런 확률이 올라갑니다.", en: "Swing in time with the pitch — lining the bat up with the glowing target zone greatly increases home-run chances." },
-        { ko: "초반 느린 공으로 타이밍 감을 잡은 뒤 빠른 코스에 도전하세요.", en: "Get your timing down on the slow pitches first, then move up to the faster courses." },
-        { ko: "투구는 코스마다 매번 같은 순서·같은 궤적으로 고정되어 있으니(100km 직구는 항상 똑같이 날아옴) 순서를 외우면 타이밍이 훨씬 쉬워집니다. 키류가 몸에 힘을 주며 멈칫하는 순간이 스윙 신호입니다.", en: "Pitches are fixed — each course throws the same pitches in the same order with identical trajectories every time (a 100kph fastball always flies the same), so memorize the sequence; Kiryu tensing up and going still is your cue to swing." },
-        { ko: "홈런 콤퍼티션은 10구 중 8개를 홈런으로 넘겨야 한 세트가 클리어됩니다. 타이밍 판정이 매우 관대한 「Serenity Bat(평온의 배트)」를 장착하면 컴플리션이 크게 수월해집니다.", en: "The Home Run Competition needs 8 home runs out of 10 to clear a set — equipping the Serenity Bat, whose timing window is extremely forgiving, makes completion far easier." },
+        { ko: "스트라이크는 1번 핀 옆의 포켓을 세게, 약간의 스핀과 함께 치는 것이 정석입니다. 스핀은 던지는 동안 왼쪽 스틱을 아주 살짝 기울이면 걸립니다.", en: "Strikes come from the pocket beside the head pin, hit hard with a slight spin from a small left-stick nudge." },
+        { ko: "스플릿 게임은 주어진 핀 조합을 한 번의 투구로 처리해야 합니다. 쉬운 조합부터 지워 공을 아끼세요.", en: "Split Game wants a given combination down in one throw — clear the easy ones first to save balls." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 ボウリング", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762111" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+      ],
+    },
+    {
+      slug: "darts",
+      name: { ko: "다트", en: "Darts" },
+      category: { ko: "아케이드", en: "Arcade" },
+      difficulty: 2,
+      location: { ko: "카무로초 북쪽 / 류큐가 북쪽 — 다트", en: "Darts in northern Kamurocho and northern Downtown Ryukyu" },
+      summary: {
+        ko: "01·크리켓·카운트업 세 종목입니다. 포인트로 경품을 교환합니다.",
+        en: "The usual three modes — 01, Cricket and Count-Up — with points traded for prizes.",
+      },
+      howTo: [
+        { ko: "싱글은 그 구역 점수, 더블 2배, 트리플 3배이고 BULL은 50점입니다. 01에서는 트리플 20보다 BULL이 안정적입니다.", en: "Singles score the sector, doubles double, triples treble, bull is 50 — in 01 the bull is steadier than treble 20." },
+        { ko: "해트트릭(한 라운드 3발 모두 BULL)이 조건이라면 혼자 01 게임을 고르세요. 라운드가 많아 반복 시도할 수 있습니다.", en: "If a row wants hat-tricks, play 01 alone — the most rounds to keep trying." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 ダーツ", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/759301" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+      ],
+    },
+    {
+      slug: "pool",
+      name: { ko: "당구", en: "Pool" },
+      category: { ko: "아케이드", en: "Arcade" },
+      difficulty: 3,
+      location: { ko: "카무로초 북쪽 / 류큐가 북쪽 — 당구장", en: "Pool halls in northern Kamurocho and northern Downtown Ryukyu" },
+      summary: {
+        ko: "나인볼 등 정규 게임과 특정 샷 조건이 함께 있습니다.",
+        en: "Standard games alongside rows asking for particular shots.",
+      },
+      howTo: [
+        { ko: "캐롬은 큐볼이 목적구를 맞힌 뒤 다른 공을 맞혀 그 공이 들어가는 샷, 콤비네이션은 목적구가 다른 공을 맞혀 그 공이 들어가는 샷입니다.", en: "A carom is cue to object ball then on to another ball which drops; a combination is the object ball doing the hitting." },
+        { ko: "혼자 플레이로 공을 원하는 배치로 밀어 두고, 큐볼을 일부러 포켓에 넣어 다음 샷 위치를 잡는 것이 가장 확실합니다.", en: "Play Alone, nudge the balls into shape, then scratch on purpose to place the cue ball where you want it." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 ビリヤード", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/758679" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
       slug: "karaoke",
-      name: { ko: "카라오케 (Karaokekan)", en: "Karaoke (Karaokekan)" },
-      category: { ko: "음악·리듬", en: "Music / Rhythm" },
+      name: { ko: "카라오케", en: "Karaoke" },
+      category: { ko: "음악·리듬", en: "Music / rhythm" },
       difficulty: 2,
-      location: {
-        ko: "카무로초 Nakamichi St. 북동쪽의 Karaokekan",
-        en: "Karaokekan in the northeast area of Nakamichi St. in Kamurocho",
-      },
+      location: { ko: "카무로초 남쪽 / 류큐가 북쪽 — 가라오케", en: "Karaoke in southern Kamurocho and northern Downtown Ryukyu" },
       summary: {
-        ko: "리듬 노래방. 혼자 또는 친구와 함께 곡을 부를 수 있습니다. 화면 지시에 맞춰 버튼을 눌러 점수를 냅니다.",
-        en: "A rhythm karaoke game — sing solo or with friends, hitting the on-screen prompts in time for points.",
+        ko: "버튼 타이밍 리듬 게임입니다. 서브스토리와도 얽혀 있습니다.",
+        en: "A button-timing rhythm game that also feeds into substories.",
       },
       howTo: [
-        { ko: "노트가 판정선에 닿는 순간에 정확히 입력하세요. 박자보다 살짝 빠르거나 늦으면 「Good/Bad」로 떨어집니다.", en: "Input exactly as each note reaches the judgment line — slightly early or late drops you to Good/Bad." },
-        { ko: "익숙한 곡으로 먼저 연습해 멜로디 리듬을 익히면 고득점이 쉬워집니다.", en: "Practice on a song you know so the melody's rhythm guides your timing for a high score." },
-        { ko: "장음 노트는 끝까지 버튼을 유지해야 점수가 온전히 들어옵니다.", en: "Hold sustained notes all the way to the end to bank their full score." },
+        { ko: "노트가 라인에 닿는 순간이 아니라 커서에 겹치는 순간이 판정 기준입니다. 「Hold」는 끝까지 누르고 「Rapid」는 연타입니다.", en: "Judge on the note overlapping the cursor, not reaching the lane. Hold means hold to the end; Rapid means mash." },
+        { ko: "서브스토리 No.18 「악코 씨에게 맡겨라! 도쿄 편」에서는 「바보 같지(악코 씨)」를 부른 뒤 아무 곡이나 한 곡 더 불러야 진행됩니다.", en: "Substory No.18 needs Akko-san's version of \"Baka Mitai\" and then any second song before it will move on." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 カラオケ", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/758580" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+      ],
+    },
+    {
+      slug: "casino",
+      name: { ko: "카지노 (포커·블랙잭·바카라·룰렛)", en: "Casino (poker, blackjack, baccarat, roulette)" },
+      category: { ko: "도박·보드", en: "Gambling / board" },
+      difficulty: 2,
+      location: { ko: "카무로초 — 사이노카와라 / 류큐가 남쪽 — 카지노", en: "Sai no Kawara (Kamurocho) and the casino in southern Downtown Ryukyu" },
+      summary: {
+        ko: "네 종목이 있고 칩으로 경품을 교환합니다. 이카사마 아이템이 존재합니다.",
+        en: "Four games, chips traded for prizes, and cheat items exist here too.",
+      },
+      howTo: [
+        { ko: "운이 크게 작용하는 종목이므로 이카사마 아이템을 먼저 확보하세요. 1회용이지만 밸런스를 무너뜨릴 만큼 강력합니다.", en: "These swing on luck, so collect the cheat items first — single use, but strong enough to break the game." },
+        { ko: "블랙잭은 연승으로 베팅 상한이 오르는 구조입니다. 이카사마를 쓸 거라면 상한을 먼저 올린 뒤에 쓰는 편이 수익이 몇 배 커집니다.", en: "Blackjack raises the bet cap on a streak, so climb the cap before spending a cheat item and the same item earns several times more." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 カジノのミニゲームと場所", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762096" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+      ],
+    },
+    {
+      slug: "gambling-hall",
+      name: { ko: "도박장 (코이코이·오이초카부·친치로린·초한)", en: "Gambling Hall (koi-koi, oicho-kabu, cee-lo, cho-han)" },
+      category: { ko: "도박·보드", en: "Gambling / board" },
+      difficulty: 2,
+      location: { ko: "카무로초 북쪽 — 류구성 (서브스토리 「용궁을 되찾아라」 클리어 후) / 류큐가 남쪽", en: "Dragon Palace in northern Kamurocho, unlocked by the substory \"Retake the Dragon Palace\"; plus southern Downtown Ryukyu" },
+      summary: {
+        ko: "네 종목이 있고, 카무로초 쪽 도박장은 서브스토리 No.19를 클리어해야 열립니다.",
+        en: "Four games, and the Kamurocho den only opens after substory No.19.",
+      },
+      howTo: [
+        { ko: "카무로초의 류구성은 서브스토리 「용궁을 되찾아라」 클리어가 해금 조건입니다. 그 전에는 류큐가 쪽 도박장만 이용할 수 있습니다.", en: "Kamurocho's Dragon Palace unlocks with the substory \"Retake the Dragon Palace\" — before that, only the Ryukyu den is open." },
+        { ko: "여기서 얻는 포인트로 교환하는 경품 중에는 츳파리의 용 동료와 휴대 장비처럼 다른 곳에서 못 구하는 것이 있습니다.", en: "The prize counter carries Tuppari no Ryu allies and phone parts you cannot get anywhere else." },
+        { ko: "코이코이는 역을 알면 「고이코이」 선언 타이밍이 전부입니다. 작은 역이라도 확정 점수를 챙기는 편이 누적에 유리합니다.", en: "In koi-koi the whole game is when to call — banking a small hand beats gambling it away when totals are what count." },
+      ],
+      source: [
+        { label: "ゲームエイト — 龍が如く極3 賭場のミニゲームと交換おすすめ景品", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762318" },
+        { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
       ],
     },
     {
       slug: "club-sega",
-      name: { ko: "클럽 세가 아케이드 (UFO캐처 등)", en: "Club SEGA Arcade (UFO Catcher & more)" },
+      name: { ko: "게임 센터 (아케이드 명작 + UFO 캐처)", en: "Arcade (classic cabinets + UFO Catcher)" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 3,
-      location: {
-        ko: "시어터 광장의 Club SEGA (UFO캐처) 및 게임센터 — Emergency Call Ambulance, SlashOut!, 게임기어 Sonic 등",
-        en: "Club SEGA in Theater Square (UFO Catcher) and arcades — Emergency Call Ambulance, SlashOut! and Game Gear Sonic",
-      },
+      location: { ko: "카무로초 북쪽·남쪽 — 게임 센터", en: "The arcades in northern and southern Kamurocho" },
       summary: {
-        ko: "클럽 세가 아케이드. UFO캐처로 세가 캐릭터 인형을 뽑고, Emergency Call Ambulance·SlashOut!·게임기어 Sonic 등 레트로 아케이드를 즐길 수 있습니다.",
-        en: "The Club SEGA arcade: grab SEGA-character plushies in the UFO Catcher, and play retro cabinets like Emergency Call Ambulance, SlashOut! and Game Gear Sonic.",
+        ko: "모터 레이드, 구급차, 슬래시 아웃, 버추어 파이터 2/2.1, 파이팅 바이퍼즈를 통째로 플레이할 수 있고 UFO 캐처도 여기 있습니다.",
+        en: "Motor Raid, Emergency Call Ambulance, Slashout, Virtua Fighter 2/2.1 and Fighting Vipers are all playable in full, and the UFO Catcher is here too.",
       },
       howTo: [
-        { ko: "UFO캐처는 집게를 인형의 무게중심 위에 정확히 정렬하고, 좌우→앞뒤 두 축을 따로 멈춰 위치를 맞추세요.", en: "For the UFO Catcher, align the claw over the plushie's center of gravity, stopping the left-right and forward-back axes separately." },
-        { ko: "한 번에 못 뽑아도 인형이 출구 쪽으로 조금씩 밀리도록 위치를 옮기는 전략이 유효합니다.", en: "Even if one grab fails, nudging the plushie toward the chute bit by bit is a valid strategy." },
-        { ko: "레트로 게임은 각각 별도 미니게임이므로, 컴플리션 항목이 있다면 한 번씩 플레이해 기록을 남기세요.", en: "Each retro cabinet is its own minigame — if it has a completion entry, play it at least once to register progress." },
+        { ko: "기판은 원작 난도 그대로입니다. 여러 기술을 익히려 하기보다 한 캐릭터·한 패턴으로 안정적으로 넘기는 편이 빠릅니다.", en: "The boards keep their arcade difficulty — one character and one reliable pattern beats trying to play them properly." },
+        { ko: "UFO 캐처는 서로 다른 경품을 모으는 방식이라 같은 인형을 반복해 뽑아도 진행되지 않습니다. 필요한 경품이 없으면 다른 지점을 확인하세요.", en: "The UFO Catcher counts distinct prizes, so duplicates do nothing — check the other branch if what you need is not stocked." },
       ],
       videos: [
         { title: { ko: "극3 & Dark Ties 아케이드 미니게임", en: "Kiwami 3 & Dark Ties arcade minigames" }, url: YT("dSpiCDgvtV4") },
       ],
+      source: { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+    },
+    {
+      slug: "game-gear",
+      name: { ko: "게임 기어 (휴대용 12종)", en: "Game Gear (twelve handheld titles)" },
+      category: { ko: "아케이드", en: "Arcade" },
+      difficulty: 3,
+      location: { ko: "아사가오 및 소지품 — 게임 기어 본체", en: "The Game Gear you carry, playable at Morning Glory and elsewhere" },
+      summary: {
+        ko: "입수한 게임 기어 소프트를 언제든 플레이할 수 있습니다. 콜럼스, 팩맨, 소닉&테일즈, G-LOC AIR BATTLE, 우디 팝, GG 시노비, 매피, 갤러가 91, 뿌요뿌요, 베어 너클, 판타지 존 Gear, 소닉 드리프트 12종입니다.",
+        en: "Any Game Gear cartridge you have found can be played anywhere: Columns, Pac-Man, Sonic & Tails, G-LOC Air Battle, Woody Pop, The GG Shinobi, Mappy, Galaga '91, Puyo Puyo, Streets of Rage, Fantasy Zone Gear and Sonic Drift.",
+      },
+      howTo: [
+        { ko: "소프트는 거리에서 줍거나 상점·경품으로 얻습니다. 단련 목록에 소프트 수집 항목이 있으므로, 상점 재고와 경품 목록을 한 번씩 훑어보세요.", en: "Cartridges are found around town or bought and traded for — the training list tracks how many you own, so sweep the shops and prize counters." },
+        { ko: "휴대용이라 로딩 없이 어디서든 켤 수 있습니다. 이동 중 대기 시간에 돌리면 단련 목록의 플레이 횟수 항목을 자연스럽게 채울 수 있습니다.", en: "It plays anywhere with no load, so running it during downtime quietly fills the play-count rows." },
+      ],
+      source: { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
     },
   ],
 };
+
