@@ -37,7 +37,6 @@ export const likeADragonPirateMinigames: MinigamesData = {
         { label: "神ゲー攻略 — 海賊バトルの特徴と流れ", url: "https://kamigame.jp/ryugagotoku8-gaiden/page/351260193897602932.html" },
         { label: "ゲーム攻略マン — ゴロー丸の機能", url: "https://dswiipspwikips3.jp/yakuza8-gaiden/ship-goro-pirates/ship-goro-sistem.html" },
       ],
-      achievementSlug: "goro_ship",
     },
     {
       slug: "pirates-coliseum",

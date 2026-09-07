@@ -92,7 +92,7 @@ export const judgmentMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "바 「밴텀」 / 클럽세가 극장앞광장점", en: "Bar Bantam and Club SEGA Theater Square" },
       summary: {
-        ko: "01·크리켓·카운트업 3종을 플레이할 수 있습니다. 가디언 프렌드가 아니라 걸프렌드와 함께 가면 대전도 가능해, 데이트 겸 친밀도 올리기로도 쓰입니다.",
+        ko: "01·크리켓·카운트업 3종을 플레이할 수 있습니다. 걸프렌드와 함께 가면 대전도 가능해, 데이트 겸 친밀도 올리기로도 쓰입니다.",
         en: "Three modes — 01, Cricket and Count Up — and taking a girlfriend along lets you play against her, which doubles as date content.",
       },
       howTo: [
@@ -220,7 +220,7 @@ export const judgmentMinigames: MinigamesData = {
       howTo: [
         { ko: "프리 패스 교환권 입수처는 【3】 라 만 경품 교환 1만 매, 【4】 류구조 카지노 경품 교환 1만 매, 【5】 류구조 도박장 경품 교환 1만 점입니다. 세 곳 모두 상당한 양을 벌어야 하니 초반부터 조금씩 쌓아 두세요.", en: "Voucher 3 costs 10,000 chips at La Man, voucher 4 costs 10,000 at the Ryugujo casino, and voucher 5 costs 10,000 points at the Ryugujo gambling den — all substantial, so start banking early." },
         { ko: "류구조 카지노와 도박장은 드론 커스터마이즈용 상위 소재의 공급처이기도 합니다. 카지노는 최고 품질 와이어·정밀한 회로·강력한 자석 등을, 도박장은 일급품 나사·고강도 플라스틱과 특수 도료를 취급합니다.", en: "The Ryugujo tables also stock the high-end drone parts: the casino sells top-quality wire, precision circuits and strong magnets, and the gambling den premium screws, high-strength plastic and the novelty paints." },
-        { ko: "블랙잭은 손패 합계를 21에 가깝게 만드는 게임이고, 포커·코이코이·오이초카부는 시리즈 공통 규칙입니다. 자금이 부족하면 라 만보다 저레이트 쪽부터 도세요.", en: "Blackjack is the usual race to 21, and poker, koi-koi and oicho-kabu follow the series rules — work the lower rates first if your bankroll is thin." },
+        { ko: "블랙잭은 손패 합계를 21에 가깝게 만드는 게임이고, 포커·코이코이·오이초카부는 시리즈 공통 규칙입니다.", en: "Blackjack is the usual race to 21, and poker, koi-koi and oicho-kabu follow the series rules." },
       ],
       source: { label: "GameWith — ミニゲームの攻略とプレイスポット", url: "https://gamewith.jp/judgeeyes/article/show/134380" },
     },
@@ -275,7 +275,6 @@ export const judgmentMinigames: MinigamesData = {
       howTo: [
         { ko: "고양이는 조사 대상과 무관한 곳, 특히 창밖이나 화면 뒤쪽에 숨어 있는 경우가 많습니다. 서치 시작 화면에서 일단 뒤를 돌아보는 습관을 들이세요. 챕터 1의 클럽 아무르 앞 방범 카메라 조사에서는 시작 지점에서 뒤를 돌아 그대로 직진해 왼쪽을 보면 있습니다.", en: "Cats hide away from the actual evidence — often out of a window or directly behind you. Make turning around the first thing you do: in Chapter 1's security-camera search outside Club Amour, the cat is behind you, straight ahead and to the left." },
         { ko: "예: 챕터 2 제2 사건 현장은 노란 상자가 쌓인 곳의 좌상, 챕터 4 「사오리 씨의 생케이크 재판」 증거 수집은 겐다 법률사무소의 「법」 글자가 쓰인 창밖, 챕터 5 야가미 탐정사무소의 신야 조사는 레코드가 있는 곳의 창밖입니다.", en: "Examples: Chapter 2's second crime scene has one upper-left of the stacked yellow boxes; Chapter 4's cake-trial evidence hunt has one outside the window bearing the Genda law office's kanji; and Chapter 5's office search has one out the window by the records." },
-        { ko: "서치 모드로 놓친 고양이는 되돌아가 다시 찾을 수 없는 장면이 있으므로, 조사 장면마다 한 번씩 주위를 둘러보는 편이 안전합니다.", en: "Some search scenes can't be revisited, so sweep the surroundings once in every one rather than trusting you can come back." },
         { ko: "고양이 관련으로는 사이드 케이스 「성가신 고양이 수색」도 있습니다. 3장에서 거리 평판 Lv.5 이상일 때 BAR 텐더에서 수주할 수 있으므로, 프렌드 이벤트로 평판을 먼저 올려 두세요.", en: "There's also the side case about tracking down a troublesome cat, taken at Bar Tender in Chapter 3 once your town reputation hits level 5 — so push friend events first." },
       ],
       source: { label: "GameWith — 野良猫の居場所一覧", url: "https://gamewith.jp/judgeeyes/article/show/134534" },
