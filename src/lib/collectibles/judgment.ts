@@ -7,7 +7,7 @@ export const judgment: CollectiblesData = {
       slug: "side-cases",
       title: { ko: "사건 파일 50건", en: "Side Cases (50)" },
       summary: {
-        ko: "카무로초 곳곳에서 발생하는 의뢰형 사건을 50건 해결합니다. 10건 시 「On the Case」, 30건 시 「Local Detective」, 전부 시 「Got to the Bottom of It」 업적이 발동합니다. 미달성 요소는 없습니다.",
+        ko: "카무로초 곳곳에서 발생하는 의뢰형 사건을 50건 해결합니다. 10건 시 「사이드 케이스 10」, 30건 시 「사이드 케이스 30」, 전부 시 「사이드 케이스 제패」 업적이 발동합니다. 미달성 요소는 없습니다.",
         en: "Solve 50 request-based side cases around Kamurocho. 10 unlocks 'On the Case', 30 unlocks 'Local Detective', all 50 unlocks 'Got to the Bottom of It'. None are missable.",
       },
       tips: [
@@ -95,9 +95,9 @@ export const judgment: CollectiblesData = {
     },
     {
       slug: "friends",
-      title: { ko: "친구 50명 — 「A Friendly Guy」→「A Guy Everybody Knows」", en: "Friends — All 50 (\"A Friendly Guy\" → \"A Guy Everybody Knows\")" },
+      title: { ko: "친구 50명 — 「프렌드 10」→「파티 피플」", en: "Friends — All 50 (\"A Friendly Guy\" → \"A Guy Everybody Knows\")" },
       summary: {
-        ko: "카무로초 각지의 NPC와 특정 조건(반복 상호작용, 퀴즈 정답, 미니게임 승리 등)을 채우면 친구가 됩니다. 10명 시 「A Friendly Guy」, 30명 시 「A Popular Guy」, 50명 시 「A Guy Everybody Knows」 업적이 발동합니다.",
+        ko: "카무로초 각지의 NPC와 특정 조건(반복 상호작용, 퀴즈 정답, 미니게임 승리 등)을 채우면 친구가 됩니다. 10명 시 「프렌드 10」, 30명 시 「프렌드 30」, 50명 시 「파티 피플」 업적이 발동합니다.",
         en: "Meet a trigger condition (repeat interactions, quiz answers, minigame wins, etc.) with NPCs around Kamurocho to befriend them. 10 unlocks 'A Friendly Guy', 30 unlocks 'A Popular Guy', 50 unlocks 'A Guy Everybody Knows'.",
       },
       source: { label: "PowerPyx — Judgment Friends List and Locations", url: "https://www.powerpyx.com/judgment-friends-list-and-locations/" },

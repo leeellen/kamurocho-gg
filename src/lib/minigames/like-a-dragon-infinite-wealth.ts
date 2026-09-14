@@ -163,7 +163,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "호놀룰루 시티 — 알로 해피 투어즈", en: "Alo-Happy Tours, Honolulu" },
       summary: {
-        ko: "여행사 알로 해피 투어즈의 액티비티를 돈과 인간력으로 구매하면 그에 대응하는 직업이 해금되는 구조입니다. 액티비티 8종을 체험하면 트로피 「Alo-Happy as Can Be」. 같은 직업이라도 캐릭터마다 필요한 절(絆) 레벨이 달라서, 원하는 멤버 기준으로 절을 먼저 올려둬야 합니다.",
+        ko: "여행사 알로 해피 투어즈의 액티비티를 돈과 인간력으로 구매하면 그에 대응하는 직업이 해금되는 구조입니다. 액티비티 8종을 체험하면 트로피 「하와이를 만끽한 남자」. 같은 직업이라도 캐릭터마다 필요한 절(絆) 레벨이 달라서, 원하는 멤버 기준으로 절을 먼저 올려둬야 합니다.",
         en: "Buying an activity from the Alo-Happy Tours travel agency — each gated by money and a personality stat — unlocks the matching job, and experiencing eight of them gives the Alo-Happy as Can Be trophy. The bond level required differs per party member for the same job, so raise bonds with the member you actually want first.",
       },
       howTo: [
@@ -191,7 +191,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "호놀룰루 시티 — 하버 스트리트 (4장, 서브스토리 No.21 「대해원에 렛츠 다이브!」)", en: "Harbor Street, Honolulu — Chapter 4, substory No.21" },
       summary: {
-        ko: "수험료를 내고 4지선다 퀴즈를 푸는 자격 학교. 합격하면 대응하는 인간력이 크게 오릅니다(첫 합격 시). 자격 10종 취득으로 트로피 「License to Skill」, 20종 전부 합격하면 최종 「대해원 검정」이 열립니다.",
+        ko: "수험료를 내고 4지선다 퀴즈를 푸는 자격 학교. 합격하면 대응하는 인간력이 크게 오릅니다(첫 합격 시). 자격 10종 취득으로 트로피 「라이선스 마스터」, 20종 전부 합격하면 최종 「대해원 검정」이 열립니다.",
         en: "Pay an entry fee and answer multiple-choice questions; passing raises the matching personality stat (on the first pass). Ten certificates give the License to Skill trophy, and passing all twenty opens the final Ounabara Exam.",
       },
       howTo: [

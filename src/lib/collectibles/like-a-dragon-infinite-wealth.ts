@@ -11,7 +11,7 @@ export const likeADragonInfiniteWealth: CollectiblesData = {
         en: "150 numbered Sujimon exist in the Sujidex (plus 1 unnumbered fodder-only enemy, the Committee Agent, used only for Awakening material). 'Sujimaniac' needs 100 registered, 'Sujimon Sensei' needs 200 registrations — the latter counts cumulative registrations (duplicates included), not unique species, so catching extra common ones closes the gap even after registering all 150.",
       },
       tips: [
-        { ko: "포획 10마리 시 「수지몬 스내그 뎀」, 전체 전투 서브스토리 클리어 시 「수지 리그 챔피언」, 한 마리 레벨+우정도 만렙 시 「프라이즈 파이터」 업적도 함께 발동됩니다.", en: "Recruit 10 for 'Sujimon Snag 'Em', clear all Sujimon-related substories for 'Suji League Champion', and max one Sujimon's level + friendship for 'Prize Fighter'." },
+        { ko: "포획 10마리 시 「야쿠몬 넌 내 거야」, 전체 전투 서브스토리 클리어 시 「야쿠신 챔피언」, 한 마리 레벨+신뢰도 만렙 시 「이 녀석이 내 파트너다!」 업적도 함께 발동됩니다.", en: "Recruit 10 for 'Sujimon Snag 'Em', clear all Sujimon-related substories for 'Suji League Champion', and max one Sujimon's level + friendship for 'Prize Fighter'." },
         { ko: "예: 소다치(도감 #1)는 서브스토리 37 「스타터 고르기」로 확정 입수. 익스터미네이션 군(#044)은 와이키키 거리 모퉁이 스트리트 킹전 승리로 입수. 키와미 레드(#130)는 전설급 화염 속성 레이드(Lv.60) 보상. 키류 카즈마(#135/#136)는 엔딩 클리어 보상 또는 마스터 베케이션 번들 DLC 한정.", en: "Examples: Sodachi (#1) is a guaranteed pick from substory 37 'Choosing Your Starter'. Extermination-kun (#044) drops from a Street King battle at the Waikīkī St. corner. Kiwami Red (#130) comes from a Legendary Fire Element Raid (Lv.60). Kazuma Kiryu (#135/#136) is either a game-clear reward or DLC-exclusive." },
       ],
       source: [

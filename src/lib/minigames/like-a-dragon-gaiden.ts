@@ -136,7 +136,7 @@ export const likeADragonGaidenMinigames: MinigamesData = {
       difficulty: 1,
       location: { ko: "소텐보리 CLUB SEGA (소텐보리도리 북쪽) / 이진초 게임센터 사사키 (쓰루카메 가도 서쪽 부근)", en: "CLUB SEGA on north Sotenbori Street; Game Center Sasaki near west Tsurukame Road, Ijincho" },
       summary: {
-        ko: "두 게임센터의 라인업은 동일합니다. UFO 캐처를 포함해 6종을 플레이하면 트로피 「Arcade Dweller」입니다.",
+        ko: "두 게임센터의 라인업은 동일합니다. UFO 캐처를 포함해 6종을 플레이하면 트로피 「게임 센터에 눌어붙은 남자」입니다.",
         en: "Both arcades have the same line-up, and playing six different machines — the UFO catcher counts — gives the Arcade Dweller trophy.",
       },
       howTo: [
@@ -242,7 +242,7 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "판정은 GREAT / GOOD / MISS이고, GREAT과 GOOD이 이어지면 콤보가 쌓입니다. 한 번이라도 실패하면 콤보는 처음부터입니다.", en: "Inputs grade GREAT, GOOD or MISS; GREAT and GOOD both extend the combo and any miss resets it." },
         { ko: "콤보 20회 이상에서 「초정열 모드」에 들어가 점수가 크게 붙습니다. 콤보를 끊지 않는 것이 사실상 유일한 공략법입니다.", en: "Twenty combo puts you in Super Passion Mode and the score jumps — keeping the combo is effectively the whole technique." },
         { ko: "외전에서는 「정열적으로 추임새」를 넣을 수 있는 곡이 일부로 제한됩니다. 수록곡 중에서는 「Like A Butterfly」만 해당합니다.", en: "Gaiden restricts the passionate call-and-response option to a few songs — of the six, only Like A Butterfly has it." },
-        { ko: "아카메 드라마를 진행하면 아카메를 가라오케에 불러 듀엣을 부를 수 있고, 이것이 트로피 「Rising Superstar」 조건입니다.", en: "Advancing Akame's drama lets you invite him to karaoke for a duet — that's the Rising Superstar trophy." },
+        { ko: "아카메 드라마를 진행하면 아카메를 가라오케에 불러 듀엣을 부를 수 있고, 이것이 트로피 「나만의 여가수」 조건입니다.", en: "Advancing Akame's drama lets you invite him to karaoke for a duet — that's the Rising Superstar trophy." },
       ],
       source: { label: "ゲーム攻略マン — カラオケ攻略", url: "https://dswiipspwikips3.jp/yakuza7-gaiden/play-spots/karaoke.html" },
       achievementSlug: "karaoke_akame",
@@ -330,7 +330,7 @@ export const likeADragonGaidenMinigames: MinigamesData = {
         { ko: "커맨드는 HIT / STAND / SPLIT(처음 2장이 같은 숫자일 때) / DOUBLE DOWN이고, L2가 최소 BET, R2가 최대 BET입니다.", en: "Hit, Stand, Split (only on a matching opening pair) and Double Down; L2 is the minimum bet and R2 the maximum." },
         { ko: "포커는 텍사스 홀덤입니다. 손패 2장에 공유패가 3장 → 4장 → 5장으로 열리며 라운드마다 칩을 걸거나 내려갑니다. 역이 가장 강한 사람이 칩을 전부 가져갑니다.", en: "Poker is Texas Hold'em: two hole cards with the board opening three, four then five, betting or folding each round, winner takes the pot." },
         { ko: "동점이면 역을 만든 카드가 강한 쪽, 다음으로 역과 무관한 최강 카드(키커) 순으로 가리고, 전부 같으면 판돈을 나눕니다.", en: "Ties break on the hand's own cards, then the best unrelated card, and split the pot if everything matches." },
-        { ko: "트로피 「Royal Gambler」는 캐슬의 카지노와 도박장 양쪽을 플레이해야 나옵니다.", en: "The Royal Gambler trophy needs you to play both the Castle's casino and its gambling den." },
+        { ko: "트로피 「캐슬 갬블러」는 캐슬의 카지노와 도박장 양쪽을 플레이해야 나옵니다.", en: "The Royal Gambler trophy needs you to play both the Castle's casino and its gambling den." },
       ],
       source: [
         { label: "ゲーム攻略マン — ブラックジャック攻略", url: "https://dswiipspwikips3.jp/yakuza7-gaiden/play-spots/blackjack.html" },

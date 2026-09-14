@@ -44,7 +44,7 @@ export const likeADragonIshin: CollectiblesData = {
         title: { ko: "S랭크 — 최강 카드", en: "S-Rank — Top-Tier Cards" },
         location: { ko: "얼티밋 챌린지 + 콜로세움 최심부 + 특수 사이드 미션", en: "Ultimate Challenges + deepest Arena + special side missions" },
         body: { ko: "엔딩 후 얼티밋 챌린지 + 콜로세움 최심부 + 특수 사이드 미션 한정. 풀 덱 완성에 필수.", en: "Locked behind Ultimate Challenges + deepest Arena + special side missions. Required for the full deck." },
-        reward: { ko: "달성 목록 「대원 카드 컴플리트」 업적", en: "Trooper Card Completion achievement" },
+        reward: { ko: "풀 덱 완성 (별도 업적은 없음, 100장 달성 시 「소년이여, 대원을 품어라」만 존재)", en: "Completes the full deck (no dedicated achievement — only 'Drop and Give Me 100' at 100 cards)" },
       },
     ],
   },
@@ -69,7 +69,7 @@ export const likeADragonIshin: CollectiblesData = {
     slug: "fishing",
     title: { ko: "낚시 — 어종 29종 × 낚시터 4곳", en: "Fishing — 29 Species Across 4 Spots" },
     summary: {
-      ko: "「양식 있는 캐스트」 업적 자체는 총 10마리만 낚으면 되지만, 실제로는 바다 2곳·강 2곳 총 4개 낚시터에 29종의 물고기가 나뉘어 서식합니다.",
+      ko: "「초보 낚시꾼」 업적 자체는 총 10마리만 낚으면 되지만, 실제로는 바다 2곳·강 2곳 총 4개 낚시터에 29종의 물고기가 나뉘어 서식합니다.",
       en: "'A Well-Rounded Cast' itself only needs 10 total catches, but 29 distinct species are actually split across 2 sea spots and 2 river spots.",
     },
     tips: [
@@ -81,7 +81,7 @@ export const likeADragonIshin: CollectiblesData = {
     slug: "diligence-records",
     title: { ko: "정진기록 — 5/20/50/전체", en: "Diligence Records — 5/20/50/All" },
     summary: {
-      ko: "정진기록(精進目録)은 심부름 목록이 아니라 「사람이나 동물에게 100회 말 걸기」, 「음식점에서 20회 식사」, 「항아리에서 아이템 20개 입수」처럼 플레이 누계를 세는 항목의 모음입니다. 어드벤처·배틀 등 카테고리로 나뉘어 있고 달성하면 덕(徳)을 받습니다. 5건 시 「신의 미소」, 20건 시 「신의 기쁨」, 50건 시 「신의 찬가」, 전체 완료 시 「신도 겸손해지다」 업적이 발동합니다.",
+      ko: "정진기록(精進目録)은 심부름 목록이 아니라 「사람이나 동물에게 100회 말 걸기」, 「음식점에서 20회 식사」, 「항아리에서 아이템 20개 입수」처럼 플레이 누계를 세는 항목의 모음입니다. 어드벤처·배틀 등 카테고리로 나뉘어 있고 달성하면 덕(徳)을 받습니다. 5건 시 「정진한 남자」, 20건 시 「더욱 정진한 남자」, 50건 시 「크게 정진한 남자」, 전체 완료 시 「정진의 신」 업적이 발동합니다.",
       en: "Diligence Records are not errands but a list of cumulative play milestones — talk to 100 people or animals, eat 20 meals at restaurants, pull 20 items out of pots — split into Adventure, Battle and other categories, each paying out Virtue. 5 unlocks 'The Gods Smile Upon Thee', 20 unlocks 'The Gods Rejoice at Thee', 50 unlocks 'The Gods Sing Thy Praises', and clearing all of them unlocks 'The Gods Hath Been Humbled'.",
     },
     tips: [
@@ -93,9 +93,9 @@ export const likeADragonIshin: CollectiblesData = {
   },
   {
     slug: "restaurants",
-    title: { ko: "레스토랑 전부 주문 — 「무엇이든 하나씩」", en: "One of Everything — All Restaurants" },
+    title: { ko: "레스토랑 전부 주문 — 「교토 식당 전문가」", en: "One of Everything — All Restaurants" },
     summary: {
-      ko: "각 마을의 레스토랑에서 메뉴 하나씩만 주문하면 「무엇이든 하나씩」 업적이 발동합니다. 가장 싼 메뉴를 하나만 시켜도 카운트되며, 새 마을이 열릴 때마다 그 지역 식당을 한 바퀴 돌면 됩니다.",
+      ko: "각 마을의 레스토랑에서 메뉴 하나씩만 주문하면 「교토 식당 전문가」 업적이 발동합니다. 가장 싼 메뉴를 하나만 시켜도 카운트되며, 새 마을이 열릴 때마다 그 지역 식당을 한 바퀴 돌면 됩니다.",
       en: "Order at least one item at every restaurant across every town for 'I'll Have One of Everything'. Even the cheapest menu item counts — sweep each town's restaurants as soon as it unlocks.",
     },
     tips: [

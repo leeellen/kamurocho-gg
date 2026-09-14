@@ -8,7 +8,7 @@ const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const likeADragonIshinMinigames: MinigamesData = {
   appId: 1805480,
   intro: {
-    ko: "막부 말기 교토가 무대인 외전. 미니게임 컴플리트를 전부 달성하면 방어구 「천룡인(天龍印)」을 받고, 모든 플레이 스폿을 한 번씩 플레이하면 트로피 「The Man Who Does It All」이 나옵니다. 도박 종목은 목찰 누적 점수(치리린·코이코이·오이초카부 7,500점, 포커·초한 15,000점)가 컴플리트 조건이라 승패보다 총량이 중요합니다. 경계(競鶏)는 이 게임에서 돈과 덕을 가장 빠르게 버는 수단입니다.",
+    ko: "막부 말기 교토가 무대인 외전. 미니게임 컴플리트를 전부 달성하면 방어구 「천룡인(天龍印)」을 받고, 모든 플레이 스폿을 한 번씩 플레이하면 트로피 「놀이를 섭렵한 남자」가 나옵니다. 도박 종목은 목찰 누적 점수(치리린·코이코이·오이초카부 7,500점, 포커·초한 15,000점)가 컴플리트 조건이라 승패보다 총량이 중요합니다. 경계(競鶏)는 이 게임에서 돈과 덕을 가장 빠르게 버는 수단입니다.",
     en: "A Bakumatsu-era spin-off set in Kyo. Completing every minigame gives the Tenryu Crest headgear, and playing every play spot once earns \"The Man Who Does It All\". The gambling entries complete on cumulative wooden-token points — 7,500 for cee-lo, koi-koi and oicho-kabu, 15,000 for poker and cho-han — so total volume matters more than any single win. Chicken racing is the fastest money and Virtue in the game.",
   },
   minigames: [
@@ -19,7 +19,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 4,
       location: { ko: "별택 (본편 진행으로 해금)", en: "Your second home, unlocked through the main story" },
       summary: {
-        ko: "농사·낚시·요리·행상·펫으로 이루어진 생활 파트. 최종 목표는 행상 주문을 받아 납품하고 하루카의 빚을 전부 갚는 것으로, 완납하면 트로피 「World's Greatest Uncle」입니다.",
+        ko: "농사·낚시·요리·행상·펫으로 이루어진 생활 파트. 최종 목표는 행상 주문을 받아 납품하고 하루카의 빚을 전부 갚는 것으로, 완납하면 트로피 「대출 상환!」입니다.",
         en: "The life sim — farming, fishing, cooking, trading and pets. The end goal is filling trade orders until Haruka's debt is cleared, which gives the World's Greatest Uncle trophy.",
       },
       howTo: [
@@ -40,7 +40,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "라쿠나이 「니치부자」 (1회 1량 2,000문)", en: "Nichibuza, Rakunai (1 ryo 2,000 mon a play)" },
       summary: {
-        ko: "노트를 맞춰 누르는 리듬 게임. 전 악곡을 아무 난이도로든 클리어하면 트로피 「Lord of the Dance」이고, 전 난이도를 「일류」 이상으로 클리어해야 컴플리트가 오릅니다.",
+        ko: "노트를 맞춰 누르는 리듬 게임. 전 악곡을 아무 난이도로든 클리어하면 트로피 「춤 좀 추는 남자」이고, 전 난이도를 「일류」 이상으로 클리어해야 컴플리트가 오릅니다.",
         en: "A note-matching rhythm game. Clearing every song on any difficulty gives Lord of the Dance; the completion list wants every difficulty cleared at first-class rank or better.",
       },
       howTo: [
@@ -67,7 +67,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "후시미 「우타마루야」 (1곡 500문)", en: "Utamaruya, Fushimi (500 mon a song)" },
       summary: {
-        ko: "화면의 아이콘에 맞춰 같은 버튼을 누르는 리듬 게임. 전 악곡을 부르면 트로피 「Sing Your Heart Out」이고, 컴플리트 항목 「당점의 간판 남자」와 최고 랭크 「분위기 신」이 따로 걸려 있습니다.",
+        ko: "화면의 아이콘에 맞춰 같은 버튼을 누르는 리듬 게임. 전 악곡을 부르면 트로피 「노래 좀 하는 남자」이고, 컴플리트 항목 「당점의 간판 남자」와 최고 랭크 「분위기 신」이 따로 걸려 있습니다.",
         en: "Match the on-screen icon with the same button. Singing every song gives Sing Your Heart Out, with the completion entry and the top \"crowd god\" rank as separate goals.",
       },
       howTo: [
@@ -112,7 +112,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 5,
       location: { ko: "기온 「야마부키」 (1회 1량)", en: "Yamabuki, Gion (1 ryo a play)" },
       summary: {
-        ko: "유곽에서 안나(杏南)를 상대로 「술 대결」·「가위바위보」·「간호」 3종을 플레이합니다. 세 종목을 각각 아수라급까지 클리어하는 것이 목표이고, 전부 클리어하면 트로피 「Like a Dragon in Heaven」입니다.",
+        ko: "유곽에서 안나(杏南)를 상대로 「술 대결」·「가위바위보」·「간호」 3종을 플레이합니다. 세 종목을 각각 아수라급까지 클리어하는 것이 목표이고, 전부 클리어하면 트로피 「하늘에 오르는 용과 같이」입니다.",
         en: "Three games against Anna at the courtesan house: a drinking contest, janken and \"nursing\". The goal is clearing all three up to Ashura class, which gives Like a Dragon in Heaven.",
       },
       howTo: [
@@ -173,7 +173,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 5,
       location: { ko: "무쿠로가이(骸街) 투기장", en: "The arena in Mukuro Town" },
       summary: {
-        ko: "「승발전(勝ち抜き戦)」과 「백인 베기」를 치르는 실력 시험장. 컴플리트 보상은 대통(大筒) 「봉황」이고, 10승으로 트로피 「This is MY Ring!」, 궁극 투기를 전부 클리어하면 「Ultimate Champion」입니다.",
+        ko: "「승발전(勝ち抜き戦)」과 「백인 베기」를 치르는 실력 시험장. 컴플리트 보상은 대통(大筒) 「봉황」이고, 10승으로 트로피 「투기장은 나의 앞마당」, 궁극 투기를 전부 클리어하면 「궁극의 끝에 도달한 자」입니다.",
         en: "Gauntlet fights and the Hundred-Man Slash. Completing it awards the Houou cannon, ten wins give This is MY Ring!, and clearing every Ultimate Challenge gives Ultimate Champion.",
       },
       howTo: [

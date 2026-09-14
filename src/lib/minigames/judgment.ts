@@ -126,7 +126,7 @@ export const judgmentMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "클럽세가 극장앞광장점", en: "Club SEGA Theater Square" },
       summary: {
-        ko: "덤벼드는 좀비를 쓰러뜨리는 건 슈팅형 아케이드입니다. 트로피 「Zombie Apocalypse Survivor」는 이 게임에서 픽업 50개를 획득하는 조건입니다.",
+        ko: "덤벼드는 좀비를 쓰러뜨리는 건 슈팅형 아케이드입니다. 트로피 「물자 보급」은 이 게임에서 픽업 50개를 획득하는 조건입니다.",
         en: "A light-gun style arcade shooter against oncoming zombies. The Zombie Apocalypse Survivor trophy asks for 50 pickups inside it.",
       },
       howTo: [
@@ -143,7 +143,7 @@ export const judgmentMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "클럽세가 극장앞광장점 / 클럽세가 나카미치도리점", en: "Club SEGA Theater Square and Club SEGA Nakamichi Street" },
       summary: {
-        ko: "실제 세가 아케이드 타이틀을 플레이할 수 있습니다. 점포마다 놓인 기체가 다르므로 트로피 「The Gamer Life」(전 아케이드 게임 플레이)를 노린다면 두 점포를 모두 돌아야 합니다.",
+        ko: "실제 세가 아케이드 타이틀을 플레이할 수 있습니다. 점포마다 놓인 기체가 다르므로 트로피 「게이머」(전 아케이드 게임 플레이)를 노린다면 두 점포를 모두 돌아야 합니다.",
         en: "Real SEGA arcade titles, split between two branches — so The Gamer Life, which wants every cabinet played, needs both.",
       },
       howTo: [
@@ -250,7 +250,7 @@ export const judgmentMinigames: MinigamesData = {
       difficulty: 4,
       location: { ko: "카무로초 전역 — 맵의 초록색 「악수 아이콘」", en: "All over Kamurocho — the green handshake icons on the map" },
       summary: {
-        ko: "챕터 1을 어느 정도 진행하면 열리는 시스템입니다. 거리 사람들의 고민과 의뢰를 해결해 절 게이지를 최대까지 올리면 프렌드가 됩니다. 50명을 만들면 트로피 「A Guy Everybody Knows」입니다.",
+        ko: "챕터 1을 어느 정도 진행하면 열리는 시스템입니다. 거리 사람들의 고민과 의뢰를 해결해 절 게이지를 최대까지 올리면 프렌드가 됩니다. 50명을 만들면 트로피 「파티 피플」입니다.",
         en: "Unlocked partway through Chapter 1: solve people's problems around town to fill their bond gauge and make them a friend. Fifty of them gives A Guy Everybody Knows.",
       },
       howTo: [
@@ -269,7 +269,7 @@ export const judgmentMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "메인 스토리·사이드 케이스의 서치 모드 장면", en: "Search-mode scenes across the main story and side cases" },
       summary: {
-        ko: "메인 스토리의 서치 모드에서 모든 들고양이를 찾으면 트로피 「Oh Look, a Cat!」를 받습니다. 서치 모드는 L3로 들어가는 1인칭 조사 액션입니다.",
+        ko: "메인 스토리의 서치 모드에서 모든 들고양이를 찾으면 트로피 「길고양이 서치」를 받습니다. 서치 모드는 L3로 들어가는 1인칭 조사 액션입니다.",
         en: "Finding every stray cat in the main story's search-mode scenes gives the Oh Look, a Cat! trophy. Search mode is the first-person investigation view on L3.",
       },
       howTo: [

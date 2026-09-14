@@ -108,7 +108,7 @@ export const likeADragonPirate: CollectiblesData = {
       slug: "pets",
       title: { ko: "고로 킹덤 — 펫 11마리", en: "Goro Kingdom — All 11 Pets" },
       summary: {
-        ko: "「Making a Menagerie」 업적은 펫 7마리 확보 시 발동. 3마리(고로·피닉스·오니기리)는 스토리로 자동 합류하니 나머지 8마리 중 4마리만 더 찾으면 됩니다.",
+        ko: "「모여봐요! 고로 왕국」 업적은 펫 7마리 확보 시 발동. 3마리(고로·피닉스·오니기리)는 스토리로 자동 합류하니 나머지 8마리 중 4마리만 더 찾으면 됩니다.",
         en: "'Making a Menagerie' needs 7 pets. 3 (Goro, Phoenix, Onigiri) join automatically via the story, so only 4 more of the remaining 8 are needed.",
       },
       source: { label: "TheGamer — Goro Kingdom Complete Animal Location Guide", url: "https://www.thegamer.com/like-a-dragon-pirate-yakuza-in-hawaii-goro-kingdom-complete-animal-location-guide/" },
@@ -128,9 +128,9 @@ export const likeADragonPirate: CollectiblesData = {
     },
     {
       slug: "islands",
-      title: { ko: "섬 탐험 10개 — Island Adventurer", en: "Island Exploration — 10 Islands (Island Adventurer)" },
+      title: { ko: "섬 탐험 10개 — 나는야 모험가", en: "Island Exploration — 10 Islands (Island Adventurer)" },
       summary: {
-        ko: "던전형 섬 10곳을 클리어하면 「Island Adventurer」 업적이 발동합니다. 확인된 던전 섬은 다이나·점보(리치 아일랜드 해역), 알레·엘레아나·이모스(네레 아일랜드 해역), 바하·바낙·고알레가(마들란티스 해역), 후아카이·나하나하·마카우누이(하와이 해역), 야나기·사산콰·엠마(아탈리 아일랜드 해역) 등 20곳 이상 존재 — 어느 10곳을 고르든 상관없이 클리어하면 카운트됩니다.",
+        ko: "던전형 섬 10곳을 클리어하면 「나는야 모험가」 업적이 발동합니다. 확인된 던전 섬은 다이나·점보(리치 아일랜드 해역), 알레·엘레아나·이모스(네레 아일랜드 해역), 바하·바낙·고알레가(마들란티스 해역), 후아카이·나하나하·마카우누이(하와이 해역), 야나기·사산콰·엠마(아탈리 아일랜드 해역) 등 20곳 이상 존재 — 어느 10곳을 고르든 상관없이 클리어하면 카운트됩니다.",
         en: "Clear 10 dungeon-style islands for 'Island Adventurer'. Confirmed dungeon islands include Dyna & Jumbo (Rich Island waters), Ahle, Eleahna & Eamoth (Nele Island waters), Baja, Varnack & Goalega (Madlantis waters), Huaka'i, Nahanaha & Makau Nui (Hawaii waters), Yanagi, Sasanqua & Emma (Atali Island waters) — 20+ exist in total, and any 10 cleared count toward the achievement.",
       },
       tips: [
@@ -142,7 +142,7 @@ export const likeADragonPirate: CollectiblesData = {
       slug: "crew",
       title: { ko: "고로 해적단 — 크루 영입 (30/50/80명)", en: "Goro Pirates — Crew Recruitment (30/50/80)" },
       summary: {
-        ko: "전체 107명 중 30명 합류 시 「Welcome to the Goro Pirates!」, 50명 시 「The Goro Pirates Set Sail!」, 80명 시 「Goro Pirates, Go Go Go!」 업적이 발동합니다. 영입 방법은 스카우트·서브스토리·미니게임 포인트 교환 세 가지로 나뉩니다.",
+        ko: "전체 107명 중 30명 합류 시 「고로 해적단에 온 걸 환영한다!」, 50명 시 「약진! 고로 해적단」, 80명 시 「최강! 고로 해적단」 업적이 발동합니다. 영입 방법은 스카우트·서브스토리·미니게임 포인트 교환 세 가지로 나뉩니다.",
         en: "Of 107 total crew, recruit 30 for 'Welcome to the Goro Pirates!', 50 for 'The Goro Pirates Set Sail!', 80 for 'Goro Pirates, Go Go Go!'. Recruitment splits into three methods: scouting, substories, and minigame-point exchanges.",
       },
       tips: [
@@ -158,9 +158,9 @@ export const likeADragonPirate: CollectiblesData = {
     },
     {
       slug: "photo-rally",
-      title: { ko: "포토랠리 — 「Memories of Honolulu」", en: "Photo Rally — 'Memories of Honolulu'" },
+      title: { ko: "포토랠리 — 「추억 가득한 호놀룰루 시티」", en: "Photo Rally — 'Memories of Honolulu'" },
       summary: {
-        ko: "하와이·리치 아일랜드·마들란티스 전역에 사진 촬영 지점 100곳이 있으며, 그중 30장만 찍으면 업적이 발동합니다. 챕터 2 서브스토리 3 「사진으로 남기고 싶어서」로 처음 해금됩니다. 지역 세트를 전부 채우면 그 지역 한정 코스메틱 보상을 받습니다.",
+        ko: "하와이·리치 아일랜드·마들란티스 전역에 사진 촬영 지점 100곳이 있으며, 그중 30장만 찍으면 「추억 가득한 호놀룰루 시티」 업적이 발동합니다. 챕터 2 서브스토리 3 「사진으로 남기고 싶어서」로 처음 해금됩니다. 지역 세트를 전부 채우면 그 지역 한정 코스메틱 보상을 받습니다.",
         en: "100 photo spots exist across Hawaii, Rich Island, and Madlantis; only 30 are needed for the achievement. First unlocked via Chapter 2 Substory #3. Completing a full regional set grants a cosmetic item exclusive to that set.",
       },
       tips: [
@@ -173,7 +173,7 @@ export const likeADragonPirate: CollectiblesData = {
       slug: "outfits",
       title: { ko: "의상 수집 — 20/50/100종", en: "Outfit Collection — 20/50/100" },
       summary: {
-        ko: "의상 20종 입수 시 「Goodbye, Old Me」, 50종 시 「Fashionista」, 100종 시 「Trendsetter」 업적이 발동합니다. 상점 구매·미니게임 상품 교환·서브스토리 보상 세 경로로 모입니다.",
+        ko: "의상 20종 입수 시 「패션 테러리스트 탈출」, 50종 시 「패션 리더」, 100종 시 「패션 마스터」 업적이 발동합니다. 상점 구매·미니게임 상품 교환·서브스토리 보상 세 경로로 모입니다.",
         en: "20 items unlocks 'Goodbye, Old Me', 50 unlocks 'Fashionista', 100 unlocks 'Trendsetter'. Items come from shop purchases, minigame prize exchanges, and substory rewards.",
       },
       tips: [

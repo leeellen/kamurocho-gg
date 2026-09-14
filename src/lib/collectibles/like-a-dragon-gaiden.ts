@@ -7,7 +7,7 @@ export const yakuzaGaiden: CollectiblesData = {
       slug: "coin-lockers",
       title: { ko: "물품 보관함 — 50개 열쇠와 보상", en: "Coin Lockers — 50 Keys & Rewards" },
       summary: {
-        ko: "소텐보리·캐슬 전역에 흩어진 코인로커 열쇠 50개(A1~J5). 「Locked Up」 업적은 그중 30개만 열면 달성됩니다.",
+        ko: "소텐보리·캐슬 전역에 흩어진 코인로커 열쇠 50개(A1~J5). 「코인로커 LOVER」 업적은 그중 30개만 열면 달성됩니다.",
         en: "50 coin-locker keys (A1-J5) scattered across Sotenbori and The Castle. The 'Locked Up' achievement only needs 30 of the 50 opened.",
       },
       tips: [
@@ -137,7 +137,7 @@ export const yakuzaGaiden: CollectiblesData = {
       slug: "gold-balls",
       title: { ko: "골드볼 7개 — 전부 찾기", en: "Gold Balls — All 7 Locations" },
       summary: {
-        ko: "「Gotta Catch Some Balls!」 업적용 골드볼 7개의 정확한 위치와 입수 조건입니다.",
+        ko: "「황금알 GET!」 업적 자체는 1개만 얻어도 발동되지만, 골드볼 7개 전체의 정확한 위치와 입수 조건을 모았습니다.",
         en: "Exact location + acquisition condition for all 7 Gold Balls needed for 'Gotta Catch Some Balls!'.",
       },
       source: { label: "PowerPyx — All Gold Ball Locations", url: "https://www.powerpyx.com/like-a-dragon-gaiden-all-gold-ball-locations/" },
@@ -189,9 +189,9 @@ export const yakuzaGaiden: CollectiblesData = {
     },
     {
       slug: "outfits",
-      title: { ko: "의상 수집 — Fashion Scrub → Fashionista → Trendsetter", en: "Outfit Collection — Fashion Scrub → Fashionista → Trendsetter" },
+      title: { ko: "의상 수집 — 패션 초보자 → 패션 중급자 → 패셔너블 보스", en: "Outfit Collection — Fashion Scrub → Fashionista → Trendsetter" },
       summary: {
-        ko: "의상 15종 입수 시 「Fashion Scrub」, 30종 시 「Fashionista」, 50종 시 「Trendsetter」 업적 발동. 개별 의상 하나하나의 고정 획득처를 정리한 가이드는 없고, 세 가지 입수 경로로 나뉩니다.",
+        ko: "의상 15종 입수 시 「패션 초보자」, 30종 시 「패션 중급자」, 50종 시 「패셔너블 보스」 업적 발동. 개별 의상 하나하나의 고정 획득처를 정리한 가이드는 없고, 세 가지 입수 경로로 나뉩니다.",
         en: "Collect 15 outfit pieces for 'Fashion Scrub', 30 for 'Fashionista', 50 for 'Trendsetter'. No guide tracks every single piece's fixed source individually — items come from three acquisition paths instead.",
       },
       tips: [

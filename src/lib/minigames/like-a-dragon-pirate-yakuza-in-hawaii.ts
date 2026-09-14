@@ -9,7 +9,7 @@ const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const likeADragonPirateMinigames: MinigamesData = {
   appId: 3061810,
   intro: {
-    ko: "마지마 고로가 해적이 되어 하와이와 마들랜티스를 누비는 외전. 뼈대는 고로마루를 몰고 벌이는 해적 배틀과 파이러츠 콜로세움이고, 그 바깥으로 시리즈 단골 플레이 스폿이 하와이·마들랜티스 양쪽에 흩어져 있습니다. 각 종목에는 「위업 챌린지」라는 단계별 목표가 붙어 있어 아래 항목마다 그 수치를 적어 두었습니다. 서로 다른 미니게임 10종을 플레이하면 트로피 「Party Pirate」.",
+    ko: "마지마 고로가 해적이 되어 하와이와 마들랜티스를 누비는 외전. 뼈대는 고로마루를 몰고 벌이는 해적 배틀과 파이러츠 콜로세움이고, 그 바깥으로 시리즈 단골 플레이 스폿이 하와이·마들랜티스 양쪽에 흩어져 있습니다. 각 종목에는 「위업 챌린지」라는 단계별 목표가 붙어 있어 아래 항목마다 그 수치를 적어 두었습니다. 서로 다른 미니게임 10종을 플레이하면 트로피 「선장님은 즐기는 자」.",
     en: "The spin-off where Goro Majima turns pirate across Hawaii and Madlantis. Its backbone is ship-to-ship pirate battle aboard the Goromaru and the Pirates' Coliseum, with the series' usual play spots scattered across both maps. Each spot carries tiered Feat Challenges, and their targets are listed per entry below. Playing ten different minigames gives the Party Pirate trophy.",
   },
   minigames: [
@@ -399,7 +399,7 @@ export const likeADragonPirateMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "호놀룰루 시티 — 오우나바라 라이선스 스쿨", en: "The Ounabara Vocational School, Honolulu" },
       summary: {
-        ko: "수험료를 내고 퀴즈를 풀어 자격을 따는 학교입니다. 자격마다 명성 포인트가 붙어 있어 해적 랭크를 올리는 수단이기도 합니다. 5종을 따면 트로피 「Erudite Pirate」입니다.",
+        ko: "수험료를 내고 퀴즈를 풀어 자격을 따는 학교입니다. 자격마다 명성 포인트가 붙어 있어 해적 랭크를 올리는 수단이기도 합니다. 5종을 따면 트로피 「목표는 엘리트 해적왕!」입니다.",
         en: "Pay a fee, answer the quiz, collect certificates — each worth Fame, which feeds your Pirate Rank. Five certificates give the Erudite Pirate trophy.",
       },
       howTo: [
