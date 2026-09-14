@@ -391,8 +391,8 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   className="block w-full rounded-lg"
                 />
               )}
-              <div className="mt-2 flex items-center justify-between gap-2 text-[11px]">
-                <span className="font-mono text-[var(--text-tertiary)]">
+              <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px]">
+                <span className="mr-auto font-mono text-[var(--text-tertiary)]">
                   No.{String(item.number).padStart(2, "0")}
                 </span>
                 {unpinned && (
