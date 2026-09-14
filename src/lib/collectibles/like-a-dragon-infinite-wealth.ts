@@ -7,7 +7,7 @@ export const likeADragonInfiniteWealth: CollectiblesData = {
       slug: "sujidex",
       title: { ko: "야쿠몬 도감(수지덱스) — 전체 150종", en: "Sujidex — All 150 Sujimon" },
       summary: {
-        ko: "야쿠몬(수지몬)은 도감 번호 150종이 존재하며(포획 전용 잔몹 「위원회 요원」 1종은 도감 번호 없이 각성 재료로만 사용). 「수지매니악」은 100종 등록, 「수지몬 센세이」는 200회 등록 시 발동 — 후자는 고유 종 수가 아니라 누적 등록 횟수(중복 포획 포함)라 150종을 다 모아도 부족하면 흔한 개체를 더 포획하면 됩니다.",
+        ko: "야쿠몬(수지몬)은 도감 번호 150종이 존재하며(포획 전용 잔몹 「위원회 요원」 1종은 도감 번호 없이 각성 재료로만 사용). 「야쿠몬, 좋아하시죠?」는 100종 등록, 「당신이 바로 야쿠몬 박사」는 200종 등록 시 발동 — 후자는 고유 종 수가 아니라 누적 등록 횟수(중복 포획 포함)라 150종을 다 모아도 부족하면 흔한 개체를 더 포획하면 됩니다.",
         en: "150 numbered Sujimon exist in the Sujidex (plus 1 unnumbered fodder-only enemy, the Committee Agent, used only for Awakening material). 'Sujimaniac' needs 100 registered, 'Sujimon Sensei' needs 200 registrations — the latter counts cumulative registrations (duplicates included), not unique species, so catching extra common ones closes the gap even after registering all 150.",
       },
       tips: [
