@@ -349,5 +349,49 @@ export const lostJudgmentMinigames: MinigamesData = {
       ],
       source: { label: "ゲーム攻略マン — ダーツ攻略", url: "https://dswiipspwikips3.jp/lost-judgment/playspots/darts.html" },
     },
+    {
+      slug: "batting-center",
+      name: { ko: "배팅 센터", en: "Batting Center" },
+      category: { ko: "스포츠", en: "Sports" },
+      difficulty: 4,
+      location: { ko: "이진초 — MIRAI 배팅 센터 / 카무로초 — 요시다 배팅 센터", en: "MIRAI Batting Center (Ijincho) and Yoshida Batting Center (Kamurocho)" },
+      summary: {
+        ko: "두 지점이 진행도·포인트를 공유합니다. 「쇼와의 괴물」·「헤이세이의 괴물」·「이도류의 괴물」·「세계의 괴물」 4개 몬스터 코스가 각각 챌린지(3단계)와 홈런 코스로 나뉩니다.",
+        en: "Progress and points are shared between the two locations. Four named tiers — Showa Monster, Heisei Monster, Twin-Blade Monster and World Monster — each split into a 3-level Challenge Course and a Home Run Course.",
+      },
+      howTo: [
+        { ko: "챌린지 코스는 3×3 그리드에서 공이 떨어질 칸이 미리 표시되고, 구질·구속도 코스별로 완전히 고정된 스크립트입니다. 미리 외우면 난이도가 크게 내려갑니다.", en: "Challenge Course lights up the target square in advance, and both pitch type and speed follow a fully fixed script per course — memorizing it changes the difficulty entirely." },
+        { ko: "챌린지 코스는 10구 중 정해진 안타·홈런 합계(8개 이상)를 넘겨야 클리어, 홈런 코스는 10구 중 홈런 8개 이상이 조건입니다. 만점이 아니라도 클리어됩니다.", en: "Challenge Course needs 8+ hits/homers out of 10; Home Run Course needs 8+ home runs out of 10 — a perfect run isn't required for either." },
+        { ko: "가장 어려운 세계의 괴물 코스는 최고 165km/h 스트레이트가 나옵니다. 타격감을 넓히는 서레니티 배트(판정 확대, 점수 ×0.7)와 점수를 높이는 엑스퍼트 배트 중 상황에 맞게 고르세요.", en: "The hardest World Monster tier throws up to 165 km/h — pick the Serenity Bat (wider hitbox, 0.7x score) for reliability or the Expert Bat for higher score with a smaller window." },
+      ],
+      source: [
+        { label: "kamigame.jp — ロストジャッジメント バッティングセンター", url: "https://kamigame.jp/lost_judgment/page/172782429554099394.html" },
+        { label: "gamewith.jp — ロストジャッジメント バッティングセンター", url: "https://gamewith.jp/lostjudgment/article/show/295065" },
+      ],
+      courses: [
+        {
+          title: { ko: "챌린지 코스 — 세계의 괴물 Lv.1", en: "Challenge Course — World Monster Lv.1" },
+          note: { ko: "가장 어려운 티어 — 쇼와/헤이세이/이도류 몬스터 순서표는 추가 예정", en: "Hardest tier — Showa/Heisei/Twin-Blade Monster tables are pending" },
+          pitches: [
+            { pos: 4, type: "Cutter", speed: "140" }, { pos: 5, type: "Changeup", speed: "100" }, { pos: 1, type: "Curve", speed: "110" }, { pos: 3, type: "One-seam", speed: "140" }, { pos: 5, type: "Straight", speed: "165" },
+            { pos: 2, type: "Curve", speed: "110" }, { pos: 7, type: "Slider", speed: "135" }, { pos: 4, type: "Changeup", speed: "100" }, { pos: 2, type: "Slider", speed: "125" }, { pos: 4, type: "Forkball", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 세계의 괴물 Lv.2", en: "Challenge Course — World Monster Lv.2" },
+          pitches: [
+            { pos: 1, type: "Sinker", speed: "110" }, { pos: 8, type: "One-seam", speed: "140" }, { pos: 4, type: "Shoot", speed: "125" }, { pos: 7, type: "Slider", speed: "135" }, { pos: 6, type: "Curve", speed: "110" },
+            { pos: 2, type: "Slider", speed: "135" }, { pos: 5, type: "Changeup", speed: "90" }, { pos: 8, type: "Two-seam", speed: "140" }, { pos: 8, type: "Shoot", speed: "135" }, { pos: 6, type: "Changeup", speed: "90" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 세계의 괴물 Lv.3", en: "Challenge Course — World Monster Lv.3" },
+          pitches: [
+            { pos: 8, type: "Fast Slider", speed: "150" }, { pos: 9, type: "Straight", speed: "145" }, { pos: 6, type: "Cutter", speed: "130" }, { pos: 1, type: "Two-seam", speed: "140" }, { pos: 6, type: "Forkball", speed: "115" },
+            { pos: 2, type: "Fast Slider", speed: "150" }, { pos: 9, type: "One-seam", speed: "130" }, { pos: 1, type: "Forkball", speed: "135" }, { pos: 8, type: "Changeup", speed: "90" }, { pos: 3, type: "Straight", speed: "165" },
+          ],
+        },
+      ],
+    },
   ],
 };

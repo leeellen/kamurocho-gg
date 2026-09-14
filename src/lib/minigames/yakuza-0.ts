@@ -140,8 +140,59 @@ export const yakuza0Minigames: MinigamesData = {
       source: [
         { label: "GameFAQs — Yakuza 0: Batting Center (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/816306-yakuza-0/faqs/74451/batting-center" },
         { label: "GameFAQs — Yakuza 0: Completion Metrics (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/816306-yakuza-0/faqs/74451/completion-metrics" },
+        { label: "kamigame.jp — 龍が如く0 バッティングセンター", url: "https://kamigame.jp/ryugagotoku0/page/282386205562151159.html" },
       ],
       achievementSlug: "28_what_a",
+      courses: [
+        {
+          title: { ko: "이지", en: "Easy" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed, landing spot is your choice" },
+          pitches: [
+            { type: "Straight", speed: "82–106" }, { type: "Curve", speed: "62–78" }, { type: "Sinker", speed: "70–81" }, { type: "Curve", speed: "65–71" }, { type: "Straight", speed: "118–125" },
+            { type: "Curve", speed: "60–78" }, { type: "Curve", speed: "61–76" }, { type: "Straight", speed: "112–124" }, { type: "Straight", speed: "82–104" }, { type: "Sinker", speed: "73–78" },
+            { type: "Curve", speed: "74–78" }, { type: "Straight", speed: "118–128" }, { type: "Curve", speed: "62–71" }, { type: "Straight", speed: "121–125" }, { type: "Straight", speed: "102–108" },
+            { type: "Straight", speed: "114–127" }, { type: "Curve", speed: "66–76" }, { type: "Straight", speed: "85–86" }, { type: "Straight", speed: "118–120" }, { type: "Curve", speed: "63–76" },
+          ],
+        },
+        {
+          title: { ko: "노멀", en: "Normal" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed, landing spot is your choice" },
+          pitches: [
+            { type: "Straight", speed: "118–122" }, { type: "Sinker", speed: "82–108" }, { type: "Curve", speed: "64–77" }, { type: "Straight", speed: "115–128" }, { type: "Straight", speed: "82–105" },
+            { type: "Sinker", speed: "86–108" }, { type: "Straight", speed: "116–128" }, { type: "Curve", speed: "60–77" }, { type: "Straight", speed: "113–128" }, { type: "Sinker", speed: "83–108" },
+            { type: "Curve", speed: "84–88" }, { type: "Straight", speed: "112–128" }, { type: "Curve", speed: "65–66" }, { type: "Sinker", speed: "83–106" }, { type: "Straight", speed: "113–128" },
+            { type: "Curve", speed: "60–71" }, { type: "Straight", speed: "117–123" }, { type: "Straight", speed: "85–107" }, { type: "Sinker", speed: "84–107" }, { type: "Straight", speed: "132–145" },
+          ],
+        },
+        {
+          title: { ko: "하드", en: "Hard" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed, landing spot is your choice" },
+          pitches: [
+            { type: "Straight", speed: "112–126" }, { type: "Sinker", speed: "83–108" }, { type: "Straight", speed: "86–108" }, { type: "Curve", speed: "80–88" }, { type: "Straight", speed: "111–128" },
+            { type: "Sinker", speed: "85–108" }, { type: "Straight", speed: "112–127" }, { type: "Straight", speed: "80–100" }, { type: "Straight", speed: "112–127" }, { type: "Sinker", speed: "87–105" },
+            { type: "Sinker", speed: "70–84" }, { type: "Straight", speed: "111–125" }, { type: "Straight", speed: "84–108" }, { type: "Curve", speed: "83–87" }, { type: "Straight", speed: "115–128" },
+            { type: "Sinker", speed: "71–88" }, { type: "Straight", speed: "83–100" }, { type: "Straight", speed: "113–115" }, { type: "Curve", speed: "83–88" }, { type: "Straight", speed: "112–126" },
+          ],
+        },
+        {
+          title: { ko: "골드 러시", en: "Gold Rush" },
+          note: { ko: "11구 중 1구라도 놓치면 그 판 상금 전액 소멸 — 위치는 이동 타겟 하나뿐", en: "One target only — miss any of the 11 pitches and the whole run's prize money is forfeit" },
+          pitches: [
+            { type: "Curve", speed: "60–66" }, { type: "Straight", speed: "151–158" }, { type: "Sinker", speed: "137–148" }, { type: "Sinker", speed: "68–75" }, { type: "Curve", speed: "107–112" },
+            { type: "Straight", speed: "152–160" }, { type: "Curve (¥2,000,000 무지개 타겟)", speed: "107–112" }, { type: "Straight", speed: "152–160" }, { type: "Sinker", speed: "63–78" }, { type: "Straight", speed: "151–160" },
+            { type: "Sinker", speed: "135–145" },
+          ],
+        },
+        {
+          title: { ko: "EX 골드 러시", en: "EX Gold Rush" },
+          note: { ko: "11구, 최대 4,000만 엔 — 미스 시 전액 소멸", en: "11 pitches, up to ¥40,000,000 — miss any and it's all gone" },
+          pitches: [
+            { type: "Straight", speed: "136–145" }, { type: "Sinker", speed: "115–128" }, { type: "Straight", speed: "151–161" }, { type: "Curve", speed: "107–112" }, { type: "Sinker", speed: "132–148" },
+            { type: "Curve", speed: "60–66" }, { type: "Sinker (¥15,000,000 무지개 타겟)", speed: "133–140" }, { type: "Curve", speed: "107–110" }, { type: "Straight", speed: "141–142" }, { type: "Sinker", speed: "132–145" },
+            { type: "Curve", speed: "123–128" },
+          ],
+        },
+      ],
     },
     {
       slug: "pocket-circuit",

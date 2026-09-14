@@ -388,6 +388,31 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       source: [
         { label: "神ゲー攻略 — バッティングセンターの攻略のコツと景品一覧", url: "https://kamigame.jp/ryugagotoku8/page/303430467896508979.html" },
         { label: "PINION — プレイスポットの場所・遊びかた一覧", url: "https://pinion.jp/%E3%82%AC%E3%82%A4%E3%83%89/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F8-%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%81%AE%E5%A0%B4%E6%89%80%E3%81%A8%E9%81%8A%E3%81%B3%E3%81%8B%E3%81%9F/" },
+        { label: "game8.jp — 龍が如く8 バッティングセンター", url: "https://game8.jp/ryu-ga-gotoku8/590832" },
+      ],
+      courses: [
+        {
+          title: { ko: "챌린지 코스 — 초인급 1", en: "Challenge Course — Superhuman 1" },
+          note: { ko: "가장 어려운 티어 — 초급·중급·상급 순서표는 추가 예정", en: "Hardest tier — Beginner/Intermediate/Advanced tables are pending" },
+          pitches: [
+            { pos: 7, type: "Straight", speed: "165" }, { pos: 2, type: "Changeup", speed: "90" }, { pos: 3, type: "Sinker", speed: "120" }, { pos: 1, type: "One-seam", speed: "140" }, { pos: 6, type: "Curve", speed: "110" },
+            { pos: 9, type: "Two-seam", speed: "140" }, { pos: 9, type: "Fast slider", speed: "150" }, { pos: 6, type: "Shoot", speed: "125" }, { pos: 6, type: "Cutball", speed: "130" }, { pos: 2, type: "Split", speed: "145" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 2", en: "Challenge Course — Superhuman 2" },
+          pitches: [
+            { pos: 6, type: "Slider", speed: "125" }, { pos: 1, type: "Shoot", speed: "125" }, { pos: 3, type: "Curve", speed: "110" }, { pos: 9, type: "Cutball", speed: "140" }, { pos: 1, type: "Sinker", speed: "120" },
+            { pos: 2, type: "Two-seam", speed: "140" }, { pos: 1, type: "Fast forkball", speed: "150" }, { pos: 2, type: "One-seam", speed: "140" }, { pos: 7, type: "Straight", speed: "165" }, { pos: 3, type: "Changeup", speed: "90" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 3", en: "Challenge Course — Superhuman 3" },
+          pitches: [
+            { pos: 8, type: "Straight", speed: "165" }, { pos: 2, type: "Changeup", speed: "90" }, { pos: 1, type: "Sinker", speed: "130" }, { pos: 9, type: "Power slider", speed: "145" }, { pos: 4, type: "Two-seam", speed: "140" },
+            { pos: 9, type: "Shoot", speed: "125" }, { pos: 6, type: "Cutball", speed: "140" }, { pos: 1, type: "One-seam", speed: "140" }, { pos: 3, type: "Curve", speed: "110" }, { pos: 3, type: "Power slider", speed: "145" },
+          ],
+        },
       ],
     },
     {

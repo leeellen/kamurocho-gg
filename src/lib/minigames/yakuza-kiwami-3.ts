@@ -56,6 +56,96 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       source: [
         { label: "ゲームエイト — 龍が如く極3 バッティングセンター", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/762058" },
         { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+        { label: "darage.com — 龍が如く極3 バッティングセンター", url: "https://darage.com/guide/ryukiwami3/mini01.html" },
+      ],
+      courses: [
+        {
+          title: { ko: "챌린지 코스 — 초급 1", en: "Challenge Course — Beginner 1" },
+          note: { ko: "전 구질 스트레이트 계열", en: "All fastball-family pitches" },
+          pitches: [
+            { pos: 5, type: "Straight", speed: "135" }, { pos: 9, type: "Straight", speed: "135" }, { pos: 7, type: "Straight", speed: "135" }, { pos: 4, type: "Straight", speed: "145" }, { pos: 2, type: "Straight", speed: "135" },
+            { pos: 1, type: "Straight", speed: "135" }, { pos: 8, type: "Straight", speed: "145" }, { pos: 3, type: "Straight", speed: "135" }, { pos: 8, type: "Straight", speed: "145" }, { pos: 7, type: "Straight", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 2", en: "Challenge Course — Beginner 2" },
+          pitches: [
+            { pos: 2, type: "Straight", speed: "145" }, { pos: 7, type: "Curve", speed: "110" }, { pos: 1, type: "Straight", speed: "145" }, { pos: 4, type: "Straight", speed: "145" }, { pos: 5, type: "Curve", speed: "110" },
+            { pos: 8, type: "Straight", speed: "145" }, { pos: 9, type: "Straight", speed: "135" }, { pos: 6, type: "Curve", speed: "110" }, { pos: 3, type: "Curve", speed: "120" }, { pos: 4, type: "Straight", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 3", en: "Challenge Course — Beginner 3" },
+          pitches: [
+            { pos: 1, type: "Straight", speed: "145" }, { pos: 9, type: "Two-seam", speed: "120" }, { pos: 8, type: "Straight", speed: "135" }, { pos: 7, type: "Straight", speed: "145" }, { pos: 2, type: "Two-seam", speed: "130" },
+            { pos: 5, type: "Straight", speed: "145" }, { pos: 7, type: "Straight", speed: "145" }, { pos: 3, type: "Straight", speed: "145" }, { pos: 4, type: "Two-seam", speed: "140" }, { pos: 6, type: "Straight", speed: "155" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 1", en: "Challenge Course — Intermediate 1" },
+          pitches: [
+            { pos: 4, type: "One-seam", speed: "120" }, { pos: 2, type: "Straight", speed: "155" }, { pos: 7, type: "Cutball", speed: "120" }, { pos: 1, type: "Straight", speed: "145" }, { pos: 3, type: "One-seam", speed: "130" },
+            { pos: 2, type: "Cutball", speed: "140" }, { pos: 9, type: "Straight", speed: "155" }, { pos: 6, type: "One-seam", speed: "140" }, { pos: 4, type: "Straight", speed: "155" }, { pos: 3, type: "Straight", speed: "145" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 2", en: "Challenge Course — Intermediate 2" },
+          pitches: [
+            { pos: 2, type: "Straight", speed: "155" }, { pos: 6, type: "Shoot", speed: "115" }, { pos: 1, type: "Straight", speed: "145" }, { pos: 8, type: "Fork", speed: "115" }, { pos: 2, type: "Shoot", speed: "125" },
+            { pos: 3, type: "Straight", speed: "145" }, { pos: 7, type: "Shoot", speed: "135" }, { pos: 9, type: "Straight", speed: "155" }, { pos: 5, type: "Fork", speed: "125" }, { pos: 7, type: "Straight", speed: "145" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 3", en: "Challenge Course — Intermediate 3" },
+          pitches: [
+            { pos: 1, type: "Curve", speed: "120" }, { pos: 3, type: "Straight", speed: "165" }, { pos: 1, type: "Curve", speed: "130" }, { pos: 8, type: "Changeup", speed: "90" }, { pos: 3, type: "Straight", speed: "155" },
+            { pos: 5, type: "Changeup", speed: "90" }, { pos: 7, type: "Changeup", speed: "100" }, { pos: 6, type: "Straight", speed: "155" }, { pos: 3, type: "Curve", speed: "120" }, { pos: 9, type: "Straight", speed: "155" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 1", en: "Challenge Course — Advanced 1" },
+          pitches: [
+            { pos: 1, type: "Two-seam", speed: "120" }, { pos: 6, type: "Shoot", speed: "125" }, { pos: 9, type: "Straight", speed: "165" }, { pos: 4, type: "Slider", speed: "115" }, { pos: 1, type: "Shoot", speed: "125" },
+            { pos: 5, type: "Two-seam", speed: "130" }, { pos: 3, type: "Straight", speed: "165" }, { pos: 6, type: "Cutball", speed: "130" }, { pos: 1, type: "Straight", speed: "165" }, { pos: 7, type: "Cutball", speed: "140" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 2", en: "Challenge Course — Advanced 2" },
+          pitches: [
+            { pos: 9, type: "Split", speed: "125" }, { pos: 6, type: "One-seam", speed: "130" }, { pos: 8, type: "Changeup", speed: "100" }, { pos: 5, type: "Straight", speed: "165" }, { pos: 4, type: "Fork", speed: "135" },
+            { pos: 5, type: "One-seam", speed: "140" }, { pos: 3, type: "Split", speed: "135" }, { pos: 1, type: "Changeup", speed: "110" }, { pos: 2, type: "One-seam", speed: "140" }, { pos: 7, type: "Straight", speed: "170" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 3", en: "Challenge Course — Advanced 3" },
+          pitches: [
+            { pos: 3, type: "One-seam", speed: "140" }, { pos: 8, type: "Straight", speed: "165" }, { pos: 5, type: "Power Slider", speed: "145" }, { pos: 2, type: "Curve", speed: "130" }, { pos: 4, type: "Straight", speed: "165" },
+            { pos: 2, type: "One-seam", speed: "140" }, { pos: 5, type: "Sinker", speed: "130" }, { pos: 8, type: "Curve", speed: "120" }, { pos: 3, type: "Straight", speed: "170" }, { pos: 9, type: "Sinker", speed: "120" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 1", en: "Challenge Course — Superhuman 1" },
+          note: { ko: "가장 어려운 티어, 최고 170km/h", en: "Hardest tier, up to 170 km/h" },
+          pitches: [
+            { pos: 4, type: "Fast Shoot", speed: "155" }, { pos: 5, type: "Straight", speed: "170" }, { pos: 2, type: "Changeup", speed: "90" }, { pos: 6, type: "Fast Slider", speed: "155" }, { pos: 5, type: "Straight", speed: "170" },
+            { pos: 8, type: "Fast Hop", speed: "165" }, { pos: 1, type: "Changeup", speed: "110" }, { pos: 4, type: "Fast Shoot", speed: "155" }, { pos: 2, type: "Changeup", speed: "100" }, { pos: 2, type: "Straight", speed: "170" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 2", en: "Challenge Course — Superhuman 2" },
+          pitches: [
+            { pos: 3, type: "Drop", speed: "120" }, { pos: 4, type: "Straight", speed: "165" }, { pos: 6, type: "Fast Slider", speed: "150" }, { pos: 3, type: "Power Slider", speed: "145" }, { pos: 2, type: "Changeup", speed: "100" },
+            { pos: 7, type: "Straight", speed: "165" }, { pos: 6, type: "Fast Fork", speed: "150" }, { pos: 9, type: "Straight", speed: "165" }, { pos: 3, type: "Drop", speed: "120" }, { pos: 7, type: "Straight", speed: "170" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 3", en: "Challenge Course — Superhuman 3" },
+          note: { ko: "다스레이지(darage.com) 원본은 착탄 위치를 숫자로 라벨링하지 않음 — 이미지 픽셀 분석으로 좌표 추정, 단일 출처", en: "Source doesn't label positions numerically — inferred from marker-image pixel analysis, single-sourced" },
+          pitches: [
+            { pos: 4, type: "Straight", speed: "170" }, { pos: 6, type: "Fast Slider", speed: "160" }, { pos: 3, type: "Drop", speed: "120" }, { pos: 7, type: "Straight", speed: "170" }, { pos: 2, type: "Fast Fork", speed: "150" },
+            { pos: 3, type: "Power Slider", speed: "145" }, { pos: 9, type: "Straight", speed: "170" }, { pos: 3, type: "Sinker", speed: "130" }, { pos: 2, type: "Drop", speed: "120" }, { pos: 8, type: "Straight", speed: "170" },
+          ],
+        },
       ],
     },
     {

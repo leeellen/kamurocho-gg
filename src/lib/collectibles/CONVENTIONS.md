@@ -74,6 +74,51 @@ the modal enlarge rule above to make it legible.
   imageless/substory-handled entries — filtering first shifts every later
   item's image by one.
 
+## Batting-center-style fixed pitch sequences (`Minigame.courses`)
+
+Some minigames (batting centers across the series) throw a genuinely fixed,
+memorizable sequence of pitches per course. `src/lib/minigames/types.ts`'s
+`Minigame.courses` field holds this: `{ title, note?, pitches: { pos?, type,
+speed? }[] }[]`, rendered by `minigames-section.tsx` as a collapsed
+`<details>` table (collapsed by default — do not render it expanded, the
+tables are long).
+
+**Two different mechanics — don't force one shape onto the other:**
+- **Free-aim** (Yakuza 0, Kiwami, 3, 4, 5's Kamurocho courses): the player
+  aims the cursor themselves. Pitch **type + speed** is fixed and worth
+  documenting; landing **position is not** — leave `pos` undefined on every
+  pitch and say so in the course's `note` (`"위치는 자유 조준 — 구질·구속만
+  고정"`). Never invent a position for these.
+- **Scripted target** (Yakuza 6, Kiwami 2, Kiwami 3, Yakuza: Like a Dragon,
+  Judgment, Lost Judgment, Infinite Wealth's Challenge/Home-Run courses): the
+  target square lights up before the pitch arrives — position genuinely is
+  fixed content, not player choice. Give every pitch a `pos`.
+- A few courses are randomized on top of an otherwise-scripted game (Kiwami
+  2's 超人級・3, Yakuza 6's Expert Home Run + Challenge Expert 3) — omit
+  `pos` there too and say why in `note`, don't average/guess a position.
+
+**Position numbering — numpad, not phone dial-pad, site-wide:**
+```
+7 8 9
+4 5 6
+1 2 3
+```
+(top-left = 7, viewed from the batter). This is the only convention
+confirmed against actual marker images (Yakuza 6's GameFAQs diagram, Kiwami
+2's `base1.jpg`–`base9.jpg` files) rather than inferred from prose. Sources
+for Judgment/Yakuza 7/Lost Judgment/Infinite Wealth only gave directional
+words (top-left, center, lower-right, …) — convert those words to this
+numpad numbering yourself; don't reuse a different source's own inferred
+numbering (one research pass reconciled Judgment's course against a
+telephone-pad-numbered wiki page, i.e. 1-2-3 on top — that numbering must
+NOT end up in the data, only the underlying directional facts survive the
+conversion).
+
+**Never claim full coverage you don't have.** When only the hardest tier was
+transcribed (true for Judgment, Yakuza 7, Lost Judgment and Infinite Wealth
+as of 2026-09), say so in that course's `note` (`"...순서표는 추가 예정"`)
+rather than imply the rest don't exist or are the same.
+
 ## See also
 
 Claude's private memory `collectible-map-template.md` has the deeper

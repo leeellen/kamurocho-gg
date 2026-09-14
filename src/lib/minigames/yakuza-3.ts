@@ -78,8 +78,51 @@ export const yakuza3Minigames: MinigamesData = {
       source: [
         { label: "GameFAQs — Yakuza 3 Remastered: Batting Center (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/batting-center" },
         { label: "GameFAQs — Yakuza 3 Remastered: Completion (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/completion" },
+        { label: "darage.com — 龍が如く3 バッティングセンター", url: "https://darage.com/enjoygame/diary/ryu/ryu3k01.html" },
       ],
       achievementSlug: "achievement_40",
+      courses: [
+        {
+          title: { ko: "이지", en: "Easy" },
+          note: { ko: "위치 조준 없이 자동 — 구질·구속만 고정", en: "No aiming needed — pitch type/speed fixed" },
+          pitches: [
+            { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "100" },
+            { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" },
+            { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" },
+            { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "70" },
+          ],
+        },
+        {
+          title: { ko: "노멀", en: "Normal" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed" },
+          pitches: [
+            { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" },
+            { type: "Sinker", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" },
+            { type: "Curve", speed: "70" }, { type: "Fastball", speed: "100" }, { type: "Sinker", speed: "80" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "100" },
+            { type: "Fastball", speed: "100" }, { type: "Curve", speed: "85" }, { type: "Sinker", speed: "80" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "140" },
+          ],
+        },
+        {
+          title: { ko: "하드", en: "Hard" },
+          note: { ko: "3×3 패널 조준 — 위치는 자유 조준, 구질·구속만 고정. 1,100점 이상이면 엑스트라 하드 해금", en: "3x3 panel, free-aim — 1,100+ points unlocks Extra Hard" },
+          pitches: [
+            { type: "Fastball", speed: "140" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "120" }, { type: "Curve", speed: "85" },
+            { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "140" }, { type: "Sinker", speed: "120" }, { type: "Sinker", speed: "100" },
+            { type: "Fastball", speed: "160" }, { type: "Curve", speed: "85" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "100" }, { type: "Curve", speed: "85" },
+            { type: "Fastball", speed: "140" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "110" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "160" },
+          ],
+        },
+        {
+          title: { ko: "엑스트라 하드", en: "Extra Hard" },
+          note: { ko: "조준 커서가 보이지 않음 — 노릴 패널을 키류 눈높이, 화면 오른쪽 끝과 키류의 중간쯤에 두는 게 기준", en: "Aiming cursor is invisible — line the panel up at Kiryu's eye level, about halfway between him and the right edge" },
+          pitches: [
+            { type: "Fastball", speed: "160" }, { type: "Curve", speed: "70" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "100" }, { type: "Sinker", speed: "140" },
+            { type: "Curve", speed: "85" }, { type: "Sinker", speed: "140" }, { type: "Sinker", speed: "80" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" },
+            { type: "Sinker", speed: "80" }, { type: "Curve", speed: "110" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "160" },
+            { type: "Sinker", speed: "100" }, { type: "Curve", speed: "130" }, { type: "Sinker", speed: "140" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "160" },
+          ],
+        },
+      ],
     },
     {
       slug: "karaoke",

@@ -24,6 +24,19 @@ export type Minigame = {
   source?: { label: string; url: string } | { label: string; url: string }[];
   /** Optional related achievement api_name (lowercased) to deep-link to. */
   achievementSlug?: string;
+  /**
+   * Optional fixed pitch-by-pitch breakdown per course (batting-center style
+   * minigames). `pos` is the 3x3 landing zone using the numpad convention
+   * (7 8 9 / 4 5 6 / 1 2 3, viewed from the batter) — omit `pos` on a pitch
+   * whose zone is player-aimed rather than scripted, or when the course as a
+   * whole isn't a grid (see `course.note`).
+   */
+  courses?: {
+    title: LocalizedText;
+    /** e.g. "위치는 자유 조준 — 구질·구속만 고정" or a random-position caveat. */
+    note?: LocalizedText;
+    pitches?: { pos?: number; type: string; speed?: string }[];
+  }[];
 };
 
 export type MinigamesData = {

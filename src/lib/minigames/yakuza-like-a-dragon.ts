@@ -176,7 +176,34 @@ export const yakuzaLikeADragonMinigames: MinigamesData = {
         { ko: "커서를 코스에 맞춘 뒤, 투구와 함께 줄어드는 커서가 공 크기와 겹치는 순간에 휘두르는 것이 정타입니다.", en: "Line the cursor up, then swing as the shrinking cursor matches the ball's size." },
         { ko: "구질별 구속대가 다릅니다. 느린 커브에서 타이밍을 당기지 않는 것이 점수를 지키는 핵심입니다.", en: "Speeds differ by pitch type, and not rushing the slow curves is what protects the score." },
       ],
-      source: { label: "ゲーム攻略マン — 龍が如く7 バッティングセンター", url: "https://dswiipspwikips3.jp/yakuza7/play-spots/batting-center.html" },
+      source: [
+        { label: "ゲーム攻略マン — 龍が如く7 バッティングセンター", url: "https://dswiipspwikips3.jp/yakuza7/play-spots/batting-center.html" },
+        { label: "kamigame.jp — 龍が如く7 バッティングセンター", url: "https://kamigame.jp/龍が如く7/プレイスポット/バッティングセンター.html" },
+      ],
+      courses: [
+        {
+          title: { ko: "챌린지 코스 — 초인급 1", en: "Challenge Course — Superhuman 1" },
+          note: { ko: "가장 어려운 티어 — 초급·중급·상급 순서표는 추가 예정", en: "Hardest tier — Beginner/Intermediate/Advanced tables are pending" },
+          pitches: [
+            { pos: 1, type: "One-seam", speed: "140" }, { pos: 6, type: "Cutball", speed: "130" }, { pos: 2, type: "Changeup", speed: "90" }, { pos: 3, type: "Sinker", speed: "120" }, { pos: 9, type: "Two-seam", speed: "140" },
+            { pos: 1, type: "Curve", speed: "110" }, { pos: 2, type: "Split", speed: "145" }, { pos: 7, type: "Straight", speed: "155" }, { pos: 9, type: "Slider", speed: "125" }, { pos: 6, type: "Shoot", speed: "125" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 2", en: "Challenge Course — Superhuman 2" },
+          pitches: [
+            { pos: 3, type: "Curve", speed: "110" }, { pos: 2, type: "One-seam", speed: "140" }, { pos: 6, type: "Slider", speed: "125" }, { pos: 1, type: "Shoot", speed: "125" }, { pos: 7, type: "Straight", speed: "155" },
+            { pos: 1, type: "Sinker", speed: "120" }, { pos: 9, type: "Cutball", speed: "140" }, { pos: 2, type: "Two-seam", speed: "140" }, { pos: 3, type: "Changeup", speed: "90" }, { pos: 1, type: "Fork", speed: "125" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 3", en: "Challenge Course — Superhuman 3" },
+          pitches: [
+            { pos: 2, type: "Power slider", speed: "145" }, { pos: 8, type: "Straight", speed: "155" }, { pos: 6, type: "Cutball", speed: "130" }, { pos: 1, type: "Sinker", speed: "110" }, { pos: 3, type: "Curve", speed: "110" },
+            { pos: 2, type: "Changeup", speed: "90" }, { pos: 4, type: "Two-seam", speed: "140" }, { pos: 9, type: "Shoot", speed: "125" }, { pos: 1, type: "One-seam", speed: "140" }, { pos: 3, type: "Power slider", speed: "145" },
+          ],
+        },
+      ],
     },
     {
       slug: "darts",

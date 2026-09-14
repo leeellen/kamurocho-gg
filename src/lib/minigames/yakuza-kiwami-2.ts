@@ -92,8 +92,102 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
       videos: [
         { title: { ko: "전 야구 챌린지 클리어 (홈런·챌린지 코스)", en: "All baseball challenges (home run / challenge courses)" }, url: YT("tzPHyCBmfE8") },
       ],
-      source: { label: "ゲーム攻略マン — 龍が如く極2 バッティングセンター", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/play-spot/batting-center.html" },
+      source: [
+        { label: "ゲーム攻略マン — 龍が如く極2 バッティングセンター", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/play-spot/batting-center.html" },
+        { label: "darage.com — 龍が如く極2 バッティングセンター", url: "https://darage.com/guide/ryukiwami2/mini01.html" },
+      ],
       achievementSlug: "lexus2_tasseimkokuroku_all_clear",
+      courses: [
+        {
+          title: { ko: "챌린지 코스 — 초급 1", en: "Challenge Course — Beginner 1" },
+          pitches: [
+            { pos: 5, type: "Straight", speed: "135" }, { pos: 3, type: "Straight", speed: "145" }, { pos: 7, type: "Straight", speed: "155" }, { pos: 1, type: "Straight", speed: "135" }, { pos: 9, type: "Straight", speed: "155" },
+            { pos: 4, type: "Straight", speed: "155" }, { pos: 6, type: "Straight", speed: "145" }, { pos: 5, type: "Straight", speed: "155" }, { pos: 7, type: "Straight", speed: "135" }, { pos: 3, type: "Straight", speed: "155" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 2", en: "Challenge Course — Beginner 2" },
+          pitches: [
+            { pos: 3, type: "Curve", speed: "120" }, { pos: 4, type: "Curve", speed: "110" }, { pos: 9, type: "Straight", speed: "145" }, { pos: 1, type: "Curve", speed: "110" }, { pos: 6, type: "Curve", speed: "120" },
+            { pos: 2, type: "Straight", speed: "135" }, { pos: 8, type: "Straight", speed: "145" }, { pos: 1, type: "Curve", speed: "110" }, { pos: 7, type: "Straight", speed: "145" }, { pos: 3, type: "Curve", speed: "110" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 3", en: "Challenge Course — Beginner 3" },
+          pitches: [
+            { pos: 3, type: "Curve", speed: "120" }, { pos: 1, type: "Sinker", speed: "110" }, { pos: 3, type: "Sinker", speed: "120" }, { pos: 6, type: "Curve", speed: "110" }, { pos: 4, type: "Curve", speed: "120" },
+            { pos: 2, type: "Curve", speed: "110" }, { pos: 1, type: "Sinker", speed: "120" }, { pos: 3, type: "Curve", speed: "110" }, { pos: 1, type: "Sinker", speed: "120" }, { pos: 6, type: "Sinker", speed: "110" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 1", en: "Challenge Course — Intermediate 1" },
+          pitches: [
+            { pos: 6, type: "Cutball", speed: "130" }, { pos: 2, type: "Split", speed: "145" }, { pos: 5, type: "One-seam", speed: "130" }, { pos: 3, type: "Cutball", speed: "120" }, { pos: 7, type: "Two-seam", speed: "140" },
+            { pos: 1, type: "Split", speed: "135" }, { pos: 3, type: "One-seam", speed: "130" }, { pos: 1, type: "Split", speed: "125" }, { pos: 1, type: "Cutball", speed: "130" }, { pos: 6, type: "Two-seam", speed: "140" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 2", en: "Challenge Course — Intermediate 2" },
+          pitches: [
+            { pos: 6, type: "Slider", speed: "125" }, { pos: 4, type: "Shoot", speed: "125" }, { pos: 2, type: "Straight", speed: "155" }, { pos: 2, type: "Fork", speed: "125" }, { pos: 5, type: "Slider", speed: "115" },
+            { pos: 3, type: "Shoot", speed: "125" }, { pos: 1, type: "Fork", speed: "125" }, { pos: 9, type: "Shoot", speed: "115" }, { pos: 7, type: "Slider", speed: "125" }, { pos: 2, type: "Fork", speed: "125" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 3", en: "Challenge Course — Intermediate 3" },
+          pitches: [
+            { pos: 5, type: "Straight", speed: "145" }, { pos: 2, type: "Changeup", speed: "100" }, { pos: 6, type: "Straight", speed: "145" }, { pos: 1, type: "Curve", speed: "120" }, { pos: 4, type: "Straight", speed: "145" },
+            { pos: 3, type: "Sinker", speed: "120" }, { pos: 8, type: "Straight", speed: "145" }, { pos: 2, type: "Straight", speed: "145" }, { pos: 1, type: "Changeup", speed: "100" }, { pos: 6, type: "Curve", speed: "110" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 1", en: "Challenge Course — Advanced 1" },
+          pitches: [
+            { pos: 6, type: "Slider", speed: "125" }, { pos: 6, type: "Cutball", speed: "130" }, { pos: 1, type: "Two-seam", speed: "130" }, { pos: 3, type: "Cutball", speed: "130" }, { pos: 7, type: "Shoot", speed: "135" },
+            { pos: 9, type: "Slider", speed: "125" }, { pos: 3, type: "Cutball", speed: "140" }, { pos: 3, type: "Shoot", speed: "135" }, { pos: 4, type: "Two-seam", speed: "140" }, { pos: 1, type: "Slider", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 2", en: "Challenge Course — Advanced 2" },
+          pitches: [
+            { pos: 6, type: "Fork", speed: "125" }, { pos: 7, type: "One-seam", speed: "130" }, { pos: 2, type: "Changeup", speed: "100" }, { pos: 1, type: "Split", speed: "135" }, { pos: 3, type: "Changeup", speed: "100" },
+            { pos: 4, type: "Fork", speed: "125" }, { pos: 6, type: "Split", speed: "145" }, { pos: 2, type: "Changeup", speed: "110" }, { pos: 9, type: "One-seam", speed: "140" }, { pos: 1, type: "Fork", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 3", en: "Challenge Course — Advanced 3" },
+          pitches: [
+            { pos: 3, type: "Curve", speed: "120" }, { pos: 7, type: "Two-seam", speed: "130" }, { pos: 3, type: "Sinker", speed: "120" }, { pos: 7, type: "One-seam", speed: "130" }, { pos: 4, type: "Curve", speed: "120" },
+            { pos: 6, type: "Sinker", speed: "120" }, { pos: 1, type: "One-seam", speed: "140" }, { pos: 3, type: "Curve", speed: "130" }, { pos: 9, type: "Two-seam", speed: "140" }, { pos: 1, type: "Sinker", speed: "130" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 1", en: "Challenge Course — Superhuman 1" },
+          note: { ko: "가장 어려운 티어", en: "Hardest tier" },
+          pitches: [
+            { pos: 8, type: "Two-seam", speed: "140" }, { pos: 3, type: "Curve", speed: "110" }, { pos: 4, type: "American Dream", speed: "120" }, { pos: 2, type: "Split", speed: "145" }, { pos: 9, type: "Slider", speed: "135" },
+            { pos: 2, type: "Changeup", speed: "90" }, { pos: 7, type: "Hop", speed: "160" }, { pos: 3, type: "Fork", speed: "125" }, { pos: 7, type: "Cutball", speed: "140" }, { pos: 3, type: "Sinker", speed: "110" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 2", en: "Challenge Course — Superhuman 2" },
+          pitches: [
+            { pos: 1, type: "Curve", speed: "120" }, { pos: 3, type: "Linear Straight", speed: "170" }, { pos: 2, type: "Fork", speed: "135" }, { pos: 7, type: "Two-seam", speed: "140" }, { pos: 9, type: "Cutball", speed: "140" },
+            { pos: 2, type: "Changeup", speed: "90" }, { pos: 6, type: "Hop", speed: "160" }, { pos: 4, type: "Slider", speed: "135" }, { pos: 7, type: "Linear Straight", speed: "170" }, { pos: 3, type: "Shoot", speed: "135" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초인급 3", en: "Challenge Course — Superhuman 3" },
+          note: {
+            ko: "위치가 매판 랜덤 — 아래는 1구 착탄 지점 기준 상대 이동(구질·구속은 고정)",
+            en: "Position randomizes each run — listed as movement relative to pitch 1's landing spot (type/speed still fixed)",
+          },
+          pitches: [
+            { type: "American Dream (기준)", speed: "120" }, { type: "Fork · 아래로 0.5칸", speed: "135" }, { type: "Curve · 우하 1칸", speed: "110" }, { type: "Linear Straight · 기준과 동일", speed: "170" }, { type: "Sinker · 좌하 1칸", speed: "120" },
+            { type: "Two-seam · 좌로 0.5칸", speed: "140" }, { type: "Slider · 우로 1칸", speed: "135" }, { type: "American Dream · 기준과 동일", speed: "120" }, { type: "Changeup · 아래로 1칸", speed: "90" }, { type: "American Dream · 기준과 동일", speed: "120" },
+          ],
+        },
+      ],
     },
     {
       slug: "mahjong",

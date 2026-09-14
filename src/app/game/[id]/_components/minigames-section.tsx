@@ -77,6 +77,76 @@ function MinigameCard({
         ))}
       </ul>
 
+      {game.courses && game.courses.length > 0 && (
+        <details className="group mt-4 rounded-xl border border-[var(--border-subtle)]">
+          <summary className="cursor-pointer list-none rounded-xl px-4 py-2.5 text-[14px] font-semibold text-[var(--text-secondary)] hover:text-white">
+            {locale === "ko" ? "코스별 투구 순서표 보기" : "Show course-by-course pitch order"}
+            <span aria-hidden="true" className="ml-1.5 inline-block transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <div className="flex flex-col gap-4 border-t border-[var(--border-subtle)] px-4 pb-4 pt-3">
+            <p className="m-0 text-[13px] text-[var(--text-tertiary)]">
+              {locale === "ko"
+                ? "위치는 넘버패드 배열입니다: 7 8 9 / 4 5 6 / 1 2 3 (타자 시점 좌상단=7). 위치 칸이 빈 구질은 그 코스가 자유 조준이라 정해진 착탄점이 없다는 뜻입니다."
+                : "Positions use a numpad layout: 7 8 9 / 4 5 6 / 1 2 3 (top-left = 7, batter's view). A blank position means that course is free-aim — pitch type/speed is fixed but the landing zone is the player's choice."}
+            </p>
+            {game.courses.map((course, ci) => (
+              <div key={ci} className="overflow-x-auto">
+                <div className="mb-1.5 text-[13px] font-bold text-white">{pick(course.title, locale)}</div>
+                {course.note && (
+                  <div className="mb-1.5 text-[12px] text-[var(--text-tertiary)]">{pick(course.note, locale)}</div>
+                )}
+                {course.pitches && course.pitches.length > 0 && (
+                  <table className="w-max min-w-full border-collapse text-[12px]">
+                    <thead>
+                      <tr className="text-[var(--text-tertiary)]">
+                        <th className="border-b border-[var(--border-subtle)] px-2 py-1 text-left font-mono">#</th>
+                        {course.pitches.map((_, i) => (
+                          <th key={i} className="border-b border-[var(--border-subtle)] px-2 py-1 text-left font-mono">
+                            {i + 1}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="px-2 py-1 font-mono text-[var(--text-tertiary)]">
+                          {locale === "ko" ? "위치" : "Pos"}
+                        </td>
+                        {course.pitches.map((p, i) => (
+                          <td key={i} className="px-2 py-1 font-mono text-[var(--accent)]">
+                            {p.pos ?? "–"}
+                          </td>
+                        ))}
+                      </tr>
+                      <tr>
+                        <td className="px-2 py-1 font-mono text-[var(--text-tertiary)]">
+                          {locale === "ko" ? "구질" : "Type"}
+                        </td>
+                        {course.pitches.map((p, i) => (
+                          <td key={i} className="whitespace-nowrap px-2 py-1 text-[var(--text-secondary)]">
+                            {p.type}
+                          </td>
+                        ))}
+                      </tr>
+                      <tr>
+                        <td className="px-2 py-1 font-mono text-[var(--text-tertiary)]">
+                          {locale === "ko" ? "구속" : "Speed"}
+                        </td>
+                        {course.pitches.map((p, i) => (
+                          <td key={i} className="whitespace-nowrap px-2 py-1 text-[var(--text-secondary)]">
+                            {p.speed ?? "–"}
+                          </td>
+                        ))}
+                      </tr>
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            ))}
+          </div>
+        </details>
+      )}
+
       {game.source && (
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-[var(--text-tertiary)]">
           <span>{locale === "ko" ? "출처" : "Source"}</span>

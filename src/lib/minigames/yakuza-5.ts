@@ -283,18 +283,55 @@ export const yakuza5Minigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "카무로초 — 요시다 배팅 센터", en: "Yoshida Batting Center, Kamurocho" },
       summary: {
-        ko: "킨에이초의 시나다 전용 코스와 별개로, 카무로초에는 일반 배팅 센터가 있습니다.",
-        en: "Separate from Shinada's course in Kineicho, Kamurocho keeps a standard batting cage.",
+        ko: "킨에이초의 시나다 전용 코스와 별개로, 카무로초에는 일반 배팅 센터가 있습니다. 이지·노멀·프로페셔널 S랭크 + 픽업 사진 전부 획득이 컴플리션 조건입니다.",
+        en: "Separate from Shinada's course in Kineicho, Kamurocho keeps a standard batting cage. Completion needs an S Rank on Easy/Normal/Professional plus every pinup photo.",
       },
       howTo: [
         { ko: "커서를 코스에 맞춘 뒤, 투구와 함께 줄어드는 커서가 공 크기와 겹치는 순간에 휘두르는 것이 정타 타이밍입니다.", en: "Line the cursor up, then swing as the shrinking cursor matches the ball's size." },
         { ko: "구질과 구속은 코스별로 고정입니다. 느린 커브에서 타이밍을 당기지 않는 것이 점수를 지키는 핵심입니다.", en: "Pitch scripts are fixed per course, and not rushing the slow curves is what protects the score." },
+        { ko: "아카데믹 코스는 사지선다 퀴즈 정답(1~9)이 곧 조준할 패널 번호입니다. 3문제·5문제 정답 시 픽업 사진이 공개됩니다.", en: "Academic is a 4-choice quiz — the correct answer (1-9) is the panel you aim at. Getting 3 or 5 right reveals a pinup photo." },
       ],
       source: [
         { label: "GameFAQs — Yakuza 5 Remastered: Batting Center (Kamurocho) (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239457-yakuza-5-remastered/faqs/78213/batting-center-kamurocho" },
         { label: "GameFAQs — Yakuza 5 Remastered: Completion (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239457-yakuza-5-remastered/faqs/78213/completion" },
       ],
       achievementSlug: "achievement_42",
+      courses: [
+        {
+          title: { ko: "이지", en: "Easy" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed" },
+          pitches: [
+            { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "120" },
+            { type: "Curve", speed: "70" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "90" },
+          ],
+        },
+        {
+          title: { ko: "노멀", en: "Normal" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed" },
+          pitches: [
+            { type: "Sinker", speed: "80" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" },
+            { type: "Sinker", speed: "90" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "100" },
+            { type: "Sinker", speed: "80" }, { type: "Curve", speed: "90" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" },
+          ],
+        },
+        {
+          title: { ko: "아카데믹", en: "Academic" },
+          note: { ko: "패널 번호는 퀴즈 정답(1~9)에 따라 매 판 달라짐 — 아래는 참고용 구질·구속 샘플", en: "Panel is the quiz answer (1-9), varies per run — type/speed sample only" },
+          pitches: [
+            { type: "Fastball", speed: "140" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "140" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "120" },
+          ],
+        },
+        {
+          title: { ko: "엑스트라 하드", en: "Extra Hard" },
+          note: { ko: "그림 3장을 패널로 가려 놓고 맞혀서 드러내는 방식 — 위치는 자유 조준", en: "Reveal-the-picture panel mode, free-aim" },
+          pitches: [
+            { type: "Curve", speed: "70" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "160" }, { type: "Curve", speed: "80" }, { type: "Curve", speed: "100" },
+            { type: "Sinker", speed: "140" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "90" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" },
+            { type: "Sinker", speed: "80" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" }, { type: "Fastball", speed: "140" },
+            { type: "Sinker", speed: "100" }, { type: "Curve", speed: "130" }, { type: "Sinker", speed: "140" }, { type: "Sinker", speed: "90" }, { type: "Fastball", speed: "160" },
+          ],
+        },
+      ],
     },
     {
       slug: "mahjong",

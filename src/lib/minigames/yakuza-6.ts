@@ -243,6 +243,151 @@ export const yakuza6Minigames: MinigamesData = {
       ],
       source: { label: "光る原人 — 龍が如く6 トロフィーコンプリート", url: "https://www.hikarugennjinn.com/entry/yakuza6-trophy" },
     },
+    {
+      slug: "batting-center",
+      name: { ko: "배팅 센터", en: "Batting Center" },
+      category: { ko: "스포츠", en: "Sports" },
+      difficulty: 3,
+      location: { ko: "카무로초 — 요시다 배팅 센터", en: "Yoshida Batting Center, Kamurocho" },
+      summary: {
+        ko: "홈런 코스와 챌린지 코스가 있고, 둘 다 초급·중급·상급·엑스퍼트 4단계입니다. 컴플리션은 챌린지 코스 상급 전 클리어 + 홈런 코스 누적 홈런 50개입니다.",
+        en: "Home Run and Challenge courses, each with Beginner/Intermediate/Advanced/Expert tiers. Completion needs clearing Challenge Course through Advanced plus 50 cumulative home runs in the Home Run Course.",
+      },
+      howTo: [
+        { ko: "챌린지 코스는 3×3 그리드에서 공이 떨어질 칸이 노랗게 미리 표시되고, 그 칸에 커서를 맞춰 타이밍대로 휘두르는 방식입니다 — 즉 위치·구질·구속이 전부 고정 스크립트입니다.", en: "Challenge Course lights up the target grid square in yellow before the pitch — position, type and speed are all a fixed script, not free aim." },
+        { ko: "홈런 코스는 10구 중 홈런 개수만 셉니다(A랭크 7개, S랭크 9개). 챌린지 코스는 코스별로 정해진 안타·홈런 합계를 넘겨야 클리어됩니다.", en: "Home Run Course only counts homers out of 10 (A-rank 7, S-rank 9). Challenge Course needs a course-specific total of hits/homers to clear." },
+        { ko: "엑스퍼트 홈런 코스와 챌린지 엑스퍼트 3만 위치가 매판 랜덤입니다. 나머지는 전부 재현 가능한 고정 순서입니다.", en: "Only the Expert Home Run course and Challenge Expert 3 randomize position each run — every other course is a fixed, repeatable sequence." },
+      ],
+      source: { label: "dopr.net — 龍が如く6 完全攻略wiki バッティングセンター", url: "https://dopr.net/" },
+      courses: [
+        {
+          title: { ko: "홈런 코스 — 초급", en: "Home Run Course — Beginner" },
+          note: { ko: "10구 중 홈런 7개(A) / 9개(S)", en: "7 (A) / 9 (S) home runs out of 10" },
+          pitches: [
+            { pos: 5, type: "Fastball" }, { pos: 5, type: "Curve" }, { pos: 6, type: "Slider" }, { pos: 2, type: "Forkball" }, { pos: 7, type: "Fastball" },
+            { pos: 3, type: "Curve" }, { pos: 9, type: "Slider" }, { pos: 1, type: "Forkball" }, { pos: 3, type: "Fastball" }, { pos: 4, type: "Curve" },
+          ],
+        },
+        {
+          title: { ko: "홈런 코스 — 중급", en: "Home Run Course — Intermediate" },
+          pitches: [
+            { pos: 6, type: "Two-seam" }, { pos: 4, type: "Cutter" }, { pos: 2, type: "Splitter" }, { pos: 1, type: "One-seam" }, { pos: 3, type: "Splitter" },
+            { pos: 7, type: "Two-seam" }, { pos: 6, type: "Cutter" }, { pos: 2, type: "One-seam" }, { pos: 1, type: "Splitter" }, { pos: 4, type: "One-seam" },
+          ],
+        },
+        {
+          title: { ko: "홈런 코스 — 상급", en: "Home Run Course — Advanced" },
+          pitches: [
+            { pos: 7, type: "Fastball" }, { pos: 2, type: "Changeup" }, { pos: 9, type: "Fastball" }, { pos: 4, type: "Curve" }, { pos: 1, type: "Fastball" },
+            { pos: 3, type: "Sinker" }, { pos: 8, type: "Fastball" }, { pos: 2, type: "Fastball" }, { pos: 1, type: "Changeup" }, { pos: 3, type: "Sinker" },
+          ],
+        },
+        {
+          title: { ko: "홈런 코스 — 엑스퍼트", en: "Home Run Course — Expert" },
+          note: { ko: "위치 랜덤 — 구질만 참고", en: "Position randomized — type only" },
+          pitches: [
+            { type: "One-seam" }, { type: "Changeup" }, { type: "Splitter" }, { type: "Curve" }, { type: "Two-seam" },
+            { type: "Slider" }, { type: "Shootball" }, { type: "Sinker" }, { type: "Cutter" }, { type: "Forkball" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 1", en: "Challenge Course — Beginner 1" },
+          note: { ko: "안타·홈런 합계 3회 이상", en: "3+ hits/homers to clear" },
+          pitches: [
+            { pos: 5, type: "Fastball" }, { pos: 3, type: "Fastball" }, { pos: 7, type: "Fastball" }, { pos: 1, type: "Fastball" }, { pos: 9, type: "Fastball" },
+            { pos: 4, type: "Fastball" }, { pos: 6, type: "Fastball" }, { pos: 5, type: "Fastball" }, { pos: 7, type: "Fastball" }, { pos: 3, type: "Fastball" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 2", en: "Challenge Course — Beginner 2" },
+          note: { ko: "3회 이상", en: "3+ to clear" },
+          pitches: [
+            { pos: 3, type: "Curve" }, { pos: 4, type: "Curve" }, { pos: 9, type: "Fastball" }, { pos: 1, type: "Curve" }, { pos: 6, type: "Curve" },
+            { pos: 2, type: "Fastball" }, { pos: 8, type: "Fastball" }, { pos: 1, type: "Curve" }, { pos: 7, type: "Fastball" }, { pos: 3, type: "Curve" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 초급 3", en: "Challenge Course — Beginner 3" },
+          note: { ko: "5회 이상", en: "5+ to clear" },
+          pitches: [
+            { pos: 3, type: "Curve" }, { pos: 1, type: "Sinker" }, { pos: 3, type: "Sinker" }, { pos: 6, type: "Curve" }, { pos: 4, type: "Curve" },
+            { pos: 2, type: "Curve" }, { pos: 1, type: "Sinker" }, { pos: 3, type: "Curve" }, { pos: 1, type: "Sinker" }, { pos: 6, type: "Sinker" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 1", en: "Challenge Course — Intermediate 1" },
+          note: { ko: "3회 이상", en: "3+ to clear" },
+          pitches: [
+            { pos: 6, type: "Cutter" }, { pos: 2, type: "Splitter" }, { pos: 5, type: "One-seam" }, { pos: 3, type: "Cutter" }, { pos: 7, type: "Two-seam" },
+            { pos: 1, type: "Splitter" }, { pos: 3, type: "One-seam" }, { pos: 1, type: "Splitter" }, { pos: 1, type: "Cutter" }, { pos: 6, type: "Two-seam" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 2", en: "Challenge Course — Intermediate 2" },
+          note: { ko: "5회 이상", en: "5+ to clear" },
+          pitches: [
+            { pos: 6, type: "Slider" }, { pos: 4, type: "Shootball" }, { pos: 2, type: "Fastball" }, { pos: 2, type: "Forkball" }, { pos: 5, type: "Slider" },
+            { pos: 3, type: "Shootball" }, { pos: 1, type: "Forkball" }, { pos: 9, type: "Shootball" }, { pos: 7, type: "Slider" }, { pos: 2, type: "Forkball" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 중급 3", en: "Challenge Course — Intermediate 3" },
+          note: { ko: "5회 이상", en: "5+ to clear" },
+          pitches: [
+            { pos: 5, type: "Fastball" }, { pos: 2, type: "Changeup" }, { pos: 6, type: "Fastball" }, { pos: 1, type: "Curve" }, { pos: 4, type: "Fastball" },
+            { pos: 3, type: "Sinker" }, { pos: 8, type: "Fastball" }, { pos: 2, type: "Fastball" }, { pos: 1, type: "Changeup" }, { pos: 6, type: "Curve" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 1", en: "Challenge Course — Advanced 1" },
+          note: { ko: "7회 이상", en: "7+ to clear" },
+          pitches: [
+            { pos: 6, type: "Slider" }, { pos: 6, type: "Cutter" }, { pos: 1, type: "Two-seam" }, { pos: 3, type: "Cutter" }, { pos: 7, type: "Shootball" },
+            { pos: 9, type: "Slider" }, { pos: 3, type: "Cutter" }, { pos: 3, type: "Shootball" }, { pos: 4, type: "Two-seam" }, { pos: 1, type: "Slider" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 2", en: "Challenge Course — Advanced 2" },
+          note: { ko: "7회 이상", en: "7+ to clear" },
+          pitches: [
+            { pos: 6, type: "Forkball" }, { pos: 7, type: "One-seam" }, { pos: 2, type: "Changeup" }, { pos: 1, type: "Splitter" }, { pos: 3, type: "Changeup" },
+            { pos: 4, type: "Forkball" }, { pos: 6, type: "Splitter" }, { pos: 2, type: "Changeup" }, { pos: 9, type: "One-seam" }, { pos: 1, type: "Splitter" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 상급 3", en: "Challenge Course — Advanced 3" },
+          note: { ko: "7회 이상", en: "7+ to clear" },
+          pitches: [
+            { pos: 3, type: "Curve" }, { pos: 7, type: "Two-seam" }, { pos: 3, type: "Sinker" }, { pos: 7, type: "One-seam" }, { pos: 4, type: "Curve" },
+            { pos: 6, type: "Sinker" }, { pos: 1, type: "One-seam" }, { pos: 3, type: "Curve" }, { pos: 9, type: "Two-seam" }, { pos: 1, type: "Sinker" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 엑스퍼트 1", en: "Challenge Course — Expert 1" },
+          note: { ko: "7회 이상", en: "7+ to clear" },
+          pitches: [
+            { pos: 8, type: "Two-seam" }, { pos: 3, type: "Curve" }, { pos: 4, type: "Shootball" }, { pos: 2, type: "Splitter" }, { pos: 9, type: "Slider" },
+            { pos: 2, type: "Changeup" }, { pos: 7, type: "One-seam" }, { pos: 3, type: "Forkball" }, { pos: 7, type: "Cutter" }, { pos: 3, type: "Sinker" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 엑스퍼트 2", en: "Challenge Course — Expert 2" },
+          note: { ko: "8회 이상", en: "8+ to clear" },
+          pitches: [
+            { pos: 1, type: "Curve" }, { pos: 3, type: "Sinker" }, { pos: 2, type: "Forkball" }, { pos: 7, type: "Two-seam" }, { pos: 9, type: "Cutter" },
+            { pos: 2, type: "Changeup" }, { pos: 6, type: "Splitter" }, { pos: 4, type: "Slider" }, { pos: 7, type: "One-seam" }, { pos: 3, type: "Shootball" },
+          ],
+        },
+        {
+          title: { ko: "챌린지 코스 — 엑스퍼트 3", en: "Challenge Course — Expert 3" },
+          note: { ko: "9회 이상, 위치 랜덤 — 구질만 참고", en: "9+ to clear, position randomized — type only" },
+          pitches: [
+            { type: "Shootball" }, { type: "Forkball" }, { type: "Curve" }, { type: "Cutter" }, { type: "Sinker" },
+            { type: "Two-seam" }, { type: "Slider" }, { type: "Splitter" }, { type: "Changeup" }, { type: "One-seam" },
+          ],
+        },
+      ],
+    },
   ],
 };
 

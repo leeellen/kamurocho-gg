@@ -211,17 +211,61 @@ export const yakuza4Minigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "카무로초 — 요시다 배팅 센터", en: "Yoshida Batting Center, Kamurocho" },
       summary: {
-        ko: "패널을 맞혀 점수를 내는 방식이며, 코스마다 구질과 구속이 고정돼 있습니다.",
-        en: "You score by hitting panels, and each course runs a fixed pitch script.",
+        ko: "패널을 맞혀 점수를 내는 방식이며, 코스마다 구질과 구속이 고정돼 있습니다. 컴플리션은 이지·노멀·하드·엑스트라 하드 4개 코스 전부 S랭크입니다.",
+        en: "You score by hitting panels, and each course runs a fixed pitch script. Completion needs an S Rank on all four courses (Easy/Normal/Hard/Extra Hard).",
       },
       howTo: [
         { ko: "커서를 코스에 맞춘 뒤, 투구와 함께 줄어드는 커서가 공 크기와 겹치는 순간에 휘두르는 것이 정타입니다.", en: "Line the cursor up, then swing at the moment the shrinking cursor matches the ball — that is the sweet spot." },
         { ko: "구질별 구속대가 다릅니다. 패스트볼이 가장 빠르고 커브가 가장 느리므로, 커브에서 타이밍을 당기지 않는 것이 점수를 지키는 핵심입니다.", en: "Speeds differ by pitch — fastballs quickest, curves slowest — and not rushing the curves is what protects the score." },
         { ko: "상위 코스는 하위 코스에서 일정 점수를 내야 열립니다. 점수 구간마다 경품이 다르니 목표 경품이 있으면 필요한 점수를 미리 확인하세요.", en: "Higher courses unlock by scoring on the lower ones, and prizes are banded by score — check the band you need before grinding." },
+        { ko: "엑스트라 하드는 5×5(25패널) 그리드입니다. 모서리를 맞히면 인접한 여러 패널이 한 번에 반응하니, 4패널짜리 블록 하나를 마지막까지 비워 뒀다가 막판 콤보샷으로 몰아 처리하는 편이 유리합니다.", en: "Extra Hard is a 5x5 (25-panel) grid — corner hits reveal several adjacent panels at once, so leaving one 4-panel block empty for a final combo shot pays off." },
       ],
       source: [
         { label: "GameFAQs — Yakuza 4 Remastered: Batting Center (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239456-yakuza-4-remastered/faqs/78045/batting-center" },
         { label: "GameFAQs — Yakuza 4 Remastered: Completion (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239456-yakuza-4-remastered/faqs/78045/completion" },
+        { label: "darage.com — 龍が如く4 バッティングセンター", url: "https://darage.com/enjoygame/diary/ryu/ryu4k01.html" },
+      ],
+      courses: [
+        {
+          title: { ko: "이지", en: "Easy" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed" },
+          pitches: [
+            { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "120" },
+            { type: "Curve", speed: "70" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "90" }, { type: "Fastball", speed: "90" },
+            { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" },
+            { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" },
+          ],
+        },
+        {
+          title: { ko: "노멀", en: "Normal" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed" },
+          pitches: [
+            { type: "Sinker", speed: "80" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" },
+            { type: "Sinker", speed: "90" }, { type: "Fastball", speed: "120" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "100" },
+            { type: "Sinker", speed: "80" }, { type: "Curve", speed: "90" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "120" },
+            { type: "Curve", speed: "70" }, { type: "Fastball", speed: "100" }, { type: "Fastball", speed: "120" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "140" },
+          ],
+        },
+        {
+          title: { ko: "하드", en: "Hard" },
+          note: { ko: "3×3 패널, 자유 조준 — 1,800점 이상이면 엑스트라 하드 해금", en: "3x3 panel, free-aim — 1,800+ points unlocks Extra Hard" },
+          pitches: [
+            { type: "Fastball", speed: "140" }, { type: "Curve", speed: "70" }, { type: "Fastball", speed: "140" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "120" },
+            { type: "Curve", speed: "70" }, { type: "Curve", speed: "90" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "90" },
+            { type: "Fastball", speed: "120" }, { type: "Curve", speed: "80" }, { type: "Fastball", speed: "120" }, { type: "Sinker", speed: "100" }, { type: "Fastball", speed: "120" },
+            { type: "Curve", speed: "80" }, { type: "Fastball", speed: "140" }, { type: "Sinker", speed: "120" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" },
+          ],
+        },
+        {
+          title: { ko: "엑스트라 하드", en: "Extra Hard" },
+          note: { ko: "5×5(25패널) 그리드 — 위치는 자유 조준", en: "5x5 (25-panel) grid — free-aim" },
+          pitches: [
+            { type: "Curve", speed: "70" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "160" }, { type: "Curve", speed: "80" }, { type: "Curve", speed: "100" },
+            { type: "Sinker", speed: "140" }, { type: "Sinker", speed: "120" }, { type: "Fastball", speed: "90" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" },
+            { type: "Sinker", speed: "80" }, { type: "Fastball", speed: "100" }, { type: "Curve", speed: "110" }, { type: "Fastball", speed: "160" }, { type: "Fastball", speed: "140" },
+            { type: "Sinker", speed: "100" }, { type: "Curve", speed: "130" }, { type: "Sinker", speed: "140" }, { type: "Sinker", speed: "90" }, { type: "Fastball", speed: "160" },
+          ],
+        },
       ],
     },
     {

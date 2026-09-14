@@ -83,7 +83,23 @@ export const judgmentMinigames: MinigamesData = {
         { title: { ko: "배팅센터 홈런·챌린지 전 코스 클리어 가이드", en: "Batting Center HomeRun & Challenge all-courses clear guide" }, url: YT("E3dJF9_8ZUg") },
         { title: { ko: "배팅센터 전 홈런 코스", en: "Batting Center all home run courses" }, url: YT("yRlPp8CpUfo") },
       ],
-      source: { label: "生臭坊主のゲームメモ — バッティングセンター攻略メモ", url: "https://bozumemo.blogspot.com/2018/11/blog-post_32.html" },
+      source: [
+        { label: "生臭坊主のゲームメモ — バッティングセンター攻略メモ", url: "https://bozumemo.blogspot.com/2018/11/blog-post_32.html" },
+        { label: "kamigame.jp — ジャッジアイズ バッティングセンター", url: "https://kamigame.jp/ジャッジアイズ/ミニゲーム/バッティングセンター.html" },
+      ],
+      courses: [
+        {
+          title: { ko: "악마의 홈런 코스", en: "Home Run Hell (Devil's Home Run Course)" },
+          note: {
+            ko: "전 코스 중 최난도 — 클리어 시 프리 패스 교환권【1】 획득. 이지·노멀 등 하위 코스 순서표는 추가 예정",
+            en: "The hardest course in the game — clearing it grants Free Pass Voucher #1. Lower-tier course tables are pending",
+          },
+          pitches: [
+            { pos: 3, type: "One-seam", speed: "140" }, { pos: 8, type: "High-speed slider", speed: "150" }, { pos: 1, type: "Two-seam", speed: "140" }, { pos: 2, type: "Drop", speed: "120" }, { pos: 1, type: "High-speed slider", speed: "150" },
+            { pos: 3, type: "Power slider", speed: "145" }, { pos: 1, type: "Drop", speed: "120" }, { pos: 2, type: "High-speed fork", speed: "150" }, { pos: 9, type: "High-speed slider", speed: "150" }, { pos: 6, type: "Power slider", speed: "145" },
+          ],
+        },
+      ],
     },
     {
       slug: "darts",

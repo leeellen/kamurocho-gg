@@ -184,8 +184,51 @@ export const yakuzaKiwamiMinigames: MinigamesData = {
       source: [
         { label: "GameFAQs — Yakuza Kiwami: Batting Center (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/181171-yakuza-kiwami/faqs/75194/batting-center" },
         { label: "GameFAQs — Yakuza Kiwami: Completion List (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/181171-yakuza-kiwami/faqs/75194/completion-list" },
+        { label: "ゲーム攻略マン — 龍が如く極 バッティングセンター", url: "https://dswiipspwikips3.jp/yakuza-kiwami/playspot/batting-center.html" },
       ],
       achievementSlug: "23_what_a_player",
+      courses: [
+        {
+          title: { ko: "이지", en: "Easy" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed, landing spot is your choice" },
+          pitches: [
+            { type: "Straight", speed: "80" }, { type: "Curve", speed: "78" }, { type: "Sinker", speed: "73" }, { type: "Curve", speed: "68" }, { type: "Straight", speed: "115" },
+            { type: "Curve", speed: "78" }, { type: "Curve", speed: "65" }, { type: "Straight", speed: "116" }, { type: "Straight", speed: "108" }, { type: "Sinker", speed: "72" },
+            { type: "Curve", speed: "77" }, { type: "Straight", speed: "117" }, { type: "Curve", speed: "67" }, { type: "Straight", speed: "113" }, { type: "Straight", speed: "88" },
+            { type: "Straight", speed: "114" }, { type: "Curve", speed: "76" }, { type: "Straight", speed: "101" }, { type: "Straight", speed: "113" }, { type: "Curve", speed: "74" },
+          ],
+        },
+        {
+          title: { ko: "노멀", en: "Normal" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정", en: "Free-aim — pitch type/speed fixed, landing spot is your choice" },
+          pitches: [
+            { type: "Straight", speed: "128" }, { type: "Sinker", speed: "84" }, { type: "Curve", speed: "74" }, { type: "Straight", speed: "128" }, { type: "Straight", speed: "81" },
+            { type: "Sinker", speed: "87" }, { type: "Straight", speed: "128" }, { type: "Curve", speed: "61" }, { type: "Straight", speed: "125" }, { type: "Sinker", speed: "105" },
+            { type: "Curve", speed: "81" }, { type: "Straight", speed: "122" }, { type: "Curve", speed: "61" }, { type: "Sinker", speed: "82" }, { type: "Straight", speed: "120" },
+            { type: "Curve", speed: "68" }, { type: "Straight", speed: "127" }, { type: "Straight", speed: "107" }, { type: "Sinker", speed: "100" }, { type: "Straight", speed: "142" },
+          ],
+        },
+        {
+          title: { ko: "하드", en: "Hard" },
+          note: { ko: "위치는 자유 조준 — 구질·구속만 고정. 엑스트라 하드와 사실상 같은 20구 배열", en: "Free-aim — same 20-pitch script as Extra Hard in practice" },
+          pitches: [
+            { type: "Straight", speed: "121" }, { type: "Sinker", speed: "88" }, { type: "Straight", speed: "88" }, { type: "Curve", speed: "85" }, { type: "Straight", speed: "122" },
+            { type: "Sinker", speed: "106" }, { type: "Straight", speed: "124" }, { type: "Straight", speed: "83" }, { type: "Straight", speed: "126" }, { type: "Sinker", speed: "83" },
+            { type: "Sinker", speed: "77" }, { type: "Straight", speed: "112" }, { type: "Straight", speed: "105" }, { type: "Curve", speed: "84" }, { type: "Straight", speed: "117" },
+            { type: "Sinker", speed: "87" }, { type: "Straight", speed: "108" }, { type: "Straight", speed: "122" }, { type: "Curve", speed: "88" }, { type: "Straight", speed: "128" },
+          ],
+        },
+        {
+          title: { ko: "엑스트라 하드", en: "Extra Hard" },
+          note: { ko: "위치는 자유 조준(하드보다 타겟이 작음, 2연타 불가)", en: "Free-aim — smaller targets than Hard, no two-panel hits" },
+          pitches: [
+            { type: "Straight", speed: "128" }, { type: "Sinker", speed: "84" }, { type: "Straight", speed: "102" }, { type: "Curve", speed: "88" }, { type: "Straight", speed: "124" },
+            { type: "Sinker", speed: "105" }, { type: "Straight", speed: "120" }, { type: "Straight", speed: "104" }, { type: "Straight", speed: "128" }, { type: "Sinker", speed: "81" },
+            { type: "Sinker", speed: "73" }, { type: "Straight", speed: "118" }, { type: "Straight", speed: "106" }, { type: "Curve", speed: "86" }, { type: "Straight", speed: "125" },
+            { type: "Sinker", speed: "74" }, { type: "Straight", speed: "108" }, { type: "Straight", speed: "128" }, { type: "Curve", speed: "81" }, { type: "Straight", speed: "118" },
+          ],
+        },
+      ],
     },
     {
       slug: "karaoke",
