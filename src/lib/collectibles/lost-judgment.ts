@@ -7,8 +7,8 @@ export const lostJudgment: CollectiblesData = {
       slug: "paint-search",
       title: { ko: "페인트 서치 — 다람쥐 그림 56곳", en: "Paint Search — 56 Squirrel Tags" },
       summary: {
-        ko: "다이도지 본거지에서 페인트 서치를 해금한 뒤 카무로초 26곳 + 요코하마 이세자키 이진초 30곳의 다람쥐 그림을 모두 회수합니다. 가젯 4종(집음기·드론·전파 탐지기·탐정견)을 모두 해금한 뒤 진행하세요.",
-        en: "After unlocking Paint Search at the Daidoji Hideout, collect all 26 squirrel tags in Kamurocho and 30 in Isezaki Ijincho. All four gadgets (mic, drone, radio detector, detective dog) are required.",
+        ko: "사이드 케이스 No.31 「신경 쓰이는 그 그림」(이진초 세이료 고교 입구 근처에서 발생)을 클리어해 페인트 서치를 해금한 뒤, 카무로초 26곳 + 요코하마 이세자키 이진초 30곳의 다람쥐 그림을 모두 회수합니다. 가젯 4종(집음기·드론·전파 탐지기·탐정견)을 모두 해금한 뒤 진행하세요.",
+        en: "Clear Side Case No.31 'That Painting on My Mind' (triggers near the Seiryo High entrance, Ijincho) to unlock Paint Search, then collect all 26 squirrel tags in Kamurocho and 30 in Isezaki Ijincho. All four gadgets (mic, drone, radio detector, detective dog) are required.",
       },
       tips: [
         { ko: "보상은 도료·식기·이너·스킬 책·휘석 등 다양합니다. 의상·소품 컴플리트와 병행하면 효율적입니다.", en: "Rewards include paints, plates, inner wear, skill books, and gems. Combine with outfit/item cleanup." },
@@ -99,7 +99,7 @@ export const lostJudgment: CollectiblesData = {
       },
       {
         number: 8,
-        location: { ko: "라이크자카", en: "Kanrai" },
+        location: { ko: "칸라이", en: "Kanrai" },
         image: "https://img.gamewith.jp/img/bc98ce10b9ffb5af9c5688d477d93592.jpg",
         reward: { ko: "네이처 도료", en: "Nature Paint" },
         steps: [

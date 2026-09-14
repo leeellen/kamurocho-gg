@@ -3,8 +3,8 @@ import type { SubstoriesData } from "./types";
 export const yakuzaKiwamiSubstories: SubstoriesData = {
   appId: 3717330,
   summary: {
-    ko: "총 78건의 「트러블 미션」(서브 스토리)이 카무로초 전역에 분포. 마지막 보스 직전까지 모두 접근 가능하므로 시간 제한으로 놓칠 일은 없지만, 다이얼로그 선택을 잘못하면 보상·완료 카운트가 깨지는 항목이 있습니다. 4장에서 약 35건이 한꺼번에 풀려 진행 순서를 잡기 어려우므로 메인 스토리와 병행해서 정리하는 편이 효율적입니다. 코마키 무술 시리즈(57~67)는 키류의 핵심 히트 액션을 제공하므로 최우선으로 진행 권장.",
-    en: "78 'Trouble Mission' substories spread across Kamurocho. None are time-limited — every one stays accessible up to the final boss — but a handful punish wrong dialog picks with broken rewards. Chapter 4 unlocks ~35 at once, so interleave them with the main story rather than backlogging. The Komaki training chain (57–67) feeds Kiryu's signature Heat Actions and should be prioritized.",
+    ko: "총 78건의 「트러블 미션」(서브 스토리)이 카무로초 전역에 분포. 마지막 보스 직전까지 모두 접근 가능하므로 시간 제한으로 놓칠 일은 없지만, 다이얼로그 선택을 잘못하면 보상·완료 카운트가 깨지는 항목이 있습니다. 4장에서 약 35건이 한꺼번에 풀려 진행 순서를 잡기 어려우므로 메인 스토리와 병행해서 정리하는 편이 효율적입니다. 코마키 무술 시리즈(59~69)는 키류의 핵심 히트 액션을 제공하므로 최우선으로 진행 권장.",
+    en: "78 'Trouble Mission' substories spread across Kamurocho. None are time-limited — every one stays accessible up to the final boss — but a handful punish wrong dialog picks with broken rewards. Chapter 4 unlocks ~35 at once, so interleave them with the main story rather than backlogging. The Komaki training chain (59–69) feeds Kiryu's signature Heat Actions and should be prioritized.",
   },
   source: { label: "gamewith.jp / kamigame / PlayStation LifeStyle — Yakuza Kiwami substories", url: "https://gamewith.jp/ps4/game/show/3106" },
   groups: [
@@ -300,7 +300,7 @@ export const yakuzaKiwamiSubstories: SubstoriesData = {
           number: 35,
           title: { ko: "미녀의 진실", en: "The Truth About Beauty" },
           chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "약국 부근", en: "Pharmacy area" },
+          location: { ko: "고토부키 약국 앞 (타이헤이 대로 동쪽·핑크 거리 모퉁이)", en: "In front of Kotobuki Drugs (corner of East Taihei Blvd. and Pink St.)" },
           trigger: { ko: "약국 앞 여성에게 말 걸기", en: "Talk to the woman outside the pharmacy." },
           body: {
             ko: "절세 미녀가 도움을 요청하지만 사실 사기꾼. 첫 부탁은 들어주고, 추가 요구는 단호히 거절.",

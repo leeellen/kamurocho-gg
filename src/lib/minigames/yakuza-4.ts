@@ -86,11 +86,12 @@ export const yakuza4Minigames: MinigamesData = {
       difficulty: 5,
       location: { ko: "카무로초 — 마작 오키드 팰리스", en: "Orchid Palace mahjong parlour, Kamurocho" },
       summary: {
-        ko: "일반 대국 외에 캐릭터별 토너먼트가 있습니다. 아키야마는 스자쿠 컵, 사에지마는 뱟코 컵처럼 네 주인공이 각각 자기 대회를 따로 올라갑니다.",
-        en: "Beyond ordinary play there is a tournament per character — Akiyama has the Suzaku Cup, Saejima the Byakko Cup, and so on, each climbed separately.",
+        ko: "일반 대국 외에 캐릭터별 토너먼트가 있습니다. 컴플리션은 우마 보너스를 더하기 전 기준으로 한 판에서 50,000점 이상을 내는 것입니다.",
+        en: "Beyond ordinary play there is a tournament per character. Completion means a single game with a final score of at least 50,000 before the uma bonus is applied.",
       },
       howTo: [
-        { ko: "토너먼트 참가비 50,000엔은 최초 1회뿐이고 이후 무제한입니다. 1위는 2랭크 상승, 2위는 1랭크, 3위는 유지, 4위는 1랭크 하락입니다.", en: "The ¥50,000 entry is a one-off; after that you play as much as you like. First place climbs two ranks, second one, third holds, fourth drops one." },
+        { ko: "50,000점 목표는 오키드 팰리스에서 일반 대국으로도 노릴 수 있습니다. 도라가 많이 실린 손이나 리치 + 츠모 + 도라 조합처럼 큰 화료 한두 번이면 닿습니다.", en: "The 50,000-point target is reachable in an ordinary game at Orchid Palace — one or two big wins, such as a dora-heavy hand or riichi + tsumo + dora together, will get you there." },
+        { ko: "아키야마는 스자쿠 컵, 사에지마는 뱟코 컵처럼 네 주인공이 각각 자기 토너먼트를 따로 올라갑니다. 참가비 50,000엔은 최초 1회뿐이고 이후 무제한입니다. 1위는 2랭크 상승, 2위는 1랭크, 3위는 유지, 4위는 1랭크 하락입니다.", en: "Akiyama has the Suzaku Cup, Saejima the Byakko Cup, and so on — each protagonist climbs his own tournament. The ¥50,000 entry is a one-off; after that you play as much as you like. First place climbs two ranks, second one, third holds, fourth drops one." },
         { ko: "판이 나쁘면 터치패드로 나가도 벌점이 전혀 없습니다. 랭크는 게임이 끝나야 갱신되므로, 크게 뒤졌으면 그냥 나가고 다시 시작하세요.", en: "Quitting a bad game costs nothing — rank only updates when a game finishes, so bail and restart when you fall behind." },
         { ko: "랭크 보상은 25위 이탈리안 콜로뉴, 20위 은 접시, 15위 럭키 브레이슬릿, 10위 캐비아 스킨 백, 5위 금 접시, 3위 스위스 워치, 1위 토너먼트 컵입니다. 컵은 에비스 전당포에서 500,000엔에 팔립니다.", en: "Rank prizes: 25 Italian Cologne, 20 Silver Plate, 15 Lucky Bracelet, 10 Caviar Skin Bag, 5 Gold Plate, 3 Swiss Watch, 1 the Tournament Cup — which Ebisu Pawn buys for ¥500,000." },
       ],
@@ -275,8 +276,8 @@ export const yakuza4Minigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "카무로초 — 마하볼", en: "Mach Bowl, Kamurocho" },
       summary: {
-        ko: "일반 게임과 스플릿 게임이 있습니다. 스트라이크를 안정적으로 내는 것이 모든 조건의 출발점입니다.",
-        en: "A normal game and a Split Game — reliable strikes are the basis of every row.",
+        ko: "일반 게임과 스플릿 게임이 있습니다. 컴플리션은 텐프레임 게임 한 판에서 200점 이상을 내는 것입니다.",
+        en: "A normal game and a Split Game. Completion means scoring at least 200 in a single ten-frame game.",
       },
       howTo: [
         { ko: "스트라이크는 1번 핀 옆의 포켓을 세게, 약간의 스핀과 함께 치는 것이 정석입니다. 스핀은 던지는 동안 왼쪽 스틱을 아주 살짝 기울이면 걸립니다.", en: "Strikes come from the pocket beside the head pin, hit hard with a little spin — a very slight left-stick nudge during the approach." },
@@ -293,15 +294,15 @@ export const yakuza4Minigames: MinigamesData = {
       name: { ko: "당구", en: "Pool" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 3,
-      location: { ko: "카무로초 — 당구장", en: "The pool hall, Kamurocho" },
+      location: { ko: "카무로초 — 큐즈 바", en: "Cuez Bar, Kamurocho" },
       summary: {
-        ko: "나인볼 등 정규 게임 외에 특정 샷 종류가 컴플리션 대상입니다.",
-        en: "Alongside nine-ball and the rest, specific shot types are what the list asks for.",
+        ko: "나인볼·에이트볼·로테이션·포볼 네 게임이 있습니다. 컴플리션은 상대 4명 전원을 네 게임 모두에서 이겨야 합니다.",
+        en: "Four games — nine-ball, eight-ball, rotation and four-ball. Completion means beating all four opponents at all four.",
       },
       howTo: [
-        { ko: "캐롬은 큐볼이 목적구를 맞힌 뒤 다른 공을 맞혀 그 공이 들어가는 샷, 콤비네이션은 목적구가 다른 공을 맞혀 그 공이 들어가는 샷입니다.", en: "A carom is cue to object ball then on to another ball which drops; a combination is the object ball doing the hitting." },
-        { ko: "혼자 플레이로 나인볼을 골라 공을 원하는 배치로 밀어 두고, 큐볼을 일부러 포켓에 넣어 다음 샷 위치를 잡는 것이 가장 확실합니다.", en: "Play Alone on nine-ball, nudge the balls into shape, then scratch on purpose to place the cue ball where you want it." },
-        { ko: "실전 대국에서 우연히 나오길 기다리면 시간만 갑니다. 셋업을 만들어 확정적으로 성공시키는 편이 훨씬 빠릅니다.", en: "Waiting for these to happen in a real match wastes time — building the setup and taking a guaranteed shot is far quicker." },
+        { ko: "포볼은 포켓이 없는 테이블에서 자기 큐볼로 다른 공 두 개를 맞히면 1점, 11점 선취승입니다. 다른 세 게임보다 규칙이 단순해 가장 먼저 정리하기 좋습니다.", en: "Four-ball is played on a pocketless table — hitting your cue ball into both other balls scores a point, first to 11 wins. Its rules are simpler than the other three, so clear it first." },
+        { ko: "나인볼은 항상 테이블에서 가장 낮은 번호 공에 큐볼을 먼저 맞혀야 하고, 에이트볼은 첫 득점구로 하이/로우를 선언한 뒤 그쪽만 넣어야 합니다. 8번 공을 먼저 넣으면 즉시 패배입니다.", en: "Nine-ball needs the cue ball to hit the lowest-numbered ball first; eight-ball locks you into high or low after your first sunk ball, and dropping the 8-ball early is an instant loss." },
+        { ko: "로테이션은 61점 선취라 운이 갈립니다. 난이도가 낮은 상대부터 골라 네 게임을 순서대로 정리하세요.", en: "Rotation (race to 61) swings on luck, so pick the easier opponent tiers first and clear the four games in order." },
       ],
       source: [
         { label: "GameFAQs — Yakuza 4 Remastered: Pool (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239456-yakuza-4-remastered/faqs/78045/pool" },
@@ -313,13 +314,13 @@ export const yakuza4Minigames: MinigamesData = {
       name: { ko: "다트", en: "Darts" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 2,
-      location: { ko: "카무로초 — 클럽 세가 / 바", en: "Club SEGA and bars, Kamurocho" },
+      location: { ko: "카무로초 — 밴텀", en: "Bantam, Kamurocho" },
       summary: {
-        ko: "01·크리켓·카운트업 세 종목이 있고, 컴플리션은 해트트릭 등 특정 성과를 요구합니다.",
-        en: "Three modes — 01, Cricket and Count-Up — with the list asking for feats such as hat-tricks.",
+        ko: "01·스탠다드 크리켓·랜덤 크리켓·히든 크리켓·카운트업 다섯 종목이 있습니다. 컴플리션은 초급·중급·고급 상대를 다섯 종목 모두에서 이기는 것입니다.",
+        en: "Five modes — 01, standard cricket, random cricket, hidden cricket and count-up. Completion means beating the Beginner, Intermediate and Advanced opponents at all five.",
       },
       howTo: [
-        { ko: "해트트릭은 한 라운드에 세 발 모두 BULL입니다. 혼자 01 게임을 고르면 라운드가 많아 반복해서 노릴 수 있습니다.", en: "A hat-trick is three bulls in a round; a solo 01 game gives the most rounds to keep trying." },
+        { ko: "다섯 종목 중 규칙이 낯선 랜덤·히든 크리켓부터 먼저 감을 잡으세요. BULL만 안정적으로 맞히면 01과 카운트업은 거의 확정 승리입니다.", en: "Get a feel for the less familiar random and hidden cricket modes first — landing the bull consistently all but guarantees wins in 01 and count-up." },
         { ko: "싱글은 그 구역 점수, 더블 2배, 트리플 3배이고 BULL은 50점입니다. 01에서는 트리플 20보다 BULL이 안정적입니다.", en: "Singles score the sector, doubles double, triples treble, bull is 50 — in 01 the bull is steadier than treble 20." },
         { ko: "크리켓은 한 구역을 세 번 맞혀 점유합니다. 더블은 2회, 트리플은 3회로 계산되므로 트리플 한 방이면 즉시 점유됩니다.", en: "Cricket claims a number on three hits, with doubles counting two and triples three — one triple claims it outright." },
       ],

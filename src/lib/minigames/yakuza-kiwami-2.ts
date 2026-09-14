@@ -313,11 +313,11 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "카무로초 — 클럽 세가 중도 거리점·극장 앞 광장점 / 소텐보리 — 클럽 세가 소텐보리점", en: "Club SEGA Nakamichi St. and Theater Square (Kamurocho), Club SEGA Sotenbori" },
       summary: {
-        ko: "아케이드 기판을 통째로 이식한 종목입니다. 두 게임 모두 원작 그대로라 조작이 미니게임 수준이 아니며, 달성목록은 플레이 자체보다 클리어를 요구합니다.",
-        en: "Two arcade boards emulated whole. Both play like the originals rather than like minigames, and the completion rows want clears rather than attempts.",
+        ko: "아케이드 기판을 통째로 이식한 종목입니다. 달성목록은 승패와 무관하게 「전 캐릭터 선택 플레이」 한 칸씩입니다 — 버추어 파이터 2는 10명, 버추얼 온은 8기를 한 번씩 골라 대전을 시작하면 채워집니다.",
+        en: "Two arcade boards emulated whole. The completion rows do not care about winning — each just wants every character selected and played once: 10 fighters in Virtua Fighter 2, 8 Virtuaroids in Virtual-On.",
       },
       howTo: [
-        { ko: "버추어 파이터 2는 원작 아케이드판이라 CPU 난도가 그대로입니다. 한 캐릭터로 콤보 하나만 확실히 익혀 두는 편이 여러 기술을 섞는 것보다 안정적입니다.", en: "Virtua Fighter 2 is the arcade build with its original CPU difficulty — one reliable combo on one character beats trying to play it properly." },
+        { ko: "이겨야 하는 게 아니라 캐릭터를 고르고 대전을 한 번 시작하면 그 칸이 채워집니다. 지든 이기든 상관없으니 10명·8기를 순서대로 한 판씩만 돌리세요.", en: "You do not need to win — selecting a character and starting one match fills that row, loss or not, so just cycle through all 10 (or 8) once each." },
         { ko: "버추얼 온은 좌우 스틱 조작이 패드에 매핑돼 있어 이동·대시가 익숙해지기 전까지 어색합니다. 옵션에서 조작 설명을 먼저 확인하세요.", en: "Virtual-On maps its twin-stick controls onto the pad, so movement and dashing feel wrong until you read the control screen in options." },
         { ko: "두 기판은 카무로초 두 지점과 소텐보리 지점에 모두 있습니다. 스토리 중 어느 도시에 있든 진행할 수 있으니 이동 김에 한 판씩 끼워 넣으세요.", en: "Both cabinets are in all three Club SEGA branches, so you can chip away at them in whichever city the story has you in." },
       ],

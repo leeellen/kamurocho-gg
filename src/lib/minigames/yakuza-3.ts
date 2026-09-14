@@ -216,15 +216,15 @@ export const yakuza3Minigames: MinigamesData = {
       name: { ko: "당구", en: "Pool" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 3,
-      location: { ko: "카무로초 — 당구장", en: "The pool hall, Kamurocho" },
+      location: { ko: "류큐 — 아쿠아 스카이 당구대", en: "The pool table at Aqua Sky, Downtown Ryukyu" },
       summary: {
-        ko: "나인볼과 로테이션 등 정규 게임 외에 퍼즐 형식이 있습니다. 컴플리션은 특정 샷 종류를 채우는 방식입니다.",
-        en: "Nine-ball and rotation alongside a puzzle format. Completion is about landing particular shot types.",
+        ko: "나인볼·에이트볼·로테이션 세 게임이 있습니다. 컴플리션은 아쿠아 스카이의 상대 4명 전원을 세 게임 모두에서 이겨야 합니다.",
+        en: "Three games — nine-ball, eight-ball and rotation. Completion means beating all four Aqua Sky opponents at all three.",
       },
       howTo: [
-        { ko: "캐롬은 큐볼이 목적구를 맞힌 뒤 다른 공을 맞혀 그 공이 들어가는 샷, 콤비네이션은 목적구가 다른 공을 맞혀 그 공이 들어가는 샷입니다. 둘을 구분해서 노려야 카운트가 오릅니다.", en: "A carom is cue to object ball then on to another ball which drops; a combination is the object ball doing the hitting. They count separately." },
-        { ko: "혼자 플레이로 나인볼을 골라 공을 원하는 배치로 밀어 두고, 큐볼을 일부러 포켓에 넣어(스크래치) 다음 샷의 시작 위치를 잡는 것이 가장 확실한 셋업입니다.", en: "Play Alone on nine-ball, nudge the balls into the shape you want, then scratch on purpose so the next shot starts where you like." },
-        { ko: "당구대에는 큐볼을 놓을 수 있는 범위가 있습니다. 스크래치 후 배치할 때 각도가 나오는 지점까지 최대한 밀어 두면 성공률이 크게 오릅니다.", en: "After a scratch you get a placement zone for the cue ball — push it as far as the zone allows toward the angle you need." },
+        { ko: "가장 쉬운 종목부터 상대를 고르세요. 로테이션은 61점 선취라 운이 갈리지만, 나인볼과 에이트볼은 순서만 지키면 실수 없이 이길 수 있습니다.", en: "Clear the easiest game per opponent first. Rotation (race to 61) swings on luck, but nine-ball and eight-ball are winnable cleanly if you keep to the legal shot order." },
+        { ko: "나인볼은 항상 테이블에서 가장 낮은 번호 공에 큐볼을 먼저 맞혀야 합니다. 그 규칙만 지키면 9번 공이 먼저 들어가도 즉시 승리입니다.", en: "Nine-ball requires the cue ball to strike the lowest-numbered ball on the table first — follow that rule and even an early 9-ball drop wins instantly." },
+        { ko: "에이트볼은 처음 넣은 공으로 하이/로우를 선언한 뒤 그쪽만 계속 넣어야 하고, 자기 조를 다 치운 뒤에만 8번 공을 노릴 수 있습니다. 8번 공을 먼저 넣으면 그 자리에서 패배이니 주의하세요.", en: "Eight-ball locks you into high or low after your first sunk ball — clear that half before going for the 8-ball, since sinking it early is an instant loss." },
       ],
       source: [
         { label: "GameFAQs — Yakuza 3 Remastered: Pool (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/pool" },
@@ -237,13 +237,13 @@ export const yakuza3Minigames: MinigamesData = {
       name: { ko: "다트", en: "Darts" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 2,
-      location: { ko: "카무로초 — 클럽 세가 / 바", en: "Club SEGA and bars, Kamurocho" },
+      location: { ko: "류큐 아쿠아 스카이 · 카무로초 밴텀", en: "Aqua Sky (Downtown Ryukyu) and Bantam (Kamurocho)" },
       summary: {
-        ko: "01·크리켓·카운트업 세 종목이 있습니다. 컴플리션은 해트트릭 등 특정 성과를 요구합니다.",
-        en: "Three modes — 01, Cricket and Count-Up — and completion asks for specific feats such as hat-tricks.",
+        ko: "01·크리켓·카운트업 세 종목이 있습니다. 컴플리션은 두 매장 모두에서 초급·중급·고급 상대를 세 종목 전부 이기는 것입니다.",
+        en: "Three modes — 01, Cricket and Count-Up. Completion means beating the Beginner, Intermediate and Advanced opponents at all three modes, at both venues.",
       },
       howTo: [
-        { ko: "해트트릭은 한 라운드에 세 발 모두 BULL입니다. 혼자 01 게임을 고르면 라운드 수가 많아 BULL만 반복해서 노릴 수 있습니다.", en: "A hat-trick is three bulls in one round; a solo 01 game gives you the most rounds to keep trying." },
+        { ko: "상대 난이도별로 이겨야 할 종목이 많으니 가장 자신 있는 모드부터 순서대로 정리하세요. BULL만 안정적으로 맞히면 01과 카운트업은 거의 확정 승리입니다.", en: "There is a lot to clear per opponent tier, so work through the mode you are most comfortable with first — landing the bull consistently all but guarantees wins in 01 and Count-Up." },
         { ko: "싱글은 그 구역 점수, 더블은 2배, 트리플은 3배이고 BULL은 50점입니다. 01에서는 트리플 20보다 BULL이 안정적입니다.", en: "Singles score the sector, doubles double it, triples treble it and the bull is 50 — in 01 the bull is steadier than treble 20." },
         { ko: "크리켓은 한 구역을 세 번 맞혀야 점유합니다. 더블은 2회, 트리플은 3회로 계산되므로 트리플 한 방이면 즉시 점유됩니다.", en: "Cricket claims a number after three hits, and doubles count as two and triples as three — so one triple claims it outright." },
       ],
@@ -260,8 +260,8 @@ export const yakuza3Minigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "카무로초 — 마하볼", en: "Mach Bowl, Kamurocho" },
       summary: {
-        ko: "일반 게임과 스플릿 게임이 있습니다. 스트라이크 관련 조건이 컴플리션의 핵심입니다.",
-        en: "A normal game and a Split Game. The strike-related rows are the core of completion.",
+        ko: "일반 게임과 스플릿 게임이 있습니다. 컴플리션은 텐프레임 게임 한 판에서 200점 이상을 내는 것입니다.",
+        en: "A normal game and a Split Game. Completion means scoring at least 200 in a single ten-frame game.",
       },
       howTo: [
         { ko: "스트라이크는 1번 핀 옆의 「포켓」을 세게, 약간의 스핀과 함께 치는 것이 정석입니다. 스핀은 던지는 동안 왼쪽 스틱을 아주 살짝 기울이면 걸립니다.", en: "Strikes come from the pocket beside the head pin, hit hard with a little spin — nudge the left stick very slightly during the approach." },
@@ -279,15 +279,15 @@ export const yakuza3Minigames: MinigamesData = {
       name: { ko: "마작", en: "Mahjong" },
       category: { ko: "도박·보드", en: "Gambling / board" },
       difficulty: 5,
-      location: { ko: "카무로초 — 마작장", en: "The mahjong parlour, Kamurocho" },
+      location: { ko: "류큐 마작 캠프 · 카무로초 오키드 팰리스 마작", en: "Mahjong Camp (Downtown Ryukyu) and Orchid Palace Mahjong (Kamurocho)" },
       summary: {
-        ko: "컴플리션은 특정 역과 누적 점수를 요구합니다. 규칙을 모른다면 시리즈에서 가장 시간이 걸리는 종목입니다.",
-        en: "Completion asks for particular hands and a points total — the longest haul in the game if you do not know the rules.",
+        ko: "컴플리션은 우마 보너스를 더하기 전 기준으로 한 판에서 50,000점 이상을 내는 것입니다. 역을 모르면 시리즈에서 가장 시간이 걸리는 종목입니다.",
+        en: "Completion means a single game with a final score of at least 50,000 before the uma bonus is applied — the longest haul in the game if you do not know the rules.",
       },
       howTo: [
-        { ko: "점수를 크게 만드는 것보다 싸고 빠르게 화료하는 편이 조건을 빨리 채웁니다. 리치·탕야오 수준으로 계속 돌리세요.", en: "Cheap fast hands fill the rows faster than big ones — keep to riichi and tanyao rather than chasing value." },
-        { ko: "누적 점수 조건은 고레이트 탁에서 도는 편이 압도적으로 빠릅니다. 화료 횟수와 동시에 진행되므로 처음부터 고레이트를 고르세요.", en: "The points row goes much faster at a high-rate table, and it runs alongside the win-count rows." },
-        { ko: "역을 모르면 화료 자체가 안 됩니다. 최소한 리치·핑후·탕야오 세 가지만 익혀도 대부분의 조건은 소화됩니다.", en: "Without a yaku you cannot go out at all — learning just riichi, pinfu and tanyao covers most of what the list asks." },
+        { ko: "점수를 크게 만드는 것보다 싸고 빠르게 화료해 판 수를 버는 편이 유리합니다. 리치·핑후·탕야오 수준으로 계속 돌리며 스틱을 불리세요.", en: "Cheap fast hands beat chasing one huge score — keep to riichi, pinfu and tanyao to bank sticks quickly and rack up games." },
+        { ko: "50,000점 목표는 한 판(하프 게임 기준 4국) 안에 큰 화료 한두 번이 있어야 닿습니다. 도라가 많이 실린 손이나 리치 + 츠모 + 도라 조합을 노리세요.", en: "Reaching 50,000 in one game (a Half Game runs four hands) needs one or two big wins — go for hands loaded with dora, or riichi + tsumo + dora together." },
+        { ko: "역을 모르면 화료 자체가 안 됩니다. 최소한 리치·핑후·탕야오 세 가지만 익혀도 대부분의 판을 화료할 수 있습니다.", en: "Without a yaku you cannot go out at all — learning just riichi, pinfu and tanyao is enough to win most hands." },
       ],
       videos: [
         { title: { ko: "마작 컴플리션 가이드", en: "Mahjong completion guide" }, url: YT("Y9UWfbUe7cE") },

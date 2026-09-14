@@ -258,7 +258,10 @@ export const yakuza6Minigames: MinigamesData = {
         { ko: "홈런 코스는 10구 중 홈런 개수만 셉니다(A랭크 7개, S랭크 9개). 챌린지 코스는 코스별로 정해진 안타·홈런 합계를 넘겨야 클리어됩니다.", en: "Home Run Course only counts homers out of 10 (A-rank 7, S-rank 9). Challenge Course needs a course-specific total of hits/homers to clear." },
         { ko: "엑스퍼트 홈런 코스와 챌린지 엑스퍼트 3만 위치가 매판 랜덤입니다. 나머지는 전부 재현 가능한 고정 순서입니다.", en: "Only the Expert Home Run course and Challenge Expert 3 randomize position each run — every other course is a fixed, repeatable sequence." },
       ],
-      source: { label: "dopr.net — 龍が如く6 完全攻略wiki バッティングセンター", url: "https://dopr.net/" },
+      source: [
+        { label: "龍が如く6 最速攻略wiki — バッティングセンター/ホームランコース配球", url: "https://spwiki.net/ryu6/wikis/115.html" },
+        { label: "龍が如く6 最速攻略wiki — バッティングセンター/チャレンジコース配球", url: "https://spwiki.net/ryu6/wikis/116.html" },
+      ],
       courses: [
         {
           title: { ko: "홈런 코스 — 초급", en: "Home Run Course — Beginner" },

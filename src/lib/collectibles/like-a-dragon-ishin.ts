@@ -57,12 +57,12 @@ export const likeADragonIshin: CollectiblesData = {
     },
     source: { label: "Shacknews — Ishin Cats and Dogs Pet Locations", url: "https://www.shacknews.com/article/134282/like-a-dragon-ishin-cats-and-dogs-pet-locations" },
     items: [
-      { number: 1, title: { ko: "짖는 개", en: "Barking Dog" }, location: { ko: "전당포 근처", en: "Near a pawn shop" }, body: { ko: "뼈다귀를 주면 바로 조용해지며 친해집니다.", en: "Give it a Bone to quiet it down and befriend it." } },
-      { number: 2, title: { ko: "다친 개", en: "Injured Dog" }, location: { ko: "무쿠로가이 빈민가", en: "Mukurogai's slums" }, body: { ko: "기본 연고와 활력환 같은 치료 아이템으로 돌봐줘야 합니다.", en: "Needs healing items like basic Ointment and Vitality Pills." } },
-      { number: 3, title: { ko: "참을성 있는 개", en: "Patient Dog" }, location: { ko: "특정 구역", en: "A specific district" }, body: { ko: "음식 종류를 가리지 않아 아무거나 줘도 됩니다.", en: "Not picky — any food works." } },
-      { number: 4, title: { ko: "지저분한 고양이", en: "Filthy Cat" }, location: { ko: "선착장", en: "On a dock" }, body: { ko: "몇 차례 자동으로 씻겨주기만 하면 친해집니다.", en: "Just needs to be cleaned up several times — happens automatically." } },
-      { number: 5, title: { ko: "배고픈 고양이", en: "Hungry Cat" }, location: { ko: "특정 구역", en: "A specific area" }, body: { ko: "처음엔 아무 음식이나 받다가 점점 도미, 나중엔 희귀한 청새치 참치까지 요구합니다.", en: "Accepts any food at first, then demands sea bream, and eventually a rare Bluefish Tuna." } },
-      { number: 6, title: { ko: "행운의 고양이", en: "Lucky Cat" }, location: { ko: "특정 구역", en: "A specific district" }, body: { ko: "1000몬 → 2000몬 → 3000몬 → 5000몬 → 1료 순서로 금전 공양을 요구합니다.", en: "Requests money in sequence: 1,000 mon, 2,000 mon, 3,000 mon, 5,000 mon, then 1 ryo." } },
+      { number: 1, title: { ko: "짖는 개", en: "Barking Dog" }, location: { ko: "라쿠나이 — 에비스 전당포 부근 큰길 남측", en: "Rakunai — south of the main road near Ebisu Pawn" }, body: { ko: "뼈다귀를 주면 바로 조용해지며 친해집니다.", en: "Give it a Bone to quiet it down and befriend it." } },
+      { number: 2, title: { ko: "다친 개", en: "Injured Dog" }, location: { ko: "무쿠로가이 — 중앙 1층", en: "Mukurogai — central 1F" }, body: { ko: "기본 연고와 활력환 같은 치료 아이템으로 돌봐줘야 합니다.", en: "Needs healing items like basic Ointment and Vitality Pills." } },
+      { number: 3, title: { ko: "참을성 있는 개", en: "Patient Dog" }, location: { ko: "후시미 — 에비스 전당포 뒤 계단", en: "Fushimi — stairs behind Ebisu Pawn" }, body: { ko: "음식 종류를 가리지 않아 아무거나 줘도 됩니다.", en: "Not picky — any food works." } },
+      { number: 4, title: { ko: "지저분한 고양이", en: "Filthy Cat" }, location: { ko: "후시미 — 가옥선 옆 부두", en: "Fushimi — dock beside the houseboat" }, body: { ko: "몇 차례 자동으로 씻겨주기만 하면 친해집니다.", en: "Just needs to be cleaned up several times — happens automatically." } },
+      { number: 5, title: { ko: "배고픈 고양이", en: "Hungry Cat" }, location: { ko: "라쿠가이 — 동 우메코지쵸 건물 사이", en: "Rakugai — between buildings in East Umekojicho" }, body: { ko: "처음엔 아무 음식이나 받다가 점점 도미, 나중엔 희귀한 청새치 참치까지 요구합니다.", en: "Accepts any food at first, then demands sea bream, and eventually a rare Bluefish Tuna." } },
+      { number: 6, title: { ko: "행운의 고양이", en: "Lucky Cat" }, location: { ko: "라쿠나이 — 신사 동측", en: "Rakunai — east of the shrine" }, body: { ko: "1000몬 → 2000몬 → 3000몬 → 5000몬 → 1료 순서로 금전 공양을 요구합니다.", en: "Requests money in sequence: 1,000 mon, 2,000 mon, 3,000 mon, 5,000 mon, then 1 ryo." } },
     ],
   },
   {

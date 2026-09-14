@@ -284,7 +284,7 @@ export const lostJudgmentMinigames: MinigamesData = {
       name: { ko: "마작", en: "Mahjong" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "카무로초·이진초의 마작장", en: "The mahjong parlours in Kamurocho and Ijincho" },
+      location: { ko: "카무로초 텐카이치 거리 「마작 라라바이」 / 이진초 「마작 시토롱」·「마작 클럽 카초후게츠」", en: "Mahjong Rarabai on Tenkaichi St, Kamurocho; Mahjong Shitoron and Mahjong Club Kachofugetsu in Ijincho" },
       summary: {
         ko: "표준 4인 마작입니다. 국수 안에 가능한 한 강한 역을 완성하는 것이 목적입니다.",
         en: "Standard four-player mahjong: build the strongest hand you can inside the allotted rounds.",
@@ -300,7 +300,7 @@ export const lostJudgmentMinigames: MinigamesData = {
       name: { ko: "노상 장기", en: "Street shogi" },
       category: { ko: "보드게임", en: "Board game" },
       difficulty: 3,
-      location: { ko: "카무로초·이진초의 노상 장기", en: "Street shogi in Kamurocho and Ijincho" },
+      location: { ko: "카무로초 텐카이치 거리 뒤편 / 이진초 사쿠라가와 거리 남쪽 광장 부근", en: "Behind Tenkaichi St in Kamurocho; near the plaza south of Sakuragawa St in Ijincho" },
       summary: {
         ko: "「순위전」·「시련 답파」·「쓰메쇼기」를 플레이할 수 있고, 이기면 장기 포인트를 받아 경품과 교환합니다.",
         en: "Ranking matches, Trial Run and tsume-shogi, paying Shogi Points for prizes.",
@@ -316,12 +316,13 @@ export const lostJudgmentMinigames: MinigamesData = {
       name: { ko: "도박장 (코이코이·오이초카부)", en: "Gambling den (koi-koi & oicho-kabu)" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "이진초의 도박장", en: "The gambling den in Ijincho" },
+      location: { ko: "이진초 로망칸 거리 — 클럽 뒷골목을 지나 2층 (암호 「7120」)", en: "Ijincho, Romankan St — up the narrow alley behind a club to the 2nd floor (passcode '7120')" },
       summary: {
         ko: "화투를 쓰는 코이코이와 오이초카부를 플레이할 수 있습니다. 경품 교환에 VR 스고로쿠용 「프리 패스 교환권【6】」이 있으므로 한 번은 반드시 들러야 합니다.",
         en: "Koi-koi and oicho-kabu on hanafuda. Its prize exchange holds Free Pass Voucher 6 for Dice & Cube, so it's a mandatory stop at least once.",
       },
       howTo: [
+        { ko: "입구 암호는 「7120」입니다. 힌트가 필요하면 이진초 후쿠토쿠 공원에 어슬렁거리는 남자 2인조에게 말을 걸어 보세요.", en: "The door passcode is '7120.' If you need a hint, talk to the two men loitering around Fukutoku Park in Ijincho." },
         { ko: "코이코이는 1대1 대전입니다. 선은 고른 패의 달이 빠른 쪽이고 이후로는 승자가 선을 잡습니다. 손패와 장에 같은 달의 패가 있으면 가져올 수 있고, 없으면 손패를 장에 놓습니다.", en: "Koi-koi is head to head. The earlier month deals first and the winner deals after that; match a month between hand and field to take the pair, otherwise place a card." },
         { ko: "역이 완성돼도 「코이코이한다」를 골라 더 강한 역을 노릴 수 있습니다. 약한 역으로 이기고 빠질지 강한 역을 노릴지가 승부의 갈림길입니다.", en: "A completed hand can still be pushed with a koi-koi call for something bigger — banking the small win or reaching further is the whole decision." },
         { ko: "오이초카부는 11·12월을 뺀 1~10월 40장을 씁니다. 받은 2~3장 합계의 끝자리를 9에 가깝게 만들어 친보다 9에 가까우면 승리입니다. 1월 패는 1, 5월 패는 5, 10월 패는 0으로 셉니다.", en: "Oicho-kabu uses the forty cards from months one to ten: get the last digit of your two or three cards closer to 9 than the dealer's. January counts as 1, May as 5, October as 0." },
@@ -371,7 +372,7 @@ export const lostJudgmentMinigames: MinigamesData = {
       courses: [
         {
           title: { ko: "챌린지 코스 — 세계의 괴물 Lv.1", en: "Challenge Course — World Monster Lv.1" },
-          note: { ko: "가장 어려운 티어 — 쇼와/헤이세이/이도류 몬스터 순서표는 추가 예정", en: "Hardest tier — Showa/Heisei/Twin-Blade Monster tables are pending" },
+          note: { ko: "가장 어려운 티어입니다. 쇼와/헤이세이/이도류 몬스터도 같은 방식(칸별 고정 스크립트)으로 공략할 수 있으나, 정확한 칸·구질 순서표는 아래 출처에 실려 있지 않아 여기서는 세계의 괴물만 수록합니다.", en: "The hardest tier. Showa, Heisei and Twin-Blade Monster follow the same fixed-script format, but the sources below don't publish their exact grid/pitch tables — only World Monster is listed here." },
           pitches: [
             { pos: 4, type: "Cutter", speed: "140" }, { pos: 5, type: "Changeup", speed: "100" }, { pos: 1, type: "Curve", speed: "110" }, { pos: 3, type: "One-seam", speed: "140" }, { pos: 5, type: "Straight", speed: "165" },
             { pos: 2, type: "Curve", speed: "110" }, { pos: 7, type: "Slider", speed: "135" }, { pos: 4, type: "Changeup", speed: "100" }, { pos: 2, type: "Slider", speed: "125" }, { pos: 4, type: "Forkball", speed: "135" },

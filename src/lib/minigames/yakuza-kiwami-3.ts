@@ -199,7 +199,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "마작", en: "Mahjong" },
       category: { ko: "도박·보드", en: "Gambling / board" },
       difficulty: 4,
-      location: { ko: "카무로초·류큐가 — 마작장", en: "Mahjong parlours in Kamurocho and Downtown Ryukyu" },
+      location: { ko: "카무로초 — 마작 라라바이 (덴카이치 거리) / 류큐가 — 마작 캠프 (하츠마치 거리)", en: "Mahjong Rarabai on Tenkaichi St. (Kamurocho); Mahjong Camp on Hatsumachi St. (Downtown Ryukyu)" },
       summary: {
         ko: "운 요소가 큰 종목이지만 이카사마 아이템이 게임 밸런스를 통째로 무너뜨립니다.",
         en: "Luck-heavy, but the cheat items break it wide open.",
@@ -219,13 +219,13 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "쇼기 (장기)", en: "Shogi" },
       category: { ko: "도박·보드", en: "Gambling / board" },
       difficulty: 3,
-      location: { ko: "카무로초 북쪽 — 노상 장기", en: "Street shogi, northern Kamurocho" },
+      location: { ko: "류큐가 — 공설시장 2층 / 카무로초 — 챔피언 거리 남동쪽", en: "2F of the public market (Downtown Ryukyu); southeast of Champion St. (Kamurocho)" },
       summary: {
-        ko: "단련 목록 조건은 승리 관련이며, 규칙을 모르면 진입 장벽이 큽니다.",
-        en: "The training rows are about winning, and the rules are the barrier.",
+        ko: "단련 목록 조건은 대국 횟수(1·3·5국)와 외통수를 찾는 즈메쇼기 클리어 수(2·5·7개)이며, 승패는 상관없습니다.",
+        en: "The training rows count matches played (1/3/5) and tsume-shogi puzzles cleared (2/5/7) — the result of the match doesn't matter.",
       },
       howTo: [
-        { ko: "가장 약한 상대부터 붙고, 무르기를 쓰지 않는 조건이 걸린 항목이 있으므로 무르기 사용에 주의하세요.", en: "Start with the weakest opponent, and watch the take-back — some rows require winning without one." },
+        { ko: "승패는 목록에 영향이 없으므로 상대는 아무나 골라 대국 수만 채우면 됩니다. 지더라도 카운트됩니다.", en: "Wins and losses don't affect the training rows, so pick any opponent and just rack up matches — a loss still counts." },
         { ko: "규칙을 모르면 정해진 국면에서 최선수를 찾는 문제 형식으로 감을 잡는 편이 실전보다 빠릅니다.", en: "If shogi is new, the set-position problems teach it faster than full games." },
       ],
       source: [
@@ -257,14 +257,14 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "다트", en: "Darts" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 2,
-      location: { ko: "카무로초 북쪽 / 류큐가 북쪽 — 다트", en: "Darts in northern Kamurocho and northern Downtown Ryukyu" },
+      location: { ko: "카무로초 — 반탐 / 류큐가 — 바 아쿠아 스카이 (하츠마치 이나리 거리)", en: "Bantam (Kamurocho); Bar Aqua Sky on Hatsumachi Inari St. (Downtown Ryukyu)" },
       summary: {
         ko: "01·크리켓·카운트업 세 종목입니다. 포인트로 경품을 교환합니다.",
         en: "The usual three modes — 01, Cricket and Count-Up — with points traded for prizes.",
       },
       howTo: [
         { ko: "싱글은 그 구역 점수, 더블 2배, 트리플 3배이고 BULL은 50점입니다. 01에서는 트리플 20보다 BULL이 안정적입니다.", en: "Singles score the sector, doubles double, triples treble, bull is 50 — in 01 the bull is steadier than treble 20." },
-        { ko: "해트트릭(한 라운드 3발 모두 BULL)이 조건이라면 혼자 01 게임을 고르세요. 라운드가 많아 반복 시도할 수 있습니다.", en: "If a row wants hat-tricks, play 01 alone — the most rounds to keep trying." },
+        { ko: "단련 목록은 「3가지 룰로 플레이」·「누적 2승」·「누적 5승」 세 항목입니다. 01만 반복하면 룰 조건이 안 채워지니 크리켓·카운트업도 한 번씩은 돌리세요.", en: "The training rows are: play all 3 rule types, win 2 cumulative, win 5 cumulative. Grinding 01 alone won't clear the rule-variety row, so run Cricket and Count-Up at least once each too." },
       ],
       source: [
         { label: "ゲームエイト — 龍が如く極3 ダーツ", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/759301" },
@@ -276,10 +276,10 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "당구", en: "Pool" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 3,
-      location: { ko: "카무로초 북쪽 / 류큐가 북쪽 — 당구장", en: "Pool halls in northern Kamurocho and northern Downtown Ryukyu" },
+      location: { ko: "카무로초 — 키스 샷 (공원 앞 거리) / 류큐가 — 바 아쿠아 스카이 (하츠마치 이나리 거리)", en: "Kiss Shot on Park Front St. (Kamurocho); Bar Aqua Sky on Hatsumachi Inari St. (Downtown Ryukyu)" },
       summary: {
-        ko: "나인볼 등 정규 게임과 특정 샷 조건이 함께 있습니다.",
-        en: "Standard games alongside rows asking for particular shots.",
+        ko: "나인볼·로테이션·에이트볼·요츠다마 같은 정규 게임 외에, 지정된 빨간 공을 한 번에 포켓시키는 「원 샷 챌린지」(EASY~EX-HARD)가 따로 있습니다.",
+        en: "Alongside the standard games (Nine-Ball, Rotation, Eight-Ball, Four-Ball) there's a separate One-Shot Challenge mode (Easy through EX-Hard) where you sink a marked red ball in a single shot.",
       },
       howTo: [
         { ko: "캐롬은 큐볼이 목적구를 맞힌 뒤 다른 공을 맞혀 그 공이 들어가는 샷, 콤비네이션은 목적구가 다른 공을 맞혀 그 공이 들어가는 샷입니다.", en: "A carom is cue to object ball then on to another ball which drops; a combination is the object ball doing the hitting." },
@@ -295,7 +295,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "카라오케", en: "Karaoke" },
       category: { ko: "음악·리듬", en: "Music / rhythm" },
       difficulty: 2,
-      location: { ko: "카무로초 남쪽 / 류큐가 북쪽 — 가라오케", en: "Karaoke in southern Kamurocho and northern Downtown Ryukyu" },
+      location: { ko: "카무로초·류큐가 — 카라오케칸", en: "Karaoke-kan branches in Kamurocho and Downtown Ryukyu" },
       summary: {
         ko: "버튼 타이밍 리듬 게임입니다. 서브스토리와도 얽혀 있습니다.",
         en: "A button-timing rhythm game that also feeds into substories.",
@@ -314,7 +314,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "카지노 (포커·블랙잭·바카라·룰렛)", en: "Casino (poker, blackjack, baccarat, roulette)" },
       category: { ko: "도박·보드", en: "Gambling / board" },
       difficulty: 2,
-      location: { ko: "카무로초 — 사이노카와라 / 류큐가 남쪽 — 카지노", en: "Sai no Kawara (Kamurocho) and the casino in southern Downtown Ryukyu" },
+      location: { ko: "카무로초 — 사이노카와라 / 류큐가 — 아케이드 뒷골목", en: "Sai no Kawara (Kamurocho); Arcade Backside Road (Downtown Ryukyu)" },
       summary: {
         ko: "네 종목이 있고 칩으로 경품을 교환합니다. 이카사마 아이템이 존재합니다.",
         en: "Four games, chips traded for prizes, and cheat items exist here too.",
@@ -353,7 +353,7 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       name: { ko: "게임 센터 (아케이드 명작 + UFO 캐처)", en: "Arcade (classic cabinets + UFO Catcher)" },
       category: { ko: "아케이드", en: "Arcade" },
       difficulty: 3,
-      location: { ko: "카무로초 북쪽·남쪽 — 게임 센터", en: "The arcades in northern and southern Kamurocho" },
+      location: { ko: "카무로초 — 클럽 세가 나카미치 거리점(일부 기종) · 극장 앞점(전 기종)", en: "Club SEGA Nakamichi St. (partial line-up) and Theater Square (full line-up), Kamurocho" },
       summary: {
         ko: "모터 레이드, 구급차, 슬래시 아웃, 버추어 파이터 2/2.1, 파이팅 바이퍼즈를 통째로 플레이할 수 있고 UFO 캐처도 여기 있습니다.",
         en: "Motor Raid, Emergency Call Ambulance, Slashout, Virtua Fighter 2/2.1 and Fighting Vipers are all playable in full, and the UFO Catcher is here too.",

@@ -331,7 +331,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
           chapter: { ko: "4장 (낮)", en: "Chapter 4 (Daytime)" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 와이키키 스트리트", en: "Honolulu City — Waikiki St." },
-          trigger: { ko: "지정 두 곳에서 꽃 이벤트 목격 후, 와이키키에서 청년들의 다툼 목격", en: "Witness flower scenes at two spots, then catch the youths' quarrel on Waikiki St." },
+          trigger: { ko: "선셋 파크와 아나콘다 하버파크에서 파란 꽃 이벤트를 목격한 뒤, 와이키키 타운 동쪽에서 아이나에게 말 걸기", en: "Witness the blue-flower scenes at Sunset Park and Anaconda Harbor Park, then talk to Aina on east Waikiki St." },
           body: { ko: "프루메리아 꽃을 둘러싼 두 청년의 다툼을 중재합니다.", en: "Mediate between two young men over a plumeria flower." },
           reward: { ko: "럭키 파레오", en: "Lucky pareo" },
         },

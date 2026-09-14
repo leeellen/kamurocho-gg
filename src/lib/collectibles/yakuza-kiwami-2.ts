@@ -13,7 +13,10 @@ export const yakuzaKiwami2: CollectiblesData = {
       tips: [
         { ko: "거리·건물 바닥에서 반짝이는 곳을 조사하면 열쇠를 얻습니다. 「로커키 워처(E3)」를 입수하면 미니맵에 열쇠 위치가 표시됩니다.", en: "Investigate shining spots on the ground to get keys. The Locker Key Watcher (E3) marks keys on the minimap." },
       ],
-      source: { label: "ゲーム攻略マン — 龍が如く極2 神室町のコインロッカー", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/cheats-data/kamurocho-coin-locker-keys.html" },
+      source: [
+        { label: "ゲーム攻略マン — 龍が如く極2 神室町のコインロッカー", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/cheats-data/kamurocho-coin-locker-keys.html" },
+        { label: "ゲーム攻略マン — 龍が如く極2 蒼天堀のコインロッカー", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/cheats-data/soutenbori-coin-locker-keys.html" },
+      ],
       groups: [
       {
         title: { ko: "카무로초 — 50개 열쇠", en: "Kamurocho — 50 Keys" },
