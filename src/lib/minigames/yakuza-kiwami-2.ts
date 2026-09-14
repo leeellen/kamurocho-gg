@@ -18,9 +18,9 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
       name: { ko: "캐바레 클럽 그랑프리 (신·물장사 아일랜드)", en: "Cabaret Club Grand Prix" },
       category: { ko: "경영 시뮬레이션", en: "Management sim" },
       difficulty: 4,
-      location: { ko: "소텐보리 — 캬바쿠라 「포시샤인」", en: "Four Shine, Sotenbori" },
+      location: { ko: "소텐보리 — 캬바쿠라 「포샤인」", en: "Four Shine, Sotenbori" },
       summary: {
-        ko: "4장 후반 포시샤인을 인수하는 이벤트로 튜토리얼이 열리고, 그랑프리 자체는 6장부터 참가할 수 있습니다. 프레시 → 파라다이스 → 이그제큐티브 → 밀리어네어 → 파이널 챔피언십 순으로 다섯 개 리그를 올라갑니다.",
+        ko: "4장 후반 포샤인을 인수하는 이벤트로 튜토리얼이 열리고, 그랑프리 자체는 6장부터 참가할 수 있습니다. 프레시 → 파라다이스 → 이그제큐티브 → 밀리어네어 → 파이널 챔피언십 순으로 다섯 개 리그를 올라갑니다.",
         en: "The tutorial fires late in Chapter 4 when Four Shine is taken over, but the Grand Prix itself only opens in Chapter 6. Five leagues in order: Fresh, Paradise, Executive, Millionaire, then the Final Championship.",
       },
       howTo: [
