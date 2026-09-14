@@ -425,7 +425,7 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   ⚠ {pick(item.note, locale)}
                 </div>
               )}
-              {((item.steps && item.steps.length > 0) || item.reward) && (
+              {((item.steps && item.steps.length > 0) || item.reward || item.image) && (
                 <button
                   type="button"
                   onClick={(e) => {
