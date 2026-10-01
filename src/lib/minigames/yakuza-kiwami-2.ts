@@ -20,8 +20,8 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
       difficulty: 4,
       location: { ko: "소텐보리 — 캬바쿠라 「포샤인」", en: "Four Shine, Sotenbori" },
       summary: {
-        ko: "4장 후반 포샤인을 인수하는 이벤트로 튜토리얼이 열리고, 그랑프리 자체는 6장부터 참가할 수 있습니다. 프레시 → 파라다이스 → 이그제큐티브 → 밀리어네어 → 파이널 챔피언십 순으로 다섯 개 리그를 올라갑니다.",
-        en: "The tutorial fires late in Chapter 4 when Four Shine is taken over, but the Grand Prix itself only opens in Chapter 6. Five leagues in order: Fresh, Paradise, Executive, Millionaire, then the Final Championship.",
+        ko: "4장 후반 포샤인을 인수하는 이벤트에서 튜토리얼 영업을 한 번 마친 뒤 유키에게 말을 걸면 그랑프리 사회자 보노 이소자키가 찾아와 프레시 리그가 시작됩니다. 프레시 → 파라다이스 → 이그제큐티브 → 밀리어네어 → 파이널 챔피언십 순으로 다섯 개 리그를 올라갑니다.",
+        en: "Late in Chapter 4 Four Shine is taken over and you run a tutorial shift; talk to Yuki afterwards and host Bono Isozaki arrives to open the Grand Prix with the Fresh League. Five leagues in order: Fresh, Paradise, Executive, Millionaire, then the Final Championship.",
       },
       howTo: [
         { ko: "캐스트는 구인·메인 진행·서브스토리 세 경로로 늘립니다. 구인은 뽑을수록 비용이 단계적으로 오르고, 돈을 내고도 아무도 안 오는 경우가 있으니 자금에 여유가 있을 때만 돌리세요.", en: "Cast come from three places: recruiting, story progress, and substories. Recruiting costs more each time and can return nobody at all, so only spin it when you can afford a blank." },
@@ -35,6 +35,8 @@ export const yakuzaKiwami2Minigames: MinigamesData = {
         { label: "ゲーム攻略マン — 龍が如く極2 新・水商売アイランド", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/nightlife-island/" },
         { label: "ゲーム攻略マン — 龍が如く極2 新・水商売アイランド リーグ攻略", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/nightlife-island/fresh-league.html" },
         { label: "ゲーム攻略マン — 龍が如く極2 キャストのデートイベント", url: "https://dswiipspwikips3.jp/yakuza-kiwami2/nightlife-island/koyuki-event.html" },
+        { label: "DARAGE — 龍が如く 極2 水商売アイランド", url: "https://darage.com/guide/ryukiwami2/k04.html" },
+        { label: "神ゲー攻略 — 龍が如く極2 水商売アイランド攻略", url: "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%AD%E3%83%A3%E3%83%90%E3%82%AF%E3%83%A9/index.html" },
       ],
       achievementSlug: "lexus2_cabaret_island_gp_all_clear",
       puzzleSets: [
