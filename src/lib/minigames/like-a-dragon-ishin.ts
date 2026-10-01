@@ -8,8 +8,8 @@ const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const likeADragonIshinMinigames: MinigamesData = {
   appId: 1805480,
   intro: {
-    ko: "막부 말기 교토가 무대인 외전. 미니게임 컴플리트를 전부 달성하면 방어구 「천룡인(天龍印)」을 받고, 모든 플레이 스폿을 한 번씩 플레이하면 트로피 「놀이를 섭렵한 남자」가 나옵니다. 도박 종목은 목찰 누적 점수(치리린·코이코이·오이초카부 7,500점, 포커·초한 15,000점)가 컴플리트 조건이라 승패보다 총량이 중요합니다. 경계(競鶏)는 이 게임에서 돈과 덕을 가장 빠르게 버는 수단입니다.",
-    en: "A Bakumatsu-era spin-off set in Kyo. Completing every minigame gives the Tenryu Crest headgear, and playing every play spot once earns \"The Man Who Does It All\". The gambling entries complete on cumulative wooden-token points — 7,500 for cee-lo, koi-koi and oicho-kabu, 15,000 for poker and cho-han — so total volume matters more than any single win. Chicken racing is the fastest money and Virtue in the game.",
+    ko: "막부 말기 교토가 무대인 외전. 미니게임 컴플리트를 전부 달성하면 방어구 「천룡인(天龍印)」을 받고, 모든 플레이 스폿을 한 번씩 플레이하면 트로피 「놀이를 섭렵한 남자」가 나옵니다. 도박 종목은 목찰 누적 점수(친치로린·초한·코이코이·오이초카부 7,500점, 포커·경계 10,000점)가 컴플리트 조건이라 승패보다 총량이 중요합니다. 경계(競鶏)는 이 게임에서 돈과 덕을 가장 빠르게 버는 수단입니다.",
+    en: "A Bakumatsu-era spin-off set in Kyo. Completing every minigame gives the Tenryu Crest headgear, and playing every play spot once earns \"The Man Who Does It All\". The gambling entries complete on cumulative wooden-token points — 7,500 for cee-lo, cho-han, koi-koi and oicho-kabu, 10,000 for poker and chicken racing — so total volume matters more than any single win. Chicken racing is the fastest money and Virtue in the game.",
   },
   minigames: [
     {
@@ -25,20 +25,62 @@ export const likeADragonIshinMinigames: MinigamesData = {
       howTo: [
         { ko: "흐름은 ① 행상 주문 확인 → ② 요구 농작물·생선·요리 조달 → ③ 납품 → ④ 병행해서 펫을 늘리고 덕을 벌어 별택을 확충 → 반복입니다. 빚을 갚으려면 행상을 소화해 독촉장을 받아야 합니다.", en: "The loop is: check the trade orders, gather the crops, fish and dishes they ask for, deliver, and in parallel add pets and spend Virtue on expanding the house. Paying down the debt requires filling those orders to earn the demand notes." },
         { ko: "주문 품목은 사서 채울 수도 있지만, 트로피·컴플리트·정진목록을 함께 노린다면 직접 농사와 낚시로 조달하는 편이 낫습니다.", en: "You can buy what the orders want, but growing and catching it yourself also feeds the trophies, the completion list and the Diligence Records." },
+        { ko: "행상으로 20량을 벌면 빚을 갚을 수 있습니다(갚을수록 보수가 오름). 주문 순서는 카테고리마다 고정이라, 아래 「행상 주문 순서」를 보고 다음·다다음 주문을 미리 준비할 수 있습니다. 일부 생선·채소·식재료는 후시미·라쿠나이 가게에서 사 두는 편이 빠릅니다. 극(極)은 도박 벌이 효율이 원작의 약 1/3이라 행상 수입의 비중이 큽니다.", en: "Earning 20 ryo through trading lets you pay down the debt, and payouts grow as you go. Order sequences are fixed per category, so the trade-order table below lets you prep the next one or two in advance. Some fish, vegetables and ingredients are faster to buy in Fushimi or Rakunai. In Kiwami gambling pays roughly a third of what it did in the original, which makes trading income matter more." },
+        { ko: "농사 덕 교환 우선순위: 밭 확장(1단계만 해도 교환 가능한 작부가 늘어남) > 허수아비(최상위 「쇼군 허수아비(将軍かかし)」면 식해가 없어짐) > 밭 레벨 = 각종 작부. とまと(서브스토리 「謎の商人」에서 10개)·人参·ほうれん草·かぶ(「野菜好き少年」)는 팔백옥에서 안 팔아 직접 길러야 하니 먼저 심으세요. 일괄 수확은 덕이 줄고 풍작 보너스가 없어 급할 때만 쓰세요.", en: "Farm Virtue priorities: field expansion first (even one step adds seed options), then scarecrows (the top 将軍かかし stops crop damage entirely), then field level and individual seeds. Tomatoes (ten for the 謎の商人 substory), carrots, spinach and turnips (野菜好き少年) aren't sold at the greengrocer, so plant them first. Bulk harvest gives less Virtue and skips bumper-crop bonuses — use it only when pressed." },
+        { ko: "요리는 「썰기(切る)」 아이콘 겹칠 때 누르기, 「붓기(注ぐ)」 100 근처에서 멈추기, 「가열(加熱する)」 연타로 화력 유지, 「굽기(焼く)」 큰 불똥이 튈 때 뒤집기의 4공정입니다. 대성공이면 회복량이 큰 특상 요리가 됩니다. 덕 교환 「料理好きの台所」가 최우선이고, 「万能な台所」까지 올리면 「革命ころころ揚げ」 외 전 요리가 열립니다(그건 서브스토리 「革命料理人」 절 최대로 해금 — 요리 4개를 미리 준비).", en: "Cooking has four steps: cut (press as the knife icon overlaps), pour (stop near 100), heat (mash to hold the flame) and grill (flip when a big spark flies). A great result makes a premium dish with stronger healing. The 料理好きの台所 kitchen upgrade is the first Virtue buy; 万能な台所 unlocks every recipe except 革命ころころ揚げ, which comes from maxing the 革命料理人 substory bond — have four dishes ready for it." },
+        { ko: "펫은 개·고양이 각 3마리까지입니다. 말을 걸면 료마가 기분을 말해 주는데, 「기분 나쁨」이면 아무거나, 「그럭저럭」이면 메시지 내용의 한 칸 아래 선택지를 고르면 됩니다(그 위 단계는 힌트가 거의 없음). 개는 아이템·무기 소재를 물어 오고(개집 설치·강화로 빈도 증가), 고양이는 행상 때 거래처의 선물 확률을 올립니다(고양이 이불로 강화).", en: "Up to three dogs and three cats. Talking to a pet makes Ryoma describe its mood: when it's in a bad mood any choice works, and when it's so-so pick the option one below what the message describes (the happier tiers rarely give a hint). Dogs fetch items and weapon materials (a doghouse and its upgrades raise the rate); cats raise the chance of bonus gifts on trades (the cat futon boosts it)." },
+        { ko: "하루카와의 친밀도는 7단계이고 「포즈 메뉴 > 어나더 라이프」에서 확인합니다. 오르는 폭: 나고미 이벤트 시청 특대, 기모노 선물 대, 특상 요리·요리 중, 행상 납품·별택에서 만나기 소. 기모노는 1차 빚 상환(元黄娘), 신주 상점 2단계 덕1,500(深凛緑)·3단계 3,500(癒清水)·4단계 6,000(満天桜)·최강 10,000(紫艶星)으로 얻습니다.", en: "Haruka's affection has seven levels, shown under Pause > Another Life. Gains: watching a nagomi event (huge), gifting a kimono (large), cooking — premium or not (medium), delivering a trade order or meeting her at home (small). Kimono come from the first debt repayment (元黄娘) and the shrine shop at tier 2 for 1,500 Virtue (深凛緑), tier 3 for 3,500 (癒清水), tier 4 for 6,000 (満天桜) and the top tier for 10,000 (紫艶星)." },
+        { ko: "나고미 이벤트 첫 발생 조건: 정원 — 4장에서 발생, 거실 — 친밀도 3 이상에서 낮·저녁에 화로(いろり) 조사, 목욕 — 친밀도 4 이상에서 목욕, 이불 — 친밀도 5 이상에서 밤에 별택에서 취침. 시간대가 맞지 않으면 데라다야 등에서 시간을 바꾸고 오세요. 빚을 다 갚으면 이벤트가 더 생깁니다.", en: "First-time nagomi event conditions: garden — happens in Chapter 4; living room — affection 3+, examine the hearth by day or evening; bath — affection 4+, take a bath; futon — affection 5+, sleep at home at night. Change the time at Teradaya or similar if needed. Paying off the debt unlocks more." },
         { ko: "개와 고양이는 각각의 서브스토리를 클리어하고 절을 최대로 올리면 펫이 됩니다. 해당 서브스토리는 「짖어대는 개」, 「마네키네코」, 「배고픈 고양이」, 「상처 입은 개」, 「기다리는 개」, 「더러워진 고양이」입니다. 닭과 시설 확충은 덕 교환으로 가능합니다.", en: "Dogs and cats become pets by clearing their substories and maxing the bond — the barking dog, the lucky cat, the hungry cat, the injured dog, the waiting dog and the dirty cat. Chickens and facility upgrades come from the Virtue exchange." },
       ],
       videos: [
         { title: { ko: "어나더 라이프 농사 가이드", en: "Another Life farming guide" }, url: YT("5BCSwtPpgHQ") },
       ],
-      source: { label: "神ゲー攻略 — アナザーライフ(別宅)の攻略", url: "https://kamigame.jp/ryugagotoku-ishin/page/250359629643560204.html" },
+      source: [
+        { label: "神ゲー攻略 — アナザーライフ(別宅)の攻略", url: "https://kamigame.jp/ryugagotoku-ishin/page/250359629643560204.html" },
+        { label: "神ゲー攻略 — 行商の効率的な達成方法と注文一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/252831025967661837.html" },
+        { label: "神ゲー攻略 — 農業", url: "https://kamigame.jp/ryugagotoku-ishin/page/254430426255347656.html" },
+        { label: "神ゲー攻略 — 料理のやり方とレシピ", url: "https://kamigame.jp/ryugagotoku-ishin/page/254441049269735038.html" },
+        { label: "神ゲー攻略 — ペットの飼い方と交流のやり方", url: "https://kamigame.jp/ryugagotoku-ishin/page/254408972155496908.html" },
+        { label: "神ゲー攻略 — 和みイベント", url: "https://kamigame.jp/ryugagotoku-ishin/page/254715740144314668.html" },
+      ],
       achievementSlug: "pay_back_all",
+      puzzleSets: [
+        {
+          title: { ko: "행상 주문 순서 (카테고리별)", en: "Trade orders in sequence (per category)" },
+          note: { ko: "카테고리마다 주문 순서가 고정이라 다음 주문을 미리 준비할 수 있습니다. 괄호 안은 보수(문 범위)와 추가 보상 아이템입니다. 출처 1곳(神ゲー攻略), 품목명은 원문 그대로입니다.", en: "Each category runs in a fixed order, so you can stock the next order ahead. Brackets give the payout range in mon plus any bonus item. Single source (神ゲー攻略); item names kept in Japanese." },
+          puzzles: [
+            { title: { ko: "채소 (野菜) — 38건", en: "Vegetables (野菜) — 38 orders" }, note: { ko: "1. 大根 5点 (1000文 ～ 3000文) / 2. 人参 5点 (1000文 ～ 3000文 + 肥やし) / 3. 農作物なんでも 5点 (1000文 ～ 3000文) / 4. じゃが芋 5点 (1000文 ～ 3000文) / 5. ほうれん草 5点 (1000文 ～ 3000文 + 上質な皮革) / 6. きゅうり 5点 (1000文 ～ 3000文) / 7. 大根 10点 (2500文 ～ 7500文 + 肥やし) / 8. 農作物なんでも 10点 (2500文 ～ 7500文) / 9. 人参 10点 (2500文 ～ 7500文) / 10. じゃが芋 10点 (2500文 ～ 7500文 + 上質な皮革) / 11. ほうれん草 10点 (2500文 ～ 7500文) / 12. きゅうり 10点 (2500文 ～ 7500文 + 肥やし) / 13. さつま芋 5点 (2500文 ～ 7500文) / 14. 大根 10点 (2500文 ～ 7500文 + 肥やし) / 15. 農作物なんでも 10点 (2500文 ～ 7500文) / 16. じゃが芋 10点 (2500文 ～ 7500文) / 17. ねぎ 10点 (2500文 ～ 7500文 + きれいな毛皮) / 18. なす 15点 (3000文 ～ 9000文) / 19. 農作物なんでも 10点 (2500文 ～ 7500文) / 20. たまねぎ 5点 (3000文 ～ 9000文 + 肥やし) / 21. かぶ 5点 (3000文 ～ 9000文) / 22. そら豆 10点 (4000文 ～ 1両2000文) / 23. ごぼう 5点 (4000文 ～ 1両2000文 + きれいな毛皮) / 24. 生姜 10点 (5000文 ～ 1両5000文) / 25. 農作物なんでも 10点 (2500文 ～ 7500文) / 26. かぼちゃ 5点 (5000文 ～ 1両5000文) / 27. 白菜 5点 (5000文 ～ 1両5000文 + 上質な皮革) / 28. 唐辛子 5点 (5000文 ～ 1両5000文 + 肥やし) / 29. にんにく 5点 (5000文 ～ 1両5000文) / 30. 農作物なんでも 10点 (2500文 ～ 7500文) / 31. 瓜2種 2点 (5000文 ～ 1両5000文) / 32. きゃべつ 4点 (6000文 ～ 1両8000文 + 肥やし) / 33. とまと 4点 (6000文 ～ 1両8000文 + 天蚕糸) / 34. 農作物なんでも 10点 (2500文 ～ 7500文) / 35. 里芋 4点 (7500文 ～ 2両2500文 + きれいな毛皮) / 36. いちご 4点 (7500文 ～ 2両2500文 + 肥やし) / 37. 芋3種 3点 (8000文 ～ 2両4000文) / 38. 朝鮮人参 1点 (1両5000文 ～ 4両5000文 + 綺麗な絹織物)", en: "1. 大根 5点 (1000文 ～ 3000文) / 2. 人参 5点 (1000文 ～ 3000文 + 肥やし) / 3. 農作物なんでも 5点 (1000文 ～ 3000文) / 4. じゃが芋 5点 (1000文 ～ 3000文) / 5. ほうれん草 5点 (1000文 ～ 3000文 + 上質な皮革) / 6. きゅうり 5点 (1000文 ～ 3000文) / 7. 大根 10点 (2500文 ～ 7500文 + 肥やし) / 8. 農作物なんでも 10点 (2500文 ～ 7500文) / 9. 人参 10点 (2500文 ～ 7500文) / 10. じゃが芋 10点 (2500文 ～ 7500文 + 上質な皮革) / 11. ほうれん草 10点 (2500文 ～ 7500文) / 12. きゅうり 10点 (2500文 ～ 7500文 + 肥やし) / 13. さつま芋 5点 (2500文 ～ 7500文) / 14. 大根 10点 (2500文 ～ 7500文 + 肥やし) / 15. 農作物なんでも 10点 (2500文 ～ 7500文) / 16. じゃが芋 10点 (2500文 ～ 7500文) / 17. ねぎ 10点 (2500文 ～ 7500文 + きれいな毛皮) / 18. なす 15点 (3000文 ～ 9000文) / 19. 農作物なんでも 10点 (2500文 ～ 7500文) / 20. たまねぎ 5点 (3000文 ～ 9000文 + 肥やし) / 21. かぶ 5点 (3000文 ～ 9000文) / 22. そら豆 10点 (4000文 ～ 1両2000文) / 23. ごぼう 5点 (4000文 ～ 1両2000文 + きれいな毛皮) / 24. 生姜 10点 (5000文 ～ 1両5000文) / 25. 農作物なんでも 10点 (2500文 ～ 7500文) / 26. かぼちゃ 5点 (5000文 ～ 1両5000文) / 27. 白菜 5点 (5000文 ～ 1両5000文 + 上質な皮革) / 28. 唐辛子 5点 (5000文 ～ 1両5000文 + 肥やし) / 29. にんにく 5点 (5000文 ～ 1両5000文) / 30. 農作物なんでも 10点 (2500文 ～ 7500文) / 31. 瓜2種 2点 (5000文 ～ 1両5000文) / 32. きゃべつ 4点 (6000文 ～ 1両8000文 + 肥やし) / 33. とまと 4点 (6000文 ～ 1両8000文 + 天蚕糸) / 34. 農作物なんでも 10点 (2500文 ～ 7500文) / 35. 里芋 4点 (7500文 ～ 2両2500文 + きれいな毛皮) / 36. いちご 4点 (7500文 ～ 2両2500文 + 肥やし) / 37. 芋3種 3点 (8000文 ～ 2両4000文) / 38. 朝鮮人参 1点 (1両5000文 ～ 4両5000文 + 綺麗な絹織物)" } },
+            { title: { ko: "생선 (魚) — 45건", en: "Fish (魚) — 45 orders" }, note: { ko: "1. フナ 2点 (1000文 ～ 3000文) / 2. シラス 3点 (1000文 ～ 3000文) / 3. ハゼ 2点 (1000文 ～ 3000文 + 撒き餌) / 4. コイ 2点 (1000文 ～ 3000文 + 上質な皮革) / 5. 魚なんでも 2点 (1000文 ～ 3000文) / 6. ザリガニ 2点 (1000文 ～ 3000文) / 7. カワハギ 2点 (1500文 ～ 4500文) / 8. ハリセンボン 2点 (1500文 ～ 4500文) / 9. アユ 2点 (1500文 ～ 4500文) / 10. イカ 2点 (1500文 ～ 4500文 + 獣の尻尾) / 11. クルマエビ 2点 (1500文 ～ 4500文) / 12. 魚なんでも 3点 (1500文 ～ 4500文 + 高級撒き餌) / 13. コイ 4点 (2000文 ～ 6000文) / 14. フナ 4点 (2000文 ～ 6000文) / 15. シラス 5点 (2000文 ～ 6000文) / 16. アナゴ 1点 (2000文 ～ 6000文) / 17. 魚なんでも 4点 (2000文 ～ 6000文 + 高級撒き餌) / 18. ウナギ 1点 (2000文 ～ 6000文 + 特選撒き餌) / 19. マダコ 1点 (2000文 ～ 6000文) / 20. オニカサゴ 1点 (2000文 ～ 6000文) / 21. カレイ 1点 (2000文 ～ 6000文 + 獣の尻尾) / 22. 魚なんでも 5点 (2500文 ～ 7500文 + 特選撒き餌) / 23. タカアシガニ 2点 (3000文 ～ 9000文) / 24. ニシキゴイ 1点 (2500文 ～ 7500文) / 25. シラス 10点 (2800文 ～ 8400文) / 26. トラフグ 1点 (2500文 ～ 7500文) / 27. 魚なんでも 6点 (3000文 ～ 9000文 + 究極撒き餌) / 28. ホオジロザメ 1点 (3000文 ～ 9000文) / 29. ニジマス 1点 (3000文 ～ 9000文) / 30. サケ 1点 (3000文 ～ 9000文 + 名馬の鬣) / 31. 魚なんでも 8点 (4000文 ～ 1両2000文 + 究極撒き餌) / 32. マダイ 1点 (4500文 ～ 1両3500文) / 33. ニシキゴイ 2点 (5000文 ～ 1両5000文) / 34. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 35. フナ 10点 (6000文 ～ 1両8000文) / 36. コイ 10点 (7000文 ～ 2両1000文 + 上質な皮革) / 37. ハゼ 10点 (6000文 ～ 1両8000文) / 38. ニシキゴイ 3点 (7500文 ～ 2両2500文) / 39. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 40. カジキ 1点 (8000文 ～ 2両4000文) / 41. イトウ 1点 (1両0000文 ～ 3両0000文) / 42. マグロ 1点 (1両0000文 ～ 3両0000文) / 43. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 44. 人面魚 1点 (1両5000文 ～ 4両5000文 + 名馬の鬣) / 45. 竜宮の使い 1点 (2両0000文 ～ 6両0000文 + 朱染めの布)", en: "1. フナ 2点 (1000文 ～ 3000文) / 2. シラス 3点 (1000文 ～ 3000文) / 3. ハゼ 2点 (1000文 ～ 3000文 + 撒き餌) / 4. コイ 2点 (1000文 ～ 3000文 + 上質な皮革) / 5. 魚なんでも 2点 (1000文 ～ 3000文) / 6. ザリガニ 2点 (1000文 ～ 3000文) / 7. カワハギ 2点 (1500文 ～ 4500文) / 8. ハリセンボン 2点 (1500文 ～ 4500文) / 9. アユ 2点 (1500文 ～ 4500文) / 10. イカ 2点 (1500文 ～ 4500文 + 獣の尻尾) / 11. クルマエビ 2点 (1500文 ～ 4500文) / 12. 魚なんでも 3点 (1500文 ～ 4500文 + 高級撒き餌) / 13. コイ 4点 (2000文 ～ 6000文) / 14. フナ 4点 (2000文 ～ 6000文) / 15. シラス 5点 (2000文 ～ 6000文) / 16. アナゴ 1点 (2000文 ～ 6000文) / 17. 魚なんでも 4点 (2000文 ～ 6000文 + 高級撒き餌) / 18. ウナギ 1点 (2000文 ～ 6000文 + 特選撒き餌) / 19. マダコ 1点 (2000文 ～ 6000文) / 20. オニカサゴ 1点 (2000文 ～ 6000文) / 21. カレイ 1点 (2000文 ～ 6000文 + 獣の尻尾) / 22. 魚なんでも 5点 (2500文 ～ 7500文 + 特選撒き餌) / 23. タカアシガニ 2点 (3000文 ～ 9000文) / 24. ニシキゴイ 1点 (2500文 ～ 7500文) / 25. シラス 10点 (2800文 ～ 8400文) / 26. トラフグ 1点 (2500文 ～ 7500文) / 27. 魚なんでも 6点 (3000文 ～ 9000文 + 究極撒き餌) / 28. ホオジロザメ 1点 (3000文 ～ 9000文) / 29. ニジマス 1点 (3000文 ～ 9000文) / 30. サケ 1点 (3000文 ～ 9000文 + 名馬の鬣) / 31. 魚なんでも 8点 (4000文 ～ 1両2000文 + 究極撒き餌) / 32. マダイ 1点 (4500文 ～ 1両3500文) / 33. ニシキゴイ 2点 (5000文 ～ 1両5000文) / 34. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 35. フナ 10点 (6000文 ～ 1両8000文) / 36. コイ 10点 (7000文 ～ 2両1000文 + 上質な皮革) / 37. ハゼ 10点 (6000文 ～ 1両8000文) / 38. ニシキゴイ 3点 (7500文 ～ 2両2500文) / 39. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 40. カジキ 1点 (8000文 ～ 2両4000文) / 41. イトウ 1点 (1両0000文 ～ 3両0000文) / 42. マグロ 1点 (1両0000文 ～ 3両0000文) / 43. 魚なんでも 10点 (5000文 ～ 1両5000文 + 究極撒き餌) / 44. 人面魚 1点 (1両5000文 ～ 4両5000文 + 名馬の鬣) / 45. 竜宮の使い 1点 (2両0000文 ～ 6両0000文 + 朱染めの布)" } },
+            { title: { ko: "요리 (料理) — 33건", en: "Dishes (料理) — 33 orders" }, note: { ko: "1. かて飯 1点 (1000文 ～ 3000文) / 2. 手作り浅漬け 1点 (1000文 ～ 3000文 + 天蚕糸) / 3. 料理なんでも 3点 (3000文 ～ 9000文) / 4. かて飯 2点 (2000文 ～ 6000文) / 5. 手作り浅漬け 2点 (2000文 ～ 6000文 + 天蚕糸) / 6. 料理なんでも 3点 (3000文 ～ 9000文) / 7. かて飯 3点 (3000文 ～ 9000文) / 8. ほっこり味噌汁 1点 (2500文 ～ 7500文) / 9. 料理なんでも 3点 (3000文 ～ 9000文) / 10. 元気おむすび 1点 (2500文 ～ 7500文 + 高級撒き餌) / 11. みなぎる味噌汁 1点 (2500文 ～ 7500文) / 12. 料理なんでも 4点 (4000文 ～ 1両2000文) / 13. かて飯 4点 (4000文 ～ 1両2000文 + 特選撒き餌) / 14. ほっこり味噌汁 2点 (5000文 ～ 1両5000文) / 15. 手作り浅漬け 4点 (4000文 ～ 1両2000文 + 天蚕糸) / 16. みなぎる味噌汁 2点 (5000文 ～ 1両5000文) / 17. 元気おむすび 2点 (5000文 ～ 1両5000文 + 特選撒き餌) / 18. 魚介たっぷり辛みそ鍋 1点 (5000文 ～ 1両5000文) / 19. 力持ち煮込み 1点 (5200文 ～ 1両5600文) / 20. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 21. 根性ちらし寿司 1点 (5500文 ～ 1両6500文) / 22. 爽快香味かき揚げ 1点 (5600文 ～ 1両6800文) / 23. 鉄火煮 1点 (5800文 ～ 1両7400文) / 24. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 25. すっきり野菜の和え物 1点 (5600文 ～ 1両6800文 + 究極撒き餌) / 26. しっかり焼き魚 1点 (5500文 ～ 1両6500文) / 27. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 28. 漁師のてっぽう焼き 1点 (7800文 ～ 2両3400文 + 天蚕糸) / 29. 疲れ知らずの滋養鍋 1点 (7800文 ～ 2両3400文) / 30. 料理なんでも 6点 (7500文 ～ 2両2500文 + 究極撒き餌) / 31. 幸せうどんの注文 1点 (8500文 ～ 2両5500文 + 獣の尻尾) / 32. ちゃっかり加須底羅 1点 (1両0000文 ～ 3両0000文) / 33. 料理なんでも 10点 (1両5000文 ～ 4両5000文 + 南蛮渡来の反物)", en: "1. かて飯 1点 (1000文 ～ 3000文) / 2. 手作り浅漬け 1点 (1000文 ～ 3000文 + 天蚕糸) / 3. 料理なんでも 3点 (3000文 ～ 9000文) / 4. かて飯 2点 (2000文 ～ 6000文) / 5. 手作り浅漬け 2点 (2000文 ～ 6000文 + 天蚕糸) / 6. 料理なんでも 3点 (3000文 ～ 9000文) / 7. かて飯 3点 (3000文 ～ 9000文) / 8. ほっこり味噌汁 1点 (2500文 ～ 7500文) / 9. 料理なんでも 3点 (3000文 ～ 9000文) / 10. 元気おむすび 1点 (2500文 ～ 7500文 + 高級撒き餌) / 11. みなぎる味噌汁 1点 (2500文 ～ 7500文) / 12. 料理なんでも 4点 (4000文 ～ 1両2000文) / 13. かて飯 4点 (4000文 ～ 1両2000文 + 特選撒き餌) / 14. ほっこり味噌汁 2点 (5000文 ～ 1両5000文) / 15. 手作り浅漬け 4点 (4000文 ～ 1両2000文 + 天蚕糸) / 16. みなぎる味噌汁 2点 (5000文 ～ 1両5000文) / 17. 元気おむすび 2点 (5000文 ～ 1両5000文 + 特選撒き餌) / 18. 魚介たっぷり辛みそ鍋 1点 (5000文 ～ 1両5000文) / 19. 力持ち煮込み 1点 (5200文 ～ 1両5600文) / 20. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 21. 根性ちらし寿司 1点 (5500文 ～ 1両6500文) / 22. 爽快香味かき揚げ 1点 (5600文 ～ 1両6800文) / 23. 鉄火煮 1点 (5800文 ～ 1両7400文) / 24. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 25. すっきり野菜の和え物 1点 (5600文 ～ 1両6800文 + 究極撒き餌) / 26. しっかり焼き魚 1点 (5500文 ～ 1両6500文) / 27. 料理なんでも 5点 (6000文 ～ 1両8000文 + 獣の尻尾) / 28. 漁師のてっぽう焼き 1点 (7800文 ～ 2両3400文 + 天蚕糸) / 29. 疲れ知らずの滋養鍋 1点 (7800文 ～ 2両3400文) / 30. 料理なんでも 6点 (7500文 ～ 2両2500文 + 究極撒き餌) / 31. 幸せうどんの注文 1点 (8500文 ～ 2両5500文 + 獣の尻尾) / 32. ちゃっかり加須底羅 1点 (1両0000文 ～ 3両0000文) / 33. 料理なんでも 10点 (1両5000文 ～ 4両5000文 + 南蛮渡来の反物)" } },
+            { title: { ko: "기타 (その他) — 26건", en: "Other (その他) — 26 orders" }, note: { ko: "1. 熱血丹 1点 (1000文 ～ 3000文 + 肥やし) / 2. ちり紙 10点 (1000文 ～ 3000文) / 3. 鉄の皿 1点 (1000文 ～ 3000文) / 4. だんごむし 10点 (1200文 ～ 3600文) / 5. みみず 2点 (1500文 ～ 4500文 + 肥やし) / 6. 活力丹 1点 (2000文 ～ 6000文) / 7. 熱血丹 高級 1点 (2000文 ～ 6000文) / 8. 銅の皿 1点 (2500文 ～ 7500文) / 9. 活力丹 高級 1点 (3000文 ～ 9000文 + 肥やし) / 10. 銀の皿 1点 (2両6000文 ～ 7両8000文) / 11. 熱血丹 特選 1点 (3000文 ～ 9000文) / 12. かかしの根付 1点 (2000文 ～ 6000文 + 朱染めの布) / 13. 活力丹 特選 1点 (4000文 ～ 1両2000文) / 14. 弾丸 5点 (5000文 ～ 1両5000文) / 15. 回復薬 5点 (5000文 ～ 1両5000文 + 肥やし) / 16. 鉄の皿 5点 (5000文 ～ 1両5000文) / 17. ちり紙 50点 (5500文 ～ 1両6500文) / 18. 銅の皿 2点 (5000文 ～ 1両5000文) / 19. 金の皿 1点 (20両0000文 ～ 60両0000文) / 20. かかしの根付 1点 (2000文 ～ 6000文 + 名馬の鬣) / 21. 活力丹 3点 (6000文 ～ 1両8000文) / 22. 熱血丹 5点 (5000文 ～ 1両5000文) / 23. 回復薬5種 5点 (7500文 ～ 2両2500文 + 肥やし) / 24. 鉄の皿 6点 (6000文 ～ 1両8000文) / 25. 弾丸5種 5点 (7500文 ～ 2両2500文) / 26. 白金の皿 1点 (30両0000文 ～ 90両0000文 + 南蛮渡来の反物)", en: "1. 熱血丹 1点 (1000文 ～ 3000文 + 肥やし) / 2. ちり紙 10点 (1000文 ～ 3000文) / 3. 鉄の皿 1点 (1000文 ～ 3000文) / 4. だんごむし 10点 (1200文 ～ 3600文) / 5. みみず 2点 (1500文 ～ 4500文 + 肥やし) / 6. 活力丹 1点 (2000文 ～ 6000文) / 7. 熱血丹 高級 1点 (2000文 ～ 6000文) / 8. 銅の皿 1点 (2500文 ～ 7500文) / 9. 活力丹 高級 1点 (3000文 ～ 9000文 + 肥やし) / 10. 銀の皿 1点 (2両6000文 ～ 7両8000文) / 11. 熱血丹 特選 1点 (3000文 ～ 9000文) / 12. かかしの根付 1点 (2000文 ～ 6000文 + 朱染めの布) / 13. 活力丹 特選 1点 (4000文 ～ 1両2000文) / 14. 弾丸 5点 (5000文 ～ 1両5000文) / 15. 回復薬 5点 (5000文 ～ 1両5000文 + 肥やし) / 16. 鉄の皿 5点 (5000文 ～ 1両5000文) / 17. ちり紙 50点 (5500文 ～ 1両6500文) / 18. 銅の皿 2点 (5000文 ～ 1両5000文) / 19. 金の皿 1点 (20両0000文 ～ 60両0000文) / 20. かかしの根付 1点 (2000文 ～ 6000文 + 名馬の鬣) / 21. 活力丹 3点 (6000文 ～ 1両8000文) / 22. 熱血丹 5点 (5000文 ～ 1両5000文) / 23. 回復薬5種 5点 (7500文 ～ 2両2500文 + 肥やし) / 24. 鉄の皿 6点 (6000文 ～ 1両8000文) / 25. 弾丸5種 5点 (7500文 ～ 2両2500文) / 26. 白金の皿 1点 (30両0000文 ～ 90両0000文 + 南蛮渡来の反物)" } },
+          ],
+        },
+        {
+          title: { ko: "요리 레시피 (재료 — 조리 공정)", en: "Recipes (ingredients — cooking steps)" },
+          note: { ko: "출처 1곳(神ゲー攻略), 요리·재료명은 원문 그대로입니다. 「はなまる重」와 「鬼神弁当」은 출처 표에서 재료 1종이 빠져 있습니다.", en: "Single source (神ゲー攻略); dish and ingredient names kept in Japanese. The source table drops one ingredient for はなまる重 and 鬼神弁当." },
+          puzzles: [
+            { title: { ko: "난이도 ★1 — 3종", en: "Difficulty ★1 — 3 dishes" }, note: { ko: "手作り浅漬け: きゅうり×2 — 切る→切る / かて飯: 大根×2 — 切る→切る→加熱する / 梅干し: 季節外れの青梅×5 — 工程無し", en: "手作り浅漬け: きゅうり×2 — 切る→切る / かて飯: 大根×2 — 切る→切る→加熱する / 梅干し: 季節外れの青梅×5 — 工程無し" } },
+            { title: { ko: "난이도 ★2 — 3종", en: "Difficulty ★2 — 3 dishes" }, note: { ko: "ほっこり味噌汁: 大根×1·人参×1·さつま芋×1 — 切る→切る→注ぐ / 元気おむすび: ニジマス×1·ねぎ×2·ほうれん草×2 — 加熱する→切る→焼く / みなぎる味噌汁: カワハギ×1·ねぎ×2·生姜×2 — 切る→注ぐ→加熱する", en: "ほっこり味噌汁: 大根×1·人参×1·さつま芋×1 — 切る→切る→注ぐ / 元気おむすび: ニジマス×1·ねぎ×2·ほうれん草×2 — 加熱する→切る→焼く / みなぎる味噌汁: カワハギ×1·ねぎ×2·生姜×2 — 切る→注ぐ→加熱する" } },
+            { title: { ko: "난이도 ★3 — 8종", en: "Difficulty ★3 — 8 dishes" }, note: { ko: "力持ち煮込み: ザリガニ×1·唐辛子×2·大根×2 — 切る→注ぐ→注ぐ→加熱する / 魚介たっぷり辛味噌: カレイ×1·サケ×1·大根×1·ねぎ×1·唐辛子×6 — 切る→切る→焼く→注ぐ→加熱する / 根性ちらし寿司: クルマエビ×1·卵×2·ウナギ×2 — 加熱する→焼く→焼く / 爽快香味かき揚げ: マダコ×1·ごぼう×4·たまねぎ×1·ねぎ×1·生姜×1 — 切る→切る→加熱する / 鉄火煮: オニカサゴ×1·とまと×3·唐辛子×3·人参×3·にんにく×3 — 切る→切る→切る→加熱する→注ぐ→加熱する / すっきり野菜の和え物: かぶ×2·なす×2·たまねぎ×2·人参×2·ほうれん草×3 — 注ぐ→切る→切る / しっかり焼き魚: サケ×1·マダイ×1·アユ×1 — 焼く→焼く→焼く / 革命ころころ揚げ: うどん粉×2·卵×1·じゃが芋×3·人参×1·きゅうり×1 — 切る→加熱する→加熱する→切る", en: "力持ち煮込み: ザリガニ×1·唐辛子×2·大根×2 — 切る→注ぐ→注ぐ→加熱する / 魚介たっぷり辛味噌: カレイ×1·サケ×1·大根×1·ねぎ×1·唐辛子×6 — 切る→切る→焼く→注ぐ→加熱する / 根性ちらし寿司: クルマエビ×1·卵×2·ウナギ×2 — 加熱する→焼く→焼く / 爽快香味かき揚げ: マダコ×1·ごぼう×4·たまねぎ×1·ねぎ×1·生姜×1 — 切る→切る→加熱する / 鉄火煮: オニカサゴ×1·とまと×3·唐辛子×3·人参×3·にんにく×3 — 切る→切る→切る→加熱する→注ぐ→加熱する / すっきり野菜の和え物: かぶ×2·なす×2·たまねぎ×2·人参×2·ほうれん草×3 — 注ぐ→切る→切る / しっかり焼き魚: サケ×1·マダイ×1·アユ×1 — 焼く→焼く→焼く / 革命ころころ揚げ: うどん粉×2·卵×1·じゃが芋×3·人参×1·きゅうり×1 — 切る→加熱する→加熱する→切る" } },
+            { title: { ko: "난이도 ★4 — 4종", en: "Difficulty ★4 — 4 dishes" }, note: { ko: "漁師のてっぽう焼き: アナゴ×2·イカ×2·唐辛子×4·ねぎ×4·生姜×1 — 焼く→焼く→切る→加熱する / 疲れ知らずの滋養鍋: ウナギ×2·ごぼう×3·ねぎ×3·白菜×2·じゃが芋×4 — 切る→切る→注ぐ→加熱する→切る / 幸せうどん: うどん粉×1·かぼちゃ×2·人参×2·大根×2·銀杏×10 — 切る→切る→注ぐ→加熱する→注ぐ / ちゃっかり加須底羅: 卵×15·うどん粉×2·はちみつ×3 — 加熱する→加熱する→加熱する", en: "漁師のてっぽう焼き: アナゴ×2·イカ×2·唐辛子×4·ねぎ×4·生姜×1 — 焼く→焼く→切る→加熱する / 疲れ知らずの滋養鍋: ウナギ×2·ごぼう×3·ねぎ×3·白菜×2·じゃが芋×4 — 切る→切る→注ぐ→加熱する→切る / 幸せうどん: うどん粉×1·かぼちゃ×2·人参×2·大根×2·銀杏×10 — 切る→切る→注ぐ→加熱する→注ぐ / ちゃっかり加須底羅: 卵×15·うどん粉×2·はちみつ×3 — 加熱する→加熱する→加熱する" } },
+            { title: { ko: "난이도 ★5 — 4종", en: "Difficulty ★5 — 4 dishes" }, note: { ko: "はなまる重: 元気おむすび×2·みなぎる味噌汁×2·かぶ×2·いちご×6·(출처 미기재 1종) — 切る→焼く→焼く→切る→注ぐ→加熱する / 鬼神弁当: 力持ち煮込み×1·根性ちらし寿司×1·スッポン×2·里芋×2·(출처 미기재 1종) — 焼く→焼く→焼く→切る→加熱する / すこやか薬効膳: 爽快香味かき揚げ×1·鉄火煮×1·すっきり野菜の和え物×1·そら豆×5·きゃべつ×1 — 切る→切る→切る→切る→焼く / 超激辛ちゃんこ鍋: 魚介たっぷり辛みそ鍋×1·疲れ知らずの滋養鍋×1·イトウ×1 — 注ぐ→加熱する→注ぐ→加熱する→切る→加熱する", en: "はなまる重: 元気おむすび×2·みなぎる味噌汁×2·かぶ×2·いちご×6·(one ingredient missing in source) — 切る→焼く→焼く→切る→注ぐ→加熱する / 鬼神弁当: 力持ち煮込み×1·根性ちらし寿司×1·スッポン×2·里芋×2·(one ingredient missing in source) — 焼く→焼く→焼く→切る→加熱する / すこやか薬効膳: 爽快香味かき揚げ×1·鉄火煮×1·すっきり野菜の和え物×1·そら豆×5·きゃべつ×1 — 切る→切る→切る→切る→焼く / 超激辛ちゃんこ鍋: 魚介たっぷり辛みそ鍋×1·疲れ知らずの滋養鍋×1·イトウ×1 — 注ぐ→加熱する→注ぐ→加熱する→切る→加熱する" } },
+          ],
+        },
+        {
+          title: { ko: "작물별 작부(作付) 입수 조건 · 팔백옥 구입가", en: "Seed unlock cost and greengrocer price per crop" },
+          puzzles: [
+            { title: { ko: "전 작물 22종", en: "All 22 crops" }, note: { ko: "きゅうり 처음부터/100文 · 大根 처음부터/구입 불가 · 人参 처음부터/불가 · ほうれん草 처음부터/불가 · じゃが芋 처음부터/150文 · さつま芋 덕100/불가 · ねぎ 덕100/300文 · たまねぎ 덕150/250文 · 生姜 덕150/350文 · なす 덕200/300文 · かぶ 덕200/불가 · そら豆 덕250/불가 · ごぼう 덕250/불가 · 唐辛子 덕300(1단계 확장 후)/500文 · にんにく 덕400(1단계 확장 후)/불가 · 白菜 덕500/불가 · かぼちゃ 덕600/불가 · とまと 덕1000(1단계 확장 후)/불가 · いちご 덕1500/1000文 · きゃべつ 덕1500/불가 · 里芋 덕3000/불가 · 朝鮮人参 덕10000(최대 확장 후)/1両(라쿠나이 万屋)", en: "きゅうり from the start/100文 · 大根 from the start/not sold · 人参 from the start/not sold · ほうれん草 from the start/not sold · じゃが芋 from the start/150文 · さつま芋 Virtue 100/not sold · ねぎ Virtue 100/300文 · たまねぎ Virtue 150/250文 · 生姜 Virtue 150/350文 · なす Virtue 200/300文 · かぶ Virtue 200/not sold · そら豆 Virtue 250/not sold · ごぼう Virtue 250/not sold · 唐辛子 Virtue 300 (after first expansion)/500文 · にんにく Virtue 400 (after first expansion)/not sold · 白菜 Virtue 500/not sold · かぼちゃ Virtue 600/not sold · とまと Virtue 1000 (after first expansion)/not sold · いちご Virtue 1500/1000文 · きゃべつ Virtue 1500/not sold · 里芋 Virtue 3000/not sold · 朝鮮人参 Virtue 10000 (after max expansion)/1両 (Rakunai 万屋)" } },
+          ],
+        },
+      ],
     },
     {
       slug: "buyo-dancing",
       name: { ko: "일본 무용 (니치부자)", en: "Japanese dance (Nichibuza)" },
       category: { ko: "음악·리듬", en: "Music / rhythm" },
       difficulty: 3,
-      location: { ko: "라쿠나이 「니치부자」 (1회 1량 2,000문)", en: "Nichibuza, Rakunai (1 ryo 2,000 mon a play)" },
+      location: { ko: "라쿠나이 「니치부자」 (1회 1,000문) — 서브스토리 「나비처럼 춤추는 남자(蝶のように舞う男)」 클리어로 해금", en: "Nichibuza, Rakunai (1,000 mon a play) — unlocked by clearing the substory 蝶のように舞う男, which triggers in front of the building" },
       summary: {
         ko: "노트를 맞춰 누르는 리듬 게임. 전 악곡을 아무 난이도로든 클리어하면 트로피 「춤 좀 추는 남자」이고, 전 난이도를 「일류」 이상으로 클리어해야 컴플리트가 오릅니다.",
         en: "A note-matching rhythm game. Clearing every song on any difficulty gives Lord of the Dance; the completion list wants every difficulty cleared at first-class rank or better.",
@@ -47,7 +89,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "화면 우상단 게이지가 차면 R1으로 「클라이맥스 연무」를 발동합니다. 발동 중에는 노트를 무시하면서 스코어가 쌓이므로, 합격점이 모자랄 때 확실한 보험이 됩니다.", en: "Filling the gauge in the top right lets R1 trigger the Climax Performance, which racks up score while ignoring notes — the reliable way to make a passing score." },
         { ko: "합격점 자체가 상당히 낮게 잡혀 있어 실수를 여러 번 해도 일류 평가는 나옵니다. 확실히 하고 싶을 때만 클라이맥스를 쓰면 됩니다.", en: "The pass line is set low enough that plenty of mistakes still leave you at first class, so the Climax is insurance rather than a requirement." },
         { ko: "몇 번 반복하면 「오히로메(선보임)」 이벤트가 발생합니다. 「후부키 코우타」의 최고 난이도를 플레이해야 하지만, 클리어하면 「양질의 나뭇조각」과 덕 +1,500을 받습니다.", en: "After a few plays the Ohirome event triggers: it puts you on Fubuki Kouta at its highest difficulty, but clearing it pays a fine wood scrap and 1,500 Virtue." },
-        { ko: "출처 페이지에는 「후부키 코우타」, 「고동」, 「사무라이 연무」의 게이샤 난이도 보면(노트 배열)이 전부 텍스트로 적혀 있습니다. 외워서 치고 싶다면 그대로 참고하세요.", en: "The linked guide writes out the full Geisha-difficulty note charts for Fubuki Kouta, Kodou and Samurai Enbu as text, if you want to learn them by rote." },
+        { ko: "곡은 3개, 난이도는 곡마다 4단계이고 컴플리트는 12개 조합 전부를 「일류」 이상으로 클리어해야 합니다. 1회 1,000문이라 최소 1량 2,000문이 듭니다. 가장 낮은 난이도는 방향키만 쓰고, 그 위부터 방향키와 버튼을 함께 씁니다.", en: "Three songs with four difficulties each — completion wants all twelve at First Class or better. At 1,000 mon a play that is at least 1 ryo 2,000 mon. The lowest difficulty uses only the D-pad; everything above mixes the D-pad and face buttons." },
+        { ko: "노트는 대체로 패드 한쪽(방향키 또는 버튼)씩 나옵니다. 예외는 게이샤 난이도 곡 끝부분(특히 「고동」)의 빠른 좌우 교대인데, 그 전까지 잘 쳤다면 끝에서 조금 틀려도 일류는 나옵니다. 클라이맥스 연무 중 아날로그 스틱 동작은 곡마다 항상 같습니다.", en: "Notes mostly sit on one side of the pad at a time. The exception is the quick back-and-forth near the end of the Geisha charts (Kodou above all), but a clean run up to there survives a stumble at the end. The analog-stick motion during the Showstopper is always the same for a given song." },
       ],
       videos: [
         { title: { ko: "부채춤 플레이 가이드", en: "Buyo Dancing gameplay guide" }, url: YT("EBlH8xF75oE") },
@@ -57,8 +100,20 @@ export const likeADragonIshinMinigames: MinigamesData = {
       source: [
         { label: "神ゲー攻略 — 日本舞踊", url: "https://kamigame.jp/ryugagotoku-ishin/page/252983667930974713.html" },
         { label: "神ゲー攻略 — 洛内のマップと施設一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/250940026324554324.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
       ],
       achievementSlug: "play_all_nihon_buyou",
+      puzzleSets: [
+        {
+          title: { ko: "게이샤 난이도 보면 — 3곡", en: "Geisha-difficulty note charts — all 3 songs" },
+          note: { ko: "神ゲー攻略이 공개한 노트 순서를 그대로 옮겼습니다(출처 1곳). ↑↓←→는 방향키, ◯×△□는 버튼이고, 띄어 쓴 칸은 출처의 구간 나눔입니다.", en: "Note order exactly as 神ゲー攻略 publishes it (single source). ↑↓←→ are the D-pad, ◯×△□ the face buttons; gaps are the source's own phrase breaks." },
+          puzzles: [
+            { title: { ko: "후부키 코우타 — 게이샤 난이도 (吹雪小唄)", en: "Fubuki Kouta — Geisha difficulty (吹雪小唄)" }, note: { ko: "××　◯　△△　□□　→→→→→　↑↑↑↑↑　→→→→→　↓↓　←←　↑→　□□□　×××　◯◯◯　△△△◯◯◯◯◯　→→　↓　←←　→→□□□△　◯◯◯◯◯　□□□□□　××〇〇△△□　→→↓↓　↓←←←←→→→　□　△△　△◯◯◯◯×　□　××　×◯◯◯◯□□□→　↑↑　↑　←←↓↓→□　◯◯　□□　△◯□→←←　→→　←↓→　□□□×××◯◯◯△△△↑↑↑←←←↓↓↓→→→　□△◯×←", en: "××　◯　△△　□□　→→→→→　↑↑↑↑↑　→→→→→　↓↓　←←　↑→　□□□　×××　◯◯◯　△△△◯◯◯◯◯　→→　↓　←←　→→□□□△　◯◯◯◯◯　□□□□□　××〇〇△△□　→→↓↓　↓←←←←→→→　□　△△　△◯◯◯◯×　□　××　×◯◯◯◯□□□→　↑↑　↑　←←↓↓→□　◯◯　□□　△◯□→←←　→→　←↓→　□□□×××◯◯◯△△△↑↑↑←←←↓↓↓→→→　□△◯×←" } },
+            { title: { ko: "고동 — 게이샤 난이도 (鼓動)", en: "Kodou (Heartbeat) — Geisha difficulty (鼓動)" }, note: { ko: "×　□　△△△　◯◯◯◯◯　◯◯◯　×××　□□□　→→→　↑↑↑　←←←　→→→　□□□　×××　◯◯◯　△　□　×　◯　△△△　×××　□□□　→→→　↓↓↓　↑↑↑　→→→　□□□　◯◯◯　×××　△　□　→→→　↑　↓　←←←　→→→　□□□　×××　◯◯◯　□□□　→→→　↑↑↑　←←←　→→→　□□□　△△△　◯◯◯　□□□　→→→　↓↓↓　←←←　→→→→→　□　◯　××　△△△　◯◯◯◯□□□　→→→↓←↑↑↑↑→→→　□□□□×××◯◯◯◯□□□　→→→→↑↑↑↑　↓↓↓↓　→→→→□→□→□→□→×↓×↓×↓×↓　↑↑↑↑→→→→　□△◯×　↓←↑→□", en: "×　□　△△△　◯◯◯◯◯　◯◯◯　×××　□□□　→→→　↑↑↑　←←←　→→→　□□□　×××　◯◯◯　△　□　×　◯　△△△　×××　□□□　→→→　↓↓↓　↑↑↑　→→→　□□□　◯◯◯　×××　△　□　→→→　↑　↓　←←←　→→→　□□□　×××　◯◯◯　□□□　→→→　↑↑↑　←←←　→→→　□□□　△△△　◯◯◯　□□□　→→→　↓↓↓　←←←　→→→→→　□　◯　××　△△△　◯◯◯◯□□□　→→→↓←↑↑↑↑→→→　□□□□×××◯◯◯◯□□□　→→→→↑↑↑↑　↓↓↓↓　→→→→□→□→□→□→×↓×↓×↓×↓　↑↑↑↑→→→→　□△◯×　↓←↑→□" } },
+            { title: { ko: "사무라이 연무 — 게이샤 난이도 (さむらい演舞)", en: "Samurai Enbu — Geisha difficulty (さむらい演舞)" }, note: { ko: "□□□□　××◯△△△　◯◯　×××××　□□□□□　→↓←↑↑↑↑↑　→　↓↓↓↓→→→→□□□□　××××◯◯◯◯△△△△　□　→→→　↓↓↓　↑↑↑　→→→　□□□□□　△△△◯◯◯　××××△△△□□□□　→→→→　↑　←←←　→→　□□□　×××　◯◯◯◯　□→　↑↑↑　←←←←　↓　→→→　↑←→→　□　×××　◯◯◯◯　△　□□□　×◯□□　→↓←←←↑↑→→　□△◯◯◯　××　□□　→→→　↑↑↑↑↑　↑→□→□△　□×◯△□×◯□→→→□×◯　□□　→→　←→□◯", en: "□□□□　××◯△△△　◯◯　×××××　□□□□□　→↓←↑↑↑↑↑　→　↓↓↓↓→→→→□□□□　××××◯◯◯◯△△△△　□　→→→　↓↓↓　↑↑↑　→→→　□□□□□　△△△◯◯◯　××××△△△□□□□　→→→→　↑　←←←　→→　□□□　×××　◯◯◯◯　□→　↑↑↑　←←←←　↓　→→→　↑←→→　□　×××　◯◯◯◯　△　□□□　×◯□□　→↓←←←↑↑→→　□△◯◯◯　××　□□　→→→　↑↑↑↑↑　↑→□→□△　□×◯△□×◯□→→→□×◯　□□　→→　←→□◯" } },
+          ],
+        },
+      ],
     },
     {
       slug: "singing",
@@ -74,11 +129,14 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "환경에 따라 입력 지연이 생기므로, 눈에 보이는 선보다 음악에 맞춰 누른다는 감각으로 치면 「우(優)」가 잘 나옵니다.", en: "Input lag varies by setup, so aim at the music rather than the visual line — that's what makes the top grade land." },
         { ko: "특수 노트 요령: 길게 누르기는 시작점을 정확히 누르고 버튼 표시보다 조금 늦게 떼고, 연타는 1초에 6회 이상을 목표로 하면 「우」가 나옵니다.", en: "For the special notes: on holds, start on time and release slightly after the marker ends; on mashes, aim for six-plus presses a second." },
         { ko: "추임새 곡은 「무난하게」와 「정열적으로」 중 고르는데, 무난하게는 최고 90점까지만 평가됩니다. 컴플리트와 최고 랭크를 노린다면 무난하게로 곡을 익힌 뒤 반드시 정열적으로 다시 치세요.", en: "Call-and-response songs offer a safe and a passionate option; the safe one caps at 90 points. Learn the song on safe, then take the passionate option for the completion entry and top rank." },
-        { ko: "동반자 해금 조건이 각각 다릅니다. 하루카(「배고픈 날씨」)는 별택 빚을 전부 갚아야 하고 주인에게 500문을 먼저 내야 하며, 이쿠마쓰(「아수라 코마치」)는 10장 개시 이후입니다. 하루카를 뺀 나머지는 말을 걸면 해당 곡과 「의지 사쿠라」 2곡을 무료로 부를 수 있습니다.", en: "Duet partners unlock separately: Haruka (Harapeko Biyori) needs Haruka's debt fully repaid and a 500-mon fee to the owner, Ikumatsu (Ashura Komachi) needs Chapter 10 to have started. Apart from Haruka, talking to a partner gives their song plus Ijizakura free." },
+        { ko: "동반자 해금 조건이 각각 다릅니다. 나가쿠라(「고향에 비단을 두르리(故郷に錦を飾るべし)」)는 4장 개시 이후, 오키타(「사무라이 온도(さむらい音頭)」)는 6장 개시 이후, 이쿠마쓰(「아수라 코마치(阿修羅小町)」)는 10장 개시 이후, 하루카(「배고픈 날씨(はらぺこ日和)」)는 별택 빚을 전부 갚아야 하고 주인에게 500문을 먼저 내야 합니다. 하루카를 뺀 세 명은 말을 걸면 해당 곡과 「의지 사쿠라(意地桜)」 2곡을 무료로 부를 수 있습니다.", en: "Duet partners unlock separately: Nagakura (故郷に錦を飾るべし) from Chapter 4, Okita (さむらい音頭) from Chapter 6, Ikumatsu (阿修羅小町) from Chapter 10, and Haruka (はらぺこ日和) once Haruka's debt is fully repaid plus a 500-mon fee to the owner. Apart from Haruka, talking to a partner gives their song plus 意地桜 free." },
+        { ko: "극(極)판 수록곡은 7곡으로, 원작에 없던 「바보 같아(ばかみたい)」와 「이·치·즈·사무라이(い・ち・ず・侍)」가 추가됐습니다. 컴플리트(전곡 「당점의 간판 남자」 = 90점 이상)에서 그나마 어려운 곡은 「이·치·즈·사무라이」 정도입니다.", en: "Kiwami has seven songs, adding Baka Mitai (ばかみたい) and Ichizu Samurai (い・ち・ず・侍) to the original line-up. For the completion row — every song at Preferred Performer, i.e. 90+ — Ichizu Samurai is the only one likely to take a few tries." },
+        { ko: "주인과의 절은 1곡 부를 때마다 오르고, 연장해도 더 오르지 않습니다. 1곡마다 미니게임을 나왔다 다시 들어가세요. 절이 최대가 되면 「봉황의 깃털(鳳凰の羽)」과 덕 1,500을 받습니다.", en: "The owner's bond rises once per song and extensions don't add more, so back out after every song. Maxing it pays a phoenix feather (鳳凰の羽) and 1,500 Virtue." },
       ],
       source: [
         { label: "神ゲー攻略 — 歌声酒場", url: "https://kamigame.jp/ryugagotoku-ishin/page/255738582411539699.html" },
         { label: "神ゲー攻略 — 伏見のマップと施設一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/253409800040228729.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
       ],
       achievementSlug: "play_all_utagoe_sakaba",
     },
@@ -96,6 +154,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "가장 확실한 방법은 스마트폰으로 화면을 찍어 두는 것입니다. 암기 시간이 끝나 버튼이 가려져도 사진을 보고 그대로 누르면 됩니다.", en: "The reliable trick is photographing the screen with your phone — once the prompts hide, just read them off the photo." },
         { ko: "미니게임 중 OPTIONS로 중단할 수 있습니다. 중단하면 암기할 시간을 벌 수 있어 컴플리트까지 훨씬 편합니다.", en: "OPTIONS pauses mid-game, which buys you all the memorisation time you want and makes the completion run much easier." },
         { ko: "L1의 「추천」은 모든 주문을 하나로 통일해 줍니다. 입력 수용 시간이 짧은 단체 손님에게 쓰세요. 단체 손님은 획득 금액도 큽니다.", en: "L1's \"recommend\" unifies every order in a group. Save it for group customers, who have the tightest input window and the biggest payout." },
+        { ko: "메뉴는 4종입니다. 다누키 250문, 기쓰네 300문, 쓰키미 350문, 덴푸라 400문. 최종 매출로 랭크가 정해집니다 — 신(神) 5량 이상, 우(優) 3~5량, 양(良) 1~3량, 가(可) 5,000문~1량, 불가 5,000문 미만.", en: "Four dishes: tanuki 250 mon, kitsune 300, tsukimi 350, tempura 400. Final sales set the rank — god at 5 ryo or more, excellent 3–5 ryo, good 1–3 ryo, fair 5,000 mon to 1 ryo, fail under 5,000 mon." },
+        { ko: "계급 배율: 초단 1배, 2단 1.1배, 3단 1.2배 … 9단 1.8배, 사범 2배. 한 번 실패하면 계급이 3단 내려가고, 단체 손님은 매출이 2배입니다. 「추천」은 실수할 때마다 다시 쓸 수 있게 됩니다.", en: "Rank multipliers: 1st dan ×1, 2nd ×1.1, 3rd ×1.2 … 9th ×1.8, Shihan ×2. Each miss drops you three ranks, group customers pay double, and recommend recharges every time you make a mistake." },
         { ko: "연속으로 성공할수록 입력 수용 시간이 짧아지고, 3회 실패하면 종료됩니다. 계급이 오르면 매출에 보정이 붙고 「사범」이 되면 단체 손님이 등장합니다. 초반부터 「신우치급」에 도전해 매출 5량 이상을 노리면 랭크 「신」이 빠릅니다.", en: "Each success tightens the input window and three failures end the run. Higher ranks apply a sales multiplier, and at Shihan rank group customers start appearing — going straight for Shin'uchi class and 5-plus ryo of sales is the quickest route to the god rank." },
         { ko: "랭크 「신」을 딴 뒤에는 절 올리기로 넘어갑니다. 절 상승량은 일정하고 실패해도 오르므로, 버튼을 최속으로 연타해 일부러 실패를 반복하면 됩니다. 8회 플레이 + 점장과 대화로 절이 최대가 됩니다.", en: "Once you have the god rank, switch to the bond: it rises a fixed amount whether you succeed or fail, so mash to fail instantly. Eight plays plus talking to the owner maxes it." },
       ],
@@ -119,16 +179,20 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "1회에 1량이 들고 컴플리트 보상까지 10회쯤 도전해야 하니 미리 10량을 준비하세요. 처음에는 「술 대결 → 가위바위보 → 간호」를 연달아 이겨야 단골이 되어, 이후 종목과 난이도를 자유롭게 고를 수 있습니다.", en: "Each attempt costs 1 ryo and you'll need roughly ten runs, so bring 10 ryo. You must first win drinking, janken and nursing back to back to become a regular — only then can you pick individual games and difficulties." },
         { ko: "안나와의 절이 최대가 되면 세이브해 두고, 클리어하면 세이브·실패하면 로드를 반복하면 쓸데없는 돈이 나가지 않습니다.", en: "Once Anna's bond is maxed, save — then save on a clear and reload on a failure so you stop burning money." },
         { ko: "술 대결 아수라급은 4잔째까지 승부를 내는 것이 전부입니다. 마시는 도쿠리 수가 1~2잔째 3개, 3~4잔째 4개, 5잔째 이후 5개로 늘어나기 때문입니다.", en: "Ashura-class drinking is about finishing inside four rounds: you drink three flasks in rounds one and two, four in rounds three and four, and five from round five on." },
+        { ko: "술 대결에서 잔마다 마셔야 하는 도쿠리 수 — 일반급: 1·1·2·2·3개(5잔째 이후 3개), 단골급: 2·3·3·3·3개, 아수라급: 3·3·4·4·5개. ○로 잔을 올리고 ×로 내리며, 길게 누르면 한 번만 인식되니 연타하세요. 게이지가 위아래로 조금이라도 넘치면 술을 흘려 패배입니다.", en: "Flasks per round in the drinking contest — Ordinary: 1, 1, 2, 2, then 3 from round five; Regular: 2, then 3 every round; Asura: 3, 3, 4, 4, then 5. Circle raises the cup and cross lowers it; holding only counts once, so tap. Overshooting the gauge either way spills the sake and loses." },
         { ko: "술 대결에서 잔 게이지는 항상 절반 이상으로 유지하세요. 절반 아래로 떨어지면 마시는 데 시간이 걸려 안나의 취기가 깨버립니다. 반대로 「휴(休)」까지 내릴 필요는 없습니다 — 내리면 상대의 취기도 함께 깨서 승부가 영원히 안 납니다.", en: "Keep the cup gauge above half at all times: below half you drink too slowly and Anna sobers up. But never drop it all the way to \"rest\" — that sobers her too, and the contest never ends." },
+        { ko: "가위바위보는 먼저 5승이면 클리어입니다. 게이지가 한 바퀴 돌기 전에 ○×□ 중 하나를 누르고(안 누르면 무조건 패배), 게이지가 오른쪽 아래에 왔을 때 △로 「심안」(슬로 모션으로 상대 손이 보임)을 3번까지 쓸 수 있습니다. 아수라급의 안나는 마지막 순간에 손을 바꾸는 페인트를 쓰므로, 심안은 2승 뒤 남은 3판에 아껴 두세요.", en: "Janken is first to five wins. Press circle, cross or square before the gauge completes its lap — no input is an automatic loss — and when the gauge reaches the bottom right, triangle triggers the insight slow-motion that shows Anna's hand, up to three times. On Asura she feints at the last instant, so bank the insights for the final three rounds once you have two wins." },
         { ko: "가위바위보 아수라급은 다른 난이도와 크게 다르지 않고 심안을 쓰면 편합니다. 비겼을 때는 「내가 바위였으면 가위」, 「가위였으면 보」, 「보였으면 바위」를 내면 높은 확률로 이깁니다.", en: "Ashura janken plays like the lower tiers if you use the insight ability. After a draw, follow up with the hand that beats what you just threw — rock then scissors, scissors then paper, paper then rock — and you win most of the time." },
         { ko: "간호는 하트 모양의 핵을 쏘는 슈팅입니다. ○ 또는 □로 발사, 길게 누르면 차지 샷, △ 또는 ×로 봄. 3스테이지에서 핵을 부수면 클리어이고 글자에 4번 맞으면 패배입니다.", en: "Nursing is a shooter against a heart-shaped core: circle or square fires, holding charges, triangle or cross drops a bomb. Break the core across three stages to win; four hits from the falling characters loses." },
         { ko: "간호의 판정은 료마의 「머리」에만 있습니다. 몸은 신경 쓰지 말고 머리만 피하세요. 적 공격은 역八자와 ✕자 4줄 기준이라, 항상 ✕ 아래쪽 틈에 들어가 있으면 안전지대가 됩니다.", en: "Only Ryoma's head has a hitbox — ignore the body and keep the head clear. The attacks are built on an inverted-V and an X of four lines, so the gap under the X is a safe pocket." },
+        { ko: "간호 아수라급은 처음 10초 동안 좌우로 크게 흔드는 공격이 이어지고, 그 뒤 15초는 좌우 움직임이 멈춥니다. 멈춘 구간에 차지 샷을 핵에 맞히세요. 봄은 목숨 하나당 1개라 맞기 전에 쓰는 편이 이득입니다. 안나와의 절을 최대로 하면 열리는 「초아수라급」은 컴플리트에 필요 없습니다.", en: "Asura nursing opens with ten seconds of wide side-to-side attacks, then fifteen seconds with no lateral movement — land the charge shots on the core then. You get one bomb per life, so use it rather than take a hit. The Super Asura tier that opens with Anna's bond maxed isn't needed for completion." },
         { ko: "간호의 패턴은 「우좌우로 회피 → 공격 → 좌우좌로 회피 → 공격」의 반복으로 고정입니다. 봄은 큰 글자가 차지 샷을 방해하는 스테이지 3에서 쓰고, 플레이어가 다가가면 핵이 반대로 도망가는 성질을 이용해 좌우로 계속 움직이며 맞히세요.", en: "The nursing pattern is fixed: dodge right-left-right, attack, dodge left-right-left, attack. Save the bomb for stage 3 where big characters block the charge shot, and keep moving side to side — the core flees from you, which is what lets you time the shot." },
       ],
       source: [
         { label: "神ゲー攻略 — 遊郭（お座敷遊び）", url: "https://kamigame.jp/ryugagotoku-ishin/page/254730430241084220.html" },
         { label: "神ゲー攻略 — 飲み比べ（阿修羅級）の攻略", url: "https://kamigame.jp/ryugagotoku-ishin/page/255418620232900915.html" },
         { label: "神ゲー攻略 — 介抱（阿修羅級）の攻略", url: "https://kamigame.jp/ryugagotoku-ishin/page/255444201259435410.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
       ],
       achievementSlug: "play_all_ozashiki",
     },
@@ -165,13 +229,37 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "여러 번 돌리면 상위 추첨이 해금됩니다. 후쿠비키 1장, 개운 후쿠비키 3장(3등 이상이 잘 나옴), 키비키 5장(경품이 조금 더 좋음), 개운 키비키 10장 순입니다. 꽝을 노리는 게 아니라면 「개운」 쪽이 소모 매수 대비 효율이 좋습니다.", en: "Drawing repeatedly unlocks better machines: the basic draw at one ticket, the lucky draw at three (better odds of third prize or higher), the rare draw at five (better prizes) and the lucky rare draw at ten. Unless you're farming blanks, the lucky versions burn fewer tickets per hit." },
       ],
       source: { label: "神ゲー攻略 — 福引き", url: "https://kamigame.jp/ryugagotoku-ishin/page/252945471042011560.html" },
+      puzzleSets: [
+        {
+          title: { ko: "후쿠비키 경품 세트 (1~5번째)", en: "Basic draw prize sets (1st–5th)" },
+          note: { ko: "당첨을 전부 뽑으면 다음 세트로 넘어가고, 5번째 다음은 1번째로 돌아옵니다. 꽝 경품 「ちり紙」는 행상 주문에서 최대 50개까지 요구되니 버리지 마세요. 출처 1곳(神ゲー攻略), 아이템명은 원문 그대로입니다. 5번째 세트의 「1等 万能丹 高級」은 출처 표기 그대로입니다(다른 세트라면 2等 자리).", en: "Drawing every prize moves to the next set; after the fifth it loops back to the first. The blank prize ちり紙 is wanted by trade orders in batches of up to 50, so keep it. Single source (神ゲー攻略); item names kept in Japanese. Set 5 lists 万能丹 高級 as 1等 exactly as the source prints it (the 2等 slot in other sets)." },
+          puzzles: [
+            { title: { ko: "후쿠비키 — 1번째 세트", en: "Basic draw — set 1" }, note: { ko: "特等 虹色の欠片 / 1等 銀の金槌 / 2等 御霊の酒 / 3等 小さなぜんまい / 4等 ちり紙", en: "特等 虹色の欠片 / 1等 銀の金槌 / 2等 御霊の酒 / 3等 小さなぜんまい / 4等 ちり紙" } },
+            { title: { ko: "후쿠비키 — 2번째 세트", en: "Basic draw — set 2" }, note: { ko: "特等 金の皿 / 1等 万能丹 特選 / 2等 柔らかい木材 / 3等 清めの水 / 4等 ちり紙", en: "特等 金の皿 / 1等 万能丹 特選 / 2等 柔らかい木材 / 3等 清めの水 / 4等 ちり紙" } },
+            { title: { ko: "후쿠비키 — 3번째 세트", en: "Basic draw — set 3" }, note: { ko: "特等 金の皿 / 1等 銀の金槌 / 2等 御霊の酒 / 3等 小さなぜんまい / 4等 ちり紙", en: "特等 金の皿 / 1等 銀の金槌 / 2等 御霊の酒 / 3等 小さなぜんまい / 4等 ちり紙" } },
+            { title: { ko: "후쿠비키 — 4번째 세트", en: "Basic draw — set 4" }, note: { ko: "特等 虹色の欠片 / 1等 万能丹 特選 / 2等 柔らかい木材 / 3等 大福餅 / 4等 ちり紙", en: "特等 虹色の欠片 / 1等 万能丹 特選 / 2等 柔らかい木材 / 3等 大福餅 / 4等 ちり紙" } },
+            { title: { ko: "후쿠비키 — 5번째 세트", en: "Basic draw — set 5" }, note: { ko: "特等 金の皿 / 1等 銀の金槌 / 1等 万能丹 高級 / 3等 清めの水 / 4等 ちり紙", en: "特等 金の皿 / 1等 銀の金槌 / 1等 万能丹 高級 / 3等 清めの水 / 4等 ちり紙" } },
+          ],
+        },
+        {
+          title: { ko: "키비키 경품 세트 (1~5번째)", en: "Rare draw prize sets (1st–5th)" },
+          note: { ko: "키비키(稀引き, 1회 5장)의 경품표입니다. 출처 1곳(神ゲー攻略), 아이템명은 원문 그대로입니다.", en: "Prize tables for the rare draw (稀引き, five tickets a pull). Single source (神ゲー攻略); item names kept in Japanese." },
+          puzzles: [
+            { title: { ko: "키비키 — 1번째 세트", en: "Rare draw — set 1" }, note: { ko: "特等 朽ちた剣 / 1等 南蛮渡来の反物 / 2等 金の金槌 / 3等 きれいな毛皮 / 4等 握り飯", en: "特等 朽ちた剣 / 1等 南蛮渡来の反物 / 2等 金の金槌 / 3等 きれいな毛皮 / 4等 握り飯" } },
+            { title: { ko: "키비키 — 2번째 세트", en: "Rare draw — set 2" }, note: { ko: "特等 悟りの饅頭 / 1等 万能丹 究極 / 2等 万能丹 高級 / 3等 御霊の酒 / 4等 ようかん", en: "特等 悟りの饅頭 / 1等 万能丹 究極 / 2等 万能丹 高級 / 3等 御霊の酒 / 4等 ようかん" } },
+            { title: { ko: "키비키 — 3번째 세트", en: "Rare draw — set 3" }, note: { ko: "特等 白金の皿 / 1等 南蛮渡来の反物 / 2等 金の金槌 / 3等 きれいな毛皮 / 4等 清めの水", en: "特等 白金の皿 / 1等 南蛮渡来の反物 / 2等 金の金槌 / 3等 きれいな毛皮 / 4等 清めの水" } },
+            { title: { ko: "키비키 — 4번째 세트", en: "Rare draw — set 4" }, note: { ko: "特等 悟りの饅頭 / 1等 万能丹 究極 / 2等 万能丹 高級 / 3等 伏見の清酒 / 4等 握り飯", en: "特等 悟りの饅頭 / 1等 万能丹 究極 / 2等 万能丹 高級 / 3等 伏見の清酒 / 4等 握り飯" } },
+            { title: { ko: "키비키 — 5번째 세트", en: "Rare draw — set 5" }, note: { ko: "特等 白金の皿 / 1等 南蛮渡来の反物 / 2等 熱血丹 特選 / 3等 御霊の酒 / 4等 清めの水", en: "特等 白金の皿 / 1等 南蛮渡来の反物 / 2等 熱血丹 特選 / 3等 御霊の酒 / 4等 清めの水" } },
+          ],
+        },
+      ],
     },
     {
       slug: "arena",
       name: { ko: "투기장", en: "Arena" },
       category: { ko: "배틀", en: "Battle" },
       difficulty: 5,
-      location: { ko: "무쿠로가이(骸街) 투기장", en: "The arena in Mukuro Town" },
+      location: { ko: "무쿠로가이(骸街) 2층 북쪽, 「集え強者」 간판 건물 (서쪽 계단 또는 강가 계단으로 올라감)", en: "Mukuro Town, north side of the upper level — the building with the 集え強者 sign, reached by the west stairs or the riverside stairs" },
       summary: {
         ko: "「승발전(勝ち抜き戦)」과 「백인 베기」를 치르는 실력 시험장. 컴플리트 보상은 대통(大筒) 「봉황」이고, 10승으로 트로피 「투기장은 나의 앞마당」, 궁극 투기를 전부 클리어하면 「궁극의 끝에 도달한 자」입니다.",
         en: "Gauntlet fights and the Hundred-Man Slash. Completing it awards the Houou cannon, ten wins give This is MY Ring!, and clearing every Ultimate Challenge gives Ultimate Champion.",
@@ -181,6 +269,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "투기장은 도전 직전의 레벨·장비·체력·히트 게이지·식사 효과를 그대로 이어받습니다. 들어가기 전에 반드시 체력과 게이지를 채워 두세요.", en: "The arena inherits your level, gear, health, heat gauge and food buffs exactly as they are when you enter — top everything up first." },
         { ko: "투기장 안에서는 아이템을 쓸 수 없고 대사(隊士) 능력도 못 씁니다. 그래서 체력·게이지가 자동 회복되는 인(印)을 무구에 박아 두는 것이 사실상 필수이고, 장기전이 되는 백인 베기에서는 특히 그렇습니다.", en: "Items are banned inside and trooper abilities don't work, so seals that auto-regenerate health and gauge are effectively mandatory — above all for the long Hundred-Man Slash." },
         { ko: "혼구(魂球)로 능력을 미리 강화해 체력·히트 게이지 상한을 올려 두고, 백인 베기 전에는 다수를 한 번에 치는 기술을 배워 두세요. 추천 기술은 격투의 형 「고마키류 다루마 피하기」·「말려들기 강화」·「강체의 마음가짐」, 일도의 형 「검속 강화」·「무검술 공중 회전 베기」, 단총의 형 「연사 속도 상승」·「염룡 활공」·「염룡 포효」, 난무의 형 「회피 연영」·「천룡 쇄아」·「난격무도 1~3」입니다.", en: "Spend Soul Orbs on health and heat caps beforehand, and learn multi-target moves before the Hundred-Man Slash. The guide's picks are Komaki-style Dharma Dodge, Sweep Enhancement and Iron Body in Brawler; Blade Speed and Aerial Spin Slash in Swordsman; Rapid Fire, Flame Dragon Glide and Flame Dragon Roar in Gunman; and Evasive Afterimage, Heavenly Dragon Fang Crusher and Wild Dance 1–3 in Wild Dancer." },
+        { ko: "컴플리트 항목은 투기장에 출전하는 모든 선수를 쓰러뜨리는 것입니다. 승발전은 싸우는 도중 스타일을 자유롭게 바꿀 수 있으니, 격투·칼 같은 근접 상대에게는 단총의 형, 총을 쓰는 상대에게는 일도·난무 같은 근접 형으로 맞서세요. 백인 베기는 한 번에 10명 넘게 나오므로 둘러싸여 등을 잡히지 않게 계속 움직이는 것이 핵심입니다.", en: "The completion row is defeating every fighter in the arena. In gauntlet fights you can switch styles freely mid-bout: use Gunman against fist and blade fighters, and Swordsman or Wild Dancer against gunmen. The Hundred-Man Slash throws ten-plus enemies at once, so keep moving and never let them get behind you." },
+        { ko: "투옥(闘玉) 교환품: 活力丹 200, 研磨石 500, 良質な木切れ 500, 銀の欠片·石灰の粉·柔らかい木材 각 1,000, 丈夫な木材 2,000, 真珠 3,500, 流木の破片 4,500, 銅の金槌 4,800, 木彫りの熊 5,000, 藍玉 8,000, 人斬りの手枷·千年樹の枝·射手の扇子 각 10,000, 銀の金槌·金の皿 각 30,000, 방어구 覚醒頭巾 50,000, 방어구 恵比寿の鳥帽子 75,000, 무기 黄金の剣 125,000. 장비 소재는 종류와 수가 적어 소재 파밍용으로는 비효율적이니 강화·컴플리트·한정 무기 목적으로 도세요.", en: "Fight-orb exchange: 活力丹 200, 研磨石 500, 良質な木切れ 500, 銀の欠片 / 石灰の粉 / 柔らかい木材 1,000 each, 丈夫な木材 2,000, 真珠 3,500, 流木の破片 4,500, 銅の金槌 4,800, 木彫りの熊 5,000, 藍玉 8,000, 人斬りの手枷 / 千年樹の枝 / 射手の扇子 10,000 each, 銀の金槌 and 金の皿 30,000 each, 覚醒頭巾 50,000, 恵比寿の鳥帽子 75,000, 黄金の剣 125,000. The material selection is thin, so farm the arena for levels, completion and the exclusive weapon rather than crafting materials." },
         { ko: "진행하다 보면 스토리 종반 수준의 적이 나옵니다. 벽에 부딪히면 무기·방어구를 새로 만들고 인으로 강화하고 오세요.", en: "The later rounds throw endgame-level enemies at you; if you stall, go craft better weapons and armour and upgrade them with seals." },
       ],
       source: { label: "神ゲー攻略 — 闘技場の立ち回りと準備", url: "https://kamigame.jp/ryugagotoku-ishin/page/254731080542745622.html" },
@@ -198,7 +288,10 @@ export const likeADragonIshinMinigames: MinigamesData = {
       },
       howTo: [
         { ko: "통상 대포알은 200점, 황금 장식 대포알은 400점입니다. 스치듯 맞히면 점수가 절반이 되므로, 확실히 중심에 맞히는 편이 결과적으로 유리합니다.", en: "A normal ball scores 200 and the gilded one 400 — but a glancing hit halves the score, so a clean centre hit beats a rushed one." },
-        { ko: "평가는 동·은·금 3단계입니다. 은 이상이면 보상을 받고, 금을 받아야 다음 난이도가 열립니다.", en: "Runs grade bronze, silver or gold: silver and above pays out, but only gold unlocks the next difficulty." },
+        { ko: "평가는 동·은·금 3단계입니다. 은 이상이면 보상을 받고, 금을 받아야 다음 난이도가 열립니다. 컴플리트는 두 형 모두 초급·중급·상급을 금으로 클리어하는 것이고, 전 난이도 금으로 열리는 「오마케」는 필요 없습니다.", en: "Runs grade bronze, silver or gold: silver and above pays out, but only gold unlocks the next difficulty. Completion wants gold on beginner, intermediate and advanced in both lines; the bonus tier that opens after that isn't required." },
+        { ko: "금 평가 기준 — 일도의 형: 초급 10발 1,800점, 중급 15발 3,000점, 상급 20발 4,000점, 오마케 10발 1,400점. 단총의 형: 초급 28발 4,700점, 중급 55발 10,100점, 상급 74발 15,200점, 오마케 41발 8,100점.", en: "Gold thresholds — Swordsman: beginner 10 balls / 1,800, intermediate 15 / 3,000, advanced 20 / 4,000, bonus 10 / 1,400. Gunman: beginner 28 / 4,700, intermediate 55 / 10,100, advanced 74 / 15,200, bonus 41 / 8,100." },
+        { ko: "일도의 형은 공이 료마 바로 옆에 오기 직전에 □를 누르고, 늦었다 싶어도 일단 휘두르세요(스쳐도 점수가 들어옵니다). 중급부터는 변화구가 섞이는데, 대포의 각도로 어떤 공이 올지 예측할 수 있습니다. 단총의 형은 조준선을 눈으로 따라가기보다 포격 리듬을 외워 누르는 편이 잘 맞습니다.", en: "Swordsman: press square just before the ball draws level with Ryoma, and swing even if you think you're late — a graze still scores. From intermediate on, curve balls join in; the cannon's angle tells you what's coming. Gunman: memorise the firing rhythm rather than chasing the reticle." },
+        { ko: "보상 — 첫 튜토리얼: 대포 사용 스킬 「대포 심득(大筒心得)」. 일도의 형: 초급 研磨石, 중급 玉鋼, 상급 小さな金塊, 오마케 白金の粒. 단총의 형: 초급 鉄くず, 중급 がたがたの歯車, 상급 精巧な歯車, 오마케 絡繰細工.", en: "Rewards — first tutorial: the 大筒心得 skill that lets you use cannons. Swordsman: beginner 研磨石, intermediate 玉鋼, advanced 小さな金塊, bonus 白金の粒. Gunman: beginner 鉄くず, intermediate がたがたの歯車, advanced 精巧な歯車, bonus 絡繰細工." },
         { ko: "무쿠로가이 자체가 3장 저녁 이후 라쿠가이 문지기에게 술을 건네야 열립니다. 값싼 도부로쿠 한 병을 미리 사 두세요.", en: "Mukuro Town itself opens by handing the Rakugai gatekeeper any sake from evening in Chapter 3 — pick up cheap doburoku first." },
       ],
       source: [
@@ -221,6 +314,9 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "거리는 길수록 조자의 영향이 크고 짧을수록 실력 승부가 됩니다. 예상 표시는 실력자일수록 좋게 나오니 참고 정도로만 보세요.", en: "Longer races amplify condition; shorter ones come down to raw ability. The tipster's mark just tracks ability, so treat it as a hint rather than a call." },
         { ko: "목찰은 최대까지 걸어 두세요. 조권(鳥券)에는 구매 제한 시간이 있어서, 5연단과 3연단을 함께 살 때는 걸 점수를 세세하게 조정할 시간이 없습니다. 예상이 정해지면 곧장 MAX 베팅으로 가세요.", en: "Always bet the maximum. Ticket sales are on a timer, and buying a five-horse and a three-horse exacta together leaves no time to fiddle with the stake — decide, then MAX bet." },
         { ko: "효율을 노린다면 경계장 앞에서 세이브해 두고 결과에 따라 로드하는 방식이 정석입니다. 딴 목찰의 「접시(皿)」 경품을 환금하면 덕도 함께 들어옵니다.", en: "The efficient loop is saving in front of the grounds and reloading on a loss. Cashing the plate prizes your tokens buy also pays Virtue." },
+        { ko: "출처의 벌이 순서: ① 경계장 앞에서 세이브 ② 소지금을 전부 목찰로 ③ 1착을 예상해 2연단 등으로 걸고 세이브·로드로 3,600점까지 불림 ④ 3,600점이 넘으면 3연단을 300점×12가지 구매 ⑤ 14,400점이 넘으면 5연단도 전부 구매 ⑥ 익숙해지면 단승~5연단을 모두 구매 ⑦ 다 벌었으면 도박장에서 「은 망치(銀の金槌)」로 교환 ⑧ 도박장 북쪽 「에비스야」에 팔아 환금. 은 망치는 가장 비싸게 팔리고 소지 제한이 없습니다.", en: "The guide's money loop: (1) save in front of the grounds, (2) convert all cash to tokens, (3) call the winner and bet exactas, save-scumming up to 3,600 points, (4) past 3,600, buy the trifecta 300 × 12 ways, (5) past 14,400, buy every five-place ticket too, (6) once comfortable, buy everything from win to five-place, (7) trade the tokens for silver hammers (銀の金槌) at the gambling den, (8) sell them at Ebisuya just north of it. Silver hammers sell highest and have no carry limit." },
+        { ko: "1착 후보가 둘이라 고르기 어려우면 1착 전부 사기 대신 1·2착을 고정해서 사세요(예: 3-4와 4-3으로 시작하는 표). 마권 종류: 단승(1착), 조련(1·2착 순서 무관), 2·3·5 조단(1~2착·1~3착·전원의 순위까지).", en: "With two equally strong favourites, fix the first two places instead of covering every winner — e.g. tickets starting 3-4 and 4-3. Ticket types: win (first place), quinella (top two in any order), and 2-, 3- and 5-place exactas (exact order of the top two, top three or the whole field)." },
+        { ko: "출처가 소개한 버그(패치로 막혔을 수 있음): 5연단을 전부 300점씩 사고 「경계를 그만둔다」를 누른 뒤 화면이 바뀌기 전에 곧바로 「경계를 시작한다」를 누르면, 건 점수가 돌아온 상태로 레이스가 시작됩니다. 손해 없이 적중분만 쌓입니다.", en: "A bug the guide documents (may have been patched): buy every five-place ticket at 300, press quit, then hit start again before the screen changes — the race begins with your stake refunded, so you can only gain." },
       ],
       videos: [
         { title: { ko: "치킨 레이싱 가이드", en: "Chicken Racing guide" }, url: YT("04DO5If8D-w") },
@@ -228,6 +324,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       source: [
         { label: "神ゲー攻略 — 競鶏の攻略とお金稼ぎのやり方", url: "https://kamigame.jp/ryugagotoku-ishin/page/249651282615253221.html" },
         { label: "神ゲー攻略 — 洛外のマップと施設一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/251363316356649383.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
       ],
       achievementSlug: "kyokei_earn_total_5",
     },
@@ -244,6 +341,8 @@ export const likeADragonIshinMinigames: MinigamesData = {
       howTo: [
         { ko: "먼저 1점씩 걸어 상한을 푸는 것이 정석입니다. 초기 200점, 10회 승부로 500점, 15회 승부로 1,000점까지 열립니다. 상한을 연 뒤에 본격적으로 벌면 훨씬 빠릅니다.", en: "Open the stake cap first by betting one point at a time: it starts at 200, rises to 500 after ten rounds and to 1,000 after fifteen. Farm seriously only after that." },
         { ko: "친(親)이 한 바퀴 돌면 1승부입니다. 도중에 누군가의 소지 점수가 0이 되어도 그 시점에 승부가 끝납니다.", en: "A round runs until the dealer role has gone all the way around — or ends early the moment anyone's points hit zero." },
+        { ko: "진행: 친이 먼저 굴려서 역·눈 6이면 친 승리, 눈 1·눈 없음·쇼벤(그릇 밖으로 떨어짐)이면 친 패배로 바로 정산되고, 눈 2~5일 때만 자가 굴립니다. 눈은 같은 숫자 2개가 나왔을 때 나머지 1개의 숫자이고 6이 가장 셉니다. 3번 굴려도 눈이 안 나오면 「눈 없음」으로 패배입니다. 플레이하려면 목찰이 최소 10점 필요합니다.", en: "Flow: the dealer rolls first — a hand or a 6 wins outright, a 1, no point or a shonben (dice out of the bowl) loses outright, and only a 2–5 lets the players roll. Your point is the odd die when two match, 6 highest; three rolls with no pair is \"no point\" and loses. You need at least 10 tokens to sit down." },
+        { ko: "역과 배당: 핀조로(1·1·1) 5배 받기, 아라시(2~6 같은 눈 3개) 3배 받기, 지고로(4·5·6) 2배 받기, 히후미(1·2·3) 2배 지불, 무사시(6·3·4, 눈 6과 같은 세기) 2배 받기 또는 2배 지불, 기노미(1·3·5)는 직전에 던진 사람과 같은 결과로 바뀌고(친이면 눈 3), 구노네(2·4·6)도 직전 사람과 같은 결과(친이면 눈 4)가 됩니다.", en: "Hands and payouts: Pinzoro (1-1-1) collect ×5; Arashi (triple 2–6) collect ×3; Jigoro (4-5-6) collect ×2; Hifumi (1-2-3) pay ×2; Musashi (6-3-4, ranks as a 6) collect or pay ×2; Ki-no-mi (1-3-5) copies the previous thrower's result (a 3 for the dealer); Gu-no-ne (2-4-6) likewise copies (a 4 for the dealer)." },
         { ko: "자기가 자(子)이고 친의 눈이 2나 3처럼 낮아 이기기 쉬울 때는 「한 번 던지기 3배」를 발동하세요. 주사위를 한 번만 던지는 대신 이겼을 때 배당이 3배가 되고, 졌을 때 잃는 점수는 그대로입니다.", en: "As a player against a weak dealer roll — a 2 or 3 — call the single-throw triple: you only get one throw, but a win pays triple while a loss costs the same as normal." },
       ],
       source: { label: "神ゲー攻略 — チンチロリン", url: "https://kamigame.jp/ryugagotoku-ishin/page/255856568552166502.html" },
@@ -256,15 +355,22 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
-        ko: "주사위 두 개의 합이 짝수(초)인지 홀수(한)인지를 맞히는 가장 단순한 도박. 컴플리트 조건은 누적 15,000점입니다.",
-        en: "Call whether two dice total even (cho) or odd (han) — the simplest table in the game. Completion wants 15,000 cumulative points.",
+        ko: "주사위 두 개의 합이 짝수(초)인지 홀수(한)인지를 맞히는 가장 단순한 도박. 컴플리트 조건은 누적 7,500점입니다.",
+        en: "Call whether two dice total even (cho) or odd (han) — the simplest table in the game. Completion wants 7,500 cumulative points.",
       },
       howTo: [
         { ko: "여기도 걸 수 있는 점수의 상한 해방이 먼저입니다. 초기 200점, 10전에 500점, 20전에 800점, 30전에 1,000점입니다. 「1회 걸고 그만두기」를 반복하면 빠르게 풀립니다.", en: "Unlock the stake cap first: 200 at the start, 500 after ten rounds, 800 after twenty and 1,000 after thirty. Bet once and leave, repeatedly, to clock them up fast." },
-        { ko: "상한을 1,000점까지 연 뒤에는 1,000점을 사서 세이브하고, 초한 걸기로 1,000점을 걸어 사시(1대1) 승부를 하는 흐름이 가장 빠릅니다. 누적 15,000점이면 완료입니다.", en: "With the cap at 1,000, buy 1,000 points, save, and take 1,000-point head-to-head bets — 15,000 cumulative finishes it." },
+        { ko: "상한을 1,000점까지 연 뒤에는 1,000점을 사서 세이브하고, 초한 걸기로 1,000점을 걸어 사시(1대1) 승부를 하는 흐름이 가장 빠릅니다. 누적 7,500점이면 완료입니다.", en: "With the cap at 1,000, buy 1,000 points, save, and take 1,000-point head-to-head bets — 7,500 cumulative finishes it." },
+        { ko: "사시 승부는 맞히면 건 점수의 2배를 받고 최대 5회까지 이어갈 수 있습니다. 계속할지 고른 뒤 화면이 뒤쪽 시점으로 바뀌면 이카사마(속임수) 버튼 입력이 나오는 신호입니다. 입력 시간이 짧으니 해당 버튼을 연타하세요 — 간파하면 반드시 맞고, 실패하면 반드시 틀립니다.", en: "A head-to-head win pays double and can chain up to five times. When the camera swings behind you after the continue prompt, a cheating prompt is coming: mash the button shown — catching it guarantees the win, missing it guarantees the loss." },
+        { ko: "다른 손님의 조자는 5단계로 표시되고, 가장 좋은 손님과 같은 쪽에 걸면 승률이 높습니다. 최고 조자 손님은 15판쯤 연속으로 걸면(1점씩이면 충분) 나옵니다. 걸기 종류는 초한 예상(처음부터), 주사위 하나 예상(5판 이상 하고 적중 → 약 3배), 둘 다 예상(10판 이상 하고 적중, 상한의 20% 필요 → 판돈 독식), 사시 승부(15판 이상 하고 적중), 차 걸기(츠보후리와의 절)가 있는데, 초한 예상 외에는 조자와 무관해 벌기 어렵습니다.", en: "Other players' streaks show on a five-step scale; betting with the hottest player wins most of the time, and the top streak appears after about fifteen straight rounds (one-point bets are fine). Bet types: even/odd (from the start), one die (after five-plus rounds and a hit, about ×3), both dice (after ten-plus and a hit, stake 20% of the cap, takes the pot), head-to-head (after fifteen-plus and a hit) and difference bets (from the dealer's bond). Only even/odd responds to streaks, so it is the one to farm." },
+        { ko: "차 걸기 배당: 차 0 → 6배, 1 → 3배, 2 → 4배, 3 → 6배, 4 → 9배, 5 → 18배. 츠보후리와의 절을 올리면 10량 승부가 열리고 이기면 20량을 한 번에 받으니, 세이브 후 이길 때까지 로드하는 방법도 출처가 권합니다.", en: "Difference-bet payouts: 0 → ×6, 1 → ×3, 2 → ×4, 3 → ×6, 4 → ×9, 5 → ×18. Raising the dice-dealer's bond opens a 10-ryo game that pays 20 ryo on a win — the guide suggests saving and reloading until you take it." },
         { ko: "다른 손님들의 조자를 보면서 거는 것도 출처가 권하는 방법입니다.", en: "The guide also suggests reading the other players' streaks before committing." },
       ],
-      source: { label: "神ゲー攻略 — 丁半博打", url: "https://kamigame.jp/ryugagotoku-ishin/page/254710882100077061.html" },
+      source: [
+        { label: "神ゲー攻略 — 丁半博打", url: "https://kamigame.jp/ryugagotoku-ishin/page/254710882100077061.html" },
+        { label: "神ゲー攻略 — コンプリートの報酬と受け取り方", url: "https://kamigame.jp/ryugagotoku-ishin/page/253703481917979566.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
+      ],
     },
     {
       slug: "koi-koi",
@@ -279,9 +385,15 @@ export const likeADragonIshinMinigames: MinigamesData = {
       howTo: [
         { ko: "득점 높은 역에 필요한 패부터 가져가세요. 내 점수가 커지는 동시에 상대의 고득점을 방해할 수 있습니다. 특히 2장으로 고득점이 되는 「달맞이 술」·「꽃놀이 술」에 필요한 「국화에 잔」은 최우선 확보 대상입니다.", en: "Take the cards the big yaku need first — it builds your score and blocks theirs at once. The chrysanthemum sake cup, which makes the two-card moon-viewing and flower-viewing hands, is the single highest priority." },
         { ko: "같은 달의 패는 총 4장입니다. 장에 1장·내 손에 3장인 달은 상대가 절대 가져갈 수 없으니 후순위로 미루고, 장과 내 손에 1장씩(=산이나 상대에 2장)처럼 상대가 가져갈 여지가 큰 달부터 처리하세요.", en: "There are four cards per month. A month where you hold three and one is on the field can never be taken, so leave it — clear the months where the opponent still has two in reach first." },
+        { ko: "역 점수: 오광 10, 사광 8, 비사광 7, 삼광 5, 꽃놀이 술(花見酒) 5, 달맞이 술(月見酒) 5, 저록접(猪鹿蝶) 5, 홍단 5, 청단 5(홍단·청단은 단 1장 추가마다 +1), 타네 5장 1점·단 5장 1점·카스 10장 1점(1장 추가마다 +1), 그 달의 「제철(旬)」 패 4장 1점. 손패 역은 같은 달 4장(手四)과 같은 달 2장×4쌍(食付)이 각 6점입니다.", en: "Yaku scores: five brights 10, four brights 8, rainy four brights 7, three brights 5, flower-viewing sake 5, moon-viewing sake 5, boar-deer-butterfly 5, red ribbons 5, blue ribbons 5 (each extra ribbon +1), animals ×5 / ribbons ×5 / chaff ×10 at 1 point (+1 per extra card), and the current month's 旬 set 1. Dealt-hand yaku: four of a month (手四) or four pairs (食付) score 6 each." },
+        { ko: "판돈은 시작 전 「설정 변경」에서 가장 높은 값으로 올리고, 「역 가이드」를 켜 두면 자신과 상대가 가까운 역을 알려 줍니다. 대국 중 □로 아직 만들 수 있는 역 목록을 볼 수 있습니다. 난이도는 플레이할수록 열리는데, 최상위는 CPU가 억지스러운 수를 써서 상급까지가 무난합니다.", en: "Before a game, raise the wager to the maximum under Change Settings and turn on Hand Guide to flag hands you or the CPU are close to; square in-game lists the hands still makeable. Difficulties unlock as you play — Advanced is the sweet spot, as the top tier's AI pulls unfair tricks." },
         { ko: "상대의 역이 완성될 것 같으면 「코이」하지 마세요. 욕심을 부리다 역전당하는 것이 이 게임에서 점수를 잃는 가장 흔한 방식입니다.", en: "Don't call koi when the opponent's hand looks close — greed after a made hand is the most common way to lose points here." },
       ],
-      source: { label: "神ゲー攻略 — こいこい", url: "https://kamigame.jp/ryugagotoku-ishin/page/255856228981310645.html" },
+      source: [
+        { label: "神ゲー攻略 — こいこい", url: "https://kamigame.jp/ryugagotoku-ishin/page/255856228981310645.html" },
+        { label: "神ゲー攻略 — コンプリートの報酬と受け取り方", url: "https://kamigame.jp/ryugagotoku-ishin/page/253703481917979566.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
+      ],
     },
     {
       slug: "oicho-kabu",
@@ -297,9 +409,14 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "자(子)일 때는 첫 패를 고를 수 있습니다. 1·4·9가 있으면 우선해서 잡으세요. 특히 1은 특수역에 잘 얽히므로 최우선입니다.", en: "As a player you pick your first card — grab a 1, 4 or 9 if it's there, and the 1 above all, since it feeds the special hands." },
         { ko: "합계가 6 이상이면 3장째를 뽑지 말고 그대로 승부하세요. 더 뽑으면 숫자가 작아질 확률이 높습니다.", en: "At six or higher, stand rather than take a third card — drawing is more likely to shrink the total than grow it." },
         { ko: "특수역: 싯핀(자 전용, 2장째에 1과 4 → 걸린 점수 2배), 쿳핀(친 전용, 1과 9 → 2배), 아라시(친·자 공통, 3장이 모두 같은 달 → 3배), 도싯핀(친·자 공통, 10 2장 + 1 1장 → 20배), 시로쿠의 도주(친·자 공통, 2장째에 4와 6).", en: "Special hands: Shippin (player only, 1 and 4 on the second card, double stake), Kuppin (dealer only, 1 and 9, double), Arashi (either side, three cards of the same month, triple), Doshippin (either side, two 10s and a 1, twenty times) and Shiroku-no-nige (either side, 4 and 6 on the second card)." },
+        { ko: "특수역끼리의 세기: 친의 도싯핀 > 자의 도싯핀 > 친의 아라시 > 자의 아라시 > 쿳핀 > 싯핀 > 통상역(부타 0 ~ 카부 9). 친과 자가 같은 점수면 친이 이기고, 자끼리는 승부하지 않습니다. 10은 0으로 셉니다. 플레이할수록 상위 탁이 열리고 중급부터 판돈 상한이 500점으로 올라 훨씬 빨라집니다.", en: "Strength order: dealer's Doshippin > player's Doshippin > dealer's Arashi > player's Arashi > Kuppin > Shippin > ordinary totals (Buta 0 up to Kabu 9). Ties go to the dealer, and players never face each other. A 10 counts as zero. Higher tables open as you play, and Intermediate lifts the max bet to 500, which speeds things up a lot." },
         { ko: "특수역은 9에 가까운 통상역보다 강하고, 상위 특수역이 나오지 않는 한 무조건 승리입니다. 그래서 「9에 붙이기」보다 특수역이 성립할 조합을 노리는 편이 기대값이 높을 때가 많습니다.", en: "A special hand beats any ordinary total and wins outright unless a higher special appears — so chasing a special is often worth more than nudging toward nine." },
       ],
-      source: { label: "神ゲー攻略 — おいちょかぶ", url: "https://kamigame.jp/ryugagotoku-ishin/page/255862055456786372.html" },
+      source: [
+        { label: "神ゲー攻略 — おいちょかぶ", url: "https://kamigame.jp/ryugagotoku-ishin/page/255862055456786372.html" },
+        { label: "神ゲー攻略 — コンプリートの報酬と受け取り方", url: "https://kamigame.jp/ryugagotoku-ishin/page/253703481917979566.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
+      ],
     },
     {
       slug: "poker",
@@ -308,16 +425,22 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
-        ko: "룰이 3종 있지만, 방침을 세우기 쉬운 텍사스 홀덤을 높은 배율로 도는 것이 가장 빠릅니다. 컴플리트 조건은 누적 15,000점입니다.",
-        en: "Three rule sets are offered, but the fast route is Texas Hold'em at the high stake, where the decisions are clearest. Completion wants 15,000 cumulative points.",
+        ko: "룰이 3종 있지만, 방침을 세우기 쉬운 텍사스 홀덤을 높은 배율로 도는 것이 가장 빠릅니다. 컴플리트 조건은 누적 10,000점입니다.",
+        en: "Three rule sets are offered, but the fast route is Texas Hold'em at the high stake, where the decisions are clearest. Completion wants 10,000 cumulative points.",
       },
       howTo: [
         { ko: "텍사스 홀덤은 강한 역이 잘 나오지 않는 룰이라, 초반에 역이 서면 높은 확률로 이깁니다. 그래서 높은 배율에서 도는 편이 효율적입니다.", en: "Hold'em rarely produces big hands here, so an early made hand usually wins — which is why the high stake is the efficient table." },
         { ko: "판단은 공유패가 3장 열리는 2라운드에서 내립니다. 원페어·스트레이트·플러시가 보이면 CALL이나 RAISE로 갑니다.", en: "Make the decision on round two when three community cards are out: if a pair, straight or flush is live, call or raise." },
         { ko: "2라운드 시점에 원페어조차 안 보이거나 2·3 같은 약한 페어뿐이라면 일찍 FOLD하세요. 빨리 접는 만큼 칩이 안 줄어듭니다.", en: "If round two shows no pair at all, or only a weak one like twos or threes, fold early — folding cheap is how the stack survives." },
+        { ko: "룰 차이: 텍사스 홀덤은 손패 2장 + 공유패 5장 중 아무 5장, 파인애플 홀덤은 손패 3장에서 1장을 버린 뒤 텍사스와 같고, 오마하 홀덤은 손패 4장 중 반드시 2장 + 공유패 3장으로만 역을 만듭니다. 공유패 5장만으로 역을 만들면 다른 사람과 같은 역이라 상대가 폴드하지 않는 한 무승부입니다.", en: "Rule differences: Texas Hold'em uses any five of your two cards plus the five community cards; Pineapple deals three and has you discard one, then plays like Texas; Omaha deals four and you must use exactly two of them with three community cards. A hand made purely from the five community cards is shared, so it splits unless the others fold." },
+        { ko: "이 게임의 CPU는 거의 폴드하지 않아 블러핑은 통하지 않습니다. 대신 괜찮은 패가 들어오면 계속 레이즈해도 몇 명은 끝까지 따라오므로, 그런 판 두어 번이면 컴플리트가 거의 끝납니다.", en: "The CPU here almost never folds, so bluffing doesn't work — but with a decent hand you can keep raising and a couple of opponents will ride along to the end. A few of those pots all but finish the completion." },
         { ko: "강한 원페어 이상이면 강하게 갑니다. 다만 원페어뿐인데 상대가 강하게 나오면 무리하지 말고 CALL로 상황을 보세요.", en: "Push with a strong pair or better, but with only a pair against an aggressive opponent, flat-call and watch rather than escalate." },
       ],
-      source: { label: "神ゲー攻略 — ポーカー", url: "https://kamigame.jp/ryugagotoku-ishin/page/255457255074300965.html" },
+      source: [
+        { label: "神ゲー攻略 — ポーカー", url: "https://kamigame.jp/ryugagotoku-ishin/page/255457255074300965.html" },
+        { label: "神ゲー攻略 — コンプリートの報酬と受け取り方", url: "https://kamigame.jp/ryugagotoku-ishin/page/253703481917979566.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
+      ],
     },
     {
       slug: "mahjong",
@@ -326,18 +449,23 @@ export const likeADragonIshinMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "무쿠로가이 마작집", en: "The mahjong parlour in Mukuro Town" },
       summary: {
-        ko: "표준 마작입니다. 룰을 모른다면 아래 최소한만 지켜도 화료까지는 갑니다.",
-        en: "Standard mahjong. If you don't know the game, the minimum below is enough to reach a win.",
+        ko: "표준 마작입니다. 컴플리트 조건은 한 국(1試合)을 35,000점 이상으로 끝내는 것입니다(종료 보너스 전, 손패 위에 표시되는 점수 기준). 시작이 25,000점이니 괜찮은 화료 한 번에 방총만 피하면 됩니다.",
+        en: "Standard mahjong. The completion condition is finishing a single match on 35,000 points or more — before end-of-match bonuses, i.e. the total shown above your hand. You start on 25,000, so one decent win without dealing into anyone does it.",
       },
       howTo: [
         { ko: "기본형은 「4멘츠 + 1작두」입니다. 연속한 숫자 3개 또는 같은 패 3개의 덩어리를 4개, 같은 패 2개의 머리를 1개 만드세요. 멘츠와 작두는 각각 같은 종류의 패로만 구성됩니다.", en: "The shape is four sets plus one pair: four groups of three consecutive numbers or three identical tiles, and one pair. Each group must be a single suit." },
         { ko: "같은 패 3개보다 3연속 숫자 쪽이 만들기 쉽습니다. 같은 숫자·자패는 최대 4장뿐이라 잘 모이지 않습니다.", en: "Runs are easier than triplets — there are only four of any given tile, so triplets stall." },
         { ko: "역을 모른다면 폰·치를 하지 마세요. 한 번이라도 울면 오를 수 있는 역이 크게 줄어듭니다. 반대로 론은 그 시점에 오르는 것이므로 무조건 하세요.", en: "Don't call pon or chi if you don't know the yaku — melding cuts most of them off. Ron, by contrast, wins on the spot, so always take it." },
+        { ko: "치기 전에 점봉 25,000점이 필요하니 미리 사 두세요. 주인과의 절은 1국 끝나고 나가려 할 때 이벤트가 나오므로 연전하지 말고 매번 출구로 가세요. 4국 + 강탁(強卓) 이벤트로 최대가 되고, 시작하자마자 중단해도 절은 오릅니다.", en: "You need 25,000 in point sticks to sit down, so buy them first. The owner's bond event fires when you head for the exit after a match — don't chain games, walk out each time. Four matches plus the strong-table event max it, and even quitting right after starting counts." },
+        { ko: "울어도 성립하는 쉬운 역: 역패(백·발·중 3장), 바람패(장풍·자풍 3장), 탕야오(1·9·자패 없음), 또이또이(같은 패 3장×4 + 머리), 일기통관(한 종류 1~9), 혼일색(한 종류 + 자패), 청일색(전부 한 종류). 도라는 표시패의 다음 패(자패는 동남서북, 백발중 순)이고 도라만으로는 화료할 수 없습니다.", en: "Easy yaku that survive calls: dragon triplets, seat/round wind triplets, all simples, all triplets, full straight, half flush and full flush. Dora is the tile after the indicator (winds go E-S-W-N, dragons white-green-red), and dora alone isn't a yaku." },
+        { ko: "상대가 리치하면, 화료가 멀 때는 그 사람이 버린 패와 같은 패(후리텐이라 안전)나 이미 여러 장 나온 패를 버리고, 도라와 5는 끝까지 들고 있으세요. 바람·삼원패는 같은 패가 겹쳐 있지 않으면 초반에 먼저 버리는 게 보통입니다.", en: "When someone declares riichi and you're far from a win, discard what they've already discarded (safe by furiten) or tiles with several copies visible, and hold dora and fives to the end. Lone wind and dragon tiles usually go first in a hand." },
         { ko: "리치 자체가 역 하나입니다. 울지 않고 텐파이까지 가면 리치만으로 화료할 수 있으니, 초심자는 「울지 않고 리치」를 기본 방침으로 삼으세요.", en: "Riichi is itself a yaku, so staying closed and declaring it is enough to win a hand — make \"no melds, then riichi\" your default." },
       ],
       source: [
         { label: "神ゲー攻略 — 麻雀", url: "https://kamigame.jp/ryugagotoku-ishin/page/255708739082929181.html" },
         { label: "神ゲー攻略 — 骸街のマップと施設一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/251692014599433416.html" },
+        { label: "神ゲー攻略 — コンプリートの報酬と受け取り方", url: "https://kamigame.jp/ryugagotoku-ishin/page/253703481917979566.html" },
+        { label: "PowerPyx — Like a Dragon: Ishin! 100% Completion List Guide", url: "https://www.powerpyx.com/like-a-dragon-ishin-100-completion-list-guide/" },
       ],
     },
     {
@@ -406,6 +534,18 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { label: "神ゲー攻略 — 伏見のマップと施設一覧", url: "https://kamigame.jp/ryugagotoku-ishin/page/253409800040228729.html" },
       ],
       achievementSlug: "fishing_10",
+      puzzleSets: [
+        {
+          title: { ko: "낚시터별 어종표", en: "Fish by spot" },
+          note: { ko: "레어도 높은 순입니다. 표기: 레어도·어영 모양·잡히는 거리·움직임. 어종명은 원문(神ゲー攻略) 그대로이고 출처 1곳입니다. 출처는 강 낚시터를 우지강·가모강으로 나누는데, 어느 쪽이 데라다야 앞이고 어느 쪽이 무쿠로가이인지는 적어 두지 않았습니다.", en: "Sorted by rarity. Format: rarity · shadow shape · distance · movement. Fish names as 神ゲー攻略 prints them (single source). The source splits the river spots into the Uji and Kamo rivers but doesn't say which is Teradaya and which is Mukuro Town." },
+          puzzles: [
+            { title: { ko: "우지강 (宇治川) — 9종", en: "Uji River (宇治川) — 9 species" }, note: { ko: "人面魚 레어10·보통·근~중거리·정지 / ニシキゴイ 레어7·보통·근거리·정지 / サケ 레어6·보통·중~원거리·움직임 / ニジマス 레어6·보통·중~원거리·움직임 / スッポン 레어5·둥긂·근~중거리·정지 / エレキナマズ 레어5·보통·중~원거리·거의 정지 / コイ 레어3·보통·근거리·정지 / フナ 레어2·마름모·근거리·정지 / ザリガニ 레어1·둥긂·근거리·정지", en: "人面魚 R10·normal·near–mid·still / ニシキゴイ R7·normal·near·still / サケ R6·normal·mid–far·moving / ニジマス R6·normal·mid–far·moving / スッポン R5·round·near–mid·still / エレキナマズ R5·normal·mid–far·barely moves / コイ R3·normal·near·still / フナ R2·diamond·near·still / ザリガニ R1·round·near·still" } },
+            { title: { ko: "가모강 (鴨川) — 8종", en: "Kamo River (鴨川) — 8 species" }, note: { ko: "イトウ 레어9·보통·중~원거리·움직임 / サケ 레어6·보통·중~원거리·움직임 / ニジマス 레어6·보통·중~원거리·움직임 / エレキナマズ 레어5·보통·중~원거리·거의 정지 / ウナギ 레어4·가늘고 김·근거리·정지 / フナ 레어2·마름모·근거리·정지 / アユ 레어2·보통·근~중거리·정지 / ザリガニ 레어1·둥긂·근거리·정지", en: "イトウ R9·normal·mid–far·moving / サケ R6·normal·mid–far·moving / ニジマス R6·normal·mid–far·moving / エレキナマズ R5·normal·mid–far·barely moves / ウナギ R4·long·near·still / フナ R2·diamond·near·still / アユ R2·normal·near–mid·still / ザリガニ R1·round·near·still" } },
+            { title: { ko: "어초의 갯바위 (漁礁の磯) — 10종", en: "Reef shore (漁礁の磯) — 10 species" }, note: { ko: "トラフグ 레어7·둥긂·어디서나·거의 정지 / マダイ 레어7·마름모·원거리·움직임 / クルマエビ 레어3·둥긂·근거리·정지 / オニカサゴ 레어3·둥긂·근~중거리·움직임 / マダコ 레어3·둥긂·중거리 바위 지대·거의 정지 / ハリセンボン 레어3·둥긂·원거리·거의 정지 / カワハギ 레어2·마름모·근거리·정지 / ハゼ 레어2·가늘고 김·근거리·거의 정지 / イカ 레어2·둥긂·근~중거리·거의 정지 / シラス 레어1·보통·근거리·움직임", en: "トラフグ R7·round·anywhere·barely moves / マダイ R7·diamond·far·moving / クルマエビ R3·round·near·still / オニカサゴ R3·round·near–mid·moving / マダコ R3·round·mid-range rocks·barely moves / ハリセンボン R3·round·far·barely moves / カワハギ R2·diamond·near·still / ハゼ R2·long·near·barely moves / イカ R2·round·near–mid·barely moves / シラス R1·normal·near·moving" } },
+            { title: { ko: "히가시오키 (東沖) — 9종", en: "East offshore (東沖) — 9 species" }, note: { ko: "竜宮の使い 레어10·가늘고 김·원거리·정지 / カジキ 레어9·보통·원거리·움직임 / マグロ 레어9·보통·원거리·움직임 / ホオジロザメ 레어8·보통·원거리·움직임 / タカアシガニ 레어6·둥긂·근거리·정지 / アナゴ 레어4·가늘고 김·근거리·정지 / カレイ 레어4·마름모·근거리·움직임 / カワハギ 레어2·마름모·근거리·정지 / シラス 레어1·보통·근거리·움직임", en: "竜宮の使い R10·long·far·still / カジキ R9·normal·far·moving / マグロ R9·normal·far·moving / ホオジロザメ R8·normal·far·moving / タカアシガニ R6·round·near·still / アナゴ R4·long·near·still / カレイ R4·diamond·near·moving / カワハギ R2·diamond·near·still / シラス R1·normal·near·moving" } },
+          ],
+        },
+      ],
     },
   ],
 };
