@@ -948,7 +948,7 @@ export const yakuzaKiwami3: CollectiblesData = {
             "21": [28.28, 62.18],
           },
           items: [
-            { number: 1, title: { ko: "아라세 카즈토", en: "Kazuto Arase" }, location: { ko: "카무로초", en: "Kamurocho" }, prereq: { ko: "다른 복수자를 모두 격파한 뒤", en: "After every other Reaper is down" } },
+            { number: 1, image: "https://img.game8.jp/12312968/e1ff4c2cb84ea44f257d8b1f5ef43242.webp/original", title: { ko: "아라세 카즈토", en: "Kazuto Arase" }, location: { ko: "카무로초", en: "Kamurocho" }, prereq: { ko: "다른 복수자를 모두 격파한 뒤", en: "After every other Reaper is down" } },
             { number: 2, image: "https://img.game8.jp/12312239/a71309d30060daf3ec2e32a75570bc05.webp/original", title: { ko: "쿠레나이", en: "Kurenai" }, location: { ko: "카무로초", en: "Kamurocho" }, prereq: { ko: "복수자 12명 이상 확보 후", en: "After capturing 12 or more Reapers" } },
             { number: 3, image: "https://img.game8.jp/12312251/6e53c23a8c53922ad7309593c74143e2.webp/original", title: { ko: "켄고", en: "Kengo" }, location: { ko: "카무로초", en: "Kamurocho" }, prereq: { ko: "복수자 12명 이상 확보 후", en: "After capturing 12 or more Reapers" } },
             { number: 4, image: "https://img.game8.jp/12312248/222a7645bea237deca85d95dab88dce5.webp/original", title: { ko: "라이", en: "Rai" }, location: { ko: "카무로초", en: "Kamurocho" }, prereq: { ko: "복수자 12명 이상 확보 후", en: "After capturing 12 or more Reapers" } },
