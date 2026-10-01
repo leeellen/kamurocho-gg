@@ -37,6 +37,27 @@ export type Minigame = {
     note?: LocalizedText;
     pitches?: { pos?: number; type: string; speed?: string }[];
   }[];
+  /**
+   * Optional fixed-answer puzzle sets (tsume-shogi problems, scripted trial
+   * games, quiz answers) with the source's own diagrams. `moves` stays in the
+   * source's notation verbatim (kifu like ▲2三桂不成) — never hand-translated.
+   */
+  puzzleSets?: {
+    title: LocalizedText;
+    /** Set-level caveat, e.g. "CPU may deviate from the line — retry with 待った". */
+    note?: LocalizedText;
+    puzzles: {
+      title: LocalizedText;
+      /** Main diagram (problem or first answer step). */
+      image?: string;
+      /** Further answer-step diagrams. */
+      images?: string[];
+      moves?: string[];
+      note?: LocalizedText;
+      /** YouTube link (may carry `t=`) when the answer is only published as video. */
+      video?: string;
+    }[];
+  }[];
 };
 
 export type MinigamesData = {

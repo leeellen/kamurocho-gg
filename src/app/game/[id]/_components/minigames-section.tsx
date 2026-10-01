@@ -147,6 +147,63 @@ function MinigameCard({
         </details>
       )}
 
+      {game.puzzleSets?.map((set, si) => (
+        <details key={si} className="group mt-4 rounded-xl border border-[var(--border-subtle)]">
+          <summary className="cursor-pointer list-none rounded-xl px-4 py-3 text-[16px] font-semibold text-[var(--text-secondary)] hover:text-white">
+            {pick(set.title, locale)}
+            <span className="ml-1.5 text-[var(--text-tertiary)]">· {set.puzzles.length}</span>
+            <span aria-hidden="true" className="ml-1.5 inline-block transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <div className="flex flex-col gap-5 border-t border-[var(--border-subtle)] px-4 pb-4 pt-4">
+            {set.puzzles.some((p) => p.moves) && (
+              <p className="m-0 text-[15px] leading-6 text-[var(--text-tertiary)]">
+                {locale === "ko"
+                  ? "기보 표기: ▲ 내 수 / △ 상대 수 · 아라비아 숫자 = 열(오른쪽부터 1~9), 한자 숫자 = 단(위부터 一~九) · 同 = 직전 칸에서 잡기 · 打 = 지닌 말 놓기 · 成 / 不成 = 승격 / 승격 안 함"
+                  : "Notation: ▲ your move / △ opponent · Arabic digit = file (1–9 from the right), kanji numeral = rank (一–九 from the top) · 同 = recapture on the same square · 打 = drop from hand · 成 / 不成 = promote / don't promote"}
+              </p>
+            )}
+            {set.note && (
+              <p className="m-0 text-[15px] leading-6 text-[var(--text-tertiary)]">{pick(set.note, locale)}</p>
+            )}
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {set.puzzles.map((pz, pi) => (
+                <div key={pi} className="flex flex-col gap-2 rounded-lg border border-[var(--border-subtle)] p-3">
+                  <div className="text-[16px] font-bold text-white">{pick(pz.title, locale)}</div>
+                  {pz.moves && pz.moves.length > 0 && (
+                    <div className="font-mono text-[15px] leading-6 text-[var(--accent)]">{pz.moves.join(" → ")}</div>
+                  )}
+                  {pz.note && (
+                    <div className="text-[14px] leading-6 text-[var(--text-tertiary)]">{pick(pz.note, locale)}</div>
+                  )}
+                  {[pz.image, ...(pz.images ?? [])].filter((src): src is string => Boolean(src)).map((src) => (
+                    <a key={src} href={src} target="_blank" rel="noopener noreferrer" className="self-start">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={src}
+                        alt=""
+                        loading="lazy"
+                        className="h-auto max-w-full rounded-md border border-[var(--border-subtle)]"
+                      />
+                    </a>
+                  ))}
+                  {pz.video && (
+                    <a
+                      href={pz.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[14px] font-semibold text-[var(--accent)] no-underline hover:underline"
+                    >
+                      <FiPlayCircle size={12} aria-hidden="true" />
+                      {locale === "ko" ? "풀이 영상 보기" : "Watch the solution"}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </details>
+      ))}
+
       {game.source && (
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-[var(--text-tertiary)]">
           <span>{locale === "ko" ? "출처" : "Source"}</span>

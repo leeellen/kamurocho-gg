@@ -323,12 +323,32 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       howTo: [
         { ko: "규칙은 표준 장기입니다. 상대 왕을 먼저 잡으면 승리, 잡은 말은 자기 말로 쓸 수 있고, 「투료」하면 패배입니다. □가 무르기, L1이 슈퍼 무르기, △가 아이템 사용입니다.", en: "Standard shogi: take the opposing king to win, captured pieces return to your hand, and resigning loses. Square takes a move back, L1 takes back further and triangle uses an item." },
         { ko: "순위전과 시련 돌파는 자력으로 이기기 상당히 어렵습니다. 공략 페이지도 bonanza 같은 장기 프리 소프트에 국면을 넣고 다음 수를 받아 두는 방식을 권합니다.", en: "The ranking matches and Trial Run are genuinely hard to win unaided — the guide itself recommends feeding the position into a free shogi engine such as Bonanza and playing its suggestion." },
-        { ko: "쓰메쇼기는 특수 초기 국면에서 정해진 수 안에 상대 옥을 잡는 문제로, 매 수 왕수가 아니면 그 시점에 실패입니다. 전 10문제이며 1~2수로 끝나는 난이도라 포인트 벌이로 편합니다.", en: "Tsume-shogi sets a fixed position you must mate within a set number of moves, failing the instant a move isn't check. There are ten problems, all one or two moves deep, which makes them the easy point source." },
+        { ko: "쓰메쇼기는 특수 초기 국면에서 정해진 수 안에 상대 옥을 잡는 문제로, 매 수 왕수가 아니면 그 시점에 실패입니다. 전 10문제이며 1~5번은 1수, 6~10번은 3수로 끝나 포인트 벌이로 편합니다.", en: "Tsume-shogi sets a fixed position you must mate within a set number of moves, failing the instant a move isn't check. There are ten problems — one-movers for 1–5 and three-movers for 6–10 — which makes them the easy point source." },
         { ko: "경품 중 최상위는 21,000pt의 「웨스턴맨의 리볼버」(★5, 공격력 +107 / 마력 +100)이고, 무기 강화 소재 「강화철강·하」 850pt, 「·중」 1,700pt도 여기서 삽니다.", en: "The top prize is the Desperado's Revolver at 21,000 points (5 star, +107 attack, +100 magic); the shop also sells weapon-upgrade steel at 850 and 1,700 points." },
       ],
       source: [
         { label: "ゲーム攻略マン — 将棋攻略", url: "https://dswiipspwikips3.jp/yakuza8/play-spots/syogi.html" },
+        { label: "ゲームエイト — 詰将棋の解答と路上将棋の攻略", url: "https://game8.jp/ryu-ga-gotoku8/589669" },
+        { label: "アルテマ — 詰将棋の答えと路上将棋の場所", url: "https://altema.jp/ryugagotoku8/syougi" },
         { label: "PINION — プレイスポットの場所・遊びかた一覧", url: "https://pinion.jp/%E3%82%AC%E3%82%A4%E3%83%89/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F8-%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%81%AE%E5%A0%B4%E6%89%80%E3%81%A8%E9%81%8A%E3%81%B3%E3%81%8B%E3%81%9F/" },
+      ],
+      puzzleSets: [
+        {
+          title: { ko: "쓰메쇼기 정답 — 10문제", en: "Tsume-shogi answers — all 10" },
+          note: { ko: "1~5번은 1수, 6~10번은 3수 외통입니다. 수순은 game8과 아르테마가 10문제 모두 같습니다. 그림은 아르테마의 정답 캡처로, 둘 수를 화살표로 표시합니다.", en: "Problems 1–5 are mate in one, 6–10 mate in three. game8 and Altema agree on every line; diagrams are Altema's answer captures with the move drawn as an arrow." },
+          puzzles: [
+            { title: { ko: "1번 (1수 외통)", en: "No. 1 (mate in 1)" }, moves: ["▲2二金"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume1.jpg" },
+            { title: { ko: "2번 (1수 외통)", en: "No. 2 (mate in 1)" }, moves: ["▲5六金"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume2.jpg" },
+            { title: { ko: "3번 (1수 외통)", en: "No. 3 (mate in 1)" }, moves: ["▲2三桂"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume3.jpg" },
+            { title: { ko: "4번 (1수 외통)", en: "No. 4 (mate in 1)" }, moves: ["▲3一銀不成"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume4.jpg" },
+            { title: { ko: "5번 (1수 외통)", en: "No. 5 (mate in 1)" }, moves: ["▲6五角"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume5.jpg" },
+            { title: { ko: "6번 (3수 외통)", en: "No. 6 (mate in 3)" }, moves: ["▲2一銀", "△2二玉", "▲3二角成"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume6_1.jpg", images: ["https://img.altema.jp/ryugagotoku8/kakudai/tume6_2.jpg"] },
+            { title: { ko: "7번 (3수 외통)", en: "No. 7 (mate in 3)" }, moves: ["▲1一飛", "△同玉", "▲2三桂不成"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume7_1.jpg", images: ["https://img.altema.jp/ryugagotoku8/kakudai/tume7_2.jpg"] },
+            { title: { ko: "8번 (3수 외통)", en: "No. 8 (mate in 3)" }, moves: ["▲2三角成", "△2一玉", "▲1二香成"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume8_1.jpg", images: ["https://img.altema.jp/ryugagotoku8/kakudai/tume8_2.jpg"] },
+            { title: { ko: "9번 (3수 외통)", en: "No. 9 (mate in 3)" }, moves: ["▲3一銀成", "△同玉", "▲2二銀"], image: "https://img.altema.jp/ryugagotoku8/kakudai/okanezzz0002.jpg", images: ["https://img.altema.jp/ryugagotoku8/kakudai/tume9_2.jpg"] },
+            { title: { ko: "10번 (3수 외통)", en: "No. 10 (mate in 3)" }, moves: ["▲2三飛成", "△同玉", "▲3三馬"], image: "https://img.altema.jp/ryugagotoku8/kakudai/tume10_1.jpg", images: ["https://img.altema.jp/ryugagotoku8/kakudai/tume10_2.jpg"] },
+          ],
+        },
       ],
     },
     {
