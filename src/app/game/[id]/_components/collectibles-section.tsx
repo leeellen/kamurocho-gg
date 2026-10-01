@@ -410,7 +410,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="w-full rounded-lg border border-[var(--border-subtle)]"
+          className="h-auto max-w-full self-start rounded-lg border border-[var(--border-subtle)]"
         />
       )}
       {item.images?.map((src) => (
@@ -421,7 +421,7 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="w-full rounded-lg border border-[var(--border-subtle)]"
+          className="h-auto max-w-full self-start rounded-lg border border-[var(--border-subtle)]"
         />
       ))}
 
