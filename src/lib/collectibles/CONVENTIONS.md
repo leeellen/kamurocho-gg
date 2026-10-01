@@ -62,6 +62,19 @@ separate `mapImage`/`hotspots` pair when no real overview-map source with
 per-item coordinates exists. Wire it as `CollectibleItem.image` and rely on
 the modal enlarge rule above to make it legible.
 
+## Several images per item, and per-item video
+
+When a source gives more than one shot per item (typically a map screen plus
+an in-world capture), put the map in `image` (the grid thumbnail) and the rest
+in `images: string[]` — the detail modal stacks them under the main image.
+Match images to items by the source's own heading/caption/code, never by file
+number: PowerPyx and others number their uploads out of item order (Gaiden
+gold ball 5 is `-11.jpg`, Kiwami J1's pair is reversed).
+
+`item.video` (YouTube, may carry `&t=Ns`) renders as a "위치 영상 보기" link in
+the modal, so a timestamped per-key video covers items no screenshot source
+has (Kiwami 2 Sotenbori lockers).
+
 ## Sourcing & hosting
 
 - Prefer a source that gives per-item images over one that gives only a
