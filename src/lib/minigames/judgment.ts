@@ -221,7 +221,7 @@ export const judgmentMinigames: MinigamesData = {
         { ko: "쓰메쇼기 해금: 6장에서 열리는 클라우드 캄파의 「최고급 장기 세트 제작」(最高級将棋セット制作)을 완료하고, 탐정 사무소 우편함에 도착한 「최고급 장기 세트」를 아동공원의 노숙자들에게 건네면 아동공원 맨홀 아래 지하 수도에 장기판이 생깁니다. 오노데라 상점 오른쪽의 남자에게 말을 거세요.", en: "Unlocking tsume-shogi: complete the Crowd Kanpa project for the artisan shogi set (opens in Chapter 6), collect the set from the agency mailbox, and give it to the homeless men in Children's Park. A board then appears in the sewer under the park's manhole — talk to the man to the right of Onodera's shop." },
         { ko: "쓰메쇼기는 전 10문제로, 1~5번은 1수, 6~10번은 3수 외통입니다. 매 수 왕수여야 하고, 3수 문제는 상대 응수가 정해져 있어 아래 수순대로 두면 됩니다.", en: "There are ten problems: 1–5 are mate in one, 6–10 mate in three. Every move must give check, and the defence in the three-movers is fixed, so the lines below play out as written." },
         { ko: "컴플리트 미션은 「쓰메쇼기 시작했습니다」(詰将棋始めました, 1문제), 「쓰메쇼기 알았습니다」(詰将棋分かりました, 5문제), 「쓰메쇼기 마스터했습니다」(詰将棋極めました, 전 10문제)입니다.", en: "The completion missions are clearing one problem, five problems, and all ten." },
-        { ko: "순위전과 시련 답파는 CPU와의 실전이라 고정 정답이 없고, 수순을 공개한 공략도 찾지 못했습니다. 숍 미션은 「대기 없음!」 계열(무르기 없이 누적 1·3·5승), 「시련의 시작」(시련 답파 1개 답파), 「선수 필승」·「후수 필승」(각 선수·후수로 누적 2승), 「두 자릿수 승리」(누적 10승)입니다.", en: "Ranking matches and Trial Run are live games against the CPU with no fixed answer, and no guide publishes a move list for them. Their shop missions are winning without takebacks (1, 3 and 5 wins), clearing one Trial Run, two wins each moving first and moving second, and ten total wins." },
+        { ko: "순위전과 시련 답파는 CPU와의 실전이라 고정 정답이 없습니다. 시련 답파(11판)는 아래에 판별 클리어 영상을 달아 두었고, 순위전은 수순을 공개한 공략이 없습니다. 숍 미션은 「대기 없음!」 계열(무르기 없이 누적 1·3·5승), 「시련의 시작」(시련 답파 1개 답파), 「선수 필승」·「후수 필승」(각 선수·후수로 누적 2승), 「두 자릿수 승리」(누적 10승)입니다.", en: "Ranking matches and Trial Run are live games against the CPU with no fixed answer; Trial Run (eleven games) has per-trial clear videos below, while no guide publishes ranking-match lines. Their shop missions are winning without takebacks (1, 3 and 5 wins), clearing one Trial Run, two wins each moving first and moving second, and ten total wins." },
       ],
       source: [
         { label: "GameWith — 将棋の攻略｜詰将棋の答え", url: "https://gamewith.jp/judgeeyes/article/show/138291" },
@@ -230,6 +230,7 @@ export const judgmentMinigames: MinigamesData = {
         { label: "リンクの中で踊りたい！ — ジャッジアイズ詰将棋の答え（棋譜）", url: "https://rosetrend1.com/2018/12/18/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%B8%E3%82%A2%E3%82%A4%E3%82%BA%E8%A9%B0%E5%B0%86%E6%A3%8B/" },
         { label: "PowerPyx — Judgment Puzzle Shogi Solutions Guide", url: "https://www.powerpyx.com/judgment-puzzle-shogi-solutions-guide/" },
         { label: "GameWith — ミニゲームの攻略とプレイスポット", url: "https://gamewith.jp/judgeeyes/article/show/134380" },
+        { label: "レオナ（ameblo） — トロコンへの鬼門 将棋攻略", url: "https://ameblo.jp/rapurasu-0507/entry-12425477525.html" },
       ],
       puzzleSets: [
         {
@@ -251,12 +252,32 @@ export const judgmentMinigames: MinigamesData = {
               image: "https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-11.jpg",
               images: ["https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-12.jpg"],
               note: {
-                ko: "첫 수는 각을 왼쪽 위로 1칸(rosetrend 「3四角」, 상대는 「1四玉」)으로 PowerPyx·GameWith와 같지만, 3수째가 갈립니다. rosetrend·게임 란부 기보는 「2三銀打ち」(지닌 은 놓기), PowerPyx 캡처·GameWith 설명은 같은 각을 오른쪽 위로 1칸 다시 움직입니다. 그림은 PowerPyx 쪽 수순입니다. 게임 란부는 첫 수를 「1四角」으로 적어 다른 소스와 다릅니다.",
-                en: "Move 1 is the bishop one square up-left (rosetrend: 3四角, answered by 1四玉), matching PowerPyx and GameWith, but move 3 differs: rosetrend's and GameRanbu's kifu drop the silver (2三銀打ち), while PowerPyx's capture and GameWith's text move the same bishop one square up-right. The diagrams show the PowerPyx line. GameRanbu also writes move 1 as 1四角, unlike the others.",
+                ko: "첫 수는 각을 왼쪽 위로 1칸(rosetrend 「3四角」, 상대는 「1四玉」)으로 PowerPyx·GameWith와 같지만, 3수째가 갈립니다. rosetrend·게임 란부 기보는 「2三銀打ち」(지닌 은 놓기), PowerPyx 캡처·GameWith 설명은 같은 각을 오른쪽 위로 1칸 다시 움직입니다. 그림은 PowerPyx 쪽 수순입니다. 게임 란부는 첫 수를 「1四角」으로 적어 다른 소스와 다릅니다. 두 수순 모두 실제로 클리어한 플레이어가 올린 것입니다.",
+                en: "Move 1 is the bishop one square up-left (rosetrend: 3四角, answered by 1四玉), matching PowerPyx and GameWith, but move 3 differs: rosetrend's and GameRanbu's kifu drop the silver (2三銀打ち), while PowerPyx's capture and GameWith's text move the same bishop one square up-right. The diagrams show the PowerPyx line. GameRanbu also writes move 1 as 1四角, unlike the others. Both lines come from players who cleared the problem.",
               },
             },
-            { title: { ko: "9번 (3수 외통)", en: "No. 9 (mate in 3)" }, moves: ["▲1三飛打", "△同玉", "▲2三馬"], image: "https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-13.jpg", images: ["https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-14.jpg"], note: { ko: "rosetrend·게임 란부 기보와 PowerPyx 캡처가 같습니다. GameWith는 「은을 왼쪽 아래로 1칸(불성) → 지닌 비차를 왕 아래에 놓기」라는 다른 수순을 적고 있습니다.", en: "rosetrend's and GameRanbu's kifu match PowerPyx's capture. GameWith instead describes a different line: silver one square down-left without promoting, then drop the rook below the king." } },
+            { title: { ko: "9번 (3수 외통)", en: "No. 9 (mate in 3)" }, moves: ["▲1三飛打", "△同玉", "▲2三馬"], image: "https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-13.jpg", images: ["https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-14.jpg"], note: { ko: "rosetrend·게임 란부 기보와 PowerPyx 캡처가 같습니다. GameWith는 「은을 왼쪽 아래로 1칸(불성) → 지닌 비차를 왕 아래에 놓기」라는 다른 수순을 적고 있습니다. 두 수순 모두 실제로 클리어한 플레이어가 올린 것입니다.", en: "rosetrend's and GameRanbu's kifu match PowerPyx's capture. GameWith instead describes a different line: silver one square down-left without promoting, then drop the rook below the king. Both lines come from players who cleared the problem." } },
             { title: { ko: "10번 (3수 외통)", en: "No. 10 (mate in 3)" }, moves: ["▲3一飛成", "△同玉", "▲4二金打"], image: "https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-15.jpg", images: ["https://www.powerpyx.com/wp-content/uploads/Judgment-Puzzle-Shogi-1.jpg"] },
+          ],
+        },
+        {
+          title: { ko: "시련 답파 — 11판 클리어 영상", en: "Trial Run — clear videos for all 11" },
+          note: {
+            ko: "고정 정답이 아니라 CPU와의 실전입니다. 플레이어 블로그에 따르면 시련 답파는 같은 수에 CPU가 같은 응수를 하는 편이라 영상 수순을 따라 두면 되지만, 어긋나면 「대기」로 되돌려 다시 맞추세요. 수순을 글·그림으로 공개한 공략은 없어, 한 채널(たっくんブラザーズチャンネル)이 올린 판별 비실황 클리어 영상입니다(출처 1곳). 11판 모두 영상이 있습니다.",
+            en: "These are live games against the CPU, not fixed puzzles. A player blog reports the CPU answers the same moves the same way in Trial Run, so copying the video usually works — if it deviates, take the move back and retry. No guide publishes the lines as text or diagrams; these are one channel's per-trial uncommentated clears (single source), covering all eleven.",
+          },
+          puzzles: [
+            { title: { ko: "시련 1 (其の一)", en: "Trial 1 (其の一)" }, video: YT("c3MyXYbgYGs") },
+            { title: { ko: "시련 2 (其の二)", en: "Trial 2 (其の二)" }, video: YT("FA04haGhTQk") },
+            { title: { ko: "시련 3 (其の三)", en: "Trial 3 (其の三)" }, video: YT("l5JRe2osvMs") },
+            { title: { ko: "시련 4 (其の四)", en: "Trial 4 (其の四)" }, video: YT("UBjzcyxBOs8") },
+            { title: { ko: "시련 5 (其の五)", en: "Trial 5 (其の五)" }, video: YT("NN9zgWF-rFw") },
+            { title: { ko: "시련 6 (其の六)", en: "Trial 6 (其の六)" }, video: YT("-i_IioJw_q8") },
+            { title: { ko: "시련 7 (其の七)", en: "Trial 7 (其の七)" }, video: YT("DxcbzgPssek") },
+            { title: { ko: "시련 8 (其の八)", en: "Trial 8 (其の八)" }, video: YT("SWS-rpSrBUA") },
+            { title: { ko: "시련 9 (其の九)", en: "Trial 9 (其の九)" }, video: YT("v4hlUsCwkes") },
+            { title: { ko: "시련 10 (其の十)", en: "Trial 10 (其の十)" }, video: YT("008CTQHKxnU") },
+            { title: { ko: "최종 시련 (最終試練)", en: "Final Trial (最終試練)" }, video: YT("pDnkD0yM1tE") },
           ],
         },
       ],
