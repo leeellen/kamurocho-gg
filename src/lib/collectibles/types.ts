@@ -24,6 +24,9 @@ export type CollectibleItem = {
   steps?: CollectibleStep[];
   // Top-level item screenshot (e.g. map / overview).
   image?: string;
+  // Extra screenshots shown under `image` in the detail modal (e.g. a guide's
+  // in-world capture to go with its map shot).
+  images?: string[];
   // Optional accompanying video (YouTube URL).
   video?: string;
   reward?: LocalizedText;

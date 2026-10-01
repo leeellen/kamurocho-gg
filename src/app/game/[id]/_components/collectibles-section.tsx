@@ -62,6 +62,7 @@ function toChecklistItem(it: CollectibleItem): ChecklistItem {
   return {
     number: it.number,
     image: it.image,
+    images: it.images,
     title: it.title,
     location: it.location,
     mail: it.mail,
@@ -411,6 +412,17 @@ function ItemCard({ locale, item }: { locale: Locale; item: CollectibleItem }) {
           className="w-full rounded-lg border border-[var(--border-subtle)]"
         />
       )}
+      {item.images?.map((src) => (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          key={src}
+          src={src}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="w-full rounded-lg border border-[var(--border-subtle)]"
+        />
+      ))}
 
       {item.prereq && (
         <div

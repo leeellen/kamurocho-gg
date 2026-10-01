@@ -40,6 +40,8 @@ export type ChecklistItem = {
   // Grid thumbnail + optional larger image shown in the detail modal.
   image?: string;
   hqImage?: string;
+  // Extra screenshots stacked under the main image in the detail modal.
+  images?: string[];
   // Headline (substory-like) and/or map location line.
   title?: LocalizedText;
   location?: LocalizedText;
@@ -461,6 +463,16 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                 className="block w-full rounded-xl"
               />
             )}
+            {openItem.images?.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={src}
+                src={src}
+                alt={`#${openItem.number}-${i + 2}`}
+                loading="lazy"
+                className="mt-2 block w-full rounded-xl"
+              />
+            ))}
             <div className="mt-4">
               <div className="font-display text-[18px] font-extrabold text-white">
                 No.{String(openItem.number).padStart(2, "0")}
