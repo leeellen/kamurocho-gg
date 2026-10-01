@@ -11,7 +11,10 @@ export const yakuzaLikeADragon: CollectiblesData = {
         { ko: "랭크 ★4 이상은 일반 거리에서 나오지 않습니다. 소텐보리 지하 던전·요코하마 지하 던전·아몬 라인을 거쳐야 등장합니다.", en: "Rank ★4+ rarely spawn in the streets. They appear in the Sotenbori Battle Arena, Kamurocho Underground, and Amon arcs." },
         { ko: "요코하마 이세자키 이진초 코리아타운 「THE 빌딩」 2층 수지몬 연구소에서 보상을 수령할 수 있습니다.", en: "Claim rewards from the Sujimon Research Institute on the 2nd floor of THE Building in Yokohama Isezaki Ijincho." },
     ],
-    source: { label: "龍が如く7 最速攻略wiki — スジモン図鑑", url: "https://spwiki.net/ryu7/wikis/205.html" },
+    source: [
+      { label: "龍が如く7 最速攻略wiki — スジモン図鑑", url: "https://spwiki.net/ryu7/wikis/205.html" },
+      { label: "Yakuza Wiki (Fandom) — Sujidex (icons)", url: "https://yakuza.fandom.com/wiki/Sujidex" },
+    ],
     groups: [
     {
       title: { ko: "티어 ★1 (입문) — 62종", en: "Tier ★1 (Beginner) — 62 sujimon" },
@@ -19,6 +22,8 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 1,
         title: { ko: "민폐 샐러리맨", en: "Annoying Salaryman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c6/Burnout_Bully_Icon.png/revision/latest",
+        images: ["https://static.wikia.nocookie.net/yakuza/images/5/52/001_burnout_bully.png/revision/latest/scale-to-width-down/1200"],
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 초보 킥, 동료 부르기 / 약점: 물리, 총, 화, 뇌", en: "Skill: Amateur Kick, Call Allies / Weak: Phys, Gun, Fire, Lightning" },
         reward: { ko: "낡은 천 조각, 두꺼운 천", en: "Tattered Cloth, Thick Cloth" },
@@ -26,6 +31,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 4,
         title: { ko: "만취남", en: "Drunken Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6d/Hammeredhead_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: 물리, 총, 빙, 뇌", en: "Skill: None / Weak: Phys, Gun, Ice, Lightning" },
         reward: { ko: "낡은 천 조각, 두꺼운 천", en: "Tattered Cloth, Thick Cloth" },
@@ -33,6 +39,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 8,
         title: { ko: "민폐 노숙자", en: "Annoying Homeless" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f1/Battle_Bum_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 구걸, 야초의 은혜 / 약점: 물리, 도검, 총, 화, 빙, 뇌", en: "Skill: Begging, Wildgrass Bounty / Weak: Phys, Blade, Gun, Fire, Ice, Lightning" },
         reward: { ko: "나뭇조각, 튼튼한 목재", en: "Wood Chip, Sturdy Lumber" },
@@ -40,6 +47,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 12,
         title: { ko: "호객꾼", en: "Catch" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/77/Biting_Barker_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -47,6 +55,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 16,
         title: { ko: "양아치", en: "Punk" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/51/Punkling_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -54,6 +63,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 20,
         title: { ko: "싸움꾼", en: "Brawler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1c/Hands_Thrower_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -61,6 +71,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 24,
         title: { ko: "컬러 갱", en: "Color Gang" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/41/Color_Gangsman_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -68,6 +79,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 28,
         title: { ko: "트라이벌", en: "Tribal" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6d/Tribesman_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -75,6 +87,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 32,
         title: { ko: "총알받이", en: "Bullet" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3f/Assassin_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -82,6 +95,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 36,
         title: { ko: "젊은 야쿠자", en: "Young Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6b/Newbie_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -89,6 +103,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 42,
         title: { ko: "난폭한 직공", en: "Rough Craftsman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/71/Demolitioneer_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -96,6 +111,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 46,
         title: { ko: "소매치기", en: "Pickpocket" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b7/Pro_Pickpocket_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -103,6 +119,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 50,
         title: { ko: "중국 마피아", en: "Chinese Mafia" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/83/Chinese_Mafioso_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -110,6 +127,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 53,
         title: { ko: "권법가", en: "Kung Fu Fighter" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c5/Kung_Fu_Disciple_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -117,6 +135,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 57,
         title: { ko: "난폭한 셰프", en: "Rough Chef" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a0/Pressure_Cooker_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -124,6 +143,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 60,
         title: { ko: "몰락한 저글러", en: "Has-been Juggler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/07/Shruggler_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -131,6 +151,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 64,
         title: { ko: "묻지마 살인마", en: "Random Killer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b9/Slasher_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -138,6 +159,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 69,
         title: { ko: "돌팔이 의사", en: "Quack Doctor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/59/Quackpot_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -145,6 +167,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 72,
         title: { ko: "장난 침술사", en: "Prank Acupuncturist" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/fe/Sneak-a-tack_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -152,6 +175,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 76,
         title: { ko: "먹튀남", en: "Dine-and-Dasher" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c0/Dine-and-Dasher_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -159,6 +183,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 80,
         title: { ko: "견습 히트맨", en: "Apprentice Hitman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e4/Hitjourneyman_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -166,6 +191,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 84,
         title: { ko: "밀리터리 오타쿠", en: "Military Otaku" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/93/Military_Buffed_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -173,6 +199,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 88,
         title: { ko: "폭주족", en: "Biker Gang" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/07/Biker_Cavalier_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -180,6 +207,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 91,
         title: { ko: "불량 외국인", en: "Foreign Thug" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d2/Stern_Stranger_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -187,6 +215,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 95,
         title: { ko: "해커", en: "Hacker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/ca/Technomancer_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -194,6 +223,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 98,
         title: { ko: "수상한 판매상", en: "Shady Dealer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/67/Smugglebug_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -201,6 +231,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 101,
         title: { ko: "자해공갈범", en: "Crash Faker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/95/False_Alarmist_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -208,6 +239,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 104,
         title: { ko: "자칭 래퍼", en: "Wannabe Rapper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5f/Poser_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -215,6 +247,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 108,
         title: { ko: "포주", en: "Pimp" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/2b/Pimpmaster_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -222,6 +255,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 112,
         title: { ko: "파열마", en: "Burst Demon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6b/Bomb_Bug_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -229,6 +263,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 115,
         title: { ko: "탈옥수", en: "Escapee" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4b/Escapist_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -236,6 +271,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 118,
         title: { ko: "퇴물 복서", en: "Washed-up Boxer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/ed/Unboxer_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -243,6 +279,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 122,
         title: { ko: "공허한 신도", en: "Hollow Believer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9c/Hollow_Follower_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -250,6 +287,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 126,
         title: { ko: "영능력자", en: "Spirit Medium" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3c/Spirited_Medium_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -257,6 +295,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 129,
         title: { ko: "악덕 경비원", en: "Crooked Guard" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/fb/Pocketing_Watchman_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -264,6 +303,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 133,
         title: { ko: "야구광", en: "Baseball Nut" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8d/Baseball_Diehard_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -271,6 +311,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 136,
         title: { ko: "난폭한 투수", en: "Rough Pitcher" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/87/Shade_Thrower_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -278,6 +319,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 139,
         title: { ko: "위험한 청소부", en: "Dangerous Cleaner" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e5/Purger_of_Filth_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -285,6 +327,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 143,
         title: { ko: "불법 스트리머", en: "Illegal Streamer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/ae/Twitchy_Streamer_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -292,6 +335,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 147,
         title: { ko: "폭주 스케이터", en: "Reckless Skater" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1c/Skaterboi_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -299,6 +343,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 150,
         title: { ko: "네오 히피", en: "Neo Hippie" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/da/New_Aged_Hippie_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -306,6 +351,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 153,
         title: { ko: "샌드위치 맨", en: "Sandwich Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/fb/Shillboard_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -313,6 +359,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 157,
         title: { ko: "어반 머슬", en: "Urban Muscle" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d6/Beefcake_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -320,6 +367,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 160,
         title: { ko: "리젠트 맨", en: "Pompadour Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d0/Pompadork_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -327,6 +375,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 164,
         title: { ko: "로션 범벅", en: "Lotion-Soaked" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/72/City_Slicker_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -334,6 +383,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 167,
         title: { ko: "방황하는 환자", en: "Wandering Patient" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/cb/Imp_Patient_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -341,6 +391,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 170,
         title: { ko: "박쥐 남자", en: "Bat Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/22/Turncoat_Titillator_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -348,6 +399,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 173,
         title: { ko: "차량털이", en: "Car Burglar" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/be/Automoburglar_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -355,6 +407,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 176,
         title: { ko: "지하 감옥의 문지기", en: "Dungeon Keeper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f6/Crabby_Sentinel_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -362,6 +415,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 179,
         title: { ko: "돌격 슬러거", en: "Charging Slugger" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/16/Slugger_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -369,6 +423,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 182,
         title: { ko: "기계장치 영감", en: "Gadget Geezer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/ec/Eccentricker_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -376,6 +431,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 185,
         title: { ko: "춤추는 파리피", en: "Dancing Partygoer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/49/Dancin%27_Fool_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -383,6 +439,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 188,
         title: { ko: "방황하는 오타쿠", en: "Wandering Otaku" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/cc/Restless_Otaku_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -390,6 +447,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 191,
         title: { ko: "밥 커터", en: "Bob Cutter" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/40/Bobcutter_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -397,6 +455,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 194,
         title: { ko: "무기 매니아", en: "Weapon Maniac" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8e/Weaponlogist_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -404,6 +463,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 197,
         title: { ko: "밀렵꾼", en: "Poacher" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a3/Poacher_Egghead_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -411,6 +471,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 203,
         title: { ko: "난동 포크", en: "Rampage Fork" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f3/Ramblin%27_Man_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -418,6 +479,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 206,
         title: { ko: "주술사", en: "Shaman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/ff/Shaman_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "양질의 목재, 고품질 목재", en: "Fine Lumber, High-Quality Lumber" },
@@ -425,6 +487,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 223,
         title: { ko: "난바", en: "Nanba" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/89/Nanba_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "없음", en: "None" },
@@ -432,6 +495,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 240,
         title: { ko: "빨간 스지몬", en: "Red Sujimon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3d/Red_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 파열병, 점화 / 약점: 뇌", en: "Skill: Burst Bottle, Ignite / Weak: Lightning" },
         reward: { ko: "거친 각재, 두꺼운 천", en: "Rough Timber, Thick Cloth" },
@@ -439,6 +503,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 241,
         title: { ko: "파란 스지몬", en: "Blue Sujimon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/81/Blue_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "철 빗자루, 깨끗한 천", en: "Iron Broom, Clean Cloth" },
@@ -446,6 +511,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 242,
         title: { ko: "초록 스지몬", en: "Green Sujimon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d9/Green_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "유도봉, 양질의 유리판", en: "Traffic Baton, Fine Glass Plate" },
@@ -458,6 +524,8 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 2,
         title: { ko: "트집 샐러리맨", en: "Nitpicky Salaryman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/10/Capitalist_Punisher_Icon.png/revision/latest",
+        images: ["https://static.wikia.nocookie.net/yakuza/images/5/59/002_capitalist_punisher.png/revision/latest/scale-to-width-down/1200"],
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: 초보 킥, 동료 부르기 / 약점: 물리, 총, 화, 뇌", en: "Skill: Amateur Kick, Call Allies / Weak: Phys, Gun, Fire, Lightning" },
         reward: { ko: "낡은 천 조각, 두꺼운 천, 깨끗한 천", en: "Tattered Cloth, Thick Cloth, Clean Cloth" },
@@ -465,6 +533,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 5,
         title: { ko: "주광 전사", en: "Drunken Warrior" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c0/Beerserker_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: 술 냄새 입김 / 약점: 물리, 총, 빙, 뇌", en: "Skill: Boozy Breath / Weak: Phys, Gun, Ice, Lightning" },
         reward: { ko: "낡은 천 조각, 두꺼운 천, 깨끗한 천", en: "Tattered Cloth, Thick Cloth, Clean Cloth" },
@@ -472,6 +541,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 9,
         title: { ko: "난폭 노숙자", en: "Rough Homeless" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/80/Hungry_Hungry_Homeless_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: 구걸, 야초의 은혜 / 약점: 물리, 도검, 총, 화, 빙, 뇌", en: "Skill: Begging, Wildgrass Bounty / Weak: Phys, Blade, Gun, Fire, Ice, Lightning" },
         reward: { ko: "나뭇조각, 튼튼한 목재, 양질의 목재", en: "Wood Chip, Sturdy Lumber, Fine Lumber" },
@@ -479,6 +549,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 13,
         title: { ko: "중견 호스트", en: "Mid-tier Host" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/17/Hostile_Host_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -486,6 +557,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 17,
         title: { ko: "개양아치", en: "Big Punk" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c0/Steamed_Punk_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -493,6 +565,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 21,
         title: { ko: "그래플러", en: "Grappler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8e/Wrestlemaniac_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -500,6 +573,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 25,
         title: { ko: "미친 갱", en: "Mad Gang" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9a/Mad_Gangsman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -507,6 +581,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 29,
         title: { ko: "트라이벌 가드", en: "Tribal Guard" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/43/Tribesguard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -514,6 +589,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 33,
         title: { ko: "광인", en: "Madman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c2/Primal_Psychopath_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -521,6 +597,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 37,
         title: { ko: "건달 야쿠자", en: "Thug Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/95/Ornery_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -528,6 +605,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 43,
         title: { ko: "난동 해머", en: "Rampage Hammer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/2a/Clobberjack_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -535,6 +613,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 47,
         title: { ko: "도둑", en: "Thief" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/87/Break-and-Entryman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -542,6 +621,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 54,
         title: { ko: "쿵푸 마스터", en: "Kung Fu Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c3/Kung_Fu_Master_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -549,6 +629,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 58,
         title: { ko: "어둠의 요리사", en: "Dark Chef" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9e/Mystery_Meatsmith_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -556,6 +637,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 61,
         title: { ko: "나이프 저글러", en: "Knife Juggler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/10/Thuggler_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -563,6 +645,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 65,
         title: { ko: "저림 마인", en: "Numbing Demon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6a/Paralyticist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -570,6 +653,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 70,
         title: { ko: "수상한 해부의", en: "Suspicious Anatomist" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/13/Heartless_Surgeon_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -577,6 +661,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 73,
         title: { ko: "침광", en: "Needle Maniac" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e6/Pierceologist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -584,6 +669,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 77,
         title: { ko: "푸드 파이터", en: "Food Fighter" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/07/Snack-and-Sprinter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -591,6 +677,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 81,
         title: { ko: "서바이벌 매니아", en: "Survival Maniac" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/81/Urban_Ranger_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -598,6 +685,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 85,
         title: { ko: "고독한 아미", en: "Lonely Army" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/39/One-Man_Army_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -605,6 +693,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 89,
         title: { ko: "선봉대장", en: "Vanguard Captain" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/09/Biker_Vanguard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -612,6 +701,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 92,
         title: { ko: "빅 도그", en: "Big Dog" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5e/Big_Dog_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -619,6 +709,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 96,
         title: { ko: "위저드", en: "Wizard" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b5/Black_Hat_Wizard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -626,6 +717,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 99,
         title: { ko: "운반책", en: "Mule" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b6/The_Mule_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -633,6 +725,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 102,
         title: { ko: "불법 도박장", en: "Bookie" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/82/Phony_Bookie_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -640,6 +733,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 105,
         title: { ko: "프리스타일 맨", en: "Freestyle Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7f/Freestylist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -647,6 +741,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 109,
         title: { ko: "악덕 스카우터", en: "Sleazy Scout" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/78/Roguish_Recruiter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -654,6 +749,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 113,
         title: { ko: "빙결마", en: "Freeze Demon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f3/Iceonist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -661,6 +757,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 116,
         title: { ko: "흉악범", en: "Felon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/0b/Feral_Felon_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -668,6 +765,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 119,
         title: { ko: "헤드 가드", en: "Head Guard" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/85/Headguardian_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -675,6 +773,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 123,
         title: { ko: "수상한 대사", en: "Suspicious Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/09/Shady_Minister_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -682,6 +781,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 127,
         title: { ko: "초능력자", en: "Esper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a7/Blind_Seer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -689,6 +789,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 130,
         title: { ko: "가짜 경찰", en: "Fake Cop" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/fe/Officer_of_the_Lawless_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -696,6 +797,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 134,
         title: { ko: "폭도", en: "Mob" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/94/Rabblerouser_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -703,6 +805,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 137,
         title: { ko: "난폭한 포수", en: "Rough Catcher" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a4/Hands_Catcher_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -710,6 +813,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 140,
         title: { ko: "난동 방역", en: "Rampage Exterminator" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/2d/Pest_Control_Freak_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -717,6 +821,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 144,
         title: { ko: "파파라치", en: "Paparazzi" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/72/Popup_Paparazzo_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -724,6 +829,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 148,
         title: { ko: "트릭 마스터", en: "Trick Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/da/Trickmaster_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -731,6 +837,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 151,
         title: { ko: "피스맨", en: "Peace Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6b/Peacemaker_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -738,6 +845,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 154,
         title: { ko: "강철의 샌드위치 맨", en: "Steel Sandwich Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7b/Killboard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -745,6 +853,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 158,
         title: { ko: "머슬 아머", en: "Muscle Armor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/37/Gym_Rat_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -752,6 +861,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 161,
         title: { ko: "로커빌리언", en: "Rockabillian" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f4/Rockabillian_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -759,6 +869,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 165,
         title: { ko: "로션 사용자", en: "Lotion User" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3f/Grease_Monk_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -766,6 +877,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 168,
         title: { ko: "팬데믹 맨", en: "Pandemic Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1b/Pandemicist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -773,6 +885,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 171,
         title: { ko: "노출광", en: "Flasher" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/ae/Flash_Mobber_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -780,6 +893,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 174,
         title: { ko: "금고털이", en: "Safe Cracker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a3/Safe_Crackpot_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -787,6 +901,8 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 177,
         title: { ko: "부두의 문지기", en: "Wharf Keeper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/19/Pier_Reviewer_Icon.png/revision/latest",
+        images: ["https://static.wikia.nocookie.net/yakuza/images/e/e6/Sujidex_description_of_Pier_Reviewer.png/revision/latest/scale-to-width-down/1200"],
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -794,6 +910,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 180,
         title: { ko: "킬러 스윙", en: "Killer Swing" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/2f/Battering_Batter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -801,6 +918,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 183,
         title: { ko: "발명 신선", en: "Inventor Sage" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/96/Tinkersman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -808,6 +926,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 186,
         title: { ko: "매드 스텝", en: "Mad Step" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5b/Beat_Dropper_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -815,6 +934,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 189,
         title: { ko: "매지컬 백", en: "Magical Bag" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/06/Bag_Toter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -822,6 +942,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 192,
         title: { ko: "빅 시저스", en: "Big Scissors" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e4/Fashion_Policer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -829,6 +950,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 195,
         title: { ko: "수수께끼 무기상", en: "Mystery Arms Dealer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/39/Death_Merchant_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -836,6 +958,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 198,
         title: { ko: "맨몸 잠수 대장", en: "Free Dive Captain" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f4/Spearheader_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -843,6 +966,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 200,
         title: { ko: "쓰레기봉투 남자", en: "Trash Bag Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9d/Pseudotrash_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -850,6 +974,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 204,
         title: { ko: "기타 브레이크", en: "Guitar Break" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3b/Guitarsbane_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -857,6 +982,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 207,
         title: { ko: "죽음의 다섯치 못", en: "Death Five-Inch Nail" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5e/Bedeviler_Icon.png/revision/latest",
         location: { ko: "랭크 ★★☆☆☆☆", en: "Rank ★★☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "고품질 목재, 최고품질 목재", en: "High-Quality Lumber, Top-Quality Lumber" },
@@ -869,6 +995,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 3,
         title: { ko: "사기꾼 실업가", en: "Phony Businessman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/da/Dotcombatant_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: 초보 킥, 동료 부르기 / 약점: 뇌", en: "Skill: Amateur Kick, Call Allies / Weak: Lightning" },
         reward: { ko: "낡은 천 조각, 깨끗한 천, 고급 천", en: "Tattered Cloth, Clean Cloth, Quality Cloth" },
@@ -876,6 +1003,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 6,
         title: { ko: "주광 기사", en: "Drunken Knight" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d8/Knight_of_the_Cask_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: 술 냄새 입김, 만취 펌프 / 약점: 물리, 총, 빙, 뇌", en: "Skill: Boozy Breath, Drunken Pump / Weak: Phys, Gun, Ice, Lightning" },
         reward: { ko: "낡은 천 조각, 두꺼운 천, 깨끗한 천", en: "Tattered Cloth, Thick Cloth, Clean Cloth" },
@@ -883,6 +1011,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 10,
         title: { ko: "노숙자 킹", en: "Homeless King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9a/Arch-Vagrant_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: 구걸, 잠들면 극락 / 약점: 물리, 도검, 총, 화, 빙, 뇌", en: "Skill: Begging, Sleep is Paradise / Weak: Phys, Blade, Gun, Fire, Ice, Lightning" },
         reward: { ko: "나뭇조각, 양질의 목재, 고품질 목재", en: "Wood Chip, Fine Lumber, High-Quality Lumber" },
@@ -890,6 +1019,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 14,
         title: { ko: "베테랑 호스트", en: "Veteran Host" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/ab/Host_with_the_Most_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -897,6 +1027,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 18,
         title: { ko: "양아치 킹", en: "Punk King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4b/Overpunk_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -904,6 +1035,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 22,
         title: { ko: "복면 레슬러", en: "Masked Wrestler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d5/Masque_Raider_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -911,6 +1043,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 26,
         title: { ko: "갱 에이스", en: "Gang Ace" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/77/Elite_Gangsman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -918,6 +1051,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 30,
         title: { ko: "트라이벌 챔프", en: "Tribal Champ" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/35/Tribesbrute_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -925,6 +1059,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 34,
         title: { ko: "한방맨", en: "One-Hit Wonder" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/73/One-Hitman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -932,6 +1067,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 38,
         title: { ko: "인텔리 야쿠자", en: "Intellectual Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/51/Eloquent_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -939,6 +1075,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 41,
         title: { ko: "기타 야쿠자", en: "Other Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e6/Some_Other_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -946,6 +1083,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 44,
         title: { ko: "부수는 자", en: "Wrecker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/2b/Sledgeharmer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -953,6 +1091,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 48,
         title: { ko: "주머니털이", en: "Cutpurse" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8f/Cutpurse_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -960,6 +1099,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 51,
         title: { ko: "중국 마피아 간부", en: "Chinese Mafia Exec" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/aa/Chinese_Mafia_Officer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -967,6 +1107,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 55,
         title: { ko: "기공사", en: "Qigong Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b5/Qigong_Master_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -974,6 +1115,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 59,
         title: { ko: "마스터 셰프", en: "Master Chef" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4a/Ironclad_Chef_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -981,6 +1123,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 62,
         title: { ko: "불꽃의 저글러", en: "Flame Juggler" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f2/Druggler_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -988,6 +1131,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 66,
         title: { ko: "검은 칼날", en: "Black Blade" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e7/Black_Blade_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -995,6 +1139,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 71,
         title: { ko: "닥터 블랙", en: "Doctor Black" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/03/Dr._Black_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1002,6 +1147,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 74,
         title: { ko: "매드 케이시", en: "Mad Casey" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/77/Mad_Casey_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1009,6 +1155,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 78,
         title: { ko: "기름 곱빼기", en: "Extra Greasy" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9d/Chomp-and-Charger_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1016,6 +1163,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 82,
         title: { ko: "소문의 히트맨", en: "Rumored Hitman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/31/Notorious_V.I.P._Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1023,6 +1171,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 86,
         title: { ko: "찢어죽이는 코만도", en: "Ripping Commando" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7f/Master_and_Commando_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1030,6 +1179,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 90,
         title: { ko: "폭주족 총장", en: "Biker Gang Boss" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/ef/Biker_Boss_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1037,6 +1187,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 93,
         title: { ko: "바운서", en: "Bouncer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/47/Bouncer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1044,6 +1195,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 97,
         title: { ko: "이름 없음", en: "Nameless" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/63/Nameless_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1051,6 +1203,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 100,
         title: { ko: "스카페이스", en: "Scarface" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e3/Scarredface_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1058,6 +1211,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 103,
         title: { ko: "도박 마스터", en: "Gambling Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/da/Master_Gambler_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1065,6 +1219,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 106,
         title: { ko: "디스 래퍼", en: "Diss Rapper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/ec/Diss_Tracker_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1072,6 +1227,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 110,
         title: { ko: "수금꾼", en: "Collector" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/15/Shakedowner_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1079,6 +1235,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 114,
         title: { ko: "폭탄마", en: "Bomb Demon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4a/Bombardier_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1086,6 +1243,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 117,
         title: { ko: "사이코 킬러", en: "Psycho Killer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/66/Twisted_Mind_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1093,6 +1251,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 120,
         title: { ko: "전 프로 복서", en: "Ex-Pro Boxer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/16/Prizedfighter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1100,6 +1259,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 124,
         title: { ko: "수상한 교주", en: "Suspicious Cult Leader" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a7/Fishy_Founder_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1107,6 +1267,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 128,
         title: { ko: "미스터 식스", en: "Mister Six" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/33/Mister_Six_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1114,6 +1275,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 131,
         title: { ko: "가짜 경비원", en: "Fake Security" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c3/False_Security_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1121,6 +1283,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 135,
         title: { ko: "복면 훌리건", en: "Masked Hooligan" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/09/Massacre_Mascot_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1128,6 +1291,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 138,
         title: { ko: "난폭한 타자", en: "Rough Batter" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/02/Assaulting_Batter_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1135,6 +1299,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 141,
         title: { ko: "분노의 작업원", en: "Angry Worker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/63/Broke_Breakman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1142,6 +1307,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 145,
         title: { ko: "도촬마", en: "Voyeur" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/86/Voyeurchin_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1149,6 +1315,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 149,
         title: { ko: "메탈 휠", en: "Metal Wheel" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/cf/The_Wheelman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1156,6 +1323,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 152,
         title: { ko: "히피 킹", en: "Hippie King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/21/Bohemiarch_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1163,6 +1331,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 155,
         title: { ko: "고대의 샌드위치 맨", en: "Ancient Sandwich Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/89/Invulnera-Billboard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1170,6 +1339,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 156,
         title: { ko: "블리치 재팬", en: "Bleach Japan" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/48/Japan_Bleacher_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1177,6 +1347,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 159,
         title: { ko: "미스터 머슬", en: "Mister Muscle" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/78/Brawnwarden_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1184,6 +1355,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 162,
         title: { ko: "질풍의 조니", en: "Gale Johnny" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/76/Johnny_Gale_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1191,6 +1363,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 166,
         title: { ko: "킹 헬스", en: "King Health" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/62/Pornogra-Pharoah_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1198,6 +1371,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 169,
         title: { ko: "저주받은 피험자", en: "Cursed Subject" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7d/The_Outlier_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1205,6 +1379,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 172,
         title: { ko: "사건 영감", en: "Incident Geezer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5e/Crotchety_Geezer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1212,6 +1387,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 175,
         title: { ko: "언더테이커", en: "Undertaker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/90/Undertaker_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1219,6 +1395,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 178,
         title: { ko: "수수께끼의 해적", en: "Mystery Pirate" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/81/Captain_Cruncher_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: 없음 / 약점: -", en: "Skill: None / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1226,6 +1403,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 181,
         title: { ko: "데스 슬러거", en: "Death Slugger" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/bf/Grand_Slammer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1233,6 +1411,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 184,
         title: { ko: "마성의 에디슨", en: "Demonic Edison" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/73/Edison_of_Anarchy_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1240,6 +1419,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 187,
         title: { ko: "디스코 황제", en: "Disco Emperor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d0/Emperor_of_Funk_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1247,6 +1427,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 190,
         title: { ko: "오타나이트", en: "Otanight" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/eb/Otaku-at-Arms_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1254,6 +1435,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 193,
         title: { ko: "분재 도사", en: "Bonsai Master" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/bc/Bonsaientist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1261,6 +1443,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 196,
         title: { ko: "탄식의 갑옷 무사", en: "Wailing Armored Warrior" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/25/Forsaken_Samurai_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1268,6 +1451,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 199,
         title: { ko: "섀도우 다이버", en: "Shadow Diver" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/41/The_Shadow_Diver_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1275,6 +1459,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 201,
         title: { ko: "썩은 쓰레기봉투 남자", en: "Rotten Trash Bag Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1a/Toxic_Wastoid_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1282,6 +1467,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 205,
         title: { ko: "블랙 메탈리스트", en: "Black Metalist" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3b/Metal_Headsman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1289,6 +1475,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 208,
         title: { ko: "네크로맨서", en: "Necromancer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7f/High_Necromancer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★☆☆☆", en: "Rank ★★★☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "최고품질 목재, 최고품질 목재", en: "Top-Quality Lumber, Top-Quality Lumber" },
@@ -1301,6 +1488,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 7,
         title: { ko: "연회의 신", en: "Feast God" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/83/Urbane_Legend_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: 술 냄새 입김, 만취 펌프, 선 채로 수면 / 약점: 빙, 뇌", en: "Skill: Boozy Breath, Drunken Pump, Sleep Standing / Weak: Ice, Lightning" },
         reward: { ko: "낡은 천 조각, 고급 천", en: "Tattered Cloth, Quality Cloth" },
@@ -1308,6 +1496,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 11,
         title: { ko: "외톨이 노숙자", en: "Stray Homeless" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5f/Invested_Vagabond_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: 구걸, 잠들면 극락, 골판지 벽 / 약점: 없음", en: "Skill: Begging, Sleep is Paradise, Cardboard Wall / Weak: None" },
         reward: { ko: "고품질 목재, 최고품질 목재", en: "High-Quality Lumber, Top-Quality Lumber" },
@@ -1315,6 +1504,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 15,
         title: { ko: "No.1 호스트", en: "No.1 Host" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e6/Heavenly_Host_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1322,6 +1512,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 19,
         title: { ko: "모히칸 황제", en: "Mohican Emperor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9a/Mohawk_Emperor_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1329,6 +1520,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 23,
         title: { ko: "더 챔피언", en: "The Champion" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/0e/Ultimate_Champion_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1336,6 +1528,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 27,
         title: { ko: "갱 보스", en: "Gang Boss" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/92/Boss_Gangsman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1343,6 +1536,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 31,
         title: { ko: "트라이벌 스타", en: "Tribal Star" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8f/Tribeschief_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1350,6 +1544,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 35,
         title: { ko: "주먹꾼", en: "Slugger" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b7/The_Fist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1357,6 +1552,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 39,
         title: { ko: "노련한 야쿠자", en: "Seasoned Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/91/Grizzled_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1364,6 +1560,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 45,
         title: { ko: "악마의 철퇴", en: "Devil's Hammer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/a2/Batterer_out_of_Hell_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1371,6 +1568,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 49,
         title: { ko: "천하의 대도", en: "Master Burglar" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d7/King_of_Thieves_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1378,6 +1576,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 52,
         title: { ko: "중국 마피아 보스", en: "Chinese Mafia Boss" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/03/Chinese_Mafia_Boss_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1385,6 +1584,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 56,
         title: { ko: "드래곤", en: "Dragon" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/58/Dragon_King_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1392,6 +1592,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 63,
         title: { ko: "데스 클라운", en: "Death Clown" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/16/Juggle-O_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1399,6 +1600,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 67,
         title: { ko: "해체 전문가", en: "Disposer" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1a/Dismemberer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1406,6 +1608,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 75,
         title: { ko: "하리 레이저", en: "Hari Razor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3c/Weltraiser_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1413,6 +1616,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 79,
         title: { ko: "고기의 대왕", en: "Meat King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e8/Noblesse_Obesity_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1420,6 +1624,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 83,
         title: { ko: "길리맨", en: "Ghillie Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8e/Ghillie_Man_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1427,6 +1632,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 87,
         title: { ko: "아미네이터", en: "Arminator" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/8a/Arminator_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1434,6 +1640,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 94,
         title: { ko: "페이백", en: "Payback" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/bf/Big_Payback_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1441,6 +1648,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 107,
         title: { ko: "킹 조", en: "King Joe" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c0/King_Joe_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1448,6 +1656,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 111,
         title: { ko: "사채 사장", en: "Loan Shark Boss" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/37/Maneating_Loan_Shark_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1455,6 +1664,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 121,
         title: { ko: "데스 너클", en: "Death Knuckle" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/56/The_Death_Knuckle_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1462,6 +1672,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 132,
         title: { ko: "CHIN-ATSU 군", en: "CHIN-ATSU-kun" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/a/ac/Subjugation-kun_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1469,6 +1680,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 142,
         title: { ko: "다크 스위퍼", en: "Dark Sweeper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d2/The_Dark_Sweeper_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1476,6 +1688,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 146,
         title: { ko: "매드 스토커", en: "Mad Stalker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f1/Creeper_Peeper_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1483,6 +1696,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 163,
         title: { ko: "트위스트 스타", en: "Twist Star" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9b/The_Twister_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1490,6 +1704,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 202,
         title: { ko: "해피 백", en: "Happy Bag" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/cc/Gifted_Gatherer_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1497,6 +1712,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 215,
         title: { ko: "정", en: "Zheng" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/41/Zheng_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "강화 합금철", en: "Reinforced Alloy" },
@@ -1504,6 +1720,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 216,
         title: { ko: "도츠카 야마토", en: "Totsuka Yamato" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/03/Yamato_Totsuka_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "건강 링, 초합금강", en: "Health Ring, Super Alloy Steel" },
@@ -1511,6 +1728,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 217,
         title: { ko: "현장 감독", en: "Site Foreman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/46/Foreman_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "고급 천", en: "Quality Cloth" },
@@ -1518,6 +1736,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 224,
         title: { ko: "케이긴한텐 지배인", en: "Keikinhanten Manager" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/61/Qing_Jin_Manager_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "텅스텐", en: "Tungsten" },
@@ -1525,6 +1744,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 226,
         title: { ko: "마토바", en: "Matoba" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6a/Matoba_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "양지의 열쇠, 초합금강", en: "Sunlit Key, Super Alloy Steel" },
@@ -1532,6 +1752,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 233,
         title: { ko: "수염 면 남자", en: "Bearded Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3e/Piss_Wizard_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "두꺼운 가죽, 결이 고운 가죽", en: "Thick Hide, Fine Hide" },
@@ -1539,6 +1760,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 234,
         title: { ko: "감독", en: "Director" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/2/21/Machivellian_Manager_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "스포츠 인솔, 튼튼한 철", en: "Sports Insole, Sturdy Iron" },
@@ -1546,6 +1768,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 236,
         title: { ko: "마조 아저씨", en: "Maso Uncle" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/5f/Mr._Masochist_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: 없음", en: "Skill: - / Weak: None" },
         reward: { ko: "없음", en: "None" },
@@ -1553,6 +1776,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 237,
         title: { ko: "이 류정", en: "Lee Ryu-jong" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c7/Il_Yu-Jin_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "투명한 유리판, 양질의 유리판", en: "Clear Glass Plate, Fine Glass Plate" },
@@ -1560,6 +1784,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 238,
         title: { ko: "츠즈키", en: "Tsuzuki" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/87/Tsuzuki_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "재앙의 점주사위, 탁한 알루미늄", en: "Calamity Die, Murky Aluminum" },
@@ -1567,6 +1792,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 239,
         title: { ko: "지에이 씨", en: "Jiei-san" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/dd/Jiei-san_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: 없음", en: "Skill: - / Weak: None" },
         reward: { ko: "고어 부츠", en: "Gore Boots" },
@@ -1574,6 +1800,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 244,
         title: { ko: "고미", en: "Gomi" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/7/7d/Gomi_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "작업복, 깨끗한 천", en: "Work Clothes, Clean Cloth" },
@@ -1581,6 +1808,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 246,
         title: { ko: "토사노야마", en: "Tosanoyama" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b8/Tosanoyama_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "힘의 링, 더러운 철", en: "Power Ring, Dirty Iron" },
@@ -1588,6 +1816,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 247,
         title: { ko: "스나이퍼 같은 남자", en: "Sniper-Looking Man" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/02/Guttersniper_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "스니커즈, 강화 합금철", en: "Sneakers, Reinforced Alloy" },
@@ -1595,6 +1824,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 248,
         title: { ko: "학생복의 남자", en: "Man in School Uniform" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6b/Locker_Warlock_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: 없음", en: "Skill: - / Weak: None" },
         reward: { ko: "포인티드 토", en: "Pointed Toe Shoes" },
@@ -1602,6 +1832,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 249,
         title: { ko: "히로오", en: "Hiroo" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/ed/Hiro_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: 없음 (녹색 굵은 글자)", en: "Skill: - / Weak: None (green bold)" },
         reward: { ko: "면장갑, 불순물 많은 납", en: "Cotton Gloves, Impure Lead" },
@@ -1609,6 +1840,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 250,
         title: { ko: "엘리트 샐러리맨", en: "Elite Salaryman" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/0/0b/Middling_Manager_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "고풍스러운 편지, 고급 천", en: "Old-Fashioned Letter, Quality Cloth" },
@@ -1616,6 +1848,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 251,
         title: { ko: "엘리트 증권맨", en: "Elite Stockbroker" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9e/Traitorous_Trader_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★☆☆", en: "Rank ★★★★☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "두꺼운 천, 깨끗한 천", en: "Thick Cloth, Clean Cloth" },
@@ -1628,6 +1861,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 40,
         title: { ko: "상처투성이 야쿠자", en: "Scarred Yakuza" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4e/Scarred_Yakuza_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1635,6 +1869,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 68,
         title: { ko: "잭 더 리퍼", en: "Jack the Ripper" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/4/4d/Jack_the_Ripper_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "-", en: "-" },
@@ -1642,6 +1877,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 125,
         title: { ko: "수상한 산 신", en: "Suspicious Living God" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/57/Munanugget_Messiah_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: 없음", en: "Skill: - / Weak: None" },
         reward: { ko: "-", en: "-" },
@@ -1649,6 +1885,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 209,
         title: { ko: "파워 셔블", en: "Power Shovel" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3c/Excavator_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "쇠지렛대, 강화 방호 유리", en: "Crowbar, Reinforced Glass" },
@@ -1656,6 +1893,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 211,
         title: { ko: "샤를로트", en: "Charlotte" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d2/Charlotte_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "무신의 요석", en: "Warrior God's Keystone" },
@@ -1663,6 +1901,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 212,
         title: { ko: "청소왕", en: "Cleaning King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/1/1a/Sojimaru_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "제정신 배지", en: "Sanity Badge" },
@@ -1670,6 +1909,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 218,
         title: { ko: "타카베 마모루", en: "Takabe Mamoru" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/88/Mamoru_Takabe_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "심플 이어링, 최고품질 목재", en: "Simple Earring, Top-Quality Lumber" },
@@ -1677,6 +1917,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 225,
         title: { ko: "식인의 야수왕", en: "Man-Eating Beast King" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/d2/Charlotte_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "맹호 벨트, 최고급 가죽", en: "Tiger Belt, Top-Grade Leather" },
@@ -1684,6 +1925,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 230,
         title: { ko: "미러 페이스", en: "Mirror Face" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/9/9b/Mirror_Face_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "강화 방호 유리", en: "Reinforced Glass" },
@@ -1691,6 +1933,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 235,
         title: { ko: "스스무 짱", en: "Susumu-chan" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/80/Susumu-chan_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "더러운 철, 튼튼한 철", en: "Dirty Iron, Sturdy Iron" },
@@ -1698,6 +1941,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 243,
         title: { ko: "가짜 오노 미치오", en: "Fake Ono Michio" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/6/6f/Fauxno_Michio_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★☆", en: "Rank ★★★★★☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "꿈빛 색종이, 튼튼한 철", en: "Dream-Colored Paper, Sturdy Iron" },
@@ -1710,6 +1954,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 210,
         title: { ko: "카트린", en: "Catherine" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/5/58/Catherine_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "각성의 미산가", en: "Awakening Bracelet" },
@@ -1717,6 +1962,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 213,
         title: { ko: "세이소 쇼군", en: "Seiso Shogun" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/3a/Seiso_Shogun_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "없음", en: "None" },
@@ -1724,6 +1970,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 214,
         title: { ko: "사와시로 죠", en: "Sawashiro Jo" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f6/Jo_Sawashiro_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "고급 벨트", en: "Luxury Belt" },
@@ -1731,6 +1978,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 219,
         title: { ko: "한 준기", en: "Han Jun-gi" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/f/f0/Joon-gi_Han_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "지팡이 검, 최고급 가죽", en: "Cane Sword, Top-Grade Leather" },
@@ -1738,6 +1986,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 220,
         title: { ko: "마부치 마사시", en: "Mabuchi Masashi" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e4/Akira_Mabuchi_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "사슬갑옷, 강화 방호 유리", en: "Chain Mail, Reinforced Glass" },
@@ -1745,6 +1994,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 221,
         title: { ko: "철구 크레인차", en: "Wrecking Ball Crane" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/ba/Wrecking_Ball_Crane_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "작업용 장갑, 초합금강", en: "Work Gloves, Super Alloy Steel" },
@@ -1752,6 +2002,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 222,
         title: { ko: "이시오다 레이지", en: "Ishioda Reiji" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/d/dd/Reiji_Ishioda_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "최고품질 목재, 텅스텐", en: "Top-Quality Lumber, Tungsten" },
@@ -1759,6 +2010,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 227,
         title: { ko: "마지마 고로", en: "Majima Goro" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/bc/Goro_Majima_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "귀신의 손목밴드, 아사다 사탕 빈 깡통", en: "Demon God Wristband, Asada Candy Tin" },
@@ -1766,6 +2018,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 228,
         title: { ko: "사에지마 타이가", en: "Saejima Taiga" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b7/Taiga_Saejima_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "아사다 사탕 빈 깡통", en: "Asada Candy Tin" },
@@ -1773,6 +2026,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 229,
         title: { ko: "키류 카즈마", en: "Kiryu Kazuma" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/3/39/Kazuma_Kiryu_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "용의 사라시, 아사다 사탕 빈 깡통", en: "Dragon Sarashi, Asada Candy Tin" },
@@ -1780,6 +2034,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 231,
         title: { ko: "텐도 요스케", en: "Tendo Yosuke" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/8/81/Yosuke_Tendo_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "챔피언의 팔찌, 텅스텐", en: "Champion's Bracelet, Tungsten" },
@@ -1787,6 +2042,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 232,
         title: { ko: "아오키 료", en: "Aoki Ryo" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/c/c5/Ryo_Aoki_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "사신의 팔찌, 텅스텐", en: "Four Gods Bracelet, Tungsten" },
@@ -1794,6 +2050,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 245,
         title: { ko: "클라라가 조종하는 파워 셔블", en: "Clara-Operated Power Shovel" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/e/e0/Clara_and_her_Excavator_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "금강 사슬갑옷", en: "Diamond Chain Mail" },
@@ -1801,6 +2058,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       {
         number: 252,
         title: { ko: "스지몬 박사", en: "Sujimon Doctor" },
+        image: "https://static.wikia.nocookie.net/yakuza/images/b/b9/Sujimon_Sensei_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
         reward: { ko: "고순도 납, 단련된 강철", en: "Pure Lead, Honed Steel" },
