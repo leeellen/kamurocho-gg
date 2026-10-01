@@ -173,7 +173,7 @@ function MinigameCard({
                     <div className="font-mono text-[15px] leading-6 text-[var(--accent)]">{pz.moves.join(" → ")}</div>
                   )}
                   {pz.note && (
-                    <div className="text-[14px] leading-6 text-[var(--text-tertiary)]">{pick(pz.note, locale)}</div>
+                    <div className="whitespace-pre-line text-[14px] leading-6 text-[var(--text-tertiary)]">{pick(pz.note, locale)}</div>
                   )}
                   {[pz.image, ...(pz.images ?? [])].filter((src): src is string => Boolean(src)).map((src) => (
                     <a key={src} href={src} target="_blank" rel="noopener noreferrer" className="self-start">
