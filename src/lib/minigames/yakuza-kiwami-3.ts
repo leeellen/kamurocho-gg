@@ -221,16 +221,61 @@ export const yakuzaKiwami3Minigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "류큐가 — 공설시장 2층 / 카무로초 — 챔피언 거리 남동쪽", en: "2F of the public market (Downtown Ryukyu); southeast of Champion St. (Kamurocho)" },
       summary: {
-        ko: "단련 목록 조건은 대국 횟수(1·3·5국)와 외통수를 찾는 즈메쇼기 클리어 수(2·5·7개)이며, 승패는 상관없습니다.",
-        en: "The training rows count matches played (1/3/5) and tsume-shogi puzzles cleared (2/5/7) — the result of the match doesn't matter.",
+        ko: "순위전·시련 답파(試練踏破)·쓰메쇼기 세 모드가 있습니다. 단련 목록 조건은 대국 횟수(1·3·5국)와 쓰메쇼기 클리어 수(2·5·7개)이며, 승패는 상관없습니다.",
+        en: "Three modes — ranking matches, Trial (試練踏破) and tsume-shogi. The training rows count matches played (1/3/5) and tsume-shogi puzzles cleared (2/5/7); the result of the match doesn't matter.",
       },
       howTo: [
-        { ko: "승패는 목록에 영향이 없으므로 상대는 아무나 골라 대국 수만 채우면 됩니다. 지더라도 카운트됩니다.", en: "Wins and losses don't affect the training rows, so pick any opponent and just rack up matches — a loss still counts." },
-        { ko: "규칙을 모르면 정해진 국면에서 최선수를 찾는 문제 형식으로 감을 잡는 편이 실전보다 빠릅니다.", en: "If shogi is new, the set-position problems teach it faster than full games." },
+        { ko: "승패는 목록에 영향이 없으므로 상대는 아무나 골라 대국 수만 채우면 됩니다. 지더라도 카운트됩니다. 아래 시련 답파 其の一 수순이 대국을 가장 빨리 끝내는 방법입니다.", en: "Wins and losses don't affect the training rows, so pick any opponent and just rack up matches — a loss still counts. The Trial No. 1 line below is the quickest way to finish a match." },
+        { ko: "쓰메쇼기는 전 10문제로 1~5번은 1수, 6~10번은 3수 외통입니다. 첫 클리어 보상은 1~5번 500pt, 6~9번 1,000pt, 10번 1,500pt입니다.", en: "There are ten tsume-shogi problems: mate in one for 1–5, mate in three for 6–10. First clears pay 500 pts (1–5), 1,000 pts (6–9) and 1,500 pts (10)." },
+        { ko: "「무르기(待った)」를 「채용」하면 남은 횟수당 50pt(미사용 시 50×3=150pt), 「불채용」으로 두면 대국 종료 시 250pt를 받습니다. 무르기를 안 쓸 거라면 불채용이 100pt 더 많습니다.", en: "With takebacks set to \"use\", each unused one pays 50 pts (150 if you never take back); set to \"don't use\", you get a flat 250 pts — 100 more if you weren't going to take back anyway." },
+        { ko: "아사가오 상점의 반상회 숍에서 「장기의 기본(将棋の基本)」(아사가오 통화 3만 엔)을 사 두면 순위전·시련 답파 중에 「지시 어시스트(指し手アシスト)」로 최선수를 볼 수 있습니다.", en: "Buying \"Shogi Basics\" (将棋の基本, 30,000 Asagao yen) from the Asagao shop's neighbourhood store lets you use Move Assist for the best move during ranking matches and Trials." },
+        { ko: "주요 경품은 동료 「KAMIYAMA」 3,000pt, 휴대폰 스트랩 「장기말(왕장)」 1,800pt(공격력 상승), 「특공복 안단추·극」 3,000pt 등입니다.", en: "Key prizes: the KAMIYAMA ally for 3,000 pts, the Shogi Piece (King) phone strap for 1,800 pts (attack up), and the Tokkofuku Lining Button (Extreme) for 3,000 pts." },
       ],
       source: [
         { label: "ゲームエイト — 龍が如く極3 将棋", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/761965" },
+        { label: "ゲームエイト — 龍が如く3外伝 将棋", url: "https://game8.jp/ryu-ga-gotoku3-gaiden/762944" },
+        { label: "神ゲー攻略 — 龍が如く極3 詰将棋の手順攻略", url: "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F3/%E3%83%9F%E3%83%8B%E3%82%B2%E3%83%BC%E3%83%A0/%E5%B0%86%E6%A3%8B.html" },
+        { label: "DARAGE — 龍が如く 極3 将棋", url: "https://darage.com/guide/ryukiwami3/mini08.html" },
         { label: "ゲームエイト — 龍が如く極3 ミニゲーム(プレイスポット)一覧", url: "https://game8.jp/ryu-ga-gotoku-kiwami3/750600" },
+      ],
+      puzzleSets: [
+        {
+          title: { ko: "쓰메쇼기 정답 — 10문제", en: "Tsume-shogi answers — all 10" },
+          note: {
+            ko: "1~5번은 1수, 6~10번은 3수 외통입니다. 세 출처(game8·kamigame·DARAGE) 모두 기보가 아니라 말로 수를 설명하므로, 아래 수순은 그 설명을 옮긴 것입니다. 그림은 DARAGE의 좌표 도면으로, 둘 수를 화살표로 표시합니다(3수 문제의 두 번째 그림은 상대 응수 후 국면). 3외전(Dark Ties)도 game8 기준 같은 10문제입니다.",
+            en: "Problems 1–5 are mate in one, 6–10 mate in three. All three sources (game8, kamigame, DARAGE) describe the moves in words rather than kifu, so the steps below paraphrase them. Diagrams are DARAGE's coordinate boards with the move drawn as an arrow (the second board on three-movers is after the opponent's reply). Per game8, Dark Ties uses the same ten problems.",
+          },
+          puzzles: [
+            { title: { ko: "1번 (1수 외통)", en: "No. 1 (mate in 1)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t01_01.png", note: { ko: "금을 왼쪽 위로 올립니다 (金を左上へ).", en: "Move the gold diagonally up-left." } },
+            { title: { ko: "2번 (1수 외통)", en: "No. 2 (mate in 1)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t02_01.png", note: { ko: "지닌 말의 은을 상대 계마 앞(적 왕의 오른쪽 아래)에 놓습니다.", en: "Drop the silver from hand in front of the opposing knight (below-right of the enemy king)." } },
+            { title: { ko: "3번 (1수 외통)", en: "No. 3 (mate in 1)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t03_01.png", note: { ko: "비차를 왼쪽으로 2칸 옮기고 승격(成る)합니다.", en: "Move the rook two squares left and promote." } },
+            { title: { ko: "4번 (1수 외통)", en: "No. 4 (mate in 1)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t04_01.png", note: { ko: "지닌 말의 각을 상대 은과 은 사이(적 왕의 왼쪽 위)에 놓습니다.", en: "Drop the bishop from hand between the two enemy silvers (above-left of the enemy king)." } },
+            { title: { ko: "5번 (1수 외통)", en: "No. 5 (mate in 1)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t05_01.png", note: { ko: "각으로 대각선 2칸 앞의 상대 보를 잡고 승격(成る)합니다. 방향은 출처마다 다릅니다 — kamigame·DARAGE는 「오른쪽 아래」, game8 본문은 「왼쪽 아래」. 도면의 화살표를 따르세요.", en: "Take the enemy pawn two squares diagonally with the bishop and promote. Sources disagree on the direction — kamigame and DARAGE say down-right, game8's text says down-left; follow the arrow on the board." } },
+            { title: { ko: "6번 (3수 외통)", en: "No. 6 (mate in 3)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t06_01.png", images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t06_02.png"], note: { ko: "① 왼쪽 계마를 오른쪽 위로 뛰되 승격하지 않음(成らない) → ② 남은 계마를 오른쪽 위로 뜁니다.", en: "① Jump the left knight up-right without promoting → ② jump the other knight up-right." } },
+            { title: { ko: "7번 (3수 외통)", en: "No. 7 (mate in 3)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t07_01.png", images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t07_02.png"], note: { ko: "① 지닌 말의 계마를 상대 비차 앞에 놓기 → ② 보를 1칸 전진시키고 승격(成る).", en: "① Drop the knight from hand in front of the enemy rook → ② advance the pawn one square and promote." } },
+            { title: { ko: "8번 (3수 외통)", en: "No. 8 (mate in 3)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t08_01.png", images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t08_02.png"], note: { ko: "① 지닌 말의 보를 상대 왕 앞에 놓기 → ② 금을 1칸 뒤로 물립니다.", en: "① Drop the pawn from hand in front of the enemy king → ② step the gold one square back." } },
+            { title: { ko: "9번 (3수 외통)", en: "No. 9 (mate in 3)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t09_01.png", images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t09_02.png"], note: { ko: "① 왼쪽 위의 각으로 오른쪽 아래 2칸의 상대 계마를 잡고 승격(成る) → ② 지닌 말의 계마를 상대 보 앞(자기 각의 왼쪽)에 놓기.", en: "① With the top-left bishop, take the enemy knight two squares down-right and promote → ② drop the knight from hand in front of the enemy pawn (left of your bishop)." } },
+            { title: { ko: "10번 (3수 외통)", en: "No. 10 (mate in 3)" }, image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t10_01.png", images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_t10_02.png"], note: { ko: "① 지닌 말의 금을 상대 왕의 왼쪽 아래에 놓기 → ② 각을 오른쪽 위로 3칸 옮기고 승격(成る).", en: "① Drop the gold from hand below-left of the enemy king → ② move the bishop three squares up-right and promote." } },
+          ],
+        },
+        {
+          title: { ko: "시련 답파(試練踏破) 其の一 — 대국 빨리 끝내기", en: "Trial (試練踏破) No. 1 — quickest finished match" },
+          note: {
+            ko: "DARAGE 단독 출처로, 단련 목록의 대국 횟수를 빨리 채우는 용도입니다. 시련 답파는 CPU와 두는 실전이라 상대가 수순과 다르게 둘 수 있으니, 어긋나면 무르기(待った)로 다시 시도하세요. 시련 답파의 전체 문제 수는 출처에 없습니다.",
+            en: "Single source (DARAGE), meant for ticking the matches-played rows quickly. Trials are real games against the CPU, so it may deviate from this line — retry with a takeback if it does. The sources don't give how many Trials there are.",
+          },
+          puzzles: [
+            {
+              title: { ko: "其の一 (7단계)", en: "No. 1 (7 steps)" },
+              image: "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_01.png",
+              images: ["https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_02.png", "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_03.png", "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_04.png", "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_05.png", "https://darage.com/guide/ryukiwami3/image/ryukwm3_mini08_s01_06.png"],
+              note: {
+                ko: "① 왼쪽에서 세 번째 보를 1칸 전진 → ② 비차 위의 보를 1칸씩 3칸 전진 → ③ 비차를 4칸 올려 상대 보를 잡기 → ④ 지닌 말의 보를 상대 각 아래에 놓기 → ⑤ 그 보로 상대 각을 잡고 승격 → ⑥ 지닌 말의 각을 자기 비차 왼쪽에 놓기 → ⑦ 비차를 2칸 올려 상대 은을 잡고 승격.",
+                en: "① Advance the third pawn from the left one square → ② push the pawn above the rook up three squares, one at a time → ③ move the rook up four to take the enemy pawn → ④ drop the pawn from hand below the enemy bishop → ⑤ take the bishop with that pawn and promote → ⑥ drop the bishop from hand to the left of your rook → ⑦ move the rook up two to take the enemy silver and promote.",
+              },
+            },
+          ],
+        },
       ],
     },
     {
