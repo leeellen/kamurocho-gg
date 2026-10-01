@@ -42,6 +42,8 @@ export type ChecklistItem = {
   hqImage?: string;
   // Extra screenshots stacked under the main image in the detail modal.
   images?: string[];
+  // Per-item YouTube link (may carry a `t=` timestamp) — linked from the modal.
+  video?: string;
   // Headline (substory-like) and/or map location line.
   title?: LocalizedText;
   location?: LocalizedText;
@@ -427,7 +429,7 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   ⚠ {pick(item.note, locale)}
                 </div>
               )}
-              {((item.steps && item.steps.length > 0) || item.reward || item.image) && (
+              {((item.steps && item.steps.length > 0) || item.reward || item.image || item.video) && (
                 <button
                   type="button"
                   onClick={(e) => {
@@ -526,6 +528,16 @@ function RegionView({ region, locale }: { region: ChecklistRegion; locale: Local
                   </span>
                   {pick(openItem.reward, locale)}
                 </div>
+              )}
+              {openItem.video && (
+                <a
+                  href={openItem.video}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-3 inline-block text-[13px] font-semibold text-[var(--accent)] no-underline hover:underline"
+                >
+                  ▶ {locale === "ko" ? "위치 영상 보기" : "Watch location video"}
+                </a>
               )}
             </div>
             <div className="mt-4 flex flex-wrap justify-end gap-2">

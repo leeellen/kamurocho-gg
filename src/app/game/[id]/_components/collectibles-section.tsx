@@ -63,6 +63,7 @@ function toChecklistItem(it: CollectibleItem): ChecklistItem {
     number: it.number,
     image: it.image,
     images: it.images,
+    video: it.video,
     title: it.title,
     location: it.location,
     mail: it.mail,
