@@ -262,9 +262,35 @@ export const likeADragonPirateMinigames: MinigamesData = {
       howTo: [
         { ko: "상대의 왕을 궁지에 몰면 승리, 이기기 한 수 전에 「왕수」를 선언합니다. 잡은 말은 자기 말로 쓸 수 있고 투료하면 패배입니다.", en: "Corner the enemy king to win, declaring check one move before; captured pieces come into your hand and resigning loses." },
         { ko: "적진 3열에 말이 들어가면 「왕」과 「금」을 제외한 말을 성(강화)시킬 수 있고, 성하면 움직임 자체가 바뀝니다.", en: "Pieces entering the opponent's back three ranks promote — everything except the king and gold — and promotion changes how they move." },
-        { ko: "□가 무르기, L1이 슈퍼 무르기, △가 아이템 사용입니다. 불리해지면 아끼지 말고 쓰세요.", en: "Square takes a move back, L1 takes back further and triangle uses items — don't hoard them when the position turns." },
+        { ko: "□가 무르기(3회), L1이 되돌아갈 수를 직접 고르는 슈퍼 무르기(1회), △가 아이템 사용입니다. 쓰면 이겼을 때 받는 포인트가 줄어듭니다.", en: "Square takes a move back (three uses), L1's super takeback lets you pick the move to rewind to (one use), and triangle uses items. Using them trims the points a win pays." },
+        { ko: "쓰메쇼기는 전 10문제로, 1~5번은 1수 외통, 6~10번은 3수 외통입니다. 매 수 왕수가 아니면 그 자리에서 실패입니다. 무르기를 「불채용」으로 두고 풀면 포인트가 더 붙습니다.", en: "Tsume-shogi has ten problems — mate in one for 1–5 and mate in three for 6–10 — and fails the moment a move isn't check. Setting takebacks to off before you start pays extra points." },
+        { ko: "시련 답파는 수순을 정리한 공략이 없습니다. 공략 페이지도 bonanza 같은 장기 프리 소프트나 장기 앱에 국면을 넣어 다음 수를 받는 방식을 권합니다.", en: "No guide publishes move lists for Trial Run; the guide recommends feeding the position into a free engine such as Bonanza or a shogi app and playing its move." },
+        { ko: "경품 「은 보물상자」(3,000pt, 1개 한정)에는 재보 「천광의 고블릿」이 들어 있고, 얻으면 13,500달러와 명성 16,800이 들어와 초반 금책으로 좋습니다.", en: "The Silver Treasure Chest (3,000 points, one only) holds the Goblet of Celestial Light, worth $13,500 and 16,800 Fame the moment you get it — a strong early money source." },
       ],
-      source: { label: "ゲーム攻略マン — 将棋攻略", url: "https://dswiipspwikips3.jp/yakuza8-gaiden/play-spots/syogi.html" },
+      source: [
+        { label: "ゲーム攻略マン — 将棋攻略", url: "https://dswiipspwikips3.jp/yakuza8-gaiden/play-spots/syogi.html" },
+        { label: "ゲームエイト — 詰将棋の攻略手順と将棋の遊べる場所", url: "https://game8.jp/ryu-ga-gotoku8-gaiden/669456" },
+        { label: "KOU — 詰将棋の答えと報酬", url: "https://kou-gamer.com/ryu8gaiden_shogi/" },
+        { label: "note（トマト食べるマン）— 詰将棋と将棋偉業チャレンジ攻略", url: "https://note.com/jolly_zinnia744/n/nda830bf54d86" },
+      ],
+      puzzleSets: [
+        {
+          title: { ko: "쓰메쇼기 정답 — 10문제", en: "Tsume-shogi answers — all 10" },
+          note: { ko: "1~5번은 1수, 6~10번은 3수 외통입니다. 기보는 게임공략맨 표기로, 출처가 플레이어 수만 적어 상대(CPU)의 응수는 빠져 있습니다. game8의 결과 캡처와 9문제 모두 일치하고, 6번만 2수째가 어긋나 기보를 비웠습니다. 외통이 되는 수는 하나만이 아니라 다른 수순도 통과합니다.", en: "Problems 1–5 are mate in one, 6–10 mate in three. Kifu follows ゲーム攻略マン, which lists only your own moves — the CPU's replies are omitted. It matches game8's result captures on nine problems; No. 6 disagrees on the second move, so its kifu is left out. Mates other than these also pass." },
+          puzzles: [
+            { title: { ko: "1번 (1수 외통)", en: "No. 1 (mate in 1)" }, moves: ["▲2一銀不成"], image: "https://img.game8.jp/11057789/e870160d12eff1e08b617086a69d5491.jpeg/original" },
+            { title: { ko: "2번 (1수 외통)", en: "No. 2 (mate in 1)" }, moves: ["▲4三桂馬"], image: "https://img.game8.jp/11057819/5596f7d0adfc7127e4d0587f5e54fb9a.jpeg/original" },
+            { title: { ko: "3번 (1수 외통)", en: "No. 3 (mate in 1)" }, moves: ["▲3二飛車成"], image: "https://img.game8.jp/11057826/847aa216e1bb900fd913ce71e93b0fa1.jpeg/original" },
+            { title: { ko: "4번 (1수 외통)", en: "No. 4 (mate in 1)" }, moves: ["▲2三金"], image: "https://img.game8.jp/11057840/a973c963859ee093bc1a9964b0c0ab91.jpeg/original" },
+            { title: { ko: "5번 (1수 외통)", en: "No. 5 (mate in 1)" }, moves: ["▲3一龍王"], image: "https://img.game8.jp/11057844/61229f5fa642d00a848ce9eb172d3824.jpeg/original" },
+            { title: { ko: "6번 (3수 외통)", en: "No. 6 (mate in 3)" }, image: "https://img.game8.jp/11057866/aebf7200aab56d1ae10e6d8484f5b9b2.jpeg/original", images: ["https://img.game8.jp/11057868/f0cb7c12e61bfab5ae7090eee923cf3c.jpeg/original"], note: { ko: "game8: ① 보를 앞으로 올리고 성하기 → ② 가진 금장을 왕 왼쪽에 놓기(그림). 게임공략맨은 ▲2三歩成 → ▲3二金으로 2수째 칸을 다르게 적었습니다. KOU·note는 ① 각을 오른쪽 아래로 옮겨 성하기 → ② 그 왼쪽에 금장을 놓는 다른 수순을 소개합니다.", en: "game8: ① push the pawn and promote → ② drop the gold to the left of the king (pictured). ゲーム攻略マン gives ▲2三歩成 → ▲3二金, a different square for the second move. KOU and note show another line: ① move the bishop down-right and promote → ② drop the gold to its left." } },
+            { title: { ko: "7번 (3수 외통)", en: "No. 7 (mate in 3)" }, moves: ["▲4一銀", "▲3三角成"], image: "https://img.game8.jp/11057878/d070c0d5eb31a35e2801e39c4a0acdf1.jpeg/original", images: ["https://img.game8.jp/11057880/d675f028826bd009e22b10583617a25f.jpeg/original"] },
+            { title: { ko: "8번 (3수 외통)", en: "No. 8 (mate in 3)" }, moves: ["▲3一金", "▲4一銀"], image: "https://img.game8.jp/11057903/7e1a7e745da67f75abde2902119a936c.jpeg/original", images: ["https://img.game8.jp/11057905/eedf2b68a0083c8d64e5cfce03661a45.jpeg/original"] },
+            { title: { ko: "9번 (3수 외통)", en: "No. 9 (mate in 3)" }, moves: ["▲3四角", "▲2二金"], image: "https://img.game8.jp/11057927/7a07c53c4aaa32556db36bb3dcba3f38.jpeg/original", images: ["https://img.game8.jp/11057929/e982624b19b636471956f0626d63e15b.jpeg/original"] },
+            { title: { ko: "10번 (3수 외통)", en: "No. 10 (mate in 3)" }, moves: ["▲1三角成", "▲2四角"], image: "https://img.game8.jp/11057934/02e3f0a63881a797cbf597ce0aebbb98.jpeg/original", images: ["https://img.game8.jp/11057936/7b7cb54540af82be7dcc902c1bfd0218.jpeg/original"], note: { ko: "▲1三角成 뒤 CPU는 성한 각을 비차가 아니라 왕으로 잡습니다.", en: "After ▲1三角成 the CPU takes the promoted bishop with its king, not the rook." } },
+          ],
+        },
+      ],
     },
     {
       slug: "mahjong",
