@@ -220,7 +220,7 @@ export const likeADragonPirateSubstories: SubstoriesData = {
           number: 22,
           title: { ko: "선장의 귀환", en: "The Captain's Return" },
           chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "줄리의 기어웍스 인근", en: "Julie's Gearworks area" },
+          location: { ko: "주리의 기어웍스 인근", en: "Julie's Gearworks area" },
           trigger: { ko: "지정 지점 인근 보행 시 자동 컷씬", en: "Walk near the marked spot to trigger the scene." },
           body: { ko: "미니맵에 표시되는 쓰레기 5개를 회수 후 시비를 거는 일당과 짧은 전투.", en: "Pick up the 5 trash markers on the minimap, then handle a quick brawl." },
           reward: { ko: "함선 강화 소재 + 경험치", en: "Ship upgrade material + EXP" },

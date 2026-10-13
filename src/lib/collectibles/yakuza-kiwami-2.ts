@@ -833,9 +833,9 @@ export const yakuzaKiwami2: CollectiblesData = {
           title: { ko: "카무로초 — 9인", en: "Kamurocho — 9 Bosses" },
           mapImage: "/yakuza-kiwami-2-encounter-bosses/kamurocho.jpg",
           legend: [
-            { marker: "Ⓐ", label: { ko: "チンピラ = 양아치", en: "チンピラ = Delinquent" } },
-            { marker: "Ⓑ", label: { ko: "ヤクザ = 야쿠자", en: "ヤクザ = Yakuza" } },
-            { marker: "Ⓒ", label: { ko: "チーマー = 불량배", en: "チーマー = Thug" } },
+            { marker: "Ⓐ", label: { ko: "양아치", en: "Delinquent" } },
+            { marker: "Ⓑ", label: { ko: "야쿠자", en: "Yakuza" } },
+            { marker: "Ⓒ", label: { ko: "불량배", en: "Thug" } },
           ],
           hotspots: {
             1: [66, 35.9], 2: [65.1, 88.6], 3: [23.4, 75.8], 4: [12.8, 37.2], 5: [34.1, 22.6],
@@ -911,9 +911,9 @@ export const yakuzaKiwami2: CollectiblesData = {
           title: { ko: "소텐보리 — 9인", en: "Sotenbori — 9 Bosses" },
           mapImage: "/yakuza-kiwami-2-encounter-bosses/sotenbori.jpg",
           legend: [
-            { marker: "Ⓐ", label: { ko: "チンピラ = 양아치", en: "チンピラ = Delinquent" } },
-            { marker: "Ⓑ", label: { ko: "ヤクザ = 야쿠자", en: "ヤクザ = Yakuza" } },
-            { marker: "Ⓒ", label: { ko: "チーマー = 불량배", en: "チーマー = Thug" } },
+            { marker: "Ⓐ", label: { ko: "양아치", en: "Delinquent" } },
+            { marker: "Ⓑ", label: { ko: "야쿠자", en: "Yakuza" } },
+            { marker: "Ⓒ", label: { ko: "불량배", en: "Thug" } },
           ],
           hotspots: {
             1: [24.4, 80.1], 2: [31.2, 87.9], 3: [5.1, 69.4], 4: [82.4, 17.5], 5: [26.1, 34.5],

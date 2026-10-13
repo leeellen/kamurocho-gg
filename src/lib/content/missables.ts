@@ -530,16 +530,16 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "영구 잠금 트로피 없음 — 포인트 오브 노 리턴 무시 가능", en: "No permanently missable trophies — ignore the Point of No Return prompt" },
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "피날레 장의 엄중한 「포인트 오브 노 리턴」 경고에도 불구하고 엔딩 후 모든 서브스토리·미니게임·도지마 드링크 링크·수지몬 등을 프리미엄 어드벤처에서 마저 정리할 수 있습니다.",
+            ko: "피날레 장의 엄중한 「포인트 오브 노 리턴」 경고에도 불구하고 엔딩 후 모든 서브스토리·미니게임·도지마 드링크 링크·야쿠몬 등을 프리미엄 어드벤처에서 마저 정리할 수 있습니다.",
             en: "Despite the stern 'Point of No Return' warning before the finale, Premium Adventure still lets you finish every substory, minigame, Dondoko Island task, Sujimon roster, and bond after the credits.",
           },
         },
         {
           kind: "recommended",
-          title: { ko: "돈도코 섬 일찍 시작", en: "Open Dondoko Island as early as possible" },
+          title: { ko: "쿵더쿵섬 일찍 시작", en: "Open Dondoko Island as early as possible" },
           when: { ko: "5장 해금 직후", en: "Right after Ch.5 unlocks it" },
           body: {
-            ko: "돈도코 섬과 수지몬 배틀은 별도 진행도가 있어 일찍 시작할수록 자원이 누적되어 100% 정리가 수월합니다.",
+            ko: "쿵더쿵섬과 야쿠몬 배틀은 별도 진행도가 있어 일찍 시작할수록 자원이 누적되어 100% 정리가 수월합니다.",
             en: "Dondoko Island and Sujimon Battle run on their own progression curves — start them right after they unlock so resources stack up before the post-game cleanup.",
           },
         },
@@ -560,7 +560,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "영구 잠금 트로피 없음", en: "No permanently missable trophies" },
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "「Pirate Yakuza in Hawaii」(파이러츠 인 하와이)는 모든 트로피가 엔딩 이후 프리미엄 어드벤처에서 회수 가능합니다. 시리즈 중에서도 가장 너그러운 100% 라인 중 하나.",
+            ko: "「Pirate Yakuza in Hawaii」(파이리츠 인 하와이)는 모든 트로피가 엔딩 이후 프리미엄 어드벤처에서 회수 가능합니다. 시리즈 중에서도 가장 너그러운 100% 라인 중 하나.",
             en: "Every trophy in Pirate Yakuza in Hawaii is recoverable in Premium Adventure. One of the easiest 100% runs in the entire RGG catalog.",
           },
         },

@@ -6,7 +6,7 @@ const Y7_APP_ID = 1235140;
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Yakuza: Like a Dragon (이치반 1편) 플래티넘 — 다른 62개 업적 전부 해금 시 자동 발동. Y7은 영구 미서블이 0이라 Premium Adventure에서 자유롭게 정리 가능. 핵심 게이트는 ①「잡 마스터」 전 직업 마스터 ②「인연」 전 동료 최대치 ③「용감한 카트 마스터」 + 「혼다이 마스터」 카트 + 라이벌 레이스 ④돈도코·스지몬 ⑤EX-HARD 클리어 ⑥아몬 격파.",
+      "Yakuza: Like a Dragon (이치반 1편) 플래티넘 — 다른 62개 업적 전부 해금 시 자동 발동. Y7은 영구 미서블이 0이라 Premium Adventure에서 자유롭게 정리 가능. 핵심 게이트는 ①「잡 마스터」 전 직업 마스터 ②「인연」 전 동료 최대치 ③「용감한 카트 마스터」 + 「혼다이 마스터」 카트 + 라이벌 레이스 ④쿵더쿵·야쿠몬 ⑤EX-HARD 클리어 ⑥아몬 격파.",
     en:
       "Y7 platinum auto-pops at full unlock. Zero permanent missables — everything is reachable in Premium Adventure. Gates: ① Job Master (all jobs) ② Bonds maxed for every party member ③ Honk-Honk Hero / Pop the Cork (kart trophies) ④ Dondoko + Sujimon ⑤ EX-HARD ⑥ Amon.",
   },
@@ -31,7 +31,7 @@ const platinum: CuratedGuide = {
     },
     {
       ko:
-        "4) 컴플리션 라인 — 「딜리버리 헬프 모든 메뉴」 + 「스지몬 도감 250종」 + 「로맨스 공방 전 의상」 + 「혼다이 카트 풀」. 사무실 모드(이치반 컨피던스)도 100% 도달.",
+        "4) 컴플리션 라인 — 「딜리버리 헬프 모든 메뉴」 + 「야쿠몬 도감 250종」 + 「로맨스 공방 전 의상」 + 「혼다이 카트 풀」. 사무실 모드(이치반 컨피던스)도 100% 도달.",
       en:
         "4) Completion lines — Delivery Help menu, Sujimon Dex 250, Romance Workshop outfits, Honda Kart full, Ichiban Confections 100 %.",
     },
@@ -51,7 +51,7 @@ const platinum: CuratedGuide = {
   tips: [
     {
       ko:
-        "직업 마스터는 직업당 약 1~2시간 그라인드라 누적 50시간 이상이 일반. Premium Adventure에서 EXP 부스트 장비(스지몬 부스트 등)를 활용하면 시간을 크게 줄일 수 있습니다.",
+        "직업 마스터는 직업당 약 1~2시간 그라인드라 누적 50시간 이상이 일반. Premium Adventure에서 EXP 부스트 장비(야쿠몬 부스트 등)를 활용하면 시간을 크게 줄일 수 있습니다.",
       en:
         "Job Master is ~1~2 hr per job — easily 50+ hr total. EXP-boost gear (Sujimon buffs) cuts this dramatically.",
     },
@@ -92,7 +92,7 @@ const lv70: CuratedGuide = {
   summary: { ko: "카스가 이치반의 메인 직업 레벨이 Lv.70 이상에 도달하면 발동. 진정한 최종 던전(쓰루기시마 던전)에서 적의 레벨이 50~70이라 자연스럽게 도달 가능하지만, 메인 스토리만으로는 Lv.50~55에서 멈추므로 Premium Adventure 그라인드 필요.", en: "Push Kasuga's job level to 70+. The True Final Dungeon (Kongo) carries you there naturally; main-story alone caps around 50~55, so post-credits grinding is needed." },
   steps: [
     { ko: "1) 메인 스토리 엔딩 후 「쓰루기시마 던전」(진정한 최종 던전) 해금 → 적 레벨 50~70 구간에서 그라인드.", en: "1) Post-credits, push into the True Final Dungeon — enemies sit at Lv.50~70." },
-    { ko: "2) EXP 부스트 장비(스지몬·로맨스 공방) 활용 → Lv.70 도달 시 트로피 발동.", en: "2) Stack EXP buffs (Sujimon, Romance Workshop). Hitting Lv.70 fires it." },
+    { ko: "2) EXP 부스트 장비(야쿠몬·로맨스 공방) 활용 → Lv.70 도달 시 트로피 발동.", en: "2) Stack EXP buffs (Sujimon, Romance Workshop). Hitting Lv.70 fires it." },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
@@ -113,16 +113,16 @@ const stayAwakeAllMovies: CuratedGuide = {
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },
 };
 
-// 「네가 바로! 야쿠몬 마스터」 — 스지몬 도감 완성. Steam: yazawa_sujimon_b.
+// 「네가 바로! 야쿠몬 마스터」 — 야쿠몬 도감 완성. Steam: yazawa_sujimon_b.
 const sujimonMaster: CuratedGuide = {
-  summary: { ko: "스지몬(이진초 길거리 적 도감) 250종 등록 시 발동. 적을 격파하면 자동 등록되며, 일부 희귀 스지몬은 특정 장·시간대에만 출현. Premium Adventure에서도 추가 등록 가능.", en: "Register 250 Sujimon entries by defeating them. Some rare ones only spawn at specific chapters/times of day. Premium Adventure adds more." },
+  summary: { ko: "야쿠몬(이진초 길거리 적 도감) 250종 등록 시 발동. 적을 격파하면 자동 등록되며, 일부 희귀 야쿠몬은 특정 장·시간대에만 출현. Premium Adventure에서도 추가 등록 가능.", en: "Register 250 Sujimon entries by defeating them. Some rare ones only spawn at specific chapters/times of day. Premium Adventure adds more." },
   steps: [
-    { ko: "1) 4장 이후 스지몬 도감 앱 해금. 거리에서 마주치는 모든 적을 격파해 자동 등록.", en: "1) Unlock Sujidex in Ch.4 and beat every street mob — auto-registers." },
-    { ko: "2) 후반 장에 강한 스지몬 출현. EXP·자금이 안정된 12장 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
+    { ko: "1) 4장 이후 야쿠몬 도감 앱 해금. 거리에서 마주치는 모든 적을 격파해 자동 등록.", en: "1) Unlock Sujidex in Ch.4 and beat every street mob — auto-registers." },
+    { ko: "2) 후반 장에 강한 야쿠몬 출현. EXP·자금이 안정된 12장 이후 적극 사냥.", en: "2) Tougher Sujimon spawn late — focus from Ch.12 onward." },
     { ko: "3) 250종 등록 시 트로피 발동. Premium Adventure에서 마지막 변종 마무리.", en: "3) 250 entries fires the trophy; finish leftovers in Premium Adventure." },
   ],
   tips: [
-    { ko: "[스지몬 효율 등록] 격파만 해도 자동 등록되지만, 일부 변종은 특정 장·시간대·날씨에만 출현합니다. 거리에서 처음 보는 색·외형의 적은 반드시 처치하고, 후반(12장+)과 Premium Adventure의 강한 변종까지 훑으면 250종이 채워집니다. 중복 적은 카운트되지 않으니 새 외형 위주로 사냥하세요.", en: "[Efficient Sujimon farming] Defeating one auto-registers it, but some variants only spawn at specific chapters, times of day, or weather. Always kill any enemy with a color/look you haven't seen, and sweep the tougher late-game (Ch.12+) and Premium Adventure variants to reach 250. Duplicates don't count, so prioritize new appearances." },
+    { ko: "[야쿠몬 효율 등록] 격파만 해도 자동 등록되지만, 일부 변종은 특정 장·시간대·날씨에만 출현합니다. 거리에서 처음 보는 색·외형의 적은 반드시 처치하고, 후반(12장+)과 Premium Adventure의 강한 변종까지 훑으면 250종이 채워집니다. 중복 적은 카운트되지 않으니 새 외형 위주로 사냥하세요.", en: "[Efficient Sujimon farming] Defeating one auto-registers it, but some variants only spawn at specific chapters, times of day, or weather. Always kill any enemy with a color/look you haven't seen, and sweep the tougher late-game (Ch.12+) and Premium Adventure variants to reach 250. Duplicates don't count, so prioritize new appearances." },
   ],
   sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850",
   sourceLabel: { ko: "Steam Community — Yakuza: Like a Dragon Achievement Guide", en: "Steam Community — Yakuza: Like a Dragon Achievement Guide" },

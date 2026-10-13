@@ -26,8 +26,8 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
           chapter: { ko: "4장", en: "Chapter 4" },
           location: { ko: "이세자키 로드 — 후사진 만물상 부근", en: "Isezaki Road — near Fusajin General Store" },
           trigger: { ko: "수상한 남자에게 말 걸기", en: "Speak to the suspicious man on Isezaki Road." },
-          body: { ko: "이상한 몬스터 같은 인간들의 정보를 등록하는 「스지몬」 도감 앱을 받는 도입 퀘스트. 이후 적을 쓰러뜨리면 자동 도감화됩니다.", en: "A weirdo hands Ichiban the Sujimon app — pokedex of street-tier enemies. Defeated foes auto-register." },
-          reward: { ko: "스지몬 도감 앱 해금", en: "Sujimon app unlocked" },
+          body: { ko: "이상한 몬스터 같은 인간들의 정보를 등록하는 「야쿠몬」 도감 앱을 받는 도입 퀘스트. 이후 적을 쓰러뜨리면 자동 도감화됩니다.", en: "A weirdo hands Ichiban the Sujimon app — pokedex of street-tier enemies. Defeated foes auto-register." },
+          reward: { ko: "야쿠몬 도감 앱 해금", en: "Sujimon app unlocked" },
         },
         {
           number: 3,

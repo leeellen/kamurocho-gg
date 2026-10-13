@@ -5,11 +5,11 @@ export const yakuzaLikeADragon: CollectiblesData = {
   categories: [
   {
     slug: "sujimon-dex",
-    title: { ko: "수지몬 도감 — 252종 컴플리트", en: "Sujimon Dex — Complete 252" },
-    summary: { ko: "4장 서브스토리 「저런 사람」 클리어 후 수지몬 도감 앱이 풀립니다. 252마리 전부 한 번씩 격파해 등록을 채우세요. 도감은 약점·드롭·스킬 사전으로 활용 가치가 큽니다.", en: "After the Chapter 4 substory \"That Type of Person\", the Sujimon Dex app unlocks. Defeat each of the 252 sujimon at least once to register them — the Dex doubles as a weakness/drop reference." },
+    title: { ko: "야쿠몬 도감 — 252종 컴플리트", en: "Sujimon Dex — Complete 252" },
+    summary: { ko: "4장 서브스토리 「저런 사람」 클리어 후 야쿠몬 도감 앱이 풀립니다. 252마리 전부 한 번씩 격파해 등록을 채우세요. 도감은 약점·드롭·스킬 사전으로 활용 가치가 큽니다.", en: "After the Chapter 4 substory \"That Type of Person\", the Sujimon Dex app unlocks. Defeat each of the 252 sujimon at least once to register them — the Dex doubles as a weakness/drop reference." },
     tips: [
         { ko: "랭크 ★4 이상은 일반 거리에서 나오지 않습니다. 소텐보리 지하 던전·요코하마 지하 던전·아몬 라인을 거쳐야 등장합니다.", en: "Rank ★4+ rarely spawn in the streets. They appear in the Sotenbori Battle Arena, Kamurocho Underground, and Amon arcs." },
-        { ko: "요코하마 이세자키 이진초 코리아타운 「THE 빌딩」 2층 수지몬 연구소에서 보상을 수령할 수 있습니다.", en: "Claim rewards from the Sujimon Research Institute on the 2nd floor of THE Building in Yokohama Isezaki Ijincho." },
+        { ko: "요코하마 이세자키 이진초 코리아타운 「THE 빌딩」 2층 야쿠몬 연구소에서 보상을 수령할 수 있습니다.", en: "Claim rewards from the Sujimon Research Institute on the 2nd floor of THE Building in Yokohama Isezaki Ijincho." },
     ],
     source: [
       { label: "龍が如く7 最速攻略wiki — スジモン図鑑", url: "https://spwiki.net/ryu7/wikis/205.html" },
@@ -494,7 +494,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       },
       {
         number: 240,
-        title: { ko: "빨간 스지몬", en: "Red Sujimon" },
+        title: { ko: "빨간 야쿠몬", en: "Red Sujimon" },
         image: "https://static.wikia.nocookie.net/yakuza/images/3/3d/Red_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: 파열병, 점화 / 약점: 뇌", en: "Skill: Burst Bottle, Ignite / Weak: Lightning" },
@@ -502,7 +502,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       },
       {
         number: 241,
-        title: { ko: "파란 스지몬", en: "Blue Sujimon" },
+        title: { ko: "파란 야쿠몬", en: "Blue Sujimon" },
         image: "https://static.wikia.nocookie.net/yakuza/images/8/81/Blue_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
@@ -510,7 +510,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       },
       {
         number: 242,
-        title: { ko: "초록 스지몬", en: "Green Sujimon" },
+        title: { ko: "초록 야쿠몬", en: "Green Sujimon" },
         image: "https://static.wikia.nocookie.net/yakuza/images/d/d9/Green_Sujimon_Icon.png/revision/latest",
         location: { ko: "랭크 ★☆☆☆☆☆", en: "Rank ★☆☆☆☆☆" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },
@@ -2057,7 +2057,7 @@ export const yakuzaLikeADragon: CollectiblesData = {
       },
       {
         number: 252,
-        title: { ko: "스지몬 박사", en: "Sujimon Doctor" },
+        title: { ko: "야쿠몬 박사", en: "Sujimon Doctor" },
         image: "https://static.wikia.nocookie.net/yakuza/images/b/b9/Sujimon_Sensei_Icon.png/revision/latest",
         location: { ko: "랭크 ★★★★★★", en: "Rank ★★★★★★" },
         body: { ko: "스킬: - / 약점: -", en: "Skill: - / Weak: -" },

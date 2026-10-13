@@ -56,11 +56,11 @@ const platinum: CuratedGuide = {
 
 // 「레전드 오브 콜로세움」 아몬. Steam: amon.
 const amonPirate: CuratedGuide = {
-  summary: { ko: "파이리츠 콜로세움 「파이러츠 챔피언십」 9개 대회 중 마지막 두 경기가 아몬전입니다. 아몬을 격파하면 발동하며, 아몬전은 「최강 해적단 결정전(最強海賊団決定戦)」을 클리어하면 열립니다.", en: "The last two of the nine Pirates' Championship events are the Amon fights. Beat Amon to unlock it; the Amon match opens after clearing 最強海賊団決定戦 (the strongest-crew decider)." },
+  summary: { ko: "파이리츠 콜로세움 「파이리츠 챔피언십」 9개 대회 중 마지막 두 경기가 아몬전입니다. 아몬을 격파하면 발동하며, 아몬전은 「최강 해적단 결정전(最強海賊団決定戦)」을 클리어하면 열립니다.", en: "The last two of the nine Pirates' Championship events are the Amon fights. Beat Amon to unlock it; the Amon match opens after clearing the Strongest Pirate Crew Showdown (最強海賊団決定戦)." },
   steps: [
-    { ko: "1) 콜로세움은 해적 싱글 매치 16 · 선상 배틀 러시 10 · 파이러츠 챔피언십 9 · 해적 결투 쇼다운 4, 총 39경기입니다. 챔피언십을 진행해 「최강 해적단 결정전」까지 클리어하세요.", en: "1) The Coliseum has 39 matches: 16 Single Matches, 10 Battle Rush stages, 9 Championship events and 4 Showdowns. Progress the Championship through 最強海賊団決定戦." },
-    { ko: "2) 아몬전이 열리면 회복 아이템과 강한 무기를 챙겨 도전합니다. 광견 스타일의 스웨이·가드로 버티며 뒤를 잡고, 분신 단계는 파이러츠 스타일 전방위 가드로 막습니다(미니게임 탭 콜로세움 항목에 상세 공략).", en: "2) Stock heals and strong weapons. Sway and guard with Mad Dog and hit from behind; block the clone phase with the Pirate style's all-round guard (full walkthrough in the Minigames tab Coliseum entry)." },
-    { ko: "3) 아몬을 쓰러뜨리면 트로피와 함께 50,000달러 · 명성 50,000, 「패자의 반지(覇者の指輪)」(전투 중 히트 게이지가 계속 참)를 받습니다.", en: "3) Beating Amon pays $50,000, 50,000 fame and 覇者の指輪 (the Heat gauge keeps filling in fights), plus the trophy." },
+    { ko: "1) 콜로세움은 해적 싱글 매치 16 · 선상 배틀 러시 10 · 파이리츠 챔피언십 9 · 해적 결투 쇼다운 4, 총 39경기입니다. 챔피언십을 진행해 「최강 해적단 결정전」까지 클리어하세요.", en: "1) The Coliseum has 39 matches: 16 Single Matches, 10 Battle Rush stages, 9 Championship events and 4 Showdowns. Progress the Championship through the Strongest Pirate Crew Showdown." },
+    { ko: "2) 아몬전이 열리면 회복 아이템과 강한 무기를 챙겨 도전합니다. 광견 스타일의 스웨이·가드로 버티며 뒤를 잡고, 분신 단계는 파이리츠 스타일 전방위 가드로 막습니다(미니게임 탭 콜로세움 항목에 상세 공략).", en: "2) Stock heals and strong weapons. Sway and guard with Mad Dog and hit from behind; block the clone phase with the Pirate style's all-round guard (full walkthrough in the Minigames tab Coliseum entry)." },
+    { ko: "3) 아몬을 쓰러뜨리면 트로피와 함께 50,000달러 · 명성 50,000, 「패자의 반지(覇者の指輪)」(전투 중 히트 게이지가 계속 참)를 받습니다.", en: "3) Beating Amon pays $50,000, 50,000 fame and the Conqueror's Ring (覇者の指輪; the Heat gauge keeps filling in fights), plus the trophy." },
   ],
   sourceUrl: "https://game8.jp/ryu-ga-gotoku8-gaiden/669352",
   sourceLabel: { ko: "ゲームエイト — パイレーツコロシアムの攻略と解放条件", en: "Game8 (JP) — Pirates' Coliseum guide and unlock conditions" },
@@ -70,7 +70,7 @@ const amonPirate: CuratedGuide = {
 const masterOfColiseum: CuratedGuide = {
   summary: { ko: "파이리츠 콜로세움에서 서로 다른 매치 30개를 우승하면 발동(전체 39경기). 해적 결투 쇼다운 4개는 데빌 플래그스 진행으로만 열립니다.", en: "Win 30 different Pirates Coliseum matches (39 in all). The four Showdown stages only open through Devil Flags progress." },
   steps: [
-    { ko: "1) 해적 싱글 매치 16 · 선상 배틀 러시 10 · 파이러츠 챔피언십 9 · 해적 결투 쇼다운 4 중에서 30개를 채웁니다. 쇼다운이 필요하면 데빌 플래그스를 먼저 진행하세요.", en: "1) Pick 30 from the 16 Single Matches, 10 Battle Rush stages, 9 Championship events and 4 Showdowns; push Devil Flags first if you need the Showdowns." },
+    { ko: "1) 해적 싱글 매치 16 · 선상 배틀 러시 10 · 파이리츠 챔피언십 9 · 해적 결투 쇼다운 4 중에서 30개를 채웁니다. 쇼다운이 필요하면 데빌 플래그스를 먼저 진행하세요.", en: "1) Pick 30 from the 16 Single Matches, 10 Battle Rush stages, 9 Championship events and 4 Showdowns; push Devil Flags first if you need the Showdowns." },
     { ko: "2) 무기·회복 아이템을 비축해 두고, 막히는 매치는 다른 모드로 돌려 승수를 채웁니다.", en: "2) Stock weapons and heals; if a match stalls you, bank wins in another mode instead." },
     { ko: "3) 서로 다른 매치 30개 우승 시 트로피 발동.", en: "3) The trophy fires on the 30th different match won." },
   ],

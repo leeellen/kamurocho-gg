@@ -6,20 +6,20 @@ const Y8_APP_ID = 2072450;
 const platinum: CuratedGuide = {
   summary: {
     ko:
-      "Like a Dragon: Infinite Wealth 플래티넘 — 다른 73개 업적 전부 해금 시 자동 발동. Y8은 「Point of No Return」 경고에도 불구하고 엔딩 후 모든 컴플리션 회수 가능 — 영구 미서블 0. 핵심 게이트는 ①「돈도코 섬」 5성 리조트 ②「수지몬 도감」 250종 + 배틀 ③드링크 링크(전 동료) ④알로하 링크스 친밀도 ⑤EX-HARD/PREMIUM NEW GAME ⑥아마도 우리가 최강(드림 머신 보스).",
+      "Like a Dragon: Infinite Wealth 플래티넘 — 다른 73개 업적 전부 해금 시 자동 발동. Y8은 「Point of No Return」 경고에도 불구하고 엔딩 후 모든 컴플리션 회수 가능 — 영구 미서블 0. 핵심 게이트는 ①「쿵더쿵섬」 5성 리조트 ②「야쿠몬 도감」 250종 + 배틀 ③드링크 링크(전 동료) ④알로하 링크스 친밀도 ⑤EX-HARD/PREMIUM NEW GAME ⑥아마도 우리가 최강(드림 머신 보스).",
     en:
       "Y8 platinum auto-pops at full unlock. Despite the stern 'Point of No Return' warning, every completion is reachable post-credits — zero permanent missables. Gates: ① Dondoko Island 5★ resort ② Sujimon Dex 250 + battles ③ Drink Links (all party) ④ Aloha Links bonds ⑤ EX-HARD / PREMIUM NEW GAME ⑥ Drink Master boss.",
   },
   steps: [
     {
       ko:
-        "1) 5장에서 돈도코 섬 해금 직후부터 적극 진행 — 5성 리조트(목표 충실도/인기도 + 클린 파이러츠 격파 + 다리 건설)는 진행도 누적이 길어 일찍 시작할수록 유리.",
+        "1) 5장에서 쿵더쿵섬 해금 직후부터 적극 진행 — 5성 리조트(목표 충실도/인기도 + 클린 파이러츠 격파 + 다리 건설)는 진행도 누적이 길어 일찍 시작할수록 유리.",
       en:
         "1) Open Dondoko Island in Ch.5 and start grinding immediately — 5★ resort needs cumulative goals, so earlier is better.",
     },
     {
       ko:
-        "2) 메인 스토리 진행과 병행해 스지몬 도감 250종 등록 + 스지몬 배틀 컵 우승. 호놀룰루 외곽에 강한 스지몬이 다수 출몰하므로 후반 장에서 집중 정리.",
+        "2) 메인 스토리 진행과 병행해 야쿠몬 도감 250종 등록 + 야쿠몬 배틀 컵 우승. 호놀룰루 외곽에 강한 야쿠몬이 다수 출몰하므로 후반 장에서 집중 정리.",
       en:
         "2) Catch 250 Sujimon and clear the Sujimon Battle Cup — top-tier Sujimon spawn in Honolulu's outskirts, so push them in late chapters.",
     },
@@ -59,7 +59,7 @@ const platinum: CuratedGuide = {
 const premiumNewGameHardClear: CuratedGuide = {
   summary: {
     ko:
-      "엔딩 후 해금되는 PREMIUM NEW GAME(승계 회차)을 EX-HARD 난이도로 끝까지 클리어해야 발동. 1회차 레벨·스킬·장비·돈도코 가구 등을 그대로 이어받기 때문에 메인 스토리 직주행이 표준 루트입니다.",
+      "엔딩 후 해금되는 PREMIUM NEW GAME(승계 회차)을 EX-HARD 난이도로 끝까지 클리어해야 발동. 1회차 레벨·스킬·장비·쿵더쿵 가구 등을 그대로 이어받기 때문에 메인 스토리 직주행이 표준 루트입니다.",
     en:
       "Clear PREMIUM NEW GAME (carry-over+) on EX-HARD difficulty. Level, skills, gear, and Dondoko furniture carry over, so a story-sprint is the standard run.",
   },
@@ -97,7 +97,7 @@ const premiumNewGameHardClear: CuratedGuide = {
 
 // 「우리가 최강!」 PREMIUM NEW GAME EX-HARD. Steam: pnew_game_exhard_clear.
 const premiumExHardY8: CuratedGuide = {
-  summary: { ko: "엔딩 후 해금되는 PREMIUM NEW GAME(승계 회차)을 EX-HARD 난이도로 클리어해야 발동. 1회차 레벨·스킬·장비·돈도코 가구가 모두 이월되므로 스토리 직주행 가능.", en: "Clear PREMIUM NEW GAME on EX-HARD post-credits. Level/skills/gear/Dondoko furniture carry over." },
+  summary: { ko: "엔딩 후 해금되는 PREMIUM NEW GAME(승계 회차)을 EX-HARD 난이도로 클리어해야 발동. 1회차 레벨·스킬·장비·쿵더쿵 가구가 모두 이월되므로 스토리 직주행 가능.", en: "Clear PREMIUM NEW GAME on EX-HARD post-credits. Level/skills/gear/Dondoko furniture carry over." },
   steps: [
     { ko: "1) 엔딩 후 메인 메뉴에서 PREMIUM NEW GAME → EX-HARD 명시적 선택. 중간 변경은 일부 빌드에서 카운트 누락.", en: "1) Pick PREMIUM NEW GAME + EX-HARD explicitly — mid-run changes void some builds." },
     { ko: "2) 스토리 직주행. 12장·13 후반 보스가 가장 까다로움 — 직업 레벨 80+ 유지.", en: "2) Story-sprint; Ch.12~13 bosses spike — keep jobs at Lv.80+." },
@@ -112,7 +112,7 @@ const lv70Y8: CuratedGuide = {
   summary: { ko: "카스가 이치반의 직업 레벨이 Lv.70 이상에 도달하면 발동. 진정한 최종 던전(스파이크 차이나타운 등)에서 적 레벨 50~70 그라인드로 도달.", en: "Push Kasuga's job level to 70+. The True Final Dungeon (Daiyama / Spike) covers it via Lv.50~70 mob grinding." },
   steps: [
     { ko: "1) 엔딩 후 「스파이크 차이나타운」 진정한 최종 던전 진입.", en: "1) After credits, enter the True Final Dungeon (Spike Chinatown)." },
-    { ko: "2) EXP 부스트 장비(돈도코 가구·드링크 링크) 활용. Lv.70 도달 시 트로피 발동.", en: "2) Stack EXP buffs from Dondoko furniture + Drink Links. Lv.70 fires it." },
+    { ko: "2) EXP 부스트 장비(쿵더쿵 가구·드링크 링크) 활용. Lv.70 도달 시 트로피 발동.", en: "2) Stack EXP buffs from Dondoko furniture + Drink Links. Lv.70 fires it." },
   ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Infinite Wealth Trophy Guide", en: "PowerPyx — Infinite Wealth Trophy Guide" },
@@ -135,14 +135,14 @@ const crazyDeliveryAll: CuratedGuide = {
 
 // 「재활용 마스터」 — DIY로 100종류 가구 제작. Steam: resort_diy.
 const diyMaster: CuratedGuide = {
-  summary: { ko: "돈도코 섬의 DIY(가구 제작) 시스템에서 누적 100종류의 가구를 제작하면 발동. 5장 돈도코 섬 해금 후 자원 + 도면 수집으로 진행.", en: "Craft 100 unique furniture pieces via Dondoko Island's DIY system. Unlocks in Ch.5 after Dondoko opens." },
+  summary: { ko: "쿵더쿵섬의 DIY(가구 제작) 시스템에서 누적 100종류의 가구를 제작하면 발동. 5장 쿵더쿵섬 해금 후 자원 + 도면 수집으로 진행.", en: "Craft 100 unique furniture pieces via Dondoko Island's DIY system. Unlocks in Ch.5 after Dondoko opens." },
   steps: [
-    { ko: "1) 돈도코 섬 진행 중 자원(목재·금속·천 등) 수집 + 도면 해금.", en: "1) Gather resources + blueprints across Dondoko." },
+    { ko: "1) 쿵더쿵섬 진행 중 자원(목재·금속·천 등) 수집 + 도면 해금.", en: "1) Gather resources + blueprints across Dondoko." },
     { ko: "2) DIY 메뉴에서 100종류 누적 제작 — 중복 제작은 카운트 안 됨에 주의.", en: "2) Craft 100 unique items (duplicates don't count)." },
     { ko: "3) 100종 도달 시 트로피 발동.", en: "3) Trophy fires at 100." },
   ],
   tips: [
-    { ko: "[돈도코 DIY 효율] 중복 제작은 카운트되지 않으니 같은 가구를 반복하지 말고 새 도면을 우선 해금하세요. 섬을 돌며 자원(목재·금속·천)을 꾸준히 모으고, 방문객 평가(섬 등급)를 올리면 새 도면과 자원이 빠르게 풀려 100종 달성이 훨씬 수월합니다.", en: "[Dondoko DIY efficiency] Duplicates don't count, so don't re-craft the same piece — prioritize unlocking new blueprints. Keep gathering resources (wood, metal, cloth) as you roam the island, and raising your visitor rating (island rank) unlocks new blueprints and materials faster, making 100 much easier." },
+    { ko: "[쿵더쿵 DIY 효율] 중복 제작은 카운트되지 않으니 같은 가구를 반복하지 말고 새 도면을 우선 해금하세요. 섬을 돌며 자원(목재·금속·천)을 꾸준히 모으고, 방문객 평가(섬 등급)를 올리면 새 도면과 자원이 빠르게 풀려 100종 달성이 훨씬 수월합니다.", en: "[Dondoko DIY efficiency] Duplicates don't count, so don't re-craft the same piece — prioritize unlocking new blueprints. Keep gathering resources (wood, metal, cloth) as you roam the island, and raising your visitor rating (island rank) unlocks new blueprints and materials faster, making 100 much easier." },
   ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/",
   sourceLabel: { ko: "PowerPyx — Infinite Wealth Trophy Guide", en: "PowerPyx — Infinite Wealth Trophy Guide" },
