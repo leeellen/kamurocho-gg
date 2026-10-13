@@ -19,11 +19,11 @@ export const yakuza0: CollectiblesData = {
   {
     slug: "video-clips",
     title: { ko: "비디오 — 간다라 비디오 가게 + 특별 클립 해금", en: "Video — Gandara Shop + Special Clip Unlocks" },
-    summary: { ko: "용과 같이 0의 비디오 콘텐츠는 「간다라(ガンダーラ)」 비디오 가게에서 진행됩니다. 일반 이미지 비디오를 반복 시청하면 점원과의 호감도가 오르고, 특정 조건을 만족시키면 서브스토리 + 특별 클립이 해금됩니다. 30종 일괄 수집 시스템은 없으며, 핵심은 호감도 + 사이드 트리거입니다.", en: "Y0's video content lives at the Gandhara video shop. Watching standard image videos repeatedly raises affinity with the clerk; specific triggers unlock substories + special clips. There is no flat 30-clip checklist — what matters is affinity + side triggers." },
+    summary: { ko: "용과 같이 0의 비디오 콘텐츠는 「간다라」 비디오 가게에서 진행됩니다. 일반 이미지 비디오를 반복 시청하면 점원과의 호감도가 오르고, 특정 조건을 만족시키면 서브스토리 + 특별 클립이 해금됩니다. 30종 일괄 수집 시스템은 없으며, 핵심은 호감도 + 사이드 트리거입니다.", en: "Y0's video content lives at the Gandhara video shop. Watching standard image videos repeatedly raises affinity with the clerk; specific triggers unlock substories + special clips. There is no flat 30-clip checklist — what matters is affinity + side triggers." },
     tips: [
         { ko: "간다라 소텐보리점에서 처음 비디오를 보면 서브스토리가 자동 발생. 점원과의 인연 게이지가 함께 오릅니다.", en: "First viewing at Sotenbori Gandhara auto-triggers a substory + starts the clerk's bond gauge." },
         { ko: "천량 거리 북쪽 간다라에서 이미지 비디오 3회 시청 후 입장하면 서브스토리 「비디오 걸」 발생.", en: "Watch any image video 3 times at the Senryo St. North Gandhara then re-enter to trigger substory 'Video Girl'." },
-        { ko: "점원 인연 게이지가 90 이상일 때 비디오 시청 → 오디세이 창고 앞 흰 옷 여성과 대화 → M스토어 쇼후쿠초점에서 「오뎅 모듬」 구매 → 여성에게 전달 → 「예의 비디오(例のビデオ)」 입수.", en: "Affinity 90+: watch a video → talk to the white-dressed woman in front of the Odyssey warehouse → buy 'Oden Assortment' at M-Store Shofukucho → give it to her → obtain the 'Special Video'." },
+        { ko: "점원 인연 게이지가 90 이상일 때 비디오 시청 → 오디세이 창고 앞 흰 옷 여성과 대화 → M스토어 쇼후쿠초점에서 「오뎅 모듬」 구매 → 여성에게 전달 → 「예의 비디오」 입수.", en: "Affinity 90+: watch a video → talk to the white-dressed woman in front of the Odyssey warehouse → buy 'Oden Assortment' at M-Store Shofukucho → give it to her → obtain the 'Special Video'." },
     ],
     source: [
       { label: "龍が如く0 攻略 — ガンダーラ・ビデオ", url: "https://spwiki.net/ryuzero/" },

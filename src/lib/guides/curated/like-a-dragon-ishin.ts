@@ -143,7 +143,7 @@ const allSubsIshin: CuratedGuide = {
 
 // 「나, 천계를 얻었도다」 — 모든 천계 마침. Steam: finish_all_tenkei.
 const allRevelations: CuratedGuide = {
-  summary: { ko: "Ishin!의 모든 「천계(天啓 — 시리즈의 \"계시\" 시스템에 해당)」 이벤트를 완료하면 발동. 각 천계는 특정 행동·장소·시점 조건이 붙어 있어 가이드 옆에 두고 진행.", en: "Finish every Revelation event in Ishin!. Each gates on a specific action/place/time — keep a list." },
+  summary: { ko: "Ishin!의 모든 「천계(시리즈의 \"계시\" 시스템에 해당)」 이벤트를 완료하면 발동. 각 천계는 특정 행동·장소·시점 조건이 붙어 있어 가이드 옆에 두고 진행.", en: "Finish every Revelation event in Ishin!. Each gates on a specific action/place/time — keep a list." },
   steps: [
     { ko: "1) 천계 이벤트 트리거 조건은 거리 NPC의 행동 관찰 → 카메라 줌인 → 영감 획득.", en: "1) Revelations trigger by observing NPC behavior with the camera." },
     { ko: "2) 컴플리트 리스트의 「천계」 카테고리를 보며 미발동 항목 추적.", en: "2) Track missing entries in the Revelations Completion category." },

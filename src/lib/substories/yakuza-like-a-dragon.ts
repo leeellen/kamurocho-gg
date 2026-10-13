@@ -275,8 +275,8 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
           trigger: { ko: "관광 가이드 이시다 아야미에게 말 걸기", en: "Talk to tour guide Ishida Ayami." },
           body: { ko: "가이드 아야미의 관광 안내를 보조. 3개의 퀴즈에 정답을 맞추면 인간력 보너스. 도중 불량배 1명과 전투.", en: "Help Ayami guide tourists. Three trivia prompts; pick the right answer each time, then beat one thug." },
           choices: [
-            { prompt: { ko: "「이진초의 상징적인 동상은?」", en: "'Ijincho's iconic statue?'" }, correct: { ko: "붉은 용", en: "Red Dragon (赤いリュウ)" }, note: { ko: "정열 +10", en: "Passion +10" } },
-            { prompt: { ko: "「하마키타 공원의 명물은?」", en: "'Hamakita Park's landmark?'" }, correct: { ko: "파란 간판", en: "Blue Sign (青色の看板)" }, note: { ko: "지력 +10", en: "Intelligence +10" } },
+            { prompt: { ko: "「이진초의 상징적인 동상은?」", en: "'Ijincho's iconic statue?'" }, correct: { ko: "붉은 용", en: "Red Dragon" }, note: { ko: "정열 +10", en: "Passion +10" } },
+            { prompt: { ko: "「하마키타 공원의 명물은?」", en: "'Hamakita Park's landmark?'" }, correct: { ko: "파란 간판", en: "Blue Sign" }, note: { ko: "지력 +10", en: "Intelligence +10" } },
             { prompt: { ko: "「차이나타운의 명물 음식은?」", en: "'Chinatown's signature dish?'" }, correct: { ko: "울트라 폭성 슈퍼 고기만두", en: "Ultra Explosion Super Meat Bun" }, note: { ko: "스타일 +10", en: "Style +10" } },
           ],
           reward: { ko: "팬시 마이크 + 회복약 + 이시다 아야미 (회사 직원)", en: "Fancy Microphone + medicine + Ishida Ayami (company)" },

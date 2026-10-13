@@ -90,7 +90,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 6,
-          title: { ko: "속・미스터리 작가로부터의 도전장", en: "The Mystery Writer's Challenge II" },
+          title: { ko: "속·미스터리 작가로부터의 도전장", en: "The Mystery Writer's Challenge II" },
           chapter: { ko: "3장~", en: "Chapter 3+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "탐정 사무소 게시판", en: "Detective Agency bulletin board" },
@@ -100,7 +100,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 7,
-          title: { ko: "속속・미스터리 작가로부터의 도전장", en: "The Mystery Writer's Challenge III" },
+          title: { ko: "속속·미스터리 작가로부터의 도전장", en: "The Mystery Writer's Challenge III" },
           chapter: { ko: "5장~", en: "Chapter 5+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "탐정 사무소 게시판", en: "Detective Agency bulletin board" },
@@ -126,7 +126,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 9,
-          title: { ko: "속・나를 찾아줘", en: "Find Me Again" },
+          title: { ko: "속·나를 찾아줘", en: "Find Me Again" },
           chapter: { ko: "4장~", en: "Chapter 4+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "탐정 사무소 게시판", en: "Detective Agency bulletin board" },
@@ -139,7 +139,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 10,
-          title: { ko: "속속・나를 찾아줘", en: "Find Me, One More Time" },
+          title: { ko: "속속·나를 찾아줘", en: "Find Me, One More Time" },
           chapter: { ko: "6장~", en: "Chapter 6+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "탐정 사무소 게시판", en: "Detective Agency bulletin board" },
@@ -377,7 +377,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 32,
-          title: { ko: "정의의 히어로・카이토 마사하루", en: "Justice Hero Masaharu Kaito" },
+          title: { ko: "정의의 히어로·카이토 마사하루", en: "Justice Hero Masaharu Kaito" },
           chapter: { ko: "7장", en: "Chapter 7" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 곳곳", en: "Various Kamurocho spots" },
@@ -402,7 +402,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 34,
-          title: { ko: "속・쏟아지는 재앙의 정체는?", en: "Falling Disasters II" },
+          title: { ko: "속·쏟아지는 재앙의 정체는?", en: "Falling Disasters II" },
           chapter: { ko: "6장~", en: "Chapter 6+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "텐카이 거리", en: "Tenkaichi St." },
@@ -412,7 +412,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 35,
-          title: { ko: "속속・쏟아지는 재앙의 정체는?", en: "Falling Disasters III" },
+          title: { ko: "속속·쏟아지는 재앙의 정체는?", en: "Falling Disasters III" },
           chapter: { ko: "7장~", en: "Chapter 7+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "나카미치 거리", en: "Nakamichi St." },
@@ -432,7 +432,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 37,
-          title: { ko: "속・카무로초의 폭탄마", en: "The Bomber Returns" },
+          title: { ko: "속·카무로초의 폭탄마", en: "The Bomber Returns" },
           chapter: { ko: "4장~", en: "Chapter 4+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 — 새로운 폭탄 예고지", en: "Kamurocho — new threat sites" },
@@ -442,7 +442,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 38,
-          title: { ko: "속속・카무로초의 폭탄마", en: "Bomber Trilogy Finale" },
+          title: { ko: "속속·카무로초의 폭탄마", en: "Bomber Trilogy Finale" },
           chapter: { ko: "6장~", en: "Chapter 6+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 — 마지막 폭탄 거점", en: "Kamurocho — final bomb site" },
@@ -472,7 +472,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 41,
-          title: { ko: "속・산들바람과 함께 사라지다", en: "Gone with the Breeze II" },
+          title: { ko: "속·산들바람과 함께 사라지다", en: "Gone with the Breeze II" },
           chapter: { ko: "4장~", en: "Chapter 4+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 — 골목길", en: "Kamurocho — alleyways" },
@@ -482,7 +482,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 42,
-          title: { ko: "속속・산들바람과 함께 사라지다", en: "Gone with the Breeze III" },
+          title: { ko: "속속·산들바람과 함께 사라지다", en: "Gone with the Breeze III" },
           chapter: { ko: "5장~", en: "Chapter 5+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 — 골목길", en: "Kamurocho — alleyways" },
@@ -542,7 +542,7 @@ export const judgmentSubstories: SubstoriesData = {
         },
         {
           number: 48,
-          title: { ko: "강도범・오노 미치오", en: "Robber Michio Ono" },
+          title: { ko: "강도범·오노 미치오", en: "Robber Michio Ono" },
           chapter: { ko: "6장~", en: "Chapter 6+" },
           protagonist: { ko: "야가미", en: "Yagami" },
           location: { ko: "카무로초 — 편의점 주변", en: "Kamurocho — near a convenience store" },

@@ -81,7 +81,7 @@ export const likeADragonIshin: CollectiblesData = {
     slug: "diligence-records",
     title: { ko: "정진기록 — 5/20/50/전체", en: "Diligence Records — 5/20/50/All" },
     summary: {
-      ko: "정진기록(精進目録)은 심부름 목록이 아니라 「사람이나 동물에게 100회 말 걸기」, 「음식점에서 20회 식사」, 「항아리에서 아이템 20개 입수」처럼 플레이 누계를 세는 항목의 모음입니다. 어드벤처·배틀 등 카테고리로 나뉘어 있고 달성하면 덕(徳)을 받습니다. 5건 시 「정진한 남자」, 20건 시 「더욱 정진한 남자」, 50건 시 「크게 정진한 남자」, 전체 완료 시 「정진의 신」 업적이 발동합니다.",
+      ko: "정진기록은 심부름 목록이 아니라 「사람이나 동물에게 100회 말 걸기」, 「음식점에서 20회 식사」, 「항아리에서 아이템 20개 입수」처럼 플레이 누계를 세는 항목의 모음입니다. 어드벤처·배틀 등 카테고리로 나뉘어 있고 달성하면 덕을 받습니다. 5건 시 「정진한 남자」, 20건 시 「더욱 정진한 남자」, 50건 시 「크게 정진한 남자」, 전체 완료 시 「정진의 신」 업적이 발동합니다.",
       en: "Diligence Records are not errands but a list of cumulative play milestones — talk to 100 people or animals, eat 20 meals at restaurants, pull 20 items out of pots — split into Adventure, Battle and other categories, each paying out Virtue. 5 unlocks 'The Gods Smile Upon Thee', 20 unlocks 'The Gods Rejoice at Thee', 50 unlocks 'The Gods Sing Thy Praises', and clearing all of them unlocks 'The Gods Hath Been Humbled'.",
     },
     tips: [

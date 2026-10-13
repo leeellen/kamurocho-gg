@@ -917,7 +917,7 @@ const bestTreasureHunter: CuratedGuide = {
     },
     {
       ko:
-        "3) 모든 부품 카탈로그 100% 도달 시 「베스트 트레져 헌터」 + 「대・대・대성공!」 등 연동 트로피 동시 발동.",
+        "3) 모든 부품 카탈로그 100% 도달 시 「베스트 트레져 헌터」 + 「대·대·대성공!」 등 연동 트로피 동시 발동.",
       en:
         "3) Full catalog completion fires this trophy + the 'Smooth Going' / 'Best Result' trophies together.",
     },

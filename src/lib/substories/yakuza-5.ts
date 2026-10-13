@@ -23,7 +23,7 @@ export const yakuza5Substories: SubstoriesData = {
         },
         {
           number: 2,
-          title: { ko: "택시 S・O・S", en: "Taxi S.O.S." },
+          title: { ko: "택시 S·O·S", en: "Taxi S.O.S." },
           chapter: { ko: "1부 2장~", en: "Part 1, Chapter 2+" },
           protagonist: { ko: "키류", en: "Kiryu" },
           location: { ko: "나가스가이 — 기온 거리", en: "Nagasugai — Gion St." },

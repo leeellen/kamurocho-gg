@@ -189,7 +189,7 @@ export const yakuza6Substories: SubstoriesData = {
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
           location: { ko: "배팅 센터", en: "Batting Center" },
           trigger: { ko: "오노미치 No.35 클리어 후 5연속 홈런", en: "After Onomichi No.35, hit 5 home runs in a row." },
-          body: { ko: "오노미치의 No.35를 끝낸 뒤 카무로초 요시다 배팅 센터에서 챌린지 코스를 3회 클리어하면 지배인과의 대화 이벤트가 발생한다. 이어서 시작(試作) 코스에 도전해 홈런 5개를 연속으로 쳐야 한다. 구종과 코스는 매번 동일하고 몇 번이든 재도전할 수 있으니 패턴을 외우면 된다. 지배인과의 대화 선택지가 두 번 나오지만 어느 쪽을 골라도 진행되며, 마지막에 지배인이 팀에 합류한다.", en: "After Onomichi's No.35, clear the Yoshida Batting Center's challenge course three times to trigger a chat with the manager. Then take the prototype course and hit five home runs in a row — the pitch types and locations never change and you can retry freely, so it is a memorisation job. There are two dialogue prompts along the way and neither changes anything; the manager signs on at the end regardless." },
+          body: { ko: "오노미치의 No.35를 끝낸 뒤 카무로초 요시다 배팅 센터에서 챌린지 코스를 3회 클리어하면 지배인과의 대화 이벤트가 발생한다. 이어서 시작 코스에 도전해 홈런 5개를 연속으로 쳐야 한다. 구종과 코스는 매번 동일하고 몇 번이든 재도전할 수 있으니 패턴을 외우면 된다. 지배인과의 대화 선택지가 두 번 나오지만 어느 쪽을 골라도 진행되며, 마지막에 지배인이 팀에 합류한다.", en: "After Onomichi's No.35, clear the Yoshida Batting Center's challenge course three times to trigger a chat with the manager. Then take the prototype course and hit five home runs in a row — the pitch types and locations never change and you can retry freely, so it is a memorisation job. There are two dialogue prompts along the way and neither changes anything; the manager signs on at the end regardless." },
           prereq: { ko: "오노미치 No.35 클리어", en: "Clear Onomichi No.35" },
           reward: { ko: "요시다 지배인이 세토우치 워리어즈 합류", en: "Manager Yoshida joins the Seto Warriors" },
         },
