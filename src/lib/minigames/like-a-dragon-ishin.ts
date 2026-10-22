@@ -25,7 +25,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       howTo: [
         { ko: "흐름은 ① 행상 주문 확인 → ② 요구 농작물·생선·요리 조달 → ③ 납품 → ④ 병행해서 펫을 늘리고 덕을 벌어 별택을 확충 → 반복입니다. 빚을 갚으려면 행상을 소화해 독촉장을 받아야 합니다.", en: "The loop is: check the trade orders, gather the crops, fish and dishes they ask for, deliver, and in parallel add pets and spend Virtue on expanding the house. Paying down the debt requires filling those orders to earn the demand notes." },
         { ko: "주문 품목은 사서 채울 수도 있지만, 트로피·컴플리트·정진목록을 함께 노린다면 직접 농사와 낚시로 조달하는 편이 낫습니다.", en: "You can buy what the orders want, but growing and catching it yourself also feeds the trophies, the completion list and the Diligence Records." },
-        { ko: "행상으로 20량을 벌면 빚을 갚을 수 있습니다(갚을수록 보수가 오름). 주문 순서는 카테고리마다 고정이라, 아래 「행상 주문 순서」를 보고 다음·다다음 주문을 미리 준비할 수 있습니다. 일부 생선·채소·식재료는 후시미·라쿠나이 가게에서 사 두는 편이 빠릅니다. 극은 도박 벌이 효율이 원작의 약 1/3이라 행상 수입의 비중이 큽니다.", en: "Earning 20 ryo through trading lets you pay down the debt, and payouts grow as you go. Order sequences are fixed per category, so the trade-order table below lets you prep the next one or two in advance. Some fish, vegetables and ingredients are faster to buy in Fushimi or Rakunai. In Kiwami gambling pays roughly a third of what it did in the original, which makes trading income matter more." },
+        { ko: "행상으로 20량을 벌면 빚을 갚을 수 있습니다(갚을수록 보수가 오름). 주문 순서는 카테고리마다 고정이라, 아래 「행상 주문 순서」를 보고 다음·다다음 주문을 미리 준비할 수 있습니다. 일부 생선·채소·식재료는 후시미·도성 안 가게에서 사 두는 편이 빠릅니다. 극은 도박 벌이 효율이 원작의 약 1/3이라 행상 수입의 비중이 큽니다.", en: "Earning 20 ryo through trading lets you pay down the debt, and payouts grow as you go. Order sequences are fixed per category, so the trade-order table below lets you prep the next one or two in advance. Some fish, vegetables and ingredients are faster to buy in Fushimi or Rakunai. In Kiwami gambling pays roughly a third of what it did in the original, which makes trading income matter more." },
         { ko: "농사 덕 교환 우선순위: 밭 확장(1단계만 해도 교환 가능한 작부가 늘어남) > 허수아비(최상위 「쇼군 허수아비」면 식해가 없어짐) > 밭 레벨 = 각종 작부. 토마토(서브스토리 「수상한 상인」에서 10개)·당근·시금치·순무(「채소를 사랑하는 소년」)는 팔백옥에서 안 팔아 직접 길러야 하니 먼저 심으세요. 일괄 수확은 덕이 줄고 풍작 보너스가 없어 급할 때만 쓰세요.", en: "Farm Virtue priorities: field expansion first (even one step adds seed options), then scarecrows (the top Shogun Scarecrow stops crop damage entirely), then field level and individual seeds. Tomatoes (ten for The Mysterious Merchant substory), carrots, spinach and turnips (The Boy Who Loves Veggies) aren't sold at the greengrocer, so plant them first. Bulk harvest gives less Virtue and skips bumper-crop bonuses — use it only when pressed." },
         { ko: "요리는 「썰기」 아이콘 겹칠 때 누르기, 「붓기」 100 근처에서 멈추기, 「가열」 연타로 화력 유지, 「굽기」 큰 불똥이 튈 때 뒤집기의 4공정입니다. 대성공이면 회복량이 큰 특상 요리가 됩니다. 덕 교환 「요리 애호가의 부엌」이 최우선이고, 「만능 부엌」까지 올리면 「혁명 데굴데굴 튀김」 외 전 요리가 열립니다(그건 서브스토리 「혁명의 요리사」 절 최대로 해금 — 요리 4개를 미리 준비).", en: "Cooking has four steps: cut (press as the knife icon overlaps), pour (stop near 100), heat (mash to hold the flame) and grill (flip when a big spark flies). A great result makes a premium dish with stronger healing. The Cooking Lover's Kitchen upgrade is the first Virtue buy; Universal Kitchen unlocks every recipe except Revolutionary Korokoro Fritters, which comes from maxing The Revolutionary Chef substory bond — have four dishes ready for it." },
         { ko: "펫은 개·고양이 각 3마리까지입니다. 말을 걸면 료마가 기분을 말해 주는데, 「기분 나쁨」이면 아무거나, 「그럭저럭」이면 메시지 내용의 한 칸 아래 선택지를 고르면 됩니다(그 위 단계는 힌트가 거의 없음). 개는 아이템·무기 소재를 물어 오고(개집 설치·강화로 빈도 증가), 고양이는 행상 때 거래처의 선물 확률을 올립니다(고양이 이불로 강화).", en: "Up to three dogs and three cats. Talking to a pet makes Ryoma describe its mood: when it's in a bad mood any choice works, and when it's so-so pick the option one below what the message describes (the happier tiers rarely give a hint). Dogs fetch items and weapon materials (a doghouse and its upgrades raise the rate); cats raise the chance of bonus gifts on trades (the cat futon boosts it)." },
@@ -71,7 +71,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
         {
           title: { ko: "작물별 작부 입수 조건 · 팔백옥 구입가", en: "Seed unlock cost and greengrocer price per crop" },
           puzzles: [
-            { title: { ko: "전 작물 22종", en: "All 22 crops" }, note: { ko: "오이 처음부터/100문 · 무 처음부터/구입 불가 · 당근 처음부터/불가 · 시금치 처음부터/불가 · 감자 처음부터/150문 · 고구마 덕100/불가 · 파 덕100/300문 · 양파 덕150/250문 · 생강 덕150/350문 · 가지 덕200/300문 · 순무 덕200/불가 · 잠두콩 덕250/불가 · 우엉 덕250/불가 · 고추 덕300(1단계 확장 후)/500문 · 마늘 덕400(1단계 확장 후)/불가 · 배추 덕500/불가 · 호박 덕600/불가 · 토마토 덕1000(1단계 확장 후)/불가 · 딸기 덕1500/1,000문 · 양배추 덕1500/불가 · 토란 덕3000/불가 · 인삼 덕10000(최대 확장 후)/1량(라쿠나이 만물상)", en: "Cucumber from the start/100 mon · Radish from the start/not sold · Carrot from the start/not sold · Spinach from the start/not sold · Potato from the start/150 mon · Sweet Potato Virtue 100/not sold · Green Onion Virtue 100/300 mon · Onion Virtue 150/250 mon · Ginger Virtue 150/350 mon · Eggplant Virtue 200/300 mon · Turnip Virtue 200/not sold · Broad Beans Virtue 250/not sold · Burdock Virtue 250/not sold · Chili Pepper Virtue 300 (after first expansion)/500 mon · Garlic Virtue 400 (after first expansion)/not sold · Chinese Cabbage Virtue 500/not sold · Pumpkin Virtue 600/not sold · Tomato Virtue 1000 (after first expansion)/not sold · Strawberry Virtue 1500/1,000 mon · Cabbage Virtue 1500/not sold · Taro Virtue 3000/not sold · Ginseng Virtue 10000 (after max expansion)/1 ryo (Rakunai general store)" } },
+            { title: { ko: "전 작물 22종", en: "All 22 crops" }, note: { ko: "오이 처음부터/100문 · 무 처음부터/구입 불가 · 당근 처음부터/불가 · 시금치 처음부터/불가 · 감자 처음부터/150문 · 고구마 덕100/불가 · 파 덕100/300문 · 양파 덕150/250문 · 생강 덕150/350문 · 가지 덕200/300문 · 순무 덕200/불가 · 잠두콩 덕250/불가 · 우엉 덕250/불가 · 고추 덕300(1단계 확장 후)/500문 · 마늘 덕400(1단계 확장 후)/불가 · 배추 덕500/불가 · 호박 덕600/불가 · 토마토 덕1000(1단계 확장 후)/불가 · 딸기 덕1500/1,000문 · 양배추 덕1500/불가 · 토란 덕3000/불가 · 인삼 덕10000(최대 확장 후)/1량(도성 안 만물상)", en: "Cucumber from the start/100 mon · Radish from the start/not sold · Carrot from the start/not sold · Spinach from the start/not sold · Potato from the start/150 mon · Sweet Potato Virtue 100/not sold · Green Onion Virtue 100/300 mon · Onion Virtue 150/250 mon · Ginger Virtue 150/350 mon · Eggplant Virtue 200/300 mon · Turnip Virtue 200/not sold · Broad Beans Virtue 250/not sold · Burdock Virtue 250/not sold · Chili Pepper Virtue 300 (after first expansion)/500 mon · Garlic Virtue 400 (after first expansion)/not sold · Chinese Cabbage Virtue 500/not sold · Pumpkin Virtue 600/not sold · Tomato Virtue 1000 (after first expansion)/not sold · Strawberry Virtue 1500/1,000 mon · Cabbage Virtue 1500/not sold · Taro Virtue 3000/not sold · Ginseng Virtue 10000 (after max expansion)/1 ryo (Rakunai general store)" } },
           ],
         },
       ],
@@ -81,7 +81,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "일본 무용 (니치부자)", en: "Japanese dance (Nichibuza)" },
       category: { ko: "음악·리듬", en: "Music / rhythm" },
       difficulty: 3,
-      location: { ko: "라쿠나이 「니치부자」 (1회 1,000문) — 서브스토리 「니치부좌의 새 단골」 클리어로 해금", en: "Nichibuza, Rakunai (1,000 mon a play) — unlocked by clearing the substory Nichibuza's Newest Fan, which triggers in front of the building" },
+      location: { ko: "도성 안 「니치부자」 (1회 1,000문) — 서브스토리 「니치부좌의 새 단골」 클리어로 해금", en: "Nichibuza, Rakunai (1,000 mon a play) — unlocked by clearing the substory Nichibuza's Newest Fan, which triggers in front of the building" },
       summary: {
         ko: "노트를 맞춰 누르는 리듬 게임. 전 악곡을 아무 난이도로든 클리어하면 트로피 「춤 좀 추는 남자」이고, 전 난이도를 「일류」 이상으로 클리어해야 컴플리트가 오릅니다.",
         en: "A note-matching rhythm game. Clearing every song on any difficulty gives Lord of the Dance; the completion list wants every difficulty cleared at first-class rank or better.",
@@ -260,13 +260,13 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "투기장", en: "Arena" },
       category: { ko: "배틀", en: "Battle" },
       difficulty: 5,
-      location: { ko: "무쿠로가이 2층 북쪽, 「강자여 모여라」 간판 건물 (서쪽 계단 또는 강가 계단으로 올라감)", en: "Mukuro Town, north side of the upper level — the building with the Gather, Strong Ones sign, reached by the west stairs or the riverside stairs" },
+      location: { ko: "해골 거리 2층 북쪽, 「강자여 모여라」 간판 건물 (서쪽 계단 또는 강가 계단으로 올라감)", en: "Mukuro Town, north side of the upper level — the building with the Gather, Strong Ones sign, reached by the west stairs or the riverside stairs" },
       summary: {
         ko: "「승발전」과 「백인 베기」를 치르는 실력 시험장. 컴플리트 보상은 대통 「봉황」이고, 10승으로 트로피 「투기장은 나의 앞마당」, 궁극 투기를 전부 클리어하면 「궁극의 끝에 도달한 자」입니다.",
         en: "Gauntlet fights and the Hundred-Man Slash. Completing it awards the Houou cannon, ten wins give This is MY Ring!, and clearing every Ultimate Challenge gives Ultimate Champion.",
       },
       howTo: [
-        { ko: "무쿠로가이로 가는 길부터 준비입니다. 후시미 신마치의 뱃사공에게 편도 500문을 내거나, 3장 저녁 이후 라쿠가이 문 앞의 남자에게 술(값싼 「도부로쿠」면 충분)을 건네면 이후 자유롭게 왕래할 수 있습니다.", en: "Getting there is step one: pay the Shinmachi boatman 500 mon each way, or from evening in Chapter 3 hand the man at the Rakugai gate any sake — cheap doburoku does — for permanent free passage." },
+        { ko: "해골 거리로 가는 길부터 준비입니다. 후시미 신마치의 뱃사공에게 편도 500문을 내거나, 3장 저녁 이후 도성 밖 문 앞의 남자에게 술(값싼 「도부로쿠」면 충분)을 건네면 이후 자유롭게 왕래할 수 있습니다.", en: "Getting there is step one: pay the Shinmachi boatman 500 mon each way, or from evening in Chapter 3 hand the man at the Rakugai gate any sake — cheap doburoku does — for permanent free passage." },
         { ko: "투기장은 도전 직전의 레벨·장비·체력·히트 게이지·식사 효과를 그대로 이어받습니다. 들어가기 전에 반드시 체력과 게이지를 채워 두세요.", en: "The arena inherits your level, gear, health, heat gauge and food buffs exactly as they are when you enter — top everything up first." },
         { ko: "투기장 안에서는 아이템을 쓸 수 없고 대사 능력도 못 씁니다. 그래서 체력·게이지가 자동 회복되는 인을 무구에 박아 두는 것이 사실상 필수이고, 장기전이 되는 백인 베기에서는 특히 그렇습니다.", en: "Items are banned inside and trooper abilities don't work, so seals that auto-regenerate health and gauge are effectively mandatory — above all for the long Hundred-Man Slash." },
         { ko: "혼구로 능력을 미리 강화해 체력·히트 게이지 상한을 올려 두고, 백인 베기 전에는 다수를 한 번에 치는 기술을 배워 두세요. 추천 기술은 격투의 형 「고마키류 다루마 피하기」·「말려들기 강화」·「강체의 마음가짐」, 일도의 형 「검속 강화」·「무검술 공중 회전 베기」, 단총의 형 「연사 속도 상승」·「염룡 활공」·「염룡 포효」, 난무의 형 「회피 연영」·「천룡 쇄아」·「난격무도 1~3」입니다.", en: "Spend Soul Orbs on health and heat caps beforehand, and learn multi-target moves before the Hundred-Man Slash. The guide's picks are Komaki-style Dharma Dodge, Sweep Enhancement and Iron Body in Brawler; Blade Speed and Aerial Spin Slash in Swordsman; Rapid Fire, Flame Dragon Glide and Flame Dragon Roar in Gunman; and Evasive Afterimage, Heavenly Dragon Fang Crusher and Wild Dance 1–3 in Wild Dancer." },
@@ -282,7 +282,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "대포알 다루기 (신베에 박사의 수행)", en: "Cannonball juggling (Dr. Shinbei's training)" },
       category: { ko: "수행", en: "Training" },
       difficulty: 3,
-      location: { ko: "무쿠로가이 동쪽 강가 — 신베에 박사 앞을 지나면 발생", en: "The riverside on the east side of Mukuro Town — triggers by walking past Dr. Shinbei" },
+      location: { ko: "해골 거리 동쪽 강가 — 신베에 박사 앞을 지나면 발생", en: "The riverside on the east side of Mukuro Town — triggers by walking past Dr. Shinbei" },
       summary: {
         ko: "날아오는 대포알을 타이밍에 맞춰 □로 쳐 내는 수행. 스틱 조작은 필요 없고 오로지 타이밍입니다. 「일도의 형」과 「단총의 형」 두 계통이 있고 각각 초급·중급·상급·오마케 4단계입니다.",
         en: "Bat away incoming cannonballs with square on timing alone — no stick input at all. It runs in two lines, Swordsman and Gunman, each with beginner, intermediate, advanced and bonus tiers.",
@@ -293,7 +293,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
         { ko: "금 평가 기준 — 일도의 형: 초급 10발 1,800점, 중급 15발 3,000점, 상급 20발 4,000점, 오마케 10발 1,400점. 단총의 형: 초급 28발 4,700점, 중급 55발 10,100점, 상급 74발 15,200점, 오마케 41발 8,100점.", en: "Gold thresholds — Swordsman: beginner 10 balls / 1,800, intermediate 15 / 3,000, advanced 20 / 4,000, bonus 10 / 1,400. Gunman: beginner 28 / 4,700, intermediate 55 / 10,100, advanced 74 / 15,200, bonus 41 / 8,100." },
         { ko: "일도의 형은 공이 료마 바로 옆에 오기 직전에 □를 누르고, 늦었다 싶어도 일단 휘두르세요(스쳐도 점수가 들어옵니다). 중급부터는 변화구가 섞이는데, 대포의 각도로 어떤 공이 올지 예측할 수 있습니다. 단총의 형은 조준선을 눈으로 따라가기보다 포격 리듬을 외워 누르는 편이 잘 맞습니다.", en: "Swordsman: press square just before the ball draws level with Ryoma, and swing even if you think you're late — a graze still scores. From intermediate on, curve balls join in; the cannon's angle tells you what's coming. Gunman: memorise the firing rhythm rather than chasing the reticle." },
         { ko: "보상 — 첫 튜토리얼: 대포 사용 스킬 「대포 심득」. 일도의 형: 초급 연마석, 중급 다마하가네, 상급 작은 금덩이, 오마케 백금 알갱이. 단총의 형: 초급 고철, 중급 덜걱거리는 톱니바퀴, 상급 정교한 톱니바퀴, 오마케 가라쿠리 세공.", en: "Rewards — first tutorial: the Cannon Mastery skill that lets you use cannons. Swordsman: beginner Polishing Stone, intermediate Tamahagane, advanced Small Gold Nugget, bonus Platinum Grain. Gunman: beginner Scrap Metal, intermediate Rackety Gear, advanced Exquisite Cogwheel, bonus Karakuri Work." },
-        { ko: "무쿠로가이 자체가 3장 저녁 이후 라쿠가이 문지기에게 술을 건네야 열립니다. 값싼 도부로쿠 한 병을 미리 사 두세요.", en: "Mukuro Town itself opens by handing the Rakugai gatekeeper any sake from evening in Chapter 3 — pick up cheap doburoku first." },
+        { ko: "해골 거리 자체가 3장 저녁 이후 도성 밖 문지기에게 술을 건네야 열립니다. 값싼 도부로쿠 한 병을 미리 사 두세요.", en: "Mukuro Town itself opens by handing the Rakugai gatekeeper any sake from evening in Chapter 3 — pick up cheap doburoku first." },
       ],
       source: [
         { label: "神ゲー攻略 — 新兵衛博士の修行「大砲玉捌き」", url: "https://kamigame.jp/ryugagotoku-ishin/page/252828401792982037.html" },
@@ -305,7 +305,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "경계 (닭 경주)", en: "Chicken racing" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "라쿠가이 경계장 (목찰 구입도 가능)", en: "The chicken-racing grounds in Rakugai (wooden tokens sold on site)" },
+      location: { ko: "도성 밖 경계장 (목찰 구입도 가능)", en: "The chicken-racing grounds in Rakugai (wooden tokens sold on site)" },
       summary: {
         ko: "이 게임에서 돈과 덕을 가장 효율적으로 버는 콘텐츠입니다. 5회 걸면 트로피가 나오고, 10,000점 이상을 획득하면 컴플리트가 달성됩니다.",
         en: "The most efficient money and Virtue in the game. Betting five times gives the trophy, and 10,000 points clears the completion entry.",
@@ -334,7 +334,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "친치로린 (주사위)", en: "Cee-lo" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
+      location: { ko: "도박장 (도성 밖 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
         ko: "그릇에 주사위를 던져 눈을 겨루는 도박. 컴플리트 조건은 목찰 누적 7,500점입니다.",
         en: "Throw dice into a bowl and compare the results. The completion condition is 7,500 cumulative token points.",
@@ -354,7 +354,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "초한 도박", en: "Cho-han" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
+      location: { ko: "도박장 (도성 밖 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
         ko: "주사위 두 개의 합이 짝수(초)인지 홀수(한)인지를 맞히는 가장 단순한 도박. 컴플리트 조건은 누적 7,500점입니다.",
         en: "Call whether two dice total even (cho) or odd (han) — the simplest table in the game. Completion wants 7,500 cumulative points.",
@@ -378,7 +378,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "코이코이 (화투)", en: "Koi-koi" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
+      location: { ko: "도박장 (도성 밖 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
         ko: "화투 1대1 대전. 컴플리트 조건은 누적 7,500점입니다.",
         en: "One-on-one hanafuda. Completion wants 7,500 cumulative points.",
@@ -401,7 +401,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "오이초카부", en: "Oicho-kabu" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
+      location: { ko: "도박장 (도성 밖 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
         ko: "합계의 끝자리를 9에 가깝게 만드는 카드 도박. 블랙잭과 비슷하지만 버스트가 없어 9를 넘겨도 문제없습니다. 컴플리트 조건은 누적 7,500점입니다.",
         en: "Get the last digit of your total as close to 9 as possible. It resembles blackjack but has no bust, so going past 9 costs you nothing. Completion wants 7,500 cumulative points.",
@@ -424,7 +424,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "포커", en: "Poker" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "도박장 (라쿠가이 등)", en: "The gambling dens, including Rakugai's" },
+      location: { ko: "도박장 (도성 밖 등)", en: "The gambling dens, including Rakugai's" },
       summary: {
         ko: "룰이 3종 있지만, 방침을 세우기 쉬운 텍사스 홀덤을 높은 배율로 도는 것이 가장 빠릅니다. 컴플리트 조건은 누적 10,000점입니다.",
         en: "Three rule sets are offered, but the fast route is Texas Hold'em at the high stake, where the decisions are clearest. Completion wants 10,000 cumulative points.",
@@ -448,7 +448,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "마작", en: "Mahjong" },
       category: { ko: "도박", en: "Gambling" },
       difficulty: 3,
-      location: { ko: "무쿠로가이 마작집", en: "The mahjong parlour in Mukuro Town" },
+      location: { ko: "해골 거리 마작집", en: "The mahjong parlour in Mukuro Town" },
       summary: {
         ko: "표준 마작입니다. 컴플리트 조건은 한 국(1)을 35,000점 이상으로 끝내는 것입니다(종료 보너스 전, 손패 위에 표시되는 점수 기준). 시작이 25,000점이니 괜찮은 화료 한 번에 방총만 피하면 됩니다.",
         en: "Standard mahjong. The completion condition is finishing a single match on 35,000 points or more — before end-of-match bonuses, i.e. the total shown above your hand. You start on 25,000, so one decent win without dealing into anyone does it.",
@@ -474,7 +474,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "장기 (이코마야)", en: "Shogi (Ikomaya)" },
       category: { ko: "보드게임", en: "Board game" },
       difficulty: 3,
-      location: { ko: "라쿠나이 장기집 「이코마야」 (1회 500문)", en: "Ikomaya, Rakunai (500 mon a play)" },
+      location: { ko: "도성 안 장기집 「이코마야」 (1회 500문)", en: "Ikomaya, Rakunai (500 mon a play)" },
       summary: {
         ko: "장기를 두어 「장기점」을 모으고 상처약이나 환금 아이템과 교환합니다. 컴플리트 조건은 모드에 상관없이 누적 3승이고, 가장 빠른 길은 정해진 수순이 있는 「시련 답파 1」을 3번 이기는 것입니다.",
         en: "Play for Shogi Points, traded for salves and cash items. The completion condition is three wins in total in any mode — the quickest route is winning Trial Run 1, which has a fixed line, three times.",
@@ -520,14 +520,14 @@ export const likeADragonIshinMinigames: MinigamesData = {
       name: { ko: "낚시", en: "Fishing" },
       category: { ko: "기타", en: "Misc" },
       difficulty: 2,
-      location: { ko: "후시미 데라다야 앞 강 / 데라다야 앞 뱃사공(바다낚시: 어초의 갯바위·히가시오키) / 무쿠로가이 강", en: "The river in front of Teradaya in Fushimi, the boatman there for sea fishing (reef or east offshore), and the river in Mukuro Town" },
+      location: { ko: "후시미 데라다야 앞 강 / 데라다야 앞 뱃사공(바다낚시: 어초의 갯바위·히가시오키) / 해골 거리 강", en: "The river in front of Teradaya in Fushimi, the boatman there for sea fishing (reef or east offshore), and the river in Mukuro Town" },
       summary: {
         ko: "찌의 빨간 부분이 물에 잠기면 버튼을 누르는 단순한 액션입니다. 잡은 물고기는 요리와 서브스토리, 어나더 라이프의 행상 납품에 쓰입니다. 누적 10마리로 트로피.",
         en: "Watch the float and press when its red section sinks. Fish feed cooking, substories and Another Life's trade orders; ten fish total gives the trophy.",
       },
       howTo: [
         { ko: "성능 좋은 낚싯대를 먼저 구하세요. 히트까지의 시간이 짧아져 효율이 크게 오르고, 멀리까지 던질 수 있어 원거리에만 있는 물고기도 잡힙니다. 덕 교환으로 구합니다.", en: "Get a better rod first — bites come faster and it casts far enough to reach fish that only appear at distance. Buy it from the Virtue exchange." },
-        { ko: "레어 물고기를 노린다면 라쿠나이의 봇테후리(행상)에서 밑밥을 사 두세요. 일시적으로 출현율이 올라가지만 효과가 3분 정도라 고성능 낚싯대와 병용이 사실상 필수입니다.", en: "For rare fish, buy chum from the Rakunai peddler. It raises spawn rates but only lasts about three minutes, so it really needs the good rod alongside it." },
+        { ko: "레어 물고기를 노린다면 도성 안의 봇테후리(행상)에서 밑밥을 사 두세요. 일시적으로 출현율이 올라가지만 효과가 3분 정도라 고성능 낚싯대와 병용이 사실상 필수입니다.", en: "For rare fish, buy chum from the Rakunai peddler. It raises spawn rates but only lasts about three minutes, so it really needs the good rod alongside it." },
         { ko: "물고기는 어영과 헤엄치는 위치, 움직이는지 멈춰 있는지로 대체로 구별됩니다. 노리는 물고기가 있으면 던지기 전에 먼저 어디 있는지 찾으세요.", en: "Species are identifiable from the shadow, where it swims and whether it's moving or holding still — spot your target before you cast, not after." },
       ],
       source: [
@@ -538,7 +538,7 @@ export const likeADragonIshinMinigames: MinigamesData = {
       puzzleSets: [
         {
           title: { ko: "낚시터별 어종표", en: "Fish by spot" },
-          note: { ko: "레어도 높은 순입니다. 표기: 레어도·어영 모양·잡히는 거리·움직임. 어종명은 Kamigame의 일본어 원문을 직역한 비공식 번역이고(영어명은 PowerPyx 표기), 출처 1곳입니다. 출처는 강 낚시터를 우지강·가모강으로 나누는데, 어느 쪽이 데라다야 앞이고 어느 쪽이 무쿠로가이인지는 적어 두지 않았습니다.", en: "Sorted by rarity. Format: rarity · shadow shape · distance · movement. Fish names are given in English as PowerPyx lists them; the source is Kamigame, a single source. The source splits the river spots into the Uji and Kamo rivers but doesn't say which is Teradaya and which is Mukuro Town." },
+          note: { ko: "레어도 높은 순입니다. 표기: 레어도·어영 모양·잡히는 거리·움직임. 어종명은 Kamigame의 일본어 원문을 직역한 비공식 번역이고(영어명은 PowerPyx 표기), 출처 1곳입니다. 출처는 강 낚시터를 우지강·가모강으로 나누는데, 어느 쪽이 데라다야 앞이고 어느 쪽이 해골 거리인지는 적어 두지 않았습니다.", en: "Sorted by rarity. Format: rarity · shadow shape · distance · movement. Fish names are given in English as PowerPyx lists them; the source is Kamigame, a single source. The source splits the river spots into the Uji and Kamo rivers but doesn't say which is Teradaya and which is Mukuro Town." },
           puzzles: [
             { title: { ko: "우지강 — 9종", en: "Uji River — 9 species" }, note: { ko: "인면어 레어10·보통·근~중거리·정지 / 비단잉어 레어7·보통·근거리·정지 / 연어 레어6·보통·중~원거리·움직임 / 무지개송어 레어6·보통·중~원거리·움직임 / 자라 레어5·둥긂·근~중거리·정지 / 전기메기 레어5·보통·중~원거리·거의 정지 / 잉어 레어3·보통·근거리·정지 / 붕어 레어2·마름모·근거리·정지 / 가재 레어1·둥긂·근거리·정지", en: "Ghost Koi R10·normal·near–mid·still / Nishikigoi R7·normal·near·still / Salmon R6·normal·mid–far·moving / Rainbow Trout R6·normal·mid–far·moving / Softshell Turtle R5·round·near–mid·still / Electric Catfish R5·normal·mid–far·barely moves / Carp R3·normal·near·still / Crucian Carp R2·diamond·near·still / Crawfish R1·round·near·still" } },
             { title: { ko: "가모강 — 8종", en: "Kamo River — 8 species" }, note: { ko: "이토(사할린 타이멘) 레어9·보통·중~원거리·움직임 / 연어 레어6·보통·중~원거리·움직임 / 무지개송어 레어6·보통·중~원거리·움직임 / 전기메기 레어5·보통·중~원거리·거의 정지 / 뱀장어 레어4·가늘고 김·근거리·정지 / 붕어 레어2·마름모·근거리·정지 / 은어 레어2·보통·근~중거리·정지 / 가재 레어1·둥긂·근거리·정지", en: "Stringfish R9·normal·mid–far·moving / Salmon R6·normal·mid–far·moving / Rainbow Trout R6·normal·mid–far·moving / Electric Catfish R5·normal·mid–far·barely moves / Freshwater Eel R4·long·near·still / Crucian Carp R2·diamond·near·still / Sweetfish R2·normal·near–mid·still / Crawfish R1·round·near·still" } },

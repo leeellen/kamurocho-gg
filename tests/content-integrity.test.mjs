@@ -260,3 +260,19 @@ test("dungeon EX sectors and base-game completion do not acquire false requireme
   assert.ok(!MISSABLES[1388590].flatMap((group) => group.items).some((item) => item.kind === "missable"));
   assert.ok(MISSABLES[2072450].flatMap((group) => group.items).some((item) => item.title.en === "We're Probably the Best!" && item.kind === "missable"));
 });
+
+test("Ishin substories follow the sourced routes and official Korean area names", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const data = getSubstories(1805480);
+  const items = data.groups.flatMap((group) => group.items);
+  assert.equal(items.length, 72);
+  assert.deepEqual(data.groups.map((group) => group.title.ko), ["도성 안", "도성 밖", "해골 거리", "후시미", "기온", "기타"]);
+  const byNumber = (number) => items.find((item) => item.number === number);
+  assert.match(byNumber(2).body.en, /south of Kanamaru Udon/);
+  assert.match(byNumber(11).body.en, /help him read a globe/);
+  assert.match(byNumber(61).body.en, /at your house/);
+  assert.ok(items.every((item) => item.source?.url.includes("powerpyx.com")));
+  assert.doesNotMatch(JSON.stringify(data), /Virtue|덕 보상|라쿠나이|라쿠가이|무쿠로가이|How was the song/);
+  const { getMinigames } = load("@/lib/minigames");
+  assert.doesNotMatch(JSON.stringify(getMinigames(1805480)), /라쿠나이|라쿠가이|무쿠로가이/);
+});
