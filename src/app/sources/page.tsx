@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = locale === "ko" ? "공략 출처 — kamurocho.gg" : "Guide sources — kamurocho.gg";
   const description = locale === "ko"
     ? "kamurocho.gg가 인용한 외부 공략 출처와 인용된 항목을 작품별로 정리한 페이지입니다."
-    : "Every external guide source kamurocho.gg references, with the achievements, substories, and collectibles that cite each one.";
+    : "Registered external guide references, with the achievements, substories, collectibles, and minigames that cite each one.";
   return {
     title,
     description,
@@ -27,11 +27,12 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-type Section = "achievements" | "substories" | "collectibles";
+type Section = "achievements" | "substories" | "collectibles" | "minigames";
 
 function sectionLabel(section: Section, locale: Locale) {
   if (section === "achievements") return locale === "ko" ? "업적 가이드" : "Achievement guides";
   if (section === "substories") return locale === "ko" ? "서브 스토리" : "Substories";
+  if (section === "minigames") return locale === "ko" ? "미니게임" : "Minigames";
   return locale === "ko" ? "수집 요소" : "Collectibles";
 }
 
@@ -50,11 +51,12 @@ export default async function SourcesPage() {
       acc.achievements += entry.achievementSources.length;
       acc.substories += entry.substorySources.length;
       acc.collectibles += entry.collectibleSources.length;
+      acc.minigames += entry.minigameSources.length;
       return acc;
     },
-    { achievements: 0, substories: 0, collectibles: 0 },
+    { achievements: 0, substories: 0, collectibles: 0, minigames: 0 },
   );
-  const totalSources = totals.achievements + totals.substories + totals.collectibles;
+  const totalSources = totals.achievements + totals.substories + totals.collectibles + totals.minigames;
 
   return (
     <SiteShell locale={locale} section="sources">
@@ -67,10 +69,24 @@ export default async function SourcesPage() {
           title={locale === "ko" ? "공략에 사용된 외부 출처" : "External guide sources we cite"}
           description={
             locale === "ko"
-              ? "작품별 가이드에 참고한 외부 공략·커뮤니티 글의 원본 링크와 인용된 항목을 모았습니다. 각 업적·서브스토리·수집 카드에는 출처를 표시하지 않고 이 페이지에서 한눈에 확인할 수 있도록 정리했습니다."
-              : "Original links for every external guide and community post our entries draw from, alongside the achievements, substories, and collectibles that cite each one. Achievement, substory, and collectible cards no longer surface inline source labels — see this page instead."
+              ? "업적·서브스토리·수집 요소·미니게임에 등록된 참고 출처입니다. 링크 등록은 내용 전체의 검증을 뜻하지 않으며, 원작과 리메이크·리마스터, 플랫폼에 따라 조건이 다를 수 있습니다."
+              : "Registered references for achievements, substories, collectibles, and minigames. A listed link does not mean every claim has been verified. Requirements may differ between the original, remakes, remasters, and platforms."
           }
         />
+
+        <p className="mt-6 text-[15px] leading-7 text-[var(--text-secondary)]">
+          {locale === "ko"
+            ? "업적명과 달성 조건은 수집한 Steam 한국어 데이터를 우선하며, 한국어가 없으면 원문을 표시합니다. 공략의 인물·지명·시스템명은 확인 가능한 SEGA 한국어 자료를 기준으로 교정합니다. 플레이 시간은 공식 수치가 아닌 편집 추정치입니다. 업적 달성률은 수집 시점의 Steam 공개 통계이며 실시간 값은 아닙니다."
+            : "Achievement names and requirements use the collected Korean Steam data when available, otherwise the original text. Editorial terminology is corrected against available Korean SEGA material. Play times are editorial estimates, not official figures. Unlock rates reflect Steam public statistics at collection time and are not live values."}
+          {" "}
+          <a href="https://ryu-ga-gotoku.com/kiwami/kr/" target="_blank" rel="noreferrer noopener" className="underline">
+            {locale === "ko" ? "SEGA 인물·전투 표기" : "SEGA character and combat terms"}
+          </a>
+          {" · "}
+          <a href="https://manual.sega.jp/ryu-eight/kr/index.html?pid=0" target="_blank" rel="noreferrer noopener" className="underline">
+            {locale === "ko" ? "용과 같이8 한국어 매뉴얼" : "Like a Dragon 8 Korean manual"}
+          </a>
+        </p>
 
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[16px] text-[var(--text-tertiary)]">
           <span>
@@ -101,6 +117,7 @@ export default async function SourcesPage() {
               { section: "achievements", items: entry.achievementSources },
               { section: "substories", items: entry.substorySources },
               { section: "collectibles", items: entry.collectibleSources },
+              { section: "minigames", items: entry.minigameSources },
             ];
 
             return (
@@ -160,7 +177,7 @@ function SourceCard({
   const cited: string[] =
     section === "achievements"
       ? (source as AchievementCitation).achievements
-      : section === "collectibles"
+      : (section === "collectibles" || section === "minigames")
         ? (source as CollectibleCitation).categories
         : [];
   const label =
@@ -201,8 +218,8 @@ function SourceCard({
                 ? `인용 업적 ${cited.length}건`
                 : `Cited by ${cited.length} achievement${cited.length === 1 ? "" : "s"}`
               : locale === "ko"
-                ? `사용 카테고리 ${cited.length}개`
-                : `Used in ${cited.length} categor${cited.length === 1 ? "y" : "ies"}`}
+                ? `관련 항목 ${cited.length}개`
+                : `Used by ${cited.length} item${cited.length === 1 ? "" : "s"}`}
           </div>
           <ul className="mt-2 flex flex-wrap gap-1.5">
             {cited.map((name) => (

@@ -2,7 +2,10 @@ import type { SubstoriesData } from "./types";
 
 export const yakuza0Substories: SubstoriesData = {
   appId: 2988580,
-  summary: { ko: "키류 편 카무로초 + 마지마 편 소텐보리 합쳐 총 100건. 완료 시 「두 마리 용 트로피」 라인 + 각종 특수 능력(클럽 세가·포켓 서킷·캬바레)이 풀립니다. 장별로 풀리므로 메인 스토리와 병행 진행이 효율적입니다.", en: "100 substories total — Kiryu's Kamurocho + Majima's Sotenbori. Completion unlocks the 'Two Dragons' trophy line plus side ability boosts (Club SEGA, Pocket Circuit, Cabaret). Substories gate on chapters, so run them alongside the main story." },
+  summary: {
+  "ko": "키류와 마지마의 서브스토리 100건입니다. 주인공별 번호가 겹치는 항목이 있으므로 이름과 주인공을 함께 확인하세요.",
+  "en": "100 substories for Kiryu and Majima. Some numbers overlap between protagonists, so check both the title and protagonist."
+},
   source: { label: "kamigame.jp + warukuma.tistory.com + dswiipspwikips3.jp — Yakuza 0 substories", url: "https://kamigame.jp/ryugagotoku0/page/273134300881279258.html" },
   groups: [
     {
@@ -667,7 +670,7 @@ export const yakuza0Substories: SubstoriesData = {
           number: 56,
           title: { ko: "세금 착취", en: "A Taxing Issue" },
           chapter: { ko: "제 3장", en: "Chapter 3" },
-          protagonist: { ko: "키류", en: "Kiryu" },
+          protagonist: {"ko":"마지마","en":"Majima"},
           location: { ko: "카무로초 — 법인사 골목", en: "Kamurocho — Houjinsha Alley" },
           trigger: { ko: "제 3장에서 마지마의 아파트로 돌아갈 때", en: "While returning to Majima's apartment in Chapter 3" },
           body: { ko: "법인사 골목을 지나가다 보면, 샐러리맨들이 「단정하게 차려입은 남자」에게 화를 내고 있는 서브 스토리가 발생한다 말을 걸면, 질 나쁜 남자 × 4명과 전투가 시작되므로, 쓰러뜨리면 된다 그 후에, 타이요에게 말을 걸면, 선택한 선택지에 따른 보상이 변하게 된다. ■ 선택지 1. 국민을 괴롭히기 위해 2. 공공 서비스를 제공하기 위해 3. 세금이란 국민이 정부에게 빛을 갚는 것 1. 유흥업소 2. 담배 3. 사토 씨 1. 공기 2. 애완동물 3. 휘발유 1. 5% 2. 8% 3. 50% 정답은 「2」 → 「2」 → 「3」 → 「2」 아오다모 나무조각을 받는 법 「3」 → 「1」 → 「2」 → 「2」 수신석을 받는 법 「1」 → 「2」 → 「1」 → 「3」", en: "Walk through the Houjinsha Alley and see salarymen angry at a 「neatly-dressed man」, triggering the substory. Talk to the man and fight 4 thugs. Defeat them, then talk to Taiyo — the reward changes based on your choices.\n\n■ Choices:\n1) To torment the citizens  2) To provide public services  3) Tax is citizens repaying the government\n1) The entertainment industry  2) Tobacco  3) Mr. Sato\n1) Air  2) Pets  3) Gasoline\n1) 5%  2) 8%  3) 50%\nCorrect answers: 2) → 2) → 3) → 2)\nFor Ao-damo Wood Chip: 3) → 1) → 2) → 2)\nFor Water God Stone: 1) → 2) → 1) → 3)" },
@@ -874,7 +877,7 @@ export const yakuza0Substories: SubstoriesData = {
           number: 76,
           title: { ko: "소텐보리의 갑부", en: "Sotenbori's Mr. Moneybags" },
           chapter: { ko: "제 7장", en: "Chapter 7" },
-          protagonist: { ko: "키류", en: "Kiryu" },
+          protagonist: {"ko":"마지마","en":"Majima"},
           trigger: { ko: "제 7장에서 캬바레 그랜드로 향할 때", en: "While heading to Cabaret Grand in Chapter 7" },
           body: { ko: "캬바레 그랜드 앞을 지나가면, 「붙임성 좋은 남자」가 말을 걸어오면서 서브 스토리가 발생한다 이벤트 후, 마지마도 □버튼을 누르면, 돈 뿌리기가 가능해진다 갑부 타니오카의 이야기를 들으면 서브 스토리가 완료된다. 인연 게이지 100% 서브 스토리 완료 후, 「갑부 타니오카」와의 인연이 발생한다 돈을 출자할 때마다 인연 게이지가 상승한다. 첫 출자는 1000만엔으로 정해져 있다. 수수료는 15%지만, 다음에 출자 할 때는 10% 할인된다. 제 7장에서는 1번만 출자가 가능하다 2번째는 제 9장 · 제 10장에서 키류가 갑부에게 출자를 하면, 제 11장 개시 후에 출자가 가능해진다 이번에는 5000만엔을 출자를 할 수 있게 되며, 다음부터는 수수료가 5%로 인하된다. 3번째는 제 14장에서 키류가 갑부에게 출자를 하면, 제 15장 개시 후에 출자가 가능해진다 이번에는 1억엔을 출자를 할 수 있게 된다 4번째는 최종장의 최종 결전 전에 출자를 할 수 있다 최종 결전 전이 되면, 주인공을 바꿀 수 있게 된다. 이번에는 5억엔을 출자 할 수 있게 되며, 수수료는 무료, 갑부 타니오카와의 인연이 달성된다. 이 이후는 자신이 원하는 만큼의 금액을 출자 할 수 있게 된다.", en: "Pass in front of Cabaret Grand and a friendly man approaches you, triggering the substory. After the event, Majima can also press □ to scatter money. Listen to Millionaire Tanioka's story to complete the substory. ■ To reach 100% bond: Each investment raises the gauge. First investment is fixed at ¥10M (15% fee, reduced to 10% next time). Chapter 7: 1 investment possible. 2nd: after Kiryu invests in Chapters 9–10, available from Chapter 11 (¥50M, fee drops to 5%). 3rd: after Kiryu invests in Chapter 14, available from Chapter 15 (¥100M). 4th: before the final battle in the Final Chapter (you can switch protagonists at this point; ¥500M, free fee). Bond achieved. Thereafter invest any amount freely." },
           reward: { ko: "1000만엔", en: "¥10,000,000" },
@@ -1049,7 +1052,7 @@ export const yakuza0Substories: SubstoriesData = {
           number: 100,
           title: { ko: "소텐보리의 위기", en: "Sotenbori in Peril" },
           chapter: { ko: "최종장", en: "Final Chapter" },
-          protagonist: { ko: "키류", en: "Kiryu" },
+          protagonist: {"ko":"마지마","en":"Majima"},
           location: { ko: "소텐보리 — 최종전 전", en: "Sotenbori — before the final battle" },
           trigger: { ko: "최종장, 최종 결전 전 소텐보리 (마지마 서브 100 제외 전부 완료)", en: "Final Chapter, in Sotenbori before the final battle (all Majima substories except #100 complete)" },
           body: { ko: "마지마 편 서브를 100번 제외하고 전부 완료한 뒤, 최종 결전 전 소텐보리에서 포켓벨 이상 신호로 시작. 아몬 신과의 결전. 승리 시 완료.", en: "After completing all Majima substories except #100, triggered in Sotenbori before the final battle by an anomalous pager signal. A duel with Amon Shin. Win to complete." },

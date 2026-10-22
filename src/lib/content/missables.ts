@@ -11,12 +11,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이왕이면 화끈하게」— 골드 샴페인을 노숙자에게", en: "'Rich Taste' — Gold Champagne to the homeless man" },
+          title: { ko: "이왕이면 화끈하게 — 골드 샴페인을 노숙자에게", en: "'Rich Taste' — Gold Champagne to the homeless man" },
           when: { ko: "2장 종료 전", en: "Before Chapter 2 ends" },
           body: {
-            ko: "돈키호테에서 ¥20,000짜리 골드 샴페인을 구매해 카무로초 거리의 노숙자에게 건네면 트로피 발동. 3장으로 넘어가면 영구 잠금. 자금이 부족하면 부동산 회수나 삥쟁이로 ¥20,000을 우선 확보하세요.",
-            en: "Buy Gold Champagne (¥20,000) from Don Quijote and hand it to the homeless man on a Kamurocho street. Roll into Chapter 3 and the trophy is permanently locked. Pull ¥20,000 from Real Estate Royale or a Mr. Shakedown win first if cash is tight.",
-          },
+  "ko": "2장에서 노숙자에게 금 샴페인을 건네세요. 돈키호테에서 20,000엔에 구입한 뒤 전달하세요.",
+  "en": "Give the homeless man Gold Champagne in Chapter 2. Buy it at Don Quijote for 20,000 yen, then deliver it."
+},
         },
       ],
     },
@@ -26,12 +26,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「전격 트레이트 성립」— 오디세이 정찰", en: "'Smooth Criminal' — Odyssey recon" },
+          title: { ko: "전격 트레이트 성립 — 오디세이 정찰", en: "'Smooth Criminal' — Odyssey recon" },
           when: { ko: "마지마 3장", en: "Majima — Chapter 3" },
           body: {
-            ko: "비샤몬 다리 녹색 자켓 남성, 르 마르셰 남동쪽 녹색 자켓 여성, 오디세이 남쪽 회사원 무리에게 말을 건 뒤 가게 안 1인칭 시점에서 미스터 리비도 대신 맞은편 테이블 3개와 바로 좌측 테이블을 관찰. 장이 넘어가면 트로피 영구 잠금.",
-            en: "Talk to the green-jacket man on Bishamon Bridge, the green-jacket woman southeast of Le Marche, and the suited group south of Odyssey. Inside, in the first-person view, look at the three tables on the far side and the table immediately to the left — not Mr. Libido. Move past Ch.3 and it's gone.",
-          },
+  "ko": "3장에서 오디세이에 관한 정보를 모두 모으세요. 입장 전 거리의 정보 3건과 입장 후 관찰 지점을 모두 확인하세요.",
+  "en": "Gather all information about the Odyssey in Chapter 3. Check the three street contacts before entering, then inspect the club's observation points."
+},
         },
       ],
     },
@@ -41,12 +41,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「엘리트 비즈니스맨」— 카페 알프스 미팅", en: "'Business Etiquette 101' — Café Alps meeting" },
+          title: { ko: "엘리트 비즈니스맨 — 카페 알프스 미팅", en: "'Business Etiquette 101' — Café Alps meeting" },
           when: { ko: "오다와의 클라이언트 미팅 시", en: "During the client meeting with Oda" },
           body: {
-            ko: "카페 알프스에서 「뒤쪽 테이블」 → 「가장 가까운 의자」 → 「주문 없음」 선택 후 야마노이 등장 시 QTE 성공. 한 단계라도 틀리면 장 종료와 동시에 영구 잠금.",
-            en: "At Café Alps choose 'Near the back' → 'Nearest chair' → 'Nothing', then nail the QTE when Yamanoi enters. Any wrong pick and the trophy locks when Chapter 5 ends.",
-          },
+  "ko": "5장 카페 알프스에서 올바르게 응대하세요. 안쪽 테이블 → 가까운 자리 → 주문하지 않기를 고르고 명함 교환의 QTE를 성공시키세요.",
+  "en": "Handle the Cafe Alps meeting correctly in Chapter 5. Choose the back table, the nearest seat, and no order, then complete the business-card QTE."
+},
         },
       ],
     },
@@ -56,12 +56,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「식어도 맛있다」— 타코야키 식히기", en: "'Best Served Cold?' — let the takoyaki go cold" },
+          title: { ko: "식어도 맛있다 — 타코야키 식히기", en: "'Best Served Cold?' — let the takoyaki go cold" },
           when: { ko: "마지마 7장 심부름", en: "Majima — Ch.7 errand" },
           body: {
-            ko: "마구타코에서 타코야키 구매 후 마코토에게 곧장 돌아가지 말고 실시간 15분 이상 다른 활동(서브스토리, 미니게임 등)을 진행. 인벤토리 아이콘이 바뀌면 식은 것 — 장 진행 시 영구 잠금.",
-            en: "Buy takoyaki at Magutako, then waste 15+ real-time minutes on substories or minigames before delivering it to Makoto. The inventory icon changes when it's cold. Advance the chapter without doing this and it's gone.",
-          },
+  "ko": "7장에서 타코야키를 사서 15분 이상 지난 뒤 가져다주세요.",
+  "en": "In Chapter 7, take more than 15 minutes to deliver the takoyaki."
+},
         },
       ],
     },
@@ -71,12 +71,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「사원이 한마음 되어」— 오다/타치바나와 협동 히트 액션 3회", en: "'It Takes Two' — three co-op heat actions with Oda/Tachibana" },
+          title: { ko: "사원이 한마음 되어 — 오다/타치바나와 협동 히트 액션 3회", en: "'It Takes Two' — three co-op heat actions with Oda/Tachibana" },
           when: { ko: "도조 본부 진입 전투", en: "Tojo HQ assault" },
           body: {
-            ko: "오다 또는 타치바나가 적을 잡을 때 △로 협동 히트 액션 발동. 총 3회 필요. 동료가 잡는 빈도가 낮으므로 히트 회복 아이템을 미리 준비하세요. 장 종료 후 재진입 불가.",
-            en: "When Oda or Tachibana grabs an enemy, close in and press Triangle for the co-op heat action. You need three. They grab infrequently, so stock heat-restoring items. No way back after Ch.10.",
-          },
+  "ko": "10장에서 오다 또는 타치바나와의 협력 기술로 적 3명을 쓰러뜨리세요.",
+  "en": "Defeat three enemies with co-op moves alongside Oda or Tachibana in Chapter 10."
+},
         },
       ],
     },
@@ -86,12 +86,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「보물이 왕창!」— 벤텐 여관 2층 금고 2개", en: "'They Won't Mind' — two safes at Benten Inn 2F" },
+          title: { ko: "보물이 왕창! — 벤텐 여관 2층 금고 2개", en: "'They Won't Mind' — two safes at Benten Inn 2F" },
           when: { ko: "벤텐 여관 돌파 중", en: "Pushing through Benten Inn" },
           body: {
-            ko: "쌍부채 적을 처치한 뒤 두 번째 계단 직전, 오른쪽 방 좌측 안쪽 구석에 흰 금고 2개가 있습니다. 둘 다 파괴 후 진행. 계단을 먼저 오르면 트로피 영구 잠금.",
-            en: "After the fan-dual-wielding enemy and before the second staircase, duck into the room on the right — two white safes sit in the back-left corner. Smash both before going upstairs or it's locked.",
-          },
+  "ko": "12장에서 일협연의 금고에 든 돈을 가져가세요. 계단을 올라가기 전에 금고를 여세요. 올라간 뒤에는 돌아갈 수 없습니다.",
+  "en": "Take the money from the Nikkyo Consortium safes in Chapter 12. Open the safes before going upstairs; you cannot return afterwards."
+},
         },
       ],
     },
@@ -101,12 +101,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「히트 스나이프」— 아프로 야쿠자 처치", en: "'Big Hair in the Crosshairs' — drop the afro yakuza" },
+          title: { ko: "히트 스나이프 — 아프로 야쿠자 처치", en: "'Big Hair in the Crosshairs' — drop the afro yakuza" },
           when: { ko: "차량 추격전 중반", en: "Mid-way through the car chase" },
           body: {
-            ko: "기관총 밴 직전, 흰 양복 + 아프로 적이 짧게 차창 밖으로 나옵니다. 히트 아이로 슬로우 처리한 뒤 사격해 격추. 놓치면 장 종료와 동시에 영구 잠금.",
-            en: "Just before the machine-gun van, a white-suited afro mook leans out briefly. Trigger Heat Eye to slow time and shoot him. Miss the window and the trophy locks at chapter end.",
-          },
+  "ko": "13장 고속도로 추격전에서 아프로 머리 야쿠자를 쓰러뜨리세요.",
+  "en": "Defeat the afro-haired yakuza during Chapter 13's highway chase."
+},
         },
       ],
     },
@@ -116,12 +116,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「트러블 대처는 나의 특기」— 레이나 와인병 QTE 실패하기", en: "'Hitting the Bottle' — intentionally fail Reina's bottle QTE" },
+          title: { ko: "트러블 대처는 나의 특기 — 레이나 와인병 QTE 실패하기", en: "'Hitting the Bottle' — intentionally fail Reina's bottle QTE" },
           when: { ko: "마지마 vs 니시키야마 (세레나)", en: "Majima vs Nishikiyama at Serena" },
           body: {
-            ko: "니시키야마가 카운터 쪽으로 던졌을 때 레이나가 와인병으로 내려치는 QTE가 발생. 일부러 버튼을 누르지 않거나 잘못 누르면 트로피 발동. 정상적으로 막으면 영구 미획득.",
-            en: "When Nishikiyama tosses you toward the counter, Reina swings a wine bottle in a QTE. Deliberately let it land — wrong button or no input. Block successfully and the trophy is gone for good.",
-          },
+  "ko": "15장 세레나 전투에서 레이나의 공격을 맞으세요. 레이나가 병을 휘두르는 QTE를 실패시키세요.",
+  "en": "Take Reina's attack during the Serena fight in Chapter 15. Fail the QTE when Reina swings the bottle."
+},
         },
       ],
     },
@@ -136,7 +136,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       title: { ko: "용과 잉어", en: "The Dragon and the Koi" },
       items: [
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "하루카의 선물 찾기 — 7장/11 동행 서브스토리", en: "'Searching for the Present' — Haruka-only substory" },
           when: { ko: "하루카 동행 7장", en: "While Haruka tags along in Ch.7" },
           body: {
@@ -151,7 +151,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       title: { ko: "재회", en: "A Reunion" },
       items: [
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "하루카 동행 서브스토리 정리 마지막 기회", en: "Last window for Haruka-walks-with-you substories" },
           when: { ko: "11장 도중", en: "During Chapter 11" },
           body: {
@@ -250,7 +250,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       title: { ko: "카무로초 복귀", en: "Return to Kamurocho" },
       items: [
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "리키야의 고향 친구 — 6장 동행 서브스토리", en: "'Hometown Girl' — Rikiya tagalong substory" },
           when: { ko: "리키야가 동행하는 6장", en: "Ch.6 while Rikiya is walking with you" },
           body: {
@@ -259,7 +259,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           },
         },
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "제로 보석 — 룰렛 1회 한정 치트 아이템", en: "'Zero Jewel' — roulette cheat item" },
           when: { ko: "6장 리키야 라인", en: "Ch.6 via the Rikiya line" },
           body: {
@@ -296,12 +296,15 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「미스터 드레스업」— 카탈로그 서비스 전 카테고리 수집", en: "'Mr. Dress-Up' — collect every Catalog outfit category" },
+          title: {
+  "ko": "패셔니스타 — 캬바걸 만들기 의상",
+  "en": "Fashionista — Hostess Maker outfits"
+},
           when: { ko: "아키야마 편 종료 전", en: "Before Akiyama's part ends" },
           body: {
-            ko: "아키야마의 호스티스 메이커 미니게임 「No.1 캬바걸을 만들자」 카탈로그 서비스에서 의상 카테고리를 빠짐없이 수집해야 합니다. 아키야마 편이 끝나면 카탈로그 자체가 영구 잠금되므로, 사에지마 편으로 넘어가기 전에 자금을 모아 모든 카테고리 1벌씩 구매해 두세요.",
-            en: "Akiyama's Hostess Maker has a Catalog Service — collect at least one outfit from every category before his part ends. Once Saejima's part starts the catalog locks, so finish buying while you still have access.",
-          },
+  "ko": "캬바걸 3명의 육성을 모두 끝내기 전에 의상 분류별로 한 벌씩 구입하세요. 접근 제한은 아키야마 파트 종료가 아니라 캬바걸 만들기 완료에 연결됩니다.",
+  "en": "Buy one outfit of every style before finishing training all three hostesses. The cutoff is completing Hostess Maker, not simply ending Akiyama’s story part."
+},
         },
       ],
     },
@@ -311,12 +314,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「불굴의 사나이」— 이지 모드 권유 거절", en: "'Indomitable' — refuse the easy-mode prompt" },
+          title: { ko: "불굴의 사나이 — 이지 모드 권유 거절", en: "'Indomitable' — refuse the easy-mode prompt" },
           when: { ko: "초중반 사망 누적 시", en: "After a few story losses" },
           body: {
-            ko: "스토리 전투에서 여러 번 패배하면 「Easy로 변경하시겠습니까?」 팝업이 뜹니다. 「예」를 선택하면 트로피가 영구 잠금되니 반드시 「아니오」.",
-            en: "Lose a few story fights and the game offers to drop you to Easy. Pick 'Yes' and the trophy is locked forever — always select 'No'.",
-          },
+  "ko": "Normal로 시작한 회차에서 Easy로 낮추지 않고 클리어하세요. 난이도를 낮추면 해당 회차의 조건을 충족할 수 없습니다.",
+  "en": "Complete a playthrough started on Normal without dropping to Easy. Lowering difficulty invalidates the requirement for that playthrough."
+},
         },
       ],
     },
@@ -341,18 +344,42 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
   // Yakuza 5 Remastered
   // ──────────────────────────────────────────────────────────────
   1105510: [
+{
+  "chapter": 1,
+  "title": {
+    "ko": "Normal 난이도 유지",
+    "en": "Keep Normal difficulty"
+  },
+  "items": [
+    {
+      "kind": "missable",
+      "title": {
+        "ko": "산다는 것은 도망치지 않는 것",
+        "en": "No Easy Way Out"
+      },
+      "when": {
+        "ko": "본편 한 회차 전체",
+        "en": "Entire story playthrough"
+      },
+      "body": {
+        "ko": "Normal로 시작하고 Easy로 낮추지 않은 채 본편을 클리어하세요.",
+        "en": "Start on Normal and finish the story without switching to Easy."
+      }
+    }
+  ]
+},
     {
       chapter: 2,
       title: { ko: "사에지마 편 — 사냥꾼", en: "Part 2 — Saejima: Hunter" },
       items: [
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "야마오로시 사냥 — 사에지마 한정 서브스토리", en: "'Hunter and Killer' — defeat Yama-oroshi" },
           when: { ko: "사에지마 파트 종료 전", en: "Before Saejima's part wraps" },
           body: {
-            ko: "사에지마 장 동안 사냥꾼 서브스토리를 끝까지 진행해 야마오로시를 잡아야 합니다. 장 진행으로 사에지마에서 다른 주인공으로 넘어가면 메인 플레이에선 잠김.",
-            en: "Run the Hunter sideline to completion and bring down Yama-oroshi during Saejima's chapters. Once the story shifts off Saejima, the main-run window is gone.",
-          },
+  "ko": "해당 주인공의 어나더 드라마를 진행하세요. 미완료 활동은 프리미엄 어드벤처에서도 진행할 수 있지만, 5편은 그 모드의 진행을 새 클리어 데이터로 저장할 수 없습니다.",
+  "en": "Progress the protagonist’s side story. Unfinished activities remain playable in Premium Adventure, but Yakuza 5 cannot create new clear data from that mode."
+},
         },
       ],
     },
@@ -362,7 +389,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「프린세스는 너」— 프린세스 리그 우승", en: "'You're the Princess' — win the Princess League" },
+          title: { ko: "프린세스는 너 — 프린세스 리그 우승", en: "'You're the Princess' — win the Princess League" },
           when: { ko: "하루카 파트 / 피날레 4장 전", en: "Haruka's part — before Finale Ch.4" },
           body: {
             ko: "더 로드 투 페임을 끝까지 완주해 프린세스 리그 결승을 우승. 피날레 4장에서 하루카가 아이돌을 그만두면 트로피와 100% 카운트가 동시에 영구 잠금됩니다.",
@@ -371,7 +398,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「인기 아이돌」— 모든 잡 종류 체험", en: "'Trendy Idol' — sample every job type" },
+          title: { ko: "인기 아이돌 — 모든 잡 종류 체험", en: "'Trendy Idol' — sample every job type" },
           when: { ko: "하루카 파트", en: "Haruka's part" },
           body: {
             ko: "더 로드 투 페임에서 등장하는 잡(촬영·라디오·인터뷰 등)을 전 종류 한 번씩 수락. 하루카 장를 닫고 나면 메인 라인에선 다시 받을 수 없습니다.",
@@ -385,13 +412,13 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       title: { ko: "시나다 편 — 야구장의 그림자", en: "Part 4 — Shinada: Baseball Shadow" },
       items: [
         {
-          kind: "missable",
+          kind: "recommended",
           title: { ko: "「날려버린 남자」— 시나다 야구 사이드 미션 10회", en: "'Big Hitter' — clear 10 of Shinada's baseball sub-missions" },
           when: { ko: "시나다 파트 종료 전", en: "Before Shinada's part ends" },
           body: {
-            ko: "시나다 장에서만 등장하는 야구장 사이드 미션을 10개 이상 클리어. 일부 미션은 재도전이 불가능한 1회성이므로 받자마자 처리하세요.",
-            en: "Clear 10+ of the baseball-cage sub-missions that only show up in Shinada's chapters. A few are one-shot with no retry, so take them as they appear.",
-          },
+  "ko": "해당 주인공의 어나더 드라마를 진행하세요. 미완료 활동은 프리미엄 어드벤처에서도 진행할 수 있지만, 5편은 그 모드의 진행을 새 클리어 데이터로 저장할 수 없습니다.",
+  "en": "Progress the protagonist’s side story. Unfinished activities remain playable in Premium Adventure, but Yakuza 5 cannot create new clear data from that mode."
+},
         },
       ],
     },
@@ -401,12 +428,12 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「전당 입성 플레이어」— 100% 완료 (하루카 종속)", en: "'Hall of Famer' — full 100% (gated on Haruka)" },
+          title: { ko: "전당 입성 플레이어 — 100% 완료 (하루카 종속)", en: "'Hall of Famer' — full 100% (gated on Haruka)" },
           when: { ko: "피날레 4장 전", en: "Before Finale Ch.4" },
           body: {
-            ko: "100% 카운트의 상당 부분이 하루카 트랙(아이돌·댄스·잡)에 묶여 있어 피날레 4장 시점에 하루카 콘텐츠가 끝나 있어야 합니다. 또한 카미야마 워크스 제작용 일부 재료는 1회 한정이므로 함부로 판매·소비 금지.",
-            en: "Big chunks of the 100% list run through Haruka's idol/dance/jobs track, so finish them before Finale Ch.4. Several Kamiyama Works crafting mats are one-per-run too — don't sell or burn them casually.",
-          },
+  "ko": "희귀 제작 재료를 판매하거나 낭비하지 말고 완료 목록을 확인하세요. 승계할 진행은 본편 클리어 전에 준비해야 합니다. 프리미엄 어드벤처의 새 진행은 클리어 데이터로 만들 수 없습니다.",
+  "en": "Preserve rare crafting materials and check the Completion List. Prepare carryover progress before story completion; new Premium Adventure progress cannot be saved as clear data."
+},
         },
       ],
     },
@@ -421,13 +448,16 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       title: { ko: "하루토와의 시간", en: "Caring for Haruto" },
       items: [
         {
-          kind: "missable",
-          title: { ko: "「댄들링 드래곤」— 하루토 달래기 미니게임", en: "'Dandling Dragon' — soothe Haruto" },
+          kind: "anytime",
+          title: {
+  "ko": "하루토 돌보기 — 본편 진행",
+  "en": "Dandling Dragon — story progression"
+},
           when: { ko: "3장 한정", en: "Chapter 3 only" },
           body: {
-            ko: "3장에서 키류가 하루토를 돌보는 동안 등장하는 달래기 미니게임을 모두 성공시켜 만족도 게이지를 채워야 합니다. 3장이 지나면 미니게임 자체가 재등장하지 않으므로 영구 잠금 — 시작 전 별도 세이브 권장.",
-            en: "During Kiryu's babysitting stretch in Chapter 3, clear every soothing minigame so Haruto's satisfaction bar fills. The minigame doesn't return after Chapter 3, so it's the only window — drop a manual save before you start.",
-          },
+  "ko": "3장 본편에서 하루토를 달래는 장면을 진행하면 달성됩니다. 연속 성공이나 완벽한 수행을 요구하지 않습니다.",
+  "en": "Progress the Chapter 3 story scene involving Haruto. A perfect result or success streak is not required."
+},
         },
       ],
     },
@@ -437,12 +467,15 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "anytime",
-          title: { ko: "댄들링 드래곤 외엔 영구 미스 없음", en: "Nothing else is permanently missable" },
+          title: {
+  "ko": "클리어 후 남은 활동 정리",
+  "en": "Post-story activity cleanup"
+},
           when: { ko: "엔딩 이후", en: "Post-credits" },
           body: {
-            ko: "야쿠자 6는 댄들링 드래곤을 제외하면 모든 서브스토리·미니게임·100% 항목을 프리미엄 어드벤처에서 정리할 수 있어 시리즈 중에서 가장 너그럽습니다.",
-            en: "Aside from Dandling Dragon, every substory, minigame, and 100% checkmark in Yakuza 6 is reachable in Premium Adventure — the most forgiving entry in the series.",
-          },
+  "ko": "남은 서브스토리와 미니게임은 프리미엄 어드벤처에서 정리할 수 있습니다.",
+  "en": "Finish outstanding substories and minigames in Premium Adventure."
+},
         },
       ],
     },
@@ -493,15 +526,15 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
   2375550: [
     {
       chapter: 1,
-      title: { ko: "조료의 그림자", en: "Joryu's Shadow" },
+      title: { ko: "죠류의 그림자", en: "Joryu's Shadow" },
       items: [
         {
           kind: "anytime",
           title: { ko: "영구 잠금 트로피 없음", en: "No permanently missable trophies" },
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "「가이덴」(외전)은 짧은 외전으로 영구 미스 요소가 없습니다. 엔딩 후에도 자유롭게 카무로초·소텐보리·콜로세움을 재방문해 모든 사이드 컨텐츠를 정리할 수 있습니다.",
-            en: "Gaiden is a short spin-off with zero permanent missables. Even after the credits you can hop back into Kamurocho, Sotenbori, and the Coliseum to finish every side activity.",
+            ko: "「가이덴」(외전)은 짧은 외전으로 영구 미스 요소가 없습니다. 엔딩 후에도 자유롭게 소텐보리·캐슬 등을 재방문해 모든 사이드 컨텐츠를 정리할 수 있습니다.",
+            en: "Gaiden is a short spin-off with zero permanent missables. Even after the credits you can return to Sotenbori and the Castle to finish every side activity.",
           },
         },
         {
@@ -521,23 +554,53 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
   // Like a Dragon: Infinite Wealth — no missable trophies
   // ──────────────────────────────────────────────────────────────
   2072450: [
+{
+  "chapter": 14,
+  "title": {
+    "ko": "New Game+ 난이도 업적",
+    "en": "New Game+ difficulty achievements"
+  },
+  "items": [
+    {
+      "kind": "missable",
+      "title": {
+        "ko": "아마도 우리가 최강!",
+        "en": "We're Probably the Best!"
+      },
+      "when": {
+        "ko": "DLC · 최종 보스 직전",
+        "en": "DLC · before the final boss"
+      },
+      "body": {
+        "ko": "Legend만 클리어하면 Hard 업적은 해금되지 않습니다. 최종 보스 직전 저장을 남겨 Legend 클리어 후 불러오고 Hard에서도 보스를 쓰러뜨리세요.",
+        "en": "Legend does not also unlock Hard. Keep a pre-boss save, finish Legend, then reload and defeat the boss again on Hard."
+      }
+    }
+  ]
+},
     {
       chapter: 1,
       title: { ko: "호놀룰루 도착", en: "Arrival in Honolulu" },
       items: [
         {
           kind: "anytime",
-          title: { ko: "영구 잠금 트로피 없음 — 포인트 오브 노 리턴 무시 가능", en: "No permanently missable trophies — ignore the Point of No Return prompt" },
+          title: {
+  "ko": "본편 활동은 클리어 후 정리 가능",
+  "en": "Base-game activities remain available after the story"
+},
           when: { ko: "전체 플레이", en: "Entire playthrough" },
           body: {
-            ko: "피날레 장의 엄중한 「포인트 오브 노 리턴」 경고에도 불구하고 엔딩 후 모든 서브스토리·미니게임·도지마 드링크 링크·야쿠몬 등을 프리미엄 어드벤처에서 마저 정리할 수 있습니다.",
-            en: "Despite the stern 'Point of No Return' warning before the finale, Premium Adventure still lets you finish every substory, minigame, Dondoko Island task, Sujimon roster, and bond after the credits.",
-          },
+  "ko": "본편 활동은 프리미엄 어드벤처에서 정리할 수 있습니다. DLC의 Hard·Legend 클리어 업적은 별개이며 최종 보스 직전 저장을 남겨야 재회차를 줄일 수 있습니다.",
+  "en": "Base-game activities remain available in Premium Adventure. The DLC Hard and Legend achievements are separate; keep a save before the final boss to avoid another full run."
+},
         },
         {
           kind: "recommended",
           title: { ko: "쿵더쿵섬 일찍 시작", en: "Open Dondoko Island as early as possible" },
-          when: { ko: "5장 해금 직후", en: "Right after Ch.5 unlocks it" },
+          when: {
+  "ko": "6장 해금 이후",
+  "en": "After unlocking it in Chapter 6"
+},
           body: {
             ko: "쿵더쿵섬과 야쿠몬 배틀은 별도 진행도가 있어 일찍 시작할수록 자원이 누적되어 100% 정리가 수월합니다.",
             en: "Dondoko Island and Sujimon Battle run on their own progression curves — start them right after they unlock so resources stack up before the post-game cleanup.",
@@ -626,7 +689,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 1 — 배로 늘려 줄게」— 카지노 칩 두 배 만들기", en: "'I'll Make it Double' — double the casino chips" },
+          title: { ko: "이면 보고서 1 「배로 늘려 줄게」 — 배로 늘려 줄게」— 카지노 칩 두 배 만들기", en: "'I'll Make it Double' — double the casino chips" },
           when: { ko: "2장 스토리 중 카지노 진입 시", en: "First story visit to the casino in Ch.2" },
           body: {
             ko: "스토리 진행 중 라망에서 300칩이 지급됩니다. 그 자리에서 도박 미니게임으로 600칩 이상으로 만들어야 트로피 발동. 진입 시점에 별도 세이브를 만들어두고 재시도 권장.",
@@ -641,7 +704,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 2 — 꼼꼼하게 체크」— 환자 회상 수색", en: "'Way Too Thorough!' — flashback investigation" },
+          title: { ko: "이면 보고서 2 「꼼꼼하게 체크」 — 꼼꼼하게 체크」— 환자 회상 수색", en: "'Way Too Thorough!' — flashback investigation" },
           when: { ko: "5장 회상 시퀀스", en: "Ch.5 flashback sequence" },
           body: {
             ko: "병실 1인칭 수색에서 간호사의 얼굴·가슴·엉덩이 세 지점을 모두 관찰해야 트로피 발동. 한 번에 끝내지 않으면 회상 종료와 동시에 영구 잠금.",
@@ -656,7 +719,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 3 — 숨겨진 재능」— 호스티스 대화 무실수", en: "'The Art of Conversation' — perfect hostess chat" },
+          title: { ko: "이면 보고서 3 「숨겨진 재능」 — 숨겨진 재능」— 호스티스 대화 무실수", en: "'The Art of Conversation' — perfect hostess chat" },
           when: { ko: "7장 위장 시퀀스", en: "Ch.7 disguise sequence" },
           body: {
             ko: "여성 캐릭터로 위장해 손님 접대 미니게임 진행. 모든 선택지를 실수 없이 클리어해야 트로피 발동. 장 진행 시 영구 잠금.",
@@ -671,7 +734,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 4 — 암호는」— 비밀번호 1발 통과", en: "'Professional Password Presenter' — nail the password first try" },
+          title: { ko: "이면 보고서 4 「암호는」 — 암호는」— 비밀번호 1발 통과", en: "'Professional Password Presenter' — nail the password first try" },
           when: { ko: "8장 입구 검문", en: "Ch.8 hall entrance check" },
           body: {
             ko: "비밀 도박장 입구에서 비밀번호를 처음 시도에 정확히 입력. 진입 직전 세이브 후 도전 권장.",
@@ -686,7 +749,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 5 — 영웅은 늦게 나타난다」— 3분 타이머 10초 남기고 처치", en: "'Hung Jury' — finish with under 10 seconds" },
+          title: { ko: "이면 보고서 5 「영웅은 늦게 나타난다」 — 영웅은 늦게 나타난다」— 3분 타이머 10초 남기고 처치", en: "'Hung Jury' — finish with under 10 seconds" },
           when: { ko: "12장 폐건물", en: "Ch.12 abandoned building" },
           body: {
             ko: "스기우라가 잡힌 방에 도착하면 3분 타이머가 시작됩니다. 10초가 남을 때까지 기다리다가 적 두 명을 처치해야 트로피 발동. 장 종료 시 영구 잠금.",
@@ -701,7 +764,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
       items: [
         {
           kind: "missable",
-          title: { ko: "「이면 보고서 6 — 이것이 증거다」— 증거 제출 무실수", en: "'The Final Nail' — flawless evidence presentation" },
+          title: { ko: "이면 보고서 6 「이것이 증거다」 — 이것이 증거다」— 증거 제출 무실수", en: "'The Final Nail' — flawless evidence presentation" },
           when: { ko: "피날레 법정 시퀀스", en: "Finale court sequence" },
           body: {
             ko: "최종 법정 시퀀스에서 모든 증거를 첫 시도에 정확히 제출해야 합니다. 1회 실수도 트로피 영구 잠금 — 시작 전 세이브 필수.",
@@ -710,7 +773,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
         },
         {
           kind: "missable",
-          title: { ko: "「길고양이 서치」— 길고양이 14마리 (전 장)", en: "'Oh Look, a Cat!' — all 14 stray cats" },
+          title: { ko: "길고양이 서치 — 길고양이 14마리 (전 장)", en: "'Oh Look, a Cat!' — all 14 stray cats" },
           when: { ko: "전 장의 액티브 서치 구간", en: "Every Active Search across the story" },
           body: {
             ko: "1인칭 액티브 서치 도중 「야옹」 소리가 들리면 화면을 돌려 길고양이를 발견해야 합니다. 장별 등장 위치가 고정되어 있고 모두 1회성 — 1회차에 누락하면 신규 회차 필요.",
@@ -727,7 +790,7 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
   2058190: [
     {
       chapter: 1,
-      title: { ko: "츠루노 고등학교 잠입", en: "Infiltrating Seiryo High" },
+      title: { ko: "고등학교 조사", en: "Infiltrating Seiryo High" },
       items: [
         {
           kind: "anytime",
@@ -743,9 +806,9 @@ export const MISSABLES: Partial<Record<number, ChapterMissable[]>> = {
           title: { ko: "청춘 드라마는 중반부터 병행", en: "Push School Stories from mid-game on" },
           when: { ko: "3장–8", en: "Around Chapters 3–8" },
           body: {
-            ko: "9개의 청춘 드라마 모두 시간 투자량이 큽니다. 3장 무렵부터 한두 개씩 병행하면 엔딩 후 타운고·VR 스토어와 함께 몰리지 않아 페이스가 좋습니다.",
-            en: "All nine School Stories eat real hours. Start chipping at them from around Chapter 3 so they don't pile up with TownGo and VR Store cleanup post-credits.",
-          },
+  "ko": "청춘 드라마의 각 동아리 조사를 진행하세요. 서로의 해금 조건이 연결되므로 중간에 막히면 다른 동아리 진행과 지도 표시를 확인하세요.",
+  "en": "Progress each School Story investigation. Their unlock conditions interact, so check other clubs and map markers when one chain stalls."
+},
         },
         {
           kind: "recommended",

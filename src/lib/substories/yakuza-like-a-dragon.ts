@@ -3,104 +3,234 @@ import type { SubstoriesData } from "./types";
 export const yakuzaLikeADragonSubstories: SubstoriesData = {
   appId: 1235140,
   summary: {
-    ko: "이세자키 이진초(요코하마)에서 총 52건. 카스가 이치반 시점이며, 다수가 회사 경영(이치반 컨피던스) 직원·딜리버리 헬프 멤버를 해금합니다. 47~52는 본드 드라마·자격증·직업·인간력 Lv10 등 사전 작업이 필요한 후반 미셔너블이므로 주의.",
-    en: "52 substories across Isezaki Ijincho (Yokohama). Played as Ichiban Kasuga; most unlock Ichiban Confections staff or Delivery Help allies. Subs 47-52 are late-game and require bond dramas, licenses, jobs, and Lv10 personality stats — handle them deliberately before the post-game push.",
-  },
-  source: { label: "gamewith.jp — 龍が如く7 サブストーリー発生時期と報酬一覧", url: "https://gamewith.jp/ryu-ga-gotoku7/article/show/182838" },
+  "ko": "서브스토리 52개입니다. 후반 의뢰에는 인간력과 관련 콘텐츠의 진행 조건이 있습니다.",
+  "en": "52 substories. Later requests have Personality and side-content prerequisites."
+},
+  source: { label: "PowerPyx — Yakuza: Like a Dragon Substories", url: "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/" },
   groups: [
     {
       title: { ko: "3~4장 — 이세자키 이진초 도입", en: "Chapter 3~4 — Isezaki Ijincho intro" },
       items: [
         {
           number: 1,
-          title: { ko: "홈리스 입문", en: "Homeless Introduction" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "하마키타 공원", en: "Hamakita Park" },
-          trigger: { ko: "3장 진행 중 하마키타 공원에서 난부 일행에게 말 걸기", en: "Chapter 3: talk to Nanba at Hamakita Park." },
-          body: { ko: "노숙 생활에 입문하면서 빈 캔 줍기 미니게임이 해금됩니다. 거리에서 빈 캔을 모아 환금하는 컨텐츠.", en: "Nanba teaches Ichiban the homeless life. Unlocks the Can Quest mini-game where you collect cans for cash." },
-          reward: { ko: "빈 캔 줍기 미니게임 해금", en: "Can Quest mini-game unlocked" },
+          title: {
+            "ko": "홈리스 입문",
+            "en": "A Can-Do Attitude"
+          },
+          chapter: {
+            "ko": "제3장 이후",
+            "en": "Chapter 3 onward"
+          },
+
+
+          body: {
+            "ko": "스토리에서 서바이버 캔 줍기를 처음 배우면 완료됩니다.",
+            "en": "Complete the story introduction to Can Quest."
+          },
+
+          source: {
+            "label": "PowerPyx — A Can-Do Attitude",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 2,
-          title: { ko: "그쪽 업계 사람", en: "A Man in That Line of Work" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이세자키 로드 — 후사진 만물상 부근", en: "Isezaki Road — near Fusajin General Store" },
-          trigger: { ko: "수상한 남자에게 말 걸기", en: "Speak to the suspicious man on Isezaki Road." },
-          body: { ko: "이상한 몬스터 같은 인간들의 정보를 등록하는 「야쿠몬」 도감 앱을 받는 도입 퀘스트. 이후 적을 쓰러뜨리면 자동 도감화됩니다.", en: "A weirdo hands Ichiban the Sujimon app — pokedex of street-tier enemies. Defeated foes auto-register." },
-          reward: { ko: "야쿠몬 도감 앱 해금", en: "Sujimon app unlocked" },
+          title: {
+            "ko": "그쪽 업계 사람",
+            "en": "Who’s That Sujimon!?"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "제4장 스토리에서 야쿠몬 도감의 사용법을 배우면 완료됩니다.",
+            "en": "Complete the Chapter 4 introduction to the Sujidex."
+          },
+
+          source: {
+            "label": "PowerPyx — Who’s That Sujimon!?",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 3,
-          title: { ko: "금지된 놀이", en: "Forbidden Games" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "차이나타운", en: "Chinatown" },
-          trigger: { ko: "차이나타운에서 울고 있는 아이에게 말 걸기", en: "Talk to the crying child in Chinatown." },
-          body: { ko: "아이의 사정을 듣고 부근의 불량배를 처리합니다.", en: "Hear out the kid and beat the bullies hassling him." },
-          reward: { ko: "사라시 액세서리", en: "Sarashi accessory" },
+          title: {
+            "ko": "금지된 놀이",
+            "en": "A Golden Opportunity"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "사쿠라강 거리 남쪽의 경찰과 대화합니다. 다시 돌아와 노상방뇨를 하는 남자들 중 오른쪽에서 두 번째를 지목하고 싸웁니다.",
+            "en": "Speak to the officer on South Sakura River Street. Return and identify the second man from the right, then win the fight."
+          },
+
+          source: {
+            "label": "PowerPyx — A Golden Opportunity",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 4,
-          title: { ko: "쓰레기와 사는 남자", en: "The Man Who Lives with Garbage" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "스낵 거리 뒷골목", en: "Snack Alley — back lane" },
-          trigger: { ko: "「하마코의 가게로 향한다」 이후 골목의 쓰레기 더미 옆 남자에게 말 걸기", en: "After 'head to Hamako's place', talk to the man by the trash pile in the alley." },
-          body: { ko: "쓰레기에 둘러싸인 남자를 도와 쓰레기 처리·전투 후, 벤텐야 잡화상이 해금됩니다.", en: "Help the trash-hoarding man fight off scavengers; unlocks the Bentenya shop." },
-          reward: { ko: "파이어 부적 + 벤텐야 잡화상 해금", en: "Fire Charm + Bentenya shop unlocked" },
+          title: {
+            "ko": "쓰레기와 사는 남자",
+            "en": "One Man’s Trash"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "미사키 거리의 쓰레기가 쌓인 건물에서 집주인과 대화하고 사건을 해결하면 벤텐야가 영업을 시작합니다.",
+            "en": "Resolve the hoarder’s dispute at the rubbish-filled building on Misaki Street to open Benten Pawn."
+          },
+
+          source: {
+            "label": "PowerPyx — One Man’s Trash",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 5,
-          title: { ko: "행복 배달", en: "Delivery of Happiness" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "이세자키 로드에서 곤다에게 말 걸기", en: "Talk to Gonda on Isezaki Road." },
-          body: { ko: "도시락 배달부 곤다를 도우며 딜리버리 헬프(원호 시스템)가 해금됩니다. 이후 전투 중 동료 캐릭터를 콜할 수 있게 됩니다.", en: "Help bento-delivery Gonda — unlocks the Delivery Help system, letting you call allies into battle." },
-          reward: { ko: "딜리버리 헬프 서비스 해금", en: "Delivery Help service unlocked" },
+          title: {
+            "ko": "행복 배달",
+            "en": "A Trip to Pound Town"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "스토리 도중 딜리버리 헬프 사용법을 배우는 의뢰입니다.",
+            "en": "Complete the story introduction to Poundmates."
+          },
+
+          source: {
+            "label": "PowerPyx — A Trip to Pound Town",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 6,
-          title: { ko: "당신에게 선물을", en: "A Present for You" },
-          chapter: { ko: "4장 (낮)", en: "Chapter 4 (daytime)" },
-          location: { ko: "이세자키 로드 분수광장", en: "Isezaki Road — fountain plaza" },
-          trigger: { ko: "낮 시간 분수광장의 노인에게 말 걸기", en: "Daytime: speak to the old man at the fountain plaza." },
-          body: { ko: "손녀에게 선물할 인형을 찾아 달라는 부탁. 인형을 가져다 주면 완료.", en: "Find a doll for the old man to gift his granddaughter." },
-          reward: { ko: "신주석 액세서리", en: "Substitute Stone accessory" },
+          title: {
+            "ko": "당신에게 선물을",
+            "en": "It’s the Thought That Counts"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "사쿠라강 거리의 노인과 아이를 만난 뒤 책장 제작에 필요한 목재와 못을 구해 줍니다. 이후 책장이 버려진 이유를 확인하고 사건을 마무리합니다.",
+            "en": "Meet the man and child by Sakura River, gather wood and nails for a bookshelf, then investigate why it was discarded and finish the encounter."
+          },
+
+          source: {
+            "label": "PowerPyx — It’s the Thought That Counts",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 7,
-          title: { ko: "Baby Don't Cry", en: "Baby Don't Cry" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "곤다와 다시 만나 추가 배달 의뢰 수락", en: "Re-encounter Gonda for a follow-up delivery." },
-          body: { ko: "곤다와의 두 번째 의뢰. 클리어 시 곤다가 딜리버리 헬프 보스 호출 멤버로 합류합니다.", en: "Second Gonda quest; bonds him as a Delivery Help boss-tier caller." },
-          reward: { ko: "곤다 (딜리버리 헬프) 해금", en: "Gonda joins Delivery Help" },
+          title: {
+            "ko": "Baby Don't Cry",
+            "en": "Baby Don’t Cry"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "딜리버리 헬프 해금 후 오하마 거리 남쪽에서 곤란한 남자를 돕습니다. 포켓 카페에서 뜨거운 물을 받아 돌아온 뒤 전투를 마칩니다.",
+            "en": "After unlocking Poundmates, help the man on southern Ohama Street, bring hot water from Pocket Café and finish the following fight."
+          },
+
+          source: {
+            "label": "PowerPyx — Baby Don’t Cry",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 8,
-          title: { ko: "올드 시네마 파라다이스", en: "Old Cinema Paradise" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 영화관", en: "Ijincho cinema" },
-          trigger: { ko: "영화관 앞 점장에게 말 걸기", en: "Talk to the manager outside the cinema." },
-          body: { ko: "영화관을 재건. 영화 감상 미니게임(졸음 버티기)이 해금됩니다.", en: "Help reopen the cinema; unlocks the movie-watching mini-game (stay awake for buffs)." },
-          reward: { ko: "영화관 미니게임 해금", en: "Cinema mini-game unlocked" },
+          title: {
+            "ko": "올드 시네마 파라다이스",
+            "en": "Old Cinema Paradiso"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "영화관 앞의 두 남자와 대화하고 영화 보기 미니게임을 진행합니다.",
+            "en": "Speak to the two men outside the cinema and play the movie-watching minigame."
+          },
+
+          source: {
+            "label": "PowerPyx — Old Cinema Paradiso",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 9,
-          title: { ko: "감 열매가 흔들릴 무렵에", en: "When the Persimmons Sway" },
-          chapter: { ko: "4장 (낮)", en: "Chapter 4 (daytime)" },
-          location: { ko: "스낵 거리 — 서바이브 바 옆 공원", en: "Snack Alley — park next to Bar Survive" },
-          trigger: { ko: "서브스토리 No.5·6 완료 후 낮 시간 서바이브 바 옆 공원 방문", en: "Daytime visit after clearing Subs 5 and 6." },
-          body: { ko: "공원에서 차례로 4명의 「풍운아」와 조우·전투. 한 명을 쓰러뜨리고 미니맵 마커가 사라질 만큼 멀어진 뒤 돌아오면 다음 인물이 등장합니다. 마지막에 토사노야마가 딜리버리 헬프로 합류.", en: "Fight four oddballs in the park one at a time — clear marker, walk far enough that it vanishes from the minimap, then return for the next. Tosanoyama joins Delivery Help last." },
-          prereq: { ko: "서브스토리 No.5, 서브스토리 No.6 완료", en: "Subs 5 & 6 cleared" },
-          reward: { ko: "토사노야마 (딜리버리 헬프) 해금", en: "Tosanoyama joins Delivery Help" },
+          title: {
+            "ko": "감 열매가 흔들릴 무렵에",
+            "en": "Persimmon Premonition"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "스낵 거리 공원의 감나무 관련 이벤트를 차례로 진행합니다. 다음 이벤트가 나오지 않으면 충분히 멀리 갔다가 돌아옵니다.",
+            "en": "Complete the persimmon-tree encounters in the Bar District park. Leave the area and return between events when needed."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Persimmon Premonition",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 10,
-          title: { ko: "광활한 바다로 뛰어들어라!", en: "Dive into the Open Sea!" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "히다마리노 성 부근", en: "Near Hello Work / Hidamari Castle" },
-          trigger: { ko: "「히다마리노 성으로 향하라」 이벤트 이후 발생", en: "Triggers after the 'head to Hidamari Castle' main event." },
-          body: { ko: "자격증 학교가 해금되어 스탯 인상용 시험을 칠 수 있게 됩니다. 가장 일찍 풀어야 할 시스템 해금 서브.", en: "Unlocks the Qualifications School so Ichiban can study for stat-boosting licenses. Top-priority system unlock." },
-          reward: { ko: "자격증 학교 해금 + 정열/명랑 +30", en: "Qualifications School + Passion/Cheerfulness +30" },
+          title: {
+            "ko": "광활한 바다로 뛰어들어라!",
+            "en": "Fast Times at Ounabara"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "오우나바라 자격증 학교에서 첫 시험을 치러 학교를 이용할 수 있게 합니다.",
+            "en": "Take the introductory Ounabara Vocational School test to unlock the school."
+          },
+
+          source: {
+            "label": "PowerPyx — Fast Times at Ounabara",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },
@@ -109,85 +239,199 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       items: [
         {
           number: 11,
-          title: { ko: "쓰레기 사회의 패자", en: "Loser of a Trash Society" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "이세자키 로드의 살라리맨에게 말 걸기", en: "Talk to the salaryman on Isezaki Road." },
-          body: { ko: "낙오된 살라리맨 이노카리를 도와 직장 갑질을 응징. 클리어 시 회사 직원으로 합류.", en: "Help downtrodden Inokari take revenge on his abusers; recruits him as company staff." },
-          reward: { ko: "타올 + 이노카리 (회사 직원)", en: "Towel + Inokari joins the company" },
+          title: {
+            "ko": "쓰레기 사회의 패자",
+            "en": "Certified Underdogs"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "회사 경영을 해금한 뒤 자격증 학교에서 이카리의 이야기를 듣고 사건을 해결합니다.",
+            "en": "After unlocking business management, follow Ikari’s story at the vocational school."
+          },
+
+          source: {
+            "label": "PowerPyx — Certified Underdogs",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 12,
-          title: { ko: "알바 히어로닷컴", en: "Part-Time Hero .com" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "「파트타임 영웅」 알선 NPC에게 말 걸기", en: "Talk to the Part-Time Hero rep on Isezaki Road." },
-          body: { ko: "이진초의 잡일(파트타임 히어로) 시스템이 해금됩니다. 컴플리션의 핵심 시스템.", en: "Unlocks the Part-Time Hero job board — the completion-list backbone for side activities." },
-          reward: { ko: "파트타임 히어로 해금", en: "Part-Time Hero unlocked" },
+          title: {
+            "ko": "알바 히어로닷컴",
+            "en": "How to be a Part-Time Hero"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "제5장 스토리에서 알바 퀘스트 사용법을 배우면 완료됩니다.",
+            "en": "Complete the Chapter 5 story introduction to Part-Time Hero."
+          },
+
+          source: {
+            "label": "PowerPyx — How to be a Part-Time Hero",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 13,
-          title: { ko: "밑바닥에서 함께", en: "From Rock Bottom, Together" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드 — 이치반 컨피전스(전신)", en: "Isezaki Road — future Ichiban Confections office" },
-          trigger: { ko: "회사 경영 도입 이벤트", en: "Triggered by the company-takeover main beat." },
-          body: { ko: "이치반이 망해가는 과자 회사를 인수, 회사 경영 미니게임이 본격적으로 해금되는 도입 서브.", en: "Ichiban inherits the bankrupt Confections company; formally unlocks the Business Management mini-game." },
-          reward: { ko: "이치반 컨피전스(회사 경영) 해금", en: "Ichiban Confections (Business Mgmt) unlocked" },
+          title: {
+            "ko": "밑바닥에서 함께",
+            "en": "Nowhere to Go But Up"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "제5장 스토리에서 낭만 제작소를 방문해 무기·방어구 제작 기능을 해금합니다.",
+            "en": "Visit Romance Workshop during Chapter 5 to unlock weapon and armor crafting."
+          },
+
+          source: {
+            "label": "PowerPyx — Nowhere to Go But Up",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 14,
-          title: { ko: "지키고 싶은 것", en: "Something to Protect" },
-          chapter: { ko: "후반 (회사 투자 2,000만 + 정열 Lv10)", en: "Late (20M company investment + Passion Lv10)" },
-          location: { ko: "이치반 컨피전스 본사", en: "Ichiban Confections HQ" },
-          trigger: { ko: "회사 자금 2,000만엔 투자 + 정열 Lv10 달성 후 회사로 복귀", en: "Hit 20M company investment with Passion Lv10, then return to HQ." },
-          body: { ko: "회사 동료 사와 스미레의 사정. 깊은 결단을 내려 후반 미셔너블 라인의 출발점이 됩니다. 서브스토리 No.52 트리거 조건의 일부.", en: "Sawa Sumire's personal arc — opens the late-game missable chain that culminates in Sub #52." },
-          prereq: { ko: "회사 투자 2,000만 + 정열 Lv10", en: "20M company investment + Passion Lv10" },
-          reward: { ko: "사와 스미레 (회사 직원)", en: "Sawa Sumire joins the company" },
+          title: {
+            "ko": "지키고 싶은 것",
+            "en": "Something Worth Protecting"
+          },
+
+
+
+          body: {
+            "ko": "낭만 제작소를 시설 레벨 4까지 확장하고 스미레에게 분재를 1개·5개·10개 선물합니다. 정열 레벨 4·7·10의 대화를 진행한 뒤 마지막 전투를 완료합니다.",
+            "en": "Upgrade Romance Workshop to level 4. Give Sumire bonsai in batches of 1, 5 and 10 at Passion levels 4, 7 and 10, then complete the final fight."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Something Worth Protecting",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 15,
-          title: { ko: "이진초의 받침대", en: "Ijincho's Catch-All" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "이세자키 로드의 거리 닭에게 접근", en: "Approach the loose chicken on Isezaki Road." },
-          body: { ko: "달아난 닭 「코케콧코」를 잡아 회사 마스코트화. 회사 경영 추가 해금 + 코케콧코가 딜리버리 헬프로 합류.", en: "Catch the runaway chicken Kokekokko; further opens Business Mgmt and recruits the chicken to Delivery Help." },
-          reward: { ko: "회사 경영 확장 + 코케콧코 (딜리버리)", en: "Business Mgmt expansion + Kokekokko (Delivery)" },
+          title: {
+            "ko": "이진초의 받침대",
+            "en": "Ijincho’s Safety Net"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "제5장 스토리에서 에리의 회사 사정을 듣고 회사 경영을 시작합니다.",
+            "en": "Follow Eri’s Chapter 5 story event to begin business management."
+          },
+
+          source: {
+            "label": "PowerPyx — Ijincho’s Safety Net",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 16,
-          title: { ko: "짝꿍을 찾아라", en: "Find My Partner" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드 북단", en: "Isezaki Road — north end" },
-          trigger: { ko: "북단의 여성에게 말 걸기", en: "Speak to the woman at the north end of Isezaki Road." },
-          body: { ko: "잃어버린 반려동물 「낸시」를 추적. 거리를 돌며 단서를 찾아 회수.", en: "Track down a lost pet, Nancy, across the streets." },
-          reward: { ko: "낸시 (딜리버리 헬프)", en: "Nancy joins Delivery Help" },
+          title: {
+            "ko": "짝꿍을 찾아라",
+            "en": "The Crawfish Caper"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "선라이즈교의 가재를 조사합니다. 강가에서 낸시를 찾아 노인에게 돌려준 뒤 고급 초밥을 가져다주면 낸시를 구할 수 있습니다.",
+            "en": "Inspect the crawfish on Sunrise Bridge, find Nancy by the river and return her to the man. Bring him a Premium Sushi Set to save Nancy."
+          },
+
+          source: {
+            "label": "PowerPyx — The Crawfish Caper",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 17,
-          title: { ko: "요코하마 제일 어려운 사랑", en: "Yokohama's Toughest Romance" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "거리에서 곤란해하는 여성에게 말 걸기", en: "Talk to the troubled woman on Isezaki Road." },
-          body: { ko: "복잡한 연애사로 협박당하는 시라카와 키요에를 도와줍니다.", en: "Help Shirakawa Kiyoe out of a messy blackmail-tinged love triangle." },
-          reward: { ko: "시라카와 키요에 (딜리버리 헬프)", en: "Shirakawa Kiyoe joins Delivery Help" },
+          title: {
+            "ko": "요코하마 제일 어려운 사랑",
+            "en": "A Love Worth Fighting For"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "무료 급식소의 키요에와 쿠로이 사이를 오가며 구애를 돕습니다. 낮과 밤에 진행되는 후속 이벤트를 마치고 영화관 근처의 전투를 완료합니다.",
+            "en": "Help Kuroi court Kiyoe at the soup kitchen. Follow the daytime and nighttime events and finish the fight near the cinema."
+          },
+
+          source: {
+            "label": "PowerPyx — A Love Worth Fighting For",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 18,
-          title: { ko: "죄와 벌", en: "Crime and Punishment" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "삥쟁이 같은 양아치에게 시비 걸리는 직장인에게 접근", en: "Approach the salaryman being shaken down by a hood." },
-          body: { ko: "갈취 현장을 끊고 회사원 하나야마를 구출. 회사 직원 영입.", en: "Stop a shakedown; recruits Hanayama to the company." },
-          reward: { ko: "만년필 + 하나야마 (회사 직원)", en: "Fountain Pen + Hanayama (company)" },
+          title: {
+            "ko": "죄와 벌",
+            "en": "Home Run Heroism"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "강변에서 하나야마의 이야기를 듣고 하마카제 거리의 안자이를 돕습니다. 이후 로즈 블로섬의 사건을 해결합니다.",
+            "en": "Hear Hanayama’s account by the river, help Anzai on Hamakaze Street and resolve the incident at Rose Blossom."
+          },
+
+          source: {
+            "label": "PowerPyx — Home Run Heroism",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 19,
-          title: { ko: "거품과 함께 사라지다", en: "Gone with the Bubbles" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "차이나타운", en: "Chinatown" },
-          trigger: { ko: "차이나타운에서 옛 버블 회상에 잠긴 남성에게 말 걸기", en: "Talk to the man reminiscing about the bubble era in Chinatown." },
-          body: { ko: "거품경제 시절을 그리워하는 노인의 마지막 호화 식사를 도와줍니다.", en: "Help a bubble-era nostalgic enjoy one last extravagant meal." },
-          reward: { ko: "수수께끼의 스테이크", en: "Mysterious Steak" },
+          title: {
+            "ko": "거품과 함께 사라지다",
+            "en": "Bubble, Bubble Toil and Trouble"
+          },
+          chapter: {
+            "ko": "제5장 이후",
+            "en": "Chapter 5 onward"
+          },
+
+
+          body: {
+            "ko": "거품만 걸친 남자를 옷가게까지 안내합니다. 길에서 물을 뿌리는 사람들을 피해 이동하고 나중에 남자와 다시 대화합니다.",
+            "en": "Escort the foam-covered man to a clothing shop without passing through splashing water, then return to speak to him later."
+          },
+
+          source: {
+            "label": "PowerPyx — Bubble, Bubble Toil and Trouble",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },
@@ -196,127 +440,292 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       items: [
         {
           number: 20,
-          title: { ko: "외로운 식탁", en: "Lonely Table" },
-          chapter: { ko: "7장 (밤)", en: "Chapter 7 (night)" },
-          location: { ko: "베테 키친 이세자키 로드점 2층", en: "Vette Kitchen Isezaki Road — 2F" },
-          trigger: { ko: "밤 시간 베테 키친 2층에서 노보루에게 접근", en: "Night-time: approach Noboru on Vette Kitchen 2F." },
-          body: { ko: "혼밥하는 노보루가 양키들에게 시비 걸리는 현장. 양키 격퇴 → 마커 사라질 만큼 멀어졌다가 복귀 → 스낵 거리 타니야마 스포츠 앞에서 「인격 나쁜 남자」와 다시 전투 → 베테 키친 복귀로 종료.", en: "Save Noboru from yankee thugs at Vette Kitchen, walk far enough to clear the marker, return for a second beat, then head to Taniyama Sports in Snack Alley to whip a 'bad-character' bully, then back to Vette Kitchen to close." },
-          reward: { ko: "노보루 (회사 직원)", en: "Noboru joins the company" },
+          title: {
+            "ko": "외로운 식탁",
+            "en": "Tables for One"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "웻테 키친 2층에서 노보루를 돕고 후속 만남을 진행합니다. 스낵 거리의 스포츠용품점 부근 전투 후 식당으로 돌아갑니다.",
+            "en": "Help Noboru upstairs at Wette Kitchen and follow his later encounters. Return to the restaurant after the fight near the Bar District sports shop."
+          },
+
+          source: {
+            "label": "PowerPyx — Tables for One",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 21,
-          title: { ko: "야쿠자의 쓰레기장", en: "The Yakuza's Dumping Ground" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "스낵 거리", en: "Snack Alley" },
-          trigger: { ko: "스낵 거리 뒷골목의 시게에게 접근", en: "Approach Shige in the Snack Alley back lane." },
-          body: { ko: "낙오 야쿠자 시게의 자긍심을 되살려주는 이야기. 회사 직원으로 합류.", en: "Restore broken-down ex-yakuza Shige's pride; recruits him to the company." },
-          reward: { ko: "근성 매뉴얼 + 시게 (회사 직원)", en: "Grit Manual + Shige (company)" },
+          title: {
+            "ko": "야쿠자의 쓰레기장",
+            "en": "Dumpster of Demise"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "낭만 제작소 건너편 주차장의 쓰레기 더미를 조사하고 시게와 관련된 사건을 진행합니다.",
+            "en": "Investigate the rubbish pile in the car park opposite Romance Workshop and follow Shige’s encounter."
+          },
+
+          source: {
+            "label": "PowerPyx — Dumpster of Demise",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 22,
-          title: { ko: "다정함의 값", en: "The Value of Kindness" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "이세자키 로드 북부", en: "Isezaki Road — north" },
-          trigger: { ko: "북부 보도에서 메구미의 모친 격 인물에게 말 걸기", en: "Talk to the matronly figure on north Isezaki Road." },
-          body: { ko: "곤경에 처한 모녀를 돕는 도입. 서브스토리 No.23으로 연결.", en: "Help a mother-daughter pair in distress; sets up Sub #23." },
-          reward: { ko: "진주 귀걸이", en: "Pearl Earrings" },
+          title: {
+            "ko": "다정함의 값",
+            "en": "An Act of Kindness"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "진나이역 앞에서 모금 중인 메구미에게 말을 걸고 기부를 돕습니다.",
+            "en": "Talk to Megumi collecting donations near Jinnai Station and help her fundraising."
+          },
+
+          source: {
+            "label": "PowerPyx — An Act of Kindness",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 23,
-          title: { ko: "각자의 마음", en: "Each One's Feelings" },
-          chapter: { ko: "서브스토리 No.22 클리어 후", en: "After Sub #22" },
-          location: { ko: "이세자키 로드 북부 → 센트럴 스트리트 → 병원", en: "North Isezaki Road → Central St → hospital" },
-          trigger: { ko: "서브스토리 No.22 종료 후 같은 장소에서 메구미에게 접근", en: "After Sub #22, return to Megumi at the same spot." },
-          body: { ko: "메구미 → 센트럴 스트리트의 부친 조우 → 양아치 3명 전투 → 100만엔을 소지한 상태에서 택시로 병원 이동 → 이세자키 로드 북부 복귀로 종료. 병원은 도보 불가, 반드시 택시. 100만엔 미소지 시 진행 정지.", en: "Talk to Megumi → meet her father on Central St → fight three thugs → carry 1,000,000 yen and take a taxi to the hospital (walking is impossible) → return to north Isezaki Road. Without 1M yen on hand you cannot progress." },
-          prereq: { ko: "서브스토리 No.22 완료 + 소지금 100만엔", en: "Sub #22 cleared + 1,000,000 yen on hand" },
-          reward: { ko: "메구미 (딜리버리 헬프)", en: "Megumi joins Delivery Help" },
+          title: {
+            "ko": "각자의 마음",
+            "en": "Warmest Wishes"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "이전 메구미 의뢰를 완료한 뒤 후속 사건을 진행합니다. 병원에 갈 때는 100만 엔을 준비하고 택시를 이용합니다.",
+            "en": "After the earlier Megumi substory, complete her follow-up. Bring ¥1,000,000 and take a taxi to the hospital when prompted."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Warmest Wishes",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 24,
-          title: { ko: "그 멋진 아픔을 다시 한번", en: "That Wonderful Pain, Once More" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "차이나타운", en: "Chinatown" },
-          trigger: { ko: "차이나타운에서 SM 취향의 남자에게 말 걸기", en: "Talk to the masochism-curious man in Chinatown." },
-          body: { ko: "마조 성향의 마키하라 소타를 「조교」해주는 서브. 클리어 시 딜리버리 헬프로 합류.", en: "Indulge Makihara Sota's masochistic streak; recruits him to Delivery Help." },
-          reward: { ko: "로프 + 마키하라 소타 (딜리버리)", en: "Rope + Makihara Sota (Delivery)" },
+          title: {
+            "ko": "그 멋진 아픔을 다시 한번",
+            "en": "Fifty Shades of Play"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "오하마 거리의 이야기를 듣고 후쿠토쿠 공원의 마키노하라와 싸웁니다. 이 전투는 대미지로 이기는 것이 아니므로 일반 공격으로 진행한 뒤 가족과 관련된 후속 사건을 해결합니다.",
+            "en": "Find Mr. Masochist in Fukutoku Park after hearing about him on Ohama Street. Use normal attacks during the zero-damage encounter, then resolve the family-related follow-up."
+          },
+
+          source: {
+            "label": "PowerPyx — Fifty Shades of Play",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 25,
-          title: { ko: "빛바랜 별", en: "The Faded Star" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "왕년의 가수 이류존을 자칭하는 남자에게 말 걸기", en: "Talk to the man calling himself faded star I Ryujon." },
-          body: { ko: "한물간 스타의 재기를 도와주는 이야기.", en: "Help a faded star reclaim a sliver of relevance." },
-          reward: { ko: "총알 + 이류존 (딜리버리)", en: "Bullet + I Ryujon (Delivery)" },
+          title: {
+            "ko": "빛바랜 별",
+            "en": "A Fading Star"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "어머니의 맹세에서 일류전을 만난 뒤 스낵 거리에서 다시 찾습니다. 물을 건네고 후속 전투까지 완료합니다.",
+            "en": "Meet Il Yu-Jin at Eomeoni’s Vow, find him again in the Bar District, bring water and complete the later fight."
+          },
+
+          source: {
+            "label": "PowerPyx — A Fading Star",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 26,
-          title: { ko: "가면의 살인귀", en: "The Masked Killer" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "이진초 골목", en: "Ijincho back alleys" },
-          trigger: { ko: "골목의 가면 남자 「J.A.」에게 말 걸기", en: "Talk to the masked man J.A. in the alley." },
-          body: { ko: "가면 살인귀를 자칭하는 위험한 남자의 정체 추적.", en: "Investigate the masked man claiming to be a serial killer." },
-          reward: { ko: "딜리버리 헬프", en: "J.A. joins Delivery Help" },
+          title: {
+            "ko": "가면의 살인귀",
+            "en": "The Masked Murderer"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "코리아타운 부근에서 가면 살인범의 소문을 듣고 밤에 해당 골목을 조사합니다. 전투 후 오해를 풀면 완료됩니다.",
+            "en": "Hear the masked-murderer rumour near Koreatown and investigate the alley at night. Win the fight and resolve the misunderstanding."
+          },
+
+          source: {
+            "label": "PowerPyx — The Masked Murderer",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 27,
-          title: { ko: "그 김치, 매우 매움 주의", en: "That Kimchi Is Painfully Spicy" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "차이나타운", en: "Chinatown" },
-          trigger: { ko: "히로나카가 운영하는 김치 노점", en: "At Hironaka's kimchi stall in Chinatown." },
-          body: { ko: "초매운 김치로 손님을 잃은 히로나카를 돕는 이야기. 회사 직원 영입.", en: "Help Hironaka tone down his lethal kimchi; he joins the company." },
-          reward: { ko: "히로나카 (회사 직원)", en: "Hironaka (company)" },
+          title: {
+            "ko": "그 김치, 매우 매움 주의",
+            "en": "The Miracle of Spice"
+          },
+          chapter: {
+            "ko": "제7장 이후",
+            "en": "Chapter 7 onward"
+          },
+
+
+          body: {
+            "ko": "횡단보도의 노인을 만난 뒤 김치 판매상을 찾습니다. 역·공원·횡단보도에서 필요한 사람들에게 김치를 나눠 주고 판매상에게 돌아갑니다.",
+            "en": "Meet the elderly woman, find the kimchi seller, distribute samples at the station, park and crossing, then return to the seller."
+          },
+
+          source: {
+            "label": "PowerPyx — The Miracle of Spice",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 28,
-          title: { ko: "가이드의 일", en: "The Guide's Job" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "하마키타 공원 거리", en: "Hamakita Park St." },
-          trigger: { ko: "관광 가이드 이시다 아야미에게 말 걸기", en: "Talk to tour guide Ishida Ayami." },
-          body: { ko: "가이드 아야미의 관광 안내를 보조. 3개의 퀴즈에 정답을 맞추면 인간력 보너스. 도중 불량배 1명과 전투.", en: "Help Ayami guide tourists. Three trivia prompts; pick the right answer each time, then beat one thug." },
-          choices: [
-            { prompt: { ko: "「이진초의 상징적인 동상은?」", en: "'Ijincho's iconic statue?'" }, correct: { ko: "붉은 용", en: "Red Dragon" }, note: { ko: "정열 +10", en: "Passion +10" } },
-            { prompt: { ko: "「하마키타 공원의 명물은?」", en: "'Hamakita Park's landmark?'" }, correct: { ko: "파란 간판", en: "Blue Sign" }, note: { ko: "지력 +10", en: "Intelligence +10" } },
-            { prompt: { ko: "「차이나타운의 명물 음식은?」", en: "'Chinatown's signature dish?'" }, correct: { ko: "울트라 폭성 슈퍼 고기만두", en: "Ultra Explosion Super Meat Bun" }, note: { ko: "스타일 +10", en: "Style +10" } },
-          ],
-          reward: { ko: "팬시 마이크 + 회복약 + 이시다 아야미 (회사 직원)", en: "Fancy Microphone + medicine + Ishida Ayami (company)" },
+          title: {
+            "ko": "가이드의 일",
+            "en": "Tour Guide Turmoil"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "하마키타 공원 거리에서 아야미의 관광 안내를 돕고 이어지는 전투를 완료합니다.",
+            "en": "Help Ayami guide her tour on Hamakita Park Street and finish the ensuing fight."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Tour Guide Turmoil",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 29,
-          title: { ko: "위작에 주의하라", en: "Beware of Forgeries" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "이진초 — 노점가", en: "Ijincho — stall street" },
-          trigger: { ko: "수상한 「오노 미치오」 피규어 노점", en: "Suspicious Ono Michio figurine stall." },
-          body: { ko: "오노 미치오 위조 피규어 사건. 서브스토리 No.30으로 연결.", en: "Counterfeit Ono Michio figurine caper; sets up Sub #30." },
-          reward: { ko: "오노 미치오 피규어", en: "Ono Michio Figure" },
+          title: {
+            "ko": "위작에 주의하라",
+            "en": "The Michio Minefield"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "차이나타운 정자 근처에서 오노 미치오 모형의 진품과 가품을 구별하는 일을 돕습니다.",
+            "en": "Help distinguish authentic Ono Michio figures from counterfeits near the Chinatown gazebo."
+          },
+
+          source: {
+            "label": "PowerPyx — The Michio Minefield",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 30,
-          title: { ko: "용서받지 못한 자", en: "The Unforgiven" },
-          chapter: { ko: "서브스토리 No.29 클리어 후", en: "After Sub #29" },
-          location: { ko: "이진초", en: "Ijincho" },
-          trigger: { ko: "서브스토리 No.29 종료 후 동일 지점 복귀", en: "Return to the same spot after Sub #29." },
-          body: { ko: "위조 피규어 사건의 진범을 추적. 오노 미치오 본인이 딜리버리 헬프로 합류.", en: "Track down the forger; the real Ono Michio joins Delivery Help." },
-          prereq: { ko: "서브스토리 No.29 완료", en: "Sub #29 cleared" },
-          reward: { ko: "카세트 + 우메코 (회사) + 오노 미치오 (딜리버리)", en: "Cassette + Umeko (company) + Ono Michio (Delivery)" },
+          title: {
+            "ko": "용서받지 못한 자",
+            "en": "Fauxno Michio"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "29번 의뢰 이후 가짜 오노 미치오를 조사하고 사건을 해결합니다.",
+            "en": "After substory 29, investigate the fake Ono Michio and resolve the encounter."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Fauxno Michio",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 31,
-          title: { ko: "반쪽짜리", en: "The Half-Baked One" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "차이나타운", en: "Chinatown" },
-          trigger: { ko: "차이나타운의 견습 요리사에게 말 걸기", en: "Talk to the apprentice chef in Chinatown." },
-          body: { ko: "한 사람 몫의 요리사가 되려는 청년의 수행을 돕습니다.", en: "Help the apprentice chef earn his stripes." },
-          reward: { ko: "코트 톤그스", en: "Court Tongs" },
+          title: {
+            "ko": "반쪽짜리",
+            "en": "Like Father, Like Son"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "멍우 앞에서 부자의 사정을 듣고 식당 관련 후속 사건을 진행합니다.",
+            "en": "Hear the father and son’s dispute outside Meng Wu and complete its follow-up events."
+          },
+
+          source: {
+            "label": "PowerPyx — Like Father, Like Son",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 32,
-          title: { ko: "너를 잊지 않아", en: "I Won't Forget You" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "진나이 역 — 바샤미치 서쪽", en: "Jinnai Station — Bashamichi West" },
-          trigger: { ko: "바샤미치 서쪽에서 옛 지인을 자처하는 여성 「토노 카에데」에게 말 걸기", en: "Talk to Kaede Tono, a woman claiming to be an old acquaintance, on Bashamichi West." },
-          body: { ko: "데이트 약속 시뮬레이션. 대화 선택 후 게임센터로 유도되며, UFO 캐처에서 인형을 따내면 다정함 +20. 실패하거나 도중에 포기해도 스토리는 그대로 진행됩니다. 마무리로 양아치 3명 전투.", en: "Date-sim flow: pick the reassuring dialogue options to head to the arcade, then try the UFO catcher — winning the plush grants +20 Kindness, but the story moves on even if you fail or give up early. Closes with a 3-thug fight." },
-          reward: { ko: "아이템 없음 / 다정함 +20 (인형 획득 시)", en: "No item; +20 Kindness if you win the plush" },
+          title: {
+            "ko": "너를 잊지 않아",
+            "en": "Forget Me Not"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "마차 가도에서 흰옷의 여성과 만나 게임 센터에 갑니다. UFO 캐처에서 실패해도 진행할 수 있으며 마지막 불량배 전투를 완료하면 됩니다.",
+            "en": "Meet the woman in white on Carriage Highway and visit the arcade. The UFO Catcher result does not block progress; complete the final fight."
+          },
+
+          source: {
+            "label": "PowerPyx — Forget Me Not",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },
@@ -325,68 +734,159 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       items: [
         {
           number: 33,
-          title: { ko: "교통량의 장인", en: "Traffic Count Artisan" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "이세자키 로드", en: "Isezaki Road" },
-          trigger: { ko: "교통량 카운터를 든 남자", en: "Man with a traffic counter." },
-          body: { ko: "교통량 조사를 돕습니다.", en: "Help count traffic with a clicker." },
-          reward: { ko: "빈티지 카운터", en: "Vintage Counter" },
+          title: {
+            "ko": "교통량의 장인",
+            "en": "The Traffic Census Sensei"
+          },
+          chapter: {
+            "ko": "제12장 이후",
+            "en": "Chapter 12 onward"
+          },
+
+
+          body: {
+            "ko": "양지의 성 동쪽의 남자에게 말을 걸고 교통량을 세는 과제에 도전합니다.",
+            "en": "Talk to the man east of Sunlight Palace and complete the traffic-counting challenges."
+          },
+
+          source: {
+            "label": "PowerPyx — The Traffic Census Sensei",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 34,
-          title: { ko: "이진초 광소곡", en: "Ijincho Rhapsody" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "이진초 거리 곳곳", en: "Ijincho streets" },
-          trigger: { ko: "거리의 광적인 사범에게 말 걸기", en: "Talk to the eccentric master on the street." },
-          body: { ko: "지나치게 흥분한 검술 사범과 매를 추적합니다.", en: "Chase a rampaging swordsmanship master and his hawk through town." },
-          reward: { ko: "검사의 띠 + 잔혹한 매 (딜리버리)", en: "Swordsman Sash + Brutal Hawk (Delivery)" },
+          title: {
+            "ko": "이진초 광소곡",
+            "en": "Bros Till the End"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "하마키타 공원의 폭주족들을 도와줍니다. 후속 대화 뒤 센트럴 거리 서쪽의 오토바이를 조사하고 건물 안에서 야쿠자를 쓰러뜨립니다.",
+            "en": "Help the bikers in Hamakita Park. After the follow-up conversation, inspect the bike on West Central Street and defeat the yakuza inside the building."
+          },
+
+          source: {
+            "label": "PowerPyx — Bros Till the End",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 35,
-          title: { ko: "지금, 빨러 가요", en: "Now, I'm Off to Suck" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "이진초", en: "Ijincho" },
-          trigger: { ko: "거리 청소 로봇을 둘러싼 소동", en: "Cleaning-bot commotion." },
-          body: { ko: "거리를 누비는 청소 로봇을 회수하여 회사 직원으로 영입.", en: "Recover the wandering cleaning bot and add it to the company roster." },
-          reward: { ko: "청소 로봇 (회사 직원)", en: "Cleaning Bot (company)" },
+          title: {
+            "ko": "지금, 빨러 가요",
+            "en": "Preparing to Suck"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "카페에서 박사를 만나 청소 로봇 개발에 100만 엔을 투자합니다. 시험 전투에서는 로봇의 팔을 먼저 파괴한 뒤 배터리를 공격합니다.",
+            "en": "Invest ¥1,000,000 in the professor’s cleaning robot. During its test battle, destroy the arms before attacking the battery."
+          },
+
+          source: {
+            "label": "PowerPyx — Preparing to Suck",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 36,
-          title: { ko: "전설의 뒷무기상", en: "The Legendary Black-Market Smith" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "차이나타운 뒷골목", en: "Chinatown back alleys" },
-          trigger: { ko: "차이나타운 골목의 수상한 노인", en: "Suspicious old man in a Chinatown alley." },
-          body: { ko: "뒷무기상 「쩌우 샤오롱」을 찾아 비밀 무기상점과 도박장을 동시에 해금. 핵심 해금 서브.", en: "Find black-market smith Zhou Xiaolong to unlock both the secret weapon shop and the gambling den. Major unlock." },
-          reward: { ko: "도박장 + 비밀 무기상점 + 쩌우 샤오롱 (딜리버리)", en: "Gambling House + Secret Weapon Shop + Zhou Xiaolong (Delivery)" },
+          title: {
+            "ko": "전설의 뒷무기상",
+            "en": "Whispers of the Underworld"
+          },
+          chapter: {
+            "ko": "제9장 이후",
+            "en": "Chapter 9 onward"
+          },
+
+
+          body: {
+            "ko": "멘탈 4로 도박장 입구를 연 뒤 서바이버의 이로하에게 정보를 듣습니다. 관련 전투를 끝내고 멘탈 7로 무기상을 이용해 무기를 한 개 구입한 뒤 다시 대화합니다.",
+            "en": "Open the gambling area with Confidence 4, then hear Iroha’s information at Survive. Finish the fight, access the arms dealer with Confidence 7 and buy a weapon before speaking again."
+          },
+
+          source: {
+            "label": "PowerPyx — Whispers of the Underworld",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 37,
-          title: { ko: "애니멀 대서커스에 어서오세요 1", en: "Welcome to the Animal Circus 1" },
-          chapter: { ko: "10장 (이시오다 전투 이후)", en: "Chapter 10 (after Ishioda fight)" },
-          location: { ko: "이진초 — 서커스 천막 부근", en: "Ijincho — circus tent" },
-          trigger: { ko: "서커스 단원에게 접근", en: "Speak to the circus performer." },
-          body: { ko: "동물 서커스 단원들을 도와주는 3부작 1편.", en: "Part 1 of the three-part Animal Circus arc." },
-          reward: { ko: "보스 타올", en: "Boss Towel" },
+          title: {
+            "ko": "애니멀 대서커스에 어서오세요 1",
+            "en": "Ringleader Roundup: Bear Blues"
+          },
+          chapter: {
+            "ko": "제10장 이후",
+            "en": "Chapter 10 onward"
+          },
+
+
+          body: {
+            "ko": "하마키타 공원 서쪽에서 서커스 전단을 받은 뒤 동쪽 공연장으로 가서 곰을 쓰러뜨립니다.",
+            "en": "Take the circus flyer in western Hamakita Park, visit the eastern performance area and defeat the bear."
+          },
+
+          source: {
+            "label": "PowerPyx — Ringleader Roundup: Bear Blues",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 38,
-          title: { ko: "애니멀 대서커스에 어서오세요 2", en: "Welcome to the Animal Circus 2" },
-          chapter: { ko: "서브스토리 No.37 클리어 후", en: "After Sub #37" },
-          location: { ko: "이진초 — 서커스", en: "Ijincho — circus" },
-          trigger: { ko: "서브스토리 No.37 클리어 후 서커스 복귀", en: "Return to circus after Sub #37." },
-          body: { ko: "서커스 단원 추가 의뢰.", en: "Continuation of the circus storyline." },
-          prereq: { ko: "서브스토리 No.37 완료", en: "Sub #37 cleared" },
-          reward: { ko: "명예 메달", en: "Honor Medal" },
+          title: {
+            "ko": "애니멀 대서커스에 어서오세요 2",
+            "en": "Ringleader Roundup: Tiger Takeover"
+          },
+          chapter: {
+            "ko": "제10장 이후",
+            "en": "Chapter 10 onward"
+          },
+
+
+          body: {
+            "ko": "37번 의뢰 후 자리를 떠났다 돌아와 호랑이와 싸웁니다.",
+            "en": "After substory 37, leave and return to fight the tiger."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Ringleader Roundup: Tiger Takeover",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 39,
-          title: { ko: "애니멀 대서커스에 어서오세요 3", en: "Welcome to the Animal Circus 3" },
-          chapter: { ko: "서브스토리 No.38 클리어 후", en: "After Sub #38" },
-          location: { ko: "이진초 — 서커스", en: "Ijincho — circus" },
-          trigger: { ko: "서브스토리 No.38 클리어 후 서커스 복귀", en: "Return to circus after Sub #38." },
-          body: { ko: "서커스 라인 완결편. 클라라가 회사 직원으로 합류.", en: "Finale of the circus arc; Clara joins the company." },
-          prereq: { ko: "서브스토리 No.38 완료", en: "Sub #38 cleared" },
-          reward: { ko: "왁스 피규어 + 클라라 (회사 직원)", en: "Wax Figure + Clara (company)" },
+          title: {
+            "ko": "애니멀 대서커스에 어서오세요 3",
+            "en": "Ringleader Roundup: Chimp Calamity"
+          },
+          chapter: {
+            "ko": "제10장 이후",
+            "en": "Chapter 10 onward"
+          },
+
+
+          body: {
+            "ko": "38번 의뢰 후 공사 현장 이벤트를 보고 서커스로 돌아갑니다. 중장비를 탄 침팬지를 쓰러뜨립니다.",
+            "en": "After substory 38, view the construction-site event, return to the circus and defeat the chimpanzee operating the loader."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Ringleader Roundup: Chimp Calamity",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },
@@ -395,141 +895,288 @@ export const yakuzaLikeADragonSubstories: SubstoriesData = {
       items: [
         {
           number: 40,
-          title: { ko: "오늘부터 너도 드래곤 레이서!", en: "From Today, You're a Dragon Racer Too!" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "카트장 앞 스태프에게 말 걸기", en: "Talk to the staff outside the kart course." },
-          body: { ko: "드래곤 카트 미니게임 도입. 모든 카트·컵의 시작점.", en: "Unlocks the Dragon Kart mini-game; entry point for every cup." },
-          reward: { ko: "드래곤 카트 해금", en: "Dragon Kart unlocked" },
+          title: {
+            "ko": "오늘부터 너도 드래곤 레이서!",
+            "en": "Welcome to Dragon Kart"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "하마키타 공원의 드래곤 카트에서 첫 레이스에 승리합니다.",
+            "en": "Win the introductory Dragon Kart race in Hamakita Park."
+          },
+
+          source: {
+            "label": "PowerPyx — Welcome to Dragon Kart",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 41,
-          title: { ko: "하마의 폭격기", en: "The Hama Bomber" },
-          chapter: { ko: "케르베로스 컵 우승 후", en: "After winning Cerberus Cup" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "케르베로스 컵 우승 후 카트장 복귀", en: "Return after the Cerberus Cup win." },
-          body: { ko: "거친 라이벌 레이서와 1대1 승부.", en: "Duel a rough-and-tumble rival racer." },
-          reward: { ko: "럼블 크래셔 (카트)", en: "Rumble Crasher (kart)" },
+          title: {
+            "ko": "하마의 폭격기",
+            "en": "Two-headed Bomb"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "케르베로스 컵 우승 후 나오키와 하마노우미의 특별 레이스에 승리합니다.",
+            "en": "After winning the Cerberus Cup, win the special race against Naoki and Hamanoumi."
+          },
+
+          source: {
+            "label": "PowerPyx — Two-headed Bomb",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 42,
-          title: { ko: "둘은 걸즈", en: "We Two Are Girls" },
-          chapter: { ko: "페가수스 컵 + 서브스토리 No.41 이후", en: "After Pegasus Cup + Sub #41" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "조건 충족 후 카트장 방문", en: "Visit course after conditions met." },
-          body: { ko: "걸즈 듀오 레이서와의 대결.", en: "Race the girl-duo racers." },
-          prereq: { ko: "페가수스 컵 우승 + 서브스토리 No.41", en: "Pegasus Cup + Sub #41" },
-          reward: { ko: "래피드 팬텀 (카트)", en: "Rapid Phantom (kart)" },
+          title: {
+            "ko": "둘은 걸즈",
+            "en": "The Rocket Girls"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "페가수스 컵과 41번 의뢰를 완료한 뒤 아이·마츠코의 특별 레이스에 승리합니다.",
+            "en": "Win the special race against Ai and Matsuko after the Pegasus Cup and substory 41."
+          },
+
+
+          source: {
+            "label": "PowerPyx — The Rocket Girls",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 43,
-          title: { ko: "지적인 주행자", en: "The Intellectual Racer" },
-          chapter: { ko: "피닉스 컵 + 서브스토리 No.42 이후", en: "After Phoenix Cup + Sub #42" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "조건 충족 후 카트장 방문", en: "Visit course after conditions met." },
-          body: { ko: "지적인 라이벌과의 대결.", en: "Race the cerebral rival racer." },
-          prereq: { ko: "피닉스 컵 + 서브스토리 No.42", en: "Phoenix Cup + Sub #42" },
-          reward: { ko: "이그니션 섀도우 (카트)", en: "Ignition Shadow (kart)" },
+          title: {
+            "ko": "지적인 주행자",
+            "en": "The Data Drifter"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "피닉스 컵과 42번 의뢰를 완료한 뒤 스구루의 특별 레이스에 승리합니다.",
+            "en": "Win Suguru’s special race after the Phoenix Cup and substory 42."
+          },
+
+
+          source: {
+            "label": "PowerPyx — The Data Drifter",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 44,
-          title: { ko: "격돌", en: "Collision" },
-          chapter: { ko: "서브스토리 No.43 이후", en: "After Sub #43" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "서브스토리 No.43 클리어 후 카트장", en: "Course visit after Sub #43." },
-          body: { ko: "이전 라이벌들과의 격돌 이벤트.", en: "Crash-collision event with prior rivals." },
-          prereq: { ko: "서브스토리 No.43 완료", en: "Sub #43 cleared" },
-          reward: { ko: "없음", en: "None" },
+          title: {
+            "ko": "격돌",
+            "en": "Biker Blitz"
+          },
+          chapter: {
+            "ko": "제4장 이후",
+            "en": "Chapter 4 onward"
+          },
+
+
+          body: {
+            "ko": "43번 의뢰 후 카트 건물 옆의 아키라에게 도전해 승리합니다.",
+            "en": "After substory 43, challenge and defeat Akira beside the Dragon Kart building."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Biker Blitz",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 45,
-          title: { ko: "사나이의 싸움", en: "A Man's Fight" },
-          chapter: { ko: "서브스토리 No.44 이후", en: "After Sub #44" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "서브스토리 No.44 클리어 후 카트장", en: "Course after Sub #44." },
-          body: { ko: "최상위 컵인 「드래곤 컵」이 해금됩니다.", en: "Unlocks the Dragon Cup, the top tier." },
-          prereq: { ko: "서브스토리 No.44 완료", en: "Sub #44 cleared" },
-          reward: { ko: "드래곤 컵 해금", en: "Dragon Cup unlocked" },
+          title: {
+            "ko": "사나이의 싸움",
+            "en": "One Hell of a Racer"
+          },
+          chapter: {
+            "ko": "제15장 이후",
+            "en": "Chapter 15 onward"
+          },
+
+
+          body: {
+            "ko": "제15장 또는 클리어 후 진에게 도전해 승리하면 드래곤 컵이 열립니다.",
+            "en": "Defeat Jin in Chapter 15 or Premium Adventure to unlock the Dragon Cup."
+          },
+
+
+          source: {
+            "label": "PowerPyx — One Hell of a Racer",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 46,
-          title: { ko: "폭주남은 어디까지나", en: "The Reckless Man Rides On" },
-          chapter: { ko: "드래곤 컵 우승 후", en: "After Dragon Cup win" },
-          location: { ko: "드래곤 카트장", en: "Dragon Kart course" },
-          trigger: { ko: "드래곤 컵 우승 후 카트장", en: "Course visit after winning Dragon Cup." },
-          body: { ko: "카트 라인 종착. 최강 카트 「라이징 드래곤」 입수.", en: "Caps the kart arc — earn the top-tier Rising Dragon kart." },
-          prereq: { ko: "드래곤 컵 우승", en: "Dragon Cup won" },
-          reward: { ko: "라이징 드래곤 (카트)", en: "Rising Dragon (kart)" },
+          title: {
+            "ko": "폭주남은 어디까지나",
+            "en": "The World is my Racetrack"
+          },
+          chapter: {
+            "ko": "제15장 이후",
+            "en": "Chapter 15 onward"
+          },
+
+
+          body: {
+            "ko": "드래곤 컵 우승 후 접수처의 파이터에게 도전해 승리합니다. 이후 라이징 드래곤을 구입할 수 있습니다.",
+            "en": "After winning the Dragon Cup, defeat Dragon Fighter to make Rising Dragon available for purchase."
+          },
+
+
+          source: {
+            "label": "PowerPyx — The World is my Racetrack",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },
     {
-      title: { ko: "최후반 미셔너블 (인간력 Lv10·자격증·직업·본드)", en: "Endgame missables (Personality Lv10, licenses, jobs, bonds)" },
+      title: { ko: "인연 의뢰 — 인간력·자격증·직업·유대", en: "Relationship substories — personality, exams, jobs and bonds" },
       items: [
         {
           number: 47,
-          title: { ko: "Dream", en: "Dream" },
-          chapter: { ko: "최후반 (사에코 본드 완료 + 스타일 Lv10)", en: "Late (Saeko bond done + Style Lv10)" },
-          location: { ko: "스낵 거리 — 서바이브 바 (낮)", en: "Snack Alley — Bar Survive (daytime)" },
-          trigger: { ko: "낮 시간 서바이브 바에서 사에코에게 「함께 한 잔」 선택", en: "Daytime: at Bar Survive choose 'Have a drink together' with Saeko." },
-          body: { ko: "사에코와 둘만의 술자리. 선택지에 따라 인간력 스탯이 오릅니다. 서브스토리 No.52 조건 중 하나.", en: "A solo drink with Saeko. Choices grant Personality-stat boosts and gate Sub #52." },
-          choices: [
-            { prompt: { ko: "「좋은 남자는 없었어?」", en: "'Weren't there any good men?'" }, correct: { ko: "그대로 선택", en: "Pick as shown" }, note: { ko: "심신 +10", en: "Mental +10" } },
-            { prompt: { ko: "「마스터, 한 잔 더!」", en: "'Bartender, one more!'" }, correct: { ko: "그대로 선택", en: "Pick as shown" }, note: { ko: "명랑 +20", en: "Cheerfulness +20" } },
-            { prompt: { ko: "「좋아하는 사람 있어?」", en: "'Is there someone you like?'" }, correct: { ko: "그대로 선택", en: "Pick as shown" }, note: { ko: "심신 +20", en: "Mental +20" } },
-          ],
-          prereq: { ko: "사에코 본드 드라마 완료 + 스타일 Lv10", en: "Saeko bond drama complete + Style Lv10" },
-          reward: { ko: "아이템 없음 / 인간력 보너스 + 서브스토리 No.52 진행 플래그", en: "No item reward; stat boosts and flag for Sub #52" },
+          title: {
+            "ko": "Dream",
+            "en": "Girl of my Dreams"
+          },
+
+
+
+          body: {
+            "ko": "사에코의 유대 레벨 5와 이치반의 세련미 10을 달성한 뒤 서바이버에서 대화합니다.",
+            "en": "Reach bond level 5 with Saeko and Style 10, then speak to her at Survive."
+          },
+
+
+
+          source: {
+            "label": "PowerPyx — Girl of my Dreams",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 48,
-          title: { ko: "두 사람의 비전", en: "The Two's Vision" },
-          chapter: { ko: "회사 랭킹 1위 + 다정함 Lv10 이후", en: "After company rank #1 + Kindness Lv10" },
-          location: { ko: "스낵 거리 — 서바이브 바", en: "Snack Alley — Bar Survive" },
-          trigger: { ko: "조건 달성 후 서바이브 바 방문", en: "Visit Bar Survive after conditions met." },
-          body: { ko: "이만이의 본드 마무리. 서브스토리 No.52 조건.", en: "Eri-line bond capstone; gates Sub #52." },
-          prereq: { ko: "회사 랭킹 1위 + 다정함 Lv10", en: "Company rank #1 + Kindness Lv10" },
-          reward: { ko: "서브스토리 No.52 진행 플래그", en: "Flag for Sub #52" },
+          title: {
+            "ko": "두 사람의 비전",
+            "en": "Shared Vision"
+          },
+
+
+
+          body: {
+            "ko": "회사 랭킹 1위와 다정함 10을 달성합니다. 회사 사무실의 에리와 대화한 뒤 서바이버에서 후속 이벤트를 진행합니다.",
+            "en": "Reach business rank 1 and Kindness 10. Speak to Eri at the company office, then follow up at Survive."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Shared Vision",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 49,
-          title: { ko: "전하고 싶은 것", en: "What I Want to Give You" },
-          chapter: { ko: "전 자격증 취득 + 지력 Lv10 이후", en: "After all licenses + Intelligence Lv10" },
-          location: { ko: "스낵 거리 — 서바이브 바", en: "Snack Alley — Bar Survive" },
-          trigger: { ko: "조건 달성 후 서바이브 바 방문", en: "Visit Bar Survive after conditions met." },
-          body: { ko: "본드 라인 마무리. 미야코시 아이에가 회사 직원으로 합류.", en: "Bond-line capstone; Miyakoshi Aie joins the company." },
-          prereq: { ko: "모든 자격증 취득 + 지력 Lv10", en: "All licenses + Intelligence Lv10" },
-          reward: { ko: "미야코시 아이에 (회사 직원)", en: "Miyakoshi Aie (company)" },
+          title: {
+            "ko": "전하고 싶은 것",
+            "en": "Certified Lover"
+          },
+
+
+
+          body: {
+            "ko": "자격증 시험 21개를 통과하고 미야코시에게 백합 꽃다발을 1개·5개·10개 선물합니다. 지성 4·7·10에 맞춰 학교에서 대화를 진행합니다.",
+            "en": "Pass all 21 school tests and give Miyakoshi lily bouquets in batches of 1, 5 and 10 at Intellect levels 4, 7 and 10."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Certified Lover",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 50,
-          title: { ko: "비밀 채팅", en: "The Secret Chat" },
-          chapter: { ko: "명랑 Lv10 이후", en: "After Cheerfulness Lv10" },
-          location: { ko: "스낵 거리 — 서바이브 바", en: "Snack Alley — Bar Survive" },
-          trigger: { ko: "조건 달성 후 서바이브 바 방문", en: "Visit Bar Survive after conditions met." },
-          body: { ko: "본드 라인 마무리. 이로하가 회사 직원으로 합류.", en: "Bond capstone; Iroha joins the company." },
-          prereq: { ko: "명랑 Lv10", en: "Cheerfulness Lv10" },
-          reward: { ko: "이로하 (회사 직원)", en: "Iroha (company)" },
+          title: {
+            "ko": "비밀 채팅",
+            "en": "Pillow Chat"
+          },
+
+
+
+          body: {
+            "ko": "파티 채팅 16개 이상을 보고 서바이버의 이로하에게 장미 꽃다발을 1개·5개·10개 선물합니다. 대화에는 활기 4·7·10이 필요합니다.",
+            "en": "View at least 16 Party Chats and give Iroha rose bouquets in batches of 1, 5 and 10 at Charisma levels 4, 7 and 10."
+          },
+
+
+          source: {
+            "label": "PowerPyx — Pillow Chat",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 51,
-          title: { ko: "진짜 너", en: "The Real You" },
-          chapter: { ko: "전 직업 마스터 + 심신 Lv10 이후", en: "After all jobs mastered + Mental Lv10" },
-          location: { ko: "스낵 거리 — 서바이브 바", en: "Snack Alley — Bar Survive" },
-          trigger: { ko: "조건 달성 후 서바이브 바 방문", en: "Visit Bar Survive after conditions met." },
-          body: { ko: "본드 라인 마무리. 사토카가 회사 직원으로 합류.", en: "Bond capstone; Satoka joins the company." },
-          prereq: { ko: "모든 직업(잡) 취득 + 심신 Lv10", en: "All jobs unlocked + Mental Lv10" },
-          reward: { ko: "사토카 (회사 직원)", en: "Satoka (company)" },
+          title: {
+            "ko": "진짜 너",
+            "en": "The Real Me"
+          },
+
+
+
+          body: {
+            "ko": "이치반이 본편의 모든 직업으로 한 번씩 전직한 뒤 고용 지원 센터의 리리카와 관계를 진행합니다. 멘탈 4·7·10에 팬지 꽃다발을 1개·5개·10개 선물합니다. DLC 직업은 필요하지 않습니다.",
+            "en": "Have Ichiban try every base-game job. Give Ririka pansy bouquets at Hello Work in batches of 1, 5 and 10 at Confidence levels 4, 7 and 10; DLC jobs are not required."
+          },
+
+
+          source: {
+            "label": "PowerPyx — The Real Me",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
         {
           number: 52,
-          title: { ko: "수라장", en: "Shura-ba" },
-          chapter: { ko: "서브스토리 No.14, 47~51 전부 완료 후", en: "After Sub #14 and Subs #47~51 all clear" },
-          location: { ko: "스낵 거리 — 서바이브 바 2층", en: "Snack Alley — Bar Survive 2F" },
-          trigger: { ko: "전 조건 충족 후 서바이브 바 2층 방문", en: "Visit Bar Survive 2F after all prerequisites." },
-          body: { ko: "이치반과 여섯 여성이 한 자리에 모이는 후일담. 선택지는 결과에 영향 없음 — 자유 선택 가능. 카스가의 수비력이 대폭 상승하여 천년 타워 등 후반 컨텐츠에 유효.", en: "All six bonded women confront Ichiban at once. Dialogue choices are flavor-only; none affects the outcome. Massive Defense buff for Ichiban — useful for Millennium Tower endgame." },
-          prereq: { ko: "서브스토리 No.14, 서브스토리 No.47~51 전부 완료", en: "Sub #14 and Subs #47-51 all cleared" },
-          reward: { ko: "카스가 수비력 대폭 상승", en: "Ichiban's Defense greatly increased" },
+          title: {
+            "ko": "수라장",
+            "en": "The Lone Survivor"
+          },
+
+
+
+          body: {
+            "ko": "14번과 47~51번 의뢰를 마친 뒤 서바이버 2층의 휴식 장소로 갑니다. 이벤트 완료 시 이치반의 방어력이 상승합니다.",
+            "en": "After substories 14 and 47–51, visit the resting area upstairs at Survive. Completing the event increases Ichiban’s Defense."
+          },
+
+
+          source: {
+            "label": "PowerPyx — The Lone Survivor",
+            "url": "https://www.powerpyx.com/yakuza-like-a-dragon-substories-guide-side-quests/"
+          },
         },
       ],
     },

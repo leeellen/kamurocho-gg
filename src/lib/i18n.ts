@@ -1,3 +1,5 @@
+import { normalizeKoreanText } from "@/lib/achievement-text";
+
 import { cookies } from "next/headers";
 
 export const locales = ["en", "ko"] as const;
@@ -29,7 +31,7 @@ export function pickLocalized(
   if (!pair) return "";
   const ko = (pair.ko ?? "").trim();
   const en = (pair.en ?? "").trim();
-  if (locale === "ko") return ko || en;
+  if (locale === "ko") return ko ? normalizeKoreanText(ko) : en;
   // EN locale: prefer en, but if it's empty or contains Korean (untranslated
   // placeholder), fall back to the Korean source.
   if (!en || KOREAN_CHAR.test(en)) return ko || en;

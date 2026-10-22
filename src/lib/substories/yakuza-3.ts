@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const yakuza3Substories: SubstoriesData = {
   appId: 1088710,
   summary: {
-    ko: "PS3판 리마스터에 서양판 미수록 콘텐츠가 복원되어 총 119개의 서브 스토리. 카무로초(도쿄)와 류큐 거리(오키나와) 양쪽에서 발생하며, 장별로 잠금 해제됩니다. 미완료 항목은 클리어 후 프리미엄 어드벤처에서 마저 진행 가능. 서브 스토리 컴플리션이 「가장 부지런한 키류」 트로피와 직결됩니다.",
-    en: "119 substories total — the Remaster restored the content cut from the original Western release. Substories run in Kamurocho (Tokyo) and Downtown Ryukyu (Okinawa) and gate by chapter. Anything missed during the main story can be cleaned up in Premium Adventure. Clearing all 119 unlocks the Substory Completionist trophy line.",
-  },
+  "ko": "리마스터판의 서브스토리 119건입니다. 카무로쵸와 류큐 거리의 미완료 의뢰를 클리어 후에도 정리할 수 있습니다.",
+  "en": "119 substories in the remaster. Unfinished requests in Kamurocho and Downtown Ryukyu can be completed after the story."
+},
   source: { label: "GameFAQs / Yakuza Wiki — Yakuza 3 Remastered Substories (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/substories" },
   groups: [
     {

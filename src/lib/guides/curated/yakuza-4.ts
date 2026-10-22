@@ -2,259 +2,204 @@ import type { CuratedGuide } from "./index";
 
 const YAKUZA_4_APP_ID = 1105500;
 
-// "미스터 드레스업" — Mr. Dress-Up (Akiyama part — collect all outfit
-// categories in the "No.1 캬바걸을 만들자" Catalog Service).
-// Steam api_name: achievement_18.
 const mrDressUp: CuratedGuide = {
-  summary: {
-    ko:
-      "아키야마 편 호스티스 메이커 미니게임 「No.1 캬바걸을 만들자」의 카탈로그 서비스에서 의상을 카테고리별 1벌씩 모두 수집해야 트로피 발동. 카탈로그가 닫히는 시점(아키야마 편 종료)이 영구 잠금 기점이므로, 의상 구매·세트 강화·동반 출근을 아키야마 장 안에서 마무리해야 합니다.",
-    en:
-      "Mr. Dress-Up is Akiyama's Hostess Maker side trophy: collect at least one outfit from every category in the Catalog Service. The catalog closes when Akiyama's part ends, so finish buying / upgrading / wearing inside his chapters.",
+  missable: true,
+  "summary": {
+    "ko": "「No. 1 캬바걸을 만들자」에서 의상을 모든 카테고리 1개씩 수집했다",
+    "en": "Gather at least one outfit from each category in \"Hostess Maker.\""
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 아키야마 편에서 캬바쿠라 「엘리제」 매니저에게 말 걸어 호스티스 메이커 + 카탈로그 서비스를 해금.",
-      en:
-        "1) Talk to the Elise manager during Akiyama's chapters to unlock the Hostess Maker minigame and Catalog Service.",
-    },
-    {
-      ko:
-        "2) 카탈로그를 열어 4개 평가 카테고리(섹시·큐트·쿨·캐주얼) 각각에서 의상 1벌씩 구매. 자금이 부족하면 토미자와 비즈니스(돈 빌리기)와 거리 양아치 격파로 채워둡니다.",
-      en:
-        "2) Open the catalog and buy one outfit each from Sexy / Cute / Cool / Casual. Short on cash? Run Akiyama's money minigame and street fights.",
-    },
-    {
-      ko:
-        "3) 「Sub」(서브) 액세서리 카테고리, 「특별 의상」 카테고리 등 일반 카테고리 외에도 별도 칸이 풀려 있으면 각 칸에서 최소 1개씩 추가 구매. 카탈로그 「수집률 100%」 게이지를 채우는 것이 핵심.",
-      en:
-        "3) Beyond the four main categories, the catalog opens additional rows (accessories, special outfits) — buy at least one in each row to push the catalog completion bar.",
-    },
-    {
-      ko:
-        "4) 카탈로그 수집률이 100%에 도달하는 순간 트로피 발동. 메뉴를 닫지 말고 마지막 구매 직후 잠시 머물러 카운트 확정을 확인하세요.",
-      en:
-        "4) The trophy fires when the catalog hits 100 % collection — linger after the final purchase to let the counter lock.",
-    },
+      "ko": "캬바걸 만들기를 모두 끝내기 전에 의상 분류를 빠짐없이 구입하세요. 영업 횟수에 따라 구입 가능한 의상이 늘어납니다.",
+      "en": "Buy the outfit categories before finishing Hostess Maker; more outfits become available after additional shifts."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "「Sub」 의상은 다른 카테고리 평가까지 한 번에 끌어올리는 보너스가 있어 자금 여유가 있다면 우선 구매. 미니게임 진행이 동시에 빨라집니다.",
-      en:
-        "\"Sub\" tier outfits also bump other-category stats — pricier but they accelerate the rest of Hostess Maker.",
-    },
-    {
-      ko:
-        "아키야마 편 종료 → 사에지마 편 진입 시 카탈로그 자체가 영구 잠금. 한 카테고리라도 빠뜨리면 같은 회차에서는 회수 불가.",
-      en:
-        "The Catalog Service is permanently locked once Saejima's part begins — missing categories can't be picked up later in this run.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Achievement Guide",
-    en: "Steam Community — Yakuza 4 Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
 };
 
-// Yakuza 4 Remastered 플래티넘. Steam api_name: achievement_0.
 const platinum: CuratedGuide = {
-  summary: {
-    ko:
-      "Yakuza 4 Remastered 플래티넘 — 다른 46개 업적을 모두 해금하면 자동 발동. 핵심 게이트는 ①「불굴」(난이도 NORMAL 클리어 중 EASY로 한 번도 안 낮추기) ②4인 주인공 모두 MAX Lv.20 도달 ③아키야마 편 한정 「미스터 드레스업」(카탈로그 100%) ④EX-HARD 클리어 ⑤모든 캐릭터별 사이드 미션·미니게임. 4인 멀티 주인공 구조 때문에 캐릭터 파트별 윈도우를 놓치지 않는 게 핵심.",
-    en:
-      "Y4R's platinum auto-pops at full trophy unlock. Gates: ① 'Indomitable' (never drop to EASY during Normal) ② all 4 leads to MAX Lv.20 ③ Akiyama's Mr. Dress-Up (100 % catalog) ④ EX-HARD clear ⑤ each lead's sideline. The 4-protagonist structure makes per-part windows the main risk.",
+  "summary": {
+    "ko": "게임에서 다른 모든 업적을 달성해보세요.",
+    "en": "Acquire all achievements in the game."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 1회차 (NORMAL) — 「Easy로 변경하시겠습니까?」 팝업이 떠도 절대 「예」 선택 금지. 무기·회복 아이템을 충분히 비축해 NORMAL을 끝까지 유지.",
-      en:
-        "1) Run 1 (NORMAL) — never accept the auto-prompt to drop to EASY. Stock weapons and healing so NORMAL holds end to end.",
-    },
-    {
-      ko:
-        "2) 캐릭터별 파트 진행 중 해당 캐릭터 한정 서브·미니게임을 모두 정리: 아키야마(엘리제 호스티스·드레스업), 사에지마(권총 5정·격투), 타니무라(카지노·도박), 키류(무기 100개 파괴).",
-      en:
-        "2) Clear each lead's part-locked side content in window: Akiyama (Elise hostess + Catalog), Saejima (5 guns), Tanimura (casino), Kiryu (smash 100 weapons).",
-    },
-    {
-      ko:
-        "3) 엔딩 후 Premium Adventure에서 4인 모두 MAX Lv.20 + 카무로초의 「캬바걸 명함 풀 수집」 + 모든 서브스토리 + 「아몬 격파」(사에지마 라인 끝) 정리.",
-      en:
-        "3) After credits, push all four leads to MAX Lv.20, collect every cabaret business card, finish all subs, beat Amon (Saejima's final line).",
-    },
-    {
-      ko:
-        "4) EX-HARD 새 회차 — 메인 스토리만 직주행해도 충분합니다. Premium Adventure 진행도가 이월되므로 무기·스킬 트리는 1회차 자원 그대로 활용.",
-      en:
-        "4) EX-HARD second run — story-only sprint is enough. Weapons + skill trees carry over.",
-    },
+      "ko": "다른 모든 업적을 달성하세요.",
+      "en": "Unlock every other achievement."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "「불굴」 트로피는 NORMAL 시작 후 시스템 팝업에서 한 번이라도 「예」를 선택하면 영구 잠금. 사망 누적 시 팝업이 더 자주 뜨므로 회복 아이템 관리에 신경 쓰세요.",
-      en:
-        "'Indomitable' locks the moment you accept the EASY downgrade. Death streaks raise the prompt frequency — keep healing items high.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
 };
 
-// 「전설을 잇는 자」 — LEGEND 클리어. Steam api_name: achievement_6.
 const legendCleared: CuratedGuide = {
-  summary: {
-    ko:
-      "Y4 Remastered 메인 스토리를 LEGEND 난이도로 클리어 시 발동. 엔딩 후 해금되는 최고 난이도이며, 1회차 진행도 + 「클리어 후 모드」 자원을 이월해 진행. 4인 주인공 모두 보스 패턴이 다르므로 사전 학습이 핵심.",
-    en:
-      "Clear Y4R's story on LEGEND (post-credits unlock). Carry-over from your 1st run; each of the 4 leads has distinct boss patterns, so memorize them.",
+  "summary": {
+    "ko": "Legend 난이도로 본편을 클리어하세요.",
+    "en": "Complete the story on Legend difficulty."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 엔딩 클리어 후 클리어 데이터 → LEGEND 새 회차. 1회차 캐릭터 레벨·스킬·장비 모두 이월.",
-      en:
-        "1) After credits, start a Clear-Data run on LEGEND — all levels/skills/gear carry over.",
-    },
-    {
-      ko:
-        "2) 캐릭터별 권장 운영 — 아키야마(스피드형, 회피 카운터), 사에지마(파워형, 무기 활용), 타니무라(카운터 마스터), 키류(드래곤 스타일 풀). 보스 패턴 학습 후 회복 아이템 풀로 도전.",
-      en:
-        "2) Per-lead playstyle — Akiyama (dodge counters), Saejima (power + weapons), Tanimura (counter master), Kiryu (Dragon style).",
-    },
-    {
-      ko:
-        "3) 18장 라스트 보스 클리어 시 트로피 발동. 「궁극을 잇는 자」(다른 모든 트로피 + 클리어 후 모드)와 함께 진행 권장.",
-      en:
-        "3) Trophy fires on the final boss kill. Pair the run with 'Ultimate Successor' trophy progress.",
-    },
+      "ko": "Hard 클리어로 Legend를 해금하세요. 클리어 데이터를 승계할 수 있습니다.",
+      "en": "Clear Hard to unlock Legend. Clear-data carryover is supported."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-  },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293",
+  "tips": []
 };
 
-// 「명함 헌터」 — 캬바걸 모든 명함. Steam api_name: achievement_19.
 const businessCardHunter: CuratedGuide = {
-  summary: {
-    ko:
-      "Y4의 모든 캬바걸로부터 명함을 수집하면 발동. 호스티스 메이커(엘리제, 자유 입장 포함)에 등장하는 모든 캬바걸과 자유 입장 + 데이트 + 동반 출근을 진행해 명함을 받아야 합니다.",
-    en:
-      "Collect business cards from every hostess in Y4. Hit every cabaret hostess (Hostess Maker + free-entry) via dates / shifts to receive their cards.",
+  "summary": {
+    "ko": "캬바걸 육성을 포함한 캬바걸로부터 자유 입장으로 모든 명함을 입수했다",
+    "en": "Receive business cards from all hostesses, including ones you train in \"Hostess Maker.\""
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 아키야마 편에서 엘리제 호스티스(히요리·나나미·쿄코) 영입 + 풀 데이트 → 첫 명함 카운트.",
-      en:
-        "1) Akiyama recruits Hiyori, Nanami, Kyoko and dates them — first card batch.",
-    },
-    {
-      ko:
-        "2) 자유 입장 캬바걸은 카무로초 + 도시 외곽 캬바레 클럽 모두 방문해 한 번씩 데이트. 일부 캬바걸은 메인 스토리 진행도에 따라 새로 등장.",
-      en:
-        "2) Free-entry hostesses live in Kamurocho clubs — date each at least once. Some new entries gate on story progress.",
-    },
-    {
-      ko:
-        "3) 모든 명함 수집 시 컴플리트 리스트의 「명함」 카테고리 100% + 트로피 발동.",
-      en:
-        "3) Full card collection ticks the Business Cards category at 100 % and fires the trophy.",
-    },
+      "ko": "육성한 캬바걸을 포함해 모두에게 첫 방문 명함을 받으세요. 최종 명함은 필요하지 않습니다.",
+      "en": "Collect the first-visit cards from every hostess, including the ones you train. Their final cards are not required."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-  },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293",
+  "tips": []
 };
 
-// 「어서 오세요 세가입니다」 — 클럽 세가 모든 미니게임 1회. Steam api_name: achievement_33.
 const welcomeToSega: CuratedGuide = {
-  summary: {
-    ko:
-      "Y4 카무로초 「클럽 세가」의 모든 미니게임(아웃런·스페이스 해리어·판타지 존·UFO 캐처·메다루펀치·버추어 파이터 등)을 1회씩 플레이하면 발동.",
-    en:
-      "Touch every Club Sega cabinet in Y4 Kamurocho at least once — OutRun, Space Harrier, Fantasy Zone, UFO Catcher, Boxcelios, Virtua Fighter, etc.",
+  "summary": {
+    "ko": "클럽 세가의 모든 미니 게임을 1회씩 플레이했다",
+    "en": "Play all minigames at Club SEGA."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 카무로초 + 챔피언 거리 클럽 세가 입장. 시어터 광장 + 나카미치 거리 두 곳 모두 방문.",
-      en:
-        "1) Hit both Club Sega locations (Theater Sq. + Nakamichi St.).",
-    },
-    {
-      ko:
-        "2) 각 캐비넷에서 짧게라도 1회씩 플레이 — 클리어 점수와 무관, 플레이 카운트만 필요.",
-      en:
-        "2) Play each cabinet at least once — score doesn't matter, just the play flag.",
-    },
-    {
-      ko:
-        "3) 컴플리트 리스트의 「클럽 세가」 카테고리 100% 시 트로피 발동.",
-      en:
-        "3) Trophy fires when the Club Sega category is fully ticked.",
-    },
+      "ko": "UFO 캐처·BOXCELIOS·BOXCELIOS 2를 플레이하세요. 아키야마로 BOXCELIOS 2를 반복 플레이하고 점원과의 교류를 진행하면 BOXCELIOS가 추가됩니다.",
+      "en": "Play UFO Catcher, Boxcelios, and Boxcelios 2. Play Boxcelios 2 repeatedly as Akiyama and progress the clerk's friendship to add Boxcelios."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "[Fantasy Zone·아웃런] 트로피 자체는 1회 플레이면 카운트되지만, 점수에 도전한다면: Fantasy Zone은 적을 부숴 모은 코인으로 풍선 상점에서 ① 엔진(스피드업) → ② 강화 무기(와이드 빔/레이저) → ③ 보스용 폭탄 순으로 투자하고, 스테이지의 기지 10개를 모두 부수면 보스가 등장합니다. 아웃런은 갈림길에서 난이도 낮은 쪽을 골라 체크포인트를 안정적으로 통과하는 게 완주의 핵심입니다.",
-      en:
-        "[Fantasy Zone & OutRun] The trophy only needs one play, but if you're chasing a score: in Fantasy Zone spend the coins enemies drop at the balloon shop in this order — ① engines (speed), ② a strong weapon (Wide Beam/Laser), ③ bombs for bosses — and destroy all 10 bases in a stage to summon its boss. In OutRun, take the easier fork at each split to reach checkpoints reliably.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
 };
 
-// 「아몬 격파」 — Y4. Steam api_name: achievement_13.
 const amonY4: CuratedGuide = {
-  summary: {
-    ko:
-      "Y4의 아몬 4형제(키류·사에지마·아키야마·타니무라 모두 격파)를 모두 격파하면 발동. 4인 모두 다른 모든 서브스토리 클리어가 전제. Premium Adventure에서 진행.",
-    en:
-      "Beat all four Amon Clan members (one per lead). Each requires clearing every substory for that lead first. Done in Premium Adventure.",
+  "summary": {
+    "ko": "서브스토리 63개를 완료 또는 종료하세요.",
+    "en": "Complete or finish all 63 substories."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 각 주인공 서브스토리 풀 클리어 → 카무로초 칠드런즈 파크에서 검은 양복의 남자 등장 → 아몬 격투 트리거.",
-      en:
-        "1) Clear every substory for a lead, then the Man in Black spawns at Children's Park to challenge that lead.",
-    },
-    {
-      ko:
-        "2) 4명 모두(다이고로 아몬·소고 아몬·진 아몬·조 아몬) 격파 시 트로피 발동. 회복 아이템 풀 + 강력 무기 사전 준비.",
-      en:
-        "2) Defeat all four (Daigoro / Sango / Jin / Jo Amon). Stock heals and a strong weapon.",
-    },
+      "ko": "아키야마·타니무라·키류 각 16개, 사에지마 15개를 확인하세요.",
+      "en": "Check 16 each for Akiyama, Tanimura, and Kiryu, and 15 for Saejima."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza 4 Remastered Achievement Guide",
-    en: "Steam Community — Yakuza 4 Remastered Achievement Guide",
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293",
+  "tips": []
+};
+
+const indomitable: CuratedGuide = {
+  "missable": true,
+  "summary": {
+    "ko": "NORMAL 모드에서 일시적으로 EASY 모드로 바꾸지 않고 클리어",
+    "en": "Clear Normal Mode without reverting to Easy Mode."
   },
+  "steps": [
+    {
+      "ko": "Normal로 시작하고 Easy로 낮추지 않은 채 본편을 클리어하세요.",
+      "en": "Start on Normal and complete the story without dropping to Easy."
+    }
+  ],
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
 };
 
 export const YAKUZA_4_CURATED: Record<string, CuratedGuide> = {
+  [`${YAKUZA_4_APP_ID}:achievement_9`]: indomitable,
   [`${YAKUZA_4_APP_ID}:achievement_0`]: platinum,
   [`${YAKUZA_4_APP_ID}:achievement_6`]: legendCleared,
   [`${YAKUZA_4_APP_ID}:achievement_13`]: amonY4,
   [`${YAKUZA_4_APP_ID}:achievement_18`]: mrDressUp,
   [`${YAKUZA_4_APP_ID}:achievement_19`]: businessCardHunter,
   [`${YAKUZA_4_APP_ID}:achievement_33`]: welcomeToSega,
+  "1105500:achievement_1": {
+    "summary": {
+      "ko": "제1부을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Part 1. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_2": {
+    "summary": {
+      "ko": "제2부을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Part 2. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_3": {
+    "summary": {
+      "ko": "제3부을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Part 3. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_4": {
+    "summary": {
+      "ko": "제4부을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Part 4. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_5": {
+    "summary": {
+      "ko": "최종부를 완료하고 엔딩을 봅니다.",
+      "en": "Complete the finale and reach the ending."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_45": {
+    "summary": {
+      "ko": "거리와 지하에서 쓰레기를 누적 20개 줍습니다.",
+      "en": "Pick up 20 pieces of trash around the city."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.playstationtrophies.org/game/yakuza-4/trophy/28443-kamurocho-tree-hugger.html"
+  },
+  "1105500:achievement_7": {
+    "summary": {
+      "ko": "메인 스토리 완료 후 열리는 궁극투기를 모두 클리어합니다.",
+      "en": "Clear all Ultimate Matches unlocked after the main story."
+    },
+    "steps": [
+      {
+        "ko": "각 과제의 지정된 캐릭터와 조건에 맞춰 클리어합니다. 본편의 장비 강화가 그대로 적용되는 모드가 아닙니다.",
+        "en": "Follow each challenge’s preset character and rules; campaign equipment upgrades are not the solution to these trials."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+  },
+  "1105500:achievement_34": {
+    "summary": {
+      "ko": "쇼기 대국에서 말을 한 번 승격시킵니다. 플레이어 등급을 올리는 조건이 아닙니다.",
+      "en": "Promote a piece during a shogi game; this is not a player-rank requirement."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.trueachievements.com/a320244/shogi-promotion-achievement"
+  },
 };

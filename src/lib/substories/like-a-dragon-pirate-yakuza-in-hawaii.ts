@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const likeADragonPirateSubstories: SubstoriesData = {
   appId: 3061810,
   summary: {
-    ko: "총 31건. 마지마가 해적 삥쟁이로 변신한 외전답게 호놀룰루 시가지 미니게임 도입형 + 매들랜티스/해상 함선 미션이 절반씩 섞여 있습니다. 2장에서 대부분이 해금되며 3장에서 「미나토 걸」 라인이 추가되어 「The One」으로 마무리. 컴플리션 보상 + 「해적단」 명성/콜로세움/고로마루 라인과 직결되므로 메인 스토리를 3장까지 끌어올린 뒤 일괄 정리하는 편이 효율적입니다.",
-    en: "31 substories total. Honolulu town intros (minigame unlocks) + Madlantis/open-sea ship missions split roughly half-and-half. Most unlock in Chapter 2; Chapter 3 adds the Minato Girls arc capped by 'The One'. Tied to fleet reputation, Coliseum, and Goromaru lines — push the main story to Chapter 3, then sweep them.",
-  },
+  "ko": "서브스토리 31개입니다. 미니게임 도입 의뢰와 미나토 걸 등의 연속 의뢰가 포함됩니다.",
+  "en": "31 substories, including minigame introductions and chains such as Minato Girls."
+},
   source: { label: "PowerPyx — All Substories Guide", url: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-all-substories-guide/" },
   groups: [
     {

@@ -1,0 +1,304 @@
+{
+  "checkedAt": "2026-10-16T07:58:03.952Z",
+  "games": [
+    {
+      "slug": "yakuza-0",
+      "achievements": 55,
+      "curatedGuides": 39,
+      "substories": 100,
+      "minigames": 16
+    },
+    {
+      "slug": "yakuza-kiwami",
+      "achievements": 55,
+      "curatedGuides": 45,
+      "substories": 78,
+      "minigames": 14
+    },
+    {
+      "slug": "yakuza-kiwami-2",
+      "achievements": 59,
+      "curatedGuides": 24,
+      "substories": 75,
+      "minigames": 15
+    },
+    {
+      "slug": "yakuza-kiwami-3",
+      "achievements": 62,
+      "curatedGuides": 17,
+      "substories": 44,
+      "minigames": 14
+    },
+    {
+      "slug": "yakuza-3",
+      "achievements": 50,
+      "curatedGuides": 23,
+      "substories": 119,
+      "minigames": 15
+    },
+    {
+      "slug": "yakuza-4",
+      "achievements": 47,
+      "curatedGuides": 15,
+      "substories": 63,
+      "minigames": 16
+    },
+    {
+      "slug": "yakuza-5",
+      "achievements": 56,
+      "curatedGuides": 35,
+      "substories": 78,
+      "minigames": 26
+    },
+    {
+      "slug": "yakuza-6",
+      "achievements": 59,
+      "curatedGuides": 15,
+      "substories": 51,
+      "minigames": 13
+    },
+    {
+      "slug": "like-a-dragon-gaiden",
+      "achievements": 62,
+      "curatedGuides": 16,
+      "substories": 24,
+      "minigames": 16
+    },
+    {
+      "slug": "like-a-dragon-ishin",
+      "achievements": 56,
+      "curatedGuides": 17,
+      "substories": 72,
+      "minigames": 18
+    },
+    {
+      "slug": "yakuza-like-a-dragon",
+      "achievements": 63,
+      "curatedGuides": 6,
+      "substories": 52,
+      "minigames": 17
+    },
+    {
+      "slug": "like-a-dragon-infinite-wealth",
+      "achievements": 74,
+      "curatedGuides": 31,
+      "substories": 52,
+      "minigames": 18
+    },
+    {
+      "slug": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "achievements": 62,
+      "curatedGuides": 19,
+      "substories": 31,
+      "minigames": 22
+    },
+    {
+      "slug": "judgment",
+      "achievements": 47,
+      "curatedGuides": 24,
+      "substories": 50,
+      "minigames": 14
+    },
+    {
+      "slug": "lost-judgment",
+      "achievements": 56,
+      "curatedGuides": 30,
+      "substories": 54,
+      "minigames": 18
+    }
+  ],
+  "referenceUrls": 1031,
+  "findings": [],
+  "steamCheckedLive": false,
+  "priorRuntimeVerification": {
+    "checkedAt": "2026-10-15T08:39:23.092Z",
+    "scope": "Previous pass only; not evidence for edits since that pass.",
+    "pageChecks": null
+  },
+  "followup": {
+    "curatedGuides": 356,
+    "substoryRoutesRewritten": 436,
+    "tests": "16 regression tests passed",
+    "build": "Kiwami 2 routes passed; latest wording corrections awaiting rebuild.",
+    "factualVerificationComplete": false,
+    "scope": "Kiwami 78, Kiwami 2 75, Yakuza 4 63, Yakuza 5 78, Yakuza 7 52, Yakuza 6 36 and Lost Judgment 54 routes compared with cited walkthroughs. Not a complete factual audit of every field.",
+    "eslint": "Changed files passed",
+    "browser": "Expanded Kiwami 46/47/78 and Kiwami 2 20/21/38 cards; Korean body text and correct per-item source links confirmed."
+  },
+  "runtimeVerification": {
+    "checkedAt": "2026-10-16T01:16:19.938Z",
+    "scope": "Production build, local server; 15 games in both languages plus sources and missables.",
+    "checks": [
+      {
+        "path": "/game/yakuza-0",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami-2",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami-3",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-3",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-4",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-5",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-6",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-gaiden",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-ishin",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-like-a-dragon",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-infinite-wealth",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-pirate-yakuza-in-hawaii",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/judgment",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/lost-judgment",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/sources",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/missables",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-0",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami-2",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-kiwami-3",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-3",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-4",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-5",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-6",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-gaiden",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-ishin",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/yakuza-like-a-dragon",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-infinite-wealth",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/like-a-dragon-pirate-yakuza-in-hawaii",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/judgment",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/game/lost-judgment",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/sources",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "path": "/missables",
+        "locale": "en",
+        "status": 200
+      }
+    ]
+  }
+}

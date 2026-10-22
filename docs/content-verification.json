@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-10-15T08:26:55.036Z",
+  "method": "Live Steam GetSchemaForGame v2, English and Korean; snapshot names and descriptions compared by achievement key.",
+  "games": [
+    {
+      "appId": 2988580,
+      "slug": "yakuza-0",
+      "achievements": 55,
+      "source": "https://steamcommunity.com/stats/2988580/achievements/?l=koreana",
+      "achievementFingerprint": "ff1a47f5408a7cfa280d5733e6c65867b6eacd0b875617dbff4b781cc7a74003"
+    },
+    {
+      "appId": 3717330,
+      "slug": "yakuza-kiwami",
+      "achievements": 55,
+      "source": "https://steamcommunity.com/stats/3717330/achievements/?l=koreana",
+      "achievementFingerprint": "9be95c8c78e867ef2c58c005b3bd65e828a79fb1f08a9cfde44adaed11e2cf14"
+    },
+    {
+      "appId": 3717340,
+      "slug": "yakuza-kiwami-2",
+      "achievements": 59,
+      "source": "https://steamcommunity.com/stats/3717340/achievements/?l=koreana",
+      "achievementFingerprint": "5f2f8e9ad40750fd13168e917f2e6e8bece2a9dc6a115c9014351dc835f80e34"
+    },
+    {
+      "appId": 3937550,
+      "slug": "yakuza-kiwami-3",
+      "achievements": 62,
+      "source": "https://steamcommunity.com/stats/3937550/achievements/?l=koreana",
+      "achievementFingerprint": "9d4e1ac1fae86e4297c98c189bd81cf01cfb4597db46cc343970e783c1142879"
+    },
+    {
+      "appId": 1088710,
+      "slug": "yakuza-3",
+      "achievements": 50,
+      "source": "https://steamcommunity.com/stats/1088710/achievements/?l=koreana",
+      "achievementFingerprint": "36713ee44297a4e576661ab5d945f58fe8e52d37849639d985d7733902766371"
+    },
+    {
+      "appId": 1105500,
+      "slug": "yakuza-4",
+      "achievements": 47,
+      "source": "https://steamcommunity.com/stats/1105500/achievements/?l=koreana",
+      "achievementFingerprint": "c70968d3ada9d960115d6dc3abe7c146d1b39b71e41458613cf018bdf65369de"
+    },
+    {
+      "appId": 1105510,
+      "slug": "yakuza-5",
+      "achievements": 56,
+      "source": "https://steamcommunity.com/stats/1105510/achievements/?l=koreana",
+      "achievementFingerprint": "494e9328917af660f8c550a5f89861b04386a81deb124e8d3991b2ed85d71409"
+    },
+    {
+      "appId": 1388590,
+      "slug": "yakuza-6",
+      "achievements": 59,
+      "source": "https://steamcommunity.com/stats/1388590/achievements/?l=koreana",
+      "achievementFingerprint": "3bd6a7e11d8f8ff4efbfc62b35a6a1500f6b3534119c6a1ffa572731d42b25ae"
+    },
+    {
+      "appId": 2375550,
+      "slug": "like-a-dragon-gaiden",
+      "achievements": 62,
+      "source": "https://steamcommunity.com/stats/2375550/achievements/?l=koreana",
+      "achievementFingerprint": "6a375d284ccff7061387f48f36cdf9978c5007d94a7d30468ac8c1caf55bb3f0"
+    },
+    {
+      "appId": 1805480,
+      "slug": "like-a-dragon-ishin",
+      "achievements": 56,
+      "source": "https://steamcommunity.com/stats/1805480/achievements/?l=koreana",
+      "achievementFingerprint": "5000b63bc4dec674b9ac5444ebf8e478bf77f69a9cc3170508deaec333daa137"
+    },
+    {
+      "appId": 1235140,
+      "slug": "yakuza-like-a-dragon",
+      "achievements": 63,
+      "source": "https://steamcommunity.com/stats/1235140/achievements/?l=koreana",
+      "achievementFingerprint": "1192da9cd9c5fb3d735b74cdb8bb6af79c5d0749f1fe4ac09370be9ba1353b26"
+    },
+    {
+      "appId": 2072450,
+      "slug": "like-a-dragon-infinite-wealth",
+      "achievements": 74,
+      "source": "https://steamcommunity.com/stats/2072450/achievements/?l=koreana",
+      "achievementFingerprint": "cf8941036ee92d454400dc4facc7792eedfe9644ec9cad0ac0aa2a68cb195953"
+    },
+    {
+      "appId": 3061810,
+      "slug": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "achievements": 62,
+      "source": "https://steamcommunity.com/stats/3061810/achievements/?l=koreana",
+      "achievementFingerprint": "70c2acbb5bf9e3e56b39063d80aad803bc2af1d818596c225d40b006572e9070"
+    },
+    {
+      "appId": 2058180,
+      "slug": "judgment",
+      "achievements": 47,
+      "source": "https://steamcommunity.com/stats/2058180/achievements/?l=koreana",
+      "achievementFingerprint": "81ab84229e6d12122dbb7378b908c08a74a7ed140dae40ddcf8b8aa4027142a6"
+    },
+    {
+      "appId": 2058190,
+      "slug": "lost-judgment",
+      "achievements": 56,
+      "source": "https://steamcommunity.com/stats/2058190/achievements/?l=koreana",
+      "achievementFingerprint": "8a00fb0d4f32fb375836974bb92c41ea58c593e0f8807602bc4e2896b6b03d63"
+    }
+  ],
+  "steamGuideApps": {
+    "1667240702": 638970,
+    "2512675103": 1088710,
+    "2803923402": 1105500,
+    "2863006915": 2058180,
+    "2869817839": 638970,
+    "2891553742": 834530,
+    "2924279743": 834530,
+    "2937314217": 1388590,
+    "2938400399": 1805480,
+    "2941248154": 927380,
+    "3010598685": 2058190,
+    "3085063886": 2375550,
+    "3111917650": 638970,
+    "3111918023": 638970,
+    "3280073135": 2072450,
+    "3411100293": 1105500,
+    "3420184389": 1105510,
+    "3433394597": 3061810,
+    "3624319538": 2988580,
+    "3673089977": 1235140
+  },
+  "limitations": [
+    "This proves achievement metadata, not the walkthrough text or in-game dialogue."
+  ]
+}

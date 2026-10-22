@@ -1,14 +1,17 @@
 import { cache } from "react";
 
+import { localizeAchievementName, parseAchievementSidecar } from "@/lib/achievement-text";
+import { getCuratedGuide } from "@/lib/guides/curated";
+import { getMinigames } from "@/lib/minigames";
 import { getCollectibles } from "@/lib/collectibles";
-import { CURATED_GAMES } from "@/lib/content";
+import { CURATED_GAMES, EXTERNAL_GUIDES } from "@/lib/content";
 import { type Locale, pickLocalized } from "@/lib/i18n";
 import { getSubstories } from "@/lib/substories";
 
 import { fetchSeriesRows } from "../fetch";
 
 import { buildSeriesGameCard } from "./helpers";
-import type { GuideRow, SeriesGameCard } from "../types";
+import type { SeriesGameCard } from "../types";
 
 export type AchievementCitation = {
   url: string;
@@ -35,6 +38,7 @@ export type GameSources = {
   achievementSources: AchievementCitation[];
   substorySources: SubstoryCitation[];
   collectibleSources: CollectibleCitation[];
+  minigameSources: CollectibleCitation[];
 };
 
 function safeHost(url: string): string {
@@ -46,31 +50,30 @@ function safeHost(url: string): string {
 }
 
 export const getGuideSources = cache(async (locale: Locale): Promise<GameSources[]> => {
-  const { games, achievements, guides } = await fetchSeriesRows();
+  const { games, achievements } = await fetchSeriesRows();
   const gameMap = new Map(games.map((g) => [g.app_id, g]));
-  const achievementById = new Map(achievements.map((a) => [a.id, a]));
-
-  const guidesByAchievement = new Map<number, GuideRow[]>();
-  for (const guide of guides) {
-    const current = guidesByAchievement.get(guide.achievement_id) ?? [];
-    current.push(guide);
-    guidesByAchievement.set(guide.achievement_id, current);
-  }
 
   // Per-app aggregation of every guide source URL with the achievement
   // display names that cite it.
   const perAppAchievement = new Map<number, Map<string, Set<string>>>();
-  for (const guide of guides) {
-    const url = guide.source_url?.trim();
-    if (!url) continue;
-    const achievement = achievementById.get(guide.achievement_id);
-    if (!achievement) continue;
-    const bucket = perAppAchievement.get(achievement.app_id) ?? new Map<string, Set<string>>();
-    const names = bucket.get(url) ?? new Set<string>();
-    const name = achievement.display_name?.trim() || achievement.api_name;
-    if (name) names.add(name);
-    bucket.set(url, names);
-    perAppAchievement.set(achievement.app_id, bucket);
+  for (const achievement of achievements) {
+    const curatedGame = CURATED_GAMES.find((game) => game.appId === achievement.app_id);
+    const guide = getCuratedGuide(achievement.app_id, achievement.api_name);
+    const urls = [guide?.sourceUrl ?? (curatedGame ? EXTERNAL_GUIDES[curatedGame.slug]?.[0]?.url : null)];
+    const name = localizeAchievementName({
+      locale,
+      englishName: achievement.display_name,
+      apiName: achievement.api_name,
+      sidecar: parseAchievementSidecar(achievement.category),
+    });
+    for (const url of urls) {
+      if (!url || safeHost(url) === "kamurocho.gg") continue;
+      const bucket = perAppAchievement.get(achievement.app_id) ?? new Map<string, Set<string>>();
+      const names = bucket.get(url) ?? new Set<string>();
+      names.add(name);
+      bucket.set(url, names);
+      perAppAchievement.set(achievement.app_id, bucket);
+    }
   }
 
   return CURATED_GAMES.map((curated) => {
@@ -79,7 +82,6 @@ export const getGuideSources = cache(async (locale: Locale): Promise<GameSources
       curated,
       game: gameMap.get(curated.appId) ?? null,
       rows,
-      guidesByAchievement,
       locale,
     });
 
@@ -97,10 +99,15 @@ export const getGuideSources = cache(async (locale: Locale): Promise<GameSources
     const substoriesData = getSubstories(curated.appId);
     const substoryRefs = substoriesData?.source
       ? Array.isArray(substoriesData.source)
-        ? substoriesData.source
+        ? [...substoriesData.source]
         : [substoriesData.source]
       : [];
-    const substorySources: SubstoryCitation[] = substoryRefs.map((src) => ({
+    for (const group of substoriesData?.groups ?? []) {
+      for (const item of group.items) {
+        if (item.source) substoryRefs.push(item.source);
+      }
+    }
+    const substorySources: SubstoryCitation[] = [...new Map(substoryRefs.map((src) => [src.url, src])).values()].map((src) => ({
       url: src.url,
       host: safeHost(src.url),
       label: src.label,
@@ -126,11 +133,25 @@ export const getGuideSources = cache(async (locale: Locale): Promise<GameSources
       }))
       .sort((a, b) => b.categories.length - a.categories.length);
 
-    return { game, achievementSources, substorySources, collectibleSources };
+    const minigameAgg = new Map<string, { label: string; categories: Set<string> }>();
+    for (const minigame of getMinigames(curated.appId)?.minigames ?? []) {
+      const refs = minigame.source ? (Array.isArray(minigame.source) ? minigame.source : [minigame.source]) : [];
+      for (const src of refs) {
+        const entry = minigameAgg.get(src.url) ?? { label: src.label, categories: new Set<string>() };
+        entry.categories.add(pickLocalized(minigame.name, locale));
+        minigameAgg.set(src.url, entry);
+      }
+    }
+    const minigameSources: CollectibleCitation[] = Array.from(minigameAgg.entries())
+      .map(([url, { label, categories }]) => ({ url, host: safeHost(url), label, categories: Array.from(categories).sort() }))
+      .sort((a, b) => b.categories.length - a.categories.length);
+
+    return { game, achievementSources, substorySources, collectibleSources, minigameSources };
   }).filter(
     (entry) =>
       entry.achievementSources.length > 0 ||
       entry.substorySources.length > 0 ||
-      entry.collectibleSources.length > 0,
+      entry.collectibleSources.length > 0 ||
+      entry.minigameSources.length > 0,
   );
 });

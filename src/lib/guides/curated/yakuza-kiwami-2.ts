@@ -2,151 +2,114 @@ import type { CuratedGuide } from "./index";
 
 const YAKUZA_KIWAMI_2_APP_ID = 3717340;
 
-// Yakuza Kiwami 2 플래티넘. Steam api_name: lexus2_platinum.
 const platinum: CuratedGuide = {
-  summary: {
-    ko:
-      "Yakuza Kiwami 2 플래티넘 — 다른 58개 업적 전부 해금 시 자동 발동. K2는 영구 미서블이 0인 가장 너그러운 작품이라 Premium Adventure에서 자유롭게 모든 컴플리션을 정리할 수 있습니다. 핵심 게이트는 ①캐바쿠라 그랑프리 우승 ②클랜 크리에이터(고로마루 라인) 풀 진행 ③신세이초 건설(토지·인부) ④마지마 사가 ⑤EX-HARD/LEGEND 클리어 ⑥아몬 격파.",
-    en:
-      "K2's platinum auto-pops at full unlock. Zero permanent missables — everything is reachable in Premium Adventure. Gates: ① Cabaret Grand Prix win ② Clan Creator full line ③ Shinseicho Construction ④ Majima Saga ⑤ EX-HARD/LEGEND ⑥ Amon.",
+  "summary": {
+    "ko": "다른 모든 업적을 달성하세요.",
+    "en": "Unlock every other achievement."
   },
-  steps: [
-    {
-      ko:
-        "1) 메인 스토리 진행과 별개로 「마지마 사가」를 메인 메뉴에서 별도 선택해 진행. 본편 7장 클리어 전후 어디서든 가능하지만 잊기 쉽습니다.",
-      en:
-        "1) Start the Majima Saga from the main menu — it runs separately from Kiryu's story. Easy to forget; trigger it around Ch.7.",
-    },
-    {
-      ko:
-        "2) 캐바쿠라 그랑프리(소텐보리·카무로초) — 「축 그랑프리 우승!」 + 「인기 스카우트맨」(30명 캬바걸 영입) + 「키류의 고민 상담실」(전 플래티넘 캐스트 고민 청취) 3종 동시 진행.",
-      en:
-        "2) Cabaret Grand Prix (Sotenbori + Kamurocho) — three trophies pair: win the GP, recruit 30 hostesses, hear out every Platinum Cast's troubles.",
-    },
-    {
-      ko:
-        "3) 「신세이초 건설(토건업)」 — 토지·인부 관리 미니게임을 장 진행과 병행. 직원 영입(서브스토리)이 진행에 묶여 있어 메인 스토리와 동시에 정리해야 효율적.",
-      en:
-        "3) Shinseicho Construction — manage land/workers alongside the story. Staff recruitment is gated on subs, so run them together.",
-    },
-    {
-      ko:
-        "4) 클랜 크리에이터(고로마루 라인) — 키류 클랜으로 적 클랜을 격파하며 진행. 「고로마루 라인」 완주 시 별도 보상 + 트로피.",
-      en:
-        "4) Clan Creator — push the Goromaru storyline. Completing it grants gear and a unique trophy.",
-    },
-    {
-      ko:
-        "5) Premium Adventure에서 잔여 서브스토리·캐바쿠라·미니게임 마무리. 아몬은 다른 모든 서브 완료 후 등장.",
-      en:
-        "5) Premium Adventure mop-up for subs/cabaret/minigames. Amon spawns only after every other sub is done.",
-    },
-    {
-      ko:
-        "6) 새 회차에서 EX-HARD 또는 LEGEND 메인 스토리 클리어. 진행도/스킬이 이월되어 직주행으로 충분.",
-      en:
-        "6) Fresh save on EX-HARD/LEGEND; carry-over makes a story-sprint enough.",
-    },
-  ],
-  tips: [
-    {
-      ko:
-        "마지마 사가는 본편과 별개 시나리오로, 본편을 끝낸 뒤에도 잊고 지나가는 사례가 많습니다. 그랑프리·아몬 라인이 본편에 묶여 있지 않아 시간이 가장 적게 듭니다.",
-      en:
-        "Don't forget Majima Saga — it sits in the main menu, separate from Kiryu's story.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "steps": [],
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
 };
 
-// 「전설의 사나이」 LEGEND 클리어. Steam: lexus2_legend_clear.
 const legendK2: CuratedGuide = {
-  summary: { ko: "Kiwami 2 메인 스토리를 LEGEND 난이도로 클리어 시 발동. 엔딩 후 「클리어 후 모드」에서 해금되며, 1회차 진행도·드래곤 엔진 액션 트리·장비 이월. 시리즈 LEGEND 중 가장 무난한 편으로 직주행 가능.", en: "Clear K2 on LEGEND post-credits. Carry-over makes a story-sprint viable." },
-  steps: [
-    { ko: "1) 엔딩 후 클리어 데이터 → LEGEND 새 회차 시작.", en: "1) Clear Data → LEGEND fresh save." },
-    { ko: "2) 드래곤 엔진 액션 트리(맨손 카운터·가드 브레이크)를 풀로 강화 후 도전.", en: "2) Max the Dragon Engine action tree first." },
-    { ko: "3) 14장 라스트 보스 클리어 시 트로피 발동.", en: "3) Ch.14 final boss kill fires it." },
+  "summary": {
+    "ko": "난이도 LEGEND로 클리어했다",
+    "en": "Completed the game in Legend mode."
+  },
+  "steps": [
+    {
+      "ko": "본편 클리어 데이터를 승계해 Legend로 시작하고 최종장까지 완료하세요.",
+      "en": "Start Legend with clear-data carryover and finish the final chapter."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  "tips": []
 };
 
-// 「달성 목록 전부 제패!」 100% 컴플리트. Steam: lexus2_tasseimkokuroku_all_clear.
 const completionK2: CuratedGuide = {
-  summary: { ko: "Kiwami 2 컴플리트 리스트 100% 도달 시 발동. 영구 미서블 0이므로 Premium Adventure에서 자유롭게 마무리 가능. 핵심 카테고리: 캐바쿠라 그랑프리(인기 스카우트맨 + 키류 고민 상담실), 신세이초 건설(클랜 크리에이터), 마지마 사가, 음식점·미니게임·서브스토리.", en: "Reach 100 % on K2's Completion List. Zero missables — Premium Adventure cleans everything." },
-  steps: [
-    { ko: "1) 캐바쿠라 그랑프리에서 30명 캬바걸 영입(인기 스카우트맨) + 플래티넘 캐스트 5명 고민 청취(키류 고민 상담실).", en: "1) Cabaret Grand Prix: 30 hostesses + 5 Platinum Cast troubles." },
-    { ko: "2) 마지마 건설 클랜 크리에이터 스토리 풀 클리어 + 적 클랜 모두 격파.", en: "2) Majima Construction Clan Creator story + all rival clans." },
-    { ko: "3) 본편 음식점·플레이 스폿·웨펀 마스터·물품 보관함·드링크 마스터 등 잔여 카테고리를 컴플리트 리스트로 점검하며 마감.", en: "3) Sweep restaurants, play spots, weapons, lockers, drinks per the Completion List." },
+  "summary": {
+    "ko": "모든 달성 목록을 클리어했다",
+    "en": "Completed 100% of the Completion List."
+  },
+  "steps": [
+    {
+      "ko": "게임 안의 완료 목록에 표시되는 조건을 모두 채우세요.",
+      "en": "Complete every requirement shown on the in-game Completion List."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  "tips": []
 };
 
-// 「축 그랑프리 우승!」 캐바쿠라 그랑프리. Steam: lexus2_cabaret_island_gp_all_clear.
 const cabaretGPK2: CuratedGuide = {
-  summary: { ko: "캐바쿠라 그랑프리(소텐보리·카무로초)에서 매장 운영을 통해 최종 챔피언 라이벌 매장을 격파하고 그랑프리 우승 시 발동. 호스티스 영입 + 의상 강화 + 시프트 운영으로 매장 매출을 라이벌 이상으로 끌어올려야 진행.", en: "Win the Cabaret Grand Prix by topping the rival club's revenue. Recruit hostesses, buy outfits, run shifts." },
-  steps: [
-    { ko: "1) 3장 이후 캐바쿠라 그랑프리 시스템 해금 → 첫 호스티스 영입 + 첫 시프트.", en: "1) Unlock the Cabaret Grand Prix after Ch.3 and recruit the first hostess." },
-    { ko: "2) 의상·헤어 강화 + 동반 출근으로 캐스트 평가 1위. 라이벌 매장과의 매출 대결 단계별 격파.", en: "2) Outfit + companion buffs to push to #1, then beat each rival shop's revenue in sequence." },
-    { ko: "3) 그랑프리 결승 우승 시 트로피 발동. 「인기 스카우트맨」(30명) + 「키류의 고민 상담실」 라인도 동시 진행하면 효율적.", en: "3) Win the finale for the trophy. Pair with the 30-hostess + Platinum Cast trophies." },
+  "summary": {
+    "ko": "캬바클럽 그랑프리에서 우승했다",
+    "en": "Won first league championship in the Cabaret Club Grand Prix."
+  },
+  "steps": [
+    {
+      "ko": "물장사 아일랜드의 첫 번째 리그에서 우승하세요. 최종 리그까지 끝낼 필요는 없습니다.",
+      "en": "Win the first league in the Cabaret Club Grand Prix; the final championship is not required for this achievement."
+    }
   ],
-  tips: [
-    { ko: "[캐바쿠라 운영법] 본질은 손님 타입과 캬바걸 타입을 맞추는 게임입니다. 손님 머리 위 아이콘과 같은 타입의 캬바걸을 그 테이블에 배치하면 만족도가 폭발(피버)합니다. 손님이 말풍선으로 도움을 요청하면 즉시 해당 테이블 캬바걸을 탭해 응대하고, 피버 타임엔 가장 인기 높은 플래티넘 캬바걸을 투입해 매출을 폭증시키세요. 의상·헤어 강화로 스탯을 올려두면 라이벌 매출을 넘기기 훨씬 쉽습니다.", en: "[How to run cabaret] At heart it's type-matching: seat a hostess whose type matches the icon above each customer's head to trigger a Fever. When a customer throws up a help bubble, tap that table's hostess immediately, and during Fever time send in your most popular Platinum hostess to spike revenue. Buying outfit/hair upgrades raises stats and makes beating the rival shop far easier." },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
 };
 
-// 「전설의 건설회사」 클랜 크리에이터 스토리. Steam: lexus2_clan_creater_clear.
 const clanCreatorK2: CuratedGuide = {
-  summary: { ko: "마지마 건설(클랜 크리에이터) 스토리를 끝까지 진행하면 발동. 5개 적 클랜과의 클랜 배틀 시리즈 클리어 + 「전설의 클랜」 격파가 마지막. 직원 영입(서브스토리)과 스토리 진행이 동시에 묶여 있어 메인과 병행 진행이 효율적.", en: "Clear Clan Creator's full story — defeat 5 rival clans + the Legendary Clan. Staff recruitment via subs runs in parallel." },
-  steps: [
-    { ko: "1) 3장 이후 마지마 건설 본부 입장 → 첫 클랜 배틀 진행 + 서브스토리로 신규 직원 영입.", en: "1) Past Ch.3, run the first clan battle + recruit staff via subs." },
-    { ko: "2) 5개 라이벌 클랜을 차례로 격파 — 각 격파 시 신규 직원 + 강력 무기 보상.", en: "2) Defeat 5 rival clans in sequence — each unlocks new staff + gear." },
-    { ko: "3) 「전설의 클랜」 최종 보스 격파 시 트로피 발동.", en: "3) Beat the Legendary Clan for the trophy." },
+  "summary": {
+    "ko": "클랜 크리에이터의 스토리를 클리어했다",
+    "en": "Completed the Clan Creator storyline."
+  },
+  "steps": [
+    {
+      "ko": "마지마 건설의 본편 미션을 끝까지 진행하세요.",
+      "en": "Finish the main Majima Construction missions."
+    }
   ],
-  tips: [
-    { ko: "[클랜 크리에이터 전법] 실시간 라인 전투(타워디펜스형)입니다. 근접 직원은 전방 라인에, 원거리·투척 직원은 후방에 배치하고, 리더 스킬(필살기) 게이지가 차면 적이 밀집한 구간에 즉시 발동하세요. 서브스토리로 영입하는 강력 직원(전 토조회 간부 등)을 핵심 라인에 넣고, 자금 업그레이드로 동시 투입 인원을 늘리면 후반 라이벌 클랜도 무난히 뚫립니다.", en: "[Clan Creator tactics] It's a real-time lane battle (tower-defense style). Put melee staff on the front lines and ranged/throwers behind them, and fire the leader skill (ultimate) the instant its gauge fills on a tight enemy cluster. Slot the strong staff you recruit through substories (ex-Tojo execs, etc.) into your core lanes, and upgrade funds to field more units at once — that carries you through the late rival clans." },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
 };
 
-// 「아몬과 결판」 아몬 격파. Steam: lexus2_amon_gekiha.
 const amonK2: CuratedGuide = {
-  summary: { ko: "다른 모든 서브스토리 클리어 후 발생하는 「아몬 격투」 서브를 진행해 조 아몬을 격파하면 발동. K2의 아몬은 시리즈 최고난도 보스 중 하나로, 회복 아이템 + 강력 무기 + 풀 스킬 트리가 필수.", en: "Beat Jo Amon after every other sub is done. One of the series' toughest fights — stock heals + max styles." },
-  steps: [
-    { ko: "1) 모든 서브스토리 클리어 후 텐카이치 거리 또는 칠드런즈 파크에서 검은 양복의 아몬 등장 → 서브 트리거.", en: "1) After every sub is done, the Amon spawns at Tenkaichi/Children's Park." },
-    { ko: "2) 회복 아이템 풀 + 강력 무기(키류 다이아몬드 무기 등) + 액션 트리 풀. 카운터 콤보 + 가드 브레이크 사용.", en: "2) Stock heals + diamond-tier weapon + maxed action tree. Counter + guard-break combos work." },
-    { ko: "3) 격파 시 트로피 + 보상 의상 「아몬 슈트」.", en: "3) Beat him for the trophy + Amon Suit outfit." },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "summary": {
+    "ko": "아몬 일족의 서브스토리를 차례로 진행해 마지막 아몬을 쓰러뜨리세요.",
+    "en": "Progress the Amon clan substories and defeat the final Amon."
+  },
+  "steps": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  "tips": []
 };
 
-// 「마지마가 사는 방식」 마지마 사가 완주. Steam: lexus2_majima_story_all_clear.
 const majimaSaga: CuratedGuide = {
-  summary: { ko: "마지마 사가(메인 메뉴에서 별도 선택 가능한 마지마 시점 외전)를 끝까지 클리어하면 발동. 본편과 분리된 시나리오라 본편 진행 전후 어느 시점이든 진행 가능하지만 잊고 지나가는 사례가 많음.", en: "Clear Majima Saga, the separate Majima-perspective spin-off accessed from the main menu. Easy to forget — it runs apart from Kiryu's story." },
-  steps: [
-    { ko: "1) 메인 메뉴에서 「마지마 사가」 선택 → 첫 장 시작. 본편 7장 클리어 전후 어디서든 시작 가능.", en: "1) Pick Majima Saga from the main menu; start any time around Kiryu's Ch.7." },
-    { ko: "2) 마지마 사가 장를 끝까지 진행. 1회차 분량이 짧아 5~8시간이면 완주.", en: "2) Push through Majima Saga's chapters — short, ~5~8 hr to clear." },
-    { ko: "3) 엔딩 직후 트로피 발동 + 본편 키류의 액션 트리에 매드 도그 스타일 노드 추가.", en: "3) Trophy fires on credits + Kiryu gains Mad Dog style nodes." },
+  "summary": {
+    "ko": "마지마 고로의 진실을 전부 클리어하세요.",
+    "en": "Complete the Majima Saga."
+  },
+  "steps": [
+    {
+      "ko": "키류 본편 진행으로 해금되는 별도 시나리오를 메인 메뉴에서 선택하세요.",
+      "en": "Select the separate scenario from the main menu as its chapters unlock through Kiryu's story."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  "tips": []
 };
 
-// 「인기 스카우트맨」 30명 캬바걸 영입. Steam: lexus2_cabaret_island_scout.
 const popularScout: CuratedGuide = {
-  summary: { ko: "캐바쿠라 그랑프리에서 재적 중인 캬바걸 누적 30명 도달 시 발동. 영입은 그랑프리 진행 보상 + 서브스토리 + 캐바걸 스카우트 미션으로 누적. 우승 후에도 영입 라인은 유지되므로 천천히 진행해도 됨.", en: "Have 30 hostesses on roster at once. Recruits via story progress, subs, and scout missions. The line stays open after the GP win." },
-  steps: [
-    { ko: "1) 캐바쿠라 그랑프리 메인 진행 → 스토리 보상으로 첫 ~10명 자동 영입.", en: "1) Main GP story drops the first ~10 recruits automatically." },
-    { ko: "2) 거리에서 캬바걸 스카우트 마커 + 서브스토리 보상으로 추가 영입. 30명 도달 시 트로피 발동.", en: "2) Street scout markers + sub rewards fill out the roster. 30 fires the trophy." },
+  "summary": {
+    "ko": "재적 중인 캬바걸이 30명이 되었다",
+    "en": "Registered 30 hostesses."
+  },
+  "steps": [
+    {
+      "ko": "영업 메뉴의 스카우트, 서브스토리 보상, 리그 진행을 통해 캐스트를 모으세요.",
+      "en": "Recruit through the club's scouting menu, substories, and league progression."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
-  sourceLabel: { ko: "Steam Community — Yakuza Kiwami 2 Achievement Guide", en: "Steam Community — Yakuza Kiwami 2 Achievement Guide" },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154",
+  "tips": []
 };
 
 export const YAKUZA_KIWAMI_2_CURATED: Record<string, CuratedGuide> = {
@@ -158,4 +121,164 @@ export const YAKUZA_KIWAMI_2_CURATED: Record<string, CuratedGuide> = {
   [`${YAKUZA_KIWAMI_2_APP_ID}:lexus2_clan_creater_clear`]: clanCreatorK2,
   [`${YAKUZA_KIWAMI_2_APP_ID}:lexus2_majima_story_all_clear`]: majimaSaga,
   [`${YAKUZA_KIWAMI_2_APP_ID}:lexus2_amon_gekiha`]: amonK2,
+  "3717340:lexus2_story_all_clear": {
+    "summary": {
+      "ko": "제16장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 16. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear1": {
+    "summary": {
+      "ko": "제1장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 1. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear10": {
+    "summary": {
+      "ko": "제10장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 10. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear11": {
+    "summary": {
+      "ko": "제11장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 11. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear12": {
+    "summary": {
+      "ko": "제12장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 12. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear13": {
+    "summary": {
+      "ko": "제13장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 13. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear14": {
+    "summary": {
+      "ko": "제14장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 14. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear15": {
+    "summary": {
+      "ko": "제15장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 15. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear2": {
+    "summary": {
+      "ko": "제2장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 2. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear3": {
+    "summary": {
+      "ko": "제3장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 3. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear4": {
+    "summary": {
+      "ko": "제4장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 4. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear5": {
+    "summary": {
+      "ko": "제5장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 5. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear6": {
+    "summary": {
+      "ko": "제6장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 6. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear7": {
+    "summary": {
+      "ko": "제7장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 7. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear8": {
+    "summary": {
+      "ko": "제8장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 8. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
+  "3717340:lexus2_story_clear9": {
+    "summary": {
+      "ko": "제9장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 9. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+  },
 };

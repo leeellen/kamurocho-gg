@@ -2,92 +2,47 @@ import type { CuratedGuide } from "./index";
 
 const GAIDEN_APP_ID = 2375550;
 
-// Like a Dragon Gaiden 플래티넘. Steam api_name: platinum.
+// Requirements checked against the linked roadmap; names come from Steam.
 const platinum: CuratedGuide = {
   summary: {
-    ko:
-      "Like a Dragon Gaiden: The Man Who Erased His Name 플래티넘 — 다른 61개 업적 전부 해금 시 자동 발동. 시리즈 중 가장 짧은 외전으로 영구 미서블 0, 컴플리션 30~40시간이면 충분합니다. 핵심 게이트는 ①아카메 네트워크 의뢰 풀 ②투기장(콜로세움) 풀 클리어 + 지옥의 챔피언 ③클럽 캐슬·클럽 헤븐리 캬바걸 풀 ④Legend 난이도 클리어 ⑤아몬 격파.",
-    en:
-      "Gaiden's platinum auto-pops at full unlock. The shortest entry in the series — zero permanent missables, ~30~40 hr for completion. Gates: ① Akame Network requests ② Coliseum full + Hell's Champion ③ Club Castle + Club Heavenly hostesses ④ Legend clear ⑤ Amon.",
+    ko: "다른 업적을 모두 달성하면 해금됩니다. 난이도 지정이나 새 회차는 필요하지 않습니다.",
+    en: "Unlock every other achievement. No difficulty requirement or second playthrough is needed.",
   },
   steps: [
-    {
-      ko:
-        "1) 아카메를 만나는 순간 아카메 네트워크 의뢰를 본격 진행. 의뢰 보상이 「콜로세움 영입 인원」 + 「시설 해금」과 연동되어 같이 굴러갑니다.",
-      en:
-        "1) After meeting Akame, immediately push Akame Network requests — rewards feed Coliseum recruits and facility unlocks.",
-    },
-    {
-      ko:
-        "2) 콜로세움(투기장) — 플래티넘 랭크 이하 모든 매치 클리어 → 「지옥의 챔피언」 트로피 + 캐슬 카바레 추가 이벤트 해금.",
-      en:
-        "2) Coliseum — clear every match through Platinum rank for the 'Hell's Champion' trophy and Castle Cabaret events.",
-    },
-    {
-      ko:
-        "3) 클럽 캐슬·클럽 헤븐리 — 두 캬바레 클럽 모든 캬바걸 친밀도 풀로 끌어올려 「캐슬 귀빈」 + 「천국의 귀빈」 두 트로피 동시 마감.",
-      en:
-        "3) Club Castle + Club Heavenly — bond every hostess to max for both 'Castle VIP' and 'Heavenly VIP' trophies.",
-    },
-    {
-      ko:
-        "4) 「캐슬 갬블러」 — 캐슬 도박장 + 카지노 모든 게임을 1회 이상 플레이. 칩 누적 보상도 추가 트로피와 연동.",
-      en:
-        "4) 'Castle Gambler' — play every game in the Castle gambling hall + casino at least once. Chip accumulation feeds another trophy.",
-    },
-    {
-      ko:
-        "5) 엔딩 후 새 회차 Legend 난이도 직주행 → 아몬 격파(아몬 라인 서브)로 모든 트로피 마감.",
-      en:
-        "5) Post-credits: fresh save on Legend, then beat Amon to wrap the trophy list.",
-    },
+    { ko: "스토리를 마친 뒤 남은 업적을 정리하세요.", en: "Finish the story, then complete outstanding achievements." },
   ],
   tips: [
-    {
-      ko:
-        "Gaiden은 카무로초·소텐보리·콜로세움 3 거점만 사용하는 컴팩트한 외전이라 컴플리션 시간이 가장 짧습니다. 「데드」(Devil Flags) 같은 시리즈 미니게임이 없어 RNG 부담도 거의 없습니다.",
-      en:
-        "Gaiden uses only Kamurocho, Sotenbori, and the Coliseum — the most compact completion in the series, with minimal RNG.",
-    },
+    { ko: "달성률 100%와 게임 내 활동 목록 100%는 다른 목표입니다.", en: "All achievements and a full Activity Log are different goals." },
   ],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
+  sourceLabel: { ko: "PowerPyx — 업적 로드맵", en: "PowerPyx — trophy roadmap" },
 };
 
-// 「캐슬 귀빈」 — 클럽 캐슬 모든 캬바걸. Steam: caba_b.
 const castleVIP: CuratedGuide = {
-  summary: { ko: "Gaiden의 캐바레 클럽 「클럽 캐슬」에 재적 중인 모든 캬바걸과의 친밀도 라인을 풀로 클리어하면 발동. 콜로세움 보상 + 의상 강화로 단계별 친밀도가 누적됩니다.", en: "Max bonds with every Club Castle hostess. Bonds tick via coliseum rewards + outfit gifts." },
+  summary: { ko: "Club Castle의 캬바걸 3명 모두 하트 3개를 달성하세요.", en: "Reach three hearts with all three Castle hostesses." },
   steps: [
-    { ko: "1) Akame Network 진행 중 클럽 캐슬 해금 → 모든 캬바걸 한 명씩 데이트.", en: "1) Unlock Club Castle via the Akame Network; date each hostess." },
-    { ko: "2) 의상 선물 + 동반 출근으로 친밀도 풀까지 누적. 캐스트별 호감 키워드 다름.", en: "2) Gift outfits + run companion shifts; each hostess prefers different keywords." },
-    { ko: "3) 모든 캬바걸 풀 친밀도 시 트로피 발동.", en: "3) Full bonds on all hostesses fires the trophy." },
+    { ko: "대화·음료·선물로 친밀도를 높이세요.", en: "Raise affection through conversation, drinks, and gifts." },
   ],
+  tips: [],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };
 
-// 「천국의 귀빈」 — 클럽 헤븐리. Steam: caba_a.
 const heavenlyVIP: CuratedGuide = {
-  summary: { ko: "캐바레 클럽 「클럽 헤븐리」에 재적 중인 모든 캬바걸과의 친밀도 라인을 풀로 클리어하면 발동. 진행은 클럽 캐슬과 동일.", en: "Max bonds with every Club Heavenly hostess. Same flow as Castle." },
+  summary: { ko: "Club Heavenly의 캬바걸 2명 모두 하트 3개를 달성하세요.", en: "Reach three hearts with both Heavenly hostesses." },
   steps: [
-    { ko: "1) 장 진행 중 클럽 헤븐리 해금 → 모든 캬바걸 데이트.", en: "1) Unlock Club Heavenly and date each hostess." },
-    { ko: "2) 의상 선물 + 동반 출근 + 호감 키워드 사용으로 친밀도 풀.", en: "2) Gift outfits + run shifts + use preferred keywords." },
-    { ko: "3) 모든 캬바걸 풀 친밀도 시 트로피 발동.", en: "3) Full bonds fires the trophy." },
+    { ko: "대화·음료·선물로 친밀도를 높이세요.", en: "Raise affection through conversation, drinks, and gifts." },
   ],
+  tips: [],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };
 
-// 「지옥의 챔피언」 — 플래티넘 랭크 이하 모든 콜로세움 매치 클리어. Steam: arena_c.
 const hellsChampion: CuratedGuide = {
-  summary: { ko: "Gaiden의 콜로세움(투기장)에서 플래티넘 랭크 이하의 모든 매치(개인전·팀전·서바이벌)를 클리어하면 발동. 단계별로 매치 종류가 늘어나며 후반 매치는 무기 봉인·맨손 조건 등이 붙음.", en: "Clear every Coliseum match through Platinum rank — solo, team, survival. Later matches add weapon bans or bare-fist rules." },
+  summary: { ko: "플래티넘 랭크 이하의 투기를 전부 클리어하세요.", en: "Complete all Coliseum matches through Platinum rank." },
   steps: [
-    { ko: "1) Akame Network 진행 중 콜로세움 해금. 첫 매치부터 차례로 클리어.", en: "1) Unlock the Coliseum via Akame; clear matches in order." },
-    { ko: "2) 팀 멤버 영입(Akame 의뢰 + 콜로세움 보상)으로 팀전 셋업. 회복 아이템 비축 필수.", en: "2) Recruit team members (Akame quests + arena rewards). Stock heals." },
-    { ko: "3) 플래티넘 랭크 최종 매치 클리어 시 트로피 + 캐슬 카바레 추가 이벤트 해금.", en: "3) Platinum-rank final clear fires the trophy + Castle Cabaret events." },
+    { ko: "투기 목록에서 미완료 경기를 확인하세요.", en: "Check the match list for unfinished fights." },
   ],
+  tips: [],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };
 
 // 「레트로 게이머」 — 마스터 시스템 5종 플레이. Steam: retro_games.
@@ -102,19 +57,13 @@ const retroGamer: CuratedGuide = {
   sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };
 
-// 「포켓 서킷 상급자」 — 마스터즈 서킷 개방. Steam: pokecir_a.
 const pocketCircuitMaster: CuratedGuide = {
-  summary: { ko: "Gaiden 포켓 서킷에서 마스터즈 서킷(최상위 컵)을 개방하면 발동. 일반 컵 → 챔피언십 컵 차례로 우승하면 마스터즈가 풀리며, 부품 강화 + 빌드 셋업이 필수.", en: "Open the Masters Circuit (top cup) in Gaiden's Pocket Circuit. Win Standard + Championship cups first; parts + builds matter." },
+  summary: { ko: "포켓 서킷에서 마스터즈 서킷을 개방하세요. 최종 대회가 아닌 중간 진행 단계입니다.", en: "Unlock the Masters Circuit, a mid-progression milestone rather than the final cup." },
   steps: [
-    { ko: "1) 카무로초 포켓 서킷 스타디움에서 일반 컵부터 차례로 우승.", en: "1) Win standard cups in sequence at Kamurocho's stadium." },
-    { ko: "2) 챔피언십 컵까지 우승 → 마스터즈 서킷 자동 해금.", en: "2) Win championship cups to auto-unlock Masters." },
-    { ko: "3) 마스터즈 서킷 해금 즉시 트로피 발동.", en: "3) Trophy fires the moment Masters opens." },
+    { ko: "소텐보리의 CourStar(코스타)에서 대회를 진행하세요.", en: "Progress through races at CourStar in Sotenbori." },
   ],
-  tips: [
-    { ko: "[포켓 서킷 셋업] 운전 실력보다 차 세팅이 승부를 가릅니다. 직선이 긴 코스는 모터·기어비로 최고속을, 커브가 많은 코스는 그립 타이어+다운포스로 코스 이탈을 막으세요. 부품이 무거우면 후반에 배터리가 떨어져 멈추니 완주 가능한 무게로 균형을 맞추는 게 핵심입니다.", en: "[Pocket Circuit setup] Tuning beats driving here. Gear for top speed (motor + ratio) on straight-heavy tracks, and add grip tires + downforce on curvy ones to stop flying off. Heavy parts drain the battery and stall you late, so balance for a weight that finishes." },
-  ],
+  tips: [],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Like a Dragon Gaiden Trophy Guide", en: "PowerPyx — Like a Dragon Gaiden Trophy Guide" },
 };
 
 export const LIKE_A_DRAGON_GAIDEN_CURATED: Record<string, CuratedGuide> = {
@@ -124,4 +73,109 @@ export const LIKE_A_DRAGON_GAIDEN_CURATED: Record<string, CuratedGuide> = {
   [`${GAIDEN_APP_ID}:arena_c`]: hellsChampion,
   [`${GAIDEN_APP_ID}:retro_games`]: retroGamer,
   [`${GAIDEN_APP_ID}:pokecir_a`]: pocketCircuitMaster,
+  "2375550:main_story_01": {
+    "summary": {
+      "ko": "제1장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 1. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:main_story_02": {
+    "summary": {
+      "ko": "제2장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 2. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:main_story_03": {
+    "summary": {
+      "ko": "제3장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 3. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:main_story_04": {
+    "summary": {
+      "ko": "제4장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 4. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:main_story_05": {
+    "summary": {
+      "ko": "제5장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 5. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:shitennou_a": {
+    "summary": {
+      "ko": "투기장 사천왕 도전에서 댄 브로디를 쓰러뜨립니다.",
+      "en": "Defeat Dan Brody in the Coliseum Four Kings challenge."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:shitennou_b": {
+    "summary": {
+      "ko": "투기장 사천왕 도전에서 사메지마를 쓰러뜨립니다.",
+      "en": "Defeat Samejima in the Coliseum Four Kings challenge."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:shitennou_c": {
+    "summary": {
+      "ko": "투기장 사천왕 도전에서 저스티스를 쓰러뜨립니다.",
+      "en": "Defeat Justice in the Coliseum Four Kings challenge."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:shitennou_d": {
+    "summary": {
+      "ko": "투기장 사천왕 도전에서 우가진를 쓰러뜨립니다.",
+      "en": "Defeat Ugajin in the Coliseum Four Kings challenge."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
+  "2375550:amon": {
+    "summary": {
+      "ko": "투기장과 관련 의뢰를 진행해 아몬을 쓰러뜨립니다.",
+      "en": "Defeat Amon after progressing through the Coliseum and its associated requests."
+    },
+    "steps": [
+      {
+        "ko": "사천왕과 관련 의뢰, 남은 투기장 경기를 완료한 뒤 아몬 도전을 진행합니다.",
+        "en": "Finish the Four Kings, the follow-up request and remaining Coliseum matches, then complete the Amon challenge."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+  },
 };

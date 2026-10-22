@@ -37,6 +37,7 @@ export type SubstoryItem = {
   prereq?: LocalizedText;
   video?: string;
   image?: string;
+  source?: { label: string; url: string };
 };
 
 export type SubstoryGroup = {

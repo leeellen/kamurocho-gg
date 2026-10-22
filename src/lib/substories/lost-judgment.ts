@@ -1,564 +1,1073 @@
 import type { SubstoriesData } from "./types";
 
 export const lostJudgmentSubstories: SubstoriesData = {
-  appId: 2058190,
-  summary: {
-    ko: "총 54건의 사이드 케이스 — 요코하마 이진초와 카무로초를 오가며 진행. No.43 이후는 「탐정 라이프 충실 팩」 DLC가 필수. 3장에서 버즈 리서처가 해금되면 본격적으로 의뢰 보드(카무로초 야가미 탐정 사무소 / 이진초 요코하마 99과)에서 받을 수 있습니다. 사이드 케이스 클리어는 SP 보상과 청춘 능력치 상승으로 직결되므로 메인 스토리와 병행하는 것이 효율적입니다.",
-    en: "54 Side Cases split between Yokohama Ijincho and Kamurocho. Cases No.43+ require the Detective's Essentials Pack DLC. Once Chapter 3 unlocks the Buzz Researcher, you can pull jobs from the boards (Yagami Detective Agency in Kamurocho / Yokohama 99 in Ijincho). Side Case rewards feed directly into SP and School Story stats — run them alongside the main story.",
+  "appId": 2058190,
+  "summary": {
+    "ko": "본편 사이드 케이스 42건과 DLC 12건을 구분해 총 54건을 수록했습니다. 본편 업적은 DLC 케이스를 요구하지 않습니다.",
+    "en": "54 listed side cases: 42 in the base game and 12 in DLC. Base-game side-case achievements do not require the DLC cases."
   },
-  source: { label: "gamewith.jp — ロストジャッジメント サイドケース一覧", url: "https://gamewith.jp/lostjudgment/article/show/293437" },
-  groups: [
+  "source": {
+    "label": "gamewith.jp — ロストジャッジメント サイドケース一覧",
+    "url": "https://gamewith.jp/lostjudgment/article/show/293437"
+  },
+  "groups": [
     {
-      title: { ko: "1~2장 — 도입부", en: "Chapter 1~2 — Opening" },
-      items: [
+      "title": {
+        "ko": "본편 조사와 탐정 도구",
+        "en": "Main cases and detective tools"
+      },
+      "items": [
         {
-          number: 1,
-          title: { ko: "스케이트보드 탐정 VS 되팔이꾼", en: "Skateboard Detective vs. Resellers" },
-          chapter: { ko: "1장", en: "Chapter 1" },
-          location: { ko: "이진초 — 요코하마 99과", en: "Ijincho — Yokohama 99" },
-          trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
-          body: {
-            ko: "튜토리얼 격 사이드 케이스. 한정판 스니커즈를 사재기하는 되팔이꾼 일당을 스케이트보드로 추격해 검거. 추격 파쿠르 조작과 카이토와의 협공 시스템을 익히게 됩니다.",
-            en: "A tutorial case. Chase down sneaker scalpers on skateboard, learning the parkour-pursuit controls and Kaito's tag-team mechanic.",
+          "number": 1,
+          "title": {
+            "ko": "스케이트보드 탐정 VS 되팔이꾼",
+            "en": "Skateboard Detective vs. Resellers"
           },
-          reward: { ko: "SP + 청춘 스토리 「스케이트보드」 진행 플래그", en: "SP + School Story 'Skateboarding' progression flag" },
+          "chapter": {
+            "ko": "1장 이후",
+            "en": "From Chapter 1"
+          },
+          "body": {
+            "ko": "1장 본편에서 자동으로 시작된다. 스케이트보드로 제한 시간 안에 에비스야에 도착하여 피규어를 산 뒤 되팔이꾼을 쓰러뜨린다.",
+            "en": "This mandatory Chapter 1 case sends you to Ebisu Pawn by skateboard before time runs out. Buy the figure, then defeat the reseller."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295456"
+          }
         },
-      ],
+        {
+          "number": 2,
+          "title": {
+            "ko": "떨어질 것 같은 남자",
+            "en": "The Man on the Ledge"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "3장 본편에서 집음기로 남자를 발견하고 건물을 올라간다. 제비가 나타나는 계절에 관한 설명을 반박한 뒤 남자의 뒤쪽 주머니에 나온 속옷을 조사하고 전투를 마친다.",
+            "en": "During Chapter 3, locate the man with the Noise Amp and climb up. Challenge his story about swallows being present in that season, inspect the underwear protruding from his rear pocket, then defeat him."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295460"
+          }
+        },
+        {
+          "number": 3,
+          "title": {
+            "ko": "강도는 카페에 있다",
+            "en": "The Robber in the Café"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "텐카이치 거리의 촬영 현장을 본 뒤 버즈 리서처로 새 키워드를 검색하여 알프스로 간다. 문에 걸린 안내판 뒷면의 SOS를 조사하고 뒷문을 따서 들어간다. 상자로 위장해 강도에게 접근한 뒤 도주하는 범인을 추격한다.",
+            "en": "After seeing the film shoot on Tenkaichi Street, search the new Buzz Researcher keywords and visit Alps. Inspect the SOS on the back of the door sign, pick the rear lock, hide in a cardboard box, then pursue the fleeing robber."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295031"
+          }
+        },
+        {
+          "number": 4,
+          "title": {
+            "ko": "에비스의 얼굴도 세 번까지",
+            "en": "Even Ebisu Won't Take a Fourth"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장에 학교 3층의 이벤트를 보고 미스터리 연구회와 교무실을 방문한다. 교실 문 위 지우개, 의자 위와 카펫 아래 장치, 화장실 문 위 지우개와 화장실 표지판을 모두 조사한다. 마지막에 학생들과 에비스 선생을 차례로 제압한다.",
+            "en": "In Chapter 4, follow the school event to the MRC and faculty room. Inspect the classroom-door eraser, chair and carpet traps, then the restroom-door eraser and altered restroom sign. Defeat the students and then calm Ebisu by fighting him."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294953"
+          }
+        },
+        {
+          "number": 5,
+          "title": {
+            "ko": "타임캡슐의 행방",
+            "en": "Whereabouts of the Time Capsule"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "학교의 졸업생 세 명에게 의뢰를 받는다. 관찰 모드로 운동장에서 보이는 관람차와 가까운 나무를 조사한다. 캡슐이 바뀌었다는 결론을 내리고 모든 단서를 들은 뒤 차이나타운 남쪽의 흰 코트 여성을 찾는다.",
+            "en": "Meet the three graduates at Seiryo High. Inspect the distant Ferris wheel and nearby tree, identify the swapped capsule, hear every lead, and find the woman in a white coat in southern Chinatown."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294950"
+          }
+        },
+        {
+          "number": 6,
+          "title": {
+            "ko": "캇파의 행방",
+            "en": "Whereabouts of the Kappa"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장에 사쿠라 강변의 소동을 해결하여 첫 갓파상을 회수한다. 이후 달리기 중인 남자, 쓰레기 더미, 축구하는 학생들, 강변의 조각상, 낚시꾼, 전당포, 요코하마99에 있는 나머지 일곱 개를 모은다. 전당포는 먼저 팔았다는 대화를 끝까지 들어야 한다.",
+            "en": "In Chapter 4, recover the first kappa from the riverside confrontation. Find the remaining seven with the runner, trash pile, soccer players, riverside statues, fisherman, pawnshop, and Yokohama 99. Hear the full conversation about selling the statue before checking the pawnshop."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295086"
+          }
+        },
+        {
+          "number": 7,
+          "title": {
+            "ko": "전진하라, 세이료 고교 오컬트 연구회!",
+            "en": "Onward, Seiryo High Occult Club!"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "학교 앞 학생들의 UFO 이야기를 듣고 버즈 리서처를 사용한다. 밤에 스낵 거리 상공을 조사한 뒤 헬로 워크 근처 주차장과 웨트 키친 2층에서 정보를 모은다. 후쿠토쿠 공원에서 UFO를 촬영하고 학교 중정과 옥상으로 이동해 다시 촬영한 뒤 추격한다.",
+            "en": "Search the UFO keyword after hearing the students outside school. Inspect the sky over the Bar District at night, then follow the leads to the parking lot near Hello Work and Wette Kitchen upstairs. Photograph the UFO at Fukutoku Park and the school rooftop, then chase it."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295025"
+          }
+        },
+        {
+          "number": 8,
+          "title": {
+            "ko": "투명한 도둑",
+            "en": "The Invisible Thief"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "스토커 키워드를 따라 센료 거리 건물 위의 남자를 조사하고 사무실로 들어간다. 쓰레기, 냉장고, 살충제, 금고, 칼과 천장 흔적을 조사하고 집음기로 천장 소리를 듣는다. 범인이 천장 위에 숨어 있다고 추리하고 살충제를 사용한다.",
+            "en": "Follow the stalker keyword to the man above Senryo Avenue and enter the office. Inspect the rubbish, fridge, insecticide, safe, sword, and ceiling marks; use the Noise Amp on the ceiling. Conclude that the intruder is above the ceiling and use the insecticide."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295024"
+          }
+        },
+        {
+          "number": 9,
+          "title": {
+            "ko": "배회하는 인체 모형",
+            "en": "The Wandering Anatomy Model"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "밤에 학교에서 인체 모형 키워드를 조사한다. 2층 2-5 교실 구석의 모형을 집음기로 찾고 추격한다. 완료하려면 낮에 다시 1층 식당으로 가서 학생과 대화해야 한다.",
+            "en": "Investigate the body-model keyword at school at night. Locate it in classroom 2-5 with the Noise Amp and complete the chase. Return to the first-floor cafeteria during the day to finish the case."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294952"
+          }
+        },
+        {
+          "number": 10,
+          "title": {
+            "ko": "라이언 닌자술 교실, 폭탄 탄생!",
+            "en": "Ryan's Ninjutsu Class is Born!"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "야가미 탐정 사무소에서 의뢰를 받고 M SIDE CAFE 벽에 매달린 라이언을 조사한다. 닌자 복장으로 경쟁 도장에 들어가 추격, 다트, 전투를 진행한다. 다트에서 지면 재도전하거나 면제를 선택해 계속 진행할 수 있다.",
+            "en": "Accept the agency request and inspect Ryan on the wall at M Side Cafe. Infiltrate the rival dojo in ninja clothing, then complete the chase, darts trial, and fight. Losing at darts allows a retry or an exemption."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295172"
+          }
+        },
+        {
+          "number": 11,
+          "title": {
+            "ko": "금단의 맛",
+            "en": "The Forbidden Flavor"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "요코하마99에서 의뢰를 받고 차이나타운의 조를 만난다. 표시된 세 곳의 대화를 끝까지 듣고 보고한 뒤 고양이와 교류한다. 고양이 한 마리의 친밀도 게이지를 채우고 밤에 요코하마99 앞에 가면 포장마차로 안내받는다.",
+            "en": "Accept the Yokohama 99 request and meet Joe in Chinatown. Hear all three marked conversations, report back, and befriend a cat. Fill one cat's friendship gauge, then visit Yokohama 99 at night to be led to the ramen stall."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295139"
+          }
+        },
+        {
+          "number": 12,
+          "title": {
+            "ko": "VR 살롱: 파라다이스!",
+            "en": "VR Salon: Paradise!"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "VR 살롱에서 접수하고 무료 체험을 한 번 끝낸다. 이 도입 의뢰는 승패와 관계없이 완료된다.",
+            "en": "Register at Paradise VR and finish the free introductory game. Winning is not required for this case."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294955"
+          }
+        },
+        {
+          "number": 13,
+          "title": {
+            "ko": "속·VR 살롱: 파라다이스!",
+            "en": "VR Salon: Paradise! 2"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "12번 체험 후 타시로의 다음 의뢰를 진행한다. VR 주사위 게임에서 지정된 강적 일곱 명을 모두 이긴다. 일반 코스를 한 번 더 플레이하는 것만으로는 완료되지 않는다.",
+            "en": "After No. 12, accept Tashiro's follow-up and defeat all seven designated strong rivals in Dice & Cube."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295096"
+          }
+        },
+        {
+          "number": 14,
+          "title": {
+            "ko": "이진초 드론 레이스 개막!",
+            "en": "Ijincho Drone Race Opens!"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "드론 경기장 접수처 앞의 남자와 대화하고 레이스에 참가한다. 순위와 관계없이 완료되며 테스트 비행도 인정된다.",
+            "en": "Speak to the man at drone-race registration and enter a race. Placement does not matter; the test flight also completes the case."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295016"
+          }
+        },
+        {
+          "number": 15,
+          "title": {
+            "ko": "선인 이야마의 재난",
+            "en": "Hermit Iyama's Calamity"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "3장 본편의 선약 튜토리얼에서 지정된 선약을 사용해 적을 쓰러뜨린다. 이후 이야마에게 쑥을 전달한다.",
+            "en": "Use the supplied extract during the Chapter 3 tutorial fight, then bring Mugwort to Iyama."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295494"
+          }
+        },
+        {
+          "number": 16,
+          "title": {
+            "ko": "선인 이야마: 기원의 탐구",
+            "en": "Hermit Iyama: Origin Hunt"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "15번 이후 이야마에게 장미, 마늘, 네잎클로버를 순서대로 전달한다. 하마키타 공원의 꽃 판매 차량과 채소 판매 차량에서 재료를 구할 수 있다.",
+            "en": "After No. 15, bring Iyama a rose, garlic, and a four-leaf clover in that order. The flower and produce trucks at Hamakita Park sell the ingredients."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294959"
+          }
+        },
+        {
+          "number": 17,
+          "title": {
+            "ko": "새로운 파트너?",
+            "en": "A New Partner?"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장 본편에서 탐정견 란포를 따라 목적지로 이동하고 야쿠자를 쓰러뜨린다.",
+            "en": "During Chapter 4, follow detective dog Ranpo to the destination and defeat the yakuza."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295496"
+          }
+        },
+        {
+          "number": 18,
+          "title": {
+            "ko": "복면 작가 주몬지 카즈히토의 혼란",
+            "en": "Masked Novelist Jumonji's Crisis"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "요코하마99에서 의뢰를 받은 뒤 카무로쵸 사무실의 작가들과 옥상의 사나다를 조사한다. 란포로 재떨이, 창문의 얼룩과 털, 옥상의 고양이 먹이 통을 찾는다. 도청을 의심하고 먹이 통, 동물 털, 폭죽 소리를 근거로 외부인을 지목한 뒤 추격한다.",
+            "en": "Accept the Yokohama 99 request and interview the writers in Kamurocho, including Sanada upstairs. Use Ranpo to inspect the ashtray, window stain and fur, and rooftop cat-food can. Identify eavesdropping, present the can, fur, and firecracker sound, then pursue the outside suspect."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295181"
+          }
+        },
+        {
+          "number": 19,
+          "title": {
+            "ko": "도주한 게임 크리에이터",
+            "en": "The Runaway Game Creator"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "요코하마99 의뢰를 받고 웨트 키친 2층의 의뢰인을 만난다. 노숙자 거리를 조사하고 상자 위 노트북을 확인한 뒤 란포를 불러 추적한다. 감독을 찾으면 의뢰인을 불러 대화시키고 키누가와와 싸운다.",
+            "en": "Meet the client upstairs at Wette Kitchen after accepting the request. Search the homeless camp, inspect the laptop on the box, and follow Ranpo. Bring the client to discuss matters with the director, then defeat Kinugawa."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295153"
+          }
+        },
+        {
+          "number": 20,
+          "title": {
+            "ko": "폭풍을 부르는 로케 테스트",
+            "en": "The Storm-Calling Location Test"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "19번 완료 후 요코하마99의 새 의뢰를 받는다. VR 파라다이스에서 에어셀리오스를 체험하고 밖에서 키누가와와 싸운다. 체험 게임을 클리어할 필요는 없다.",
+            "en": "After No. 19, accept the follow-up request, try Aircelios at Paradise VR, and fight Kinugawa outside. Clearing the demo game is not required."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295158"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "3장 — 본격 해금", en: "Chapter 3 — Cases Open Up" },
-      items: [
+      "title": {
+        "ko": "전파 탐정 연속 의뢰",
+        "en": "Dastardly Detective chain"
+      },
+      "items": [
         {
-          number: 2,
-          title: { ko: "떨어질 것 같은 남자", en: "The Man on the Ledge" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 요코하마 오도리 맨션", en: "Ijincho — Yokohama Odori apartment" },
-          trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
-          body: {
-            ko: "맨션 옥상에서 자살을 시도하는 남자를 야가미가 설득. 대화에서 「투신 이유」를 정확히 짚어 줘야 무사히 끌어내릴 수 있습니다.",
-            en: "Yagami talks down a man threatening to jump from a rooftop. Pick the empathic line so he steps back from the edge.",
+          "number": 21,
+          "title": {
+            "ko": "전파 탐정: 입문편",
+            "en": "Radio Wave Detective: Intro"
           },
-          choices: [
-            { prompt: { ko: "「왜 뛰어내리려고 합니까?」", en: "'Why are you doing this?'" }, correct: { ko: "이야기를 들어준다", en: "Hear him out" } },
-          ],
-          reward: { ko: "SP", en: "SP" },
-        },
-        {
-          number: 3,
-          title: { ko: "강도는 카페에 있다", en: "The Robber in the Café" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 텐카이치 거리", en: "Kamurocho — Tenkaichi St." },
-          trigger: { ko: "텐카이치 거리 「로망스 카페」에 접근하면 발생", en: "Approach Romance Café on Tenkaichi St." },
-          body: {
-            ko: "은행 강도가 카페에 손님으로 위장해 숨어있다. 카페 내부 관찰 모드로 의심 인물을 특정 후 제압.",
-            en: "A bank robber is hiding among the café customers. Use Observation mode to pick the suspect, then take him down.",
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
           },
-          choices: [
-            { prompt: { ko: "「수상한 인물은?」", en: "'Who's the suspicious one?'" }, correct: { ko: "땀을 흘리며 가방을 꽉 쥔 남자", en: "The sweating man clutching a bag" } },
-          ],
-          reward: { ko: "SP + 「관찰안」 강화 플래그", en: "SP + Detective Sight progression flag" },
-        },
-        {
-          number: 5,
-          title: { ko: "타임캡슐의 행방", en: "Whereabouts of the Time Capsule" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "세이료 고교 — 교외", en: "Seiryo High — Outside grounds" },
-          trigger: { ko: "교외의 남자 3인조에게 말 걸기", en: "Talk to the trio of men outside the school." },
-          body: {
-            ko: "졸업생들이 묻어둔 타임캡슐을 못 찾는 중. 야가미가 부지를 수색해 회수해 줍니다.",
-            en: "Old alumni can't find the time capsule they buried. Yagami digs around the school grounds and recovers it.",
+          "body": {
+            "ko": "4장 본편의 전파 탐지기 튜토리얼이다. 조사 지점 뒤쪽 주차장의 자동차에서 신호를 찾는다.",
+            "en": "In the Chapter 4 Detector tutorial, locate the signal in the car at the rear parking lot."
           },
-          reward: { ko: "SP + 추억 사진 입수", en: "SP + memorabilia photo" },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295495"
+          }
         },
         {
-          number: 7,
-          title: { ko: "전진하라, 세이료 고교 오컬트 연구회!", en: "Onward, Seiryo High Occult Club!" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "세이료 고교 정문", en: "Seiryo High — front gate" },
-          trigger: { ko: "정문 앞 남학생에게 말 걸기", en: "Talk to the male student at the school's front gate." },
-          body: {
-            ko: "오컬트 연구회 학생이 학교 7대 불가사의 조사를 부탁. 이후 「인체 모형」·「천자와 가의 저주」 등 후속 사이드 케이스로 이어집니다.",
-            en: "The Occult Club kid asks Yagami to investigate the school's seven mysteries. Triggers the human-model and Amazawa Curse follow-ups.",
+          "number": 22,
+          "title": {
+            "ko": "전파 탐정: 방황하는 도청기",
+            "en": "Radio Wave Detective: The Wandering Bug"
           },
-          reward: { ko: "SP", en: "SP" },
-        },
-        {
-          number: 8,
-          title: { ko: "투명한 도둑", en: "The Invisible Thief" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 센료 거리", en: "Kamurocho — Senryo Ave." },
-          trigger: { ko: "버즈 리서처 워드 「스토커」로 조사 시 발생", en: "Tag the Buzz Researcher word 'Stalker' and investigate." },
-          body: {
-            ko: "물건이 자꾸 사라지는 가게의 진범을 잠복·관찰로 특정. 카메라 워드로 도주 경로를 추적한 뒤 도주자를 추격합니다.",
-            en: "Stake out a shop where items keep vanishing. Use the camera-tail mechanic to chase the culprit through the back alleys.",
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
           },
-          reward: { ko: "SP + 미행 능력 강화", en: "SP + Tailing skill boost" },
-        },
-        {
-          number: 9,
-          title: { ko: "배회하는 인체 모형", en: "The Wandering Anatomy Model" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "세이료 고교 1층", en: "Seiryo High — 1F" },
-          trigger: { ko: "버즈 리서처 「인체 모형」을 야간에 조사", en: "Investigate the 'Anatomy Model' Buzz word at night." },
-          body: {
-            ko: "이과실 인체 모형이 밤마다 움직인다는 괴담. 잠복 후 진범(짓궂은 학생) 일당을 적발.",
-            en: "A school ghost story about a moving anatomy model. Stake out the science room and bust the pranksters behind it.",
+          "body": {
+            "ko": "21번 이후 잡음 키워드를 검색한다. 이세자키 로드의 빨간 옷 여성을 탐지기로 조사한 뒤 오하마 거리의 클럽에서 이야기를 마무리한다.",
+            "en": "After No. 21, search the noise keyword, scan the red-clothed woman on Isezaki Road, and follow up at the club on Ohama Street."
           },
-          reward: { ko: "SP + 청춘 능력치", en: "SP + School stat bump" },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294954"
+          }
         },
         {
-          number: 10,
-          title: { ko: "라이언 닌자술 교실, 폭탄 탄생!", en: "Ryan's Ninjutsu Class is Born!" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
-          trigger: { ko: "야가미 탐정 사무소 게시판에서 의뢰 수령", en: "Pick up the request from the Yagami Detective Agency board." },
-          body: {
-            ko: "닌자 시연 이벤트를 열고 싶은 외국인 라이언을 도와 진짜 닌자처럼 보이도록 연출. 액션 비디오 촬영과 군중 통제가 포인트.",
-            en: "Help foreign ninja-fanboy Ryan stage a convincing ninja act — handle the action shoot and the crowd reaction.",
+          "number": 23,
+          "title": {
+            "ko": "전파 탐정: 사랑, 잡아주세요",
+            "en": "Radio Wave Detective: Catch My Love"
           },
-          reward: { ko: "SP + 닌자 의상 부품", en: "SP + Ninja costume part" },
-        },
-        {
-          number: 11,
-          title: { ko: "금단의 맛", en: "The Forbidden Flavor" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 몽무 반점", en: "Ijincho — Moubu Hanten" },
-          trigger: { ko: "요코하마 99과 게시판에서 의뢰 수령", en: "Pick up the request from the Yokohama 99 board." },
-          body: {
-            ko: "차이나타운 노포가 「비전의 맛」 유출 의혹. 시식·증언 수집으로 진짜 도용범을 가려냅니다.",
-            en: "A Chinatown restaurant's secret recipe is leaking. Compare tastings and statements to expose the thief.",
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
           },
-          reward: { ko: "SP + 회복 요리 레시피", en: "SP + recipe unlock" },
-        },
-        {
-          number: 12,
-          title: { ko: "VR 살롱: 파라다이스!", en: "VR Salon: Paradise!" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — VR 살롱 파라다이스 앞", en: "Ijincho — outside VR Salon Paradise" },
-          trigger: { ko: "스고우라가 VR 살롱 의뢰를 가져옴", en: "Sugiura brings the VR Salon job." },
-          body: {
-            ko: "신생 VR 살롱의 호객 영상에 출연해 달라는 의뢰. 어색한 연기 미니게임을 클리어해야 인기 보장. 후속 No.13으로 직행.",
-            en: "Star in a promo for a brand-new VR salon. Clear the cringe-acting mini-prompt; rolls straight into Case No.13.",
+          "body": {
+            "ko": "22번 이후 사사키 게임장의 UFO 캐처를 탐지기로 조사한다. 신호가 나는 펭귄 인형을 직접 뽑고 토오루를 쓰러뜨린다.",
+            "en": "After No. 22, scan the UFO catcher at Sasaki Arcade, win the bugged penguin, and defeat Toru."
           },
-          reward: { ko: "SP + VR 살롱 1회권", en: "SP + VR Salon free pass" },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294956"
+          }
         },
         {
-          number: 13,
-          title: { ko: "속·VR 살롱: 파라다이스!", en: "VR Salon: Paradise! 2" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — VR 살롱 파라다이스 앞", en: "Ijincho — outside VR Salon Paradise" },
-          trigger: { ko: "「VR 살롱: 파라다이스!」 클리어 후 타시로에게 접근", en: "After clearing Case 12, approach Tashiro outside the salon." },
-          body: { ko: "전편의 후폭풍 — 사기 의혹을 받은 점장을 변호. 법정 풍 추궁 파트가 포함됩니다.", en: "Fallout from Case 12 — defend the manager against fraud allegations in a courtroom-style grilling." },
-          reward: { ko: "SP + VR 살롱 추가 미션 해금", en: "SP + extra VR Salon missions" },
+          "number": 24,
+          "title": {
+            "ko": "전파 탐정: 등불이 다 타기 전에",
+            "en": "Radio Wave Detective: Before the Light Fades"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "23번 이후 헬로 워크 근처 상공의 드론을 전파 탐지기로 조사한다. 신호를 따라 오토히메 랜드 뒤편의 조종자를 찾아 추격한다.",
+            "en": "After No. 23, scan the drone above Hello Work, trace its signal to the operator behind Otohime Land, and complete the chase."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294960"
+          }
         },
         {
-          number: 14,
-          title: { ko: "이진초 드론 레이스 개막!", en: "Ijincho Drone Race Opens!" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 드론 레이스장", en: "Ijincho — Drone Race arena" },
-          trigger: { ko: "드론 레이스장에서 발생", en: "Triggered at the Drone Race arena." },
-          body: { ko: "드론 레이스 미니게임 도입부. 첫 코스를 클리어하면 전 코스가 해금됩니다.", en: "Intro for the Drone Race minigame. Clear the first track to unlock the full circuit." },
-          reward: { ko: "SP + 드론 파츠", en: "SP + drone parts" },
+          "number": 25,
+          "title": {
+            "ko": "전파 탐정: 지갑은 듣고 있었다",
+            "en": "Radio Wave Detective: The Wallet Was Listening"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 24번을 완료하고 걸스 바이트 근처 주차장의 지갑을 탐지기로 조사한다. 란포를 불러 주인을 찾는다.",
+            "en": "From Chapter 6, after No. 24, scan the wallet in the parking lot near Girl's Bite and follow Ranpo to its owner."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295091"
+          }
         },
         {
-          number: 15,
-          title: { ko: "선인 이야마의 재난", en: "Hermit Iyama's Calamity" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 이세자키 로드", en: "Ijincho — Isezaki Road" },
-          trigger: { ko: "메인 스토리 중 강제 발생", en: "Auto-triggered during the main story." },
-          body: { ko: "괴짜 「선인」 이야마가 곤란에 처해 야가미가 도움. 후속 No.16으로 이어집니다.", en: "Eccentric 'hermit' Iyama is in trouble. Help him out — leads into Case 16." },
-          reward: { ko: "SP + 이야마의 선약(회복 아이템)", en: "SP + Iyama's Elixir recovery item" },
+          "number": 26,
+          "title": {
+            "ko": "전파 탐정: 노려진 세이료 고교",
+            "en": "Radio Wave Detective: Seiryo Targeted"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "25번 이후 낮에 세이료 고등학교 입구를 탐지기로 조사한다. 식당 자판기, 체육관 콘센트, 2층 사물함, 댄스부 상자, 미스터리 연구회 천장의 다섯 장치를 찾고 관리인을 제압한다. 댄스부원이 없다면 해당 청춘 스토리를 진행해 돌아오게 한다.",
+            "en": "After No. 25, scan the school entrance during the day. Find devices in the cafeteria vending machine, gym outlet, upstairs locker, dance-club boxes, and MRC ceiling, then defeat the custodian. If the dancer is absent, advance the Dance Club story until she returns."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295101"
+          }
         },
         {
-          number: 16,
-          title: { ko: "선인 이야마: 기원의 탐구", en: "Hermit Iyama: Origin Hunt" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 차이나타운 이야마의 선약상", en: "Ijincho — Chinatown, Iyama's Elixir Shop" },
-          trigger: { ko: "「선인 이야마의 재난」 클리어 후 이야마와 대화", en: "After clearing Case 15, talk to Iyama." },
-          body: { ko: "선약 재료를 모아 이야마에게 장미 → 마늘 → 네잎클로버 순으로 전달하면 클리어됩니다.", en: "Gather the extract materials and deliver them to Iyama in turn: the roses, the garlic, then the four leaf clover." },
-          reward: { ko: "선약 레시피 3종(윌로 스네이크·러싱 타이거 외)", en: "Three extract recipes, including Willow Snake and Rushing Tiger" },
+          "number": 27,
+          "title": {
+            "ko": "전파 탐정: 어둠의 밑바닥에서",
+            "en": "Radio Wave Detective: From the Dark Below"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "26번 이후 츠루카메 다리 근처 맨홀에서 신호를 찾는다. 나온 여성의 몸에 탐지기를 향해 숨겨진 장치를 확인한다.",
+            "en": "After No. 26, scan the manhole near Tsurukame Bridge, then scan the woman who emerges to locate her hidden bug."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295143"
+          }
         },
         {
-          number: 17,
-          title: { ko: "새로운 파트너?", en: "A New Partner?" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 요코하마 99과", en: "Ijincho — Yokohama 99" },
-          trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
-          body: { ko: "탐정견을 따라간 뒤 나타나는 야쿠자를 제압하면 탐정견이 동료가 됩니다.", en: "Follow the detective dog and take down the yakuza who show up — the dog joins you afterwards." },
-          reward: { ko: "탐정견 · 50,000엔 · SP 3,500", en: "Detective Dog · ¥50,000 · 3,500 SP" },
+          "number": 28,
+          "title": {
+            "ko": "전파 탐정: 숨은 맛",
+            "en": "Radio Wave Detective: The Hidden Flavor"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "27번 이후 베이사이드 거리 계단 위 라멘 그릇에서 신호를 찾는다. 그릇을 수거하는 남자를 미행하고 마지막 전투를 마친다.",
+            "en": "After No. 27, scan the ramen bowl above the Bayside Street stairs, tail the man collecting it, and win the fight."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295174"
+          }
         },
         {
-          number: 18,
-          title: { ko: "복면 작가 주몬지 카즈히토의 혼란", en: "Masked Novelist Jumonji's Crisis" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "카무로초 — 텐카이치 거리 제1빌딩 3층", en: "Kamurocho — Tenkaichi-dori Bldg 1, 3F" },
-          trigger: { ko: "요코하마 99과 의뢰 수령", en: "Accept the job from the Yokohama 99 board." },
-          body: { ko: "카무로초 사무실에서 의뢰인을 만나 주몬지 카즈히토 관계자들을 조사합니다. 옥상의 사나다에게 말을 붙여 입을 열게 한 뒤 사무실로 돌아가 정체불명의 냄새를 밝혀내고, 수상한 남자를 붙잡아 격파하면 클리어됩니다.", en: "Meet the client at their Kamurocho office and question the members of Kazuhito Jumonji. Talk to Sanada on the rooftop and get him talking, head back to the office to work out the unknown odor, then catch and defeat the suspicious man." },
-          reward: { ko: "쇼와 결투 기록: 지 · 100,000엔 · SP 5,000", en: "Showa Duel Records: Earth · ¥100,000 · 5,000 SP" },
+          "number": 29,
+          "title": {
+            "ko": "전파 탐정: 마지막 야반도주",
+            "en": "Radio Wave Detective: The Final Vanishing"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "28번 이후 밤에 야반도주 키워드를 입수해 후쿠토쿠 공원 근처로 간다. 가족의 짐에 있는 멀티탭을 탐지기로 조사하고 야쿠자를 쓰러뜨린다.",
+            "en": "After No. 28, obtain the fleeing-overnight keyword at night. Visit the family near Fukutoku Park, scan their power strip, and defeat the yakuza."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295182"
+          }
         },
         {
-          number: 19,
-          title: { ko: "도주한 게임 크리에이터", en: "The Runaway Game Creator" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 벳테 키친", en: "Ijincho — Vette Kitchen" },
-          trigger: { ko: "요코하마 99과 의뢰 수령", en: "Accept the job from the Yokohama 99 board." },
-          body: { ko: "벳테 키친에서 의뢰인을 만난 뒤 사쿠라가와 거리에서 시노노메를 찾습니다. 단서를 확보하고 냄새를 따라간 다음, 키누가와를 제압하면 클리어됩니다.", en: "Meet the client at Vette Kitchen, then look for Shinonome on Sakura River Street. Find a clue on him, follow the scent, and cool Kinugawa's jets." },
-          reward: { ko: "선약 레시피: 다이 하드 · 150,000엔 · SP 5,000", en: "Extract Recipe: Die Hard · ¥150,000 · 5,000 SP" },
-        },
-        {
-          number: 20,
-          title: { ko: "폭풍을 부르는 로케 테스트", en: "The Storm-Calling Location Test" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 산업회관 빌딩 앞", en: "Ijincho — outside Industry Hall" },
-          trigger: { ko: "「도주한 게임 크리에이터」 클리어 후 의뢰", en: "After clearing Case 19, take the follow-up job." },
-          body: { ko: "오키자키를 만난 뒤 키누가와를 제압하면 클리어되며, 에어셀리오스가 해금됩니다.", en: "Meet Okizaki and cool Kinugawa's jets — clearing it unlocks Aircelios." },
-          reward: { ko: "에어셀리오스 해금 · 강화 콘택트 1 · 100,000엔 · SP 5,000", en: "Aircelios unlocked · Enhancement Contacts 1 · ¥100,000 · 5,000 SP" },
-        },
-        {
-          number: 21,
-          title: { ko: "전파 탐정: 입문편", en: "Radio Wave Detective: Intro" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 베이사이드 거리", en: "Ijincho — Bayside St." },
-          trigger: { ko: "메인 스토리 진행 중 강제 발생", en: "Auto-triggered during the main story." },
-          body: { ko: "전파 탐지기를 받는 도입 사건. 이후 No.22~30 「전파 탐정」 체인이 풀립니다.", en: "Hands you the radio detector. Unlocks the Radio Wave Detective chain (Cases 22–30)." },
-          reward: { ko: "전파 탐지기 입수 + SP", en: "Radio detector + SP" },
-        },
-        {
-          number: 22,
-          title: { ko: "전파 탐정: 방황하는 도청기", en: "Radio Wave Detective: The Wandering Bug" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 이세자키 로드", en: "Ijincho — Isezaki Road" },
-          trigger: { ko: "「입문편」 클리어 후 빨간 옷의 여성을 조사", en: "After Case 21, scan the woman in red." },
-          body: { ko: "모모야마의 클럽으로 향하면 클리어됩니다.", en: "Head to Momoyama's club." },
-          reward: { ko: "10,000엔 · SP 2,000", en: "¥10,000 · 2,000 SP" },
-        },
-        {
-          number: 23,
-          title: { ko: "전파 탐정: 사랑, 잡아주세요", en: "Radio Wave Detective: Catch My Love" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 게임 센터 사사키", en: "Ijincho — Game Center Sasaki" },
-          trigger: { ko: "전편 클리어 후 인형 뽑기 인형을 조사", en: "After Case 22, scan the crane-game plush." },
-          body: { ko: "전파를 내보내는 인형을 크레인 게임으로 획득한 뒤 토루를 격파하면 클리어됩니다.", en: "Win the signal-emitting toy from the crane game, then defeat Toru." },
-          reward: { ko: "50,000엔 · SP 3,500", en: "¥50,000 · 3,500 SP" },
-        },
-        {
-          number: 24,
-          title: { ko: "전파 탐정: 등불이 다 타기 전에", en: "Radio Wave Detective: Before the Light Fades" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 중앙 거리 헬로워크 부근", en: "Ijincho — near the Central St. Hello Work" },
-          trigger: { ko: "전편 클리어 후 드론을 조사", en: "After Case 23, scan the drone." },
-          body: { ko: "드론 신호를 추적해 주인을 찾아낸 뒤, 빠르게 달아나는 노인을 붙잡으면 클리어됩니다.", en: "Track the drone signal back to its owner, then catch the speedy old-timer." },
-          reward: { ko: "100,000엔 · SP 5,000", en: "¥100,000 · 5,000 SP" },
-        },
-        {
-          number: 25,
-          title: { ko: "전파 탐정: 지갑은 듣고 있었다", en: "Radio Wave Detective: The Wallet Was Listening" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 걸스 바이트 앞", en: "Ijincho — outside Girl's Bite" },
-          trigger: { ko: "전편 클리어 후 지갑을 조사", en: "After Case 24, scan the wallet." },
-          body: { ko: "지갑의 진짜 주인을 찾아내면 클리어됩니다.", en: "Find the wallet's rightful owner." },
-          reward: { ko: "50,000엔 · SP 3,500", en: "¥50,000 · 3,500 SP" },
-        },
-        {
-          number: 26,
-          title: { ko: "전파 탐정: 노려진 세이료 고교", en: "Radio Wave Detective: Seiryo Targeted" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 세이료 고교", en: "Ijincho — Seiryo High" },
-          trigger: { ko: "전편 클리어 후 문을 조사", en: "After Case 25, scan the door." },
-          body: { ko: "세이료 고교 안에서 신호 발신원을 추적하고 오구로를 제압하면 클리어됩니다.", en: "Track the signal source inside Seiryo High and take down Oguro." },
-          reward: { ko: "150,000엔 · SP 5,000", en: "¥150,000 · 5,000 SP" },
-        },
-        {
-          number: 27,
-          title: { ko: "전파 탐정: 어둠의 밑바닥에서", en: "Radio Wave Detective: From the Dark Below" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 츠루카메 다리 부근", en: "Ijincho — near Tsurukame Bridge" },
-          trigger: { ko: "전편 클리어 후 맨홀을 조사", en: "After Case 26, scan the manhole." },
-          body: { ko: "여성에게 부착된 도청기를 찾아내면 클리어됩니다.", en: "Find the bug planted on the woman." },
-          reward: { ko: "70,000엔 · SP 5,000", en: "¥70,000 · 5,000 SP" },
-        },
-        {
-          number: 28,
-          title: { ko: "전파 탐정: 숨은 맛", en: "Radio Wave Detective: The Hidden Flavor" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 베이사이드 거리", en: "Ijincho — Bayside St." },
-          trigger: { ko: "전편 클리어 후 라멘 그릇을 조사", en: "After Case 27, scan the ramen bowl." },
-          body: { ko: "수상한 남자를 미행한 뒤 불량배들을 격파하면 클리어됩니다.", en: "Tail the suspicious man, then defeat the punks." },
-          reward: { ko: "100,000엔 · SP 8,000", en: "¥100,000 · 8,000 SP" },
-        },
-        {
-          number: 29,
-          title: { ko: "전파 탐정: 마지막 야반도주", en: "Radio Wave Detective: The Final Vanishing" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
-          trigger: { ko: "전편 클리어 후 버즈 워드 「야반도주」를 조사", en: "After Case 28, investigate Buzz word 'Night Flight'." },
-          body: { ko: "밤에 야반도주 소문을 쫓아 도청기를 찾아내고, 나타나는 야쿠자를 격파하면 클리어됩니다.", en: "At night, chase the rumor about people skipping town, find the bug and defeat the yakuza." },
-          reward: { ko: "150,000엔 · SP 10,000", en: "¥150,000 · 10,000 SP" },
-        },
-        {
-          number: 30,
-          title: { ko: "전파 탐정: 해결편", en: "Radio Wave Detective: Resolution" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
-          trigger: { ko: "「마지막 야반도주」 클리어 후 자동 발생", en: "Auto-triggers after Case 29." },
-          body: { ko: "부패한 형사를 추적하고 란포를 따라간 뒤 오가미를 격파하면 전파 탐정 라인이 마무리됩니다.", en: "Go after the corrupt detective, follow Ranpo and defeat Ogami to close out the Dastardly Detective line." },
-          reward: { ko: "200,000엔 · SP 20,000", en: "¥200,000 · 20,000 SP" },
-        },
-      ],
+          "number": 30,
+          "title": {
+            "ko": "전파 탐정: 해결편",
+            "en": "Radio Wave Detective: Resolution"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "29번 직후 자동으로 이어진다. 란포를 불러 흔적을 쫓고 도착한 곳의 흰색 차량을 조사한 뒤 오가미를 쓰러뜨린다.",
+            "en": "This begins immediately after No. 29. Follow Ranpo, inspect the white vehicle at the destination, and defeat Ogami."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295184"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "4장 — 청춘 스토리 가지치기", en: "Chapter 4 — School Story Branches" },
-      items: [
+      "title": {
+        "ko": "그림 찾기·청춘 스토리·최종 의뢰",
+        "en": "Squirrel Search, School Stories and final cases"
+      },
+      "items": [
         {
-          number: 4,
-          title: { ko: "에비스의 얼굴도 세 번까지", en: "Even Ebisu Won't Take a Fourth" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "세이료 고교 3층", en: "Seiryo High — 3F" },
-          trigger: { ko: "3학년 교실 복도에서 발생", en: "Triggered in the 3rd-year corridor." },
-          body: { ko: "미스연에서 아마사와에게 말을 건 뒤 교무실의 에비스 선생을 찾아갑니다. 선생을 노린 함정을 찾아 경고하기를 세 차례 반복하고, 마지막에 불량배들을 혼내 준 다음 에비스 선생을 제압하면 클리어됩니다.", en: "Talk to Amasawa at the MRC, then find Ebisu-sensei in the Faculty Room. Find the traps set for him and warn him, chasing him down and repeating the hunt three times over, then teach the punks a lesson and finally subdue Ebisu-sensei himself." },
-          reward: { ko: "50,000엔 · SP 3,500", en: "¥50,000 · 3,500 SP" },
+          "number": 31,
+          "title": {
+            "ko": "신경 쓰이는 그 그림",
+            "en": "That Painting on My Mind"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 학교 근처 다람쥐 그림을 보는 소녀와 대화한다. 그림이 소리를 듣는 모습임을 확인하고 집음기로 벽의 조명을 조사한다. 이후 그림 찾기가 열린다.",
+            "en": "In Chapter 5, speak to the girl beside the school squirrel drawing. Identify its listening pose and inspect the wall lamp with the Noise Amp to unlock Squirrel Search."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295099"
+          }
         },
         {
-          number: 6,
-          title: { ko: "캇파의 행방", en: "Whereabouts of the Kappa" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "이진초 — 사쿠라가와 거리 북쪽", en: "Ijincho — Sakuragawa St. North" },
-          trigger: { ko: "정장 차림 남자와 술취한 남자 대화에 끼어들기", en: "Cut into the conversation between the suit and the drunk." },
-          body: { ko: "캇파 석상을 부순 범인을 격파하고(6,900엔·SP 690), 이어서 캇파를 들고 달아나는 남자를 쫓아 붙잡으면(50,000엔·SP 3,500) 클리어됩니다.", en: "Defeat the assailant who smashed the kappa statue (¥6,900 and 690 SP), then chase down the runner making off with the kappa (¥50,000 and 3,500 SP)." },
-          reward: { ko: "프리 패스 권 4 · 합계 56,900엔 · SP 4,190", en: "Free Pass voucher 4 · ¥56,900 total · 4,190 SP" },
+          "number": 32,
+          "title": {
+            "ko": "라스트 픽처",
+            "en": "The Last Picture"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "다른 다람쥐 그림 55곳을 조사한 뒤 후쿠토쿠 공원의 후타바를 만난다. 마지막 그림을 확인하고 집음기로 조형물 꼭대기를 조사한다.",
+            "en": "After investigating the other 55 squirrel drawings, meet Futaba at Fukutoku Park. Inspect the final drawing and use the Noise Amp on top of the structure."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295183"
+          }
         },
         {
-          number: 31,
-          title: { ko: "신경 쓰이는 그 그림", en: "That Painting on My Mind" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이진초 — 세이료 고교 입구 근처", en: "Ijincho — near Seiryo High entrance" },
-          trigger: { ko: "다람쥐 벽화 옆 여학생과 대화", en: "Talk to the girl beside the squirrel mural." },
-          body: { ko: "관찰 모드를 사용하고 소리에 집중하면 클리어되며, 다람쥐 수색이 해금됩니다.", en: "Use Observation and listen carefully — clearing it unlocks the Squirrel Search." },
-          reward: { ko: "다람쥐 수색 해금 · 미신 미식가 가이드 · 35,000엔 · SP 2,000", en: "Squirrel Search unlocked · Superstitious Eater's Guide · ¥35,000 · 2,000 SP" },
+          "number": 33,
+          "title": {
+            "ko": "아마자와 가문의 저주",
+            "en": "The Amazawa Family Curse"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 저녁에 미스터리 연구회의 아마사와에게 말을 건다. 플라주, 에비스야, 다트와 배팅 센터의 조사를 따라간다. 작업복으로 갈아입고 수상한 남자와 싸운 뒤 고양이 장식의 눈과 목걸이를 조사한다. 시작 후 완료 전까지 다른 일반 이벤트 진행이 제한된다.",
+            "en": "In Chapter 6, speak to Amasawa at the MRC in the evening. Follow the investigation through Plage, Ebisu Pawn, darts, and the batting center. Change into work clothes, fight the suspect, and inspect the cat ornament's eyes and collar. Other ordinary events are restricted until this case is finished."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295104"
+          }
         },
         {
-          number: 32,
-          title: { ko: "라스트 픽처", en: "The Last Picture" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "이진초 — 후쿠토쿠 공원", en: "Ijincho — Fukutoku Park" },
-          trigger: { ko: "페인트 서치 55곳을 모두 클리어 시 발생", en: "Clear all 55 Paint Search spots." },
-          body: { ko: "다람쥐 55마리를 찾은 뒤 다람쥐 그림을 조사하고 그림에 담긴 의미를 추리하면 클리어됩니다.", en: "With 55 squirrels found, look for the squirrel picture and think about what is in it." },
-          reward: { ko: "미신 미식가 가이드 · 50,000엔 · SP 15,000", en: "Superstitious Eater's Guide · ¥50,000 · 15,000 SP" },
+          "number": 34,
+          "title": {
+            "ko": "첫 심부름",
+            "en": "First Errand"
+          },
+          "chapter": {
+            "ko": "최종장",
+            "en": "Finale"
+          },
+          "body": {
+            "ko": "최종장에 요코하마99에서 의뢰를 받고 웨트 키친으로 간다. 토오루를 미행하고 얼굴을 넣는 입간판을 이용하는 구간도 통과한다. 마지막 목소리 크기 선택은 어느 쪽이든 완료된다.",
+            "en": "In the finale, accept the Yokohama 99 request and visit Wette Kitchen. Tail Toru, including the section using the face-in-hole board. Any final voice-volume choice completes the case."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295207"
+          }
         },
         {
-          number: 33,
-          title: { ko: "아마자와 가문의 저주", en: "The Amazawa Family Curse" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "이진초 — 세이료 고교 미스연 부실", en: "Ijincho — Seiryo High Mystery Club room" },
-          trigger: { ko: "미스연 부실에서 저녁 시간에 아마자와에게 말 걸기", en: "Speak to Amazawa in the Mystery Club room in the evening." },
-          body: { ko: "저녁에 미스연으로 간 뒤 카페 플라주 → 전당포 주인 탐문 → 에비스 폰 주변 조사 순으로 진행합니다. 이어 배팅 센터 뒷문으로 돌아가 수상한 남자에게 몰래 접근해 격파하면 클리어됩니다.", en: "Go to the MRC in the evening, then work through Café Plage, questioning the pawn shop owner and inspecting the Ebisu Pawn area. Head to the Batting Center's back door, sneak up on the suspicious man and defeat him." },
-          reward: { ko: "50,000엔 · SP 10,000", en: "¥50,000 · 10,000 SP" },
+          "number": 35,
+          "title": {
+            "ko": "하루코의 이야기",
+            "en": "Haruko's Story"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "걸스 바 조사 중 하루코의 호감도를 첫 잠금 지점까지 올린 뒤 가게를 나갔다 돌아온다. 다음 잠금 지점까지 올리고 재방문하면 아버지가 찾아오는 이벤트가 진행된다.",
+            "en": "During the Girls' Bar investigation, raise Haruko's affection to each lock marker, leaving and returning between stages. The second stage brings the event with her father."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296439"
+          }
         },
         {
-          number: 34,
-          title: { ko: "첫 심부름", en: "First Errand" },
-          chapter: { ko: "최종장", en: "Final Chapter" },
-          location: { ko: "이진초 — 요코하마 99과", en: "Ijincho — Yokohama 99" },
-          trigger: { ko: "요코하마 99과 의뢰 수령", en: "Accept the job from the Yokohama 99 board." },
-          body: { ko: "벳테 키친에서 의뢰인을 만나 마나카와 대화한 뒤, 토루를 지켜보고 카이토와 함께 다시 한 번 지켜보면 클리어됩니다.", en: "Meet the client at Vette Kitchen and talk to Manaka, then watch over Toru — and watch over him again while paired with Kaito." },
-          reward: { ko: "100,000엔 · SP 10,000 · 매의 회고록(스킬북)", en: "¥100,000 · 10,000 SP · Memoirs of an Eagle (Skill Book)" },
+          "number": 36,
+          "title": {
+            "ko": "미우의 이야기",
+            "en": "Miu's Story"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "35번 완료 후 미우의 호감도를 두 잠금 지점까지 순서대로 올리고 각각 재방문한다. 미우의 신발을 전파 탐지기로 조사한 뒤 수상한 인물을 추격한다.",
+            "en": "After No. 35, raise Miu's affection through both lock markers and revisit between stages. Scan her shoes with the Detector, then chase the suspect."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296438"
+          }
         },
-      ],
+        {
+          "number": 37,
+          "title": {
+            "ko": "아야하의 이야기",
+            "en": "Ayaha's Story"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "35번 완료 후 아야하의 호감도를 두 잠금 지점까지 올리고 재방문한다. 진나이역에서 아야하를 만나 소년을 추격한 뒤 걸스 바에서 다시 대화한다.",
+            "en": "After No. 35, progress Ayaha through both affection locks. Meet her at Jinnai Station, chase the boy, and speak to her again at the bar."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296437"
+          }
+        },
+        {
+          "number": 38,
+          "title": {
+            "ko": "스텝 바이 스텝 ~1~",
+            "en": "Step by Step — Part 1"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "걸스 바 청춘 스토리를 완료하고 에밀리의 친밀도를 2로 올린다. 메시지를 받은 뒤 식사에 초대하고 진나이역 동쪽에서 만나 플라주에서 대화한다.",
+            "en": "Finish the Girls' Bar story and raise Emily's intimacy to level 2. Invite her out after her message, meet east of Jinnai Station, and complete the conversation at Plage."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296083"
+          }
+        },
+        {
+          "number": 39,
+          "title": {
+            "ko": "스텝 바이 스텝 ~2~",
+            "en": "Step by Step — Part 2"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "에밀리의 친밀도를 3으로 올리고 가게 밖에서 연락을 받는다. 진나이역 동쪽에서 만나 중식당에서 대화하고 걸스 바로 돌아간다.",
+            "en": "Raise Emily's intimacy to level 3 and receive her message outside. Meet east of Jinnai Station, talk at the Chinese restaurant, and return to the bar."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296090"
+          }
+        },
+        {
+          "number": 40,
+          "title": {
+            "ko": "스텝 바이 스텝 ~3~",
+            "en": "Step by Step — Part 3"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "에밀리의 친밀도를 4로 올린 뒤 밤에 가게 밖에서 전화를 받는다. 진나이역 동쪽의 약속 장소에서 고백 이벤트를 진행한다.",
+            "en": "At intimacy level 4, receive Emily's call outside at night and meet her east of Jinnai Station for the confession."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296089"
+          }
+        },
+        {
+          "number": 41,
+          "title": {
+            "ko": "악덕 탐정 야가미 타카유키?",
+            "en": "Yagami the Crooked Detective?"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "모든 청춘 스토리 완료 후 야가미 탐정 사무소 앞에서 시작한다. 버즈 리서처로 야가미 관련 소문을 조사하고 챔피언 거리에서 작업복으로 변장한다. 바 텐더와 탐정 사무소의 새우 칠리를 조사한 뒤 란포를 따라가 가짜 야가미 일행을 쓰러뜨린다.",
+            "en": "After completing all School Stories, investigate the rumors outside Yagami Detective Agency. Search Yagami-related Buzz posts, disguise yourself in the Champion District, visit Tender, inspect the chili shrimp at the office, and follow Ranpo to defeat the impostors."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295348"
+          }
+        },
+        {
+          "number": 42,
+          "title": {
+            "ko": "마지막 의뢰 ~리턴즈~",
+            "en": "The Final Request — Returns"
+          },
+          "chapter": {
+            "ko": "최종장",
+            "en": "Finale"
+          },
+          "body": {
+            "ko": "본편 사이드 케이스 1~41번을 모두 완료한 뒤 마지막 의뢰를 받아 아몬과 싸운다. DLC 연애 의뢰 43~54번은 이 선행 조건에 포함되지 않는다. 회복 아이템과 선약을 준비한다.",
+            "en": "Complete base-game cases 1–41, accept the final request, and defeat Amon. DLC girlfriend cases 43–54 are not prerequisites. Bring healing items and extracts."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295513"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "걸스 바이트 외전 (4장 이후)", en: "Girl's Bite Side Stories (Chapter 4+)" },
-      items: [
+      "title": {
+        "ko": "DLC — 탐정 라이프 충실 팩",
+        "en": "DLC — Detective's Essentials Pack (No.43–54)"
+      },
+      "items": [
         {
-          number: 35,
-          title: { ko: "하루코의 이야기", en: "Haruko's Story" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
-          trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
-          body: { ko: "카와사키 하루코의 친밀도를 90%까지 올린 뒤 걸스 바에서 하루코에게 말을 걸면 클리어되고 친밀도가 100%가 됩니다.", en: "Raise Haruko Kawasaki's friendship to 90%, then talk to her at the Girls' Bar to finish it and take her to 100%." },
-          reward: { ko: "하루코 친밀도 100% · 50,000엔 · SP 3,500", en: "Haruko Kawasaki friendship 100% · ¥50,000 · 3,500 SP" },
+          "number": 43,
+          "title": {
+            "ko": "내가 인형 옷을 입는 이유",
+            "en": "Why I Wear the Mascot Suit"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "DLC를 수령한 뒤 3장 이후 카무로쵸 어린이 공원의 마스코트 소문을 조사한다. 카무롭을 알아보고 집음기로 상태를 확인한 뒤 생수나 비타민 워터를 건넨다. 극장 앞 광장의 다섯 문제를 해결한다.",
+            "en": "With the DLC claimed, investigate the mascot rumor in Children's Park from Chapter 3. Identify Kamulop, inspect the suit with the Noise Amp, provide mineral or vitamin water, and resolve five incidents around Theater Square."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294958"
+          }
         },
         {
-          number: 36,
-          title: { ko: "미우의 이야기", en: "Miu's Story" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
-          trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
-          body: { ko: "아오야마 미우의 친밀도를 90%까지 올린 뒤 걸스 바에서 말을 걸고, 미우에게 탐지기를 사용해 용의자를 붙잡으면 클리어됩니다.", en: "Raise Miu Aoyama's friendship to 90%, talk to her at the Girls' Bar, then use the Detector on her and catch the suspect." },
-          reward: { ko: "미우 친밀도 100% · 50,000엔 · SP 3,500", en: "Miu Aoyama friendship 100% · ¥50,000 · 3,500 SP" },
+          "number": 44,
+          "title": {
+            "ko": "스탠드 바이 미",
+            "en": "Stand by Me"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "미나토의 친밀도를 2로 올린다. 극장 앞 광장에서 만나 알프스에서 대화하고 마지막에 포스터를 조사하여 공연의 상대역을 맡겠다고 제안한다.",
+            "en": "At Minato's intimacy level 2, meet at Theater Square, talk at Alps, inspect the poster last, and offer to be her stage partner."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295601"
+          }
         },
         {
-          number: 37,
-          title: { ko: "아야하의 이야기", en: "Ayaha's Story" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 걸스 바이트", en: "Ijincho — Girl's Bite" },
-          trigger: { ko: "청춘 스토리 「걸즈 바 조사」 진행 중", en: "While progressing the Girls Bar School Story." },
-          body: { ko: "나라 아야하의 친밀도를 90%까지 올린 뒤 역에서 만나 소년을 붙잡고, 걸스 바에서 아야하에게 말을 걸면 클리어됩니다.", en: "Raise Ayaha Nara's friendship to 90%, meet her at the station, catch the boy, then talk to her at the Girls' Bar." },
-          reward: { ko: "아야하 친밀도 100% · 50,000엔 · SP 3,500", en: "Ayaha Nara friendship 100% · ¥50,000 · 3,500 SP" },
+          "number": 45,
+          "title": {
+            "ko": "코미디 나이트 피버",
+            "en": "Comedy Night Fever"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "미나토의 친밀도를 3으로 올리고 밤에 함께 무대에 서겠다고 한다. 텐카이치 거리 입구에서 만나 극장 앞 공연장의 이벤트를 진행한다.",
+            "en": "At intimacy level 3, agree to perform with Minato at night. Meet at the Tenkaichi Street entrance and complete the stage event near Theater Square."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295610"
+          }
         },
         {
-          number: 38,
-          title: { ko: "스텝 바이 스텝 ~1~", en: "Step by Step — Part 1" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 진나이역 동쪽", en: "Ijincho — Jinnai Sta. East" },
-          trigger: { ko: "청춘 스토리 「걸즈 바」 클리어 후 에밀리와 친밀도 2", en: "After clearing the Girls Bar School Story, raise Emily's affinity to 2." },
-          body: { ko: "역 앞에서 에밀리를 만나 카페로 데려간 뒤, 머리 「아름다우시네요」 · 재킷 「분명 자주 대시받으실 것 같아요」 · 손 「손톱이 정말 귀엽네요」를 고르고 걸스 바이트로 향하면 클리어됩니다.", en: "Meet Emily in front of the station and take her to the café, then choose \"It's beautiful.\" for her hair, \"I'm sure you get hit on a lot.\" for her jacket and \"Your nails are super cute.\" for her hands, and head to Girl's Bite." },
-          reward: { ko: "친밀도 상승", en: "Intimacy up" },
+          "number": 46,
+          "title": {
+            "ko": "인형 옷 소녀로는 있을 수 없다",
+            "en": "Can't Stay a Mascot Girl Forever"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "미나토의 친밀도를 4로 올리고 이동하여 연락을 받는다. 밤에 공원으로 가는 선택지를 고르면 고백 이벤트가 진행된다.",
+            "en": "At intimacy level 4, leave to receive Minato's contact, then choose to visit the park at night for the confession."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295613"
+          }
         },
         {
-          number: 39,
-          title: { ko: "스텝 바이 스텝 ~2~", en: "Step by Step — Part 2" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 진나이역 동쪽", en: "Ijincho — Jinnai Sta. East" },
-          trigger: { ko: "에밀리 친밀도 3", en: "Raise Emily's affinity to 3." },
-          body: { ko: "역 앞에서 에밀리를 만나 중식당으로 데려간 뒤, 머리 「그저 아름답다고 생각했어요」 · 재킷 「오늘 옷 마음에 들어요」 · 가방 「친구라고 말하고 싶다 / 솔직하게 있어라」를 고르고 걸스 바이트로 향하면 클리어됩니다.", en: "Meet Emily in front of the station and take her out for Chinese food, then choose \"Just thinking how beautiful you are.\" for her hair, \"I like your outfit today.\" for her jacket and the friends / be-true-to-yourself line for her purse, and head to Girl's Bite." },
-          reward: { ko: "친밀도 상승", en: "Intimacy up" },
+          "number": 47,
+          "title": {
+            "ko": "Somebody's Watching You",
+            "en": "Somebody's Watching You"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "3장 이후 DLC를 수령하고 햣케이 거리의 쿄코와 대화한다. 연락을 받고 돌아와 세 차례 관찰을 진행한다. 매번 등장하는 고양이를 조사하고 자신을 지켜보는 존재가 고양이라고 답한다.",
+            "en": "With the DLC claimed, meet Kyoko on Hyakkei Street from Chapter 3. Return after she contacts you and complete three observation rounds. Inspect the recurring cat and identify it as the watcher."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/294966"
+          }
         },
         {
-          number: 40,
-          title: { ko: "스텝 바이 스텝 ~3~", en: "Step by Step — Part 3" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 진나이역 동쪽", en: "Ijincho — Jinnai Sta. East" },
-          trigger: { ko: "에밀리 친밀도 4 (야간 한정)", en: "Raise Emily's affinity to 4 (night only)." },
-          body: { ko: "에밀리의 친밀도가 4단계일 때 밤에 역 앞에서 만나면 에밀리 라인이 마무리됩니다.", en: "With Emily at intimacy level 4, meet her in front of the station at night to close out her line." },
-          reward: { ko: "에밀리 엔딩", en: "Emily's ending" },
-        },
-      ],
-    },
-    {
-      title: { ko: "엔드 콘텐츠", en: "Endgame" },
-      items: [
-        {
-          number: 41,
-          title: { ko: "악덕 탐정 야가미 타카유키?", en: "Yagami the Crooked Detective?" },
-          chapter: { ko: "완료 후", en: "Post-game" },
-          location: { ko: "카무로초 — 야가미 탐정 사무소 앞", en: "Kamurocho — outside Yagami Detective Agency" },
-          trigger: { ko: "전 청춘 스토리 클리어 시 발생", en: "Clear every School Story." },
-          body: { ko: "버즈 리서처로 자신을 검색한 뒤 챔피언 거리에서 탐문하고 노인에게 캐묻습니다. 변장한 상태로 살기 어린 노인들을 지나쳐 텐더에서 정보를 모으고, 마스다 조를 추궁한 다음 냄새를 따라 범인을 쫓습니다. 란포를 따라가 가짜 야가미를 격파하면 클리어됩니다.", en: "Look yourself up on the Buzz Researcher, conduct interviews in the Champion District and question the old man. Slip past the murderous old men in disguise, gather intel at Tender, question Jo Masuda, then use the scent to go after the culprit, follow Ranpo and defeat the fake Yagami." },
-          reward: { ko: "50,000엔 · SP 10,000", en: "¥50,000 · 10,000 SP" },
+          "number": 48,
+          "title": {
+            "ko": "밤의 멜로디",
+            "en": "Night Melody"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "쿄코를 보건실에서 만나 친밀도를 2로 올린 뒤 밤에 다시 방문한다. 대화 후 집까지 배웅하고 불량배를 쓰러뜨린 다음 치료 이벤트를 본다.",
+            "en": "Raise Kyoko's intimacy to level 2 at the infirmary and return at night. Complete the conversation, escort her home, defeat the thugs, and receive treatment."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296158"
+          }
         },
         {
-          number: 42,
-          title: { ko: "마지막 의뢰 ~리턴즈~", en: "The Final Request — Returns" },
-          chapter: { ko: "완료 후", en: "Post-game" },
-          location: { ko: "이진초 — 하마키타 공원", en: "Ijincho — Hamakita Park" },
-          trigger: { ko: "No.1~41 사이드 케이스를 전부 클리어", en: "Clear every Side Case from No.1 to No.41." },
-          body: { ko: "DLC를 제외한 모든 사이드 케이스를 클리어한 뒤 하마키타 공원에서 의뢰인을 만나 아몬 주조를 격파하면 클리어됩니다.", en: "With every non-DLC side case cleared, meet the client at Hamakita Park and defeat Juzo Amon." },
-          reward: { ko: "시크릿 커맨드 · 500,000엔 · SP 50,000", en: "Secret Command · ¥500,000 · 50,000 SP" },
-        },
-      ],
-    },
-    {
-      title: { ko: "DLC — 탐정 라이프 충실 팩", en: "DLC — Detective's Essentials Pack (No.43–54)" },
-      items: [
-        {
-          number: 43,
-          title: { ko: "내가 인형 옷을 입는 이유", en: "Why I Wear the Mascot Suit" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 아동 공원", en: "Kamurocho — Children's Park" },
-          trigger: { ko: "버즈 리서처 「유루캬라」로 조사 (DLC 필수)", en: "Investigate Buzz word 'Mascot' (DLC required)." },
-          body: { ko: "어린이 공원으로 가서 목소리의 주인을 찾고, 이름에 「물」이 들어간 음료를 목마른 소녀에게 건넵니다. 미나토 대신 카무롭 역할을 맡은 뒤 곤란한 주민들을 찾아 주면 클리어됩니다.", en: "Head to Children's Park, find the source of the voice and bring the parched girl a drink with \"Water\" in its name. Then fill in as Kamulop for Minato and find the troubled townsfolk." },
-          reward: { ko: "용의 눈 · 합계 200,000엔 · SP 8,000", en: "Eye of the Dragon · ¥200,000 total · 8,000 SP" },
+          "number": 49,
+          "title": {
+            "ko": "다정한 마음",
+            "en": "A Gentle Heart"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "쿄코의 친밀도를 3으로 올리고 낮에 학교 테라스의 고양이 체리에게 말을 건다. 밤에 보건실에서 쿄코를 만나 식사하러 가다가 사고 현장에서 운전자와 싸운다.",
+            "en": "At intimacy level 3, speak to Cherry the cat on the school terrace during the day. Meet Kyoko at the infirmary at night and accompany her toward dinner, then fight the driver at the accident scene."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296157"
+          }
         },
         {
-          number: 44,
-          title: { ko: "스탠드 바이 미", en: "Stand by Me" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
-          trigger: { ko: "토도 미나토 친밀도 2 (DLC 필수)", en: "Raise Minato Todo affinity to 2 (DLC)." },
-          body: { ko: "극장 광장에서 미나토를 만나 카페 알프스로 이동한 뒤, 카무롭 머리 「그걸 맡길 정도면 정말 신뢰받는군요」 · 눈 「눈꺼풀에 눈을 그린다고요?」를 비롯해 노트·애플티·포스터를 차례로 살펴보면 클리어됩니다.", en: "Meet Minato at Theatre Square and go to Café Alps, then work through the examine prompts — the Kamulop head (\"They must trust you a lot to keep that.\"), the notebook, her eyes (\"Draw eyes on your eyelids?\"), the apple tea and the poster." },
-          reward: { ko: "친밀도 상승 · 50,000엔 · SP 8,000", en: "Intimacy up · ¥50,000 · 8,000 SP" },
+          "number": 50,
+          "title": {
+            "ko": "꿈의 연장",
+            "en": "The Dream Continues"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "쿄코의 친밀도를 4로 올리고 낮에 학교 식당 자판기 앞에서 대화한다. 밤에 학교를 방문하여 전화를 받은 뒤 하버 라이트에서 만난다.",
+            "en": "At intimacy level 4, speak to Kyoko by the cafeteria vending machines during the day. Return to school at night, receive her call, and meet her at Harbor Light."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/296156"
+          }
         },
         {
-          number: 45,
-          title: { ko: "코미디 나이트 피버", en: "Comedy Night Fever" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "카무로초 — 텐카이치 거리 입구", en: "Kamurocho — Tenkaichi-dori entrance" },
-          trigger: { ko: "토도 미나토 친밀도 3 (DLC 필수)", en: "Raise Minato Todo affinity to 3 (DLC)." },
-          body: { ko: "밤에 미나토와 만난 뒤 대회장으로 향하면 클리어됩니다.", en: "At night, meet up with Minato and head to the contest venue." },
-          reward: { ko: "친밀도 상승 · 50,000엔 · SP 8,000", en: "Intimacy up · ¥50,000 · 8,000 SP" },
+          "number": 51,
+          "title": {
+            "ko": "변태 사중주",
+            "en": "Pervert Quartet"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "DLC 수령, 43번 완료, 폭주족 청춘 스토리 진행이 필요하다. 탐정 사무소에서 의뢰를 받아 버즈 리서처와 란포로 변태들을 추적한다. 호텔 거리에서 집음기로 벽의 남자를 찾고 최종 건물에서는 침입 경로를 조사한다. 1·2층의 방들을 조사한 뒤 3층 전투를 마친다.",
+            "en": "Claim the DLC, complete No. 43, and advance the Biker Gang story. Accept the agency request and trace the perverts using Buzz Researcher and Ranpo. Use the Noise Amp in the Hotel District, find the final building's entry route, inspect the rooms on floors 1 and 2, and fight on floor 3."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295266"
+          }
         },
         {
-          number: 46,
-          title: { ko: "인형 옷 소녀로는 있을 수 없다", en: "Can't Stay a Mascot Girl Forever" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "카무로초 — M 사이드 카페", en: "Kamurocho — M SIDE CAFE" },
-          trigger: { ko: "토도 미나토 친밀도 4 (DLC 필수)", en: "Raise Minato Todo affinity to 4 (DLC)." },
-          body: { ko: "미나토의 친밀도가 4단계일 때 밤에 어린이 공원에서 만나면 미나토 라인이 마무리됩니다.", en: "With Minato at intimacy level 4, meet her at Children's Park at night to close out her line." },
-          reward: { ko: "50,000엔 · SP 8,000", en: "¥50,000 · 8,000 SP" },
+          "number": 52,
+          "title": {
+            "ko": "달이 바뀌면 마음도 바뀐다 ~1~",
+            "en": "As the Months Turn — Part 1"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "51번 이후 포켓 카페에서 츠키노와 교류하여 첫 이벤트를 연다. 낮이나 저녁에 학교 체육관으로 가서 조건에 맞는 피구 동아리 사진을 찍고 카페에서 대화한다.",
+            "en": "After No. 51, build intimacy with Tsukino at Pocket Cafe. Visit the school gym during the day or evening, take the required dodgeball-club photograph, and complete the café conversation."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295539"
+          }
         },
         {
-          number: 47,
-          title: { ko: "Somebody's Watching You", en: "Somebody's Watching You" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "이진초 — 햐쿠케이 거리", en: "Ijincho — Hyakkei St." },
-          trigger: { ko: "DLC 「탐정 라이프 충실 팩」 수령 필수", en: "DLC 'Detective's Essentials Pack' redemption required." },
-          body: { ko: "하카세 쿄코의 전화를 기다렸다가 그녀가 있는 햐쿠케이 거리로 향한 뒤, 하카세를 응시하는 인물을 찾아내면 클리어됩니다.", en: "Wait for Kyoko Hakase's call, head to Hyakkei Street where she is, and find the person gazing at her." },
-          reward: { ko: "50,000엔 · SP 3,500", en: "¥50,000 · 3,500 SP" },
+          "number": 53,
+          "title": {
+            "ko": "달이 바뀌면 마음도 바뀐다 ~2~",
+            "en": "As the Months Turn — Part 2"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "츠키노의 친밀도를 2로 올리고 댄스부 청춘 스토리를 완료한다. 낮이나 저녁에 학교로 가서 댄스부 사진을 찍고 대화와 교무실 방문을 마친 뒤 역까지 배웅한다.",
+            "en": "Reach Tsukino's intimacy level 2 and finish the Dance Club story. Visit during the day or evening, photograph the dancers, complete the conversation and faculty-room visit, and escort her to the station."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295545"
+          }
         },
         {
-          number: 48,
-          title: { ko: "밤의 멜로디", en: "Night Melody" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "세이료 고교 — 보건실", en: "Seiryo High — Nurse's office" },
-          trigger: { ko: "하카세 쿄코 친밀도 2 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 2 (DLC)." },
-          body: { ko: "친밀도 2단계에서 밤에 하카세와 함께 걸은 뒤, 나타나는 불량배들을 격파하면 클리어됩니다.", en: "At intimacy level 2, walk with Hakase at night and defeat the thugs who appear." },
-          reward: { ko: "친밀도 상승", en: "Intimacy up" },
-        },
-        {
-          number: 49,
-          title: { ko: "다정한 마음", en: "A Gentle Heart" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "세이료 고교 — 교외 테라스", en: "Seiryo High — outdoor terrace" },
-          trigger: { ko: "하카세 쿄코 친밀도 3 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 3 (DLC)." },
-          body: { ko: "낮에 고양이를 불러 세운 뒤 테이블과 의자 · 게시판 · 벚나무 · 학생들을 살피고, 쿄코에게 「일광욕이 몸에 좋은가요?」를 선택합니다. 밤에 보건실 → 식당으로 이동해 운전자를 응징하면 클리어됩니다.", en: "At noon, call out to the cat, then examine the tables and chairs, the bulletin board, the cherry tree and the students, and ask Kyoko \"So is sunbathing good for the body?\". Go to the Nurse's Office at night, then to the restaurant, and punish the driver." },
-          reward: { ko: "스태미난 X", en: "Staminan X" },
-        },
-        {
-          number: 50,
-          title: { ko: "꿈의 연장", en: "The Dream Continues" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "세이료 고교 — 식당", en: "Seiryo High — cafeteria" },
-          trigger: { ko: "하카세 쿄코 친밀도 4 (DLC 필수)", en: "Raise Kyoko Hakase affinity to 4 (DLC)." },
-          body: { ko: "쿄코의 친밀도가 4단계일 때 낮에 더 하버 라이트에서 만나면 쿄코 라인이 마무리됩니다.", en: "With Kyoko at intimacy level 4, meet her at The Harbor Light during the day to close out her line." },
-          reward: { ko: "보스 라이트 슈거", en: "BOSS Light Sugar" },
-        },
-        {
-          number: 51,
-          title: { ko: "변태 사중주", en: "Pervert Quartet" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "카무로초 — 야가미 탐정 사무소 의뢰", en: "Kamurocho — Yagami Detective Agency request" },
-          trigger: { ko: "폭주족 청춘 스토리 진행 + 「내가 인형 옷을 입는 이유」 클리어 (DLC 필수)", en: "Progress the Biker School Story and clear Case 43 (DLC)." },
-          body: { ko: "카무로초로 달아난 변태들을 차례로 추적합니다. 텐더에서 정보를 모아 마리에게 속옷을 물어보고, 그 속옷으로 팬티 교수를 찾아 제자들을 격파합니다. 이어 애스 캐첨을 찾고 카무롭에게 말을 건 뒤 나머지도 같은 방식으로 정리하면 클리어됩니다.", en: "Track the perverts who escaped to Kamurocho one at a time. Gather intel at Tender, ask Mari about her panties and use the underwear to find Professor Panty, then beat his students. Next track down Ass Catchem and talk to Kamulop, and work through the rest the same way." },
-          reward: { ko: "합계 153,000엔 · SP 10,300", en: "¥153,000 total · 10,300 SP" },
-        },
-        {
-          number: 52,
-          title: { ko: "달이 바뀌면 마음도 바뀐다 ~1~", en: "As the Months Turn — Part 1" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
-          trigger: { ko: "사오토메 츠키노 친밀도 상승 (DLC 필수)", en: "Raise Tsukino Saotome's affinity (DLC)." },
-          body: { ko: "낮이나 저녁에 츠키노에게 말을 건 뒤 세이료 체육관에서 피구부를 촬영합니다. 이후 함께 쉬면서 노트북 · 귀걸이를 살피고, 셔츠 「그 옷 정말 잘 어울려요」 · 머리 「많이 어른스러워졌다고 말해 준다」 · 커피를 차례로 고르면 클리어됩니다.", en: "Talk to Tsukino during the day or evening, then head to the Seiryo gym and photograph the dodgeball club. Chill with her afterwards and work the examine prompts: laptop, earrings, \"That outfit looks great on you.\" for her shirt, telling her how mature she has become for her hair, then the coffee." },
-          reward: { ko: "친밀도 상승 · 50,000엔 · SP 10,000", en: "Intimacy up · ¥50,000 · 10,000 SP" },
-        },
-        {
-          number: 53,
-          title: { ko: "달이 바뀌면 마음도 바뀐다 ~2~", en: "As the Months Turn — Part 2" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
-          trigger: { ko: "사오토메 츠키노 친밀도 2 (DLC 필수)", en: "Raise Tsukino's affinity to 2 (DLC)." },
-          body: { ko: "낮이나 저녁에 츠키노에게 말을 건 뒤 댄스부로 가서 촬영하고, 교무실을 거쳐 츠키노를 역까지 바래다주면 클리어됩니다.", en: "Talk to Tsukino during the day or evening, head to the dance club and photograph it, stop by the Faculty Room, then walk her to the station." },
-          reward: { ko: "친밀도 상승", en: "Intimacy up" },
-        },
-        {
-          number: 54,
-          title: { ko: "달이 바뀌면 마음도 바뀐다 ~3~", en: "As the Months Turn — Part 3" },
-          chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "이진초 — 킷사 포켓", en: "Ijincho — Kissa Pocket" },
-          trigger: { ko: "사오토메 츠키노 친밀도 3 (DLC 필수)", en: "Raise Tsukino's affinity to 3 (DLC)." },
-          body: { ko: "츠키노의 친밀도가 3단계일 때 밤에 카페에서 만나면 츠키노 라인이 마무리됩니다.", en: "With Tsukino at intimacy level 3, meet her at the café at night to close out her line." },
-          reward: { ko: "츠키노 엔딩", en: "Tsukino's ending" },
-        },
-      ],
-    },
-  ],
+          "number": 54,
+          "title": {
+            "ko": "달이 바뀌면 마음도 바뀐다 ~3~",
+            "en": "As the Months Turn — Part 3"
+          },
+          "chapter": {
+            "ko": "선행 조건 충족 후",
+            "en": "After prerequisites"
+          },
+          "body": {
+            "ko": "츠키노의 친밀도를 3으로 올린 뒤 시간을 밤으로 바꾼다. 연락을 받고 포켓 카페에서 고백 이벤트를 진행한다.",
+            "en": "Reach Tsukino's intimacy level 3, switch to nighttime, and follow her contact to the confession at Pocket Cafe."
+          },
+          "source": {
+            "label": "GameWith — ロストジャッジメント サイドケース",
+            "url": "https://gamewith.jp/lostjudgment/article/show/295556"
+          }
+        }
+      ]
+    }
+  ]
 };

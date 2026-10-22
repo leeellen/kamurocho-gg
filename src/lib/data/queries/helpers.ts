@@ -1,14 +1,12 @@
 import {
   localizeAchievementDescription,
   localizeAchievementName,
-  localizeGuideText,
   parseAchievementSidecar,
 } from "@/lib/achievement-text";
 import { getCuratedGuide, pickCuratedList, pickCuratedString, pickCuratedVideos } from "@/lib/guides/curated";
-import { structureGuide } from "@/lib/guides/structured";
 import { type Locale } from "@/lib/i18n";
 import type { CuratedGame } from "@/lib/content";
-import { MISSABLES } from "@/lib/content";
+import { EXTERNAL_GUIDES, MISSABLES } from "@/lib/content";
 
 import {
   buildDisplayMissables,
@@ -20,11 +18,7 @@ import {
   coercePercent,
   decodeHtmlEntities,
   normalizeComparableText,
-  normalizeConfidence,
   parseJsonish,
-  pickLocaleGuide,
-  sanitizeGuideLines,
-  sanitizeGuideSummary,
 } from "../sanitize";
 import type {
   AchievementRow,
@@ -76,28 +70,15 @@ function pickSteamShortDescription({
   return en || ko;
 }
 
-/**
- * Every locale's guide body for one achievement, joined. `inferMissable` reads
- * this so the missable flag is the same on the Korean and English pages.
- */
-function makeAllGuideText(guidesByAchievement: Map<number, GuideRow[]>) {
-  return (achievementId: number) =>
-    (guidesByAchievement.get(achievementId) ?? [])
-      .map((guide) => guide.content ?? "")
-      .join("\n");
-}
-
 export function buildSeriesGameCard({
   curated,
   game,
   rows,
-  guidesByAchievement,
   locale,
 }: {
   curated: CuratedGame;
   game: GameRow | null | undefined;
   rows: AchievementRow[];
-  guidesByAchievement: Map<number, GuideRow[]>;
   locale: Locale;
 }): SeriesGameCard {
   const gameSidecar = parseJsonish(game?.img_logo_url ?? null) as GameSidecar | null;
@@ -113,7 +94,6 @@ export function buildSeriesGameCard({
   // inside it. Use the shared comparable-text normalizer so brackets and
   // em-dashes don't break substring matches — must stay in lock-step with
   // buildDisplayMissables() in ../missables.ts so both surfaces agree.
-  const allGuideText = makeAllGuideText(guidesByAchievement);
   const curatedTitleHay: string[] = [];
   for (const chapter of MISSABLES[curated.appId] ?? []) {
     for (const item of chapter.items) {
@@ -136,7 +116,8 @@ export function buildSeriesGameCard({
       sidecar,
     });
     return {
-      missable: inferMissable(achievement, allGuideText(achievement.id)),
+      missable: getCuratedGuide(curated.appId, achievement.api_name)?.missable
+        ?? inferMissable(achievement, JSON.stringify(getCuratedGuide(curated.appId, achievement.api_name) ?? {})),
       name: localizedName,
     };
   });
@@ -153,8 +134,8 @@ export function buildSeriesGameCard({
       coercePercent(achievement.global_percent) <= 10,
   ).length;
   const guideCoverage = rows.filter((achievement) => {
-    const guide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
-    return Boolean(guide?.source_url);
+    const guide = getCuratedGuide(curated.appId, achievement.api_name);
+    return Boolean(guide?.sourceUrl && (guide.summary || guide.steps?.length));
   }).length;
 
   return {
@@ -194,7 +175,6 @@ export function buildGamePageData({
   curated,
   game,
   gameAchievements,
-  guides,
   locale,
 }: {
   curated: CuratedGame;
@@ -205,30 +185,9 @@ export function buildGamePageData({
 }): GamePageData | null {
   if (!game) return null;
 
-  const guidesByAchievement = new Map<number, GuideRow[]>();
-  for (const guide of guides) {
-    const current = guidesByAchievement.get(guide.achievement_id) ?? [];
-    current.push(guide);
-    guidesByAchievement.set(guide.achievement_id, current);
-  }
-  const allGuideText = makeAllGuideText(guidesByAchievement);
-  const guideTextReplacements = gameAchievements
-    .map((achievement) => {
-      const sidecar = parseAchievementSidecar(achievement.category ?? null);
-      const en = achievement.display_name?.trim();
-      const ko = sidecar?.nameKo?.trim();
-      return en && ko && en !== ko ? { en, ko } : null;
-    })
-    .filter((entry): entry is { en: string; ko: string } => Boolean(entry));
-
   const mappedCards: GameAchievementCard[] = gameAchievements
     .map((achievement) => {
       const achievementSidecar = parseAchievementSidecar(achievement.category ?? null);
-      const selectedGuide = pickLocaleGuide(guidesByAchievement.get(achievement.id) ?? [], locale);
-      const structured = structureGuide(
-        selectedGuide?.content.split("\n") ?? [],
-        selectedGuide?.source_url ?? null,
-      );
       const displayName = localizeAchievementName({
         locale,
         englishName: achievement.display_name,
@@ -241,48 +200,13 @@ export function buildGamePageData({
         sidecar: achievementSidecar,
       });
       const rarity = coercePercent(achievement.global_percent);
-      const dbSummary = sanitizeGuideSummary(
-        localizeGuideText({
-          locale,
-          text: structured.summary,
-          replacements: guideTextReplacements,
-        }),
-        displayName,
-        description,
-        locale,
-      );
-      const dbSteps = sanitizeGuideLines(
-        structured.steps.map((line) =>
-          localizeGuideText({ locale, text: line, replacements: guideTextReplacements }),
-        ),
-        displayName,
-        description,
-        locale,
-      ).slice(0, 5);
-      const dbTips = sanitizeGuideLines(
-        structured.tips.map((line) =>
-          localizeGuideText({ locale, text: line, replacements: guideTextReplacements }),
-        ),
-        displayName,
-        description,
-        locale,
-      ).slice(0, 4);
-      const guideStats = localizeGuideText({
-        locale,
-        text: structured.statsLine,
-        replacements: guideTextReplacements,
-      });
-
-      // Curated overrides take precedence over the auto-generated DB
-      // summary/steps/tips. Curated entries can supply ALL of the data,
-      // some of it, or none — anything missing falls back to the DB
-      // version so partial editing is safe.
+      // Imported guide prose is unreviewed generation, not evidence for requirements.
       const curatedGuide = getCuratedGuide(curated.appId, achievement.api_name);
-      const guideSummary = pickCuratedString(curatedGuide?.summary, locale) ?? dbSummary;
-      const guideSteps = pickCuratedList(curatedGuide?.steps, locale) ?? dbSteps;
-      const guideTips = pickCuratedList(curatedGuide?.tips, locale) ?? dbTips;
+      const guideSummary = pickCuratedString(curatedGuide?.summary, locale) ?? description;
+      const guideSteps = pickCuratedList(curatedGuide?.steps, locale) ?? [];
+      const guideTips = pickCuratedList(curatedGuide?.tips, locale) ?? [];
       const guideVideos = pickCuratedVideos(curatedGuide?.videos, locale);
-      const guideSource = curatedGuide?.sourceUrl ?? selectedGuide?.source_url ?? null;
+      const guideSource = curatedGuide?.sourceUrl ?? EXTERNAL_GUIDES[curated.slug]?.[0]?.url ?? null;
       const guideSourceLabel = pickCuratedString(curatedGuide?.sourceLabel, locale) ?? null;
 
       return {
@@ -300,12 +224,13 @@ export function buildGamePageData({
         guideSteps,
         guideTips,
         guideVideos,
-        guideStats: sanitizeGuideSummary(guideStats, displayName, description, locale),
+        guideStats: "",
         guideSource,
         guideSourceLabel,
-        confidence: normalizeConfidence(selectedGuide?.confidence),
-        missable: inferMissable(achievement, allGuideText(achievement.id)),
-        chapter: extractChapterFromGuide(selectedGuide?.content ?? null),
+        confidence: null,
+        missable: curatedGuide?.missable
+          ?? inferMissable(achievement, JSON.stringify(getCuratedGuide(curated.appId, achievement.api_name) ?? {})),
+        chapter: extractChapterFromGuide(JSON.stringify(curatedGuide ?? {})),
       };
     })
     .sort((left, right) => left.rarity - right.rarity);
@@ -314,8 +239,7 @@ export function buildGamePageData({
     curated,
     game,
     rows: gameAchievements,
-    guidesByAchievement,
-    locale,
+      locale,
   });
 
   const displayMissables = buildDisplayMissables({

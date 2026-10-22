@@ -13,7 +13,7 @@ export const yakuza5: CollectiblesData = {
       tips: [
         { ko: "촬영 중 ○×□△ 중 하나를 눌러 포즈를 잡는데, 성공 여부는 업적과 무관합니다. 프레임만 다르면 되니 실패해도 다시 찍을 필요는 없습니다.", en: "You strike a pose by pressing circle, cross, square or triangle mid-shot, but nailing the timing does not matter for the achievement — only that each regional frame gets used once." },
       ],
-      source: { label: "攻略通信Wiki — 龍が如く5 プリサークル(プリクル)", url: "https://kouryakutsushin.com/ryu5-wiki/%%E3%%83%%97%%E3%%83%%AA%%E3%%82%%B5%%E3%%83%%BC%%E3%%82%%AF%%E3%%83%%AB(%%E3%%83%%97%%E3%%83%%AA%%E3%%82%%AF%%E3%%83%%AB)" },
+      source: { label: "攻略通信Wiki — 龍が如く5 プリサークル(プリクル)", url: "https://kouryakutsushin.com/ryu5-wiki/%E3%83%97%E3%83%AA%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB(%E3%83%97%E3%83%AA%E3%82%AF%E3%83%AB)" },
       items: [
         { number: 1, title: { ko: "나가스가이 프레임", en: "Nagasugai frame" }, location: { ko: "후쿠오카 나가스가이 — 클럽 세가", en: "Club SEGA, Nagasugai (Fukuoka)" } },
         { number: 2, title: { ko: "츠키미노 프레임", en: "Tsukimino frame" }, location: { ko: "삿포로 츠키미노 — 볼링장(클럽 세가가 없습니다)", en: "The bowling alley, Tsukimino (Sapporo) — there is no Club SEGA here" } },

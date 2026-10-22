@@ -1,4 +1,4 @@
-// Authoritative external achievement/trophy guides per game, used by the
+// External achievement/trophy references per game, used by the
 // hidden "Empty Lot" hub (/empty-lot). These are the same canonical sources
 // the curated walkthroughs cross-reference, surfaced in one place. Steam
 // Community guides and PowerPyx trophy roadmaps only — no save files.
@@ -21,20 +21,23 @@ export const EXTERNAL_GUIDES: Record<string, ExternalGuideLink[]> = {
   "yakuza-kiwami-2": [
     { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154" },
   ],
+  "yakuza-kiwami-3": [
+    { kind: "powerpyx", url: "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/" },
+  ],
   "yakuza-3": [
-    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2938400399" },
+    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103" },
   ],
   "yakuza-4": [
-    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915" },
+    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293" },
   ],
   "yakuza-5": [
-    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803923402" },
+    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389" },
   ],
   "yakuza-6": [
-    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010598685" },
+    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2937314217" },
   ],
   "yakuza-like-a-dragon": [
-    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3025881850" },
+    { kind: "steam", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3673089977" },
   ],
   "like-a-dragon-infinite-wealth": [
     { kind: "powerpyx", url: "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/" },

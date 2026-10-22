@@ -10,7 +10,7 @@ const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const likeADragonInfiniteWealthMinigames: MinigamesData = {
   appId: 2072450,
   intro: {
-    ko: "용과 같이 8은 플레이 스폿이 하와이·요코하마·카무로초 세 곳에 흩어져 있고, PINION 기준 전 15종입니다. 서로 다른 플레이 스폿 10종을 플레이하면 트로피 「즐기는 자」를 받습니다. 쿵더쿵섬·크레이지 딜리버리·야쿠몬 배틀·시코 스냅처럼 챕터나 서브스토리로 열리는 대형 종목이 컴플리션의 축이고, 마작·다트·장기·도박장·카지노 같은 단골은 하와이와 요코하마 양쪽에 있습니다. 배팅 센터·골프·캔 줍기는 8장 이후 기류 쪽 콘텐츠(엔딩 노트 미련 미션)와 엮여 있습니다.",
+    ko: "용과 같이 8은 플레이 스폿이 하와이·요코하마·카무로초 세 곳에 흩어져 있고, PINION 기준 전 15종입니다. 서로 다른 플레이 스폿 10종을 플레이하면 트로피 「즐기는 자」를 받습니다. 쿵더쿵섬·크레이지 딜리버리·야쿠몬 배틀·수상한 사람 촬영처럼 챕터나 서브스토리로 열리는 대형 종목이 컴플리션의 축이고, 마작·다트·장기·도박장·카지노 같은 단골은 하와이와 요코하마 양쪽에 있습니다. 배팅 센터·골프·캔 줍기는 8장 이후 키류 쪽 콘텐츠(엔딩 노트 미련 미션)와 엮여 있습니다.",
     en: "Infinite Wealth spreads its play spots across Honolulu, Yokohama and Kamurocho — fifteen in all by PINION's count — and playing ten different ones unlocks the \"Having Fun Yet?\" trophy. The big chapter- or substory-gated modes (Dondoko Island, Crazy Delivery, Sujimon battles, Sicko Snap) anchor completion, while the staples — mahjong, darts, shogi, the gambling den and the casino — appear on both sides of the Pacific. The batting centre, golf and can collecting are tied to Kiryu's Bucket List missions from Chapter 8.",
   },
   minigames: [
@@ -78,12 +78,12 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
     },
     {
       slug: "sujimon-battle",
-      name: { ko: "야쿠몬 배틀 / 근신 콜로세움", en: "Sujimon Battle / Sujigami Colosseum" },
+      name: { ko: "야쿠몬 배틀 / 야쿠신 콜로세움", en: "Sujimon Battle / Sujigami Colosseum" },
       category: { ko: "수집·배틀", en: "Collect / battle" },
       difficulty: 4,
-      location: { ko: "호놀룰루 시티 전역의 스지 스폿, 아나콘다 쇼핑센터 2F 「PC숍 스지가미」", en: "Suji Spots across Honolulu; PC Shop Sujigami, 2F of the Anaconda Shopping Center" },
+      location: { ko: "호놀룰루 시티 전역의 야쿠몬 스폿, 아나콘다 쇼핑센터 2F 「PC 가게 야쿠신」", en: "Suji Spots across Honolulu; PC Shop Sujigami, 2F of the Anaconda Shopping Center" },
       summary: {
-        ko: "거리의 기인들을 야쿠몬으로 모아 6명(선발 3·후보 3) 팀으로 싸우는 커맨드 배틀. 스지 스폿에서 강화·각성·진화·스파링·상점을 이용하고, 서브스토리 No.38 「근신 사천왕 등장」을 클리어하면 근신 콜로세움의 3개 리그가 열립니다.",
+        ko: "거리의 기인들을 야쿠몬으로 모아 6명(선발 3·후보 3) 팀으로 싸우는 커맨드 배틀. 야쿠몬 스폿에서 강화·각성·진화·스파링·상점을 이용하고, 서브스토리 No.38 「야쿠신 사천왕 등장」을 클리어하면 야쿠신 콜로세움의 3개 리그가 열립니다.",
         en: "Collect the city's oddballs as Sujimon and fight six-a-side (three starters, three reserves) command battles. Suji Spots handle strengthening, awakening, evolution, sparring and the shop; clearing substory No.38 opens the Sujigami Colosseum and its three leagues.",
       },
       howTo: [
@@ -92,7 +92,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         { ko: "속성은 핫/쿨/내추럴/포지티브/네거티브 5종. 약점을 찌르면 대미지와 MP 축적이 모두 늘어나므로, 자기 턴에 1회 가능한 교대로 상성을 맞춰 가며 싸우는 것이 기본입니다.", en: "Five elements — Hot, Cool, Natural, Positive, Negative. Hitting a weakness raises both damage and MP gain, so the core loop is using your one swap per turn to keep a favourable matchup on the field." },
         { ko: "위치도 위력에 영향을 줍니다. 화살표가 빨강이면 유리, 흰색은 보통, 보라는 불리. 정면 공격이 가장 세고 대각은 감소하며, 대각으로 너무 먼 적(좌단 → 우단)에게는 반드시 빗나갑니다.", en: "Position matters too: a red arrow means advantage, white neutral, purple disadvantage. Straight-ahead attacks hit hardest, diagonals do less, and a diagonal that is too far — left end to right end — always misses." },
         { ko: "MP는 약점 공격과 다수 타격, 그리고 파이터의 신뢰도가 높을수록 잘 찹니다. △로 필살기를 쓰면 SP는 반드시 10 소모되고, 이어서 「필살 룰렛」 타이밍 입력이 들어갑니다. 적이 필살기를 쓴 직후에 전체 회복 필살기를 맞받아치는 운용이 유효합니다.", en: "MP builds from weakness hits, multi-target attacks and high fighter trust. Triangle fires a special, always spending 10 SP and triggering the Special Roulette stop-timing. A strong pattern is holding your full-heal special until right after the enemy fires theirs." },
-        { ko: "스지 스폿은 접근만 해도 랜덤 아이템을 주고, 조사하면 강화(스지테인 소모)·각성(동종 또는 근신 각성위원 배합)·진화(각성 한계까지 올린 개체)·스파링·PC숍 스지가미를 이용할 수 있습니다.", en: "Just walking up to a Suji Spot drops a random item; examining it opens strengthening (spend Sujitein), awakening (fuse same-species Sujimon or Awakening Committee members), evolution (for a fully awakened Sujimon), sparring and the PC Shop Sujigami." },
+        { ko: "야쿠몬 스폿은 접근만 해도 랜덤 아이템을 주고, 조사하면 강화(야쿠틴 소모)·각성(동종 또는 야쿠신 각성 위원 배합)·진화(각성 한계까지 올린 개체)·스파링·PC 가게 야쿠신를 이용할 수 있습니다.", en: "Just walking up to a Suji Spot drops a random item; examining it opens strengthening (spend Sujitein), awakening (fuse same-species Sujimon or Awakening Committee members), evolution (for a fully awakened Sujimon), sparring and the PC Shop Sujigami." },
         { ko: "콜로세움 3리그: 챌린지 리그는 30마리 격파, 서바이벌 리그는 회복 없이 연전(전체 회복 필살기 보유 개체가 중요), 그랜드 리그는 1경기마다 회복이 들어가는 엘리트 연전입니다. 보상 CP는 접수처 교환소에서 아이템으로 바꿉니다.", en: "Three leagues: Challenge is a 30-Sujimon gauntlet, Survival is back-to-back fights with no healing between (a full-heal special is essential), and Grand is an elite run that does heal between matches. Colosseum Points from them trade at the reception desk." },
       ],
       videos: [
@@ -107,30 +107,30 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
     },
     {
       slug: "sicko-snap",
-      name: { ko: "시코 스냅 (불심자 스냅)", en: "Sicko Snap" },
+      name: { ko: "수상한 사람 촬영", en: "Sicko Snap" },
       category: { ko: "촬영", en: "Photography" },
       difficulty: 3,
       location: { ko: "초급: 알로하 스트리트(와이키키 타운 동) / 중급: 아나콘다 거리 / 상급: 하버 스트리트", en: "Easy: Aloha Street (east Waikiki) / Normal: Anaconda Street / Hard: Harbor Street" },
       summary: {
-        ko: "트롤리 버스 차창에서 거리의 변태(불심자)를 찍는 촬영 미니게임. 서브스토리 No.8로 시작합니다. 필름 잔량이 0이 되면 그 자리에서 종료되고, 종료 시 클리어 스코어를 넘기면 성공입니다. 스냅 포인트는 버스 운전사와 아이템으로 교환합니다.",
+        ko: "트롤리 버스 차창에서 거리의 변태(수상한 사람)를 찍는 촬영 미니게임. 서브스토리 No.8로 시작합니다. 필름 잔량이 0이 되면 그 자리에서 종료되고, 종료 시 클리어 스코어를 넘기면 성공입니다. 스냅 포인트는 버스 운전사와 아이템으로 교환합니다.",
         en: "Shoot the perverts loitering along the trolley-bus route, starting from substory No.8. Running the film to zero ends the run on the spot; beating the clear score at the end is the win condition. Snap Points trade with the bus driver.",
       },
       howTo: [
-        { ko: "프레임 중앙에 불심자를 잡으면 프레임이 주황으로 바뀝니다. 그때 ×로 찍으면 성공이고, 한 명당 점수는 1회뿐입니다. 그냥 찍으면 GOOD, R2 줌 상태로 찍으면 EXCELLENT입니다.", en: "Centre a sicko and the frame turns orange — press cross then. Each sicko scores once. A plain shot is GOOD; shooting while zoomed with R2 is EXCELLENT." },
-        { ko: "황금색 불심자는 포즈를 취한 순간에 찍으면 TIMING BONUS가 붙습니다. 보이자마자 찍지 말고 포즈까지 한 박자 기다리세요.", en: "Golden sickos give a Timing Bonus if photographed mid-pose — don't fire the instant you see one, wait a beat for the pose." },
+        { ko: "프레임 중앙에 수상한 사람를 잡으면 프레임이 주황으로 바뀝니다. 그때 ×로 찍으면 성공이고, 한 명당 점수는 1회뿐입니다. 그냥 찍으면 GOOD, R2 줌 상태로 찍으면 EXCELLENT입니다.", en: "Centre a sicko and the frame turns orange — press cross then. Each sicko scores once. A plain shot is GOOD; shooting while zoomed with R2 is EXCELLENT." },
+        { ko: "황금색 수상한 사람는 포즈를 취한 순간에 찍으면 TIMING BONUS가 붙습니다. 보이자마자 찍지 말고 포즈까지 한 박자 기다리세요.", en: "Golden sickos give a Timing Bonus if photographed mid-pose — don't fire the instant you see one, wait a beat for the pose." },
         { ko: "흰색 → 파랑 → 빨강 순으로 노출도가 높을수록 포인트가 크지만 그만큼 찍기 어렵게 설정돼 있습니다. 결국 반복 플레이로 출현 위치를 외우는 것이 공략의 핵심입니다.", en: "The more exposed the outfit (white, then blue, then red), the more points — and the harder the shot. Learning spawn positions by repetition is the real technique." },
-        { ko: "코스별 수치 — 초급 「처음 뵙겠습니다 파피용」: 클리어 4,000 / 필름 50 / 불심자 30명 / S랭크 최고 11,375. 중급 「거리에 숨은 파피용」: 6,000 / 75 / 40명 / 15,750. 상급 「파피용 피버」: 9,000 / 99 / 50명 / 19,125.", en: "Course numbers — Easy: clear 4,000, 50 film, 30 sickos, S-rank best 11,375. Normal: 6,000 / 75 film / 40 sickos / 15,750. Hard: 9,000 / 99 film / 50 sickos / 19,125." },
+        { ko: "코스별 수치 — 초급 「처음 뵙겠습니다 파피용」: 클리어 4,000 / 필름 50 / 수상한 사람 30명 / S랭크 최고 11,375. 중급 「거리에 숨은 파피용」: 6,000 / 75 / 40명 / 15,750. 상급 「파피용 피버」: 9,000 / 99 / 50명 / 19,125.", en: "Course numbers — Easy: clear 4,000, 50 film, 30 sickos, S-rank best 11,375. Normal: 6,000 / 75 film / 40 sickos / 15,750. Hard: 9,000 / 99 film / 50 sickos / 19,125." },
       ],
       videos: [
-        { title: { ko: "시코 스냅 전 코스 S랭크", en: "Sicko Snap all courses (S Rank)" }, url: YT("VsbuhUSovcA") },
-        { title: { ko: "시코 스냅 전 30마리 S랭크 (이지)", en: "Sicko Snap all 30 sickos, S rank (Easy)" }, url: YT("B1Lq4w6n_eQ") },
+        { title: { ko: "수상한 사람 촬영 전 코스 S랭크", en: "Sicko Snap all courses (S Rank)" }, url: YT("VsbuhUSovcA") },
+        { title: { ko: "수상한 사람 촬영 전 30마리 S랭크 (이지)", en: "Sicko Snap all 30 sickos, S rank (Easy)" }, url: YT("B1Lq4w6n_eQ") },
       ],
       source: { label: "ゲーム攻略マン — 不審者スナップ攻略", url: "https://dswiipspwikips3.jp/yakuza8/play-spots/snap-that-sickos.html" },
       achievementSlug: "snap_claer",
     },
     {
       slug: "miss-match",
-      name: { ko: "Miss Machico (매칭 앱)", en: "Miss Match" },
+      name: { ko: "매칭 앱", en: "Miss Match" },
       category: { ko: "연애·대화", en: "Dating / dialogue" },
       difficulty: 3,
       location: { ko: "와이키키 타운 서 구역 — 팬케이크 하우스 크림&베리 와이키키점 (3장, 서브스토리 「마치코 씨」)", en: "Pancake House Cream & Berry, west Waikiki — via the substory in Chapter 3" },
@@ -163,14 +163,14 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
           note: { ko: "답장 순서는 [1]~[5] 주제 순이고, 고를 선택지는 game8·게임공략맨·알테마가 10명 전원 같습니다(표기만 조금씩 다름). 직업·좋아하는 취미·피할 취미도 세 가이드가 같지만, 성격·마지막 한마디·문체는 가이드마다 달라 적지 않았습니다(알테마는 직업과 취미만 선택지에 영향을 준다고 봅니다). 직업 질문에는 프로필에 넣은 직업 그대로 답해야 하며, 다르게 답하면 그 자리에서 채팅이 끝납니다(알테마·카미게). 스탬프는 「좋아해…!」·「너무 좋아!」·「좋아요!」 중 하나로 멈추고 「최악…」만 피하세요(스탬프 이름은 비공식 번역). 마지막 어필은 버튼 입력을 최대한 성공시키면 됩니다. 필요한 회원 플랜은 출처끼리 다릅니다: game8은 상대와 같은 등급 이상, 게임공략맨은 노멀로 모두 되고 린샹·키나코만 골드라고 봅니다. 첫 그림은 game8 프로필 캡처, 둘째는 데이트 사진(실사 캐스트는 소피·나오미·린샨 3명).", en: "Replies follow topics [1]–[5]; game8, Game Kouryaku-man and Altema pick the same option for all ten partners (only minor spelling differs). Job, liked hobby and the hobby to avoid also match across the three, but personality, closing line and tone differ by guide so they are omitted (Altema holds that only job and hobby affect the options). Answer the job question with exactly the job on your profile — anything else ends the chat on the spot (Altema, Kamigame). Stop the emote roulette on \"I like you\", \"Love you!\" or \"Nice\" and never on \"Terrible...\"; for the final appeal, land as many button prompts as you can. Sources disagree on the plan needed: game8 says at least the partner's tier, Game Kouryaku-man says Normal works for everyone except Rinshan and Kinako (Gold). First image is game8's profile capture, second the date photo (live-action cast: Sophie, Naomi, Linshan)." },
           puzzles: [
             { title: { ko: "카나뽀요", en: "Kanapoyo" }, image: "https://img.game8.jp/9412368/978df05e90c4eb210841359f33db9e12.jpeg/original", images: ["https://img.game8.jp/9412342/13d45a803a719ea26e241adf388ed40b.jpeg/original"], note: { ko: "상대 등급 노멀. 프로필: 직업 백수 · 좋아하는 취미 야외 활동 · 피할 취미 실내 활동. 답장: [1] 인사 → 「난 카스가야! 예이예이! 잘 부탁할게맛살~」 / [2] 카스가의 직업 → 「백수다요~」 / [3] 카나뽀요의 취미 → 「난 야외활동을 좋아해」 / [4] 카스가의 이상형 → 「카나뽀요처럼 활발하고 명랑한 사람이 진심 내 타입이야」 / [5] 카나뽀요의 이상형 → 「카나뽀요뽀요뽀요! 이뽀요 뽀요! 포포퐁」. 데이트 보상 지성 +30.", en: "Normal tier. Profile: job Unemployed, liked hobby Going Out, avoid Staying In. Replies: [1] Introductions → \"YAY! I'm Kasuga! Nice 2 meetcha, mamacita!\" / [2] Occupation → \"Right now? I'm full-time funemployed!\" / [3] Hobbies → \"Dancing till the sun comes up!\" / [4] A Gal's Gyaru → \"Honestly, I like anyone with a lot of energy and a great laugh!\" / [5] The Element of Surprise → \"Kanapoyo-poyo-poyo! Poyo-poyo-poyo! Let's goyo-goyo-goyo!\". Date reward: Intellect +30." } },
-            { title: { ko: "카오루", en: "Kaoru" }, image: "https://img.game8.jp/9412343/c2a32064e4cb9475c07b6b22a972f600.jpeg/original", images: ["https://img.game8.jp/9412340/0c3a6c973408df31cc6b017a5a77143c.jpeg/original"], note: { ko: "상대 등급 노멀. 프로필: 직업 암무기상 · 좋아하는 취미 섹시한 사람 · 피할 취미 카페 탐방. 답장: [1] 인사 → 「카스가라고 합니다. 제 기술로 후끈 데워드리죠」 / [2] 카스가의 직업 → 「큰소리로 말할 수는 없지만, 암무기상 일을 하고 있지」 / [3] 카오루의 취미 → 「전 섹시한 걸 좋아해요」 / [4] 카오루가 원하는 상대 → 「제 물건은 세계 제일의 명품입니다!」 / [5] 카오루의 이상형 → 「벌써부터 밝히기는! 내가 제대로 교육을 해주지!」. 데이트 보상 세련 +30.", en: "Normal tier. Profile: job A Gunrunner, liked hobby You-Know-What, avoid Cafe-Hopping. Replies: [1] Introductions → \"Name's Kasuga. I can assure you, I'm up to the task.\" / [2] Occupation → \"You're not a cop, right? I'm a weapons dealer. Shhh.\" / [3] Hobbies → \"The shared bliss of sensuality.\" / [4] Measuring One's Manhood → \"I'm a specimen, baby. You won't find a man with a manlier manhood.\" / [5] The S to My M → \"Ho ho, you're insatiable! I'll teach you some manners.\". Date reward: Style +30." } },
+            { title: { ko: "카오루", en: "Kaoru" }, image: "https://img.game8.jp/9412343/c2a32064e4cb9475c07b6b22a972f600.jpeg/original", images: ["https://img.game8.jp/9412340/0c3a6c973408df31cc6b017a5a77143c.jpeg/original"], note: { ko: "상대 등급 노멀. 프로필: 직업 암무기상 · 좋아하는 취미 섹시한 사람 · 피할 취미 카페 탐방. 답장: [1] 인사 → 「카스가라고 합니다. 제 기술로 후끈 데워드리죠」 / [2] 카스가의 직업 → 「큰소리로 말할 수는 없지만, 암무기상 일을 하고 있지」 / [3] 카오루의 취미 → 「전 섹시한 걸 좋아해요」 / [4] 카오루가 원하는 상대 → 「제 물건은 세계 제일의 명품입니다!」 / [5] 카오루의 이상형 → 「벌써부터 밝히기는! 내가 제대로 교육을 해주지!」. 데이트 보상 세련미 +30.", en: "Normal tier. Profile: job A Gunrunner, liked hobby You-Know-What, avoid Cafe-Hopping. Replies: [1] Introductions → \"Name's Kasuga. I can assure you, I'm up to the task.\" / [2] Occupation → \"You're not a cop, right? I'm a weapons dealer. Shhh.\" / [3] Hobbies → \"The shared bliss of sensuality.\" / [4] Measuring One's Manhood → \"I'm a specimen, baby. You won't find a man with a manlier manhood.\" / [5] The S to My M → \"Ho ho, you're insatiable! I'll teach you some manners.\". Date reward: Style +30." } },
             { title: { ko: "카노", en: "Kano" }, image: "https://img.game8.jp/9412341/ddbcdab90187576ebd00e34919d559ef.jpeg/original", images: ["https://img.game8.jp/9412344/4fa0640c3841acf065fbb7b11700aea1.jpeg/original"], note: { ko: "상대 등급 노멀. 프로필: 직업 용사 · 좋아하는 취미 실내 활동 · 피할 취미 야외 활동. 답장: [1] 인사 → 「난 카스가라고 해. 나도 나서는 타입은 아니라서 안심했어」 / [2] 카스가의 직업 → 「난 이 세상에서 가장 멋지고 강한 용사야!」 / [3] 카노의 취미 → 「난 실내 활동을 좋아해」 / [4] 카노의 과거 → 「나도 그 자식들이 불행했으면 좋겠어」 / [5] 카노의 고민 → 「내가 그 계기가 될게! 억지로라도 끌고 나오겠어!」. 데이트 보상 정열 +30.", en: "Normal tier. Profile: job A Hero, liked hobby Staying In, avoid Going Out. Replies: [1] Introductions → \"Kasuga. Talking sucks most of the time anyway.\" / [2] Occupation → \"I'm a hero! I'm gonna level up! Be the best that I can be!\" / [3] Hobbies → \"Um, I like staying inside.\" / [4] Terrible, horrible things → \"I hope every one of those human lice gets theirs.\" / [5] The outside → \"I'll be your reason! Ha, I'll yank you outside myself if I have to!\". Date reward: Passion +30." } },
-            { title: { ko: "사오리", en: "Saori" }, image: "https://img.game8.jp/9412265/488393b7238a5c4f4c4b5d29b69449c3.jpeg/original", images: ["https://img.game8.jp/9412266/6f1a1f08836a1ac2619fbde28e21424f.jpeg/original"], note: { ko: "상대 등급 골드. 프로필: 직업 스포츠 선수 · 좋아하는 취미 운동 · 피할 취미 독서. 답장: [1] 인사 → 「항상 팔팔한 카스가임다! 잘 부탁함다!」 / [2] 카스가의 직업 → 「매일 열심히 훈련 중인 스포츠 선수입니다!」 / [3] 사오리의 취미 → 「내가 운동을 좋아하거든」 / [4] 사오리의 상담 → 「난 지금 모습 그대로인 사오리가 좋아」 / [5] 사오리의 고민 → 「힘든 그 순간이 바로 사오리가 성장할 수 있는 기회야」. 데이트 보상 세련 +40.", en: "Gold tier. Profile: job An Athlete, liked hobby Working Out, avoid Reading. Replies: [1] Introductions → \"Yup, this is Kasuga! Wow! You're more stimulating than a mug of coffee!\" / [2] Occupation → \"I'm a semi-pro athlete! I worship at the iron temple, baby!\" / [3] Hobbies → \"Well, I spend a lot of time working out.\" / [4] Athletic Prospects → \"I like the woman I've been talking to. You don't need to change one bit.\" / [5] Pushing Through It → \"Times like that are the best opportunities for improvement.\". Date reward: Style +40." } },
+            { title: { ko: "사오리", en: "Saori" }, image: "https://img.game8.jp/9412265/488393b7238a5c4f4c4b5d29b69449c3.jpeg/original", images: ["https://img.game8.jp/9412266/6f1a1f08836a1ac2619fbde28e21424f.jpeg/original"], note: { ko: "상대 등급 골드. 프로필: 직업 스포츠 선수 · 좋아하는 취미 운동 · 피할 취미 독서. 답장: [1] 인사 → 「항상 팔팔한 카스가임다! 잘 부탁함다!」 / [2] 카스가의 직업 → 「매일 열심히 훈련 중인 스포츠 선수입니다!」 / [3] 사오리의 취미 → 「내가 운동을 좋아하거든」 / [4] 사오리의 상담 → 「난 지금 모습 그대로인 사오리가 좋아」 / [5] 사오리의 고민 → 「힘든 그 순간이 바로 사오리가 성장할 수 있는 기회야」. 데이트 보상 세련미 +40.", en: "Gold tier. Profile: job An Athlete, liked hobby Working Out, avoid Reading. Replies: [1] Introductions → \"Yup, this is Kasuga! Wow! You're more stimulating than a mug of coffee!\" / [2] Occupation → \"I'm a semi-pro athlete! I worship at the iron temple, baby!\" / [3] Hobbies → \"Well, I spend a lot of time working out.\" / [4] Athletic Prospects → \"I like the woman I've been talking to. You don't need to change one bit.\" / [5] Pushing Through It → \"Times like that are the best opportunities for improvement.\". Date reward: Style +40." } },
             { title: { ko: "ETSU", en: "Etsu" }, image: "https://img.game8.jp/9412264/d9083b6c2b512df49ce122983230ef25.jpeg/original", images: ["https://img.game8.jp/9412268/590c8c48500c5a648e234f23c295f829.jpeg/original"], note: { ko: "상대 등급 골드. 프로필: 직업 밴드 뮤지션 · 좋아하는 취미 도박 · 피할 취미 카페 탐방. 답장: [1] 인사 → 「난 카스가야. 잘 부탁할게! 나도 바로 만날 사람을 찾고 있었는데~」 / [2] 카스가의 직업 → 「난 밴드 뮤지션이야! ROCK & ROLL!」 / [3] ETSU의 취미 → 「나도 도박 좋아해」 / [4] 카스가의 이상형 → 「너 같은 애가 내 취향인 것 같아」 / [5] 간호사 ETSU → 「여기 왕자님이 있습니다~!」. 데이트 보상 지성 +40.", en: "Gold tier. Profile: job In a Band, liked hobby Gambling, avoid Cafe-Hopping. Replies: [1] Introductions → \"I'm Kasuga! What a coincidence, I wanna meet up too! LOL!\" / [2] Occupation → \"Still living the music dream! Never stop rockin'!\" / [3] Hobbies → \"I'm a master gambler.\" / [4] What's Your Type? → \"I'd have to say, my type is exactly someone like you!\" / [5] Destressing → \"I'll arrive in white armor atop a gallant steed, milady!\". Date reward: Intellect +40." } },
-            { title: { ko: "소피", en: "Sophie" }, image: "https://img.game8.jp/9412267/cf41f90833f2c96ce41e7baf532252ee.jpeg/original", images: ["https://img.game8.jp/9409982/70bf6d4536029c319758be7d485a2314.jpeg/original"], note: { ko: "상대 등급 골드. 프로필: 직업 의사 · 좋아하는 취미 음악 · 피할 취미 운동. 답장: [1] 인사 → 「카스가입니다, 안녕하신지요. 저도 품격 있는 분과 이야기를 나누고 싶던 참이었습니다」 / [2] 카스가의 직업 → 「의사입니다. 오늘도 수술 때문에 바쁘네요」 / [3] 소피의 취미 → 「저는 음악을 좋아합니다」 / [4] 아가씨 소피 → 「기품과 고귀함이 느껴져서 저는 좋습니다」 / [5] 소피의 고민 → 「당신의 인생에 미소를 선사해 드리겠습니다」. 데이트 보상 상냥함 +40.", en: "Gold tier. Profile: job A Doctor, liked hobby Listening to Music, avoid Working Out. Replies: [1] Introductions → \"This is Kasuga. I'm also hoping to find someone with whom to appreciate the finer things in life.\" / [2] Occupation → \"I'm a doctor. Very busy. In surgery right now, actually.\" / [3] Hobbies → \"Well, music. Soundtrack to my life and all.\" / [4] A Woman of the People → \"I'd say it makes you unique. I admire your elegance, actually.\" / [5] The Princess's Dilemma → \"Count on me to give your world some color whenever you need!\". Date reward: Kindness +40." } },
+            { title: { ko: "소피", en: "Sophie" }, image: "https://img.game8.jp/9412267/cf41f90833f2c96ce41e7baf532252ee.jpeg/original", images: ["https://img.game8.jp/9409982/70bf6d4536029c319758be7d485a2314.jpeg/original"], note: { ko: "상대 등급 골드. 프로필: 직업 의사 · 좋아하는 취미 음악 · 피할 취미 운동. 답장: [1] 인사 → 「카스가입니다, 안녕하신지요. 저도 품격 있는 분과 이야기를 나누고 싶던 참이었습니다」 / [2] 카스가의 직업 → 「의사입니다. 오늘도 수술 때문에 바쁘네요」 / [3] 소피의 취미 → 「저는 음악을 좋아합니다」 / [4] 아가씨 소피 → 「기품과 고귀함이 느껴져서 저는 좋습니다」 / [5] 소피의 고민 → 「당신의 인생에 미소를 선사해 드리겠습니다」. 데이트 보상 다정함 +40.", en: "Gold tier. Profile: job A Doctor, liked hobby Listening to Music, avoid Working Out. Replies: [1] Introductions → \"This is Kasuga. I'm also hoping to find someone with whom to appreciate the finer things in life.\" / [2] Occupation → \"I'm a doctor. Very busy. In surgery right now, actually.\" / [3] Hobbies → \"Well, music. Soundtrack to my life and all.\" / [4] A Woman of the People → \"I'd say it makes you unique. I admire your elegance, actually.\" / [5] The Princess's Dilemma → \"Count on me to give your world some color whenever you need!\". Date reward: Kindness +40." } },
             { title: { ko: "나오미", en: "Naomi" }, image: "https://img.game8.jp/9411671/45865d7d15075090d9e69b69d0503ff4.jpeg/original", images: ["https://img.game8.jp/9409983/f2d9098a26cd52b7fb3baf7b06cdc2bd.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 공무원 · 좋아하는 취미 독서 · 피할 취미 도박. 답장: [1] 인사 → 「난 카스가야! 나도 진지하게 사귈 사람을 찾고 있어!」 / [2] 카스가의 직업 → 「매일 성실하게 일하는 공무원입니다」 / [3] 나오미의 취미 → 「난 독서를 좋아해」 / [4] 나오미가 원하는 상대 → 「진지하게 나오미 씨의 마음과 마주할 거야」 / [5] 독서에 대해 → 「소설도 자주 읽고 학술서 같은 것도 읽어」. 데이트 보상 정열 +50.", en: "Premium tier. Profile: job In Civil Service, liked hobby Reading, avoid Gambling. Replies: [1] Introductions → \"Name's Kasuga and I'm hoping to find a date too!\" / [2] Occupation → \"I'm pretty dedicated to civil service.\" / [3] Hobbies → \"Nothing beats curling up with a book.\" / [4] Dating, Seriously → \"Believe me, I'm tired of that game. I want something real, Naomi.\" / [5] The Bookworm → \"From novels to academic papers, if it's got words I'll devour it!\". Date reward: Passion +50." } },
-            { title: { ko: "마리", en: "Mary" }, image: "https://img.game8.jp/9412193/d54b8f78c542c5881f4b8e428309b75a.jpeg/original", images: ["https://img.game8.jp/9412194/6b736ed05c98ace3d8f2b835718813c4.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 경영자 · 좋아하는 취미 카페 탐방 · 피할 취미 도박. 답장: [1] 인사 → 「난 카스가야. 나와 함께 나라의 미래에 대해 논해 보자」 / [2] 카스가의 직업 → 「경영자로서 신사업 기획 및 추진중입니다」 / [3] 마리의 취미 → 「난 카페 탐방하는 걸 좋아해」 / [4] 마리의 상담 → 「눈앞의 이익만 보다가는 낭패를 당할 거야」 / [5] 커리어우먼 마리 → 「난 열심히 노력하는 마리 씨가 좋아」. 데이트 보상 쾌활 +50.", en: "Premium tier. Profile: job An Entrepreneur, liked hobby Cafe-Hopping, avoid Gambling. Replies: [1] Introductions → \"I'm Kasuga. So, any thoughts on Japan's future?\" / [2] Occupation → \"I consider myself a future CEO.\" / [3] Hobbies → \"I love a good cafe crawl.\" / [4] The Proposal → \"Chasing risky short-term profit catches up with you.\" / [5] Career Woman → \"I think it's great you find your job fulfilling, Mary.\". Date reward: Charisma +50." } },
-            { title: { ko: "린샹", en: "Rinshan" }, image: "https://img.game8.jp/9412195/2fe7488eaf17ca2b4f0b7ecaf28b600b.jpeg/original", images: ["https://img.game8.jp/9409984/9188d0e9ec5f7462a2249e80807dded5.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 모델 · 좋아하는 취미 요리 · 피할 취미 섹시한 사람. 답장: [1] 인사 → 「난 카스가야. 잘 부탁할게! 린샹 씨랑 이야기하게 돼서 기뻐」 / [2] 카스가의 직업 → 「촬영 일정에 치여 사는 패션모델입니다」 / [3] 린샹의 취미 → 「난 요리를 좋아해」 / [4] 모델로서 → 「린샹이 만들어주는 거라면 뭐든지 좋아」 / [5] 사실은…… → 「꿈을 포기하지 않고 노력하는 넌 멋져」. 데이트 보상 상냥함 +50.", en: "Premium tier. Profile: job A Model, liked hobby Cooking, avoid You-Know-What. Replies: [1] Introductions → \"Wow, I can't believe how lucky I am to match with you! I'm Kasuga, by the way!\" / [2] Occupation → \"Fashion model. Maybe you've seen me in magazines?\" / [3] Hobbies → \"Late nights in the kitchen, cooking.\" / [4] The Way to a Man's Heart → \"Doubt I've ever had anything as good as your cooking.\" / [5] Coming Clean → \"I think it's amazing you've got a dream you won't give up on!\". Date reward: Kindness +50." } },
+            { title: { ko: "마리", en: "Mary" }, image: "https://img.game8.jp/9412193/d54b8f78c542c5881f4b8e428309b75a.jpeg/original", images: ["https://img.game8.jp/9412194/6b736ed05c98ace3d8f2b835718813c4.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 경영자 · 좋아하는 취미 카페 탐방 · 피할 취미 도박. 답장: [1] 인사 → 「난 카스가야. 나와 함께 나라의 미래에 대해 논해 보자」 / [2] 카스가의 직업 → 「경영자로서 신사업 기획 및 추진중입니다」 / [3] 마리의 취미 → 「난 카페 탐방하는 걸 좋아해」 / [4] 마리의 상담 → 「눈앞의 이익만 보다가는 낭패를 당할 거야」 / [5] 커리어우먼 마리 → 「난 열심히 노력하는 마리 씨가 좋아」. 데이트 보상 활기 +50.", en: "Premium tier. Profile: job An Entrepreneur, liked hobby Cafe-Hopping, avoid Gambling. Replies: [1] Introductions → \"I'm Kasuga. So, any thoughts on Japan's future?\" / [2] Occupation → \"I consider myself a future CEO.\" / [3] Hobbies → \"I love a good cafe crawl.\" / [4] The Proposal → \"Chasing risky short-term profit catches up with you.\" / [5] Career Woman → \"I think it's great you find your job fulfilling, Mary.\". Date reward: Charisma +50." } },
+            { title: { ko: "린샹", en: "Rinshan" }, image: "https://img.game8.jp/9412195/2fe7488eaf17ca2b4f0b7ecaf28b600b.jpeg/original", images: ["https://img.game8.jp/9409984/9188d0e9ec5f7462a2249e80807dded5.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 모델 · 좋아하는 취미 요리 · 피할 취미 섹시한 사람. 답장: [1] 인사 → 「난 카스가야. 잘 부탁할게! 린샹 씨랑 이야기하게 돼서 기뻐」 / [2] 카스가의 직업 → 「촬영 일정에 치여 사는 패션모델입니다」 / [3] 린샹의 취미 → 「난 요리를 좋아해」 / [4] 모델로서 → 「린샹이 만들어주는 거라면 뭐든지 좋아」 / [5] 사실은…… → 「꿈을 포기하지 않고 노력하는 넌 멋져」. 데이트 보상 다정함 +50.", en: "Premium tier. Profile: job A Model, liked hobby Cooking, avoid You-Know-What. Replies: [1] Introductions → \"Wow, I can't believe how lucky I am to match with you! I'm Kasuga, by the way!\" / [2] Occupation → \"Fashion model. Maybe you've seen me in magazines?\" / [3] Hobbies → \"Late nights in the kitchen, cooking.\" / [4] The Way to a Man's Heart → \"Doubt I've ever had anything as good as your cooking.\" / [5] Coming Clean → \"I think it's amazing you've got a dream you won't give up on!\". Date reward: Kindness +50." } },
             { title: { ko: "키나코", en: "Kinako" }, image: "https://img.game8.jp/9412367/84eefb9eae6860a70604f9d14f8c6498.jpeg/original", images: ["https://img.game8.jp/9410841/7519997e2e1fbbe73626f06352a1fe96.jpeg/original"], note: { ko: "상대 등급 프리미엄. 프로필: 직업 용사 · 좋아하는 취미 술 · 피할 취미 음악. 답장: [1] 인사 → 「난 카스가야! 편하게 잡담할 상대가 필요하면 내가 딱이지!」 / [2] 카스가의 직업 → 「난 이 세상에서 가장 멋지고 강한 용사야!」 / [3] 키나코의 취미 → 「난 술을 좋아해」 / [4] 코스프레이어 키나코 → 「용사. 세계를 구하는 용사가 되고 싶어!」 / [5] 키나코의 이상형 → 「미용실에 가서 펀치파마를 해달랬더니 아프로파마를 해주더라고!」. 데이트 보상 멘탈 +50.", en: "Premium tier. Profile: job A Hero, liked hobby Drinking, avoid Listening to Music. Replies: [1] Introductions → \"Name's Kasuga! If you're looking to babble, you've come to the right place! LOL!\" / [2] Occupation → \"I'm a hero! I'm gonna level up! Be the best that I can be!\" / [3] Hobbies → \"Does drinking count? LOL!\" / [4] Choose Your Character → \"A hero! A character everyone counts on to save them!\" / [5] Story Time → \"Well, once I asked for a punch perm and got an afro…\". Date reward: Confidence +50." } },
           ],
         },
@@ -187,16 +187,16 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         en: "Buying an activity from the Alo-Happy Tours travel agency — each gated by money and a personality stat — unlocks the matching job, and experiencing eight of them gives the Alo-Happy as Can Be trophy. The bond level required differs per party member for the same job, so raise bonds with the member you actually want first.",
       },
       howTo: [
-        { ko: "마린 마스터 — 「마린 액티비티 팩」, 상냥함 Lv.1, 0달러. 나바·한 준기는 초기 해금, 아다치·조천우는 절 Lv.30 이상.", en: "Marine Master — Marine Activity Pack, Kindness Lv.1, $0. Nanba and Han Jun-gi start unlocked; Adachi and Zhao need bond 30." },
-        { ko: "웨스턴맨 — 「워터건 배틀」, 세련 Lv.5, 1,600달러. 한 준기 초기 해금, 아다치·나바·조천우는 절 Lv.10 이상.", en: "Desperado — Water Gun Battle, Style Lv.5, $1,600. Han starts unlocked; Adachi, Nanba and Zhao need bond 10." },
-        { ko: "와일드 댄서 — 「파이어 댄스 쇼」, 정열 Lv.3, 200달러. 나바 초기 해금, 아다치 절 Lv.20, 조천우·한 준기 절 Lv.40.", en: "Wild Dancer — Fire Dance Show, Passion Lv.3, $200. Nanba starts unlocked; Adachi bond 20, Zhao and Han bond 40." },
-        { ko: "액션 스타 — 「파라세일링」, 쾌활 Lv.4, 200달러. 조천우 초기 해금, 한 준기 절 Lv.10, 나바 절 Lv.40.", en: "Action Star — Parasailing, Charisma Lv.4, $200. Zhao starts unlocked; Han bond 10, Nanba bond 40." },
-        { ko: "사무라이 — 「트롤리 투어」, 멘탈 Lv.5, 1,600달러. 조천우 절 Lv.20, 나바 절 Lv.50, 한 준기 절 Lv.50.", en: "Samurai — Trolley Tour, Confidence Lv.5, $1,600. Zhao bond 20, Nanba bond 50, Han bond 50." },
+        { ko: "마린 마스터 — 「마린 액티비티 팩」, 다정함 Lv.1, 0달러. 나바·한준기는 초기 해금, 아다치·조천우는 절 Lv.30 이상.", en: "Marine Master — Marine Activity Pack, Kindness Lv.1, $0. Nanba and Han Jun-gi start unlocked; Adachi and Zhao need bond 30." },
+        { ko: "웨스턴맨 — 「워터건 배틀」, 세련 Lv.5, 1,600달러. 한준기 초기 해금, 아다치·나바·조천우는 절 Lv.10 이상.", en: "Desperado — Water Gun Battle, Style Lv.5, $1,600. Han starts unlocked; Adachi, Nanba and Zhao need bond 10." },
+        { ko: "와일드 댄서 — 「파이어 댄스 쇼」, 정열 Lv.3, 200달러. 나바 초기 해금, 아다치 절 Lv.20, 조천우·한준기 절 Lv.40.", en: "Wild Dancer — Fire Dance Show, Passion Lv.3, $200. Nanba starts unlocked; Adachi bond 20, Zhao and Han bond 40." },
+        { ko: "액션 스타 — 「파라세일링」, 활기 Lv.4, 200달러. 조천우 초기 해금, 한준기 절 Lv.10, 나바 절 Lv.40.", en: "Action Star — Parasailing, Charisma Lv.4, $200. Zhao starts unlocked; Han bond 10, Nanba bond 40." },
+        { ko: "사무라이 — 「트롤리 투어」, 멘탈 Lv.5, 1,600달러. 조천우 절 Lv.20, 나바 절 Lv.50, 한준기 절 Lv.50.", en: "Samurai — Trolley Tour, Confidence Lv.5, $1,600. Zhao bond 20, Nanba bond 50, Han bond 50." },
         { ko: "쿠노이치 — 「비치 요가」, 지성 Lv.5, 1,600달러. 손희 초기 해금, 무코다 사에코 절 Lv.10.", en: "Kunoichi — Beach Yoga, Intellect Lv.5, $1,600. Seonhee starts unlocked; Saeko needs bond 10." },
-        { ko: "하우스키퍼 — 「면세 쇼핑」, 상냥함 Lv.4, 200달러. 사에코 초기 해금, 손희 절 Lv.10.", en: "Housekeeper — Duty-Free Shopping, Kindness Lv.4, $200. Saeko starts unlocked; Seonhee needs bond 10." },
+        { ko: "하우스키퍼 — 「면세 쇼핑」, 다정함 Lv.4, 200달러. 사에코 초기 해금, 손희 절 Lv.10.", en: "Housekeeper — Duty-Free Shopping, Kindness Lv.4, $200. Saeko starts unlocked; Seonhee needs bond 10." },
         { ko: "트로피컬 댄서 — 「훌라 댄스 쇼」, 정열 Lv.1, 200달러. 손희·사에코 모두 절 Lv.30.", en: "Tropical Dancer — Hula Dance Show, Passion Lv.1, $200. Both Seonhee and Saeko need bond 30." },
-        { ko: "테니스 플레이어(리조트 에스테, 쾌활 Lv.5, 1,600달러)와 풋볼러(코코넛 만끽 투어, 멘탈 Lv.5, 1,600달러)는 DLC 「스페셜 잡 세트」에 포함된 직업입니다.", en: "Tennis Player (Resort Spa, Charisma Lv.5, $1,600) and Footballer (Coconut Tour, Confidence Lv.5, $1,600) come with the Special Job Set DLC." },
-        { ko: "이치반의 전용 직업 「소환사」는 액티비티가 아니라 서브스토리 No.38 「근신 사천왕 등장」 클리어로 열립니다.", en: "Ichiban's exclusive Sujimancer job doesn't come from an activity — it unlocks by clearing substory No.38." },
+        { ko: "테니스 플레이어(리조트 에스테, 활기 Lv.5, 1,600달러)와 풋볼러(코코넛 만끽 투어, 멘탈 Lv.5, 1,600달러)는 DLC 「스페셜 잡 세트」에 포함된 직업입니다.", en: "Tennis Player (Resort Spa, Charisma Lv.5, $1,600) and Footballer (Coconut Tour, Confidence Lv.5, $1,600) come with the Special Job Set DLC." },
+        { ko: "이치반의 전용 직업 「소환사」는 액티비티가 아니라 서브스토리 No.38 「야쿠신 사천왕 등장」 클리어로 열립니다.", en: "Ichiban's exclusive Sujimancer job doesn't come from an activity — it unlocks by clearing substory No.38." },
       ],
       videos: [
         { title: { ko: "알로해피 투어 전 직업 해금 (4K)", en: "All Alo-Happy Tours / job revelations (4K)" }, url: YT("F7-51Ni7s1k") },
@@ -229,7 +229,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       puzzleSets: [
         {
           title: { ko: "스포츠 검정 — 정답 10문제", en: "Sports Proficiency — all 10 answers" },
-          note: { ko: "수험료 300달러 · 첫 합격 보상 정열 +30 · 멘탈 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $300; first pass gives Passion +30, Confidence +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 300달러 · 첫 합격 보상 정열 +30 · 멘탈 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $300; first pass gives Passion +30, Confidence +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 야구에서 사용되는 변화구 중, 홈 베이스 바로 앞에서 낙하하는 '포크 볼'을 쥐는 방법을 다음 그림 중에서 고르세요.", en: "1. In Baseball, it is common to throw slower pitches called \"breaking balls\" to confuse the batter's timing. One such pitch is the forkball. Which of the following images demonstrate the correct grip to throw a forkball?" }, note: { ko: "정답: 그림 중 「포크볼 그립」", en: "Answer: the picture of 'forkball grip'" } },
             { title: { ko: "2. 포켓볼이나 스누커 등의 게임이 시작될 때 가지런히 정렬된 당구공을 흩트리듯 치는 샷의 이름은 무엇일까요?", en: "2. In cue sports such as billiards and snooker, the game begins by positioning the balls together in a rack, then shooting the cue ball to scatter them. What's the name of this opening shot?" }, note: { ko: "정답: 브레이크 샷", en: "Answer: Break Shot" } },
@@ -245,7 +245,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "하와이 검정 2급 — 정답 10문제", en: "Hawaiian Proficiency Tier 2 — all 10 answers" },
-          note: { ko: "수험료 무료 · 첫 합격 보상 정열 +30 · 쾌활 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee free; first pass gives Passion +30, Charisma +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 무료 · 첫 합격 보상 정열 +30 · 활기 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee free; first pass gives Passion +30, Charisma +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 하와이 요리의 대표라고도 할 수 있는 '아히포케'. 이 중 '포케'는 '자른 토막'을 의미하는데 '아히'는 무엇을 의미하는지를 다음 선택지 중에서 고르세요.", en: "1. Ahi poke is a popular dish in Hawaii. Poke means 'slice' but what does ahi mean?" }, note: { ko: "정답: 참치", en: "Answer: Pacific Bluefin Tuna" } },
             { title: { ko: "2. 하와이에서 정평이 난 지역 특산 디저트로 기름에 튀긴 빵에 설탕을 묻힌 도넛의 이름은 무엇일까요?", en: "2. What famous Hawaiian confection is a fried doughnut coated in sugar?" }, note: { ko: "정답: 말라사다", en: "Answer: Malasada" } },
@@ -261,7 +261,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "하와이 검정 1급 — 정답 10문제", en: "Hawaiian Proficiency Tier 1 — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +50 · 쾌활 +50. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Passion +50, Charisma +50. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +50 · 활기 +50. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Passion +50, Charisma +50. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 도로에 나와 자주 사고를 당해 그림 표지판으로도 만들어졌으며 하와이주의 세이자 고유의 동물인 이 새의 이름은 무엇일까요?", en: "1. Which of the following choices is the state bird of Hawaii, which has been involved in so many roadside accidents that warning signs, such as the one shown here, have been erected?" }, note: { ko: "정답: 네네", en: "Answer: Nēnē" } },
             { title: { ko: "2. 때때로 하와이를 직격해 건물을 무너뜨리는 등 막대한 피해를 입히는 허리케인. 1992년 허리케인 '이니키'의 직격으로 사육장이 파괴된 후, 야생화되어 그 수가 크게 불어난 생물을 다음 그림 중에서 고르세요.", en: "2. Hawaii is frequently hit by hurricanes, which cause extensive damage such as destruction of property. When Hurricane Iniki hit Hawaii in 1992, it destroyed farms en masse. Which animal was unleashed into the wild and crossbred with the feral population?" }, note: { ko: "정답: 그림 중 「닭」", en: "Answer: the picture of 'chicken'" } },
@@ -277,7 +277,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "해양 생물 박사 — 정답 10문제", en: "Marine Life — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +50 · 상냥함 +50. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Confidence +50, Kindness +50. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +50 · 다정함 +50. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Confidence +50, Kindness +50. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 넓고 깊은 바닷속에는 다양한 곳에 생물들이 서식하고 있습니다. 다음 중 가장 깊은 수심에서 서식하는 생물은 무엇일까요?", en: "1. Of the following marine organisms, which lives at the lowest point below sea level?" }, note: { ko: "정답: 초롱아귀", en: "Answer: Footballfish" } },
             { title: { ko: "2. 해파리는 다른 동물에게 있는 기관을 거의 갖고 있지 않습니다. 다음 중 그림 속 보름달물해파리가 갖고 있는 기관은 무엇일까요?", en: "2. Jellyfish lack certain organs other animals may have, but they do possess structures that perform similar functions. Which of the following is one such structure in the moon jelly?" }, note: { ko: "정답: 눈", en: "Answer: Eyes" } },
@@ -293,7 +293,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "알코올 마이스터 — 정답 10문제", en: "Alcohol Expertise — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 세련 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Style +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 세련미 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Style +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 위스키를 바 등에서 주문할 때 종종 듣게 되는 '싱글', '더블'이라는 말은 무엇을 의미할까요?", en: "1. What does it mean to order a single or double whisky?" }, note: { ko: "정답: 위스키를 붓는 양", en: "Answer: How much whisky to pour" } },
             { title: { ko: "2. 맥주의 원료 중 하나이며 쓴맛과 향, 거품을 만드는 것 외에도 잡균 번식을 억제해 보존성을 높이는 작용도 있는 그림 속 원료의 이름은 무엇일까요?", en: "2. The plant shown here is used in beer for its bittering, aromatic and preservative qualities in addition to its ability to prevent the growth of harmful bacteria. What is the name of this plant?" }, note: { ko: "정답: 홉", en: "Answer: Hops" } },
@@ -309,7 +309,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "세계 명소 검정 — 정답 10문제", en: "World Landmarks — all 10 answers" },
-          note: { ko: "수험료 300달러 · 첫 합격 보상 정열 +30 · 지성 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $300; first pass gives Passion +30, Intellect +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 300달러 · 첫 합격 보상 정열 +30 · 지성 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $300; first pass gives Passion +30, Intellect +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 영국의 '웨스트민스터 궁전'의 시계탑 '엘리자베스 타워'는 세계에 다른 애칭으로 알려져 있습니다. 그 애칭은 무엇일까요?", en: "1. The Palace of Westminster is a famous landmark in the United Kingdom. Located on the north end of the palace is a clock tower known as the Elizabeth Tower. It is more popularly known by what name?" }, note: { ko: "정답: 빅 벤", en: "Answer: Big Ben" } },
             { title: { ko: "2. 이탈리아의 로마를 대표하는 관광지 '콜로세움'은 고대 로마 시대에 무슨 목적으로 지어진 걸까요?", en: "2. The Colosseum is a famous amphitheatre at the centre of Rome, Italy. It was used for what purpose during Ancient Rome?" }, note: { ko: "정답: 투기장", en: "Answer: A gladiatorial arena" } },
@@ -325,7 +325,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "근육 박사 — 정답 10문제", en: "Muscular Science — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +60 · 멘탈 +60. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Passion +60, Confidence +60. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +60 · 멘탈 +60. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Passion +60, Confidence +60. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 다음 4가지의 운동 중에서 도구가 없으면 할 수 없는 운동을 고르세요.", en: "1. Which of the following exercises cannot be performed without equipment?" }, note: { ko: "정답: 프렌치 프레스", en: "Answer: French press" } },
             { title: { ko: "2. 다음 4개의 근육 중에서 평균적으로 성인 남성의 신체에서 가장 큰 근육을 고르세요.", en: "2. Which of the following is the largest muscle in the average adult male body?" }, note: { ko: "정답: 대퇴사두근", en: "Answer: Quadriceps" } },
@@ -341,7 +341,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "가드닝 검정 — 정답 10문제", en: "Gardening Proficency — all 10 answers" },
-          note: { ko: "수험료 300달러 · 첫 합격 보상 상냥함 +30 · 세련 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $300; first pass gives Kindness +30, Style +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 300달러 · 첫 합격 보상 다정함 +30 · 세련미 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $300; first pass gives Kindness +30, Style +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 다음 그림 중에서 가시를 지닌 것으로 알려진 식물은 무엇일까요?", en: "1. Which of the following flowers is famous for their thorns?" }, note: { ko: "정답: 그림 중 「장미」", en: "Answer: the picture of 'rose'" } },
             { title: { ko: "2. 가드닝을 할 때에는 각각의 꽃이 피는 계절에 대해 고려하는 것도 중요합니다. 다음 그림 중 봄에 피는 꽃은 무엇일까요?", en: "2. It is important to consider what season a flower will bloom in when gardening. Which of the following flowers blooms in spring?" }, note: { ko: "정답: 그림 중 「튤립」", en: "Answer: the picture of 'tulip'" } },
@@ -357,7 +357,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "뒷세계학 — 정답 10문제", en: "Underworld Studies — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Confidence +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Confidence +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 전 오미연합의 본부장으로 오미 사천왕 중 한 사람이었으나 이후 동성회 5대 회장으로 취임한 인물의 이름은 무엇일까요?", en: "1. Which of the following Omi Alliance members eventually became the fifth chairman of the Tojo Clan?" }, note: { ko: "정답: 테라다 유키오", en: "Answer: Yukio Terada" } },
             { title: { ko: "2. 후에 '시마노의 광견'이라고 불리는 마지마 고로는 한때 소텐보리의 한 카바레의 지배인이기도 했습니다. 그 카바레의 이름은 무엇일까요?", en: "2. What is the name of the cabaret club in Sotenbori that was once managed by Goro Majima, later known as the Mad Dog of Shimano?" }, note: { ko: "정답: 그랜드", en: "Answer: Cabaret Grand" } },
@@ -373,7 +373,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "SEGA 검정 2급 — 정답 10문제", en: "SEGA Proficiency Tier 2 — all 10 answers" },
-          note: { ko: "수험료 300달러 · 첫 합격 보상 멘탈 +30 · 쾌활 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $300; first pass gives Confidence +30, Charisma +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 300달러 · 첫 합격 보상 멘탈 +30 · 활기 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $300; first pass gives Confidence +30, Charisma +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. '드림캐스트'의 기억 매체는 액정 화면과 미니 게임을 플레이하는 기능을 가진 획기적인 것이었습니다. 이 주변기기의 명칭은 무엇일까요?", en: "1. The Dreamcast's storage medium was innovative during its time, as it featured an LCD Screen and minigame capabilities. What is the name of this medium?" }, note: { ko: "정답: 비주얼 메모리", en: "Answer: Visual Memory Unit" } },
             { title: { ko: "2. 1985년부터 가동 중이며 오토바이 기계에 올라타 좌우로 기울이며 코너를 도는 체감형 오토바이 레이싱 게임의 이름은 무엇일까요?", en: "2. This full-body motorcycle racing game has been in operation since 1985 and features a bike-shape cabinet that players would ride on, leaning left and right to turn. What is its name?" }, note: { ko: "정답: 행온", en: "Answer: Hang-on" } },
@@ -389,7 +389,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "SEGA 검정 1급 — 정답 10문제", en: "SEGA Proficiency Tier 1 — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +50 · 쾌활 +50. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Confidence +50, Charisma +50. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 멘탈 +50 · 활기 +50. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Confidence +50, Charisma +50. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 세가의 액션 게임 '소닉 더 헤지혹'의 주인공인 소닉의 키는 몇 cm일까요?", en: "1. Sonic the Hedgehog is an action game released by SEGA. What is Sonic's height?" }, note: { ko: "정답: 100cm", en: "Answer: 100 cm" } },
             { title: { ko: "2. 세가는 다양한 하드웨어를 판매해 왔습니다. 다음 중 세가 마크 Ⅲ를 개량해서 발매했던 가정용 게임기의 이름은 무엇일까요?", en: "2. SEGA has released various hardware over the years. Which of the following game consoles was a remodeled version of the Sega Mark III?" }, note: { ko: "정답: 마스터 시스템", en: "Answer: Master System" } },
@@ -405,7 +405,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "호놀룰루 시티 검정 — 정답 10문제", en: "Honolulu City Proficiency — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +60 · 쾌활 +60. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Passion +60, Charisma +60. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 정열 +60 · 활기 +60. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Passion +60, Charisma +60. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 크레이지하고 펑키한 배달이 특징인 이 로고의 음식 배달 서비스 기업의 이름은 무엇일까요?", en: "1. Which crazy and funky food delivery business does this logo belong to?" }, note: { ko: "정답: 크레이지 이츠", en: "Answer: Crazy Eats" } },
             { title: { ko: "2. 그림 속 장소에서 탑승할 수 있는 하와이의 편리한 교통수단을 다음 그림에서 고르세요.", en: "2. Which mode of transportation in Hawaii can be ridden from the location shown here?" }, note: { ko: "정답: 그림 중 「트롤리버스」", en: "Answer: the picture of 'trolley'" } },
@@ -421,7 +421,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "보석 검정 — 정답 10문제", en: "Gem Proficiency — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 세련 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Style +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 세련미 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Style +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 대부분의 보석은 광물의 일종이지만 그렇지 않은 보석도 있습니다. 식물의 수액이 굳어서 만들어진 그림 속 보석의 이름은 무엇일까요?", en: "1. Though most gems may be formed from a type of mineral, not all are. Which of the following gemstones is formed from a hardened tree sap?" }, note: { ko: "정답: 호박", en: "Answer: Amber" } },
             { title: { ko: "2. 수많은 보석 중에서도 생물의 체내에서 만들어진 것으로 유명한 보석의 이름은 다음 중 무엇일까요?", en: "2. Which gem is famous for forming within the tissues of a living thing?" }, note: { ko: "정답: 진주", en: "Answer: Pearl" } },
@@ -437,7 +437,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "야쿠몬 마스터 — 정답 10문제", en: "Sujimon Mastery — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 상냥함 +60 · 세련 +60. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Kindness +60, Style +60. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 다정함 +60 · 세련미 +60. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Kindness +60, Style +60. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 이 야쿠몬이 사용하는 기술의 이름을 다음 보기에서 고르세요.", en: "1. Which of the following skills is used by this Sujimon?" }, note: { ko: "정답: 매캐한 스모그", en: "Answer: Nicotine Smog" } },
             { title: { ko: "2. 이 야쿠몬이 사용하는 기술의 이름을 다음 보기에서 고르세요.", en: "2. Which of the following skills is used by this Sujimon?" }, note: { ko: "정답: 선배 부르기", en: "Answer: Rep the Set" } },
@@ -448,12 +448,12 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
             { title: { ko: "7. 손에 든 식품을 무기와 방패로 쓰는 야쿠몬 '무전 이터'는 체력이 줄면 어떤 행동을 합니다. 그 행동은 무엇일까요?", en: "7. The Wild Hog Sujimon wields food as a weapon and a shield. What does he do whenever his health decreases?" }, note: { ko: "정답: 방패를 먹는다", en: "Answer: Eats the Shield" } },
             { title: { ko: "8. 다음 선택지에서 돈을 빼앗아 가는 야쿠몬을 고르세요.", en: "8. Which of the following Sujimon steals your money?" }, note: { ko: "정답: 그림 중 「돈을 빼앗는 야쿠몬」", en: "Answer: the picture of 'the money-stealing Sujimon (Blackmailer Daemon)'" } },
             { title: { ko: "9. 그림 속의 야쿠몬 '불법 투기꾼'은 메고 있는 '어떤 물건'으로 넓은 범위 공격을 해 옵니다. 이 물건은 무엇일까요?", en: "9. This Sujimon, Dump Chump, performs a wide area attack using what object?" }, note: { ko: "정답: 드럼통", en: "Answer: Oil Drum" } },
-            { title: { ko: "10. 그림 속의 야쿠몬 '배드 보이'는 손에 들고 있는 '어떤 물건'을 휘둘러서 공격해 옵니다. 이 물건은 무엇일까요?", en: "10. This Sujimon, Rebel Yeller, attacks by swimming around what object?" }, note: { ko: "정답: 쇠 파이프", en: "Answer: Nail Bat" } },
+            { title: { ko: "10. 그림 속의 야쿠몬 '배드 보이'는 손에 들고 있는 '어떤 물건'을 휘둘러서 공격해 옵니다. 이 물건은 무엇일까요?", en: "10. This Sujimon, Rebel Yeller, attacks by swinging around what object?" }, note: { ko: "정답: 쇠 파이프", en: "Answer: Iron pipe" } },
           ],
         },
         {
           title: { ko: "수학 — 정답 10문제", en: "Mathematics — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 지성 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Intellect +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 지성 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Intellect +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 그림 속 시계의 시각으로부터 처음으로 9시 30분이 될 때까지는 몇 분이 남았을까요?", en: "1. Given the displayed time, how many minutes will it take for time to read 9:30?" }, note: { ko: "정답: 55분", en: "Answer: 55 minutes" } },
             { title: { ko: "2. 그림 속 주사위 눈의 반대 면을 다음 그림 중에서 고르세요.", en: "2. Given the die face shown, what is the value of the opposite side?" }, note: { ko: "정답: 그림 중 「주사위 반대 면(2)」", en: "Answer: the picture of 'opposite die face (two)'" } },
@@ -469,7 +469,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "우주 박사 — 정답 10문제", en: "Outer Space — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 상냥함 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Kindness +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 다정함 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Kindness +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 지구 주변을 도는 '달'에 대한 올바른 정보는 다음 중 무엇일까요?", en: "1. Which of the following is true about Earth's moon?" }, note: { ko: "정답: 자전과 공전 주기가 동일하다", en: "Answer: the rates of rotation and revolution are the same" } },
             { title: { ko: "2. 1986년에 지구에 접근해 화제가 되었으며, 지구에서 육안으로 볼 수 있는 혜성의 이름은 무엇일까요?", en: "2. What was the name of the comet that flew so close to Earth in 1986 that it was visible to the naked eye?" }, note: { ko: "정답: 핼리 혜성", en: "Answer: Halley's comet" } },
@@ -485,7 +485,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "역사학 — 정답 10문제", en: "World History — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 지성 +120. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Intellect +120. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 지성 +120. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Intellect +120. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. 17세기의 프랑스 철학자 '데카르트'. 그가 남긴 말로 옳은 것을 다음 중에서 고르세요.", en: "1. Which of the following phrases was coined by French philosopher Rene Descartes in the 17th century?" }, note: { ko: "정답: 나는 생각한다, 고로 존재한다", en: "Answer: I think, therefore I am" } },
             { title: { ko: "2. 후지산을 다양한 각도에서 그린 판화 '부악36경'의 작가로 유명한 일본의 우키요에 화가의 이름은 다음 중 무엇일까요?", en: "2. Which ukiyo-e artist is famous for the woodblock print series, the Thirty-Six Views of Mount Fuji, which depicts Mt. Fuji from a number of different angles?" }, note: { ko: "정답: 카츠시카 호쿠사이", en: "Answer: Katsushika Hokusai" } },
@@ -501,7 +501,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "잡학왕 2급 — 정답 10문제", en: "Trivia King Tier 2 — all 10 answers" },
-          note: { ko: "수험료 300달러 · 첫 합격 보상 상냥함 +30 · 지성 +30 · 쾌활 +30. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $300; first pass gives Kindness +30, Intellect +30, Charisma +30. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 300달러 · 첫 합격 보상 다정함 +30 · 지성 +30 · 활기 +30. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $300; first pass gives Kindness +30, Intellect +30, Charisma +30. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. '음식'에 관한 잡학 문제입니다. 채소는 종류에 따라 물에 뜨는 것과 가라앉는 것이 있는데, 다음 채소 중 물에 뜨는 채소는 무엇일까요?", en: "1. Which of the following vegetables will float in fresh water?" }, note: { ko: "정답: 호박", en: "Answer: Pumpkin" } },
             { title: { ko: "2. '음식'에 관한 잡학 문제입니다. 주로 열대 지역에서 재배되는 덩이줄기인 카사바를 원료로 해서 만들어지며 독특한 식감이 특징인 식품을 다음 그림 중에서 고르세요.", en: "2. Which of the following foods, known for its unique texture, is made from cassava, a root vegetable that grows mainly in the tropics?" }, note: { ko: "정답: 그림 중 「타피오카」", en: "Answer: the picture of 'tapioca'" } },
@@ -517,7 +517,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "잡학왕 1급 — 정답 10문제", en: "Trivia King Tier 1 — all 10 answers" },
-          note: { ko: "수험료 500달러 · 첫 합격 보상 상냥함 +60 · 지성 +60 · 쾌활 +60. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $500; first pass gives Kindness +60, Intellect +60, Charisma +60. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 500달러 · 첫 합격 보상 다정함 +60 · 지성 +60 · 활기 +60. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $500; first pass gives Kindness +60, Intellect +60, Charisma +60. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. '두께'에 관한 잡학 문제입니다. 신용카드의 사이즈는 국제 규격에 의해 정해져 있습니다. 그 두께를 고품질 복사 용지(0.08mm/장)로 따지면 약 몇 장분에 해당할까요?", en: "1. Credit card sizes are determined by an international standard for easy use. About how many sheets of high-quality copy paper (0.08 mm per sheet) does it take to match the thickness of a credit card?" }, note: { ko: "정답: 10장", en: "Answer: 10" } },
             { title: { ko: "2. '생물'에 관한 잡학 문제입니다. 식탁에도 자주 오르는 친숙한 생물인 오징어. 소가 4개의 위장을 지닌 것처럼 오징어도 어떤 기관을 3개 가지고 있습니다. 그것은 무엇일까요?", en: "2. Like octopuses, what organ does a squid possess three of?" }, note: { ko: "정답: 심장", en: "Answer: Heart" } },
@@ -533,7 +533,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         },
         {
           title: { ko: "잡학왕 특급 — 정답 10문제", en: "Trivia King Special Tier — all 10 answers" },
-          note: { ko: "수험료 1,000달러 · 첫 합격 보상 상냥함 +90 · 지성 +90 · 쾌활 +90. 10문제 중 5문제가 랜덤으로 나옵니다. 정답은 게임공략맨과 game8이 일치합니다.", en: "Fee $1,000; first pass gives Kindness +90, Intellect +90, Charisma +90. Five of these ten are drawn at random. Game Kouryaku-man and game8 agree on every answer." },
+          note: { ko: "수험료 1,000달러 · 첫 합격 보상 다정함 +90 · 지성 +90 · 활기 +90. 10문제 중 5문제가 랜덤으로 나옵니다.", en: "Fee $1,000; first pass gives Kindness +90, Intellect +90, Charisma +90. Five of these ten are drawn at random." },
           puzzles: [
             { title: { ko: "1. '생물'에 관한 잡학 문제입니다. 다음 중 달팽이의 성질이 아닌 것은 무엇일까요?", en: "1. Which of the following statements about snails is false?" }, note: { ko: "정답: 점액으로 금속을 녹일 수 있다", en: "Answer: Their mucus can dissolve metal" } },
             { title: { ko: "2. '생물'에 관한 잡학 문제입니다. 많은 생물은 성별이 유전적으로 결정되지만, 바다거북을 포함한 많은 거북이들은 별도의 외적요인에 의해 성별이 결정됩니다. 그 요인은 무엇일까요?", en: "2. The sex of many living things is determined by genes, but for other species, it is determined by external factors. What determines the sex of many turtles, including sea turtles?" }, note: { ko: "정답: 알의 부화 온도", en: "Answer: Egg incubation temperature" } },
@@ -557,7 +557,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "하와이 「흑부용」(6장) / 요코하마 이세자키 이진초 중화가 남 공중화장실 안쪽 칸 벽, m HOLD'EM 진나이", en: "Black Orchid, Hawaii (Chapter 6); the back stall of the public toilet south of Chinatown in Ijincho, and m HOLD'EM Jinnai" },
       summary: {
-        ko: "블랙잭과 텍사스 홀덤 포커를 칩으로 즐깁니다. 하와이는 1달러/칩, 이세자키 이진초는 1엔/칩, m HOLD'EM 진나이는 100엔/포인트. 인간력 「세련」과 기류의 각성도가 오르고, 「동료와 플레이」를 고르면 절 레벨도 오릅니다.",
+        ko: "블랙잭과 텍사스 홀덤 포커를 칩으로 즐깁니다. 하와이는 1달러/칩, 이세자키 이진초는 1엔/칩, m HOLD'EM 진나이는 100엔/포인트. 인간력 「세련」과 키류의 각성도가 오르고, 「동료와 플레이」를 고르면 절 레벨도 오릅니다.",
         en: "Blackjack and Texas Hold'em for chips — $1 a chip in Hawaii, ¥1 in Ijincho, ¥100 per point at m HOLD'EM Jinnai. Playing raises Style and Kiryu's Awakening, and the \"play with a friend\" option raises bond levels.",
       },
       howTo: [
@@ -609,7 +609,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         { ko: "판정은 GREAT / GOOD / MISS입니다. GREAT과 GOOD이 연속되면 콤보가 쌓이고 한 번이라도 실패하면 처음부터 리셋됩니다.", en: "Inputs grade as GREAT, GOOD or MISS. GREAT and GOOD both extend the combo; a single miss resets it to zero." },
         { ko: "콤보 20회 이상에서 「초정열 모드」에 들어가 점수가 급격히 오릅니다. 결국 콤보를 끊지 않는 것이 최대 공략 포인트입니다.", en: "Past twenty combo you enter Super Passion Mode and the score climbs fast — keeping the combo alive is the whole technique." },
         { ko: "추임새를 넣을 수 있는 곡에서는 「무난하게」와 「정열적으로」 중 고르는데, 무난하게는 쉬운 대신 90점을 넘길 수 없습니다. 100점을 노린다면 반드시 「정열적으로」를 고르세요.", en: "On duet songs with call-and-response you choose between a safe and a passionate backing. The safe one is easier but caps you below 90 points — for a 100 you must take the passionate option." },
-        { ko: "수록곡(출처 1곳: 게임공략맨 목록) — 카스가: 「악마의 지옥냄비」「GO! 수상SUMMER(GO！ SUMMER)」「JUDGEMENT -심판-」「꿈꾸던 모습을 향해」. 기류: 「JUDGEMENT -심판-」「절망정 프라이드」「TONIGHT」「바보냐」「바보 같아」「hands」「MachineGun Kiss」. 후지미야 치토세: 「Honolulu City Lights」. 무코다 사에코: 「AWAKE」. 한 준기: 「좋아할 수 있는 사람을 좋아할 수 있다면」. 추임새 선택이 있는 곡은 기류의 7곡과 치토세·사에코·한 준기 곡이고, 카스가 곡에는 없습니다.", en: "Song list (single source: Game Kouryaku-man) — Kasuga: Hell Stew, Summertime Groove, Judgement -Shinpan-, The Future I Dreamed Of. Kiryu: Judgement -Shinpan-, Pride from Despair, Tonight, Baka Darou (Playing the Fool), Baka Mitai, Hands, Machine Gun Kiss. Chitose Fujinomiya: Honolulu City Lights. Saeko Mukoda: AWAKE. Han Joon-gi: If I Could Love the One I Love. The backing-vocal choice appears on Kiryu's seven songs and on Chitose's, Saeko's and Han's, never on Kasuga's." },
+        { ko: "수록곡(출처 1곳: 게임공략맨 목록) — 카스가: 「악마의 지옥냄비」「GO! 슬픔의 SUMMER」「JUDGEMENT -심판-」「꿈꾸던 모습을 향해」. 키류: 「JUDGEMENT -심판-」「절망정 프라이드」「TONIGHT」「바보 같지」「바보 같아」「hands」「MachineGun Kiss」. 후지노미야 치토세: 「Honolulu City Lights」. 무코다 사에코: 「AWAKE」. 한준기: 「사랑할 수 있는 사람을 사랑했더라면」. 추임새 선택이 있는 곡은 키류의 7곡과 치토세·사에코·한준기 곡이고, 카스가 곡에는 없습니다.", en: "Song list (single source: Game Kouryaku-man) — Kasuga: Hell Stew, Summertime Groove, Judgement -Shinpan-, The Future I Dreamed Of. Kiryu: Judgement -Shinpan-, Pride from Despair, Tonight, Baka Darou (Playing the Fool), Baka Mitai, Hands, Machine Gun Kiss. Chitose Fujinomiya: Honolulu City Lights. Saeko Mukoda: AWAKE. Han Joon-gi: If I Could Love the One I Love. The backing-vocal choice appears on Kiryu's seven songs and on Chitose's, Saeko's and Han's, never on Kasuga's." },
         { ko: "리듬 조작 없이 노래 장면만 보는 「회상」 모드와, 곡별 재생수 랭킹·하이스코어·최근 부른 곡 이력도 볼 수 있습니다.", en: "There is also a Reminisce mode that just plays the performance with no inputs, plus per-song play counts, high scores and a recently-sung list." },
       ],
       source: { label: "ゲーム攻略マン — カラオケ攻略", url: "https://dswiipspwikips3.jp/yakuza8/play-spots/karaoke.html" },
@@ -721,7 +721,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "하와이 아나콘다 쇼핑센터 / 이진초 GiGO 중화가점·게임센터 사사키 / 카무로초 극장 앞 광장점", en: "Anaconda Shopping Center, Hawaii; GiGO Chinatown and Game Center Sasaki in Ijincho; the Theater Square branch in Kamurocho" },
       summary: {
-        ko: "실제 세가 아케이드 3종과 UFO 캐처, 야쿠몬 가챠가 놓여 있습니다. 인간력 「쾌활」이 오르고, 하와이에서는 UFO 캐처 경품을 특정 인물에게 건네 친구가 될 수 있어 알로하 링크스와 직결됩니다.",
+        ko: "실제 세가 아케이드 3종과 UFO 캐처, 야쿠몬 가챠가 놓여 있습니다. 인간력 「활기」이 오르고, 하와이에서는 UFO 캐처 경품을 특정 인물에게 건네 친구가 될 수 있어 알로하 링크스와 직결됩니다.",
         en: "Three real SEGA cabinets plus the UFO catcher and a Sujimon gacha. Playing raises Charisma, and in Hawaii the UFO catcher prizes can be handed to specific people to befriend them — which feeds straight into Aloha Links.",
       },
       howTo: [
@@ -729,7 +729,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         { ko: "스파이크아웃은 에리어 안의 적을 전멸시키면 게이트가 열리고, 마지막에 스테이지 보스를 쓰러뜨리면 클리어입니다. 게이트 선택으로 루트가 갈립니다.", en: "In Spikeout, wiping out an area's enemies opens the gate, and the run ends when you beat the stage boss; gate choices branch the route." },
         { ko: "겟 배스는 지정된 무게만큼 낚아 올리면 클리어입니다. 통상 3스테이지 + 최종 스테이지 구성입니다.", en: "Get Bass clears when you land the specified total weight, across three stages plus a final one." },
         { ko: "UFO 캐처는 5달러에 3게임이며, 점원에게 말을 걸면 안에 든 경품을 교체할 수 있습니다. 경품은 점포마다 다릅니다.", en: "The UFO catcher is three plays for $5, and talking to the attendant swaps out what's inside; the prize pool differs per branch." },
-        { ko: "스파이크아웃은 인간력 챌린지(카스가)·미련 미션(기류) 항목입니다. 조작 캐릭터 1명 사용 +20, 4명 모두 사용 +25, 스테이지 1·2·3 클리어 각 +20, 스테이지 4 클리어 +25, 스테이지 5 클리어 +30이 쾌활(카스가)·체(기류)로 들어옵니다.", en: "Spikeout feeds Kasuga's Personality Challenges and Kiryu's Bucket List: using one character +20, all four +25, clearing Stage 1, 2 or 3 +20 each, Stage 4 +25, Stage 5 +30 — Charisma for Kasuga, Body for Kiryu." },
+        { ko: "스파이크아웃은 인간력 챌린지(카스가)·미련 미션(키류) 항목입니다. 조작 캐릭터 1명 사용 +20, 4명 모두 사용 +25, 스테이지 1·2·3 클리어 각 +20, 스테이지 4 클리어 +25, 스테이지 5 클리어 +30이 활기(카스가)·체(키류)로 들어옵니다.", en: "Spikeout feeds Kasuga's Personality Challenges and Kiryu's Bucket List: using one character +20, all four +25, clearing Stage 1, 2 or 3 +20 each, Stage 4 +25, Stage 5 +30 — Charisma for Kasuga, Body for Kiryu." },
         { ko: "스파이크아웃 기본기: □ 연타가 기본 콤보, △는 누르는 시간에 따라 차지 1~4(2단계 = 띄우기, 3단계 = 기절, 끝까지 = 대미지+날리기), □+△ 발 걸기로 잡몹을 넘어뜨린 뒤 □로 추격, 번개 아이콘이 있을 때 R2가 무적 스페셜입니다. ×/R1을 누른 채 움직이면 시프트 이동으로 공격을 피하기 쉽습니다. 차지와 발 걸기는 버튼 설정에서 누르기 쉬운 키로 옮겨 두세요.", en: "Spikeout basics: mash square for the base combo; triangle charges in four levels (2 launches, 3 stuns, full charge does big damage and knocks away); square+triangle sweeps mooks down for a square follow-up; R2 with a lightning icon is the invincible special. Holding cross/R1 while moving shifts sideways to dodge. Remap charge and sweep to comfortable buttons." },
         { ko: "숨은 커맨드 — 스파이크아웃: 캐릭터 선택에서 스파이크는 ↑/←, 린다는 ↑/→, 텐신은 ↓/←, 화이트는 ↓/→를 11번 누르고 결정하면 미러 모드. 버추어 파이터 3tb: 시작할 때 ↓를 누른 채 START면 1대1 노멀 배틀 모드, 가드+펀치+킥+이스케이프를 누른 채 START면 입력 커맨드 표시(멀티 플레이 미니게임 모드에서는 불가), 캐릭터 선택에서 START를 누른 채 결정하면 2P 컬러. 겟 배스: 에리어 선택에서 캐스팅+루어 선택 버튼 동시 입력으로 여성 캐릭터.", en: "Hidden commands — Spikeout: on character select press up/left (Spike), up/right (Linda), down/left (Tenshin) or down/right (White) eleven times then confirm for mirror mode. Virtua Fighter 3tb: hold down while pressing Start for the one-on-one Normal Battle mode; hold Guard+Punch+Kick+Escape while pressing Start to show inputs (not in the multiplayer minigame mode); hold Start while confirming a character for the 2P colours. Get Bass: press Cast and Lure Select together on area select to fish as the female angler." },
       ],
@@ -777,7 +777,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 2,
       location: { ko: "요코하마 이세자키 이진초 / 카무로초 요시다 배팅 센터 (8장 이후)", en: "Isezaki Ijincho; Yoshida Batting Center, Kamurocho — from Chapter 8" },
       summary: {
-        ko: "8장에서 기류 쪽 콘텐츠로 열립니다. 챌린지 코스와 홈런 코스가 각각 초급·중급·상급·초인급으로 나뉘고, 모두 A랭크 이상으로 클리어하면 「홈런 경쟁」이 추가됩니다. 획득 포인트는 경품과 교환합니다.",
+        ko: "8장에서 키류 쪽 콘텐츠로 열립니다. 챌린지 코스와 홈런 코스가 각각 초급·중급·상급·초인급으로 나뉘고, 모두 A랭크 이상으로 클리어하면 「홈런 경쟁」이 추가됩니다. 획득 포인트는 경품과 교환합니다.",
         en: "Opens with Kiryu's side of the story in Chapter 8. The Challenge and Home Run courses each run beginner, intermediate, advanced and superhuman; clearing them all at A rank or better adds the Home Run Contest. Points trade for prizes.",
       },
       howTo: [
@@ -844,7 +844,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       difficulty: 3,
       location: { ko: "이세자키 이진초 사쿠라가와도리 남 — 노숙자 마을의 「칸 씨」", en: "South Sakuragawa Street, Isezaki Ijincho — Kan-san in the homeless village" },
       summary: {
-        ko: "7편에서 돌아온 자전거 캔 줍기. 8편에서는 기류의 엔딩 노트 「미련 미션」 항목이기도 해서, 초회 클리어나 캔 수집 수 같은 달성 항목을 채우면 심·기·체와 각 내성이 오릅니다. 초급·중급·상급 3단계입니다.",
+        ko: "7편에서 돌아온 자전거 캔 줍기. 8편에서는 키류의 엔딩 노트 「미련 미션」 항목이기도 해서, 초회 클리어나 캔 수집 수 같은 달성 항목을 채우면 심·기·체와 각 내성이 오릅니다. 초급·중급·상급 3단계입니다.",
         en: "The bicycle can hunt returns from Yakuza 7. In Infinite Wealth it doubles as one of Kiryu's Bucket List missions, so the first clear and the can-count milestones raise his Soul/Tech/Body and their resistances. Three difficulties." },
       howTo: [
         { ko: "라이벌에게 부스트로 몸통박치기를 하면 캔 20개 이상이 쏟아지고, 쓰러진 라이벌은 멀리 리스폰됩니다. 라이벌은 보이는 대로 적극적으로 들이받으세요.", en: "Boost-ramming a rival spills twenty-plus cans and respawns them far away, so hit every rival you can reach." },

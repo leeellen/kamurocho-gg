@@ -201,14 +201,14 @@ export function GameHero({
           />
           <StatTile
             tone="accent"
-            label={locale === "ko" ? "공략 커버리지" : "Coverage"}
+            label={locale === "ko" ? "검토된 공략" : "Reviewed guides"}
             value={`${coveragePct}%`}
             hint={locale === "ko" ? `업적 ${game.achievements} 중 ${game.guideCoverage}` : `${game.guideCoverage} of ${game.achievements}`}
           />
           {!showSteamProgress && (
             <StatTile
               tone="gold"
-              label={locale === "ko" ? "플레이 타임" : "Playtime"}
+              label={locale === "ko" ? "플레이 타임 추정" : "Estimated playtime"}
               value={
                 <span className="flex flex-col gap-1.5">
                   <span className="flex items-baseline gap-2 whitespace-nowrap">

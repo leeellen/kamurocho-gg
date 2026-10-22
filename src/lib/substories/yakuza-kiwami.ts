@@ -1,834 +1,1585 @@
 import type { SubstoriesData } from "./types";
 
 export const yakuzaKiwamiSubstories: SubstoriesData = {
-  appId: 3717330,
-  summary: {
-    ko: "총 78건의 「트러블 미션」(서브 스토리)이 카무로초 전역에 분포. 마지막 보스 직전까지 모두 접근 가능하므로 시간 제한으로 놓칠 일은 없지만, 다이얼로그 선택을 잘못하면 보상·완료 카운트가 깨지는 항목이 있습니다. 4장에서 약 35건이 한꺼번에 풀려 진행 순서를 잡기 어려우므로 메인 스토리와 병행해서 정리하는 편이 효율적입니다. 코마키 무술 시리즈(59~69)는 키류의 핵심 히트 액션을 제공하므로 최우선으로 진행 권장.",
-    en: "78 'Trouble Mission' substories spread across Kamurocho. None are time-limited — every one stays accessible up to the final boss — but a handful punish wrong dialog picks with broken rewards. Chapter 4 unlocks ~35 at once, so interleave them with the main story rather than backlogging. The Komaki training chain (59–69) feeds Kiryu's signature Heat Actions and should be prioritized.",
+  "appId": 3717330,
+  "summary": {
+    "ko": "카무로쵸의 서브스토리 78건입니다. 클리어 후에도 남은 항목을 진행할 수 있습니다.",
+    "en": "78 substories in Kamurocho. Unfinished entries can be completed after the story."
   },
-  source: { label: "gamewith.jp / kamigame / PlayStation LifeStyle — Yakuza Kiwami substories", url: "https://gamewith.jp/ps4/game/show/3106" },
-  groups: [
+  "source": {
+    "label": "神ゲー攻略 — 용과 같이 극 서브스토리 목록·발생 조건",
+    "url": "https://kamigame.jp/ryugagotokukiwami/page/334745101479724323.html"
+  },
+  "groups": [
     {
-      title: { ko: "2~3장 — 카무로초 복귀", en: "Chapter 2~3 — Return to Kamurocho" },
-      items: [
+      "title": {
+        "ko": "2장부터",
+        "en": "From Chapter 2"
+      },
+      "items": [
         {
-          number: 8,
-          title: { ko: "치한 의혹", en: "Molestation Accusation" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "극장 광장", en: "Theater Square" },
-          trigger: { ko: "2장 진행 중 극장 광장에서 여성에게 치한으로 몰린 직장인 옆을 지나가기", en: "Walk past the salaryman being accused on Theater Square during Chapter 2." },
-          body: {
-            ko: "여성이 멀쩡한 직장인을 치한으로 몰며 합의금을 요구. 키류는 둘의 말을 들은 뒤 누구 편을 들지 선택. 「남자를 옹호한다」를 고르면 여성이 정체를 드러내고 동료들과 함께 공격 — 격파하면 완료. 「여자를 옹호한다」는 실패 분기로 보상이 깎입니다.",
-            en: "A woman frames an innocent salaryman as a groper to extort him. Hear both sides, then side with the man — she reveals herself as a scammer with backup; beat them to clear. Siding with her cuts the reward.",
+          "number": 8,
+          "title": {
+            "ko": "치한 의혹",
+            "en": "Molestation Accusation"
           },
-          choices: [
-            { prompt: { ko: "「누구 편을 드시겠어요?」", en: "'Whose side are you on?'" }, correct: { ko: "남자 편을 든다", en: "Side with the man" }, note: { ko: "여자 편 선택 시 보상·완료 카운트가 깨짐", en: "Picking the woman tanks the reward." } },
-          ],
-          reward: { ko: "경험치 + 컴플리션 카운트", en: "EXP + completion credit" },
-        },
-      ],
+          "chapter": {
+            "ko": "2장",
+            "en": "Chapter 2"
+          },
+          "body": {
+            "ko": "아오키에게 스타더스트 위치를 들은 뒤 극장 앞 거리의 파친코점 앞으로 갑니다. 남자의 요구에 돈을 주거나 거절한 뒤 전투에서 이기면 완료됩니다. 1만 엔을 먼저 주면 보상 5만 엔, 거절하면 2만 엔이므로 지급 여부가 완료 실패를 결정하지는 않습니다.",
+            "en": "After Aoki tells you where Stardust is, approach the pachinko parlor on Theater Avenue. Either pay or refuse, then win the fight. Paying ¥10,000 yields ¥50,000 afterward; refusing yields ¥20,000. Neither choice prevents completion."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 痴漢疑惑",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/334872066803115237.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "4장 — 거리 해방", en: "Chapter 4 — Streets Open Up" },
-      items: [
+      "title": {
+        "ko": "4장부터",
+        "en": "From Chapter 4"
+      },
+      "items": [
         {
-          number: 1,
-          title: { ko: "F컵의 가격", en: "The Price of an F-cup" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "핑크 거리 북쪽", en: "Pink St. North" },
-          trigger: { ko: "핑크 거리 북쪽에서 거유 캐스팅을 외치는 남자에게 말 걸기", en: "Approach the man yelling about busty models on Pink St. North." },
-          body: {
-            ko: "AV 캐스팅 미끼로 사기를 치는 남자가 키류에게 '확인비'를 요구. 거절 후 처치하면 완료. 이 사기꾼을 처리해야 후속 지하 카지노 접근 라인이 열립니다.",
-            en: "A casting-scam hustler demands a fake fee. Refuse, beat him down, and the encounter unlocks the underground casino lead.",
+          "number": 1,
+          "title": {
+            "ko": "F컵의 가격",
+            "en": "The Price of an F-cup"
           },
-          choices: [
-            { prompt: { ko: "「확인비 5만엔만 내주시면…」", en: "'Just pay the 50,000 yen fee…'" }, correct: { ko: "거절한다", en: "Refuse" } },
-          ],
-          reward: { ko: "경험치 + 지하 카지노 단서", en: "EXP + underground casino lead" },
-        },
-        {
-          number: 10,
-          title: { ko: "먹튀", en: "Dine and Dash" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "텐카이 거리 북쪽", en: "Tenkaichi St. — north" },
-          trigger: { ko: "텐카이 거리 북쪽에서 먹튀 손님을 쫓는 점주를 만나기", en: "Meet the shop owner chasing a dine-and-dash customer." },
-          body: { ko: "도주범을 추격해 따라잡고 격파. 도중 갈림길에서 잘못된 방향을 고르면 놓치므로 화면 좌측 미니맵 기준 직진.", en: "Chase down the runner and beat him; pick the correct alley fork or he escapes." },
-          reward: { ko: "경험치 + 식권", en: "EXP + meal voucher" },
-        },
-        {
-          number: 11,
-          title: { ko: "운명의 감정료", en: "The Price of a Palm Reading" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "센료 거리", en: "Senryu St." },
-          trigger: { ko: "센료 거리 점쟁이 노점에 접근", en: "Talk to the fortune teller on Senryu St." },
-          body: {
-            ko: "운세를 봐주겠다며 다단계로 추가 요금을 청구하는 사기 점쟁이. 첫 감정료(1,000엔)는 지불 후, 두 번째 요청부터 거절하면 정상 분기. 무한정 결제하면 돈만 잃고 완료가 늦어집니다.",
-            en: "The fortune teller stacks fee after fee. Pay the first 1,000 yen, then refuse from the second prompt onward to clear cleanly.",
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
           },
-          choices: [
-            { prompt: { ko: "「1,000엔만 내시면…」", en: "'Just 1,000 yen…'" }, correct: { ko: "지불한다", en: "Pay" } },
-            { prompt: { ko: "「추가로 더…」", en: "'A bit more…'" }, correct: { ko: "거절한다", en: "Refuse" }, note: { ko: "두 번째부터는 무조건 거절", en: "Refuse every prompt after the first." } },
-          ],
-          reward: { ko: "경험치 + 부적", en: "EXP + lucky charm" },
-        },
-        {
-          number: 17,
-          title: { ko: "시비", en: "Bump and Scam" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 — 극장 거리 북쪽", en: "Nanafuku St. north of Theater Ave." },
-          trigger: { ko: "나나후쿠 거리에서 시비 거는 남자와 부딪치기", en: "Bump into the man picking a fight on Nanafuku St." },
-          body: { ko: "고의 충돌 후 합의금을 뜯어내려는 시비꾼. 정중히 사과하면 점점 요구가 커지므로 단호히 거절하고 격파.", en: "A staged-bump scammer demands payout. Refuse and beat him; apologizing only escalates the shakedown." },
-          choices: [
-            { prompt: { ko: "「치료비 내놔라」", en: "'Pay my medical bill!'" }, correct: { ko: "거절한다", en: "Refuse" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 18,
-          title: { ko: "시비의 역습", en: "Bump and Scam: Revenge" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
-          trigger: { ko: "#17 완료 후 같은 장소 재방문", en: "Return to the same Nanafuku St. corner after clearing #17." },
-          body: { ko: "동일 사기꾼이 친구를 데려와 재시도. 다시 격파. 4부작 중 두 번째이며, 모두 「거절」 분기를 유지해야 정상 진행.", en: "Same scammer returns with a friend. Refuse, fight, repeat — this is part two of a four-part chain." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 19,
-          title: { ko: "시비의 대역습", en: "Bump and Scam: Three Strikes" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
-          trigger: { ko: "#18 완료 후 재방문", en: "Return after clearing #18." },
-          body: { ko: "사기꾼이 더 많은 동료를 끌고 옴. 거절 후 격파.", en: "The scammer escalates with more thugs. Refuse and fight." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 20,
-          title: { ko: "시비의 그 후", en: "Bump and Scam: Epilogue" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 (동일 지점)", en: "Nanafuku St. (same spot)" },
-          trigger: { ko: "#19 완료 후 재방문", en: "Return after clearing #19." },
-          body: { ko: "마지막 라운드. 거절 후 격파하면 사기꾼이 갱생을 선언하며 종료.", en: "Final round. Refuse, win, and the scammer swears off the grift." },
-          reward: { ko: "다량의 경험치", en: "Big EXP payout" },
-        },
-        {
-          number: 21,
-          title: { ko: "마이 콘택트", en: "Con-tacts" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "전당포 골목 동쪽", en: "Pawn shop road — east side" },
-          trigger: { ko: "전당포 골목에서 콘택트렌즈를 떨어뜨려 찾는 남자에게 말 걸기", en: "Talk to the man searching the pavement for a contact lens." },
-          body: {
-            ko: "남자가 떨어진 콘택트렌즈를 찾아달라고 부탁. 같이 찾아주면 사실은 보험사기였다는 것이 드러나고 일당 등장 — 격파.",
-            en: "He asks Kiryu to help find a 'lost' contact. It turns out to be an insurance-fraud setup; his accomplices appear — beat them all.",
+          "body": {
+            "ko": "핑크 거리 북쪽의 마이를 따라갑니다. 술 권유를 계속 거절하고 네 명과의 전투에서 이긴 뒤, 마스터의 부탁도 거절하면 지하 카지노 정보를 얻습니다.",
+            "en": "Follow Mai from Pink Street North. Refuse the drinks, defeat the four attackers, then refuse the owner's plea to learn about the underground casino."
           },
-          choices: [
-            { prompt: { ko: "「같이 찾아주세요」", en: "'Help me look'" }, correct: { ko: "도와준다", en: "Help him" }, note: { ko: "거절하면 서브 종료 — 보상 없음", en: "Refusing ends the substory with no reward." } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+          "source": {
+            "label": "神ゲー攻略 — F-cupの値段",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337605065508408252.html"
+          }
         },
         {
-          number: 12,
-          title: { ko: "강한 팔의 사나이", en: "The Toll Collector" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "파크 대로 / 시치후쿠 거리 연결로", en: "Park Blvd. / Shichifuku St. connector" },
-          trigger: { ko: "연결로를 막고 통행료를 요구하는 거한에게 접근", en: "Approach the giant blocking the connector and demanding a toll." },
-          body: { ko: "통행료를 거부하고 격파.", en: "Refuse to pay and beat him down." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 13,
-          title: { ko: "호의와 보답", en: "Pay It Forward" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "제3 공원", en: "Third Park" },
-          trigger: { ko: "공원의 노숙자에게 자비로 돈을 건네기", en: "Hand the homeless man at Third Park some cash." },
-          body: { ko: "후일 같은 노숙자가 더 큰 보답을 가져옴 — 재방문 필수.", en: "Come back later; the homeless man repays many times over." },
-          reward: { ko: "고액 현금", en: "Large cash reward" },
-        },
-        {
-          number: 14,
-          title: { ko: "야쿠자를 싫어하는 남자", en: "The Yakuza Hater" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "포켓 서킷 스타디움 옆 공원", en: "Park near Pocket Circuit Stadium" },
-          trigger: { ko: "공원의 남자에게 말 걸기", en: "Talk to the man at the park." },
-          body: { ko: "야쿠자 혐오자가 키류에게 결투를 신청. 격파 후 화해.", en: "A yakuza-hater challenges Kiryu. Win and he comes around." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 15,
-          title: { ko: "용심봉(보디가드)", en: "The Bouncer" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "쇼와 거리 (핑크/나카미치 사이)", en: "Showa St. (between Pink & Nakamichi)" },
-          trigger: { ko: "쇼와 거리에서 호스티스에게 부탁받기", en: "Hostess on Showa St. asks Kiryu for protection." },
-          body: { ko: "스토커를 막아달라는 부탁 — 등장하는 스토커 일당 격파.", en: "Drive off the stalker harassing her." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 16,
-          title: { ko: "독촉 전화", en: "Collection Call" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "파크 대로 빈센트 바", en: "Vincent bar on Park Blvd." },
-          trigger: { ko: "빈센트 앞에서 채권 추심 전화에 시달리는 남자에게 말 걸기", en: "Talk to the man fielding a brutal collection call outside Vincent." },
-          body: { ko: "키류가 전화를 대신 받아 추심꾼을 위협 — 이후 직접 추심꾼들과 격투.", en: "Take the call, scare the collector off, then beat the goons who show up." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 22,
-          title: { ko: "성냥팔이 소녀", en: "The Little Match Girl" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "핑크 거리 / 센료 거리 남단", en: "Pink St. / Senryu St. southern edge" },
-          trigger: { ko: "성냥을 파는 소녀에게 말 걸기", en: "Talk to the girl selling matches." },
-          body: { ko: "성냥을 사주고 잠시 뒤 같은 자리 재방문 — 진실이 드러나는 짧은 컷신.", en: "Buy matches, return later for a touching reveal." },
-          reward: { ko: "경험치 + 액세서리", en: "EXP + accessory" },
-        },
-        {
-          number: 23,
-          title: { ko: "UFO 캐쳐", en: "The Crane Game" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "클럽 세가 안 UFO 캐쳐 앞 커플에게 말 걸기", en: "Talk to the couple at the crane game inside Club Sega." },
-          body: { ko: "남자친구 대신 키류가 인형을 뽑아주는 미니게임. 한 번 성공.", en: "Win one plush for the boyfriend using the crane game." },
-          reward: { ko: "경험치 + 인형 아이템", en: "EXP + plush item" },
-        },
-        {
-          number: 24,
-          title: { ko: "불효자식", en: "Prodigal Son" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "MEB 블록 동쪽 거리", en: "Street east of MEB block" },
-          trigger: { ko: "노부부에게 말 걸기", en: "Talk to the elderly couple." },
-          body: { ko: "가출한 아들을 찾아달라는 부탁 — 카무로초 곳곳에서 단서를 찾아 격파.", en: "Hunt down their delinquent son across Kamurocho and put him in his place." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 25,
-          title: { ko: "전 프로 볼러", en: "Bowling Battle" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "마하 볼링", en: "Mach Bowl" },
-          trigger: { ko: "볼링장에서 자칭 전 프로에게 말 걸기", en: "Challenge the self-styled former pro at Mach Bowl." },
-          body: { ko: "볼링 미니게임 매치 — 7 핀 이상 차이로 승리하면 클리어.", en: "Win the bowling match by a comfortable margin." },
-          reward: { ko: "경험치 + 볼링 의상", en: "EXP + bowling reward" },
-        },
-        {
-          number: 26,
-          title: { ko: "취객", en: "The Drunkard" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "텐카이 거리 (세레나 근처)", en: "Tenkaichi St. (near Serena)" },
-          trigger: { ko: "쓰러진 취객에게 말 걸기", en: "Talk to the collapsed drunk." },
-          body: {
-            ko: "취객을 깨워 정신 차리게 해야 함. 「물을 뿌린다」를 선택하면 깨어남. 다른 선택지는 실패.",
-            en: "Wake the drunk by dousing him with water — the other options just waste a turn.",
+          "number": 10,
+          "title": {
+            "ko": "먹튀",
+            "en": "Dine and Dash"
           },
-          choices: [
-            { prompt: { ko: "어떻게 깨울까?", en: "How do you wake him?" }, correct: { ko: "물을 뿌린다", en: "Splash water" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 27,
-          title: { ko: "가방 찾기", en: "Handbag Hunt" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "타이헤이 대로 남쪽", en: "Taihei Blvd. — south" },
-          trigger: { ko: "가방을 도둑맞은 여성에게 말 걸기", en: "Talk to the woman whose handbag was stolen." },
-          body: { ko: "도둑을 추격해 가방 회수.", en: "Chase the thief, recover the bag." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 28,
-          title: { ko: "수상한 남자", en: "Under Suspicion" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "극장 광장 남쪽", en: "Theater Square — south side" },
-          trigger: { ko: "수상한 행동을 하는 남자에게 접근", en: "Approach the man acting suspiciously." },
-          body: {
-            ko: "통행인을 노리는 소매치기처럼 보이지만 실제로는 잃어버린 콘택트렌즈를 찾는 중. 의심하지 말고 도와줘야 정상 분기.",
-            en: "He looks like a pickpocket but is actually looking for a lost contact. Help him out instead of accusing.",
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
           },
-          choices: [
-            { prompt: { ko: "「뭐 하시는 거죠?」", en: "'What are you doing?'" }, correct: { ko: "이야기를 들어준다", en: "Hear him out" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 30,
-          title: { ko: "야쿠자 지원자", en: "The Yakuza's Apprentice" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "센료 거리 동쪽", en: "Senryu St. — east side" },
-          trigger: { ko: "야쿠자가 되고 싶다는 청년에게 말 걸기", en: "Talk to the wannabe yakuza on Senryu St." },
-          body: { ko: "야쿠자 지원자 4부작의 1편 — 청년을 단념시키기 위한 일련의 시험을 부여.", en: "Part one of a four-part series in which Kiryu tries to scare him straight." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 31,
-          title: { ko: "야쿠자 지원자 2", en: "The Yakuza's Apprentice II" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "요시다 배팅 센터 부근", en: "Yoshida Batting Center area" },
-          trigger: { ko: "#30 완료 후 청년 재회", en: "Meet him again after #30." },
-          body: { ko: "두 번째 시험. 청년이 점점 다른 길을 모색.", en: "Second test; the kid starts to waver." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 32,
-          title: { ko: "야쿠자 지원자 3", en: "The Yakuza's Apprentice III" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "핑크 거리 (빔 북쪽)", en: "Pink St. (north of Beam)" },
-          trigger: { ko: "#31 완료 후 재회", en: "Meet him again after #31." },
-          body: { ko: "세 번째 시험.", en: "Third test." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 33,
-          title: { ko: "야쿠자 지원자 4", en: "The Yakuza's Apprentice IV" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "타이헤이 거리", en: "Taihei St." },
-          trigger: { ko: "#32 완료 후 재회", en: "Meet him again after #32." },
-          body: { ko: "최종편. 청년이 진로를 정하는 결말.", en: "Final chapter; the kid finds his own path." },
-          reward: { ko: "경험치 + 액세서리", en: "EXP + accessory" },
-        },
-        {
-          number: 34,
-          title: { ko: "스카우트", en: "Man Scout" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "쇼와 거리 동쪽", en: "Showa St. East" },
-          trigger: { ko: "스카우트맨에게 말 걸기", en: "Talk to the male scout." },
-          body: {
-            ko: "스카우트맨이 키류에게 호스트 일자리를 제안. 「거절한다」 분기에서 결투로 이어집니다.",
-            en: "A scout pitches Kiryu as a host. Refuse to trigger the fight.",
+          "body": {
+            "ko": "타이헤이 거리 서쪽의 아카우시마루 앞에서 사건을 본 뒤 나카미치 거리에서 도주범에게 말을 겁니다. 이어 제3공원으로 가서 그를 쓰러뜨립니다.",
+            "en": "Start outside Akaushimaru on West Taihei Boulevard. Speak to the runner on Nakamichi Street, then find and defeat him in Public Park 3."
           },
-          choices: [
-            { prompt: { ko: "「호스트 어떠세요?」", en: "'Want to host?'" }, correct: { ko: "거절한다", en: "Refuse" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+          "source": {
+            "label": "神ゲー攻略 — 食い逃げ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336771321759292619.html"
+          }
         },
         {
-          number: 35,
-          title: { ko: "미녀의 진실", en: "The Truth About Beauty" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "고토부키 약국 앞 (타이헤이 대로 동쪽·핑크 거리 모퉁이)", en: "In front of Kotobuki Drugs (corner of East Taihei Blvd. and Pink St.)" },
-          trigger: { ko: "약국 앞 여성에게 말 걸기", en: "Talk to the woman outside the pharmacy." },
-          body: {
-            ko: "절세 미녀가 도움을 요청하지만 사실 사기꾼. 첫 부탁은 들어주고, 추가 요구는 단호히 거절.",
-            en: "A stunning beauty is in fact running a long con. Help once, then refuse her follow-up demand.",
+          "number": 11,
+          "title": {
+            "ko": "운명의 감정료",
+            "en": "The Price of a Palm Reading"
           },
-          choices: [
-            { prompt: { ko: "「조금만 더 도와주세요」", en: "'Just one more favor…'" }, correct: { ko: "거절한다", en: "Refuse" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 36,
-          title: { ko: "싸움꾼", en: "Professional Brawler" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 서쪽 주차장", en: "Parking lot (west Nanafuku St.)" },
-          trigger: { ko: "주차장의 싸움꾼에게 도전받기", en: "Accept the brawler's challenge in the parking lot." },
-          body: { ko: "1대1 결투 — 격파.", en: "1v1 duel. Win." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 38,
-          title: { ko: "소매치기 추적", en: "Pickpocket Pursuit" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "나나후쿠 거리 (밀레니엄 타워 북쪽)", en: "Nanafuku St. — north of Millennium Tower" },
-          trigger: { ko: "소매치기 피해자에게 말 걸기", en: "Talk to the pickpocket victim." },
-          body: { ko: "도주하는 소매치기를 따라잡아 격파.", en: "Catch the runner and beat him." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 45,
-          title: { ko: "수금 대행", en: "Of Luck and Debt" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "쉘락 바 / 지하 카지노", en: "Shellac bar / underground casino" },
-          trigger: { ko: "쉘락에서 점주 얘기를 들은 뒤 지하 카지노 단서 따라가기", en: "Hear the Shellac master out, then follow the casino tip." },
-          body: { ko: "사라진 채무자를 카지노 안에서 찾아 격파. 지하 카지노 정식 출입 트리거.", en: "Track a missing debtor into the underground casino — this is also how you unlock casino access." },
-          reward: { ko: "경험치 + 지하 카지노 정식 출입", en: "EXP + permanent casino access" },
-        },
-        {
-          number: 47,
-          title: { ko: "화장실에서 곤란한 남자", en: "Crisis on the Crapper" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "포켓 서킷 스타디움 옆 공원", en: "Park near Pocket Circuit Stadium" },
-          trigger: { ko: "공원 화장실 앞 곤란한 남자에게 말 걸기", en: "Talk to the man hopping near the park toilet." },
-          body: {
-            ko: "휴지를 빌려달라는 부탁. 휴지를 소지하고 있다면 「준다」 선택. 휴지가 없으면 콘비니에서 구매 후 재방문.",
-            en: "He needs toilet paper — give him a pack (buy from a Poppo if you lack one).",
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
           },
-          choices: [
-            { prompt: { ko: "「휴지 좀…」", en: "'Got tissue?'" }, correct: { ko: "휴지를 건넨다", en: "Give tissue" } },
-          ],
-          reward: { ko: "경험치 + 고급 액세서리", en: "EXP + accessory" },
+          "body": {
+            "ko": "센료 거리의 호객꾼에게 접근한 뒤 라이프 스톤 구매를 거절합니다. 남자들을 물리치고 스마일 버거 앞의 나카야도 쓰러뜨립니다. 스톤을 사면 받을 수 있는 현금이 줄어듭니다.",
+            "en": "Meet the solicitor on Senryo Avenue and refuse to buy the Life Stone. Win the fight, then defeat Nakaya outside Smile Burger. Buying the stone reduces the cash reward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 運命の鑑定料",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336778561161583676.html"
+          }
         },
         {
-          number: 53,
-          title: { ko: "곤충여왕 메스킹", en: "MesuKing: The Queen of Beetles" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "클럽 세가 안 메스킹 캐비닛 앞 소년에게 말 걸기", en: "Talk to the kid in front of the MesuKing cabinet." },
-          body: { ko: "메스킹 미니게임 도입. 1회전 승리로 완료.", en: "Unlocks the MesuKing card-battler minigame — win the intro match." },
-          reward: { ko: "경험치 + 메스킹 스타터 카드", en: "EXP + starter MesuKing cards" },
+          "number": 12,
+          "title": {
+            "ko": "강한 팔의 사나이",
+            "en": "The Toll Collector"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "공원 앞 거리 뒷골목 동쪽의 통행료 요구를 거절하고 남자를 쓰러뜨립니다. 통행료만 내서는 이 의뢰가 완료되지 않습니다.",
+            "en": "Refuse the toll in the eastern part of Park Alley and defeat the man blocking the way. Paying the toll alone does not complete the substory."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 豪腕男",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336908026793435160.html"
+          }
         },
         {
-          number: 54,
-          title: { ko: "이별의 약속", en: "A Goodbye Promise" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "주얼", en: "JeweL" },
-          trigger: { ko: "주얼 앞에서 호스티스의 부탁을 받기", en: "Hostess outside JeweL asks for help." },
-          body: { ko: "호스티스의 옛 약속을 지켜주는 짧은 이벤트.", en: "Help her keep an old promise." },
-          reward: { ko: "경험치", en: "EXP" },
+          "number": 13,
+          "title": {
+            "ko": "호의와 보답",
+            "en": "Pay It Forward"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "제3공원의 취객에게 일본주를 줍니다. 받은 코트를 핑크 거리의 노숙자에게, 안경을 같은 거리의 직장인에게, 테이프를 서부 공원 노숙자에게 전달합니다. 마지막으로 공원 앞 거리 뒷골목의 직장인에게 가방을 보여 줍니다. 서부 공원 단계는 5장부터 가능합니다.",
+            "en": "Give sake to the drunk in Public Park 3. Trade the coat with the homeless man on Pink Street, the glasses with the salaryman there, and the tape with the homeless man in West Park. Show the case to the salaryman in Park Alley. The West Park step requires Chapter 5."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 厚意と報酬",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338797754404872623.html"
+          }
         },
         {
-          number: 55,
-          title: { ko: "자유연애", en: "Freedom to Romance" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "캬바쿠라 샤인", en: "Club Shine" },
-          trigger: { ko: "SHINE 앞에서 손님과 다투는 호스티스에게 말 걸기", en: "Talk to the hostess arguing with a customer outside Shine." },
-          body: { ko: "집착 손님에게 본인의 자유연애권을 인정시키는 일.", en: "Force the stalker customer to back off." },
-          reward: { ko: "경험치", en: "EXP" },
+          "number": 14,
+          "title": {
+            "ko": "야쿠자를 싫어하는 남자",
+            "en": "The Yakuza Hater"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "시치후쿠 거리 서쪽에서 웅크린 남자에게 말을 겁니다. 대화 사이에 발생하는 두 차례 전투에서 이기면 완료됩니다.",
+            "en": "Talk to the crouching man on West Shichifuku Street and win both fights triggered by the conversations."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ嫌いの男",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/334892326633649795.html"
+          }
         },
         {
-          number: 56,
-          title: { ko: "파이터의 등용문", en: "The Fighter's Successor" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "포켓 서킷 스타디움", en: "Pocket Circuit Stadium" },
-          trigger: { ko: "스타디움에서 파이터에게 말 걸기", en: "Talk to the Fighter at the stadium." },
-          body: { ko: "포켓 서킷 미니게임 본격 해금. 첫 정식 레이스 승리로 완료.", en: "Fully unlocks Pocket Circuit. Win the opening race." },
-          reward: { ko: "포켓 서킷 카트 부품 세트", en: "Pocket Circuit kart parts" },
+          "number": 15,
+          "title": {
+            "ko": "용심봉(보디가드)",
+            "en": "The Bouncer"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "쇼와 거리의 흰 드레스 차림 여성에게 말을 걸고 경호를 수락합니다. 네 명을 쓰러뜨린 뒤 대화를 마칩니다. 전투 후 관계를 묻는 선택지는 보상에 영향을 주지 않습니다.",
+            "en": "Accept the white-dressed woman's bodyguard request on Showa Street and defeat the four attackers. The relationship choice after the fight does not change the reward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 用心棒",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339224759113881738.html"
+          }
         },
-      ],
+        {
+          "number": 16,
+          "title": {
+            "ko": "독촉 전화",
+            "en": "Collection Call"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "공원 앞 거리 뒷골목에서 전화를 받은 뒤 서부 공원 옆 광장의 남자를 찾아갑니다. 돈이 없다는 취지로 거절하고 전투에서 이기면 무기를 받습니다. 현장에서 돈을 지불하는 분기는 현금 보상으로 바뀝니다.",
+            "en": "After the call in Park Alley, meet the man beside West Park. Refuse payment and win the fight for the weapon reward. Paying him instead leads to a cash reward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 請求電話",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337211133305818107.html"
+          }
+        },
+        {
+          "number": 17,
+          "title": {
+            "ko": "시비",
+            "en": "Bump and Scam"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "호텔 거리 M스토어 앞의 세 명에게 접근합니다. 돈을 내지 않고 전투에서 이깁니다.",
+            "en": "Approach the three men outside the Hotel District M Store. Refuse payment and win the fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — いちゃもん",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336921677877268918.html"
+          }
+        },
+        {
+          "number": 18,
+          "title": {
+            "ko": "시비의 역습",
+            "en": "Bump and Scam: Revenge"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "17번 완료 후 호텔 거리 M스토어 앞의 세 명에게 다시 접근해 요구를 거절하고 싸웁니다. 나타나지 않으면 식사나 음주 후 돌아옵니다.",
+            "en": "After No. 17, return to the three men outside the Hotel District M Store, refuse payment, and fight. If absent, eat or drink at a restaurant before returning."
+          },
+          "source": {
+            "label": "神ゲー攻略 — いちゃもんの逆襲",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336921734802351852.html"
+          }
+        },
+        {
+          "number": 19,
+          "title": {
+            "ko": "시비의 대역습",
+            "en": "Bump and Scam: Three Strikes"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "18번 완료 후 호텔 거리 M스토어 앞의 다섯 명에게 접근해 전투에서 이깁니다. 나타나지 않으면 음식점에 들렀다가 돌아옵니다.",
+            "en": "After No. 18, approach the five men outside the Hotel District M Store and win the fight. Visit a restaurant and return if they have not appeared."
+          },
+          "source": {
+            "label": "神ゲー攻略 — いちゃもんの大逆襲",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336921770068079510.html"
+          }
+        },
+        {
+          "number": 20,
+          "title": {
+            "ko": "시비의 그 후",
+            "en": "Bump and Scam: Epilogue"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "19번 완료 후 호텔 거리 M스토어 앞으로 돌아갑니다. 남자들의 부탁을 받아들이고 이어지는 전투에서 이깁니다.",
+            "en": "Return to the Hotel District M Store after No. 19, accept the men's request, and win the ensuing fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — いちゃもんのその後",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/336921817413374390.html"
+          }
+        },
+        {
+          "number": 21,
+          "title": {
+            "ko": "마이 콘택트",
+            "en": "Con-tacts"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "나카미치 거리 뒷골목 육란장 앞의 남자에게 접근합니다. 돈을 주거나 거절한 뒤 다른 남자의 설명을 듣고, 가게에 한 번 들어갔다 돌아와 다시 전투에서 이깁니다. 처음에 낸 20만 엔은 돌려받을 수 있습니다.",
+            "en": "Approach the man outside Lulling Mahjong on Nakamichi Alley. Pay or refuse, hear the other man's explanation, then enter a shop and return for another fight. Any ¥200,000 paid initially is returned."
+          },
+          "source": {
+            "label": "神ゲー攻略 — マイコンタクト",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337611111396287831.html"
+          }
+        },
+        {
+          "number": 22,
+          "title": {
+            "ko": "성냥팔이 소녀",
+            "en": "The Little Match Girl"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "21번 완료 후 쇼와 거리 동쪽의 성냥 파는 여성을 만납니다. 첫 대화 후 같은 장소로 돌아가 성냥을 지켜 달라는 부탁을 수행하고, 마지막으로 제3공원에서 다시 대화합니다. 중간 선택은 받는 물건에 영향을 줍니다.",
+            "en": "After No. 21, meet the match seller on East Showa Street. Return after the first conversation, look after the matches, then speak to her in Public Park 3. Your choice while watching the matches changes the item received."
+          },
+          "source": {
+            "label": "神ゲー攻略 — マッチ売りの少女",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337623491270441856.html"
+          }
+        },
+        {
+          "number": 23,
+          "title": {
+            "ko": "UFO 캐쳐",
+            "en": "The Crane Game"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "나카미치 거리 클럽 세가에서 인형을 부탁받습니다. 분쨩, 우군 시리즈 전종, 점보 마론을 차례로 건넨 뒤 밖으로 나가 야쿠자와의 전투에서 이깁니다.",
+            "en": "At Club SEGA Nakamichi Street, fulfill the successive requests for a Bun-chan, the complete Woo-kun set, and Jumbo Chestnut. Exit and defeat the yakuza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — UFOキャッチャー",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337630901968076943.html"
+          }
+        },
+        {
+          "number": 24,
+          "title": {
+            "ko": "불효자식",
+            "en": "Prodigal Son"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "47번 완료 후 공원 앞 거리의 노숙자와 대화합니다. 아동 공원 벤치, 챔피언 거리를 거쳐 공원 앞 거리의 불량배를 쓰러뜨리고, 챔피언 거리의 타츠에게 지갑을 돌려줍니다.",
+            "en": "After No. 47, talk to the homeless man on Park Boulevard. Follow the events at the Children's Park bench and Champion District, defeat the thugs on Park Boulevard, then return the wallet to Tatsu in the Champion District."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 不肖の息子",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338947439098606378.html"
+          }
+        },
+        {
+          "number": 25,
+          "title": {
+            "ko": "전 프로 볼러",
+            "en": "Bowling Battle"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "23번 완료 후 마하 볼에서 전직 프로의 도전을 받아 3프레임 대결에서 이깁니다. 패배하면 1만 엔을 잃지만 재도전할 수 있고, 무승부는 돈을 주고받지 않습니다.",
+            "en": "After No. 23, accept the former pro's three-frame challenge at Mach Bowl and win. A loss costs ¥10,000 but allows another attempt; a draw transfers no money."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 元プロボウラー",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337635309879598463.html"
+          }
+        },
+        {
+          "number": 26,
+          "title": {
+            "ko": "취객",
+            "en": "The Drunkard"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "스타더스트 옆 취객에게 술, 스카치위스키, 회복약을 차례로 건네면 완료됩니다.",
+            "en": "Give the drunk beside Stardust alcohol, then Scotch whisky, then a recovery item."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 酔っ払い",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337641102599289415.html"
+          }
+        },
+        {
+          "number": 27,
+          "title": {
+            "ko": "가방 찾기",
+            "en": "Handbag Hunt"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "22번 완료 후 타이헤이 거리의 여성에게 가방 찾기를 부탁받습니다. 극장 앞 광장 여학생과 챔피언 거리 남자에게 정보를 듣고, 제3공원에서 싸워 가방을 되찾아 돌려줍니다.",
+            "en": "After No. 22, accept the woman's request on Taihei Boulevard. Ask the schoolgirl in Theater Square and the man in the Champion District, recover the bag in a fight at Public Park 3, and return it."
+          },
+          "source": {
+            "label": "神ゲー攻略 — カバン探し",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337646986939393966.html"
+          }
+        },
+        {
+          "number": 28,
+          "title": {
+            "ko": "수상한 남자",
+            "en": "Under Suspicion"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "14번 완료 후 극장 앞 광장 뒤편의 남자에게 의뢰를 받습니다. 광장 동쪽의 코트 차림 여성에게 상대가 섹시하다는 뜻의 암호를 전하고 1,000엔을 줍니다. 종이봉투를 열지 않고 돌려주면 8만 엔, 열어 보면 5만 엔을 받습니다.",
+            "en": "After No. 14, accept the request behind Theater Square. Give the coat-wearing woman on the east side the password complimenting her sexiness and pay ¥1,000. Return the bag unopened for ¥80,000; opening it reduces the reward to ¥50,000."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 怪しい男",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339042103566830917.html"
+          }
+        },
+        {
+          "number": 30,
+          "title": {
+            "ko": "야쿠자 지원자",
+            "en": "The Yakuza's Apprentice"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "36번 완료 후 센료 거리 가라오케점 앞의 전투에서 이기고 카노를 부하로 받아들입니다. 챔피언 거리 입구에서 다시 만나 셸락 주인의 이야기를 듣고 시마노조 조직원들과 싸웁니다.",
+            "en": "After No. 36, win the fight outside the karaoke bar on Senryo Avenue and accept Kano as your subordinate. Meet him at the Champion District entrance, speak to the Shellac owner, and fight the Shimano Family men."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ志願者",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338897530924341927.html"
+          }
+        },
+        {
+          "number": 31,
+          "title": {
+            "ko": "야쿠자 지원자 2",
+            "en": "The Yakuza's Apprentice II"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "30번 완료 후 센료 거리 가라오케점 앞에서 사건을 시작합니다. 호텔 거리의 카노를 찾아 도와주기로 하고 야쿠자와 싸웁니다.",
+            "en": "After No. 30, start outside the karaoke bar on Senryo Avenue. Find Kano in the Hotel District, agree to help, and defeat the yakuza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ志願者2",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339098280883434436.html"
+          }
+        },
+        {
+          "number": 32,
+          "title": {
+            "ko": "야쿠자 지원자 3",
+            "en": "The Yakuza's Apprentice III"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "31번 완료 후 핑크 거리 북쪽으로 갑니다. 시치후쿠 파크와 챔피언 거리에서 요코를 상대하고 이어지는 야쿠자 전투까지 마칩니다.",
+            "en": "After No. 31, visit Pink Street North. Follow the encounters with Yoko through Shichifuku Parking Lot and the Champion District, then defeat the yakuza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ志願者3",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339230264087550090.html"
+          }
+        },
+        {
+          "number": 33,
+          "title": {
+            "ko": "야쿠자 지원자 4",
+            "en": "The Yakuza's Apprentice IV"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "32번 완료 후 타이헤이 거리 동쪽에서 카노와 대화합니다. 나카미치 거리에서 다시 만나 네 명의 야쿠자를 쓰러뜨립니다.",
+            "en": "After No. 32, speak to Kano on East Taihei Boulevard, meet him again on Nakamichi Street, and defeat the four yakuza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ志願者4",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339234883157139488.html"
+          }
+        },
+        {
+          "number": 34,
+          "title": {
+            "ko": "스카우트",
+            "en": "Man Scout"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "26번 완료 후 쇼와 거리 동쪽의 사사즈카에게 말을 걸고 연수비 1만 엔을 지불해 면접을 봅니다. 건물에 들렀다가 원래 장소로 돌아와 전화를 받고 밀레니엄 타워에서 마무리합니다. 면접 답에 따라 보상이 바뀌며 연수비는 반환됩니다.",
+            "en": "After No. 26, meet Sasazuka on East Showa Street, pay the ¥10,000 training fee, and take the interview. Enter a building and return, answer his call, then meet him at Millennium Tower. Answers determine the reward; the fee is refunded."
+          },
+          "source": {
+            "label": "神ゲー攻略 — スカウト",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339080392764063416.html"
+          }
+        },
+        {
+          "number": 35,
+          "title": {
+            "ko": "미녀의 진실",
+            "en": "The Truth About Beauty"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "8번 완료 후 나카미치 거리 뒷골목의 루비를 만납니다. 초대를 두 차례 거절하고 연속으로 발생하는 두 전투에서 이깁니다.",
+            "en": "After No. 8, meet Ruby on Nakamichi Alley. Refuse the invitation twice and win both successive fights."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 美女の真実",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338218580246034435.html"
+          }
+        },
+        {
+          "number": 36,
+          "title": {
+            "ko": "싸움꾼",
+            "en": "Professional Brawler"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "시치후쿠 거리 동쪽의 시치후쿠 파크에서 싸움꾼에게 도전합니다. 일대일 대결을 이긴 뒤 여섯 명을 상대로 다시 이깁니다.",
+            "en": "Challenge the fighter in Shichifuku Parking Lot on East Shichifuku Street. Win the one-on-one match, then defeat the group of six."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 喧嘩屋",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338040439112244086.html"
+          }
+        },
+        {
+          "number": 38,
+          "title": {
+            "ko": "소매치기 추적",
+            "en": "Pickpocket Pursuit"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "공원 앞 거리의 베이지색 코트 남자와 부딪친 뒤 시치후쿠 거리 동쪽으로 갑니다. 안경·회색 정장·베이지색 코트라는 증언에 맞는 남자를 찾아 쓰러뜨립니다. 엉뚱한 사람을 지목하면 배상금이나 불필요한 전투가 발생합니다.",
+            "en": "After bumping into the beige-coated man on Park Boulevard, go to East Shichifuku Street. Find the man matching the glasses, gray suit, and beige coat, then defeat him. Accusing the wrong person can cost compensation or trigger an extra fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — スリを追う",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338041834724938237.html"
+          }
+        },
+        {
+          "number": 45,
+          "title": {
+            "ko": "수금 대행",
+            "en": "Of Luck and Debt"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "카노 관련 의뢰를 진행하고 지하 카지노를 개방한 뒤 셸락에서 반복해 술을 주문하고 주인과 대화합니다. 카지노의 초록색 정장 남자에게 귀자모신 부적을 주고 셸락 앞으로 돌아와 남자와 주인에게 차례로 확인합니다. 부적은 42번 또는 투기장 교환으로 준비할 수 있습니다.",
+            "en": "Progress Kano's substories and unlock the underground casino, then order drinks repeatedly at Shellac and speak to the owner. Give a Beads of Good Fortune to the green-suited man in the casino, then return to Shellac and speak to him and the owner. Obtain the item from No. 42 or the Coliseum exchange."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 取り立て代行",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339231359706896729.html"
+          }
+        },
+        {
+          "number": 47,
+          "title": {
+            "ko": "화장실에서 곤란한 남자",
+            "en": "Crisis on the Crapper"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "시치후쿠 거리 서쪽 아동 공원 화장실의 남자에게 포켓 티슈를 합계 여섯 개 건넵니다.",
+            "en": "Deliver six packs of pocket tissues in total to the man in the Children's Park restroom on West Shichifuku Street."
+          },
+          "source": {
+            "label": "神ゲー攻略 — トイレで困る男",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338041692772913661.html"
+          }
+        },
+        {
+          "number": 54,
+          "title": {
+            "ko": "이별의 약속",
+            "en": "A Goodbye Promise"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "주얼에서 유이의 호감도를 끝까지 올리고 가게를 나옵니다. 극장 앞 광장에서 유이를 만나 대화를 마칩니다.",
+            "en": "Maximize Yui's affection at Jewel, leave the club, then meet her in Theater Square and finish the conversation."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 別れの約束",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339238851388116981.html"
+          }
+        },
+        {
+          "number": 55,
+          "title": {
+            "ko": "자유연애",
+            "en": "Freedom to Romance"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "샤인에서 리나의 호감도를 끝까지 올리고 가게를 나옵니다. 카페 알프스와 밀레니엄 타워 앞을 차례로 방문하고 취객과의 전투에서 이깁니다.",
+            "en": "Maximize Rina's affection at Shine and leave. Visit Café Alps and the Millennium Tower forecourt, then defeat the drunk."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 恋愛の自由",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339668315234415921.html"
+          }
+        },
+        {
+          "number": 56,
+          "title": {
+            "ko": "파이터의 등용문",
+            "en": "The Fighter's Successor"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "시치후쿠 거리 서쪽 포켓 서킷 경기장에서 파이터와 재회합니다. 극장 앞 클럽 세가에서 히데키를 찾고 레이스를 진행합니다. 스타더스트 방문 후 파이터, 타쿠마와의 레이스까지 이깁니다.",
+            "en": "Reunite with the Fighter at the Pocket Circuit Stadium on West Shichifuku Street. Find Hideki at Club SEGA Theater Square and race him. Visit Stardust, then win the races against the Fighter and Takuma."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ファイターの花道",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/339091029737107793.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "5장 — 키류의 결의", en: "Chapter 5 — Kiryu's Resolve" },
-      items: [
+      "title": {
+        "ko": "5장부터",
+        "en": "From Chapter 5"
+      },
+      "items": [
         {
-          number: 42,
-          title: { ko: "주운 휴대폰", en: "The Cell Phone Plan" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "텐카이 골목", en: "Tenkaichi Alley" },
-          trigger: { ko: "텐카이 골목에서 휴대폰을 줍기", en: "Pick up the dropped phone in Tenkaichi Alley." },
-          body: { ko: "주운 휴대폰의 주인을 만나러 약속 장소로 — 함정. 일당 격파.", en: "Meet the owner — it's a setup; beat the ambush." },
-          reward: { ko: "경험치", en: "EXP" },
+          "number": 2,
+          "title": {
+            "ko": "연인은 쇼걸",
+            "en": "My Baby's a Show Girl"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "13번 완료 후 유우야의 전화를 받고 핑크 거리의 에이시아로 갑니다. 공연 중 나타난 살인청부업자를 물리치고, 밖에서 다시 전화를 받은 뒤 공원 앞 거리의 기원으로 가서 카자마조 조직원들을 쓰러뜨립니다.",
+            "en": "After No. 13, answer Yuya's call and visit Asia on Pink Street. Defeat the assassin during the show, answer the next call outside, then fight the Kazama Family men at the go parlor on Park Boulevard."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 恋人はショーガール",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919118483188118.html"
+          }
         },
         {
-          number: 48,
-          title: { ko: "버블의 추억", en: "Memories of the Bubble" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "디스코 데보라", en: "Debolah dance club" },
-          trigger: { ko: "데보라 지하 댄스 플로어에서 한쪽에 서 있는 여성에게 말 걸기", en: "Speak to the lady standing at the side of Debolah's lower dance floor." },
-          body: { ko: "여성의 부탁을 수락하고 질문에 「1만 엔짜리를 흔들었다」, 「레그 래즈」, 「보디콘 드레스와 부채」로 답합니다. 돈키호테에서 보디콘 드레스와 부채를 각각 하나씩 구입해(가격이 비쌉니다) 데보라로 돌아가 건네면 클리어됩니다.", en: "Agree to help her and answer \"We waved 10,000 yen bills\", \"Leg Lads\", and \"A bodycon dress and a fan\". Buy one of each at Don Quijote (they are not cheap), return to Debolah and hand them over." },
-          reward: { ko: "경험치 + 디스코 의상", en: "EXP + disco gear" },
+          "number": 42,
+          "title": {
+            "ko": "주운 휴대폰",
+            "en": "The Cell Phone Plan"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "텐카이치 거리 뒷골목에서 휴대전화를 줍고 전화를 받습니다. 지시에 따라 바의 여성에게 열쇠를 받고 C1 사물함에서 무기를 꺼냅니다. 극장 앞 광장에서 다시 전화를 받은 뒤 배팅 센터에서 전투를 마칩니다.",
+            "en": "Pick up the phone in Tenkaichi Alley and answer the calls. Obtain a key from the woman at the bar, collect the weapon from locker C1, answer the call in Theater Square, and finish the fight at the batting center."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 拾った携帯",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919452785986353.html"
+          }
         },
         {
-          number: 52,
-          title: { ko: "2,000엔의 가치", en: "The Value of 2,000 Yen" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "빈센트 바", en: "Vincent bar" },
-          trigger: { ko: "빈센트에서 신권 2,000엔 지폐 이야기를 듣기", en: "Hear about the rare 2,000-yen note at Vincent." },
-          body: { ko: "빈센트 바 카운터의 안경 쓴 남자가 2,000엔 지폐 5장을 찾습니다. 카무로초를 돌며 모아야 하는데 한 번에 한 장씩만 들고 갈 수 있어, 찾을 때마다 빈센트로 돌아와 건네야 합니다. 타이헤이 거리와 핑크 거리 교차로의 취객에게 말을 걸면 한 장을 그냥 줍니다. 5장을 모두 전달하면 총 10만 엔을 받습니다.", en: "The man in glasses at Vincent's bar counter wants five 2,000 yen bills. You have to scour Kamurocho for them, and you can only carry one at a time \u2014 each has to be brought back to Vincent separately. The drunk at the Taihei/Pink crossroads simply hands one over. Delivering all five pays \u00a5100,000." },
-          reward: { ko: "경험치 + 고액 보상", en: "EXP + cash reward" },
+          "number": 48,
+          "title": {
+            "ko": "버블의 추억",
+            "en": "Memories of the Bubble"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "데보라 댄스 플로어의 여성과 대화합니다. 돈키호테에서 몸에 붙는 드레스와 부채를 구입해 돌아가 전달합니다.",
+            "en": "Speak to the woman on Debolah's dance floor. Buy the bodycon dress and fan at Don Quijote, then return them to her."
+          },
+          "source": {
+            "label": "神ゲー攻略 — バブルの思い出",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337917230995997917.html"
+          }
         },
         {
-          number: 2,
-          title: { ko: "연인은 쇼걸", en: "My Baby's a Show Girl" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "아시아 신사 클럽", en: "Asia Gentleman's Club" },
-          trigger: { ko: "클럽 앞 청년에게 말 걸기", en: "Talk to the young man outside the club." },
-          body: { ko: "쇼걸 여자친구를 찾으러 클럽에 들어가는 청년을 돕는 일.", en: "Help him retrieve his showgirl girlfriend from the club." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 77,
-          title: { ko: "최강의 이름을 걸고", en: "Enjoying It With Everyone" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "메스킹 라인(#68~76) 일부 진행 후 클럽 세가 재방문", en: "Return to Club Sega after progressing the MesuKing chain." },
-          body: { ko: "메스킹 토너먼트 일부. 정해진 카드 덱으로 승리.", en: "Tournament round in the MesuKing chain — win with a tuned deck." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-      ],
+          "number": 52,
+          "title": {
+            "ko": "2,000엔의 가치",
+            "en": "The Value of 2,000 Yen"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "빈센트의 남자에게 2천 엔 지폐 다섯 장을 모아 줍니다. 배팅 센터, 극장 앞 클럽 세가, 타이헤이 거리 동쪽 취객, 텐카이치 거리 포포와 자판기 앞에서 구할 수 있습니다. 한 장씩만 소지할 수 있으므로 얻을 때마다 전달합니다.",
+            "en": "Collect five ¥2,000 notes for the man at Vincent. Sources are the batting center, Club SEGA Theater Square, the drunk on East Taihei Boulevard, Poppo Tenkaichi Street, and the man by the Tenkaichi Street vending machine. Deliver each note before collecting the next."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 新札捜索",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337917480724858077.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "6~7장 — 카무로초 격동", en: "Chapter 6~7 — Kamurocho Heats Up" },
-      items: [
+      "title": {
+        "ko": "6장부터",
+        "en": "From Chapter 6"
+      },
+      "items": [
         {
-          number: 5,
-          title: { ko: "의사의 본분", en: "A Doctor's Duty" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "서공원 입구", en: "West Park entrance" },
-          trigger: { ko: "서공원 입구에서 쓰러진 남자 발견", en: "Find the collapsed man at West Park entrance." },
-          body: { ko: "근처 클리닉에 인계하면 의사가 진료 거부 — 의사를 설득하면 완료.", en: "Drag him to the clinic and force the reluctant doctor to do his job." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 29,
-          title: { ko: "낙서", en: "The Heart of Vandalism" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "극장 광장 골목 서쪽", en: "Theater Square Alley — west" },
-          trigger: { ko: "골목에서 낙서꾼에게 말 걸기", en: "Confront the graffiti tagger in the alley." },
-          body: { ko: "낙서꾼 일당을 격파.", en: "Beat the tagger and his crew." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 43,
-          title: { ko: "야쿠자 도주", en: "Yakuza on the Run" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "나카미치 골목 서쪽", en: "Nakamichi Alley — west" },
-          trigger: { ko: "도망자 야쿠자에게 말 걸기", en: "Talk to the fleeing yakuza in Nakamichi Alley." },
-          body: { ko: "도망 중인 야쿠자의 추격자를 처리.", en: "Take out the men chasing him." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 44,
-          title: { ko: "수상한 경관", en: "Bad Boy in Blue" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "핑크 골목 중간 구역", en: "Pink Alley — middle section" },
-          trigger: { ko: "경관 행세를 하며 시민에게 돈을 뜯는 남자 발견", en: "Spot the fake cop extorting passersby." },
-          body: {
-            ko: "가짜 경관이 위반금을 뜯는 사기. 「돈을 낸다」를 고르면 사기 성공 분기 — 반드시 「거절한다」를 선택하고 격파.",
-            en: "A fake cop tries to fine Kiryu. Refuse and fight — paying lets him win.",
+          "number": 5,
+          "title": {
+            "ko": "의사의 본분",
+            "en": "A Doctor's Duty"
           },
-          choices: [
-            { prompt: { ko: "「위반금을 내시죠」", en: "'Pay the fine'" }, correct: { ko: "거절한다", en: "Refuse" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "공원 앞 거리의 소년에게 먹을 것을 주고 제3공원에서 다시 먹을 것을 줍니다. 하루카를 동행시켜야 진행할 수 있으므로 7장 이후에 이어서 진행합니다. 타이헤이 거리 서쪽의 건물로 소년을 데려간 뒤 알리 형제를 쓰러뜨립니다.",
+            "en": "Give the boy on Park Boulevard food, then feed him again at Public Park 3. Progress requires Haruka, so continue from Chapter 7 when she can accompany you. Take him to the building on West Taihei Boulevard and defeat the Ali brothers."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 医者の本分",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337916969892236081.html"
+          }
         },
         {
-          number: 58,
-          title: { ko: "자극을 찾아서", en: "In Pursuit of Pleasure" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "타이헤이 대로 동쪽", en: "Taihei Blvd. East" },
-          trigger: { ko: "동쪽 거리에서 권태기 부부에게 말 걸기", en: "Talk to the bored couple on East Taihei." },
-          body: { ko: "권태기 부부가 자극을 찾는 코믹 에피소드.", en: "A bored couple looking to spice things up — a short comedic side-quest." },
-          reward: { ko: "경험치", en: "EXP" },
+          "number": 29,
+          "title": {
+            "ko": "낙서",
+            "en": "The Heart of Vandalism"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "극장 앞 광장 뒤편 부근의 카페 블렌드 주인과 대화합니다. 잠시 떠났다가 돌아와 청년을 따라가 전투에서 이긴 뒤, 가게로 돌아와 마무리합니다.",
+            "en": "Talk to the owner of Café Blend near Theater Square Alley. Leave and return, follow the young man and win the fight, then check back at the café."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 落書き",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919299744230172.html"
+          }
         },
         {
-          number: 3,
-          title: { ko: "복싱 도박", en: "Bet On a Champ" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "밴텀 바", en: "Bantam bar" },
-          trigger: { ko: "밴텀에서 마스터의 부탁 듣기", en: "Hear the Bantam master out." },
-          body: { ko: "전 챔피언의 후원 — 짜고 치는 시합을 무너뜨리는 보스급 격투.", en: "Bust a fixed boxing match — a boss-tier fight." },
-          reward: { ko: "고액 현금", en: "Large cash prize" },
+          "number": 43,
+          "title": {
+            "ko": "야쿠자 도주",
+            "en": "Yakuza on the Run"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "나카미치 거리 뒷골목을 달리는 야쿠자에게 말을 걸어 전투에서 이깁니다. 이후 코인 로커로 이동해 네 명과의 전투를 마칩니다.",
+            "en": "Speak to the running yakuza on Nakamichi Alley and win the fight. Continue to the coin lockers and defeat the group of four."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ヤクザ逃亡",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919580628333778.html"
+          }
         },
         {
-          number: 39,
-          title: { ko: "쿄카와 타카시", en: "Kyoka and Takashi" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "파크 대로", en: "Park Blvd." },
-          trigger: { ko: "파크 대로의 커플에게 말 걸기", en: "Talk to the couple on Park Blvd." },
-          body: { ko: "남자(타카시)가 결혼 약속을 미루는 사정을 도와줌.", en: "Help Takashi finally propose to Kyoka." },
-          reward: { ko: "경험치", en: "EXP" },
+          "number": 44,
+          "title": {
+            "ko": "수상한 경관",
+            "en": "Bad Boy in Blue"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "43번 완료 후 핑크 거리 뒷골목에서 경찰의 검문을 받습니다. 나카미치 거리 뒷골목의 야쿠자에게 이야기를 듣고 경찰과의 전투에서 이깁니다.",
+            "en": "After No. 43, undergo the officer's questioning on Pink Alley. Speak to the yakuza on Nakamichi Alley, then defeat the officer."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 怪しい警官",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919780008766989.html"
+          }
         },
         {
-          number: 40,
-          title: { ko: "빈사의 남자의 부탁", en: "The Medicine Goes Down" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "센료 거리 남쪽", en: "Senryo St. — south" },
-          trigger: { ko: "거리에서 쓰러진 남자에게 말 걸기", en: "Talk to the man collapsed on Senryo St." },
-          body: { ko: "응급약을 콘비니에서 사와 전달.", en: "Buy the requested medicine at a convenience store and hand it over." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 41,
-          title: { ko: "B-KING의 재난", en: "The B-King's Misfortune" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "극장 광장", en: "Theater Square" },
-          trigger: { ko: "광장의 자칭 B급 스타에게 말 걸기", en: "Talk to the self-styled B-list star on Theater Sq." },
-          body: { ko: "자칭 스타가 안티팬에게 시달리는 상황을 해결.", en: "Run off the haters harassing him." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 50,
-          title: { ko: "선물 찾기", en: "Searching for the Present" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "포켓 서킷 스타디움 부근", en: "Pocket Circuit Stadium area" },
-          trigger: { ko: "스타디움 부근에서 한 남자에게 말 걸기", en: "Talk to the man near the stadium." },
-          body: { ko: "여자친구에게 줄 선물을 카무로초에서 사오는 심부름.", en: "Source his girlfriend's gift from a Kamurocho shop." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 51,
-          title: { ko: "좀 나쁜 아저씨", en: "Bad Ass Dads" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "퍼거토리에서 아저씨 무리에게 말 걸기", en: "Talk to the group of dads in Purgatory." },
-          body: { ko: "나쁜 어른 흉내를 내는 평범한 아저씨들과 짧은 격투.", en: "A short brawl with middle-aged poseurs pretending to be tough." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-      ],
+          "number": 58,
+          "title": {
+            "ko": "자극을 찾아서",
+            "en": "In Pursuit of Pleasure"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "센료 거리 북쪽에서 다투는 남녀에게 접근해 전투에서 이깁니다. 시노하라와 한래, 주얼, 지하 투기장을 차례로 방문하고 마지막 대결에서 승리합니다.",
+            "en": "Approach the arguing pair on North Senryo Avenue and win the fight. Accompany Shinohara to Kanrai, Jewel, and the underground Coliseum, then defeat him."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 刺激を求めて",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337917810044862485.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "8장 — 키류의 결단 / 코마키 무술 본격", en: "Chapter 8 — Komaki Training" },
-      items: [
+      "title": {
+        "ko": "7장부터",
+        "en": "From Chapter 7"
+      },
+      "items": [
         {
-          number: 49,
-          title: { ko: "소문의 파티", en: "The Rumored Party" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "스타더스트 → 디스코 데보라", en: "Stardust \u2192 Debolah" },
-          trigger: { ko: "스타더스트 안에서 문 근처 호스트에게 말 걸기", en: "Speak to the host near the door inside Stardust." },
-          body: {
-            ko: "카즈키의 고민을 듣고 손님을 빼앗아 가는 「파티」를 조사합니다. 스타더스트 안에서 대화 아이콘이 뜬 여성 두 명에게 말을 걸면 데보라로 가라는 정보를 얻고, 나가려 할 때 세 번째 여성이 초대합니다. 데보라 앞에서 그녀와 만난 뒤 댄스 플로어에서 사람들과 대화해 배후의 「구루」를 파악하고, 야자와 무난을 격파하면 클리어됩니다.",
-            en: "Hear out Kazuki's problem about a \"party\" stealing his customers. Talk to the two women inside Stardust with talk prompts to learn you need Debolah; as you leave, a third woman invites you. Meet her in front of Debolah, then speak to everyone on the dance floor to uncover the guru behind it and defeat Munan Yazawa.",
+          "number": 3,
+          "title": {
+            "ko": "복싱 도박",
+            "en": "Bet On a Champ"
           },
-          reward: { ko: "투르말린 팔찌", en: "Tourmaline Bracelet" },
-        },
-        {
-          number: 75,
-          title: { ko: "박사의 과거", en: "The Professor's Past" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "클럽 세가", en: "Club Sega" },
-          trigger: { ko: "메스킹 라인 진행 후 박사가 부르면 방문", en: "Visit Club Sega once the Professor summons you in the MesuKing chain." },
-          body: { ko: "메스킹의 「박사」의 과거를 듣는 컷신 + 배틀.", en: "Hear the Professor's backstory and battle on." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 76,
-          title: { ko: "박사의 과거 2", en: "The Professor's Past 2" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "클럽 세가 극장 광장점", en: "Club Sega — Theater Square" },
-          trigger: { ko: "#75 후속", en: "Continues from #75." },
-          body: { ko: "박사 과거 후편.", en: "Second half of the Professor's backstory." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 78,
-          title: { ko: "메스킹 챔피언 결정전", en: "Battle for the MesuKing Throne" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "클럽 세가", en: "Club Sega" },
-          trigger: { ko: "메스킹 라인 최종편", en: "Final MesuKing match." },
-          body: { ko: "메스킹 챔피언 결정전. 풀 카드 컬렉션이 사실상 필수.", en: "MesuKing championship — bring a full card collection." },
-          reward: { ko: "메스킹 챔피언 칭호", en: "MesuKing champion title" },
-        },
-        {
-          number: 63,
-          title: { ko: "코마키류 · 명경의 마음가짐", en: "Komaki Style: Clear-Minded Mastery" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "코마키 라인 진행 후 분수 방문", en: "Speak with Komaki at the fountain after prior training." },
-          body: { ko: "마음 수련. 일정 시간 회피만 유지.", en: "Dodge for the required duration without striking." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 64,
-          title: { ko: "코마키류 · 사바키 격타", en: "Komaki Style: Evade and Strike" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#63 이후", en: "After #63." },
-          body: { ko: "회피 후 즉시 카운터.", en: "Evade then immediate counter strike." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 65,
-          title: { ko: "코마키류 · 달마 피하기", en: "Komaki Style: Dharma Tumbler" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#64 이후", en: "After #64." },
-          body: { ko: "다운 상태에서 일어나며 카운터.", en: "Stand up while striking back." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 66,
-          title: { ko: "코마키류 · 무수반격", en: "Komaki Style: Fist Reversal" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#65 이후", en: "After #65." },
-          body: { ko: "맨손 잡기 카운터.", en: "Bare-handed grab counter." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 67,
-          title: { ko: "코마키류 · 받아넘기기", en: "Komaki Style: Knock Back" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#66 이후", en: "After #66." },
-          body: { ko: "타격 패리.", en: "Strike parry." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 68,
-          title: { ko: "코마키류 · 호랑이 떨어뜨리기 (타이거 드롭)", en: "Komaki Style: Tiger Drop" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#67 이후", en: "After #67." },
-          body: {
-            ko: "야쿠자 시리즈의 상징 카운터 「타이거 드롭」 해금. 적의 공격 시작 프레임에 △ 입력. 키류 최고의 카운터 기술.",
-            en: "Unlocks Tiger Drop — Kiryu's signature parry-counter. Time Triangle to the opponent's wind-up frame.",
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
           },
-          reward: { ko: "타이거 드롭", en: "Tiger Drop ability" },
+          "body": {
+            "ko": "밤에 하루카와 함께 반탐에 들어갑니다. 첫 상대를 물리친 뒤 나카미치 거리 뒷골목의 육란장 문지기에게 비를 피하러 왔다는 뜻의 암호를 전하고, 안에서 두 번째 상대를 쓰러뜨립니다.",
+            "en": "Enter Bantam at night with Haruka. Win the first fight, then visit the guard at Lulling Mahjong on Nakamichi Alley and use the password about taking shelter from the rain. Defeat the next opponent inside."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ボクシング賭博",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337902443473954323.html"
+          }
         },
         {
-          number: 69,
-          title: { ko: "코마키류 · 흘려보내기", en: "Komaki Style: Parry" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#68 이후", en: "After #68." },
-          body: { ko: "상위 가드 패리.", en: "Advanced guard parry." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
+          "number": 39,
+          "title": {
+            "ko": "쿄카와 타카시",
+            "en": "Kyoka and Takashi"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "body": {
+            "ko": "41번 완료 후 공원 앞 거리에서 의뢰를 받습니다. 데보라에서 달걀 참치 샌드위치를 건넨 뒤 요시다 배팅 센터에서 타카시와 이치에게 말을 겁니다.",
+            "en": "After No. 41, begin on Park Boulevard. Deliver an egg-and-tuna sandwich at Debolah, then speak to Takashi and Ichi at the Yoshida Batting Center."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 京香とタカシ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337902499107215520.html"
+          }
         },
-      ],
+        {
+          "number": 40,
+          "title": {
+            "ko": "빈사의 남자의 부탁",
+            "en": "The Medicine Goes Down"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "body": {
+            "ko": "41번 완료 후 센료 거리의 쓰러진 직장인에게 말을 겁니다. 빨간 운동복 차림 두 명을 찾아 쓰러뜨린 뒤 의뢰인에게 돌아갑니다.",
+            "en": "After No. 41, speak to the injured salaryman on Senryo Avenue. Find and defeat the two men in red tracksuits, then return to him."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 瀕死の男の依頼",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337902542073665696.html"
+          }
+        },
+        {
+          "number": 41,
+          "title": {
+            "ko": "B-KING의 재난",
+            "en": "The B-King's Misfortune"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "body": {
+            "ko": "극장 앞 광장의 야쿠자에게 접근한 뒤 전투에서 이기면 완료됩니다.",
+            "en": "Approach the yakuza in Theater Square and win the fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — B-KINGの災難",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337902584788419805.html"
+          }
+        },
+        {
+          "number": 50,
+          "title": {
+            "ko": "선물 찾기",
+            "en": "Searching for the Present"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "body": {
+            "ko": "24번 완료 후 밤에 하루카와 함께 아동 공원으로 갑니다. 포켓 서킷 한정판 자동차, 아이아이 인형, 잡지 등 선물 후보 중 하나를 준비해 전달합니다. 선물을 준 뒤 공원을 떠났다가 돌아와 미호와 대화하면 완료됩니다. 선물에 따라 보상이 달라집니다.",
+            "en": "After No. 24, visit Children's Park at night with Haruka. Obtain a suitable gift, such as the limited Pocket Circuit car, AiAi plush, or a magazine, and deliver it. Leave and return to speak to Miho. The gift determines the reward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — プレゼント探し",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337955174012184505.html"
+          }
+        },
+        {
+          "number": 51,
+          "title": {
+            "ko": "좀 나쁜 아저씨",
+            "en": "Bad Ass Dads"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "body": {
+            "ko": "삼도천변 분수 근처에서 인터뷰에 응합니다. 세 질문에 답하면 끝나며 마지막 답변에 따라 의류 또는 가방을 받습니다.",
+            "en": "Answer the interview near the Purgatory fountain. Complete all three questions; the final answer determines whether you receive clothing or a bag."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ちょいワルおやじ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919931825842972.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "메스킹 메인 라인 (4장~)", en: "MesuKing Main Line (Chapter 4+)" },
-      items: [
+      "title": {
+        "ko": "8장부터",
+        "en": "From Chapter 8"
+      },
+      "items": [
         {
-          number: 70,
-          title: { ko: "박사와의 연습 시합", en: "Practice Match with Professor" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "#53 클리어 후 박사에게 도전", en: "Challenge the Professor after #53." },
-          body: { ko: "메스킹 입문 매치.", en: "Tutorial MesuKing match." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 71,
-          title: { ko: "첫 라이벌", en: "First Rival" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "이전 메스킹 매치 후 신규 도전자 등장", en: "A new MesuKing rival appears after prior matches." },
-          body: { ko: "라이벌 카드 배틀.", en: "Rival card battle." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 72,
-          title: { ko: "개인 레슨", en: "Private Lesson" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "라이벌전 후 박사 재방문", en: "Return to the Professor after the rival match." },
-          body: { ko: "박사의 추가 강의 + 매치.", en: "Extra coaching and a match." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 73,
-          title: { ko: "사랑만 있으면", en: "As Long as There's Love" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 나카미치점", en: "Club Sega — Nakamichi St." },
-          trigger: { ko: "라이벌 라인 진행", en: "Continue the rival line." },
-          body: { ko: "라이벌의 가족사 이벤트.", en: "A look into the rival's family drama." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-        {
-          number: 74,
-          title: { ko: "쳐들어가자!", en: "Time for a Raid!" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "클럽 세가 극장 광장점", en: "Club Sega — Theater Square" },
-          trigger: { ko: "#72 이후 극장 광장 클럽 세가 방문", en: "Go to the Theater Square Club Sega after #72." },
-          body: { ko: "다른 가게의 메스킹 챔피언에게 도전.", en: "Take down a rival arcade's MesuKing king." },
-          reward: { ko: "메스킹 카드", en: "MesuKing cards" },
-        },
-      ],
+          "number": 49,
+          "title": {
+            "ko": "소문의 파티",
+            "en": "The Rumored Party"
+          },
+          "chapter": {
+            "ko": "8장",
+            "en": "Chapter 8"
+          },
+          "body": {
+            "ko": "스타더스트 직원과 여성 손님에게 파티 이야기를 듣습니다. 데보라 앞의 토모코와 안쪽 손님들에게 정보를 얻은 뒤 야자와를 쓰러뜨립니다.",
+            "en": "Ask the Stardust employee and female guest about the party. Speak to Tomoko outside Debolah and the guests inside, then defeat Yazawa."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 噂のパーティ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338940674558677961.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "코마키 무술 초반 (6장)", en: "Komaki Early Training (Chapter 6)" },
-      items: [
+      "title": {
+        "ko": "10장부터",
+        "en": "From Chapter 10"
+      },
+      "items": [
         {
-          number: 59,
-          title: { ko: "코마키류 · 화승 봉인 (총봉인)", en: "Komaki Style: Shot Stopper" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "퍼거토리 진입 후 코마키 사부와 첫 대면", en: "First meet Master Komaki in Purgatory." },
-          body: { ko: "총을 든 적의 발사 직전에 무력화하는 카운터.", en: "Counter a gunman before he fires." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
+          "number": 9,
+          "title": {
+            "ko": "스토커",
+            "en": "The Stalker"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "body": {
+            "ko": "37번 완료 후 나카미치 거리 뒷골목에서 여성을 만납니다. 수상한 남자에게 이야기를 듣고 이어지는 전투에서 이깁니다.",
+            "en": "After No. 37, meet the woman on Nakamichi Alley, speak to the suspicious man, and win the ensuing fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ストーカー",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338220952980612134.html"
+          }
         },
         {
-          number: 60,
-          title: { ko: "코마키류 · 참격술", en: "Komaki Style: Swordsmanship" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#59 이후", en: "After #59." },
-          body: { ko: "도검류 운용 전수.", en: "Bladed weapon handling." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 61,
-          title: { ko: "코마키류 · 팔면 베기", en: "Komaki Style: Roundhouse Attack" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#60 이후", en: "After #60." },
-          body: { ko: "다수 적 회전 베기.", en: "Multi-enemy spin attack." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-        {
-          number: 62,
-          title: { ko: "코마키류 · 고양이 뒤집기", en: "Komaki Style: Cat-Like Reflexes" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "퍼거토리 분수", en: "Purgatory fountain" },
-          trigger: { ko: "#61 이후", en: "After #61." },
-          body: { ko: "공중 자세 회복.", en: "Air recovery technique." },
-          reward: { ko: "히트 액션 해금", en: "Heat Action unlock" },
-        },
-      ],
+          "number": 37,
+          "title": {
+            "ko": "갱 버스터즈",
+            "en": "Gangbusters"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "body": {
+            "ko": "호텔 거리의 사건과 챔피언 거리 출구의 전투를 진행합니다. 극장 앞 광장의 아오키에게 정보를 듣고 핑크 거리 입구의 리더를 쓰러뜨린 뒤, 호텔 거리 북쪽에서 마지막 전투를 마칩니다.",
+            "en": "Fight the attackers in the Hotel District and at the Champion District exit. Ask Aoki in Theater Square for information, defeat the leader at the Pink Street entrance, then finish the encounter in the northern Hotel District."
+          },
+          "source": {
+            "label": "神ゲー攻略 — ギャングバスターズ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338786009548336523.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "엔드게임 — 10~13장", en: "Endgame — Chapter 10~13" },
-      items: [
+      "title": {
+        "ko": "11장부터",
+        "en": "From Chapter 11"
+      },
+      "items": [
         {
-          number: 9,
-          title: { ko: "스토커", en: "The Stalker" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "나카미치 골목 동쪽", en: "Nakamichi Alley — east" },
-          trigger: { ko: "골목에서 스토킹을 호소하는 여성에게 말 걸기", en: "Talk to the woman complaining about her stalker." },
-          body: { ko: "스토커 추적 후 격파. 일부 분기에서 진실이 반전됨에 유의.", en: "Track and beat the stalker — note the twist in the dialog branches." },
-          reward: { ko: "경험치", en: "EXP" },
-        },
-        {
-          number: 37,
-          title: { ko: "갱 버스터즈", en: "Gangbusters" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "호텔가", en: "Hotel District" },
-          trigger: { ko: "호텔가에서 카무로초 비공식 자경단 일행과 마주치기", en: "Meet the vigilante crew in the Hotel District." },
-          body: { ko: "거리의 갱단을 일망타진하는 일련의 격투.", en: "Brawl through a wave of street gangs." },
-          reward: { ko: "고액 경험치", en: "Big EXP" },
-        },
-        {
-          number: 7,
-          title: { ko: "죽고 싶어 하는 남자", en: "Man on a Ledge" },
-          chapter: { ko: "11장", en: "Chapter 11" },
-          location: { ko: "파크 대로", en: "Park Boulevard" },
-          trigger: { ko: "옥상 난간에서 뛰어내리려는 남자를 발견", en: "Spot a man about to jump from a ledge." },
-          body: {
-            ko: "투신을 막기 위한 설득 시퀀스. 대화 선택은 진심 어린 위로 톤을 일관되게 고를 것. 비웃는 톤을 한 번이라도 고르면 분기 깨짐.",
-            en: "Talk him down with sincere replies. A single sarcastic pick breaks the branch.",
+          "number": 6,
+          "title": {
+            "ko": "가짜 미즈키의 진상",
+            "en": "The Fake Mizuki's Truth"
           },
-          choices: [
-            { prompt: { ko: "「왜 그러시는 거예요?」", en: "'What's wrong?'" }, correct: { ko: "진지하게 이야기를 듣는다", en: "Listen seriously" } },
-            { prompt: { ko: "「뭐라고 말하시겠어요?」", en: "'What will you say?'" }, correct: { ko: "공감해준다", en: "Empathize" } },
-          ],
-          reward: { ko: "경험치 + 액세서리", en: "EXP + accessory" },
-        },
-        {
-          number: 6,
-          title: { ko: "가짜 미즈키의 진상", en: "The Fake Mizuki's Truth" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "퍼거토리 환락가", en: "Purgatory Red-Light District" },
-          trigger: { ko: "13장 진행 중 퍼거토리에서 가짜 미즈키 단서 확인", en: "Pick up the fake Mizuki lead in Purgatory during Chapter 13." },
-          body: { ko: "「가짜 미즈키」 사건의 진상 추적. 격투 다수 + 컷신.", en: "Run down the truth behind the fake-Mizuki scheme; multiple fights." },
-          reward: { ko: "고액 경험치", en: "Big EXP" },
-        },
-        {
-          number: 4,
-          title: { ko: "극도의 아내", en: "The Yakuza's Wife" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "퍼거토리 환락가", en: "Purgatory's Red-Light District" },
-          trigger: { ko: "퍼거토리 환락가의 여성에게 말 걸기", en: "Talk to the woman in Purgatory's red-light district." },
-          body: { ko: "야쿠자 남편을 잃은 여성의 부탁을 받아 일당을 처리.", en: "Help a yakuza widow settle a debt with her husband's old crew." },
-          reward: { ko: "고액 경험치", en: "Big EXP" },
-        },
-        {
-          number: 57,
-          title: { ko: "자객의 진상", en: "Behind the Assassin" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "타이헤이 대로 서쪽", en: "Taihei Blvd. West" },
-          trigger: { ko: "마지막 자객 라인 진행", en: "Continue the assassin questline." },
-          body: { ko: "자객의 정체를 추적해 격파.", en: "Track and defeat one of the named assassins." },
-          reward: { ko: "고액 경험치 + 무기", en: "Big EXP + weapon" },
-        },
-        {
-          number: 46,
-          title: { ko: "최후의 자객", en: "The Last Assassin" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "극장 광장", en: "Theater Square" },
-          trigger: { ko: "엔드게임 자객 시리즈의 마지막", en: "Final entry of the assassin chain." },
-          body: {
-            ko: "최종 자객과의 결투. 사실상 후반 콘텐츠의 마무리이며 보상이 큼.",
-            en: "Climactic duel with the final assassin — a top-tier reward fight.",
+          "chapter": {
+            "ko": "11장",
+            "en": "Chapter 11"
           },
-          reward: { ko: "최상위 장비 + 다량 경험치", en: "Top-tier gear + big EXP" },
+          "body": {
+            "ko": "5번과 13번을 완료한 뒤 삼도천변 지하 환락가의 꽃장수를 찾아갑니다. 챔피언 거리에서 호객꾼과 대화하고 팰리스 직원들과의 전투에서 이깁니다.",
+            "en": "Complete Nos. 5 and 13, then visit the Florist in Purgatory. Meet the tout in the Champion District and defeat the Palace employees."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 偽美月の真相",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338226146703323434.html"
+          }
         },
-      ],
+        {
+          "number": 7,
+          "title": {
+            "ko": "죽고 싶어 하는 남자",
+            "en": "Man on a Ledge"
+          },
+          "chapter": {
+            "ko": "11장",
+            "en": "Chapter 11"
+          },
+          "body": {
+            "ko": "밤에 하루카와 함께 공원 앞 거리의 군중에게 접근합니다. 옥상의 남자에게 무슨 일이 있었는지 말해 달라는 취지로 답하며 대화를 이어가면 경험치 60,000을 받는 결말로 진행합니다.",
+            "en": "Approach the crowd on Park Boulevard at night with Haruka. Ask the man on the roof to explain what happened and continue the conversation for the outcome awarding 60,000 EXP."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 死にたがる男",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338934817548689601.html"
+          }
+        }
+      ]
     },
-  ],
+    {
+      "title": {
+        "ko": "13장부터",
+        "en": "From Chapter 13"
+      },
+      "items": [
+        {
+          "number": 4,
+          "title": {
+            "ko": "극도의 아내",
+            "en": "The Yakuza's Wife"
+          },
+          "chapter": {
+            "ko": "13장",
+            "en": "Chapter 13"
+          },
+          "body": {
+            "ko": "6번 완료 후 밤에 혼자 스타더스트에 들렀다가 텐카이치 거리로 나오면 전화가 옵니다. 삼도천 꽃장수를 만나고 극장 앞 거리의 토도 빌딩에서 도지마 야요이와 대화한 뒤 전투에서 이깁니다.",
+            "en": "After No. 6, visit Stardust alone at night and exit onto Tenkaichi Street to receive a call. Meet the Florist, visit Yayoi Dojima in the Todo Building on Theater Avenue, and win the ensuing fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 極道の妻",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338072290052847895.html"
+          }
+        },
+        {
+          "number": 46,
+          "title": {
+            "ko": "최후의 자객",
+            "en": "The Last Assassin"
+          },
+          "chapter": {
+            "ko": "13장",
+            "en": "Chapter 13"
+          },
+          "body": {
+            "ko": "다른 서브스토리 77건과 능력 강화를 모두 마친 뒤 혼자 행동하며 도전 메일을 확인합니다. 극장 앞 광장에서 아몬 죠에게 말을 걸고 최종 대결에서 승리합니다.",
+            "en": "Complete the other 77 substories and all ability upgrades, travel without Haruka, and check the challenge email. Speak to Jo Amon in Theater Square and win the final duel."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 最後の刺客",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/342822712223235162.html"
+          }
+        },
+        {
+          "number": 57,
+          "title": {
+            "ko": "자객의 진상",
+            "en": "Behind the Assassin"
+          },
+          "chapter": {
+            "ko": "13장",
+            "en": "Chapter 13"
+          },
+          "body": {
+            "ko": "키류 혼자 타이헤이 거리 서쪽으로 가서 전투에서 이깁니다. 삼도천변 지하 환락가의 쿠니에다를 만나고 부하들과 함께 쓰러뜨립니다.",
+            "en": "Go alone to West Taihei Boulevard and win the fight. Meet Kunieda in Purgatory's underground district and defeat him and his men."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 刺客の真相",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338790901398698397.html"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "코마키 수련 — 5장부터",
+        "en": "Komaki training — from Chapter 5"
+      },
+      "items": [
+        {
+          "number": 59,
+          "title": {
+            "ko": "코마키류 · 화승 봉인 (총봉인)",
+            "en": "Komaki Style: Shot Stopper"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "5장에서 삼도천변 주민과의 본편 전투를 끝낸 뒤 서부 공원 분수 앞의 코마키를 찾아 수련을 받습니다.",
+            "en": "After the Chapter 5 story fight against Purgatory's residents, speak to Komaki by the West Park fountain and complete his training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・火縄封じ",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337918720007503893.html"
+          }
+        },
+        {
+          "number": 60,
+          "title": {
+            "ko": "코마키류 · 참격술",
+            "en": "Komaki Style: Swordsmanship"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "59번을 마치고 에비스야에서 목도를 구입합니다. 목도를 가지고 서부 공원 분수 앞 코마키에게 돌아가 다음 수련을 받습니다.",
+            "en": "Complete No. 59, buy the wooden katana at Ebisu Pawn, and take it to Komaki at the West Park fountain for the next lesson."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・斬撃術",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337919988516047665.html"
+          }
+        },
+        {
+          "number": 61,
+          "title": {
+            "ko": "코마키류 · 팔면 베기",
+            "en": "Komaki Style: Roundhouse Attack"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "60번 완료 후 투기장에서 아수라 그림을 교환합니다. 서부 공원 분수 앞의 코마키에게 그림을 가져가 수련을 받습니다.",
+            "en": "After No. 60, exchange Coliseum points for the Image of an Asura and bring it to Komaki at the West Park fountain for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・八面討ち",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337920070539857869.html"
+          }
+        },
+        {
+          "number": 62,
+          "title": {
+            "ko": "코마키류 · 고양이 뒤집기",
+            "en": "Komaki Style: Cat-Like Reflexes"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "61번 완료 후 투기장에서 고양이 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 61, obtain the Image of a Cat from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・猫返り",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337920155784898966.html"
+          }
+        },
+        {
+          "number": 63,
+          "title": {
+            "ko": "코마키류 · 명경의 마음가짐",
+            "en": "Komaki Style: Clear-Minded Mastery"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "62번 완료 후 투기장에서 뱀 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 62, obtain the Image of a Snake from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・明鏡の心得",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338220953282602022.html"
+          }
+        },
+        {
+          "number": 64,
+          "title": {
+            "ko": "코마키류 · 사바키 격타",
+            "en": "Komaki Style: Evade and Strike"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "63번 완료 후 투기장에서 족제비 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 63, obtain the Image of a Kamaitachi from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・捌き討ち",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338220953098052646.html"
+          }
+        },
+        {
+          "number": 65,
+          "title": {
+            "ko": "코마키류 · 달마 피하기",
+            "en": "Komaki Style: Dharma Tumbler"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "64번 완료 후 투기장에서 달마 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 64, obtain the Image of a Dharma from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・達磨避け",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338220953148384294.html"
+          }
+        },
+        {
+          "number": 66,
+          "title": {
+            "ko": "코마키류 · 무수반격",
+            "en": "Komaki Style: Fist Reversal"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "65번 완료 후 투기장에서 사신 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 65, obtain the Image of Four Gods from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・無手返し",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338932410907392341.html"
+          }
+        },
+        {
+          "number": 67,
+          "title": {
+            "ko": "코마키류 · 받아넘기기",
+            "en": "Komaki Style: Knock Back"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "66번 완료 후 투기장에서 코끼리 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 66, obtain the Image of an Elephant from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・弾き返し",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338935350846089395.html"
+          }
+        },
+        {
+          "number": 68,
+          "title": {
+            "ko": "코마키류 · 호랑이 떨어뜨리기 (타이거 드롭)",
+            "en": "Komaki Style: Tiger Drop"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "67번 완료 후 투기장에서 호랑이 그림을 교환해 서부 공원 코마키에게 가져가 수련을 받습니다.",
+            "en": "After No. 67, obtain the Image of a Tiger from the Coliseum and bring it to Komaki in West Park for training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・虎落とし",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338938015688740908.html"
+          }
+        },
+        {
+          "number": 69,
+          "title": {
+            "ko": "코마키류 · 흘려보내기",
+            "en": "Komaki Style: Parry"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "body": {
+            "ko": "68번 완료 후 투기장에서 용 그림을 교환해 서부 공원 코마키에게 가져가 마지막 수련을 받습니다.",
+            "en": "After No. 68, obtain the Image of a Dragon from the Coliseum and bring it to Komaki in West Park for the final lesson."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 古牧流・受け流し",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338942433935015585.html"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "메스킹 — 4장부터",
+        "en": "MesuKing — from Chapter 4"
+      },
+      "items": [
+        {
+          "number": 53,
+          "title": {
+            "ko": "곤충여왕 메스킹",
+            "en": "MesuKing: The Queen of Beetles"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "나카미치 거리 클럽 세가 앞에서 카드를 줍고 소년에게 건넵니다. 가게 안에서 다시 대화해 메스킹을 시작합니다.",
+            "en": "Pick up the card outside Club SEGA Nakamichi Street and give it to the boy. Speak to him inside to begin MesuKing."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 昆虫女王メスキング",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337202670341233573.html"
+          }
+        },
+        {
+          "number": 70,
+          "title": {
+            "ko": "박사와의 연습 시합",
+            "en": "Practice Match with Professor"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "53번 완료 후 박사에게 100엔을 주고 연습 시합을 합니다. 보, 바위, 가위 순서로 내면 박사의 정해진 순서에 대응할 수 있습니다.",
+            "en": "After No. 53, pay the Professor ¥100 for a practice match. Play paper, rock, then scissors to counter his fixed sequence."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 博士との練習試合",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337202714230436317.html"
+          }
+        },
+        {
+          "number": 71,
+          "title": {
+            "ko": "첫 라이벌",
+            "en": "First Rival"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "70번 완료 후 박사에게 대전 상대를 부탁하고 토모히로와의 시합에서 이깁니다. 상대가 바위를 내므로 보 중심의 구성이 유리합니다.",
+            "en": "After No. 70, ask the Professor for an opponent and beat Tomohiro. Favor paper against his rock attacks."
+          },
+          "source": {
+            "label": "神ゲー攻略 — はじめてのライバル",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337202790801668244.html"
+          }
+        },
+        {
+          "number": 72,
+          "title": {
+            "ko": "개인 레슨",
+            "en": "Private Lesson"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "71번 완료 후 박사에게 새로운 상대를 소개받고 사치와 싸웁니다. 느낌표로 예고되는 상대의 패를 확인해 이기는 패를 냅니다.",
+            "en": "After No. 71, ask the Professor for a new opponent and beat Sachi. Counter the move indicated by the exclamation-mark preview."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 個人レッスン",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337202834321766548.html"
+          }
+        },
+        {
+          "number": 73,
+          "title": {
+            "ko": "사랑만 있으면",
+            "en": "As Long as There's Love"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "72번 완료 후 박사에게 새 상대를 소개받아 승리합니다. 바위와 가위를 중심으로 구성하면 유리하며, 나카미치 거리 클럽 세가 앞에서 얻는 벌 카드도 활용할 수 있습니다.",
+            "en": "After No. 72, ask the Professor for a new opponent and win. Favor rock and scissors; the wasp card found outside Club SEGA Nakamichi Street is one useful option."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 愛さえあれば",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337202888361162163.html"
+          }
+        },
+        {
+          "number": 74,
+          "title": {
+            "ko": "쳐들어가자!",
+            "en": "Time for a Raid!"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "73번 완료와 카드 30장을 갖춘 뒤 박사에게 새 상대를 부탁합니다. 극장 앞 클럽 세가로 이동해 노부오와의 시합에서 이깁니다.",
+            "en": "Complete No. 73 and collect 30 cards, then ask the Professor for another opponent. Go to Club SEGA Theater Square and beat Nobuo."
+          },
+          "source": {
+            "label": "神ゲー攻略 — カチコミだ！",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337203142066227044.html"
+          }
+        },
+        {
+          "number": 75,
+          "title": {
+            "ko": "박사의 과거",
+            "en": "The Professor's Past"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "74번 완료 후 나카미치 거리 클럽 세가의 박사에게 말을 겁니다. 도전을 수락하고 타케루를 이깁니다.",
+            "en": "After No. 74, speak to the Professor at Club SEGA Nakamichi Street, accept the challenge, and beat Takeru."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 博士の過去",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337204261492399013.html"
+          }
+        },
+        {
+          "number": 76,
+          "title": {
+            "ko": "박사의 과거 2",
+            "en": "The Professor's Past 2"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "75번 완료 후 극장 앞 클럽 세가의 히메를 찾아 시합에서 이깁니다. 이 단계는 나카미치 거리 점포가 아닙니다.",
+            "en": "After No. 75, find and beat Hime at Club SEGA Theater Square. This stage takes place at the Theater Square branch."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 博士の過去2",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337209318262753124.html"
+          }
+        },
+        {
+          "number": 77,
+          "title": {
+            "ko": "모두 사이좋게",
+            "en": "Enjoying It With Everyone"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "body": {
+            "ko": "76번 완료 후 카드 40장을 모으고 나카미치 거리 클럽 세가의 박사에게 말을 겁니다. 마사시와의 시합에서 이기면 완료됩니다.",
+            "en": "After No. 76, collect 40 cards and speak to the Professor at Club SEGA Nakamichi Street. Defeat Masashi."
+          },
+          "source": {
+            "label": "神ゲー攻略 — みんなで仲良く",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/337209368158193508.html"
+          }
+        },
+        {
+          "number": 78,
+          "title": {
+            "ko": "최강의 이름을 걸고",
+            "en": "Battle for the MesuKing Throne"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "body": {
+            "ko": "77번 완료 후 카드 50장을 모읍니다. 나카미치 거리 클럽 세가에서 박사와 진지하게 대결하고 승리합니다.",
+            "en": "After No. 77, collect 50 cards, challenge the Professor seriously at Club SEGA Nakamichi Street, and win."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 最強の名を賭けて",
+            "url": "https://kamigame.jp/ryugagotokukiwami/page/338220953433596966.html"
+          }
+        }
+      ]
+    }
+  ]
 };

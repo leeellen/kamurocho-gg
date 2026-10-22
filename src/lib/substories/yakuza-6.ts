@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const yakuza6Substories: SubstoriesData = {
   appId: 1388590,
   summary: {
-    ko: "카무로초 24건 + 오노미치 진가이초 26건 + 아몬 1건 = 총 51건(컴플리션 리스트 52번 슬롯은 「전체 클리어」). 장 진행에 따라 해금되며, 일부는 친구도(스낵 뉴 가우디)·야구·다이빙·캬바쿠라 등 미니게임 의존. 6장 이후 카무로초 서브가 대량 해금되니 메인 스토리와 병행이 효율적.",
-    en: "24 Kamurocho + 26 Onomichi Jingaicho + 1 Amon = 51 substories (completion-list slot 52 is the 'all cleared' tally). Many gate on Snack New Gaudi friendship, baseball, diving, or hostess clubs; the bulk of Kamurocho unlocks from Chapter 6, so pair them with the main story.",
-  },
+  "ko": "카무로쵸와 오노미치의 서브스토리 51개입니다. 캬바클럽·스낵바·야구·잠수 등의 진행이 전제인 의뢰도 있습니다.",
+  "en": "51 substories in Kamurocho and Onomichi. Some require progress in the hostess club, snack bar, baseball, or diving."
+},
   source: {
     label: "光る原人 — 龍が如く6 サブストーリー一覧",
     url: "https://www.hikarugennjinn.com/entry/yakuza6-sub_story",
@@ -18,227 +18,386 @@ export const yakuza6Substories: SubstoriesData = {
           number: 1,
           title: { ko: "키류의 카베동", en: "Kiryu's Wall Slam" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "텐카이치 거리 뒷골목", en: "Tenkaichi St. Alley" },
-          trigger: { ko: "텐카이치 거리 뒷골목에서 남성들에게 말 걸기 → 반탐 앞으로 이동", en: "Talk to the men in Tenkaichi Alley, then head to Bantam." },
-          body: { ko: "카베동을 가르쳐 달라는 남자들의 부탁. 시범 후 잡졸 무리와 전투.", en: "A group of men ask Kiryu to teach them the 'wall slam'. Demo it, then brawl their tormentors." },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "텐카이치 뒷골목 남자들의 대화를 듣고 첫 전투를 마칩니다. 반탐에서 벽을 짚는 연애 연출에 관한 대화를 진행한 뒤, 가게 밖에서 다섯 명과의 전투를 마칩니다.",
+            "en": "Hear the men in Tenkaichi Alley and win the first fight. Continue the wall-slam conversation at Bantam, then defeat the five men outside."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 2,
           title: { ko: "전화 상대", en: "The Phone Caller" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "밀레니엄 타워 앞", en: "Millennium Tower" },
-          trigger: { ko: "밀레니엄 타워 앞 공중전화에서 걸려오는 전화 응답", en: "Answer the ringing payphone at Millennium Tower." },
-          body: { ko: "오레오레 사기범의 전화. 정체를 캐묻고 사기임을 간파하면 일당과 전투로 이어진다.", en: "An 'It's me' scammer calls. Press him on his identity to expose the scam, then beat the crew." },
-          choices: [
-            { prompt: { ko: "「누구야?」 (1차)", en: "'Who is this?' (1st)" }, correct: { ko: "「타이치냐?」", en: "'Taichi?'" } },
-            { prompt: { ko: "「누구야?」 (2차)", en: "'Who is this?' (2nd)" }, correct: { ko: "「타이치냐?」", en: "'Taichi?'" } },
-            { prompt: { ko: "수상한가?", en: "Suspicious?" }, correct: { ko: "「이거 오레오레 사기 아냐?」", en: "'This is an It's-me scam, isn't it?'" } },
-            { prompt: { ko: "확신하나?", en: "Sure?" }, correct: { ko: "「오레오레 사기가 분명해!」", en: "'Definitely an It's-me scam!'" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "타이치인 척하는 전화를 받고 사기임을 추궁합니다. 밀레니엄 타워 앞의 정장 차림 이시가키에게 말을 걸고 두 명을 쓰러뜨립니다.",
+            "en": "Challenge the caller pretending to be Taichi. Speak to the suited Ishigaki outside Millennium Tower and defeat the two attackers."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 3,
           title: { ko: "동경하는 사람", en: "Idol Worship" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "시치후쿠 공원", en: "Shichifuku Park" },
-          trigger: { ko: "시치후쿠 공원의 소녀 아야카에게 말 걸기", en: "Talk to the girl Ayaka at Shichifuku Park." },
-          body: { ko: "하루카의 팬인 소녀 아야카가 하루카 굿즈를 찾고 있다. 도와주면 그림 선물.", en: "A young Haruka fan asks Kiryu to help her find merch. Help her out for a hand-drawn picture." },
-          reward: { ko: "「아야카가 그린 하루카 일행 그림」", en: "Ayaka's drawing of Haruka and friends" },
+
+
+          body: {
+            "ko": "시치후쿠 거리 서쪽 아동 공원의 아야카를 만납니다. 돈키호테 직원과 극장 앞 클럽 세가 2층의 하루카 티셔츠 남자에게 물어본 뒤, 에비스야에서 하루카 사진을 5만 엔에 삽니다. 아야카에게 전달하고 나중에 돌아와 그림을 받습니다.",
+            "en": "Meet Ayaka in Children's Park on West Shichifuku Street. Ask at Don Quijote and the Haruka-shirted man upstairs at Club SEGA Theater Square. Buy Haruka's photo for ¥50,000 at Ebisu Pawn, deliver it, then return later for Ayaka's drawing."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 4,
           title: { ko: "청소 로봇의 폭주", en: "Runaway Cleaner Bot" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "카무로초 곳곳", en: "Various Kamurocho streets" },
-          trigger: { ko: "거리에서 폭주 중인 청소 로봇 발견 후 추적", en: "Chase the runaway robot vacuum spotted in the streets." },
-          body: { ko: "폭주한 청소 로봇을 따라잡아 정지시키고 주인에게 돌려준다.", en: "Catch the rogue cleaning robot and return it to its owner." },
+
+
+          body: {
+            "ko": "슷폰 거리에서 숨찬 남자의 로봇 찾기를 돕습니다. 텐카이치 거리와 나카미치 거리 가라오케관 앞을 따라가 텐카이치 뒷골목 제3공원에서 전투를 마칩니다.",
+            "en": "Accept the breathless man's robot-search request on Suppon Street. Follow it through Tenkaichi Street and past the Nakamichi karaoke bar to Public Park 3, where the final fight occurs."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 5,
           title: { ko: "I am human", en: "I am human" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "시치후쿠 공원 서쪽", en: "Shichifuku Park West" },
-          trigger: { ko: "공원 서쪽의 AI 캐릭터 「히지」와 대화", en: "Talk to the AI character Hiji west of the park." },
-          body: { ko: "자신을 인간이라 주장하는 AI 「히지」와 대화. 인간성에 관한 질문에 답하면 종료.", en: "An AI named Hiji insists he is human. Answer his questions about humanity." },
-          reward: { ko: "개운 액막이 부적", en: "Lucky charm (Kaiun Yakuyoke)" },
+
+
+          body: {
+            "ko": "나카미치 거리에서 Hiji 시험을 수락하고 아동 공원에서 대화합니다. 공원을 나와 여성을 괴롭히는 취객을 쓰러뜨린 뒤, 나카미치 거리 클럽 세가 앞의 Hiji 배포자에게 돌아갑니다.",
+            "en": "Accept the Hiji trial on Nakamichi Street and test it in Children's Park. Leave, defeat the drunk harassing a woman, then return to Hiji's distributor outside Club SEGA Nakamichi Street."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 6,
           title: { ko: "조회수가 전부", en: "Views Are Everything" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "씨어터 광장 앞", en: "Theater Square" },
-          trigger: { ko: "씨어터 광장의 유튜버 우스이에게 말 걸기", en: "Talk to YouTuber Usui at Theater Square." },
-          body: { ko: "노이즈 유튜버 우스이의 무모한 스턴트를 도와주거나 말리는 흐름. 결국 시청자 시비로 전투까지 이어진다.", en: "Help — or stop — viral creator Usui's stunt; ends in a brawl with hostile viewers." },
+
+
+          body: {
+            "ko": "극장 앞 거리에서 셀카봉을 든 츠츠이를 만납니다. 요시다 배팅 센터, 가라오케관·스마일 버거 교차로, 텐카이치 거리 마작점 건물의 사건을 따라갑니다. 건물 4층 마작점에서 츠츠이와 싸웁니다.",
+            "en": "Meet selfie-stick-carrying Tsutsui on Theater Avenue. Follow the events at the batting center, the karaoke/Smile Burger intersection, and the mahjong building on Tenkaichi Street. Fight Tsutsui in the fourth-floor mahjong parlor."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 7,
           title: { ko: "드론을 쫓아라", en: "Chase the Drone" },
           chapter: { ko: "7장 이후", en: "Chapter 7+" },
-          location: { ko: "센료 거리", en: "Senryo Ave." },
-          trigger: { ko: "센료 거리에서 드론을 발견 후 추적", en: "Spot the drone on Senryo Ave. and chase it." },
-          body: { ko: "수상한 드론을 추적하여 다목적 빌딩까지 도달, 운영자와 대치.", en: "Chase a suspicious drone to a multipurpose building and confront its operator." },
+
+
+          body: {
+            "ko": "나카미치 거리의 남자들 대화를 듣고 길 건너편의 두 사람에게 말을 겁니다. 드론을 피한 뒤 센료 거리 다목적 건물 4층까지 따라가 야쿠자를 쓰러뜨립니다. 놓쳤다면 시간이 지난 뒤 극장 앞 거리 오사카 오쇼 앞으로 가서 재개할 수 있습니다.",
+            "en": "Hear the men on Nakamichi Street and speak to the pair opposite. Dodge the drone, follow it to the fourth-floor multipurpose building on Senryo Avenue, and defeat the yakuza. If you lose it, return later to Osaka Ohsho on Theater Avenue to resume."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 8,
           title: { ko: "원한 가진 자들 1", en: "Those With a Grudge 1" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "텐카이치 거리 — 배팅 센터 앞", en: "Tenkaichi St. — outside Batting Center" },
-          trigger: { ko: "배팅 센터 앞 핫피 차림 남성에게 말 걸기", en: "Talk to the man in a happi coat outside the Batting Center." },
-          body: { ko: "키류에게 원한이 있다는 사내들과의 전투.", en: "Brawl with men who claim a grudge against Kiryu." },
+
+
+          body: {
+            "ko": "텐카이치 거리 입구에서 사건을 시작하고 안내소 앞의 핫피 차림 남자와 대화합니다. 요시다 배팅 센터 안의 노란 운동복 남자를 만나 싸운 뒤 시치후쿠 파크까지 쫓아가 대화를 마칩니다.",
+            "en": "Start near the Tenkaichi Street entrance and speak to the happi-coated man outside the information center. Meet the yellow-tracksuited man inside the batting center, win the fight, then follow him to Shichifuku Parking Lot."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 9,
           title: { ko: "원한 가진 자들 2", en: "Those With a Grudge 2" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "배팅 센터 부근", en: "Near the Batting Center" },
-          trigger: { ko: "No.8 클리어 후 배팅 센터 부근에서 재발생", en: "After clearing No.8, the grudge crew returns near the Batting Center." },
-          body: { ko: "No.8을 끝내고 다시 텐카이치 거리 입구 부근으로 가면 발생. 요시다 배팅 센터로 향해 안에 있는 노란 저지 차림의 남자에게 말을 걸면 이벤트가 시작되고, 수상한 남자 10여 명과 한꺼번에 싸우게 된다. 다수전이므로 히트 액션과 무기를 아끼지 말 것.", en: "Unlocks near the Tenkaichi St. entrance once No.8 is done. Head to the Yoshida Batting Center and talk to the man in the yellow tracksuit inside; the scene ends in a brawl against roughly ten men at once, so lean on weapons and heat actions." },
-          prereq: { ko: "No.8 클리어", en: "Complete No.8" },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "8번 완료 후 텐카이치 거리 입구로 돌아갑니다. 요시다 배팅 센터의 노란 운동복 남자에게 다시 말을 걸고 다수의 적과 싸웁니다.",
+            "en": "After No. 8, return to the Tenkaichi Street entrance. Speak to the yellow-tracksuited man inside the batting center again and defeat the group."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 10,
           title: { ko: "매혹적인 권유", en: "An Alluring Invitation" },
           chapter: { ko: "6장 이후 (야간)", en: "Chapter 6+, night" },
-          location: { ko: "머핀 빌딩 부근", en: "Near Muffin Building" },
-          trigger: { ko: "야간 머핀 빌딩 부근 여성에게 말 걸기", en: "Speak to the woman near the Muffin Building at night." },
-          body: { ko: "셀카 모델을 부탁하는 여성과 동행. 3장의 사진 촬영 미니이벤트.", en: "Tag along with a woman who wants three selfies — pose for each." },
+
+
+          body: {
+            "ko": "밤에 시치후쿠 거리와 극장 앞 거리가 만나는 곳의 카페 머핀 건물 앞을 지납니다. 스마일 버거와 극장 앞 클럽 세가 근처에서 사진 메시지를 추가로 받고 뉴 세레나 옥상으로 갑니다. 대화 후 네 명과 싸웁니다.",
+            "en": "At night, pass the Muffin building where Shichifuku Street meets Theater Avenue. Receive further photo messages near Smile Burger and Club SEGA Theater Square, then go to New Serena's roof. Finish the conversation and defeat four men."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 11,
           title: { ko: "지금 바빠?", en: "Are You Busy?" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "시치후쿠 공원", en: "Shichifuku Park" },
-          trigger: { ko: "공원에서 곤란해하는 청년에게 말 걸기 → 포포에서 5만엔 선불카드 구매", en: "Talk to the troubled young man at the park, then buy a 50,000 yen prepaid card at POPPO." },
-          body: { ko: "선불카드 사기 의심 상황. 즉시 보내지 말고 끝까지 우겨야 사기범 일당이 등장하여 전투, 완전 보상.", en: "A prepaid-card scam setup. Refuse to send the number — push back twice — to draw out the crew and clear properly." },
-          choices: [
-            { prompt: { ko: "카드 번호 알려달라", en: "Send the number?" }, correct: { ko: "용도를 묻는다", en: "Ask their purpose" } },
-            { prompt: { ko: "그래도 보내달라", en: "Send anyway?" }, correct: { ko: "버텨본다", en: "Push back" } },
-            { prompt: { ko: "끝까지 보내달라", en: "Final ask?" }, correct: { ko: "더 버텨본다", en: "Push back harder" } },
-          ],
-          reward: { ko: "경험치 + 삥쟁이 일당 격파", en: "EXP + scammer crew defeated" },
+
+
+          body: {
+            "ko": "시치후쿠 파크 앞에서 메시지를 받은 뒤 텐카이치 거리 포포에서 5만 엔어치 선불카드를 삽니다. 번호를 보내지 말고 용도를 묻고 두 차례 버티면 센료 거리 다목적 건물 옥상의 전투로 이어집니다. 번호를 보내도 의뢰는 끝나지만 전투 분기를 보지 못합니다.",
+            "en": "After the message near Shichifuku Parking Lot, buy ¥50,000 of prepaid cards at Poppo Tenkaichi Street. Ask their purpose and push back twice without sending the number to reach the rooftop fight on Senryo Avenue. Sending it also ends the substory, but skips the confrontation."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 12,
           title: { ko: "전설의 사나이 폴 림", en: "The Legend, Paul Lim" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "반탐", en: "Bantam" },
-          trigger: { ko: "반탐에서 아카이시와 다트 대결", en: "Play darts against Akaishi at Bantam." },
-          body: { ko: "다트 명인 폴 림에 도전하기 위한 자격 매치. 아카이시 격파 시 중급자의 화살 획득.", en: "Beat Akaishi at Bantam to qualify for a showdown against Paul Lim." },
-          reward: { ko: "「중급자의 화살」", en: "Intermediate Darts" },
+
+
+          body: {
+            "ko": "반탐의 아카이시자와에게 말을 걸고 다트 대결을 진행합니다. 대결 뒤 중급자용 다트를 받고 다음 단계의 폴 림 대결을 준비합니다.",
+            "en": "Speak to Akaishizawa at Bantam and play the darts match. Receive the Intermediate Darts afterward and prepare for the subsequent Paul Lim encounter."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 13,
           title: { ko: "폴 림과의 대결", en: "Battle with Paul Lim" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "반탐", en: "Bantam" },
-          trigger: { ko: "No.12 클리어 후 폴 림에게 도전", en: "After clearing No.12, challenge Paul Lim." },
-          body: { ko: "다트 연습을 하러 다가가면 폴 림이 승부를 걸어옵니다. 키류가 영어를 못해 아카이시자와 유야가 통역을 맡으며, 승패나 룰과 관계없이 폴 림이 레전드 다트를 건네줍니다.", en: "Approach the dartboard for a practice round and Paul Lim challenges you, with Yuya Akaishizawa translating since Kiryu does not speak English. Win or lose, whatever the ruleset, Paul gifts you his Legend's Darts." },
-          prereq: { ko: "No.12 클리어", en: "Complete No.12" },
-          reward: { ko: "레전드 다트", en: "Legend's Darts" },
+
+
+          body: {
+            "ko": "12번을 마치고 극장 앞 클럽 세가의 중급·상급 다트 상대를 이긴 뒤 반탐으로 돌아갑니다. 폴 림과 다트를 치면 선택한 규칙과 승패에 관계없이 전용 다트를 받습니다.",
+            "en": "Complete No. 12 and beat the intermediate and advanced darts opponents at Club SEGA Theater Square, then return to Bantam. Play Paul Lim; his special darts are awarded regardless of ruleset or result."
+          },
+
+
+          source: {
+            "label": "CyricZ — Yakuza 6 substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/chapter-6-substories"
+          },
         },
         {
           number: 14,
           title: { ko: "맞서는 자", en: "Standing Up" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "밀레니엄 타워 부근 캬바쿠라", en: "Cabaret near Millennium Tower" },
-          trigger: { ko: "캬바쿠라에서 사키를 No.1으로 만들기", en: "Make Saki No.1 at the cabaret." },
-          body: { ko: "캬바쿠라 미니게임 연계. 사키 양성 후 트러블 해결.", en: "Cabaret minigame chain — train Saki to top, then handle the trouble that follows." },
+
+
+          body: {
+            "ko": "샤인에서 사키의 대화를 끝까지 진행하고 애프터 약속을 잡습니다. 밀레니엄 타워 앞에서 만나 극장 앞 광장으로 이동하는 사건을 보고 두 명의 불량배를 쓰러뜨립니다.",
+            "en": "Complete Saki's conversation progression at Shine and arrange the after-hours meeting. Meet her at Millennium Tower, follow the scene to Theater Square, and defeat the two thugs."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 15,
           title: { ko: "매혹의 데뷔", en: "Charming Debut" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "다목적 빌딩 캬바쿠라", en: "Multipurpose Bldg. Cabaret" },
-          trigger: { ko: "히카루를 No.1으로 만들기", en: "Make Hikaru No.1 at the cabaret." },
-          body: { ko: "히카루의 명함을 받고 플래티넘 등급까지 올린 뒤 극장 광장에서 데이트 약속을 잡습니다. 그녀가 나타나지 않아 찾아보면 연예 기획사 면접에 가 있고, 관계자들의 속셈을 알게 되는 전개로 이어집니다.", en: "Get Hikaru's business card and reach Platinum level with her, then set up the date in Theatre Square. When she does not show, search around and you find she is at a talent agency interview — and learn what the staff are really after." },
-          reward: { ko: "히카루 라인 진행", en: "Hikaru's line advances" },
+
+
+          body: {
+            "ko": "샤인에서 히카루의 대화를 끝까지 진행합니다. 도원향 앞의 히카루와 두 남자에게 접근한 뒤 센료 거리 다목적 건물로 따라가 네 명을 쓰러뜨립니다.",
+            "en": "Complete Hikaru's conversation progression at Shine. Approach her and the two men outside Shangri-La, follow her to the Senryo Avenue multipurpose building, and defeat the four men."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 16,
           title: { ko: "마음을 전하다", en: "Conveying Feelings" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "씨어터 광장 캬바쿠라", en: "Theater Square Cabaret" },
-          trigger: { ko: "SORA를 No.1으로 만들기", en: "Make SORA No.1 at the cabaret." },
-          body: { ko: "캬바쿠라 샤인에서 SORA를 No.1으로 올린 뒤 애프터 약속을 극장 앞 광장으로 잡고, 광장의 SORA에게 말을 건다. 장면이 바뀌며 대화 선택지가 두 번 나온다. 「순수하고 활기찬 여성」／「순수하고 참한 여성」, 이어서 「달리 해야 할 일이 있다」／「지금은 무리다……」／「언젠가는 하고 싶다」 중에서 고르면 되고, 어느 쪽을 골라도 클리어된다.", en: "Make SORA the No.1 hostess at Club Shine, set the after-hours date at the theater square, then talk to her there. The scene moves on its own into a dialogue with two prompts — a cheerful woman or a demure one, then whether you have other things to do, cannot manage it now, or would like to some day. Neither choice changes the outcome." },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "샤인에서 SORA의 대화를 끝까지 진행하고 극장 앞 광장에서 애프터 약속을 잡습니다. SORA를 만나 두 차례 대화 선택을 마치면 완료됩니다.",
+            "en": "Complete SORA's conversation progression at Shine and arrange to meet in Theater Square. Speak to her and finish the two conversation choices."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 17,
           title: { ko: "꼬마 악마의 위기", en: "Little Devil's Crisis" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "씨어터 광장 캬바쿠라", en: "Theater Square Cabaret" },
-          trigger: { ko: "에리나를 No.1으로 만들기", en: "Make Erina No.1 at the cabaret." },
-          body: { ko: "캬바쿠라 샤인에서 에리나를 No.1으로 올리고 애프터 약속을 극장 앞 광장으로 잡은 뒤 광장으로 향한다. 자동으로 스토커 이벤트가 발생하고, 악질적인 남자와 1대1 전투. 이기면 이벤트로 이어지며 완료.", en: "Make Erina the No.1 hostess at Club Shine, arrange the after-hours meet at the theater square and go there. A stalker scene triggers automatically and ends in a one-on-one fight; win it and the substory wraps up." },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "샤인에서 에리나의 대화를 끝까지 진행하고 극장 앞 광장에서 만나기로 합니다. 약속 장소의 스토커 사건을 보고 전투에서 이깁니다.",
+            "en": "Complete Erina's conversation progression at Shine and arrange the Theater Square meeting. Follow the stalker incident there and win the fight."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 18,
           title: { ko: "양심적인 캬바걸", en: "The Honest Hostess" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "핑크 거리 캬바쿠라", en: "Pink St. Cabaret" },
-          trigger: { ko: "리오나를 No.1으로 만들기", en: "Make Riona No.1 at the cabaret." },
-          body: { ko: "핑크 거리 끝에서 기다리는 리오나와 나서려는 순간, 거액을 쓰고 출입을 거부당한 남자가 캬바걸을 탓하는 장면을 목격합니다. 그 캬바걸이 클럽 샤인 소속이라는 사실이 드러나며 이야기가 이어집니다.", en: "Riona is waiting near the end of Pink Avenue, but as you set off you witness a man blaming a hostess for barring him after he ran up a huge bill — and it turns out she is from Club Shine." },
-          reward: { ko: "리오나 라인 진행", en: "Riona's line advances" },
+
+
+          body: {
+            "ko": "샤인에서 리오나의 대화를 끝까지 진행합니다. 핑크 거리를 따라 아시아 거리 방향으로 간 곳에서 리오나를 만나 전투를 마칩니다.",
+            "en": "Complete Riona's conversation progression at Shine. Find her along Pink Street toward Little Asia and win the fight."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 19,
           title: { ko: "ID 배팅 센터", en: "ID Batting Center" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "배팅 센터", en: "Batting Center" },
-          trigger: { ko: "오노미치 No.35 클리어 후 5연속 홈런", en: "After Onomichi No.35, hit 5 home runs in a row." },
-          body: { ko: "오노미치의 No.35를 끝낸 뒤 카무로초 요시다 배팅 센터에서 챌린지 코스를 3회 클리어하면 지배인과의 대화 이벤트가 발생한다. 이어서 시작 코스에 도전해 홈런 5개를 연속으로 쳐야 한다. 구종과 코스는 매번 동일하고 몇 번이든 재도전할 수 있으니 패턴을 외우면 된다. 지배인과의 대화 선택지가 두 번 나오지만 어느 쪽을 골라도 진행되며, 마지막에 지배인이 팀에 합류한다.", en: "After Onomichi's No.35, clear the Yoshida Batting Center's challenge course three times to trigger a chat with the manager. Then take the prototype course and hit five home runs in a row — the pitch types and locations never change and you can retry freely, so it is a memorisation job. There are two dialogue prompts along the way and neither changes anything; the manager signs on at the end regardless." },
-          prereq: { ko: "오노미치 No.35 클리어", en: "Clear Onomichi No.35" },
-          reward: { ko: "요시다 지배인이 세토우치 워리어즈 합류", en: "Manager Yoshida joins the Seto Warriors" },
+
+
+          body: {
+            "ko": "35번 완료 후 요시다 배팅 센터 챌린지 코스를 세 번 클리어해 지배인의 의뢰를 받습니다. 시험 코스에서 홈런 다섯 개를 연속으로 치면 요시다가 야구팀에 합류합니다. 실패해도 같은 코스에 다시 도전할 수 있습니다.",
+            "en": "After No. 35, clear three Challenge Course sessions at the Yoshida Batting Center. Hit five consecutive home runs in the manager's trial to recruit Yoshida. The fixed trial can be retried."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 20,
           title: { ko: "나니와의 홈런왕", en: "Naniwa Home Run King" },
           chapter: { ko: "6장 이후", en: "Chapter 6+" },
-          location: { ko: "배팅 센터", en: "Batting Center" },
-          trigger: { ko: "오노미치 No.35 클리어 후 홈런 7개 이상", en: "After Onomichi No.35, score 7+ home runs." },
-          body: { ko: "오노미치의 No.35를 끝낸 뒤 요시다 배팅 센터의 홈런 코스를 3회 클리어하면 고리 씨와의 대화 이벤트. 그대로 승부에 들어가 홈런을 7개 이상 치면 고리 씨가 팀에 합류한다.", en: "Once Onomichi's No.35 is done, clear the Yoshida Batting Center's home-run course three times to meet Gori-san, then beat him by hitting seven or more home runs to recruit him." },
-          prereq: { ko: "오노미치 No.35 클리어", en: "Clear Onomichi No.35" },
-          reward: { ko: "고리 씨가 세토우치 워리어즈 합류", en: "Gori-san joins the Seto Warriors" },
+
+
+          body: {
+            "ko": "35번 완료 후 요시다 배팅 센터 홈런 코스를 세 번 클리어합니다. 고리의 도전을 받아 홈런 일곱 개 이상을 치면 그가 야구팀에 합류합니다.",
+            "en": "After No. 35, clear three Home Run Course sessions at the Yoshida Batting Center. Accept Gori's challenge and hit at least seven home runs to recruit him."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 21,
           title: { ko: "고양이 카페에 어서 오세요", en: "Welcome to the Cat Cafe" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "고양이 카페 냥냥", en: "Cat Cafe Nyan Nyan" },
-          trigger: { ko: "고양이 카페 입장", en: "Enter the cat cafe." },
-          body: { ko: "센료 거리 앞 건물 3층의 「cat cafe nyan nyan 차방」 앞을 지나가면 이벤트. 가게에 들어가면 자동으로 대화로 이어지고, 카무로초와 오노미치 곳곳에서 고양이를 찾아 데려오는 「고양이 찾기」가 해금된다.", en: "Walk up to the third floor of the building before Senryo Ave. and the \"cat cafe nyan nyan\" scene fires. Step inside and the conversation plays out on its own, unlocking Cat Search — the collectathon of strays scattered across Kamurocho and Onomichi." },
-          reward: { ko: "「고양이 찾기」 해금", en: "Unlocks the Cat Search minigame" },
+
+
+          body: {
+            "ko": "센료 거리 초입 건물 3층 고양이 카페 앞에 접근한 뒤 안으로 들어가 이야기를 듣습니다. 이후 거리에서 고양이를 찾는 활동이 열립니다.",
+            "en": "Approach the third-floor cat café near the Senryo Avenue entrance, enter, and hear the explanation. This unlocks finding cats around town."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 22,
           title: { ko: "라이브 챗의 유혹", en: "Live Chat Temptation" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "인터넷 카페 만타이", en: "Internet Cafe Mantai" },
-          trigger: { ko: "인터넷 카페에서 라이브 챗 이용", en: "Use live chat at the internet cafe." },
-          body: { ko: "「빗테 키친 타이헤이 거리 서점」 부근 모퉁이에 있는 커플 옆을 지나가면 발생. 커플이 무슨 이야기를 하는지 묻는 선택지가 나오는데 어느 쪽을 골라도 진행된다. 그 뒤 극장 앞 넷카페 「mantai」로 가서 남자에게 말을 걸고 라이브 챗을 체험하면 완료.", en: "Pass the couple on the corner near Vitte Kitchen (Taihei Blvd. West) to start it; you are asked what they are talking about and any answer moves it along. Then head to the mantai net cafe by the theater, talk to the man there and try live chat for yourself." },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "타이헤이 거리 서쪽 비테 키친 근처 커플의 대화를 듣습니다. 극장 앞 인터넷 카페 만타이에서 남자에게 말을 걸고 라이브 채팅을 체험합니다.",
+            "en": "Hear the couple near Wette Kitchen on West Taihei Boulevard. Speak to the man at the Theater Avenue Mantai internet café and try live chat."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 23,
           title: { ko: "결과에 커밋하는 남자", en: "The Man Who Commits to Results" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "라이잡", en: "RIZAP" },
-          trigger: { ko: "라이잡 입회 후 트레이닝 완료", en: "Join RIZAP and complete training." },
-          body: { ko: "극장 광장 뒤 「RAIZAP」 앞의 남자 2인조에게 다가가면 이벤트. 설명을 다 듣고 「입회한다」를 선택한 뒤 마쿠타에게 말을 걸어 2종류의 트레이닝을 받는다. 이후 지시받은 식단대로 식사를 하고 마쿠타에게 보고하면 완료된다. 지정된 가게에서 지정된 메뉴를 먹어야 하므로, 트레이닝 직후 바로 식사하러 가는 편이 빠르다.", en: "Approach the two men outside RAIZAP behind the theater plaza, hear them out and choose to sign up. Talk to Makuta for two rounds of training, then eat according to the diet he prescribes and report back. The meals must be the specific dishes at the specific restaurants he names, so go straight there after each session." },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "극장 앞 광장 뒤편 라이잡 앞 남자들에게 접근하고 입회합니다. 두 종류의 훈련을 받고 식사 조언에 맞게 먹은 뒤 담당자에게 보고합니다.",
+            "en": "Approach the men outside RIZAP behind Theater Square and join. Complete two exercises, eat according to the dietary advice, and report to the trainer."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 24,
           title: { ko: "다시 태어난 남자", en: "A Reborn Man" },
           chapter: { ko: "1장 이후", en: "Chapter 1+" },
-          location: { ko: "라이잡 / 카무로초 거리", en: "RIZAP / Kamurocho streets" },
-          trigger: { ko: "No.23 클리어 후 소다지와 재대결", en: "After No.23, rematch Sotachi multiple times." },
-          body: { ko: "No.23 클리어 후 RAIZAP에서 나오면 이벤트가 발생하고 소다지와 전투. 이후 카무로초를 걸어다니는 소다지에게 말을 걸어 트러블 미션 「강적을 쓰러뜨려라 1」, 다시 말을 걸어 「강적을 쓰러뜨려라 2」를 클리어한다. 소다지에게 메일이 오면 시치후쿠 거리 서쪽 어린이 공원에서 최종 대결. 이기면 키류회에 합류한다. 트러블 미션은 2장, 클랜 배틀은 5장부터 해금되므로 그 전에는 진행이 막힌다.", en: "After No.23, leaving RAIZAP triggers a fight with Sotachi. Then find him wandering Kamurocho and clear the trouble missions \"Defeat the Tough Guy 1\" and \"2\", talking to him again between each. He emails you afterwards; meet him at the children's park west of Shichifuku St. for the final bout. Note the chain stalls until trouble missions unlock in Chapter 2 and clan battles in Chapter 5." },
-          prereq: { ko: "No.23 클리어", en: "Complete No.23" },
-          reward: { ko: "소다지가 키류회 합류", en: "Sotachi joins the Kiryu Clan" },
+
+
+          body: {
+            "ko": "23번의 라이잡 과정을 마치고 밖에서 소다치와 싸웁니다. 이후 강적 트러블 미션 두 건을 진행하고 메일을 받으면 아동 공원에서 최종 대결을 합니다. 트러블 미션은 2장, 마지막 단계에 필요한 클랜 크리에이터는 5장에서 열립니다.",
+            "en": "Finish No. 23's RIZAP routine and fight Sodachi outside. Complete his two tough-opponent Trouble Missions, then answer the email and fight him in Children's Park. Trouble Missions open in Chapter 2; Clan Creator, needed for the final stage, opens in Chapter 5."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
       ],
     },
@@ -249,97 +408,147 @@ export const yakuza6Substories: SubstoriesData = {
           number: 25,
           title: { ko: "연애 금지", en: "No Dating Allowed" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "류난 신사", en: "Ryunan Shrine" },
-          trigger: { ko: "류난 신사 부근의 젊은 커플에게 말 걸기", en: "Talk to the young couple near Ryunan Shrine." },
-          body: { ko: "젊은 커플의 사정을 듣고 도와준 후, 방해하는 야쿠자 일당과 전투.", en: "Help a young couple, then fight off yakuza who interfere." },
+
+
+          body: {
+            "ko": "류난 신사의 두 여성과 대화하고 시간이 지난 뒤 벤치의 미사와 선배에게 돌아갑니다. 다섯 명과의 전투 후 시시도 서쪽 굴 가게 맞은편 미사를 찾아 대화를 마칩니다.",
+            "en": "Speak to the two women at Ryunan Shrine and return later to Misa and her senior on the bench. After the fight against five men, meet Misa opposite the oyster stall on West Shishido Street."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 26,
           title: { ko: "교주님의 속죄", en: "The Cult Leader's Atonement" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "신흥 종교 시설", en: "Cult compound" },
-          trigger: { ko: "수상한 신흥 종교 권유자에게 말 걸기", en: "Talk to the suspicious cult recruiter." },
-          body: { ko: "수상한 종교의 입회 시험. 모든 질문에 「올바르게」 답해 교주의 정체를 밝히고 격파.", en: "A bogus cult's induction quiz. Answer every prompt 'correctly' to expose the leader, then beat him." },
-          choices: [
-            { prompt: { ko: "입회 의사", en: "Intent" }, correct: { ko: "「무난쵸헤페트나스교에 들고 싶다」", en: "'I want to join the Munanchohepetonas religion'" } },
-            { prompt: { ko: "인사", en: "Greeting" }, correct: { ko: "포즈를 잡고 인사", en: "Greet with the pose" } },
-            { prompt: { ko: "주문 응답", en: "Mantra response" }, correct: { ko: "「헤페트나스」", en: "'Hepetonas'" } },
-            { prompt: { ko: "외칠 말", en: "Sacred phrase" }, correct: { ko: "「쿠·리파스」", en: "'Ku-Ripaasu'" } },
-            { prompt: { ko: "교명(이름)", en: "Cult name" }, correct: { ko: "「무난쵸·아카마츠」", en: "'Munancho-Akamatsu'" } },
-            { prompt: { ko: "수업 내용", en: "Activity" }, correct: { ko: "「재교육」", en: "'Re-education'" } },
-          ],
-          reward: { ko: "「용의 눈」", en: "Dragon's Eye" },
+
+
+          body: {
+            "ko": "니노자카 중간의 노부부와 이야기하고 국도 2호선 서쪽 교단 본부로 갑니다. 교단 문답을 진행한 뒤 아카마츠를 쓰러뜨립니다. 문답을 여러 번 틀리면 추가 전투가 생기며, 의뢰 자체가 실패로 끝나는 것은 아닙니다.",
+            "en": "Speak to the elderly couple on Ninouzaka and visit the cult headquarters on western Route 2. Complete the ritual questions and defeat Akamatsu. Several wrong answers add a fight rather than permanently failing the substory."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 27,
           title: { ko: "포케서 파이터, 다시", en: "Pocket Circuit Fighter Returns" },
           chapter: { ko: "5장 이후", en: "Chapter 5+" },
-          location: { ko: "후지사와 두부점", en: "Fujisawa Tofu Shop" },
-          trigger: { ko: "후지사와 두부점에서 재회 이벤트", en: "Trigger the reunion event at Fujisawa Tofu." },
-          body: { ko: "결혼해 아들을 둔 포켓 서킷 파이터가 히로시마로 돌아와 있습니다. 오노미치의 두부 가게 앞에서 재회해 카무로초 시절 이야기를 나누고, 도중에 그의 아들이 합류합니다.", en: "Pocket Circuit Fighter, now married with a son, has moved back to Hiroshima. Reunite with him in front of his tofu shop in Onomichi and reminisce about his Kamurocho racing days — his son turns up partway through." },
+
+
+          body: {
+            "ko": "센터 거리 북쪽 두부 가게에서 파이터와 재회합니다. 라 펜트 부근 사카노우에 골목의 사키토와 이야기하고 시간이 지난 뒤 돌아옵니다. 진가이 나루터에서 사키토를 찾아 야쿠자를 물리칩니다. 나중에 두부 가게 앞 파이터에게 말하면 키류회에 합류합니다.",
+            "en": "Reunite with the Fighter at the northern Central Shopping District tofu shop. Speak to Sakito near La Pente on Sakanoue Lane and return later. Find him at the ferry dock and defeat the yakuza. Speak to the Fighter at the tofu shop later to recruit him into the Kiryu Clan."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 28,
           title: { ko: "오노미치의 저주", en: "The Onomichi Curse" },
           chapter: { ko: "4장 이후 (야간)", en: "Chapter 4+, night" },
-          location: { ko: "묘지", en: "Cemetery" },
-          trigger: { ko: "야간에 묘지에서 발생하는 괴기 현상 조사", en: "Investigate the nightly hauntings at the cemetery." },
-          body: { ko: "야간 묘지에서 시간차로 발생하는 유령 조우 이벤트. 모두 처리하면 진상 판명.", en: "A series of timed ghost encounters in the cemetery at night; clear them all to learn the truth." },
+
+
+          body: {
+            "ko": "밤에 묘지를 방문해 전투를 진행합니다. 시간이 지나 지도에 사건 표시가 다시 나타날 때마다 돌아와 추가 전투를 마칩니다. 아파트에서 깨어난 뒤 묘지로 돌아가 결말을 확인합니다.",
+            "en": "Visit the cemetery at night and fight. Return whenever the event marker reappears after time passes, completing the subsequent encounters. After waking in the apartment, return to the cemetery for the ending."
+          },
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 29,
           title: { ko: "지역 캐릭터가 되자!", en: "Become a Local Mascot!" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "오노미치 아케이드", en: "Onomichi Arcade" },
-          trigger: { ko: "아케이드의 마스코트 「미치오」 데뷔를 돕기", en: "Help the mascot Michio make his debut." },
-          body: { ko: "아케이드에 굴러다니는 오노 미치오의 머리를 조사하면 발생. 협력하겠다고 답한 뒤 미치오를 연기하는 선택지가 다섯 번 이어진다. 자기소개 방식, 인사말, 야유에 대한 반응, 좋아하는 것, 연애 경험을 차례로 고르게 되는데 정답이 정해진 것은 아니고 미치오다운 답을 고르는 연출이다. 마지막에 잡졸 4명과 전투 후 완료.", en: "Examine Ono Michio's discarded head in the arcade and agree to help. Five in-character prompts follow — how to introduce yourself, how to greet the crowd, how to answer a heckler, what you like, and your love life — none of which is a right-or-wrong answer; they just set how you play Michio. It closes with a fight against four thugs." },
-          reward: { ko: "「싸움 사라시」", en: "Brawler's Sarashi" },
+
+
+          body: {
+            "ko": "상점가에 떨어진 오노 미치오 머리를 조사하고 행사에 협력합니다. 마스코트 역할의 대화를 진행한 뒤 불량배 네 명을 쓰러뜨립니다.",
+            "en": "Inspect Ono Michio's discarded head in the shopping arcade and agree to help. Play through the mascot dialogue and defeat the four thugs."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 30,
           title: { ko: "미치오의 가요 쇼", en: "Michio's Song Show" },
           chapter: { ko: "5장 이후", en: "Chapter 5+" },
-          location: { ko: "노래방", en: "Karaoke" },
-          trigger: { ko: "No.29, No.40 클리어 후 노래방에서 합창", en: "After No.29 and No.40, sing together at karaoke." },
-          body: { ko: "No.29와 No.40을 모두 클리어한 뒤 해당 지점을 지나가면 프로듀서 히로나카가 말을 건다. 「협력한다」를 선택하고 노래방에서 「오늘은 다이아몬드」를 부르면 된다. 점수는 상관없으므로 대충 불러도 클리어된다.", en: "With both No.29 and No.40 cleared, walking past the spot gets you flagged down by the producer, Hironaka. Agree to help and sing \"Today is a Diamond\" at karaoke — your score does not matter, so a sloppy run still counts." },
-          prereq: { ko: "No.29 + No.40 클리어", en: "Clear No.29 + No.40" },
-          reward: { ko: "「극도 양성 깁스」, 「오노 미치오 CD 샘플」", en: "Yakuza Training Gear, Ono Michio CD sample" },
+
+
+          body: {
+            "ko": "29번과 40번 완료 후 프로듀서 히로나카의 요청을 받아 노래를 부릅니다. 노래 점수에 관계없이 의뢰를 완료할 수 있습니다.",
+            "en": "After Nos. 29 and 40, accept producer Hironaka's request and perform the song. The score does not determine completion."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 31,
           title: { ko: "용기를 주다", en: "Giving Courage" },
           chapter: { ko: "5장 이후", en: "Chapter 5+" },
-          location: { ko: "오노미치", en: "Onomichi" },
-          trigger: { ko: "No.30 클리어 후 소년을 격려", en: "After No.30, cheer up a young boy." },
-          body: { ko: "No.30 클리어 후 스이군 아파트 맞은편의 모녀 옆을 지나가면 발생. 여자아이 시즈코에게 말을 건 다음 「대중 술집 요네토쿠」 앞의 히로나카에게 향한다. 아픔에 대한 선택지가 하나 나오고 어느 쪽을 골라도 진행되며, 잡졸 4명과 싸우면 완료.", en: "After No.30, pass the mother and daughter across from the Suigun apartments, talk to the girl Shizuko, then go to Hironaka outside the Yonetoku tavern. One prompt about being afraid of pain comes up and any answer works; win the fight against four thugs to finish." },
-          prereq: { ko: "No.30 클리어", en: "Clear No.30" },
-          reward: { ko: "「시즈코가 그린 미치오 그림」", en: "Shizuko's drawing of Michio" },
+
+
+          body: {
+            "ko": "30번 완료 후 아파트 맞은편 모녀와 시즈코에게 말을 겁니다. 요네토쿠 앞 히로나카를 찾아 행사에 참여하고 불량배 네 명을 쓰러뜨립니다.",
+            "en": "After No. 30, speak to the mother and daughter opposite the apartments and to Shizuko. Meet Hironaka outside Yonetoku, join the event, and defeat the four thugs."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 32,
           title: { ko: "시간을 뛰어넘었다는 소녀", en: "The Girl Who Time-Travelled" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "사카노우에 거리", en: "Sakanoue Rd." },
-          trigger: { ko: "사카노우에 거리의 소녀에게 말 걸기", en: "Talk to the girl on Sakanoue Rd." },
-          body: { ko: "「미래에서 왔다」는 소녀의 말을 끝까지 들어주면 일당이 출현, 전투로 마무리.", en: "Hear out the 'time-traveler' girl all the way; her crew shows up and you brawl." },
-          choices: [
-            { prompt: { ko: "더 들을 것인가", en: "Hear more?" }, correct: { ko: "「알았다 조금 더 들어주마」", en: "'Fine, I'll hear more'" } },
-            { prompt: { ko: "무엇을 물을 것인가", en: "What to ask" }, correct: { ko: "「난 1년 후 어떻게 됐지?」", en: "'How am I a year from now?'" } },
-            { prompt: { ko: "믿을 것인가", en: "Believe?" }, correct: { ko: "「알았다 믿어주마」", en: "'Fine, I'll believe you'" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "사카노우에 골목의 소녀가 하는 이야기를 듣습니다. 이후 묘지 앞 거리 육교의 미라이를 만나 돕기로 하고 다섯 명과 싸웁니다.",
+            "en": "Hear the girl's story on Sakanoue Lane. Meet Mirai on the Cemetery Lane footbridge, agree to help, and defeat the five men."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 33,
           title: { ko: "뒤바뀐 두 사람?", en: "Did They Switch?" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "류난 신사 부근", en: "Near Ryunan Shrine" },
-          trigger: { ko: "신사 부근에서 울고 있는 사람에게 말 걸기", en: "Talk to the crying person near the shrine." },
-          body: { ko: "「몸이 뒤바뀌었다」는 두 사람을 도와주려 하면 무라나카 일당이 난입하여 전투.", en: "Help two people who claim their bodies switched; Muranaka and crew jump you." },
-          choices: [
-            { prompt: { ko: "어떻게 위로하나", en: "How to comfort?" }, correct: { ko: "「울 거면 내 가슴에 기대」", en: "'If you must cry, lean on me'" } },
-          ],
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "류난 신사 앞 큰 계단에서 사건을 본 뒤 신사에서 카즈오와 대화합니다. 무라나카를 포함한 여섯 명과의 전투에서 이깁니다.",
+            "en": "Trigger the event at the large stairs before Ryunan Shrine and speak to Kazuo at the shrine. Defeat Muranaka and the five other men."
+          },
+
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 34,
@@ -384,19 +593,33 @@ export const yakuza6Substories: SubstoriesData = {
           number: 38,
           title: { ko: "오노미치 최강의 자리", en: "Onomichi's Strongest" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "야구장", en: "Baseball Field" },
-          trigger: { ko: "No.37 클리어 후 레전드 격파", en: "After No.37, beat the Legends." },
-          body: { ko: "치바에게 말을 걸면 진행됩니다.", en: "Talk to Chiba." },
-          prereq: { ko: "No.37 클리어", en: "Clear No.37" },
+
+
+          body: {
+            "ko": "37번 완료 후 야구장으로 가서 오노미치 레전즈를 이깁니다. 다음 상대인 카네미자와 고저스와의 경기가 열립니다.",
+            "en": "After No. 37, defeat the Onomichi Legends at the ballpark to unlock the Kanemizawa Gorgeous match."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 39,
           title: { ko: "유대", en: "Bonds" },
           chapter: { ko: "4장 이후", en: "Chapter 4+" },
-          location: { ko: "야구장", en: "Baseball Field" },
-          trigger: { ko: "No.38 클리어 후 고저스 격파", en: "After No.38, beat the Gorgeous team." },
-          body: { ko: "치바에게 말을 걸면 진행됩니다.", en: "Talk to Chiba." },
-          prereq: { ko: "No.38 클리어", en: "Clear No.38" },
+
+
+          body: {
+            "ko": "38번 완료 후 야구장에서 카네미자와 고저스를 이기고 마지막 사건을 봅니다.",
+            "en": "After No. 38, defeat Kanemizawa Gorgeous at the ballpark and watch the closing scene."
+          },
+
+          source: {
+            "label": "光る原人 — 龍が如く6 サブストーリー一覧",
+            "url": "https://www.hikarugennjinn.com/entry/yakuza6-sub_story"
+          },
         },
         {
           number: 40,
@@ -506,11 +729,18 @@ export const yakuza6Substories: SubstoriesData = {
           number: 51,
           title: { ko: "아몬 죠", en: "Amon Jo" },
           chapter: { ko: "최종 장 이후", en: "Post-final chapter" },
-          location: { ko: "아몬의 부유섬", en: "Amon's Floating Island" },
-          trigger: { ko: "No.24, No.50 등 전제 클리어 후 아몬 죠와 결전", en: "Clear No.24 and No.50 prerequisites, then duel Jo Amon." },
-          body: { ko: "오노미치 진가이초에 있을 때 아몬 죠에게서 메일이 오면 발생. 택시로 「아몬의 부유섬」으로 이동해 아몬 죠와 결전을 벌인다. 발생 조건에는 여러 설이 있으나, 최소한 No.24와 No.50 클리어는 필요한 것으로 보인다. 시리즈 전통대로 최강의 상대이며 난이도 easy에서도 레벨과 조작 숙련도에 따라 크게 고전할 수 있으니, 회복 아이템을 대량으로 사 두고 도전할 것.", en: "While in Onomichi Jingaicho you get an email from Jo Amon; take a taxi to Amon's Floating Island for the duel. The exact trigger is debated, but clearing at least No.24 and No.50 appears to be required. He is the series' traditional superboss and can wall you even on Easy depending on your level and execution, so stock up heavily on healing items first." },
-          prereq: { ko: "No.24 + No.50 클리어 (사실상 전 서브 클리어)", en: "Clear No.24 + No.50 (effectively all substories)" },
-          reward: { ko: "경험치", en: "EXP" },
+
+
+          body: {
+            "ko": "24번 소다치와 50번 사이고 의뢰를 완료한 뒤 아몬 죠의 도전 메일을 확인합니다. 택시에서 아몬의 부유섬을 선택하고 싸웁니다. 나머지 서브스토리를 전부 완료할 필요는 없습니다.",
+            "en": "Complete No. 24 with Sodachi and No. 50 with Saigo, then read Jo Amon's challenge email. Select Amon's Floating Island at a taxi and win the duel. Completing every other substory is not required."
+          },
+
+
+          source: {
+            "label": "CyricZ — Yakuza 6 substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/final-substory"
+          },
         },
       ],
     },

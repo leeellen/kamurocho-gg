@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const likeADragonIshinSubstories: SubstoriesData = {
   appId: 1805480,
   summary: {
-    ko: "막말 교토를 무대로 한 「유신!극」의 서브스토리는 총 72건. 미스 불가 항목은 없으므로 본편 장 진행과 병행해도 무방하나, 장 종료 후에도 의뢰가 사라지지 않습니다. 구역(라쿠나이/라쿠가이/무쿠로가이/후시미/기온/미부)별로 분포하며, 일부는 흑표비각·야에·사토우 연쇄 의뢰로 묶여 순서대로 해금됩니다.",
-    en: "Like a Dragon: Ishin! has 72 substories across Bakumatsu Kyoto. None are missable — chapters gate them but they remain available afterward. They sprawl across Rakunai, Rakugai, Mukurogai, Fushimi, Gion, and Mibu, with the Black Panther couriers, Yae, and Satow strands forming locked chains.",
-  },
+  "ko": "서브스토리 72개입니다. 장 진행과 인연에 따라 후속 의뢰가 해금됩니다.",
+  "en": "72 substories. Story progression and Bonds unlock follow-up requests."
+},
   source: {
     label: "PowerPyx — Like a Dragon: Ishin! Substory Guide",
     url: "https://www.powerpyx.com/like-a-dragon-ishin-substory-guide/",

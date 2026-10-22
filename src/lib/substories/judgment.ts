@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const judgmentSubstories: SubstoriesData = {
   appId: 2058180,
   summary: {
-    ko: "주인공 야가미 타카유미의 탐정 사이드 케이스 총 50건. 2장에서 야가미 탐정 사무소의 게시판이 해금되면서 본격 시작되고, 술집 텐더·겐다 법률사무소·길거리 의뢰가 추가됩니다. 49건 클리어 + 거리 평판 Lv.50 달성 시 최종 「최후의 의뢰」(아몬 신 전) 해금. 친구 이벤트(카이토, 히라누마 등) 진행이 일부 케이스 전제 조건입니다.",
-    en: "50 detective Side Cases for Yagami Takayuki. The bulletin board at the Yagami Detective Agency unlocks in Chapter 2; later bar-tender, law-office, and street requests stack on top. Clearing 49 cases plus reaching Street Reputation Lv.50 opens the finale 'The Final Request' (Shin Amon fight). Several cases gate on friend events (Kaito, Hiranuma, etc.).",
-  },
+  "ko": "야가미 타카유키의 사이드 케이스 50건입니다. 친구 이벤트와 거리 평판이 일부 의뢰의 전제 조건입니다.",
+  "en": "50 side cases for Takayuki Yagami. Some require friend events and City Reputation."
+},
   source: { label: "gamewith.jp — ジャッジアイズ サイドケース攻略一覧", url: "https://gamewith.jp/judgeeyes/article/show/134172" },
   groups: [
     {

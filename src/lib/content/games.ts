@@ -17,19 +17,19 @@ export const CURATED_GAMES: CuratedGame[] = [
       story: "60h+",
       completion: "140-180h",
       note: {
-        ko: "기존 단일 추정치가 너무 낮아 보였던 대표 작품입니다. 메인만 천천히 밀어도 60시간 이상을 잡는 편이 안전합니다.",
-        en: "The old single estimate was especially misleading here. Even a relaxed main-story run can easily pass 60 hours.",
+        ko: "플레이 스타일과 사이드 콘텐츠 진행에 따라 달라지는 편집 추정치입니다.",
+        en: "Editorial estimates vary with playstyle and optional content.",
       },
     },
     difficulty: 3,
     missableCount: 7,
-    engine: "Magical V Engine (PS3 carryover)",
+    engine: "Unverified",
   },
   {
     appId: 3717330,
     slug: "yakuza-kiwami",
     arc: "kiryu",
-    year: 1995,
+    year: 2005,
     title: { ko: "용과 같이 극", en: "Yakuza Kiwami" },
     summary: {
       ko: "0편에서 쌓인 관계를 원작 1편 리메이크로 바로 이어받는 핵심 축.",
@@ -47,7 +47,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     difficulty: 3,
     missableCount: 4,
-    engine: "Magical V Engine (PS3 carryover)",
+    engine: "Unverified",
   },
   {
     appId: 3717340,
@@ -119,7 +119,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     difficulty: 4,
     missableCount: 9,
-    engine: "Magical V Engine (PS3 remaster)",
+    engine: "Unverified",
   },
   {
     appId: 1105500,
@@ -143,7 +143,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     difficulty: 4,
     missableCount: 12,
-    engine: "Magical V Engine (PS3 remaster)",
+    engine: "Unverified",
   },
   {
     appId: 1105510,
@@ -167,7 +167,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     difficulty: 5,
     missableCount: 14,
-    engine: "Magical V Engine (PS3 remaster)",
+    engine: "Unverified",
   },
   {
     appId: 1388590,
@@ -215,7 +215,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     },
     difficulty: 3,
     missableCount: 5,
-    engine: "Dragon Engine (Enhanced)",
+    engine: "Dragon Engine",
   },
   {
     appId: 1805480,
@@ -318,7 +318,7 @@ export const CURATED_GAMES: CuratedGame[] = [
     slug: "judgment",
     arc: "judgment",
     year: 2018,
-    title: { ko: "저지먼트", en: "Judgment" },
+    title: { ko: "저지 아이즈: 사신의 유언", en: "Judgment" },
     summary: {
       ko: "탐정 구조와 도시 탐사가 전면으로 나오는 스핀오프 축의 시작.",
       en: "The detective-side spinoff where investigation and city activity routing become central.",

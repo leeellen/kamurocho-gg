@@ -276,7 +276,7 @@ const CHRONOLOGICAL_REASONS: Record<string, { ko: string; en: string }> = {
     en: "2016 in Kamurocho and Onomichi — the capstone of Kiryu's mainline arc.",
   },
   "judgment": {
-    ko: "2018년 카무로초. 변호사 출신 탐정 야가미 타카유미의 데뷔작.",
+    ko: "2018년 카무로초. 변호사 출신 탐정 야가미 타카유키의 데뷔작.",
     en: "2018 in Kamurocho — the debut of ex-lawyer-turned-detective Takayuki Yagami.",
   },
   "yakuza-like-a-dragon": {

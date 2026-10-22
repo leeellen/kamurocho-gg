@@ -9,8 +9,8 @@ const YT = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const judgmentMinigames: MinigamesData = {
   appId: 2058180,
   intro: {
-    ko: "탐정 야가미 타카유키의 무대는 카무로초 한 곳이지만 플레이 스폿의 밀도는 본가 못지않습니다. 테이블 게임(마작·장기), VR 쌍륙와 드론 레이스, 배팅 센터·다트·핀볼, 클럽 세가의 실제 아케이드 기체, 그리고 카지노와 도박장이 모두 들어 있습니다. VR 쌍륙의 「프리 패스」 6장이 다른 미니게임의 경품으로 흩어져 있어, 사실상 전 종목을 한 번씩 돌게 되는 구조입니다.",
-    en: "Yagami works one city — Kamurocho — but its play spots rival the mainline games: mahjong and shogi, the Dice & Cube VR board game and drone racing, the batting centre, darts and pinball, real SEGA cabinets at Club SEGA, and both a casino and a gambling den. Dice & Cube's six free passes are scattered across the other minigames' prize counters, which in practice makes you play all of them at least once.",
+    ko: "탐정 야가미 타카유키의 무대는 카무로초 한 곳이지만 플레이 스폿의 밀도는 본가 못지않습니다. 테이블 게임(마작·장기), VR 쌍륙와 드론 레이스, 배팅 센터·다트·아웃런, 클럽 세가의 실제 아케이드 기체, 그리고 카지노와 도박장이 모두 들어 있습니다. VR 쌍륙의 「프리 패스」 6장이 다른 미니게임의 경품으로 흩어져 있어, 사실상 전 종목을 한 번씩 돌게 되는 구조입니다.",
+    en: "Yagami works one city — Kamurocho — but its play spots rival the mainline games: mahjong and shogi, the Dice & Cube VR board game and drone racing, the batting centre, darts and Out Run, real SEGA cabinets at Club SEGA, and both a casino and a gambling den. Dice & Cube's six free passes are scattered across the other minigames' prize counters, which in practice makes you play all of them at least once.",
   },
   minigames: [
     {
@@ -301,24 +301,35 @@ export const judgmentMinigames: MinigamesData = {
       ],
     },
     {
-      slug: "pinball",
-      name: { ko: "핀볼 팔러", en: "Pinball parlour" },
-      category: { ko: "아케이드", en: "Arcade" },
-      difficulty: 2,
-      location: { ko: "야가미 탐정사무소 (무료)", en: "The Yagami Detective Agency — free to play" },
-      summary: {
-        ko: "사무소에 놓인 핀볼 대입니다. 무료라서 부담 없이 스코어를 올릴 수 있고, 컴플리트 미션 소화용으로 좋습니다.",
-        en: "A pinball table sitting in the office. It's free, which makes it the low-friction way to chip at the completion missions.",
-      },
-      howTo: [
-        { ko: "컴플리트 미션: 3·5·10회 플레이(50·100·150SP)와 「핀볼 하이스코어」(스코어 500, 300SP)입니다.", en: "Completion missions: play 3, 5 and 10 times (50, 100, 150 SP) and score 500 for the high-score mission (300 SP)." },
-        { ko: "스코어를 늘리는 요령은 「NEXT DOUBLE」을 통과시키는 것입니다. 통과시키면 다음에 획득하는 효과가 2배가 되므로, 공을 아무 데나 쏘지 말고 이 레인을 먼저 노리세요.", en: "The scoring trick is passing the NEXT DOUBLE lane: doing so doubles whatever you earn next, so aim for that lane before anything else." },
-      ],
-      source: [
-        { label: "GameWith — ミニゲームの攻略とプレイスポット", url: "https://gamewith.jp/judgeeyes/article/show/134380" },
-        { label: "GameWith — コンプリートミッション一覧", url: "https://gamewith.jp/judgeeyes/article/show/134164" },
-      ],
-    },
+  "slug": "out-run",
+  "name": {
+    "ko": "아웃런 (리마스터판)",
+    "en": "Out Run (remaster)"
+  },
+  "category": {
+    "ko": "아케이드",
+    "en": "Arcade"
+  },
+  "difficulty": 2,
+  "location": {
+    "ko": "야가미 탐정사무소",
+    "en": "Yagami Detective Agency"
+  },
+  "summary": {
+    "ko": "Steam 리마스터판 사무소의 아케이드 게임입니다. PS4 원판의 핀볼을 대신합니다.",
+    "en": "The office arcade game in the Steam remaster, replacing the original PS4 version’s pinball table."
+  },
+  "howTo": [
+    {
+      "ko": "제한 시간 안에 체크포인트를 통과하며 달리는 드라이빙 게임입니다.",
+      "en": "Drive through checkpoints before the timer expires."
+    }
+  ],
+  "source": {
+    "label": "CyricZ — Out Run (Remaster Only)",
+    "url": "https://gamefaqs.gamespot.com/ps4/247615-judgment/faqs/77509/out-run-remaster-only"
+  }
+},
     {
       slug: "kamuro-of-the-dead",
       name: { ko: "KAMURO OF THE DEAD", en: "Kamuro of the Dead" },
@@ -359,29 +370,77 @@ export const judgmentMinigames: MinigamesData = {
       achievementSlug: "judge_zombie_hanter",
     },
     {
-      slug: "club-sega-arcade",
-      name: { ko: "클럽 세가 아케이드", en: "Club SEGA arcade" },
-      category: { ko: "아케이드", en: "Arcade" },
-      difficulty: 2,
-      location: { ko: "클럽세가 극장앞광장점 / 클럽세가 나카미치도리점", en: "Club SEGA Theater Square and Club SEGA Nakamichi Street" },
-      summary: {
-        ko: "실제 세가 아케이드 타이틀을 플레이할 수 있습니다. 점포마다 놓인 기체가 다르므로 트로피 「게이머」(전 아케이드 게임 플레이)를 노린다면 두 점포를 모두 돌아야 합니다.",
-        en: "Real SEGA arcade titles, split between two branches — so The Gamer Life, which wants every cabinet played, needs both.",
-      },
-      howTo: [
-        { ko: "극장앞광장점에는 KAMURO OF THE DEAD, 모터레이드, 스페이스 해리어, UFO 캐처가 있습니다.", en: "Theater Square holds Kamuro of the Dead, Motor Raid, Space Harrier and the UFO catcher." },
-        { ko: "나카미치도리점에는 파이팅 바이퍼즈, 뿌요뿌요, 버추어 파이터, 판타지 존이 있습니다.", en: "Nakamichi Street holds Fighting Vipers, Puyo Puyo, Virtua Fighter and Fantasy Zone." },
-        { ko: "모터레이드는 체감형 레이스로, 레이스 중 라이벌을 공격해 추월당하지 않게 막을 수 있습니다.", en: "Motor Raid is a body-english racer where you can attack rivals mid-race to stop them passing." },
-        { ko: "파이팅 바이퍼즈는 대전 격투로, 캐릭터가 착용한 아머를 얼마나 빨리 부수느냐가 공략 포인트입니다.", en: "Fighting Vipers is a fighter whose whole angle is how fast you can shatter the opponent's armour." },
-      ],
-      videos: [
-        { title: { ko: "클럽 세가: 파이팅 바이퍼스 등 아케이드 플레이 (2019)", en: "Club SEGA: Fighting Vipers and other arcade games (2019)" }, url: YT("IoikCU-EWVs") },
-        { title: { ko: "파이팅 바이퍼스 (허니) 플레이", en: "Fighting Vipers (Honey) gameplay" }, url: YT("cNe9ZxKTOHw") },
-        { title: { ko: "클럽 세가: 파이팅 바이퍼스 플레이", en: "Club SEGA: Fighting Vipers playthrough" }, url: YT("8aj9iK9x06Y") },
-      ],
-      source: { label: "GameWith — ミニゲームの攻略とプレイスポット", url: "https://gamewith.jp/judgeeyes/article/show/134380" },
-      achievementSlug: "judge_all_arcade_game_played",
+  "slug": "club-sega-arcade",
+  "name": {
+    "ko": "클럽 세가 아케이드",
+    "en": "Club SEGA arcade"
+  },
+  "category": {
+    "ko": "아케이드",
+    "en": "Arcade"
+  },
+  "difficulty": 2,
+  "location": {
+    "ko": "클럽세가 극장앞광장점 / 클럽세가 나카미치도리점",
+    "en": "Club SEGA Theater Square and Club SEGA Nakamichi Street"
+  },
+  "summary": {
+    "ko": "실제 세가 아케이드 타이틀을 플레이할 수 있습니다. 점포마다 놓인 기체가 다르므로 트로피 「게이머」(전 아케이드 게임 플레이)를 노린다면 두 점포를 모두 돌아야 합니다.",
+    "en": "Real SEGA arcade titles, split between two branches — so The Gamer Life, which wants every cabinet played, needs both."
+  },
+  "howTo": [
+    {
+      "ko": "극장앞광장점에는 KAMURO OF THE DEAD, 모터레이드, 스페이스 해리어, UFO 캐처가 있습니다.",
+      "en": "Theater Square holds Kamuro of the Dead, Motor Raid, Space Harrier and the UFO catcher."
     },
+    {
+      "ko": "나카미치 거리점에는 파이팅 바이퍼즈·판타지 존·버추어 파이터 2·버추어 파이터 5가 있습니다. Steam판은 뿌요뿌요 대신 버추어 파이터 2를 수록합니다.",
+      "en": "Nakamichi Street has Fighting Vipers, Fantasy Zone, Virtua Fighter 2 and Virtua Fighter 5. The Steam remaster includes Virtua Fighter 2 in place of Puyo Puyo."
+    },
+    {
+      "ko": "모터레이드는 체감형 레이스로, 레이스 중 라이벌을 공격해 추월당하지 않게 막을 수 있습니다.",
+      "en": "Motor Raid is a body-english racer where you can attack rivals mid-race to stop them passing."
+    },
+    {
+      "ko": "파이팅 바이퍼즈는 대전 격투로, 캐릭터가 착용한 아머를 얼마나 빨리 부수느냐가 공략 포인트입니다.",
+      "en": "Fighting Vipers is a fighter whose whole angle is how fast you can shatter the opponent's armour."
+    }
+  ],
+  "videos": [
+    {
+      "title": {
+        "ko": "클럽 세가: 파이팅 바이퍼스 등 아케이드 플레이 (2019)",
+        "en": "Club SEGA: Fighting Vipers and other arcade games (2019)"
+      },
+      "url": "https://www.youtube.com/watch?v=IoikCU-EWVs"
+    },
+    {
+      "title": {
+        "ko": "파이팅 바이퍼스 (허니) 플레이",
+        "en": "Fighting Vipers (Honey) gameplay"
+      },
+      "url": "https://www.youtube.com/watch?v=cNe9ZxKTOHw"
+    },
+    {
+      "title": {
+        "ko": "클럽 세가: 파이팅 바이퍼스 플레이",
+        "en": "Club SEGA: Fighting Vipers playthrough"
+      },
+      "url": "https://www.youtube.com/watch?v=8aj9iK9x06Y"
+    }
+  ],
+  "source": [
+    {
+      "label": "GameWith — ミニゲームの攻略とプレイスポット",
+      "url": "https://gamewith.jp/judgeeyes/article/show/134380"
+    },
+    {
+      "label": "Steam Community — Judgment PC achievement guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2863006915"
+    }
+  ],
+  "achievementSlug": "judge_all_arcade_game_played"
+},
     {
       slug: "ufo-catcher",
       name: { ko: "UFO 캐처", en: "UFO catcher" },

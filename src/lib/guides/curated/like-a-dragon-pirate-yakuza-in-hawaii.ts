@@ -2,56 +2,19 @@ import type { CuratedGuide } from "./index";
 
 const PIRATE_APP_ID = 3061810;
 
-// Pirate Yakuza in Hawaii 플래티넘. Steam api_name: platinum.
 const platinum: CuratedGuide = {
-  summary: {
-    ko:
-      "Like a Dragon: Pirate Yakuza in Hawaii 플래티넘 — 다른 61개 업적 전부 해금 시 자동 발동. 시리즈 중 가장 너그러운 100% 라인 중 하나로 영구 미서블 0. 핵심 게이트는 ①해적단 명성 「전설의 해적단」 ②Devil Flags 서브스토리 풀 ③파이리츠 콜로세움 ④미나토 걸 5인 라인 + The One ⑤Legend 난이도 클리어.",
-    en:
-      "Pirate Yakuza's platinum auto-pops at full unlock. One of the most forgiving 100 % runs in the series — zero permanent missables. Gates: ① pirate-crew fame to 'Legendary Pirate' ② Devil Flags side story ③ Pirates Coliseum ④ Minato Girl 5-line + The One ⑤ Legend clear.",
+  "summary": {
+    "ko": "모든 도전 과제를 달성했다",
+    "en": "Obtained all achievements."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 메인 스토리 2장까지 진행해 해적단·해상 시스템을 모두 해금. 3장에서 미나토 걸 라인 등 컴플리션 트로피 라인이 풀립니다.",
-      en:
-        "1) Push to Ch.2 to unlock pirate / naval systems, then Ch.3 opens the Minato Girl + completion lines.",
-    },
-    {
-      ko:
-        "2) Devil Flags 서브스토리 완료 → 파이리츠 콜로세움 후반 매치가 해금됩니다. 두 시스템이 직렬로 묶여 있어 Devil Flags 우선.",
-      en:
-        "2) Clear Devil Flags first — it unlocks the late Pirates Coliseum matches.",
-    },
-    {
-      ko:
-        "3) 미나토 걸 라인 — 3장에서 라인 추가, 26~30번 5인 미니 라인 + 31번 「The One」으로 마무리. 컴플리션 보상 + 해적단 명성 + 콜로세움 + 고로마루 라인까지 동시에 진행됩니다.",
-      en:
-        "3) Minato Girl line — Ch.3 adds it; finish Subs 26~30 + 31 'The One.' Pairs with the pirate fame line.",
-    },
-    {
-      ko:
-        "4) 해적단 명성 — 사이드 미션·해상 전투·콜로세움 보상으로 명성을 누적해 「전설의 해적단」 랭크 도달. 5스테이지(어엿한 → 유명 → 초거물 → 전설) 별도 트로피 4종.",
-      en:
-        "4) Pirate fame — accumulate via side missions/sea battles/coliseum rewards, climbing 5 ranks for 4 separate trophies up to Legendary.",
-    },
-    {
-      ko:
-        "5) 엔딩 후 새 회차 Legend 난이도로 메인 스토리 클리어. 진행도 이월되어 스토리 직주행으로 충분.",
-      en:
-        "5) Post-credits: fresh save on Legend, story-sprint only.",
-    },
+      "ko": "다른 모든 업적을 달성하세요. Legend 난이도 클리어를 요구하는 업적은 없습니다.",
+      "en": "Unlock every other achievement. No achievement requires a Legend-difficulty clear."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "Devil Flags → Pirates Coliseum 순서를 지키지 않으면 콜로세움 후반 매치 자체가 안 열립니다. 3장 직후부터 Devil Flags 우선.",
-      en:
-        "Skip Devil Flags first and the late Coliseum matches never unlock — sequence matters.",
-    },
-  ],
-  sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Pirate Yakuza in Hawaii Trophy Guide", en: "PowerPyx — Pirate Yakuza in Hawaii Trophy Guide" },
+  "tips": [],
+  "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
 };
 
 // 「레전드 오브 콜로세움」 아몬. Steam: amon.
@@ -89,61 +52,77 @@ const aceOfColiseum: CuratedGuide = {
   sourceLabel: { ko: "Game8(일본) — 파이리츠 콜로세움 공략과 해금 조건", en: "Game8 (JP) — Pirates' Coliseum guide and unlock conditions" },
 };
 
-// 「하와이 스피드왕을 향한 길」 드래곤 카트 3종 컵 우승. Steam: dragon_cart.
 const dragonCartHawaii: CuratedGuide = {
-  summary: { ko: "하와이 드래곤 카트의 3종류 컵에서 모두 우승하면 발동. Y7·Y8의 카트와 다른 신규 코스 + 무기 시스템이 추가됨.", en: "Win all 3 Hawaii Dragon Kart cups. New courses + weapon mechanics vs. Y7/Y8 Kart." },
-  steps: [
-    { ko: "1) 장 진행 중 드래곤 카트 해금 → 첫 컵 출전.", en: "1) Unlock Dragon Kart and enter the first cup." },
-    { ko: "2) 부품 강화 후 3개 컵 모두 우승. 무기 사용으로 라이벌 처리가 핵심.", en: "2) Upgrade parts, then win all 3 cups — weaponize against rivals." },
-    { ko: "3) 3개 컵 우승 시 트로피 발동.", en: "3) Three-cup sweep fires the trophy." },
+  "summary": {
+    "ko": "3종류의 드래곤 카트 컵에서 우승했다",
+    "en": "Won 3 different cups in Dragon Kart."
+  },
+  "steps": [
+    {
+      "ko": "컵별로 우승하세요. 3위 이내로 다음 컵이 열리는 것과 해당 컵을 우승하는 것은 별개입니다.",
+      "en": "Win each required cup. Placing in the top three to unlock the next cup is different from winning it."
+    }
   ],
-  tips: [
-    { ko: "[드래곤 카트] 마리오 카트형 레이스입니다. 코너 직전 드리프트로 미니 부스트를 쌓고, 무기 아이템(미사일·기관총·부스트)으로 선두 라이벌을 적극 견제하세요. 부품 강화로 코스에 맞게 SPD/GRIP/HANDLING을 셋업하면 3개 컵 모두 안정적으로 우승할 수 있습니다.", en: "[Dragon Kart] It's a Mario Kart-style racer. Drift just before corners to bank mini-boosts, and weaponize items (missiles, machine gun, boost) against the leading rival. Tune SPD/GRIP/HANDLING per track with upgraded parts and all three cups fall into place." },
-  ],
-  sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },
+  "tips": [],
+  "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
 };
 
-// 「크레이지 선장」 크레이지 딜리버리 모든 코스. Steam: delivery_clear.
 const crazyCaptain: CuratedGuide = {
-  summary: { ko: "하와이의 크레이지 딜리버리 모든 코스를 클리어하면 발동. 장 진행과 함께 새 코스가 추가되며, ★3 클리어가 100% 라인 조건은 아닙니다 — 단순 클리어로 충분.", en: "Clear every Crazy Delivery course. New courses unlock per chapter; only clears (not ★3) are required." },
-  steps: [
-    { ko: "1) 장 진행 중 코스가 추가될 때마다 즉시 클리어.", en: "1) Knock out each new course as it appears." },
-    { ko: "2) 시간 제한 안에 코스 끝까지 도달하면 클리어 카운트. 점프대·지름길 활용.", en: "2) Finish within the timer; use jumps/shortcuts to bank time." },
-    { ko: "3) 모든 코스 클리어 시 트로피 발동.", en: "3) Trophy fires on full clear." },
+  "summary": {
+    "ko": "크레이지 딜리버리의 모든 코스를 클리어했다",
+    "en": "Completed all Crazy Delivery courses."
+  },
+  "steps": [
+    {
+      "ko": "크레이지 딜리버리의 두 접수처에서 4개씩, 총 8코스를 클리어하세요.",
+      "en": "Clear four Crazy Delivery courses at each of its two locations, eight in total."
+    }
   ],
-  tips: [
-    { ko: "[크레이지 딜리버리] 크레이지 택시식 배달입니다. ★3가 아니라 단순 클리어만 필요하니 부담은 적지만, 점프대·지름길·내리막으로 부스트를 유지하면 시간 제한이 훨씬 넉넉해집니다. 급커브에서만 살짝 감속해 충돌을 피하세요.", en: "[Crazy Delivery] A Crazy Taxi-style courier. Only a clear (not ★3) is required, so it's low-pressure — but keeping your boost up via jumps, shortcuts, and downhills gives you plenty of time. Just ease off on sharp corners to avoid crashes." },
-  ],
-  sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },
+  "tips": [],
+  "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
 };
 
-// 「패션 마스터」 100종 코디네이트. Steam: coordinate_c.
 const fashionMaster: CuratedGuide = {
-  summary: { ko: "100종류 이상의 코디네이트 아이템을 획득하면 발동. 의류 상점·미니게임 포인트 보상·하와이 상자 등에서 의류를 수집. 색상만 다른 모델은 별개 카운트로 잡히지 않을 수 있으니 신규 모델 위주로 수집.", en: "Obtain 100+ outfit items. Recolors may not count — focus on unique models." },
-  steps: [
-    { ko: "1) 하와이 의류 상점에서 모델별 1벌씩 구매.", en: "1) Buy one of each unique model at Hawaii's clothing shops." },
-    { ko: "2) 미니게임 포인트 보상 + 상자 보상으로 추가 모델 누적.", en: "2) Add models via minigame point rewards + chests." },
-    { ko: "3) 100종 도달 시 트로피 발동.", en: "3) 100 unique items fires the trophy." },
+  "summary": {
+    "ko": "100종류 이상의 코디네이트 아이템을 획득했다",
+    "en": "Obtained 100 types of clothing items."
+  },
+  "steps": [
+    {
+      "ko": "옷차림 메뉴에서 미입수 의상의 입수처를 확인해 100종을 모으세요.",
+      "en": "Check locked outfits for their acquisition locations and collect 100 clothing types."
+    }
   ],
-  sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },
+  "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
+  "tips": []
 };
 
-// 「가정적인 일면」 모든 요리. Steam: cooking.
 const allCooking: CuratedGuide = {
-  summary: { ko: "하와이 거점(고로마루 호) 또는 캠프에서 모든 요리 레시피를 제작하면 발동. 재료 수집 + 레시피 해금이 전제.", en: "Cook every recipe at the Goromaru / camp kitchen. Needs materials + unlocked recipes." },
-  steps: [
-    { ko: "1) 장 진행과 함께 레시피 해금. 식료품 상점·서브스토리 보상으로 추가 레시피.", en: "1) Unlock recipes via story + shop + sub rewards." },
-    { ko: "2) 각 레시피를 1회씩 제작. 재료가 부족하면 채집·구매로 보충.", en: "2) Cook each recipe once; gather/buy missing materials." },
-    { ko: "3) 모든 레시피 제작 시 트로피 발동.", en: "3) Trophy fires on full cookbook." },
+  "summary": {
+    "ko": "모든 요리를 만들었다",
+    "en": "Cooked all recipes."
+  },
+  "steps": [
+    {
+      "ko": "요리 레벨·공통 능력·선박 확장·동물 수집에 따라 열리는 조리법까지 확인하세요.",
+      "en": "Check recipes unlocked by chef level, shared abilities, ship upgrades, and animal collection."
+    }
   ],
+  "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
+  "tips": []
+};
+
+const islandAdventurer: CuratedGuide = {
+  summary: { ko: "서로 다른 섬 10곳을 공략하세요.", en: "Complete 10 different islands." },
+  steps: [
+    { ko: "항해 지도에서 아직 공략하지 않은 섬을 확인하세요.", en: "Check the sailing map for islands you have not completed." },
+  ],
+  tips: [],
   sourceUrl: "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/",
-  sourceLabel: { ko: "PowerPyx — Pirate Yakuza Trophy Guide", en: "PowerPyx — Pirate Yakuza Trophy Guide" },
 };
 
 export const LIKE_A_DRAGON_PIRATE_CURATED: Record<string, CuratedGuide> = {
+  [`${PIRATE_APP_ID}:adventurer`]: islandAdventurer,
   [`${PIRATE_APP_ID}:platinum`]: platinum,
   [`${PIRATE_APP_ID}:amon`]: amonPirate,
   [`${PIRATE_APP_ID}:arena_c`]: masterOfColiseum,
@@ -152,4 +131,104 @@ export const LIKE_A_DRAGON_PIRATE_CURATED: Record<string, CuratedGuide> = {
   [`${PIRATE_APP_ID}:delivery_clear`]: crazyCaptain,
   [`${PIRATE_APP_ID}:coordinate_c`]: fashionMaster,
   [`${PIRATE_APP_ID}:cooking`]: allCooking,
+  "3061810:main_story_1": {
+    "summary": {
+      "ko": "제1장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 1. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:main_story_2": {
+    "summary": {
+      "ko": "제2장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 2. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:main_story_3": {
+    "summary": {
+      "ko": "제3장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 3. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:main_story_4": {
+    "summary": {
+      "ko": "제4장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 4. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:main_story_clear": {
+    "summary": {
+      "ko": "제5장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 5. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:devil_a": {
+    "summary": {
+      "ko": "제2장 로커섬의 스토리 전투에서 승리합니다.",
+      "en": "Win the Chapter 2 story battle on Rokka Island."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:devil_b": {
+    "summary": {
+      "ko": "데빌 플래그스의 첫 번째 간부를 쓰러뜨립니다.",
+      "en": "Defeat the first Devil Flags officer."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:devil_c": {
+    "summary": {
+      "ko": "데빌 플래그스의 두 번째 간부를 쓰러뜨립니다.",
+      "en": "Defeat the second Devil Flags officer."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:devil_d": {
+    "summary": {
+      "ko": "데빌 플래그스의 세 번째 간부를 쓰러뜨립니다.",
+      "en": "Defeat the third Devil Flags officer."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
+  "3061810:devil_e": {
+    "summary": {
+      "ko": "데빌 플래그스의 두목을 쓰러뜨립니다.",
+      "en": "Defeat the leader of the Devil Flags."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+  },
 };

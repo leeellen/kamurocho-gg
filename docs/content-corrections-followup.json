@@ -1,0 +1,1136 @@
+{
+  "recordedAt": "2026-10-16T01:14:25.435Z",
+  "scope": "226 added achievement guides from the follow-up. This is an editorial change ledger, not a claim that all game data is verified.",
+  "entries": [
+    {
+      "game": "judgment",
+      "api": "JUDGE_TOP_IN_KAMURO",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_DRONE_RACE_ALL_WIN",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_FREND_ALL",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_COMPLETE_A",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_COMPLETE_B",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_COMPLETE_ALL",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_SHOP_A",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_SHOP_B",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_KAMGO_SHOP_ALL",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_GET_ALL_DRONE_PARTS",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_SIDE_CASE_ALL",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_GIRL_FREND_B",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_GIRL_FREND_C",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_GET_SKATE_BOARD",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_PROFESSOR_CLEAR",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_SURRENDER",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_SKILL_ALL",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_SIDE_CASE_ALL",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_USE_DOG",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_TOWN_ACT_COMPLETE_A",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_TOWN_ACT_SEISHUN_A",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_TOWN_ACT_SEISHUN_B",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_GIRL_FREND_A",
+      "source": "https://www.trueachievements.com/a340163/such-a-flirt-achievement"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_GIRL_FRIEND_B",
+      "source": "https://www.trueachievements.com/a340163/such-a-flirt-achievement"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_GIRL_FRIEND_C",
+      "source": "https://www.trueachievements.com/a340163/such-a-flirt-achievement"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_GIRL_FRIEND_D",
+      "source": "https://www.trueachievements.com/a340163/such-a-flirt-achievement"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_SKATE_BOARD_LAST_RACE_1ST",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_AIRSERIOUS_LAST_STAGE_CLEAR",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "44_Youll_Only_Get_Burned",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "45_Thats_A_Man",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "46_Sonic_Right_Hook",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "47_An_Answer_Owed",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "48_Kidney_Stones",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "49_A_Bad_Business",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "50_Shes_Worth_It",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "52_Death_By_Climax",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "14_Story_Of_My_Life",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "04_Lets_Fight",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "05_Swing_For_The_Fences",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "06_Break_It_Down",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "07_Are_Ya_Havin_Fun_Yet",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "08_Its_Not_Over_Yet",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "42_Majima_On_The_Beat",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "53_Generosity_Of",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "12_Story_of_My_Life",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "05_A_Host_of_Hostesses",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_1",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_11",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_12",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_14",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_15",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_17",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_18",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_29",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_54",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_55",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_9",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_25",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_32",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_34",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_50",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_38",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_39",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_40",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_41",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "34_New_Allies",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "36_A_Matter",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "38_Time_To",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "40_When_It",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "42_The_Big",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "44_A_Familiar",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "46_Painful_Reunion",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "48_Lion_In",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "50_Awakened_And",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "26_Things_Will_Never_Be_The_same",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "27_Turmoil_In_The_Tojo_Clan",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "28_Funeral_For_The_Old_Ways",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "29_Mother_And_Child",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "30_The_Price_Of_Life",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "31_Sins_Of_The_Father",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "32_The_Dragon_And_The_Koi",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "33_Puppet_Masters",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "34_A_Mans_Conviction",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "35_The_Dragon_Roars",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "36_Ashes_To_Ashes",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "37_Legends_Never_Die",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "38_Thank_You",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_ALL_CLEAR",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR1",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR10",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR11",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR12",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR13",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR14",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR15",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR2",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR3",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR4",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR5",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR6",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR7",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR8",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-2",
+      "api": "LEXUS2_STORY_CLEAR9",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2941248154"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_1",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_10",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_11",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_12",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_13",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_14",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_15",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_2",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_3",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_4",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_5",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_6",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_7",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_8",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_9",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_1",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_2",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_3",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_4",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "MAIN_STORY_01",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "MAIN_STORY_02",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "MAIN_STORY_03",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "MAIN_STORY_04",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "MAIN_STORY_05",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER_ALL",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER10",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER12",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER2",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER4",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER6",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_CHAPTER8",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_1",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_10",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_11",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_12",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_13",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_2",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_3",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_4",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_5",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_6",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_7",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_8",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_9",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "MAIN_STORY_CLEAR",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "MAIN_STORY_1",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "MAIN_STORY_2",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "MAIN_STORY_3",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "MAIN_STORY_4",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "MAIN_STORY_CLEAR",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_KAITO_STORY_CLEAER_1",
+      "source": "https://www.playstationtrophies.org/game/lost-judgment/trophies/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_KAITO_STORY_CLEAER_2",
+      "source": "https://www.playstationtrophies.org/game/lost-judgment/trophies/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_KAITO_STORY_CLEAER_3",
+      "source": "https://www.playstationtrophies.org/game/lost-judgment/trophies/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_KAITO_STORY_CLEAER_4",
+      "source": "https://www.playstationtrophies.org/game/lost-judgment/trophies/"
+    },
+    {
+      "game": "yakuza-0",
+      "api": "33_Nostalgic_For",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2869817839"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "25_When_You_Dont_Pay_Your_Debts",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_5",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_2",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_3",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_4",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_5",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_6",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_7",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "FIRST_TOSA",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_1",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_2",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_3",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_4",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_5",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_6",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_7",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_8",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_9",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_10",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_11",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "39_Majima_From_Above",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "40_Majima_From_Below",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "41_Goromi_The_Hostess",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "43_Majima_Of_The_End",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-kiwami",
+      "api": "39_Dragon_Of_Legend",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_44",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_45",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-3",
+      "api": "ACHIEVEMENT_46",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2512675103"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_45",
+      "source": "https://www.playstationtrophies.org/game/yakuza-4/trophy/28443-kamurocho-tree-hugger.html"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_7",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411100293"
+    },
+    {
+      "game": "yakuza-4",
+      "api": "ACHIEVEMENT_34",
+      "source": "https://www.trueachievements.com/a320244/shogi-promotion-achievement"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_13",
+      "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3420184389"
+    },
+    {
+      "game": "yakuza-5",
+      "api": "ACHIEVEMENT_16",
+      "source": "https://www.playstationtrophies.org/game/yakuza-5/trophy/58492-you-re-the-princess.html"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC02",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC03",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC04",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC05",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC06",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC07",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC08",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "yakuza-6",
+      "api": "OGFAC09",
+      "source": "https://gamefaqs.gamespot.com/ps4/181153-yakuza-6-the-song-of-life/faqs/75786/trophies-achievements"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "SHITENNOU_A",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "SHITENNOU_B",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "SHITENNOU_C",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "SHITENNOU_D",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-gaiden",
+      "api": "AMON",
+      "source": "https://www.powerpyx.com/like-a-dragon-gaiden-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "CLEAR_EX_HARD",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-ishin",
+      "api": "WIN_ZETUGI_100",
+      "source": "https://www.powerpyx.com/like-a-dragon-ishin-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_ADACHI",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_CHITOSE",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_CHOU",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_HAN",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_SAEKO",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_SONHI",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "KIZUNA_TOMIZAWA",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "RAINBOW",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-infinite-wealth",
+      "api": "TOILET",
+      "source": "https://www.powerpyx.com/like-a-dragon-infinite-wealth-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "DEVIL_A",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "DEVIL_B",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "DEVIL_C",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "DEVIL_D",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "like-a-dragon-pirate-yakuza-in-hawaii",
+      "api": "DEVIL_E",
+      "source": "https://www.powerpyx.com/like-a-dragon-pirate-yakuza-in-hawaii-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_ALL_SUGOROKU_COURCE_CLEAR",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "judgment",
+      "api": "JUDGE_EAT_ALL_OF_COOKING",
+      "source": "https://www.powerpyx.com/judgment-judge-eyes-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_ANIMAL_PAINT_CLEAR",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_SIDE_CASE_RETURNS",
+      "source": "https://www.powerpyx.com/lost-judgment-trophy-guide-roadmap/"
+    },
+    {
+      "game": "lost-judgment",
+      "api": "COYOTE_KAITO_DEFEATED_LAST_BOSS",
+      "source": "https://www.trueachievements.com/game/Lost-Judgment/walkthrough/9"
+    },
+    {
+      "game": "yakuza-kiwami-3",
+      "api": "_34",
+      "source": "https://www.powerpyx.com/yakuza-kiwami-3-dark-ties-trophy-guide-roadmap/"
+    }
+  ]
+}

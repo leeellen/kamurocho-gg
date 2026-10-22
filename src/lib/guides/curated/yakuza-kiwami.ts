@@ -2,463 +2,149 @@ import type { CuratedGuide } from "./index";
 
 const YAKUZA_KIWAMI_APP_ID = 3717330;
 
-// "하루카에게 다정하게" — Hand in Hand. Premium Adventure에서 하루카와 손을
-// 잡은 상태로 1km를 걸어야 발동. 영구 미서블 아님(엔딩 후 언제든 가능).
-// Steam api_name: 24_hand_in_hand.
 const handInHand: CuratedGuide = {
-  summary: {
-    ko:
-      "스토리 클리어 후 풀리는 프리미엄 어드벤처에서 하루카와 손을 잡고 누적 1km를 걸으면 트로피 발동. 영구 미서블이 아니므로 엔딩 이후 컴플리션 정리 차원에서 천천히 진행해도 됩니다.",
-    en:
-      "Post-credits Premium Adventure trophy: hold Haruka's hand and walk a cumulative 1 km. Not missable — finish it at your own pace during the 100% cleanup.",
+  "summary": {
+    "ko": "프리미엄 어드벤처에서 하루카와 손을 잡은 상태로 1km 걸었다",
+    "en": "Walked 1km during Premium Adventure while holding Haruka's hand."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 메인 스토리 엔딩을 보고 프리미엄 어드벤처를 시작합니다. 하루카가 뉴 세레나에 와 있어야 동행 가능 — 본편 진행 중에는 손잡기 시스템 자체가 안 풀립니다.",
-      en:
-        "1) Finish the main story to unlock Premium Adventure. Haruka becomes available at New Serena; the hand-holding system isn't in the main story.",
-    },
-    {
-      ko:
-        "2) 뉴 세레나에서 하루카에게 말을 걸고 「함께 외출」을 선택. 키류 옆에 하루카 마커가 떠 있으면 동행 상태가 시작됩니다.",
-      en:
-        "2) Talk to Haruka at New Serena and pick \"Go out together.\" Once her marker sits next to Kiryu you're in tagalong mode.",
-    },
-    {
-      ko:
-        "3) 거리에서 △(또는 Y) 입력으로 「손잡기」 발동. 카무로초 곳곳을 천천히 걸으며 누적 거리가 1km(인게임 거리) 이상이 될 때까지 진행. 적과 마주치면 풀리지만 다시 손잡기로 이어가면 카운트가 재개됩니다.",
-      en:
-        "3) On the street press Triangle/Y to grab Haruka's hand. Walk Kamurocho slowly until 1 km accumulates. Combat breaks the link, but re-grabbing resumes the counter.",
-    },
-    {
-      ko:
-        "4) 1km 도달 순간 트로피 발동. 컴플리트 리스트의 「하루카와 손을 잡고 1km」 항목도 동시에 체크되어 100% 라인이 한 칸 채워집니다.",
-      en:
-        "4) The trophy pops on 1 km. The matching Completion List checkbox also fires, ticking the 100 % bar by one.",
-    },
+      "ko": "프리미엄 어드벤처에서 세레나의 하루카와 동행한 뒤 R1 또는 RB를 누른 채 천천히 걸으세요. 손잡은 거리 1km가 필요합니다.",
+      "en": "In Premium Adventure, take Haruka out from Serena, then hold R1 or RB while walking slowly. Walk 1 km while holding hands."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "큰 도로(쇼와 거리·테아토르 광장 주변)를 한 바퀴 도는 동선이 직선 거리가 가장 잘 쌓입니다. 빠르게 끝내고 싶다면 적 인카운트가 비교적 적은 뒷골목보다 메인 거리를 선택하세요.",
-      en:
-        "Long straight stretches (Showa St., Theater Sq. loop) bank distance fastest. Skip the back alleys — main streets have lower encounter density.",
-    },
-    {
-      ko:
-        "프리미엄 어드벤처 한정이므로, 본편 장 진행 중에는 카운트가 쌓이지 않습니다. 엔딩을 본 뒤에 작업하세요.",
-      en:
-        "Only Premium Adventure counts — pre-ending walking does nothing toward this trophy.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2924279743"
 };
 
-// "극" — Platinum. Yakuza Kiwami 플래티넘 로드맵.
-// Steam api_name: 00_kiwami.
 const platinum: CuratedGuide = {
-  summary: {
-    ko:
-      "Yakuza Kiwami 플래티넘 — 다른 54개 업적을 모두 달성하면 자동 발동. 핵심 게이트는 ①「마지마 에브리웨어」 모든 스폿/랭크 완료(SS 등급) ②컴플리션 리스트 100% ③EX-HARD/Legend 난이도 클리어 ④조 아몬 격파(서브스토리 46). Premium Adventure에서도 대부분 회수 가능해 영구 미서블 부담은 적습니다.",
-    en:
-      "All Kiwami's other trophies auto-platinum it. Big gates: ① Majima Everywhere to SS rank ② Completion List 100 % ③ EX-HARD/Legend clear ④ defeat Jo Amon via Sub 46. Premium Adventure recovers most missables, so the load is lighter than 0.",
+  "summary": {
+    "ko": "모든 도전 과제를 달성했다",
+    "en": "Obtain all other achievements."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 1회차 (Normal) — 메인 스토리 진행 중 「마지마 에브리웨어」 모든 스폿 발견 + 랭크 진행. 7장·11 동행 한정 하루카 서브(「선물 찾기」·「숨바꼭질」)도 같은 회차에서 정리.",
-      en:
-        "1) Run 1 (Normal) — surface every Majima Everywhere spot and grind ranks alongside the story. Knock out Haruka-only subs (Searching for the Present, Hide-and-Seek) in Ch.7/11.",
-    },
-    {
-      ko:
-        "2) 미니게임 전 종류 1회씩 — 마작·낚시·노래방·다트·빌리어드·볼링·캣 파이트·캐바쿠라(유이/리나)·포켓 서킷·메스킹. 메스킹 톱 랭크와 포켓 서킷 챔피언십 우승은 별도 트로피.",
-      en:
-        "2) Touch every minigame — mahjong/fishing/karaoke/darts/billiards/bowling/cat fight/cabaret (Yui & Rina)/Pocket Circuit/MesuKing. MesuKing top rank + Pocket Circuit champ have their own trophies.",
-    },
-    {
-      ko:
-        "3) 마지마 에브리웨어 — 그라운드 워크, 셰이크다운, MajiCo 골프, 무에타이 등 모든 스타일별 마지마를 격파해 SS 랭크 도달. 도지마의 용 스타일이 풀리면서 「도지마의 용이 부활한기라!」 트로피도 함께.",
-      en:
-        "3) Majima Everywhere — beat every style variant (street, golf, MajiCo, Muay Thai, etc.) to hit SS rank. Unlocks Dragon of Dojima style + its trophy.",
-    },
-    {
-      ko:
-        "4) 엔딩 후 Premium Adventure에서 누락 서브스토리·코마키류 수련 4종·하루카 손잡고 1km 등 잔여 컴플리션. 서브스토리 46 「The Last Assassin」로 조 아몬과 격투.",
-      en:
-        "4) Premium Adventure mop-up: missed substories, all 4 Komaki training drills, Haruka 1 km hand-hold, and Sub 46 to fight Jo Amon.",
-    },
-    {
-      ko:
-        "5) 2회차 — EX-HARD 또는 Legend 새 회차로 메인 스토리 클리어. 1회차 장비/스킬이 이월되지 않으므로 무기·회복 아이템을 사전에 충분히 비축한 세이브 활용 권장.",
-      en:
-        "5) Run 2 — fresh save on EX-HARD or Legend. Carry-over is limited, so stockpile weapons and healing items on a separate save before starting.",
-    },
+      "ko": "다른 모든 업적을 달성하세요.",
+      "en": "Unlock every other achievement."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "마지마 에브리웨어는 메인 스토리 진행에 따라 자동으로 스폿이 풀리지만, 일부 SS 랭크 마지마는 11장 이후에야 등장합니다. 마지막에 몰아서 정리하는 게 효율적.",
-      en:
-        "Majima Everywhere spots unlock with story progress, but the SS-rank variants only appear after Ch.11. Batch them near the end.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
-// "카무로초를 제패한 남자" — Completion List 100%.
-// Steam api_name: 02_perfectionist.
 const perfectionist: CuratedGuide = {
-  summary: {
-    ko:
-      "컴플리션 리스트(시작 메뉴 → 컴플리트) 100% 도달 시 발동. 미니게임·전투·캐바쿠라·포켓 서킷·서브스토리 78건·코마키류·치트 아이템 사용 등 다양한 카테고리가 별도로 카운트되며, 모든 카테고리 100%가 되어야 트로피 발동.",
-    en:
-      "Hit 100 % on the in-game Completion List. Minigames, combat, cabaret, Pocket Circuit, all 78 substories, Komaki training, cheat-item use — every row must close.",
+  "summary": {
+    "ko": "달성 목록 달성률이 100%가 되었다",
+    "en": "Completed 100% of the Completion List."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 미니게임 — 마작·낚시·노래방·다트·빌리어드·볼링·캣 파이트·텔레폰 클럽 실제 만남 등 전 종류 최소 1회 플레이.",
-      en:
-        "1) Minigames — mahjong/fishing/karaoke/darts/billiards/bowling/cat fight/Telephone Club real-meet, all touched at least once.",
-    },
-    {
-      ko:
-        "2) 캐바쿠라 — 유이 + 리나 두 호스티스 풀 영입·풀 데이트, 자유 입장으로 1번 이상 모든 호스티스와 대화.",
-      en:
-        "2) Cabaret — fully date Yui and Rina, plus at least one free-entry chat with every other hostess.",
-    },
-    {
-      ko:
-        "3) 포켓 서킷 — 전 컵 우승 + 「서킷의 용이 다시 탄생하다!」 트로피 연동. 메스킹은 톱 랭크 시 별도 트로피.",
-      en:
-        "3) Pocket Circuit — win every cup (pairs with the 'Reborn' trophy). MesuKing's top rank is its own trophy.",
-    },
-    {
-      ko:
-        "4) 서브스토리 78건 + 코마키류 수련 4종 (체술·기술·완력·종합) 클리어. 7장/11 한정 하루카 동행 서브를 메인 진행 중에 챙겨야 100% 라인이 매끄럽게 차오릅니다.",
-      en:
-        "4) All 78 substories + four Komaki training drills. Knock out Haruka-tagalong subs during Ch.7/11 to keep the bar moving cleanly.",
-    },
-    {
-      ko:
-        "5) 누락 항목이 있는 카테고리를 컴플리트 리스트에서 직접 확인하며 빈칸을 채우면 100% 도달, 트로피 발동.",
-      en:
-        "5) Walk the Completion List, check every category, fill any blanks. Hits 100 % → trophy.",
-    },
+      "ko": "완료 목록에서 미달성 조건을 확인해 채우세요.",
+      "en": "Complete the outstanding entries on the Completion List."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "서브스토리 46 「The Last Assassin」 (아몬 격투)는 다른 모든 서브스토리 완료가 전제 조건. 마지막에 정리하는 게 자연스러운 흐름입니다.",
-      en:
-        "Sub 46 (Jo Amon fight) requires every other substory done first — save it for last by design.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
-// 「도지마의 용이 부활한기라!」 — 마지마 에브리웨어 풀 완료 (도지마의 용 스타일 해금).
-// Steam api_name: 09_the_dragon_of_dojima_returns.
 const dragonOfDojimaReturns: CuratedGuide = {
-  summary: {
-    ko:
-      "마지마 에브리웨어 시스템에서 모든 스폿·랭크를 풀로 진행해 「도지마의 용」 스타일을 해금하면 발동. 카무로초 곳곳의 마지마와 격투하면서 랭크가 오를 때마다 새 스폿이 추가되며, 최종 「진정한 매드 도그」를 격파하면 도지마의 용 스타일 + 트로피 동시 풀.",
-    en:
-      "Push Majima Everywhere to its endgame and unlock Kiryu's Dragon of Dojima style. Defeat Majima in every encounter type, climbing through ranks E → SS — the final True Mad Dog fight unlocks both the style and this trophy.",
+  "summary": {
+    "ko": "어디서나 마지마로 가능한 능력 강화를 모두 완료했다",
+    "en": "Upgraded all Majima Everywhere abilities."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 첫 마지마 인카운트(4장) 직후부터 거리에서 마지마 마커가 보이면 무조건 격투. 그라운드·셰이크다운·골프·MajiCo·무에타이·터프 가이 등 모든 스타일 변형을 한 번씩 격파.",
-      en:
-        "1) From the first encounter (Ch.4), fight every Majima marker on sight — Street, Shakedown, Golf, MajiCo, Muay Thai, Tough Guy variants all need at least one win.",
-    },
-    {
-      ko:
-        "2) 격투 승리 시 랭크 게이지 상승 → 일정 누적 시 새 스폿 + 새 격투 형태 해금. SS 랭크 직전 「캬바쿠라 마지마」 + 「에이지로 변장 마지마」 등 고난도 변형이 등장합니다.",
-      en:
-        "2) Wins raise the Everywhere rank gauge — new spots + variants spawn each tier. SS-tier brings the disguised Majimas (Cabaret Majima, Eiji-disguise Majima).",
-    },
-    {
-      ko:
-        "3) SS 랭크 도달 후 텐카이치 거리에서 「진정한 매드 도그(True Mad Dog)」 보스전 자동 발생. 격파 시 도지마의 용 스타일 풀 해금 + 트로피 발동.",
-      en:
-        "3) At SS rank, True Mad Dog auto-triggers on Tenkaichi St. Beating him unlocks the Dragon of Dojima style and fires the trophy.",
-    },
+      "ko": "어디서나 마지마를 SSS까지 진행하고 니시다의 문자에 따른 특수 대전도 완료하세요.",
+      "en": "Reach SSS in Majima Everywhere and complete the special encounters prompted by Nishida's messages."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "마지마 에브리웨어 진행도는 장별 잠금이 있어 일부 변형(특히 SS 직전)은 11장 이후에야 등장합니다. 마지막 장에 몰아서 정리하는 게 효율적.",
-      en:
-        "Some Majima variants only spawn past Ch.11 — bulk them in the late game.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
-// 「곤충 대왕 탄생!」 — 메스킹 모든 라이벌 격파. Steam api_name: 22_throne_of_the_mesuking.
 const mesuKingThrone: CuratedGuide = {
-  summary: {
-    ko:
-      "메스킹(곤충 카드 배틀 미니게임)에서 모든 라이벌 NPC에게 우승하면 발동. 4장에서 시오리 카페에서 시작되며, 강력한 곤충 카드 + 기술 카드 조합 + 정답 가위·바위·보 패턴 인식이 핵심.",
-    en:
-      "Win against every MesuKing rival in the bug-card RPS minigame. Starts in Ch.4 at Shiori's cafe; relies on strong bug cards + technique cards + reading opponent RPS patterns.",
+  "summary": {
+    "ko": "메스킹에서 모든 라이벌에게 우승했다",
+    "en": "Won against all rivals in MesuKing."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 4장에서 시오리 카페 진입 → 첫 메스킹 튜토리얼. 카드 팩 구매로 곤충·기술 카드 확보.",
-      en:
-        "1) Open Ch.4 to Shiori's cafe for the tutorial. Buy packs to expand your bug + technique deck.",
-    },
-    {
-      ko:
-        "2) 라이벌 NPC와 차례로 매치 — 가위·바위·보(STR·SPD·TECH) 패턴은 NPC별로 고정 경향. 패턴 학습 후 카운터 카드 조합.",
-      en:
-        "2) Battle each rival in sequence — every NPC has a fixed RPS bias (STR / SPD / TECH). Learn it and counter-deck.",
-    },
-    {
-      ko:
-        "3) 모든 라이벌 격파 시 트로피 발동. 「최강의 메스킹」 시즌 챔피언 NPC가 마지막 라이벌입니다.",
-      en:
-        "3) Beating every rival including the seasonal champion fires the trophy.",
-    },
+      "ko": "나카미치 거리 클럽 세가에서 메스킹 박사의 서브스토리와 라이벌전을 진행하세요.",
+      "en": "Progress the MesuKing Professor's substories and rival matches at Nakamichi Street Club SEGA."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "[메스킹 잘하는 법] 본질은 가위바위보(STR > TECH > SPD > STR) 삼각관계 + 스탯 싸움입니다. 라이벌마다 선호 타입이 고정이라, 한 번 지더라도 상대 패턴을 외운 뒤 카운터 타입 카드를 덱에 넣으면 안정적으로 이깁니다. 기술(필살기) 카드는 게이지가 찼을 때 큰 데미지를 주니 접전 라운드에 아껴 쓰세요.",
-      en:
-        "[How to win MesuKing] It's rock-paper-scissors (STR > TECH > SPD > STR) layered on a stat check. Each rival favors a fixed type, so even after a loss you can memorize their bias and stack counter-type cards. Save technique (special) cards for close rounds — they hit hardest once the gauge is full.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
-// 「서킷의 용이 다시 탄생하다!」 — 포켓 서킷 모든 대회 우승. Steam api_name: 21_the_dragon_of_pocket_circuit_reborn.
 const pocketCircuitReborn: CuratedGuide = {
-  summary: {
-    ko:
-      "키류의 포켓 서킷 스타디움에서 모든 챔피언십(레이스 컵)을 우승하면 발동. 4장 이후 「포켓 서킷 파이터」 카츠 카스 라인을 진행하며 부품을 차례로 강화해 컵 순서대로 클리어.",
-    en:
-      "Win every Pocket Circuit Stadium championship cup. After Ch.4, progress the Pocket Circuit Fighter (Kazuya) substory line, upgrade parts, and clear cups in sequence.",
+  "summary": {
+    "ko": "포켓 서킷의 모든 대회에서 우승했다",
+    "en": "Won all Pocket Circuit races."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 4장에서 카츠 카스 라인 「포켓 서킷 파이터」 서브 진행 → 첫 컵 출전. 부품 상점 해금.",
-      en:
-        "1) Trigger the Pocket Circuit Fighter sub line in Ch.4; first cup unlocks the parts shop.",
-    },
-    {
-      ko:
-        "2) 컵별 권장 빌드를 따라 차량을 셋업 — 평탄 코스는 SPD 우선, 곡선 코스는 GRIP/STABILITY 우선. 부품 합산 무게에 주의.",
-      en:
-        "2) Build per-cup setups: SPD bias for flat tracks, GRIP/STABILITY for curve-heavy courses. Watch total weight.",
-    },
-    {
-      ko:
-        "3) 챔피언십 7~8개 모두 우승 → 「드래곤 카트」 최종 컵 해금. 마지막 컵 우승 시 트로피 발동.",
-      en:
-        "3) Win every championship to unlock the Dragon Kart final cup — that cup's win fires the trophy.",
-    },
+      "ko": "포켓 서킷의 정규 레이스를 모두 우승하세요.",
+      "en": "Win every regular Pocket Circuit race."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "[포켓 서킷 셋업이 8할] 운전 실력보다 차 세팅이 승부를 가릅니다. 직선이 긴 코스는 모터·기어비로 최고속을 올리고, 커브가 많은 코스는 그립 타이어+다운포스 부품으로 코스 이탈을 막으세요. 부품 무게가 무거우면 후반에 배터리(스태미나)가 떨어져 멈추니, 완주 가능한 무게로 균형을 맞추는 게 핵심입니다. 막히는 컵은 카츠가 추천하는 빌드를 그대로 따라가면 대부분 뚫립니다.",
-      en:
-        "[Pocket Circuit is 80% setup] Tuning matters more than driving. Gear for top speed (motor + gear ratio) on straight-heavy tracks, and add grip tires + downforce on curvy ones to stop flying off. Heavy parts drain the battery (stamina) and stall you late in the race, so balance for a weight that finishes. Stuck on a cup? Just copy the build Kazuya recommends.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
-// 「싸움 최강을 제패한 남자」 — 지하 투기장 모든 대회 우승. Steam api_name: 18_the_strongest_fighter.
 const strongestFighter: CuratedGuide = {
-  summary: {
-    ko:
-      "카무로초 지하 투기장의 모든 대회(일반 토너먼트 + S랭크 토너먼트)를 우승하면 발동. 6장 이후 해금되며, 후반 대회는 무기 봉인·맨손 조건 등이 붙어 스타일 트리 + 회복 아이템 풀 비축 필수.",
-    en:
-      "Win every underground Coliseum tournament (standard + S-rank). Unlocks past Ch.6; later cups impose weapon bans or bare-fist rules — max styles + healing required.",
+  "summary": {
+    "ko": "지하 투기장의 모든 대회에서 우승했다",
+    "en": "Won all tournaments in the underground coliseum."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 6장 진행 후 카무로초 지하 「투기장」 입구에서 첫 토너먼트 출전. 입장 시 단계별 토너먼트 라인업 확인.",
-      en:
-        "1) After Ch.6, enter the underground Coliseum and start the first tier.",
-    },
-    {
-      ko:
-        "2) 토너먼트별 규정(무기 봉인·맨손·낙승 등) 확인 후 회복 아이템 풀 비축. 일반 토너먼트 → 워리어 → 챔피언 → 갓 라인 순서.",
-      en:
-        "2) Check each tier's rules (no weapons, bare-fist, etc.) and stock healing. Tiers run Standard → Warrior → Champion → God.",
-    },
-    {
-      ko:
-        "3) 갓 라인 토너먼트 우승 시 트로피 발동. 추가 보상으로 강력 무기 + 코마키류 수련 노드 해금.",
-      en:
-        "3) Winning the God-tier final fires the trophy and unlocks Komaki training nodes.",
-    },
+      "ko": "투기장의 대회별 우승 기록을 확인하세요. 반복 우승으로 새 대회가 열립니다.",
+      "en": "Check wins in each Coliseum tournament; repeat wins unlock further tournaments."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  "tips": []
 };
 
-// 「코마키류 전수 완료!」 — 코마키류 수련 4종 풀. Steam api_name: 15_komaki_style_master.
 const komakiMaster: CuratedGuide = {
-  summary: {
-    ko:
-      "코마키 마스터에게서 받는 4종 수련(체술 마스터·기술 마스터·완력 마스터·종합 마스터)을 모두 완료하면 발동. 장 진행과 별개로 서브스토리 「달인 코마키」 라인을 통해 단계별 수련 해금.",
-    en:
-      "Complete all four Komaki training drills (Style / Tech / Power / Comprehensive). The drills unlock via the Komaki substory chain, independent of main-story chapters.",
+  "summary": {
+    "ko": "코마키류의 수련을 모두 마쳤다",
+    "en": "Completed all training for Komaki Style."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 5장 이후 코마키 마스터 위치(카무로초 카메우라 약국 뒷골목 등)에서 서브스토리 시작 → 첫 수련 「체술 마스터」 완료.",
-      en:
-        "1) After Ch.5, find Komaki (alley behind Kameura Pharmacy) and clear the first drill, Style Master.",
-    },
-    {
-      ko:
-        "2) 차례로 「기술 마스터」(반격 콤보) → 「완력 마스터」(파괴 카운트) → 「종합 마스터」(연속 격투) 진행. 각 수련에는 개별 조건이 붙어 있어 가이드 확인 권장.",
-      en:
-        "2) Progress through Tech (counter combos), Power (destruction counts), and Comprehensive (combat streak) drills.",
-    },
-    {
-      ko:
-        "3) 4종 모두 완료 시 트로피 발동 + 코마키 보상 스킬 풀 해금.",
-      en:
-        "3) All four drills cleared fires the trophy and unlocks the full Komaki skill rewards.",
-    },
+      "ko": "코마키의 수련을 차례로 완료하세요. 일부 수련에는 투기장 경품으로 교환하는 그림이 필요합니다.",
+      "en": "Complete Komaki's training sequence. Some lessons require paintings from the Coliseum exchange."
+    }
   ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  "tips": []
 };
 
-// 「아몬 격파」 — 조 아몬 격투 (서브스토리 46). Steam api_name: 51_amon_defeated.
 const amonDefeated: CuratedGuide = {
-  summary: {
-    ko:
-      "Premium Adventure에서 다른 모든 서브스토리(77건)를 클리어한 뒤 서브스토리 46 「The Last Assassin」를 진행하면 조 아몬과의 격투가 발생. 격파 시 트로피 + 「검은 양복의 아몬」 의상 보상.",
-    en:
-      "Clear every other substory (77) in Premium Adventure to unlock Sub 46 — Jo Amon's fight. Beating him fires the trophy and grants the Amon outfit.",
+  "summary": {
+    "ko": "다른 서브스토리를 마친 뒤 46번 아몬전을 클리어하세요.",
+    "en": "Finish the other substories, then complete substory 46's Amon fight."
   },
-  steps: [
-    {
-      ko:
-        "1) 메인 스토리 엔딩 후 Premium Adventure에서 잔여 서브스토리 모두 클리어. 서브스토리 46은 77건을 먼저 완료한 후에야 진행 가능.",
-      en:
-        "1) After credits, clear every remaining substory in Premium Adventure. Sub 46 becomes available once you've completed 77 others.",
-    },
-    {
-      ko:
-        "2) 77건 완료 시 카무로초 칠드런즈 파크 또는 텐카이치 거리에서 「검은 양복의 남자」 자동 등장 → 서브 46 진행.",
-      en:
-        "2) With 77 done, the Man in Black auto-spawns (Children's Park / Tenkaichi St.) — start Sub 46.",
-    },
-    {
-      ko:
-        "3) 조 아몬과 격투 → 격파 시 트로피 발동. 회복 아이템 풀 + 강력 무기 사전 준비 필수.",
-      en:
-        "3) Beat Jo Amon. Bring full healing and a strong weapon.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "steps": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
+  "tips": []
 };
 
-// 「놀이를 제패한 남자」 — 모든 미니게임 1회. Steam api_name: 23_what_a_player.
 const allMinigamesPlayed: CuratedGuide = {
-  summary: {
-    ko:
-      "Yakuza Kiwami의 모든 미니게임을 최소 1회씩 플레이하면 발동. 컴플리트 리스트의 「미니게임」 카테고리가 모두 카운트 상태여야 합니다. 캐바쿠라(유이/리나)·다트·당구·볼링·마작·코이코이·블랙잭·룰렛·바카라·캣 파이트·메스킹·포켓 서킷·클럽 세가 아케이드·낚시·KO.J 등 모두 대상.",
-    en:
-      "Touch every Kiwami minigame at least once — cabaret, darts, billiards, bowling, mahjong, koi-koi, blackjack, roulette, baccarat, cat fight, MesuKing, Pocket Circuit, every Club Sega arcade, fishing, KOJ.",
+  "summary": {
+    "ko": "모든 미니 게임을 플레이했다",
+    "en": "Played all minigames."
   },
-  steps: [
+  "steps": [
     {
-      ko:
-        "1) 카무로초 클럽 세가의 모든 아케이드 캐비넷 1회씩 플레이.",
-      en:
-        "1) Run every Club Sega cabinet at least once.",
-    },
-    {
-      ko:
-        "2) 도박 라인(마작·코이코이·블랙잭·룰렛·바카라·체프) 모두 1라운드 플레이 + 술집 미니게임(다트·당구·볼링) 진행.",
-      en:
-        "2) Play every gambling table + bar minigames.",
-    },
-    {
-      ko:
-        "3) 캐바쿠라(유이/리나) 첫 데이트 + 캣 파이트 1매치 + 메스킹 1매치 + 포켓 서킷 1레이스로 누적 카운트 완료.",
-      en:
-        "3) Open cabaret dates (Yui/Rina), one cat fight, one MesuKing match, one Pocket Circuit race to finish coverage.",
-    },
-    {
-      ko:
-        "4) 컴플리트 리스트 「미니게임」 카테고리가 모두 카운트되면 트로피 발동.",
-      en:
-        "4) Trophy fires when the Minigames category lists every entry as touched.",
-    },
+      "ko": "클럽 아시아의 쇼 관람도 플레이로 집계됩니다. 완료 목록과 플레이 스폿을 함께 확인하세요.",
+      "en": "Watching a show at Club Asia also counts. Check both the Completion List and the play spots."
+    }
   ],
-  tips: [
-    {
-      ko:
-        "[마작] 막막하면 「리치+탄야오」 한 패턴만 노리세요. 펑/치로 손패를 공개하지 말고(닫은 손) 2~8 숫자패만 모아 텐파이가 되면 리치 선언 → 역이 자동으로 붙어 화료됩니다. Kiwami 마작은 표준 일본 리치 룰이라 Y0와 동일하게 통합니다.",
-      en:
-        "[Mahjong] If it feels impossible, aim for just one pattern: Riichi + Tanyao. Keep your hand closed (no Pon/Chi), collect only simples (2–8), and declare Riichi the moment you're tenpai — a yaku attaches automatically. Kiwami uses standard Japanese riichi rules, so the same trick from Y0 works.",
-    },
-    {
-      ko:
-        "[당구·캐롬] 「고스트 볼」 원리입니다. 목적구를 포켓에 넣으려면 포켓의 정반대편 목적구 표면 지점을 큐볼이 때리도록 조준선을 맞추세요. 처음엔 회전을 끄고 조준 정확도를 풀파워보다 우선합니다.",
-      en:
-        "[Billiards] Use the 'ghost ball' rule: aim so the cue ball strikes the point on the object ball directly opposite the pocket. Leave spin off at first and value aim over power.",
-    },
-  ],
-  sourceUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742",
-  sourceLabel: {
-    ko: "Steam Community — Yakuza Kiwami Achievement Guide",
-    en: "Steam Community — Yakuza Kiwami Achievement Guide",
-  },
+  "tips": [],
+  "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
 };
 
 // 「아저씨를 제패한 자」 — 하루카 신뢰도 EX 랭크 달성. Steam api_name: 53_mister_master.
@@ -564,4 +250,419 @@ export const YAKUZA_KIWAMI_CURATED: Record<string, CuratedGuide> = {
   [`${YAKUZA_KIWAMI_APP_ID}:24_hand_in_hand`]: handInHand,
   [`${YAKUZA_KIWAMI_APP_ID}:51_amon_defeated`]: amonDefeated,
   [`${YAKUZA_KIWAMI_APP_ID}:53_mister_master`]: misterMaster,
+  "3717330:44_youll_only_get_burned": {
+    "summary": {
+      "ko": "서브스토리 1번을 완료하세요.",
+      "en": "Complete substory 1: The Price of an F-Cup."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 1번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 The Price of an F-Cup입니다.",
+        "en": "Follow the location and prerequisites for substory 1 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:45_thats_a_man": {
+    "summary": {
+      "ko": "서브스토리 2번을 완료하세요.",
+      "en": "Complete substory 2: My Baby’s a Showgirl."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 2번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 My Baby’s a Showgirl입니다.",
+        "en": "Follow the location and prerequisites for substory 2 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:46_sonic_right_hook": {
+    "summary": {
+      "ko": "서브스토리 3번을 완료하세요.",
+      "en": "Complete substory 3: Bet On a Champ."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 3번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 Bet On a Champ입니다.",
+        "en": "Follow the location and prerequisites for substory 3 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:47_an_answer_owed": {
+    "summary": {
+      "ko": "서브스토리 4번을 완료하세요.",
+      "en": "Complete substory 4: The Yakuza’s Wife."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 4번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 The Yakuza’s Wife입니다.",
+        "en": "Follow the location and prerequisites for substory 4 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:48_kidney_stones": {
+    "summary": {
+      "ko": "서브스토리 5번을 완료하세요.",
+      "en": "Complete substory 5: A Doctor’s Duty."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 5번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 A Doctor’s Duty입니다.",
+        "en": "Follow the location and prerequisites for substory 5 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:49_a_bad_business": {
+    "summary": {
+      "ko": "서브스토리 6번을 완료하세요.",
+      "en": "Complete substory 6: The Fake Mizuki’s Truth."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 6번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 The Fake Mizuki’s Truth입니다.",
+        "en": "Follow the location and prerequisites for substory 6 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:50_shes_worth_it": {
+    "summary": {
+      "ko": "서브스토리 7번을 완료하세요.",
+      "en": "Complete substory 7: Man on a Ledge."
+    },
+    "steps": [
+      {
+        "ko": "서브스토리 목록에서 7번의 발생 위치와 진행 조건을 확인하세요. 영문 공략의 제목은 Man on a Ledge입니다.",
+        "en": "Follow the location and prerequisites for substory 7 in the substory list."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:52_death_by_climax": {
+    "summary": {
+      "ko": "메인 메뉴의 궁극 투기를 모두 클리어하세요.",
+      "en": "Clear every Climax Battle from the main menu."
+    },
+    "steps": [
+      {
+        "ko": "각 과제에 정해진 캐릭터 상태와 장비를 사용합니다. 본편 키류의 강화나 소지품을 준비하는 방식이 아닙니다.",
+        "en": "Challenges use their assigned character setup and equipment; campaign upgrades and inventory are not preparation for these trials."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:14_story_of_my_life": {
+    "summary": {
+      "ko": "서브스토리 78건을 모두 완료하세요.",
+      "en": "Complete all 78 substories."
+    },
+    "steps": [
+      {
+        "ko": "스토리와 필요한 미니게임·수련을 진행해 남은 의뢰를 해금하세요. 프리미엄 어드벤처에서도 완료할 수 있습니다.",
+        "en": "Advance the story, required minigames, and training to unlock the remaining cases. They can be completed in Premium Adventure."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:04_lets_fight": {
+    "summary": {
+      "ko": "Thug 스타일의 마지마가 다른 전투에 난입하는 이벤트를 보세요.",
+      "en": "Trigger a fight interruption by Thug Majima."
+    },
+    "steps": [
+      {
+        "ko": "인연 랭크 A 이후의 난입 이벤트가 대상입니다. 길에서 마지마와 직접 싸우는 일반 조우와 구분하세요.",
+        "en": "Use the interruption encounters available from Rank A; ordinary direct street encounters are a different event type."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:05_swing_for_the_fences": {
+    "summary": {
+      "ko": "Slugger 스타일의 마지마가 다른 전투에 난입하는 이벤트를 보세요.",
+      "en": "Trigger a fight interruption by Slugger Majima."
+    },
+    "steps": [
+      {
+        "ko": "인연 랭크 A 이후의 난입 이벤트가 대상입니다. 길에서 마지마와 직접 싸우는 일반 조우와 구분하세요.",
+        "en": "Use the interruption encounters available from Rank A; ordinary direct street encounters are a different event type."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:06_break_it_down": {
+    "summary": {
+      "ko": "Breaker 스타일의 마지마가 다른 전투에 난입하는 이벤트를 보세요.",
+      "en": "Trigger a fight interruption by Breaker Majima."
+    },
+    "steps": [
+      {
+        "ko": "인연 랭크 A 이후의 난입 이벤트가 대상입니다. 길에서 마지마와 직접 싸우는 일반 조우와 구분하세요.",
+        "en": "Use the interruption encounters available from Rank A; ordinary direct street encounters are a different event type."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:07_are_ya_havin_fun_yet": {
+    "summary": {
+      "ko": "Mad Dog 스타일의 마지마가 다른 전투에 난입하는 이벤트를 보세요.",
+      "en": "Trigger a fight interruption by Mad Dog Majima."
+    },
+    "steps": [
+      {
+        "ko": "인연 랭크 A 이후의 난입 이벤트가 대상입니다. 길에서 마지마와 직접 싸우는 일반 조우와 구분하세요.",
+        "en": "Use the interruption encounters available from Rank A; ordinary direct street encounters are a different event type."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:08_its_not_over_yet": {
+    "summary": {
+      "ko": "마지마와의 인연 랭크를 B까지 올리세요.",
+      "en": "Raise Majima Everywhere to Rank B."
+    },
+    "steps": [
+      {
+        "ko": "전투로 게이지를 채운 뒤 니시다의 연락과 승격 이벤트를 진행하세요.",
+        "en": "Fill the gauge through battles, then follow Nishida’s messages and the rank-up events."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:42_majima_on_the_beat": {
+    "summary": {
+      "ko": "경찰 마지마를 만나세요.",
+      "en": "Encounter Officer Majima."
+    },
+    "steps": [
+      {
+        "ko": "니시다의 연락에 따라 경찰 마지마 이벤트를 진행하고, 무기를 소지하라는 조건을 확인하세요.",
+        "en": "Follow Nishida’s Officer Majima message and its weapon-carrying requirement."
+      }
+    ],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:26_things_will_never_be_the_same": {
+    "summary": {
+      "ko": "제1장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 1. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:27_turmoil_in_the_tojo_clan": {
+    "summary": {
+      "ko": "제2장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 2. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:28_funeral_for_the_old_ways": {
+    "summary": {
+      "ko": "제3장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 3. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:29_mother_and_child": {
+    "summary": {
+      "ko": "제4장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 4. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:30_the_price_of_life": {
+    "summary": {
+      "ko": "제5장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 5. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:31_sins_of_the_father": {
+    "summary": {
+      "ko": "제6장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 6. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:32_the_dragon_and_the_koi": {
+    "summary": {
+      "ko": "제7장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 7. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:33_puppet_masters": {
+    "summary": {
+      "ko": "제8장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 8. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:34_a_mans_conviction": {
+    "summary": {
+      "ko": "제9장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 9. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:35_the_dragon_roars": {
+    "summary": {
+      "ko": "제10장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 10. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:36_ashes_to_ashes": {
+    "summary": {
+      "ko": "제11장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 11. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:37_legends_never_die": {
+    "summary": {
+      "ko": "제12장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 12. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:38_thank_you": {
+    "summary": {
+      "ko": "제13장을 완료하면 스토리 진행 중 달성합니다.",
+      "en": "Complete Chapter 13. This unlocks through story progression."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:25_when_you_dont_pay_your_debts": {
+    "summary": {
+      "ko": "게임 도입부에서 히라타의 빚을 회수합니다.",
+      "en": "Collect Hirata’s debt during the opening story sequence."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:39_majima_from_above": {
+    "summary": {
+      "ko": "위쪽 은신처에서 기습하는 마지마와 만납니다.",
+      "en": "Encounter Majima ambushing you from above."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:40_majima_from_below": {
+    "summary": {
+      "ko": "맨홀에서 나타나는 마지마와 만납니다.",
+      "en": "Encounter Majima emerging from a manhole."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:41_goromi_the_hostess": {
+    "summary": {
+      "ko": "샤인에서 고로미 이벤트를 진행합니다.",
+      "en": "Complete the Goromi encounter at Shine."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:43_majima_of_the_end": {
+    "summary": {
+      "ko": "좀비 마지마 이벤트를 진행합니다.",
+      "en": "Complete the Zombie Majima encounter."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
+  "3717330:39_dragon_of_legend": {
+    "summary": {
+      "ko": "LEGEND 난이도로 메인 스토리를 완료합니다.",
+      "en": "Complete a main-story playthrough on Legend difficulty."
+    },
+    "steps": [],
+    "tips": [],
+    "missable": false,
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891553742"
+  },
 };

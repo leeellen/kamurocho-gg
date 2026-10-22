@@ -1,5 +1,5 @@
 import { parseAchievementSidecar } from "@/lib/achievement-text";
-import type { Locale } from "@/lib/i18n";
+import { pickLocalized, type Locale } from "@/lib/i18n";
 import type { ChapterMissable } from "@/lib/content";
 
 import { normalizeComparableText } from "./sanitize";
@@ -130,15 +130,15 @@ export function buildDisplayMissables({
         addCovered(item.title.en);
         return {
           kind: item.kind,
-          title: locale === "ko" ? item.title.ko : item.title.en,
-          when: locale === "ko" ? item.when.ko : item.when.en,
-          body: locale === "ko" ? item.body.ko : item.body.en,
+          title: pickLocalized(item.title, locale),
+          when: pickLocalized(item.when, locale),
+          body: pickLocalized(item.body, locale),
         };
       });
     if (curatedItems.length === 0) continue;
     chapterMap.set(chapter.chapter, {
       chapter: chapter.chapter,
-      title: locale === "ko" ? chapter.title.ko : chapter.title.en,
+      title: pickLocalized(chapter.title, locale),
       items: curatedItems,
     });
   }

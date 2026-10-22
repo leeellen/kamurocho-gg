@@ -10,9 +10,9 @@ import type { SubstoriesData } from "./types";
 export const yakuzaKiwami3Substories: SubstoriesData = {
   appId: 3937550,
   summary: {
-    ko: "용과 같이 극3 본편 서브스토리 31개와 Dark Ties의 선행 13건, 총 44건 전부에 발생 조건과 공략을 담았습니다. 2026년 2월 발매작이라 영문 위키가 아직 13건만 정리한 상태여서, 나머지는 일본 공략 사이트를 대조해 작성했습니다.",
-    en: "All 44 entries — Yakuza Kiwami 3's 31 substories plus Dark Ties' 13 Good Deeds — with a trigger and walkthrough for every one. The game only launched in February 2026 and the English wiki has written up 13 of them, so the rest are drawn from the Japanese guide sites.",
-  },
+  "ko": "극3 본편 서브스토리 31개와 Dark Ties의 선행 13건을 구분해 정리했습니다. 두 시나리오의 번호는 별개입니다.",
+  "en": "31 Kiwami 3 substories and 13 Dark Ties Good Deeds, listed separately. Their numbering belongs to separate scenarios."
+},
   source: [
     { label: "Yakuza Wiki — Yakuza Kiwami 3 and Dark Ties/Substories", url: "https://yakuza.fandom.com/wiki/Yakuza_Kiwami_3_and_Dark_Ties/Substories" },
     { label: "ボーメモ — 龍が如く極3 サブストーリー一覧", url: "https://bozumemo.jp/gotoku-kiwami3/gotoku-kiwami3-sub-story/" },

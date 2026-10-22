@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "snapshot": "node --env-file=.env.local scripts/generate-snapshot.mjs",
-    "scrape:substories:y0": "node scripts/substories/scrape-yakuza0.mjs"
+    "scrape:substories:y0": "node scripts/substories/scrape-yakuza0.mjs",
+    "audit:content": "node scripts/audit-content.mjs"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",

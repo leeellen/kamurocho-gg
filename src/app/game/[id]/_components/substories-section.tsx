@@ -225,6 +225,11 @@ function ItemCard({
                 >
                   {locale === "ko" ? "선택지" : "Choices"}
                 </div>
+                <p className="m-0 text-[13px] leading-5 text-[var(--text-tertiary)]">
+                  {locale === "ko"
+                    ? "선택지 문구는 참고 공략을 옮긴 것으로, 게임 내 한국어 문구와 다를 수 있습니다."
+                    : "Option text is adapted from reference guides and may differ from the wording in your game."}
+                </p>
                 {item.choices.map((c, i) => (
                   <ChoiceRow key={i} locale={locale} choice={c} />
                 ))}
@@ -254,6 +259,17 @@ function ItemCard({
               >
                 <FiPlayCircle size={12} aria-hidden="true" />
                 {locale === "ko" ? "공략 영상" : "Watch walkthrough"}
+              </a>
+            )}
+
+            {item.source && (
+              <a
+                href={item.source.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-[14px] text-[var(--accent)] hover:underline"
+              >
+                {locale === "ko" ? "출처: " : "Source: "}{item.source.label}
               </a>
             )}
 

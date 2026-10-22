@@ -1437,41 +1437,6 @@ export const yakuza5Minigames: MinigamesData = {
         },
       ],
     },
-    {
-      slug: "pachinko-pachislot",
-      name: { ko: "파친코·파치슬롯", en: "Pachinko & pachislot" },
-      category: { ko: "도박·보드", en: "Gambling / board" },
-      difficulty: 3,
-      location: { ko: "파친코: 나가스가이 「팔러 러키」 / 파치슬롯: 소텐보리 「선라이즈」 / 둘 다: 카무로초 「볼케이노」", en: "Pachinko at Parlor Lucky in Nagasugai, pachislot at Sunrise in Sotenbori, both at Volcano in Kamurocho" },
-      summary: {
-        ko: "달성목록은 파친코가 한 번 플레이에서 7,777발 이상 늘리고 종료, 파치슬롯이 한 번 플레이에서 777장 이상 늘리고 종료입니다. 둘 다 한 번에 크게 따야 해서 어려운 편이니, 하기 전에 저장하고 안 되면 로드하세요.",
-        en: "The completion rows: in one session, end pachinko up 7,777+ balls and pachislot up 777+ medals. Both need one big run, so save first and reload if it fails.",
-      },
-      howTo: [
-        { ko: "파친코는 「CR 알라딘 데스티니 EX」·「CR 버추어 파이터 MVJC」 2기종, 1,000엔에 250발입니다. 처음 1,000엔에 빌린 250발도 셈에 들어가니 7,777발 이상 늘린 순간 SELECT로 끝내세요. 알라딘은 지시에 따라 왼쪽 치기(방향키로 약하게)·오른쪽 치기(강하게)를 바꿔야 해서, 바꿀 필요가 없는 버추어 파이터 쪽이 편합니다. 연출 중 버튼은 당첨과 관계없습니다.", en: "Pachinko has two machines, CR Aladdin Destiny EX and CR Virtua Fighter MVJC, at ¥1,000 for 250 balls. The first 250 you rent count toward the total, so hit SELECT the moment you're up 7,777. Aladdin makes you switch between left shots (weak, via the d-pad) and right shots (strong) on cue, so Virtua Fighter is easier. Button prompts during effects don't affect hits." },
-        { ko: "파친코 아이템: 「앉자마자 한 방 부적」(앉은 첫 회전에 대당첨, 카무로초 로커 C2), 「고확률 돌」(1,000회전까지 확률 1.5배, 소텐보리 로커 I4), 「휘두르기 부적」(회전수 최대, 시나다 메인 미션 「면상 좀 보자」·카무로초 로커 H5). 앉자마자 한 방 부적으로 당첨을 낸 뒤 연찬을 노리세요.", en: "Pachinko items: Sit-Down Jackpot Charm (jackpot on your first spin; Kamurocho locker C2), High-Odds Stone (1.5× odds for 1,000 spins; Sotenbori locker I4), Wild Swing Charm (max spin rate; Shinada's main mission Show Your Face or Kamurocho locker H5). Open with the Sit-Down Jackpot Charm and ride the streak." },
-        { ko: "파치슬롯은 「킹 카멜」·「알라딘 A」·「수왕」 3기종, 1,000엔에 50장입니다. R2로 MAX BET, 방향키 상하로 회전, 평소엔 □→×→○ 순서로 멈추면 되고 눈으로 맞출 필요는 없습니다. 보너스 중 오른쪽 액정에 누를 순서가 나오면(알라딘 A는 램프, 킹 카멜은 얼굴 3개) 위에서부터 표시된 릴 순서로 멈추세요. 킹 카멜은 연출을 건너뛰면 당첨이 무효가 되니 건너뛰지 마세요. 「오토 메달」(777이 나올 때까지 자동, 소텐보리 로커 A4·J5, 카무로초 J1)을 쓰면 편하고, 출처는 카무로초 알라딘 A 58번대에서 달성했습니다.", en: "Pachislot has three machines — King Camel, Aladdin A and Juoh — at ¥1,000 for 50 medals. MAX BET with R2, spin with the d-pad up/down, and normally stop □→×→○; no timing needed. When the right-hand screen shows a stop order during a bonus (lamps on Aladdin A, three faces on King Camel), stop the reels in the order shown from the top. Skipping King Camel's effects voids the win, so don't. Auto Medal (auto-plays until 777; Sotenbori lockers A4/J5, Kamurocho J1) makes it easy — the source hit it on Kamurocho Aladdin A machine 58." },
-      ],
-      source: [
-        { label: "龍が如く5 攻略通信Wiki — パチンコ・パチスロ", url: "http://kouryakutsushin.com/ryu5-wiki/%E3%83%91%E3%83%81%E3%83%B3%E3%82%B3%E3%83%BB%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD" },
-        { label: "ダラゲ！ — 龍が如く5 パチンコ", url: "https://darage.com/ryu5/comp18.html" },
-        { label: "ダラゲ！ — 龍が如く5 パチスロ", url: "https://darage.com/ryu5/comp19.html" },
-        { label: "龍が如く5 攻略通信Wiki — コンプリート", url: "http://kouryakutsushin.com/ryu5-wiki/%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AA%E3%83%BC%E3%83%88" },
-      ],
-      achievementSlug: "achievement_42",
-      puzzleSets: [
-        {
-          title: { ko: "달성 보고가 있는 기계 번호", en: "Machines with reported clears" },
-          note: { ko: "출처 1곳(Wiki). 설정은 알 수 없고, 출처 댓글란에서 달성 보고가 있었던 기계 번호입니다.", en: "Single source (Wiki). Settings are unknown — these are machine numbers readers reported clearing on." },
-          puzzles: [
-            { title: { ko: "파친코 — 카무로초", en: "Pachinko — Kamurocho" }, note: { ko: "알라딘 46·48번 / 버추어 파이터 3·18·24·33·35번", en: "Aladdin 46, 48 / Virtua Fighter 3, 18, 24, 33, 35" } },
-            { title: { ko: "파친코 — 나가스가이", en: "Pachinko — Nagasugai" }, note: { ko: "버추어 파이터 11·55번", en: "Virtua Fighter 11, 55" } },
-            { title: { ko: "파치슬롯 — 카무로초", en: "Pachislot — Kamurocho" }, note: { ko: "알라딘 A 56·58·63번 / 킹 카멜 92번", en: "Aladdin A 56, 58, 63 / King Camel 92" } },
-            { title: { ko: "파치슬롯 — 소텐보리", en: "Pachislot — Sotenbori" }, note: { ko: "알라딘 A 76번 / 킹 카멜 71번", en: "Aladdin A 76 / King Camel 71" } },
-          ],
-        },
-      ],
-    },
   ],
 };
 

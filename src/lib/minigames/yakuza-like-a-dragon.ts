@@ -90,7 +90,7 @@ export const yakuzaLikeADragonMinigames: MinigamesData = {
     },
     {
       slug: "can-quest",
-      name: { ko: "서바이벌 캔 줍기", en: "Survival Can Quest" },
+      name: { ko: "서바이버 캔 줍기", en: "Survival Can Quest" },
       category: { ko: "기타", en: "Misc" },
       difficulty: 3,
       location: { ko: "이진초 — 직업안정소 거리(쇼쿠안가이), 칸 씨 (3장부터)", en: "Kan-san in Shokuan-gai, Isezaki Ijincho — from Chapter 3" },

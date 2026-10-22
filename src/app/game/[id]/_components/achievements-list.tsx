@@ -7,7 +7,6 @@ import { Chip } from "@/components/ui/chip";
 import { RarityBar } from "@/components/ui/rarity-bar";
 
 import { PanelHeader } from "./panel-header";
-import { difficultyLabel } from "@/lib/difficulty";
 import type { Locale } from "@/lib/i18n";
 import type { GameAchievementCard } from "@/lib/data";
 import type { UserAchievementState } from "@/lib/user-progress";
@@ -168,9 +167,6 @@ function AchievementRow({
           </p>
         </div>
         <div className="flex items-center gap-3 md:flex-col md:items-end md:gap-2">
-          <Chip tone="neutral" size="xs">
-            {difficultyLabel(locale, achievement.difficulty)}
-          </Chip>
           <RarityBar rarity={achievement.rarity} />
         </div>
         <FiArrowRight

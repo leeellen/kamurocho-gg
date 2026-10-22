@@ -1,4 +1,4 @@
-import { type Locale } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n";
 
 export type AchievementSidecar = {
   nameKo?: string | null;
@@ -11,7 +11,7 @@ type GuideReplacement = {
 };
 
 const SERIES_GLOSSARY: GuideReplacement[] = [
-  { en: "Kamurocho", ko: "카무로초" },
+  { en: "Kamurocho", ko: "카무로쵸" },
   { en: "Sotenbori", ko: "소텐보리" },
   { en: "Yokohama", ko: "요코하마" },
   { en: "Nishiki", ko: "니시키" },
@@ -23,26 +23,27 @@ const SERIES_GLOSSARY: GuideReplacement[] = [
   { en: "Daigo", ko: "다이고" },
   { en: "Date", ko: "다테" },
   { en: "Tomizawa", ko: "토미자와" },
-  { en: "Tojo Clan", ko: "도조 클랜" },
-  { en: "Omi Alliance", ko: "오미 연합" },
+  { en: "Tojo Clan", ko: "동성회" },
+  { en: "Omi Alliance", ko: "오미연합" },
   { en: "Pocket Circuit", ko: "포켓 서킷" },
-  { en: "Majima Everywhere", ko: "마지마 에브리웨어" },
-  { en: "Mr. Shakedown", ko: "미스터 셰이크다운" },
+  { en: "Majima Everywhere", ko: "신출귀몰 마지마 고로" },
+  { en: "Mr. Shakedown", ko: "삥쟁이" },
   { en: "Premium Adventure", ko: "프리미엄 어드벤처" },
   { en: "New Game Plus", ko: "뉴 게임 플러스" },
   { en: "New Game+", ko: "뉴 게임 플러스" },
   { en: "Substories", ko: "서브스토리" },
   { en: "Substory", ko: "서브스토리" },
-  { en: "Drink Links", ko: "음료 링크" },
-  { en: "Drink Link", ko: "음료 링크" },
+  { en: "Drink Links", ko: "유대 드라마" },
+  { en: "Drink Link", ko: "유대 드라마" },
   { en: "Aloha Links", ko: "알로하 링크스" },
-  { en: "Miss Match", ko: "미스 매치" },
+  { en: "Miss Match", ko: "매칭 앱" },
+  { en: "Sicko Snap", ko: "수상한 사람 촬영" },
   { en: "Crazy Delivery", ko: "크레이지 딜리버리" },
   { en: "Crazy Money", ko: "크레이지 머니" },
   { en: "Let's Get Alo-Happy", ko: "알로해피에 가자" },
   { en: "Sujimon", ko: "야쿠몬" },
-  { en: "Sujidex", ko: "수지덱스" },
-  { en: "Romance Workshop", ko: "로맨스 공방" },
+  { en: "Sujidex", ko: "야쿠몬 도감" },
+  { en: "Romance Workshop", ko: "낭만 제작소" },
   { en: "Soul Orbs", ko: "혼 구슬" },
   { en: "Soul Orb", ko: "혼 구슬" },
   { en: "Orbs", ko: "구슬" },
@@ -51,14 +52,14 @@ const SERIES_GLOSSARY: GuideReplacement[] = [
   { en: "Body", ko: "육체" },
   { en: "Heat Action", ko: "히트 액션" },
   { en: "Heat Gauge", ko: "히트 게이지" },
-  { en: "Dragon Style", ko: "드래곤 스타일" },
+  { en: "Dragon Style", ko: "도지마의 용 스타일" },
   { en: "Rush Style", ko: "러시 스타일" },
-  { en: "Beast Style", ko: "비스트 스타일" },
-  { en: "Brawler Style", ko: "브롤러 스타일" },
-  { en: "Ultimate Matches", ko: "얼티밋 매치" },
-  { en: "Ultimate Match", ko: "얼티밋 매치" },
+  { en: "Beast Style", ko: "파괴자 스타일" },
+  { en: "Brawler Style", ko: "불한당 스타일" },
+  { en: "Ultimate Matches", ko: "궁극 투기" },
+  { en: "Ultimate Match", ko: "궁극 투기" },
   { en: "Victory Road", ko: "빅토리 로드" },
-  { en: "Revelations", ko: "계시" },
+  { en: "Revelations", ko: "천계" },
   { en: "Darts", ko: "다트" },
   { en: "Pool", ko: "당구" },
   { en: "Mob", ko: "폭도들" },
@@ -72,27 +73,36 @@ function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-// Korean-to-Korean transliteration fixes for DB-imported strings that used
-// older or inconsistent spellings of proper nouns. Apply after Korean text
-// is selected (sidecar or guide content) so the site renders one canonical
-// spelling everywhere, matching the brand domain and 국립국어원 표기.
-// Apply *after* Korean text is selected (sidecar / guide content) so we send
-// one canonical spelling everywhere — matches the brand domain, 국립국어원
-// 외래어 표기법, and Sega Korea's official localizations. Order matters:
-// longer phrases must come first so they don't get partially consumed by
-// shorter rules.
+// Editorial corrections only; Steam achievement names/descriptions stay verbatim.
+// Evidence and scope: docs/content-audit.md.
 const KO_CANONICAL_REPLACEMENTS: Array<[RegExp, string]> = [
-  // 카무로초 표기 통일
-  [/카무로쵸/g, "카무로초"],
-  // DB의 일부 한국어 가이드가 神室町(かむろちょう)을 "카무로고" / "카무로 고"로
-  // 옮긴 경우가 있어 정발 표기인 "카무로초"로 정규화합니다.
-  [/카무로\s*고(?![가-힣])/g, "카무로초"],
+  [/카무로초/g, "카무로쵸"],
+  [/카무로\s*고(?![가-힣])/g, "카무로쵸"],
+  [/도조 클랜/g, "동성회"],
+  [/오미 연합/g, "오미연합"],
+  [/음료 링크/g, "유대 드라마"],
+  [/로맨스 공방/g, "낭만 제작소"],
+  [/브롤러 스타일/g, "불한당 스타일"],
+  [/비스트 스타일/g, "파괴자 스타일"],
   [/소텐 보리/g, "소텐보리"],
-  // 정발판 한국어판에서 사용되는 표기로 통일
+  [/이진초/g, "이진쵸"],
+  [/파트타임 영웅/g, "알바 퀘스트"],
+  [/수지덱스/g, "야쿠몬 도감"],
+  [/(?:수지몬|스지몬)/g, "야쿠몬"],
+  [/에비스 폰/g, "에비스야"],
+  [/마지마 에브리웨어/g, "신출귀몰 마지마 고로"],
+  [/얼티밋 매치|궁극투기/g, "궁극 투기"],
+  [/미스터 셰이크다운/g, "삥쟁이"],
+  [/고마키|후루마키/g, "코마키"],
+  [/시코 스냅(?: \(불심자 스냅\))?|불심자 스냅/g, "수상한 사람 촬영"],
+];
+
+// Legacy translations apply only to imported guide prose.
+const KO_EDITORIAL_REPLACEMENTS: Array<[RegExp, string]> = [
   [/Café Alps/g, "카페 알프스"],
   [/Café/g, "카페"],
   [/Premium Adventure/g, "프리미엄 어드벤처"],
-  [/Mr\. Shakedown/g, "미스터 셰이크다운"],
+  [/Mr\. Shakedown/g, "삥쟁이"],
   [/Mr\. Libido/g, "미스터 리비도"],
   [/Akame Network/g, "아카메 네트워크"],
   [/Princess League/g, "프린세스 리그"],
@@ -104,16 +114,16 @@ const KO_CANONICAL_REPLACEMENTS: Array<[RegExp, string]> = [
   [/Active Search/g, "액티브 서치"],
   [/Point of No Return/g, "포인트 오브 노 리턴"],
   [/Pocket Circuit/g, "포켓 서킷"],
-  [/Majima Everywhere/g, "마지마 에브리웨어"],
+  [/Majima Everywhere/g, "신출귀몰 마지마 고로"],
   [/Heat Action/g, "히트 액션"],
   [/Heat Gauge/g, "히트 게이지"],
   // Gaiden 캐바레 클럽 정발 표기
   [/Club Castle/g, "클럽 캐슬"],
   [/Club Heavenly/g, "클럽 헤븐리"],
-  // 정발판 시스템 메뉴 표기
+  // Editorial system labels
   [/PREMIUM NEW GAME/g, "프리미엄 뉴 게임"],
-  [/Part-?time Hero/g, "파트타임 영웅"],
-  // Lost Judgment 정발판 — 시스템명 TownGo / Buzz Researcher는 한국어 표기
+  [/Part-?time Hero/g, "알바 퀘스트"],
+  // Lost Judgment editorial system labels
   [/TownGo/g, "타운고"],
   [/Buzz Researcher/g, "버즈 리서처"],
   [/RIZAP/g, "라이잡"],
@@ -127,7 +137,7 @@ const KO_CANONICAL_REPLACEMENTS: Array<[RegExp, string]> = [
   [/\bMr\.\s+(?=[가-힣])/g, "미스터 "],
 ];
 
-function normalizeKoreanText(input: string) {
+export function normalizeKoreanText(input: string) {
   let next = input;
   for (const [pattern, replacement] of KO_CANONICAL_REPLACEMENTS) {
     next = next.replace(pattern, replacement);
@@ -223,5 +233,8 @@ export function localizeGuideText({
     );
   }
 
+  for (const [pattern, replacement] of KO_EDITORIAL_REPLACEMENTS) {
+    next = next.replace(pattern, replacement);
+  }
   return normalizeKoreanText(next);
 }

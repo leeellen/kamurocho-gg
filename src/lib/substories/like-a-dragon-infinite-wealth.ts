@@ -3,9 +3,9 @@ import type { SubstoriesData } from "./types";
 export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
   appId: 2072450,
   summary: {
-    ko: "총 52개. 1~9장 진행 중에 모두 해금되며, 미스 불가(놓치는 것 없음) — 단, 시간대(낮/밤)나 매니저 랭크, 인간력(친절/용기 등) 7 이상 같은 조건이 붙은 의뢰가 있어 메인 진행과 병행이 효율적입니다. 호놀룰루 거점 의뢰가 대다수이며, 9장 후반에 키류의 「엔딩 노트」와 묶이는 의뢰가 추가됩니다. 10/20/40개 클리어 시 트로피 라인이 풀립니다.",
-    en: "52 substories total. All unlock between Chapter 1 and 9 and none are strictly missable, but several gate on time of day, manager rank, or personality stats (Kindness/Courage/etc. 7+), so run them alongside the main story. The bulk happen in Honolulu City; Chapter 9 adds Kiryu's 'Ending Note' threads. Clearing 10/20/40 unlocks the Touching Lives / Saving Lives / Living Your Best Life trophy line.",
-  },
+  "ko": "서브스토리 52개입니다. 시간대와 야쿠몬·쿵더쿵섬 등의 진행 조건을 확인하세요.",
+  "en": "52 substories. Check time-of-day and progress requirements for activities such as Sujimon and Dondoko Island."
+},
   source: {
     label: "game8.jp — 龍が如く8 サブストーリー攻略一覧",
     url: "https://game8.jp/ryu-ga-gotoku8/587557",
@@ -165,7 +165,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
             { prompt: { ko: "두 번째 손님 인사", en: "Second customer greeting" }, correct: { ko: "정중하게 인사한다", en: "Refined greeting" } },
             { prompt: { ko: "세 번째 손님 인사", en: "Third customer greeting" }, correct: { ko: "친근하게 인사한다", en: "Friendly greeting" } },
             { prompt: { ko: "흑인 손님 주문", en: "Order for the man in black" }, correct: { ko: "아사이볼과 라우라우", en: "Acai bowl and lau lau" } },
-            { prompt: { ko: "쾌활한 손님 주문", en: "Order for the cheery customer" }, correct: { ko: "아히 포케와 하우피아 3개", en: "Ahi poke and 3x haupia" } },
+            { prompt: { ko: "활기한 손님 주문", en: "Order for the cheery customer" }, correct: { ko: "아히 포케와 하우피아 3개", en: "Ahi poke and 3x haupia" } },
             { prompt: { ko: "우아한 손님 주문", en: "Order for the elegant customer" }, correct: { ko: "마히마히", en: "Mahi mahi" } },
             { prompt: { ko: "가족석 첫 접시", en: "Family table — first dish" }, correct: { ko: "라우라우 (왼쪽)", en: "Lau lau (left)" } },
             { prompt: { ko: "가족석 두 번째 접시", en: "Family table — second dish" }, correct: { ko: "칼루아 피그 (가운데)", en: "Kalua pig (center)" } },
@@ -600,7 +600,7 @@ export const likeADragonInfiniteWealthSubstories: SubstoriesData = {
           chapter: { ko: "후반부", en: "Late game" },
           protagonist: { ko: "이치반", en: "Ichiban" },
           location: { ko: "호놀룰루 시티 — 월드와이드 마켓 빌리지", en: "Honolulu City — Worldwide Market Village" },
-          trigger: { ko: "마켓 액티비티 전 종목 완료 + 「쾌활함」 7 이상 + 엘리자베스에게 선물 3회", en: "Clear all market activities, Cheer 7+, gift Elizabeth 3 times." },
+          trigger: { ko: "마켓 액티비티 전 종목 완료 + 「활기함」 7 이상 + 엘리자베스에게 선물 3회", en: "Clear all market activities, Cheer 7+, gift Elizabeth 3 times." },
           body: { ko: "엘리자베스와 마스코트를 쿵더쿵섬 게스트로 초대.", en: "Invite Elizabeth and her mascot to the island." },
           reward: { ko: "엘리자베스 & 마스코트 섬 초대", en: "Elizabeth & mascot invited" },
         },

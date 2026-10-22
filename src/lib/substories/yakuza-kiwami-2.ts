@@ -1,772 +1,1464 @@
 import type { SubstoriesData } from "./types";
 
 export const yakuzaKiwami2Substories: SubstoriesData = {
-  appId: 3717340,
-  summary: {
-    ko: "총 75건 + 컴플리션 카운트 76번. 카무로초·소텐보리 양쪽에서 진행되며, 키류 본편 5장~13장 사이에 대부분 풀립니다. 71건 클리어 후 「아몬 일족」 라인이 해금되어 38·39·40·41번이 추가됩니다. 「진 미즈쇼바이 아일랜드」 캬바레 그랜드픽스 진행 중에만 풀리는 69~75번은 Missable이니 캬바레 진행 타이밍에 맞춰 회수하세요. ※ 진실편 「마지마 고로의 진실」은 별도 시나리오로 추가 서브스토리는 없습니다.",
-    en: "75 substories plus a 76th completion entry. Spans Kamurocho (Kiryu) and Sotenbori. Clear 71 to unlock the Amon clan line (38-41). Numbers 69-75 are gated behind the New Cabaret Club Grand Prix and are easy to miss — handle them while you're running the cabaret minigame. The 'Truth of Goro Majima' side scenario adds story chapters but no extra substories.",
+  "appId": 3717340,
+  "summary": {
+    "ko": "서브스토리 75건입니다. 물장사 아일랜드와 아몬 일족의 의뢰도 포함되며, 클리어 후에도 진행할 수 있습니다.",
+    "en": "75 substories, including the Cabaret Club Grand Prix and Amon clan chains. They remain available after the story."
   },
-  source: {
-    label: "gamewith.jp / kamigame.jp / dswiipspwikips3.jp — 龍が如く極2 サブストーリー一覧",
-    url: "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/index.html",
+  "source": {
+    "label": "神ゲー攻略 — 龍が如く極2 サブストーリー一覧",
+    "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/index.html"
   },
-  groups: [
+  "groups": [
     {
-      title: { ko: "카무로초 — 본편 1~3장 (도입)", en: "Kamurocho — Chapters 1-3 (Intro)" },
-      items: [
+      "title": {
+        "ko": "카무로쵸",
+        "en": "Kamurocho"
+      },
+      "items": [
         {
-          number: 20,
-          title: { ko: "미국 야구", en: "American Baseball" },
-          chapter: { ko: "1장", en: "Chapter 1" },
-          location: { ko: "카무로초 — 요시다 배팅 센터", en: "Kamurocho — Yoshida Batting Center" },
-          trigger: { ko: "초급 코스를 3회 클리어한 뒤 가게 안 거구의 외국인 「밥 우츠노미야」에게 말 걸기", en: "Clear the beginner course 3 times, then talk to Bob Utsunomiya inside the center." },
-          body: { ko: "10구 안에 홈런 5개를 쳐내면 승리. 클리어 시 「밥 우츠노미야」가 미즈쇼바이 아일랜드 캐스트로 합류합니다.", en: "Hit five home runs in ten pitches. Bob Utsunomiya joins the Cabaret roster on win." },
-          reward: { ko: "캬바레 캐스트 밥 우츠노미야 해금", en: "Unlocks Bob Utsunomiya as cabaret cast" },
+          "number": 1,
+          "title": {
+            "ko": "Be My Baby",
+            "en": "Be My Baby"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 밤에 핑크 거리에서 시비를 거는 야쿠자를 쓰러뜨린다. 안내받은 가게에서 이벤트를 보고 곤다와라 조직과 싸워 승리하면 완료된다. 가게 안 대화 선택지는 결말을 바꾸지 않는다.",
+            "en": "At night from Chapter 5, defeat the yakuza on Pink Street, follow the invitation inside, then defeat the Gondawara Family. The conversation choices do not change the outcome."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/1.html"
+          }
         },
         {
-          number: 21,
-          title: { ko: "마작", en: "Mahjong" },
-          chapter: { ko: "1장", en: "Chapter 1" },
-          location: { ko: "카무로초 — 마작장 「SHINE」", en: "Kamurocho — Mahjong parlor SHINE" },
-          trigger: { ko: "도지마 다이고를 찾던 도중 SHINE에 들르면 자동 발생", en: "Visit SHINE during the search for Daigo Dojima." },
-          body: { ko: "마작 미니게임이 본격 해금됩니다. 한 판을 두면 완료.", en: "Unlocks the Mahjong minigame in full; play a single round to clear." },
-          reward: { ko: "마작 미니게임 해금", en: "Mahjong minigame unlocked" },
+          "number": 2,
+          "title": {
+            "ko": "전설의 사나이",
+            "en": "Legendary Man"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 밤에 챔피언 거리에서 남자가 위협받는 장면을 본다. 시치후쿠 거리 JEWEL 앞에서 두 사람을 다시 만나 가짜 키류와 가짜 신지를 쓰러뜨린다.",
+            "en": "At night from Chapter 5, witness the confrontation in the Champion District. Find the pair outside Jewel on Shichifuku Street and defeat the fake Kiryu and Shinji."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/2.html"
+          }
         },
         {
-          number: 24,
-          title: { ko: "무기 비디오 상인", en: "The Weapon Video Merchant" },
-          chapter: { ko: "1장", en: "Chapter 1" },
-          location: { ko: "카무로초 — 텐카이치 거리", en: "Kamurocho — Tenkaichi St." },
-          trigger: { ko: "다이고 수색 중 텐카이치 거리에서 수상한 노점상에게 말 걸기", en: "During Daigo's search, talk to the shady vendor on Tenkaichi St." },
-          body: { ko: "수상한 비디오를 통해 무기 통신판매가 해금됩니다.", en: "Unlocks the weapon mail-order catalog." },
-          reward: { ko: "무기 통신판매 해금", en: "Weapon mail-order unlocked" },
+          "number": 3,
+          "title": {
+            "ko": "블랙 선더",
+            "en": "Black Thunder"
+          },
+          "chapter": {
+            "ko": "8장 이후",
+            "en": "From Chapter 8"
+          },
+          "body": {
+            "ko": "8장 이후 스타더스트 앞에서 유우야와 대화한다. 밖에서 미유를 만나고 아천사에서 마담에게 물어본다. 슌의 전화를 받은 뒤 스타더스트로 돌아가 블랙 선더와 싸운다.",
+            "en": "From Chapter 8, speak to Yuya at Stardust, meet Miyu outside, and ask the Earth Angel mama. After Shun calls, return to Stardust and defeat Black Thunder."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/3.html"
+          }
         },
         {
-          number: 32,
-          title: { ko: "센료 거리의 호객꾼과 아는 사이", en: "Friends: Senryo St. Tout" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 센료 거리", en: "Kamurocho — Senryo Ave." },
-          trigger: { ko: "센료 거리 호객꾼과 반복 대화", en: "Repeatedly talk to the tout on Senryo Ave." },
-          body: { ko: "3회 대화하면 친분 완료. 정보를 얻을 수 있습니다.", en: "Talk to him three times to become friends." },
+          "number": 4,
+          "title": {
+            "ko": "끈질긴 남자",
+            "en": "The Man Who Won't Quit"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "13장 이후 하루카와 함께 시치후쿠 거리 동쪽의 소동을 조사한다. 아키모토를 설득하는 방향으로 진행하면 된다. 설득 중 세부 선택지에 따라 결말이 달라지지는 않는다.",
+            "en": "From Chapter 13, investigate the commotion on East Shichifuku Street with Haruka. Agree to talk Akimoto down; the subsequent persuasion choices do not change the ending."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/4.html"
+          }
         },
         {
-          number: 33,
-          title: { ko: "아천사의 마담과 아는 사이", en: "Friends: Earth Angel Mama" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 바 아텐시", en: "Kamurocho — Bar Earth Angel" },
-          trigger: { ko: "아텐시에 입장해 마마와 대화", en: "Enter Earth Angel and chat with the mama." },
-          body: { ko: "단골이 되면 가게의 단골 손님이 되어 추가 정보를 얻을 수 있습니다.", en: "Become a regular for extra hints." },
+          "number": 5,
+          "title": {
+            "ko": "해바라기 후원 1",
+            "en": "Sunflower Aid 1"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 돈키호테 앞의 스에나가와 대화하고 편의점 ATM에서 해바라기에 5만 엔 이상 기부한다. 연락을 따라 모구사에게 전화한 뒤 극장 앞 광장에서 개를 맡아 스에나가에게 데려간다. 하루카의 메일을 받고 다시 대화한다.",
+            "en": "In Chapter 5, meet Suenaga outside Don Quijote and donate at least 50,000 yen to Sunflower using a convenience-store ATM. Follow the messages, call Mogusa, collect his dog at Theater Square, and bring it to Suenaga. Return after Haruka's email."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/5.html"
+          }
         },
         {
-          number: 34,
-          title: { ko: "큐슈 일등성의 점장과 아는 사이", en: "Friends: Kyushu No. 1 Star Owner" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 큐슈 일등성", en: "Kamurocho — Kyushu No. 1 Star" },
-          trigger: { ko: "라멘 가게 점장과 반복 대화", en: "Repeatedly talk to the ramen shop owner." },
-          body: { ko: "큐슈 일등성의 메뉴를 전부 먹으면 점장이 동료가 됩니다.", en: "Complete the menu at Kyushu No. 1 Star and the chef becomes an ally." },
+          "number": 6,
+          "title": {
+            "ko": "해바라기 후원 2",
+            "en": "Sunflower Aid 2"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5번 완료 후 스에나가에게 25만 엔을 전달한다. 시간이 지난 뒤 다시 대화하고 수리 업자의 전화를 받는다. 챔피언 거리에서 업자를 만나 전투를 치른 후 하루카의 메일을 기다렸다가 스에나가에게 돌아간다.",
+            "en": "After No. 5, give Suenaga 250,000 yen. Return after some time and answer the contractor's call. Meet him in the Champion District and fight the yakuza, then return to Suenaga after Haruka emails."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/5.html"
+          }
         },
         {
-          number: 36,
-          title: { ko: "화장실에서 곤란해하는 남자와 아는 사이", en: "Friends: Park Restroom Man" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 어린이 공원", en: "Kamurocho — Children's Park" },
-          trigger: { ko: "공원 화장실 앞 곤란한 남자에게 휴지를 건네주기", en: "Hand toilet paper to the desperate man at the park restroom." },
-          body: { ko: "공원 화장실에서 곤란해하는 바바에게 속옷을 건네면 동료가 됩니다.", en: "Give Baba, stuck in the park restroom, a pair of underwear and he becomes an ally." },
+          "number": 7,
+          "title": {
+            "ko": "해바라기 후원 3",
+            "en": "Sunflower Aid 3"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "6번 완료 후 스에나가와 대화한다. 챔피언 거리에서 쓰러진 수리 업자를 조사하고 야쿠자와 싸운다. 하루카의 메일을 받은 뒤 스에나가에게 돌아가면 완료된다. 이후 포샤인 앞에서 원장을 영입할 수 있다.",
+            "en": "After No. 6, speak to Suenaga, find the injured contractor in the Champion District, and defeat the yakuza. Return after Haruka's email. Suenaga can then be recruited outside Four Shine."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/5.html"
+          }
         },
         {
-          number: 37,
-          title: { ko: "카무로초 POPPO 점원과 아는 사이", en: "Friends: Kamurocho POPPO Clerk" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 포포 쇼와 거리점", en: "Kamurocho — POPPO Showa St." },
-          trigger: { ko: "포포 점원과 반복 대화", en: "Repeatedly talk to the POPPO clerk." },
-          body: { ko: "서쪽 시치후쿠 거리 포포의 열정적인 점원과 만난 뒤, 이 매장의 단골이 되면 동료가 됩니다.", en: "Meet the very enthusiastic employee at the Poppo on West Shichifuku Street and become a regular there." },
+          "number": 8,
+          "title": {
+            "ko": "쓰러뜨려 보슈",
+            "en": "Hit Me If You Can"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 시치후쿠 파크의 남자에게 도전료 5천 엔을 내고 한 대 맞히면 된다. 성공 보상은 3만 엔이다. 회피 방향을 이용해 자동차와 차막이 쪽으로 몰면 맞히기 쉽다.",
+            "en": "In Chapter 5, pay the man in Shichifuku Parking Lot 5,000 yen and land a hit to earn 30,000 yen. Use his dodges to corner him against the parked cars and barriers."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/8.html"
+          }
         },
         {
-          number: 56,
-          title: { ko: "키류의 모델 데뷔?", en: "Kiryu's Modeling Debut!?" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 극장 앞 광장", en: "Kamurocho — Theater Square" },
-          trigger: { ko: "극장 앞 광장에서 잡지 카메라맨에게 말 걸기", en: "Talk to the magazine photographer in front of the theater." },
-          body: { ko: "잡지 촬영을 의뢰받습니다. 포즈 4종을 지시대로 취하면 완료.", en: "Pose for the photographer's four shots as directed." },
-          reward: { ko: "경험치 + 잡지 게재", en: "EXP + magazine feature" },
+          "number": 9,
+          "title": {
+            "ko": "메일로 받은 임무",
+            "en": "Job by Email"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "극장 앞 광장 북서쪽 남자와 대화한 뒤 마사의 메일을 따른다. 제3공원 벤치에서 C1 열쇠를 얻어 보관함의 초록 상자를 핑크 거리 뒤편의 남자에게 전달한다. 다음 연락을 받고 극장 지하에서 암호를 대조해 거래를 진행한다. 이어지는 두 차례 전투 후 마지막 메일을 받으면 완료된다.",
+            "en": "Meet the man northwest of Theater Square and follow Masa's messages. Collect locker key C1 from the bench in Public Park 3, retrieve the green box, and deliver it behind Pink Street. Follow the next message to the theater basement and use the supplied password. Finish both fights and receive the final email."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/9.html"
+          }
         },
         {
-          number: 58,
-          title: { ko: "알바트로스 아카기의 클럽", en: "Albatross Akagi's Golf Club" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "카무로초 — 골프 바", en: "Kamurocho — Golf Bar" },
-          trigger: { ko: "골프 바에서 니어핀 상급을 클리어한 뒤 아카기에게 말 걸기", en: "Clear Nearpin Advanced at the golf bar, then talk to Akagi." },
-          body: { ko: "요코보리 골프 센터에서 아카기의 도전을 받아 상급 코스에서 300점을 넘기면 클리어됩니다.", en: "Take Akagi's challenge at the Yokobori Golf Center and score over 300 points on the advanced course." },
-          reward: { ko: "골프 클럽 「알바트로스」", en: "Albatross golf club" },
+          "number": 10,
+          "title": {
+            "ko": "머니 게임",
+            "en": "Money Game"
+          },
+          "chapter": {
+            "ko": "8장 이후",
+            "en": "From Chapter 8"
+          },
+          "body": {
+            "ko": "8장 이후 핑크 거리 입구에서 남자를 돕고 주식을 50만 엔에 산다. 나중에 돌아와 매입 제안을 받으면 한 차례 더 생각하겠다고 하여 80만 엔 제안을 받고 판매한다. 끝까지 판매를 거절하면 돈을 받지 못한다.",
+            "en": "From Chapter 8, help the man by Pink Street and buy the shares for 500,000 yen. When offered a buyback, hesitate once to raise the offer to 800,000 yen, then sell. Refusing to sell altogether forfeits the payout."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/10.html"
+          }
         },
-      ],
+        {
+          "number": 11,
+          "title": {
+            "ko": "개인정보",
+            "en": "Personal Info"
+          },
+          "chapter": {
+            "ko": "8장 이후",
+            "en": "From Chapter 8"
+          },
+          "body": {
+            "ko": "8장에 아카우시마루 앞에서 서명을 요청하는 남자와 대화한다. 메일과 전화를 받은 뒤 극장 앞의 정보상 모리타를 만나 촬영 스튜디오 건물 3층으로 간다. 전투 중 컴퓨터를 모두 파괴하고 적을 쓰러뜨린다.",
+            "en": "In Chapter 8, speak to the petition collector outside Akaushimaru. Follow the messages and calls to Morita near Theater Square, then enter the third floor of the photo-studio building. Destroy every computer during the fight and defeat the enemies."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/11.html"
+          }
+        },
+        {
+          "number": 12,
+          "title": {
+            "ko": "카무로초의 빨간 마스크",
+            "en": "The Kamurocho Ripper"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "하루카와 동행하여 핑크 거리 SHINE 앞의 대화를 본다. 나카미치 거리 뒤편에서 습격 사건을 조사하고 표시된 목격자에게 말을 걸면 스타더스트로 이동한다. 가게를 나와 전화를 받은 뒤 코토부키 약국 뒤편 골목으로 가서 사건을 마무리한다.",
+            "en": "With Haruka accompanying you, witness the conversation outside Shine on Pink Street. Investigate the attack in Nakamichi Alley and speak to the marked witness to proceed to Stardust. Answer the call after leaving and visit the alley behind Kotobuki Drugs to resolve the case."
+          },
+          "source": {
+            "label": "CyricZ — Kiwami 2 Chapter 13 substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/218734-yakuza-kiwami-2/faqs/76366/chapter-13-substories"
+          }
+        },
+        {
+          "number": 13,
+          "title": {
+            "ko": "병아리 한 마리로 부자되기",
+            "en": "Straw Millionaire"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 타이헤이 거리 서쪽에서 마이클 나오야의 CD를 받는다. 스타더스트 앞 노인에게 만년필로, 에비스야 앞 여성에게 부츠로 교환한다. 아천사에서 이야기를 듣고 어린이 공원의 노숙자에게 부츠를 주어 분홍 목도리를 얻는다. 아천사로 돌아가 시계와 교환한다.",
+            "en": "From Chapter 6, get Michael Naoya's CD on West Taihei Boulevard. Trade it to the elderly man outside Stardust for a pen, then to the woman outside Ebisu Pawn for boots. After visiting Earth Angel, give the boots to the homeless man in Children's Park for a pink scarf. Return to Earth Angel for the watch."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/13.html"
+          }
+        },
+        {
+          "number": 14,
+          "title": {
+            "ko": "이루전",
+            "en": "Lee Ryujon"
+          },
+          "chapter": {
+            "ko": "7장 이후",
+            "en": "From Chapter 7"
+          },
+          "body": {
+            "ko": "7장 이후 한래에서 이류정을 만나 비디오 가게, 아천사, 큐슈 일등성 순서로 안내한다. 지도에 표시되는 여성 팬을 피해서 이동한다. 세 번 붙잡히면 안내가 중단되므로 우회로를 사용한다.",
+            "en": "From Chapter 7, meet Il Yu-Jin at Kanrai and escort him to the video shop, Earth Angel, and Kyushu No. 1 Star. Avoid the fans marked on the map; being caught three times ends the tour."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/14.html"
+          }
+        },
+        {
+          "number": 15,
+          "title": {
+            "ko": "찍혀 있어요",
+            "en": "Caught on Film"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 챔피언 거리 입구에서 비디오를 받아 퓨전에서 재생한다. 밖에서 영매사를 만난 뒤 센료 거리 동쪽의 여성을 따라간다. 영매사에게 10만 엔을 내고 의식을 부탁하면 완료되며 이 돈은 마지막에 돌려받는다.",
+            "en": "From Chapter 6, receive the tape at the Champion District entrance and watch it at Fusion. Meet the medium outside and follow the woman near East Senryo Avenue. Pay 100,000 yen for the ritual; the money is returned at the end."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/15.html"
+          }
+        },
+        {
+          "number": 16,
+          "title": {
+            "ko": "비밀의 물건",
+            "en": "Secret Goods"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 호텔 거리 주차장의 남자에게 B1 보관함 열쇠를 2만 엔에 산다. 보관함의 비디오를 퓨전에서 본 뒤 알프스 점원에게 물어본다. 달아나는 남자를 따라가 야쿠자와 싸운다.",
+            "en": "From Chapter 6, buy locker key B1 for 20,000 yen from the man in the Hotel District parking lot. Watch the locker tape at Fusion, ask the Alps clerk about it, then pursue the fleeing man and defeat the yakuza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/16.html"
+          }
+        },
+        {
+          "number": 17,
+          "title": {
+            "ko": "빔의 수수께끼",
+            "en": "Beam Mystery"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 극장 앞 광장에서 모리타와 대화하고 데보라의 닛타에게 5만 엔을 내어 암호를 듣는다. 빔 점원에게 해당 비디오 제목을 고르고 음료 가격 질문에 2,600엔으로 답하면 무기점이 열린다. 제목은 게임 내 선택지와 출처 원문을 대조한다.",
+            "en": "From Chapter 6, speak to Morita at Theater Square and pay Nitta at Debolah 50,000 yen for the password. Request the specified video from the Beam clerk, then answer 2,600 yen to the drink-price question to unlock the weapon shop. Match the video title to the in-game options."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/17.html"
+          }
+        },
+        {
+          "number": 18,
+          "title": {
+            "ko": "공짜보다 무서운 것은 없다",
+            "en": "Nothing's Scarier Than Free"
+          },
+          "chapter": {
+            "ko": "6장 이후",
+            "en": "From Chapter 6"
+          },
+          "body": {
+            "ko": "6장 이후 나카미치 거리의 다테와 대화한다. 해피넷의 전화와 세 차례 메일을 받은 뒤 다시 걸려 오는 전화를 받는다. 텐카이치 거리 제1빌딩 3층 사무실로 가서 적을 쓰러뜨린다.",
+            "en": "From Chapter 6, speak to Date on Nakamichi Street. Receive Happy Net's call, three emails, and another call. Visit the office on the third floor of Tenkaichi First Building and win the fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/18.html"
+          }
+        },
+        {
+          "number": 19,
+          "title": {
+            "ko": "취직활동",
+            "en": "Job Hunting"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 슷폰 거리의 취업 준비생 세 명을 만나고 공원 앞 거리에서 다시 대화하여 모의 면접을 진행한다. 활동 경험의 장점을 인정하는 답변을 선택한다. 세부 선택지 번역은 출처의 문구와 게임 화면을 대조한다.",
+            "en": "From Chapter 5, meet the three job seekers on Suppon Street, then find them again on Park Boulevard for a practice interview. Favor answers that recognize the strengths in their experience; compare the detailed choices with the source and your game's wording."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/19.html"
+          }
+        },
+        {
+          "number": 20,
+          "title": {
+            "ko": "미국 야구",
+            "en": "American Baseball"
+          },
+          "chapter": {
+            "ko": "진행 조건 충족 후",
+            "en": "After meeting the requirements"
+          },
+          "body": {
+            "ko": "요시다 배팅 센터의 챌린지 코스 하나를 완료하면 밥에게 도전할 수 있다. 10구 중 홈런 5개를 치면 사인볼을 받는다. ",
+            "en": "Clear any Challenge Course at Yoshida Batting Center to challenge Bob. Hit five home runs in ten pitches to receive his signed baseball."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/20.html"
+          }
+        },
+        {
+          "number": 21,
+          "title": {
+            "ko": "마작",
+            "en": "Mahjong"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 텐카이치 거리의 마작장 앞에서 위협받는 청년을 돕고 대타로 마작에 참가한다. 승리해야 완료되며 보상은 10만 엔이다.",
+            "en": "From Chapter 5, help the young man outside Lullaby Mahjong on Tenkaichi Street and play as his substitute. Win the match to complete the substory and receive 100,000 yen."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/21.html"
+          }
+        },
+        {
+          "number": 22,
+          "title": {
+            "ko": "용궁성",
+            "en": "Dragon Palace"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 텐카이치 거리 POPPO 앞의 노숙자와 대화하고 시비를 거는 적을 쓰러뜨린다. 이후 용궁성을 이용할 수 있다.",
+            "en": "From Chapter 5, speak to the homeless man outside Tenkaichi Street Poppo and defeat the thugs to unlock the Dragon Palace."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/22.html"
+          }
+        },
+        {
+          "number": 23,
+          "title": {
+            "ko": "뱌쿠렌 노사와의 만남",
+            "en": "Meeting Master Bairen"
+          },
+          "chapter": {
+            "ko": "7장 이후",
+            "en": "From Chapter 7"
+          },
+          "body": {
+            "ko": "7장에 세레나 앞에서 시로 할머니를 돕고 중국 마피아와 싸운다. 이후 메일을 받을 때마다 시치후쿠 파크, 극장 앞 거리 순서로 찾아가 다시 싸운다.",
+            "en": "In Chapter 7, help Granny White outside Serena and defeat the Chinese mafia. Follow her subsequent emails to Shichifuku Parking Lot and Theater Square Alley for the remaining fights."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/23.html"
+          }
+        },
+        {
+          "number": 24,
+          "title": {
+            "ko": "무기 비디오 상인",
+            "en": "The Weapon Video Merchant"
+          },
+          "chapter": {
+            "ko": "1장 이후",
+            "en": "From Chapter 1"
+          },
+          "body": {
+            "ko": "1장 이후 제3공원 근처 라멘집 뒤 골목에서 위협받는 남자를 돕고 야쿠자와 싸운다. 승리하면 카미야마의 무기점을 이용할 수 있다.",
+            "en": "From Chapter 1, help the man being threatened behind the ramen shop near Public Park 3. Defeat the yakuza to unlock Kamiyama Works."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/24.html"
+          }
+        },
+        {
+          "number": 25,
+          "title": {
+            "ko": "레슬러 휴업 중",
+            "en": "Wrestler on Hiatus"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 용궁성 4층의 사이클롭스 오오바에게 대결을 신청하고 승리한다. 기술을 해금하는 비전서를 받는다.",
+            "en": "From Chapter 5, challenge Cyclops Oba on the fourth floor of the Dragon Palace and win to receive a technique manual."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/25.html"
+          }
+        },
+        {
+          "number": 26,
+          "title": {
+            "ko": "레슬러 세계를 먹다",
+            "en": "Wrestler Devours the World"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "오오바의 첫 의뢰를 마친 뒤 고급 불고기 도시락을 가져다주고 다시 싸워 이긴다. 도시락은 POPPO에서 살 수 있다.",
+            "en": "After Oba's first substory, bring him a Luxury Yakiniku Bento from Poppo, then defeat him again."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/26.html"
+          }
+        },
+        {
+          "number": 27,
+          "title": {
+            "ko": "레슬러 세계를 마시다",
+            "en": "Wrestler Drinks the World"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "오오바의 앞선 의뢰를 마친 뒤 스태미난 XX를 가져다주고 다시 싸워 이긴다.",
+            "en": "After Oba's preceding substory, give him a Staminan XX and win the next fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/27.html"
+          }
+        },
+        {
+          "number": 28,
+          "title": {
+            "ko": "코마키의 수행 1",
+            "en": "Komaki Training 1"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 세레나 앞에서 코마키의 제자와 만난 뒤 챔피언 거리 남쪽 공터의 코마키에게 간다. 히트 모드 수련을 완료하면 관련 능력을 습득할 수 있게 된다.",
+            "en": "In Chapter 5, meet Komaki's apprentice outside Serena, then visit Komaki in the southern Champion District lot. Finish the heat-mode training to unlock the ability for purchase."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/28.html"
+          }
+        },
+        {
+          "number": 29,
+          "title": {
+            "ko": "코마키의 수행 2",
+            "en": "Komaki Training 2"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "28번 수련 후 같은 공터에서 코마키에게 다시 배운다. 반격 수련에서는 록온을 풀고 기술을 사용한다.",
+            "en": "After No. 28, train with Komaki in the same lot. Release lock-on when performing the counter technique."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/28.html"
+          }
+        },
+        {
+          "number": 30,
+          "title": {
+            "ko": "코마키의 수행 3",
+            "en": "Komaki Training 3"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "29번 수련 후 코마키에게 다시 말을 걸어 총기 상대 수련을 완료한다.",
+            "en": "After No. 29, speak to Komaki again and complete the firearm-counter training."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/28.html"
+          }
+        },
+        {
+          "number": 31,
+          "title": {
+            "ko": "코마키의 수행 4",
+            "en": "Komaki Training 4"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "30번 수련 후 코마키와 직접 대결한다. 이 전투에서는 히트 액션을 사용할 수 없다. 승리하면 마작용 특수 아이템을 받는다.",
+            "en": "After No. 30, defeat Komaki in a duel without Heat Actions. The reward is a mahjong cheat item."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/28.html"
+          }
+        },
+        {
+          "number": 32,
+          "title": {
+            "ko": "센료 거리의 호객꾼과 아는 사이",
+            "en": "Friends: Senryo St. Tout"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 센료 거리 남쪽 입구의 호객꾼과 대화하고 불량배와 싸우면 인연이 생긴다.",
+            "en": "In Chapter 5, speak to the barker at the southern Senryo Avenue entrance and defeat the thugs to befriend him."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/32.html"
+          }
+        },
+        {
+          "number": 33,
+          "title": {
+            "ko": "아천사의 마담과 아는 사이",
+            "en": "Friends: Earth Angel Mama"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 챔피언 거리의 아천사에 들러 이벤트를 보고 시비를 거는 남자와 싸운다.",
+            "en": "From Chapter 5, visit Earth Angel in the Champion District and defeat the hostile man during the event."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/33.html"
+          }
+        },
+        {
+          "number": 34,
+          "title": {
+            "ko": "큐슈 일등성의 점장과 아는 사이",
+            "en": "Friends: Kyushu No. 1 Star Owner"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 큐슈 일등성에서 식사하여 이벤트를 본다. 가게 메뉴를 모두 주문하면 완료된다.",
+            "en": "In Chapter 5, eat at Kyushu No. 1 Star to trigger the event, then order every item on its menu."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/34.html"
+          }
+        },
+        {
+          "number": 35,
+          "title": {
+            "ko": "카무로초 힐즈의 노동자와 아는 사이",
+            "en": "Friends: Kamurocho Hills Worker"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 카무로쵸 힐즈 공사장 입구의 노동자와 대화하고 회복 아이템을 건넨다.",
+            "en": "From Chapter 5, speak to the worker at the Kamurocho Hills construction entrance and give him a recovery item."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/35.html"
+          }
+        },
+        {
+          "number": 36,
+          "title": {
+            "ko": "화장실에서 곤란해하는 남자와 아는 사이",
+            "en": "Friends: Park Restroom Man"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 어린이 공원 남자 화장실의 칸을 조사한다. 돈키호테에서 흰색 브리프를 구입하여 남자에게 건네면 완료된다.",
+            "en": "From Chapter 5, inspect the occupied stall in Children's Park. Buy white briefs at Don Quijote and give them to the man."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/36.html"
+          }
+        },
+        {
+          "number": 37,
+          "title": {
+            "ko": "카무로초 POPPO 점원과 아는 사이",
+            "en": "Friends: Kamurocho POPPO Clerk"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장 이후 POPPO 시치후쿠 거리 서쪽점의 점원에게 말을 걸어 이벤트를 본다. 이후 일곱 번 대화하면 완료된다. 물건을 구입할 필요는 없다.",
+            "en": "From Chapter 5, trigger the event with the clerk at West Shichifuku Street Poppo, then speak to him seven times. Purchases are not required."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/37.html"
+          }
+        },
+        {
+          "number": 38,
+          "title": {
+            "ko": "아몬 카즈야",
+            "en": "Amon Kazuya"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "아몬 일족의 네 의뢰를 제외한 71건을 완료하면 시치후쿠 거리 동쪽 주차장에서 아몬 카즈야에게 도전할 수 있다. 투기장 전체 완료는 별도 선행 조건이 아니다. 도끼 공격에 대비하여 회복약과 방어 장비를 준비한다.",
+            "en": "Complete the 71 substories outside the four Amon fights, then challenge Kazuya Amon in the East Shichifuku Street parking lot. Completing every Coliseum tournament is not a separate prerequisite. Prepare healing items and protection against his axes."
+          },
+          "source": {
+            "label": "CyricZ — Kiwami 2 Chapter 13 substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/218734-yakuza-kiwami-2/faqs/76366/chapter-13-substories"
+          }
+        },
+        {
+          "number": 39,
+          "title": {
+            "ko": "아몬 지로",
+            "en": "Amon Jiro"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "38번의 아몬 카즈야를 쓰러뜨린 뒤 세레나 뒤편에서 아몬 지로와 싸운다. 총격에 대비한 장비와 회복약을 준비한다.",
+            "en": "After defeating Kazuya in No. 38, fight Jiro Amon behind Serena. Prepare for gunfire and bring healing items."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/39.html"
+          }
+        },
+        {
+          "number": 40,
+          "title": {
+            "ko": "아몬 산고",
+            "en": "Amon Sango"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "39번 완료 후 극장 앞 광장에서 아몬 산고와 싸운다. 원거리 폭발 공격을 피하며 접근한다.",
+            "en": "After No. 39, challenge Sango Amon at Theater Square. Avoid his explosive ranged attacks while closing the distance."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/40.html"
+          }
+        },
+        {
+          "number": 41,
+          "title": {
+            "ko": "궁극의 자객",
+            "en": "The Ultimate Assassin"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "40번 완료 후 챔피언 거리 남쪽 공터에서 쓰러진 코마키를 조사한다. 밀레니엄 타워 지하 광장으로 가서 아몬 죠와 싸운다.",
+            "en": "After No. 40, find Komaki collapsed in the southern Champion District lot, then confront Jo Amon in the Millennium Tower basement plaza."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/41.html"
+          }
+        },
+        {
+          "number": 42,
+          "title": {
+            "ko": "용병의 일",
+            "en": "Bodyguard Work"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 극장 앞 광장의 청년에게 말을 걸고 데보라로 가서 점원과 대화한다. 보디가드 미션이 열린다.",
+            "en": "In Chapter 5, speak to the young man at Theater Square, then talk to the Debolah staff to unlock Bouncer Missions."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/42.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "카무로초 — 본편 5장 (해금 러시)", en: "Kamurocho — Chapter 5 (Unlock Rush)" },
-      items: [
+      "title": {
+        "ko": "소텐보리와 두 도시의 연계 의뢰",
+        "en": "Sotenbori and cross-city substories"
+      },
+      "items": [
         {
-          number: 1,
-          title: { ko: "Be My Baby", en: "Be My Baby" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 핑크 거리", en: "Kamurocho — Pink St." },
-          trigger: { ko: "5장 시작 후 핑크 거리에서 길을 막은 깡패들과 조우", en: "Chapter 5: encounter thugs blocking Pink St." },
-          body: {
-            ko: "도와준 여성 「마치코」에게 말을 거는 패턴에 따라 분기. 어느 선택지도 결국 함께 식사하는 결말이지만 신사적 응대 시 호감도가 가장 높아집니다.",
-            en: "Help Machiko, then pick the gentlemanly reply each round — every branch ends the same scene but the polite path gives the best send-off.",
+          "number": 43,
+          "title": {
+            "ko": "그녀에게 주는 선물",
+            "en": "A Gift for Her"
           },
-          choices: [
-            { prompt: { ko: "「괜찮으세요?」", en: "'Are you all right?'" }, correct: { ko: "다친 곳은 없습니까?", en: "Are you hurt anywhere?" } },
-          ],
-          reward: { ko: "경험치 + 컴플리션 카운트", en: "EXP + completion credit" },
-        },
-        {
-          number: 2,
-          title: { ko: "전설의 사나이", en: "Legendary Man" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 챔피언 거리 입구", en: "Kamurocho — Champion St. entrance" },
-          trigger: { ko: "챔피언 거리 입구에서 「가짜 키류」 일행 목격", en: "Spot the 'fake Kiryu' duo at the Champion St. entrance." },
-          body: { ko: "가짜 키류와 가짜 신지가 사기를 벌이는 것을 추적해 보석상 앞에서 격파.", en: "Chase the impostors to the jewelry shop on Seven Luck St. and beat them." },
-          reward: { ko: "경험치 + 「전설의 남자」 컴플리션", en: "EXP + completion credit" },
-        },
-        {
-          number: 5,
-          title: { ko: "해바라기 후원 1", en: "Sunflower Aid 1" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 나카미치 거리 「돈키호테」 앞", en: "Kamurocho — In front of Don Quijote on Nakamichi St." },
-          trigger: { ko: "돈키호테 앞에서 모금 중인 모리시마 칸지에게 말 걸기", en: "Speak to Kanji Morishima fundraising in front of Don Quijote." },
-          body: { ko: "해바라기 보육원 후원 시리즈의 1편. 기부 또는 격려 후 완료.", en: "First in the Sunflower Orphanage support series. Donate or encourage him." },
-          choices: [
-            { prompt: { ko: "「기부해주실 수 있나요?」", en: "'Would you donate?'" }, correct: { ko: "기부한다", en: "Donate" }, note: { ko: "기부해도 손해는 없고 후속 서브가 이어집니다", en: "Donating chains directly into No.6." } },
-          ],
-          reward: { ko: "경험치 + No.6 트리거", en: "EXP, unlocks No.6" },
-        },
-        {
-          number: 6,
-          title: { ko: "해바라기 후원 2", en: "Sunflower Aid 2" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 나카미치 거리", en: "Kamurocho — Nakamichi St." },
-          trigger: { ko: "No.5 클리어 후 모리시마와 재대화", en: "After clearing No.5, return to Morishima." },
-          body: { ko: "보육원 수리비 후원 의뢰. 위협하는 깡패들을 격파합니다.", en: "Help repair the orphanage; beat down the loan-shark thugs." },
-        },
-        {
-          number: 7,
-          title: { ko: "해바라기 후원 3", en: "Sunflower Aid 3" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 나카미치 거리", en: "Kamurocho — Nakamichi St." },
-          trigger: { ko: "No.6 클리어 후 모리시마와 재대화", en: "After clearing No.6, talk to Morishima again." },
-          body: { ko: "놀이터 정비를 위해 추가 모금. 모금 사기단을 격파.", en: "Fund the playground rebuild; smash the fake charity crew." },
-          reward: { ko: "경험치 + 「해바라기 시리즈」 완주", en: "EXP, completes the Sunflower line" },
-        },
-        {
-          number: 8,
-          title: { ko: "쓰러뜨려 보슈", en: "Hit Me If You Can" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 시치후쿠 주차장", en: "Kamurocho — Shichifuku Parking" },
-          trigger: { ko: "시치후쿠 주차장의 「때려보세요」 간판 앞 남자에게 말 걸기", en: "Approach the 'Hit Me' sign guy at the Shichifuku parking lot." },
-          body: { ko: "30초간 남자를 때려 쓰러뜨리면 3,000엔 보상. 가드가 매우 단단하니 콤보로 끊기.", en: "Knock him down within 30 seconds for 3,000 yen. His guard is iron — use combo finishers." },
-          reward: { ko: "3,000엔 + 경험치", en: "3,000 yen + EXP" },
-        },
-        {
-          number: 9,
-          title: { ko: "메일로 받은 임무", en: "Job by Email" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 극장 북서쪽", en: "Kamurocho — Northwest of the theater" },
-          trigger: { ko: "극장 북서쪽 골목의 남자에게 말 걸기", en: "Talk to the man in the alley northwest of the theater." },
-          body: {
-            ko: "메일로 의뢰가 들어오는 운반 일을 맡습니다. 의뢰 수락 후 약속 장소에서 깡패들과 전투.",
-            en: "Accept the courier email job; head to the dropoff and fight off the ambushing thugs.",
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
           },
-          choices: [
-            { prompt: { ko: "「일을 받겠습니까?」", en: "'Take the job?'" }, correct: { ko: "받는다", en: "Accept" } },
-          ],
-          reward: { ko: "경험치 + 보수", en: "EXP + payment" },
-        },
-        {
-          number: 19,
-          title: { ko: "취직활동", en: "Job Hunting" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 스폰 거리", en: "Kamurocho — Suppon St." },
-          trigger: { ko: "스폰 거리에서 면접을 앞둔 청년에게 말 걸기", en: "Talk to the nervous interviewee on Suppon St." },
-          body: {
-            ko: "취업 면접 모의 질문 10개에 정답으로 응답해야 합니다. 「성실함」, 「팀워크」, 「존경하는 인물」 등 모범답안 위주로 선택.",
-            en: "Coach the kid through ten mock interview questions. Stick to safe, earnest answers (honesty, teamwork, respecting elders).",
+          "body": {
+            "ko": "2장에 소텐보리 클럽 세가의 사토나카를 돕는다. UFO 캐처로 로보 부장을 뽑아 주고 이와오 다리에서 버려진 인형을 찾는다. 돌아와 로보 과장을 뽑아 주고 시간이 지난 뒤 다시 대화하면 마지막 보상을 받는다.",
+            "en": "In Chapter 2, help Satonaka at Sotenbori Club Sega. Win Robo Manager for him, find the discarded toy on Iwao Bridge, then return and win Robo Chief. Speak to him again after some time for the final reward."
           },
-          choices: [
-            { prompt: { ko: "「장점이 뭐죠?」", en: "'What's your strength?'" }, correct: { ko: "성실함입니다", en: "Honesty" } },
-            { prompt: { ko: "「존경하는 사람은?」", en: "'Who do you respect?'" }, correct: { ko: "부모님", en: "My parents" } },
-            { prompt: { ko: "「당사 지망 동기는?」", en: "'Why our company?'" }, correct: { ko: "사회에 공헌하고 싶어서", en: "To contribute to society" } },
-          ],
-          reward: { ko: "경험치 다량 + 부적 아이템", en: "Large EXP + lucky charm" },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/43.html"
+          }
         },
         {
-          number: 22,
-          title: { ko: "용궁성", en: "Dragon Palace" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 텐카이치 거리", en: "Kamurocho — Tenkaichi St." },
-          trigger: { ko: "5장 진행 중 텐카이치 거리의 카메(쿠로사와 우메노스케)에게 말 걸기", en: "Chapter 5: talk to Kame the turtle owner on Tenkaichi St." },
-          body: { ko: "카메 가게 「용궁성」이 클럽 세가 4층에 오픈. 레슬러 시리즈(25~27) 트리거.", en: "Opens the Dragon Palace store on the Club SEGA 4F; unlocks the wrestler chain (25-27)." },
+          "number": 44,
+          "title": {
+            "ko": "카네마츠 시게루",
+            "en": "Kanematsu Shige"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장 밤에 돈키호테 앞의 카네마츠와 만난다. 상대의 상태를 걱정하는 선택지로 진행하고 클럽 세가에서 버추어 파이터 아케이드 모드 3승을 달성한다. 이와오 다리 이벤트를 본 뒤 시간이 지나면 쇼후쿠쵸 남쪽에서 다시 만난다.",
+            "en": "At night in Chapter 4, meet Kanematsu outside Don Quijote and ask whether he is all right. Win three Virtua Fighter arcade matches at Club Sega, follow the event at Iwao Bridge, and later meet him in southern Shofukucho."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/44.html"
+          }
         },
         {
-          number: 25,
-          title: { ko: "레슬러 휴업 중", en: "Wrestler on Hiatus" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 용궁성 (클럽 세가 4F)", en: "Kamurocho — Dragon Palace (Club SEGA 4F)" },
-          trigger: { ko: "No.22 클리어 후 용궁성 안의 거구의 외국인에게 말 걸기", en: "After No.22, talk to the giant gaijin inside Dragon Palace." },
-          body: { ko: "레슬러 「엔리 챈」의 부탁으로 모래시계 아이템을 구해줍니다.", en: "Help wrestler Enry-Chan find an hourglass trinket." },
+          "number": 45,
+          "title": {
+            "ko": "가지고 있는 남자",
+            "en": "The Lucky Guy"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장 밤에 POPPO 쇼후쿠쵸점 앞의 의원을 돕고 전투 후 책을 받는다. 이와오 다리의 낙담한 남자에게 책을 건네고 가라오케 스낵 북쪽에서 다음 전투를 마친다.",
+            "en": "At night in Chapter 4, help the councilor outside Shofukucho Poppo and receive his book. Give it to the dejected man on Iwao Bridge, then finish the fight north of the karaoke snack bar."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/45.html"
+          }
         },
         {
-          number: 26,
-          title: { ko: "레슬러 세계를 먹다", en: "Wrestler Devours the World" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 용궁성", en: "Kamurocho — Dragon Palace" },
-          trigger: { ko: "No.25 클리어 후 재방문", en: "Revisit after clearing No.25." },
-          body: { ko: "이번엔 거대한 먹거리를 찾아 푸드 챌린지.", en: "Fetch a colossal foodstuff for the wrestler's next challenge." },
+          "number": 46,
+          "title": {
+            "ko": "신인 예능 콤비의 고민",
+            "en": "Rookie Comedy Duo's Slump"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 스테일 카운터의 남자와 대화한다. 가게 밖에서 불량배와 싸우면 완료된다.",
+            "en": "In Chapter 10, speak to the man at the Stijl counter, then defeat the thugs outside."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/46.html"
+          }
         },
         {
-          number: 27,
-          title: { ko: "레슬러 세계를 마시다", en: "Wrestler Drinks the World" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 용궁성", en: "Kamurocho — Dragon Palace" },
-          trigger: { ko: "No.26 클리어 후 재방문", en: "Revisit after No.26." },
-          body: { ko: "음주 챌린지 후 레슬러가 캬바레 캐스트로 합류.", en: "After the booze challenge the wrestler joins the cabaret cast." },
-          reward: { ko: "캬바레 캐스트 합류", en: "Cabaret cast unlock" },
+          "number": 47,
+          "title": {
+            "ko": "원한 대행",
+            "en": "Hatred Contractor"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 쇼후쿠쵸 남쪽의 여성에게 사진을 받는다. 쇼후쿠쵸 동쪽의 야기, 골프 센터의 카지와라, 요코야마 빌딩 2층을 차례로 조사하며 싸운다. 간다라 5번 방에서 15만 엔을 회수해 여성에게 돌아간다.",
+            "en": "In Chapter 10, get the photographs from the woman in southern Shofukucho. Follow the leads to Yagi in eastern Shofukucho, Kajiwara at the golf center, and the second floor of Yokoyama Building. Recover 150,000 yen from Gandhara room 5 and return to her."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/47.html"
+          }
         },
         {
-          number: 28,
-          title: { ko: "코마키의 수행 1", en: "Komaki Training 1" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 챔피언 거리 공터 (사이노카와라)", en: "Kamurocho — Sai no Kawara, Champion St. vacant lot" },
-          trigger: { ko: "5장 사이노카와라(공터)로 향할 때 코마키 사부에게 말 걸기", en: "Visit Sai no Kawara during Ch.5 and find Master Komaki." },
-          body: { ko: "코마키류 「오우라케시노카타」 수련. 시범자의 공격을 30초 흘려보내면 합격.", en: "Komaki Tiger Drop tutorial — parry the demonstrator for 30 seconds." },
-          reward: { ko: "코마키류 기술 해금", en: "Komaki technique unlocked" },
+          "number": 48,
+          "title": {
+            "ko": "타츠",
+            "en": "Tatsu"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 이와오 다리에서 말을 거는 남자를 만나고 도망가는 불량배를 쫓아 싸운다. 비샤몬 다리의 키노시타와 대화하여 다음 전투를 마친 뒤 소텐보리 강변 동쪽의 무라타를 만나면 무기점을 이용할 수 있다.",
+            "en": "In Chapter 10, meet the man on Iwao Bridge and pursue the thugs. Speak to Kinoshita at Bishamon Bridge, win the next fight, then meet Murata by the eastern riverside to unlock the weapon shop."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/48.html"
+          }
         },
         {
-          number: 29,
-          title: { ko: "코마키의 수행 2", en: "Komaki Training 2" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
-          trigger: { ko: "No.28 후 재방문", en: "Return after No.28." },
-          body: { ko: "「코마키 회유 떨치기」 수련.", en: "Komaki Evasive Reversal training." },
-          reward: { ko: "코마키 회유 떨치기 해금", en: "Komaki Evasive Reversal unlocked" },
+          "number": 49,
+          "title": {
+            "ko": "아줌마의 비극",
+            "en": "The Old Lady's Tragedy"
+          },
+          "chapter": {
+            "ko": "11장 이후",
+            "en": "From Chapter 11"
+          },
+          "body": {
+            "ko": "11장 이후 쇼후쿠쵸 남쪽의 이벤트를 보고 불량배를 쓰러뜨린다. 아주머니에게 사탕을 받는다.",
+            "en": "From Chapter 11, trigger the event in southern Shofukucho and defeat the thugs to receive the woman's candy."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/49.html"
+          }
         },
         {
-          number: 30,
-          title: { ko: "코마키의 수행 3", en: "Komaki Training 3" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
-          trigger: { ko: "No.29 후 재방문", en: "Return after No.29." },
-          body: { ko: "「코마키 호조 던지기」 수련.", en: "Komaki Parry-Throw training." },
+          "number": 50,
+          "title": {
+            "ko": "네게 있는 것, 내게 있는 것 1",
+            "en": "What You Have, What I Have 1"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 그랜드 앞에서 위협받는 청년을 돕고 불량배를 쓰러뜨린다.",
+            "en": "In Chapter 10, help the young man being threatened outside the Grand and defeat the thugs."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/50.html"
+          }
         },
         {
-          number: 31,
-          title: { ko: "코마키의 수행 4", en: "Komaki Training 4" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 사이노카와라", en: "Kamurocho — Sai no Kawara" },
-          trigger: { ko: "No.30 후 재방문", en: "Return after No.30." },
-          body: { ko: "최종 수련 「오의 전수」. 클리어 시 코마키류 기술 전체 마스터.", en: "Final lesson; masters the full Komaki suite." },
-          reward: { ko: "코마키류 마스터", en: "Komaki style mastered" },
+          "number": 51,
+          "title": {
+            "ko": "네게 있는 것, 내게 있는 것 2",
+            "en": "What You Have, What I Have 2"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "50번 이후 돈키호테 소텐보리점 앞에서 위협받는 여성을 돕고 싸운다. 그랜드 앞의 청년에게 돌아가면 완료된다.",
+            "en": "After No. 50, help the woman outside Sotenbori Don Quijote and win the fight, then return to the young man outside the Grand."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/50.html"
+          }
         },
         {
-          number: 35,
-          title: { ko: "카무로초 힐즈의 노동자와 아는 사이", en: "Friends: Kamurocho Hills Worker" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 카무로초 힐즈 공사장", en: "Kamurocho — Kamurocho Hills construction site" },
-          trigger: { ko: "투기장 토너먼트 진행 중 공사장 인부에게 말 걸기", en: "During the arena tournament arc, chat with the construction worker." },
-          body: { ko: "카무로초 힐즈의 노동자에게 약을 건네면 동료가 됩니다.", en: "Give the worker at Kamurocho Hills medicine and he becomes an ally." },
+          "number": 52,
+          "title": {
+            "ko": "고급차",
+            "en": "Luxury Car"
+          },
+          "chapter": {
+            "ko": "4장 이후",
+            "en": "From Chapter 4"
+          },
+          "body": {
+            "ko": "4장 밤에 분자에몬 거리의 검은 자동차를 조사하고 전투를 치른다. 전투 중 자동차를 이용한 히트 액션을 사용하면 보상이 2만 엔에서 5만 엔으로 늘어난다.",
+            "en": "At night in Chapter 4, inspect the black car on Bunzaemon Street and fight the men. Using the car for a Heat Action raises the reward from 20,000 to 50,000 yen."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/52.html"
+          }
         },
         {
-          number: 42,
-          title: { ko: "용병의 일", en: "Bodyguard Work" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초 — 극장 앞", en: "Kamurocho — In front of the theater" },
-          trigger: { ko: "극장 앞에서 경호 의뢰인에게 말 걸기", en: "Talk to the client outside the theater." },
-          body: { ko: "VIP를 목적지까지 호위. 도중에 깡패 무리 격파.", en: "Escort a VIP through the streets, beating ambushers along the way." },
-          reward: { ko: "경험치 + 보수", en: "EXP + cash" },
+          "number": 53,
+          "title": {
+            "ko": "환상의 피규어",
+            "en": "Phantom Figure"
+          },
+          "chapter": {
+            "ko": "11장 이후",
+            "en": "From Chapter 11"
+          },
+          "body": {
+            "ko": "11장에 POPPO 쇼후쿠쵸점에서 피규어를 구입해 12번을 뽑는다. 가게 안 남자의 교환 제안을 받아들여 거래를 마무리한다. 처음 두 제안을 거절하면 7번 피규어와 1만 엔을 함께 제안받는다.",
+            "en": "In Chapter 11, buy figures at Shofukucho Poppo until you draw Model 12. Trade with the man inside; declining his first two offers leads to Model 7 plus 10,000 yen."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/53.html"
+          }
         },
-      ],
+        {
+          "number": 54,
+          "title": {
+            "ko": "기억을 잃은 남자",
+            "en": "The Amnesiac Man"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 강변 북쪽의 기억을 잃은 남자를 돕기로 한다. 첫 전투에서는 근처의 고압 스턴건으로 쓰러뜨려야 한다. 이어지는 두 번째 전투에 승리하면 완료된다.",
+            "en": "In Chapter 10, agree to help the amnesiac man on the northern riverside. Defeat him with the nearby High Voltage Stun Gun in the first fight, then win the second fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/54.html"
+          }
+        },
+        {
+          "number": 55,
+          "title": {
+            "ko": "의협의 밤",
+            "en": "Chivalrous Night"
+          },
+          "chapter": {
+            "ko": "10장 이후",
+            "en": "From Chapter 10"
+          },
+          "body": {
+            "ko": "10장에 쇼후쿠쵸 남쪽에서 이야기를 듣고 비샤몬 다리의 모자를 쓴 남자를 따라 스테일로 간다. 간다라에서 해당 야쿠자 영화를 본 뒤 스테일로 돌아와 영화 팬의 부탁을 진행하고 전투를 마친다.",
+            "en": "In Chapter 10, hear the conversation in southern Shofukucho and follow the man with the cap from Bishamon Bridge to Stijl. Watch the indicated yakuza film at Gandhara, return to Stijl, follow the film fan's request, and finish the fight."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/55.html"
+          }
+        },
+        {
+          "number": 56,
+          "title": {
+            "ko": "키류의 모델 데뷔?",
+            "en": "Kiryu's Modeling Debut!?"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "3장에 이와오 다리의 남자에게 모델 제안을 받고 촬영을 진행한다. 포즈 선택은 자유이며 마지막에 사무실의 적들을 쓰러뜨리면 완료된다.",
+            "en": "In Chapter 3, accept the modeling offer on Iwao Bridge. Choose any poses during the shoot and defeat the men in the office afterward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/56.html"
+          }
+        },
+        {
+          "number": 57,
+          "title": {
+            "ko": "CV 키류 카즈마",
+            "en": "CV: Kazuma Kiryu"
+          },
+          "chapter": {
+            "ko": "11장 이후",
+            "en": "From Chapter 11"
+          },
+          "body": {
+            "ko": "11장에 스마일 버거 소텐보리점 앞에서 성우 제안을 받는다. 쇼후쿠쵸의 남자에게 일을 수락하고 녹음을 진행한다. 상대와 단둘이 있어 기쁘다는 답부터 친밀한 관계를 표현하는 방향으로 대사를 고른다. 정확한 표현은 게임 화면과 출처를 대조한다.",
+            "en": "In Chapter 11, receive the voice-acting offer outside Sotenbori Smile Burger. Accept the job from the man in Shofukucho and complete the recording. Start with being happy to be alone together and choose the intimate responses; compare the exact dialogue with the source and your game's text."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/57.html"
+          }
+        },
+        {
+          "number": 58,
+          "title": {
+            "ko": "알바트로스 아카기의 클럽",
+            "en": "Albatross Akagi's Golf Club"
+          },
+          "chapter": {
+            "ko": "3장 이후",
+            "en": "From Chapter 3"
+          },
+          "body": {
+            "ko": "3장에 요코보리 골프 센터 니어핀 챌린지 중급을 완료하면 아카기에게 도전할 수 있다. 참가비 1천 엔을 내고 상급 코스에서 300점 이상을 얻는다.",
+            "en": "In Chapter 3, clear the intermediate Closest to the Pin course at Yokobori Golf Center. Pay 1,000 yen to challenge Akagi and score at least 300 points on the advanced course."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/58.html"
+          }
+        },
+        {
+          "number": 59,
+          "title": {
+            "ko": "소텐보리의 기타리스트와 아는 사이",
+            "en": "Friends: Sotenbori Guitarist"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 비샤몬 다리의 기타리스트에게 말을 걸고 휴대용 휴지를 건넨다. 휴지는 POPPO에서 구입할 수 있다.",
+            "en": "In Chapter 2, speak to the guitarist on Bishamon Bridge and give him pocket tissues, available at Poppo."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/59.html"
+          }
+        },
+        {
+          "number": 60,
+          "title": {
+            "ko": "소텐보리 호객꾼과 아는 사이",
+            "en": "Friends: Sotenbori Tout"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 카니도라쿠 앞에서 호객꾼을 돕기로 하고 불량배를 쓰러뜨린다.",
+            "en": "In Chapter 2, help the barker outside Kani Douraku and defeat the thugs."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/60.html"
+          }
+        },
+        {
+          "number": 61,
+          "title": {
+            "ko": "고무술 소년",
+            "en": "Ancient Martial Arts Boy"
+          },
+          "chapter": {
+            "ko": "5장 이후",
+            "en": "From Chapter 5"
+          },
+          "body": {
+            "ko": "5장에 분자에몬 거리 택시 승강장 근처에서 이벤트를 보고 대결을 수락한다. 이후 지하 투기장에서 카와우치 겐쇼를 쓰러뜨리고 대화한 뒤 소텐보리의 소년에게 돌아간다.",
+            "en": "In Chapter 5, trigger the event near the Bunzaemon Street taxi stand and accept the challenge. Later defeat Kawauchi Gensho in the Coliseum, speak to him in Purgatory, and return to the boy in Sotenbori."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/61.html"
+          }
+        },
+        {
+          "number": 62,
+          "title": {
+            "ko": "뱌쿠렌 노사의 부탁 1",
+            "en": "Master Bairen's Request 1"
+          },
+          "chapter": {
+            "ko": "7장 이후",
+            "en": "From Chapter 7"
+          },
+          "body": {
+            "ko": "7장에 소텐보리에서 시로 할머니의 메일을 받고 남쪽 강변에서 만난다. 카무로쵸 POPPO 시치후쿠 거리 서쪽점에서 파는 수제 쿠키를 가져다준다.",
+            "en": "In Chapter 7, receive Granny White's message in Sotenbori and meet her on the southern riverside. Bring Handmade Cookies from West Shichifuku Street Poppo in Kamurocho."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/62.html"
+          }
+        },
+        {
+          "number": 63,
+          "title": {
+            "ko": "뱌쿠렌 노사의 부탁 2",
+            "en": "Master Bairen's Request 2"
+          },
+          "chapter": {
+            "ko": "8장 이후",
+            "en": "From Chapter 8"
+          },
+          "body": {
+            "ko": "8장에 극장 앞 거리에서 시로 할머니의 연락을 받는다. 스타더스트의 유우야에게 사진을 받아 소텐보리 남쪽 강변의 할머니에게 전달한다.",
+            "en": "In Chapter 8, receive Granny White's message near Theater Square Alley. Get Yuya's photograph at Stardust and bring it to her on Sotenbori's southern riverside."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/62.html"
+          }
+        },
+        {
+          "number": 64,
+          "title": {
+            "ko": "뱌쿠렌 노사의 부탁 3",
+            "en": "Master Bairen's Request 3"
+          },
+          "chapter": {
+            "ko": "13장 이후",
+            "en": "From Chapter 13"
+          },
+          "body": {
+            "ko": "63번 완료 후 카무로쵸에서 연락을 받는다. 완료하려면 하루카와 동행할 수 있는 시점까지 기다려야 한다. 13장 이후 하루카와 함께 소텐보리 남쪽 강변의 시로 할머니를 만나게 한다.",
+            "en": "After No. 63, receive the message in Kamurocho. Completion requires Haruka to be available as a companion; from Chapter 13, take her to meet Granny White on Sotenbori's southern riverside."
+          },
+          "source": {
+            "label": "Yuliber — 白蓮師のお願い3",
+            "url": "https://gameanalyze.com/ryukiwami2-subhakurensinoonegai3.html"
+          }
+        },
+        {
+          "number": 65,
+          "title": {
+            "ko": "호객하는 아가씨와 아는 사이",
+            "en": "Friends: Sotenbori Scout Lady"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 쇼후쿠쵸 동쪽의 호객하는 여성을 돕기로 하고 불량배를 쓰러뜨린다.",
+            "en": "In Chapter 2, help the woman soliciting customers in eastern Shofukucho and defeat the thugs."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/65.html"
+          }
+        },
+        {
+          "number": 66,
+          "title": {
+            "ko": "통행인 아주머니와 아는 사이",
+            "en": "Friends: Sotenbori Passerby"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 소텐보리 남쪽 강변의 요리코와 대화한다. 작은 계단을 내려가 왼쪽의 교통안전 부적을 주워 돌려준다.",
+            "en": "In Chapter 2, speak to Yoriko on the southern riverside. Find her traffic-safety charm to the left at the bottom of the small stairs and return it."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/66.html"
+          }
+        },
+        {
+          "number": 67,
+          "title": {
+            "ko": "신미암 점주와 아는 사이",
+            "en": "Friends: Kamiajian Owner"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 카미아지안 주인이 찾는 식칼을 가져다준다. 소텐보리 에비스야에서 사거나 F2 보관함에서 구할 수 있다.",
+            "en": "In Chapter 2, bring the Komian chef a butcher knife. Buy one from Sotenbori Ebisu Pawn or obtain it from locker F2."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/67.html"
+          }
+        },
+        {
+          "number": 68,
+          "title": {
+            "ko": "소텐보리 POPPO 점원과 아는 사이",
+            "en": "Friends: Sotenbori POPPO Clerk"
+          },
+          "chapter": {
+            "ko": "2장 이후",
+            "en": "From Chapter 2"
+          },
+          "body": {
+            "ko": "2장에 POPPO 소텐보리점 점원과 대화하여 이벤트를 보고 네 번 말을 걸면 완료된다.",
+            "en": "In Chapter 2, trigger the event with the Sotenbori Poppo clerk and speak to him four times."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/68.html"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "카무로초 — 본편 6~7장", en: "Kamurocho — Chapters 6-7" },
-      items: [
+      "title": {
+        "ko": "물장사 아일랜드",
+        "en": "Cabaret Club Grand Prix"
+      },
+      "items": [
         {
-          number: 13,
-          title: { ko: "병아리 한 마리로 부자되기", en: "Straw Millionaire" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초 — 타이헤이 거리 서쪽", en: "Kamurocho — Taihei Blvd. West" },
-          trigger: { ko: "타이헤이 거리 서쪽에서 무명 래퍼 「마이클」에게 말 걸기", en: "Speak to the struggling rapper Michael on Taihei W." },
-          body: {
-            ko: "물물교환 체인 — 마이클의 CD → 만년필 → 부츠 → 머플러 → 명품 시계. 각 NPC와 위치를 메모해 두면 빠릅니다.",
-            en: "Trade chain: Michael's CD → pen → boots → muffler → luxury watch. Note each NPC's spot for quick handoffs.",
+          "number": 69,
+          "title": {
+            "ko": "코유키의 미끼 팬티 대작전",
+            "en": "Koyuki's Decoy Panty Op"
           },
-          choices: [
-            { prompt: { ko: "「제 데모 CD 들어주실래요?」", en: "'Listen to my demo?'" }, correct: { ko: "들어준다", en: "Listen" } },
-          ],
-          reward: { ko: "마이클이 캬바레 캐스트로 합류", en: "Michael joins as cabaret cast" },
-        },
-        {
-          number: 15,
-          title: { ko: "찍혀 있어요", en: "Caught on Film" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초 — 타이헤이 거리 동쪽 (야간)", en: "Kamurocho — Taihei Blvd. East (nighttime)" },
-          trigger: { ko: "6장 야간에 타이헤이 거리 동쪽에서 떨고 있는 남자에게 말 걸기", en: "Chapter 6 at night: approach the shaken man on Taihei E." },
-          body: {
-            ko: "저주받은 비디오를 떠넘기는 사기. 영매에게 10만엔을 내고 액땜할 수 있으나, 거절해도 보상 동일.",
-            en: "Classic 'cursed tape' shakedown. Pay 100,000 yen to the medium or refuse — clear either way.",
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
           },
-          choices: [
-            { prompt: { ko: "「영매에게 의뢰하시겠습니까?」", en: "'Hire the medium?'" }, correct: { ko: "거절한다", en: "Refuse" }, note: { ko: "거절해도 컴플리션 정상 카운트, 10만엔 절약", en: "Refusing still clears and saves 100k yen." } },
-          ],
-          reward: { ko: "경험치 + 컴플리션", en: "EXP + completion" },
-        },
-        {
-          number: 16,
-          title: { ko: "비밀의 물건", en: "Secret Goods" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초 — 호텔 거리", en: "Kamurocho — Hotel District" },
-          trigger: { ko: "호텔 거리에서 수상한 남자에게 말 걸기", en: "Approach the shifty man in Hotel District." },
-          body: { ko: "코인 로커 열쇠를 2만엔에 사면 수상한 비디오 입수, 깡패 무리와 전투.", en: "Buy the locker key for 20,000 yen, retrieve the tape, and fight the yakuza who come for it." },
-          choices: [
-            { prompt: { ko: "「2만엔에 사시겠어요?」", en: "'Buy for 20,000 yen?'" }, correct: { ko: "산다", en: "Buy it" } },
-          ],
-          reward: { ko: "경험치 + 컴플리션", en: "EXP + completion" },
-        },
-        {
-          number: 17,
-          title: { ko: "빔의 수수께끼", en: "Beam Mystery" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초 — 극장 앞 광장 (비디오 가게 빔)", en: "Kamurocho — Theater Square, video shop Beam" },
-          trigger: { ko: "모리타와의 대화 이벤트 후 비디오 가게 「빔」 앞에서 발생", en: "After the Morita conversation, head to video shop Beam." },
-          body: {
-            ko: "비밀의 안쪽 매장 입장 암호를 알아내는 분기. 손님을 따라잡아 암호 「만세이」를 듣고 들어갑니다.",
-            en: "Tail the customer to learn the password ('Mansei') for Beam's back room.",
+          "body": {
+            "ko": "물장사 아일랜드에서 코유키의 캐스트 이벤트를 진행하여 의뢰를 연다. 이벤트 후 불량배를 쓰러뜨린다. 마지막에 속옷을 챙기는 선택지를 고르면 해당 아이템을 받는다.",
+            "en": "Advance Koyuki's hostess events in the Cabaret Club Grand Prix to unlock her substory. Defeat the men during the event; choosing to keep the underwear grants that item."
           },
-          reward: { ko: "성인 비디오 카탈로그 해금", en: "Adult video catalog unlock" },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/69.html"
+          }
         },
         {
-          number: 18,
-          title: { ko: "공짜보다 무서운 것은 없다", en: "Nothing's Scarier Than Free" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초 — 나카미치 거리 스마일 버거", en: "Kamurocho — Smile Burger on Nakamichi St." },
-          trigger: { ko: "다테와 인터넷 설치를 돕는 이벤트 후 발생", en: "Triggers after helping Date set up his internet." },
-          body: { ko: "「무료 가입」 미끼 사기단의 협박. 4인 격파.", en: "Bust up a 'free trial' scam crew — four-on-one brawl." },
-        },
-        {
-          number: 14,
-          title: { ko: "이루전", en: "Lee Ryujon" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초 — 한그라이 (시치후쿠 거리 동쪽)", en: "Kamurocho — Hangrai, Shichifuku St. East" },
-          trigger: { ko: "다테 마코토와 함께 바 「밴텀」으로 향하는 길에 한그라이 앞에서 발생", en: "On the way to Bantam with Date, encounter Lee Ryujon at Hangrai." },
-          body: {
-            ko: "팬에게 쫓기는 한류 스타 「이루전」을 3곳 안전 장소까지 호위. 가는 도중 팬들을 격파.",
-            en: "Escort Korean star Lee Ryujon through three checkpoints while fending off fan mobs.",
+          "number": 70,
+          "title": {
+            "ko": "전해져 있던 것",
+            "en": "What Was Passed Down"
           },
-          choices: [
-            { prompt: { ko: "「길 안내 부탁드려요」", en: "'Please guide me'" }, correct: { ko: "안내한다", en: "Guide him" } },
-          ],
-          reward: { ko: "이루전이 캬바레 캐스트로 합류", en: "Lee Ryujon joins as cabaret cast" },
-        },
-        {
-          number: 23,
-          title: { ko: "뱌쿠렌 노사와의 만남", en: "Meeting Master Bairen" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초 — 바 밴텀에서 셀레나로 향하는 길", en: "Kamurocho — Bantam to Serena" },
-          trigger: { ko: "밴텀에서 셀레나로 이동 중 셀레나 앞에서 노인에게 말 걸기", en: "Heading from Bantam to Serena, meet the elderly master near Serena." },
-          body: { ko: "뱌쿠렌 노사가 카무로초에서 일자리를 찾는다는 의뢰. 뱌쿠렌 노사 시리즈(62~64)의 도입.", en: "Master Bairen needs a job — opens the Bairen errand line (62-64)." },
-        },
-      ],
-    },
-    {
-      title: { ko: "카무로초 — 본편 8장", en: "Kamurocho — Chapter 8" },
-      items: [
-        {
-          number: 3,
-          title: { ko: "블랙 선더", en: "Black Thunder" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 스타라이트 (텐카이치 거리, 야간)", en: "Kamurocho — Starlight, Tenkaichi St. (night)" },
-          trigger: { ko: "8장 야간에 클럽 스타라이트 앞에서 유야가 협박당하는 장면 목격", en: "Chapter 8 night: see Yuya being threatened outside Starlight." },
-          body: {
-            ko: "유야 일행과 함께 「블랙 선더」 갱단을 2회 격파. 두 번째 전투는 동료 지원 포함 4 vs 다수.",
-            en: "Help Yuya beat Black Thunder twice; the rematch is a 4-man tag fight.",
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
           },
-          choices: [
-            { prompt: { ko: "「한 잔 어떠십니까?」", en: "'Care for a drink?'" }, correct: { ko: "다음에", en: "Maybe later" }, note: { ko: "스토리 진행 우선 시 거절해도 컴플리션", en: "Declining still clears." } },
-          ],
-          reward: { ko: "유야와의 호감도 + 경험치", en: "Yuya friendship + EXP" },
-        },
-        {
-          number: 10,
-          title: { ko: "머니 게임", en: "Money Game" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 쇼와 거리 포포 부근", en: "Kamurocho — Showa St. near POPPO" },
-          trigger: { ko: "쇼와 거리 포포 앞에서 다투는 두 남자 중재", en: "Mediate two arguing men in front of Showa St. POPPO." },
-          body: {
-            ko: "50만엔으로 사들인 주식을 히로얀이 70만엔에 되사겠다고 제안합니다. 첫 제안은 거절하고 「좀 더 생각해보겠다」를 고르면 80만엔으로 값이 오르니, 그때 파세요.",
-            en: "Hiroyan offers to buy back your 500,000-yen stock for 700,000 yen. Decline the first offer ('let me think it over') and the price rises to 800,000 yen on the follow-up — sell then.",
+          "body": {
+            "ko": "물장사 아일랜드에서 카나의 캐스트 이벤트를 진행한다. 의뢰가 열리면 카나와 대화하고 마사루를 쓰러뜨린다.",
+            "en": "Advance Kana's hostess events in the Cabaret Club Grand Prix. Once her substory unlocks, speak to her and defeat Masaru."
           },
-          choices: [
-            { prompt: { ko: "「지금 팔까요?」", en: "'Sell now?'" }, correct: { ko: "좀 더 생각해보겠다", en: "Let me think it over" }, note: { ko: "바로 팔면 70만엔에 그치고, 다음 제안까지 기다려야 80만엔을 받습니다", en: "Selling immediately caps out at 700,000 yen — wait for the next offer to get 800,000." } },
-          ],
-          reward: { ko: "최대 80만엔 + 경험치", en: "Up to 800,000 yen + EXP" },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/70.html"
+          }
         },
         {
-          number: 11,
-          title: { ko: "개인정보", en: "Personal Info" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 아카베에마루 (타이헤이 거리 서쪽)", en: "Kamurocho — Akabeemaru on Taihei St. West" },
-          trigger: { ko: "아카베에마루 앞에서 서명을 부탁하는 여성에게 말 걸기", en: "A woman asks you to sign a petition outside Akabeemaru." },
-          body: {
-            ko: "서명 사기단 사무소를 급습해 PC를 전부 파괴하면 클리어. 서명을 해주면 곧바로 사기 발각 → 사무소로 안내.",
-            en: "Signing exposes the scam; charge their office and smash every PC to clear.",
+          "number": 71,
+          "title": {
+            "ko": "축제 여왕 AIKA",
+            "en": "Festival Queen AIKA"
           },
-          choices: [
-            { prompt: { ko: "「서명해주세요」", en: "'Please sign'" }, correct: { ko: "서명한다", en: "Sign" } },
-          ],
-          reward: { ko: "경험치 + 「개인정보」 컴플리션", en: "EXP + completion" },
-        },
-        {
-          number: 62,
-          title: { ko: "뱌쿠렌 노사의 부탁 1", en: "Master Bairen's Request 1" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
-          trigger: { ko: "No.23 클리어 후 뱌쿠렌 노사와 재대화", en: "Talk to Bairen after No.23." },
-          body: { ko: "「위기의 할머니」를 끝내면 소텐보리행 택시가 열립니다. 비샤몬 다리 아래에서 기다리는 노사와 대화한 뒤, 카무로초 서쪽 시치후쿠 포포에서만 파는 수제 쿠키를 사다 주면 클리어됩니다.", en: "Completing Granny In Peril opens taxi travel to Sotenbori. Talk to her waiting under Bishamon Bridge, then buy the bag of Handmade Cookies — sold only at the Poppo on West Shichifuku in Kamurocho — and bring it back." },
-        },
-        {
-          number: 63,
-          title: { ko: "뱌쿠렌 노사의 부탁 2", en: "Master Bairen's Request 2" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
-          trigger: { ko: "No.62 클리어 후 재방문", en: "Return after No.62." },
-          body: { ko: "부탁 1에 이어 노사가 요청하는 두 번째 심부름을 완수하면 클리어됩니다.", en: "Carry out the second errand the master asks for after her first request." },
-        },
-        {
-          number: 64,
-          title: { ko: "뱌쿠렌 노사의 부탁 3", en: "Master Bairen's Request 3" },
-          chapter: { ko: "8장", en: "Chapter 8" },
-          location: { ko: "카무로초 — 셀레나 부근", en: "Kamurocho — Near Serena" },
-          trigger: { ko: "No.63 클리어 후 재방문", en: "Return after No.63." },
-          body: { ko: "노사의 마지막 부탁까지 완수하면 뱌쿠렌류 기술을 전수받습니다.", en: "Complete the master's final request to be taught the Bairen style techniques." },
-          reward: { ko: "뱌쿠렌류 기술 마스터", en: "Bairen techniques mastered" },
-        },
-      ],
-    },
-    {
-      title: { ko: "카무로초 — 본편 13장 (종반)", en: "Kamurocho — Chapter 13 (Endgame)" },
-      items: [
-        {
-          number: 4,
-          title: { ko: "끈질긴 남자", en: "The Man Who Won't Quit" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 시치후쿠 거리 동쪽 옥상", en: "Kamurocho — Shichifuku St. East rooftop" },
-          trigger: { ko: "하루카 동행 야간에 시치후쿠 거리 동쪽 옥상의 커플에게 말 걸기", en: "Chapter 13 night with Haruka: approach the rooftop couple on Shichifuku E." },
-          body: {
-            ko: "다투는 커플을 6개의 대화 선택지로 중재. 어떤 선택지도 결말은 같지만 진심으로 말하는 쪽을 고르세요.",
-            en: "Six rounds of dialog mediating the couple. Outcomes are identical — pick the heartfelt option each time.",
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
           },
-          choices: [
-            { prompt: { ko: "「도와주시겠어요?」", en: "'Will you help?'" }, correct: { ko: "도와준다", en: "Help them" } },
-          ],
-          reward: { ko: "경험치 + 컴플리션", en: "EXP + completion" },
-        },
-        {
-          number: 12,
-          title: { ko: "카무로초의 빨간 마스크", en: "The Kamurocho Ripper" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 핑크 거리", en: "Kamurocho — Pink St." },
-          trigger: { ko: "하루카 동행 중 핑크 거리에서 위험에 처한 호스티스 「우카」를 발견", en: "While Haruka tags along, find hostess Uka in danger on Pink St." },
-          body: { ko: "연쇄 살인범을 추적 격파. 우카가 캬바레 캐스트로 합류.", en: "Chase down and beat the killer; Uka joins the cabaret roster." },
-          reward: { ko: "캬바레 캐스트 우카", en: "Cabaret cast Uka" },
-        },
-        {
-          number: 38,
-          title: { ko: "아몬 카즈야", en: "Amon Kazuya" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
-          trigger: { ko: "서브스토리 71개 달성 후 발생", en: "Triggers after clearing 71 substories." },
-          body: { ko: "아몬 일족 도입. 첫 자객을 격파.", en: "First Amon clan fight." },
-          prereq: { ko: "서브스토리 71개 클리어", en: "Clear 71 substories" },
-        },
-        {
-          number: 39,
-          title: { ko: "아몬 지로", en: "Amon Jiro" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
-          trigger: { ko: "No.38 클리어 후", en: "After No.38." },
-          body: { ko: "카즈야 아몬을 격파한 뒤 링거헛 근처의 지로를 찾아 말을 걸고 승부에서 이기면, 지로가 마지마 건설에 합류합니다.", en: "After beating Kazuya Amon, find and talk to Jiro near Ringer Hut and defeat him — he then joins Majima Construction." },
-        },
-        {
-          number: 40,
-          title: { ko: "아몬 산고", en: "Amon Sango" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
-          trigger: { ko: "No.39 클리어 후", en: "After No.39." },
-          body: { ko: "지로 아몬을 격파한 뒤 공원 북쪽에서 산고를 찾아 말을 걸고 격파하면, 산고가 마지마 건설에 합류합니다.", en: "After beating Jiro Amon, find and talk to Sango north of the park and defeat him — he then joins Majima Construction." },
-        },
-        {
-          number: 41,
-          title: { ko: "궁극의 자객", en: "The Ultimate Assassin" },
-          chapter: { ko: "13장", en: "Chapter 13" },
-          location: { ko: "카무로초 — 챔피언 거리 빈 점포", en: "Kamurocho — Champion St. vacant lot" },
-          trigger: { ko: "No.40 클리어 후", en: "After No.40." },
-          body: { ko: "최종 보스 「아몬 진야」 전. 클리어 시 「아몬류 격파」 트로피.", en: "Final boss Amon Jinya. Awards the Amon line trophy." },
-          reward: { ko: "아몬 일족 격파 트로피", en: "Amon clan trophy" },
-        },
-      ],
-    },
-    {
-      title: { ko: "소텐보리 — 본편 2~4장", en: "Sotenbori — Chapters 2-4" },
-      items: [
-        {
-          number: 43,
-          title: { ko: "그녀에게 주는 선물", en: "A Gift for Her" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 클럽 세가 소텐보리", en: "Sotenbori — Club SEGA Sotenbori" },
-          trigger: { ko: "2장 진행 중 클럽 세가 앞에서 곤란해하는 남자에게 말 걸기", en: "Chapter 2: man outside Club SEGA needs help." },
-          body: { ko: "여자친구에게 줄 UFO 캐처 경품을 대신 따 줍니다. 한 번에 성공 시 추가 보상.", en: "Win a UFO catcher prize for the man's girlfriend." },
-          reward: { ko: "경험치 + 인형 아이템", en: "EXP + plush item" },
-        },
-        {
-          number: 59,
-          title: { ko: "소텐보리의 기타리스트와 아는 사이", en: "Friends: Sotenbori Guitarist" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 도톤보리 강변", en: "Sotenbori — Riverwalk" },
-          trigger: { ko: "강변의 길거리 기타리스트와 반복 대화", en: "Repeatedly chat with the busking guitarist." },
-          body: { ko: "비샤몬 다리에서 코맹맹이 소리로 노래하는 가수를 만나 포켓 티슈를 건네면 동료가 됩니다.", en: "Meet the nasally singer on Bishamon Bridge and hand him some Pocket Tissues to make him an ally." },
-        },
-        {
-          number: 60,
-          title: { ko: "소텐보리 호객꾼과 아는 사이", en: "Friends: Sotenbori Tout" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 쇼토쿠초", en: "Sotenbori — Shotoku-cho" },
-          trigger: { ko: "쿠로카와와 초회합 후 호객꾼에게 말 걸기", en: "After meeting Kurokawa, talk to the tout." },
-          body: { ko: "소텐보리 거리 카니도라쿠 근처에서 불량배에게 협박당하는 호객꾼을 대신해 상대를 격파하면 동료가 됩니다.", en: "Near Kani Douraku on Sotenbori Street, beat the thug threatening the barker and he becomes an ally." },
-        },
-        {
-          number: 65,
-          title: { ko: "호객하는 아가씨와 아는 사이", en: "Friends: Sotenbori Scout Lady" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 도톤보리 거리", en: "Sotenbori — Dotonbori St." },
-          trigger: { ko: "스카우트 여성과 반복 대화", en: "Repeatedly chat with the scout lady." },
-          body: { ko: "동쪽 쇼후쿠초 거리 스마일 버거 소텐보리점 근처에서 가면 쓴 호객꾼의 권유를 거절하면, 남자 둘이 그녀를 압박합니다. 이들을 물리쳐 주면 동료가 됩니다.", en: "Near Smile Burger Sotenbori on East Shofukucho Street, decline the masked barker's offer and two men move in on her — see them off and she becomes an ally." },
-        },
-        {
-          number: 66,
-          title: { ko: "통행인 아주머니와 아는 사이", en: "Friends: Sotenbori Passerby" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 이즈미바시 부근", en: "Sotenbori — Near Izumi Bridge" },
-          trigger: { ko: "행인 아주머니와 반복 대화", en: "Chat repeatedly with the older lady." },
-          body: { ko: "동쪽 쇼후쿠초 거리에서 복통을 호소하는 여성을 돕겠다고 하면, 사실은 강가에서 잃어버린 부적을 찾아 달라는 부탁입니다. 부적을 찾아 요리코에게 돌려주면 동료가 됩니다.", en: "Agree to help the woman clutching her stomach on East Shofukucho Street and she admits she really wants her lost amulet found by the river — return it to Yoriko and she becomes an ally." },
-        },
-        {
-          number: 67,
-          title: { ko: "신미암 점주와 아는 사이", en: "Friends: Kamiajian Owner" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 신미암", en: "Sotenbori — Kamiajian" },
-          trigger: { ko: "음식점 점주와 반복 대화", en: "Chat repeatedly with the eatery owner." },
-          body: { ko: "코미안에서 처음 식사한 뒤 점주가 붙잡습니다. 새 요리를 위해 손에 맞는 칼이 필요하다고 하니, 칼을 구해 건네면 동료가 됩니다.", en: "After eating at Komian for the first time, the owner stops you on the way out — he needs a new knife with the right feel for a new dish. Find one and give it to him." },
-        },
-        {
-          number: 68,
-          title: { ko: "소텐보리 POPPO 점원과 아는 사이", en: "Friends: Sotenbori POPPO Clerk" },
-          chapter: { ko: "2장", en: "Chapter 2" },
-          location: { ko: "소텐보리 — 포포", en: "Sotenbori — POPPO" },
-          trigger: { ko: "포포 점원과 반복 대화", en: "Chat repeatedly with the POPPO clerk." },
-          body: { ko: "소텐보리 거리 포포의 신입 점원 타나카가 첫 출근에 긴장해 있습니다. 여러 번 말을 걸어 진정시켜 주면 동료가 됩니다.", en: "Tanaka, a nervous first-day employee at the Poppo on Sotenbori St., needs calming down — talk to him repeatedly and he becomes an ally." },
-        },
-        {
-          number: 44,
-          title: { ko: "카네마츠 시게루", en: "Kanematsu Shige" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "소텐보리 — 돈키호테 앞", en: "Sotenbori — Don Quijote front" },
-          trigger: { ko: "사야마 카오루를 스낵 아오이로 데려간 뒤 발생", en: "After taking Kaoru Sayama to Snack Aoi." },
-          body: { ko: "위협받는 노인 카네마츠를 도와 깡패 격파. 후속 미니 시나리오 트리거.", en: "Save the elderly Kanematsu from loan sharks; opens follow-up beats." },
-        },
-        {
-          number: 45,
-          title: { ko: "가지고 있는 남자", en: "The Lucky Guy" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "소텐보리 — 스틸 (도박장 부근)", en: "Sotenbori — Steele" },
-          trigger: { ko: "사야마를 아오이로 데려간 뒤 스틸에서 발생", en: "After Aoi, head to Steele." },
-          body: { ko: "도박꾼이 잡힌 깡패에게 빚을 떠넘긴 상태. 깡패 격파.", en: "Help a gambler shake off his loan sharks." },
-        },
-        {
-          number: 46,
-          title: { ko: "신인 예능 콤비의 고민", en: "Rookie Comedy Duo's Slump" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "소텐보리 — 술집 스틸 내부", en: "Sotenbori — Inside the bar Stile" },
-          trigger: { ko: "사야마를 아오이로 데려간 뒤 스틸 카운터의 남자에게 말 걸기", en: "After Aoi, talk to the man at the counter inside Stile." },
-          body: { ko: "카운터의 남자에게 말을 걸면 콤비 「카세이 파이터」의 부진 고민을 듣게 됩니다. 가게를 나서면 시비 거는 불량배와 전투가 벌어집니다.", en: "Talk to the man at the counter to hear comedy duo Kasei Fighter's slump, then fight the thug who confronts you on the way out." },
-        },
-        {
-          number: 52,
-          title: { ko: "고급차", en: "Luxury Car" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "소텐보리 — 돈키호테 부근", en: "Sotenbori — Near Don Quijote" },
-          trigger: { ko: "사야마를 아오이로 데려간 뒤 발생", en: "After Aoi." },
-          body: { ko: "고급차 강매 사기 사건에 휘말려 깡패 격파.", en: "Get tangled in a luxury car scam; clean out the crew." },
-        },
-      ],
-    },
-    {
-      title: { ko: "소텐보리 — 본편 10~11장", en: "Sotenbori — Chapters 10-11" },
-      items: [
-        {
-          number: 47,
-          title: { ko: "원한 대행", en: "Hatred Contractor" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 이즈미바시", en: "Sotenbori — Izumi Bridge" },
-          trigger: { ko: "10장 진행 중 이즈미바시의 의뢰인에게 말 걸기", en: "Chapter 10: talk to the client at Izumi Bridge." },
-          body: { ko: "원한 해결을 부탁받지만 진상 파악 후 의뢰인의 사기를 폭로.", en: "Hired for revenge — uncover the client's con and shut it down." },
-        },
-        {
-          number: 48,
-          title: { ko: "타츠", en: "Tatsu" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 그랜드 앞", en: "Sotenbori — In front of the Grand" },
-          trigger: { ko: "그랜드 앞에서 「타츠」 자칭 남자에게 말 걸기", en: "Meet the man calling himself Tatsu outside the Grand." },
-          body: { ko: "「용」을 자칭하는 사기꾼 격파.", en: "Beat down a 'Dragon'-themed impostor." },
-        },
-        {
-          number: 50,
-          title: { ko: "네게 있는 것, 내게 있는 것 1", en: "What You Have, What I Have 1" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 그랜드 부근", en: "Sotenbori — Near the Grand" },
-          trigger: { ko: "10장 진행 중 그랜드 부근 청년에게 말 걸기", en: "Chapter 10: talk to the youth near the Grand." },
-          body: { ko: "물물교환 시리즈 1편.", en: "First in a trade-swap line." },
-        },
-        {
-          number: 51,
-          title: { ko: "네게 있는 것, 내게 있는 것 2", en: "What You Have, What I Have 2" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 그랜드 부근", en: "Sotenbori — Near the Grand" },
-          trigger: { ko: "No.50 클리어 후", en: "After No.50." },
-          body: { ko: "쇼후쿠초에서 길을 물었다가 계속 시달리는 여성을 발견하면 개입해 불량배들을 격파합니다. 미키가 감사를 전하며 라인이 마무리됩니다.", en: "On Shofukucho, step in for the woman being harassed by the men she asked for directions and beat them — Miki thanks you afterwards." },
-        },
-        {
-          number: 54,
-          title: { ko: "기억을 잃은 남자", en: "The Amnesiac Man" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 사이드로드 서쪽", en: "Sotenbori — Side Road West" },
-          trigger: { ko: "10장 진행 중 사이드로드 서쪽의 기억을 잃은 남자에게 말 걸기", en: "Chapter 10: talk to the dazed man on Side Road West." },
-          body: { ko: "돕기로 하면 전투가 벌어집니다. 근처에 놓인 「고압 스턴건」을 주워 그것으로 쓰러뜨려야 클리어되며, 맨손 공격만으로는 진행되지 않습니다.", en: "Agree to help and a fight breaks out. Pick up the high-voltage stun gun lying nearby and finish him with it — bare-handed attacks alone won't clear it." },
-          reward: { ko: "20,000엔 + 경험치", en: "20,000 yen + EXP" },
-        },
-        {
-          number: 55,
-          title: { ko: "의협의 밤", en: "Chivalrous Night" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 쇼토쿠초", en: "Sotenbori — Shotoku-cho" },
-          trigger: { ko: "10장 진행 중 쇼토쿠초 골목 사건 발생", en: "Chapter 10: incident in the Shotoku-cho alley." },
-          body: { ko: "옛 협객 정신을 보여주려는 남자와 함께 깡패 격파.", en: "Side a self-styled chivalrous man against thugs." },
-        },
-        {
-          number: 61,
-          title: { ko: "고무술 소년", en: "Ancient Martial Arts Boy" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "소텐보리 — 택시 승강장", en: "Sotenbori — Taxi stand" },
-          trigger: { ko: "투기장 토너먼트 후 택시 승강장 소년에게 말 걸기", en: "After the arena tournament, meet the boy at the taxi stand." },
-          body: { ko: "도전해 오는 무술 소년과 가벼운 대련.", en: "Spar lightly with a precocious martial arts kid." },
-        },
-        {
-          number: 49,
-          title: { ko: "아줌마의 비극", en: "The Old Lady's Tragedy" },
-          chapter: { ko: "11장", en: "Chapter 11" },
-          location: { ko: "소텐보리 — 그랜드 앞", en: "Sotenbori — In front of the Grand" },
-          trigger: { ko: "11장 진행 중 그랜드 앞 아주머니에게 말 걸기", en: "Chapter 11: speak to the older lady by the Grand." },
-          body: { ko: "사기당한 노부인의 사연을 듣고 사기꾼을 추적, 격파.", en: "Hear out the swindled widow, track the conman, and lay him out." },
-        },
-        {
-          number: 53,
-          title: { ko: "환상의 피규어", en: "Phantom Figure" },
-          chapter: { ko: "11장", en: "Chapter 11" },
-          location: { ko: "소텐보리 — 포포", en: "Sotenbori — POPPO" },
-          trigger: { ko: "11장 진행 중 포포에서 피규어 수집가에게 말 걸기", en: "Chapter 11: meet the figure collector at POPPO." },
-          body: { ko: "환상의 피규어를 둘러싼 수집가들의 다툼을 해결.", en: "Settle a feud between collectors over a rare figure." },
-        },
-        {
-          number: 57,
-          title: { ko: "CV 키류 카즈마", en: "CV: Kazuma Kiryu" },
-          chapter: { ko: "11장", en: "Chapter 11" },
-          location: { ko: "소텐보리 — 스마일 버거", en: "Sotenbori — Smile Burger" },
-          trigger: { ko: "스마일 버거 앞 성우 지망생에게 말 걸기", en: "Talk to the aspiring voice actor at Smile Burger." },
-          body: { ko: "성우 오디션을 위해 키류의 「목소리」를 빌려주는 코믹 서브.", en: "Lend Kiryu's voice to an aspiring seiyu's audition." },
-        },
-      ],
-    },
-    {
-      title: { ko: "소텐보리 — 뱌쿠렌 / 캬바레 그랜드픽스 (Missable)", en: "Sotenbori — Bairen & Cabaret Grand Prix (Missable)" },
-      items: [
-        {
-          number: 69,
-          title: { ko: "코유키의 미끼 팬티 대작전", en: "Koyuki's Decoy Panty Op" },
-          chapter: { ko: "4장 이후", en: "After Chapter 4" },
-          location: { ko: "소텐보리 — 캬바레 「포 샤인」", en: "Sotenbori — Cabaret Four Shine" },
-          trigger: { ko: "「신 미즈쇼바이 아일랜드」 캬바레 그랜드픽스 진행 중 발생", en: "During the New Cabaret Club Grand Prix arc." },
-          body: { ko: "코유키의 도둑 잡기 작전을 돕는 코믹 서브.", en: "Help cabaret girl Koyuki ensnare a panty thief." },
-          prereq: { ko: "캬바레 그랜드픽스 진행 필요", en: "Cabaret Grand Prix progress required" },
-        },
-        {
-          number: 70,
-          title: { ko: "전해져 있던 것", en: "What Was Passed Down" },
-          chapter: { ko: "4장 이후", en: "After Chapter 4" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "그랜드픽스 진행 중 발생", en: "During the Grand Prix arc." },
-          body: { ko: "해당 남자를 격파하면 클리어됩니다.", en: "Defeat the man to clear it." },
-          prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
-        },
-        {
-          number: 71,
-          title: { ko: "축제 여왕 AIKA", en: "Festival Queen AIKA" },
-          chapter: { ko: "4장 이후", en: "After Chapter 4" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "그랜드픽스 진행 중", en: "During Grand Prix." },
-          body: { ko: "호스트들을 격파하면 클리어됩니다.", en: "Defeat the hosts to clear it." },
-          prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
-        },
-        {
-          number: 72,
-          title: { ko: "소중한 것", en: "Something Precious" },
-          chapter: { ko: "6장 이후", en: "After Chapter 6" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "그랜드픽스 진행 중 발생", en: "During the Grand Prix." },
-          body: { ko: "쇼코를 포 샤인으로 데려간 뒤, 가게를 나갔다 다시 들어가면 클리어됩니다.", en: "Take Shoko to Four Shine, then leave the club and re-enter." },
-          prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
-        },
-        {
-          number: 73,
-          title: { ko: "유아 열애!? 의혹의 대특종!", en: "Yua's Hot Romance Scoop!?" },
-          chapter: { ko: "6장 이후", en: "After Chapter 6" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "그랜드픽스 진행 중", en: "During Grand Prix." },
-          body: { ko: "캬바레 캐스트 유아의 가짜 스캔들을 파헤칩니다.", en: "Debunk a fabricated scandal about cabaret star Yua." },
-          prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
-        },
-        {
-          number: 74,
-          title: { ko: "결혼사기를 간파하라!", en: "Spot the Marriage Scam!" },
-          chapter: { ko: "6장 이후", en: "After Chapter 6" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "그랜드픽스 진행 중", en: "During Grand Prix." },
-          body: {
-            ko: "결혼사기범 후보 중 진범을 골라야 하는 추리 서브. 진술 모순을 짚어내면 클리어.",
-            en: "Pick the real marriage scammer from a lineup by spotting contradictions in their stories.",
+          "body": {
+            "ko": "AIKA의 네 번째 캐스트 이벤트에서 의뢰가 발생한다. 이벤트 중 불량배들을 쓰러뜨리면 완료된다.",
+            "en": "Aika's fourth hostess event starts this substory. Defeat the men during the event to complete it."
           },
-          choices: [
-            { prompt: { ko: "「범인은 누구입니까?」", en: "'Who's the scammer?'" }, correct: { ko: "진술이 모순된 인물을 지목", en: "Point out the contradictory testimony" } },
-          ],
-          prereq: { ko: "캬바레 그랜드픽스 진행", en: "Cabaret Grand Prix progress" },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/71.html"
+          }
         },
         {
-          number: 75,
-          title: { ko: "평생 소중히 간직해 줘", en: "Cherish Me Forever" },
-          chapter: { ko: "파이널 챔피언십 이후", en: "After Final Championship" },
-          location: { ko: "소텐보리 — 포 샤인", en: "Sotenbori — Four Shine" },
-          trigger: { ko: "캬바레 그랜드픽스 「파이널 챔피언십」 클리어 후", en: "After clearing the Cabaret Grand Prix Final Championship." },
-          body: { ko: "그랜드픽스 후일담. 캬바레 시나리오의 피날레.", en: "Epilogue to the cabaret saga." },
-          reward: { ko: "캬바레 클럽 그랜드픽스 컴플리션", en: "Cabaret Grand Prix completion" },
-          prereq: { ko: "캬바레 그랜드픽스 우승", en: "Win the Cabaret Grand Prix" },
+          "number": 72,
+          "title": {
+            "ko": "소중한 것",
+            "en": "Something Precious"
+          },
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
+          },
+          "body": {
+            "ko": "쇼코의 네 번째 캐스트 이벤트를 진행한다. 대화 후 포샤인을 나갔다가 다시 들어와 결과를 확인한다. 대화 선택지는 마지막 결과를 바꾸지 않는다.",
+            "en": "Complete Shoko's fourth hostess event, then leave and re-enter Four Shine for the result. The dialogue choices do not change the outcome."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/72.html"
+          }
         },
-      ],
-    },
-  ],
+        {
+          "number": 73,
+          "title": {
+            "ko": "유아 열애!? 의혹의 대특종!",
+            "en": "Yua's Hot Romance Scoop!?"
+          },
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
+          },
+          "body": {
+            "ko": "유아의 네 번째 캐스트 이벤트에서 의뢰가 발생한다. 대화 선택지는 자유이며 이후 불량배를 쓰러뜨리면 된다.",
+            "en": "Yua's fourth hostess event starts this substory. Choose any dialogue responses and defeat the men afterward."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/73.html"
+          }
+        },
+        {
+          "number": 74,
+          "title": {
+            "ko": "결혼사기를 간파하라!",
+            "en": "Spot the Marriage Scam!"
+          },
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
+          },
+          "body": {
+            "ko": "키라라의 네 번째 캐스트 이벤트에서 의뢰가 발생한다. 대화 선택지와 관계없이 이벤트를 끝까지 진행하면 완료된다.",
+            "en": "Kirara's fourth hostess event starts this substory. Finish the event; its dialogue choices do not affect completion."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/74.html"
+          }
+        },
+        {
+          "number": 75,
+          "title": {
+            "ko": "평생 소중히 간직해 줘",
+            "en": "Cherish Me Forever"
+          },
+          "chapter": {
+            "ko": "물장사 아일랜드 진행",
+            "en": "Cabaret Club Grand Prix progress"
+          },
+          "body": {
+            "ko": "물장사 아일랜드 최종 우승 후 포샤인에서 발생한다. 가게 안의 키라라, 요다, 쇼코, 유아에게 이야기를 듣고 이벤트를 마무리하면 키류의 황금상이 설치된다.",
+            "en": "After winning the Cabaret Club Grand Prix final, speak to Kirara, Yoda, Shoko, and Yua inside Four Shine. Finish the event to receive Kiryu's golden statue."
+          },
+          "source": {
+            "label": "神ゲー攻略 — 龍が如く極2",
+            "url": "https://kamigame.jp/%E9%BE%8D%E3%81%8C%E5%A6%82%E3%81%8F%E6%A5%B52/%E3%82%B5%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/75.html"
+          }
+        }
+      ]
+    }
+  ]
 };

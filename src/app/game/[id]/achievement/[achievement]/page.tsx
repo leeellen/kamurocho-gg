@@ -6,7 +6,6 @@ import { FiAlertTriangle, FiArrowLeft, FiCheck, FiCheckCircle, FiLock, FiPlayCir
 import { SiteShell } from "@/components/layout/site-shell";
 import { Chip } from "@/components/ui/chip";
 import { RarityBar } from "@/components/ui/rarity-bar";
-import { difficultyLabel } from "@/lib/difficulty";
 import { getLocale } from "@/lib/i18n";
 import { getAchievementPageData } from "@/lib/data";
 import { SignInButton } from "@/components/ui/user-menu";
@@ -162,16 +161,10 @@ export default async function AchievementPage({
             })()}
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-2">
-                <Chip tone="accent" size="xs">{difficultyLabel(locale, ach.difficulty)}</Chip>
                 {ach.missable && (
                   <Chip tone="danger" size="xs">
                     <FiTarget size={10} aria-hidden="true" />
                     Missable
-                  </Chip>
-                )}
-                {ach.confidence && Number(ach.confidence) > 0.3 && (
-                  <Chip tone="info" size="xs">
-                    {locale === "ko" ? `신뢰도 ${ach.confidence}` : `Confidence: ${ach.confidence}`}
                   </Chip>
                 )}
               </div>
