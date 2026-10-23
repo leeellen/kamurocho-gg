@@ -276,3 +276,17 @@ test("Ishin substories follow the sourced routes and official Korean area names"
   const { getMinigames } = load("@/lib/minigames");
   assert.doesNotMatch(JSON.stringify(getMinigames(1805480)), /라쿠나이|라쿠가이|무쿠로가이/);
 });
+
+test("Judgment side cases use official English names and sourced rewards", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const items = getSubstories(2058180).groups.flatMap((group) => group.items);
+  assert.equal(items.length, 50);
+  const byNumber = (number) => items.find((item) => item.number === number);
+  assert.equal(byNumber(1).title.en, "The Twisted Trio: Panty Professor");
+  assert.equal(byNumber(49).title.en, "Gone in 20 Minutes");
+  assert.equal(byNumber(1).reward.en, "¥50,000 · 80 SP");
+  assert.match(byNumber(5).body.en, /4134/);
+  assert.match(byNumber(7).body.en, /8925/);
+  assert.match(byNumber(16).body.en, /never actually paid/);
+  assert.doesNotMatch(JSON.stringify(items), /Perv Trinity|Butt Meister|Rip-off Bar|탐정의 관찰력/);
+});

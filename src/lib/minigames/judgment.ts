@@ -610,7 +610,7 @@ export const judgmentMinigames: MinigamesData = {
             { title: { ko: "요스케의 연락 뒤 츠키노 메시지", en: "Tsukino's message after Yosuke gets in touch" }, note: { ko: "기분 전환이라면 같이 놀아 줄게 — 데이트 전에 인연 게이지를 올릴 수 있는 기회입니다.", en: "If you need to blow off steam, I'll keep you company — a rare chance to raise the bond gauge before the first date." } },
             { title: { ko: "1회차 · 데이트 중 — 어디로 갈까?", en: "Date 1 · During the date — Where should we go?" }, note: { ko: "다트 — 이기면 인연 게이지 상승", en: "Darts — winning raises the bond gauge" } },
             { title: { ko: "1회차 · 데이트 중 — 팬티 무늬", en: "Date 1 · During the date — Her panty pattern" }, note: { ko: "잊어버린 척한다", en: "Pretend you forgot" } },
-            { title: { ko: "1회차 · 데이트 중 — 변태 삼총사에 대해", en: "Date 1 · During the date — About the Perv Trinity" }, note: { ko: "또 잡을 거야", en: "I'll catch them again" } },
+            { title: { ko: "1회차 · 데이트 중 — 변태 삼총사에 대해", en: "Date 1 · During the date — About the Twisted Trio" }, note: { ko: "또 잡을 거야", en: "I'll catch them again" } },
             { title: { ko: "1회차 · 데이트 중 — 츠키노의 고민", en: "Date 1 · During the date — Tsukino's worries" }, note: { ko: "물론이지", en: "Of course" } },
             { title: { ko: "1회차 · 데이트 중 — 어떻게 하면 좋을 것 같아요?", en: "Date 1 · During the date — What do you think I should do?" }, note: { ko: "일단 합격부터 해 보는 게 어때?", en: "Why not see if you can get the job first?" } },
             { title: { ko: "1회차 · 데이트 후 메시지 — 오늘 고마웠어요", en: "Date 1 · Message after the date — Thank you for today" }, note: { ko: "취업 준비 힘내", en: "Good luck with the job hunt" } },
