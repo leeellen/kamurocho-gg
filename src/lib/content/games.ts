@@ -305,7 +305,7 @@ export const CURATED_GAMES: CuratedGame[] = [
       story: "25-35h",
       completion: "60-80h",
       note: {
-        ko: "해상/콜로세움/미나토 걸 라인이 메인 이후 정리 분량을 만듭니다.",
+        ko: "해상/콜로세움/미나토구계 여자 라인이 메인 이후 정리 분량을 만듭니다.",
         en: "Naval, Coliseum, and Minato Girl lines make up most of the post-story cleanup.",
       },
     },

@@ -290,3 +290,17 @@ test("Judgment side cases use official English names and sourced rewards", () =>
   assert.match(byNumber(16).body.en, /never actually paid/);
   assert.doesNotMatch(JSON.stringify(items), /Perv Trinity|Butt Meister|Rip-off Bar|탐정의 관찰력/);
 });
+
+test("Pirate Yakuza substories follow PowerPyx and official Korean terms", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const items = getSubstories(3061810).groups.flatMap((group) => group.items);
+  assert.equal(items.length, 31);
+  const byNumber = (number) => items.find((item) => item.number === number);
+  assert.equal(byNumber(11).title.ko, "수상한 사람 촬영 사가");
+  assert.equal(byNumber(15).title.ko, "아이돌이 아니었더라면");
+  assert.match(byNumber(3).body.en, /recruit Elizabeth/);
+  assert.match(byNumber(11).reward.en, /Scope Ring/);
+  const { getMinigames } = load("@/lib/minigames");
+  assert.doesNotMatch(JSON.stringify(items), /경험치/);
+  assert.doesNotMatch(JSON.stringify([items, getMinigames(3061810)]), /시코 스냅|불심자|매들랜티스|마들랜티스|미나토 걸|리치 아일랜드/);
+});

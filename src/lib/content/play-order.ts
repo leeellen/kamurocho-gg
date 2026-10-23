@@ -296,7 +296,7 @@ const CHRONOLOGICAL_REASONS: Record<string, { ko: string; en: string }> = {
     en: "2024 across Honolulu and Yokohama — Ichiban and Kiryu share the lead for the first time.",
   },
   "like-a-dragon-pirate-yakuza-in-hawaii": {
-    ko: "2025년 하와이·매들랜티스. 마지마가 기억을 잃고 해적 선장이 되는 8편 외전.",
+    ko: "2025년 하와이·매드란티스. 마지마가 기억을 잃고 해적 선장이 되는 8편 외전.",
     en: "2025 in Hawaii and Madlantis — Majima loses his memory and becomes a pirate captain in this 8-line spin-off.",
   },
 };

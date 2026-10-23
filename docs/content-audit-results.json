@@ -117,7 +117,7 @@
   },
   "followup": {
     "curatedGuides": 356,
-    "substoryRoutesRewritten": 558,
+    "substoryRoutesRewritten": 589,
     "tests": "16 regression tests passed",
     "build": "Kiwami 2 routes passed; latest wording corrections awaiting rebuild.",
     "factualVerificationComplete": false,
