@@ -30,6 +30,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "100,000엔 · 아카메 포인트 1,000",
             "en": "¥100,000 · 1,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -45,6 +49,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "300,000엔 · 아카메 포인트 3,000",
             "en": "¥300,000 · 3,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -60,6 +68,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "300,000엔 · 아카메 포인트 3,000",
             "en": "¥300,000 · 3,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -75,6 +87,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "300,000엔 · 아카메 포인트 3,000",
             "en": "¥300,000 · 3,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -90,6 +106,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "500,000엔 · 아카메 포인트 8,000",
             "en": "¥500,000 · 8,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -105,6 +125,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "500,000엔 · 아카메 포인트 8,000",
             "en": "¥500,000 · 8,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -120,6 +144,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "500,000엔 · 아카메 포인트 8,000",
             "en": "¥500,000 · 8,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -135,6 +163,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "500,000엔 · 아카메 포인트 8,000",
             "en": "¥500,000 · 8,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -148,8 +180,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Report to Akame after the Chapter 2 team battle"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: 홈리스 야마나카",
+            "en": "¥0 · 4,000 Akame Points · Ally: Homeless Yamanaka"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -163,8 +199,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Report to Akame after the Chapter 2 team battle"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: 토바시라 류세이",
+            "en": "¥0 · 4,000 Akame Points · Ally: Ryusei Tobashira"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -178,8 +218,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Report to Akame after the Chapter 2 team battle"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: 누노카와 유지",
+            "en": "¥0 · 4,000 Akame Points · Ally: Yuji Nunokawa"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -193,8 +237,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Complete the Crimson Peacock gang request"
           },
           "reward": {
-            "ko": "300,000엔 · 아카메 포인트 3,000",
-            "en": "¥300,000 · 3,000 Akame Points"
+            "ko": "300,000엔 · 아카메 포인트 3,000 · 동료: 구렌 아키라",
+            "en": "¥300,000 · 3,000 Akame Points · Ally: Akira Guren"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -210,6 +258,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "500,000엔 · 아카메 포인트 8,000",
             "en": "¥500,000 · 8,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -223,8 +275,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Reach Silver rank and complete the White Knight gang request"
           },
           "reward": {
-            "ko": "500,000엔 · 아카메 포인트 8,000",
-            "en": "¥500,000 · 8,000 Akame Points"
+            "ko": "500,000엔 · 아카메 포인트 8,000 · 동료: 시라니타 코지",
+            "en": "¥500,000 · 8,000 Akame Points · Ally: Koji Shiranita"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -238,8 +294,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Reach Gold rank"
           },
           "reward": {
-            "ko": "1,000,000엔 · 아카메 포인트 15,000",
-            "en": "¥1,000,000 · 15,000 Akame Points"
+            "ko": "1,000,000엔 · 아카메 포인트 15,000 · 동료: 카이토 마사하루, 히가시 토오루",
+            "en": "¥1,000,000 · 15,000 Akame Points · Ally: Masaharu Kaito, Toru Higashi"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -255,6 +315,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "1,000,000엔 · 아카메 포인트 15,000",
             "en": "¥1,000,000 · 15,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -270,6 +334,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "1,000,000엔 · 아카메 포인트 15,000",
             "en": "¥1,000,000 · 15,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -285,6 +353,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "1,000,000엔 · 아카메 포인트 15,000",
             "en": "¥1,000,000 · 15,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -298,8 +370,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Reach Gold rank and complete the Black Swallowtail gang request"
           },
           "reward": {
-            "ko": "1,000,000엔 · 아카메 포인트 15,000",
-            "en": "¥1,000,000 · 15,000 Akame Points"
+            "ko": "1,000,000엔 · 아카메 포인트 15,000 · 동료: 쿠로야나기 케이타",
+            "en": "¥1,000,000 · 15,000 Akame Points · Ally: Keita Kuroyanagi"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -315,6 +391,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "2,000,000엔 · 아카메 포인트 30,000",
             "en": "¥2,000,000 · 30,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -330,6 +410,10 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
           "reward": {
             "ko": "2,000,000엔 · 아카메 포인트 30,000",
             "en": "¥2,000,000 · 30,000 Akame Points"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -343,8 +427,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Complete The Strongest Convenience Clerk"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: 엑설런트 스지타니",
+            "en": "¥0 · 4,000 Akame Points · Ally: Excellent Sujitani"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -358,8 +446,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Complete Recruit Yamanaka the Homeless"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: KATSUWO",
+            "en": "¥0 · 4,000 Akame Points · Ally: KATSUWO"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         },
         {
@@ -373,8 +465,12 @@ export const yakuzaGaidenSubstories: SubstoriesData = {
             "en": "Complete Free the Hammer Man"
           },
           "reward": {
-            "ko": "0엔 · 아카메 포인트 4,000",
-            "en": "¥0 · 4,000 Akame Points"
+            "ko": "0엔 · 아카메 포인트 4,000 · 동료: 렌지",
+            "en": "¥0 · 4,000 Akame Points · Ally: Renji"
+          },
+          "source": {
+            "label": "ゲームエイト — 赤目ネットワークの依頼一覧と報酬",
+            "url": "https://game8.jp/ryu-ga-gotoku-gaiden/574644"
           }
         }
       ]
