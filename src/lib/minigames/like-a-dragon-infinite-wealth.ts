@@ -92,7 +92,7 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
         { ko: "속성은 핫/쿨/내추럴/포지티브/네거티브 5종. 약점을 찌르면 대미지와 MP 축적이 모두 늘어나므로, 자기 턴에 1회 가능한 교대로 상성을 맞춰 가며 싸우는 것이 기본입니다.", en: "Five elements — Hot, Cool, Natural, Positive, Negative. Hitting a weakness raises both damage and MP gain, so the core loop is using your one swap per turn to keep a favourable matchup on the field." },
         { ko: "위치도 위력에 영향을 줍니다. 화살표가 빨강이면 유리, 흰색은 보통, 보라는 불리. 정면 공격이 가장 세고 대각은 감소하며, 대각으로 너무 먼 적(좌단 → 우단)에게는 반드시 빗나갑니다.", en: "Position matters too: a red arrow means advantage, white neutral, purple disadvantage. Straight-ahead attacks hit hardest, diagonals do less, and a diagonal that is too far — left end to right end — always misses." },
         { ko: "MP는 약점 공격과 다수 타격, 그리고 파이터의 신뢰도가 높을수록 잘 찹니다. △로 필살기를 쓰면 SP는 반드시 10 소모되고, 이어서 「필살 룰렛」 타이밍 입력이 들어갑니다. 적이 필살기를 쓴 직후에 전체 회복 필살기를 맞받아치는 운용이 유효합니다.", en: "MP builds from weakness hits, multi-target attacks and high fighter trust. Triangle fires a special, always spending 10 SP and triggering the Special Roulette stop-timing. A strong pattern is holding your full-heal special until right after the enemy fires theirs." },
-        { ko: "야쿠몬 스폿은 접근만 해도 랜덤 아이템을 주고, 조사하면 강화(야쿠틴 소모)·각성(동종 또는 야쿠신 각성 위원 배합)·진화(각성 한계까지 올린 개체)·스파링·PC 가게 야쿠신를 이용할 수 있습니다.", en: "Just walking up to a Suji Spot drops a random item; examining it opens strengthening (spend Sujitein), awakening (fuse same-species Sujimon or Awakening Committee members), evolution (for a fully awakened Sujimon), sparring and the PC Shop Sujigami." },
+        { ko: "야쿠몬 스폿은 접근만 해도 랜덤 아이템을 주고, 조사하면 강화(야쿠틴 소모)·각성(동종 또는 야쿠신 각성 위원 배합)·진화(각성 한계까지 올린 개체)·스파링·PC 가게 야쿠신을 이용할 수 있습니다.", en: "Just walking up to a Suji Spot drops a random item; examining it opens strengthening (spend Sujitein), awakening (fuse same-species Sujimon or Awakening Committee members), evolution (for a fully awakened Sujimon), sparring and the PC Shop Sujigami." },
         { ko: "콜로세움 3리그: 챌린지 리그는 30마리 격파, 서바이벌 리그는 회복 없이 연전(전체 회복 필살기 보유 개체가 중요), 그랜드 리그는 1경기마다 회복이 들어가는 엘리트 연전입니다. 보상 CP는 접수처 교환소에서 아이템으로 바꿉니다.", en: "Three leagues: Challenge is a 30-Sujimon gauntlet, Survival is back-to-back fights with no healing between (a full-heal special is essential), and Grand is an elite run that does heal between matches. Colosseum Points from them trade at the reception desk." },
       ],
       videos: [
@@ -601,9 +601,9 @@ export const likeADragonInfiniteWealthMinigames: MinigamesData = {
       name: { ko: "가라오케", en: "Karaoke" },
       category: { ko: "음악·리듬", en: "Music / rhythm" },
       difficulty: 2,
-      location: { ko: "호놀룰루 시티 리틀 재팬 구역 — 리볼버 (1곡 5달러)", en: "Revolver, Little Japan, Honolulu ($5 a song)" },
+      location: { ko: "호놀룰루 시티 리틀 재팬 구역 — 리볼바 (1곡 5달러)", en: "Revolver, Little Japan, Honolulu ($5 a song)" },
       summary: {
-        ko: "라인을 타고 흘러오는 □△○×를 타이밍에 맞춰 입력하는 리듬 게임. 길게 누르기·연타 구간이 섞여 있습니다. 함께 부른 동료의 절 랭크가 오르고, 90점 이상이면 리볼버 마스터의 호감도가 오릅니다.",
+        ko: "라인을 타고 흘러오는 □△○×를 타이밍에 맞춰 입력하는 리듬 게임. 길게 누르기·연타 구간이 섞여 있습니다. 함께 부른 동료의 절 랭크가 오르고, 90점 이상이면 리볼바 마스터의 호감도가 오릅니다.",
         en: "The series rhythm game — square, triangle, circle and cross scroll down a line, with held and mashed sections mixed in. Singing raises the bond rank of whoever joined you, and scoring 90+ raises the Revolver master's affection." },
       howTo: [
         { ko: "판정은 GREAT / GOOD / MISS입니다. GREAT과 GOOD이 연속되면 콤보가 쌓이고 한 번이라도 실패하면 처음부터 리셋됩니다.", en: "Inputs grade as GREAT, GOOD or MISS. GREAT and GOOD both extend the combo; a single miss resets it to zero." },

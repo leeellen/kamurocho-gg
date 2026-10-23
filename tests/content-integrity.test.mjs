@@ -304,3 +304,16 @@ test("Pirate Yakuza substories follow PowerPyx and official Korean terms", () =>
   assert.doesNotMatch(JSON.stringify(items), /경험치/);
   assert.doesNotMatch(JSON.stringify([items, getMinigames(3061810)]), /시코 스냅|불심자|매들랜티스|마들랜티스|미나토 걸|리치 아일랜드/);
 });
+
+test("Infinite Wealth substories use official names and game8 conditions", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const items = getSubstories(2072450).groups.flatMap((group) => group.items);
+  assert.equal(items.length, 52);
+  const byNumber = (number) => items.find((item) => item.number === number);
+  assert.equal(byNumber(1).title.en, "Radio Active");
+  assert.equal(byNumber(38).title.ko, "야쿠신 사천왕 등장");
+  assert.match(byNumber(26).body.en, /8931/);
+  assert.match(byNumber(11).choices.at(-1).correct.en, /Obispo/);
+  assert.ok(items.every((item) => item.source?.url.startsWith("https://game8.jp/ryu-ga-gotoku8/")));
+  assert.doesNotMatch(JSON.stringify(items), /스지가미|리볼브|Intelligence|Snap That Creep/);
+});
