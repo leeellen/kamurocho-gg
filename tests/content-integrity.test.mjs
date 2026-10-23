@@ -329,3 +329,15 @@ test("Yakuza 0 substories cite per-entry pages without guide-only map labels", (
   assert.equal(majima99.title.ko, "궁극의 계획");
   assert.match(items.find((item) => item.number === 7).trigger.ko, /서브 스토리 9/);
 });
+
+test("Yakuza 3 substory triggers and rewards follow CyricZ and the Yakuza Wiki", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const items = getSubstories(1088710).groups.flatMap((group) => group.items);
+  assert.equal(items.length, 119);
+  const byNumber = (number) => items.find((item) => item.number === number);
+  assert.match(byNumber(79).trigger.en, /cat, Lasagna/);
+  assert.match(byNumber(84).trigger.en, /lottery/);
+  assert.equal(byNumber(20).reward.en, "3,000 EXP · Sata andagi");
+  assert.ok(items.every((item) => item.source?.url.includes("/faqs/77723/chapter-")));
+  assert.doesNotMatch(JSON.stringify(items), /completion credit|cinematic|Big EXP|Massive EXP/);
+});

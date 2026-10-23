@@ -1,1157 +1,3980 @@
 import type { SubstoriesData } from "./types";
 
 export const yakuza3Substories: SubstoriesData = {
-  appId: 1088710,
-  summary: {
-  "ko": "리마스터판의 서브스토리 119건입니다. 카무로쵸와 류큐 거리의 미완료 의뢰를 클리어 후에도 정리할 수 있습니다.",
-  "en": "119 substories in the remaster. Unfinished requests in Kamurocho and Downtown Ryukyu can be completed after the story."
-},
-  source: { label: "GameFAQs / Yakuza Wiki — Yakuza 3 Remastered Substories (CyricZ)", url: "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/substories" },
-  groups: [
+  "appId": 1088710,
+  "summary": {
+    "ko": "리마스터판의 서브스토리 119건입니다. 카무로쵸와 류큐 거리의 미완료 의뢰를 클리어 후에도 정리할 수 있습니다.",
+    "en": "119 substories in the remaster. Unfinished requests in Kamurocho and Downtown Ryukyu can be completed after the story."
+  },
+  "source": {
+    "label": "GameFAQs / Yakuza Wiki — Yakuza 3 Remastered Substories (CyricZ)",
+    "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/substories"
+  },
+  "groups": [
     {
-      title: { ko: "3장 — 류큐 첫 자유 이동", en: "Chapter 3 — Power Struggle (Ryukyu opens)" },
-      items: [
+      "title": {
+        "ko": "3장 — 류큐 첫 자유 이동",
+        "en": "Chapter 3 — Power Struggle (Ryukyu opens)"
+      },
+      "items": [
         {
-          number: 27,
-          title: { ko: "허슬러의 도전", en: "The Hustler's Challenge" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "아쿠아 스카이 풀에서 나인볼 3승 후 콧수염 신사가 도전", en: "Win three Nine-Ball games at Aqua Sky; the mustached gentleman challenges you." },
-          body: { ko: "나인볼에서 3승을 거둔 뒤 아쿠아 스카이에서 노인과 마주치고, 한 번 나갔다 다시 들어가 노인에게 말을 걸어 승부를 수락하면 됩니다.", en: "After winning three games of Nine-Ball, run into the old man at Aqua Sky, leave and re-enter, then talk to him and accept his challenge." },
-          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
+          "number": 27,
+          "title": {
+            "ko": "허슬러의 도전",
+            "en": "The Hustler's Challenge"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "아쿠아 스카이 풀에서 나인볼 3승 후 콧수염 신사가 도전",
+            "en": "Win three Nine-Ball games at Aqua Sky; the mustached gentleman challenges you."
+          },
+          "body": {
+            "ko": "나인볼에서 3승을 거둔 뒤 아쿠아 스카이에서 노인과 마주치고, 한 번 나갔다 다시 들어가 노인에게 말을 걸어 승부를 수락하면 됩니다.",
+            "en": "After winning three games of Nine-Ball, run into the old man at Aqua Sky, leave and re-enter, then talk to him and accept his challenge."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 100,000엔",
+            "en": "3,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 55,
-          title: { ko: "도쿄에 가고 싶어 1", en: "I Want to Go to Tokyo 1" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "에비스 전당포 북쪽 여성에게 말 걸기", en: "Talk to the woman north of Ebisu Pawn." },
-          body: { ko: "카리유시 상점가 중앙의 소녀에게 말을 걸어 도쿄 이야기를 들려주기로 하면 됩니다. 답변은 무엇을 골라도 클리어됩니다.", en: "Talk to the girl in the centre of Kariyushi Arcade and agree to tell her about Tokyo — any answer works." },
-          reward: { ko: "경험치 2,000 · 소키 버거 세트", en: "2,000 EXP · Soki Burger Set" },
+          "number": 55,
+          "title": {
+            "ko": "도쿄에 가고 싶어 1",
+            "en": "I Want to Go to Tokyo 1"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "카리유시 상점가에서 멜빵바지와 분홍 셔츠 차림의 젊은 여성에게 말을 건다.",
+            "en": "In Kariyushi Arcade, talk to the young woman in overalls and a pink shirt."
+          },
+          "body": {
+            "ko": "카리유시 상점가 중앙의 소녀에게 말을 걸어 도쿄 이야기를 들려주기로 하면 됩니다. 답변은 무엇을 골라도 클리어됩니다.",
+            "en": "Talk to the girl in the centre of Kariyushi Arcade and agree to tell her about Tokyo — any answer works."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 소키 버거 세트",
+            "en": "2,000 EXP · Soki Burger Set"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 66,
-          title: { ko: "벼랑 끝 사나이", en: "Walking the Plank" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "서쪽 다리에서 자살하려는 뚱뚱한 남자 말리기", en: "Stop the chubby man jumping off the west bridge." },
-          body: { ko: "아쿠아 스카이 근처 다리의 남자에게 말을 걸어 그를 멈춰 세운 뒤, 어느 선택지를 골라도 클리어됩니다.", en: "Talk to the friendly debtor on the bridge near Aqua Sky and stop him — either choice completes it." },
-          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
+          "number": 66,
+          "title": {
+            "ko": "벼랑 끝 사나이",
+            "en": "Walking the Plank"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "서쪽 다리에서 자살하려는 뚱뚱한 남자 말리기",
+            "en": "Stop the chubby man jumping off the west bridge."
+          },
+          "body": {
+            "ko": "아쿠아 스카이 근처 다리의 남자에게 말을 걸어 그를 멈춰 세운 뒤, 어느 선택지를 골라도 클리어됩니다.",
+            "en": "Talk to the friendly debtor on the bridge near Aqua Sky and stop him — either choice completes it."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 스태미난 로열",
+            "en": "2,000 EXP · Staminan Royale"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 82,
-          title: { ko: "잃어버린 열쇠", en: "A Lost Key" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 거리에서 열쇠를 잃어버린 여성 돕기", en: "Help the woman who lost her key on Ryukyu St." },
-          body: { ko: "이스트 류큐 대로 코인 로커 근처 여성에게 말을 건 뒤 1인칭 시점으로 열쇠를 찾고, 발코니에 있다고 알려 주면 클리어됩니다.", en: "Talk to the woman near the coin lockers on East Ryukyu Boulevard, search for the key in first-person mode, and tell her it is on the balcony." },
-          reward: { ko: "경험치 2,000 · 코인 로커 열쇠 33번", en: "2,000 EXP · Coin Locker Key No. 33" },
+          "number": 82,
+          "title": {
+            "ko": "잃어버린 열쇠",
+            "en": "A Lost Key"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "류큐 거리에서 열쇠를 잃어버린 여성 돕기",
+            "en": "Help the woman who lost her key on Ryukyu St."
+          },
+          "body": {
+            "ko": "이스트 류큐 대로 코인 로커 근처 여성에게 말을 건 뒤 1인칭 시점으로 열쇠를 찾고, 발코니에 있다고 알려 주면 클리어됩니다.",
+            "en": "Talk to the woman near the coin lockers on East Ryukyu Boulevard, search for the key in first-person mode, and tell her it is on the balcony."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 코인 로커 열쇠 33번",
+            "en": "2,000 EXP · Coin Locker Key No. 33"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 87,
-          title: { ko: "봉선화가 피거든", en: "As the Rose Balsam Blooms" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 거리에서 봉선화 꽃을 들고 있는 노부인에게 말 걸기", en: "Talk to the elderly woman with rose balsam flowers on Ryukyu St." },
-          body: { ko: "키타류 거리 모노레일역 근처에서 포크 가수의 공연을 들은 뒤 돕기로 하고, 불량배들을 격파하면 클리어됩니다.", en: "Listen to the folk singer's performance near the monorail station on Kitaryu Street, decide to help, and beat the thugs." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 87,
+          "title": {
+            "ko": "봉선화가 피거든",
+            "en": "As the Rose Balsam Blooms"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "모노레일역 앞에서 화려한 차림으로 산신을 켜는 남자를 만난다(주변 서브 스토리를 어느 정도 끝낸 뒤 등장).",
+            "en": "Outside the Monorail Station, a man in a fancy getup is playing the sanshin (appears after clearing some nearby substories)."
+          },
+          "body": {
+            "ko": "키타류 거리 모노레일역 근처에서 포크 가수의 공연을 들은 뒤 돕기로 하고, 불량배들을 격파하면 클리어됩니다.",
+            "en": "Listen to the folk singer's performance near the monorail station on Kitaryu Street, decide to help, and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 사타안다기",
+            "en": "2,000 EXP · Sata andagi"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 93,
-          title: { ko: "배달 레이스", en: "Deliver Race" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "와라바 오키나와 소바 노점에서 3번째 방문 시 발생 — 5분 내 3건 배달", en: "Visit Waraba soba stand a third time: deliver three orders within 5 minutes." },
-          body: { ko: "와라바에서 두 번 식사한 뒤 공설시장 입구 앞 직원에게 배달을 수락합니다. 5분 안에 카리유시 상점가 약국 → 이스트 하츠마치 마작장 → 하츠마치 안내소 순으로 배달하고 가게로 돌아가면 클리어됩니다.", en: "After eating at Waraba twice, agree to deliver for the workers in front of the Public Market entrance. Within five minutes, deliver to the drugstore in Kariyushi Arcade, the mahjong parlor on East Hatsumachi and the info center in Hatsumachi, then return to the stand." },
-          reward: { ko: "경험치 3,000 · 10,000엔", en: "3,000 EXP · ¥10,000" },
+          "number": 93,
+          "title": {
+            "ko": "배달 레이스",
+            "en": "Deliver Race"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "와라바 오키나와 소바 노점에서 3번째 방문 시 발생 — 5분 내 3건 배달",
+            "en": "Visit Waraba soba stand a third time: deliver three orders within 5 minutes."
+          },
+          "body": {
+            "ko": "와라바에서 두 번 식사한 뒤 공설시장 입구 앞 직원에게 배달을 수락합니다. 5분 안에 카리유시 상점가 약국 → 이스트 하츠마치 마작장 → 하츠마치 안내소 순으로 배달하고 가게로 돌아가면 클리어됩니다.",
+            "en": "After eating at Waraba twice, agree to deliver for the workers in front of the Public Market entrance. Within five minutes, deliver to the drugstore in Kariyushi Arcade, the mahjong parlor on East Hatsumachi and the info center in Hatsumachi, then return to the stand."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 10,000엔",
+            "en": "3,000 EXP · ¥10,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 103,
-          title: { ko: "강아지 훈련: 가져와", en: "New Dog, New Tricks: Fetch" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「돌아」 후 「가져와」 가르치기", en: "After 'Turn Around': teach 'Fetch'." },
-          body: { ko: "마메에게 「가져와」를 지시하고, 성공하면 간식을 주고 실패하면 다시 지시하면 됩니다.", en: "Tell Mame to fetch — treat him when he gets it right, repeat the command when he does not." },
-          reward: { ko: "경험치 2,000 · 스태미난 스파크", en: "2,000 EXP · Staminan Spark" },
+          "number": 103,
+          "title": {
+            "ko": "강아지 훈련: 가져와",
+            "en": "New Dog, New Tricks: Fetch"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「돌아」 후 「가져와」 가르치기",
+            "en": "After 'Turn Around': teach 'Fetch'."
+          },
+          "body": {
+            "ko": "마메에게 「가져와」를 지시하고, 성공하면 간식을 주고 실패하면 다시 지시하면 됩니다.",
+            "en": "Tell Mame to fetch — treat him when he gets it right, repeat the command when he does not."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 스태미난 스파크",
+            "en": "2,000 EXP · Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 109,
-          title: { ko: "정상을 향해!", en: "Straight to the Top!" },
-          chapter: { ko: "3장", en: "Chapter 3" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 호스트 클럽에서 호스트 출세 의뢰 수락", en: "Take the host-club climbing job at the Ryukyu host club." },
-          body: { ko: "사우스 아일랜드의 사카키에게 일을 수락한 뒤 코지에게 말을 겁니다. 호스티스를 스카우트하고(키리에: 류큐 대로, 히로미: 공설시장, 조: 아쿠아 스카이, 리츠코: M스토어 하츠마치, 쇼코: 스마일 버거) 지도와 외모 코디를 반복해 최고 자리에 올리면 클리어됩니다.", en: "Take the job from Sakaki at South Island and talk to Koji, then scout a hostess — Kirie on Ryukyu Boulevard, Hiromi at the Public Market, Jo at Aqua Sky, Ritsuko at M Store Hatsumachi, Shoko at Smile Burger — and keep coaching her and adjusting her look, checking with Koji for tips, until she reaches the top." },
-          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
-        },
-      ],
+          "number": 109,
+          "title": {
+            "ko": "정상을 향해!",
+            "en": "Straight to the Top!"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "하츠마치 남쪽 캬바레 클럽 사우스 아일랜드 앞의 턱시도 조끼 남자에게 말을 건다.",
+            "en": "Talk to the man in a tux vest outside the cabaret club South Island in south Hatsumachi."
+          },
+          "body": {
+            "ko": "사우스 아일랜드의 사카키에게 일을 수락한 뒤 코지에게 말을 겁니다. 호스티스를 스카우트하고(키리에: 류큐 대로, 히로미: 공설시장, 조: 아쿠아 스카이, 리츠코: M스토어 하츠마치, 쇼코: 스마일 버거) 지도와 외모 코디를 반복해 최고 자리에 올리면 클리어됩니다.",
+            "en": "Take the job from Sakaki at South Island and talk to Koji, then scout a hostess — Kirie on Ryukyu Boulevard, Hiromi at the Public Market, Jo at Aqua Sky, Ritsuko at M Store Hatsumachi, Shoko at Smile Burger — and keep coaching her and adjusting her look, checking with Koji for tips, until she reaches the top."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 100,000엔",
+            "en": "5,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "4장 — 류큐 (오키나와)", en: "Chapter 4 — The Man in the Sketch (Ryukyu)" },
-      items: [
+      "title": {
+        "ko": "4장 — 류큐 (오키나와)",
+        "en": "Chapter 4 — The Man in the Sketch (Ryukyu)"
+      },
+      "items": [
         {
-          number: 5,
-          title: { ko: "한발 빠른 신혼여행", en: "Early Honeymoon" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "4장 후반(슈트 + 하루카 동반 + 낮): 해변에서 아키모토·미즈키 조우", en: "Late Ch.4 (suit + Haruka + daytime): meet Akimoto and Mizuki on the beach." },
-          body: { ko: "4장 후반, 슈트 차림 + 하루카 동반 + 낮 시간대에만 발동. 해변에서 옛 시리즈 등장 인물 아키모토·미즈키 조우 → 공설시장 푸드코트 → 스톤 마켓(보석상) → 해변으로 복귀 → 코지와 대화 후 부부 점검. 마지막 대화에서 정답 5선택지를 모두 골라야 최고 보상.", en: "Late Ch.4, suit + Haruka + daytime only. Meet Akimoto and Mizuki on the beach, follow them to the food court, then Stone Market, then back to the beach via Koji." },
-          choices: [
-            { prompt: { ko: "왜 그녀가 노부인을 도왔다고 생각해?", en: "Why did she help the old lady?" }, correct: { ko: "그녀가 돕고 싶었던 거겠지", en: "She probably wanted to help the old lady." } },
-            { prompt: { ko: "왜 어머니의 부탁을 거절 못 했을까?", en: "Why couldn't she say no to her mom?" }, correct: { ko: "어머니에게 거절을 못 하는 사람일 거야", en: "She probably couldn't say no to her mom." } },
-            { prompt: { ko: "그게 어떻다고 보나?", en: "What do you think of that?" }, correct: { ko: "그건 훌륭한 일이야", en: "That's honorable of her." } },
-            { prompt: { ko: "결혼하면 어떨 거 같아?", en: "What kind of wife will she make?" }, correct: { ko: "좋은 아내가 될 거야", en: "She's going to be a great wife." } },
-            { prompt: { ko: "아이는?", en: "And kids?" }, correct: { ko: "너와 아이를 갖고 싶어 할 거야", en: "She must really want kids with you." } },
+          "number": 5,
+          "title": {
+            "ko": "한발 빠른 신혼여행",
+            "en": "Early Honeymoon"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "4장 후반(슈트 + 하루카 동반 + 낮): 해변에서 아키모토·미즈키 조우",
+            "en": "Late Ch.4 (suit + Haruka + daytime): meet Akimoto and Mizuki on the beach."
+          },
+          "body": {
+            "ko": "4장 후반, 슈트 차림 + 하루카 동반 + 낮 시간대에만 발동. 해변에서 옛 시리즈 등장 인물 아키모토·미즈키 조우 → 공설시장 푸드코트 → 스톤 마켓(보석상) → 해변으로 복귀 → 코지와 대화 후 부부 점검. 마지막 대화에서 정답 5선택지를 모두 골라야 최고 보상.",
+            "en": "Late Ch.4, suit + Haruka + daytime only. Meet Akimoto and Mizuki on the beach, follow them to the food court, then Stone Market, then back to the beach via Koji."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "왜 그녀가 노부인을 도왔다고 생각해?",
+                "en": "Why did she help the old lady?"
+              },
+              "correct": {
+                "ko": "그녀가 돕고 싶었던 거겠지",
+                "en": "She probably wanted to help the old lady."
+              }
+            },
+            {
+              "prompt": {
+                "ko": "왜 어머니의 부탁을 거절 못 했을까?",
+                "en": "Why couldn't she say no to her mom?"
+              },
+              "correct": {
+                "ko": "어머니에게 거절을 못 하는 사람일 거야",
+                "en": "She probably couldn't say no to her mom."
+              }
+            },
+            {
+              "prompt": {
+                "ko": "그게 어떻다고 보나?",
+                "en": "What do you think of that?"
+              },
+              "correct": {
+                "ko": "그건 훌륭한 일이야",
+                "en": "That's honorable of her."
+              }
+            },
+            {
+              "prompt": {
+                "ko": "결혼하면 어떨 거 같아?",
+                "en": "What kind of wife will she make?"
+              },
+              "correct": {
+                "ko": "좋은 아내가 될 거야",
+                "en": "She's going to be a great wife."
+              }
+            },
+            {
+              "prompt": {
+                "ko": "아이는?",
+                "en": "And kids?"
+              },
+              "correct": {
+                "ko": "너와 아이를 갖고 싶어 할 거야",
+                "en": "She must really want kids with you."
+              }
+            }
           ],
-          reward: { ko: "대량 경험치 + 「이젠 정말 끝」 잠금 해제", en: "Big EXP and unlocks 'They Never Learn' in Ch.12" },
+          "reward": {
+            "ko": "12장 「이젠 정말 끝」의 선행 조건",
+            "en": "Prerequisite for 'They Never Learn' in Chapter 12"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 11,
-          title: { ko: "류큐의 7가지 불가사의 1", en: "The Seven Mysteries of Ryukyu 1" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "야간 류큐 거리 M 스토어 앞 여고생 3인조에게 말 걸기", en: "At night: talk to the three schoolgirls outside M Store on Ryukyu St." },
-          body: { ko: "밤에 이스트 류큐 대로로 가서 여고생들의 이야기를 들은 뒤 코인 로커로 이동해 남자들에게 소문을 캐묻고 격파합니다. 떨어뜨린 코인 로커 열쇠 44번으로 로커를 열고, 대로로 내려가는 계단에서 기다리는 무리를 마저 정리하면 클리어됩니다.", en: "At night, head to East Ryukyu Boulevard and listen to the high school girls, then go to the coin lockers, press the men about the rumor and beat them. Pick up coin locker key No. 44 they drop, open the locker, then take the stairs down to the boulevard and clear the gang waiting there." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 11,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 1",
+            "en": "The Seven Mysteries of Ryukyu 1"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "야간 류큐 거리 M 스토어 앞 여고생 3인조에게 말 걸기",
+            "en": "At night: talk to the three schoolgirls outside M Store on Ryukyu St."
+          },
+          "body": {
+            "ko": "밤에 이스트 류큐 대로로 가서 여고생들의 이야기를 들은 뒤 코인 로커로 이동해 남자들에게 소문을 캐묻고 격파합니다. 떨어뜨린 코인 로커 열쇠 44번으로 로커를 열고, 대로로 내려가는 계단에서 기다리는 무리를 마저 정리하면 클리어됩니다.",
+            "en": "At night, head to East Ryukyu Boulevard and listen to the high school girls, then go to the coin lockers, press the men about the rumor and beat them. Pick up coin locker key No. 44 they drop, open the locker, then take the stairs down to the boulevard and clear the gang waiting there."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 12,
-          title: { ko: "류큐의 7가지 불가사의 2", en: "The Seven Mysteries of Ryukyu 2" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "1편 클리어 후 블루씰 아이스크림 앞 여고생들에게 말 걸기", en: "After Pt.1: schoolgirls outside Blue Seal Ice Cream." },
-          body: { ko: "블루 씰 아이스크림 서쪽 골목에서 여고생 세 명의 대화를 엿듣고, 아쿠아 스카이에서 만난 검은 고양이를 다리 밑 기둥까지 따라가 고양이 주인과 싸웁니다. 이후 샘스 마우이 뒤 도로 차단막 근처의 고양이에게 개다래 막대를 주면 끝납니다.", en: "Eavesdrop on the three high school girls in the alley west of Blue Seal Ice Cream, then follow the black cat you meet at Aqua Sky to the pillar under the bridge and fight its owner. Afterwards give the catnip stick to the cat by the road block behind Sam's Maui." },
-          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
+          "number": 12,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 2",
+            "en": "The Seven Mysteries of Ryukyu 2"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "1편 클리어 후 블루씰 아이스크림 앞 여고생들에게 말 걸기",
+            "en": "After Pt.1: schoolgirls outside Blue Seal Ice Cream."
+          },
+          "body": {
+            "ko": "블루 씰 아이스크림 서쪽 골목에서 여고생 세 명의 대화를 엿듣고, 아쿠아 스카이에서 만난 검은 고양이를 다리 밑 기둥까지 따라가 고양이 주인과 싸웁니다. 이후 샘스 마우이 뒤 도로 차단막 근처의 고양이에게 개다래 막대를 주면 끝납니다.",
+            "en": "Eavesdrop on the three high school girls in the alley west of Blue Seal Ice Cream, then follow the black cat you meet at Aqua Sky to the pillar under the bridge and fight its owner. Afterwards give the catnip stick to the cat by the road block behind Sam's Maui."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 10,000엔",
+            "en": "2,000 EXP · ¥10,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 13,
-          title: { ko: "류큐의 7가지 불가사의 3", en: "The Seven Mysteries of Ryukyu 3" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "2편 클리어 후 키타류 다리 위 여고생들에게 말 걸기", en: "After Pt.2: schoolgirls on the Kitaryu bridge." },
-          body: { ko: "키타류 거리에서 톰에게 말을 걸고, 이어지는 남자들과의 전투에서 이기면 클리어됩니다.", en: "Speak to Tom on Kitaryu Street and win the fight against the men that follows." },
-          reward: { ko: "경험치 5,000 · 30,000엔", en: "5,000 EXP · ¥30,000" },
+          "number": 13,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 3",
+            "en": "The Seven Mysteries of Ryukyu 3"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "2편 클리어 후 키타류 다리 위 여고생들에게 말 걸기",
+            "en": "After Pt.2: schoolgirls on the Kitaryu bridge."
+          },
+          "body": {
+            "ko": "키타류 거리에서 톰에게 말을 걸고, 이어지는 남자들과의 전투에서 이기면 클리어됩니다.",
+            "en": "Speak to Tom on Kitaryu Street and win the fight against the men that follows."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 30,000엔",
+            "en": "5,000 EXP · ¥30,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 14,
-          title: { ko: "류큐의 7가지 불가사의 4", en: "The Seven Mysteries of Ryukyu 4" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "3편 클리어 후 공설시장 남서쪽 여고생들에게 말 걸기", en: "After Pt.3: southwest of the North Public Market." },
-          body: { ko: "공설시장 남서쪽에서 여고생들이 「전설의 고야 주스」 이야기 → 한 소년의 어머니를 위해 재료 구함. 노점 아주머니에게서 재료 구매. 일반 보상은 고야·쿠루자타(흑설탕)·바사나이(바나나)·두구와이(알로에)·레몬 = 「스태미난 로얄」. 최고 보상은 고야·쿠루자타·두구와이 + 「섬 바나나」 + 시쿠와사 = 「스태미난 스파크」.", en: "Best outcome: buy bitter melon, brown sugar (kuruzata), aloe (dugwai), island bananas, and shikwasa from the market vendor — not regular bananas/lemon." },
-          choices: [
-            { prompt: { ko: "재료 선택", en: "Ingredients" }, correct: { ko: "고야·흑설탕·알로에·섬 바나나·시쿠와사", en: "Bitter melon, brown sugar, aloe, island bananas, shikwasa" }, note: { ko: "기본 5종(레몬·일반 바나나)은 「스태미난 로얄」, 섬 바나나·시쿠와사 조합은 「스태미난 스파크」", en: "Standard recipe yields Staminan Royale; the island-fruit recipe yields the better Staminan Spark" } },
+          "number": 14,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 4",
+            "en": "The Seven Mysteries of Ryukyu 4"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "3편 클리어 후 공설시장 남서쪽 여고생들에게 말 걸기",
+            "en": "After Pt.3: southwest of the North Public Market."
+          },
+          "body": {
+            "ko": "공설시장 남서쪽에서 여고생들이 「전설의 고야 주스」 이야기 → 한 소년의 어머니를 위해 재료 구함. 노점 아주머니에게서 재료 구매. 일반 보상은 고야·쿠루자타(흑설탕)·바사나이(바나나)·두구와이(알로에)·레몬 = 「스태미난 로얄」. 최고 보상은 고야·쿠루자타·두구와이 + 「섬 바나나」 + 시쿠와사 = 「스태미난 스파크」.",
+            "en": "Best outcome: buy bitter melon, brown sugar (kuruzata), aloe (dugwai), island bananas, and shikwasa from the market vendor — not regular bananas/lemon."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "재료 선택",
+                "en": "Ingredients"
+              },
+              "correct": {
+                "ko": "고야·흑설탕·알로에·섬 바나나·시쿠와사",
+                "en": "Bitter melon, brown sugar, aloe, island bananas, shikwasa"
+              },
+              "note": {
+                "ko": "기본 5종(레몬·일반 바나나)은 「스태미난 로얄」, 섬 바나나·시쿠와사 조합은 「스태미난 스파크」",
+                "en": "Standard recipe yields Staminan Royale; the island-fruit recipe yields the better Staminan Spark"
+              }
+            }
           ],
-          reward: { ko: "스태미난 스파크 (최고 보상)", en: "Staminan Spark (best outcome)" },
+          "reward": {
+            "ko": "경험치 3,000 · 스태미난 로열 또는 스파크(최선 결과)",
+            "en": "3,000 EXP · Staminan Royale or Spark (best outcome)"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 15,
-          title: { ko: "류큐의 7가지 불가사의 5", en: "The Seven Mysteries of Ryukyu 5" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "4편 클리어 후 마에다 약국 북쪽에서 만나기", en: "After Pt.4: north of Maeda Drugs." },
-          body: { ko: "카리유시 상점가에서 여고생들이 판매원과 이야기하는 장면을 본 뒤 목걸이를 구입합니다. 상점가를 한 바퀴 돌고 판매원에게 돌아간 다음, 류도 가문 사무소 남쪽 2층 제조사 사무실을 찾아가 목걸이 반품을 선택하고 직원들을 격파하세요.", en: "Watch the high school girls talk to the salesman at Kariyushi Arcade, then buy the necklace. Wander the arcade, return to the salesman, then head to the manufacturer's office on the second floor south of the Ryudo Family Office, choose to return the necklace and beat the employees." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 15,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 5",
+            "en": "The Seven Mysteries of Ryukyu 5"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "4편 클리어 후 마에다 약국 북쪽에서 만나기",
+            "en": "After Pt.4: north of Maeda Drugs."
+          },
+          "body": {
+            "ko": "카리유시 상점가에서 여고생들이 판매원과 이야기하는 장면을 본 뒤 목걸이를 구입합니다. 상점가를 한 바퀴 돌고 판매원에게 돌아간 다음, 류도 가문 사무소 남쪽 2층 제조사 사무실을 찾아가 목걸이 반품을 선택하고 직원들을 격파하세요.",
+            "en": "Watch the high school girls talk to the salesman at Kariyushi Arcade, then buy the necklace. Wander the arcade, return to the salesman, then head to the manufacturer's office on the second floor south of the Ryudo Family Office, choose to return the necklace and beat the employees."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 16,
-          title: { ko: "류큐의 7가지 불가사의 6", en: "The Seven Mysteries of Ryukyu 6" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "5편 클리어 후 공설시장 입구에서 만나기", en: "After Pt.5: in front of the Public Market entrance." },
-          body: { ko: "북부 공설시장 입구에서 여고생들의 대화를 엿들은 뒤 시장에 들어가 왼쪽 상인에게 말을 겁니다. 이후 플로리스 북동쪽으로 가서 입장을 선택하고 사장과 싸우면 클리어됩니다.", en: "Listen in on the schoolgirls near the North Public Market entrance, go inside and take the left path to talk to the vendor. Then head north-east of Flawless, choose to enter and fight the president." },
-          reward: { ko: "경험치 5,000 · 50,000엔", en: "5,000 EXP · ¥50,000" },
+          "number": 16,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 6",
+            "en": "The Seven Mysteries of Ryukyu 6"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "5편 클리어 후 공설시장 입구에서 만나기",
+            "en": "After Pt.5: in front of the Public Market entrance."
+          },
+          "body": {
+            "ko": "북부 공설시장 입구에서 여고생들의 대화를 엿들은 뒤 시장에 들어가 왼쪽 상인에게 말을 겁니다. 이후 플로리스 북동쪽으로 가서 입장을 선택하고 사장과 싸우면 클리어됩니다.",
+            "en": "Listen in on the schoolgirls near the North Public Market entrance, go inside and take the left path to talk to the vendor. Then head north-east of Flawless, choose to enter and fight the president."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 50,000엔",
+            "en": "5,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 20,
-          title: { ko: "병에 담긴 사랑", en: "Bottled Love" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「한발 빠른 신혼여행」 + 맥의 진수 안내 후 서쪽 해변에서 병 발견", en: "After 'Early Honeymoon' and Mack's Revelations talk: find a bottle on the west beach." },
-          body: { ko: "「한발 빠른 신혼여행」 + 맥의 진수 안내 후, 키류 단독으로 해변 서쪽 → 표류병 발견 → 하루카 합류·편지 낭독 → 카리유시 아케이드 남단 골목 → 다음 단서 따라가며 「이젠 정말 끝」으로 이어지는 복선 형성.", en: "Triggers only after 'Early Honeymoon' AND meeting Mack about Revelations. Find a washed-up bottle on the west beach alone; Haruka joins to read the letter, then continue to Kariyushi Arcade." },
-          reward: { ko: "이벤트 시네마틱 + 컴플리션 카운트", en: "Event cinematic + completion credit" },
+          "number": 20,
+          "title": {
+            "ko": "병에 담긴 사랑",
+            "en": "Bottled Love"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「한발 빠른 신혼여행」 + 맥의 진수 안내 후 서쪽 해변에서 병 발견",
+            "en": "After 'Early Honeymoon' and Mack's Revelations talk: find a bottle on the west beach."
+          },
+          "body": {
+            "ko": "「한발 빠른 신혼여행」 + 맥의 진수 안내 후, 키류 단독으로 해변 서쪽 → 표류병 발견 → 하루카 합류·편지 낭독 → 카리유시 아케이드 남단 골목 → 다음 단서 따라가며 「이젠 정말 끝」으로 이어지는 복선 형성.",
+            "en": "Triggers only after 'Early Honeymoon' AND meeting Mack about Revelations. Find a washed-up bottle on the west beach alone; Haruka joins to read the letter, then continue to Kariyushi Arcade."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 사타안다기",
+            "en": "3,000 EXP · Sata andagi"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 24,
-          title: { ko: "시사 협박", en: "Shisa Shakedown" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "공설시장 근처에서 시사를 부수려는 양아치들 막기", en: "Stop the punks smashing a shisa near the Public Market." },
-          body: { ko: "카리유시 상점가 입구에서 관광객 부부에게 말을 건 뒤, 북부 하츠마치로 이동해 시사 석상을 살펴보면 클리어됩니다.", en: "Talk to the tourist couple at the arcade entrance, then head to North Hatsumachi and inspect the statue." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 24,
+          "title": {
+            "ko": "시사 협박",
+            "en": "Shisa Shakedown"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「넘사벽」 클리어 후, 카리유시 상점가 입구에서 입을 다문 시사를 찾는 커플에게 말을 건다.",
+            "en": "After 'Out of His League', talk to the couple at the Kariyushi Arcade entrance looking for a closed-mouth shisa."
+          },
+          "body": {
+            "ko": "카리유시 상점가 입구에서 관광객 부부에게 말을 건 뒤, 북부 하츠마치로 이동해 시사 석상을 살펴보면 클리어됩니다.",
+            "en": "Talk to the tourist couple at the arcade entrance, then head to North Hatsumachi and inspect the statue."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 31,
-          title: { ko: "마음의 패스트푸드", en: "Fast Food for the Heart" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "스마일 버거 류큐점 앞 부끄러워하는 청년에게 말 걸기", en: "Talk to the bashful young man outside Smile Burger Ryukyu." },
-          body: { ko: "스마일 버거에서 소년에게 말을 걸어 도움을 수락하고, 적극적으로 나서라는 조언을 두 번 한 뒤 여학생에게 편지를 읽어 달라고 부탁하면 클리어됩니다.", en: "Talk to the teen at Smile Burger, agree to help, tell him to be proactive twice, then ask the girl to read the letter." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 31,
+          "title": {
+            "ko": "마음의 패스트푸드",
+            "en": "Fast Food for the Heart"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "스마일 버거 류큐점 앞 부끄러워하는 청년에게 말 걸기",
+            "en": "Talk to the bashful young man outside Smile Burger Ryukyu."
+          },
+          "body": {
+            "ko": "스마일 버거에서 소년에게 말을 걸어 도움을 수락하고, 적극적으로 나서라는 조언을 두 번 한 뒤 여학생에게 편지를 읽어 달라고 부탁하면 클리어됩니다.",
+            "en": "Talk to the teen at Smile Burger, agree to help, tell him to be proactive twice, then ask the girl to read the letter."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 32,
-          title: { ko: "넘사벽", en: "Out of His League" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「마음의 패스트푸드」 후속 — 청년의 데이트 코칭", en: "Follow-up to 'Fast Food for the Heart': coach his date." },
-          body: { ko: "플로리스 앞의 소년에게 말을 건 뒤, 한 번 더 말을 걸면 클리어됩니다.", en: "Talk to the teen in front of Flawless, then talk to him once more." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 32,
+          "title": {
+            "ko": "넘사벽",
+            "en": "Out of His League"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「마음의 패스트푸드」 후속 — 청년의 데이트 코칭",
+            "en": "Follow-up to 'Fast Food for the Heart': coach his date."
+          },
+          "body": {
+            "ko": "플로리스 앞의 소년에게 말을 건 뒤, 한 번 더 말을 걸면 클리어됩니다.",
+            "en": "Talk to the teen in front of Flawless, then talk to him once more."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 33,
-          title: { ko: "고아원을 노린 강도", en: "Robbing the Orphanage" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「넘사벽」 클리어 후 모리닝글로리 고아원에서 사건 발생", en: "After 'Out of His League': incident at Morning Glory Orphanage." },
-          body: { ko: "모리닝글로리 앞의 소년에게 말을 걸고 조언해 주면 클리어됩니다.", en: "Talk to the teen in front of the orphanage and give him advice." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 33,
+          "title": {
+            "ko": "고아원을 노린 강도",
+            "en": "Robbing the Orphanage"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「넘사벽」 클리어 후 모리닝글로리 고아원에서 사건 발생",
+            "en": "After 'Out of His League': incident at Morning Glory Orphanage."
+          },
+          "body": {
+            "ko": "모리닝글로리 앞의 소년에게 말을 걸고 조언해 주면 클리어됩니다.",
+            "en": "Talk to the teen in front of the orphanage and give him advice."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 38,
-          title: { ko: "모리닝글로리 숨바꼭질", en: "Morning Glory Hide-and-Seek" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "모리닝글로리 고아원에서 아이들과 숨바꼭질", en: "Play hide-and-seek with the kids at Morning Glory." },
-          body: { ko: "모리닝글로리에서 숨바꼭질을 시작해 숨은 아이들을 모두 찾아내면 클리어됩니다. 도중에 포기할 수도 있습니다.", en: "Start hide-and-seek at Morning Glory and find all the hidden children — you can also quit partway." },
-          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
+          "number": 38,
+          "title": {
+            "ko": "모리닝글로리 숨바꼭질",
+            "en": "Morning Glory Hide-and-Seek"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "모리닝글로리 고아원에서 아이들과 숨바꼭질",
+            "en": "Play hide-and-seek with the kids at Morning Glory."
+          },
+          "body": {
+            "ko": "모리닝글로리에서 숨바꼭질을 시작해 숨은 아이들을 모두 찾아내면 클리어됩니다. 도중에 포기할 수도 있습니다.",
+            "en": "Start hide-and-seek at Morning Glory and find all the hidden children — you can also quit partway."
+          },
+          "reward": {
+            "ko": "경험치 3,000",
+            "en": "3,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 42,
-          title: { ko: "유혹", en: "Temptation" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 거리의 작부에게 말 걸어 삥쟁이 함정 회피", en: "Talk to the streetwalker on Ryukyu St. and dodge the shakedown." },
-          body: { ko: "키타류 거리 우마치 식당 옆의 여성에게 말을 걸어 도움을 수락하고, 안으로 들어가기를 선택한 뒤 납치범을 격파하면 클리어됩니다.", en: "Talk to the woman next to Umachi Diner on Kitaryu Street, agree to help, choose to walk in and beat the kidnapper." },
-          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
+          "number": 42,
+          "title": {
+            "ko": "유혹",
+            "en": "Temptation"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "우마치 바로 남쪽에서 납치 사건을 이야기하는 여성과 의사에게 말을 건다.",
+            "en": "Just south of Umachi, talk to the woman and doctor discussing a kidnapping."
+          },
+          "body": {
+            "ko": "키타류 거리 우마치 식당 옆의 여성에게 말을 걸어 도움을 수락하고, 안으로 들어가기를 선택한 뒤 납치범을 격파하면 클리어됩니다.",
+            "en": "Talk to the woman next to Umachi Diner on Kitaryu Street, agree to help, choose to walk in and beat the kidnapper."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 10,000엔",
+            "en": "2,000 EXP · ¥10,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 43,
-          title: { ko: "도미 강탈", en: "Sea Bream Strongarm" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "공설시장 어물전에서 강탈범과 대치", en: "Confront the strongarm at the Public Market fish stall." },
-          body: { ko: "공설시장의 생선 장수에게 도움을 수락한 뒤 사우스 아일랜드 옆 식당의 고집 센 요리사를 찾아갑니다. 참치를 낚아다 주거나 30만 엔을 지불해 생선을 되찾은 뒤 장수에게 돌아가, 가격을 밝힐지 함구할지 선택하세요.", en: "Agree to help the fishmonger at the Public Market, then visit the stubborn chef at the restaurant next to South Island. Get the fish back either by catching him a tuna or by paying ¥300,000, then return to the fishmonger and choose whether to reveal the price or keep quiet." },
-          reward: { ko: "경험치 5,000 · 200,000엔(선택) · 은 접시(선택)", en: "5,000 EXP · ¥200,000 (optional) · Silver Plate (optional)" },
+          "number": 43,
+          "title": {
+            "ko": "도미 강탈",
+            "en": "Sea Bream Strongarm"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「벼랑 끝 사나이」 클리어 후, 공설시장 남쪽 끝 생선 가게에서 이야기를 듣는다.",
+            "en": "After 'Walking the Plank', go to the fish stand at the south end of the Public Market."
+          },
+          "body": {
+            "ko": "공설시장의 생선 장수에게 도움을 수락한 뒤 사우스 아일랜드 옆 식당의 고집 센 요리사를 찾아갑니다. 참치를 낚아다 주거나 30만 엔을 지불해 생선을 되찾은 뒤 장수에게 돌아가, 가격을 밝힐지 함구할지 선택하세요.",
+            "en": "Agree to help the fishmonger at the Public Market, then visit the stubborn chef at the restaurant next to South Island. Get the fish back either by catching him a tuna or by paying ¥300,000, then return to the fishmonger and choose whether to reveal the price or keep quiet."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 200,000엔(선택) · 은 접시(선택)",
+            "en": "5,000 EXP · ¥200,000 (optional) · Silver Plate (optional)"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 44,
-          title: { ko: "가방 날치기 추적", en: "Bag That Snatcher" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 거리에서 가방 날치기 추격", en: "Chase a purse snatcher on Ryukyu Blvd." },
-          body: { ko: "카리유시 상점가 남쪽에서 날치기 추격을 수락하고 상점가를 가로질러 쫓아간 뒤, 시장에 들어가 남동쪽 구석에서 범인을 붙잡으면 클리어됩니다.", en: "Agree to chase the bag snatcher south of Kariyushi Arcade, run after him through the arcade, then enter the market and corner him in the south-eastern corner." },
-          reward: { ko: "경험치 3,000 · 3,000엔", en: "3,000 EXP · ¥3,000" },
+          "number": 44,
+          "title": {
+            "ko": "가방 날치기 추적",
+            "en": "Bag That Snatcher"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "류큐 거리에서 가방 날치기 추격",
+            "en": "Chase a purse snatcher on Ryukyu Blvd."
+          },
+          "body": {
+            "ko": "카리유시 상점가 남쪽에서 날치기 추격을 수락하고 상점가를 가로질러 쫓아간 뒤, 시장에 들어가 남동쪽 구석에서 범인을 붙잡으면 클리어됩니다.",
+            "en": "Agree to chase the bag snatcher south of Kariyushi Arcade, run after him through the arcade, then enter the market and corner him in the south-eastern corner."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 3,000엔",
+            "en": "3,000 EXP · ¥3,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 46,
-          title: { ko: "미키오의 폭식 도전", en: "Mikio's Munchathon" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류도 사무소 미키오에게 말 걸기 → 와라바 소바 폭식 시합", en: "Talk to Mikio at the Ryudo office for a Waraba soba eating contest." },
-          body: { ko: "미키오에게 말을 걸어 함께 순찰하기로 하고, 그를 따라간 뒤 불량배들을 격파하면 클리어됩니다.", en: "Talk to Mikio, agree to patrol together, follow him and beat the thugs." },
-          reward: { ko: "경험치 2,000 · 대형 파랑비늘돔", en: "2,000 EXP · Giant Blue Parrotfish" },
+          "number": 46,
+          "title": {
+            "ko": "미키오의 폭식 도전",
+            "en": "Mikio's Munchathon"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "공설시장 한가운데에 있는 미키오에게 말을 걸어 순찰을 함께 한다.",
+            "en": "Talk to Mikio in the middle of the Public Market and agree to go on patrol."
+          },
+          "body": {
+            "ko": "미키오에게 말을 걸어 함께 순찰하기로 하고, 그를 따라간 뒤 불량배들을 격파하면 클리어됩니다.",
+            "en": "Talk to Mikio, agree to patrol together, follow him and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 대형 파랑비늘돔",
+            "en": "2,000 EXP · Giant Blue Parrotfish"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 52,
-          title: { ko: "비밀 거래", en: "Under the Table" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "류큐 거리 뒷골목에서 수상한 거래 목격", en: "Witness a shady back-alley deal on Ryukyu." },
-          body: { ko: "아쿠아 스카이에서 화난 손님들과 취객에게 차례로 말을 걸고 내기를 수락합니다. 좌우 중 하나를 고르는 방식이며 3연승하면 5만 엔을 받고, 지면 2만 엔을 잃습니다.", en: "Talk to the upset customers and then the drunk at Aqua Sky and accept the game. You pick left or right — three wins pays ¥50,000, a loss costs ¥20,000." },
-          reward: { ko: "경험치 3,000 · 50,000엔 · 류큐의 전설적 술꾼", en: "3,000 EXP · ¥50,000 · Legendary Drinker of Ryukyu" },
+          "number": 52,
+          "title": {
+            "ko": "비밀 거래",
+            "en": "Under the Table"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "아쿠아 스카이에서 술에 취한 남자가 술 게임을 제안한다(진행 전 세이브 권장).",
+            "en": "At Aqua Sky, a drunk man challenges you to a drinking game (save first)."
+          },
+          "body": {
+            "ko": "아쿠아 스카이에서 화난 손님들과 취객에게 차례로 말을 걸고 내기를 수락합니다. 좌우 중 하나를 고르는 방식이며 3연승하면 5만 엔을 받고, 지면 2만 엔을 잃습니다.",
+            "en": "Talk to the upset customers and then the drunk at Aqua Sky and accept the game. You pick left or right — three wins pays ¥50,000, a loss costs ¥20,000."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔 · 류큐의 전설적 술꾼",
+            "en": "3,000 EXP · ¥50,000 · Legendary Drinker of Ryukyu"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 60,
-          title: { ko: "잃어버린 물건", en: "Lost and Found" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "에비스 전당포 인근에서 분실물 의뢰 받기", en: "Take a lost-and-found request near Ebisu Pawn." },
-          body: { ko: "카리유시 상점가 입구의 어머니에게 말을 걸어 딸 찾기를 수락한 뒤, 빨간 벤치 근처 밀짚모자 소녀 → 골목 모퉁이의 야구모자 소녀 → 시사 석상 앞에서 춤추는 리본 소녀 순으로 찾아가면 클리어됩니다.", en: "Agree to look for the daughter of the worried mother at the arcade entrance, then work through the girls in turn: the straw hat by the red bench, the baseball cap around the corner by the alley, and the ribbon dancing near the Shisa statue." },
-          reward: { ko: "경험치 3,000 · 3,000엔", en: "3,000 EXP · ¥3,000" },
+          "number": 60,
+          "title": {
+            "ko": "잃어버린 물건",
+            "en": "Lost and Found"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「영어 공부 2」 클리어 후, 카리유시 상점가 입구에서 아이를 잃어버린 분홍 원피스 여성에게 말을 건다.",
+            "en": "After 'Let's Learn English 2', talk to the woman in a pink dress at the Kariyushi Arcade entrance who lost her child."
+          },
+          "body": {
+            "ko": "카리유시 상점가 입구의 어머니에게 말을 걸어 딸 찾기를 수락한 뒤, 빨간 벤치 근처 밀짚모자 소녀 → 골목 모퉁이의 야구모자 소녀 → 시사 석상 앞에서 춤추는 리본 소녀 순으로 찾아가면 클리어됩니다.",
+            "en": "Agree to look for the daughter of the worried mother at the arcade entrance, then work through the girls in turn: the straw hat by the red bench, the baseball cap around the corner by the alley, and the ribbon dancing near the Shisa statue."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 3,000엔",
+            "en": "3,000 EXP · ¥3,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 61,
-          title: { ko: "증류 장인의 보물", en: "The Distiller's Treasure" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "공설시장 남쪽 노포에서 노인에게 말 걸기", en: "Talk to the old distiller south of the Public Market." },
-          body: { ko: "퀵클리 티 앤 보바 서쪽 주류점에서 사채업자를 쫓아 주고 보물 찾기를 돕기로 합니다. 모리닝글로리 해변 서쪽의 바위를 찾아 땅을 파면 클리어됩니다.", en: "Help the liquor store owner west of Quickly Tea and Boba shake off the loan shark and agree to find the treasure, then locate the rock on the western part of the Morning Glory beach and dig." },
-          reward: { ko: "경험치 2,000 · 시사 벨트", en: "2,000 EXP · Shisa Belt" },
+          "number": 61,
+          "title": {
+            "ko": "증류 장인의 보물",
+            "en": "The Distiller's Treasure"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「도쿄에 가고 싶어 1」 클리어 후, 북쪽 공설시장 골목에서 가게 주인을 몰아세우는 남자에게 말을 건다.",
+            "en": "After 'I Want to Go to Tokyo 1', talk to the man hounding a store owner in the North Public Market alley."
+          },
+          "body": {
+            "ko": "퀵클리 티 앤 보바 서쪽 주류점에서 사채업자를 쫓아 주고 보물 찾기를 돕기로 합니다. 모리닝글로리 해변 서쪽의 바위를 찾아 땅을 파면 클리어됩니다.",
+            "en": "Help the liquor store owner west of Quickly Tea and Boba shake off the loan shark and agree to find the treasure, then locate the rock on the western part of the Morning Glory beach and dig."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 시사 벨트",
+            "en": "2,000 EXP · Shisa Belt"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 67,
-          title: { ko: "물고기 떼 부르기", en: "Chumming the Waters" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "공설시장 어부의 미끼 운반 의뢰", en: "Help the Public Market fisherman ferry chum." },
-          body: { ko: "어느 선택지를 골라도 클리어됩니다.", en: "Either option completes it." },
-          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
+          "number": 67,
+          "title": {
+            "ko": "물고기 떼 부르기",
+            "en": "Chumming the Waters"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「도미 강탈」 클리어 후, 서쪽 다리 난간에 다시 선 남자에게 말을 건다.",
+            "en": "After 'Sea Bream Strongarm', talk to the man back on the west bridge fence."
+          },
+          "body": {
+            "ko": "어느 선택지를 골라도 클리어됩니다.",
+            "en": "Either option completes it."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 스태미난 로열",
+            "en": "2,000 EXP · Staminan Royale"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 69,
-          title: { ko: "사기꾼의 위협", en: "The Con Menace" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "강가에서 「부딪치는 남자들」 사기꾼들과 부딪치기", en: "Bump into the 'bump-and-extort' con men by the river." },
-          body: { ko: "하츠마치의 가라오케관 근처에서 사기꾼들과 마주치면 지불을 거부하고 일당을 격파하세요.", en: "Run into the con men near Karaokekan in Hatsumachi, refuse to pay and beat the thugs." },
-          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
+          "number": 69,
+          "title": {
+            "ko": "사기꾼의 위협",
+            "en": "The Con Menace"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "지도에 표시되지 않는다. 류큐 가라오케칸 근처를 걷는 정장 차림 세 남자와 부딪힌다.",
+            "en": "Not marked on the map. Bump into the three suited toughs walking near Karaokekan."
+          },
+          "body": {
+            "ko": "하츠마치의 가라오케관 근처에서 사기꾼들과 마주치면 지불을 거부하고 일당을 격파하세요.",
+            "en": "Run into the con men near Karaokekan in Hatsumachi, refuse to pay and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 10,000엔",
+            "en": "2,000 EXP · ¥10,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 70,
-          title: { ko: "사기꾼 전쟁", en: "The Con Wars" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「사기꾼의 위협」 후 다시 부딪치기", en: "After 'The Con Menace': bump them again." },
-          body: { ko: "키타류 거리에서 다시 나타난 사기꾼들에게 지불을 거부하고 격파하면 클리어됩니다.", en: "Refuse to pay the con men who reappear on Kitaryu Street and beat them." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 70,
+          "title": {
+            "ko": "사기꾼 전쟁",
+            "en": "The Con Wars"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「사기꾼의 위협」 후 다시 부딪치기",
+            "en": "After 'The Con Menace': bump them again."
+          },
+          "body": {
+            "ko": "키타류 거리에서 다시 나타난 사기꾼들에게 지불을 거부하고 격파하면 클리어됩니다.",
+            "en": "Refuse to pay the con men who reappear on Kitaryu Street and beat them."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 86,
-          title: { ko: "녹아내리는 마음", en: "A Melting Heart" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "블루씰 아이스크림 가게에서 여성에게 말 걸기", en: "Talk to the woman at the Blue Seal ice cream shop." },
-          body: { ko: "류큐 대로 교차로 남쪽의 아버지에게 아이스크림 운반을 도와주기로 합니다. 이스트 류큐 대로까지 천천히 이동하며 차량과 행인을 피하세요(실패 시 1,200엔). M스토어 근처 가족에게 건네면 클리어됩니다.", en: "Agree to help the father south of the Ryukyu Boulevard intersection carry the ice cream. Move slowly toward East Ryukyu Boulevard avoiding traffic and pedestrians — a failure costs ¥1,200 — and hand it to the family near M Store." },
-          reward: { ko: "경험치 3,000 · 6단 아이스크림", en: "3,000 EXP · Six-Scoop Ice Cream" },
+          "number": 86,
+          "title": {
+            "ko": "녹아내리는 마음",
+            "en": "A Melting Heart"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「마음의 패스트푸드」 클리어 후, 류큐 거리와 기타류 거리 모퉁이에서 아이스크림 콘을 든 남자에게 말을 건다.",
+            "en": "After 'Fast Food for the Heart', talk to the man holding ice cream cones at the Ryukyu/Kitaryu corner."
+          },
+          "body": {
+            "ko": "류큐 대로 교차로 남쪽의 아버지에게 아이스크림 운반을 도와주기로 합니다. 이스트 류큐 대로까지 천천히 이동하며 차량과 행인을 피하세요(실패 시 1,200엔). M스토어 근처 가족에게 건네면 클리어됩니다.",
+            "en": "Agree to help the father south of the Ryukyu Boulevard intersection carry the ice cream. Move slowly toward East Ryukyu Boulevard avoiding traffic and pedestrians — a failure costs ¥1,200 — and hand it to the family near M Store."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 6단 아이스크림",
+            "en": "3,000 EXP · Six-Scoop Ice Cream"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 88,
-          title: { ko: "사장의 골프", en: "Presidential Golfer" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "골프장 클럽하우스에서 사장과 시합", en: "Meet and play against the President at the golf clubhouse." },
-          body: { ko: "낮에 골프 토너먼트에서 파 이상을 기록한 뒤 사장과의 승부를 수락합니다. 패배 3만 엔, 무승부 5만 엔, 승리 시 10만 엔과 스태미난 스파크를 받습니다.", en: "Shoot at least par in a daytime Golf Tournament, then accept the match against the president — a loss pays ¥30,000, a tie ¥50,000, and a win ¥100,000 plus a Staminan Spark." },
-          reward: { ko: "경험치 3,000 · 30,000~100,000엔", en: "3,000 EXP · ¥30,000–100,000" },
+          "number": 88,
+          "title": {
+            "ko": "사장의 골프",
+            "en": "Presidential Golfer"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "골프장 클럽하우스에서 사장과 시합",
+            "en": "Meet and play against the President at the golf clubhouse."
+          },
+          "body": {
+            "ko": "낮에 골프 토너먼트에서 파 이상을 기록한 뒤 사장과의 승부를 수락합니다. 패배 3만 엔, 무승부 5만 엔, 승리 시 10만 엔과 스태미난 스파크를 받습니다.",
+            "en": "Shoot at least par in a daytime Golf Tournament, then accept the match against the president — a loss pays ¥30,000, a tie ¥50,000, and a win ¥100,000 plus a Staminan Spark."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 패배 30,000엔 / 무승부 50,000엔 / 승리 100,000엔·스태미난 스파크",
+            "en": "3,000 EXP · Loss ¥30,000 / tie ¥50,000 / win ¥100,000 and a Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 101,
-          title: { ko: "강아지 훈련: 앉아", en: "New Dog, New Tricks: Sit" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "모리닝글로리 고아원에서 마메에게 「앉아」 가르치기", en: "Teach 'Sit' to the dog Mame at Morning Glory." },
-          body: { ko: "마메에게 「앉아」를 지시하고, 제대로 하면 간식을 주면 됩니다.", en: "Tell Mame to sit and reward him with a treat when he gets it right." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 101,
+          "title": {
+            "ko": "강아지 훈련: 앉아",
+            "en": "New Dog, New Tricks: Sit"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "모리닝글로리 고아원에서 마메에게 「앉아」 가르치기",
+            "en": "Teach 'Sit' to the dog Mame at Morning Glory."
+          },
+          "body": {
+            "ko": "마메에게 「앉아」를 지시하고, 제대로 하면 간식을 주면 됩니다.",
+            "en": "Tell Mame to sit and reward him with a treat when he gets it right."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 102,
-          title: { ko: "강아지 훈련: 돌아", en: "New Dog, New Tricks: Turn Around" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「앉아」 후 「돌아」 가르치기", en: "After 'Sit': teach 'Turn Around'." },
-          body: { ko: "마메에게 「돌아」를 지시하고 성공하면 간식을 주세요.", en: "Tell Mame to turn around and give him a treat when he does it correctly." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 102,
+          "title": {
+            "ko": "강아지 훈련: 돌아",
+            "en": "New Dog, New Tricks: Turn Around"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「앉아」 후 「돌아」 가르치기",
+            "en": "After 'Sit': teach 'Turn Around'."
+          },
+          "body": {
+            "ko": "마메에게 「돌아」를 지시하고 성공하면 간식을 주세요.",
+            "en": "Tell Mame to turn around and give him a treat when he does it correctly."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 104,
-          title: { ko: "영어 공부 1", en: "Let's Learn English 1" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "에비스 전당포 북쪽 영어 공부 중인 여성에게 말 걸기", en: "Talk to the English-studying woman north of Ebisu Pawn." },
-          body: { ko: "모노레일역 근처 영어 학원 홍보원에게 무료 교재를 받은 뒤, 에비스 폰 근처 외국인에게 「도와드릴까요?」를 선택하면 클리어됩니다.", en: "Take the free textbook from the English school promoter near the monorail station, then talk to the foreigner near Ebisu Pawn and choose \"Do you need help?\"." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 104,
+          "title": {
+            "ko": "영어 공부 1",
+            "en": "Let's Learn English 1"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "모노레일역 동쪽의 정장 차림 여성에게 영어 교재를 받는다.",
+            "en": "Get an English textbook from the woman in a suit east of the Monorail Station."
+          },
+          "body": {
+            "ko": "모노레일역 근처 영어 학원 홍보원에게 무료 교재를 받은 뒤, 에비스 폰 근처 외국인에게 「도와드릴까요?」를 선택하면 클리어됩니다.",
+            "en": "Take the free textbook from the English school promoter near the monorail station, then talk to the foreigner near Ebisu Pawn and choose \"Do you need help?\"."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
         },
         {
-          number: 105,
-          title: { ko: "영어 공부 2", en: "Let's Learn English 2" },
-          chapter: { ko: "4장", en: "Chapter 4" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「영어 공부 1」 후 다시 말 걸기", en: "After Lesson 1: speak to her again." },
-          body: { ko: "홍보원에게 1만 엔짜리 초급 교재를 산 뒤, 카리유시 상점가의 외국인에게 「이쪽으로 직진입니다」를 선택하면 클리어됩니다.", en: "Buy the ¥10,000 beginner's handbook from the promoter, then talk to the foreigner at Kariyushi Arcade and choose \"It's straight this way\"." },
-          reward: { ko: "경험치 2,000 · 이탈리안 지갑", en: "2,000 EXP · Italian Wallet" },
-        },
-      ],
+          "number": 105,
+          "title": {
+            "ko": "영어 공부 2",
+            "en": "Let's Learn English 2"
+          },
+          "chapter": {
+            "ko": "4장",
+            "en": "Chapter 4"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「영어 공부 1」 후 다시 말 걸기",
+            "en": "After Lesson 1: speak to her again."
+          },
+          "body": {
+            "ko": "홍보원에게 1만 엔짜리 초급 교재를 산 뒤, 카리유시 상점가의 외국인에게 「이쪽으로 직진입니다」를 선택하면 클리어됩니다.",
+            "en": "Buy the ¥10,000 beginner's handbook from the promoter, then talk to the foreigner at Kariyushi Arcade and choose \"It's straight this way\"."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 이탈리안 지갑",
+            "en": "2,000 EXP · Italian Wallet"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 4 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-4-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "5장 — 카무로초 복귀", en: "Chapter 5 — The Curtain Rises (Kamurocho)" },
-      items: [
+      "title": {
+        "ko": "5장 — 카무로초 복귀",
+        "en": "Chapter 5 — The Curtain Rises (Kamurocho)"
+      },
+      "items": [
         {
-          number: 18,
-          title: { ko: "인스턴트 라멘은 하루아침에 안 된다", en: "Instant Ramen Takes Time" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "큐슈 No.1 별 라멘에 입장해 주인과 손님의 다툼에 개입 (10장에서 완결)", en: "Enter Kyushu No. 1 Star ramen and intervene (concludes in Ch.10)." },
-          body: { ko: "큐슈 No.1 별 라멘에서 주인과 우에다의 다툼 청취 → 우에다에게 인스턴트 라멘 시식 → \"격려한다\" 선택 → 밀레니엄 타워에서 양아치 격파 → 큐슈 No.1 별로 복귀, 우에다가 오키나와로 출발 → 10장 에비스 전당포 남쪽에서 우에다에게 와라바 안내 → 와라바에서 대화 → 카무로초 큐슈 No.1 별에서 시식.", en: "Kyushu No. 1 Star → talk to owner and to Ueda outside → eat his instant ramen and pick 'Encourage Him' → Millennium Tower brawl → back to Kyushu No. 1 Star, Ueda leaves for Okinawa → in Ch.10 find him south of Ebisu Pawn, direct him to Waraba, then return to Kamurocho." },
-          choices: [
-            { prompt: { ko: "우에다의 시제품 라멘", en: "Ueda's prototype ramen" }, correct: { ko: "「격려한다」", en: "'Encourage Him'" } },
+          "number": 18,
+          "title": {
+            "ko": "인스턴트 라멘은 하루아침에 안 된다",
+            "en": "Instant Ramen Takes Time"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "큐슈 No.1 별 라멘에 입장해 주인과 손님의 다툼에 개입 (10장에서 완결)",
+            "en": "Enter Kyushu No. 1 Star ramen and intervene (concludes in Ch.10)."
+          },
+          "body": {
+            "ko": "큐슈 No.1 별 라멘에서 주인과 우에다의 다툼 청취 → 우에다에게 인스턴트 라멘 시식 → \"격려한다\" 선택 → 밀레니엄 타워에서 양아치 격파 → 큐슈 No.1 별로 복귀, 우에다가 오키나와로 출발 → 10장 에비스 전당포 남쪽에서 우에다에게 와라바 안내 → 와라바에서 대화 → 카무로초 큐슈 No.1 별에서 시식.",
+            "en": "Kyushu No. 1 Star → talk to owner and to Ueda outside → eat his instant ramen and pick 'Encourage Him' → Millennium Tower brawl → back to Kyushu No. 1 Star, Ueda leaves for Okinawa → in Ch.10 find him south of Ebisu Pawn, direct him to Waraba, then return to Kamurocho."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "우에다의 시제품 라멘",
+                "en": "Ueda's prototype ramen"
+              },
+              "correct": {
+                "ko": "「격려한다」",
+                "en": "'Encourage Him'"
+              }
+            }
           ],
-          reward: { ko: "「큐슈 No.1 별 라멘 샘플」", en: "Kyushu No. 1 Star Ramen Sample" },
+          "reward": {
+            "ko": "경험치 10,000 · 큐슈 1번성 라멘 샘플",
+            "en": "10,000 EXP · Kyushu No. 1 Star Ramen Sample"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 22,
-          title: { ko: "초벌 스윙", en: "Rough Draft" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "배팅 센터 하드 코스 1100점 이상 → 입구의 정체 모를 노인", en: "Score 1100+ on Hard Course at the Batting Center; meet the Mysterious Old Man." },
-          body: { ko: "요시다 배팅 센터에서 하드 코스로 1,100점을 넘긴 뒤 수수께끼의 남자에게 말을 겁니다. 한 번 나갔다 다시 들어가 야구 선수와 대화하고 승부를 수락한 다음, 상대보다 높은 점수를 내면 클리어됩니다.", en: "Score over 1,100 points on the Hard course at the Yoshida Batting Center, then talk to the mysterious man. Step out and back in, speak to the baseball player, accept his challenge and out-score him." },
-          reward: { ko: "경험치 3,000 · 스파이크 배트", en: "3,000 EXP · Spiked Bat" },
+          "number": 22,
+          "title": {
+            "ko": "초벌 스윙",
+            "en": "Rough Draft"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "배팅 센터 하드 코스 1100점 이상 → 입구의 정체 모를 노인",
+            "en": "Score 1100+ on Hard Course at the Batting Center; meet the Mysterious Old Man."
+          },
+          "body": {
+            "ko": "요시다 배팅 센터에서 하드 코스로 1,100점을 넘긴 뒤 수수께끼의 남자에게 말을 겁니다. 한 번 나갔다 다시 들어가 야구 선수와 대화하고 승부를 수락한 다음, 상대보다 높은 점수를 내면 클리어됩니다.",
+            "en": "Score over 1,100 points on the Hard course at the Yoshida Batting Center, then talk to the mysterious man. Step out and back in, speak to the baseball player, accept his challenge and out-score him."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 스파이크 배트",
+            "en": "3,000 EXP · Spiked Bat"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 26,
-          title: { ko: "수금원 키류", en: "Kiryu the Collector" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "극장 광장에서 빚쟁이를 쫓는 수금원에게 말 걸기 (※「삥쟁이」 의미 아님)", en: "Speak to the debt collector chasing his client in Theater Square." },
-          body: { ko: "극장 광장에서 시바야마와 마주쳐 도움을 수락하고 모토야마를 찾아 돌아다닙니다. 위치를 알려주는 전화를 받으면 지정된 장소로 가서 제한 시간 안에 모토야마를 격파하세요.", en: "Run into Shibayama at Theater Square, agree to help and search for Motoyama. When the call comes in with his location, head there and beat him before the timer runs out." },
-          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
+          "number": 26,
+          "title": {
+            "ko": "수금원 키류",
+            "en": "Kiryu the Collector"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "극장 광장에서 빚쟁이를 쫓는 수금원에게 말 걸기 (※「삥쟁이」 의미 아님)",
+            "en": "Speak to the debt collector chasing his client in Theater Square."
+          },
+          "body": {
+            "ko": "극장 광장에서 시바야마와 마주쳐 도움을 수락하고 모토야마를 찾아 돌아다닙니다. 위치를 알려주는 전화를 받으면 지정된 장소로 가서 제한 시간 안에 모토야마를 격파하세요.",
+            "en": "Run into Shibayama at Theater Square, agree to help and search for Motoyama. When the call comes in with his location, head there and beat him before the timer runs out."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 100,000엔",
+            "en": "3,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 28,
-          title: { ko: "내 얘기 하는 거야?", en: "Talking About Me?" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "Love in Heart 1회 방문 후, 밴텀에 혼자 앉은 여성에게 말 걸기", en: "Visit Love in Heart, then talk to the lone woman in Bantam." },
-          body: { ko: "러브 인 하트에서 마사지를 받은 뒤 밴텀으로 가서 아야카에게 말을 겁니다. 이야기를 들어 주기로 하고, 짝사랑 상대에 대해 더 알아보기 → 자리에 남기 → 「전혀」 순으로 선택하면 클리어됩니다.", en: "Get a massage at Love in Heart, then go to Bantam and talk to Ayaka. Agree to hear her out, choose to find out more about her crush, choose to stay, then answer \"not at all\"." },
-          reward: { ko: "경험치 5,000 · 스탠더드 마사지 50% 할인", en: "5,000 EXP · 50% off Standard Massage" },
+          "number": 28,
+          "title": {
+            "ko": "내 얘기 하는 거야?",
+            "en": "Talking About Me?"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "Love in Heart 1회 방문 후, 밴텀에 혼자 앉은 여성에게 말 걸기",
+            "en": "Visit Love in Heart, then talk to the lone woman in Bantam."
+          },
+          "body": {
+            "ko": "러브 인 하트에서 마사지를 받은 뒤 밴텀으로 가서 아야카에게 말을 겁니다. 이야기를 들어 주기로 하고, 짝사랑 상대에 대해 더 알아보기 → 자리에 남기 → 「전혀」 순으로 선택하면 클리어됩니다.",
+            "en": "Get a massage at Love in Heart, then go to Bantam and talk to Ayaka. Agree to hear her out, choose to find out more about her crush, choose to stay, then answer \"not at all\"."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 스탠더드 마사지 50% 할인",
+            "en": "5,000 EXP · 50% off Standard Massage"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 29,
-          title: { ko: "만화광", en: "Manga Mania" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "포포 매장 입장 시 타이치의 전화 → 카페 알프스로 (10장에서 완결)", en: "Enter any Poppo for Taichi's call (finishes in Ch.10)." },
-          body: { ko: "5장에서 타이치의 전화를 받고 편의점에서 320엔짜리 「소년 파이브」를 산 뒤, 타이헤이 대로에 쓰러진 남자에게 말을 걸어 도와줍니다. 카페 알프스로 가서 히라노와 편집자의 대화를 들은 뒤 편집자에게 말을 걸고, 10장 오키나와의 류큐 대로 교차로에서 이어지는 후반부를 마무리하세요.", en: "In Chapter 5 take Taichi's call, buy Shonen Five at a convenience store for ¥320, then help the collapsed man on Taihei Boulevard. Head to Cafe Alps, listen to Hirano and the editor, talk to the editor, then finish the second half at the Ryukyu Boulevard intersection in Okinawa during Chapter 10." },
-          reward: { ko: "경험치 10,000 · 소년 파이브 50권 세트 · 금 접시", en: "10,000 EXP · Stack of 50 Shonen Five issues · Gold Plate" },
+          "number": 29,
+          "title": {
+            "ko": "만화광",
+            "en": "Manga Mania"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "포포 매장 입장 시 타이치의 전화 → 카페 알프스로 (10장에서 완결)",
+            "en": "Enter any Poppo for Taichi's call (finishes in Ch.10)."
+          },
+          "body": {
+            "ko": "5장에서 타이치의 전화를 받고 편의점에서 320엔짜리 「소년 파이브」를 산 뒤, 타이헤이 대로에 쓰러진 남자에게 말을 걸어 도와줍니다. 카페 알프스로 가서 히라노와 편집자의 대화를 들은 뒤 편집자에게 말을 걸고, 10장 오키나와의 류큐 대로 교차로에서 이어지는 후반부를 마무리하세요.",
+            "en": "In Chapter 5 take Taichi's call, buy Shonen Five at a convenience store for ¥320, then help the collapsed man on Taihei Boulevard. Head to Cafe Alps, listen to Hirano and the editor, talk to the editor, then finish the second half at the Ryukyu Boulevard intersection in Okinawa during Chapter 10."
+          },
+          "reward": {
+            "ko": "경험치 10,000 · 소년 파이브 50권 세트 · 금 접시",
+            "en": "10,000 EXP · Stack of 50 Shonen Five issues · Gold Plate"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 35,
-          title: { ko: "Mr. 때려봐 다시", en: "Mr. Try and Hit Me Again" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "야간 시치후쿠 주차장 동쪽 도전자에게 말 걸기", en: "At night, talk to the challenger east of Shichifuku Parking." },
-          body: { ko: "밤에 시치후쿠 거리 주차장으로 가서 Mr. 때려봐에게 말을 걸고 3,000엔을 내 승부를 수락한 뒤, 제한 시간 안에 상대를 때리면 클리어됩니다.", en: "At night go to the Shichifuku Street parking lot, talk to Mr. Try and Hit Me, pay ¥3,000 to accept, and land a hit on him within the time limit." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 35,
+          "title": {
+            "ko": "Mr. 때려봐 다시",
+            "en": "Mr. Try and Hit Me Again"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "야간 시치후쿠 주차장 동쪽 도전자에게 말 걸기",
+            "en": "At night, talk to the challenger east of Shichifuku Parking."
+          },
+          "body": {
+            "ko": "밤에 시치후쿠 거리 주차장으로 가서 Mr. 때려봐에게 말을 걸고 3,000엔을 내 승부를 수락한 뒤, 제한 시간 안에 상대를 때리면 클리어됩니다.",
+            "en": "At night go to the Shichifuku Street parking lot, talk to Mr. Try and Hit Me, pay ¥3,000 to accept, and land a hit on him within the time limit."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 39,
-          title: { ko: "한 노인의 추억", en: "The Old Man's Memories" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "텐카이치 거리에서 멍하니 서 있는 노인에게 말 걸기", en: "Talk to the absent-minded old man on Tenkaichi St." },
-          body: { ko: "밀레니엄 타워 입구 벤치의 노인에게 말을 걸어 불량배를 쫓아 주고, 진세이를 찾아 주기로 합니다. 스폰 거리에서 식당 종업원에게 바에 대해 묻고, 챔피언 거리에서 빚쟁이에게 시달리는 남자를 도운 뒤 밀레니엄 타워의 노인에게 돌아가면 클리어됩니다.", en: "Talk to the old man on the bench outside Millennium Tower, agree to fend off the hooligans and to look for Jinsei. Ask a restaurant worker about the bar on Suppon Street, help the man being harassed by a debt collector in Champion District, then return to the old man at Millennium Tower." },
-          reward: { ko: "경험치 3,000 · 100,000엔", en: "3,000 EXP · ¥100,000" },
+          "number": 39,
+          "title": {
+            "ko": "한 노인의 추억",
+            "en": "The Old Man's Memories"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「전채」 클리어 후, 밀레니엄 타워 동쪽 입구 앞에서 괴롭힘당하는 노신사를 돕는다.",
+            "en": "After 'Hor D'oeuvres', help the old gentleman being harassed outside the east door of Millennium Tower."
+          },
+          "body": {
+            "ko": "밀레니엄 타워 입구 벤치의 노인에게 말을 걸어 불량배를 쫓아 주고, 진세이를 찾아 주기로 합니다. 스폰 거리에서 식당 종업원에게 바에 대해 묻고, 챔피언 거리에서 빚쟁이에게 시달리는 남자를 도운 뒤 밀레니엄 타워의 노인에게 돌아가면 클리어됩니다.",
+            "en": "Talk to the old man on the bench outside Millennium Tower, agree to fend off the hooligans and to look for Jinsei. Ask a restaurant worker about the bar on Suppon Street, help the man being harassed by a debt collector in Champion District, then return to the old man at Millennium Tower."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 100,000엔",
+            "en": "3,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 48,
-          title: { ko: "전채", en: "Hor D'oeuvres" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리 라멘 가게 앞 무전취식범 추격", en: "Chase the dine-and-dasher from a Showa St. ramen stall." },
-          body: { ko: "먹튀범을 쫓기로 선택하고 끝까지 추격하면 클리어됩니다.", en: "Choose to chase the dine-and-dasher and run him down." },
-          reward: { ko: "경험치 2,000 · 스태미난 로열", en: "2,000 EXP · Staminan Royale" },
+          "number": 48,
+          "title": {
+            "ko": "전채",
+            "en": "Hor D'oeuvres"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「땡처리 세일」 클리어 후, 칸라이 앞에 서 있는 직원에게 먹튀 손님 이야기를 듣는다.",
+            "en": "After 'Bargain Sale', talk to the worker outside Kanrai about a dine-and-dasher."
+          },
+          "body": {
+            "ko": "먹튀범을 쫓기로 선택하고 끝까지 추격하면 클리어됩니다.",
+            "en": "Choose to chase the dine-and-dasher and run him down."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 스태미난 로열",
+            "en": "2,000 EXP · Staminan Royale"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 53,
-          title: { ko: "사랑의 명중", en: "Bullseye of Love" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "Love in Heart에서 다트로 호감 얻기", en: "At Love in Heart: win her over at darts." },
-          body: { ko: "다트 '01을 5회 플레이한 뒤 밴텀의 마사키에게 말을 겁니다. 마사키의 제안을 받으면 져 주는 쪽, 카나에의 제안을 고려하면 이기는 쪽이며, 승리 시 5만 엔·패배 시 1만 엔을 받습니다.", en: "Play Darts '01 five times, then talk to Masaki in Bantam. Taking Masaki's proposition means throwing the match; considering Kanae's means winning it — ¥50,000 for a win, ¥10,000 for a loss." },
-          reward: { ko: "경험치 3,000 · 10,000~50,000엔", en: "3,000 EXP · ¥10,000–50,000" },
+          "number": 53,
+          "title": {
+            "ko": "사랑의 명중",
+            "en": "Bullseye of Love"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "다트 01 게임을 5번 한 뒤 반탐에 가면 일부러 져 달라는 남자가 대결을 신청한다.",
+            "en": "After playing Darts 01 five times, a man in Bantam asks you to play and let him win."
+          },
+          "body": {
+            "ko": "다트 '01을 5회 플레이한 뒤 밴텀의 마사키에게 말을 겁니다. 마사키의 제안을 받으면 져 주는 쪽, 카나에의 제안을 고려하면 이기는 쪽이며, 승리 시 5만 엔·패배 시 1만 엔을 받습니다.",
+            "en": "Play Darts '01 five times, then talk to Masaki in Bantam. Taking Masaki's proposition means throwing the match; considering Kanae's means winning it — ¥50,000 for a win, ¥10,000 for a loss."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 10,000~50,000엔",
+            "en": "3,000 EXP · ¥10,000–50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 54,
-          title: { ko: "성난 폭주족", en: "Riled Riders" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리에서 폭주족과 시비 붙기", en: "Tangle with bikers on Showa St." },
-          body: { ko: "밤에 택시 기사에게 무슨 일인지 물어 도움을 수락하고, 취객들을 격파하면 클리어됩니다.", en: "At night, ask the taxi driver what is going on, agree to help and beat the drunks." },
-          reward: { ko: "경험치 2,000 · 20,000엔", en: "2,000 EXP · ¥20,000" },
+          "number": 54,
+          "title": {
+            "ko": "성난 폭주족",
+            "en": "Riled Riders"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "밤, 「하이테크 훔쳐보기」 클리어 후 시치후쿠 거리 서쪽 어린이 공원 앞에서 취객에게 시달리는 택시 기사에게 말을 건다.",
+            "en": "At night after 'High-Tech Peeping Tom', talk to the taxi driver troubled by drunks in front of Children's Park on west Shichifuku Street."
+          },
+          "body": {
+            "ko": "밤에 택시 기사에게 무슨 일인지 물어 도움을 수락하고, 취객들을 격파하면 클리어됩니다.",
+            "en": "At night, ask the taxi driver what is going on, agree to help and beat the drunks."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 20,000엔",
+            "en": "2,000 EXP · ¥20,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 56,
-          title: { ko: "도쿄에 가고 싶어 2", en: "I Want to Go to Tokyo 2" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "1편 후 카무로초에서 그녀와 재회", en: "After Pt.1: meet her again in Kamurocho." },
-          body: { ko: "스마일 버거에서 카에데에게 말을 건 뒤 다시 방문하고, 이후 문자를 확인할 때마다 젤라테리아 → 마하볼 → 면접 안내 → 어스 엔젤 순으로 이동해 어스 엔젤에 들어가면 클리어됩니다.", en: "Talk to Kaede at Smile Burger and come back once more, then follow each text message in turn — Gelateria, Mach Bowl, the job interview, and finally Earth Angel — and go inside." },
-          reward: { ko: "경험치 3,000 · 스마일 프라이 · 50,000엔", en: "3,000 EXP · Smile Fries · ¥50,000" },
+          "number": 56,
+          "title": {
+            "ko": "도쿄에 가고 싶어 2",
+            "en": "I Want to Go to Tokyo 2"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "1편 후 카무로초에서 그녀와 재회",
+            "en": "After Pt.1: meet her again in Kamurocho."
+          },
+          "body": {
+            "ko": "스마일 버거에서 카에데에게 말을 건 뒤 다시 방문하고, 이후 문자를 확인할 때마다 젤라테리아 → 마하볼 → 면접 안내 → 어스 엔젤 순으로 이동해 어스 엔젤에 들어가면 클리어됩니다.",
+            "en": "Talk to Kaede at Smile Burger and come back once more, then follow each text message in turn — Gelateria, Mach Bowl, the job interview, and finally Earth Angel — and go inside."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 스마일 프라이 · 50,000엔",
+            "en": "3,000 EXP · Smile Fries · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 59,
-          title: { ko: "과거의 망령", en: "Ghosts from the Past" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「잘못 짖었다」 후 텐카이치 거리에서 폭탄 사건 관련자 등장", en: "After 'Barking up the Wrong Tree': the bombing-incident father appears on Tenkaichi." },
-          body: { ko: "편의점에서 노려보는 낯선 남자와 마주친 뒤 가게 밖의 타츠오에게 말을 겁니다. 셸락 → 웨스트 파크 순으로 이동해 히라타 부자와 대화하고, 마지막에 타츠오를 격파하면 클리어됩니다.", en: "Run into the staring stranger at a convenience store, then talk to Tatsuo outside. Head to Shellac and then West Park, speak to Hirata and his son, and finish by defeating Tatsuo." },
-          reward: { ko: "경험치 8,000", en: "8,000 EXP" },
+          "number": 59,
+          "title": {
+            "ko": "과거의 망령",
+            "en": "Ghosts from the Past"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "M 스토어나 나카미치 골목 포포에 들어가 잡지 진열대 쪽으로 가면 노려보는 남자가 있고, 가게를 나서면 말을 걸어온다.",
+            "en": "Enter the M Store or the Nakamichi Alley Poppo and walk toward the magazine rack; a staring man talks to you as you leave."
+          },
+          "body": {
+            "ko": "편의점에서 노려보는 낯선 남자와 마주친 뒤 가게 밖의 타츠오에게 말을 겁니다. 셸락 → 웨스트 파크 순으로 이동해 히라타 부자와 대화하고, 마지막에 타츠오를 격파하면 클리어됩니다.",
+            "en": "Run into the staring stranger at a convenience store, then talk to Tatsuo outside. Head to Shellac and then West Park, speak to Hirata and his son, and finish by defeating Tatsuo."
+          },
+          "reward": {
+            "ko": "경험치 8,000",
+            "en": "8,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 62,
-          title: { ko: "용궁 귀환", en: "Return to the Dragon Palace" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "텐카이치 거리에서 우라시마 같은 노인에게 말 걸기", en: "Talk to the Urashima-like old man on Tenkaichi St." },
-          body: { ko: "호텔 거리 오른쪽 끝의 인파를 찾아 사냥꾼들을 격파하고 용궁 쪽으로 이동해 나머지와 두목까지 처리합니다. 이후 돌아다니다 카지노 매니저의 전화를 받으면 용궁이 열립니다.", en: "Find the small crowd at the far right of the Hotel District and beat the hunters, move toward the Dragon Palace and clear the rest plus their leader. Then walk around until the casino manager calls to say the Palace is open." },
-          reward: { ko: "경험치 2,000 · 용궁 이용 가능", en: "2,000 EXP · Access to the Dragon Palace" },
+          "number": 62,
+          "title": {
+            "ko": "용궁 귀환",
+            "en": "Return to the Dragon Palace"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "배팅 센터 동쪽의 「?」 표시에서 「사냥」을 하러 간다는 불량배들을 본 뒤, 호텔 거리 서쪽 끝에서 노숙자를 둘러싼 무리를 쓰러뜨린다.",
+            "en": "At the '?' marker east of the Batting Center, see the punks heading out 'hunting', then beat the group surrounding a homeless man at the west edge of the Hotel District."
+          },
+          "body": {
+            "ko": "호텔 거리 오른쪽 끝의 인파를 찾아 사냥꾼들을 격파하고 용궁 쪽으로 이동해 나머지와 두목까지 처리합니다. 이후 돌아다니다 카지노 매니저의 전화를 받으면 용궁이 열립니다.",
+            "en": "Find the small crowd at the far right of the Hotel District and beat the hunters, move toward the Dragon Palace and clear the rest plus their leader. Then walk around until the casino manager calls to say the Palace is open."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 용궁 이용 가능",
+            "en": "2,000 EXP · Access to the Dragon Palace"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 63,
-          title: { ko: "잘못 걸린 전화", en: "Missed Caller" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "공중전화 부스에서 울리는 전화 받기", en: "Pick up a ringing Kamurocho payphone." },
-          body: { ko: "텐카이치 거리에서 불량배에게 시달리는 남자를 지켜 준 뒤 허니 티슈로 전화를 겁니다. 칸라이에서 치카를 만나고, 스마일 버거 앞 여성에게 말을 건 다음 불량배들을 격파하면 클리어됩니다.", en: "Defend the man from the hooligans in Tenkaichi Alley, then use Honey's Tissues to make the call. Meet Chika at Kanrai, talk to the girl in front of Smile Burger and beat the thugs." },
-          reward: { ko: "경험치 2,000 · 100,000엔", en: "2,000 EXP · ¥100,000" },
+          "number": 63,
+          "title": {
+            "ko": "잘못 걸린 전화",
+            "en": "Missed Caller"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「만화광」를 편집자가 오키나와로 간다는 단계까지 진행한 뒤, 텐카이치 골목에서 딸을 찾는 노인을 만난다.",
+            "en": "After progressing 'Manga Mania' until the editor heads to Okinawa, meet the old man looking for his daughter in Tenkaichi Alley."
+          },
+          "body": {
+            "ko": "텐카이치 거리에서 불량배에게 시달리는 남자를 지켜 준 뒤 허니 티슈로 전화를 겁니다. 칸라이에서 치카를 만나고, 스마일 버거 앞 여성에게 말을 건 다음 불량배들을 격파하면 클리어됩니다.",
+            "en": "Defend the man from the hooligans in Tenkaichi Alley, then use Honey's Tissues to make the call. Meet Chika at Kanrai, talk to the girl in front of Smile Burger and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 100,000엔",
+            "en": "2,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 74,
-          title: { ko: "땡처리 세일", en: "Bargain Sale" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "M 스토어 앞 세일 호객꾼에게 말 걸기", en: "Talk to the bargain sale tout at an M Store." },
-          body: { ko: "가방을 5만 엔에 사되, 흥정하거나 한 번 나갔다 오면 3만 5천 엔으로 내려갑니다. 에비스 폰에 팔고 판매원에게 돌아가 되팔기 제안을 두 번 모두 거절하면 전투로 이어지고, 이후 건물을 드나든 뒤 창고로 가면 최대 보상까지 받습니다.", en: "Buy the bag for ¥50,000 — haggling, or leaving and returning, drops it to ¥35,000. Sell it at Ebisu Pawn, go back to the salesman and refuse to resell it both times (accepting either offer ends the substory early with less money), beat him, then enter and leave a building and head to the warehouse." },
-          reward: { ko: "경험치 3,000 · 70,000~300,000엔", en: "3,000 EXP · ¥70,000–300,000" },
+          "number": 74,
+          "title": {
+            "ko": "땡처리 세일",
+            "en": "Bargain Sale"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "센료 거리 남동쪽 끝에서 명품 가방을 파는 선글라스 남자에게 말을 건다.",
+            "en": "At the southeast end of Senryo Avenue, talk to the shifty man in sunglasses selling a designer bag."
+          },
+          "body": {
+            "ko": "가방을 5만 엔에 사되, 흥정하거나 한 번 나갔다 오면 3만 5천 엔으로 내려갑니다. 에비스 폰에 팔고 판매원에게 돌아가 되팔기 제안을 두 번 모두 거절하면 전투로 이어지고, 이후 건물을 드나든 뒤 창고로 가면 최대 보상까지 받습니다.",
+            "en": "Buy the bag for ¥50,000 — haggling, or leaving and returning, drops it to ¥35,000. Sell it at Ebisu Pawn, go back to the salesman and refuse to resell it both times (accepting either offer ends the substory early with less money), beat him, then enter and leave a building and head to the warehouse."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 70,000~300,000엔",
+            "en": "3,000 EXP · ¥70,000–300,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 79,
-          title: { ko: "라자냐 대탈주", en: "Lasagna at Large" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "이탈리아 레스토랑 앞 셰프에게 말 걸기 → 라자냐 배달", en: "Talk to the chef outside an Italian restaurant; deliver lasagna." },
-          body: { ko: "시치후쿠 거리 어린이 공원 근처의 여성에게 말을 건 뒤, 포포 텐카이치점에서 개다래 막대를 삽니다(나카미치점·M스토어에는 없습니다). 포포 텐카이치 맞은편 건물 근처의 라자냐에게 주면 클리어됩니다.", en: "Talk to the worried woman near Children's Park on Shichifuku Street, then buy a catnip stick — only Poppo Tenkaichi stocks it, not Poppo Nakamichi or M Store. Give it to Lasagna near the building across from Poppo Tenkaichi." },
-          reward: { ko: "경험치 2,000 · 30,000엔", en: "2,000 EXP · ¥30,000" },
+          "number": 79,
+          "title": {
+            "ko": "라자냐 대탈주",
+            "en": "Lasagna at Large"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「수금원 키류」 클리어 후, 시치후쿠 거리 어린이 공원 동쪽에서 고양이 라자냐를 찾는 여성에게 말을 건다.",
+            "en": "After 'Kiryu the Collector', talk to the woman east of Children's Park on Shichifuku Street looking for her cat, Lasagna."
+          },
+          "body": {
+            "ko": "시치후쿠 거리 어린이 공원 근처의 여성에게 말을 건 뒤, 포포 텐카이치점에서 개다래 막대를 삽니다(나카미치점·M스토어에는 없습니다). 포포 텐카이치 맞은편 건물 근처의 라자냐에게 주면 클리어됩니다.",
+            "en": "Talk to the worried woman near Children's Park on Shichifuku Street, then buy a catnip stick — only Poppo Tenkaichi stocks it, not Poppo Nakamichi or M Store. Give it to Lasagna near the building across from Poppo Tenkaichi."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 30,000엔",
+            "en": "2,000 EXP · ¥30,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 83,
-          title: { ko: "데스 볼링", en: "Death Bowler" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "마하 볼링장에서 도전자와 대결", en: "Take on the challenger at Mach Bowl." },
-          body: { ko: "볼링에서 200점을 낸 뒤 도전을 수락하고 승부에서 이기면 클리어됩니다.", en: "Score 200 in bowling, accept the challenge and win the match." },
-          reward: { ko: "경험치 3,000 · 도시락 세트(돈가스)", en: "3,000 EXP · Bento Lunch Set (Pork)" },
+          "number": 83,
+          "title": {
+            "ko": "데스 볼링",
+            "en": "Death Bowler"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "마하 볼링장에서 도전자와 대결",
+            "en": "Take on the challenger at Mach Bowl."
+          },
+          "body": {
+            "ko": "볼링에서 200점을 낸 뒤 도전을 수락하고 승부에서 이기면 클리어됩니다.",
+            "en": "Score 200 in bowling, accept the challenge and win the match."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 도시락 세트(돈가스)",
+            "en": "3,000 EXP · Bento Lunch Set (Pork)"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 84,
-          title: { ko: "지난달의 챔피언", en: "Last Month's Winner" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "다트 가게에서 지난달 챔피언과 대결", en: "Face last month's darts champion." },
-          body: { ko: "나카미치 골목 포포 근처의 수상한 남자를 격파하고 수락을 선택합니다. 구역을 나갔다가 나카미치 거리 택시 승강장의 남자에게 말을 걸면 클리어됩니다.", en: "Beat the sketchy man near Poppo in Nakamichi Alley and agree, leave the area, then talk to the man at the taxi spot on Nakamichi Street." },
-          reward: { ko: "경험치 2,000 · 10,000엔", en: "2,000 EXP · ¥10,000" },
+          "number": 84,
+          "title": {
+            "ko": "지난달의 챔피언",
+            "en": "Last Month's Winner"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「잘못 걸린 전화」 클리어 후, 나카미치 거리 포포 앞에서 겁먹은 남자가 덤벼든다(복권 당첨자 경호 의뢰).",
+            "en": "After 'Missed Caller', a cowering man attacks you outside the Nakamichi Poppo; he wants a bodyguard for his winning lottery ticket."
+          },
+          "body": {
+            "ko": "나카미치 골목 포포 근처의 수상한 남자를 격파하고 수락을 선택합니다. 구역을 나갔다가 나카미치 거리 택시 승강장의 남자에게 말을 걸면 클리어됩니다.",
+            "en": "Beat the sketchy man near Poppo in Nakamichi Alley and agree, leave the area, then talk to the man at the taxi spot on Nakamichi Street."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 10,000엔",
+            "en": "2,000 EXP · ¥10,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 89,
-          title: { ko: "정수기", en: "Water Purifiers" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "뉴 세레나 안에서 정수기 판매원과 대치", en: "Confront the water purifier salesmen in New Serena." },
-          body: { ko: "IH 정수기 주식회사의 메시지를 읽고 공원대로의 노란 옷 남자에게 말을 겁니다. 사무실에 들어가 두 제안을 모두 거절하고 남자들을 격파하면 클리어됩니다.", en: "Read the message from IH Water Purifier, Inc., find and talk to the man in yellow on Park Boulevard, go inside the office, decline both offers and beat the men." },
-          reward: { ko: "경험치 2,000 · 50,000엔", en: "2,000 EXP · ¥50,000" },
+          "number": 89,
+          "title": {
+            "ko": "정수기",
+            "en": "Water Purifiers"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「용궁 귀환」 클리어 후 정수기 판매 문자를 받고, 용궁성 동쪽의 노란 재킷 남자에게 말을 건다.",
+            "en": "After 'Return to the Dragon Palace', get the water-purifier text and talk to the man in the yellow jacket east of the Dragon Palace."
+          },
+          "body": {
+            "ko": "IH 정수기 주식회사의 메시지를 읽고 공원대로의 노란 옷 남자에게 말을 겁니다. 사무실에 들어가 두 제안을 모두 거절하고 남자들을 격파하면 클리어됩니다.",
+            "en": "Read the message from IH Water Purifier, Inc., find and talk to the man in yellow on Park Boulevard, go inside the office, decline both offers and beat the men."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 50,000엔",
+            "en": "2,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 94,
-          title: { ko: "하이테크 훔쳐보기", en: "High-Tech Peeping Tom" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "핑크 거리에서 도촬 카메라 소문 듣고 범인 추적", en: "Hear about the high-tech peeper on Pink St." },
-          body: { ko: "타이헤이 대로 샹그릴라 앞의 여성에게 도움을 수락한 뒤 1인칭 시점으로 주변을 살핍니다. 창문에 매달린 남자, 옥상의 인부, 건너편 건물 가장자리의 여성, 발코니에서 고양이를 쫓는 아주머니를 차례로 확인하면 긴급 전화가 옵니다.", en: "Agree to help the woman in front of Shangri-La on Taihei Boulevard, then stake out the area in first-person mode — a guy dangling from a window, a construction worker on the roof above, a girl on the edge of the building across the street, and an auntie chasing a cat on a balcony — until her emergency call comes in." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 94,
+          "title": {
+            "ko": "하이테크 훔쳐보기",
+            "en": "High-Tech Peeping Tom"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 다시」 클리어 후, 센료 거리와 타이헤이 거리 모퉁이의 선글라스·보라색 원피스 여성에게 말을 건다.",
+            "en": "After 'Mr. Try and Hit Me Again', talk to the woman in shades and a purple dress at the Senryo/Taihei corner."
+          },
+          "body": {
+            "ko": "타이헤이 대로 샹그릴라 앞의 여성에게 도움을 수락한 뒤 1인칭 시점으로 주변을 살핍니다. 창문에 매달린 남자, 옥상의 인부, 건너편 건물 가장자리의 여성, 발코니에서 고양이를 쫓는 아주머니를 차례로 확인하면 긴급 전화가 옵니다.",
+            "en": "Agree to help the woman in front of Shangri-La on Taihei Boulevard, then stake out the area in first-person mode — a guy dangling from a window, a construction worker on the roof above, a girl on the edge of the building across the street, and an auntie chasing a cat on a balcony — until her emergency call comes in."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 95,
-          title: { ko: "경비원 모집", en: "Bouncers Needed" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "스타더스트에서 카즈키와 경비원 채용 상담", en: "Talk to Kazuki at Stardust about hiring bouncers." },
-          body: { ko: "용궁 카지노의 매니저에게 말을 건 뒤 경비원 스카우트 서브스토리 5개(바이올런스 토비타·이와쿠마·난바·무기광·개틀링 센도)를 모두 클리어하고 마지막 메시지를 읽으면 됩니다. 동행자가 없어야 진행됩니다.", en: "Talk to the manager at the Dragon Palace Casino, then clear all five scouting substories — Violence Tobita in Champion District, Iwakuma at Kanrai, Nanba in Tenkaichi Alley, the Weapons Nut in Asia and Gatling Sendo at MEB — and read the final message. You need to be travelling without followers." },
-          reward: { ko: "경험치 5,000 · 500,000엔", en: "5,000 EXP · ¥500,000" },
+          "number": 95,
+          "title": {
+            "ko": "경비원 모집",
+            "en": "Bouncers Needed"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「용궁 귀환」을 클리어하고 코마키 도장을 방문한 뒤, 용궁성 카지노에서 지배인이 불량배에게 시달리는 장면을 본다.",
+            "en": "After 'Return to the Dragon Palace' and visiting Komaki's dojo, see ruffians hassle the manager at the Dragon Palace casino."
+          },
+          "body": {
+            "ko": "용궁 카지노의 매니저에게 말을 건 뒤 경비원 스카우트 서브스토리 5개(바이올런스 토비타·이와쿠마·난바·무기광·개틀링 센도)를 모두 클리어하고 마지막 메시지를 읽으면 됩니다. 동행자가 없어야 진행됩니다.",
+            "en": "Talk to the manager at the Dragon Palace Casino, then clear all five scouting substories — Violence Tobita in Champion District, Iwakuma at Kanrai, Nanba in Tenkaichi Alley, the Weapons Nut in Asia and Gatling Sendo at MEB — and read the final message. You need to be travelling without followers."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 500,000엔",
+            "en": "5,000 EXP · ¥500,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 110,
-          title: { ko: "배신당한 레이미", en: "Reimi Betrayed" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "SHINE 호스티스 레이미와 호스티스 메이커 풀 코스 진행", en: "Run the Hostess Maker storyline for Shine's Reimi." },
-          body: { ko: "샤인에서 레이미를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 이후 쇼와 거리로 가서 호객꾼 근처 샐러리맨에게 말을 걸고 건물에 들어가 요코이를 격파한 뒤, 마지막 메시지를 기다리면 클리어됩니다.", en: "Request Reimi at Shine, go on two dates and reach 20 affection hearts to trigger the call. Then head to Showa Street, talk to the salaryman standing near a barker, enter the building, beat Yokoi and wait for the final message." },
-          reward: { ko: "경험치 30,000 · 레이미의 사진", en: "30,000 EXP · Reimi's Photo" },
+          "number": 110,
+          "title": {
+            "ko": "배신당한 레이미",
+            "en": "Reimi Betrayed"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "SHINE 호스티스 레이미와 호스티스 메이커 풀 코스 진행",
+            "en": "Run the Hostess Maker storyline for Shine's Reimi."
+          },
+          "body": {
+            "ko": "샤인에서 레이미를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 이후 쇼와 거리로 가서 호객꾼 근처 샐러리맨에게 말을 걸고 건물에 들어가 요코이를 격파한 뒤, 마지막 메시지를 기다리면 클리어됩니다.",
+            "en": "Request Reimi at Shine, go on two dates and reach 20 affection hearts to trigger the call. Then head to Showa Street, talk to the salaryman standing near a barker, enter the building, beat Yokoi and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 30,000 · 레이미의 사진",
+            "en": "30,000 EXP · Reimi's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 111,
-          title: { ko: "곤경에 빠진 린", en: "Rin in Trouble" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "SHINE 호스티스 린의 사건 해결", en: "Resolve Shine hostess Rin's trouble." },
-          body: { ko: "샤인에서 린를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 샤인 근처에서 마사야와 마주친 뒤 챔피언 거리로 가서 마사야와 타케시타에게 말을 걸고 일당을 격파한 다음, 마지막 메시지를 기다리세요.", en: "Request Rin at Shine, go on two dates and reach 20 affection hearts to trigger the call. Run into Masaya near Shine, go to Champion District, talk to Masaya and Takeshita, beat the men and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 린의 사진", en: "5,000 EXP · Rin's Photo" },
+          "number": 111,
+          "title": {
+            "ko": "곤경에 빠진 린",
+            "en": "Rin in Trouble"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "SHINE 호스티스 린의 사건 해결",
+            "en": "Resolve Shine hostess Rin's trouble."
+          },
+          "body": {
+            "ko": "샤인에서 린를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 샤인 근처에서 마사야와 마주친 뒤 챔피언 거리로 가서 마사야와 타케시타에게 말을 걸고 일당을 격파한 다음, 마지막 메시지를 기다리세요.",
+            "en": "Request Rin at Shine, go on two dates and reach 20 affection hearts to trigger the call. Run into Masaya near Shine, go to Champion District, talk to Masaya and Takeshita, beat the men and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 린의 사진",
+            "en": "5,000 EXP · Rin's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 112,
-          title: { ko: "카나와 그녀의 강아지", en: "Kana and Her Dog" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "SHINE 호스티스 카나의 강아지 사건", en: "Help Shine hostess Kana with her dog." },
-          body: { ko: "샤인에서 카나를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 챔피언 거리 골목의 카나에게 말을 건 뒤 나카미치 골목 근처 노숙자와 대화하고, 근처의 강아지를 찾아낸 다음 마지막 메시지를 기다리세요.", en: "Request Kana at Shine, go on two dates and reach 20 affection hearts to trigger the call. Talk to Kana in an alleyway in Champion District, speak to the homeless man near Nakamichi Alley, find the dog nearby and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 카나의 사진", en: "5,000 EXP · Kana's Photo" },
+          "number": 112,
+          "title": {
+            "ko": "카나와 그녀의 강아지",
+            "en": "Kana and Her Dog"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "SHINE 호스티스 카나의 강아지 사건",
+            "en": "Help Shine hostess Kana with her dog."
+          },
+          "body": {
+            "ko": "샤인에서 카나를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 챔피언 거리 골목의 카나에게 말을 건 뒤 나카미치 골목 근처 노숙자와 대화하고, 근처의 강아지를 찾아낸 다음 마지막 메시지를 기다리세요.",
+            "en": "Request Kana at Shine, go on two dates and reach 20 affection hearts to trigger the call. Talk to Kana in an alleyway in Champion District, speak to the homeless man near Nakamichi Alley, find the dog nearby and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 카나의 사진",
+            "en": "5,000 EXP · Kana's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 113,
-          title: { ko: "란코의 고민", en: "Ranko's Worry" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "SHINE 호스티스 란코의 고민 듣고 해결", en: "Address Shine hostess Ranko's worry." },
-          body: { ko: "샤인에서 란코를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 극장 광장으로 가서 란코와 미나에게 말을 걸고 마지막 메시지를 기다리면 클리어됩니다.", en: "Request Ranko at Shine, go on two dates and reach 20 affection hearts to trigger the call. Go to Theater Square, talk to Ranko and Mina, and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 란코의 사진", en: "5,000 EXP · Ranko's Photo" },
+          "number": 113,
+          "title": {
+            "ko": "란코의 고민",
+            "en": "Ranko's Worry"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "SHINE 호스티스 란코의 고민 듣고 해결",
+            "en": "Address Shine hostess Ranko's worry."
+          },
+          "body": {
+            "ko": "샤인에서 란코를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 극장 광장으로 가서 란코와 미나에게 말을 걸고 마지막 메시지를 기다리면 클리어됩니다.",
+            "en": "Request Ranko at Shine, go on two dates and reach 20 affection hearts to trigger the call. Go to Theater Square, talk to Ranko and Mina, and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 란코의 사진",
+            "en": "5,000 EXP · Ranko's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 114,
-          title: { ko: "미유와 아들", en: "Miyu and Her Son" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "주얼 호스티스 미유와 그 아들 이야기", en: "Jewel hostess Miyu's son storyline." },
-          body: { ko: "쥬얼에서 미유를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 코인 로커로 가서 미유에게 말을 건 뒤 나카미치 거리 부근에서 아이를 찾습니다. 제3공원의 스바루를 발견하고 납치범을 격파한 다음 마지막 메시지를 기다리세요.", en: "Request Miyu at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Go to the coin lockers and talk to Miyu, look for the child near Nakamichi Street, find Subaru at Public Park 3, beat the kidnapper and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 미유의 사진", en: "5,000 EXP · Miyu's Photo" },
+          "number": 114,
+          "title": {
+            "ko": "미유와 아들",
+            "en": "Miyu and Her Son"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "주얼 호스티스 미유와 그 아들 이야기",
+            "en": "Jewel hostess Miyu's son storyline."
+          },
+          "body": {
+            "ko": "쥬얼에서 미유를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 코인 로커로 가서 미유에게 말을 건 뒤 나카미치 거리 부근에서 아이를 찾습니다. 제3공원의 스바루를 발견하고 납치범을 격파한 다음 마지막 메시지를 기다리세요.",
+            "en": "Request Miyu at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Go to the coin lockers and talk to Miyu, look for the child near Nakamichi Street, find Subaru at Public Park 3, beat the kidnapper and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 미유의 사진",
+            "en": "5,000 EXP · Miyu's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 115,
-          title: { ko: "시오리의 스토커", en: "Shiori's Stalker" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "주얼 호스티스 시오리의 스토커 해결", en: "Solve Jewel hostess Shiori's stalker." },
-          body: { ko: "쥬얼에서 시오리를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 쥬얼 → 극장 광장 → 약국 뒤 골목 순으로 이동하며 불량배와 마주치고, 마지막에 전투로 정리한 뒤 메시지를 기다리세요.", en: "Request Shiori at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Run into the thugs at JeweL, then Theater Square, then the alleyway behind the drugstore, beat them and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 시오리의 사진", en: "5,000 EXP · Shiori's Photo" },
+          "number": 115,
+          "title": {
+            "ko": "시오리의 스토커",
+            "en": "Shiori's Stalker"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "주얼 호스티스 시오리의 스토커 해결",
+            "en": "Solve Jewel hostess Shiori's stalker."
+          },
+          "body": {
+            "ko": "쥬얼에서 시오리를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 쥬얼 → 극장 광장 → 약국 뒤 골목 순으로 이동하며 불량배와 마주치고, 마지막에 전투로 정리한 뒤 메시지를 기다리세요.",
+            "en": "Request Shiori at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Run into the thugs at JeweL, then Theater Square, then the alleyway behind the drugstore, beat them and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 시오리의 사진",
+            "en": "5,000 EXP · Shiori's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 116,
-          title: { ko: "유이와 아담", en: "Yui and Adam" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "주얼 호스티스 유이와 외국인 친구 아담의 이야기", en: "Jewel hostess Yui and her foreigner friend Adam." },
-          body: { ko: "쥬얼에서 유이를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 호텔 거리의 클럽 아담으로 가서 매니저에게 말을 걸고 30만 엔을 내 유이를 데리고 나온 뒤, 마지막 메시지를 기다리세요.", en: "Request Yui at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Head to Club Adam in the Hotel District, speak to the manager and pay ¥300,000 to bail Yui out, then wait for the final message." },
-          reward: { ko: "경험치 5,000 · 유이의 사진", en: "5,000 EXP · Yui's Photo" },
+          "number": 116,
+          "title": {
+            "ko": "유이와 아담",
+            "en": "Yui and Adam"
+          },
+          "chapter": {
+            "ko": "5장",
+            "en": "Chapter 5"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "주얼 호스티스 유이와 외국인 친구 아담의 이야기",
+            "en": "Jewel hostess Yui and her foreigner friend Adam."
+          },
+          "body": {
+            "ko": "쥬얼에서 유이를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 호텔 거리의 클럽 아담으로 가서 매니저에게 말을 걸고 30만 엔을 내 유이를 데리고 나온 뒤, 마지막 메시지를 기다리세요.",
+            "en": "Request Yui at JeweL, go on two dates and reach 20 affection hearts to trigger the call. Head to Club Adam in the Hotel District, speak to the manager and pay ¥300,000 to bail Yui out, then wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 유이의 사진",
+            "en": "5,000 EXP · Yui's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 5 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-5-substories"
+          }
         },
         {
-          number: 117,
-          title: { ko: "미카의 가족", en: "Mika's Family" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "플로리스 호스티스 미카의 가족 사정", en: "Flawless hostess Mika's family matter." },
-          body: { ko: "플로리스에서 미카를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 메시지를 읽고 모노레일역으로 가서 미카와 그녀의 아버지에게 말을 건 뒤 마지막 메시지를 기다리면 클리어됩니다.", en: "Request Mika at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Read the message, go to the monorail station, talk to Mika and her father, and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 미카의 사진", en: "5,000 EXP · Mika's Photo" },
+          "number": 117,
+          "title": {
+            "ko": "미카의 가족",
+            "en": "Mika's Family"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "플로리스 호스티스 미카의 가족 사정",
+            "en": "Flawless hostess Mika's family matter."
+          },
+          "body": {
+            "ko": "플로리스에서 미카를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 메시지를 읽고 모노레일역으로 가서 미카와 그녀의 아버지에게 말을 건 뒤 마지막 메시지를 기다리면 클리어됩니다.",
+            "en": "Request Mika at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Read the message, go to the monorail station, talk to Mika and her father, and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 미카의 사진",
+            "en": "5,000 EXP · Mika's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 118,
-          title: { ko: "나오와 사기꾼들", en: "Nao and the Crooks" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "플로리스 호스티스 나오를 노리는 사기꾼 처리", en: "Drive off the crooks targeting Flawless hostess Nao." },
-          body: { ko: "플로리스에서 나오를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 카리유시 상점가 서쪽 골목의 집으로 가서 나오와 어머니에게 말을 걸고 사채업자들을 격파한 뒤 마지막 메시지를 기다리세요.", en: "Request Nao at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Go to the house in the alleyway west of Kariyushi Arcade, talk to Nao and her mother, beat the loan sharks and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 나오의 사진", en: "5,000 EXP · Nao's Photo" },
+          "number": 118,
+          "title": {
+            "ko": "나오와 사기꾼들",
+            "en": "Nao and the Crooks"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "플로리스 호스티스 나오를 노리는 사기꾼 처리",
+            "en": "Drive off the crooks targeting Flawless hostess Nao."
+          },
+          "body": {
+            "ko": "플로리스에서 나오를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 카리유시 상점가 서쪽 골목의 집으로 가서 나오와 어머니에게 말을 걸고 사채업자들을 격파한 뒤 마지막 메시지를 기다리세요.",
+            "en": "Request Nao at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Go to the house in the alleyway west of Kariyushi Arcade, talk to Nao and her mother, beat the loan sharks and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 나오의 사진",
+            "en": "5,000 EXP · Nao's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
         },
         {
-          number: 119,
-          title: { ko: "위기의 사야", en: "Saya in Peril" },
-          chapter: { ko: "5장", en: "Chapter 5" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "플로리스 호스티스 사야의 위기 해결", en: "Save Flawless hostess Saya." },
-          body: { ko: "플로리스에서 사야를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 가라오케관으로 가서 사야에게 말을 걸고 야쿠자를 격파한 뒤 마지막 메시지를 기다리면 클리어됩니다.", en: "Request Saya at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Go to Karaokekan, talk to Saya, beat the yakuza and wait for the final message." },
-          reward: { ko: "경험치 5,000 · 사야의 사진", en: "5,000 EXP · Saya's Photo" },
-        },
-      ],
+          "number": 119,
+          "title": {
+            "ko": "위기의 사야",
+            "en": "Saya in Peril"
+          },
+          "chapter": {
+            "ko": "3장",
+            "en": "Chapter 3"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "플로리스 호스티스 사야의 위기 해결",
+            "en": "Save Flawless hostess Saya."
+          },
+          "body": {
+            "ko": "플로리스에서 사야를 지명해 데이트를 두 번 하고 호감도 하트 20개를 채우면 전화가 옵니다. 가라오케관으로 가서 사야에게 말을 걸고 야쿠자를 격파한 뒤 마지막 메시지를 기다리면 클리어됩니다.",
+            "en": "Request Saya at Flawless, go on two dates and reach 20 affection hearts to trigger the call. Go to Karaokekan, talk to Saya, beat the yakuza and wait for the final message."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 사야의 사진",
+            "en": "5,000 EXP · Saya's Photo"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 3 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-3-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "6장 — 리키야 동반", en: "Chapter 6 — Gameplan (Rikiya)" },
-      items: [
+      "title": {
+        "ko": "6장 — 리키야 동반",
+        "en": "Chapter 6 — Gameplan (Rikiya)"
+      },
+      "items": [
         {
-          number: 3,
-          title: { ko: "고향의 그녀", en: "Hometown Girl" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "리키야 동반 + 데이트와 대화 후 그를 클럽 아시아로 안내", en: "With Rikiya after meeting Date: escort him to Club Asia." },
-          body: { ko: "6장에서만 가능. 리키야 동반, 데이트와 대화 전에 리키야와 클럽 아시아로 → 댄서가 리키야의 옛 친구의 동생으로 밝혀짐 → 스토커 격퇴, 배팅 센터·밀레니엄 타워 앞·나카미치 골목 등 마커 순회.", en: "Chapter 6 only. Take Rikiya to Club Asia before progressing the story. The dancer turns out to be related to a girl Rikiya knew. Run between markers (Batting Center, Millennium Tower, Nakamichi Alley) defeating stalkers." },
-          reward: { ko: "이벤트 시네마틱 + 경험치", en: "Event cinematic + heavy EXP" },
+          "number": 3,
+          "title": {
+            "ko": "고향의 그녀",
+            "en": "Hometown Girl"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "리키야 동반 + 데이트와 대화 후 그를 클럽 아시아로 안내",
+            "en": "With Rikiya after meeting Date: escort him to Club Asia."
+          },
+          "body": {
+            "ko": "6장에서만 가능. 리키야 동반, 데이트와 대화 전에 리키야와 클럽 아시아로 → 댄서가 리키야의 옛 친구의 동생으로 밝혀짐 → 스토커 격퇴, 배팅 센터·밀레니엄 타워 앞·나카미치 골목 등 마커 순회.",
+            "en": "Chapter 6 only. Take Rikiya to Club Asia before progressing the story. The dancer turns out to be related to a girl Rikiya knew. Run between markers (Batting Center, Millennium Tower, Nakamichi Alley) defeating stalkers."
+          },
+          "reward": {
+            "ko": "경험치 10,000",
+            "en": "10,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 4,
-          title: { ko: "용두점정", en: "Dotting the Eye" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "리키야 동반 시 핑크 거리 디바인 드래곤 문신소 살피기", en: "With Rikiya: examine Divine Dragon tattoo parlor in Pink Alley." },
-          body: { ko: "6장 리키야 동반 시에만 가능. 핑크 거리 디바인 드래곤 문신소(키류의 용을 새긴 곳)를 「조사」 → 우타보리에게 리키야의 미완성 살무사 마무리를 부탁 → 거절 후 바깥 골목에서 패거리 정리.", en: "Chapter 6 with Rikiya only. Examine Divine Dragon tattoo parlor in Pink Alley — Utabori refuses to finish Rikiya's viper, then a brawl in the alley settles it." },
-          prereq: { ko: "리키야 동반 (6장 한정, 놓치면 프리미엄 어드벤처 한정)", en: "Must have Rikiya in Chapter 6 — otherwise only doable in Premium Adventure" },
-          reward: { ko: "이벤트 시네마틱 + 컴플리션 카운트", en: "Event cinematic + completion credit" },
+          "number": 4,
+          "title": {
+            "ko": "용두점정",
+            "en": "Dotting the Eye"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "리키야 동반 시 핑크 거리 디바인 드래곤 문신소 살피기",
+            "en": "With Rikiya: examine Divine Dragon tattoo parlor in Pink Alley."
+          },
+          "body": {
+            "ko": "6장 리키야 동반 시에만 가능. 핑크 거리 디바인 드래곤 문신소(키류의 용을 새긴 곳)를 「조사」 → 우타보리에게 리키야의 미완성 살무사 마무리를 부탁 → 거절 후 바깥 골목에서 패거리 정리.",
+            "en": "Chapter 6 with Rikiya only. Examine Divine Dragon tattoo parlor in Pink Alley — Utabori refuses to finish Rikiya's viper, then a brawl in the alley settles it."
+          },
+          "prereq": {
+            "ko": "리키야 동반 (6장 한정, 놓치면 프리미엄 어드벤처 한정)",
+            "en": "Must have Rikiya in Chapter 6 — otherwise only doable in Premium Adventure"
+          },
+          "reward": {
+            "ko": "경험치 10,000",
+            "en": "10,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 7,
-          title: { ko: "은막의 용", en: "Silver Screen Dragon" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "극장 광장 동쪽 영화 촬영팀에게 말 걸기", en: "East side of Theater Square: talk to the film crew." },
-          body: { ko: "극장 광장 동쪽 영화 촬영팀이 부상자 대신 키류를 캐스팅. 대사는 적힌 대로 읽지 말고 \"제멋대로\" 진행해야 200,000엔과 사쿠라 스톰 검 획득. 적은 하나이(짧은 머리) → 나루미(긴 머리) → 마츠카제(수염) → 오츠키(대머리) 순서로 격파. 히트 액션은 「벽치기」 → 「코마키 검술」 → 「벽돌 깨기의 정수」(다루마 사용). 야마시로 전에서 체력을 빨강까지 떨어뜨린 뒤 격파.", en: "Save first. Theater Square film crew casts Kiryu as the hero. Beat enemies in order Hanai → Narumi → Matsukaze → Otsuki, use Heat Actions 'Wall Crush', 'Komaki Sword Slash', 'Essence of Brick Breaking' (with the daruma), and let Yamashiro drop your HP to red before defeating him for max reward." },
-          choices: [
-            { prompt: { ko: "첫 번째 대사", en: "First line" }, correct: { ko: "「아버지의 원수, 받겠다」", en: "'You killed my father, and I want payback.'" } },
-            { prompt: { ko: "두 번째 대사", en: "Second line" }, correct: { ko: "「사내답게 끝까지 싸워라!」", en: "'Fight me to the death like a man!'" } },
-            { prompt: { ko: "세 번째 대사", en: "Third line" }, correct: { ko: "「지옥에서 아버지께 사죄해라!」", en: "'I'll make you apologize to my father... in hell!'" } },
-            { prompt: { ko: "마지막 대사", en: "Final line" }, correct: { ko: "「돈은 필요 없다. 내가 원하는 건 정의다」", en: "'Keep your money. I want justice.'" } },
+          "number": 7,
+          "title": {
+            "ko": "은막의 용",
+            "en": "Silver Screen Dragon"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "극장 광장 동쪽 영화 촬영팀에게 말 걸기",
+            "en": "East side of Theater Square: talk to the film crew."
+          },
+          "body": {
+            "ko": "극장 광장 동쪽 영화 촬영팀이 부상자 대신 키류를 캐스팅. 대사는 적힌 대로 읽지 말고 \"제멋대로\" 진행해야 200,000엔과 사쿠라 스톰 검 획득. 적은 하나이(짧은 머리) → 나루미(긴 머리) → 마츠카제(수염) → 오츠키(대머리) 순서로 격파. 히트 액션은 「벽치기」 → 「코마키 검술」 → 「벽돌 깨기의 정수」(다루마 사용). 야마시로 전에서 체력을 빨강까지 떨어뜨린 뒤 격파.",
+            "en": "Save first. Theater Square film crew casts Kiryu as the hero. Beat enemies in order Hanai → Narumi → Matsukaze → Otsuki, use Heat Actions 'Wall Crush', 'Komaki Sword Slash', 'Essence of Brick Breaking' (with the daruma), and let Yamashiro drop your HP to red before defeating him for max reward."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "첫 번째 대사",
+                "en": "First line"
+              },
+              "correct": {
+                "ko": "「아버지의 원수, 받겠다」",
+                "en": "'You killed my father, and I want payback.'"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "두 번째 대사",
+                "en": "Second line"
+              },
+              "correct": {
+                "ko": "「사내답게 끝까지 싸워라!」",
+                "en": "'Fight me to the death like a man!'"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "세 번째 대사",
+                "en": "Third line"
+              },
+              "correct": {
+                "ko": "「지옥에서 아버지께 사죄해라!」",
+                "en": "'I'll make you apologize to my father... in hell!'"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "마지막 대사",
+                "en": "Final line"
+              },
+              "correct": {
+                "ko": "「돈은 필요 없다. 내가 원하는 건 정의다」",
+                "en": "'Keep your money. I want justice.'"
+              }
+            }
           ],
-          reward: { ko: "200,000엔 + 사쿠라 스톰(일도)", en: "200,000 yen + Sakura Storm sword" },
+          "reward": {
+            "ko": "경험치 10,000 · 200,000엔 · 벚꽃 폭풍",
+            "en": "10,000 EXP · ¥200,000 · Sakura Storm"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 8,
-          title: { ko: "위로하는 야쿠자", en: "The Comforting Yakuza" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「Mr. 때려봐 도망」 클리어 후 리키야 미동반: 시치후쿠 주차장 남쪽에서 여성을 괴롭히는 남자 제압", en: "Clear 'Mr. Try and Flee Me' and ditch Rikiya: confront the harasser south of Shichifuku Parking." },
-          body: { ko: "「Mr. 때려봐 도망」 + 칸다전 클리어 + 리키야 미동반 상태에서만 가능. 시치후쿠 남쪽에서 여성을 괴롭히는 남자를 위협 → 여성을 호텔로 안내 → 100,000엔 합의 거절 후 격투 → 바로 돌아가 한 명 더 처리.", en: "Clear 'Mr. Try and Flee Me' and Kanda, ditch Rikiya. Confront the harasser south of Shichifuku, then escort her — refuse the 100,000-yen hush money and beat him down." },
-          choices: [
-            { prompt: { ko: "괴롭히는 남자에게", en: "To the harasser" }, correct: { ko: "「내가 손봐주기 전에 꺼져」", en: "'Leave her alone before I make you'" } },
-            { prompt: { ko: "호텔에 도착한 남자에게", en: "To the man at the hotel" }, correct: { ko: "「여자에게 그게 무슨 말투냐」", en: "'Is that any way to speak to her?'" } },
-            { prompt: { ko: "100,000엔 합의 제안", en: "100,000-yen hush money" }, correct: { ko: "거절한다", en: "Refuse" }, note: { ko: "합의 시 보상 대폭 감소", en: "Accepting tanks the reward" } },
+          "number": 8,
+          "title": {
+            "ko": "위로하는 야쿠자",
+            "en": "The Comforting Yakuza"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 도망」 클리어 후 리키야 미동반: 시치후쿠 주차장 남쪽에서 여성을 괴롭히는 남자 제압",
+            "en": "Clear 'Mr. Try and Flee Me' and ditch Rikiya: confront the harasser south of Shichifuku Parking."
+          },
+          "body": {
+            "ko": "「Mr. 때려봐 도망」 + 칸다전 클리어 + 리키야 미동반 상태에서만 가능. 시치후쿠 남쪽에서 여성을 괴롭히는 남자를 위협 → 여성을 호텔로 안내 → 100,000엔 합의 거절 후 격투 → 바로 돌아가 한 명 더 처리.",
+            "en": "Clear 'Mr. Try and Flee Me' and Kanda, ditch Rikiya. Confront the harasser south of Shichifuku, then escort her — refuse the 100,000-yen hush money and beat him down."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "괴롭히는 남자에게",
+                "en": "To the harasser"
+              },
+              "correct": {
+                "ko": "「내가 손봐주기 전에 꺼져」",
+                "en": "'Leave her alone before I make you'"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "호텔에 도착한 남자에게",
+                "en": "To the man at the hotel"
+              },
+              "correct": {
+                "ko": "「여자에게 그게 무슨 말투냐」",
+                "en": "'Is that any way to speak to her?'"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "100,000엔 합의 제안",
+                "en": "100,000-yen hush money"
+              },
+              "correct": {
+                "ko": "거절한다",
+                "en": "Refuse"
+              },
+              "note": {
+                "ko": "합의 시 보상 대폭 감소",
+                "en": "Accepting tanks the reward"
+              }
+            }
           ],
-          reward: { ko: "경험치 + 컴플리션 카운트", en: "EXP + completion credit" },
+          "reward": {
+            "ko": "경험치 10,000",
+            "en": "10,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 10,
-          title: { ko: "또 하나의 스타더스트", en: "Another Stardust" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「할머니의 사랑을 위해」 클리어 후 스타더스트 입장", en: "Clear 'Anything for Grandma's Love'; enter Stardust." },
-          body: { ko: "「할머니의 사랑을 위해」 클리어 후 스타더스트 입장 → 카즈키와 손님의 다툼 청취 → 유야와 대화 → 외출 후 유야의 전화로 밴텀에서 에이지 만남 → 스타더스트 → 카페 알프스에서 카즈키 만남 → 공원 No.3 동쪽 골목에서 에이지 격파 → 밀레니엄 타워에서 잔당 격파.", en: "Clear 'Anything for Grandma's Love'. Enter Stardust → Yuya call → meet Yuya + Eiji at Bantam → back to Stardust → Café Alps → Public Park No. 3 alley to beat Eiji → Millennium Tower for the brawl." },
-          reward: { ko: "100,000엔 + 컴플리션 카운트", en: "100,000 yen + completion credit" },
+          "number": 10,
+          "title": {
+            "ko": "또 하나의 스타더스트",
+            "en": "Another Stardust"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「할머니의 사랑을 위해」 클리어 후 스타더스트 입장",
+            "en": "Clear 'Anything for Grandma's Love'; enter Stardust."
+          },
+          "body": {
+            "ko": "「할머니의 사랑을 위해」 클리어 후 스타더스트 입장 → 카즈키와 손님의 다툼 청취 → 유야와 대화 → 외출 후 유야의 전화로 밴텀에서 에이지 만남 → 스타더스트 → 카페 알프스에서 카즈키 만남 → 공원 No.3 동쪽 골목에서 에이지 격파 → 밀레니엄 타워에서 잔당 격파.",
+            "en": "Clear 'Anything for Grandma's Love'. Enter Stardust → Yuya call → meet Yuya + Eiji at Bantam → back to Stardust → Café Alps → Public Park No. 3 alley to beat Eiji → Millennium Tower for the brawl."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 100,000엔",
+            "en": "8,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 23,
-          title: { ko: "극장 광장의 이유진", en: "Il in Theater Square" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「정수기」 클리어 후 극장 광장 동쪽 행복고트 부인들에게 말 걸기", en: "After 'Water Purifiers': happi-coat ladies east of Theater Square." },
-          body: { ko: "사인을 받아 주기로 하고 인파를 조심스럽게 헤쳐 나간 뒤, 그를 알아봤다고 답하고 뒤이어 나타나는 야쿠자를 격파하면 클리어됩니다.", en: "Agree to get the autograph, work your way carefully through the crowd, say you recognize him, then beat the yakuza who show up." },
-          reward: { ko: "경험치 5,000 · 5,000엔", en: "5,000 EXP · ¥5,000" },
+          "number": 23,
+          "title": {
+            "ko": "극장 광장의 이유진",
+            "en": "Il in Theater Square"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「정수기」 클리어 후 극장 광장 동쪽 행복고트 부인들에게 말 걸기",
+            "en": "After 'Water Purifiers': happi-coat ladies east of Theater Square."
+          },
+          "body": {
+            "ko": "사인을 받아 주기로 하고 인파를 조심스럽게 헤쳐 나간 뒤, 그를 알아봤다고 답하고 뒤이어 나타나는 야쿠자를 격파하면 클리어됩니다.",
+            "en": "Agree to get the autograph, work your way carefully through the crowd, say you recognize him, then beat the yakuza who show up."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 5,000엔",
+            "en": "5,000 EXP · ¥5,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 25,
-          title: { ko: "끝없는 스토커", en: "Nonstop Stalkers" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "주얼 앞 젊은 여성에게 말 걸기", en: "Talk to the young woman in front of Jewel." },
-          body: { ko: "쥬얼 앞의 에미에게 말을 걸어 일을 맡은 뒤, 키 큰 남자 → 안경 쓴 남자 → 대머리 남자 순으로 세 명을 차례로 미행하면 클리어됩니다.", en: "Take the job from Emi in front of JeweL, then tail three men in turn: the tall one, the one with glasses, and the bald one." },
-          reward: { ko: "경험치 5,000 · 50,000엔", en: "5,000 EXP · ¥50,000" },
+          "number": 25,
+          "title": {
+            "ko": "끝없는 스토커",
+            "en": "Nonstop Stalkers"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "주얼 앞 젊은 여성에게 말 걸기",
+            "en": "Talk to the young woman in front of Jewel."
+          },
+          "body": {
+            "ko": "쥬얼 앞의 에미에게 말을 걸어 일을 맡은 뒤, 키 큰 남자 → 안경 쓴 남자 → 대머리 남자 순으로 세 명을 차례로 미행하면 클리어됩니다.",
+            "en": "Take the job from Emi in front of JeweL, then tail three men in turn: the tall one, the one with glasses, and the bald one."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 50,000엔",
+            "en": "5,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 30,
-          title: { ko: "신참의 고민", en: "Rookie's Dilemma" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리 호스트 클럽 앞 호객 청년에게 말 걸기", en: "Talk to the rookie host scout on Showa St." },
-          body: { ko: "제3공원의 취객에게 말을 걸어 물을 건네고 조언합니다. 구역을 나갔다 다시 들어와 말을 걸고 조언하기를 한 번 더 반복한 뒤, 마지막에는 전투로 마무리됩니다.", en: "Talk to the drunk in Public Park 3, give him water and some advice. Leave and re-enter the area to talk and advise him twice more, and the last visit ends in a fight." },
-          reward: { ko: "경험치 2,000 · 스태미난 스파크", en: "2,000 EXP · Staminan Spark" },
+          "number": 30,
+          "title": {
+            "ko": "신참의 고민",
+            "en": "Rookie's Dilemma"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 도망」 클리어 후, 제3공원(스타더스트 동쪽)에 쓰러진 회사원에게 말을 건다.",
+            "en": "After 'Mr. Try and Flee Me', talk to the salaryman on the ground in Public Park No. 3, east of Stardust."
+          },
+          "body": {
+            "ko": "제3공원의 취객에게 말을 걸어 물을 건네고 조언합니다. 구역을 나갔다 다시 들어와 말을 걸고 조언하기를 한 번 더 반복한 뒤, 마지막에는 전투로 마무리됩니다.",
+            "en": "Talk to the drunk in Public Park 3, give him water and some advice. Leave and re-enter the area to talk and advise him twice more, and the last visit ends in a fight."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 스태미난 스파크",
+            "en": "2,000 EXP · Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 36,
-          title: { ko: "Mr. 때려봐 도망", en: "Mr. Try and Flee Me" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「Mr. 때려봐 다시」 후 시치후쿠 주차장 다음 도전자", en: "After 'Hit Me Again': next challenger at Shichifuku Parking." },
-          body: { ko: "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 도망에게 5,000엔을 내고 승부를 수락한 뒤, 제한 시간 동안 잡히지 않으면 클리어됩니다.", en: "At night at the Shichifuku Street parking lot, pay ¥5,000 to take on Mr. Try and Flee Me and avoid being caught for the full time limit." },
-          reward: { ko: "경험치 3,000 · 70,000엔", en: "3,000 EXP · ¥70,000" },
+          "number": 36,
+          "title": {
+            "ko": "Mr. 때려봐 도망",
+            "en": "Mr. Try and Flee Me"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 다시」 후 시치후쿠 주차장 다음 도전자",
+            "en": "After 'Hit Me Again': next challenger at Shichifuku Parking."
+          },
+          "body": {
+            "ko": "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 도망에게 5,000엔을 내고 승부를 수락한 뒤, 제한 시간 동안 잡히지 않으면 클리어됩니다.",
+            "en": "At night at the Shichifuku Street parking lot, pay ¥5,000 to take on Mr. Try and Flee Me and avoid being caught for the full time limit."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 70,000엔",
+            "en": "3,000 EXP · ¥70,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 40,
-          title: { ko: "수상한 부부", en: "Suspicious Spouses" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리에서 부부 다툼에 휘말리기", en: "Step into a couple's quarrel on Showa St." },
-          body: { ko: "밴텀 카운터 구석에 앉은 여성에게 말을 걸어 의뢰를 수락한 뒤, 오키드 팰리스로 가서 빨간 트레이닝복 남자를 미행하고 격파하면 클리어됩니다.", en: "Talk to the woman at the corner of the bar in Bantam, agree to help, then head to the Orchid Palace, tail the man in the red tracksuit and beat him." },
-          reward: { ko: "경험치 2,000 · 70,000엔", en: "2,000 EXP · ¥70,000" },
+          "number": 40,
+          "title": {
+            "ko": "수상한 부부",
+            "en": "Suspicious Spouses"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「한 노인의 추억」 클리어 후, 반탐 구석 자리의 여성에게 말을 건다.",
+            "en": "After 'The Old Man's Memories', talk to the woman at the far corner of Bantam."
+          },
+          "body": {
+            "ko": "밴텀 카운터 구석에 앉은 여성에게 말을 걸어 의뢰를 수락한 뒤, 오키드 팰리스로 가서 빨간 트레이닝복 남자를 미행하고 격파하면 클리어됩니다.",
+            "en": "Talk to the woman at the corner of the bar in Bantam, agree to help, then head to the Orchid Palace, tail the man in the red tracksuit and beat him."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 70,000엔",
+            "en": "2,000 EXP · ¥70,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 41,
-          title: { ko: "도둑을 잡아라!", en: "Catch Those Shoplifters!" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "포포 매장 앞에서 도둑 신고 받기", en: "Get flagged outside a Poppo about shoplifters." },
-          body: { ko: "포포 쇼와에 들어갔다 나오면 제안을 받습니다. 수락한 뒤 첫 번째 여성은 막지 말고, 다음 남자는 막고, 세 번째 남자는 막지 않으면 클리어됩니다.", en: "Enter and leave Poppo Showa to get the offer. Accept it, then let the lady pass, stop the first guy, and let the second guy go." },
-          reward: { ko: "경험치 3,000 · 4,000엔", en: "3,000 EXP · ¥4,000" },
+          "number": 41,
+          "title": {
+            "ko": "도둑을 잡아라!",
+            "en": "Catch Those Shoplifters!"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "포포 매장 앞에서 도둑 신고 받기",
+            "en": "Get flagged outside a Poppo about shoplifters."
+          },
+          "body": {
+            "ko": "포포 쇼와에 들어갔다 나오면 제안을 받습니다. 수락한 뒤 첫 번째 여성은 막지 말고, 다음 남자는 막고, 세 번째 남자는 막지 않으면 클리어됩니다.",
+            "en": "Enter and leave Poppo Showa to get the offer. Accept it, then let the lady pass, stop the first guy, and let the second guy go."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 4,000엔",
+            "en": "3,000 EXP · ¥4,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 49,
-          title: { ko: "오르되브르", en: "Appetizer" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「전채」 후 또 다른 무전취식범 추격", en: "After 'Hor D'oeuvres': chase another dasher." },
-          body: { ko: "큐슈 넘버원 스타로 가서 도움을 수락하고 먹튀범을 붙잡으면 클리어됩니다.", en: "Go to Kyushu No. 1 Star, agree to help and catch the dine-and-dasher." },
-          reward: { ko: "경험치 3,000 · 스태미난 스파크", en: "3,000 EXP · Staminan Spark" },
+          "number": 49,
+          "title": {
+            "ko": "오르되브르",
+            "en": "Appetizer"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「전채」 후 또 다른 무전취식범 추격",
+            "en": "After 'Hor D'oeuvres': chase another dasher."
+          },
+          "body": {
+            "ko": "큐슈 넘버원 스타로 가서 도움을 수락하고 먹튀범을 붙잡으면 클리어됩니다.",
+            "en": "Go to Kyushu No. 1 Star, agree to help and catch the dine-and-dasher."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 스태미난 스파크",
+            "en": "3,000 EXP · Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 75,
-          title: { ko: "돌아온 사나이", en: "The Returnee" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리에서 돌아온 옛 야쿠자에게 말 걸기", en: "Talk to the returning old yakuza on Showa St." },
-          body: { ko: "클리닉으로 데려가기를 선택해 이동한 뒤, 카무로초 안내를 수락합니다. 밀레니엄 타워와 샹그릴라에서 각각 야쿠자를 격파하고 웨스트 파크 입구로 가면 클리어됩니다.", en: "Choose to take him to the clinic and go there, then agree to show him around Kamurocho. Beat the yakuza at Millennium Tower and again at Shangri-La, then head to the West Park entrance." },
-          reward: { ko: "경험치 3,000 · 블러드 브로치", en: "3,000 EXP · Blood Brooch" },
+          "number": 75,
+          "title": {
+            "ko": "돌아온 사나이",
+            "en": "The Returnee"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「또 하나의 스타더스트」 클리어, 칸다 격파, 리키야와 헤어진 뒤 텐카이치 거리 게이트에서 에모토 의원을 묻는 남자에게 말을 건다.",
+            "en": "After 'Another Stardust', defeating Kanda and parting with Rikiya, talk to the man at the Tenkaichi Street gate asking about the Emoto Clinic."
+          },
+          "body": {
+            "ko": "클리닉으로 데려가기를 선택해 이동한 뒤, 카무로초 안내를 수락합니다. 밀레니엄 타워와 샹그릴라에서 각각 야쿠자를 격파하고 웨스트 파크 입구로 가면 클리어됩니다.",
+            "en": "Choose to take him to the clinic and go there, then agree to show him around Kamurocho. Beat the yakuza at Millennium Tower and again at Shangri-La, then head to the West Park entrance."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 블러드 브로치",
+            "en": "3,000 EXP · Blood Brooch"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 78,
-          title: { ko: "할머니의 사랑을 위해", en: "Anything for Grandma's Love" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "공원 노점에서 어린 손녀를 돌보는 할머니에게 말 걸기", en: "Help the grandmother with her grandchild in a Kamurocho park." },
-          body: { ko: "스폰 거리의 당황한 남자에게 도움을 수락하고, 「에어컨은 잘 안 씁니다」 → 「사고 때문에 출입 금지입니다」를 고른 뒤 사채업자에게 10만 엔을 지불하면 클리어됩니다.", en: "Agree to help the panicked man on Suppon Street, choose \"We try not to use the A/C\" and then \"It's off-limits due to an accident\", and pay the loan shark ¥100,000." },
-          reward: { ko: "경험치 2,000 · 110,000엔 · 스시 세트", en: "2,000 EXP · ¥110,000 · Sushi Set" },
+          "number": 78,
+          "title": {
+            "ko": "할머니의 사랑을 위해",
+            "en": "Anything for Grandma's Love"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「라자냐 대탈주」 클리어 후, 슷폰 거리에서 할머니 앞에서 직원인 척해 달라는 남자에게 붙잡힌다.",
+            "en": "After 'Lasagna at Large', a punk on Suppon Street asks you to pose as his employee to impress his grandma."
+          },
+          "body": {
+            "ko": "스폰 거리의 당황한 남자에게 도움을 수락하고, 「에어컨은 잘 안 씁니다」 → 「사고 때문에 출입 금지입니다」를 고른 뒤 사채업자에게 10만 엔을 지불하면 클리어됩니다.",
+            "en": "Agree to help the panicked man on Suppon Street, choose \"We try not to use the A/C\" and then \"It's off-limits due to an accident\", and pay the loan shark ¥100,000."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 110,000엔 · 스시 세트",
+            "en": "2,000 EXP · ¥110,000 · Sushi Set"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 85,
-          title: { ko: "소매치기 키류!?", en: "Kiryu the Pickpocket!?" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "쇼와 거리에서 누명을 쓰고 진범 추격", en: "Get falsely accused on Showa St. and chase the real thief." },
-          body: { ko: "타이헤이 대로에서 화난 여성이 다가오면 인벤토리의 지갑을 사용하고, 지불을 거부한 뒤 불량배들을 격파하면 클리어됩니다.", en: "When the indignant woman approaches on Taihei Boulevard, use the wallet in your inventory, refuse to pay and beat the thugs." },
-          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
+          "number": 85,
+          "title": {
+            "ko": "소매치기 키류!?",
+            "en": "Kiryu the Pickpocket!?"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「지난달의 챔피언」 클리어 후, 밀레니엄 타워 남동쪽 마츠야 근처에서 노란 재킷 여성과 부딪힌다.",
+            "en": "After 'Last Month's Winner', collide with the woman in a yellow jacket near the Matsuya southeast of Millennium Tower."
+          },
+          "body": {
+            "ko": "타이헤이 대로에서 화난 여성이 다가오면 인벤토리의 지갑을 사용하고, 지불을 거부한 뒤 불량배들을 격파하면 클리어됩니다.",
+            "en": "When the indignant woman approaches on Taihei Boulevard, use the wallet in your inventory, refuse to pay and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 3,000",
+            "en": "3,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 90,
-          title: { ko: "라멘 No.1 스타", en: "Ramen No. 1 Star" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "큐슈 No.1 별 라멘에서 라멘 챌린지", en: "Take the challenge at Kyushu No. 1 Star ramen." },
-          body: { ko: "큐슈 넘버원 스타의 점주에게 도움을 수락한 뒤 주문을 정확히 받으면 됩니다. 순서는 차슈 돈코츠 → 멘타이코 돈코츠 → 큐슈 돈코츠 곱빼기 → 더블 스튜드 포크 돈코츠 → 큐슈 돈코츠입니다.", en: "Agree to help the owner of Kyushu No. 1 Star and take the orders correctly, in this order: Chashu Tonkotsu, Mentaiko Tonkotsu, Large Kyushu Tonkotsu, Double Stewed Pork Tonkotsu, then Kyushu Tonkotsu." },
-          reward: { ko: "경험치 5,000 · 20,000엔", en: "5,000 EXP · ¥20,000" },
+          "number": 90,
+          "title": {
+            "ko": "라멘 No.1 스타",
+            "en": "Ramen No. 1 Star"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "큐슈 No.1 별 라멘에서 라멘 챌린지",
+            "en": "Take the challenge at Kyushu No. 1 Star ramen."
+          },
+          "body": {
+            "ko": "큐슈 넘버원 스타의 점주에게 도움을 수락한 뒤 주문을 정확히 받으면 됩니다. 순서는 차슈 돈코츠 → 멘타이코 돈코츠 → 큐슈 돈코츠 곱빼기 → 더블 스튜드 포크 돈코츠 → 큐슈 돈코츠입니다.",
+            "en": "Agree to help the owner of Kyushu No. 1 Star and take the orders correctly, in this order: Chashu Tonkotsu, Mentaiko Tonkotsu, Large Kyushu Tonkotsu, Double Stewed Pork Tonkotsu, then Kyushu Tonkotsu."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 20,000엔",
+            "en": "5,000 EXP · ¥20,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 96,
-          title: { ko: "첫 번째 경비원", en: "The First Bouncer" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「경비원 모집」 후 문자 안내 위치에서 첫 후보 영입", en: "After 'Bouncers Needed': recruit the first candidate via text." },
-          body: { ko: "챔피언 거리의 바이올런스 토비타에게 말을 걸고 격파하면 클리어됩니다.", en: "Talk to Violence Tobita in Champion District and beat him." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
+          "number": 96,
+          "title": {
+            "ko": "첫 번째 경비원",
+            "en": "The First Bouncer"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「경비원 모집」 후 문자 안내 위치에서 첫 후보 영입",
+            "en": "After 'Bouncers Needed': recruit the first candidate via text."
+          },
+          "body": {
+            "ko": "챔피언 거리의 바이올런스 토비타에게 말을 걸고 격파하면 클리어됩니다.",
+            "en": "Talk to Violence Tobita in Champion District and beat him."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
         },
         {
-          number: 97,
-          title: { ko: "두 번째 경비원", en: "The Second Bouncer" },
-          chapter: { ko: "6장", en: "Chapter 6" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "두 번째 문자 위치에서 후보 영입", en: "Second recruit, follow the next text." },
-          body: { ko: "밀레니엄 타워 앞에서 메일을 읽고 칸라이 근처로 이동해 이와쿠마와 싸우면 클리어됩니다.", en: "Read the email in front of Millennium Tower, head near Kanrai and fight Iwakuma." },
-          reward: { ko: "경험치 2,000", en: "2,000 EXP" },
-        },
-      ],
+          "number": 97,
+          "title": {
+            "ko": "두 번째 경비원",
+            "en": "The Second Bouncer"
+          },
+          "chapter": {
+            "ko": "6장",
+            "en": "Chapter 6"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "두 번째 문자 위치에서 후보 영입",
+            "en": "Second recruit, follow the next text."
+          },
+          "body": {
+            "ko": "밀레니엄 타워 앞에서 메일을 읽고 칸라이 근처로 이동해 이와쿠마와 싸우면 클리어됩니다.",
+            "en": "Read the email in front of Millennium Tower, head near Kanrai and fight Iwakuma."
+          },
+          "reward": {
+            "ko": "경험치 2,000",
+            "en": "2,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 6 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-6-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "7장 — 카무로초", en: "Chapter 7 — Mad Dog (Kamurocho)" },
-      items: [
+      "title": {
+        "ko": "7장 — 카무로초",
+        "en": "Chapter 7 — Mad Dog (Kamurocho)"
+      },
+      "items": [
         {
-          number: 21,
-          title: { ko: "소년과 풍선", en: "A Boy and his Balloon" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「도둑을 잡아라!」 클리어 후 나카미치·타이헤이 교차로 남쪽 우는 소년에게 말 걸기", en: "After 'Catch Those Shoplifters!': the crying boy south of Nakamichi/Taihei." },
-          body: { ko: "나카미치 거리에서 도움을 수락한 뒤 날아간 풍선을 따라가고, 어린이 공원에 들어가면 클리어됩니다.", en: "Agree to help on Nakamichi Street, follow the balloon, and enter Children's Park." },
-          reward: { ko: "경험치 8,000 · 캐비어 스킨 백", en: "8,000 EXP · Caviar Skin Bag" },
+          "number": 21,
+          "title": {
+            "ko": "소년과 풍선",
+            "en": "A Boy and his Balloon"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「도둑을 잡아라!」 클리어 후 나카미치·타이헤이 교차로 남쪽 우는 소년에게 말 걸기",
+            "en": "After 'Catch Those Shoplifters!': the crying boy south of Nakamichi/Taihei."
+          },
+          "body": {
+            "ko": "나카미치 거리에서 도움을 수락한 뒤 날아간 풍선을 따라가고, 어린이 공원에 들어가면 클리어됩니다.",
+            "en": "Agree to help on Nakamichi Street, follow the balloon, and enter Children's Park."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 캐비어 스킨 백",
+            "en": "8,000 EXP · Caviar Skin Bag"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 37,
-          title: { ko: "Mr. 때려봐 잡아봐", en: "Mr. Try and Catch Me" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「Mr. 때려봐 도망」 후 시치후쿠 주차장 도주자 추격", en: "After 'Flee Me': chase the runner around Shichifuku Parking." },
-          body: { ko: "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 잡아봐에게 10,000엔을 내고 승부를 수락한 뒤, 제한 시간 안에 붙잡으면 클리어됩니다.", en: "At night at the Shichifuku Street parking lot, pay ¥10,000 to take on Mr. Try and Catch Me and catch him within the time limit." },
-          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
+          "number": 37,
+          "title": {
+            "ko": "Mr. 때려봐 잡아봐",
+            "en": "Mr. Try and Catch Me"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 도망」 후 시치후쿠 주차장 도주자 추격",
+            "en": "After 'Flee Me': chase the runner around Shichifuku Parking."
+          },
+          "body": {
+            "ko": "밤에 시치후쿠 거리 주차장에서 Mr. 때려봐 잡아봐에게 10,000엔을 내고 승부를 수락한 뒤, 제한 시간 안에 붙잡으면 클리어됩니다.",
+            "en": "At night at the Shichifuku Street parking lot, pay ¥10,000 to take on Mr. Try and Catch Me and catch him within the time limit."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 100,000엔",
+            "en": "5,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 50,
-          title: { ko: "메인 코스", en: "Main Course" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「오르되브르」 후 젤라테리아 카무로 앞 여성에게 말 걸기", en: "After 'Appetizer': talk to the woman outside Gelateria Kamuro." },
-          body: { ko: "젤라테리아 카무로초에서 도움을 수락해 먹튀범을 붙잡은 뒤, 값을 치르라고 압박하면 클리어됩니다.", en: "Go to Gelateria Kamurocho, agree to help, catch the dine-and-dasher and press him to pay." },
-          reward: { ko: "경험치 5,000 · 스태미난 스파크", en: "5,000 EXP · Staminan Spark" },
+          "number": 50,
+          "title": {
+            "ko": "메인 코스",
+            "en": "Main Course"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「오르되브르」 후 젤라테리아 카무로 앞 여성에게 말 걸기",
+            "en": "After 'Appetizer': talk to the woman outside Gelateria Kamuro."
+          },
+          "body": {
+            "ko": "젤라테리아 카무로초에서 도움을 수락해 먹튀범을 붙잡은 뒤, 값을 치르라고 압박하면 클리어됩니다.",
+            "en": "Go to Gelateria Kamurocho, agree to help, catch the dine-and-dasher and press him to pay."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 스태미난 스파크",
+            "en": "5,000 EXP · Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 58,
-          title: { ko: "잘못 짖었다", en: "Barking up the Wrong Tree" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「끝없는 스토커」 후 시치후쿠·센료 교차로 호객꾼에게 말 걸기", en: "After 'Nonstop Stalkers': the barker at Shichifuku/Senryo." },
-          body: { ko: "시치후쿠 주차장 근처의 호객꾼에게 여러 번 말을 걸면 무료 패스를 얻을 수 있고, 5,000엔을 내면 시간을 아낄 수 있습니다. 이후 불량배들을 격파하면 무료 패스 루트는 10만 엔, 유료 루트는 5만 엔을 받습니다.", en: "Talk to the barker near the Shichifuku car park several times for a free pass, or pay ¥5,000 to skip the wait. Beat the thugs afterwards — the free-pass route pays ¥100,000, the paid route ¥50,000." },
-          reward: { ko: "경험치 3,000 · 50,000~100,000엔", en: "3,000 EXP · ¥50,000–100,000" },
+          "number": 58,
+          "title": {
+            "ko": "잘못 짖었다",
+            "en": "Barking up the Wrong Tree"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「끝없는 스토커」 후 시치후쿠·센료 교차로 호객꾼에게 말 걸기",
+            "en": "After 'Nonstop Stalkers': the barker at Shichifuku/Senryo."
+          },
+          "body": {
+            "ko": "시치후쿠 주차장 근처의 호객꾼에게 여러 번 말을 걸면 무료 패스를 얻을 수 있고, 5,000엔을 내면 시간을 아낄 수 있습니다. 이후 불량배들을 격파하면 무료 패스 루트는 10만 엔, 유료 루트는 5만 엔을 받습니다.",
+            "en": "Talk to the barker near the Shichifuku car park several times for a free pass, or pay ¥5,000 to skip the wait. Beat the thugs afterwards — the free-pass route pays ¥100,000, the paid route ¥50,000."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000~100,000엔",
+            "en": "3,000 EXP · ¥50,000–100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 64,
-          title: { ko: "참치 펀드", en: "The Tuna Fund" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「리노베이션 주의보」 후 스시 긴에서 참치 시식 → 어장에 투자", en: "After 'Watch Out for Renovations': order tuna at Sushi Gin and invest." },
-          body: { ko: "「리노베이션 주의보」 클리어 후 스시 긴에 입장 → 셰프가 참치 권유 시 주문 → 옆자리 어장 사장 사와다와 대화 후 투자 (100주 = 100만엔이 최대 보상). 10장에서 오키나와로 가면 사와다 문자 → 하츠마치 북동쪽 사무실은 가짜 → 카무로초 스시 긴에서 진짜 위치 청취 → 밀레니엄 타워 동쪽 \"와일드 잭슨\" 남쪽 녹색 차양 건물에서 사와다 일당 격파.", en: "After 'Watch Out for Renovations'. Order tuna at Sushi Gin, then invest with Sawada (up to 100 shares = 1,000,000 yen for max reward). In Ch.10 he texts a fake Hatsumachi address; return to Sushi Gin for the real location east of Millennium Tower, then beat Sawada." },
-          choices: [
-            { prompt: { ko: "참치 주문", en: "Order the tuna?" }, correct: { ko: "주문한다", en: "Yes — order it" }, note: { ko: "주문하지 않으면 서브 스토리 미발생", en: "Skipping ends the substory" } },
-            { prompt: { ko: "어장 투자 주식 수", en: "Shares to buy" }, correct: { ko: "가능한 한 많이 (최대 100주 = 100만엔)", en: "As many as possible (max 100 = 1M yen)" }, note: { ko: "투자 액수가 곧 보상 마구로 수", en: "Investment scales the Maguro reward" } },
+          "number": 64,
+          "title": {
+            "ko": "참치 펀드",
+            "en": "The Tuna Fund"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「리노베이션 주의보」 후 스시 긴에서 참치 시식 → 어장에 투자",
+            "en": "After 'Watch Out for Renovations': order tuna at Sushi Gin and invest."
+          },
+          "body": {
+            "ko": "「리노베이션 주의보」 클리어 후 스시 긴에 입장 → 셰프가 참치 권유 시 주문 → 옆자리 어장 사장 사와다와 대화 후 투자 (100주 = 100만엔이 최대 보상). 10장에서 오키나와로 가면 사와다 문자 → 하츠마치 북동쪽 사무실은 가짜 → 카무로초 스시 긴에서 진짜 위치 청취 → 밀레니엄 타워 동쪽 \"와일드 잭슨\" 남쪽 녹색 차양 건물에서 사와다 일당 격파.",
+            "en": "After 'Watch Out for Renovations'. Order tuna at Sushi Gin, then invest with Sawada (up to 100 shares = 1,000,000 yen for max reward). In Ch.10 he texts a fake Hatsumachi address; return to Sushi Gin for the real location east of Millennium Tower, then beat Sawada."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "참치 주문",
+                "en": "Order the tuna?"
+              },
+              "correct": {
+                "ko": "주문한다",
+                "en": "Yes — order it"
+              },
+              "note": {
+                "ko": "주문하지 않으면 서브 스토리 미발생",
+                "en": "Skipping ends the substory"
+              }
+            },
+            {
+              "prompt": {
+                "ko": "어장 투자 주식 수",
+                "en": "Shares to buy"
+              },
+              "correct": {
+                "ko": "가능한 한 많이 (최대 100주 = 100만엔)",
+                "en": "As many as possible (max 100 = 1M yen)"
+              },
+              "note": {
+                "ko": "투자 액수가 곧 보상 마구로 수",
+                "en": "Investment scales the Maguro reward"
+              }
+            }
           ],
-          reward: { ko: "투자금 전액 환급 + 최대 마구로 4개", en: "Full refund + up to 4 Maguros" },
+          "reward": {
+            "ko": "경험치 10,000 · 참치 최대 4마리(투자한 주식 수에 따라)",
+            "en": "10,000 EXP · up to 4 Maguro (depends on shares bought)"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 65,
-          title: { ko: "명품 날치기", en: "Chic Snatcher" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "르 마르셰 앞에서 가방 날치기 소문 듣고, 가방 구매 후 추격", en: "Hear bag-snatching rumors at Le Marche, buy a bag, then chase." },
-          body: { ko: "르 마르셰에서 이탈리안 숄더백을 구입하고 가게를 나오면 날치기가 발생합니다. 사거리에서 왼쪽으로 꺾어 뒤쫓고, 은신처까지 따라가기를 선택해 일당을 격파하세요.", en: "Buy an Italian Shoulder Bag at Le Marche and leave the store to trigger the theft. Follow the thief — turn left at the four-way — choose to trail him to the hideout, and beat the thieves." },
-          reward: { ko: "경험치 3,000 · 캐비어 스킨 백", en: "3,000 EXP · Caviar Skin Bag" },
+          "number": 65,
+          "title": {
+            "ko": "명품 날치기",
+            "en": "Chic Snatcher"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "르 마르셰 앞에서 가방 날치기 소문 듣고, 가방 구매 후 추격",
+            "en": "Hear bag-snatching rumors at Le Marche, buy a bag, then chase."
+          },
+          "body": {
+            "ko": "르 마르셰에서 이탈리안 숄더백을 구입하고 가게를 나오면 날치기가 발생합니다. 사거리에서 왼쪽으로 꺾어 뒤쫓고, 은신처까지 따라가기를 선택해 일당을 격파하세요.",
+            "en": "Buy an Italian Shoulder Bag at Le Marche and leave the store to trigger the theft. Follow the thief — turn left at the four-way — choose to trail him to the hideout, and beat the thieves."
+          },
+          "reward": {
+            "ko": "경험치 2,000 · 캐비아 스킨 백",
+            "en": "2,000 EXP · Caviar Skin Bag"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 81,
-          title: { ko: "리노베이션 주의보", en: "Watch Out for Renovations" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「편의점 강도」 후 뉴 세레나 앞 노인에게 말 걸기 → 가게 보기", en: "After 'Convenient Robbery': old man outside New Serena, then mind the bar." },
-          body: { ko: "뉴 세레나 근처 노인과 마마에게 차례로 말을 걸어 도움을 수락합니다. 흰개미·배관·화재경보기 점검을 모두 거절하면 전투가 벌어지고, 이후 노인에게 돌아가면 클리어됩니다.", en: "Talk to the old man near New Serena and then the New Serena Mama, and agree to help. Refuse the termite, plumbing and smoke alarm checks in turn, beat the workers, then report back to the old man." },
-          reward: { ko: "경험치 1,000 · 50,000엔", en: "1,000 EXP · ¥50,000" },
+          "number": 81,
+          "title": {
+            "ko": "리노베이션 주의보",
+            "en": "Watch Out for Renovations"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「편의점 강도」 후 뉴 세레나 앞 노인에게 말 걸기 → 가게 보기",
+            "en": "After 'Convenient Robbery': old man outside New Serena, then mind the bar."
+          },
+          "body": {
+            "ko": "뉴 세레나 근처 노인과 마마에게 차례로 말을 걸어 도움을 수락합니다. 흰개미·배관·화재경보기 점검을 모두 거절하면 전투가 벌어지고, 이후 노인에게 돌아가면 클리어됩니다.",
+            "en": "Talk to the old man near New Serena and then the New Serena Mama, and agree to help. Refuse the termite, plumbing and smoke alarm checks in turn, beat the workers, then report back to the old man."
+          },
+          "reward": {
+            "ko": "경험치 1,000 · 50,000엔",
+            "en": "1,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 91,
-          title: { ko: "카무로초의 여왕", en: "Queen of Kamurocho" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「Mr. 때려봐 잡아봐」 후 시치후쿠 동쪽 안경 남자가 의뢰 — 파파라치 5인 차단", en: "After 'Mr. Try and Catch Me': the bespectacled rep east of Shichifuku tasks you with blocking five paparazzi." },
-          body: { ko: "「Mr. 때려봐 잡아봐」 클리어 후 시치후쿠 동쪽 안경 남자가 여배우 다카하시 마키코의 파파라치 5명을 차단 의뢰. 5명 위치: ① 길 건너편 (매니저가 지목) ② 파크 골목 첫 오른쪽 입구 ③ 카미야마 워크스 골목 안 왼쪽 ④ 거리 북단 파란 천막 옆 ⑤ 검은 모자, 택시 근처 왔다 갔다 하는 카메라 든 남자.", en: "After 'Mr. Try and Catch Me': the manager east of Shichifuku asks you to intercept five paparazzi: across the street, up Park Alley to the right, in the alley by Kamiyama Works, by the north-end blue tarp, and the man pacing near the taxi." },
-          reward: { ko: "100,000엔 + 「이탈리아 향수」", en: "100,000 yen + Italian Perfume" },
+          "number": 91,
+          "title": {
+            "ko": "카무로초의 여왕",
+            "en": "Queen of Kamurocho"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「Mr. 때려봐 잡아봐」 후 시치후쿠 동쪽 안경 남자가 의뢰 — 파파라치 5인 차단",
+            "en": "After 'Mr. Try and Catch Me': the bespectacled rep east of Shichifuku tasks you with blocking five paparazzi."
+          },
+          "body": {
+            "ko": "「Mr. 때려봐 잡아봐」 클리어 후 시치후쿠 동쪽 안경 남자가 여배우 다카하시 마키코의 파파라치 5명을 차단 의뢰. 5명 위치: ① 길 건너편 (매니저가 지목) ② 파크 골목 첫 오른쪽 입구 ③ 카미야마 워크스 골목 안 왼쪽 ④ 거리 북단 파란 천막 옆 ⑤ 검은 모자, 택시 근처 왔다 갔다 하는 카메라 든 남자.",
+            "en": "After 'Mr. Try and Catch Me': the manager east of Shichifuku asks you to intercept five paparazzi: across the street, up Park Alley to the right, in the alley by Kamiyama Works, by the north-end blue tarp, and the man pacing near the taxi."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 100,000엔(사진이 1장 이상 찍히면 30,000엔) · 이탈리아 향수",
+            "en": "8,000 EXP · ¥100,000 (¥30,000 if at least one photo is taken) · Italian Perfume"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 92,
-          title: { ko: "편의점 강도", en: "Convenient Robbery" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「돌아온 사나이」 후 파크 거리 서쪽 검은 옷의 남자에게 말 걸기", en: "Clear 'The Returnee': talk to the man in black west of West Park." },
-          body: { ko: "강도를 격파한 뒤 뒤쫓기를 선택하고, 근처 행인에게 물어 「검은 재킷」을 고릅니다. 어린이 공원으로 가서 강도를 다시 제압하고 자수를 권하면 클리어됩니다.", en: "Beat the robber, choose to go after him, ask the nearby passerby and answer \"A black jacket\". Head to Children's Park, beat him again and urge him to turn himself in." },
-          reward: { ko: "경험치 3,000 · 30,000엔", en: "3,000 EXP · ¥30,000" },
+          "number": 92,
+          "title": {
+            "ko": "편의점 강도",
+            "en": "Convenient Robbery"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「돌아온 사나이」 후 파크 거리 서쪽 검은 옷의 남자에게 말 걸기",
+            "en": "Clear 'The Returnee': talk to the man in black west of West Park."
+          },
+          "body": {
+            "ko": "강도를 격파한 뒤 뒤쫓기를 선택하고, 근처 행인에게 물어 「검은 재킷」을 고릅니다. 어린이 공원으로 가서 강도를 다시 제압하고 자수를 권하면 클리어됩니다.",
+            "en": "Beat the robber, choose to go after him, ask the nearby passerby and answer \"A black jacket\". Head to Children's Park, beat him again and urge him to turn himself in."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 30,000엔",
+            "en": "3,000 EXP · ¥30,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 98,
-          title: { ko: "세 번째 경비원", en: "The Third Bouncer" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "세 번째 문자 위치에서 후보 영입", en: "Third recruit, follow the next text." },
-          body: { ko: "밀레니엄 타워 앞에서 메시지를 읽고 텐카이치 거리 뒷골목으로 들어가, 「키류. 키류 카즈마.」를 선택한 뒤 야쿠자를 격파하세요.", en: "Read the message in front of Millennium Tower, go into the back alley off Tenkaichi Alley, answer \"Kiryu. Kazuma Kiryu.\" and beat the yakuza." },
-          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
+          "number": 98,
+          "title": {
+            "ko": "세 번째 경비원",
+            "en": "The Third Bouncer"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "세 번째 문자 위치에서 후보 영입",
+            "en": "Third recruit, follow the next text."
+          },
+          "body": {
+            "ko": "밀레니엄 타워 앞에서 메시지를 읽고 텐카이치 거리 뒷골목으로 들어가, 「키류. 키류 카즈마.」를 선택한 뒤 야쿠자를 격파하세요.",
+            "en": "Read the message in front of Millennium Tower, go into the back alley off Tenkaichi Alley, answer \"Kiryu. Kazuma Kiryu.\" and beat the yakuza."
+          },
+          "reward": {
+            "ko": "경험치 3,000",
+            "en": "3,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
         },
         {
-          number: 99,
-          title: { ko: "네 번째 경비원", en: "The Fourth Bouncer" },
-          chapter: { ko: "7장", en: "Chapter 7" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "네 번째 문자 위치에서 후보 영입", en: "Fourth recruit, follow the next text." },
-          body: { ko: "메시지를 읽고 아시아로 이동해 안내원 → 스토커 → 직원 순으로 말을 건 뒤, 스토커에게 다시 말을 걸어 싸우면 클리어됩니다.", en: "Read the message, head to Asia and talk to the attendant, the stalker and then the staff, then talk to the stalker again and fight him." },
-          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
-        },
-      ],
+          "number": 99,
+          "title": {
+            "ko": "네 번째 경비원",
+            "en": "The Fourth Bouncer"
+          },
+          "chapter": {
+            "ko": "7장",
+            "en": "Chapter 7"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "네 번째 문자 위치에서 후보 영입",
+            "en": "Fourth recruit, follow the next text."
+          },
+          "body": {
+            "ko": "메시지를 읽고 아시아로 이동해 안내원 → 스토커 → 직원 순으로 말을 건 뒤, 스토커에게 다시 말을 걸어 싸우면 클리어됩니다.",
+            "en": "Read the message, head to Asia and talk to the attendant, the stalker and then the staff, then talk to the stalker again and fight him."
+          },
+          "reward": {
+            "ko": "경험치 3,000",
+            "en": "3,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 7 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-7-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "9장 — 카무로초", en: "Chapter 9 — The Plot (Kamurocho)" },
-      items: [
+      "title": {
+        "ko": "9장 — 카무로초",
+        "en": "Chapter 9 — The Plot (Kamurocho)"
+      },
+      "items": [
         {
-          number: 9,
-          title: { ko: "카페 알프스의 살인", en: "Murder at Café Alps" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "9장: 카페 알프스 앞 전단지 배포 여성에게 말 걸기 (12장 야간에 완결)", en: "Ch.9: talk to the flyer girl outside Café Alps; finish in Ch.12 at night." },
-          body: { ko: "장기 추리 서브. 9장에 카페 알프스 앞 전단지 여성·기자 와카조와 대화 → 수첩 입수. 12장 야간에 밴텀의 마에다 형사 → 플로리스트·우사미·아사이·키노시타·이마가와 → 키노시타의 아내 유코를 스타더스트에서 추궁 → 마에다에게서 증거 목록 → 카페 알프스에서 와카조 앞 단죄. 증거 제출 순서: 우사미 증언 → 재떨이 지문 → 키노시타 증언 → 이마가와 증언 → 증거 목록 + 아사이 증언 2 → 「유코 키노시타가 범인이다」 → 아사이 증언 → 유코의 명함 → 와카조의 증언 → 플로리스트의 증언.", en: "Long mystery. Start in Ch.9 with Wakazo at Café Alps. Finish in Ch.12 at night: interview Maeda at Bantam, the Florist, Usami at Mach Bowl, Asai at Poppo Nakamichi, Kinoshita at Cafe Alps, Imagawa at Theater Square Club SEGA; corner Yuko at Stardust; pick up evidence list from Maeda; return to Alps. Present in this order: Usami's Testimony → Ashtray Fingerprints → Kinoshita's Testimony → Imagawa's Testimony → List of Evidence + Asai's Testimony 2 → J'accuse Yuko Kinoshita → Asai's Testimony → Yuko's Business Card → Wakazo's Testimony → Florist's Testimony." },
-          reward: { ko: "200,000엔 + 컴플리션 카운트", en: "200,000 yen + completion credit" },
+          "number": 9,
+          "title": {
+            "ko": "카페 알프스의 살인",
+            "en": "Murder at Café Alps"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "9장: 카페 알프스 앞 전단지 배포 여성에게 말 걸기 (12장 야간에 완결)",
+            "en": "Ch.9: talk to the flyer girl outside Café Alps; finish in Ch.12 at night."
+          },
+          "body": {
+            "ko": "장기 추리 서브. 9장에 카페 알프스 앞 전단지 여성·기자 와카조와 대화 → 수첩 입수. 12장 야간에 밴텀의 마에다 형사 → 플로리스트·우사미·아사이·키노시타·이마가와 → 키노시타의 아내 유코를 스타더스트에서 추궁 → 마에다에게서 증거 목록 → 카페 알프스에서 와카조 앞 단죄. 증거 제출 순서: 우사미 증언 → 재떨이 지문 → 키노시타 증언 → 이마가와 증언 → 증거 목록 + 아사이 증언 2 → 「유코 키노시타가 범인이다」 → 아사이 증언 → 유코의 명함 → 와카조의 증언 → 플로리스트의 증언.",
+            "en": "Long mystery. Start in Ch.9 with Wakazo at Café Alps. Finish in Ch.12 at night: interview Maeda at Bantam, the Florist, Usami at Mach Bowl, Asai at Poppo Nakamichi, Kinoshita at Cafe Alps, Imagawa at Theater Square Club SEGA; corner Yuko at Stardust; pick up evidence list from Maeda; return to Alps. Present in this order: Usami's Testimony → Ashtray Fingerprints → Kinoshita's Testimony → Imagawa's Testimony → List of Evidence + Asai's Testimony 2 → J'accuse Yuko Kinoshita → Asai's Testimony → Yuko's Business Card → Wakazo's Testimony → Florist's Testimony."
+          },
+          "reward": {
+            "ko": "경험치 20,000 · 200,000엔",
+            "en": "20,000 EXP · ¥200,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
         },
         {
-          number: 73,
-          title: { ko: "도쿄의 마즈 파이터즈", en: "Mars Fighters in Tokyo" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "밀레니엄 타워 앞 빨간 재킷의 키타가와에게 말 걸기", en: "Talk to Kitagawa (red jacket) outside Millennium Tower." },
-          body: { ko: "밀레니엄 타워 앞의 미나미자와에게 말을 건 뒤, 공원대로의 키타가와와 대화하고 전투에서 이깁니다. 마지막에 「그래서?」를 선택하면 클리어됩니다.", en: "Talk to Minamizawa in front of Millennium Tower, then talk to Kitagawa on Park Boulevard and beat him. Finish by choosing \"So?\"." },
-          reward: { ko: "경험치 5,000 · 10,000엔 · 미나미자와의 사인", en: "5,000 EXP · ¥10,000 · Minamizawa's Autograph" },
+          "number": 73,
+          "title": {
+            "ko": "도쿄의 마즈 파이터즈",
+            "en": "Mars Fighters in Tokyo"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "밀레니엄 타워 앞 빨간 재킷의 키타가와에게 말 걸기",
+            "en": "Talk to Kitagawa (red jacket) outside Millennium Tower."
+          },
+          "body": {
+            "ko": "밀레니엄 타워 앞의 미나미자와에게 말을 건 뒤, 공원대로의 키타가와와 대화하고 전투에서 이깁니다. 마지막에 「그래서?」를 선택하면 클리어됩니다.",
+            "en": "Talk to Minamizawa in front of Millennium Tower, then talk to Kitagawa on Park Boulevard and beat him. Finish by choosing \"So?\"."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 10,000엔 · 미나미자와의 사인",
+            "en": "5,000 EXP · ¥10,000 · Minamizawa's Autograph"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
         },
         {
-          number: 76,
-          title: { ko: "끊긴 통화", en: "Disconnected" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「용의 보물 훔치기」 후 극장 광장 공중전화 받기 → 슬롯 하우스 앞 범인", en: "Clear 'Stealing from the Dragon's Hoard'; answer the Theater Square payphone — culprit is at Slot House." },
-          body: { ko: "극장 광장의 공중전화를 받고 곧바로 약속 장소로 이동한 뒤, 뉴 세레나 근처에서 전화를 건 상대와 싸우면 클리어됩니다.", en: "Answer the phone in the Theater Square phonebooth, head straight to the meeting place and fight the caller near New Serena." },
-          reward: { ko: "경험치 8,000 · 50,000엔", en: "8,000 EXP · ¥50,000" },
+          "number": 76,
+          "title": {
+            "ko": "끊긴 통화",
+            "en": "Disconnected"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「용의 보물 훔치기」 후 극장 광장 공중전화 받기 → 슬롯 하우스 앞 범인",
+            "en": "Clear 'Stealing from the Dragon's Hoard'; answer the Theater Square payphone — culprit is at Slot House."
+          },
+          "body": {
+            "ko": "극장 광장의 공중전화를 받고 곧바로 약속 장소로 이동한 뒤, 뉴 세레나 근처에서 전화를 건 상대와 싸우면 클리어됩니다.",
+            "en": "Answer the phone in the Theater Square phonebooth, head straight to the meeting place and fight the caller near New Serena."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 50,000엔",
+            "en": "8,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
         },
         {
-          number: 77,
-          title: { ko: "용의 보물 훔치기", en: "Stealing from the Dragon's Hoard" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「당신의 운명을 봐드립니다」 후 타이헤이 서쪽에서 날치기 추격", en: "After 'Your Fortunes Told Here': chase the pickpocket west on Taihei." },
-          body: { ko: "마하볼 근처 타이헤이 대로에서 소매치기를 붙잡고, 그가 떨어뜨린 돈을 주우면 클리어됩니다.", en: "Catch the pickpocket on Taihei Boulevard near Mach Bowl and pick up the money he drops." },
-          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
+          "number": 77,
+          "title": {
+            "ko": "용의 보물 훔치기",
+            "en": "Stealing from the Dragon's Hoard"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「당신의 운명을 봐드립니다」 후 타이헤이 서쪽에서 날치기 추격",
+            "en": "After 'Your Fortunes Told Here': chase the pickpocket west on Taihei."
+          },
+          "body": {
+            "ko": "마하볼 근처 타이헤이 대로에서 소매치기를 붙잡고, 그가 떨어뜨린 돈을 주우면 클리어됩니다.",
+            "en": "Catch the pickpocket on Taihei Boulevard near Mach Bowl and pick up the money he drops."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 100,000엔",
+            "en": "5,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
         },
         {
-          number: 80,
-          title: { ko: "당신의 운명을 봐드립니다", en: "Your Fortunes Told Here" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "핑크 거리 클럽 샤인 남쪽 점쟁이에게 말 걸기", en: "Talk to the fortune-teller south of Club Shine on Pink St." },
-          body: { ko: "핑크 거리 줄 끝의 여성에게 말을 건 뒤 줄을 건너뛰고 점술사와 대화해 특별 점괘를 12만 엔에 받습니다. 나카미치 골목 모퉁이의 의심 많은 여성 → 클럽 세가 근처 여성 무리 순으로 말을 걸고 점술사에게 돌아가면 클리어됩니다.", en: "Talk to the woman at the end of the line on Pink Street, skip the queue to reach the fortune teller and pay ¥120,000 for the special reading. Then talk to the skeptical woman at the corner of Nakamichi Alley, the group of women near Club Sega, and return to the fortune teller." },
-          reward: { ko: "경험치 3,000", en: "3,000 EXP" },
+          "number": 80,
+          "title": {
+            "ko": "당신의 운명을 봐드립니다",
+            "en": "Your Fortunes Told Here"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "핑크 거리 클럽 샤인 남쪽 점쟁이에게 말 걸기",
+            "en": "Talk to the fortune-teller south of Club Shine on Pink St."
+          },
+          "body": {
+            "ko": "핑크 거리 줄 끝의 여성에게 말을 건 뒤 줄을 건너뛰고 점술사와 대화해 특별 점괘를 12만 엔에 받습니다. 나카미치 골목 모퉁이의 의심 많은 여성 → 클럽 세가 근처 여성 무리 순으로 말을 걸고 점술사에게 돌아가면 클리어됩니다.",
+            "en": "Talk to the woman at the end of the line on Pink Street, skip the queue to reach the fortune teller and pay ¥120,000 for the special reading. Then talk to the skeptical woman at the corner of Nakamichi Alley, the group of women near Club Sega, and return to the fortune teller."
+          },
+          "reward": {
+            "ko": "경험치 3,000",
+            "en": "3,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
         },
         {
-          number: 100,
-          title: { ko: "다섯 번째 경비원", en: "The Fifth Bouncer" },
-          chapter: { ko: "9장", en: "Chapter 9" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「네 번째 경비원」 후 시치후쿠 풍속 안내소에서 「개틀링 센도」 찾기", en: "After 'The Fourth Bouncer': find 'Gatling Sendo' at the Men's Entertainment Booth on Shichifuku." },
-          body: { ko: "메시지를 읽고 MEB로 가서 센도에게 말을 걸어 영입을 선택합니다. 다시 말을 걸어 전투에서 이기면 경비원 라인이 마무리됩니다.", en: "Read the message, go to MEB and talk to Sendo, choose to recruit him, then talk to him again and win the fight to close out the bouncer line." },
-          reward: { ko: "경험치 5,000 · 레이지 브레이슬릿", en: "5,000 EXP · Rage Bracelet" },
-        },
-      ],
+          "number": 100,
+          "title": {
+            "ko": "다섯 번째 경비원",
+            "en": "The Fifth Bouncer"
+          },
+          "chapter": {
+            "ko": "9장",
+            "en": "Chapter 9"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「네 번째 경비원」 후 시치후쿠 풍속 안내소에서 「개틀링 센도」 찾기",
+            "en": "After 'The Fourth Bouncer': find 'Gatling Sendo' at the Men's Entertainment Booth on Shichifuku."
+          },
+          "body": {
+            "ko": "메시지를 읽고 MEB로 가서 센도에게 말을 걸어 영입을 선택합니다. 다시 말을 걸어 전투에서 이기면 경비원 라인이 마무리됩니다.",
+            "en": "Read the message, go to MEB and talk to Sendo, choose to recruit him, then talk to him again and win the fight to close out the bouncer line."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 레이지 브레이슬릿",
+            "en": "5,000 EXP · Rage Bracelet"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 9 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-9-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "10장 — 류큐 재방문", en: "Chapter 10 — Unfinished Business (Ryukyu)" },
-      items: [
+      "title": {
+        "ko": "10장 — 류큐 재방문",
+        "en": "Chapter 10 — Unfinished Business (Ryukyu)"
+      },
+      "items": [
         {
-          number: 2,
-          title: { ko: "두 아버지", en: "Two Fathers" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "10장 황혼: 류도 사무소 앞 남성에게 말 걸기", en: "Chapter 10 at sunset: talk to the man outside the Ryudo Office." },
-          body: { ko: "타미야가 토마의 하츠마치 행을 알린 직후의 황혼대에만 발생. 류도 사무소 → 모리닝글로리에서 미키오 부자 갈등 → 해변 → 마작 진영 → 우마치 식당에서 상공회의소 회장 추격.", en: "Triggers only at sunset after Tamiya's call about Toma. Ryudo Office → Morning Glory (father-son spat) → beach → Mahjong Camp → Umachi restaurant, then chase the Commerce Union President." },
-          choices: [
-            { prompt: { ko: "미키오에게 어떤 말을 건넬까", en: "What to tell Mikio" }, correct: { ko: "어떤 선택지를 골라도 무방", en: "Either choice is fine" }, note: { ko: "결말 분기는 없음 — 진행만 하면 보상", en: "No branching outcome; any pick clears it" } },
+          "number": 2,
+          "title": {
+            "ko": "두 아버지",
+            "en": "Two Fathers"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "10장 황혼: 류도 사무소 앞 남성에게 말 걸기",
+            "en": "Chapter 10 at sunset: talk to the man outside the Ryudo Office."
+          },
+          "body": {
+            "ko": "타미야가 토마의 하츠마치 행을 알린 직후의 황혼대에만 발생. 류도 사무소 → 모리닝글로리에서 미키오 부자 갈등 → 해변 → 마작 진영 → 우마치 식당에서 상공회의소 회장 추격.",
+            "en": "Triggers only at sunset after Tamiya's call about Toma. Ryudo Office → Morning Glory (father-son spat) → beach → Mahjong Camp → Umachi restaurant, then chase the Commerce Union President."
+          },
+          "choices": [
+            {
+              "prompt": {
+                "ko": "미키오에게 어떤 말을 건넬까",
+                "en": "What to tell Mikio"
+              },
+              "correct": {
+                "ko": "어떤 선택지를 골라도 무방",
+                "en": "Either choice is fine"
+              },
+              "note": {
+                "ko": "결말 분기는 없음 — 진행만 하면 보상",
+                "en": "No branching outcome; any pick clears it"
+              }
+            }
           ],
-          reward: { ko: "경험치 + 컴플리션 카운트", en: "EXP + completion credit" },
+          "reward": {
+            "ko": "경험치 10,000",
+            "en": "10,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 17,
-          title: { ko: "류큐의 7가지 불가사의 7", en: "The Seven Mysteries of Ryukyu 7" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "10장 동쪽 다리에서 여고생들에게 말 걸기", en: "Chapter 10: schoolgirls on the east bridge." },
-          body: { ko: "여고생들의 대화를 엿들은 뒤 하츠마치로 이동해 교차로 근처 검은 차에 다가가 계약서에 서명합니다. 다리에서 차 주인과 마주쳐 일당을 격파하고, 다리로 돌아가 여고생들의 마지막 대화를 들으면 7가지 불가사의 라인이 마무리됩니다.", en: "Listen in on the schoolgirls, then go to Hatsumachi and approach the black car near the crossroad to sign the agreement. Meet the car's owner at the bridge, beat the thugs, then return to the bridge and listen to the girls one last time to close out the Seven Mysteries line." },
-          reward: { ko: "경험치 8,000 · 50,000엔 · 하늘빛 보석 · 행운의 동전", en: "8,000 EXP · ¥50,000 · Azure Gem · Lucky Coin" },
+          "number": 17,
+          "title": {
+            "ko": "류큐의 7가지 불가사의 7",
+            "en": "The Seven Mysteries of Ryukyu 7"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "10장 동쪽 다리에서 여고생들에게 말 걸기",
+            "en": "Chapter 10: schoolgirls on the east bridge."
+          },
+          "body": {
+            "ko": "여고생들의 대화를 엿들은 뒤 하츠마치로 이동해 교차로 근처 검은 차에 다가가 계약서에 서명합니다. 다리에서 차 주인과 마주쳐 일당을 격파하고, 다리로 돌아가 여고생들의 마지막 대화를 들으면 7가지 불가사의 라인이 마무리됩니다.",
+            "en": "Listen in on the schoolgirls, then go to Hatsumachi and approach the black car near the crossroad to sign the agreement. Meet the car's owner at the bridge, beat the thugs, then return to the bridge and listen to the girls one last time to close out the Seven Mysteries line."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 50,000엔 · 하늘빛 보석 · 행운의 동전",
+            "en": "8,000 EXP · ¥50,000 · Azure Gem · Lucky Coin"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 19,
-          title: { ko: "야마시타의 보물찾기", en: "Yamashita Treasure Hunt" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「Let's Learn English 3」 후 에비스 전당포 앞 노인에게 말 걸기", en: "After 'Let's Learn English 3': old man outside Ebisu Pawn." },
-          body: { ko: "키타류 거리 에비스 폰 근처의 노인에게 말을 걸어 의뢰를 수락한 뒤, 다리를 건너 하츠마치의 가라오케관 옆 주차장으로 가서 노인에게 전화하면 클리어됩니다.", en: "Talk to the old man near Ebisu Pawn on Kitaryu Street and agree to help, then cross the bridge to the car park beside Karaokekan in Hatsumachi and call him." },
-          reward: { ko: "경험치 3,000 · 앤티크 체인메일", en: "3,000 EXP · Antique Chain Mail" },
+          "number": 19,
+          "title": {
+            "ko": "야마시타의 보물찾기",
+            "en": "Yamashita Treasure Hunt"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「영어 공부 3」 후 에비스 전당포 앞 노인에게 말 걸기",
+            "en": "After 'Let's Learn English 3': old man outside Ebisu Pawn."
+          },
+          "body": {
+            "ko": "키타류 거리 에비스 폰 근처의 노인에게 말을 걸어 의뢰를 수락한 뒤, 다리를 건너 하츠마치의 가라오케관 옆 주차장으로 가서 노인에게 전화하면 클리어됩니다.",
+            "en": "Talk to the old man near Ebisu Pawn on Kitaryu Street and agree to help, then cross the bridge to the car park beside Karaokekan in Hatsumachi and call him."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 앤티크 체인메일",
+            "en": "3,000 EXP · Antique Chain Mail"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 34,
-          title: { ko: "결단", en: "Reckoning" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「고아원을 노린 강도」 후 스마일 버거 앞에서 청년에게 다시 말 걸기", en: "After 'Robbing the Orphanage': the young man outside Smile Burger again." },
-          body: { ko: "스마일 버거에서 소년에게 말을 걸고 가게에 들어가, 불량배 문제를 도와주기로 선택해 전투를 마칩니다. 마지막에 도울지 개입하지 않을지 선택하면 클리어됩니다.", en: "Talk to the teen at Smile Burger and enter the restaurant, decide to help him with the punks and win the fight, then make the final choice of whether to step in or stay out of it." },
-          reward: { ko: "경험치 5,000 · 이탈리안 숄더백", en: "5,000 EXP · Italian Shoulder Bag" },
+          "number": 34,
+          "title": {
+            "ko": "결단",
+            "en": "Reckoning"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「고아원을 노린 강도」 후 스마일 버거 앞에서 청년에게 다시 말 걸기",
+            "en": "After 'Robbing the Orphanage': the young man outside Smile Burger again."
+          },
+          "body": {
+            "ko": "스마일 버거에서 소년에게 말을 걸고 가게에 들어가, 불량배 문제를 도와주기로 선택해 전투를 마칩니다. 마지막에 도울지 개입하지 않을지 선택하면 클리어됩니다.",
+            "en": "Talk to the teen at Smile Burger and enter the restaurant, decide to help him with the punks and win the fight, then make the final choice of whether to step in or stay out of it."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 이탈리안 숄더백",
+            "en": "5,000 EXP · Italian Shoulder Bag"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 45,
-          title: { ko: "이리오모테 사건", en: "The Iriomote Incident" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「물고기 떼 부르기」 후 공설시장 주인의 의뢰", en: "After 'Chumming the Waters': the market owner asks for help against wildcat smugglers." },
-          body: { ko: "공설시장에서 곤란해하는 남자의 부탁을 수락하고 2층으로 올라갑니다. 초록 모자를 쓴 사람이 밀매업자이니 지목하고 「증거는 필요 없다」를 선택한 뒤 일당을 격파하세요.", en: "Agree to help the troubled man at the Public Market and head to the second floor. The trafficker is the one in the green hat — identify him, choose \"I don't need proof\", then beat the traffickers." },
-          reward: { ko: "경험치 3,000 · 50,000엔", en: "3,000 EXP · ¥50,000" },
+          "number": 45,
+          "title": {
+            "ko": "이리오모테 사건",
+            "en": "The Iriomote Incident"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「물고기 떼 부르기」 후 공설시장 주인의 의뢰",
+            "en": "After 'Chumming the Waters': the market owner asks for help against wildcat smugglers."
+          },
+          "body": {
+            "ko": "공설시장에서 곤란해하는 남자의 부탁을 수락하고 2층으로 올라갑니다. 초록 모자를 쓴 사람이 밀매업자이니 지목하고 「증거는 필요 없다」를 선택한 뒤 일당을 격파하세요.",
+            "en": "Agree to help the troubled man at the Public Market and head to the second floor. The trafficker is the one in the green hat — identify him, choose \"I don't need proof\", then beat the traffickers."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 50,000엔",
+            "en": "3,000 EXP · ¥50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 47,
-          title: { ko: "치고 멈추기", en: "Hit-and-Stop" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「Let's Learn English 3」 + 「도쿄에 가고 싶어 3」 후 교차로 두 남자 대화 엿듣고 검은 세단과 충돌", en: "After 'Let's Learn English 3' and 'I Want to Go to Tokyo 3': eavesdrop at the crosswalk, then bump the black sedan." },
-          body: { ko: "류큐 대로 교차로에서 행인들의 대화를 들은 뒤, 지나가는 검은 세단에 부딪히고 지불을 거부해 전투로 넘어갑니다. 여기서 「차 부수기의 진수」를 발동시키면 보상이 5만 엔으로 올라갑니다.", en: "Listen to the pedestrians at the Ryukyu Boulevard crossroad, then collide with the moving black sedan and refuse to pay to start the fight. Pulling off the Essence of Car Crushing raises the payout to ¥50,000." },
-          reward: { ko: "경험치 3,000 · 30,000~50,000엔", en: "3,000 EXP · ¥30,000–50,000" },
+          "number": 47,
+          "title": {
+            "ko": "치고 멈추기",
+            "en": "Hit-and-Stop"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「영어 공부 3」 + 「도쿄에 가고 싶어 3」 후 교차로 두 남자 대화 엿듣고 검은 세단과 충돌",
+            "en": "After 'Let's Learn English 3' and 'I Want to Go to Tokyo 3': eavesdrop at the crosswalk, then bump the black sedan."
+          },
+          "body": {
+            "ko": "류큐 대로 교차로에서 행인들의 대화를 들은 뒤, 지나가는 검은 세단에 부딪히고 지불을 거부해 전투로 넘어갑니다. 여기서 「차 부수기의 진수」를 발동시키면 보상이 5만 엔으로 올라갑니다.",
+            "en": "Listen to the pedestrians at the Ryukyu Boulevard crossroad, then collide with the moving black sedan and refuse to pay to start the fight. Pulling off the Essence of Car Crushing raises the payout to ¥50,000."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 30,000~50,000엔",
+            "en": "3,000 EXP · ¥30,000–50,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 51,
-          title: { ko: "디저트", en: "Dessert" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「메인 코스」 후 에비스 전당포 앞 가게 주인에게 말 걸기", en: "After 'Main Course': shop owner outside Ebisu Pawn." },
-          body: { ko: "키타류 거리 에비스 폰 근처 가게의 점장에게 말을 걸어 도움을 수락하고 먹튀범을 붙잡으면 먹튀 라인이 끝납니다.", en: "Talk to the manager of the store near Ebisu Pawn on Kitaryu Street, agree to help and catch the dine-and-dasher to close out the line." },
-          reward: { ko: "경험치 8,000 · 금 접시", en: "8,000 EXP · Gold Plate" },
+          "number": 51,
+          "title": {
+            "ko": "디저트",
+            "en": "Dessert"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「메인 코스」 후 에비스 전당포 앞 가게 주인에게 말 걸기",
+            "en": "After 'Main Course': shop owner outside Ebisu Pawn."
+          },
+          "body": {
+            "ko": "키타류 거리 에비스 폰 근처 가게의 점장에게 말을 걸어 도움을 수락하고 먹튀범을 붙잡으면 먹튀 라인이 끝납니다.",
+            "en": "Talk to the manager of the store near Ebisu Pawn on Kitaryu Street, agree to help and catch the dine-and-dasher to close out the line."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 금 접시",
+            "en": "8,000 EXP · Gold Plate"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 57,
-          title: { ko: "도쿄에 가고 싶어 3", en: "I Want to Go to Tokyo 3" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "2편 후 에비스 전당포 북쪽에서 다시 말 걸기", en: "After Pt.2: speak to her again north of Ebisu Pawn." },
-          body: { ko: "에비스 폰 앞에 서 있는 카에데와 모미지에게 말을 걸면 클리어됩니다.", en: "Talk to Kaede and Momiji standing in front of Ebisu Pawn." },
-          reward: { ko: "경험치 5,000 · 캐비어 스킨 백", en: "5,000 EXP · Caviar Skin Bag" },
+          "number": 57,
+          "title": {
+            "ko": "도쿄에 가고 싶어 3",
+            "en": "I Want to Go to Tokyo 3"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "2편 후 에비스 전당포 북쪽에서 다시 말 걸기",
+            "en": "After Pt.2: speak to her again north of Ebisu Pawn."
+          },
+          "body": {
+            "ko": "에비스 폰 앞에 서 있는 카에데와 모미지에게 말을 걸면 클리어됩니다.",
+            "en": "Talk to Kaede and Momiji standing in front of Ebisu Pawn."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 캐비어 스킨 백",
+            "en": "5,000 EXP · Caviar Skin Bag"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 68,
-          title: { ko: "사채업자에게 던져진 남자", en: "Thrown to the Loan Sharks" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「이리오모테 사건」 후 서쪽 다리에서 그 남자 재등장", en: "After 'The Iriomote Incident': the same man is back on the west bridge." },
-          body: { ko: "아쿠아 스카이 근처 다리에서 키시모토에게 말을 걸어 도움을 수락하고, 사채업자들을 격파하면 클리어됩니다.", en: "Talk to Kishimoto on the bridge near Aqua Sky, agree to help and beat the loan sharks." },
-          reward: { ko: "경험치 5,000 · 스태미난 스파크", en: "5,000 EXP · Staminan Spark" },
+          "number": 68,
+          "title": {
+            "ko": "사채업자에게 던져진 남자",
+            "en": "Thrown to the Loan Sharks"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「이리오모테 사건」 후 서쪽 다리에서 그 남자 재등장",
+            "en": "After 'The Iriomote Incident': the same man is back on the west bridge."
+          },
+          "body": {
+            "ko": "아쿠아 스카이 근처 다리에서 키시모토에게 말을 걸어 도움을 수락하고, 사채업자들을 격파하면 클리어됩니다.",
+            "en": "Talk to Kishimoto on the bridge near Aqua Sky, agree to help and beat the loan sharks."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 스태미난 스파크",
+            "en": "5,000 EXP · Staminan Spark"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 71,
-          title: { ko: "사기꾼들의 역습", en: "Revenge of the Con Men" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「비밀 거래」 + 「사기꾼 전쟁」 후 강가에 떼지어 나타난 사기꾼들", en: "After 'Under the Table' + 'The Con Wars': six punks at the riverside." },
-          body: { ko: "쿠보치 도로의 다리 근처에서 사기꾼들과 마주쳐 격파하면 클리어됩니다.", en: "Meet the con men near the bridge on Kubochi Road and beat them." },
-          reward: { ko: "경험치 5,000 · 100,000엔", en: "5,000 EXP · ¥100,000" },
+          "number": 71,
+          "title": {
+            "ko": "사기꾼들의 역습",
+            "en": "Revenge of the Con Men"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「비밀 거래」 + 「사기꾼 전쟁」 후 강가에 떼지어 나타난 사기꾼들",
+            "en": "After 'Under the Table' + 'The Con Wars': six punks at the riverside."
+          },
+          "body": {
+            "ko": "쿠보치 도로의 다리 근처에서 사기꾼들과 마주쳐 격파하면 클리어됩니다.",
+            "en": "Meet the con men near the bridge on Kubochi Road and beat them."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 100,000엔",
+            "en": "5,000 EXP · ¥100,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 72,
-          title: { ko: "새로운 사기", en: "A New Con" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「사기꾼들의 역습」 후 도쿄 밴텀에서 사기꾼들 재회", en: "After 'Revenge of the Con Men': they show up at Bantam." },
-          body: { ko: "밴텀에서 나오면 사기꾼들과 마주칩니다. 돕기를 선택하고 일당을 격파하면 사기꾼 라인이 끝납니다.", en: "Leaving Bantam triggers the con men. Choose to help and beat the thugs to close out the line." },
-          reward: { ko: "경험치 8,000 · 150,000엔", en: "8,000 EXP · ¥150,000" },
+          "number": 72,
+          "title": {
+            "ko": "새로운 사기",
+            "en": "A New Con"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「사기꾼들의 역습」 후 도쿄 밴텀에서 사기꾼들 재회",
+            "en": "After 'Revenge of the Con Men': they show up at Bantam."
+          },
+          "body": {
+            "ko": "밴텀에서 나오면 사기꾼들과 마주칩니다. 돕기를 선택하고 일당을 격파하면 사기꾼 라인이 끝납니다.",
+            "en": "Leaving Bantam triggers the con men. Choose to help and beat the thugs to close out the line."
+          },
+          "reward": {
+            "ko": "경험치 8,000 · 150,000엔",
+            "en": "8,000 EXP · ¥150,000"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 106,
-          title: { ko: "영어 공부 3", en: "Let's Learn English 3" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「잃어버린 물건」 후 그녀의 영어 교재 2만엔에 구매 → 아쿠아 스카이에서 「스테이시」와 만남", en: "After 'Lost and Found': buy her textbook for 20,000 yen, meet 'Stacy' at Aqua Sky." },
-          body: { ko: "2만 엔짜리 중급 교재를 산 뒤 카리유시 상점가의 외국인에게 「당신의 사랑을 받을 자격이 없습니다」를 선택하면 클리어됩니다.", en: "Buy the ¥20,000 intermediate handbook, then talk to the foreigner at Kariyushi Arcade and choose \"I don't deserve your love\"." },
-          reward: { ko: "경험치 3,000 · 이탈리안 목걸이", en: "3,000 EXP · Italian Necklace" },
+          "number": 106,
+          "title": {
+            "ko": "영어 공부 3",
+            "en": "Let's Learn English 3"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「잃어버린 물건」 후 그녀의 영어 교재 2만엔에 구매 → 아쿠아 스카이에서 「스테이시」와 만남",
+            "en": "After 'Lost and Found': buy her textbook for 20,000 yen, meet 'Stacy' at Aqua Sky."
+          },
+          "body": {
+            "ko": "2만 엔짜리 중급 교재를 산 뒤 카리유시 상점가의 외국인에게 「당신의 사랑을 받을 자격이 없습니다」를 선택하면 클리어됩니다.",
+            "en": "Buy the ¥20,000 intermediate handbook, then talk to the foreigner at Kariyushi Arcade and choose \"I don't deserve your love\"."
+          },
+          "reward": {
+            "ko": "경험치 3,000 · 이탈리안 목걸이",
+            "en": "3,000 EXP · Italian Necklace"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
         },
         {
-          number: 107,
-          title: { ko: "영어 공부 4", en: "Let's Learn English 4" },
-          chapter: { ko: "10장", en: "Chapter 10" },
-          location: { ko: "류큐 (오키나와)", en: "Downtown Ryukyu (Okinawa)" },
-          trigger: { ko: "「영어 공부 3」 후 마지막 레슨", en: "Final lesson after Lesson 3." },
-          body: { ko: "5만 5천 엔짜리 연애 교재를 산 뒤 키타류 거리 교차로 근처 외국인에게 「네, 부탁해요!」를 선택합니다. 이후 지불을 거부하고 불량배들을 격파하면 클리어됩니다.", en: "Buy the ¥55,000 love handbook, talk to the foreigner near the Kitaryu Street intersection and choose \"Yes please!\", then refuse to pay and beat the thugs." },
-          reward: { ko: "경험치 5,000 · 150,000엔 · 이탈리안 반지", en: "5,000 EXP · ¥150,000 · Italian Ring" },
-        },
-      ],
+          "number": 107,
+          "title": {
+            "ko": "영어 공부 4",
+            "en": "Let's Learn English 4"
+          },
+          "chapter": {
+            "ko": "10장",
+            "en": "Chapter 10"
+          },
+          "location": {
+            "ko": "류큐 (오키나와)",
+            "en": "Downtown Ryukyu (Okinawa)"
+          },
+          "trigger": {
+            "ko": "「영어 공부 3」 후 마지막 레슨",
+            "en": "Final lesson after Lesson 3."
+          },
+          "body": {
+            "ko": "5만 5천 엔짜리 연애 교재를 산 뒤 키타류 거리 교차로 근처 외국인에게 「네, 부탁해요!」를 선택합니다. 이후 지불을 거부하고 불량배들을 격파하면 클리어됩니다.",
+            "en": "Buy the ¥55,000 love handbook, talk to the foreigner near the Kitaryu Street intersection and choose \"Yes please!\", then refuse to pay and beat the thugs."
+          },
+          "reward": {
+            "ko": "경험치 5,000 · 150,000엔 · 이탈리안 반지",
+            "en": "5,000 EXP · ¥150,000 · Italian Ring"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 10 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-10-substories"
+          }
+        }
+      ]
     },
     {
-      title: { ko: "12장 — 최종 미션", en: "Chapter 12 — The End of Ambition" },
-      items: [
+      "title": {
+        "ko": "12장 — 최종 미션",
+        "en": "Chapter 12 — The End of Ambition"
+      },
+      "items": [
         {
-          number: 1,
-          title: { ko: "데이트의 자존심", en: "Date's Pride" },
-          chapter: { ko: "12장", en: "Chapter 12" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "12장: 하루카를 뉴 세레나에 두고 르 마르셰 앞 데이트에게 말 걸기", en: "Chapter 12: leave Haruka at New Serena, talk to Date outside Le Marche." },
-          body: { ko: "최종장 데이트의 자존심 결산. 하루카를 뉴 세레나에 두고 르 마르셰 앞에서 데이트와 대화 → 세레나 복귀 → 공원 → 다시 세레나 뒷문 → 나카미치 골목 마커에서 와카조의 호출 처리.", en: "Final-chapter Date storyline: leave Haruka at New Serena, chat with Date at Le Marche, return to Serena, then Public Park 3, then Serena's back door, then Nakamichi Alley once Wakazo calls." },
-          reward: { ko: "이벤트 시네마틱 + 컴플리션 카운트", en: "Event cinematic + completion credit" },
+          "number": 1,
+          "title": {
+            "ko": "데이트의 자존심",
+            "en": "Date's Pride"
+          },
+          "chapter": {
+            "ko": "12장",
+            "en": "Chapter 12"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "12장: 하루카를 뉴 세레나에 두고 르 마르셰 앞 데이트에게 말 걸기",
+            "en": "Chapter 12: leave Haruka at New Serena, talk to Date outside Le Marche."
+          },
+          "body": {
+            "ko": "최종장 데이트의 자존심 결산. 하루카를 뉴 세레나에 두고 르 마르셰 앞에서 데이트와 대화 → 세레나 복귀 → 공원 → 다시 세레나 뒷문 → 나카미치 골목 마커에서 와카조의 호출 처리.",
+            "en": "Final-chapter Date storyline: leave Haruka at New Serena, chat with Date at Le Marche, return to Serena, then Public Park 3, then Serena's back door, then Nakamichi Alley once Wakazo calls."
+          },
+          "reward": {
+            "ko": "경험치 20,000",
+            "en": "20,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 12 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-12-substories"
+          }
         },
         {
-          number: 6,
-          title: { ko: "이젠 정말 끝", en: "They Never Learn" },
-          chapter: { ko: "12장", en: "Chapter 12" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "「한발 빠른 신혼여행」 후 하루카 동반, 밀레니엄 타워 앞 직원과 대화", en: "After 'Early Honeymoon' with Haruka: talk to the office worker by Millennium Tower." },
-          body: { ko: "「한발 빠른 신혼여행」 클리어가 전제, 하루카 동반 필수. 밀레니엄 타워 앞 직원에게 말 걸기 → 옥상으로 자동 이동 → 신발만 남긴 채로 추락하는 아키모토 회상 → 강제 시네마틱.", en: "Requires 'Early Honeymoon' cleared and Haruka in tow. Talk to the office worker outside Millennium Tower, take the elevator up, approach the shoes at the edge." },
-          prereq: { ko: "「한발 빠른 신혼여행」 클리어 + 하루카 동반", en: "Clear 'Early Honeymoon' + bring Haruka" },
-          reward: { ko: "대량 경험치 + 시네마틱", en: "Massive EXP + cinematic" },
+          "number": 6,
+          "title": {
+            "ko": "이젠 정말 끝",
+            "en": "They Never Learn"
+          },
+          "chapter": {
+            "ko": "12장",
+            "en": "Chapter 12"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "「한발 빠른 신혼여행」 후 하루카 동반, 밀레니엄 타워 앞 직원과 대화",
+            "en": "After 'Early Honeymoon' with Haruka: talk to the office worker by Millennium Tower."
+          },
+          "body": {
+            "ko": "「한발 빠른 신혼여행」 클리어가 전제, 하루카 동반 필수. 밀레니엄 타워 앞 직원에게 말 걸기 → 옥상으로 자동 이동 → 신발만 남긴 채로 추락하는 아키모토 회상 → 강제 시네마틱.",
+            "en": "Requires 'Early Honeymoon' cleared and Haruka in tow. Talk to the office worker outside Millennium Tower, take the elevator up, approach the shoes at the edge."
+          },
+          "prereq": {
+            "ko": "「한발 빠른 신혼여행」 클리어 + 하루카 동반",
+            "en": "Clear 'Early Honeymoon' + bring Haruka"
+          },
+          "reward": {
+            "ko": "경험치 20,000",
+            "en": "20,000 EXP"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 12 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-12-substories"
+          }
         },
         {
-          number: 108,
-          title: { ko: "아몬", en: "Amon" },
-          chapter: { ko: "12장", en: "Chapter 12" },
-          location: { ko: "카무로초", en: "Kamurocho" },
-          trigger: { ko: "다른 118개 서브 스토리·전 히트맨·미나미다 훈련 클리어 + 야간: 카무로 캐슬 HLA의 이부키에게 말 걸기 → 산기슭 콜로세움", en: "Clear all 118 other substories, all Hitman missions, all Minamida training; at night, talk to Ibuki at Kamuro Castle HLA, then taxi to Mountainside Coliseum." },
-          body: { ko: "다른 118개 서브 스토리 + 모든 히트맨 미션 + 미나미다의 모든 훈련 완료가 전제. 야간에 카무로 캐슬 HLA에서 이부키 → 미나미다와 대화 → 택시로 「산기슭 콜로세움」 선택. 1페이즈: 듀얼 포톤 블레이드(가드 불가) — 좌우 콤보 사이에 타이거 드롭. 2페이즈: 듀얼 권총 — 뒤에서 공격. 3페이즈: 권총 + 회전 발차기 — 타이거 드롭으로 카운터.", en: "Requires all 118 other substories, all Hitman missions, and all Minamida training. At night, talk to Ibuki at Kamuro Castle HLA, then take a taxi to Mountainside Coliseum. Phase 1: Photon Blades (unblockable) — Tiger Drop between his left-right combos. Phase 2: dual pistols — strike from behind. Phase 3: pistols + rotating kicks — Tiger Drop counter." },
-          prereq: { ko: "다른 모든 서브 스토리·히트맨·미나미다 훈련 클리어 + 야간", en: "All 118 substories + Hitman + Minamida training cleared, at night" },
-          reward: { ko: "서브 스토리 컴플리션 보상", en: "Substory completion reward" },
-        },
-      ],
-    },
-  ],
+          "number": 108,
+          "title": {
+            "ko": "아몬",
+            "en": "Amon"
+          },
+          "chapter": {
+            "ko": "12장",
+            "en": "Chapter 12"
+          },
+          "location": {
+            "ko": "카무로초",
+            "en": "Kamurocho"
+          },
+          "trigger": {
+            "ko": "다른 118개 서브 스토리·전 히트맨·미나미다 훈련 클리어 + 야간: 카무로 캐슬 HLA의 이부키에게 말 걸기 → 산기슭 콜로세움",
+            "en": "Clear all 118 other substories, all Hitman missions, all Minamida training; at night, talk to Ibuki at Kamuro Castle HLA, then taxi to Mountainside Coliseum."
+          },
+          "body": {
+            "ko": "다른 118개 서브 스토리 + 모든 히트맨 미션 + 미나미다의 모든 훈련 완료가 전제. 야간에 카무로 캐슬 HLA에서 이부키 → 미나미다와 대화 → 택시로 「산기슭 콜로세움」 선택. 1페이즈: 듀얼 포톤 블레이드(가드 불가) — 좌우 콤보 사이에 타이거 드롭. 2페이즈: 듀얼 권총 — 뒤에서 공격. 3페이즈: 권총 + 회전 발차기 — 타이거 드롭으로 카운터.",
+            "en": "Requires all 118 other substories, all Hitman missions, and all Minamida training. At night, talk to Ibuki at Kamuro Castle HLA, then take a taxi to Mountainside Coliseum. Phase 1: Photon Blades (unblockable) — Tiger Drop between his left-right combos. Phase 2: dual pistols — strike from behind. Phase 3: pistols + rotating kicks — Tiger Drop counter."
+          },
+          "prereq": {
+            "ko": "다른 모든 서브 스토리·히트맨·미나미다 훈련 클리어 + 야간",
+            "en": "All 118 substories + Hitman + Minamida training cleared, at night"
+          },
+          "source": {
+            "label": "CyricZ (GameFAQs) — Yakuza 3 Remastered Chapter 12 Substories",
+            "url": "https://gamefaqs.gamespot.com/ps4/239455-yakuza-3-remastered/faqs/77723/chapter-12-substories"
+          }
+        }
+      ]
+    }
+  ]
 };
