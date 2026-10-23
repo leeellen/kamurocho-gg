@@ -317,3 +317,15 @@ test("Infinite Wealth substories use official names and game8 conditions", () =>
   assert.ok(items.every((item) => item.source?.url.startsWith("https://game8.jp/ryu-ga-gotoku8/")));
   assert.doesNotMatch(JSON.stringify(items), /스지가미|리볼브|Intelligence|Snap That Creep/);
 });
+
+test("Yakuza 0 substories cite per-entry pages without guide-only map labels", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const items = getSubstories(2988580).groups.flatMap((group) => group.items);
+  assert.equal(items.length, 100);
+  assert.ok(items.every((item) => item.source?.url.startsWith("https://kamigame.jp/ryugagotoku0/")));
+  const text = JSON.stringify(items);
+  assert.doesNotMatch(text, /【맵|\[Map|본인은 현재|고급 보상/);
+  const majima99 = items.find((item) => item.number === 99 && item.protagonist?.en === "Majima");
+  assert.equal(majima99.title.ko, "궁극의 계획");
+  assert.match(items.find((item) => item.number === 7).trigger.ko, /서브 스토리 9/);
+});
