@@ -341,3 +341,15 @@ test("Yakuza 3 substory triggers and rewards follow CyricZ and the Yakuza Wiki",
   assert.ok(items.every((item) => item.source?.url.includes("/faqs/77723/chapter-")));
   assert.doesNotMatch(JSON.stringify(items), /completion credit|cinematic|Big EXP|Massive EXP/);
 });
+
+test("Kiwami 3 substories cite game8 entries and keep conflicting Amon sources explicit", () => {
+  const { getSubstories } = load("@/lib/substories");
+  const [main, darkTies] = getSubstories(3937550).groups;
+  assert.equal(main.items.length, 31);
+  assert.equal(darkTies.items.length, 13);
+  assert.ok(main.items.every((item) => item.source?.url.startsWith("https://game8.jp/ryu-ga-gotoku-kiwami3/")));
+  const byNumber = (number) => main.items.find((item) => item.number === number);
+  assert.match(byNumber(25).body.en, /manzai/);
+  assert.doesNotMatch(byNumber(25).body.ko, /특촬/);
+  assert.match(byNumber(31).trigger.en, /Sources disagree/);
+});

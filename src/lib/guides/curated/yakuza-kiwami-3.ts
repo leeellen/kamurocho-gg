@@ -172,8 +172,8 @@ export const YAKUZA_KIWAMI_3_CURATED: Record<string, CuratedGuide> = {
     },
     "steps": [
       {
-        "ko": "클리어 후 다른 서브 스토리 30개, 강적 36명, 투기장 경기 9개를 완료해 아몬 죠의 도전을 엽니다.",
-        "en": "In Premium Adventure, complete the other 30 substories, defeat all 36 Reapers and finish all nine Coliseum matches to unlock Jo Amon."
+        "ko": "클리어 후 투기장 경기 9개를 모두 끝내면 아몬 죠의 도전이 열립니다. PowerPyx 본문은 다른 서브 스토리 30개와 강적 36명도 요구한다고 적지만, 같은 글의 플레이 보고와 game8은 투기장만으로 열렸다고 합니다. 확실히 하려면 모두 끝내 두세요.",
+        "en": "In Premium Adventure, finishing all nine Coliseum matches opens Jo Amon's challenge. The PowerPyx guide text also lists the other 30 substories and all 36 Reapers, but a player report on the same page and game8 say the Coliseum alone was enough. Finish everything to be safe."
       },
       {
         "ko": "아몬 라이더스는 본편 완료와 모든 세력전·전멸전의 승리가 필요합니다. 각 전투의 추가 보상 조건까지 달성할 필요는 없습니다.",
